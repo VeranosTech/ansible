@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/plugins/callback/profile_tasks.rst:8
+msgid "profile_tasks -- adds time information to tasks"
+msgstr ""
+
+#: ../../rst/plugins/callback/profile_tasks.rst:18
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/plugins/callback/profile_tasks.rst:19
+msgid ""
+"Ansible callback plugin for timing individual tasks and overall execution"
+" time."
+msgstr ""
+
+#: ../../rst/plugins/callback/profile_tasks.rst:20
+msgid ""
+"Mashup of 2 excellent original works: https://github.com/jlafon/ansible-"
+"profile, "
+"https://github.com/junaid18183/ansible_home/blob/master/ansible_plugins/callback_plugins/timestamp.py.old"
+msgstr ""
+
+#: ../../rst/plugins/callback/profile_tasks.rst:21
+msgid ""
+"Format: ``<task start timestamp> (<length of previous task>`` <current "
+"elapsed playbook execution time>)"
+msgstr ""
+
+#: ../../rst/plugins/callback/profile_tasks.rst:22
+msgid ""
+"It also lists the top/bottom time consuming tasks in the summary "
+"(configurable)"
+msgstr ""
+
+#: ../../rst/plugins/callback/profile_tasks.rst:23
+msgid ""
+"Before 2.4 only the environment variables were available for "
+"configuration."
+msgstr ""
+
+#: ../../rst/plugins/callback/profile_tasks.rst:28
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/plugins/callback/profile_tasks.rst:29
+msgid ""
+"The below requirements are needed on the local master node that executes "
+"this callback."
+msgstr ""
+
+#: ../../rst/plugins/callback/profile_tasks.rst:31
+msgid "whitelisting in configuration - see examples section below for details."
+msgstr ""
+
+#: ../../rst/plugins/callback/profile_tasks.rst:35
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/plugins/callback/profile_tasks.rst:97
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/plugins/callback/profile_tasks.rst:122
+msgid "Status"
+msgstr ""
+
+#: ../../rst/plugins/callback/profile_tasks.rst:127
+msgid ""
+"This callback is not guaranteed to have a backwards compatible interface."
+" *[preview]*"
+msgstr ""
+
+#: ../../rst/plugins/callback/profile_tasks.rst:130
+msgid ""
+"This callback is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/plugins/callback/profile_tasks.rst:137
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/plugins/callback/profile_tasks.rst:139
+msgid "UNKNOWN"
+msgstr ""
+
+#: ../../rst/plugins/callback/profile_tasks.rst:143
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/callback/profile_tasks.py>`_"
+" to improve it."
+msgstr ""
+

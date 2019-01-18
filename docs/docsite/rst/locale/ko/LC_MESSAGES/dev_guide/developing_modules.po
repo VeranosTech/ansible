@@ -1,0 +1,226 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/developing_modules.rst:6
+msgid "Should you develop a module?"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:8
+msgid ""
+"Developing Ansible modules is easy, but often it isn't necessary. Before "
+"you start writing a new module, ask:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:10
+msgid "Does a similar module already exist?"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:12
+msgid ""
+"An existing module may cover the functionality you want. Ansible Core "
+"includes thousands of modules. Search our :ref:`list of existing modules "
+"<all_modules>` to see if there's a module that does what you need."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:14
+msgid "Does a Pull Request already exist?"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:16
+msgid ""
+"An existing Pull Request may cover the functionality you want. If someone"
+" else has already started developing a similar module, you can review and"
+" test it. There are a few ways to find open module Pull Requests:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:18
+msgid ""
+"`GitHub new module PRs "
+"<https://github.com/ansible/ansible/labels/new_module>`_"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:19
+msgid ""
+"`All updates to modules "
+"<https://github.com/ansible/ansible/labels/module>`_"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:20
+msgid ""
+"`New module PRs listed by directory "
+"<https://ansible.sivel.net/pr/byfile.html>`_ search for "
+"`lib/ansible/modules/`"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:22
+msgid ""
+"If you find an existing PR that looks like it addresses your needs, "
+"please provide feedback on the PR. Community feedback speeds up the "
+"review and merge process."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:24
+msgid "Should you use or develop an action plugin instead?"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:26
+msgid ""
+"An action plugin may be the best way to get the functionality you want. "
+"Action plugins run on the control node instead of on the managed node, "
+"and their functionality is available to all modules. For more information"
+" about developing plugins, read the :ref:`developing plugins page "
+"<developing_plugins>`."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:28
+msgid "Should you use a role instead?"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:30
+msgid ""
+"A combination of existing modules may cover the functionality you want. "
+"You can write a role for this type of use case. Check out the :ref:`roles"
+" documentation<playbooks_reuse_roles>`."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:32
+msgid "Should you write multiple modules instead of one module?"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:34
+msgid ""
+"The functionality you want may be too large for a single module. If you "
+"want to connect Ansible to a new cloud provider, database, or network "
+"platform, you may need to :ref:`develop a related group of "
+"modules<developing_modules_in_groups>`."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:36
+msgid ""
+"Modules should have a concise and well defined functionality. Basically, "
+"follow the UNIX philosophy of doing one thing well."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:38
+msgid ""
+"Modules should not require that a user know all the underlying options of"
+" an API/tool to be used. For instance, if the legal values for a required"
+" module parameter cannot be documented, that's a sign that the module "
+"would be rejected."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:40
+msgid ""
+"Modules should typically encompass much of the logic for interacting with"
+" a resource. A lightweight wrapper around an API that does not contain "
+"much logic would likely cause users to offload too much logic into a "
+"playbook, and for this reason the module would be rejected. Instead try "
+"creating multiple modules for interacting with smaller individual pieces "
+"of the API."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:42
+msgid ""
+"If your use case isn't covered by an existing module, an open PR, an "
+"action plugin, or a role, and you don't need to create multiple modules, "
+"then you're ready to start developing a new module. Choose from the "
+"topics below for next steps:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:44
+msgid "I want to :ref:`get started on a new module <developing_modules_general>`."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:45
+msgid ""
+"I want to review :ref:`tips and conventions for developing good modules "
+"<developing_modules_best_practices>`."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:46
+msgid ""
+"I want to :ref:`write a Windows module "
+"<developing_modules_general_windows>`."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:47
+msgid ""
+"I want :ref:`an overview of Ansible's architecture "
+"<developing_program_flow_modules>`."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:48
+msgid "I want to :ref:`document my module <developing_modules_documenting>`."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:49
+msgid ""
+"I want to :ref:`contribute my module back to Ansible Core "
+"<developing_modules_checklist>`."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:50
+msgid ""
+"I want to :ref:`add unit and integration tests to my module "
+"<developing_testing>`."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:51
+msgid "I want to :ref:`add Python 3 support to my module <developing_python_3>`."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:52
+msgid "I want to :ref:`write multiple modules <developing_modules_in_groups>`."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:56
+msgid ":ref:`all_modules`"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:57
+msgid "Learn about available modules"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:58
+msgid ""
+"`GitHub modules directory "
+"<https://github.com/ansible/ansible/tree/devel/lib/ansible/modules>`_"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:59
+msgid "Browse module source code"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:60
+msgid "`Mailing List <https://groups.google.com/group/ansible-devel>`_"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:61
+msgid "Development mailing list"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:62
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules.rst:63
+msgid "#ansible IRC chat channel"
+msgstr ""
+

@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/gce_module.rst:9
+msgid "gce -- create or terminate GCE instances"
+msgstr ""
+
+#: ../../rst/modules/gce_module.rst:18
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/gce_module.rst:19
+msgid ""
+"Creates or terminates Google Compute Engine (GCE) instances.  See "
+"https://cloud.google.com/compute for an overview. Full "
+"install/configuration instructions for the gce* modules can be found in "
+"the comments of ansible/test/gce_tests.py."
+msgstr ""
+
+#: ../../rst/modules/gce_module.rst:24
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/gce_module.rst:25
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/gce_module.rst:27
+msgid "python >= 2.6"
+msgstr ""
+
+#: ../../rst/modules/gce_module.rst:28
+msgid ""
+"apache-libcloud >= 0.13.3, >= 0.17.0 if using JSON credentials, >= 0.20.0"
+" if using preemptible option"
+msgstr ""
+
+#: ../../rst/modules/gce_module.rst:32
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/gce_module.rst:421
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/gce_module.rst:424
+msgid "Either *instance_names* or *name* is required."
+msgstr ""
+
+#: ../../rst/modules/gce_module.rst:425
+msgid "JSON credentials strongly preferred."
+msgstr ""
+
+#: ../../rst/modules/gce_module.rst:430
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/gce_module.rst:564
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/gce_module.rst:569
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/gce_module.rst:572
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/gce_module.rst:579
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/gce_module.rst:581
+msgid "Eric Johnson (@erjohnso) <erjohnso@google.com>"
+msgstr ""
+
+#: ../../rst/modules/gce_module.rst:582
+msgid "Tom Melendez (@supertom) <supertom@google.com>"
+msgstr ""
+
+#: ../../rst/modules/gce_module.rst:586
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/gce.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/win_regmerge_module.rst:9
+msgid ""
+"win_regmerge -- Merges the contents of a registry file into the windows "
+"registry"
+msgstr ""
+
+#: ../../rst/modules/win_regmerge_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/win_regmerge_module.rst:20
+msgid "Wraps the reg.exe command to import the contents of a registry file."
+msgstr ""
+
+#: ../../rst/modules/win_regmerge_module.rst:21
+msgid ""
+"Suitable for use with registry files created using :ref:`win_template "
+"<win_template_module>`."
+msgstr ""
+
+#: ../../rst/modules/win_regmerge_module.rst:22
+msgid ""
+"Windows registry files have a specific format and must be constructed "
+"correctly with carriage return and line feed line endings otherwise they "
+"will not be merged."
+msgstr ""
+
+#: ../../rst/modules/win_regmerge_module.rst:23
+msgid ""
+"Exported registry files often start with a Byte Order Mark which must be "
+"removed if the file is to templated using :ref:`win_template "
+"<win_template_module>`."
+msgstr ""
+
+#: ../../rst/modules/win_regmerge_module.rst:24
+msgid ""
+"Registry file format is described at https://support.microsoft.com/en-"
+"us/kb/310516"
+msgstr ""
+
+#: ../../rst/modules/win_regmerge_module.rst:25
+msgid ""
+"See also :ref:`win_template <win_template_module>`, :ref:`win_regedit "
+"<win_regedit_module>`"
+msgstr ""
+
+#: ../../rst/modules/win_regmerge_module.rst:31
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/win_regmerge_module.rst:72
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/win_regmerge_module.rst:75
+msgid ""
+"Organise your registry files so that they contain a single root registry "
+"key if you want to use the compare_to functionality."
+msgstr ""
+
+#: ../../rst/modules/win_regmerge_module.rst:76
+msgid ""
+"This module does not force registry settings to be in the state described"
+" in the file.  If registry settings have been modified externally the "
+"module will merge the contents of the file but continue to report "
+"differences on subsequent runs."
+msgstr ""
+
+#: ../../rst/modules/win_regmerge_module.rst:77
+msgid ""
+"To force registry change, use :ref:`win_regedit <win_regedit_module>` "
+"with ``state=absent`` before using ``win_regmerge``."
+msgstr ""
+
+#: ../../rst/modules/win_regmerge_module.rst:81
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/win_regmerge_module.rst:85
+msgid ":ref:`win_reg_stat_module`"
+msgstr ""
+
+#: ../../rst/modules/win_regmerge_module.rst:86
+msgid "The official documentation on the **win_reg_stat** module."
+msgstr ""
+
+#: ../../rst/modules/win_regmerge_module.rst:87
+msgid ":ref:`win_regedit_module`"
+msgstr ""
+
+#: ../../rst/modules/win_regmerge_module.rst:88
+msgid "The official documentation on the **win_regedit** module."
+msgstr ""
+
+#: ../../rst/modules/win_regmerge_module.rst:92
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/win_regmerge_module.rst:110
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/win_regmerge_module.rst:111
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/win_regmerge_module.rst:163
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/win_regmerge_module.rst:168
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/win_regmerge_module.rst:171
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/win_regmerge_module.rst:178
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/win_regmerge_module.rst:180
+msgid "Jon Hawkesworth (@jhawkesworth)"
+msgstr ""
+
+#: ../../rst/modules/win_regmerge_module.rst:184
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_regmerge.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

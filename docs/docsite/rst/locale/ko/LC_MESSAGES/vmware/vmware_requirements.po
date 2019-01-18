@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/vmware/vmware_requirements.rst:5
+msgid "VMware Prerequisites"
+msgstr ""
+
+#: ../../rst/vmware/vmware_requirements.rst:8
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/vmware/vmware_requirements.rst:11
+msgid "Installing SSL Certificate"
+msgstr ""
+
+#: ../../rst/vmware/vmware_requirements.rst:13
+msgid ""
+"All vCenter and ESXi servers require SSL encryption on all connections to"
+" enforce secure communication."
+msgstr ""
+
+#: ../../rst/vmware/vmware_requirements.rst:15
+msgid ""
+"If you see the following warning while using Ansible VMware modules "
+"[warning], you need to enable SSL encryption for Ansible by installing "
+"the server's SSL certificates on your Ansible control node or delegate "
+"node."
+msgstr ""
+
+#: ../../rst/vmware/vmware_requirements.rst:17
+msgid ""
+"``` Unable to connect to vCenter or ESXi API at xx.xx.xx.xx on TCP/443: "
+"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:777) "
+"```"
+msgstr ""
+
+#: ../../rst/vmware/vmware_requirements.rst:21
+msgid ""
+"then, this means you need to add/install SSL certificate of vCenter or "
+"ESXi server in your Ansible control node."
+msgstr ""
+
+#: ../../rst/vmware/vmware_requirements.rst:23
+msgid ""
+"The following instructions allow you to run your Ansible VMware modules "
+"with encrypted mode (viz. ``validate_certs=True``)."
+msgstr ""
+
+#: ../../rst/vmware/vmware_requirements.rst:25
+msgid ""
+"Please follow the instructions depending upon your server to install SSL "
+"certificate."
+msgstr ""
+
+#: ../../rst/vmware/vmware_requirements.rst:28
+msgid "vCenter"
+msgstr ""
+
+#: ../../rst/vmware/vmware_requirements.rst:30
+msgid ""
+"From any web browser, go to the base URL of the vCenter Server without "
+"port number like ``https://vcenter-domain.example.com``"
+msgstr ""
+
+#: ../../rst/vmware/vmware_requirements.rst:32
+msgid ""
+"Click the \"Download trusted root CA certificates\" link at the bottom of"
+" the grey box on the right and download the file."
+msgstr ""
+
+#: ../../rst/vmware/vmware_requirements.rst:34
+msgid ""
+"Change the extension of the file to .zip. The file is a ZIP file of all "
+"root certificates and all CRLs."
+msgstr ""
+
+#: ../../rst/vmware/vmware_requirements.rst:36
+msgid ""
+"Extract the contents of the zip file. The extracted directory contains a "
+"``.certs`` directory that contains two types of files. Files with a "
+"number as the extension (.0, .1, and so on) are root certificates."
+msgstr ""
+
+#: ../../rst/vmware/vmware_requirements.rst:38
+msgid ""
+"Install the certificate files are trusted certificates by the process "
+"that is appropriate for your operating system."
+msgstr ""
+
+#: ../../rst/vmware/vmware_requirements.rst:43
+msgid "ESXi"
+msgstr ""
+
+#: ../../rst/vmware/vmware_requirements.rst:45
+msgid ""
+"Enable SSH Service on ESXi either by using Ansible VMware module "
+"`vmware_host_service_manager "
+"<https://github.com/ansible/ansible/blob/devel/lib/ansible/modules/cloud/vmware/vmware_host_config_manager.py>`_"
+" or manually using vSphere Web interface."
+msgstr ""
+
+#: ../../rst/vmware/vmware_requirements.rst:47
+msgid ""
+"SSH to ESXi server using administrative credentials, and navigate to "
+"directory ``/etc/vmware/ssl``"
+msgstr ""
+
+#: ../../rst/vmware/vmware_requirements.rst:49
+msgid ""
+"Secure copy (SCP) ``rui.crt`` located in ``/etc/vmware/ssl`` directory to"
+" Ansible control node."
+msgstr ""
+
+#: ../../rst/vmware/vmware_requirements.rst:51
+msgid ""
+"Install the certificate file by the process that is appropriate for your "
+"operating system."
+msgstr ""
+

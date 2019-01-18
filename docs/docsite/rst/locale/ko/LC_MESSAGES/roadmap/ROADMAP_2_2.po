@@ -1,0 +1,688 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:3
+msgid "Ansible 2.2"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:4
+msgid "**Target: September 2016**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:6
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:9
+msgid "Docker"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:10
+msgid "Lead by Chris Houseknecht"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:12
+msgid "Docker_network: **done**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:13
+msgid "Docker_volume: Not in this release"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:14
+msgid "Docker_file: Not in this release."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:15
+msgid ""
+"Openshift:  oso_deployment, oso_route, oso_service, oso_login (...and "
+"possibly others. These are modules being developed to support `ansible-"
+"container <https://github.com/ansible/ansible-container>`_.): Deferred "
+"for later release"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:16
+msgid ""
+"Kubernetes: kube_deployment, kube_service, kube_login (...and possibly "
+"others. These too are modules being developed to support `ansible-"
+"container <https://github.com/ansible/ansible-container>`_): Deferred for"
+" later release"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:19
+msgid "Extras split from Core"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:20
+msgid "Lead by Jason M and Jimi-c (Targeting 2.2, could move into 2.3)."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:22
+msgid ""
+"Targeted towards the 2.2 release or shortly after, we are planning on "
+"splitting Extras out of the \"Ansible Core\" project.  That means that "
+"modules that are shipped with Ansible by default are **only** the modules"
+" in ansibl-modules-core.  Ansible extras will become a separate project, "
+"managed by the community standard.  Over the next few months we're going "
+"to have a lot of work to do on getting all of the modules in the right "
+"places for this to work."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:24
+msgid "Create proposal (Jason or Jimi)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:25
+msgid "Review modules for correct location (extras v core)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:26
+msgid "Extras is a completely different package (does not install with ansible)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:27
+msgid "Library dependencies"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:28
+msgid ""
+"Decide and implement release schedules between Ansible Core and Extras to"
+" ensure compatibility and longevity for modules and versions of Ansible."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:31
+msgid "Tweaks/Fixes"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:32
+msgid ""
+"Connection handling stuff. (Toshio K. and Brian C.): This is a stretch "
+"goal for 2.2.  **This work got pushed out**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:34
+msgid ""
+"Change connection polling to avoid resource limitations, see "
+"`<https://github.com/ansible/ansible/issues/14143>`_"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:35
+msgid "`<https://docs.python.org/3/library/selectors.html#module-selectors>`_"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:36
+msgid ""
+"Code: "
+"https://github.com/kai11/ansible/blob/fix/select_fd_out_of_range_wip/lib/ansible/plugins/connection/ssh.py"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:40
+msgid "AWS"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:41 ../../rst/roadmap/ROADMAP_2_2.rst:60
+msgid "Lead by Ryan Brown"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:43
+msgid ""
+"Pagination for all AWS modules (generic pagination exists, but isn't used"
+" everywhere) (bumped to 2.3)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:44
+msgid "Refactoring ec2.py to be more digestible (bumped to 2.3)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:45
+msgid ""
+"Fix inconsistencies with different authentication methods (STS, "
+"environment creds, ~/.aws/credentials) (done)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:46
+msgid "AWS Lambda modules (lambda_execute done, others pending)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:47
+msgid ""
+"Ryan Brown and Robyn Bergeron work on bug/PR triage to reduce backlog "
+"(reduced - continuing to work on it)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:50
+msgid "Google"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:51
+msgid "Lead by Ryan Brown and Tom Melendez"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:53
+msgid "Add support for Google Cloud DNS"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:54
+msgid "Add support for Google Cloud managed instance groups (done)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:55
+msgid "Support restoring instances from snapshots"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:56
+msgid "Improved handling of scratch disks on instances (done)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:59
+msgid "OpenStack"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:62
+msgid "Stretch goal for this release"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:64
+msgid "Ryan with some help from David Shrewsbury (Zuul/Openstack at RedHat)."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:65
+msgid "Support Heat stack resources (done)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:66
+msgid "Support LBaaS load balancers"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:69
+msgid "Azure load balancer"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:70
+msgid "Feature parity for AWS ELB (Stretch Goal)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:73
+msgid "VMware"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:74
+msgid "Lead by Brian, Jtanner"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:76
+msgid ""
+"*module/inventory script: port to pyvmomi (jtanner, bcoca)* **done:** "
+"https://github.com/ansible/ansible/pull/15967"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:78
+msgid ""
+"*inventory script: allow filtering ala ec2 (jtanner) (undergoing PR "
+"process)* **done:** https://github.com/ansible/ansible/pull/15967"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:80
+msgid "vsphere: feature parity with whereismyjetpack and viasat modules"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:83
+msgid "Windows"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:84
+msgid "Lead by Matt D"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:86
+msgid "Feature parity"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:88
+msgid ""
+"PS module API (mirror Python module API where appropriate). Note: We "
+"don't necessarily like the current python module API (AnsibleModule is a "
+"huge class with many unrelated utility functions.  Maybe we should "
+"redesign both at the same time?) (bumped to 2.3+ due to \"moving target\""
+" uncertainty)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:89
+msgid "Environment keyword support (done)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:90
+msgid "win_shell/win_command (done)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:91
+msgid "Async support (done)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:92
+msgid "(stretch goal) Pipelining (bumped to 2.3+)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:94
+msgid "Windows-specific enhancements"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:96
+msgid "Multiple Kerberos credential support (done)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:97
+msgid "Server 2016 testing/fixes (done, awaiting next TP/RTM)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:98
+msgid ""
+"(stretch goal) Nano Server connection + module_utils working (bumped to "
+"2.3)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:99
+msgid "(stretch goal) Encrypted kerberos support in pywinrm (bumped to 2.3)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:102
+msgid "Network"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:103
+msgid "Lead by Nate C, Peter S"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:105
+msgid ""
+"**Done:** Unify NetworkModules (module_utils/network.py) as much as "
+"possible"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:106
+msgid ""
+"**Done:** Add support for config diff and replace on supported platforms "
+"(2 weeks)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:107
+msgid "**Done:** Support for VyOS network operating system"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:108
+msgid "**Done:** Add support for RestConf for IOS/XE"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:109
+msgid "**Done:** Support for Dell Networking OS10"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:110
+msgid "**Done:** Add support for Nokia SR OS modules"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:111
+msgid ""
+"**Done:** Network facts modules (dellos, eos, ios, iosxr, junos, nxos, "
+"openswitch, vyos)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:112
+msgid "**Deferred:** Network facts modules (cumulus, netvisor, sros)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:113
+msgid "**Deferred:** Add support for NetConf for IOS/XE"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:114
+msgid "**Deferred:** (stretch goal) Quagga modules"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:115
+msgid "**Deferred:** (stretch goal) Bird modules"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:116
+msgid "**Deferred:** (stretch goal) GoBGP modules"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:119
+msgid "Role revamp"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:120
+msgid ""
+"Implement 'role revamp' proposal to give users more control on role/task "
+"execution (Brian)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:122
+msgid "**https://github.com/ansible/proposals/blob/master/roles_revamp.md**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:125
+msgid "Vault"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:126
+msgid "Lead by Jtanner, Adrian"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:128
+msgid ""
+"*Extend 'transparent vault file usage' to other action plugins other than"
+" 'copy'(https://github.com/ansible/ansible/issues/7298)* **done:** "
+"https://github.com/ansible/ansible/pull/16957"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:130
+msgid ""
+"Add 'per variable' vault support (!vault YAML directive, existing PR "
+"already) https://github.com/ansible/ansible/issues/13287 "
+"https://github.com/ansible/ansible/issues/14721"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:131
+msgid ""
+"Add vault/unvault filters https://github.com/ansible/ansible/issues/12087"
+" (deferred to 2.3)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:132
+msgid ""
+"Add vault support to lookups (likely deferred to 2.3 or until lookup "
+"plugins are revamped)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:133
+msgid ""
+"Allow for multiple vault secrets "
+"https://github.com/ansible/ansible/issues/13243"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:134
+msgid ""
+"Config option to turn 'unvaulting' failures into warnings "
+"https://github.com/ansible/ansible/issues/13244"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:137
+msgid "Python3"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:138
+msgid "Lead by Toshio"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:140
+msgid ""
+"A note here from Jason M: Getting to complete, tested Python 3 is both a "
+"critical task and one that has so much work and so many moving parts that"
+" we don't expect this to be complete by the 2.2 release.  Toshio will "
+"lead this overall effort."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:145
+msgid ""
+"Motivation: - Ubuntu LTS (16.04) already ships without python2.  RHEL8 is"
+" coming which is also expected to be python3 based.  These considerations"
+" make this high priority. - Ansible users are getting restless: "
+"https://groups.google.com/forum/#!topic/ansible-project/DUKzTho3OCI - "
+"This is probably going to take multiple releases to complete; need to get"
+" started now"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:150
+msgid "Baselines: - We're targeting Python-3.5 and above."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:153
+msgid "Goals for 2.2:"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:155
+msgid "Tech preview level of support"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:156
+msgid "Controller-side code can run on Python3"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:157
+msgid ""
+"Update: Essential features have been shown to work on Python3. Currently "
+"all unittests and all but three integration tests are passing on Python3."
+"  Code has not been line-by-line audited so bugs remain but can be "
+"treated as bugs, not as massive, invasive new features."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:161
+msgid "Almost all of our deps have been ported:"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:163
+msgid ""
+"The base deps in setup.py are ported: ['paramiko', 'jinja2', \"PyYAML\", "
+"'setuptools', 'pycrypto &gt;= 2.6']"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:164
+msgid "python-six from the rpm spec file has been ported"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:165
+msgid "Python-keyczar from the rpm spec file is not."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:166
+msgid ""
+"Strategy: removing keyczar when we drop accelerate for 2.3. Print "
+"deprecation in 2.1."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:168
+msgid ""
+"Module_utils ported to dual python3/python2(2.4 for much of it, python2.6"
+" for specific things) **Mostly done:**  Also not line-by-line audited but"
+" the unittests and integration tests do show that the most use "
+"functionality is working."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:171
+msgid "Add module_utils files to help port"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:173
+msgid ""
+"Update: copy of the six library (v1.4.1 for python2.4 compat) and unicode"
+" helpers are here "
+"(ansible.module_utils._text.{to_bytes,to_text,to_native})"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:174
+msgid "A few basic modules ported to python3"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:176
+msgid "Stat module best example module since it's essential."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:177
+msgid "Update:"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:179
+msgid ""
+"A handful of modules like stat have been line-by-line ported.  They "
+"should work reliably with few python3-specific bugs.  All but three "
+"integration tests pass which means that most essential modules are "
+"working to some extent on Python3."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:181
+msgid "The three failing tests are: service, hg, and uri."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:183
+msgid "Note, large swaths of the modules are not tested.  The status of"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:183
+msgid "these is unknown"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:185
+msgid ""
+"All code should compile under Python3. - lib/ansible/* and all modules "
+"now compile under Python-3.5"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:188
+msgid ""
+"Side work to do: - Figure out best ways to run unit-tests on modules.  "
+"Start unit-testing modules.  This is going to become important so we "
+"don't regress python3 or python2.4 support in modules  (Going to largely "
+"punt on this for 2.2.  Matt Clay is working on building us a testing "
+"foundation for the first half of 2.2 development so we'll re-evaluate "
+"towards the middle of the dev cycle). - More unit tests of module_utils -"
+" More integration tests.  Currently integration tests are the best way to"
+" test ansible modules so we have to rely on those."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:193
+msgid "Goals for 2.3:"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:195
+msgid ""
+"Bugfixing, bugfixing, bugfixing.  We need community members to test, "
+"submit bugs, and add new unit and integration tests.  I'll have some time"
+" allocated both to review any Python3 bugfixes that they submit and to "
+"work on bug reports without PRs.  The overall goal is to make the things "
+"that people do in production with Ansible work on Python 3."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:202
+msgid "Infrastructure Buildout and Changes"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:203
+msgid "Lead by Matt Clay"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:205
+msgid ""
+"Another note from Jason M: A lot of this work is to ease the burden of "
+"CI, CI performance, increase our testing coverage and all of that sort of"
+" thing.  It's not necessarily feature work, but it's \\*\\*critical\\*\\*"
+" to growing our product and our ability to get community changes in more "
+"securely and quickly."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:207
+msgid ""
+"**CI Performance** Reduce time spent waiting on CI for PRs. Combination "
+"of optimizing existing Travis setup and offloading work to other "
+"services. Will be impacted by available budget."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:210
+msgid "**Done:** Most tests have been migrated from Travis to Shippable."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:212
+msgid ""
+"**Core Module Test Organization** Relocate core module tests to ansible-"
+"modules-core to encourage inclusion of tests in core module PRs."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:215
+msgid ""
+"**Deferred:** Relocation of core module tests has been deferred due to "
+"proposed changes in `modules management "
+"<https://github.com/ansible/proposals/blob/master/modules-"
+"management.md>`_."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:217
+msgid ""
+"**Documentation** Expand documentation on setting up a development and "
+"test environment, as well as writing tests. The goal is to ease "
+"development for new contributors and encourage more testing, particularly"
+" with module contributions."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:219
+msgid "**Test Coverage**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:221
+msgid ""
+"Expand test coverage, particularly for CI. Being testing, this is open "
+"ended. Will be impacted by available budget."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:223
+msgid ""
+"**Done:** Module PRs now run integration tests for the module(s) being "
+"changed."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:225
+msgid ""
+"Python 3 - Run integration tests using Python 3 on CI with tagging for "
+"those which should pass, so we can track progress and detect regressions."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:227
+msgid ""
+"**Done:** Integration tests now run on Shippable using a Ubuntu 16.04 "
+"docker image with only Python 3 installed."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:229
+msgid ""
+"Windows - Create framework for running Windows integration tests, ideally"
+" both locally and on CI."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:231
+msgid "**Done:** Windows integration tests now run on Shippable."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:233
+msgid ""
+"FreeBSD - Include FreeBSD in CI coverage. Not originally on the roadmap, "
+"this is an intermediary step for CI coverage for macOS."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:235
+msgid "**Done:** FreeBSD integration tests now run on Shippable."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:237
+msgid "macOS - Include macOS in CI coverage."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_2.rst:239
+msgid "**Done:** macOS integration tests now run on Shippable."
+msgstr ""
+

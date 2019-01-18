@@ -1,0 +1,174 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:3
+msgid "Beyond the Basics"
+msgstr ""
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:5
+msgid ""
+"This page introduces some concepts that help you manage your Ansible "
+"workflow: roles, directory structure, and source control. Like the Basic "
+"Concepts at the beginning of this guide, these intermediate concepts are "
+"common to all uses of Ansible. This page also offers resources for "
+"learning more."
+msgstr ""
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:7
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:10
+msgid "Beyond Playbooks: Moving Tasks and Variables into Roles"
+msgstr ""
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:12
+msgid ""
+"Roles are sets of Ansible defaults, files, tasks, templates, variables, "
+"and other Ansible components that work together. As you saw on the "
+"Working with Playbooks page, moving from a command to a playbook makes it"
+" easy to run multiple tasks and repeat the same tasks in the same order. "
+"Moving from a playbook to a role makes it even easier to reuse and share "
+"your ordered tasks. For more details, see the :doc:`documentation on "
+"roles<../../user_guide/playbooks_reuse_roles>`. You can also look at "
+":doc:`Ansible Galaxy<../../reference_appendices/galaxy>`, which lets you "
+"share your roles and use others' roles, either directly or as "
+"inspiration."
+msgstr ""
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:15
+msgid "A Typical Ansible Filetree"
+msgstr ""
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:17
+msgid ""
+"Ansible expects to find certain files in certain places. As you expand "
+"your inventory and create and run more network playbooks, keep your files"
+" organized in your working Ansible project directory like this:"
+msgstr ""
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:36
+msgid ""
+"The ``backup`` directory and the files in it get created when you run "
+"modules like ``vyos_config`` with the ``backup: yes`` parameter."
+msgstr ""
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:40
+msgid "Tracking Changes to Inventory and Playbooks: Source Control with Git"
+msgstr ""
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:42
+msgid ""
+"As you expand your inventory, roles and playbooks, you should place your "
+"Ansible projects under source control. We recommend ``git`` for source "
+"control. ``git`` provides an audit trail, letting you track changes, roll"
+" back mistakes, view history and share the workload of managing, "
+"maintaining and expanding your Ansible ecosystem. There are plenty of "
+"tutorials and guides to using ``git`` available."
+msgstr ""
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:45
+msgid "Resources and Next Steps"
+msgstr ""
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:48
+msgid "Text"
+msgstr ""
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:50
+msgid "Read more about Ansible for Network Automation:"
+msgstr ""
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:52
+msgid ""
+"Network Automation on the `Ansible website "
+"<https://www.ansible.com/overview/networking>`_"
+msgstr ""
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:53
+msgid ""
+"Ansible Network `Blog posts "
+"<https://www.ansible.com/blog/topic/networks>`_"
+msgstr ""
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:56
+msgid "Events (on Video and in Person)"
+msgstr ""
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:58
+msgid ""
+"All sessions at Ansible events are recorded and include many Network-"
+"related topics (use Filter by Category to view only Network topics). You "
+"can also join us for future events in your area. See:"
+msgstr ""
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:60
+msgid "`Recorded AnsibleFests <https://www.ansible.com/resources/videos>`_"
+msgstr ""
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:61
+msgid ""
+"`Recorded AnsibleAutomates <https://www.ansible.com/resources/webinars-"
+"training>`_"
+msgstr ""
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:62
+msgid ""
+"`Upcoming Ansible Events <https://www.ansible.com/community/events>`_ "
+"page."
+msgstr ""
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:65
+msgid "GitHub Repos"
+msgstr ""
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:67
+msgid ""
+"Ansible hosts module code, examples, demonstrations, and other content on"
+" GitHub. Anyone with a GitHub account is able to create Pull Requests "
+"(PRs) or issues on these repos:"
+msgstr ""
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:69
+msgid ""
+"`Network-Automation <https://github.com/network-automation>`_ is an open "
+"community for all things network automation. Have an idea, some "
+"playbooks, or roles to share? Email ansible-network@redhat.com and we "
+"will add you as a contributor to the repository."
+msgstr ""
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:71
+msgid ""
+"`Ansible <https://github.com/ansible/ansible>`_ is the main codebase, "
+"including code for network modules"
+msgstr ""
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:75
+msgid "IRC"
+msgstr ""
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:77
+msgid "Join us on Freenode IRC:"
+msgstr ""
+
+#: ../../rst/network/getting_started/intermediate_concepts.rst:79
+msgid "``#ansible-network`` Freenode channel"
+msgstr ""
+

@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/nxos_acl_module.rst:9
+msgid "nxos_acl -- Manages access list entries for ACLs"
+msgstr ""
+
+#: ../../rst/modules/nxos_acl_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/nxos_acl_module.rst:20
+msgid "Manages access list entries for ACLs."
+msgstr ""
+
+#: ../../rst/modules/nxos_acl_module.rst:26
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/nxos_acl_module.rst:671
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/nxos_acl_module.rst:674
+msgid "Tested against NXOSv 7.3.(0)D1(1) on VIRL"
+msgstr ""
+
+#: ../../rst/modules/nxos_acl_module.rst:675
+msgid "``state=absent`` removes the ACE if it exists."
+msgstr ""
+
+#: ../../rst/modules/nxos_acl_module.rst:676
+msgid "``state=delete_acl`` deletes the ACL if it exists."
+msgstr ""
+
+#: ../../rst/modules/nxos_acl_module.rst:677
+msgid ""
+"For idempotency, use port numbers for the src/dest port params like "
+"*src_port1* and names for the well defined protocols for the *proto* "
+"param."
+msgstr ""
+
+#: ../../rst/modules/nxos_acl_module.rst:678
+msgid ""
+"Although this module is idempotent in that if the ace as presented in the"
+" task is identical to the one on the switch, no changes will be made. If "
+"there is any difference, what is in Ansible will be pushed (configured "
+"options will be overridden).  This is to improve security, but at the "
+"same time remember an ACE is removed, then re-added, so if there is a "
+"change, the new ACE will be exactly what parameters you are sending to "
+"the module."
+msgstr ""
+
+#: ../../rst/modules/nxos_acl_module.rst:679
+msgid ""
+"For information on using CLI and NX-API see the :ref:`NXOS Platform "
+"Options guide <nxos_platform_options>`"
+msgstr ""
+
+#: ../../rst/modules/nxos_acl_module.rst:680
+msgid ""
+"For more information on using Ansible to manage network devices see the "
+":ref:`Ansible Network Guide <network_guide>`"
+msgstr ""
+
+#: ../../rst/modules/nxos_acl_module.rst:681
+msgid ""
+"For more information on using Ansible to manage Cisco devices see the "
+"`Cisco integration page "
+"<https://www.ansible.com/integrations/networks/cisco>`_."
+msgstr ""
+
+#: ../../rst/modules/nxos_acl_module.rst:686
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/nxos_acl_module.rst:705
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/nxos_acl_module.rst:706
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/nxos_acl_module.rst:734
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/nxos_acl_module.rst:739
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/nxos_acl_module.rst:742
+msgid ""
+"This module is :ref:`maintained by the Ansible Network Team "
+"<modules_support>`. *[network]*"
+msgstr ""
+
+#: ../../rst/modules/nxos_acl_module.rst:745
+msgid "Red Hat Support"
+msgstr ""
+
+#: ../../rst/modules/nxos_acl_module.rst:747
+msgid ""
+"More information about Red Hat's support of this module is available from"
+" this `Red Hat Knowledge Base article "
+"<https://access.redhat.com/articles/3166901>`_."
+msgstr ""
+
+#: ../../rst/modules/nxos_acl_module.rst:753
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/nxos_acl_module.rst:755
+msgid "Jason Edelman (@jedelman8)"
+msgstr ""
+
+#: ../../rst/modules/nxos_acl_module.rst:756
+msgid "Gabriele Gerbino (@GGabriele)"
+msgstr ""
+
+#: ../../rst/modules/nxos_acl_module.rst:760
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_acl.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

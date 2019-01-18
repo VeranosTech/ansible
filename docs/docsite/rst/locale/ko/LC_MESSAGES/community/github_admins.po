@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/community/github_admins.rst:5
+msgid "GitHub Admins"
+msgstr ""
+
+#: ../../rst/community/github_admins.rst:7
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/community/github_admins.rst:9
+msgid ""
+"GitHub Admins have more permissions on GitHub than normal contributors or"
+" even committers.  There are a few responsibilities that come with that "
+"increased power."
+msgstr ""
+
+#: ../../rst/community/github_admins.rst:14
+msgid "Adding and removing committers"
+msgstr ""
+
+#: ../../rst/community/github_admins.rst:16
+msgid ""
+"The Ansible Team will periodically review who is actively contributing to"
+" Ansible to grant or revoke contributors' ability to commit on their own."
+"  GitHub Admins are the people who have the power to actually manage the "
+"GitHub permissions."
+msgstr ""
+
+#: ../../rst/community/github_admins.rst:22
+msgid "Changing branch permissions for releases"
+msgstr ""
+
+#: ../../rst/community/github_admins.rst:24
+msgid ""
+"When we make releases we make people go through a :ref:`release_managers`"
+" to push commits to that branch.  The GitHub admins are responsible for "
+"setting the branch so only the Release Manager can commit to the branch "
+"when the release process reaches that stage and later opening the branch "
+"once the release has been made.  The Release manager will let the GitHub "
+"Admin know when this needs to be done."
+msgstr ""
+
+#: ../../rst/community/github_admins.rst:30
+msgid ""
+"The `GitHub Admin Process Docs "
+"<https://docs.google.com/document/d/1gWPtxNX4J39uIzwqQWLIsTZ1dY_AwEZzAd9bJ4XtZso/edit#heading=h.2wezayw9xsqz>`_"
+" for instructions on how to change branch permissions."
+msgstr ""
+

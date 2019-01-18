@@ -1,0 +1,811 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:5
+msgid "Network Debug and Troubleshooting Guide"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:9
+msgid "Introduction"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:11
+msgid ""
+"Starting with Ansible version 2.1, you can now use the familiar Ansible "
+"models of playbook authoring and module development to manage "
+"heterogeneous networking devices. Ansible supports a growing number of "
+"network devices using both CLI over SSH and API (when available) "
+"transports."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:13
+msgid ""
+"This section discusses how to debug and troubleshoot network modules in "
+"Ansible 2.3."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:20
+msgid "How to troubleshoot"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:22
+msgid "This section covers troubleshooting issues with Network Modules."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:24
+msgid "Errors generally fall into one of the following categories:"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst
+msgid "Authentication issues"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:27
+msgid "Not correctly specifying credentials"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:28
+msgid ""
+"Remote device (network switch/router) not falling back to other other "
+"authentication methods"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:29
+msgid "SSH key issues"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:443
+msgid "Timeout issues"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:31
+msgid "Can occur when trying to pull a large amount of data"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:32
+msgid "May actually be masking a authentication issue"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:562
+msgid "Playbook issues"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:34
+msgid ""
+"Use of ``delegate_to``, instead of ``ProxyCommand``. See :ref:`network "
+"proxy guide <network_delegate_to_vs_ProxyCommand>` for more information."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:35
+msgid "Not using ``connection: local``"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:38
+msgid "``unable to open shell``"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:40
+msgid ""
+"The ``unable to open shell`` message is new in Ansible 2.3, it means that"
+" the ``ansible-connection`` daemon has not been able to successfully talk"
+" to the remote network device. This generally means that there is an "
+"authentication issue. See the \"Authentication and connection issues\" "
+"section in this document for more information."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:47
+msgid "Enabling Networking logging and how to read the logfile"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:49
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:106
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:163
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:204
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:260
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:298
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:325
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:430
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:569
+msgid "**Platforms:** Any"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:51
+msgid ""
+"Ansible 2.3 features improved logging to help diagnose and troubleshoot "
+"issues regarding Ansible Networking modules."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:53
+msgid ""
+"Because logging is very verbose it is disabled by default. It can be "
+"enabled via the :envvar:`ANSIBLE_LOG_PATH` and :envvar:`ANSIBLE_DEBUG` "
+"options on the ansible-controller, that is the machine running ansible-"
+"playbook."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:55
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:120
+msgid ""
+"Before running ``ansible-playbook`` run the following commands to enable "
+"logging::"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:65
+msgid ""
+"After Ansible has finished running you can inspect the log file which has"
+" been created on the ansible-controller:"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:83
+msgid "From the log notice:"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:85
+msgid "``p=28990`` Is the PID (Process ID) of the ``ansible-connection`` process"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:86
+msgid ""
+"``u=fred`` Is the user `running` ansible, not the remote-user you are "
+"attempting to connect as"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:87
+msgid ""
+"``creating new control socket for host veos01:22 as user admin`` "
+"host:port as user"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:88
+msgid ""
+"``control socket path is`` location on disk where the persistent "
+"connection socket is created"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:89
+msgid ""
+"``using connection plugin network_cli`` Informs you that persistent "
+"connection is being used"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:90
+msgid ""
+"``connection established to veos01 in 0:00:22.580626`` Time taken to "
+"obtain a shell on the remote device"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:98
+msgid ""
+"Because the log files are verbose, you can use grep to look for specific "
+"information. For example, once you have identified the ``pid`` from the "
+"``creating new control socket for host`` line you can search for other "
+"connection log entries::"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:104
+msgid "Enabling Networking device interaction logging"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:108
+msgid ""
+"Ansible 2.8 features added logging of device interaction in log file to "
+"help diagnose and troubleshoot issues regarding Ansible Networking "
+"modules. The messages are logged in file pointed by ``log_path`` "
+"configuration option in Ansible configuration file or by set "
+":envvar:`ANSIBLE_LOG_PATH` as mentioned in above section."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:113
+msgid ""
+"The device interaction messages consist of command executed on target "
+"device and the returned response, as this log data can contain sensitive "
+"information including passwords in plain text it is disabled by default. "
+"Additionally, in order to prevent accidental leakage of data, a warning "
+"will be shown on every task with this setting eneabled specifying which "
+"host has it enabled and where the data is being logged."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:118
+msgid ""
+"Be sure to fully understand the security implications of enabling this "
+"option. The device interaction logging can be enabled either globally by "
+"setting in configuration file or by setting environment or enabled on per"
+" task basis by passing special variable to task."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:126
+msgid "Enable device interaction logging for a given task"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:138
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:763
+msgid ""
+"To make this a global setting, add the following to your ``ansible.cfg`` "
+"file:"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:145
+msgid "or enable environment variable `ANSIBLE_PERSISTENT_LOG_MESSAGES`"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:147
+msgid ""
+"# Enable device interaction logging export "
+"ANSIBLE_PERSISTENT_LOG_MESSAGES=True"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:150
+msgid ""
+"If the task is failing at the time on connection initialization itself it"
+" is recommended to enable this option globally else if an individual task"
+" is failing intermittently this option can be enabled for that task "
+"itself to find the root cause."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:154
+msgid ""
+"After Ansible has finished running you can inspect the log file which has"
+" been created on the ansible-controller"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:156
+msgid ""
+"Be sure to fully understand the security implications of enabling this "
+"option as it can log sensitive information in log file thus creating "
+"security vulnerability."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:161
+msgid "Isolating an error"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:165
+msgid ""
+"As with any effort to troubleshoot it's important to simplify the test "
+"case as much as possible."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:167
+msgid ""
+"For Ansible this can be done by ensuring you are only running against one"
+" remote device:"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:169
+msgid "Using ``ansible-playbook --limit switch1.example.net...``"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:170
+msgid "Using an ad-hoc ``ansible`` command"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:172
+msgid ""
+"`ad-hoc` refers to running Ansible to perform some quick command using "
+"``/usr/bin/ansible``, rather than the orchestration language, which is "
+"``/usr/bin/ansible-playbook``. In this case we can ensure connectivity by"
+" attempting to execute a single command on the remote device::"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:176
+msgid "In the above example, we:"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:178
+msgid ""
+"connect to ``switch1.example.net`` specified in the inventory file "
+"``inventory``"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:179
+msgid "use the module ``eos_command``"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:180
+msgid "run the command ``?``"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:181
+msgid "connect using the username ``admin``"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:182
+msgid "inform ansible to prompt for the ssh password by specifying ``-k``"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:184
+msgid ""
+"If you have SSH keys configured correctly, you don't need to specify the "
+"``-k`` parameter"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:186
+msgid ""
+"If the connection still fails you can combine it with the "
+"enable_network_logging parameter. For example::"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:195
+msgid ""
+"Then review the log file and find the relevant error message in the rest "
+"of this document."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:202
+msgid "Category \"socket_path issue\""
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:206
+msgid ""
+"The ``socket_path does not exist or cannot be found``  and ``unable to "
+"connect to socket`` messages are new in Ansible 2.5. These messages "
+"indicate that the socket used to communicate with the remote network "
+"device is unavailable or does not exist."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:209
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:266
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:302
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:331
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:362
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:409
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:449
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:598
+msgid "For example:"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:222
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:245
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:382
+msgid "or"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:235
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:287
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:313
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:339
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:373
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:423
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:455
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:477
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:503
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:517
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:541
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:610
+msgid "Suggestions to resolve:"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:237
+msgid ""
+"Follow the steps detailed in :ref:`enable network logging "
+"<enable_network_logging>`."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:239
+msgid "If the identified error message from the log file is:"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:251
+msgid "Follow the steps detailed in :ref:`timeout issues <timeout_issues>`"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:257
+msgid "Category \"Unable to open shell\""
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:262
+msgid ""
+"The ``unable to open shell`` message is new in Ansible 2.3. This message "
+"means that the ``ansible-connection`` daemon has not been able to "
+"successfully talk to the remote network device. This generally means that"
+" there is an authentication issue. It is a \"catch all\" message, meaning"
+" you need to enable :ref:logging`a_note_about_logging` to find the "
+"underlying issues."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:274
+msgid "or:"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:289
+msgid "Follow the steps detailed in enable_network_logging_."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:291
+msgid ""
+"Once you've identified the error message from the log file, the specific "
+"solution can be found in the rest of this document."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:296
+msgid "Error: \"[Errno -2] Name or service not known\""
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:300
+msgid ""
+"Indicates that the remote host you are trying to connect to can not be "
+"reached"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:315
+msgid ""
+"If you are using the ``provider:`` options ensure that its suboption "
+"``host:`` is set correctly."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:316
+msgid ""
+"If you are not using ``provider:`` nor top-level arguments ensure your "
+"inventory file is correct."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:323
+msgid "Error: \"Authentication failed\""
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:327
+msgid ""
+"Occurs if the credentials (username, passwords, or ssh keys) passed to "
+"``ansible-connection`` (via ``ansible`` or ``ansible-playbook``) can not "
+"be used to connect to the remote device."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:341
+msgid ""
+"If you are specifying credentials via ``password:`` (either directly or "
+"via ``provider:``) or the environment variable `ANSIBLE_NET_PASSWORD` it "
+"is possible that ``paramiko`` (the Python SSH library that Ansible uses) "
+"is using ssh keys, and therefore the credentials you are specifying are "
+"being ignored. To find out if this is the case, disable \"look for "
+"keys\". This can be done like this:"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:347
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:463
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:486
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:552
+msgid ""
+"To make this a permanent change, add the following to your "
+"``ansible.cfg`` file:"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:356
+msgid ""
+"Error: \"connecting to host <hostname> returned an error\" or \"Bad "
+"address\""
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:358
+msgid ""
+"This may occur if the SSH fingerprint hasn't been added to Paramiko's "
+"(the Python SSH library) know hosts file."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:360
+msgid ""
+"When using persistent connections with Paramiko, the connection runs in a"
+" background process.  If the host doesn't already have a valid SSH key, "
+"by default Ansible will prompt to add the host key.  This will cause "
+"connections running in background processes to fail."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:375
+msgid ""
+"Use ``ssh-keyscan`` to pre-populate the known_hosts. You need to ensure "
+"the keys are correct."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:384
+msgid "You can tell Ansible to automatically accept the keys"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:386
+msgid "Environment variable method::"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:391
+msgid "``ansible.cfg`` method:"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:393
+msgid "ansible.cfg"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:407
+msgid "Error: \"No authentication methods available\""
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:425
+msgid "No password or SSH key supplied"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:428
+msgid "Clearing Out Persistent Connections"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:432
+msgid ""
+"In Ansible 2.3, persistent connection sockets are stored in "
+"``~/.ansible/pc`` for all network devices.  When an Ansible playbook "
+"runs, the persistent socket connection is displayed when verbose output "
+"is specified."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:434
+msgid "``<switch> socket_path: /home/fred/.ansible/pc/f64ddfa760``"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:436
+msgid ""
+"To clear out a persistent connection before it times out (the default "
+"timeout is 30 seconds of inactivity), simple delete the socket file."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:446
+msgid "Timeouts"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:447
+msgid "Persistent connection idle timeout:"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:457
+msgid "Increase value of persistent connection idle timeout:"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:470
+msgid "Command timeout: For example:"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:479
+msgid ""
+"Options 1 (Global command timeout setting): Increase value of command "
+"timeout in configuration file or by setting environment variable."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:493
+msgid ""
+"Option 2 (Per task command timeout setting): Increase command timeout per"
+" task basis. All network modules support a timeout value that can be set "
+"on a per task basis. The timeout value controls the amount of time in "
+"seconds before the task will fail if the command has not returned."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:499
+msgid "For local connection type:"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:513
+msgid "For network_cli, netconf connection type (applicable from 2.7 onwards):"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:527
+msgid ""
+"Some operations take longer than the default 10 seconds to complete.  One"
+" good example is saving the current running config on IOS devices to "
+"startup config. In this case, changing the timeout value from the default"
+" 10 seconds to 30 seconds will prevent the task from failing before the "
+"command completes successfully."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:533
+msgid "Persistent socket connect timeout: For example:"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:543
+msgid ""
+"Increase the value of the persistent connection idle timeout. Note: This "
+"value should be greater than the SSH timeout value (the timeout value "
+"under the defaults section in the configuration file) and less than the "
+"value of the persistent connection idle timeout (connect_timeout)."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:564
+msgid "This section details issues are caused by issues with the Playbook itself."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:567
+msgid ""
+"Error: \"invalid connection specified, expected connection=local, got "
+"ssh\""
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:571
+msgid ""
+"Network modules require that the connection is set to ``local``.  Any "
+"other connection setting will cause the playbook to fail.  Ansible will "
+"now detect this condition and return an error message:"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:584
+msgid ""
+"To fix this issue, set the connection value to ``local`` using one of the"
+" following methods:"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:587
+msgid "Set the play to use ``connection: local``"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:588
+msgid "Set the task to use ``connection: local``"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:589
+msgid "Run ansible-playbook using the ``-c local`` setting"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:592
+msgid "Error: \"Unable to enter configuration mode\""
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:594
+msgid "**Platforms:** eos and ios"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:596
+msgid ""
+"This occurs when you attempt to run a task that requires privileged mode "
+"in a user mode shell."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:612
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:626
+msgid "Add ``authorize: yes`` to the task. For example:"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:623
+msgid ""
+"If the user requires a password to go into privileged mode, this can be "
+"specified with ``auth_pass``; if ``auth_pass`` isn't set, the environment"
+" variable `ANSIBLE_NET_AUTHORIZE` will be used instead."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:640
+msgid "Proxy Issues"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:645
+msgid "delegate_to vs ProxyCommand"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:647
+msgid ""
+"The new connection framework for Network Modules in Ansible 2.3 that uses"
+" ``cli`` transport no longer supports the use of the ``delegate_to`` "
+"directive. In order to use a bastion or intermediate jump host to connect"
+" to network devices over ``cli`` transport, network modules now support "
+"the use of ``ProxyCommand``."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:652
+msgid ""
+"To use ``ProxyCommand``, configure the proxy settings in the Ansible "
+"inventory file to specify the proxy host."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:665
+msgid ""
+"With the configuration above, simply build and run the playbook as normal"
+" with no additional changes necessary.  The network module will now "
+"connect to the network device by first connecting to the host specified "
+"in ``ansible_ssh_common_args``, which is ``bastion01`` in the above "
+"example."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:671
+msgid "Using bastion/jump host with netconf connection"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:674
+msgid "Enabling jump host setting"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:680
+msgid "Bastion/jump host with netconf connection can be enabled by:"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:678
+msgid ""
+"Setting Ansible variable ``ansible_netconf_ssh_config`` either to "
+"``True`` or custom ssh config file path"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:679
+msgid ""
+"Setting environment variable ``ANSIBLE_NETCONF_SSH_CONFIG`` to ``True`` "
+"or custom ssh config file path"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:680
+msgid ""
+"Setting ``ssh_config = 1`` or ``ssh_config = <ssh-file-path>`` under "
+"``netconf_connection`` section"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:682
+msgid ""
+"If the configuration variable is set to 1 the proxycommand and other ssh "
+"variables are read from default ssh config file (~/.ssh/config)."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:685
+msgid ""
+"If the configuration variable is set to file path the proxycommand and "
+"other ssh variables are read from the given custom ssh file path"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:689
+msgid "Example ssh config file (~/.ssh/config)"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:716
+msgid "Example Ansible inventory file"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:730
+msgid "Using ``ProxyCommand`` with passwords via variables"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:732
+msgid ""
+"By design, SSH doesn't support providing passwords via environment "
+"variables. This is done to prevent secrets from leaking out, for example "
+"in ``ps`` output."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:735
+msgid ""
+"We recommend using SSH Keys, and if needed an ssh-agent, rather than "
+"passwords, where ever possible."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:738
+msgid "Miscellaneous Issues"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:742
+msgid "Intermittent failure while using ``network_cli`` connection type"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:744
+msgid ""
+"If the command prompt received in response is not matched correctly "
+"within the ``network_cli`` connection plugin the task might fail "
+"intermittently with truncated response or with the error message "
+"``operation requires privilege escalation``. Starting in 2.7.1 a new "
+"buffer read timer is added to ensure prompts are matched properly and a "
+"complete response is send in output. The timer default value is 0.2 "
+"seconds and can be adjusted on a per task basis or can be set globally in"
+" seconds."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:751
+msgid "Example Per task timer setting"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_debug_troubleshooting.rst:770
+msgid ""
+"This timer delay per command executed on remote host can be disabled by "
+"setting the value to zero."
+msgstr ""
+

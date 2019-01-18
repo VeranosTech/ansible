@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/style_guide/voice_style.rst:3
+msgid "Voice Style"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/voice_style.rst:4
+msgid ""
+"The essence of the Ansible writing style is short sentences that flow "
+"naturally together. Mix up sentence structures. Vary sentence subjects. "
+"Address the reader directly. Ask a question. And when the reader adjusts "
+"to the pace of shorter sentences, write a longer one."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/voice_style.rst:6
+msgid "Write how real people speak..."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/voice_style.rst:7
+msgid ""
+"...but try to avoid slang and colloquialisms that might not translate "
+"well into other languages."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/voice_style.rst:8
+msgid "Say big things with small words."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/voice_style.rst:9
+msgid "Be direct. Tell the reader exactly what you want them to do."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/voice_style.rst:10
+msgid "Be honest."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/voice_style.rst:11
+msgid "Short sentences show confidence."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/voice_style.rst:12
+msgid ""
+"Grammar rules are meant to be bent, but only if the reader knows you are "
+"doing this."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/voice_style.rst:13
+msgid ""
+"Choose words with fewer syllables for faster reading and better "
+"understanding."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/voice_style.rst:14
+msgid ""
+"Think of copy as one-on-one conversations rather than as a speech. It's "
+"more difficult to ignore someone who is speaking to you directly."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/voice_style.rst:15
+msgid ""
+"When possible, start task-oriented sentences (those that direct a user to"
+" do something) with action words. For example: Find software... Contact "
+"support... Install the media.... and so forth."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/voice_style.rst:18
+msgid "Active Voice"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/voice_style.rst:19
+msgid ""
+"Use the active voice (\"Start Linuxconf by typing...\") rather than "
+"passive (\"Linuxconf can be started by typing...\") whenever possible. "
+"Active voice makes for more lively, interesting reading. Also avoid "
+"future tense (or using the term \"will\") whenever possible For example, "
+"future tense (\"The screen will display...\") does not read as well as an"
+" active voice (\"The screen displays\"). Remember, the users you are "
+"writing for most often refer to the documentation while they are using "
+"the system, not after or in advance of using the system."
+msgstr ""
+

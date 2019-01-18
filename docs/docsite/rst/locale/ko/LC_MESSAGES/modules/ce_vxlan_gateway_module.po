@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/ce_vxlan_gateway_module.rst:9
+msgid ""
+"ce_vxlan_gateway -- Manages gateway for the VXLAN network on HUAWEI "
+"CloudEngine devices"
+msgstr ""
+
+#: ../../rst/modules/ce_vxlan_gateway_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/ce_vxlan_gateway_module.rst:20
+msgid ""
+"Configuring Centralized All-Active Gateways or Distributed Gateway for "
+"the VXLAN Network on HUAWEI CloudEngine devices."
+msgstr ""
+
+#: ../../rst/modules/ce_vxlan_gateway_module.rst:26
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/ce_vxlan_gateway_module.rst:252
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/ce_vxlan_gateway_module.rst:255
+msgid ""
+"Ensure All-Active Gateways or Distributed Gateway for the VXLAN Network "
+"can not configure at the same time."
+msgstr ""
+
+#: ../../rst/modules/ce_vxlan_gateway_module.rst:260
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/ce_vxlan_gateway_module.rst:303
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/ce_vxlan_gateway_module.rst:304
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/ce_vxlan_gateway_module.rst:384
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/ce_vxlan_gateway_module.rst:389
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/ce_vxlan_gateway_module.rst:392
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/ce_vxlan_gateway_module.rst:399
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/ce_vxlan_gateway_module.rst:401
+msgid "QijunPan (@QijunPan)"
+msgstr ""
+
+#: ../../rst/modules/ce_vxlan_gateway_module.rst:405
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/cloudengine/ce_vxlan_gateway.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

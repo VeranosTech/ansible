@@ -1,0 +1,456 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/reference_appendices/module_utils.rst:6
+msgid "Ansible Reference: Module Utilities"
+msgstr ""
+
+#: ../../rst/reference_appendices/module_utils.rst:8
+msgid ""
+"This page documents utilities intended to be helpful when writing Ansible"
+" modules in Python."
+msgstr ""
+
+#: ../../rst/reference_appendices/module_utils.rst:13
+msgid "AnsibleModule"
+msgstr ""
+
+#: ../../rst/reference_appendices/module_utils.rst:15
+msgid ""
+"To use this functionality, include ``from ansible.module_utils.basic "
+"import AnsibleModule`` in your module."
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule:1 of
+msgid ""
+"Common code for quickly building an ansible module in Python (although "
+"you can write modules with anything that can return JSON)."
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule:4 of
+msgid ""
+"See :ref:`developing_modules_general` for a general introduction and "
+":ref:`developing_program_flow_modules` for more detailed explanation."
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.add_path_info:1 of
+msgid ""
+"for results that are files, supplement the info about the file in the "
+"return path with stats about the file path."
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.atomic_move:1 of
+msgid ""
+"atomically move src to dest, copying attributes from dest, returns true "
+"on success it uses os.rename to ensure this as it is an atomic operation,"
+" rest of the function is to work around limitations, corner cases and "
+"ensure selinux context is saved if possible"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.backup_local:1 of
+msgid ""
+"make a date-marked backup of the specified file, return True or False on "
+"success or failure"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.boolean:1 of
+msgid "Convert the argument to a boolean"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.digest_from_file:1 of
+msgid ""
+"Return hex digest of local file for a digest_method specified by name, or"
+" None if file is not present."
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.exit_json:1 of
+msgid "return from the module, without error"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.fail_json:1 of
+msgid "return from the module, with an error message"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.fail_on_missing_params:1 of
+msgid ""
+"This is for checking for required params when we can not check via "
+"argspec because we need more information than is simply given in the "
+"argspec."
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.get_bin_path:1 of
+msgid "Find system executable in PATH."
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.get_bin_path
+#: ansible.module_utils.basic.AnsibleModule.is_executable
+#: ansible.module_utils.basic.AnsibleModule.run_command of
+msgid "Parameters"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.get_bin_path:3 of
+msgid "The executable to find."
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.get_bin_path:4 of
+msgid "if executable is not found and required is ``True``, fail_json"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.get_bin_path:5 of
+msgid "optional list of directories to search in addition to ``PATH``"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.get_bin_path
+#: ansible.module_utils.basic.AnsibleModule.run_command
+#: ansible.module_utils.basic.get_platform of
+msgid "Returns"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.get_bin_path:6 of
+msgid "if found return full path; otherwise return None"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.is_executable:1 of
+msgid "is the given path executable?"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.is_executable:3 of
+msgid "The path of the file to check."
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.is_executable:5 of
+msgid "Limitations:"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.is_executable:7 of
+msgid "Does not account for FSACLs."
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.is_executable:8 of
+msgid ""
+"Most times we really want to know \"Can the current user execute this "
+"file\".  This function does not tell us that, only if any execute bit is "
+"set."
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.is_special_selinux_path:1 of
+msgid ""
+"Returns a tuple containing (True, selinux_context) if the given path is "
+"on a NFS or other 'special' fs  mount point, otherwise the return will be"
+" (False, None)."
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.load_file_common_arguments:1 of
+msgid ""
+"many modules deal with files, this encapsulates common options that the "
+"file module accepts such that it is directly available to all modules and"
+" they can share code."
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.md5:1 of
+msgid "Return MD5 hex digest of local file using digest_from_file()."
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.md5:5 of
+msgid "Do not use this function unless you have no other choice for:"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.md5:4 of
+msgid "Optional backwards compatibility"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.md5:5 of
+msgid "Compatibility with a third party protocol"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.md5:7 of
+msgid "This function will not work on systems complying with FIPS-140-2."
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.md5:9 of
+msgid "Most uses of this function can use the module.sha1 function instead."
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.preserved_copy:1 of
+msgid "Copy a file with preserved ownership, permissions and context"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command:1 of
+msgid "Execute a command, returns rc, stdout, and stderr."
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command:3 of
+msgid ""
+"is the command to run * If args is a list, the command will be run with "
+"shell=False. * If args is a string and use_unsafe_shell=False it will "
+"split args to a list and run with shell=False * If args is a string and "
+"use_unsafe_shell=True it runs with shell=True."
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command of
+msgid "kw check_rc"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command:7 of
+msgid "Whether to call fail_json in case of non zero RC. Default False"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command of
+msgid "kw close_fds"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command:9 of
+msgid "See documentation for subprocess.Popen(). Default True"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command of
+msgid "kw executable"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command:10 of
+msgid "See documentation for subprocess.Popen(). Default None"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command of
+msgid "kw data"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command:11 of
+msgid "If given, information to write to the stdin of the command"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command of
+msgid "kw binary_data"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command:12 of
+msgid "If False, append a newline to the data.  Default False"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command of
+msgid "kw path_prefix"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command:13 of
+msgid ""
+"If given, additional path to find the command in. This adds to the PATH "
+"environment variable so helper commands in the same directory can also be"
+" found"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command of
+msgid "kw cwd"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command:16 of
+msgid "If given, working directory to run the command inside"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command of
+msgid "kw use_unsafe_shell"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command:17 of
+msgid "See `args` parameter.  Default False"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command of
+msgid "kw prompt_regex"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command:18 of
+msgid ""
+"Regex string (not a compiled regex) which can be used to detect prompts "
+"in the stdout which would otherwise cause the execution to hang "
+"(especially if no input data is specified)"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command of
+msgid "kw environ_update"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command:21 of
+msgid "dictionary to *update* os.environ with"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command of
+msgid "kw umask"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command:22 of
+msgid "Umask to be used when running the command. Default None"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command of
+msgid "kw encoding"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command:23 of
+msgid ""
+"Since we return native strings, on python3 we need to know the encoding "
+"to use to transform from bytes to text.  If you want to always get bytes "
+"back, use encoding=None.  The default is \"utf-8\".  This does not affect"
+" transformation of strings given as args."
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command of
+msgid "kw errors"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command:28 of
+msgid ""
+"Since we return native strings, on python3 we need to transform stdout "
+"and stderr from bytes to text.  If the bytes are undecodable in the "
+"``encoding`` specified, then use this error handler to deal with them.  "
+"The default is ``surrogate_or_strict`` which means that the bytes will be"
+" decoded using the surrogateescape error handler if available (available "
+"on all python3 versions we support) otherwise a UnicodeError traceback "
+"will be raised.  This does not affect transformations of strings given as"
+" args."
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command of
+msgid "kw expand_user_and_vars"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command:37 of
+msgid ""
+"When ``use_unsafe_shell=False`` this argument dictates whether ``~`` is "
+"expanded in paths and environment variables are expanded before running "
+"the command. When ``True`` a string such as ``$SHELL`` will be expanded "
+"regardless of escaping. When ``False`` and ``use_unsafe_shell=False`` no "
+"path or variable expansion will be done."
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command of
+msgid "kw pass_fds"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command:42 of
+msgid ""
+"When running on python3 this argument dictates which file descriptors "
+"should be passed to an underlying ``Popen`` constructor."
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command of
+msgid "kw before_communicate_callback"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command:45 of
+msgid ""
+"This function will be called after ``Popen`` object will be created but "
+"before communicating to the process. (``Popen`` object will be passed to "
+"callback as a first argument)"
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.run_command:49 of
+msgid ""
+"A 3-tuple of return code (integer), stdout (native string), and stderr "
+"(native string).  On python2, stdout and stderr are both byte strings.  "
+"On python3, stdout and stderr are text strings converted according to the"
+" encoding and errors parameters.  If you want byte strings on python3, "
+"use encoding=None to turn decoding to text off."
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.sha1:1 of
+msgid "Return SHA1 hex digest of local file using digest_from_file()."
+msgstr ""
+
+#: ansible.module_utils.basic.AnsibleModule.sha256:1 of
+msgid "Return SHA-256 hex digest of local file using digest_from_file()."
+msgstr ""
+
+#: ../../rst/reference_appendices/module_utils.rst:22
+msgid "Basic"
+msgstr ""
+
+#: ../../rst/reference_appendices/module_utils.rst:24
+msgid ""
+"To use this functionality, include ``import ansible.module_utils.basic`` "
+"in your module."
+msgstr ""
+
+#: ansible.module_utils.basic.env_fallback:1 of
+msgid "Load value from environment"
+msgstr ""
+
+#: ansible.module_utils.basic.get_all_subclasses:1 of
+msgid ""
+"**Deprecated**: Use ansible.module_utils.common._utils.get_all_subclasses"
+" instead"
+msgstr ""
+
+#: ansible.module_utils.basic.get_platform:1 of
+msgid "**Deprecated** Use :py:func:`platform.system` directly."
+msgstr ""
+
+#: ansible.module_utils.basic.get_platform:3 of
+msgid "Name of the platform the module is running on in a native string"
+msgstr ""
+
+#: ansible.module_utils.basic.get_platform:5 of
+msgid ""
+"Returns a native string that labels the platform (\"Linux\", \"Solaris\","
+" etc). Currently, this is the result of calling "
+":py:func:`platform.system`."
+msgstr ""
+
+#: ansible.module_utils.basic.heuristic_log_sanitize:1 of
+msgid "Remove strings that look like passwords from log messages"
+msgstr ""
+
+#: ansible.module_utils.basic.human_to_bytes:1 of
+msgid ""
+"Convert number in string format into bytes (ex: '2K' => 2048) or using "
+"unit argument. example: human_to_bytes('10M') <=> human_to_bytes(10, 'M')"
+msgstr ""
+
+#: ansible.module_utils.basic.json_dict_bytes_to_unicode:1
+#: ansible.module_utils.basic.json_dict_unicode_to_bytes:1 of
+msgid "Recursively convert dict keys and values to byte str"
+msgstr ""
+
+#: ansible.module_utils.basic.json_dict_bytes_to_unicode:3
+#: ansible.module_utils.basic.json_dict_unicode_to_bytes:3 of
+msgid ""
+"Specialized for json return because this only handles, lists, tuples, and"
+" dict container types (the containers that the json module returns)"
+msgstr ""
+
+#: ansible.module_utils.basic.load_platform_subclass:1 of
+msgid ""
+"**Deprecated**: Use "
+"ansible.module_utils.common.sys_info.get_platform_subclass instead"
+msgstr ""
+
+#: ansible.module_utils.basic.remove_values:1 of
+msgid ""
+"Remove strings in no_log_strings from value.  If value is a container "
+"type, then remove a lot more"
+msgstr ""
+
+#: ansible.module_utils.basic.return_values:1 of
+msgid "Return native stringified values from datastructures."
+msgstr ""
+
+#: ansible.module_utils.basic.return_values:3 of
+msgid "For use with removing sensitive values pre-jsonification."
+msgstr ""
+

@@ -1,0 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/testing/sanity/changelog.rst:2
+msgid "Sanity Tests » changelog"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/changelog.rst:4
+msgid "Basic linting of changelog fragments with yamllint and rstcheck."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/changelog.rst:6
+msgid "One or more of the following sections are required:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/changelog.rst:8
+msgid "major_changes"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/changelog.rst:9
+msgid "minor_changes"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/changelog.rst:10
+msgid "deprecated_features"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/changelog.rst:11
+msgid "removed_features"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/changelog.rst:12
+msgid "bugfixes"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/changelog.rst:13
+msgid "known_issues"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/changelog.rst:15
+msgid "New modules and plugins must not be included in changelog fragments."
+msgstr ""
+

@@ -1,0 +1,267 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/acme_certificate_module.rst:10
+msgid "acme_certificate -- Create SSL/TLS certificates with the ACME protocol"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:20
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:21
+msgid ""
+"Create and renew SSL/TLS certificates with a CA supporting the `ACME "
+"protocol <https://tools.ietf.org/html/draft-ietf-acme-acme-18>`_, such as"
+" `Let's Encrypt <https://letsencrypt.org/>`_. The current implementation "
+"supports the ``http-01``, ``dns-01`` and ``tls-alpn-01`` challenges."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:22
+msgid ""
+"To use this module, it has to be executed twice. Either as two different "
+"tasks in the same run or during two runs. Note that the output of the "
+"first run needs to be recorded and passed to the second run as the module"
+" argument ``data``."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:23
+msgid ""
+"Between these two tasks you have to fulfill the required steps for the "
+"chosen challenge by whatever means necessary. For ``http-01`` that means "
+"creating the necessary challenge file on the destination webserver. For "
+"``dns-01`` the necessary dns record has to be created. For ``tls-"
+"alpn-01`` the necessary certificate has to be created and served. It is "
+"*not* the responsibility of this module to perform these steps."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:24
+msgid ""
+"For details on how to fulfill these challenges, you might have to read "
+"through `the main ACME specification <https://tools.ietf.org/html/draft-"
+"ietf-acme-acme-18#section-8>`_ and the `TLS-ALPN-01 specification "
+"<https://tools.ietf.org/html/draft-ietf-acme-tls-alpn-05#section-3>`_. "
+"Also, consider the examples provided for this module."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:27
+msgid "Aliases: letsencrypt"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:30
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:31
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:33
+msgid "python >= 2.6"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:34
+msgid "either openssl, ..."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:35
+msgid "... or `cryptography <https://cryptography.io/>`_ >= 1.5"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:39
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:389
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:392
+msgid "At least one of ``dest`` and ``fullchain_dest`` must be specified."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:393
+msgid ""
+"This module includes basic account management functionality. If you want "
+"to have more control over your ACME account, use the :ref:`acme_account "
+"<acme_account_module>` module and disable account management for this "
+"module using the ``modify_account`` option."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:394
+msgid ""
+"This module was called ``letsencrypt`` before Ansible 2.6. The usage did "
+"not change."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:395
+msgid ""
+"If a new enough version of the ``cryptography`` library is available (see"
+" Requirements for details), it will be used instead of the ``openssl`` "
+"binary. This can be explicitly disabled or enabled with the "
+"``select_crypto_backend`` option. Note that using the ``openssl`` binary "
+"will be slower and less secure, as private key contents always have to be"
+" stored on disk (see ``account_key_content``)."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:396
+msgid ""
+"Although the defaults are chosen so that the module can be used with the "
+"`Let's Encrypt <https://letsencrypt.org/>`_ CA, the module can in "
+"principle be used with any CA providing an ACME endpoint."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:400
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:404
+msgid "`The Let's Encrypt documentation <https://letsencrypt.org/docs/>`_"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:405
+msgid ""
+"Documentation for the Let's Encrypt Certification Authority. Provides "
+"useful information for example on rate limits."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:406
+msgid ""
+"`Automatic Certificate Management Environment (ACME) "
+"<https://tools.ietf.org/html/draft-ietf-acme-acme-18>`_"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:407
+msgid "The current draft specification of the ACME protocol."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:408
+msgid ""
+"`ACME TLS ALPN Challenge Extension <https://tools.ietf.org/html/draft-"
+"ietf-acme-tls-alpn-05>`_"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:409
+msgid "The current draft specification of the ``tls-alpn-01`` challenge."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:410
+msgid ":ref:`acme_challenge_cert_helper_module`"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:411
+msgid "Helps preparing ``tls-alpn-01`` challenges."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:412
+msgid ":ref:`openssl_privatekey_module`"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:413
+msgid "Can be used to create private keys (both for certificates and accounts)."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:414
+msgid ":ref:`openssl_csr_module`"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:415
+msgid "Can be used to create a Certificate Signing Request (CSR)."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:416
+msgid ":ref:`certificate_complete_chain_module`"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:417
+msgid "Allows to find the root certificate for the returned fullchain."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:418
+msgid ":ref:`acme_certificate_revoke_module`"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:419
+msgid "Allows to revoke certificates."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:420
+msgid ":ref:`acme_account_module`"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:421
+msgid "Allows to create, modify or delete an ACME account."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:422
+msgid ":ref:`acme_inspect_module`"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:423
+msgid "Allows to debug problems."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:427
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:533
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:534
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:684
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:689
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:692
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:699
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:701
+msgid "Michael Gruener (@mgruener)"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_module.rst:705
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/crypto/acme/acme_certificate.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

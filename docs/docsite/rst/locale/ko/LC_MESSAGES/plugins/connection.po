@@ -1,0 +1,211 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/plugins/connection.rst:4
+msgid "Connection Plugins"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:10
+msgid ""
+"Connection plugins allow Ansible to connect to the target hosts so it can"
+" execute tasks on them. Ansible ships with many connection plugins, but "
+"only one can be used per host at a time."
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:12
+msgid ""
+"By default, Ansible ships with several plugins. The most commonly used "
+"are the :ref:`paramiko SSH<paramiko_ssh_connection>`, native ssh (just "
+"called :ref:`ssh<ssh_connection>`), and :ref:`local<local_connection>` "
+"connection types.  All of these can be used in playbooks and with "
+":command:`/usr/bin/ansible` to decide how you want to talk to remote "
+"machines."
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:14
+msgid ""
+"The basics of these connection types are covered in the :ref:`getting "
+"started<intro_getting_started>` section."
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:19
+msgid "``ssh`` plugins"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:21
+msgid ""
+"Because ssh is the default protocol used in system administration and the"
+" protocol most used in Ansible, ssh options are included in the command "
+"line tools. See :ref:`ansible-playbook` for more details."
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:26
+msgid "Adding connection plugins"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:28
+msgid ""
+"You can extend Ansible to support other transports (such as SNMP or "
+"message bus) by dropping a custom plugin into the ``connection_plugins`` "
+"directory."
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:34
+msgid "Using connection plugins"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:36
+msgid ""
+"You can set the connection plugin globally via "
+":ref:`configuration<ansible_configuration_settings>`, at the command line"
+" (``-c``, ``--connection``), as a :ref:`keyword <playbook_keywords>` in "
+"your play, or by setting a :ref:`variable<behavioral_parameters>`, most "
+"often in your inventory. For example, for Windows machines you might want"
+" to set the :ref:`winrm <winrm_connection>` plugin as an inventory "
+"variable."
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:39
+msgid ""
+"Most connection plugins can operate with minimal configuration. By "
+"default they use the :ref:`inventory "
+"hostname<inventory_hostnames_lookup>` and defaults to find the target "
+"host."
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:41
+msgid ""
+"Plugins are self-documenting. Each plugin should document its "
+"configuration options. The following are connection variables common to "
+"most connection plugins:"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:43
+msgid ":ref:`ansible_host<magic_variables_and_hostvars>`"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:44
+msgid ""
+"The name of the host to connect to, if different from the :ref:`inventory"
+" <intro_inventory>` hostname."
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:45
+msgid ":ref:`ansible_port<faq_setting_users_and_ports>`"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:46
+msgid ""
+"The ssh port number, for :ref:`ssh <ssh_connection>` and "
+":ref:`paramiko_ssh <paramiko_ssh_connection>` it defaults to 22."
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:48
+msgid ":ref:`ansible_user<faq_setting_users_and_ports>`"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:48
+msgid ""
+"The default user name to use for log in. Most plugins default to the "
+"'current user running Ansible'."
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:50
+msgid ""
+"Each plugin might also have a specific version of a variable that "
+"overrides the general version. For example, ``ansible_ssh_host`` for the "
+":ref:`ssh <ssh_connection>` plugin."
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:55
+msgid "Plugin List"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:57
+msgid ""
+"You can use ``ansible-doc -t connection -l`` to see the list of available"
+" plugins. Use ``ansible-doc -t connection <plugin name>`` to see detailed"
+" documentation and examples."
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:69
+msgid ":ref:`Working with Playbooks<working_with_playbooks>`"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:70
+msgid "An introduction to playbooks"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:71
+msgid ":ref:`callback_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:72
+msgid "Ansible callback plugins"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:73
+msgid ":ref:`Filters<playbooks_filters>`"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:74
+msgid "Jinja2 filter plugins"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:75
+msgid ":ref:`Tests<playbooks_tests>`"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:76
+msgid "Jinja2 test plugins"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:77
+msgid ":ref:`Lookups<playbooks_lookups>`"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:78
+msgid "Jinja2 lookup plugins"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:79
+msgid ":ref:`vars_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:80
+msgid "Ansible vars plugins"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:81
+msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:82
+msgid "Have a question?  Stop by the google group!"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:83
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:84
+msgid "#ansible IRC chat channel"
+msgstr ""
+

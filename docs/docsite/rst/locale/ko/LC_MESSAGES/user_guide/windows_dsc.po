@@ -1,0 +1,436 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/user_guide/windows_dsc.rst:2
+msgid "Desired State Configuration"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:5
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:8
+msgid "What is Desired State Configuration?"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:9
+msgid ""
+"Desired State Configuration, or DSC, is a tool built into PowerShell that"
+" can be used to define a Windows host setup through code. The overall "
+"purpose of DSC is the same as Ansible, it is just executed in a different"
+" manner. Since Ansible 2.4, the ``win_dsc`` module has been added and can"
+" be used to leverage existing DSC resources when interacting with a "
+"Windows host."
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:15
+msgid ""
+"More details on DSC can be viewed at `DSC Overview "
+"<https://docs.microsoft.com/en-us/powershell/dsc/overview>`_."
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:18
+msgid "Host Requirements"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:19
+msgid ""
+"To use the ``win_dsc`` module, a Windows host must have PowerShell v5.0 "
+"or newer installed. All supported hosts, except for Windows Server 2008 "
+"(non R2) can be upgraded to PowerShell v5."
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:23
+msgid ""
+"Once the PowerShell requirements have been met, using DSC is as simple as"
+" creating a task with the ``win_dsc`` module."
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:27
+msgid "Why Use DSC?"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:28
+msgid ""
+"DSC and Ansible modules have a common goal which is to define and ensure "
+"the state of a resource. Because of this, resources like the DSC `File "
+"resource <https://docs.microsoft.com/en-us/powershell/dsc/fileresource>`_"
+" and Ansible ``win_file`` can be used to achieve the same result. "
+"Deciding which to use depends on the scenario."
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:34
+msgid "Reasons for using an Ansible module over a DSC resource:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:36
+msgid "The host does not support PowerShell v5.0, or it cannot easily be upgraded"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:37
+msgid ""
+"The DSC resource does not offer a feature present in an Ansible module. "
+"For example win_regedit can manage the ``REG_NONE`` property type, while "
+"the DSC ``Registry`` resource cannot"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:40
+msgid ""
+"DSC resources have limited check mode support, while some Ansible modules"
+" have better checks"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:42
+msgid "DSC resources do not support diff mode, while some Ansible modules do"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:43
+msgid ""
+"Custom resources require further installation steps to be run on the host"
+" beforehand, while Ansible modules are in built-in to Ansible"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:45
+msgid "There are bugs in a DSC resource where an Ansible module works"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:47
+msgid "Reasons for using a DSC resource over an Ansible module:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:49
+msgid "The Ansible module does not support a feature present in a DSC resource"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:50
+msgid "There is no Ansible module available"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:51
+msgid "There are bugs in an existing Ansible module"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:53
+msgid ""
+"In the end, it doesn't matter whether the task is performed with DSC or "
+"an Ansible module; what matters is that the task is performed correctly "
+"and the playbooks are still readable. If you have more experience with "
+"DSC over Ansible and it does the job, just use DSC for that task."
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:59
+msgid "How to Use DSC?"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:60
+msgid ""
+"The ``win_dsc`` module takes in a free-form of options so that it changes"
+" according to the resource it is managing. A list of built in resources "
+"can be found at `resources <https://docs.microsoft.com/en-"
+"us/powershell/dsc/resources>`_."
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:64
+msgid ""
+"Using the `Registry <https://docs.microsoft.com/en-"
+"us/powershell/dsc/registryresource>`_ resource as an example, this is the"
+" DSC definition as documented by Microsoft:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:81
+msgid ""
+"When defining the task, ``resource_name`` must be set to the DSC resource"
+" being used - in this case the ``resource_name`` should be set to "
+"``Registry``. The ``module_version`` can refer to a specific version of "
+"the DSC resource installed; if left blank it will default to the latest "
+"version. The other options are parameters that are used to define the "
+"resource, such as ``Key`` and ``ValueName``. While the options in the "
+"task are not case sensitive, keeping the case as-is is recommended "
+"becuase it makes it easier to distinguish DSC resource options from "
+"Ansible's ``win_dsc`` options."
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:90
+msgid ""
+"This is what the Ansible task version of the above DSC Registry resource "
+"would look like:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:103
+msgid "Property Types"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:104
+msgid ""
+"Each DSC resource property has a type that is associated with it. Ansible"
+" will try to convert the defined options to the correct type during "
+"execution. For simple types like ``[string]`` and ``[bool]`` this is a "
+"simple operation, but complex types like ``[PSCredential]`` or arrays "
+"(like ``[string[]]``) this require certain rules."
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:111
+msgid "PSCredential"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:112
+msgid ""
+"A ``[PSCredential]`` object is used to store credentials in a secure way,"
+" but Ansible has no way to serialize this over JSON. To set a DSC "
+"PSCredential property, the definition of that parameter should have two "
+"entries that are suffixed with ``_username`` and ``_password`` for the "
+"username and password respectively. For example:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:126
+msgid ""
+"You should set ``no_log: yes`` on the task definition in Ansible to "
+"ensure any credentials used are not stored in any log file or console "
+"output."
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:131
+msgid "CimInstance Type"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:132
+msgid ""
+"A ``[CimInstance]`` object is used by DSC to store a dictionary object "
+"based on a custom class defined by that resource. Defining a value that "
+"takes in a ``[CimInstance]`` in YAML is the same as defining a dictionary"
+" in YAML. For example, to define a ``[CimInstance]`` value in Ansible:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:146
+msgid ""
+"In the above example, the CIM instance is a representation of the class "
+"``MSFT_xWebAuthenticationInformation "
+"<https://github.com/PowerShell/xWebAdministration/blob/dev/DSCResources/MSFT_xWebsite/MSFT_xWebsite.schema.mof>``_."
+" This class accepts four boolean variables, ``Anonymous``, ``Basic``, "
+"``Digest``, and ``Windows``. The keys to use in a ``[CimInstance]`` "
+"depend on the class it represents. Please read through the documentation "
+"of the resource to determine the keys that can be used and the types of "
+"each key value. The class definition is typically located in the "
+"``<resource name>.schema.mof``."
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:155
+msgid "Arrays"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:156
+msgid ""
+"Simple type arrays like ``[string[]]`` or ``[UInt32[]]`` are defined as a"
+" list or as a comma separated string which are then cast to their type. "
+"Using a list is recommended because the values are not manually parsed by"
+" the ``win_dsc`` module before being passed to the DSC engine. For "
+"example, to define a simple type array in Ansible:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:177
+msgid ""
+"Complex type arrays like ``[CimInstance[]]`` (array of dicts), can be "
+"defined like this example:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:195
+msgid ""
+"The above example, is an array with two values of the class "
+"``MSFT_xWebBindingInformation "
+"<https://github.com/PowerShell/xWebAdministration/blob/dev/DSCResources/MSFT_xWebsite/MSFT_xWebsite.schema.mof>``_."
+" When defining a ``[CimInstance[]]``, be sure to read the resource "
+"documentation to find out what keys to use in the definition."
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:200
+msgid "Run As Another User"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:201
+msgid ""
+"By default, DSC runs each resource as the SYSTEM account and not the "
+"account that Ansible use to run the module. This means that resources "
+"that are dynamically loaded based on a user profile, like the "
+"``HKEY_CURRENT_USER`` registry hive, will be loaded under the ``SYSTEM`` "
+"profile. The parameter `PsDscRunAsCredential`` is a parameter that can be"
+" set for every DSC resource force the DSC engine to run under a different"
+" account. As ``PsDscRunAsCredential`` has a type of ``PSCredential``, it "
+"is defined with the ``_username`` and ``_password`` suffix."
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:210
+msgid ""
+"Using the Registry resource type as an example, this is how to define a "
+"task to access the ``HKEY_CURRENT_USER`` hive of the Ansible user:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:227
+msgid "Custom DSC Resources"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:228
+msgid ""
+"DSC resources are not limited to the built-in options from Microsoft. "
+"Custom modules can be installed to manage other resources that are not "
+"usually available."
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:232
+msgid "Finding Custom DSC Resources"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:233
+msgid ""
+"You can use the `PSGallery <https://www.powershellgallery.com/>`_ to find"
+" custom resources, along with documentation on how to install them  on a "
+"Windows host."
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:236
+msgid ""
+"The ``Find-DscResource`` cmdlet can also be used to find custom "
+"resources. For example:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:246
+msgid ""
+"DSC resources developed by Microsoft that start with ``x``, means the "
+"resource is experimental and comes with no support."
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:250
+msgid "Installing a Custom Resource"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:251
+msgid "There are three ways that a DSC resource can be installed on a host:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:253
+msgid "Manually with the ``Install-Module`` cmdlet"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:254
+msgid "Using the ``win_psmodule`` Ansible module"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:255
+msgid "Saving the module manually and copying it another host"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:257
+msgid ""
+"This is an example of installing the ``xWebAdministration`` resources "
+"using ``win_psmodule``:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:267
+msgid ""
+"Once installed, the win_dsc module will be able to use the resource by "
+"referencing it with the ``resource_name`` option."
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:270
+msgid ""
+"The first two methods above only work when the host has access to the "
+"internet. When a host does not have internet access, the module must "
+"first be installed using the methods above on another host with internet "
+"access and then copied across. To save a module to a local filepath, the "
+"following PowerShell cmdlet can be run:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:281
+msgid ""
+"This will create a folder called ``xWebAdministration`` in ``C:\\temp`` "
+"which can be copied to any host. For PowerShell to see this offline "
+"resource, it must be copied to a directory set in the ``PSModulePath`` "
+"environment variable. In most cases the path ``C:\\Program "
+"Files\\WindowsPowerShell\\Module`` is set through this variable, but the "
+"``win_path`` module can be used to add different paths."
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:289
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:291
+msgid "Extract a zip file"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:303
+msgid "Create a directory"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:326
+msgid "Interact with Azure"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:349
+msgid "Setup IIS Website"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:404
+msgid ":doc:`index`"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:405
+msgid "The documentation index"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:406
+msgid ":doc:`playbooks`"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:407
+msgid "An introduction to playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:408
+msgid ":doc:`playbooks_best_practices`"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:409
+msgid "Best practices advice"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:410
+msgid ":ref:`List of Windows Modules <windows_modules>`"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:411
+msgid "Windows specific module list, all implemented in PowerShell"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:412
+msgid "`User Mailing List <https://groups.google.com/group/ansible-project>`_"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:413
+msgid "Have a question?  Stop by the google group!"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:414
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:415
+msgid "#ansible IRC chat channel"
+msgstr ""
+

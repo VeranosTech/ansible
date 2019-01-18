@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/user_guide/playbooks_lookups.rst:4
+msgid "Lookups"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_lookups.rst:6
+msgid ""
+"Lookup plugins allow access to outside data sources. Like all templating,"
+" these plugins are evaluated on the Ansible control machine, and can "
+"include reading the filesystem as well as contacting external datastores "
+"and services. This data is then made available using the standard "
+"templating system in Ansible."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_lookups.rst:9
+msgid "Lookups occur on the local computer, not on the remote computer."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_lookups.rst:10
+msgid ""
+"They are executed with in the directory containing the role or play, as "
+"opposed to local tasks which are executed with the directory of the "
+"executed script."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_lookups.rst:11
+msgid ""
+"You can pass wantlist=True to lookups to use in jinja2 template \"for\" "
+"loops."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_lookups.rst:12
+msgid ""
+"Lookups are an advanced feature. You should have a good working knowledge"
+" of Ansible plays before incorporating them."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_lookups.rst:14
+msgid ""
+"Some lookups pass arguments to a shell. When using variables from a "
+"remote/untrusted source, use the `|quote` filter to ensure safe usage."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_lookups.rst:16
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_lookups.rst:21
+msgid "Lookups and loops"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_lookups.rst:23
+msgid ""
+"*lookup plugins* are a way to query external data sources, such as shell "
+"commands or even key value stores."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_lookups.rst:25
+msgid ""
+"Before Ansible 2.5, lookups were mostly used indirectly in "
+"``with_<lookup>`` constructs for looping. Starting with Ansible version "
+"2.5, lookups are used more explicitly as part of Jinja2 expressions fed "
+"into the ``loop`` keyword."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_lookups.rst:31
+msgid "Lookups and variables"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_lookups.rst:33
+msgid ""
+"One way of using lookups is to populate variables. These macros are "
+"evaluated each time they are used in a task (or template)::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_lookups.rst:41
+msgid ""
+"For more details and a complete list of lookup plugins available, please "
+"see :ref:`plugins_lookup`."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_lookups.rst:45
+msgid ":ref:`working_with_playbooks`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_lookups.rst:46
+msgid "An introduction to playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_lookups.rst:47
+msgid ":ref:`playbooks_conditionals`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_lookups.rst:48
+msgid "Conditional statements in playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_lookups.rst:49
+msgid ":ref:`playbooks_variables`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_lookups.rst:50
+msgid "All about variables"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_lookups.rst:51
+msgid ":ref:`playbooks_loops`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_lookups.rst:52
+msgid "Looping in playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_lookups.rst:53
+msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_lookups.rst:54
+msgid "Have a question?  Stop by the google group!"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_lookups.rst:55
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_lookups.rst:56
+msgid "#ansible IRC chat channel"
+msgstr ""
+

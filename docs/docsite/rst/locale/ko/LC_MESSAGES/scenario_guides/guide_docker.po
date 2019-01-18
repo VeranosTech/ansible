@@ -1,0 +1,558 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/scenario_guides/guide_docker.rst:2
+msgid "Getting Started with Docker"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:4
+msgid "Ansible offers the following modules for orchestrating Docker containers:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:8
+msgid "docker_service"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:7
+msgid ""
+"Use your existing Docker compose files to orchestrate containers on a "
+"single Docker daemon or on Swarm. Supports compose versions 1 and 2."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:12
+msgid "docker_container"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:11
+msgid ""
+"Manages the container lifecycle by providing the ability to create, "
+"update, stop, start and destroy a container."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:15
+msgid "docker_image"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:15
+msgid ""
+"Provides full control over images, including: build, pull, push, tag and "
+"remove."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:19
+msgid "docker_image_facts"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:18
+msgid ""
+"Inspects one or more images in the Docker host's image cache, providing "
+"the information as facts for making decision or assertions in a playbook."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:23
+msgid "docker_login"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:22
+msgid ""
+"Authenticates with Docker Hub or any Docker registry and updates the "
+"Docker Engine config file, which in turn provides password-free pushing "
+"and pulling of images to and from the registry."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:27
+msgid "docker (dynamic inventory)"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:26
+msgid ""
+"Dynamically builds an inventory of all the available containers from a "
+"set of one or more Docker hosts."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:29
+msgid ""
+"Ansible 2.1.0 includes major updates to the Docker modules, marking the "
+"start of a project to create a complete and integrated set of tools for "
+"orchestrating containers. In addition to the above modules, we are also "
+"working on the following:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:33
+msgid ""
+"Still using Dockerfile to build images? Check out `ansible-container "
+"<https://github.com/ansible/ansible-container>`_, and start building "
+"images from your Ansible playbooks."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:36
+msgid ""
+"Use the *shipit* command in `ansible-container "
+"<https://github.com/ansible/ansible-container>`_ to launch your docker-"
+"compose file on `OpenShift <https://www.okd.io/>`_. Go from an app on "
+"your laptop to a fully scalable app in the cloud in just a few moments."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:40
+msgid ""
+"There's more planned. See the latest ideas and thinking at the `Ansible "
+"proposal repo "
+"<https://github.com/ansible/proposals/tree/master/docker>`_."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:43
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:45
+msgid ""
+"Using the docker modules requires having the `Docker SDK for Python "
+"<https://docker-py.readthedocs.io/en/stable/>`_ installed on the host "
+"running Ansible. You will need to have >= 1.7.0 installed. For Python 2.7"
+" or Python 3, you can install it as follows:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:53
+msgid ""
+"For Python 2.6, you need a version before 2.0. For these versions, the "
+"SDK was called ``docker-py``, so you need to install it as follows:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:60
+msgid ""
+"Please note that only one of ``docker`` and ``docker-py`` must be "
+"installed. Installing both will result in a broken installation. If this "
+"happens, Ansible will detect it and inform you about it::"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:69
+msgid ""
+"The docker_service module also requires `docker-compose "
+"<https://github.com/docker/compose>`_"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:77
+msgid "Connecting to the Docker API"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:79
+msgid ""
+"You can connect to a local or remote API using parameters passed to each "
+"task or by setting environment variables. The order of precedence is "
+"command line parameters and then environment variables. If neither a "
+"command line option or an environment variable is found, a default value "
+"will be used. The default values are provided under `Parameters`_"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:86
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:88
+msgid ""
+"Control how modules connect to the Docker API by passing the following "
+"parameters:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:94
+#: ../../rst/scenario_guides/guide_docker.rst:173
+msgid "docker_host"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:91
+msgid ""
+"The URL or Unix socket path used to connect to the Docker API. Defaults "
+"to ``unix://var/run/docker.sock``. To connect to a remote host, provide "
+"the TCP connection string. For example: ``tcp://192.0.2.23:2376``. If TLS"
+" is used to encrypt the connection to the API, then the module will "
+"automatically replace 'tcp' in the connection URL with 'https'."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:98
+msgid "api_version"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:97
+#: ../../rst/scenario_guides/guide_docker.rst:139
+#: ../../rst/scenario_guides/guide_docker.rst:220
+msgid ""
+"The version of the Docker API running on the Docker Host. Defaults to the"
+" latest version of the API supported by docker-py."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:101
+msgid "timeout"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:101
+#: ../../rst/scenario_guides/guide_docker.rst:224
+msgid ""
+"The maximum amount of time in seconds to wait on a response from the API."
+" Defaults to 60 seconds."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:105
+msgid "tls"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:104
+#: ../../rst/scenario_guides/guide_docker.rst:227
+msgid ""
+"Secure the connection to the API by using TLS without verifying the "
+"authenticity of the Docker host server. Defaults to False."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:109
+msgid "tls_verify"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:108
+msgid ""
+"Secure the connection to the API by using TLS and verifying the "
+"authenticity of the Docker host server. Default is False."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:112
+msgid "cacert_path"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:112
+msgid ""
+"Use a CA certificate when performing server verification by providing the"
+" path to a CA certificate file."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:115
+msgid "cert_path"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:115
+msgid "Path to the client's TLS certificate file."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:118
+msgid "key_path"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:118
+msgid "Path to the client's TLS key file."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:122
+msgid "tls_hostname"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:121
+msgid ""
+"When verifying the authenticity of the Docker Host server, provide the "
+"expected name of the server. Defaults to 'localhost'."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:127
+msgid "ssl_version"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:125
+#: ../../rst/scenario_guides/guide_docker.rst:242
+msgid ""
+"Provide a valid SSL version number. Default value determined by docker-"
+"py, which at the time of this writing was 1.0"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:130
+#: ../../rst/scenario_guides/guide_docker.rst:211
+msgid "Environment Variables"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:132
+msgid ""
+"Control how the modules connect to the Docker API by setting the "
+"following variables in the environment of the host running Ansible:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:136
+#: ../../rst/scenario_guides/guide_docker.rst:217
+msgid "DOCKER_HOST"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:136
+msgid "The URL or Unix socket path used to connect to the Docker API."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:140
+msgid "DOCKER_API_VERSION"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:143
+msgid "DOCKER_TIMEOUT"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:143
+msgid "The maximum amount of time in seconds to wait on a response from the API."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:146
+msgid "DOCKER_CERT_PATH"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:146
+#: ../../rst/scenario_guides/guide_docker.rst:239
+msgid ""
+"Path to the directory containing the client certificate, client key and "
+"CA certificate."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:149
+msgid "DOCKER_SSL_VERSION"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:149
+msgid "Provide a valid SSL version number."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:152
+msgid "DOCKER_TLS"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:152
+msgid ""
+"Secure the connection to the API by using TLS without verifying the "
+"authenticity of the Docker Host."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:156
+msgid "DOCKER_TLS_VERIFY"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:155
+msgid ""
+"Secure the connection to the API by using TLS and verify the authenticity"
+" of the Docker Host."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:159
+msgid "Dynamic Inventory Script"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:160
+msgid ""
+"The inventory script generates dynamic inventory by making API requests "
+"to one or more Docker APIs. It's dynamic because the inventory is "
+"generated at run-time rather than being read from a static file. The "
+"script generates the inventory by connecting to one or many Docker APIs "
+"and inspecting the containers it finds at each API. Which APIs the script"
+" contacts can be defined using environment variables or a configuration "
+"file."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:166
+msgid "Groups"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:167
+msgid "The script will create the following host groups:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:169
+msgid "container id"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:170
+msgid "container name"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:171
+msgid "container short id"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:172
+msgid "image_name  (image_<image name>)"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:174
+msgid "running"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:175
+msgid "stopped"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:178
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:180
+msgid ""
+"You can run the script interactively from the command line or pass it as "
+"the inventory to a playbook. Here are few examples to get you started:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:204
+msgid "Configuration"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:205
+msgid ""
+"You can control the behavior of the inventory script by defining "
+"environment variables, or creating a docker.yml file (sample provided in "
+"ansible/contrib/inventory). The order of precedence is the docker.yml "
+"file and then environment variables."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:213
+msgid ""
+"To connect to a single Docker API the following variables can be defined "
+"in the environment to control the connection options. These are the same "
+"environment variables used by the Docker modules."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:217
+msgid ""
+"The URL or Unix socket path used to connect to the Docker API. Defaults "
+"to unix://var/run/docker.sock."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:221
+msgid "DOCKER_API_VERSION:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:224
+msgid "DOCKER_TIMEOUT:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:228
+msgid "DOCKER_TLS:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:232
+msgid "DOCKER_TLS_VERIFY:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:231
+msgid ""
+"Secure the connection to the API by using TLS and verifying the "
+"authenticity of the Docker host server. Default is False"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:236
+msgid "DOCKER_TLS_HOSTNAME:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:235
+msgid ""
+"When verifying the authenticity of the Docker Host server, provide the "
+"expected name of the server. Defaults to localhost."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:239
+msgid "DOCKER_CERT_PATH:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:243
+msgid "DOCKER_SSL_VERSION:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:245
+msgid ""
+"In addition to the connection variables there are a couple variables used"
+" to control the execution and output of the script:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:249
+msgid "DOCKER_CONFIG_FILE"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:249
+msgid "Path to the configuration file. Defaults to ./docker.yml."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:252
+msgid "DOCKER_PRIVATE_SSH_PORT:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:252
+msgid ""
+"The private port (container port) on which SSH is listening for "
+"connections. Defaults to 22."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:256
+msgid "DOCKER_DEFAULT_IP:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:255
+msgid ""
+"The IP address to assign to ansible_host when the container's SSH port is"
+" mapped to interface '0.0.0.0'."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:259
+msgid "Configuration File"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:261
+msgid ""
+"Using a configuration file provides a means for defining a set of Docker "
+"APIs from which to build an inventory."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:263
+msgid ""
+"The default name of the file is derived from the name of the inventory "
+"script. By default the script will look for basename of the script (i.e. "
+"docker) with an extension of '.yml'."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:266
+msgid ""
+"You can also override the default name of the script by defining "
+"DOCKER_CONFIG_FILE in the environment."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:268
+msgid "Here's what you can define in docker_inventory.yml:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:272
+msgid "defaults"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:271
+msgid ""
+"Defines a default connection. Defaults will be taken from this and "
+"applied to any values not provided for a host defined in the hosts list."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:275
+msgid "hosts"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:275
+msgid ""
+"If you wish to get inventory from more than one Docker host, define a "
+"hosts list."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_docker.rst:277
+msgid ""
+"For the default host and each host in the hosts list define the following"
+" attributes:"
+msgstr ""
+

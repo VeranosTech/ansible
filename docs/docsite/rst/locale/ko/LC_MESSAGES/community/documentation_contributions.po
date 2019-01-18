@@ -1,0 +1,358 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/community/documentation_contributions.rst:5
+msgid "Contributing to the Ansible Documentation"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:7
+msgid ""
+"Ansible has a lot of documentation and a small team of writers. Community"
+" support helps us keep up with new features, fixes, and changes."
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:9
+msgid ""
+"Improving the documentation is an easy way to make your first "
+"contribution to the Ansible project. You don't have to be a programmer, "
+"since our documentation is written in YAML (module documentation) or "
+"`reStructuredText <http://docutils.sourceforge.net/rst.html>`_ (rST). If "
+"you're using Ansible, you already use YAML in your playbooks. And rST is "
+"mostly just text. You don't even need git experience, if you use the "
+"``Edit on GitHub`` option."
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:11
+msgid ""
+"If you find a typo, a broken example, a missing topic, or any other error"
+" or omission on this documentation website, let us know. Here are some "
+"ways to support Ansible documentation:"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:17
+msgid "Editing docs directly on GitHub"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:19
+msgid ""
+"For typos and other quick fixes, you can edit the documentation right "
+"from the site. Look at the top right corner of this page. That ``Edit on "
+"GitHub`` link is available on every page in the documentation. If you "
+"have a GitHub account, you can submit a quick and easy pull request this "
+"way."
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:21
+msgid ""
+"To submit a documentation PR from docs.ansible.com with ``Edit on "
+"GitHub``:"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:23
+msgid "Click on ``Edit on GitHub``."
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:24
+msgid ""
+"If you don't already have a fork of the ansible repo on your GitHub "
+"account, you'll be prompted to create one."
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:25
+msgid ""
+"Fix the typo, update the example, or make whatever other change you have "
+"in mind."
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:26
+msgid ""
+"Enter a commit message in the first rectangle under the heading ``Propose"
+" file change`` at the bottom of the GitHub page. The more specific, the "
+"better. For example, \"fixes typo in my_module description\". You can put"
+" more detail in the second rectangle if you like. Leave the ``+label: "
+"docsite_pr`` there."
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:27
+msgid ""
+"Submit the suggested change by clicking on the green \"Propose file "
+"change\" button. GitHub will handle branching and committing for you, and"
+" open a page with the heading \"Comparing Changes\"."
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:28
+msgid "Click on ``Create pull request`` to open the PR template."
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:29
+msgid ""
+"Fill out the PR template, including as much detail as appropriate for "
+"your change. You can change the title of your PR if you like (by default "
+"it's the same as your commit message). In the ``Issue Type`` section, "
+"delete all lines except the ``Docs Pull Request`` line."
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:30
+msgid "Submit your change by clicking on ``Create pull request`` button."
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:31
+msgid ""
+"Be patient while Ansibot, our automated script, adds labels, pings the "
+"docs maintainers, and kicks off a CI testing run."
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:32
+msgid "Keep an eye on your PR - the docs team may ask you for changes."
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:35
+msgid "Reviewing open PRs and issues"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:37
+#, python-format
+msgid ""
+"You can also contribute by reviewing open documentation `issues "
+"<https://github.com/ansible/ansible/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Adocs>`_"
+" and `PRs "
+"<https://github.com/ansible/ansible/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+label%3Adocs>`_."
+" To add a helpful review, please:"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:39
+msgid "Include a comment - \"looks good to me\" only helps if we know why."
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:40
+msgid "For issues, reproduce the problem."
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:41
+msgid "For PRs, test the change."
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:44
+msgid "Opening a new issue and/or PR"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:46
+msgid ""
+"If the problem you've noticed is too complex to fix with the ``Edit on "
+"GitHub`` option, and no open issue or PR already documents the problem, "
+"please open an issue and/or a PR on the ``ansible/ansible`` repo."
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:48
+msgid "A great documentation GitHub issue or PR includes:"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:50
+msgid "a specific title"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:51
+msgid ""
+"a detailed description of the problem (even for a PR - it's hard to "
+"evaluate a suggested change unless we know what problem it's meant to "
+"solve)"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:52
+msgid ""
+"links to other information (related issues/PRs, external documentation, "
+"pages on docs.ansible.com, etc.)"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:55
+msgid "Before you open a complex documentation PR"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:57
+msgid ""
+"If you make multiple changes to the documentation, or add more than a "
+"line to it, before you open a pull request, please:"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:59
+msgid "Check that your text follows our :ref:`style_guide`."
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:60
+msgid "Test your changes for rST errors."
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:61
+msgid "Build the page, and preferably the entire documentation site, locally."
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:63
+msgid ""
+"To work with documentation on your local machine, you need the following "
+"packages installed:"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:80
+msgid ""
+"On macOS with Xcode, you may need to install ``six`` and ``pyparsing`` "
+"with ``--ignore-installed`` to get versions that work wth ``sphinx``."
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:85
+msgid "Testing the documentation locally"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:87
+msgid "To test an individual file for rST errors:"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:94
+msgid "Building the documentation locally"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:96
+msgid ""
+"Building the documentation is the best way to check for errors and review"
+" your changes. Once `rstcheck` runs with no errors, navigate to "
+"``ansible/docs/docsite`` and then build the page(s) you want to review."
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:99
+msgid "Building a single rST page"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:101
+msgid "To build a single rST file with the make utility:"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:107
+#: ../../rst/community/documentation_contributions.rst:160
+msgid "For example:"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:113
+msgid ""
+"This process compiles all the links but provides minimal log output. If "
+"you're writing a new page or want more detailed log output, refer to the "
+"instructions on :ref:`build_with_sphinx-build`"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:117
+msgid ""
+"``make htmlsingle`` adds ``rst/`` to the beginning of the path you "
+"provide in ``rst=``, so you can't type the filename with autocomplete. "
+"Here are the error messages you will see if you get this wrong:"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:119
+msgid ""
+"If you run ``make htmlsingle`` from the ``docs/docsite/rst/`` directory: "
+"``make: *** No rule to make target `htmlsingle'.  Stop.``"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:120
+msgid ""
+"If you run ``make htmlsingle`` from the ``docs/docsite/`` directory with "
+"the full path to your rST document: ``sphinx-build: error: cannot find "
+"files ['rst/rst/community/documentation_contributions.rst']``."
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:124
+msgid "Building all the rST pages"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:126
+msgid "To build all the rST files without any module documentation:"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:133
+msgid "Building module docs and rST pages"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:135
+msgid ""
+"To build documentation for a few modules plus all the rST files, use a "
+"comma-separated list:"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:141
+msgid "To build all the module documentation plus all the rST files:"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:150
+msgid "Building rST files with ``sphinx-build``"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:152
+msgid ""
+"Advanced users can build one or more rST files with the sphinx utility "
+"directly. ``sphinx-build`` returns misleading ``undefined label`` "
+"warnings if you only build a single page, because it does not create "
+"internal links. However, ``sphinx-build`` returns more extensive syntax "
+"feedback, including warnings about indentation errors and ``x-string "
+"without end-string`` warnings. This can be useful, especially if you're "
+"creating a new page from scratch. To build a page or pages with ``sphinx-"
+"build``:"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:158
+msgid ""
+"You can specify filenames, or ``–a`` for all files, or omit both to "
+"compile only new/changed files."
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:167
+msgid "Running the final tests"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:169
+msgid ""
+"When you submit a documentation pull request, automated tests are run. "
+"Those same tests can be run locally. To do so, navigate to the "
+"repository's top directory and run:"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:177
+msgid ""
+"Unfortunately, leftover rST-files from previous document-generating can "
+"occasionally confuse these tests. It is therefore safest to run them on a"
+" clean copy of the repository, which is the purpose of ``make clean``. If"
+" you type these three lines one at a time and manually check the success "
+"of each, you do not need the ``&&``."
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:180
+msgid "Joining the documentation working group"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:182
+msgid ""
+"The Documentation Working Group is just getting started, please visit the"
+" `community repo <https://github.com/ansible/community>`_ for more "
+"information."
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:185
+msgid ""
+":ref:`More about testing module documentation "
+"<testing_module_documentation>` :ref:`More about documenting modules "
+"<module_documenting>`"
+msgstr ""
+

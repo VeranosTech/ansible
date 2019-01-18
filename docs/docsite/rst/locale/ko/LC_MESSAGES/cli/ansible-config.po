@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/cli/ansible-config.rst:5
+msgid "ansible-config"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:8
+msgid ":strong:`View, edit, and manage ansible configuration.`"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:27
+msgid "Description"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:30
+msgid "Config command line class"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:34
+msgid "Common Options"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:41
+msgid ""
+"show program's version number, config file location, configured module "
+"search path, module location, executable location and exit"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:46
+msgid "path to configuration file, defaults to first file found in precedence."
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:51
+msgid "show this help message and exit"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:56
+msgid "verbose mode (-vvv for more, -vvvv to enable connection debugging)"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:64
+msgid "Actions"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:72
+msgid "dump"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:74
+msgid "Shows the current settings, merges ansible.cfg if specified"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:82
+msgid "Only show configurations that have changed from the default"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:92
+msgid "view"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:94
+msgid "Displays the current config file"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:104
+msgid "list"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:106
+msgid ""
+"list all current configs reading lib/constants.py and shows env and "
+"config file setting names"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:115
+msgid "Environment"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:117
+msgid "The following environment variables may be specified."
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:121
+msgid ":envvar:`ANSIBLE_CONFIG` -- Override the default ansible config file"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:123
+msgid "Many more are available for most options in ansible.cfg"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:127
+msgid "Files"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:130
+msgid ":file:`/etc/ansible/ansible.cfg` -- Config file, used if present"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:132
+msgid ""
+":file:`~/.ansible.cfg` -- User config file, overrides the default config "
+"if present"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:135
+msgid "Author"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:137
+msgid "Ansible was originally written by Michael DeHaan."
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:139
+msgid "See the `AUTHORS` file for a complete list of contributors."
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:143
+msgid "Copyright"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:145
+msgid "Copyright © 2017 Red Hat, Inc | Ansible."
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:147
+msgid "Ansible is released under the terms of the GPLv3 License."
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:150
+msgid "See also"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:152
+msgid ""
+":manpage:`ansible(1)`,  :manpage:`ansible-config(1)`,  :manpage:`ansible-"
+"console(1)`,  :manpage:`ansible-doc(1)`,  :manpage:`ansible-galaxy(1)`,  "
+":manpage:`ansible-inventory(1)`,  :manpage:`ansible-playbook(1)`,  "
+":manpage:`ansible-pull(1)`,  :manpage:`ansible-vault(1)`,"
+msgstr ""
+

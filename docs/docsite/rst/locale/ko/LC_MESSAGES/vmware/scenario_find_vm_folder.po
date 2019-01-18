@@ -1,0 +1,218 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:5
+msgid "Find folder path of an existing VMware virtual machine"
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:7
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:10
+msgid "Introduction"
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:12
+msgid ""
+"This guide will show you how to utilize Ansible to find folder path of an"
+" existing VMware virtual machine."
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:15
+msgid "Scenario Requirements"
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:17
+msgid "Software"
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:19
+msgid "Ansible 2.5 or later must be installed."
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:21
+msgid ""
+"The Python module ``Pyvmomi`` must be installed on the Ansible control "
+"node (or Target host if not executing against localhost)."
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:23
+msgid ""
+"We recommend installing the latest version with pip: ``pip install "
+"Pyvmomi`` (as the OS packages are usually out of date and incompatible)."
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:25
+msgid "Hardware"
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:27
+msgid "At least one standalone ESXi server or"
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:29
+msgid "vCenter Server with at least one ESXi server"
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:31
+msgid "Access / Credentials"
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:33
+msgid ""
+"Ansible (or the target server) must have network access to the either "
+"vCenter server or the ESXi server"
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:35
+msgid "Username and Password for vCenter or ESXi server"
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:38
+msgid "Caveats"
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:40
+msgid "All variable names and VMware object names are case sensitive."
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:41
+msgid ""
+"You need to use Python 2.7.9 version in order to use ``validate_certs`` "
+"option, as this version is capable of changing the SSL verification "
+"behaviours."
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:45
+msgid "Example Description"
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:47
+msgid ""
+"With the following Ansible playbook you can find the folder path of an "
+"existing virtual machine using name."
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:74
+msgid ""
+"Since Ansible utilizes the VMware API to perform actions, in this use "
+"case it will be connecting directly to the API from localhost."
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:76
+msgid ""
+"This means that playbooks will not be running from the vCenter or ESXi "
+"Server."
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:78
+msgid ""
+"Note that this play disables the ``gather_facts`` parameter, since you "
+"don't want to collect facts about localhost."
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:80
+msgid ""
+"You can run these modules against another server that would then connect "
+"to the API if localhost does not have access to vCenter. If so, the "
+"required Python modules will need to be installed on that target server. "
+"We recommend installing the latest version with pip: ``pip install "
+"Pyvmomi`` (as the OS packages are usually out of date and incompatible)."
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:82
+msgid "Before you begin, make sure you have:"
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:84
+msgid "Hostname of the ESXi server or vCenter server"
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:85
+msgid "Username and password for the ESXi or vCenter server"
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:86
+msgid ""
+"Name of the existing Virtual Machine for which you want to collect folder"
+" path"
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:88
+msgid ""
+"For now, you will be entering these directly, but in a more advanced "
+"playbook this can be abstracted out and stored in a more secure fashion "
+"using :ref:`ansible-vault` or using `Ansible Tower credentials "
+"<https://docs.ansible.com/ansible-"
+"tower/latest/html/userguide/credentials.html>`_."
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:90
+msgid ""
+"If your vCenter or ESXi server is not setup with proper CA certificates "
+"that can be verified from the Ansible server, then it is necessary to "
+"disable validation of these certificates by using the ``validate_certs`` "
+"parameter. To do this you need to set ``validate_certs=False`` in your "
+"playbook."
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:92
+msgid ""
+"The name of existing virtual machine will be used as input for "
+"``vmware_guest_find`` module via ``name`` parameter."
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:96
+msgid "What to expect"
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:98
+msgid ""
+"Running this playbook can take some time, depending on your environment "
+"and network connectivity. When the run is complete you will see"
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:113
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:115
+msgid "If your playbook fails:"
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:117
+msgid "Check if the values provided for username and password are correct."
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:118
+msgid "Check if the datacenter you provided is available."
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:119
+msgid ""
+"Check if the virtual machine specified exists and you have respective "
+"permissions to access VMware object."
+msgstr ""
+
+#: ../../rst/vmware/scenario_find_vm_folder.rst:120
+msgid "Ensure the full folder path you specified already exists."
+msgstr ""
+

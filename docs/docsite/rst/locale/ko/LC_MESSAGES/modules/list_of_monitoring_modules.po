@@ -1,0 +1,207 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:6
+msgid "Monitoring modules"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:10
+msgid ":ref:`airbrake_deployment_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:11
+msgid ":ref:`bigpanda_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:12
+msgid ":ref:`circonus_annotation_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:13
+msgid ":ref:`datadog_event_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:14
+msgid ":ref:`datadog_monitor_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:15
+msgid ":ref:`grafana_dashboard_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:16
+msgid ":ref:`grafana_datasource_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:17
+msgid ":ref:`grafana_plugin_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:18
+msgid ":ref:`honeybadger_deployment_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:19
+msgid ":ref:`icinga2_feature_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:20
+msgid ":ref:`icinga2_host_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:21
+msgid ":ref:`librato_annotation_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:22
+msgid ":ref:`logentries_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:23
+msgid ":ref:`logicmonitor_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:24
+msgid ":ref:`logicmonitor_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:25
+msgid ":ref:`logstash_plugin_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:26
+msgid ":ref:`monit_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:27
+msgid ":ref:`nagios_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:28
+msgid ":ref:`newrelic_deployment_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:29
+msgid ":ref:`pagerduty_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:30
+msgid ":ref:`pagerduty_alert_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:31
+msgid ":ref:`pingdom_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:32
+msgid ":ref:`rollbar_deployment_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:33
+msgid ":ref:`sensu_check_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:34
+msgid ":ref:`sensu_client_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:35
+msgid ":ref:`sensu_handler_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:36
+msgid ":ref:`sensu_silence_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:37
+msgid ":ref:`sensu_subscription_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:38
+msgid ":ref:`spectrum_device_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:39
+msgid ":ref:`stackdriver_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:40
+msgid ":ref:`statusio_maintenance_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:41
+msgid ":ref:`uptimerobot_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:47
+msgid "Zabbix"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:51
+msgid ":ref:`zabbix_action_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:52
+msgid ":ref:`zabbix_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:53
+msgid ":ref:`zabbix_group_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:54
+msgid ":ref:`zabbix_host_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:55
+msgid ":ref:`zabbix_host_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:56
+msgid ":ref:`zabbix_hostmacro_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:57
+msgid ":ref:`zabbix_maintenance_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:58
+msgid ":ref:`zabbix_map_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:59
+msgid ":ref:`zabbix_proxy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:60
+msgid ":ref:`zabbix_screen_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:61
+msgid ":ref:`zabbix_template_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:65
+msgid ""
+"**(D)**: This marks a module as deprecated, which means a module is kept "
+"for backwards compatibility but usage is discouraged. The module "
+"documentation details page may explain more about this rationale."
+msgstr ""
+

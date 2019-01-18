@@ -1,0 +1,1042 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/user_guide/windows_winrm.rst:2
+msgid "Windows Remote Management"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:3
+msgid ""
+"Unlike Linux/Unix hosts, which use SSH by default, Windows hosts are "
+"configured with WinRM. This topic covers how to configure and use WinRM "
+"with Ansible."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:7
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:10
+msgid "What is WinRM?"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:11
+msgid ""
+"WinRM is a management protocol used by Windows to remotely communicate "
+"with another server. It is a SOAP-based protocol that communicates over "
+"HTTP/HTTPS, and is included in all recent Windows operating systems. "
+"Since Windows Server 2012, WinRM has been enabled by default, but in most"
+" cases extra configuration is required to use WinRM with Ansible."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:17
+msgid ""
+"Ansible uses the `pywinrm <https://github.com/diyan/pywinrm>`_ package to"
+" communicate with Windows servers over WinRM. It is not installed by "
+"default with the Ansible package, but can be installed by running the "
+"following:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:25
+msgid ""
+"on distributions with multiple python versions, use pip2 or pip2.x, where"
+" x matches the python minor version Ansible is running under."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:29
+msgid "Authentication Options"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:30
+msgid ""
+"When connecting to a Windows host, there are several different options "
+"that can be used when authenticating with an account. The authentication "
+"type may be set on inventory hosts or groups with the "
+"``ansible_winrm_transport`` variable."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:34
+msgid "The following matrix is a high level overview of the options:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:37
+msgid "Option"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:37
+msgid "Local Accounts"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:37
+msgid "Active Directory Accounts"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:37
+msgid "Credential Delegation"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:37
+msgid "HTTP Encryption"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:39
+#: ../../rst/user_guide/windows_winrm.rst:51
+msgid "Basic"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:39
+#: ../../rst/user_guide/windows_winrm.rst:41
+#: ../../rst/user_guide/windows_winrm.rst:43
+#: ../../rst/user_guide/windows_winrm.rst:45
+#: ../../rst/user_guide/windows_winrm.rst:47
+msgid "Yes"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:39
+#: ../../rst/user_guide/windows_winrm.rst:41
+#: ../../rst/user_guide/windows_winrm.rst:43
+#: ../../rst/user_guide/windows_winrm.rst:45
+msgid "No"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:41
+#: ../../rst/user_guide/windows_winrm.rst:75
+msgid "Certificate"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:43
+#: ../../rst/user_guide/windows_winrm.rst:269
+msgid "Kerberos"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:45
+#: ../../rst/user_guide/windows_winrm.rst:242
+msgid "NTLM"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:47
+#: ../../rst/user_guide/windows_winrm.rst:446
+msgid "CredSSP"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:52
+msgid ""
+"Basic authentication is one of the simplest authentication options to "
+"use, but is also the most insecure. This is because the username and "
+"password are simply base64 encoded, and if a secure channel is not in use"
+" (eg, HTTPS) then it can be decoded by anyone. Basic authentication can "
+"only be used for local accounts (not domain accounts)."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:57
+msgid "The following example shows host vars configured for basic authentication:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:66
+msgid ""
+"Basic authentication is not enabled by default on a Windows host but can "
+"be enabled by running the following in PowerShell:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:76
+msgid ""
+"Certificate authentication uses certificates as keys similar to SSH key "
+"pairs, but the file format and key generation process is different."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:79
+msgid ""
+"The following example shows host vars configured for certificate "
+"authentication:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:88
+msgid ""
+"Certificate authentication is not enabled by default on a Windows host "
+"but can be enabled by running the following in PowerShell:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:96
+msgid ""
+"Encrypted private keys cannot be used as the urllib3 library that is used"
+" by Ansible for WinRM does not support this functionality."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:100
+msgid "Generate a Certificate"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:101
+msgid ""
+"A certificate must be generated before it can be mapped to a local user. "
+"This can be done using one of the following methods:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:104
+msgid "OpenSSL"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:105
+msgid "PowerShell, using the ``New-SelfSignedCertificate`` cmdlet"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:106
+msgid "Active Directory Certificate Services"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:108
+msgid ""
+"Active Directory Certificate Services is beyond of scope in this "
+"documentation but may be the best option to use when running in a domain "
+"environment. For more information, see the `Active Directory Certificate "
+"Services documentation <https://docs.microsoft.com/en-us/previous-"
+"versions/windows/it-pro/windows-"
+"server-2008-R2-and-2008/cc732625(v=ws.11)>`_."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:112
+msgid ""
+"Using the PowerShell cmdlet ``New-SelfSignedCertificate`` to generate a "
+"certificate for authentication only works when being generated from a "
+"Windows 10 or Windows Server 2012 R2 host or later. OpenSSL is still "
+"required to extract the private key from the PFX certificate to a PEM "
+"file for Ansible to use."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:118
+msgid "To generate a certificate with ``OpenSSL``:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:138
+msgid "To generate a certificate with ``New-SelfSignedCertificate``:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:166
+msgid ""
+"To convert the PFX file to a private key that pywinrm can use, run the "
+"following command with OpenSSL ``openssl pkcs12 -in cert.pfx -nocerts "
+"-nodes -out cert_key.pem -passin pass: -passout pass:``"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:171
+msgid "Import a Certificate to the Certificate Store"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:172
+msgid ""
+"Once a certificate has been generated, the issuing certificate needs to "
+"be imported into the ``Trusted Root Certificate Authorities`` of the "
+"``LocalMachine`` store, and the client certificate public key must be "
+"present in the ``Trusted People`` folder of the ``LocalMachine`` store. "
+"For this example, both the issuing certificate and public key are the "
+"same."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:178
+msgid "Following example shows how to import the issuing certificate:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:193
+msgid ""
+"If using ADCS to generate the certificate, then the issuing certificate "
+"will already be imported and this step can be skipped."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:196
+msgid "The code to import the client certificate public key is:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:212
+msgid "Mapping a Certificate to an Account"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:213
+msgid ""
+"Once the certificate has been imported, it needs to be mapped to the "
+"local user account."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:215
+msgid "This can be done with the following PowerShell command:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:237
+msgid ""
+"Once this is complete, the hostvar ``ansible_winrm_cert_pem`` should be "
+"set to the path of the public key and the ``ansible_winrm_cert_key_pem`` "
+"variable should be set to the path of the private key."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:243
+msgid ""
+"NTLM is an older authentication mechanism used by Microsoft that can "
+"support both local and domain accounts. NTLM is enabled by default on the"
+" WinRM service, so no setup is required before using it."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:247
+msgid ""
+"NTLM is the easiest authentication protocol to use and is more secure "
+"than ``Basic`` authentication. If running in a domain environment, "
+"``Kerberos`` should be used instead of NTLM."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:251
+msgid "Kerberos has several advantages over using NTLM:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:253
+msgid "NTLM is an older protocol and does not support newer encryption protocols."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:255
+msgid ""
+"NTLM is slower to authenticate because it requires more round trips to "
+"the host in the authentication stage."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:257
+msgid "Unlike Kerberos, NTLM does not allow credential delegation."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:259
+msgid "This example shows host variables configured to use NTLM authentication:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:270
+msgid ""
+"Kerberos is the recommended authentication option to use when running in "
+"a domain environment. Kerberos supports features like credential "
+"delegation and message encryption over HTTP and is one of the more secure"
+" options that is available through WinRM."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:275
+msgid ""
+"Kerberos requires some additional setup work on the Ansible host before "
+"it can be used properly."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:278
+msgid ""
+"The following example shows host vars configured for Kerberos "
+"authentication:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:287
+msgid ""
+"As of Ansible version 2.3, the Kerberos ticket will be created based on "
+"``ansible_user`` and ``ansible_password``. If running on an older version"
+" of Ansible or when ``ansible_winrm_kinit_mode`` is ``manual``, a "
+"Kerberos ticket must already be obtained. See below for more details."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:292
+msgid "There are some extra host variables that can be set::"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:301
+msgid "Installing the Kerberos Library"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:302
+msgid ""
+"Some system dependencies that must be installed prior to using Kerberos. "
+"The script below lists the dependencies based on the distro:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:328
+msgid ""
+"Once the dependencies have been installed, the ``python-kerberos`` "
+"wrapper can be install using ``pip``:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:337
+msgid "Configuring Host Kerberos"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:338
+msgid ""
+"Once the dependencies have been installed, Kerberos needs to be "
+"configured so that it can communicate with a domain. This configuration "
+"is done through the ``/etc/krb5.conf`` file, which is installed with the "
+"packages in the script above."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:342
+msgid "To configure Kerberos, in the section that starts with:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:348
+msgid ""
+"Add the full domain name and the fully qualified domain names of the "
+"primary and secondary Active Directory domain controllers. It should look"
+" something like this:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:360
+msgid "In the section that starts with:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:366
+msgid ""
+"Add a line like the following for each domain that Ansible needs access "
+"for:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:373
+msgid ""
+"You can configure other settings in this file such as the default domain."
+" See `krb5.conf "
+"<https://web.mit.edu/kerberos/krb5-1.12/doc/admin/conf_files/krb5_conf.html>`_"
+" for more details."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:378
+msgid "Automatic Kerberos Ticket Management"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:379
+msgid ""
+"Ansible version 2.3 and later defaults to automatically managing Kerberos"
+" tickets when both ``ansible_user`` and ``ansible_password`` are "
+"specified for a host. In this process, a new ticket is created in a "
+"temporary credential cache for each host. This is done before each task "
+"executes to minimize the chance of ticket expiration. The temporary "
+"credential caches are deleted after each task completes and will not "
+"interfere with the default credential cache."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:386
+msgid ""
+"To disable automatic ticket management, set "
+"``ansible_winrm_kinit_mode=manual`` via the inventory."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:389
+msgid ""
+"Automatic ticket management requires a standard ``kinit`` binary on the "
+"control host system path. To specify a different location or binary name,"
+" set the ``ansible_winrm_kinit_cmd`` hostvar to the fully qualified path "
+"to a MIT krbv5 ``kinit``-compatible binary."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:395
+msgid "Manual Kerberos Ticket Management"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:396
+msgid ""
+"To manually manage Kerberos tickets, the ``kinit`` binary is used. To "
+"obtain a new ticket the following command is used:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:403
+msgid ""
+"The domain must match the configured Kerberos realm exactly, and must be "
+"in upper case."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:405
+msgid ""
+"To see what tickets (if any) have been acquired, use the following "
+"command:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:411
+msgid ""
+"To destroy all the tickets that have been acquired, use the following "
+"command:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:418
+msgid "Troubleshooting Kerberos"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:419
+msgid ""
+"Kerberos is reliant on a properly-configured environment to work. To "
+"troubleshoot Kerberos issues, ensure that:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:422
+msgid "The hostname set for the Windows host is the FQDN and not an IP address."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:424
+msgid ""
+"The forward and reverse DNS lookups are working properly in the domain. "
+"To test this, ping the windows host by name and then use the ip address "
+"returned with ``nslookup``. The same name should be returned when using "
+"``nslookup`` on the IP address."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:429
+msgid ""
+"The Ansible host's clock is synchronized with the domain controller. "
+"Kerberos is time sensitive, and a little clock drift can cause the ticket"
+" generation process to fail."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:433
+msgid ""
+"Ensure that the fully qualified domain name for the domain is configured "
+"in the ``krb5.conf`` file. To check this, run::"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:439
+msgid ""
+"If the domain name returned by ``klist`` is different from the one "
+"requested, an alias is being used. The ``krb5.conf`` file needs to be "
+"updated so that the fully qualified domain name is used and not an alias."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:443
+msgid ""
+"If the default kerberos tooling has been replaced or modified (some IdM "
+"solutions may do this), this may cause issues when installing or "
+"upgrading the Python Kerberos library. As of the time of this writing, "
+"this library is called ``pykerberos`` and is known to work with both MIT "
+"and Heimdal Kerberos libraries. To resolve ``pykerberos`` installation "
+"issues, ensure the system dependencies for Kerberos have been met (see: "
+"`Installing the Kerberos Library`_), remove any custom Kerberos tooling "
+"paths from the PATH environment variable, and retry the installation of "
+"Python Kerberos library package."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:447
+msgid ""
+"CredSSP authentication is a newer authentication protocol that allows "
+"credential delegation. This is achieved by encrypting the username and "
+"password after authentication has succeeded and sending that to the "
+"server using the CredSSP protocol."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:452
+msgid ""
+"Because the username and password are sent to the server to be used for "
+"double hop authentication, ensure that the hosts that the Windows host "
+"communicates with are not compromised and are trusted."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:456
+msgid ""
+"CredSSP can be used for both local and domain accounts and also supports "
+"message encryption over HTTP."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:459
+msgid "To use CredSSP authentication, the host vars are configured like so:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:468
+msgid "There are some extra host variables that can be set as shown below::"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:472
+msgid ""
+"CredSSP authentication is not enabled by default on a Windows host, but "
+"can be enabled by running the following in PowerShell:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:480
+msgid "Installing CredSSP Library"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:482
+msgid "The ``requests-credssp`` wrapper can be installed using ``pip``:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:489
+msgid "CredSSP and TLS 1.2"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:490
+msgid ""
+"By default the ``requests-credssp`` library is configured to authenticate"
+" over the TLS 1.2 protocol. TLS 1.2 is installed and enabled by default "
+"for Windows Server 2012 and Windows 8 and more recent releases."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:494
+msgid "There are two ways that older hosts can be used with CredSSP:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:496
+msgid ""
+"Install and enable a hotfix to enable TLS 1.2 support (recommended for "
+"Server 2008 R2 and Windows 7)."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:499
+msgid ""
+"Set ``ansible_winrm_credssp_disable_tlsv1_2=True`` in the inventory to "
+"run over TLS 1.0. This is the only option when connecting to Windows "
+"Server 2008, which has no way of supporting TLS 1.2"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:503
+msgid ""
+"To enable TLS 1.2 support on Server 2008 R2 and Windows 7, the optional "
+"update `KB3080079 <https://support.microsoft.com/en-us/help/3080079"
+"/update-to-add-rds-support-for-tls-1-1-and-tls-1-2-in-windows-7-or-"
+"wind>`_ needs to be installed."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:507
+msgid ""
+"Once the update has been applied and the Windows host rebooted, run the "
+"following PowerShell commands to enable TLS 1.2:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:523
+msgid "Set CredSSP Certificate"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:524
+msgid ""
+"CredSSP works by encrypting the credentials through the TLS protocol and "
+"uses a self-signed certificate by default. The ``CertificateThumbprint`` "
+"option under the WinRM service configuration can be used to specify the "
+"thumbprint of another certificate."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:527
+msgid ""
+"This certificate configuration is independent of the WinRM listener "
+"certificate. With CredSSP, message transport still occurs over the WinRM "
+"listener, but the TLS-encrypted messages inside the channel use the "
+"service-level certificate."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:531
+msgid "To explicitly set the certificate to use for CredSSP:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:544
+msgid "Non-Administrator Accounts"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:545
+msgid ""
+"WinRM is configured by default to only allow connections from accounts in"
+" the local ``Administrators`` group. This can be changed by running:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:552
+msgid ""
+"This will display an ACL editor, where new users or groups may be added. "
+"To run commands over WinRM, users and groups must have at least the "
+"``Read`` and ``Execute`` permissions enabled."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:556
+msgid ""
+"While non-administrative accounts can be used with WinRM, most typical "
+"server administration tasks require some level of administrative access, "
+"so the utility is usually limited."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:560
+msgid "WinRM Encryption"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:561
+msgid ""
+"By default WinRM will fail to work when running over an unencrypted "
+"channel. The WinRM protocol considers the channel to be encrypted if "
+"using TLS over HTTP (HTTPS) or using message level encryption. Using "
+"WinRM with TLS is the recommended option as it works with all "
+"authentication options, but requires a certificate to be created and used"
+" on the WinRM listener."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:567
+msgid ""
+"The ``ConfigureRemotingForAnsible.ps1`` creates a self-signed certificate"
+" and creates the listener with that certificate. If in a domain "
+"environment, ADCS can also create a certificate for the host that is "
+"issued by the domain itself."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:571
+msgid ""
+"If using HTTPS is not an option, then HTTP can be used when the "
+"authentication option is ``NTLM``, ``Kerberos`` or ``CredSSP``. These "
+"protocols will encrypt the WinRM payload with their own encryption method"
+" before sending it to the server. The message-level encryption is not "
+"used when running over HTTPS because the encryption uses the more secure "
+"TLS protocol instead. If both transport and message encryption is "
+"required, set ``ansible_winrm_message_encryption=always`` in the host "
+"vars."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:579
+msgid ""
+"A last resort is to disable the encryption requirement on the Windows "
+"host. This should only be used for development and debugging purposes, as"
+" anything sent from Ansible can be viewed, manipulated and also the "
+"remote session can completely be taken over by anyone on the same "
+"network. To disable the encryption requirement, run the following from "
+"PowerShell on the target host:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:590
+msgid ""
+"Do not disable the encryption check unless it is absolutely required. "
+"Doing so could allow sensitive information like credentials and files to "
+"be intercepted by others on the network."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:595
+msgid "Inventory Options"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:596
+msgid ""
+"Ansible's Windows support relies on a few standard variables to indicate "
+"the username, password, and connection type of the remote hosts. These "
+"variables are most easily set up in the inventory, but can be set on the "
+"``host_vars``/ ``group_vars`` level."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:601
+msgid "When setting up the inventory, the following variables are required:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:616
+msgid ""
+"Using the variables above, Ansible will connect to the Windows host with "
+"Basic authentication through HTTPS. If ``ansible_user`` has a UPN value "
+"like ``username@MY.DOMAIN.COM`` then the authentication option will "
+"automatically attempt to use Kerberos unless ``ansible_winrm_transport`` "
+"has been set to something other than ``kerberos``."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:622
+msgid ""
+"The following custom inventory variables are also supported for "
+"additional configuration of WinRM connections:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:625
+msgid ""
+"``ansible_port``: The port WinRM will run over, HTTPS is ``5986`` which "
+"is the default while HTTP is ``5985``"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:628
+msgid ""
+"``ansible_winrm_scheme``: Specify the connection scheme (``http`` or "
+"``https``) to use for the WinRM connection. Ansible uses ``https`` by "
+"default unless ``ansible_port`` is ``5985``"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:632
+msgid ""
+"``ansible_winrm_path``: Specify an alternate path to the WinRM endpoint, "
+"Ansible uses ``/wsman`` by default"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:635
+msgid ""
+"``ansible_winrm_realm``: Specify the realm to use for Kerberos "
+"authentication. If ``ansible_user`` contains ``@``, Ansible will use the "
+"part of the username after ``@`` by default"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:639
+msgid ""
+"``ansible_winrm_transport``: Specify one or more authentication transport"
+" options as a comma-separated list. By default, Ansible will use "
+"``kerberos, basic`` if the ``kerberos`` module is installed and a realm "
+"is defined, otherwise it will be ``plaintext``"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:644
+msgid ""
+"``ansible_winrm_server_cert_validation``: Specify the server certificate "
+"validation mode (``ignore`` or ``validate``). Ansible defaults to "
+"``validate`` on Python 2.7.9 and higher, which will result in certificate"
+" validation errors against the Windows self-signed certificates. Unless "
+"verifiable certificates have been configured on the WinRM listeners, this"
+" should be set to ``ignore``"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:651
+msgid ""
+"``ansible_winrm_operation_timeout_sec``: Increase the default timeout for"
+" WinRM operations, Ansible uses ``20`` by default"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:654
+msgid ""
+"``ansible_winrm_read_timeout_sec``: Increase the WinRM read timeout, "
+"Ansible uses ``30`` by default. Useful if there are intermittent network "
+"issues and read timeout errors keep occurring"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:658
+msgid ""
+"``ansible_winrm_message_encryption``: Specify the message encryption "
+"operation (``auto``, ``always``, ``never``) to use, Ansible uses ``auto``"
+" by default. ``auto`` means message encryption is only used when "
+"``ansible_winrm_scheme`` is ``http`` and ``ansible_winrm_transport`` "
+"supports message encryption. ``always`` means message encryption will "
+"always be used and ``never`` means message encryption will never be used"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:665
+msgid ""
+"``ansible_winrm_ca_trust_path``: Used to specify a different cacert "
+"container than the one used in the ``certifi`` module. See the HTTPS "
+"Certificate Validation section for more details."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:669
+msgid ""
+"``ansible_winrm_send_cbt``: When using ``ntlm`` or ``kerberos`` over "
+"HTTPS, the authentication library will try to send channel binding tokens"
+" to mitigate against man in the middle attacks. This flag controls "
+"whether these bindings will be sent or not (default: ``yes``)."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:674
+msgid ""
+"``ansible_winrm_*``: Any additional keyword arguments supported by "
+"``winrm.Protocol`` may be provided in place of ``*``"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:677
+msgid ""
+"In addition, there are also specific variables that need to be set for "
+"each authentication option. See the section on authentication above for "
+"more information."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:680
+msgid ""
+"Ansible 2.0 has deprecated the \"ssh\" from ``ansible_ssh_user``, "
+"``ansible_ssh_pass``, ``ansible_ssh_host``, and ``ansible_ssh_port`` to "
+"become ``ansible_user``, ``ansible_password``, ``ansible_host``, and "
+"``ansible_port``. If using a version of Ansible prior to 2.0, the older "
+"style (``ansible_ssh_*``) should be used instead. The shorter variables "
+"are ignored, without warning, in older versions of Ansible."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:687
+msgid ""
+"``ansible_winrm_message_encryption`` is different from transport "
+"encryption done over TLS. The WinRM payload is still encrypted with TLS "
+"when run over HTTPS, even if ``ansible_winrm_message_encryption=never``."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:692
+msgid "IPv6 Addresses"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:693
+msgid ""
+"IPv6 addresses can be used instead of IPv4 addresses or hostnames. This "
+"option is normally set in an inventory. Ansible will attempt to parse the"
+" address using the `ipaddress "
+"<https://docs.python.org/3/library/ipaddress.html>`_ package and pass to "
+"pywinrm correctly."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:698
+msgid ""
+"When defining a host using an IPv6 address, just add the IPv6 address as "
+"you would an IPv4 address or hostname:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:712
+msgid ""
+"The ipaddress library is only included by default in Python 3.x. To use "
+"IPv6 addresses in Python 2.7, make sure to run ``pip install ipaddress`` "
+"which installs a backported package."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:717
+msgid "HTTPS Certificate Validation"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:718
+msgid ""
+"As part of the TLS protocol, the certificate is validated to ensure the "
+"host matches the subject and the client trusts the issuer of the server "
+"certificate. When using a self-signed certificate or setting "
+"``ansible_winrm_server_cert_validation: ignore`` these security "
+"mechanisms are bypassed. While self signed certificates will always need "
+"the ``ignore`` flag, certificates that have been issued from a "
+"certificate authority can still be validated."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:726
+msgid ""
+"One of the more common ways of setting up a HTTPS listener in a domain "
+"environment is to use Active Directory Certificate Service (AD CS). AD CS"
+" is used to generate signed certificates from a Certificate Signing "
+"Request (CSR). If the WinRM HTTPS listener is using a certificate that "
+"has been signed by another authority, like AD CS, then Ansible can be set"
+" up to trust that issuer as part of the TLS handshake."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:733
+msgid ""
+"To get Ansible to trust a Certificate Authority (CA) like AD CS, the "
+"issuer certificate of the CA can be exported as a PEM encoded "
+"certificate. This certificate can then be copied locally to the Ansible "
+"controller and used as a source of certificate validation, otherwise "
+"known as a CA chain."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:738
+msgid ""
+"The CA chain can contain a single or multiple issuer certificates and "
+"each entry is contained on a new line. To then use the custom CA chain as"
+" part of the validation process, set ``ansible_winrm_ca_trust_path`` to "
+"the path of the file. If this variable is not set, the default CA chain "
+"is used instead which is located in the install path of the Python "
+"package `certifi <https://github.com/certifi/python-certifi>`_."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:745
+msgid ""
+"Each HTTP call is done by the Python requests library which does not use "
+"the systems built-in certificate store as a trust authority. Certificate "
+"validation will fail if the server's certificate issuer is only added to "
+"the system's truststore."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:751
+msgid "Limitations"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:752
+msgid ""
+"Due to the design of the WinRM protocol , there are a few limitations "
+"when using WinRM that can cause issues when creating playbooks for "
+"Ansible. These include:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:756
+msgid ""
+"Credentials are not delegated for most authentication types, which causes"
+" authentication errors when accessing network resources or installing "
+"certain programs."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:760
+msgid "Many calls to the Windows Update API are blocked when running over WinRM."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:762
+msgid ""
+"Some programs fail to install with WinRM due to no credential delegation "
+"or because they access forbidden Windows API like WUA over WinRM."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:765
+msgid ""
+"Commands under WinRM are done under a non-interactive session, which can "
+"prevent certain commands or executables from running."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:768
+msgid ""
+"You cannot run a process that interacts with ``DPAPI``, which is used by "
+"some installers (like Microsoft SQL Server)."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:771
+msgid "Some of these limitations can be mitigated by doing one of the following:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:773
+msgid ""
+"Set ``ansible_winrm_transport`` to ``credssp`` or ``kerberos`` (with "
+"``ansible_winrm_kerberos_delegation=true``) to bypass the double hop "
+"issue and access network resources"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:777
+msgid ""
+"Use ``become`` to bypass all WinRM restrictions and run a command as it "
+"would locally. Unlike using an authentication transport like ``credssp``,"
+" this will also remove the non-interactive restriction and API "
+"restrictions like WUA and DPAPI"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:782
+msgid ""
+"Use a scheduled task to run a command which can be created with the "
+"``win_scheduled_task`` module. Like ``become``, this bypasses all WinRM "
+"restrictions but can only run a command and not modules."
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:789
+msgid ":doc:`index`"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:790
+msgid "The documentation index"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:791
+msgid ":doc:`playbooks`"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:792
+msgid "An introduction to playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:793
+msgid ":doc:`playbooks_best_practices`"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:794
+msgid "Best practices advice"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:795
+msgid ":ref:`List of Windows Modules <windows_modules>`"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:796
+msgid "Windows specific module list, all implemented in PowerShell"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:797
+msgid "`User Mailing List <https://groups.google.com/group/ansible-project>`_"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:798
+msgid "Have a question?  Stop by the google group!"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:799
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/user_guide/windows_winrm.rst:800
+msgid "#ansible IRC chat channel"
+msgstr ""
+

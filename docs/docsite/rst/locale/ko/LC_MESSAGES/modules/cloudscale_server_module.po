@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/cloudscale_server_module.rst:9
+msgid "cloudscale_server -- Manages servers on the cloudscale.ch IaaS service"
+msgstr ""
+
+#: ../../rst/modules/cloudscale_server_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/cloudscale_server_module.rst:20
+msgid "Create, start, stop and delete servers on the cloudscale.ch IaaS service."
+msgstr ""
+
+#: ../../rst/modules/cloudscale_server_module.rst:21
+msgid "All operations are performed using the cloudscale.ch public API v1."
+msgstr ""
+
+#: ../../rst/modules/cloudscale_server_module.rst:22
+msgid ""
+"For details consult the full API documentation: "
+"https://www.cloudscale.ch/en/api/v1."
+msgstr ""
+
+#: ../../rst/modules/cloudscale_server_module.rst:23
+msgid ""
+"A valid API token is required for all operations. You can create as many "
+"tokens as you like using the cloudscale.ch control panel at "
+"https://control.cloudscale.ch."
+msgstr ""
+
+#: ../../rst/modules/cloudscale_server_module.rst:29
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/cloudscale_server_module.rst:263
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/cloudscale_server_module.rst:266
+msgid ""
+"Instead of the api_token parameter the CLOUDSCALE_API_TOKEN environment "
+"variable can be used."
+msgstr ""
+
+#: ../../rst/modules/cloudscale_server_module.rst:267
+msgid ""
+"To create a new server at least the ``name``, ``ssh_key``, ``image`` and "
+"``flavor`` options are required."
+msgstr ""
+
+#: ../../rst/modules/cloudscale_server_module.rst:268
+msgid ""
+"If more than one server with the name given by the ``name`` option "
+"exists, execution is aborted."
+msgstr ""
+
+#: ../../rst/modules/cloudscale_server_module.rst:269
+msgid ""
+"Once a server is created all parameters except ``state`` are read-only. "
+"You can't change the name, flavor or any other property. This is a "
+"limitation of the cloudscale.ch API. The module will silently ignore "
+"differences between the configured parameters and the running server if a"
+" server with the correct name or UUID exists. Only state changes will be "
+"applied."
+msgstr ""
+
+#: ../../rst/modules/cloudscale_server_module.rst:274
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/cloudscale_server_module.rst:333
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/cloudscale_server_module.rst:334
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/cloudscale_server_module.rst:490
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/cloudscale_server_module.rst:495
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/cloudscale_server_module.rst:498
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/cloudscale_server_module.rst:505
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/cloudscale_server_module.rst:507
+msgid "Gaudenz Steinlin (@gaudenz) <gaudenz.steinlin@cloudscale.ch>"
+msgstr ""
+
+#: ../../rst/modules/cloudscale_server_module.rst:511
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/cloudscale/cloudscale_server.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

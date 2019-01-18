@@ -1,0 +1,448 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:2
+msgid "Sanity Tests » integration-aliases"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:4
+msgid ""
+"Integration tests are executed by ``ansible-test`` and reside in "
+"directories under ``test/integration/targets/``. Each test MUST have an "
+"``aliases`` file to control test execution."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:7
+msgid ""
+"Aliases are explained in the following sections. Each alias must be on a "
+"separate line in an ``aliases`` file."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:10
+msgid "Groups"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:12
+msgid ""
+"Tests must be configured to run in exactly one group. This is done by "
+"adding the appropriate group to the ``aliases`` file."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:14
+msgid "The following are examples of some of the available groups:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:16
+msgid "``shippable/posix/group1``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:17
+msgid "``shippable/windows/group2``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:18
+msgid "``shippable/azure/group3``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:19
+msgid "``shippable/aws/group1``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:20
+msgid "``shippable/cloud/group1``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:22
+msgid ""
+"Groups are used to balance tests across multiple CI jobs to minimize test"
+" run time. They also improve efficiency by keeping tests with similar "
+"requirements running together."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:25
+msgid ""
+"When selecting a group for a new test, use the same group as existing "
+"tests similar to the one being added. If more than one group is "
+"available, select one randomly."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:29
+msgid "Setup"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:31
+msgid "Aliases can be used to execute setup targets before running tests:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:33
+msgid ""
+"``setup/once/TARGET`` - Run the target ``TARGET`` before the first target"
+" that requires it."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:34
+msgid ""
+"``setup/always/TARGET`` - Run the target ``TARGET`` before each target "
+"that requires it."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:37
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:39
+msgid "Aliases can be used to express some test requirements:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:41
+msgid ""
+"``needs/privileged`` - Requires ``--docker-privileged`` when running "
+"tests with ``--docker``."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:42
+msgid "``needs/root`` - Requires running tests as ``root`` or with ``--docker``."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:43
+msgid ""
+"``needs/ssh`` - Requires SSH connections to localhost (or the test "
+"container with ``--docker``) without a password."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:44
+msgid ""
+"``needs/httptester`` - Requires use of the http-test-container to run "
+"tests."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:47
+msgid "Dependencies"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:49
+msgid "Some test dependencies are automatically discovered:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:51
+msgid "Ansible role dependencies defined in ``meta/main.yml`` files."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:52
+msgid "Setup targets defined with ``setup/*`` aliases."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:53
+msgid "Symbolic links from one target to a file in another target."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:55
+msgid ""
+"Aliases can be used to declare dependencies that are not handled "
+"automatically:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:57
+msgid "``needs/target/TARGET`` - Requires use of the test target ``TARGET``."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:58
+msgid ""
+"``needs/file/PATH`` - Requires use of the file ``PATH`` relative to the "
+"git root."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:61
+msgid "Skipping"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:63
+msgid "Aliases can be used to skip platforms using one of the following:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:65
+msgid "``skip/freebsd`` - Skip tests on FreeBSD."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:66
+msgid "``skip/osx`` - Skip tests on macOS."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:67
+msgid "``skip/rhel`` - Skip tests on RHEL."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:68
+msgid "``skip/docker`` - Skip tests when running in a Docker container."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:70
+msgid ""
+"Platform versions, as specified using the ``--remote`` option with ``/`` "
+"removed, can also be skipped:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:72
+msgid "``skip/freebsd11.1`` - Skip tests on FreeBSD 11.1."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:73
+msgid "``skip/rhel7.6`` - Skip tests on RHEL 7.6."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:75
+msgid ""
+"Aliases can be used to skip Python major versions using one of the "
+"following:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:77
+msgid "``skip/python2`` - Skip tests on Python 2.x."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:78
+msgid "``skip/python3`` - Skip tests on Python 3.x."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:80
+msgid ""
+"For more fine grained skipping, use conditionals in integration test "
+"playbooks, such as:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:88
+msgid "Miscellaneous"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:90
+msgid "There are several other aliases available as well:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:92
+msgid ""
+"``destructive`` - Requires ``--allow-destructive`` to run without "
+"``--docker`` or ``--remote``."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:93
+msgid ""
+"``hidden`` - Target is ignored. Usable as a dependency. Automatic for "
+"``setup_`` and ``prepare_`` prefixed targets."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:96
+msgid "Unstable"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:98
+msgid ""
+"Tests which fail sometimes should be marked with the ``unstable`` alias "
+"until the instability has been fixed. These tests will continue to run "
+"for pull requests which modify the test or the module under test."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:101
+msgid ""
+"This avoids unnecessary test failures for other pull requests, as well as"
+" tests on merge runs and nightly CI jobs."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:103
+msgid "There are two ways to run unstable tests manually:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:105
+msgid "Use the ``--allow-unstable`` option for ``ansible-test``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:106
+msgid ""
+"Prefix the test name with ``unstable/`` when passing it to ``ansible-"
+"test``."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:108
+msgid ""
+"Tests will be marked as unstable by a member of the Ansible Core Team. "
+"GitHub issues_ will be created to track each unstable test."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:112
+msgid "Disabled"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:114
+msgid ""
+"Tests which always fail should be marked with the ``disabled`` alias "
+"until they can be fixed."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:116
+msgid "Disabled tests are automatically skipped."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:118
+msgid "There are two ways to run disabled tests manually:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:120
+msgid "Use the ``--allow-disabled`` option for ``ansible-test``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:121
+msgid ""
+"Prefix the test name with ``disabled/`` when passing it to ``ansible-"
+"test``."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:123
+msgid ""
+"Tests will be marked as disabled by a member of the Ansible Core Team. "
+"GitHub issues_ will be created to track each disabled test."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:127
+msgid "Unsupported"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:129
+msgid ""
+"Tests which cannot be run in CI should be marked with the ``unsupported``"
+" alias. Most tests can be supported through the use of simulators and/or "
+"cloud plugins."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:132
+msgid ""
+"However, if that is not possible then marking a test as unsupported will "
+"prevent it from running in CI."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:134
+msgid "There are two ways to run unsupported tests manually:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:136
+msgid "Use the ``--allow-unsupported`` option for ``ansible-test``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:137
+msgid ""
+"Prefix the test name with ``unsupported/`` when passing it to ``ansible-"
+"test``."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:139
+msgid "Tests will be marked as unsupported by the contributor of the test."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:142
+msgid "Cloud"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:144
+msgid ""
+"Tests for cloud services and other modules that require access to "
+"external APIs usually require special support for testing in CI."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:146
+msgid "These require an additional alias to indicate the required test plugin."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:148
+msgid "Some of the available aliases are:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:150
+msgid "``cloud/aws``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:151
+msgid "``cloud/azure``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:152
+msgid "``cloud/cs``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:153
+msgid "``cloud/foreman``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:154
+msgid "``cloud/openshift``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:155
+msgid "``cloud/tower``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:156
+msgid "``cloud/vcenter``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:159
+msgid "Untested"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:161
+msgid ""
+"Every module and plugin should have integration tests, even if the tests "
+"cannot be run in CI."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:164
+msgid "Issues"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:166
+msgid ""
+"Tests that are marked as unstable_ or disabled_ will have an issue "
+"created to track the status of the test. Each issue will be assigned to "
+"one of the following projects:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:169
+msgid "`AWS <https://github.com/ansible/ansible/projects/21>`_"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:170
+msgid "`Azure <https://github.com/ansible/ansible/projects/22>`_"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:171
+msgid "`Windows <https://github.com/ansible/ansible/projects/23>`_"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:172
+msgid "`General <https://github.com/ansible/ansible/projects/25>`_"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:175
+msgid "Questions"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:177
+msgid ""
+"For questions about integration tests reach out to @mattclay or @gundalow"
+" on GitHub or ``#ansible-devel`` on IRC."
+msgstr ""
+

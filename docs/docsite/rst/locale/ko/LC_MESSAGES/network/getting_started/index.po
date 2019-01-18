@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/network/getting_started/index.rst:5
+msgid "Getting Started with Ansible for Network Automation"
+msgstr ""
+
+#: ../../rst/network/getting_started/index.rst:7
+msgid ""
+"Ansible modules support a wide range of vendors, device types, and "
+"actions, so you can manage your entire network with a single automation "
+"tool. With Ansible, you can:"
+msgstr ""
+
+#: ../../rst/network/getting_started/index.rst:9
+msgid ""
+"Automate repetitive tasks to speed routine network changes and free up "
+"your time for more strategic work"
+msgstr ""
+
+#: ../../rst/network/getting_started/index.rst:10
+msgid ""
+"Leverage the same simple, powerful, and agentless automation tool for "
+"network tasks that operations and development use"
+msgstr ""
+
+#: ../../rst/network/getting_started/index.rst:11
+msgid ""
+"Separate the data model (in a playbook or role) from the execution layer "
+"(via Ansible modules) to manage heterogeneous network devices"
+msgstr ""
+
+#: ../../rst/network/getting_started/index.rst:12
+msgid ""
+"Benefit from community and vendor-generated sample playbooks and roles to"
+" help accelerate network automation projects"
+msgstr ""
+
+#: ../../rst/network/getting_started/index.rst:13
+msgid "Communicate securely with network hardware over SSH or HTTPS"
+msgstr ""
+
+#: ../../rst/network/getting_started/index.rst:15
+msgid "**Who should use this guide?**"
+msgstr ""
+
+#: ../../rst/network/getting_started/index.rst:17
+msgid ""
+"This guide is intended for network engineers using Ansible for the first "
+"time. If you understand networks but have never used Ansible, work "
+"through the guide from start to finish."
+msgstr ""
+
+#: ../../rst/network/getting_started/index.rst:19
+msgid ""
+"This guide is also useful for experienced Ansible users automating "
+"network tasks for the first time. You can use Ansible commands, playbooks"
+" and modules to configure hubs, switches, routers, bridges and other "
+"network devices. But network modules are different from Linux/Unix and "
+"Windows modules, and you must understand some network-specific concepts "
+"to succeed. If you understand Ansible but have never automated a network "
+"task, start with the second section."
+msgstr ""
+
+#: ../../rst/network/getting_started/index.rst:21
+msgid ""
+"This guide introduces basic Ansible concepts and guides you through your "
+"first Ansible commands, playbooks and inventory entries."
+msgstr ""
+
+#: ../../rst/network/getting_started/index.rst:23
+msgid "Getting Started Guide"
+msgstr ""
+

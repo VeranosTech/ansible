@@ -1,0 +1,679 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/community/development_process.rst:5
+msgid "The Ansible Development Cycle"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:7
+msgid ""
+"The Ansible development cycle happens on two levels. At a macro level, "
+"the team plans releases and tracks progress with roadmaps and projects. "
+"At a micro level, each PR has its own lifecycle."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:13
+msgid "Macro development: roadmaps, releases, and projects"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:15
+msgid ""
+"If you want to follow the conversation about what features will be added "
+"to Ansible for upcoming releases and what bugs are being fixed, you can "
+"watch these resources:"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:17
+msgid "the :ref:`roadmaps`"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:18
+msgid "the :ref:`Ansible Release Schedule <release_and_maintenance>`"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:19
+msgid ""
+"various GitHub `projects <https://github.com/ansible/ansible/projects>`_ "
+"- for example:"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:21
+msgid ""
+"the `2.8 release project "
+"<https://github.com/ansible/ansible/projects/30>`_"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:22
+msgid ""
+"the `network bugs project "
+"<https://github.com/ansible/ansible/projects/20>`_"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:23
+msgid ""
+"the `core documentation project "
+"<https://github.com/ansible/ansible/projects/27>`_"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:28
+msgid "Micro development: the lifecycle of a PR"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:30
+msgid ""
+"Ansible accepts code via **pull requests** (\"PRs\" for short). GitHub "
+"provides a great overview of `how the pull request process works "
+"<https://help.github.com/articles/about-pull-requests/>`_ in general. The"
+" ultimate goal of any pull request is to get merged and become part of "
+"Ansible Core. Here's an overview of the PR lifecycle:"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:33
+msgid "Contributor opens a PR"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:34
+msgid "Ansibot reviews the PR"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:35
+msgid "Ansibot assigns labels"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:36
+msgid "Ansibot pings maintainers"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:37
+msgid "Shippable runs the test suite"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:38
+msgid "Developers, maintainers, community review the PR"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:39
+msgid "Contributor addresses any feedback from reviewers"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:40
+msgid "Developers, maintainers, community re-review"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:41
+msgid "PR merged or closed"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:44
+msgid "Automated PR review: ansibullbot"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:46
+msgid ""
+"Because Ansible receives many pull requests, and because we love "
+"automating things, we've automated several steps of the process of "
+"reviewing and merging pull requests with a tool called Ansibullbot, or "
+"Ansibot for short."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:48
+msgid ""
+"`Ansibullbot "
+"<https://github.com/ansible/ansibullbot/blob/master/ISSUE_HELP.md>`_ "
+"serves many functions:"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:50
+msgid "Responds quickly to PR submitters to thank them for submitting their PR"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:51
+msgid ""
+"Identifies the community maintainer responsible for reviewing PRs for any"
+" files affected"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:52
+msgid "Tracks the current status of PRs"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:53
+msgid ""
+"Pings responsible parties to remind them of any PR actions for which they"
+" may be responsible"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:54
+msgid "Provides maintainers with the ability to move PRs through the workflow"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:55
+msgid "Identifies PRs abandoned by their submitters so that we can close them"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:56
+msgid ""
+"Identifies modules abandoned by their maintainers so that we can find new"
+" maintainers"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:59
+msgid "Ansibot workflow"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:61
+msgid ""
+"Ansibullbot runs continuously. You can generally expect to see changes to"
+" your issue or pull request within thirty minutes. Ansibullbot examines "
+"every open pull request in the repositories, and enforces state roughly "
+"according to the following workflow:"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:63
+msgid ""
+"If a pull request has no workflow labels, it's considered **new**. Files "
+"in the pull request are identified, and the maintainers of those files "
+"are pinged by the bot, along with instructions on how to review the pull "
+"request. (Note: sometimes we strip labels from a pull request to "
+"\"reboot\" this process.)"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:64
+msgid ""
+"If the module maintainer is not ``$team_ansible``, the pull request then "
+"goes into the **community_review** state."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:65
+msgid ""
+"If the module maintainer is ``$team_ansible``, the pull request then goes"
+" into the **core_review** state (and probably sits for a while)."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:66
+msgid ""
+"If the pull request is in **community_review** and has received comments "
+"from the maintainer:"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:68
+msgid ""
+"If the maintainer says ``shipit``, the pull request is labeled "
+"**shipit**, whereupon the Core team assesses it for final merge."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:69
+msgid ""
+"If the maintainer says ``needs_info``, the pull request is labeled "
+"**needs_info** and the submitter is asked for more info."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:70
+msgid ""
+"If the maintainer says **needs_revision**, the pull request is labeled "
+"**needs_revision** and the submitter is asked to fix some things."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:72
+msgid ""
+"If the submitter says ``ready_for_review``, the pull request is put back "
+"into **community_review** or **core_review** and the maintainer is "
+"notified that the pull request is ready to be reviewed again."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:73
+msgid ""
+"If the pull request is labeled **needs_revision** or **needs_info** and "
+"the submitter has not responded lately:"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:75
+msgid ""
+"The submitter is first politely pinged after two weeks, pinged again "
+"after two more weeks and labeled **pending action**, and the issue or "
+"pull request will be closed two weeks after that."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:76
+msgid "If the submitter responds at all, the clock is reset."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:77
+msgid ""
+"If the pull request is labeled **community_review** and the reviewer has "
+"not responded lately:"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:79
+msgid ""
+"The reviewer is first politely pinged after two weeks, pinged again after"
+" two more weeks and labeled **pending_action**, and then may be "
+"reassigned to ``$team_ansible`` or labeled **core_review**, or often the "
+"submitter of the pull request is asked to step up as a maintainer."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:80
+msgid ""
+"If Shippable tests fail, or if the code is not able to be merged, the "
+"pull request is automatically put into **needs_revision** along with a "
+"message to the submitter explaining why."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:82
+msgid ""
+"There are corner cases and frequent refinements, but this is the workflow"
+" in general."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:85
+msgid "PR labels"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:87
+msgid ""
+"There are two types of PR Labels generally: **workflow** labels and "
+"**information** labels."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:90
+msgid "Workflow labels"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:92
+msgid ""
+"**community_review**: Pull requests for modules that are currently "
+"awaiting review by their maintainers in the Ansible community."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:93
+msgid ""
+"**core_review**: Pull requests for modules that are currently awaiting "
+"review by their maintainers on the Ansible Core team."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:94
+msgid "**needs_info**: Waiting on info from the submitter."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:95
+msgid "**needs_rebase**: Waiting on the submitter to rebase."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:96
+msgid "**needs_revision**: Waiting on the submitter to make changes."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:97
+msgid "**shipit**: Waiting for final review by the core team for potential merge."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:100
+msgid "Information labels"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:102
+msgid ""
+"**backport**: this is applied automatically if the PR is requested "
+"against any branch that is not devel. The bot immediately assigns the "
+"labels backport and ``core_review``."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:103
+msgid ""
+"**bugfix_pull_request**: applied by the bot based on the templatized "
+"description of the PR."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:104
+msgid "**cloud**: applied by the bot based on the paths of the modified files."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:105
+msgid ""
+"**docs_pull_request**: applied by the bot based on the templatized "
+"description of the PR."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:106
+msgid "**easyfix**: applied manually, inconsistently used but sometimes useful."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:107
+msgid ""
+"**feature_pull_request**: applied by the bot based on the templatized "
+"description of the PR."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:108
+msgid ""
+"**networking**: applied by the bot based on the paths of the modified "
+"files."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:109
+msgid ""
+"**owner_pr**: largely deprecated. Formerly workflow, now informational. "
+"Originally, PRs submitted by the maintainer would automatically go to "
+"**shipit** based on this label. If the submitter is also a maintainer, we"
+" notify the other maintainers and still require one of the maintainers "
+"(including the submitter) to give a **shipit**."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:110
+msgid ""
+"**pending_action**: applied by the bot to PRs that are not moving. "
+"Reviewed every couple of weeks by the community team, who tries to figure"
+" out the appropriate action (closure, asking for new maintainers, etc)."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:114
+msgid "Special Labels"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:116
+msgid ""
+"**new_plugin**: this is for new modules or plugins that are not yet in "
+"Ansible."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:118
+msgid ""
+"**Note:** `new_plugin` kicks off a completely separate process, and "
+"frankly it doesn't work very well at present. We're working our best to "
+"improve this process."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:121
+msgid "Human PR review"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:123
+msgid ""
+"After Ansibot reviews the PR and applies labels, the PR is ready for "
+"human review. The most likely reviewers for any PR are the maintainers "
+"for the module that PR modifies."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:125
+msgid ""
+"Each module has at least one assigned :ref:`maintainer <maintainers>`, "
+"listed in the `BOTMETA.yml "
+"<https://github.com/ansible/ansible/blob/devel/.github/BOTMETA.yml>`_ "
+"file."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:127
+msgid ""
+"The maintainer's job is to review PRs that affect that module and decide "
+"whether they should be merged (``shipit``) or revised "
+"(``needs_revision``). We'd like to have at least one community maintainer"
+" for every module. If a module has no community maintainers assigned, the"
+" maintainer is listed as ``$team_ansible``."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:129
+msgid ""
+"Once a human applies the ``shipit`` label, the :ref:`committers "
+"<community_committer_guidelines>` decide whether the PR is ready to be "
+"merged. Not every PR that gets the ``shipit`` label is actually ready to "
+"be merged, but the better our reviewers are, and the better our "
+"guidelines are, the more likely it will be that a PR that reaches "
+"**shipit** will be mergeable."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:133
+msgid "Making your PR merge-worthy"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:135
+msgid ""
+"We don't merge every PR. Here are some tips for making your PR useful, "
+"attractive, and merge-worthy."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:140
+msgid "Changelogs"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:142
+msgid ""
+"Changelogs help users and developers keep up with changes to Ansible. "
+"Ansible builds a changelog for each release from fragments. You **must** "
+"add a changelog fragment to any PR that changes functionality or fixes a "
+"bug. You don't have to add a changelog fragment for PRs that add new "
+"modules and plugins, because our tooling does that for you automatically."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:147
+msgid ""
+"We build short summary changelogs for minor releases as well as for major"
+" releases. If you backport a bugfix, include a changelog fragment with "
+"the backport PR."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:152
+msgid "Creating a changelog fragment"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:154
+msgid ""
+"A basic changelog fragment is a ``.yaml`` file placed in the "
+"``changelogs/fragments/`` directory.  Each file contains a yaml dict with"
+" keys like ``bugfixes`` or ``major_changes`` followed by a list of "
+"changelog entries of bugfixes or features.  Each changelog entry is rst "
+"embedded inside of the yaml file which means that certain constructs "
+"would need to be escaped so they can be interpreted by rst and not by "
+"yaml (or escaped for both yaml and rst if that's your desire).  Each PR "
+"**must** use a new fragment file rather than adding to an existing one, "
+"so we can trace the change back to the PR that introduced it."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:164
+msgid ""
+"To create a changelog entry, create a new file with a unique name in the "
+"``changelogs/fragments/`` directory. The file name should include the PR "
+"number and a description of the change. It must end with the file "
+"extension ``.yaml``. For example: ``40696-user-backup-shadow-file.yaml``"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:166
+msgid ""
+"A single changelog fragment may contain multiple sections but most will "
+"only contain one section. The toplevel keys (bugfixes, major_changes, "
+"etc) are defined in the `config file "
+"<https://github.com/ansible/ansible/blob/devel/changelogs/config.yaml>` "
+"for our release note tool. Here are the valid sections and a description "
+"of each:"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:171
+msgid "**major_changes**"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:171
+msgid ""
+"Major changes to Ansible itself. Generally does not include module or "
+"plugin changes."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:174
+msgid "**minor_changes**"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:174
+msgid ""
+"Minor changes to Ansible, modules, or plugins. This includes new "
+"features, new parameters added to modules, or behavior changes to "
+"existing parameters."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:177
+msgid "**deprecated_features**"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:177
+msgid ""
+"Features that have been deprecated and are scheduled for removal in a "
+"future release."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:180
+msgid "**removed_features**"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:180
+msgid "Features that were previously deprecated and are now removed."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:183
+msgid "**bugfixes**"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:183
+msgid ""
+"Fixes that resolve issues. If there is a specific issue related to this "
+"bugfix, add a link in the changelog entry."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:186
+msgid "**known_issues**"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:186
+msgid "Known issues that are currently not fixed or will not be fixed."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:188
+msgid ""
+"Most changelog entries will be ``bugfixes`` or ``minor_changes``. When "
+"writing a changelog entry that pertains to a particular module, start the"
+" entry with ``- [module name] -`` and include a link to the related issue"
+" if one exists."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:190
+msgid "Here are some examples:"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:209
+msgid ""
+"You can find more example changelog fragments in the `changelog directory"
+" "
+"<https://github.com/ansible/ansible/tree/stable-2.6/changelogs/fragments>`_"
+" for the 2.6 release. You can also find documentation of the format, "
+"including hints on embedding rst in the yaml, in the `reno documentation "
+"<https://docs.openstack.org/reno/latest/user/usage.html#editing-a"
+"-release-note>`_."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:211
+msgid ""
+"Once you've written the changelog fragment for your PR, commit the file "
+"and include it with the pull request."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:216
+msgid "Backporting merged PRs"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:218
+msgid ""
+"All Ansible PRs must be merged to the ``devel`` branch first. After a "
+"pull request has been accepted and merged to the ``devel`` branch, the "
+"following instructions will help you create a pull request to backport "
+"the change to a previous stable branch."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:222
+msgid "We do **not** backport features."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:226
+msgid "These instructions assume that:"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:228
+msgid "``stable-2.7`` is the targeted release branch for the backport"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:229
+msgid ""
+"``https://github.com/ansible/ansible.git`` is configured as a ``git "
+"remote`` named ``upstream``. If you do not use a ``git remote`` named "
+"``upstream``, adjust the instructions accordingly."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:232
+msgid ""
+"``https://github.com/<yourgithubaccount>/ansible.git`` is configured as a"
+" ``git remote`` named ``origin``. If you do not use a ``git remote`` "
+"named ``origin``, adjust the instructions accordingly."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:236
+msgid "Prepare your devel, stable, and feature branches:"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:243
+msgid ""
+"Cherry pick the relevant commit SHA from the devel branch into your "
+"feature branch, handling merge conflicts as necessary:"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:250
+msgid ""
+"Add a :ref:`changelog fragment <changelogs_how_to>` for the change, and "
+"commit it."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:252
+msgid "Push your feature branch to your fork on GitHub:"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:258
+msgid ""
+"Submit the pull request for ``backport/2.7/[PR_NUMBER_FROM_DEVEL]`` "
+"against the ``stable-2.7`` branch"
+msgstr ""
+
+#: ../../rst/community/development_process.rst:261
+msgid ""
+"The Release Manager will decide whether to merge the backport PR before "
+"the next minor release. There isn't any need to follow up. Just ensure "
+"that the automated tests (CI) are green."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:267
+msgid ""
+"The choice to use ``backport/2.7/[PR_NUMBER_FROM_DEVEL]`` as the name for"
+" the feature branch is somewhat arbitrary, but conveys meaning about the "
+"purpose of that branch. It is not required to use this format, but it can"
+" be helpful, especially when making multiple backport PRs for multiple "
+"stable branches."
+msgstr ""
+
+#: ../../rst/community/development_process.rst:275
+msgid ""
+"If you prefer, you can use CPython's cherry-picker tool to backport "
+"commits from devel to stable branches in Ansible. Take a look at the "
+"`cherry-picker documentation <https://pypi.org/p/cherry-picker#cherry-"
+"picking>`_ for details on installing, configuring, and using it."
+msgstr ""
+

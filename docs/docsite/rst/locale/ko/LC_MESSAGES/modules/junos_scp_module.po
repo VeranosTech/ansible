@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/junos_scp_module.rst:9
+msgid "junos_scp -- Transfer files from or to remote devices running Junos"
+msgstr ""
+
+#: ../../rst/modules/junos_scp_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/junos_scp_module.rst:20
+msgid ""
+"This module transfers files via SCP from or to remote devices running "
+"Junos."
+msgstr ""
+
+#: ../../rst/modules/junos_scp_module.rst:25
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/junos_scp_module.rst:26
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/junos_scp_module.rst:28
+msgid "junos-eznc"
+msgstr ""
+
+#: ../../rst/modules/junos_scp_module.rst:29
+msgid "ncclient (>=v0.5.2)"
+msgstr ""
+
+#: ../../rst/modules/junos_scp_module.rst:33
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/junos_scp_module.rst:213
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/junos_scp_module.rst:216
+msgid ""
+"This module requires the netconf system service be enabled on the remote "
+"device being managed."
+msgstr ""
+
+#: ../../rst/modules/junos_scp_module.rst:217
+msgid "Tested against vMX JUNOS version 17.3R1.10."
+msgstr ""
+
+#: ../../rst/modules/junos_scp_module.rst:218
+msgid "Works with ``local`` connections only."
+msgstr ""
+
+#: ../../rst/modules/junos_scp_module.rst:219
+msgid ""
+"For information on using CLI and netconf see the :ref:`Junos OS Platform "
+"Options guide <junos_platform_options>`"
+msgstr ""
+
+#: ../../rst/modules/junos_scp_module.rst:220
+msgid ""
+"For more information on using Ansible to manage network devices see the "
+":ref:`Ansible Network Guide <network_guide>`"
+msgstr ""
+
+#: ../../rst/modules/junos_scp_module.rst:221
+msgid ""
+"For more information on using Ansible to manage Juniper network devices "
+"see https://www.ansible.com/ansible-juniper."
+msgstr ""
+
+#: ../../rst/modules/junos_scp_module.rst:226
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/junos_scp_module.rst:251
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/junos_scp_module.rst:252
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/junos_scp_module.rst:278
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/junos_scp_module.rst:283
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/junos_scp_module.rst:286
+msgid ""
+"This module is :ref:`maintained by the Ansible Network Team "
+"<modules_support>`. *[network]*"
+msgstr ""
+
+#: ../../rst/modules/junos_scp_module.rst:289
+msgid "Red Hat Support"
+msgstr ""
+
+#: ../../rst/modules/junos_scp_module.rst:291
+msgid ""
+"More information about Red Hat's support of this module is available from"
+" this `Red Hat Knowledge Base article "
+"<https://access.redhat.com/articles/3166901>`_."
+msgstr ""
+
+#: ../../rst/modules/junos_scp_module.rst:297
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/junos_scp_module.rst:299
+msgid "Christian Giese (@GIC-de)"
+msgstr ""
+
+#: ../../rst/modules/junos_scp_module.rst:303
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/junos/junos_scp.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

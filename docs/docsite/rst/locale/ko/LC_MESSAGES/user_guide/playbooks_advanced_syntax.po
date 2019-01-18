@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/user_guide/playbooks_advanced_syntax.rst:4
+msgid "Advanced Syntax"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_advanced_syntax.rst:6
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_advanced_syntax.rst:8
+msgid ""
+"This page describes advanced YAML syntax that enables you to have more "
+"control over the data placed in YAML files used by Ansible."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_advanced_syntax.rst:13
+msgid "YAML tags and Python types"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_advanced_syntax.rst:15
+msgid ""
+"The documentation covered here is an extension of the documentation that "
+"can be found in the `PyYAML Documentation "
+"<https://pyyaml.org/wiki/PyYAMLDocumentation#YAMLtagsandPythontypes>`_"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_advanced_syntax.rst:20
+msgid "Unsafe or Raw Strings"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_advanced_syntax.rst:22
+msgid ""
+"Ansible provides an internal data type for declaring variable values as "
+"\"unsafe\". This means that the data held within the variables value "
+"should be treated as unsafe preventing unsafe character substitution and "
+"information disclosure."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_advanced_syntax.rst:24
+#, python-format
+msgid ""
+"Jinja2 contains functionality for escaping, or telling Jinja2 to not "
+"template data by means of functionality such as ``{% raw %} ... {% endraw"
+" %}``, however this uses a more comprehensive implementation to ensure "
+"that the value is never templated."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_advanced_syntax.rst:26
+msgid ""
+"Using YAML tags, you can also mark a value as \"unsafe\" by using the "
+"``!unsafe`` tag such as:"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_advanced_syntax.rst:33
+msgid "In a playbook, this may look like::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_advanced_syntax.rst:42
+msgid ""
+"For complex variables such as hashes or arrays, ``!unsafe`` should be "
+"used on the individual elements such as::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_advanced_syntax.rst:56
+msgid ":doc:`playbooks_variables`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_advanced_syntax.rst:57
+msgid "All about variables"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_advanced_syntax.rst:58
+msgid "`User Mailing List <https://groups.google.com/group/ansible-project>`_"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_advanced_syntax.rst:59
+msgid "Have a question?  Stop by the google group!"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_advanced_syntax.rst:60
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_advanced_syntax.rst:61
+msgid "#ansible IRC chat channel"
+msgstr ""
+

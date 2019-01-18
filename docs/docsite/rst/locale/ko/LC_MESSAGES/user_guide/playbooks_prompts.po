@@ -1,0 +1,208 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/user_guide/playbooks_prompts.rst:2
+msgid "Prompts"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:4
+msgid ""
+"When running a playbook, you may wish to prompt the user for certain "
+"input, and can do so with the 'vars_prompt' section."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:7
+msgid ""
+"A common use for this might be for asking for sensitive data that you do "
+"not want to record."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:9
+msgid ""
+"This has uses beyond security, for instance, you may use the same "
+"playbook for all software releases and would prompt for a particular "
+"release version in a push-script."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:13
+msgid "Here is a most basic example::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:31
+msgid ""
+"The user input is hidden by default but it can be made visible by setting"
+" ``private: no``."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:34
+msgid ""
+"Prompts for individual ``vars_prompt`` variables will be skipped for any "
+"variable that is already defined through the command line ``--extra-"
+"vars`` option, or when running from a non-interactive session (such as "
+"cron or Ansible Tower). See :ref:`passing_variables_on_the_command_line` "
+"in the /Variables/ chapter."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:36
+msgid ""
+"If you have a variable that changes infrequently, it might make sense to "
+"provide a default value that can be overridden. This can be accomplished "
+"using the default argument::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:46
+msgid ""
+"If `Passlib <https://passlib.readthedocs.io/en/stable/>`_ is installed, "
+"vars_prompt can also encrypt the entered value so you can use it, for "
+"instance, with the user module to define a password::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:58
+msgid "You can use any crypt scheme supported by 'Passlib':"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:60
+msgid "*des_crypt* - DES Crypt"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:61
+msgid "*bsdi_crypt* - BSDi Crypt"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:62
+msgid "*bigcrypt* - BigCrypt"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:63
+msgid "*crypt16* - Crypt16"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:64
+#: ../../rst/user_guide/playbooks_prompts.rst:88
+msgid "*md5_crypt* - MD5 Crypt"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:65
+#: ../../rst/user_guide/playbooks_prompts.rst:87
+msgid "*bcrypt* - BCrypt"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:66
+msgid "*sha1_crypt* - SHA-1 Crypt"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:67
+msgid "*sun_md5_crypt* - Sun MD5 Crypt"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:68
+#: ../../rst/user_guide/playbooks_prompts.rst:89
+msgid "*sha256_crypt* - SHA-256 Crypt"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:69
+#: ../../rst/user_guide/playbooks_prompts.rst:90
+msgid "*sha512_crypt* - SHA-512 Crypt"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:70
+msgid "*apr_md5_crypt* - Apache's MD5-Crypt variant"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:71
+msgid "*phpass* - PHPass' Portable Hash"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:72
+msgid "*pbkdf2_digest* - Generic PBKDF2 Hashes"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:73
+msgid "*cta_pbkdf2_sha1* - Cryptacular's PBKDF2 hash"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:74
+msgid "*dlitz_pbkdf2_sha1* - Dwayne Litzenberger's PBKDF2 hash"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:75
+msgid "*scram* - SCRAM Hash"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:76
+msgid "*bsd_nthash* - FreeBSD's MCF-compatible nthash encoding"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:78
+msgid ""
+"However, the only parameters accepted are 'salt' or 'salt_size'. You can "
+"use your own salt using 'salt', or have one generated automatically using"
+" 'salt_size'. If nothing is specified, a salt of size 8 will be "
+"generated."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:84
+msgid ""
+"When Passlib is not installed the `crypt "
+"<https://docs.python.org/2/library/crypt.html>`_ library is used as "
+"fallback. Depending on your platform at most the following crypt schemes "
+"are supported:"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:94
+msgid ":doc:`playbooks`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:95
+msgid "An introduction to playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:96
+msgid ":doc:`playbooks_conditionals`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:97
+msgid "Conditional statements in playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:98
+msgid ":doc:`playbooks_variables`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:99
+msgid "All about variables"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:100
+msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:101
+msgid "Have a question?  Stop by the google group!"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:102
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:103
+msgid "#ansible IRC chat channel"
+msgstr ""
+

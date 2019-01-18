@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/roadmap/index.rst:4
+msgid "Ansible Roadmap"
+msgstr ""
+
+#: ../../rst/roadmap/index.rst:6
+msgid ""
+"The Ansible team develops a roadmap for each major and minor Ansible "
+"release. The latest roadmap shows current work; older roadmaps provide a "
+"history of the project. We don't publish roadmaps for subminor versions. "
+"So 2.0 and 2.8 have roadmaps, but 2.7.1 does not."
+msgstr ""
+
+#: ../../rst/roadmap/index.rst:8
+msgid ""
+"We incorporate team and community feedback in each roadmap, and aim for "
+"further transparency and better inclusion of both community desires and "
+"submissions."
+msgstr ""
+
+#: ../../rst/roadmap/index.rst:10
+msgid ""
+"Each roadmap offers a *best guess*, based on the Ansible team's "
+"experience and on requests and feedback from the community, of what will "
+"be included in a given release. However, some items on the roadmap may be"
+" dropped due to time constraints, lack of community maintainers, etc."
+msgstr ""
+
+#: ../../rst/roadmap/index.rst:12
+msgid ""
+"Each roadmap is published both as an idea of what is upcoming in Ansible,"
+" and as a medium for seeking further feedback from the community."
+msgstr ""
+
+#: ../../rst/roadmap/index.rst:14
+msgid "You can submit feedback on the current roadmap in multiple ways:"
+msgstr ""
+
+#: ../../rst/roadmap/index.rst:16
+msgid ""
+"Edit the agenda of an IRC `Core Team Meeting "
+"<https://github.com/ansible/community/blob/master/meetings/README.md>`_ "
+"(preferred)"
+msgstr ""
+
+#: ../../rst/roadmap/index.rst:17
+msgid "Post on the ``#ansible-devel`` Freenode IRC channel"
+msgstr ""
+
+#: ../../rst/roadmap/index.rst:18
+msgid "Email the ansible-devel list"
+msgstr ""
+
+#: ../../rst/roadmap/index.rst:20
+msgid ""
+"See :ref:`Ansible communication channels <communication>` for details on "
+"how to join and use the email lists and IRC channels."
+msgstr ""
+
+#: ../../rst/roadmap/index.rst:22
+msgid "Ansible Release Roadmaps"
+msgstr ""
+

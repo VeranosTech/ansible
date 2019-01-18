@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/win_package_module.rst:9
+msgid "win_package -- Installs/uninstalls an installable package"
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:18
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:19
+msgid "Installs or uninstalls a package in either an MSI or EXE format."
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:20
+msgid ""
+"These packages can be sources from the local file system, network file "
+"share or a url."
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:21
+msgid "Please read the notes section around some caveats with this module."
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:27
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:230
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:233
+msgid ""
+"When ``state=absent`` and the product is an exe, the path may be "
+"different from what was used to install the package originally. If path "
+"is not set then the path used will be what is set under "
+"``UninstallString`` in the registry for that product_id."
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:234
+msgid ""
+"Not all product ids are in a GUID form, some programs incorrectly use a "
+"different structure but this module should support any format."
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:235
+msgid ""
+"By default all msi installs and uninstalls will be run with the options "
+"``/log, /qn, /norestart``."
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:236
+msgid ""
+"It is recommended you download the package first from the URL using the "
+":ref:`win_get_url <win_get_url_module>` module as it opens up more "
+"flexibility with what must be set when calling ``win_package``."
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:237
+msgid ""
+"Packages will be temporarily downloaded or copied locally when path is a "
+"network location and credential delegation is not set, or path is a URL "
+"and the file is not an MSI."
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:238
+msgid ""
+"All the installation checks under ``product_id`` and ``creates_*`` add "
+"together, if one fails then the program is considered to be absent."
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:242
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:246
+msgid ":ref:`win_chocolatey_module`"
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:247
+msgid "The official documentation on the **win_chocolatey** module."
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:248
+msgid ":ref:`win_hotfix_module`"
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:249
+msgid "The official documentation on the **win_hotfix** module."
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:250
+msgid ":ref:`win_updates_module`"
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:251
+msgid "The official documentation on the **win_updates** module."
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:255
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:338
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:339
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:417
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:422
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:425
+msgid ""
+"This module is :ref:`maintained by the Ansible Core Team "
+"<modules_support>`. *[core]*"
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:428
+msgid "Red Hat Support"
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:430
+msgid ""
+"More information about Red Hat's support of this module is available from"
+" this `Red Hat Knowledge Base article "
+"<https://access.redhat.com/articles/3166901>`_."
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:436
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:438
+msgid "Trond Hindenes (@trondhindenes)"
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:439
+msgid "Jordan Borean (@jborean93)"
+msgstr ""
+
+#: ../../rst/modules/win_package_module.rst:443
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_package.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

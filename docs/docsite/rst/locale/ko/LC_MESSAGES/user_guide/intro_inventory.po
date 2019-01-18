@@ -1,0 +1,855 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/user_guide/intro_inventory.rst:6
+msgid "Working with Inventory"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:11
+msgid ""
+"Ansible works against multiple systems in your infrastructure at the same"
+" time. It does this by selecting portions of systems listed in Ansible's "
+"inventory, which defaults to being saved in the location "
+"``/etc/ansible/hosts``. You can specify a different inventory file using "
+"the ``-i <path>`` option on the command line."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:16
+msgid ""
+"Not only is this inventory configurable, but you can also use multiple "
+"inventory files at the same time and pull inventory from dynamic or cloud"
+" sources or different formats (YAML, ini, etc), as described in "
+":ref:`intro_dynamic_inventory`. Introduced in version 2.4, Ansible has "
+":ref:`inventory_plugins` to make this flexible and customizable."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:23
+msgid "Inventory basics: hosts and groups"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:25
+msgid ""
+"The inventory file can be in one of many formats, depending on the "
+"inventory plugins you have. For this example, the format for "
+"``/etc/ansible/hosts`` is an INI-like (one of Ansible's defaults) and "
+"looks like this:"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:41
+msgid ""
+"The headings in brackets are group names, which are used in classifying "
+"systems and deciding what systems you are controlling at what times and "
+"for what purpose."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:44
+msgid "A YAML version would look like:"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:63
+msgid ""
+"It is ok to put systems in more than one group, for instance a server "
+"could be both a webserver and a dbserver. If you do, note that variables "
+"will come from all of the groups they are a member of. Variable "
+"precedence is detailed in a later chapter."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:66
+msgid ""
+"If you have hosts that run on non-standard SSH ports you can put the port"
+" number after the hostname with a colon. Ports listed in your SSH config "
+"file won't be used with the `paramiko` connection but will be used with "
+"the `openssh` connection."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:69
+msgid ""
+"To make things explicit, it is suggested that you set them if things are "
+"not running on the default port:"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:75
+msgid ""
+"Suppose you have just static IPs and want to set up some aliases that "
+"live in your host file, or you are connecting through tunnels. You can "
+"also describe hosts via variables:"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:78
+#: ../../rst/user_guide/intro_inventory.rst:107
+msgid "In INI:"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:84
+#: ../../rst/user_guide/intro_inventory.rst:114
+msgid "In YAML:"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:94
+msgid ""
+"In the above example, trying to ansible against the host alias \"jumper\""
+" (which may not even be a real hostname) will contact 192.0.2.50 on port "
+"5555. Note that this is using a feature of the inventory file to define "
+"some special variables. Generally speaking, this is not the best way to "
+"define variables that describe your system policy, but we'll share "
+"suggestions on doing this later."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:98
+msgid ""
+"Values passed in the INI format using the ``key=value`` syntax are "
+"interpreted differently depending on where they are declared. * When "
+"declared inline with the host, INI values are interpreted as Python "
+"literal structures (strings, numbers, tuples, lists, dicts, booleans, "
+"None). Host lines accept multiple ``key=value`` parameters per line. "
+"Therefore they need a way to indicate that a space is part of a value "
+"rather than a separator. * When declared in a ``:vars`` section, INI "
+"values are interpreted as strings. For example ``var=FALSE`` would create"
+" a string equal to 'FALSE'. Unlike host lines, ``:vars`` sections accept "
+"only a single entry per line, so everything after the ``=`` must be the "
+"value for the entry. * Do not rely on types set during definition, always"
+" make sure you specify type with a filter when needed when consuming the "
+"variable. * Consider using YAML format for inventory sources to avoid "
+"confusion on the actual type of a variable. The YAML inventory plugin "
+"processes variable values consistently and correctly."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:105
+msgid ""
+"If you are adding a lot of hosts following similar patterns, you can do "
+"this rather than listing each hostname:"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:123
+msgid ""
+"For numeric patterns, leading zeros can be included or removed, as "
+"desired. Ranges are inclusive.  You can also define alphabetic ranges:"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:130
+msgid "You can also select the connection type and user on a per host basis:"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:140
+msgid ""
+"As mentioned above, setting these in the inventory file is only a "
+"shorthand, and we'll discuss how to store them in individual files in the"
+" 'host_vars' directory a bit later on."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:145
+msgid "Assigning a variable to one machine: host variables"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:147
+msgid ""
+"As described above, it is easy to assign variables to hosts that will be "
+"used later in playbooks:"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:155
+#: ../../rst/user_guide/intro_inventory.rst:186
+msgid "The YAML version:"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:170
+msgid "Assigning a variable to many machines: group variables"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:172
+msgid "Variables can also be applied to an entire group at once:"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:174
+msgid "The INI way:"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:198
+msgid ""
+"Be aware that this is only a convenient way to apply variables to "
+"multiple hosts at once; even though you can target hosts by group, "
+"**variables are always flattened to the host level** before a play is "
+"executed."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:203
+msgid "Inheriting variable values: group variables for groups of groups"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:205
+msgid ""
+"You can make groups of groups using the ``:children`` suffix in INI or "
+"the ``children:`` entry in YAML. You can apply variables to these groups "
+"of groups using ``:vars`` or ``vars:``:"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:260
+msgid ""
+"If you need to store lists or hash data, or prefer to keep host and group"
+" specific variables separate from the inventory file, see the next "
+"section. Child groups have a couple of properties to note:"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:263
+msgid ""
+"Any host that is member of a child group is automatically a member of the"
+" parent group."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:264
+msgid ""
+"A child group's variables will have higher precedence (override) a parent"
+" group's variables."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:265
+msgid ""
+"Groups can have multiple parents and children, but not circular "
+"relationships."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:266
+msgid ""
+"Hosts can also be in multiple groups, but there will only be **one** "
+"instance of a host, merging the data from the multiple groups."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:271
+msgid "Default groups"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:273
+msgid ""
+"There are two default groups: ``all`` and ``ungrouped``. ``all`` contains"
+" every host. ``ungrouped`` contains all hosts that don't have another "
+"group aside from ``all``. Every host will always belong to at least 2 "
+"groups. Though ``all`` and ``ungrouped`` are always present, they can be "
+"implicit and not appear in group listings like ``group_names``."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:281
+msgid "Organizing host and group variables"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:283
+msgid ""
+"Although you can store variables in the main inventory file, storing "
+"separate host and group variables files may help you track your variable "
+"values more easily."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:285
+msgid ""
+"Host and group variables can be stored in individual files relative to "
+"the inventory file (not directory, it is always the file)."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:287
+msgid ""
+"These variable files are in YAML format. Valid file extensions include "
+"'.yml', '.yaml', '.json', or no file extension. See :ref:`yaml_syntax` if"
+" you are new to YAML."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:290
+msgid ""
+"Let's say, for example, that you keep your inventory file at "
+"``/etc/ansible/hosts``. You have a host named 'foosball' that's a member "
+"of two groups: 'raleigh' and 'webservers'. That host will use variables "
+"in YAML files at the following locations::"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:297
+msgid ""
+"For instance, suppose you have hosts grouped by datacenter, and each "
+"datacenter uses some different servers.  The data in the groupfile "
+"'/etc/ansible/group_vars/raleigh' for the 'raleigh' group might look "
+"like::"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:305
+msgid "It is okay if these files do not exist, as this is an optional feature."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:307
+msgid ""
+"As an advanced use case, you can create *directories* named after your "
+"groups or hosts, and Ansible will read all the files in these directories"
+" in lexicographical order. An example with the 'raleigh' group::"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:313
+msgid ""
+"All hosts that are in the 'raleigh' group will have the variables defined"
+" in these files available to them. This can be very useful to keep your "
+"variables organized when a single file starts to be too big, or when you "
+"want to use :ref:`Ansible Vault<playbooks_vault>` on a part of a group's "
+"variables."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:318
+msgid ""
+"Tip: The ``group_vars/`` and ``host_vars/`` directories can exist in the "
+"playbook directory OR the inventory directory. If both paths exist, "
+"variables in the playbook directory will override variables set in the "
+"inventory directory."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:322
+msgid ""
+"Tip: The ``ansible-playbook`` command looks for playbooks in the current "
+"working directory by default. Other Ansible commands (for example, "
+"``ansible``, ``ansible-console``, etc.) will only look for "
+"``group_vars/`` and ``host_vars/`` in the inventory directory unless you "
+"provide the ``--playbook-dir`` option on the command line."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:326
+msgid ""
+"Tip: Keeping your inventory file and variables in a git repo (or other "
+"version control) is an excellent way to track changes to your inventory "
+"and host variables."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:332
+msgid "How variables are merged"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:334
+msgid ""
+"By default variables are merged/flattened to the specific host before a "
+"play is run. This keeps Ansible focused on the Host and Task, so groups "
+"don't really survive outside of inventory and host matching. By default, "
+"Ansible overwrites variables including the ones defined for a group "
+"and/or host (see :ref:`DEFAULT_HASH_BEHAVIOUR<DEFAULT_HASH_BEHAVIOUR>`). "
+"The order/precedence is (from lowest to highest):"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:336
+msgid "all group (because it is the 'parent' of all other groups)"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:337
+msgid "parent group"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:338
+msgid "child group"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:339
+msgid "host"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:341
+msgid ""
+"When groups of the same parent/child level are merged, it is done "
+"alphabetically, and the last group loaded overwrites the previous groups."
+" For example, an a_group will be merged with b_group and b_group vars "
+"that match will overwrite the ones in a_group."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:345
+msgid ""
+"Starting in Ansible version 2.4, users can use the group variable "
+"``ansible_group_priority`` to change the merge order for groups of the "
+"same level (after the parent/child order is resolved). The larger the "
+"number, the later it will be merged, giving it higher priority. This "
+"variable defaults to ``1`` if not set. For example:"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:355
+msgid ""
+"In this example, if both groups have the same priority, the result would "
+"normally have been ``testvar == b``, but since we are giving the "
+"``a_group`` a higher priority the result will be ``testvar == a``."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:361
+msgid "Using multiple inventory sources"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:363
+msgid ""
+"As an advanced use case you can target multiple inventory sources "
+"(directories, dynamic inventory scripts or files supported by inventory "
+"plugins) at the same time by giving multiple inventory parameters from "
+"the command line or by configuring :envvar:`ANSIBLE_INVENTORY`. This can "
+"be useful when you want to target normally separate environments, like "
+"staging and production, at the same time for a specific action."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:368
+msgid "Target two sources from the command line like this::"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:372
+msgid ""
+"Keep in mind that if there are variable conflicts in the inventories, "
+"they are resolved according to the rules described in :ref:`how_we_merge`"
+" and :ref:`ansible_variable_precedence`. The merging order is controlled "
+"by the order of the inventory source parameters. If ``[all:vars]`` in "
+"staging inventory defines ``myvar = 1``, but production inventory defines"
+" ``myvar = 2``, the playbook will be run with ``myvar = 2``. The result "
+"would be reversed if the playbook was run with ``-i production -i "
+"staging``."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:379
+msgid "**Aggregating inventory sources with a directory**"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:381
+msgid ""
+"You can also create an inventory by combining multiple inventory sources "
+"and source types under a directory. This can be useful for combining "
+"static and dynamic hosts and managing them as one inventory. The "
+"following inventory combines an inventory plugin source, a dynamic "
+"inventory script, and a file with static hosts::"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:393
+msgid "You can target this inventory directory simply like this::"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:397
+msgid ""
+"It can be useful to control the merging order of the inventory sources if"
+" there's variable conflicts or group of groups dependencies to the other "
+"inventory sources. The inventories are merged in alphabetical order "
+"according to the filenames so the result can be controlled by adding "
+"prefixes to the files::"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:409
+msgid ""
+"If ``01-openstack.yml`` defines ``myvar = 1`` for the group ``all``, ``02"
+"-dynamic-inventory.py`` defines ``myvar = 2``, and ``03-static-"
+"inventory`` defines ``myvar = 3``, the playbook will be run with ``myvar "
+"= 3``."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:412
+msgid ""
+"For more details on inventory plugins and dynamic inventory scripts see "
+":ref:`inventory_plugins` and :ref:`intro_dynamic_inventory`."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:417
+msgid "Connecting to hosts: behavioral inventory parameters"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:419
+msgid ""
+"As described above, setting the following variables control how Ansible "
+"interacts with remote hosts."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:421
+msgid "Host connection:"
+msgstr ""
+
+#: ../../rst/user_guide/shared_snippets/SSH_password_prompt.txt:2
+msgid ""
+"Ansible does not expose a channel to allow communication between the user"
+" and the ssh process to accept a password manually to decrypt an ssh key "
+"when using the ssh connection plugin (which is the default). The use of "
+"``ssh-agent`` is highly recommended."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:426
+msgid "ansible_connection"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:426
+msgid ""
+"Connection type to the host. This can be the name of any of ansible's "
+"connection plugins. SSH protocol types are ``smart``, ``ssh`` or "
+"``paramiko``.  The default is smart. Non-SSH based types are described in"
+" the next section."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:428
+msgid "General for all connections:"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:430
+#: ../../rst/user_guide/intro_inventory.rst:531
+msgid "ansible_host"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:431
+msgid ""
+"The name of the host to connect to, if different from the alias you wish "
+"to give to it."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:432
+msgid "ansible_port"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:433
+msgid "The ssh port number, if not 22"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:436
+#: ../../rst/user_guide/intro_inventory.rst:533
+msgid "ansible_user"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:435
+msgid "The default ssh user name to use."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:438
+msgid "Specific to the SSH connection:"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:440
+msgid "ansible_ssh_pass"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:441
+msgid ""
+"The ssh password to use (never store this variable in plain text; always "
+"use a vault. See :ref:`best_practices_for_variables_and_vaults`)"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:442
+msgid "ansible_ssh_private_key_file"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:443
+msgid ""
+"Private key file used by ssh.  Useful if using multiple keys and you "
+"don't want to use SSH agent."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:446
+msgid "ansible_ssh_common_args"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:445
+msgid ""
+"This setting is always appended to the default command line for "
+":command:`sftp`, :command:`scp`, and :command:`ssh`. Useful to configure "
+"a ``ProxyCommand`` for a certain host (or group)."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:448
+msgid "ansible_sftp_extra_args"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:449
+msgid ""
+"This setting is always appended to the default :command:`sftp` command "
+"line."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:450
+msgid "ansible_scp_extra_args"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:451
+msgid ""
+"This setting is always appended to the default :command:`scp` command "
+"line."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:452
+msgid "ansible_ssh_extra_args"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:453
+msgid ""
+"This setting is always appended to the default :command:`ssh` command "
+"line."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:454
+msgid "ansible_ssh_pipelining"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:455
+msgid ""
+"Determines whether or not to use SSH pipelining. This can override the "
+"``pipelining`` setting in :file:`ansible.cfg`."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:458
+msgid "ansible_ssh_executable (added in version 2.2)"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:457
+msgid ""
+"This setting overrides the default behavior to use the system "
+":command:`ssh`. This can override the ``ssh_executable`` setting in "
+":file:`ansible.cfg`."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:460
+msgid ""
+"Privilege escalation (see :ref:`Ansible Privilege Escalation<become>` for"
+" further details):"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:462
+#: ../../rst/user_guide/intro_inventory.rst:535
+msgid "ansible_become"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:463
+msgid ""
+"Equivalent to ``ansible_sudo`` or ``ansible_su``, allows to force "
+"privilege escalation"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:464
+msgid "ansible_become_method"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:465
+msgid "Allows to set privilege escalation method"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:466
+msgid "ansible_become_user"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:467
+msgid ""
+"Equivalent to ``ansible_sudo_user`` or ``ansible_su_user``, allows to set"
+" the user you become through privilege escalation"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:468
+msgid "ansible_become_pass"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:469
+msgid ""
+"Equivalent to ``ansible_sudo_pass`` or ``ansible_su_pass``, allows you to"
+" set the privilege escalation password (never store this variable in "
+"plain text; always use a vault. See "
+":ref:`best_practices_for_variables_and_vaults`)"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:470
+msgid "ansible_become_exe"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:471
+msgid ""
+"Equivalent to ``ansible_sudo_exe`` or ``ansible_su_exe``, allows you to "
+"set the executable for the escalation method selected"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:473
+msgid "ansible_become_flags"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:473
+msgid ""
+"Equivalent to ``ansible_sudo_flags`` or ``ansible_su_flags``, allows you "
+"to set the flags passed to the selected escalation method. This can be "
+"also set globally in :file:`ansible.cfg` in the ``sudo_flags`` option"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:475
+msgid "Remote host environment parameters:"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:483
+msgid "ansible_shell_type"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:480
+msgid ""
+"The shell type of the target system. You should not use this setting "
+"unless you have set the "
+":ref:`ansible_shell_executable<ansible_shell_executable>` to a non-Bourne"
+" (sh) compatible shell.  By default commands are formatted using "
+"``sh``-style syntax.  Setting this to ``csh`` or ``fish`` will cause "
+"commands executed on target systems to follow those shell's syntax "
+"instead."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:492
+msgid "ansible_python_interpreter"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:488
+msgid ""
+"The target host python path. This is useful for systems with more than "
+"one Python or not located at :command:`/usr/bin/python` such as \\*BSD, "
+"or where :command:`/usr/bin/python` is not a 2.X series Python.  We do "
+"not use the :command:`/usr/bin/env` mechanism as that requires the remote"
+" user's path to be set right and also assumes the :program:`python` "
+"executable is named python, where the executable might be named something"
+" like :program:`python2.6`."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:496
+msgid "ansible_*_interpreter"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:495
+msgid ""
+"Works for anything such as ruby or perl and works just like "
+":ref:`ansible_python_interpreter<ansible_python_interpreter>`. This "
+"replaces shebang of modules which will run on that host."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:507
+msgid "ansible_shell_executable"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:503
+msgid ""
+"This sets the shell the ansible controller will use on the target "
+"machine, overrides ``executable`` in :file:`ansible.cfg` which defaults "
+"to :command:`/bin/sh`.  You should really only change it if is not "
+"possible to use :command:`/bin/sh` (i.e. :command:`/bin/sh` is not "
+"installed on the target machine or cannot be run from sudo.)."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:509
+msgid "Examples from an Ansible-INI host file::"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:517
+msgid "Non-SSH connection types"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:519
+msgid ""
+"As stated in the previous section, Ansible executes playbooks over SSH "
+"but it is not limited to this connection type. With the host specific "
+"parameter ``ansible_connection=<connector>``, the connection type can be "
+"changed. The following non-SSH based connectors are available:"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:523
+msgid "**local**"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:525
+msgid ""
+"This connector can be used to deploy the playbook to the control machine "
+"itself."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:527
+msgid "**docker**"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:529
+msgid ""
+"This connector deploys the playbook directly into Docker containers using"
+" the local Docker client. The following parameters are processed by this "
+"connector:"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:532
+msgid "The name of the Docker container to connect to."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:534
+msgid ""
+"The user name to operate within the container. The user must exist inside"
+" the container."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:536
+msgid ""
+"If set to ``true`` the ``become_user`` will be used to operate within the"
+" container."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:538
+msgid "ansible_docker_extra_args"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:538
+msgid ""
+"Could be a string with any additional arguments understood by Docker, "
+"which are not command specific. This parameter is mainly used to "
+"configure a remote Docker daemon to use."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:540
+msgid "Here is an example of how to instantly deploy to created containers::"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:562
+msgid ""
+"If you're reading the docs from the beginning, this may be the first "
+"example you've seen of an Ansible playbook. This is not an inventory "
+"file. Playbooks will be covered in great detail later in the docs."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:567
+msgid ":ref:`inventory_plugins`"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:568
+msgid "Pulling inventory from dynamic or static sources"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:569
+msgid ":ref:`intro_dynamic_inventory`"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:570
+msgid "Pulling inventory from dynamic sources, such as cloud providers"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:571
+msgid ":ref:`intro_adhoc`"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:572
+msgid "Examples of basic commands"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:573
+msgid ":ref:`working_with_playbooks`"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:574
+msgid "Learning Ansible's configuration, deployment, and orchestration language."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:575
+msgid "`Mailing List <https://groups.google.com/group/ansible-project>`_"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:576
+msgid "Questions? Help? Ideas?  Stop by the list on Google Groups"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:577
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:578
+msgid "#ansible IRC chat channel"
+msgstr ""
+

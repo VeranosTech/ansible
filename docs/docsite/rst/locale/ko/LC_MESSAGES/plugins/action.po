@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/plugins/action.rst:4
+msgid "Action Plugins"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:10
+msgid ""
+"Action plugins act in conjunction with :ref:`modules "
+"<working_with_modules>` to execute the actions required by playbook "
+"tasks. They usually execute automatically in the background doing "
+"prerequisite work before modules execute."
+msgstr ""
+
+#: ../../rst/plugins/action.rst:13
+msgid ""
+"The 'normal' action plugin is used for modules that do not already have "
+"an action plugin."
+msgstr ""
+
+#: ../../rst/plugins/action.rst:18
+msgid "Enabling action plugins"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:20
+msgid ""
+"You can enable a custom action plugin by either dropping it into the "
+"``action_plugins`` directory adjacent to your play, inside a role, or by "
+"putting it in one of the action plugin directory sources configured in "
+":ref:`ansible.cfg <ansible_configuration_settings>`."
+msgstr ""
+
+#: ../../rst/plugins/action.rst:25
+msgid "Using action plugins"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:27
+msgid ""
+"Action plugin are executed by default when an associated module is used; "
+"no action is required."
+msgstr ""
+
+#: ../../rst/plugins/action.rst:30
+msgid "Plugin list"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:32
+msgid ""
+"You cannot list action plugins directly, they show up as their "
+"counterpart modules:"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:34
+msgid ""
+"Use ``ansible-doc -l`` to see the list of available modules. Use "
+"``ansible-doc <name>`` to see specific documentation and examples, this "
+"should note if the module has a corresponding action plugin."
+msgstr ""
+
+#: ../../rst/plugins/action.rst:39
+msgid ":ref:`cache_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:40
+msgid "Ansible Cache plugins"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:41
+msgid ":ref:`callback_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:42
+msgid "Ansible callback plugins"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:43
+msgid ":ref:`connection_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:44
+msgid "Ansible connection plugins"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:45
+msgid ":ref:`inventory_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:46
+msgid "Ansible inventory plugins"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:47
+msgid ":ref:`shell_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:48
+msgid "Ansible Shell plugins"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:49
+msgid ":ref:`strategy_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:50
+msgid "Ansible Strategy plugins"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:51
+msgid ":ref:`vars_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:52
+msgid "Ansible Vars plugins"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:53
+msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:54
+msgid "Have a question?  Stop by the google group!"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:55
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:56
+msgid "#ansible IRC chat channel"
+msgstr ""
+

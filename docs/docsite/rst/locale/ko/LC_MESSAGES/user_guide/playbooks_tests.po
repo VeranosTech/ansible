@@ -1,0 +1,267 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/user_guide/playbooks_tests.rst:4
+msgid "Tests"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:7
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:9
+msgid ""
+"`Tests <http://jinja.pocoo.org/docs/dev/templates/#tests>`_ in Jinja are "
+"a way of evaluating template expressions and returning True or False. "
+"Jinja ships with many of these. See `builtin tests`_ in the official "
+"Jinja template documentation."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:12
+msgid ""
+"The main difference between tests and filters are that Jinja tests are "
+"used for comparisons, whereas filters are used for data manipulation, and"
+" have different applications in jinja. Tests can also be used in list "
+"processing filters, like ``map()`` and ``select()`` to choose items in "
+"the list."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:14
+msgid ""
+"Like all templating, tests always execute on the Ansible controller, "
+"**not** on the target of a task, as they test local data."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:16
+msgid ""
+"In addition to those Jinja2 tests, Ansible supplies a few more and users "
+"can easily create their own."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:21
+msgid "Test syntax"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:23
+msgid ""
+"`Test syntax <http://jinja.pocoo.org/docs/dev/templates/#tests>`_ varies "
+"from `filter syntax "
+"<http://jinja.pocoo.org/docs/dev/templates/#filters>`_ (``variable | "
+"filter``). Historically Ansible has registered tests as both jinja tests "
+"and jinja filters, allowing for them to be referenced using filter "
+"syntax."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:25
+msgid "As of Ansible 2.5, using a jinja test as a filter will generate a warning."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:27
+msgid "The syntax for using a jinja test is as follows::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:31
+msgid "Such as::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:38
+msgid "Testing strings"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:40
+msgid ""
+"To match strings against a substring or a regular expression, use the "
+"\"match\", \"search\" or \"regex\" filters::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:62
+msgid ""
+"'match' requires zero or more characters at the beginning of the string, "
+"while 'search' only requires matching a subset of the string."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:68
+msgid "Version Comparison"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:72
+msgid "In 2.5 ``version_compare`` was renamed to ``version``"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:74
+msgid ""
+"To compare a version number, such as checking if the "
+"``ansible_facts['distribution_version']`` version is greater than or "
+"equal to '12.04', you can use the ``version`` test."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:77
+msgid ""
+"The ``version`` test can also be used to evaluate the "
+"``ansible_facts['distribution_version']``::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:81
+msgid ""
+"If ``ansible_facts['distribution_version']`` is greater than or equal to "
+"12.04, this test returns True, otherwise False."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:83
+msgid "The ``version`` test accepts the following operators::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:87
+msgid ""
+"This test also accepts a 3rd parameter, ``strict`` which defines if "
+"strict version parsing as defined by ``distutils.version.StrictVersion`` "
+"should be used.  The default is ``False`` (using "
+"``distutils.version.LooseVersion``), ``True`` enables strict version "
+"parsing::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:95
+msgid "Set theory tests"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:99
+msgid ""
+"In 2.5 ``issubset`` and ``issuperset`` were renamed to ``subset`` and "
+"``superset``"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:101
+msgid ""
+"To see if a list includes or is included by another list, you can use "
+"'subset' and 'superset'::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:118
+msgid "Test if a list contains a value"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:122
+msgid ""
+"Ansible includes a ``contains`` test which operates similarly, but in "
+"reverse of the Jinja2 provided ``in`` test. This is designed with the "
+"ability to allow use of ``contains`` with filters such as ``map`` and "
+"``selectattr``::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:155
+msgid ""
+"You can use `any` and `all` to check if any or all elements in a list are"
+" true or not::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:177
+msgid "Testing paths"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:179
+msgid "In 2.5 the following tests were renamed to remove the ``is_`` prefix"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:181
+msgid ""
+"The following tests can provide information about a path on the "
+"controller::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:214
+msgid "Task results"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:216
+msgid ""
+"The following tasks are illustrative of the tests meant to check the "
+"status of tasks::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:245
+msgid ""
+"From 2.1, you can also use success, failure, change, and skip so that the"
+" grammar matches, for those who need to be strict about it."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:253
+msgid ":doc:`playbooks`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:254
+msgid "An introduction to playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:255
+msgid ":doc:`playbooks_conditionals`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:256
+msgid "Conditional statements in playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:257
+msgid ":doc:`playbooks_variables`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:258
+msgid "All about variables"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:259
+msgid ":doc:`playbooks_loops`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:260
+msgid "Looping in playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:261
+msgid ":doc:`playbooks_reuse_roles`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:262
+msgid "Playbook organization by roles"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:263
+msgid ":doc:`playbooks_best_practices`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:264
+msgid "Best practices in playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:265
+msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:266
+msgid "Have a question?  Stop by the google group!"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:267
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:268
+msgid "#ansible IRC chat channel"
+msgstr ""
+

@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/win_whoami_module.rst:9
+msgid "win_whoami -- Get information about the current user and process"
+msgstr ""
+
+#: ../../rst/modules/win_whoami_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/win_whoami_module.rst:20
+msgid "Designed to return the same information as the ``whoami /all`` command."
+msgstr ""
+
+#: ../../rst/modules/win_whoami_module.rst:21
+msgid ""
+"Also includes information missing from ``whoami`` such as logon metadata "
+"like logon rights, id, type."
+msgstr ""
+
+#: ../../rst/modules/win_whoami_module.rst:28
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/win_whoami_module.rst:31
+msgid ""
+"If running this module with a non admin user, the logon rights will be an"
+" empty list as Administrator rights are required to query LSA for the "
+"information."
+msgstr ""
+
+#: ../../rst/modules/win_whoami_module.rst:35
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/win_whoami_module.rst:39
+msgid ":ref:`win_credential_module`"
+msgstr ""
+
+#: ../../rst/modules/win_whoami_module.rst:40
+msgid "The official documentation on the **win_credential** module."
+msgstr ""
+
+#: ../../rst/modules/win_whoami_module.rst:41
+msgid ":ref:`win_group_membership_module`"
+msgstr ""
+
+#: ../../rst/modules/win_whoami_module.rst:42
+msgid "The official documentation on the **win_group_membership** module."
+msgstr ""
+
+#: ../../rst/modules/win_whoami_module.rst:43
+msgid ":ref:`win_user_right_module`"
+msgstr ""
+
+#: ../../rst/modules/win_whoami_module.rst:44
+msgid "The official documentation on the **win_user_right** module."
+msgstr ""
+
+#: ../../rst/modules/win_whoami_module.rst:48
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/win_whoami_module.rst:60
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/win_whoami_module.rst:61
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/win_whoami_module.rst:394
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/win_whoami_module.rst:399
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/win_whoami_module.rst:402
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/win_whoami_module.rst:409
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/win_whoami_module.rst:411
+msgid "Jordan Borean (@jborean93)"
+msgstr ""
+
+#: ../../rst/modules/win_whoami_module.rst:415
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_whoami.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

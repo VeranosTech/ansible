@@ -1,0 +1,688 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:5
+msgid "validate-modules"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:7
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:9
+msgid "Python program to help test or validate Ansible modules."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:11
+msgid ""
+"``validate-modules`` is one of the ``ansible-test`` Sanity Tests, see "
+":doc:`testing_sanity` for more information."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:13
+msgid "Originally developed by Matt Martz (@sivel)"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:17
+msgid "Usage"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:26
+msgid "Help"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:51
+msgid "Extending validate-modules"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:53
+msgid ""
+"The ``validate-modules`` tool has a `schema.py "
+"<https://github.com/ansible/ansible/blob/devel/test/sanity/validate-"
+"modules/schema.py>`_ that is used to validate the YAML blocks, such as "
+"``DOCUMENTATION`` and ``RETURNS``."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:57
+msgid "Codes"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:60
+msgid "Errors"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:63
+#: ../../rst/dev_guide/testing_validate-modules.rst:149
+msgid "code"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:63
+#: ../../rst/dev_guide/testing_validate-modules.rst:149
+msgid "sample message"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:65
+#: ../../rst/dev_guide/testing_validate-modules.rst:151
+msgid "**1xx**"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:65
+#: ../../rst/dev_guide/testing_validate-modules.rst:151
+msgid "**Locations**"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:66
+msgid "101"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:66
+msgid "Interpreter line is not ``#!/usr/bin/python``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:67
+msgid "102"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:67
+msgid "Interpreter line is not ``#!powershell``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:68
+msgid "103"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:68
+msgid ""
+"Did not find a call to ``main()`` (or ``removed_module()`` in the case of"
+" deprecated & docs only modules)"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:69
+msgid "104"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:69
+msgid ""
+"Call to ``main()`` not the last line (or ``removed_module()`` in the case"
+" of deprecated & docs only modules)"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:70
+msgid "105"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:70
+msgid "GPLv3 license header not found"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:71
+msgid "106"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:71
+msgid ""
+"Import found before documentation variables. All imports must appear "
+"below ``DOCUMENTATION``/``EXAMPLES``/``RETURN``/``ANSIBLE_METADATA``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:73
+#: ../../rst/dev_guide/testing_validate-modules.rst:152
+msgid "107"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:73
+msgid ""
+"Imports should be directly below "
+"``DOCUMENTATION``/``EXAMPLES``/``RETURN``/``ANSIBLE_METADATA``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:74
+msgid "108"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:74
+msgid ""
+"GPLv3 license header should be the :ref:`short form <copyright>` for new "
+"modules"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:75
+msgid "109"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:75
+msgid "Next to last line is not ``if __name__ == \"__main__\":``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:78
+#: ../../rst/dev_guide/testing_validate-modules.rst:155
+msgid "**2xx**"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:78
+#: ../../rst/dev_guide/testing_validate-modules.rst:155
+msgid "**Imports**"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:79
+msgid "201"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:79
+msgid "Did not find a ``module_utils`` import"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:80
+msgid "203"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:80
+msgid ""
+"``requests`` import found, should use ``ansible.module_utils.urls`` "
+"instead"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:81
+msgid "204"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:81
+msgid "``boto`` import found, new modules should use ``boto3``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:82
+msgid "205"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:82
+msgid "``sys.exit()`` call found. Should be ``exit_json``/``fail_json``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:83
+msgid "206"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:83
+msgid "``WANT_JSON`` not found in module"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:84
+msgid "207"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:84
+msgid "``REPLACER_WINDOWS`` not found in module"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:85
+#: ../../rst/dev_guide/testing_validate-modules.rst:156
+msgid "208"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:85
+msgid "``module_utils`` imports should import specific components, not ``*``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:86
+msgid "209"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:86
+msgid ""
+"Only the following ``from __future__`` imports are allowed: "
+"``absolute_import``, ``division``, and ``print_function``."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:88
+msgid "210"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:88
+msgid "``subprocess.Popen`` used instead of ``module.run_command``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:89
+msgid "211"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:89
+msgid "``os.call`` used instead of ``module.run_command``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:92
+#: ../../rst/dev_guide/testing_validate-modules.rst:161
+msgid "**3xx**"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:92
+#: ../../rst/dev_guide/testing_validate-modules.rst:161
+msgid "**Documentation**"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:93
+msgid "301"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:93
+msgid "No ``DOCUMENTATION`` provided"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:94
+msgid "302"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:94
+msgid "``DOCUMENTATION`` is not valid YAML"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:95
+msgid "303"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:95
+msgid "``DOCUMENTATION`` fragment missing"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:96
+msgid "304"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:96
+msgid "Unknown ``DOCUMENTATION`` error"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:97
+msgid "305"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:97
+msgid "Invalid ``DOCUMENTATION`` schema"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:98
+msgid "306"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:98
+msgid "Module level ``version_added`` is not a valid version number"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:99
+msgid "307"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:99
+msgid "Module level ``version_added`` is incorrect"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:100
+msgid "308"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:100
+msgid "``version_added`` for new option is not a valid version number"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:101
+msgid "309"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:101
+msgid "``version_added`` for new option is incorrect"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:102
+msgid "310"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:102
+msgid "No ``EXAMPLES`` provided"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:103
+msgid "311"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:103
+msgid "``EXAMPLES`` is not valid YAML"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:104
+#: ../../rst/dev_guide/testing_validate-modules.rst:162
+msgid "312"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:104
+msgid "No ``RETURN`` documentation provided"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:105
+msgid "313"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:105
+msgid "``RETURN`` is not valid YAML"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:106
+msgid "314"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:106
+msgid "No ``ANSIBLE_METADATA`` provided"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:107
+msgid "315"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:107
+msgid "``ANSIBLE_METADATA`` was not provided as a dict, YAML not supported"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:108
+msgid "316"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:108
+msgid "Invalid ``ANSIBLE_METADATA`` schema"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:109
+msgid "317"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:109
+msgid ""
+"option is marked as required but specifies a default. Arguments with a "
+"default should not be marked as required"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:111
+msgid "318"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:111
+msgid ""
+"Module marked as deprecated or removed in at least one of the filename, "
+"its metadata, or in DOCUMENTATION (setting DOCUMENTATION.deprecated for "
+"deprecation or removing all documentation for removed) but not in all "
+"three places."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:114
+msgid "319"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:114
+msgid "``RETURN`` fragments missing  or invalid"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:115
+msgid "320"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:115
+msgid "``DOCUMENTATION.options`` must be a dictionary/hash when used"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:116
+msgid "321"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:116
+msgid ""
+"``Exception`` attempting to import module for ``argument_spec`` "
+"introspection"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:117
+msgid "322"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:117
+msgid "argument is listed in the argument_spec, but not documented in the module"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:118
+msgid "323"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:118
+msgid ""
+"argument is listed in DOCUMENTATION.options, but not accepted by the "
+"module"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:119
+msgid "324"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:119
+msgid ""
+"Value for \"default\" from the argument_spec does not match the "
+"documentation"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:120
+msgid "325"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:120
+msgid "argument_spec defines type=\"bool\" but documentation does not"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:121
+msgid "326"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:121
+msgid ""
+"Value for \"choices\" from the argument_spec does not match the "
+"documentation"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:122
+msgid "327"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:122
+msgid ""
+"Default value from the documentation is not compatible with type defined "
+"in the argument_spec"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:123
+msgid "328"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:123
+msgid ""
+"Choices value from the documentation is not compatible with type defined "
+"in the argument_spec"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:124
+msgid "329"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:124
+msgid ""
+"Default value from the argument_spec is not compatible with type defined "
+"in the argument_spec"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:125
+msgid "330"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:125
+msgid ""
+"Choices value from the argument_spec is not compatible with type defined "
+"in the argument_spec"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:126
+msgid "331"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:126
+msgid "argument in argument_spec must be a dictionary/hash when used"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:127
+msgid "332"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:127
+msgid "``AnsibleModule`` schema validation error"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:128
+msgid "333"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:128
+msgid ""
+"``ANSIBLE_METADATA.status`` of deprecated or removed can't include other "
+"statuses"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:129
+msgid "334"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:129
+msgid ""
+"``ANSIBLE_METADATA`` cannot be changed in a point release for a stable "
+"branch"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:133
+msgid "**4xx**"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:133
+msgid "**Syntax**"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:134
+msgid "401"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:134
+msgid "Python ``SyntaxError`` while parsing module"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:135
+msgid "403"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:135
+msgid "Type comparison using ``type()`` found. Use ``isinstance()`` instead"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:138
+msgid "**5xx**"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:138
+msgid "**Naming**"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:139
+msgid "501"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:139
+msgid ""
+"Official Ansible modules must have a ``.py`` extension for python modules"
+" or a ``.ps1`` for powershell modules"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:141
+msgid "502"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:141
+msgid "Ansible module subdirectories must contain an ``__init__.py``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:142
+msgid "503"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:142
+msgid "Missing python documentation file"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:146
+msgid "Warnings"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:152
+msgid ""
+"Imports should be directly below "
+"``DOCUMENTATION``/``EXAMPLES``/``RETURN``/``ANSIBLE_METADATA`` for legacy"
+" modules"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:156
+msgid ""
+"``module_utils`` imports should import specific components for legacy "
+"module, not ``*``"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:157
+msgid "291"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:157
+msgid "Try/Except ``HAS_`` expression missing"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:158
+msgid "292"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:158
+msgid "Did not find ``ansible.module_utils.basic`` import"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:162
+msgid "No ``RETURN`` documentation provided for legacy module"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:163
+msgid "391"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:163
+msgid "Unknown pre-existing ``DOCUMENTATION`` error"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:164
+msgid "392"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_validate-modules.rst:164
+msgid "Pre-existing ``DOCUMENTATION`` fragment missing"
+msgstr ""
+

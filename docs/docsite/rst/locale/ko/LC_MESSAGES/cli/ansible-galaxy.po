@@ -1,0 +1,324 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/cli/ansible-galaxy.rst:5
+msgid "ansible-galaxy"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:8
+msgid ":strong:`Perform various Role related operations.`"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:27
+msgid "Description"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:30
+msgid ""
+"command to manage Ansible roles in shared repositories, the default of "
+"which is Ansible Galaxy *https://galaxy.ansible.com*."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:34
+msgid "Common Options"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:41
+msgid ""
+"show program's version number, config file location, configured module "
+"search path, module location, executable location and exit"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:46
+msgid "Ignore SSL certificate validation errors."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:51
+msgid "show this help message and exit"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:56 ../../rst/cli/ansible-galaxy.rst:124
+#: ../../rst/cli/ansible-galaxy.rst:161 ../../rst/cli/ansible-galaxy.rst:185
+#: ../../rst/cli/ansible-galaxy.rst:233 ../../rst/cli/ansible-galaxy.rst:333
+msgid ""
+"The path to the directory containing your roles. The default is the "
+"roles_path configured in your ansible.cfg file (/etc/ansible/roles if not"
+" configured)"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:61
+msgid "The API server destination"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:66
+msgid "verbose mode (-vvv for more, -vvvv to enable connection debugging)"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:74
+msgid "Actions"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:82
+msgid "login"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:84
+msgid ""
+"verify user's identify via GitHub and retrieve an auth token from Ansible"
+" Galaxy."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:92
+msgid "Identify with github token rather than username and password."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:102
+msgid "search"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:104
+msgid "searches for roles on the Ansible Galaxy server"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:112
+msgid "GitHub username"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:116
+msgid "list of galaxy tags to filter by"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:120
+msgid "list of OS platforms to filter by"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:134
+msgid "install"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:136
+msgid ""
+"uses the args list of roles to be installed, unless -f was specified. The"
+" list of roles can be a name (which will be downloaded via the galaxy API"
+" and github), or it can be a local .tar.gz file."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:145 ../../rst/cli/ansible-galaxy.rst:269
+msgid "Force overwriting an existing role"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:149
+msgid "Use tar instead of the scm archive option when packaging the role"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:153
+msgid "Ignore errors and continue with the next specified role."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:157
+msgid "Don't download roles listed as dependencies"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:165
+msgid "A file containing a list of roles to be imported"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:175
+msgid "list"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:177
+msgid ""
+"lists the roles installed on the local system or matches a single role "
+"passed as an argument."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:195
+msgid "setup"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:197
+msgid "Setup an integration from GitHub or Travis for Ansible Galaxy roles"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:205
+msgid "List all of your integrations."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:209
+msgid ""
+"Remove the integration matching the provided ID value. Use --list to see "
+"ID values."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:219
+msgid "info"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:221
+msgid ""
+"prints out detailed information about an installed role as well as info "
+"available from the galaxy API."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:229 ../../rst/cli/ansible-galaxy.rst:257
+msgid "Don't query the galaxy API when creating roles"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:243
+msgid "init"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:245
+msgid ""
+"creates the skeleton framework of a role that complies with the galaxy "
+"metadata format."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:253
+msgid ""
+"The path in which the skeleton role will be created. The default is the "
+"current working directory."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:261
+msgid "The path to a role skeleton that the new role should be based upon."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:265
+msgid ""
+"Initialize using an alternate role type. Valid types include: "
+"'container', 'apb' and 'network'."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:279
+msgid "import"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:281
+msgid "used to import a role into Ansible Galaxy"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:289
+msgid ""
+"The name of a branch to import. Defaults to the repository's default "
+"branch (usually master)"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:293
+msgid "Don't wait for import results."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:297
+msgid "The name the role should have, if different than the repo name"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:301
+msgid ""
+"Check the status of the most recent import request for given "
+"github_user/github_repo."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:311
+msgid "delete"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:313
+msgid "Delete a role from Ansible Galaxy."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:323
+msgid "remove"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:325
+msgid "removes the list of roles passed as arguments from the local system."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:342
+msgid "Environment"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:344
+msgid "The following environment variables may be specified."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:348
+msgid ":envvar:`ANSIBLE_CONFIG` -- Override the default ansible config file"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:350
+msgid "Many more are available for most options in ansible.cfg"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:354
+msgid "Files"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:357
+msgid ":file:`/etc/ansible/ansible.cfg` -- Config file, used if present"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:359
+msgid ""
+":file:`~/.ansible.cfg` -- User config file, overrides the default config "
+"if present"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:362
+msgid "Author"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:364
+msgid "Ansible was originally written by Michael DeHaan."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:366
+msgid "See the `AUTHORS` file for a complete list of contributors."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:370
+msgid "Copyright"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:372
+msgid "Copyright © 2017 Red Hat, Inc | Ansible."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:374
+msgid "Ansible is released under the terms of the GPLv3 License."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:377
+msgid "See also"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:379
+msgid ""
+":manpage:`ansible(1)`,  :manpage:`ansible-config(1)`,  :manpage:`ansible-"
+"console(1)`,  :manpage:`ansible-doc(1)`,  :manpage:`ansible-galaxy(1)`,  "
+":manpage:`ansible-inventory(1)`,  :manpage:`ansible-playbook(1)`,  "
+":manpage:`ansible-pull(1)`,  :manpage:`ansible-vault(1)`,"
+msgstr ""
+

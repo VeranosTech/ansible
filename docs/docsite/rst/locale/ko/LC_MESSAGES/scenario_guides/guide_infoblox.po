@@ -1,0 +1,334 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:5
+msgid "Infoblox Guide"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:7
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:9
+msgid ""
+"This guide describes how to use Ansible with the Infoblox Network "
+"Identity Operating System (NIOS). With Ansible integration, you can use "
+"Ansible playbooks to automate Infoblox Core Network Services for IP "
+"address management (IPAM), DNS, and inventory tracking."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:11
+msgid ""
+"You can review simple example tasks in the documentation for any of the "
+":ref:`NIOS modules <nios_net tools_modules>` or look at the `Use cases "
+"with modules`_ section for more elaborate examples. See the `Infoblox "
+"<https://www.infoblox.com/>`_ website for more information on the "
+"Infoblox product."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:13
+msgid ""
+"You can retrieve most of the example playbooks used in this guide from "
+"the  `network-automation/infoblox_ansible <https://github.com/network-"
+"automation/infoblox_ansible>`_ GitHub repository."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:16
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:17
+msgid ""
+"Before using Ansible ``nios`` modules with Infoblox, you must install the"
+" ``infoblox-client`` on your Ansible control node:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:24
+msgid ""
+"You need an NIOS account with the WAPI feature enabled to use Ansible "
+"with Infoblox."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:29
+msgid "Credentials and authenticating"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:31
+msgid ""
+"To use Infoblox ``nios`` modules in playbooks, you need to configure the "
+"credentials to access your Infoblox system.  The examples in this guide "
+"use credentials stored in ``<playbookdir>/group_vars/nios.yml``. Replace "
+"these values with your Infoblox credentials:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:42
+msgid "NIOS lookup plugins"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:44
+msgid "Ansible includes the following lookup plugins for NIOS:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:46
+msgid ""
+":ref:`nios <nios_lookup>` Uses the Infoblox WAPI API to fetch NIOS "
+"specified objects, for example network views, DNS views, and host "
+"records."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:47
+msgid ""
+":ref:`nios_next_ip <nios_next_ip_lookup>` Provides the next available IP "
+"address from a network. You'll see an example of this in `Creating a host"
+" record`_."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:48
+msgid ""
+":ref:`nios_next_network <nios_next_network_lookup>` - Returns the next "
+"available network range for a network-container."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:50
+msgid ""
+"You must run the NIOS lookup plugins locally by specifying ``connection: "
+"local``. See :ref:`lookup plugins <lookup_plugins>` for more detail."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:54
+msgid "Retrieving all network views"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:56
+msgid ""
+"To retrieve all network views and save them in a variable, use the "
+":ref:`set_fact <set_fact_module>` module with the :ref:`nios "
+"<nios_lookup>` lookup plugin:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:74
+msgid "Retrieving a host record"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:76
+msgid ""
+"To retrieve a set of host records, use the ``set_fact`` module with the "
+"``nios`` lookup plugin and include a filter for the specific hosts you "
+"want to retrieve:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:105
+msgid ""
+"If you run this ``get_host_record.yml`` playbook, you should see results "
+"similar to the following:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:156
+msgid ""
+"The output above shows the host record for ``leaf01.ansible.com`` and "
+"``leaf02.ansible.com`` that were retrieved by the ``nios`` lookup plugin."
+" This playbook saves the information in variables which you can use in "
+"other playbooks. This allows you to use Infoblox as a single source of "
+"truth to gather and use information that changes dynamically. See "
+":ref:`playbooks_variables` for more information on using Ansible "
+"variables. See the :ref:`nios <nios_lookup>` examples for more data "
+"options that you can retrieve."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:158
+msgid ""
+"You can access these playbooks at `Infoblox lookup playbooks "
+"<https://github.com/network-"
+"automation/infoblox_ansible/tree/master/lookup_playbooks>`_."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:161
+msgid "Use cases with modules"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:163
+msgid ""
+"You can use the ``nios`` modules in tasks to simplify common Infoblox "
+"workflows. Be sure to set up your :ref:`NIOS "
+"credentials<nios_credentials>` before following these examples."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:166
+msgid "Configuring an IPv4 network"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:168
+msgid ""
+"To configure an IPv4 network, use the :ref:`nios_network "
+"<nios_network_module>` module:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:186
+msgid ""
+"Notice the last parameter, ``provider``, uses the variable "
+"``nios_provider`` defined in the ``group_vars/`` directory."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:189
+msgid "Creating a host record"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:191
+msgid ""
+"To create a host record named `leaf03.ansible.com` on the newly-created "
+"IPv4 network:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:208
+msgid ""
+"Notice the IPv4 address in this example uses the :ref:`nios_next_ip "
+"<nios_next_ip_lookup>` lookup plugin to find the next available IPv4 "
+"address on the network."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:211
+msgid "Creating a forward DNS zone"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:213
+msgid "To configure a forward DNS zone use, the ``nios_zone`` module:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:229
+msgid "Creating a reverse DNS zone"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:231
+msgid "To configure a reverse DNS zone:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:247
+msgid "Dynamic inventory script"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:249
+msgid ""
+"You can use the Infoblox dynamic inventory script to import your network "
+"node inventory with Infoblox NIOS. To gather the inventory from Infoblox,"
+" you need two files:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:251
+msgid ""
+"`infoblox.yaml "
+"<https://raw.githubusercontent.com/ansible/ansible/devel/contrib/inventory/infoblox.yaml>`_"
+" - A file that specifies the NIOS provider arguments and optional "
+"filters."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:253
+msgid ""
+"`infoblox.py "
+"<https://raw.githubusercontent.com/ansible/ansible/devel/contrib/inventory/infoblox.py>`_"
+" - The python script that retrieves the NIOS inventory."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:255
+msgid "To use the Infoblox dynamic inventory script:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:257
+msgid ""
+"Download the ``infoblox.yaml`` file and save it in the ``/etc/ansible`` "
+"directory."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:259
+msgid "Modify the ``infoblox.yaml`` file with your NIOS credentials."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:261
+msgid ""
+"Download the ``infoblox.py`` file and save it in the "
+"``/etc/ansible/hosts`` directory."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:263
+msgid ""
+"Change the permissions on the ``infoblox.py`` file to make the file an "
+"executable:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:269
+msgid ""
+"You can optionally use ``./infoblox.py --list`` to test the script. After"
+" a few minutes, you should see your Infoblox inventory in JSON format. "
+"You can explicitly use the Infoblox dynamic inventory script as follows:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:275
+msgid ""
+"You can also implicitly use the Infoblox dynamic inventory script by "
+"including it in your inventory directory (``etc/ansible/hosts`` by "
+"default). See :ref:`dynamic_inventory` for more details."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:279
+msgid "`Infoblox website <https://www.infoblox.com//>`_"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:280
+msgid "The Infoblox website"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:281
+msgid ""
+"`Infoblox and Ansible Deployment Guide "
+"<https://www.infoblox.com/resources/deployment-guides/infoblox-and-"
+"ansible-integration>`_"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:282
+msgid "The deployment guide for Ansible integration provided by Infoblox."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:283
+msgid ""
+"`Infoblox Integration in Ansible 2.5 <https://www.ansible.com/blog"
+"/infoblox-integration-in-ansible-2.5>`_"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:284
+msgid "Ansible blog post about Infoblox."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:285
+msgid ":ref:`Ansible NIOS modules <nios_net tools_modules>`"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:286
+msgid "The list of supported NIOS modules, with examples."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:287
+msgid ""
+"`Infoblox Ansible Examples <https://github.com/network-"
+"automation/infoblox_ansible>`_"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_infoblox.rst:288
+msgid "Infoblox example playbooks."
+msgstr ""
+

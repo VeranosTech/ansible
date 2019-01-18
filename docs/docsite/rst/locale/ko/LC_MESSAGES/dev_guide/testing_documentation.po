@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/testing_documentation.rst:7
+msgid "Testing module documentation"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_documentation.rst:9
+msgid ""
+"Before you submit a module for inclusion in the main Ansible repo, you "
+"must test your module documentation for correct HTML rendering and to "
+"ensure that the argspec matches the documentation in your Python file. "
+"The community pages offer more information on :ref:`testing "
+"reStructuredText documentation <testing_documentation_locally>`."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_documentation.rst:11
+msgid "To check the HTML output of your module documentation:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_documentation.rst:13
+msgid ""
+"Save your completed module file into the correct directory: "
+"``lib/ansible/modules/$CATEGORY/my_code.py``."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_documentation.rst:14
+msgid "Move to the docsite directory: ``cd /path/to/ansible/docs/docsite/``."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_documentation.rst:15
+msgid ""
+"Run the command to build the docs for your module: ``MODULES=my_code make"
+" webdocs``."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_documentation.rst:16
+msgid ""
+"View the HTML page at "
+"``file:///path/to/ansible/docs/docsite/_build/html/my_code_module.html``."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_documentation.rst:18
+msgid ""
+"To build the HTML documentation for multiple modules, use a comma-"
+"separated list of module names: ``MODULES=my_code,my_other_code make "
+"webdocs``."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_documentation.rst:20
+msgid ""
+"To ensure that your documentation matches your ``argument_spec``, run the"
+" ``validate-modules`` test."
+msgstr ""
+

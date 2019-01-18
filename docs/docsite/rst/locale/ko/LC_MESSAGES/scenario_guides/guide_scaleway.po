@@ -1,0 +1,224 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:5
+msgid "Using Scaleway with Ansible"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:10
+msgid "Introduction"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:12
+msgid ""
+"`Scaleway <https://scaleway.com>`_ is a cloud provider supported by "
+"Ansible, version 2.6 or higher via a dynamic inventory plugin and "
+"modules. Those modules are:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:15
+msgid ""
+":ref:`scaleway_sshkey_module`: adds a public SSH key from a file or value"
+" to the Packet infrastructure. Every subsequently-created device will "
+"have this public key installed in .ssh/authorized_keys."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:16
+msgid ""
+":ref:`scaleway_compute_module`: manages servers on Scaleway. You can use "
+"this module to create, restart and delete servers."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:17
+msgid ":ref:`scaleway_volume_module`: manages volumes on Scaleway."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:20
+msgid ""
+"This guide assumes you are familiar with Ansible and how it works. If "
+"you're not, have a look at :ref:`ansible_documentation` before getting "
+"started."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:26
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:28
+msgid ""
+"The Scaleway modules and inventory script connect to the Scaleway API "
+"using `Scaleway REST API <https://developer.scaleway.com>`_. To use the "
+"modules and inventory script you'll need a Scaleway API token. You can "
+"generate an API token via the Scaleway console `here "
+"<https://cloud.scaleway.com/#/credentials>`__. The simplest way to "
+"authenticate yourself is to set the Scaleway API token in an environment "
+"variable:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:37
+msgid ""
+"If you're not comfortable exporting your API token, you can pass it as a "
+"parameter to the modules using the ``api_token`` argument."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:39
+msgid ""
+"If you want to use a new SSH keypair in this tutorial, you can generate "
+"it to ``./id_rsa`` and ``./id_rsa.pub`` as:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:45
+msgid ""
+"If you want to use an existing keypair, just copy the private and public "
+"key over to the playbook directory."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:50
+msgid "How to add an SSH key?"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:52
+msgid ""
+"Connection to Scaleway Compute nodes use Secure Shell. SSH keys are "
+"stored at the account level, which means that you can re-use the same SSH"
+" key in multiple nodes. The first step to configure Scaleway compute "
+"resources is to have at least one SSH key configured."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:56
+msgid ""
+":ref:`scaleway_sshkey_module` is a module that manages SSH keys on your "
+"Scaleway account. You can add an SSH key to your account by including the"
+" following task in a playbook:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:66
+msgid ""
+"The ``ssh_pub_key`` parameter contains your ssh public key as a string. "
+"Here is an example inside a playbook:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:93
+msgid "How to create a compute instance?"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:95
+msgid ""
+"Now that we have an SSH key configured, the next step is to spin up a "
+"server! :ref:`scaleway_compute_module` is a module that can create, "
+"update and delete Scaleway compute instances:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:109
+msgid "Here are the parameter details for the example shown above:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:111
+msgid ""
+"``name`` is the name of the instance (the one that will show up in your "
+"web console)."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:112
+msgid ""
+"``image`` is the UUID of the system image you would like to use. A list "
+"of all images is available for each availability zone."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:114
+msgid ""
+"``organization`` represents the organization that your account is "
+"attached to."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:115
+msgid ""
+"``region`` represents the Availability Zone which your instance is in "
+"(for this example, par1 and ams1)."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:116
+msgid ""
+"``commercial_type`` represents the name of the commercial offers. You can"
+" check out the Scaleway pricing page to find which instance is right for "
+"you."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:119
+msgid ""
+"Take a look at this short playbook to see a working example using "
+"``scaleway_compute``:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:174
+msgid "Dynamic Inventory Script"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:176
+msgid ""
+"Ansible ships with :ref:`scaleway_inventory`. You can now get a complete "
+"inventory of your Scaleway resources through this plugin and filter it on"
+" different parameters (``regions`` and ``tags`` are currently supported)."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:180
+msgid ""
+"Let's create an example! Suppose that we want to get all hosts that got "
+"the tag web_server. Create a file named ``scaleway_inventory.yml`` with "
+"the following content:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:193
+msgid ""
+"This inventory means that we want all hosts that got the tag "
+"``web_server`` on the zones ``ams1`` and ``par1``. Once you have "
+"configured this file, you can get the information using the following "
+"command:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:239
+msgid ""
+"As you can see, we get different groups of hosts. ``par1`` and ``ams1`` "
+"are groups based on location. ``web_server`` is a group based on a tag."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:243
+msgid ""
+"In case a filter parameter is not defined, the plugin supposes all values"
+" possible are wanted. This means that for each tag that exists on your "
+"Scaleway compute nodes, a group based on each tag will be created."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:247
+msgid "Scaleway S3 object storage"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:249
+msgid ""
+"`Object Storage <https://www.scaleway.com/object-storage>`_ allows you to"
+" store any kind of objects (documents, images, videos, etc.). As the "
+"Scaleway API is S3 compatible, Ansible supports it natively through the "
+"modules: :ref:`s3_bucket_module`, :ref:`aws_s3_module`."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:252
+msgid "You can find many examples in ``./test/legacy/roles/scaleway_s3``"
+msgstr ""
+

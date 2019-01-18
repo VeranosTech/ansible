@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/plugins/shell.rst:4
+msgid "Shell Plugins"
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:10
+msgid ""
+"Shell plugins work to ensure that the basic commands Ansible runs are "
+"properly formatted to work with the target machine and allow the user to "
+"configure certain behaviors related to how Ansible executes tasks."
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:16
+msgid "Enabling shell plugins"
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:18
+msgid ""
+"You can add a custom shell plugin by dropping it into a ``shell_plugins``"
+" directory adjacent to your play, inside a role, or by putting it in one "
+"of the shell plugin directory sources configured in :ref:`ansible.cfg "
+"<ansible_configuration_settings>`."
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:21
+msgid ""
+"You should not alter which plugin is used unless you have a setup in "
+"which the default ``/bin/sh`` is not a POSIX compatible shell or is not "
+"available for execution."
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:27
+msgid "Using shell plugins"
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:29
+msgid ""
+"In addition to the default configuration settings in "
+":ref:`ansible_configuration_settings`, you can use the connection "
+"variable :ref:`ansible_shell_type <ansible_shell_type>` to select the "
+"plugin to use. In this case, you will also want to update the "
+":ref:`ansible_shell_executable <ansible_shell_executable>` to match."
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:33
+msgid ""
+"You can further control the settings for each plugin via other "
+"configuration options detailed in the plugin themselves (linked below)."
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:43
+msgid ":ref:`about_playbooks`"
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:44
+msgid "An introduction to playbooks"
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:45
+msgid ":ref:`inventory_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:46
+msgid "Ansible inventory plugins"
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:47
+msgid ":ref:`callback_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:48
+msgid "Ansible callback plugins"
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:49
+msgid ":ref:`playbooks_filters`"
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:50
+msgid "Jinja2 filter plugins"
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:51
+msgid ":ref:`playbooks_tests`"
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:52
+msgid "Jinja2 test plugins"
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:53
+msgid ":ref:`playbooks_lookups`"
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:54
+msgid "Jinja2 lookup plugins"
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:55
+msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:56
+msgid "Have a question?  Stop by the google group!"
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:57
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:58
+msgid "#ansible IRC chat channel"
+msgstr ""
+

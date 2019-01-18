@@ -1,0 +1,33 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/testing/sanity/no-get-exception.rst:2
+msgid "Sanity Tests » no-get-exception"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/no-get-exception.rst:4
+msgid ""
+"We created a function, ``ansible.module_utils.pycompat24.get_exception`` "
+"to help retrieve exceptions in a manner compatible with Python 2.4 "
+"through Python 3.6.  We no longer support Python 2.4 and Python 2.5 so "
+"this is extraneous and we want to deprecate the function.  Porting code "
+"should look something like this:"
+msgstr ""
+

@@ -1,0 +1,243 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:2
+msgid "Including and Importing"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:4
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:7
+msgid "Includes vs. Imports"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:9
+msgid ""
+"As noted in :doc:`playbooks_reuse`, include and import statements are "
+"very similar, however the Ansible executor engine treats them very "
+"differently."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:11
+msgid ""
+"All ``import*`` statements are pre-processed at the time playbooks are "
+"parsed."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:12
+msgid ""
+"All ``include*`` statements are processed as they are encountered during "
+"the execution of the playbook."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:14
+msgid ""
+"Please refer to  :doc:`playbooks_reuse` for documentation concerning the "
+"trade-offs one may encounter when using each type."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:16
+msgid ""
+"Also be aware that this behaviour changed in 2.4. Prior to Ansible 2.4, "
+"only ``include`` was available and it behaved differently depending on "
+"context."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:21
+msgid "Importing Playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:23
+msgid ""
+"It is possible to include playbooks inside a master playbook. For "
+"example::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:28
+msgid ""
+"The plays and tasks in each playbook listed will be run in the order they"
+" are listed, just as if they had been defined here directly."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:30
+msgid ""
+"Prior to 2.4 only ``include`` was available and worked for both playbooks"
+" and tasks as both import and include."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:36
+msgid "Including and Importing Task Files"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:38
+msgid ""
+"Breaking tasks up into different files is an excellent way to organize "
+"complex sets of tasks or reuse them. A task file simply contains a flat "
+"list of tasks::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:46
+msgid ""
+"You can then use ``import_tasks`` or ``include_tasks`` to execute the "
+"tasks in a file in the main task list::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:53
+msgid "You can also pass variables into imports and includes::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:66
+msgid ""
+"See :ref:`ansible_variable_precedence` for more details on variable "
+"inheritance and precedence."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:68
+msgid "Task include and import statements can be used at arbitrary depth."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:71
+msgid ""
+"Static and dynamic can be mixed, however this is not recommended as it "
+"may lead to difficult-to-diagnose bugs in your playbooks."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:72
+msgid ""
+"The ``key=value`` syntax for passing variables to import and include is "
+"deprecated. Use YAML ``vars:`` instead."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:74
+msgid ""
+"Includes and imports can also be used in the ``handlers:`` section. For "
+"instance, if you want to define how to restart Apache, you only have to "
+"do that once for all of your playbooks. You might make a ``handlers.yml``"
+" that looks like::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:82
+msgid "And in your main playbook file::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:90
+msgid ""
+"Be sure to refer to the limitations/trade-offs for handlers noted in "
+":doc:`playbooks_reuse`."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:92
+msgid ""
+"You can mix in includes along with your regular non-included tasks and "
+"handlers."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:95
+msgid "Including and Importing Roles"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:97
+msgid ""
+"Please refer to :doc:`playbooks_reuse_roles` for details on including and"
+" importing roles."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:101
+msgid ":ref:`yaml_syntax`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:102
+msgid "Learn about YAML syntax"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:103
+msgid ":ref:`working_with_playbooks`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:104
+msgid "Review the basic Playbook language features"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:105
+msgid ":ref:`playbooks_best_practices`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:106
+msgid "Various tips about managing playbooks in the real world"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:107
+msgid ":ref:`playbooks_variables`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:108
+msgid "All about variables in playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:109
+msgid ":ref:`playbooks_conditionals`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:110
+msgid "Conditionals in playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:111
+msgid ":ref:`playbooks_loops`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:112
+msgid "Loops in playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:113
+msgid ":ref:`all_modules`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:114
+msgid "Learn about available modules"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:115
+msgid ":ref:`developing_modules`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:116
+msgid "Learn how to extend Ansible by writing your own modules"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:117
+msgid "`GitHub Ansible examples <https://github.com/ansible/ansible-examples>`_"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:118
+msgid "Complete playbook files from the GitHub project source"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:119
+msgid "`Mailing List <https://groups.google.com/group/ansible-project>`_"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_includes.rst:120
+msgid "Questions? Help? Ideas?  Stop by the list on Google Groups"
+msgstr ""
+

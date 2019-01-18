@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/win_wait_for_module.rst:9
+msgid "win_wait_for -- Waits for a condition before continuing"
+msgstr ""
+
+#: ../../rst/modules/win_wait_for_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/win_wait_for_module.rst:20
+msgid ""
+"You can wait for a set amount of time ``timeout``, this is the default if"
+" nothing is specified."
+msgstr ""
+
+#: ../../rst/modules/win_wait_for_module.rst:21
+msgid ""
+"Waiting for a port to become available is useful for when services are "
+"not immediately available after their init scripts return which is true "
+"of certain Java application servers."
+msgstr ""
+
+#: ../../rst/modules/win_wait_for_module.rst:22
+msgid "You can wait for a file to exist or not exist on the filesystem."
+msgstr ""
+
+#: ../../rst/modules/win_wait_for_module.rst:23
+msgid ""
+"This module can also be used to wait for a regex match string to be "
+"present in a file."
+msgstr ""
+
+#: ../../rst/modules/win_wait_for_module.rst:24
+msgid ""
+"You can wait for active connections to be closed before continuing on a "
+"local port."
+msgstr ""
+
+#: ../../rst/modules/win_wait_for_module.rst:30
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/win_wait_for_module.rst:194
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/win_wait_for_module.rst:198
+msgid ":ref:`wait_for_module`"
+msgstr ""
+
+#: ../../rst/modules/win_wait_for_module.rst:199
+msgid "The official documentation on the **wait_for** module."
+msgstr ""
+
+#: ../../rst/modules/win_wait_for_module.rst:200
+msgid ":ref:`win_wait_for_process_module`"
+msgstr ""
+
+#: ../../rst/modules/win_wait_for_module.rst:201
+msgid "The official documentation on the **win_wait_for_process** module."
+msgstr ""
+
+#: ../../rst/modules/win_wait_for_module.rst:205
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/win_wait_for_module.rst:253
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/win_wait_for_module.rst:254
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/win_wait_for_module.rst:295
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/win_wait_for_module.rst:300
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/win_wait_for_module.rst:303
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/win_wait_for_module.rst:310
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/win_wait_for_module.rst:312
+msgid "Jordan Borean (@jborean93)"
+msgstr ""
+
+#: ../../rst/modules/win_wait_for_module.rst:316
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_wait_for.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

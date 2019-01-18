@@ -1,0 +1,551 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:3
+msgid "Ansible 2.3"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:4
+msgid "**Target: Mid April 2017**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:6
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:9
+msgid "General Comments from the Core Team"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:11
+msgid ""
+"The 2.3 Ansible Core is just a little different than the past two major "
+"releases we've done.  In addition to feature work, we're using part of "
+"the time for this release to reduce some of our backlog in other areas "
+"than pure development."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:12
+msgid ""
+"*Administration:* Clean up our GitHub repos and move to one repo so that "
+"contributions, tickets, submissions, etc are centralized and easier for "
+"both the community and the Core Team to manage."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:13
+msgid ""
+"*Metadata:* Move to a Metadata based system for modules.  This has been "
+"discussed here: https://github.com/ansible/proposals/blob/master/modules-"
+"management.md"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:14
+msgid ""
+"*Documentation:* We're aware that Docs have issues.  Scott Butler, aka "
+"Dharmabumstead will be leading the charge on how he and we as a community"
+" can clean them up."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:15
+msgid ""
+"*Backlog & Stability:* We're spending some of the cycles for 2.3 trying "
+"to reduce our ticket/PR backlog, and clean up some particular areas of "
+"the project that the community has expressed particular frustrations "
+"about."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:16
+msgid ""
+"*Python 3:* The community and Toshio have done TONS of work getting "
+"Python 3 working.  Still more to go..."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:17
+msgid ""
+"*Features:* We still have some cool stuff coming.  Check it out below.  "
+"For people on the Networking side of the world, the Persistent Connection"
+" Manager will be a *huge* feature and performance gain."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:20
+msgid "Repo Merge"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:21
+msgid "Script that a submitter can run to migrate their PR **(done)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:22
+msgid ""
+"Script that a committer can run to fork a PR and then merge to "
+"ansible/ansible **(mostly done)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:23
+msgid "Move all the issues (remove old ones that can be removed) **(done)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:24
+msgid ""
+"Enhance ansibullbot to accommodate the changes (jctanner) **(in progress,"
+" going well)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:27
+msgid "Metadata"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:28
+msgid "Add metadata to the modules we ship **(done)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:29
+msgid "Write code to use metadata in docs **(done)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:30
+msgid ""
+"If needed for python2/3 write code to use metadata in module_common or "
+"pluginloader **(not needed)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:33
+msgid "Documentation"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:34
+msgid "Update developing_modules **(in progress, will continue in 2.4)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:35
+msgid "Set up rst skeleton for module_utils docs."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:36
+msgid "Plugin development docs"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:37
+msgid ""
+"Speed up `make webdocs` https://github.com/ansible/ansible/issues/17406"
+"   **(done)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:40
+msgid "Windows"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:41
+msgid "Lead by nitzmahone"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:43
+msgid "**Platform**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:45
+msgid "Pipelining support **(done)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:46
+msgid "Become support **(done/experimental)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:47
+msgid ""
+"Integrated kerberos ticket management (via ansible_user/ansible_password)"
+" **(done)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:48
+msgid "Switch PS input encoding to BOM-less UTF8 **(done)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:49
+msgid "Server 2016 support/testing (now RTM'd) **(partial)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:50
+msgid "Modularize Windows module_utils (allow N files) **(partial)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:51
+msgid "Declarative argspec for PS / .NET **(bumped to 2.4)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:52
+msgid ""
+"Kerberos encryption (via notting, pywinrm/requests_kerberos/pykerberos) "
+"**(in progress, available in pywinrm post 2.3 release)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:53
+msgid ""
+"Fix plugin-specific connection var lookup/delegation (either registered "
+"explicitly by plugins or ansible_(plugin)_*) **(bumped to 2.4)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:55
+msgid "**Modules**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:57
+msgid "win_domain module **(done)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:58
+msgid "win_domain_membership module **(done)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:59
+msgid "win_domain_controller module **(done)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:60
+msgid "win_dns_client module **(done)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:61
+msgid "win_wait_for module"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:62
+msgid "win_disk_image module **(done)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:63
+msgid "Updates to win_chocolatey, adopt to core (stretch) **(bump to 2.4)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:64
+msgid "Updates/rewrite to win_unzip, adopt to core (stretch) **(bump to 2.4)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:65
+msgid "Updates to win_updates, adopt to core (stretch) **(bump to 2.4)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:66
+msgid ""
+"Updates to win_package, adopt to core (+ deprecate win_msi) (stretch) "
+"**(bump to 2.4)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:69
+msgid "Azure"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:70
+msgid "Lead by nitzmahone, mattclay"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:72
+msgid "Ensure Azure SDK rc6/RTM work **(done)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:73
+msgid ""
+"Move tests from ansible/azure_rm repo to ansible/ansible **(bump to 2.4, "
+"no CI resources)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:74
+msgid "Update/enhance tests **(bump to 2.4, no CI resources)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:75
+msgid ""
+"Expose endpoint overrides (support AzureChinaCloud, Azure Stack) **(bump "
+"to 2.4)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:76
+msgid ""
+"Get Azure tests running in CI (stretch, depends on availability of "
+"sponsored account) **(bump to 2.4, no CI resources)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:77
+msgid "azure_rm_loadbalancer module (stretch) **(bump to 2.4)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:80
+msgid "Networking"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:81
+msgid "Code stability and tidy up **(done)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:82
+msgid "Extend testing **(done)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:83
+msgid "User facing documentation"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:84
+msgid "Persistent connection manager **(done)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:85
+msgid "Netconf/YANG implementation (only feature) **(done)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:86
+msgid "Deferred from 2.2: Network facts modules (sros)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:89
+msgid "Python3"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:91
+msgid "For 2.3:"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:93
+msgid "We want all tests to pass"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:95
+msgid ""
+"Just the mercurial tests left because we haven't created an image with "
+"both python2 and python3 to test it on yet."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:97
+msgid "Check by doing ``grep skip/python3 test/integration/targets/*/aliases``"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:99
+msgid ""
+"If users report bugs on python3, these should be fixed and will "
+"prioritize our work on porting other modules."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:101
+msgid ""
+"Still have to solve the python3-only and python2-only modules.  Thinking "
+"of doing this via metadata.  Will mean we have to use metadata at the "
+"module_common level.  Will also mean we don't support py2-only or "
+"py3-only old style python modules."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:102
+msgid ""
+"Note: Most of the currently tested ansible features now run.  But there's"
+" still a lot of code that's untested."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:105
+msgid "Testing and CI"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:106
+msgid "Lead by mattclay"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:108
+msgid ""
+"*Static Code Analysis:* Create custom pylint extensions to automate "
+"detection of common Ansible specific issues reported during code review. "
+"Automate feedback on PRs for new code only to avoid noise from existing "
+"code which does not pass."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:110
+msgid "**Ongoing:** Some static code analysis is now part of the CI process:"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:112
+msgid ""
+"pep8 is now being run by CI, although not all PEP 8 rules are being "
+"enforced."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:113
+msgid ""
+"pylint is now being run by CI, but currently only on the ansible-test "
+"portion of codebase."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:115
+msgid ""
+"*Test Reliability:* Eliminate transient test failures by fixing "
+"unreliable tests. Reduce network dependencies by moving network resources"
+" into httptester."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:117
+msgid ""
+"**Ongoing:** Many of the frequent sources of test instability have been "
+"resolved. However, more work still remains."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:119
+msgid "Some new issues have also appeared, which are currently being worked on."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:121
+msgid ""
+"*Enable Remaining Tests:* Implement fixes for macOS, FreeBSD and Python 3"
+" to enable the remaining blacklisted tests for CI."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:123
+msgid ""
+"**Ongoing:** More tests have been enabled for macOS, FreeBSD and Python "
+"3. However, work still remains to enable more tests."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:125
+msgid ""
+"*Windows Server 2016:* Add Windows Server 2016 to CI when official AMIs "
+"become available."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:127
+msgid ""
+"**Delayed:** Integration tests pass on Windows Server 2016. However, due "
+"to intermittent WinRM issues, the tests have been disabled."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:129
+msgid ""
+"Once the issues with WinRM have been resolved, the tests will be re-"
+"enabled."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:131
+msgid ""
+"*Repository Consolidation:* Update CI to maintain and improve upon "
+"existing functionality after repository consolidation."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:133
+msgid ""
+"**Done:** A new test runner, ansible-test, has been deployed to manage CI"
+" jobs on Shippable."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:135
+msgid ""
+"Tests executed on PRs are based on the changes made in the PR, for "
+"example:"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:137
+msgid "Changes to a module will only run tests appropriate for that module."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:138
+msgid ""
+"Changes to Windows modules or the Windows connection plugin run tests on "
+"Windows."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:139
+msgid ""
+"Changes to network modules run tests on the appropriate virtual network "
+"device (currently supporting VyOS and IOS)."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:141
+msgid ""
+"Tests executed on merges are based on changes since the last successful "
+"merge test."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:144
+msgid "Amazon"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:145
+msgid "Lead by ryansb"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:147
+msgid "Improve ec2.py integration tests **(partial, more to do in 2.4)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:148
+msgid ""
+"ELB version 2 **(pushed - needs_revision)** `PR "
+"<https://github.com/ansible/ansible/pull/19491>`_"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:149
+msgid "CloudFormation YAML, cross-stack reference, and roles support **(done)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:150
+msgid "ECS module refactor **(done)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:151
+msgid "AWS module unit testing w/ placebo (boto3 only) **(pushed 2.4)**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:154
+msgid "Plugin Loader"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:155
+msgid "Add module_utils to the plugin loader (feature) [done]"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:156
+msgid ""
+"Split plugin loader: Plugin_search, plugin_loader (modules only use "
+"first) [pushed to 2.4]"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:159
+msgid "ansible-ssh"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:160
+msgid "Add a 'ansible-ssh' convenience and debugging tool (will slip to 2.4)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:161
+msgid ""
+"Tool to invoke an interactive ssh to a host with the same args/env/config"
+" that ansible would."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:162
+msgid "There are at least three external versions"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:164
+msgid "https://github.com/2ndQuadrant/ansible-ssh"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:165
+msgid "https://github.com/haad/ansible-ssh"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_3.rst:166
+msgid "https://github.com/mlvnd/ansible-tools"
+msgstr ""
+

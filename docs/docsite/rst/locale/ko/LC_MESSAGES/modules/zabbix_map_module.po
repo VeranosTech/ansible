@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/zabbix_map_module.rst:9
+msgid "zabbix_map -- Create/update/delete Zabbix maps"
+msgstr ""
+
+#: ../../rst/modules/zabbix_map_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/zabbix_map_module.rst:20
+msgid ""
+"This module allows you to create, modify and delete Zabbix map entries, "
+"using Graphviz binaries and text description written in DOT language. "
+"Nodes of the graph will become map elements and edges will become links "
+"between map elements. See "
+"https://en.wikipedia.org/wiki/DOT_(graph_description_language) and "
+"https://www.graphviz.org/ for details. Inspired by http://blog.zabbix.com"
+"/maps-for-the-lazy/."
+msgstr ""
+
+#: ../../rst/modules/zabbix_map_module.rst:21
+msgid ""
+"The following extra node attributes are supported: ``zbx_host`` contains "
+"name of the host in Zabbix. Use this if desired type of map element is "
+"``host``. ``zbx_group`` contains name of the host group in Zabbix. Use "
+"this if desired type of map element is ``host group``. ``zbx_map`` "
+"contains name of the map in Zabbix. Use this if desired type of map "
+"element is ``map``. ``zbx_label`` contains label of map element. "
+"``zbx_image`` contains name of the image used to display the element in "
+"default state. ``zbx_image_disabled`` contains name of the image used to "
+"display disabled map element. ``zbx_image_maintenance`` contains name of "
+"the image used to display map element in maintenance. "
+"``zbx_image_problem`` contains name of the image used to display map "
+"element with problems. ``zbx_url`` contains map element URL in "
+"``name:url`` format. More than one url could be specified by adding some "
+"prefix (e.g., ``zbx_url1``, ``zbx_url2``)."
+msgstr ""
+
+#: ../../rst/modules/zabbix_map_module.rst:22
+msgid ""
+"The following extra link attributes are supported: ``zbx_draw_style`` "
+"contains link line draw style. Possible values: ``line``, ``bold``, "
+"``dotted``, ``dashed``. ``zbx_trigger`` contains name of the trigger used"
+" as a link indicator in ``host_name:trigger_name`` format. More than one "
+"trigger could be specified by adding some prefix (e.g., ``zbx_trigger1``,"
+" ``zbx_trigger2``). ``zbx_trigger_color`` contains indicator color "
+"specified either as CSS3 name or as a hexadecimal code starting with "
+"``#``. ``zbx_trigger_draw_style`` contains indicator draw style. Possible"
+" values are the same as for ``zbx_draw_style``."
+msgstr ""
+
+#: ../../rst/modules/zabbix_map_module.rst:27
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/zabbix_map_module.rst:28
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/zabbix_map_module.rst:30
+msgid "python >= 2.6"
+msgstr ""
+
+#: ../../rst/modules/zabbix_map_module.rst:31
+msgid "zabbix-api"
+msgstr ""
+
+#: ../../rst/modules/zabbix_map_module.rst:32
+msgid "pydotplus"
+msgstr ""
+
+#: ../../rst/modules/zabbix_map_module.rst:33
+msgid "webcolors"
+msgstr ""
+
+#: ../../rst/modules/zabbix_map_module.rst:34
+msgid "Pillow"
+msgstr ""
+
+#: ../../rst/modules/zabbix_map_module.rst:35
+msgid "Graphviz"
+msgstr ""
+
+#: ../../rst/modules/zabbix_map_module.rst:39
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/zabbix_map_module.rst:311
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/zabbix_map_module.rst:377
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/zabbix_map_module.rst:382
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/zabbix_map_module.rst:385
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/zabbix_map_module.rst:392
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/zabbix_map_module.rst:394
+msgid "Antony Alekseyev (@Akint)"
+msgstr ""
+
+#: ../../rst/modules/zabbix_map_module.rst:398
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/monitoring/zabbix/zabbix_map.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

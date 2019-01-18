@@ -1,0 +1,163 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/overview_architecture.rst:3
+msgid "Ansible Architecture"
+msgstr ""
+
+#: ../../rst/dev_guide/overview_architecture.rst:5
+msgid ""
+"Ansible is a radically simple IT automation engine that automates cloud "
+"provisioning, configuration management, application deployment, intra-"
+"service orchestration, and many other IT needs."
+msgstr ""
+
+#: ../../rst/dev_guide/overview_architecture.rst:7
+msgid ""
+"Being designed for multi-tier deployments since day one, Ansible models "
+"your IT infrastructure by describing how all of your systems inter-"
+"relate, rather than just managing one system at a time."
+msgstr ""
+
+#: ../../rst/dev_guide/overview_architecture.rst:9
+msgid ""
+"It uses no agents and no additional custom security infrastructure, so "
+"it's easy to deploy - and most importantly, it uses a very simple "
+"language (YAML, in the form of Ansible Playbooks) that allow you to "
+"describe your automation jobs in a way that approaches plain English."
+msgstr ""
+
+#: ../../rst/dev_guide/overview_architecture.rst:11
+msgid ""
+"In this section, we'll give you a really quick overview of how Ansible "
+"works so you can see how the pieces fit together."
+msgstr ""
+
+#: ../../rst/dev_guide/overview_architecture.rst:14
+msgid "Modules"
+msgstr ""
+
+#: ../../rst/dev_guide/overview_architecture.rst:16
+msgid ""
+"Ansible works by connecting to your nodes and pushing out small programs,"
+" called \"Ansible Modules\" to them. These programs are written to be "
+"resource models of the desired state of the system. Ansible then executes"
+" these modules (over SSH by default), and removes them when finished."
+msgstr ""
+
+#: ../../rst/dev_guide/overview_architecture.rst:18
+msgid ""
+"Your library of modules can reside on any machine, and there are no "
+"servers, daemons, or databases required. Typically you'll work with your "
+"favorite terminal program, a text editor, and probably a version control "
+"system to keep track of changes to your content."
+msgstr ""
+
+#: ../../rst/dev_guide/overview_architecture.rst:21
+msgid "Plugins"
+msgstr ""
+
+#: ../../rst/dev_guide/overview_architecture.rst:23
+msgid ""
+"Plugins are pieces of code that augment Ansible's core functionality. "
+"Ansible ships with a number of handy plugins, and you can easily write "
+"your own."
+msgstr ""
+
+#: ../../rst/dev_guide/overview_architecture.rst:26
+msgid "Inventory"
+msgstr ""
+
+#: ../../rst/dev_guide/overview_architecture.rst:28
+msgid ""
+"By default, Ansible represents what machines it manages using a very "
+"simple INI file that puts all of your managed machines in groups of your "
+"own choosing."
+msgstr ""
+
+#: ../../rst/dev_guide/overview_architecture.rst:30
+msgid ""
+"To add new machines, there is no additional SSL signing server involved, "
+"so there's never any hassle deciding why a particular machine didn't get "
+"linked up due to obscure NTP or DNS issues."
+msgstr ""
+
+#: ../../rst/dev_guide/overview_architecture.rst:32
+msgid ""
+"If there's another source of truth in your infrastructure, Ansible can "
+"also plugin to that, such as drawing inventory, group, and variable "
+"information from sources like EC2, Rackspace, OpenStack, and more."
+msgstr ""
+
+#: ../../rst/dev_guide/overview_architecture.rst:34
+msgid "Here's what a plain text inventory file looks like::"
+msgstr ""
+
+#: ../../rst/dev_guide/overview_architecture.rst:45
+msgid ""
+"Once inventory hosts are listed, variables can be assigned to them in "
+"simple text files (in a subdirectory called 'group_vars/' or 'host_vars/'"
+" or directly in the inventory file."
+msgstr ""
+
+#: ../../rst/dev_guide/overview_architecture.rst:47
+msgid ""
+"Or, as already mentioned, use a dynamic inventory to pull your inventory "
+"from data sources like EC2, Rackspace, or OpenStack."
+msgstr ""
+
+#: ../../rst/dev_guide/overview_architecture.rst:50
+msgid "Playbooks"
+msgstr ""
+
+#: ../../rst/dev_guide/overview_architecture.rst:52
+msgid ""
+"Playbooks can finely orchestrate multiple slices of your infrastructure "
+"topology, with very detailed control over how many machines to tackle at "
+"a time.  This is where Ansible starts to get most interesting."
+msgstr ""
+
+#: ../../rst/dev_guide/overview_architecture.rst:54
+msgid ""
+"Ansible's approach to orchestration is one of finely-tuned simplicity, as"
+" we believe your automation code should make perfect sense to you years "
+"down the road and there should be very little to remember about special "
+"syntax or features."
+msgstr ""
+
+#: ../../rst/dev_guide/overview_architecture.rst:56
+msgid "Here's what a simple playbook looks like::"
+msgstr ""
+
+#: ../../rst/dev_guide/overview_architecture.rst:72
+msgid "Extending Ansible with plug-ins and the API"
+msgstr ""
+
+#: ../../rst/dev_guide/overview_architecture.rst:74
+msgid ""
+"Should you want to write your own, Ansible modules can be written in any "
+"language that can return JSON (Ruby, Python, bash, etc). Inventory can "
+"also plug in to any datasource by writing a program that speaks to that "
+"datasource and returns JSON. There's also various Python APIs for "
+"extending Ansible's connection types (SSH is not the only transport "
+"possible), callbacks (how Ansible logs, etc), and even for adding new "
+"server side behaviors."
+msgstr ""
+

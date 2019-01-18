@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/scenario_guides/guide_kubernetes.rst:2
+msgid "Getting Started with Kubernetes and OpenShift"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_kubernetes.rst:4
+msgid ""
+"Modules for interacting with the Kubernetes (K8s) and OpenShift API are "
+"under development, and can be used in preview mode. To use them, review "
+"the requirements, and then follow the installation and use instructions."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_kubernetes.rst:7
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_kubernetes.rst:9
+msgid "To use the modules, you'll need the following:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_kubernetes.rst:11
+msgid ""
+"Run Ansible from source. For assistance, view `running from source "
+"<./intro_installation.html/#running-from-source>`_"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_kubernetes.rst:12
+msgid ""
+"`OpenShift Rest Client <https://github.com/openshift/openshift-"
+"restclient-python>`_ installed on the host that will execute the modules"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_kubernetes.rst:16
+msgid "Installation and use"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_kubernetes.rst:18
+msgid ""
+"The individual modules, as of this writing, are not part of the Ansible "
+"repository, but they can be accessed by installing the role, `ansible"
+".kubernetes-modules <https://galaxy.ansible.com/ansible/kubernetes-"
+"modules/>`_, and including it in a playbook."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_kubernetes.rst:20
+msgid "To install, run the following:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_kubernetes.rst:26
+msgid "Next, include it in a playbook, as follows:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_kubernetes.rst:37
+msgid ""
+"Because the role is referenced, ``hello-world`` is able to access the "
+"modules, and use them to deploy an application."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_kubernetes.rst:39
+msgid ""
+"The modules are found in the ``library`` folder of the role. Each "
+"includes full documentation for parameters and the returned data "
+"structure. However, not all modules include examples, only those where "
+"`testing data <https://github.com/openshift/openshift-restclient-"
+"python/tree/master/openshift/ansiblegen/examples>`_ has been created."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_kubernetes.rst:42
+msgid "Authenticating with the API"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_kubernetes.rst:44
+msgid ""
+"By default the OpenShift Rest Client will look for ``~/.kube/config``, "
+"and if found, connect using the active context. You can override the "
+"location of the file using the``kubeconfig`` parameter, and the context, "
+"using the ``context`` parameter."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_kubernetes.rst:46
+msgid ""
+"Basic authentication is also supported using the ``username`` and "
+"``password`` options. You can override the URL using the ``host`` "
+"parameter. Certificate authentication works through the ``ssl_ca_cert``, "
+"``cert_file``, and ``key_file`` parameters, and for token authentication,"
+" use the ``api_key`` parameter."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_kubernetes.rst:48
+msgid "To disable SSL certificate verification, set ``verify_ssl`` to false."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_kubernetes.rst:51
+msgid "Filing issues"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_kubernetes.rst:53
+msgid ""
+"If you find a bug or have a suggestion regarding individual modules or "
+"the role, please file issues at `OpenShift Rest Client issues "
+"<https://github.com/openshift/openshift-restclient-python/issues>`_."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_kubernetes.rst:55
+msgid ""
+"There is also a utility module, k8s_common.py, that is part of the "
+"`Ansible <https://github.com/ansible/ansible>`_ repo. If you find a bug "
+"or have suggestions regarding it, please file issues at `Ansible issues "
+"<https://github.com/ansible/ansible/issues>`_."
+msgstr ""
+

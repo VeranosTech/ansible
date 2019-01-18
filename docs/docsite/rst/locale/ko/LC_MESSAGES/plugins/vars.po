@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/plugins/vars.rst:4
+msgid "Vars Plugins"
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:10
+msgid ""
+"Vars plugins inject additional variable data into Ansible runs that did "
+"not come from an inventory source, playbook, or command line. Playbook "
+"constructs like 'host_vars' and 'group_vars' work using vars plugins."
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:12
+msgid ""
+"Vars plugins were partially implemented in Ansible 2.0 and rewritten to "
+"be fully implemented starting with Ansible 2.4."
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:14
+msgid ""
+"The :ref:`host_group_vars <host_group_vars_vars>` plugin shipped with "
+"Ansible enables reading variables from :ref:`host_variables` and "
+":ref:`group_variables`."
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:20
+msgid "Enabling vars plugins"
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:22
+msgid ""
+"You can activate a custom vars plugin by either dropping it into a "
+"``vars_plugins`` directory adjacent to your play,  inside a role, or by "
+"putting it in one of the directory sources configured in "
+":ref:`ansible.cfg <ansible_configuration_settings>`."
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:28
+msgid "Using vars plugins"
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:30
+msgid "Vars plugins are used automatically after they are enabled."
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:36
+msgid "Plugin Lists"
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:38
+msgid ""
+"You can use ``ansible-doc -t vars -l`` to see the list of available "
+"plugins. Use ``ansible-doc -t vars <plugin name>`` to see specific "
+"plugin-specific documentation and examples."
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:49
+msgid ":ref:`action_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:50
+msgid "Ansible Action plugins"
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:51
+msgid ":ref:`cache_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:52
+msgid "Ansible Cache plugins"
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:53
+msgid ":ref:`callback_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:54
+msgid "Ansible callback plugins"
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:55
+msgid ":ref:`connection_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:56
+msgid "Ansible connection plugins"
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:57
+msgid ":ref:`inventory_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:58
+msgid "Ansible inventory plugins"
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:59
+msgid ":ref:`shell_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:60
+msgid "Ansible Shell plugins"
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:61
+msgid ":ref:`strategy_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:62
+msgid "Ansible Strategy plugins"
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:63
+msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:64
+msgid "Have a question?  Stop by the google group!"
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:65
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:66
+msgid "#ansible IRC chat channel"
+msgstr ""
+

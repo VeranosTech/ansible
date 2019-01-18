@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/community/reporting_bugs_and_features.rst:5
+msgid "Reporting Bugs And Requesting Features"
+msgstr ""
+
+#: ../../rst/community/reporting_bugs_and_features.rst:7
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/community/reporting_bugs_and_features.rst:12
+msgid "Reporting a bug"
+msgstr ""
+
+#: ../../rst/community/reporting_bugs_and_features.rst:14
+msgid ""
+"Ansible practices responsible disclosure - if this is a security-related "
+"bug, email `security@ansible.com <mailto:security@ansible.com>`_ instead "
+"of filing a ticket or posting to any public groups, and you will receive "
+"a prompt response."
+msgstr ""
+
+#: ../../rst/community/reporting_bugs_and_features.rst:16
+msgid ""
+"Ansible bugs should be reported to `github.com/ansible/ansible/issues "
+"<https://github.com/ansible/ansible/issues>`_ after signing up for a free"
+" GitHub account.  Before reporting a bug, please use the bug/issue search"
+" to see if the issue has already been reported."
+msgstr ""
+
+#: ../../rst/community/reporting_bugs_and_features.rst:20
+msgid ""
+"Knowing your Ansible version and the exact commands you are running, and "
+"what you expect, saves time and helps us help everyone with their issues "
+"more quickly. For that reason, we provide an issue template; please fill "
+"it out as completely and as accurately as possible."
+msgstr ""
+
+#: ../../rst/community/reporting_bugs_and_features.rst:22
+msgid ""
+"Do not use the issue tracker for \"how do I do this\" type questions.  "
+"These are great candidates for IRC or the mailing list instead where "
+"things are likely to be more of a discussion."
+msgstr ""
+
+#: ../../rst/community/reporting_bugs_and_features.rst:24
+msgid ""
+"To be respectful of reviewers' time and allow us to help everyone "
+"efficiently, please  provide minimal well-reduced and well-commented "
+"examples versus sharing your entire production playbook.  Include "
+"playbook snippets and output where possible."
+msgstr ""
+
+#: ../../rst/community/reporting_bugs_and_features.rst:26
+msgid ""
+"When sharing YAML in playbooks, formatting can be preserved by using "
+"`code blocks  <https://help.github.com/articles/creating-and-"
+"highlighting-code-blocks/>`_."
+msgstr ""
+
+#: ../../rst/community/reporting_bugs_and_features.rst:28
+msgid ""
+"For multiple-file content, we encourage use of gist.github.com.  Online "
+"pastebin content can expire, so it's nice to have things around for a "
+"longer term if they are referenced in a ticket."
+msgstr ""
+
+#: ../../rst/community/reporting_bugs_and_features.rst:30
+msgid ""
+"If you are not sure if something is a bug yet, you are welcome to ask "
+"about something on the :ref:`mailing list or IRC first <communication>`."
+msgstr ""
+
+#: ../../rst/community/reporting_bugs_and_features.rst:32
+msgid ""
+"As we are a very high volume project, if you determine that you do have a"
+" bug, please be sure to open the issue yourself to ensure we have a "
+"record of it. Don't rely on someone else in the community to file the bug"
+" report for you."
+msgstr ""
+
+#: ../../rst/community/reporting_bugs_and_features.rst:37
+msgid "Requesting a feature"
+msgstr ""
+
+#: ../../rst/community/reporting_bugs_and_features.rst:39
+msgid ""
+"The best way to get a feature into Ansible is to :ref:`submit a pull "
+"request <community_pull_requests>`."
+msgstr ""
+
+#: ../../rst/community/reporting_bugs_and_features.rst:41
+msgid ""
+"The next best way of getting a feature into Ansible is to submit a "
+"proposal through the `Ansible proposal process  "
+"<https://github.com/ansible/proposals>`_."
+msgstr ""
+

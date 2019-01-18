@@ -1,0 +1,199 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/scenario_guides/guide_vultr.rst:2
+msgid "Vultr Guide"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:4
+msgid ""
+"Ansible offers a set of modules to interact with `Vultr "
+"<https://www.vultr.com>`_ cloud platform."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:6
+msgid ""
+"This set of module forms a framework that allows one to easily manage and"
+" orchestrate one's infrastructure on Vultr cloud platform."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:10
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:12
+msgid ""
+"There is actually no technical requirement; simply an already created "
+"Vultr account."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:16
+msgid "Configuration"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:18
+msgid "Vultr modules offer a rather flexible way with regard to configuration."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:20
+msgid "Configuration is read in that order:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:22
+msgid "Environment Variables (eg. ``VULTR_API_KEY``, ``VULTR_API_TIMEOUT``)"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:23
+msgid "File specified by environment variable ``VULTR_API_CONFIG``"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:24
+msgid "``vultr.ini`` file located in current working directory"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:25
+msgid "``$HOME/.vultr.ini``"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:28
+msgid "Ini file are structured this way:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:41
+msgid ""
+"If ``VULTR_API_ACCOUNT`` environment variable or ``api_account`` module "
+"parameter is not specified, modules will look for the section named "
+"\"default\"."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:45
+msgid "Authentication"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:47
+msgid ""
+"Before using the Ansible modules to interact with Vultr, ones need an API"
+" key. If one doesn't own one yet, log in to `Vultr "
+"<https://www.vultr.com>`_ go to Account, then API, enable API then the "
+"API key should show up."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:50
+msgid "Ensure you allow the usage of the API key from the proper IP addresses."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:52
+msgid ""
+"Refer to the Configuration section to find out where to put this "
+"information."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:54
+msgid "To check that everything is working properly run the following command:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:84
+msgid ""
+"If a similar output displays then everything is setup properly, else "
+"please ensure the proper ``VULTR_API_KEY`` has been specified and that "
+"Access Control on Vultr > Account > API page are accurate."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:88
+msgid "Usage"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:90
+msgid ""
+"Since `Vultr <https://www.vultr.com>`_ offers a public API, the execution"
+" of the module to manage the infrastructure on their platform will happen"
+" on localhost. This translates to:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:104
+msgid ""
+"From that point on, only you creativity is the limit. Make sure to read "
+"the documentation of the `available modules "
+"<https://docs.ansible.com/ansible/latest/modules/list_of_cloud_modules.html#vultr>`_."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:108
+msgid "Dynamic Inventory"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:110
+msgid ""
+"Ansible provides a dynamic inventory plugin for `Vultr "
+"<https://www.vultr.com>`_. The configuration process is exactly the same "
+"as the one for the modules."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:113
+msgid ""
+"To be able to use it you need to enable it first by specifying the "
+"following in the ``ansible.cfg`` file:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:120
+msgid ""
+"And provide a configuration file to be used with the plugin, the minimal "
+"configuration file looks like this:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:127
+msgid "To list the available hosts one can simply run:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:134
+msgid ""
+"For example, this allows you to take action on nodes grouped by location "
+"or OS name:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:147
+msgid "Integration tests"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:149
+msgid "Ansible includes integration tests for all Vultr modules."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:151
+msgid ""
+"These tests are meant to run against the public Vultr API and that is why"
+" they require a valid key to access the API."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:153
+msgid "Prepare the test setup:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:160
+msgid "Set the Vultr API key:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:168
+msgid "Run all Vultr tests:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_vultr.rst:175
+msgid "To run a specific test, e.g. vultr_account_facts:"
+msgstr ""
+

@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/ovirt_auth_module.rst:9
+msgid "ovirt_auth -- Module to manage authentication to oVirt/RHV"
+msgstr ""
+
+#: ../../rst/modules/ovirt_auth_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/ovirt_auth_module.rst:20
+msgid ""
+"This module authenticates to oVirt/RHV engine and creates SSO token, "
+"which should be later used in all other oVirt/RHV modules, so all modules"
+" don't need to perform login and logout. This module returns an Ansible "
+"fact called *ovirt_auth*. Every module can use this fact as ``auth`` "
+"parameter, to perform authentication."
+msgstr ""
+
+#: ../../rst/modules/ovirt_auth_module.rst:25
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/ovirt_auth_module.rst:26
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/ovirt_auth_module.rst:28
+msgid "python >= 2.7"
+msgstr ""
+
+#: ../../rst/modules/ovirt_auth_module.rst:29
+msgid "ovirt-engine-sdk-python >= 4.2.4"
+msgstr ""
+
+#: ../../rst/modules/ovirt_auth_module.rst:33
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/ovirt_auth_module.rst:222
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/ovirt_auth_module.rst:225
+msgid ""
+"Everytime you use ovirt_auth module to obtain ticket, you need to also "
+"revoke the ticket, when you no longer need it, otherwise the ticket would"
+" be revoked by engine when it expires. For an example of how to achieve "
+"that, please take a look at *examples* section."
+msgstr ""
+
+#: ../../rst/modules/ovirt_auth_module.rst:226
+msgid ""
+"In order to use this module you have to install oVirt/RHV Python SDK. To "
+"ensure it's installed with correct version you can create the following "
+"task: *pip: name=ovirt-engine-sdk-python version=4.2.4*"
+msgstr ""
+
+#: ../../rst/modules/ovirt_auth_module.rst:227
+msgid ""
+"Note that in oVirt/RHV 4.1 if you want to use a user which is not "
+"administrator you must enable the *ENGINE_API_FILTER_BY_DEFAULT* variable"
+" in engine. In oVirt/RHV 4.2 and later it's enabled by default."
+msgstr ""
+
+#: ../../rst/modules/ovirt_auth_module.rst:232
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/ovirt_auth_module.rst:278
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/ovirt_auth_module.rst:279
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/ovirt_auth_module.rst:410
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/ovirt_auth_module.rst:415
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/ovirt_auth_module.rst:418
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/ovirt_auth_module.rst:425
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/ovirt_auth_module.rst:427
+msgid "Ondra Machacek (@machacekondra)"
+msgstr ""
+
+#: ../../rst/modules/ovirt_auth_module.rst:431
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/ovirt/ovirt_auth.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

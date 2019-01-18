@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/known_hosts_module.rst:9
+msgid "known_hosts -- Add or remove a host from the ``known_hosts`` file"
+msgstr ""
+
+#: ../../rst/modules/known_hosts_module.rst:18
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/known_hosts_module.rst:19
+msgid ""
+"The ``known_hosts`` module lets you add or remove a host keys from the "
+"``known_hosts`` file."
+msgstr ""
+
+#: ../../rst/modules/known_hosts_module.rst:20
+msgid ""
+"Starting at Ansible 2.2, multiple entries per host are allowed, but only "
+"one for each key type supported by ssh. This is useful if you're going to"
+" want to use the :ref:`git <git_module>` module over ssh, for example."
+msgstr ""
+
+#: ../../rst/modules/known_hosts_module.rst:21
+msgid ""
+"If you have a very large number of host keys to manage, you will find the"
+" :ref:`template <template_module>` module more useful."
+msgstr ""
+
+#: ../../rst/modules/known_hosts_module.rst:27
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/known_hosts_module.rst:120
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/known_hosts_module.rst:136
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/known_hosts_module.rst:141
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/known_hosts_module.rst:144
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/known_hosts_module.rst:151
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/known_hosts_module.rst:153
+msgid "Matthew Vernon (@mcv21)"
+msgstr ""
+
+#: ../../rst/modules/known_hosts_module.rst:157
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/known_hosts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

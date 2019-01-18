@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/firewalld_module.rst:9
+msgid "firewalld -- Manage arbitrary ports/services with firewalld"
+msgstr ""
+
+#: ../../rst/modules/firewalld_module.rst:18
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/firewalld_module.rst:19
+msgid ""
+"This module allows for addition or deletion of services and ports either "
+"tcp or udp in either running or permanent firewalld rules."
+msgstr ""
+
+#: ../../rst/modules/firewalld_module.rst:24
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/firewalld_module.rst:25
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/firewalld_module.rst:27
+msgid "firewalld >= 0.2.11"
+msgstr ""
+
+#: ../../rst/modules/firewalld_module.rst:31
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/firewalld_module.rst:256
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/firewalld_module.rst:259
+msgid "Not tested on any Debian based system."
+msgstr ""
+
+#: ../../rst/modules/firewalld_module.rst:260
+msgid ""
+"Requires the python2 bindings of firewalld, which may not be installed by"
+" default."
+msgstr ""
+
+#: ../../rst/modules/firewalld_module.rst:261
+msgid ""
+"For distributions where the python2 firewalld bindings are unavailable "
+"(e.g Fedora 28 and later) you will have to set the "
+"ansible_python_interpreter for these hosts to the python3 interpreter "
+"path and install the python3 bindings."
+msgstr ""
+
+#: ../../rst/modules/firewalld_module.rst:262
+msgid ""
+"Zone transactions (creating, deleting) can be performed by using only the"
+" zone and state parameters \"present\" or \"absent\". Note that zone "
+"transactions must explicitly be permanent. This is a limitation in "
+"firewalld. This also means that you will have to reload firewalld after "
+"adding a zone that you wish to perform immediate actions on. The module "
+"will not take care of this for you implicitly because that would undo any"
+" previously performed immediate actions which were not permanent. "
+"Therefore, if you require immediate access to a newly created zone it is "
+"recommended you reload firewalld immediately after the zone creation "
+"returns with a changed state and before you perform any other immediate, "
+"non-permanent actions on that zone."
+msgstr ""
+
+#: ../../rst/modules/firewalld_module.rst:267
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/firewalld_module.rst:345
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/firewalld_module.rst:350
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/firewalld_module.rst:353
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/firewalld_module.rst:360
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/firewalld_module.rst:362
+msgid "Adam Miller (@maxamillion)"
+msgstr ""
+
+#: ../../rst/modules/firewalld_module.rst:366
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/firewalld.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

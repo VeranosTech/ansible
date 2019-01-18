@@ -1,0 +1,40 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/community/triage_process.rst:3
+msgid "Triage Process"
+msgstr ""
+
+#: ../../rst/community/triage_process.rst:5
+msgid ""
+"The issue and PR triage processes are driven by the `Ansibot "
+"<https://github.com/ansible/ansibullbot>`_. Whenever an issue or PR is "
+"filed, the Ansibot examines the issue to ensure that all relevant data is"
+" present, and handles the routing of the issue as it works its way to "
+"eventual completion."
+msgstr ""
+
+#: ../../rst/community/triage_process.rst:7
+msgid ""
+"For details on how Ansibot manages the triage process, please consult the"
+" `Ansibot Issue Guide "
+"<https://github.com/ansible/ansibullbot/blob/master/ISSUE_HELP.md>`_."
+msgstr ""
+

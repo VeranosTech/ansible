@@ -1,0 +1,138 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/include_module.rst:9
+msgid "include -- Include a play or task list"
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:18
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:19
+msgid ""
+"Includes a file with a list of plays or tasks to be executed in the "
+"current playbook."
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:20
+msgid ""
+"Files with a list of plays can only be included at the top level. Lists "
+"of tasks can only be included where tasks normally run (in play)."
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:21
+msgid ""
+"Before Ansible version 2.0, all includes were 'static' and were executed "
+"when the play was compiled."
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:22
+msgid ""
+"Static includes are not subject to most directives. For example, loops or"
+" conditionals are applied instead to each inherited task."
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:23
+msgid ""
+"Since Ansible 2.0, task includes are dynamic and behave more like real "
+"tasks. This means they can be looped, skipped and use variables from any "
+"source. Ansible tries to auto detect this, but you can use the `static` "
+"directive (which was added in Ansible 2.1) to bypass autodetection."
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:24
+msgid "This module is also supported for Windows targets."
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:30
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:58
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:61
+msgid ""
+"This is a core feature of Ansible, rather than a module, and cannot be "
+"overridden like a module."
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:62
+msgid ""
+"Include has some unintuitive behaviours depending on if it is running in "
+"a static or dynamic in play or in playbook context, in an effort to "
+"clarify behaviours we are moving to a new set modules "
+"(:ref:`include_tasks <include_tasks_module>`, :ref:`include_role "
+"<include_role_module>`, :ref:`import_playbook <import_playbook_module>`, "
+":ref:`import_tasks <import_tasks_module>`) that have well established and"
+" clear behaviours. This module will still be supported for some time but "
+"we are looking at deprecating it in the near future."
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:67
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:107
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:112
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:115
+msgid ""
+"This module is :ref:`maintained by the Ansible Core Team "
+"<modules_support>`. *[core]*"
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:118
+msgid "Red Hat Support"
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:120
+msgid ""
+"More information about Red Hat's support of this module is available from"
+" this `Red Hat Knowledge Base article "
+"<https://access.redhat.com/articles/3166901>`_."
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:126
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:128
+msgid "Ansible Core Team (@ansible)"
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:132
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/include.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

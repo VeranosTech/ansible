@@ -1,0 +1,796 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:5
+msgid "Ansible 2.5 Porting Guide"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:7
+msgid ""
+"This section discusses the behavioral changes between Ansible 2.4 and "
+"Ansible 2.5."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:9
+msgid ""
+"It is intended to assist in updating your playbooks, plugins and other "
+"parts of your Ansible infrastructure so they will work with this version "
+"of Ansible."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:11
+msgid ""
+"We suggest you read this page along with `Ansible Changelog for 2.5 "
+"<https://github.com/ansible/ansible/blob/stable-2.5/changelogs/CHANGELOG-v2.5.rst>`_"
+" to understand what updates you may need to make."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:13
+msgid ""
+"This document is part of a collection on porting. The complete list of "
+"porting guides can be found at :ref:`porting guides <porting_guides>`."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:15
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:18
+msgid "Playbook"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:21
+msgid "Dynamic includes and attribute inheritance"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:23
+msgid ""
+"In Ansible version 2.4, the concept of dynamic includes "
+"(``include_tasks``) versus static imports (``import_tasks``) was "
+"introduced to clearly define the differences in how ``include`` works "
+"between dynamic and static includes."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:25
+msgid ""
+"All attributes applied to a dynamic ``include_*`` would only apply to the"
+" include itself, while attributes applied to a static ``import_*`` would "
+"be inherited by the tasks within."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:28
+msgid ""
+"This separation was only partially implemented in Ansible version 2.4. As"
+" of Ansible version 2.5, this work is complete and the separation now "
+"behaves as designed; attributes applied to an ``include_*`` task will not"
+" be inherited by the tasks within."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:30
+msgid ""
+"To achieve an outcome similar to how Ansible worked prior to version 2.5,"
+" playbooks should use an explicit application of the attribute on the "
+"needed tasks, or use blocks to apply the attribute to many tasks. Another"
+" option is to use a static ``import_*`` when possible instead of a "
+"dynamic task."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:32
+msgid "**OLD** In Ansible 2.4:"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:40
+#: ../../rst/porting_guides/porting_guide_2.5.rst:62
+msgid "Included file:"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:52
+msgid "**NEW** In Ansible 2.5:"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:54
+msgid "Including task:"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:76
+msgid ""
+"The relevant change in those examples is, that in Ansible 2.5, the "
+"included file defines the tag ``distro_include`` again. The tag is not "
+"inherited automatically."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:79
+msgid "Fixed handling of keywords and inline variables"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:81
+msgid ""
+"We made several fixes to how we handle keywords and 'inline variables', "
+"to avoid conflating the two. Unfortunately these changes mean you must "
+"specify whether `name` is a keyword or a variable when calling roles. If "
+"you have playbooks that look like this::"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:86
+msgid ""
+"You will run into errors because Ansible reads name in this context as a "
+"keyword. Beginning in 2.5, if you want to use a variable name that is "
+"also a keyword, you must explicitly declare it as a variable for the "
+"role::"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:92
+msgid "For a full list of keywords see :ref:`playbook_keywords`."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:95
+msgid "Migrating from with_X to loop"
+msgstr ""
+
+#: ../../rst/user_guide/shared_snippets/with2loop.txt:1
+msgid ""
+"With the release of Ansible 2.5, the recommended way to perform loops is "
+"the use the new ``loop`` keyword instead of ``with_X`` style loops."
+msgstr ""
+
+#: ../../rst/user_guide/shared_snippets/with2loop.txt:3
+msgid ""
+"In many cases, ``loop`` syntax is better expressed using filters instead "
+"of more complex use of ``query`` or ``lookup``."
+msgstr ""
+
+#: ../../rst/user_guide/shared_snippets/with2loop.txt:5
+msgid ""
+"The following examples will show how to convert many common ``with_`` "
+"style loops to ``loop`` and filters."
+msgstr ""
+
+#: ../../rst/user_guide/shared_snippets/with2loop.txt:8
+msgid "with_list"
+msgstr ""
+
+#: ../../rst/user_guide/shared_snippets/with2loop.txt:10
+msgid "``with_list`` is directly replaced by ``loop``."
+msgstr ""
+
+#: ../../rst/user_guide/shared_snippets/with2loop.txt:29
+msgid "with_items"
+msgstr ""
+
+#: ../../rst/user_guide/shared_snippets/with2loop.txt:31
+msgid "``with_items`` is replaced by ``loop`` and the ``flatten`` filter."
+msgstr ""
+
+#: ../../rst/user_guide/shared_snippets/with2loop.txt:46
+msgid "with_indexed_items"
+msgstr ""
+
+#: ../../rst/user_guide/shared_snippets/with2loop.txt:48
+msgid ""
+"``with_indexed_items`` is replaced by ``loop``, the ``flatten`` filter "
+"and ``loop_control.index_var``."
+msgstr ""
+
+#: ../../rst/user_guide/shared_snippets/with2loop.txt:65
+msgid "with_flattened"
+msgstr ""
+
+#: ../../rst/user_guide/shared_snippets/with2loop.txt:67
+msgid "``with_flattened`` is replaced by ``loop`` and the ``flatten`` filter."
+msgstr ""
+
+#: ../../rst/user_guide/shared_snippets/with2loop.txt:82
+msgid "with_together"
+msgstr ""
+
+#: ../../rst/user_guide/shared_snippets/with2loop.txt:84
+msgid "``with_together`` is replaced by ``loop`` and the ``zip`` filter."
+msgstr ""
+
+#: ../../rst/user_guide/shared_snippets/with2loop.txt:101
+msgid "with_dict"
+msgstr ""
+
+#: ../../rst/user_guide/shared_snippets/with2loop.txt:103
+msgid ""
+"``with_dict`` can be substituted by ``loop`` and either the ``dictsort`` "
+"or ``dict2items`` filters."
+msgstr ""
+
+#: ../../rst/user_guide/shared_snippets/with2loop.txt:123
+msgid "with_sequence"
+msgstr ""
+
+#: ../../rst/user_guide/shared_snippets/with2loop.txt:125
+msgid ""
+"``with_sequence`` is replaced by ``loop`` and the ``range`` function, and"
+" potentially the ``format`` filter."
+msgstr ""
+
+#: ../../rst/user_guide/shared_snippets/with2loop.txt:141
+msgid "with_subelements"
+msgstr ""
+
+#: ../../rst/user_guide/shared_snippets/with2loop.txt:143
+msgid ""
+"``with_subelements`` is replaced by ``loop`` and the ``subelements`` "
+"filter."
+msgstr ""
+
+#: ../../rst/user_guide/shared_snippets/with2loop.txt:160
+msgid "with_nested/with_cartesian"
+msgstr ""
+
+#: ../../rst/user_guide/shared_snippets/with2loop.txt:162
+msgid ""
+"``with_nested`` and ``with_cartesian`` are replaced by loop and the "
+"``product`` filter."
+msgstr ""
+
+#: ../../rst/user_guide/shared_snippets/with2loop.txt:179
+msgid "with_random_choice"
+msgstr ""
+
+#: ../../rst/user_guide/shared_snippets/with2loop.txt:181
+msgid ""
+"``with_random_choice`` is replaced by just use of the ``random`` filter, "
+"without need of ``loop``."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:101
+msgid "Deprecated"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:104
+msgid "Jinja tests used as filters"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:106
+msgid ""
+"Using Ansible-provided jinja tests as filters will be removed in Ansible "
+"2.9."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:108
+msgid ""
+"Prior to Ansible 2.5, jinja tests included within Ansible were most often"
+" used as filters. The large difference in use is that filters are "
+"referenced as ``variable | filter_name`` while jinja tests are referenced"
+" as ``variable is test_name``."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:110
+msgid ""
+"Jinja tests are used for comparisons, while filters are used for data "
+"manipulation and have different applications in jinja. This change is to "
+"help differentiate the concepts for a better understanding of jinja, and "
+"where each can be appropriately used."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:112
+msgid ""
+"As of Ansible 2.5, using an Ansible provided jinja test with filter "
+"syntax, will display a deprecation error."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:114
+msgid ""
+"**OLD** In Ansible 2.4 (and earlier) the use of an Ansible included jinja"
+" test would likely look like this:"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:122
+msgid "**NEW** In Ansible 2.5 it should be changed to look like this:"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:130
+msgid ""
+"In addition to the deprecation warnings, many new tests have been "
+"introduced that are aliases of the old tests. These new tests make more "
+"sense grammatically with the jinja test syntax, such as the new "
+"``successful`` test which aliases ``success``."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:136
+msgid "See :ref:`playbooks_tests` for more information."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:138
+msgid ""
+"Additionally, a script was created to assist in the conversion for tests "
+"using filter syntax to proper jinja test syntax. This script has been "
+"used to convert all of the Ansible integration tests to the correct "
+"format. There are a few limitations documented, and all changes made by "
+"this script should be evaluated for correctness before executing the "
+"modified playbooks. The script can be found at "
+"`https://github.com/ansible/ansible/blob/devel/hacking/fix_test_syntax.py"
+" "
+"<https://github.com/ansible/ansible/blob/devel/hacking/fix_test_syntax.py>`_."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:141
+msgid "Ansible fact namespacing"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:143
+msgid ""
+"Ansible facts, which have historically been written to names like "
+"``ansible_*`` in the main facts namespace, have been placed in their own "
+"new namespace, ``ansible_facts.*`` For example, the fact "
+"``ansible_distribution`` is now best queried through the variable "
+"structure ``ansible_facts.distribution``."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:148
+msgid ""
+"A new configuration variable, ``inject_facts_as_vars``, has been added to"
+" ansible.cfg. Its default setting, 'True', keeps the 2.4 behavior of "
+"facts variables being set in the old ``ansible_*`` locations (while also "
+"writing them to the new namespace). This variable is expected to be set "
+"to 'False' in a future release. When ``inject_facts_as_vars`` is set to "
+"False, you must refer to ansible_facts through the new "
+"``ansible_facts.*`` namespace."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:156
+msgid "Modules"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:158
+msgid "Major changes in popular modules are detailed here."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:161
+msgid "github_release"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:163
+msgid ""
+"In Ansible versions 2.4 and older, after creating a GitHub release using "
+"the ``create_release`` state, the ``github_release`` module reported "
+"state as ``skipped``. In Ansible version 2.5 and later, after creating a "
+"GitHub release using the ``create_release`` state, the ``github_release``"
+" module now reports state as ``changed``."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:168
+msgid "Modules removed"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:170
+msgid "The following modules no longer exist:"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:172
+msgid ""
+"nxos_mtu use :ref:`nxos_system <nxos_system_module>`'s ``system_mtu`` "
+"option or :ref:`nxos_interface <nxos_interface_module>` instead"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:173
+msgid "cl_interface_policy use :ref:`nclu <nclu_module>` instead"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:174
+msgid "cl_bridge use :ref:`nclu <nclu_module>` instead"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:175
+msgid "cl_img_install use :ref:`nclu <nclu_module>` instead"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:176
+msgid "cl_ports use :ref:`nclu <nclu_module>` instead"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:177
+msgid "cl_license use :ref:`nclu <nclu_module>` instead"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:178
+msgid "cl_interface use :ref:`nclu <nclu_module>` instead"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:179
+msgid "cl_bond use :ref:`nclu <nclu_module>` instead"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:180
+msgid ""
+"ec2_vpc use :ref:`ec2_vpc_net <ec2_vpc_net_module>` along with supporting"
+" modules :ref:`ec2_vpc_igw <ec2_vpc_igw_module>`, "
+":ref:`ec2_vpc_route_table <ec2_vpc_route_table_module>`, "
+":ref:`ec2_vpc_subnet <ec2_vpc_subnet_module>`, :ref:`ec2_vpc_dhcp_option "
+"<ec2_vpc_dhcp_option_module>`, :ref:`ec2_vpc_nat_gateway "
+"<ec2_vpc_nat_gateway_module>`, :ref:`ec2_vpc_nacl <ec2_vpc_nacl_module>` "
+"instead."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:181
+msgid "ec2_ami_search use :ref:`ec2_ami_facts <ec2_ami_facts_module>` instead"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:182
+msgid ""
+"docker use :ref:`docker_container <docker_container_module>` and "
+":ref:`docker_image <docker_image_module>` instead"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:186
+msgid ""
+"These modules may no longer have documentation in the current release.  "
+"Please see the `Ansible 2.4 module documentation "
+"<https://docs.ansible.com/ansible/2.4/list_of_all_modules.html>`_ if you "
+"need to know how they worked for porting your playbooks."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:194
+msgid "Deprecation notices"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:196
+msgid ""
+"The following modules will be removed in Ansible 2.9. Please update your "
+"playbooks accordingly."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:198
+msgid ""
+"Apstra's ``aos_*`` modules are deprecated as they do not work with AOS "
+"2.1 or higher. See new modules at `https://github.com/apstra "
+"<https://github.com/apstra>`_."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:199
+msgid ""
+":ref:`nxos_ip_interface <nxos_ip_interface_module>` use "
+":ref:`nxos_l3_interface <nxos_l3_interface_module>` instead."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:200
+msgid ""
+":ref:`nxos_portchannel <nxos_portchannel_module>` use :ref:`nxos_linkagg "
+"<nxos_linkagg_module>` instead."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:201
+msgid ""
+":ref:`nxos_switchport <nxos_switchport_module>` use "
+":ref:`nxos_l2_interface <nxos_l2_interface_module>` instead."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:202
+msgid ""
+":ref:`panos_security_policy <panos_security_policy_module>` use "
+":ref:`panos_security_rule <panos_security_rule_module>` instead."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:203
+msgid ""
+":ref:`panos_nat_policy <panos_nat_policy_module>` use "
+":ref:`panos_nat_rule <panos_nat_rule_module>` instead."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:204
+msgid ""
+":ref:`vsphere_guest <vsphere_guest_module>` use :ref:`vmware_guest "
+"<vmware_guest_module>` instead."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:207
+msgid "Noteworthy module changes"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:209
+msgid ""
+"The :ref:`stat <stat_module>` and :ref:`win_stat <win_stat_module>` "
+"modules have changed the default of the option ``get_md5`` from ``true`` "
+"to ``false``."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:211
+msgid ""
+"This option will be removed starting with Ansible version 2.9. The "
+"options ``get_checksum: True`` and ``checksum_algorithm: md5`` can still "
+"be used if an MD5 checksum is desired."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:215
+msgid "``osx_say`` module was renamed into :ref:`say <say_module>`."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:216
+msgid ""
+"Several modules which could deal with symlinks had the default value of "
+"their ``follow`` option changed as part of a feature to `standardize the "
+"behavior of follow <https://github.com/ansible/proposals/issues/69>`_:"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:220
+msgid ""
+"The :ref:`file module <file_module>` changed from ``follow=False`` to "
+"``follow=True`` because its purpose is to modify the attributes of a file"
+" and most systems do not allow attributes to be applied to symlinks, only"
+" to real files."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:223
+msgid ""
+"The :ref:`replace module <replace_module>` had its ``follow`` parameter "
+"removed because it inherently modifies the content of an existing file so"
+" it makes no sense to operate on the link itself."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:226
+msgid ""
+"The :ref:`blockinfile module <blockinfile_module>` had its ``follow`` "
+"parameter removed because it inherently modifies the content of an "
+"existing file so it makes no sense to operate on the link itself."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:229
+msgid ""
+"In Ansible-2.5.3, the :ref:`template module <template_module>` became "
+"more strict about its ``src`` file being proper utf-8.  Previously, non-"
+"utf8 contents in a template module src file would result in a mangled "
+"output file (the non-utf8 characters would be replaced with a unicode "
+"replacement character).  Now, on Python2, the module will error out with "
+"the message, \"Template source files must be utf-8 encoded\".  On "
+"Python3, the module will first attempt to pass the non-utf8 characters "
+"through verbatim and fail if that does not succeed."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:237
+msgid "Plugins"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:239
+msgid ""
+"As a developer, you can now use 'doc fragments' for common configuration "
+"options on plugin types that support the new plugin configuration system."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:242
+msgid "Inventory"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:244
+msgid ""
+"Inventory plugins have been fine tuned, and we have started to add some "
+"common features:"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:246
+msgid ""
+"The ability to use a cache plugin to avoid costly API/DB queries is "
+"disabled by default. If using inventory scripts, some may already support"
+" a cache, but it is outside of Ansible's knowledge and control. Moving to"
+" the internal cache will allow you to use Ansible's existing cache "
+"refresh/invalidation mechanisms."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:250
+msgid ""
+"A new 'auto' plugin, enabled by default, that can automatically detect "
+"the correct plugin to use IF that plugin is using our 'common YAML "
+"configuration format'. The previous host_list, script, yaml and ini "
+"plugins still work as they did, the auto plugin is now the last one we "
+"attempt to use. If you had customized the enabled plugins you should "
+"revise the setting to include the new auto plugin."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:255
+msgid "Shell"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:257
+msgid ""
+"Shell plugins have been migrated to the new plugin configuration "
+"framework. It is now possible to customize more settings, and settings "
+"which were previously 'global' can now also be overriden using host "
+"specific variables."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:259
+msgid ""
+"For example, ``system_temps`` is a new setting that allows you to control"
+" what Ansible will consider a 'system temporary dir'. This is used when "
+"escalating privileges for a non-administrative user. Previously this was "
+"hardcoded to '/tmp', which some systems cannot use for privilege "
+"escalation. This setting now defaults to ``[ '/var/tmp', '/tmp']``."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:261
+msgid ""
+"Another new setting is ``admin_users`` which allows you to specify a list"
+" of users to be considered 'administrators'. Previously this was "
+"hardcoded to ``root``. It now it defaults to ``[root, toor, admin]``.  "
+"This information is used when choosing between your ``remote_temp`` and "
+"``system_temps`` directory."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:263
+msgid ""
+"For a full list, check the shell plugin you are using, the default shell "
+"plugin is ``sh``."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:265
+msgid ""
+"Those that had to work around the global configuration limitations can "
+"now migrate to a per host/group settings, but also note that the new "
+"defaults might conflict with existing usage if the assumptions don't "
+"correlate to your environment."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:269
+msgid "Filter"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:271
+msgid ""
+"The lookup plugin API now throws an error if a non-iterable value is "
+"returned from a plugin. Previously, numbers or other non-iterable types "
+"returned by a plugin were accepted without error or warning. This change "
+"was made because plugins should always return a list. Please note that "
+"plugins that return strings and other non-list iterable values will not "
+"throw an error, but may cause unpredictable behavior. If you have a "
+"custom lookup plugin that does not return a list, you should modify it to"
+" wrap the return values in a list."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:275
+msgid "Lookup"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:277
+msgid ""
+"A new option was added to lookup plugins globally named ``error`` which "
+"allows you to control how errors produced by the lookup are handled, "
+"before this option they were always fatal. Valid values for this option "
+"are ``warn``, ``ignore`` and ``strict``. See the :doc:`lookup "
+"<../plugins/lookup>` page for more details."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:281
+msgid "Porting custom scripts"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:283
+msgid "No notable changes."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:286
+msgid "Network"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:289
+msgid "Expanding documentation"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:291
+msgid ""
+"We're expanding the network documentation. There's new content and a "
+":ref:`new Ansible Network landing page<network_guide>`. We will continue "
+"to build the network-related documentation moving forward."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:294
+msgid "Top-level connection arguments will be removed in 2.9"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:296
+msgid ""
+"Top-level connection arguments like ``username``, ``host``, and "
+"``password`` are deprecated and will be removed in version 2.9."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:298
+msgid "**OLD** In Ansible < 2.4"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:311
+msgid ""
+"The deprecation warnings reflect this schedule. The task above, run in "
+"Ansible 2.5, will result in:"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:322
+msgid ""
+"We recommend using the new connection types ``network_cli`` and "
+"``netconf`` (see below), using standard Ansible connection properties, "
+"and setting those properties in inventory by group. As you update your "
+"playbooks and inventory files, you can easily make the change to "
+"``become`` for privilege escalation (on platforms that support it). For "
+"more information, see the :ref:`using become with network "
+"modules<become_network>` guide and the :ref:`platform "
+"documentation<platform_options>`."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:325
+msgid "Adding persistent connection types ``network_cli`` and ``netconf``"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:327
+msgid ""
+"Ansible 2.5 introduces two top-level persistent connection types, "
+"``network_cli`` and ``netconf``. With ``connection: local``, each task "
+"passed the connection parameters, which had to be stored in your "
+"playbooks. With ``network_cli`` and ``netconf`` the playbook passes the "
+"connection parameters once, so you can pass them at the command line if "
+"you prefer. We recommend you use ``network_cli`` and ``netconf`` whenever"
+" possible. Note that eAPI and NX-API still require ``local`` connections "
+"with ``provider`` dictionaries. See the :ref:`platform "
+"documentation<platform_options>` for more information. Unless you need a "
+"``local`` connection, update your playbooks to use ``network_cli`` or "
+"``netconf`` and to specify your connection variables with standard "
+"Ansible connection variables:"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:330
+#: ../../rst/porting_guides/porting_guide_2.5.rst:379
+msgid "**OLD** In Ansible 2.4"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:349
+#: ../../rst/porting_guides/porting_guide_2.5.rst:385
+msgid "**NEW** In Ansible 2.5"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:365
+msgid ""
+"Using a provider dictionary with either ``network_cli`` or ``netconf`` "
+"will result in a warning."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:369
+msgid "Developers: Shared Module Utilities Moved"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:371
+msgid ""
+"Beginning with Ansible 2.5, shared module utilities for network modules "
+"moved to ``ansible.module_utils.network``."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:373
+msgid ""
+"Platform-independent utilities are found in "
+"``ansible.module_utils.network.common``"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:375
+msgid ""
+"Platform-specific utilities are found in "
+"``ansible.module_utils.network.{{ platform }}``"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:377
+msgid ""
+"If your module uses shared module utilities, you must update all "
+"references. For example, change:"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.5.rst:392
+msgid ""
+"See the module utilities developer guide see "
+":ref:`appendix_module_utilities` for more information."
+msgstr ""
+

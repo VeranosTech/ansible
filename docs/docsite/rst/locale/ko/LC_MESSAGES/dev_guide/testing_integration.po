@@ -1,0 +1,435 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/testing_integration.rst:7
+msgid "Integration tests"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:9
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:11
+msgid "The Ansible integration Test system."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:13
+msgid "Tests for playbooks, by playbooks."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:15
+msgid ""
+"Some tests may require credentials.  Credentials may be specified with "
+"`credentials.yml`."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:17
+msgid "Some tests may require root."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:20
+msgid "Quick Start"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:22
+msgid ""
+"It is highly recommended that you install and activate the "
+"``argcomplete`` python package. It provides tab completion in ``bash`` "
+"for the ``ansible-test`` test runner."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:26
+msgid "Configuration"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:28
+msgid ""
+"Making your own version of ``integration_config.yml`` can allow for "
+"setting some tunable parameters to help run the tests better in your "
+"environment.  Some tests (e.g. cloud) will only run when access "
+"credentials are provided.  For more information about supported "
+"credentials, refer to ``credentials.template``."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:34
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:36
+msgid ""
+"The tests will assume things like hg, svn, and git are installed and in "
+"path.  Some tests (such as those for Amazon Web Services) need separate "
+"definitions, which will be covered later in this document."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:40
+msgid "(Complete list pending)"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:43
+msgid "Non-destructive Tests"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:45
+msgid ""
+"These tests will modify files in subdirectories, but will not do things "
+"that install or remove packages or things outside of those test "
+"subdirectories.  They will also not reconfigure or bounce system "
+"services."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:48
+msgid "Running integration tests within Docker"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:50
+msgid ""
+"To protect your system from any potential changes caused by integration "
+"tests, and to ensure the a sensible set of dependencies are available we "
+"recommend that you always run integration tests with the ``--docker`` "
+"option. See the `list of supported docker images "
+"<https://github.com/ansible/ansible/blob/devel/test/runner/completion/docker.txt>`_"
+" for options."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:52
+msgid "Avoiding pulling new Docker images"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:54
+msgid ""
+"Use the ``--docker-no-pull`` option to avoid pulling the latest container"
+" image. This is required when using custom local images that are not "
+"available for download."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:56
+msgid "Run as follows for all POSIX platform tests executed by our CI system::"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:60
+msgid "You can select specific tests as well, such as for individual modules::"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:64
+msgid "By installing ``argcomplete`` you can obtain a full list by doing::"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:69
+msgid "Destructive Tests"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:71
+msgid ""
+"These tests are allowed to install and remove some trivial packages.  You"
+" will likely want to devote these to a virtual environment, such as "
+"Docker.  They won't reformat your filesystem::"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:77
+msgid "Windows Tests"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:79
+msgid ""
+"These tests exercise the ``winrm`` connection plugin and Windows modules."
+"  You'll need to define an inventory with a remote Windows 2008 or 2012 "
+"Server to use for testing, and enable PowerShell Remoting to continue."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:83
+msgid ""
+"Running these tests may result in changes to your Windows host, so don't "
+"run them against a production/critical Windows environment."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:86
+msgid "Enable PowerShell Remoting (run on the Windows host via Remote Desktop)::"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:90
+msgid "Define Windows inventory::"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:95
+msgid "Run the Windows tests executed by our CI system::"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:100
+msgid "Tests in Docker containers"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:102
+msgid ""
+"If you have a Linux system with Docker installed, running integration "
+"tests using the same Docker containers used by the Ansible continuous "
+"integration (CI) system is recommended."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:105
+msgid "Docker on non-Linux"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:107
+msgid ""
+"Using Docker Engine to run Docker on a non-Linux host (such as macOS) is "
+"not recommended. Some tests may fail, depending on the image used for "
+"testing. Using the ``--docker-privileged`` option may resolve the issue."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:112
+msgid "Running Integration Tests"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:114
+msgid ""
+"To run all CI integration test targets for POSIX platforms in a Ubuntu "
+"16.04 container::"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:118
+msgid ""
+"You can also run specific tests or select a different Linux distribution."
+" For example, to run tests for the ``ping`` module on a Ubuntu 14.04 "
+"container::"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:124
+msgid "Container Images"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:127
+msgid "Python 2"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:129
+msgid "Most container images are for testing with Python 2:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:131
+msgid "centos6"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:132
+msgid "centos7"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:133
+msgid "fedora24"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:134
+msgid "fedora25"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:135
+msgid "opensuse42.1"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:136
+msgid "opensuse42.2"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:137
+msgid "ubuntu1204"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:138
+msgid "ubuntu1404"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:139
+msgid "ubuntu1604"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:142
+msgid "Python 3"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:144
+msgid "To test with Python 3 use the following images:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:146
+msgid "ubuntu1604py3"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:149
+msgid "Legacy Cloud Tests"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:151
+msgid ""
+"Some of the cloud tests run as normal integration tests, and others run "
+"as legacy tests; see the :ref:`testing_integration_legacy` page for more "
+"information."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:156
+msgid "Other configuration for Cloud Tests"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:158
+msgid ""
+"In order to run some tests, you must provide access credentials in a file"
+" named ``cloud-config-aws.yml`` or ``cloud-config-cs.ini`` in the "
+"test/integration directory. Corresponding .template files are available "
+"for for syntax help.  The newer AWS tests now use the file "
+"test/integration/cloud-config-aws.yml"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:164
+msgid "IAM policies for AWS"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:166
+msgid ""
+"Ansible needs fairly wide ranging powers to run the tests in an AWS "
+"account.  This rights can be provided to a dedicated user. These need to "
+"be configured before running the test."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:169
+msgid "testing-policies"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:171
+msgid ""
+"``hacking/aws_config/testing_policies`` contains a set of policies that "
+"are required for all existing AWS module tests. The "
+"``hacking/aws_config/setup_iam.yml`` playbook can be used to add all of "
+"those policies to an IAM group (using ``-e iam_group=GROUP_NAME``. Once "
+"the group is created, you'll need to create a user and make the user a "
+"member of the group. The policies are designed to minimize the rights of "
+"that user.  Please note that while this policy does limit the user to one"
+" region, this does not fully restrict the user (primarily due to the "
+"limitations of the Amazon ARN notation). The user will still have wide "
+"privileges for viewing account definitions, and will also able to manage "
+"some resources that are not related to testing (for example, AWS lambdas "
+"with different names).  Tests should not be run in a primary production "
+"account in any case."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:181
+msgid "Other Definitions required"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:183
+msgid ""
+"Apart from installing the policy and giving it to the user identity "
+"running the tests, a lambda role `ansible_integration_tests` has to be "
+"created which has lambda basic execution privileges."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:189
+msgid "Network Tests"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:191
+msgid ""
+"Starting with Ansible 2.4, all network modules MUST include unit tests "
+"that cover all functionality. You must add unit tests for each new "
+"network module and for each added feature. Please submit the unit tests "
+"and the code in a single PR. Integration tests are also strongly "
+"encouraged."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:194
+msgid "Writing network integration tests"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:196
+msgid ""
+"For guidance on writing network test see the `adding tests for Network "
+"modules guide <https://github.com/ansible/community/blob/master/group-"
+"network/network_test.rst>`_."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:200
+msgid "Running network integration tests locally"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:202
+msgid ""
+"Ansible uses Shippable to run an integration test suite on every PR, "
+"including new tests introduced by that PR. To find and fix problems in "
+"network modules, run the network integration test locally before you "
+"submit a PR."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:204
+msgid "To run the network integration tests, use a command in the form::"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:208
+msgid "First, define a network inventory file::"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:215
+msgid "To run all Network tests for a particular platform::"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:219
+msgid ""
+"This example will run against all vyos modules. Note that ``vyos_.*`` is "
+"a regex match, not a bash wildcard - include the `.` if you modify this "
+"example."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:222
+msgid "To run integration tests for a specific module::"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:226
+msgid "To run a single test case on a specific module::"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:231
+msgid "To run integration tests for a specific transport::"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:239
+msgid ""
+"See `test/integration/targets/nxos_bgp/tasks/main.yaml "
+"<https://github.com/ansible/ansible/blob/devel/test/integration/targets/nxos_bgp/tasks/main.yaml>`_"
+" for how this is implemented in the tests."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:241
+msgid "For more options::"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:245
+msgid ""
+"If you need additional help or feedback, reach out in ``#ansible-"
+"network`` on Freenode."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:249
+msgid "Where to find out more"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_integration.rst:251
+msgid ""
+"If you'd like to know more about the plans for improving testing Ansible,"
+" join the `Testing Working Group "
+"<https://github.com/ansible/community/blob/master/meetings/README.md>`_."
+msgstr ""
+

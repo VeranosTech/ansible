@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/digital_ocean_module.rst:9
+msgid "digital_ocean -- Create/delete a droplet/SSH_key in DigitalOcean"
+msgstr ""
+
+#: ../../rst/modules/digital_ocean_module.rst:18
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/digital_ocean_module.rst:19
+msgid ""
+"Create/delete a droplet in DigitalOcean and optionally wait for it to be "
+"'running', or deploy an SSH key."
+msgstr ""
+
+#: ../../rst/modules/digital_ocean_module.rst:24
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/digital_ocean_module.rst:25
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/digital_ocean_module.rst:27
+msgid "python >= 2.6"
+msgstr ""
+
+#: ../../rst/modules/digital_ocean_module.rst:28
+msgid "dopy"
+msgstr ""
+
+#: ../../rst/modules/digital_ocean_module.rst:32
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/digital_ocean_module.rst:317
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/digital_ocean_module.rst:320
+msgid ""
+"Two environment variables can be used, DO_API_KEY and DO_API_TOKEN. They "
+"both refer to the v2 token."
+msgstr ""
+
+#: ../../rst/modules/digital_ocean_module.rst:321
+msgid ""
+"As of Ansible 1.9.5 and 2.0, Version 2 of the DigitalOcean API is used, "
+"this removes ``client_id`` and ``api_key`` options in favor of "
+"``api_token``."
+msgstr ""
+
+#: ../../rst/modules/digital_ocean_module.rst:322
+msgid ""
+"If you are running Ansible 1.9.4 or earlier you might not be able to use "
+"the included version of this module as the API version used has been "
+"retired. Upgrade Ansible or, if unable to, try downloading the latest "
+"version of this module from github and putting it into a 'library' "
+"directory."
+msgstr ""
+
+#: ../../rst/modules/digital_ocean_module.rst:327
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/digital_ocean_module.rst:398
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/digital_ocean_module.rst:403
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/digital_ocean_module.rst:406
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/digital_ocean_module.rst:413
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/digital_ocean_module.rst:415
+msgid "Vincent Viallet (@zbal)"
+msgstr ""
+
+#: ../../rst/modules/digital_ocean_module.rst:419
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/digital_ocean/digital_ocean.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

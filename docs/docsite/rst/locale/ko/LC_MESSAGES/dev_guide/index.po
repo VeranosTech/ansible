@@ -1,0 +1,169 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/index.rst:5
+msgid "Developer Guide"
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:7
+msgid "Welcome to the Ansible Developer Guide!"
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:9
+msgid "**Who should use this guide?**"
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:11
+msgid ""
+"If you want to extend Ansible by using a custom module or plugin locally,"
+" creating a module or plugin, adding functionality to an existing module,"
+" or expanding test coverage, this guide is for you. We've included "
+"detailed information for developers on how to test and document modules, "
+"as well as the prerequisites for getting your module or plugin accepted "
+"into the main Ansible repository."
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:13
+msgid "Find the task that best describes what you want to do:"
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:15
+msgid "I'm looking for a way to address a use case:"
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:17
+msgid ""
+"I want to :ref:`add a custom plugin or module locally "
+"<developing_locally>`."
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:18
+msgid ""
+"I want to figure out if :ref:`developing a module is the right approach "
+"<module_dev_should_you>` for my use case."
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:20
+msgid "I've read the info above, and I'm sure I want to develop a module:"
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:22
+msgid "What do I need to know before I start coding?"
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:23
+msgid ""
+"I want to :ref:`set up my Python development environment "
+"<environment_setup>`."
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:24
+msgid ""
+"I want to :ref:`get started writing a module "
+"<developing_modules_general>`."
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:25
+msgid ""
+"I want to :ref:`write a Windows module "
+"<developing_modules_general_windows>`."
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:26
+msgid ""
+"I want to `write an Amazon module "
+"<https://github.com/ansible/ansible/blob/devel/lib/ansible/modules/cloud/amazon/GUIDELINES.md>`_."
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:27
+msgid ""
+"I want to :ref:`write a series of related modules "
+"<developing_modules_in_groups>` that integrate Ansible with a new product"
+" (for example, a database, cloud provider, network platform, etc.)."
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:29
+msgid "I want to refine my code:"
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:31
+msgid "I want to :ref:`debug my module code <debugging>`."
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:32
+msgid "I want to :ref:`add tests <developing_testing>`."
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:33
+msgid "I want to :ref:`document my module <module_documenting>`."
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:34
+msgid ""
+"I want to :ref:`make sure my code runs on Python 2 and Python 3 "
+"<developing_python_3>`."
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:36
+msgid "I want to work on other development projects:"
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:38
+msgid "I want to :ref:`write a plugin <developing_plugins>`."
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:39
+msgid ""
+"I want to :ref:`connect Ansible to a new source of inventory "
+"<developing_inventory>`."
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:40
+msgid "I want to :ref:`deprecate an outdated module <deprecating_modules>`."
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:42
+msgid "I want to contribute back to the Ansible project:"
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:44
+msgid ""
+"I want to :ref:`understand how to contribute to Ansible "
+"<ansible_community_guide>`."
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:45
+msgid ""
+"I want to :ref:`contribute my module or plugin "
+"<developing_modules_checklist>`."
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:46
+msgid ""
+"I want to :ref:`understand the license agreement "
+"<contributor_license_agreement>` for contributions to Ansible."
+msgstr ""
+
+#: ../../rst/dev_guide/index.rst:48
+msgid ""
+"If you prefer to read the entire guide, here's a list of the pages in "
+"order."
+msgstr ""
+

@@ -1,0 +1,145 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/network/user_guide/platform_slxos.rst:5
+msgid "SLX-OS Platform Options"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_slxos.rst:7
+msgid ""
+"Extreme SLX-OS Ansible modules only support CLI connections today. "
+"``httpapi`` modules may be added in future. This page offers details on "
+"how to use ``network_cli`` on SLX-OS in Ansible 2.6."
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_slxos.rst:10
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_slxos.rst:13
+msgid "Connections Available"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_slxos.rst:16
+msgid "CLI"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_slxos.rst:18
+msgid "**Protocol**"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_slxos.rst:18
+msgid "SSH"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_slxos.rst
+msgid "**Credentials**"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_slxos.rst
+msgid "uses SSH keys / SSH-agent if present"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_slxos.rst
+msgid "accepts ``-u myuser -k`` if using password"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_slxos.rst:23
+msgid "**Indirect Access**"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_slxos.rst:23
+msgid "via a bastion (jump host)"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_slxos.rst
+msgid "**Connection Settings**"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_slxos.rst
+msgid "``ansible_connection: network_cli``"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_slxos.rst
+msgid "**Enable Mode**"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_slxos.rst
+msgid "(Privilege Escalation)"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_slxos.rst
+msgid "not supported by SLX-OS"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_slxos.rst:34
+msgid "**Returned Data Format**"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_slxos.rst:34
+msgid "``stdout[0].``"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_slxos.rst:37
+msgid ""
+"SLX-OS does not support ``ansible_connection: local``. You must use "
+"``ansible_connection: network_cli``."
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_slxos.rst:40
+msgid "Using CLI in Ansible 2.6"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_slxos.rst:43
+msgid "Example CLI ``group_vars/slxos.yml``"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_slxos.rst:54
+msgid ""
+"If you are using SSH keys (including an ssh-agent) you can remove the "
+"``ansible_ssh_pass`` configuration."
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_slxos.rst:55
+msgid ""
+"If you are accessing your host directly (not through a bastion/jump host)"
+" you can remove the ``ansible_ssh_common_args`` configuration."
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_slxos.rst:56
+msgid ""
+"If you are accessing your host through a bastion/jump host, you cannot "
+"include your SSH password in the ``ProxyCommand`` directive. To prevent "
+"secrets from leaking out (for example in ``ps`` output), SSH does not "
+"support providing passwords via environment variables."
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_slxos.rst:59
+msgid "Example CLI Task"
+msgstr ""
+
+#: ../../rst/network/user_guide/shared_snippets/SSH_warning.txt:2
+msgid ""
+"Never store passwords in plain text. We recommend using SSH keys to "
+"authenticate SSH connections. Ansible supports ssh-agent to manage your "
+"SSH keys. If you must use passwords to authenticate SSH connections, we "
+"recommend encrypting them with :ref:`Ansible Vault <playbooks_vault>`."
+msgstr ""
+

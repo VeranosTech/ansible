@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/developing_core.rst:3
+msgid "Developing the Ansible Core Engine"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_core.rst:5
+msgid ""
+"Although many of the pieces of the Ansible Core Engine are plugins that "
+"can be swapped out via playbook directives or configuration, there are "
+"still pieces of the Engine that are not modular.  The documents here give"
+" insight into how those pieces work together."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_core.rst:17
+msgid ":doc:`developing_api`"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_core.rst:18
+msgid "Learn about the Python API for task execution"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_core.rst:19
+msgid ":doc:`developing_plugins`"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_core.rst:20
+msgid "Learn about developing plugins"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_core.rst:21
+msgid "`Mailing List <https://groups.google.com/group/ansible-devel>`_"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_core.rst:22
+msgid "The development mailing list"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_core.rst:23
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_core.rst:24
+msgid "#ansible-devel IRC chat channel"
+msgstr ""
+

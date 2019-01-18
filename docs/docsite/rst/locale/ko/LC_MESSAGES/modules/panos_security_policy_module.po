@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/panos_security_policy_module.rst:9
+msgid "panos_security_policy -- Create security rule policy on PanOS devices"
+msgstr ""
+
+#: ../../rst/modules/panos_security_policy_module.rst:18
+msgid "DEPRECATED"
+msgstr ""
+
+#: ../../rst/modules/panos_security_policy_module.rst
+msgid "Removed in Ansible"
+msgstr ""
+
+#: ../../rst/modules/panos_security_policy_module.rst:19
+msgid "version: 2.9"
+msgstr ""
+
+#: ../../rst/modules/panos_security_policy_module.rst
+msgid "Why"
+msgstr ""
+
+#: ../../rst/modules/panos_security_policy_module.rst:20
+msgid ""
+"This module depended on outdated and old SDK. In 2.4 use "
+":ref:`panos_security_rule <panos_security_rule_module>` instead."
+msgstr ""
+
+#: ../../rst/modules/panos_security_policy_module.rst
+msgid "Alternative"
+msgstr ""
+
+#: ../../rst/modules/panos_security_policy_module.rst:21
+msgid "Use :ref:`panos_security_rule <panos_security_rule_module>` instead."
+msgstr ""
+
+#: ../../rst/modules/panos_security_policy_module.rst:26
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/panos_security_policy_module.rst:27
+msgid ""
+"Security policies allow you to enforce rules and take action, and can be "
+"as general or specific as needed. The policy rules are compared against "
+"the incoming traffic in sequence, and because the first rule that matches"
+" the traffic is applied, the more specific rules must precede the more "
+"general ones."
+msgstr ""
+
+#: ../../rst/modules/panos_security_policy_module.rst:32
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/panos_security_policy_module.rst:33
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/panos_security_policy_module.rst:35
+msgid "pan-python can be obtained from PyPI https://pypi.org/project/pan-python/"
+msgstr ""
+
+#: ../../rst/modules/panos_security_policy_module.rst:36
+msgid "pandevice can be obtained from PyPI https://pypi.org/project/pandevice/"
+msgstr ""
+
+#: ../../rst/modules/panos_security_policy_module.rst:40
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/panos_security_policy_module.rst:445
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/panos_security_policy_module.rst:448
+msgid "Checkmode is not supported."
+msgstr ""
+
+#: ../../rst/modules/panos_security_policy_module.rst:449
+msgid "Panorama is supported"
+msgstr ""
+
+#: ../../rst/modules/panos_security_policy_module.rst:454
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/panos_security_policy_module.rst:550
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/panos_security_policy_module.rst:553
+msgid "This module will be removed in version 2.9. *[deprecated]*"
+msgstr ""
+
+#: ../../rst/modules/panos_security_policy_module.rst:554
+msgid "For more information see `DEPRECATED`_."
+msgstr ""
+
+#: ../../rst/modules/panos_security_policy_module.rst:558
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/panos_security_policy_module.rst:560
+msgid "Ivan Bojer (@ivanbojer)"
+msgstr ""
+
+#: ../../rst/modules/panos_security_policy_module.rst:564
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/panos/_panos_security_policy.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

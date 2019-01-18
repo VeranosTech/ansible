@@ -1,0 +1,602 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:4
+msgid "Roles"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:6
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:10
+msgid ""
+"Roles are ways of automatically loading certain vars_files, tasks, and "
+"handlers based on a known file structure.  Grouping content by roles also"
+" allows easy sharing of roles with other users."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:13
+msgid "Role Directory Structure"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:15
+msgid "Example project structure::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:34
+msgid ""
+"Roles expect files to be in certain directory names. Roles must include "
+"at least one of these directories, however it is perfectly fine to "
+"exclude any which are not being used. When in use, each directory must "
+"contain a ``main.yml`` file, which contains the relevant content:"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:36
+msgid "``tasks`` - contains the main list of tasks to be executed by the role."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:37
+msgid ""
+"``handlers`` - contains handlers, which may be used by this role or even "
+"anywhere outside this role."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:38
+msgid ""
+"``defaults`` - default variables for the role (see "
+":doc:`playbooks_variables` for more information)."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:39
+msgid ""
+"``vars`` - other variables for the role (see :doc:`playbooks_variables` "
+"for more information)."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:40
+msgid "``files`` - contains files which can be deployed via this role."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:41
+msgid "``templates`` - contains templates which can be deployed via this role."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:42
+msgid ""
+"``meta`` - defines some meta data for this role. See below for more "
+"details."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:44
+msgid ""
+"Other YAML files may be included in certain directories. For example, it "
+"is common practice to have platform-specific tasks included from the "
+"``tasks/main.yml`` file::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:63
+msgid ""
+"Roles may also include modules and other plugin types. For more "
+"information, please refer to the "
+":ref:`embedding_modules_and_plugins_in_roles` section below."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:66
+msgid "Using Roles"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:68
+msgid ""
+"The classic (original) way to use roles is via the ``roles:`` option for "
+"a given play::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:76
+msgid "This designates the following behaviors, for each role 'x':"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:78
+msgid ""
+"If roles/x/tasks/main.yml exists, tasks listed therein will be added to "
+"the play."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:79
+msgid ""
+"If roles/x/handlers/main.yml exists, handlers listed therein will be "
+"added to the play."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:80
+msgid ""
+"If roles/x/vars/main.yml exists, variables listed therein will be added "
+"to the play."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:81
+msgid ""
+"If roles/x/defaults/main.yml exists, variables listed therein will be "
+"added to the play."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:82
+msgid ""
+"If roles/x/meta/main.yml exists, any role dependencies listed therein "
+"will be added to the list of roles (1.3 and later)."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:83
+msgid ""
+"Any copy, script, template or include tasks (in the role) can reference "
+"files in roles/x/{files,templates,tasks}/ (dir depends on task) without "
+"having to path them relatively or absolutely."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:85
+msgid ""
+"When used in this manner, the order of execution for your playbook is as "
+"follows:"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:87
+msgid "Any ``pre_tasks`` defined in the play."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:88
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:91
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:93
+msgid "Any handlers triggered so far will be run."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:89
+msgid ""
+"Each role listed in ``roles`` will execute in turn. Any role dependencies"
+" defined in the roles ``meta/main.yml`` will be run first, subject to tag"
+" filtering and conditionals."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:90
+msgid "Any ``tasks`` defined in the play."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:92
+msgid "Any ``post_tasks`` defined in the play."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:96
+msgid "See below for more information regarding role dependencies."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:99
+msgid ""
+"If using tags with tasks (described later as a means of only running part"
+" of a playbook), be sure to also tag your pre_tasks, post_tasks, and role"
+" dependencies and pass those along as well, especially if the pre/post "
+"tasks and role dependencies are used for monitoring outage window control"
+" or load balancing."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:101
+msgid ""
+"As of Ansible 2.4, you can now use roles inline with any other tasks "
+"using ``import_role`` or ``include_role``::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:116
+msgid ""
+"When roles are defined in the classic manner, they are treated as static "
+"imports and processed during playbook parsing."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:119
+msgid ""
+"The ``include_role`` option was introduced in Ansible 2.3. The usage has "
+"changed slightly as of Ansible 2.4 to match the include (dynamic) vs. "
+"import (static) usage. See :ref:`dynamic_vs_static` for more details."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:121
+msgid ""
+"The name used for the role can be a simple name (see "
+":ref:`role_search_path` below), or it can be a fully qualified path::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:129
+msgid "Roles can accept other keywords::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:145
+msgid "Or, using the newer syntax::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:158
+msgid "You can conditionally import a role and execute its tasks::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:170
+msgid ""
+"Finally, you may wish to assign tags to the tasks inside the roles you "
+"specify. You can do::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:183
+msgid "Or, again, using the newer syntax::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:196
+msgid ""
+"This *tags all of the tasks in that role with the tags specified*, "
+"appending to any tags that are specified inside the role."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:198
+msgid ""
+"On the other hand you might just want to tag the import of the role "
+"itself::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:207
+msgid ""
+"The tags in this example will *not* be added to tasks inside an "
+"``include_role``, you can use a surrounding ``block`` directive to do "
+"both."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:209
+msgid ""
+"There is no facility to import a role while specifying a subset of tags "
+"to execute. If you find yourself building a role with lots of tags and "
+"you want to call subsets of the role at different times, you should "
+"consider just splitting that role into multiple roles."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:212
+msgid "Role Duplication and Execution"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:214
+msgid ""
+"Ansible will only allow a role to execute once, even if defined multiple "
+"times, if the parameters defined on the role are not different for each "
+"definition. For example::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:222
+msgid "Given the above, the role ``foo`` will only be run once."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:224
+msgid "To make roles run more than once, there are two options:"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:226
+msgid "Pass different parameters in each role definition."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:227
+msgid "Add ``allow_duplicates: true`` to the ``meta/main.yml`` file for the role."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:229
+msgid "Example 1 - passing different parameters::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:239
+msgid ""
+"In this example, because each role definition has different parameters, "
+"``foo`` will run twice."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:241
+msgid "Example 2 - using ``allow_duplicates: true``::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:254
+msgid ""
+"In this example, ``foo`` will run twice because we have explicitly "
+"enabled it to do so."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:257
+msgid "Role Default Variables"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:261
+msgid ""
+"Role default variables allow you to set default variables for included or"
+" dependent roles (see below). To create defaults, simply add a "
+"``defaults/main.yml`` file in your role directory. These variables will "
+"have the lowest priority of any variables available, and can be easily "
+"overridden by any other variable, including inventory variables."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:266
+msgid "Role Dependencies"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:270
+msgid ""
+"Role dependencies allow you to automatically pull in other roles when "
+"using a role. Role dependencies are stored in the ``meta/main.yml`` file "
+"contained within the role directory, as noted above. This file should "
+"contain a list of roles and parameters to insert before the specified "
+"role, such as the following in an example ``roles/myapp/meta/main.yml``::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:286
+msgid "Role dependencies must use the classic role definition style."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:288
+msgid ""
+"Role dependencies are always executed before the role that includes them,"
+" and may be recursive. Dependencies also follow the duplication rules "
+"specified above. If another role also lists it as a dependency, it will "
+"not be run again based on the same rules given above. See :ref:`Galaxy "
+"role dependencies <galaxy_dependencies>` for more details."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:291
+msgid ""
+"Always remember that when using ``allow_duplicates: true``, it needs to "
+"be in the dependent role's ``meta/main.yml``, not the parent."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:293
+msgid ""
+"For example, a role named ``car`` depends on a role named ``wheel`` as "
+"follows::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:310
+msgid ""
+"And the ``wheel`` role depends on two roles: ``tire`` and ``brake``. The "
+"``meta/main.yml`` for wheel would then contain the following::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:317
+msgid ""
+"And the ``meta/main.yml`` for ``tire`` and ``brake`` would contain the "
+"following::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:323
+msgid "The resulting order of execution would be as follows::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:334
+msgid ""
+"Note that we did not have to use ``allow_duplicates: true`` for "
+"``wheel``, because each instance defined by ``car`` uses different "
+"parameter values."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:337
+msgid ""
+"Variable inheritance and scope are detailed in the "
+":doc:`playbooks_variables`."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:342
+msgid "Embedding Modules and Plugins In Roles"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:344
+msgid "This is an advanced topic that should not be relevant for most users."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:346
+msgid ""
+"If you write a custom module (see :ref:`developing_modules`) or a plugin "
+"(see :ref:`developing_plugins`), you may wish to distribute it as part of"
+" a role. Generally speaking, Ansible as a project is very interested in "
+"taking high-quality modules into ansible core for inclusion, so this "
+"shouldn't be the norm, but it's quite easy to do."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:349
+msgid ""
+"A good example for this is if you worked at a company called AcmeWidgets,"
+" and wrote an internal module that helped configure your internal "
+"software, and you wanted other people in your organization to easily use "
+"this module -- but you didn't want to tell everyone how to configure "
+"their Ansible library path."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:352
+msgid ""
+"Alongside the 'tasks' and 'handlers' structure of a role, add a directory"
+" named 'library'.  In this 'library' directory, then include the module "
+"directly inside of it."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:354
+msgid "Assuming you had this::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:362
+msgid ""
+"The module will be usable in the role itself, as well as any roles that "
+"are called *after* this role, as follows::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:371
+msgid ""
+"This can also be used, with some limitations, to modify modules in "
+"Ansible's core distribution, such as to use development versions of "
+"modules before they are released in production releases.  This is not "
+"always advisable as API signatures may change in core components, "
+"however, and is not always guaranteed to work.  It can be a handy way of "
+"carrying a patch against a core module, however, should you have good "
+"reason for this.  Naturally the project prefers that contributions be "
+"directed back to github whenever possible via a pull request."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:373
+msgid ""
+"The same mechanism can be used to embed and distribute plugins in a role,"
+" using the same schema. For example, for a filter plugin::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:381
+msgid ""
+"They can then be used in a template or a jinja template in any role "
+"called after 'my_custom_filter'"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:386
+msgid "Role Search Path"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:388
+msgid "Ansible will search for roles in the following way:"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:390
+msgid "A ``roles/`` directory, relative to the playbook file."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:391
+msgid "By default, in ``/etc/ansible/roles``"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:393
+msgid ""
+"In Ansible 1.4 and later you can configure an additional roles_path to "
+"search for roles.  Use this to check all of your common roles out to one "
+"location, and share them easily between multiple playbook projects.  See "
+":ref:`intro_configuration` for details about how to set this up in "
+"ansible.cfg."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:396
+msgid "Ansible Galaxy"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:398
+msgid ""
+"`Ansible Galaxy <https://galaxy.ansible.com>`_ is a free site for "
+"finding, downloading, rating, and reviewing all kinds of community "
+"developed Ansible roles and can be a great way to get a jumpstart on your"
+" automation projects."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:400
+msgid ""
+"The client ``ansible-galaxy`` is included in Ansible. The Galaxy client "
+"allows you to download roles from Ansible Galaxy, and also provides an "
+"excellent default framework for creating your own roles."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:402
+msgid ""
+"Read the `Ansible Galaxy documentation "
+"<https://galaxy.ansible.com/docs/>`_ page for more information"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:406
+msgid ":ref:`ansible_galaxy`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:407
+msgid "How to create new roles, share roles on Galaxy, role management"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:408
+msgid ":ref:`yaml_syntax`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:409
+msgid "Learn about YAML syntax"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:410
+msgid ":ref:`working_with_playbooks`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:411
+msgid "Review the basic Playbook language features"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:412
+msgid ":ref:`playbooks_best_practices`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:413
+msgid "Various tips about managing playbooks in the real world"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:414
+msgid ":ref:`playbooks_variables`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:415
+msgid "All about variables in playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:416
+msgid ":ref:`playbooks_conditionals`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:417
+msgid "Conditionals in playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:418
+msgid ":ref:`playbooks_loops`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:419
+msgid "Loops in playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:420
+msgid ":ref:`all_modules`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:421
+msgid "Learn about available modules"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:422
+msgid ":ref:`developing_modules`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:423
+msgid "Learn how to extend Ansible by writing your own modules"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:424
+msgid "`GitHub Ansible examples <https://github.com/ansible/ansible-examples>`_"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:425
+msgid "Complete playbook files from the GitHub project source"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:426
+msgid "`Mailing List <https://groups.google.com/group/ansible-project>`_"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse_roles.rst:427
+msgid "Questions? Help? Ideas?  Stop by the list on Google Groups"
+msgstr ""
+

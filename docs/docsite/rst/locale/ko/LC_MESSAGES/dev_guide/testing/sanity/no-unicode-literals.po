@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/testing/sanity/no-unicode-literals.rst:2
+msgid "Sanity Tests » no-unicode_literals"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/no-unicode-literals.rst:4
+msgid ""
+"The use of :code:`from __future__ import unicode_literals` has been "
+"deemed an anti-pattern.  The problems with it are:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/no-unicode-literals.rst:7
+msgid ""
+"It makes it so one can't jump into the middle of a file and know whether "
+"a bare literal string is a byte string or text string.  The programmer "
+"has to first check the top of the file to see if the import is there."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/no-unicode-literals.rst:10
+msgid ""
+"It removes the ability to define native strings (a string which should be"
+" a byte string on python2 and a text string on python3) via a string "
+"literal."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/no-unicode-literals.rst:12
+msgid ""
+"It makes for more context switching.  A programmer could be reading one "
+"file which has `unicode_literals` and know that bare string literals are "
+"text strings but then switch to another file (perhaps tracing program "
+"execution into a third party library) and have to switch their "
+"understanding of what bare string literals are."
+msgstr ""
+

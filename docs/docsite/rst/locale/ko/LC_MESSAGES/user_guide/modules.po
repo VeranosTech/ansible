@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/user_guide/modules.rst:4
+msgid "Working With Modules"
+msgstr ""
+
+#: ../../rst/user_guide/modules.rst:15
+msgid ""
+"Ansible ships with a number of modules (called the 'module library') that"
+" can be executed directly on remote hosts or through :doc:`Playbooks "
+"<playbooks>`."
+msgstr ""
+
+#: ../../rst/user_guide/modules.rst:18
+msgid ""
+"Users can also write their own modules. These modules can control system "
+"resources, like services, packages, or files (anything really), or handle"
+" executing system commands."
+msgstr ""
+
+#: ../../rst/user_guide/modules.rst:24
+msgid ":doc:`intro_adhoc`"
+msgstr ""
+
+#: ../../rst/user_guide/modules.rst:25
+msgid "Examples of using modules in /usr/bin/ansible"
+msgstr ""
+
+#: ../../rst/user_guide/modules.rst:26
+msgid ":doc:`playbooks`"
+msgstr ""
+
+#: ../../rst/user_guide/modules.rst:27
+msgid "Examples of using modules with /usr/bin/ansible-playbook"
+msgstr ""
+
+#: ../../rst/user_guide/modules.rst:28
+msgid ":doc:`../dev_guide/developing_modules`"
+msgstr ""
+
+#: ../../rst/user_guide/modules.rst:29
+msgid "How to write your own modules"
+msgstr ""
+
+#: ../../rst/user_guide/modules.rst:30
+msgid ":doc:`../dev_guide/developing_api`"
+msgstr ""
+
+#: ../../rst/user_guide/modules.rst:31
+msgid "Examples of using modules with the Python API"
+msgstr ""
+
+#: ../../rst/user_guide/modules.rst:32
+msgid "`Mailing List <https://groups.google.com/group/ansible-project>`_"
+msgstr ""
+
+#: ../../rst/user_guide/modules.rst:33
+msgid "Questions? Help? Ideas?  Stop by the list on Google Groups"
+msgstr ""
+
+#: ../../rst/user_guide/modules.rst:34
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/user_guide/modules.rst:35
+msgid "#ansible IRC chat channel"
+msgstr ""
+

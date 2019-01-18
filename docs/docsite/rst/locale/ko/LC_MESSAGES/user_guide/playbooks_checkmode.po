@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/user_guide/playbooks_checkmode.rst:4
+msgid "Check Mode (\"Dry Run\")"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_checkmode.rst:8
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_checkmode.rst:10
+msgid ""
+"When ansible-playbook is executed with ``--check`` it will not make any "
+"changes on remote systems.  Instead, any module instrumented to support "
+"'check mode' (which contains most of the primary core modules, but it is "
+"not required that all modules do this) will report what changes they "
+"would have made rather than making them.  Other modules that do not "
+"support check mode will also take no action, but just will not report "
+"what changes they might have made."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_checkmode.rst:14
+msgid ""
+"Check mode is just a simulation, and if you have steps that use "
+"conditionals that depend on the results of prior commands, it may be less"
+" useful for you.  However it is great for one-node-at-time basic "
+"configuration management use cases."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_checkmode.rst:17
+#: ../../rst/user_guide/playbooks_checkmode.rst:40
+#: ../../rst/user_guide/playbooks_checkmode.rst:70
+#: ../../rst/user_guide/playbooks_checkmode.rst:105
+msgid "Example::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_checkmode.rst:24
+msgid "Enabling or disabling check mode for tasks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_checkmode.rst:28
+msgid ""
+"Sometimes you may want to modify the check mode behavior of individual "
+"tasks. This is done via the ``check_mode`` option, which can be added to "
+"tasks."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_checkmode.rst:31
+msgid "There are two options:"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_checkmode.rst:33
+msgid ""
+"Force a task to **run in check mode**, even when the playbook is called "
+"**without** ``--check``. This is called ``check_mode: yes``."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_checkmode.rst:34
+msgid ""
+"Force a task to **run in normal mode** and make changes to the system, "
+"even when the playbook is called **with** ``--check``. This is called "
+"``check_mode: no``."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_checkmode.rst:36
+msgid ""
+"Prior to version 2.2 only the equivalent of ``check_mode: no`` existed. "
+"The notation for that was ``always_run: yes``."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_checkmode.rst:38
+msgid ""
+"Instead of ``yes``/``no`` you can use a Jinja2 expression, just like the "
+"``when`` clause."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_checkmode.rst:55
+msgid ""
+"Running single tasks with ``check_mode: yes`` can be useful to write "
+"tests for ansible modules, either to test the module itself or to the "
+"conditions under which a module would make changes. With ``register`` "
+"(see :doc:`playbooks_conditionals`) you can check the potential changes."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_checkmode.rst:62
+msgid "Information about check mode in variables"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_checkmode.rst:66
+msgid ""
+"If you want to skip, or ignore errors on some tasks in check mode you can"
+" use a boolean magic variable ``ansible_check_mode`` which will be set to"
+" ``True`` during check mode."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_checkmode.rst:90
+msgid "Showing Differences with ``--diff``"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_checkmode.rst:94
+msgid ""
+"The ``--diff`` option to ansible-playbook works great with ``--check`` "
+"(detailed above) but can also be used by itself. When this flag is "
+"supplied and the module supports this, Ansible will report back the "
+"changes made or, if used with ``--check``, the changes that would have "
+"been made. This is mostly used in modules that manipulate files (i.e. "
+"template) but other modules might also show 'before and after' "
+"information (i.e. user). Since the diff feature produces a large amount "
+"of output, it is best used when checking a single host at a time. For "
+"example::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_checkmode.rst:103
+msgid ""
+"The ``--diff`` option can reveal sensitive information. This option can "
+"disabled for tasks by specifying ``diff: no``."
+msgstr ""
+

@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst:5
+msgid "Netconf enabled Platform Options"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst:7
+msgid ""
+"This page offers details on how the netconf connection works in Ansible "
+"2.7 and how to use it."
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst:9
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst:12
+msgid "Connections Available"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst
+msgid "NETCONF"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst
+msgid "* all modules except ``junos_netconf``, which enables NETCONF"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst:18
+msgid "**Protocol**"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst:18
+msgid "XML over SSH"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst
+msgid "**Credentials**"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst
+msgid "uses SSH keys / SSH-agent if present"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst
+msgid "accepts ``-u myuser -k`` if using password"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst:23
+msgid "**Indirect Access**"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst:23
+msgid "via a bastion (jump host)"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst:25
+msgid "**Connection Settings**"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst:25
+msgid "``ansible_connection: netconf``"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst:28
+msgid ""
+"For legacy playbooks, Ansible still supports ``ansible_connection=local``"
+" for the netconf_config module only. We recommend modernizing to use "
+"``ansible_connection=netconf`` as soon as possible."
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst:31
+msgid "Using NETCONF in Ansible 2.6 onwards"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst:34
+msgid "Enabling NETCONF"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst:36
+msgid "Before you can use NETCONF to connect to a switch, you must:"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst:38
+msgid ""
+"install the ``ncclient`` Python package on your control node(s) with "
+"``pip install ncclient``"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst:39
+msgid "enable NETCONF on the Junos OS device(s)"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst:41
+msgid ""
+"To enable NETCONF on a new switch via Ansible, use the platform specific "
+"module via the CLI connection or set it manually. For example set up your"
+" platform-level variables just like in the CLI example above, then run a "
+"playbook task like this:"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst:51
+msgid ""
+"Once NETCONF is enabled, change your variables to use the NETCONF "
+"connection."
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst:54
+msgid "Example NETCONF inventory ``[junos:vars]``"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst:66
+msgid "Example NETCONF Task"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst:76
+msgid "Example NETCONF Task with configurable variables"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_netconf_enabled.rst:87
+msgid ""
+"Note: For nectonf connection plugin configurable variables .. _Refer: "
+"https://docs.ansible.com/ansible/latest/plugins/connection/netconf.html"
+msgstr ""
+
+#: ../../rst/network/user_guide/shared_snippets/SSH_warning.txt:2
+msgid ""
+"Never store passwords in plain text. We recommend using SSH keys to "
+"authenticate SSH connections. Ansible supports ssh-agent to manage your "
+"SSH keys. If you must use passwords to authenticate SSH connections, we "
+"recommend encrypting them with :ref:`Ansible Vault <playbooks_vault>`."
+msgstr ""
+

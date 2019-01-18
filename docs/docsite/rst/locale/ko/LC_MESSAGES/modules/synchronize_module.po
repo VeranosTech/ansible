@@ -1,0 +1,224 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/synchronize_module.rst:9
+msgid ""
+"synchronize -- A wrapper around rsync to make common tasks in your "
+"playbooks quick and easy"
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:18
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:19
+msgid ""
+"``synchronize`` is a wrapper around rsync to make common tasks in your "
+"playbooks quick and easy."
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:20
+msgid "It is run and originates on the local host where Ansible is being run."
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:21
+msgid ""
+"Of course, you could just use the ``command`` action to call rsync "
+"yourself, but you also have to add a fair number of boilerplate options "
+"and host facts."
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:22
+msgid ""
+"This module is not intended to provide access to the full power of rsync,"
+" but does make the most common invocations easier to implement. You "
+"`still` may need to call rsync directly via ``command`` or ``shell`` "
+"depending on your use case."
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:28
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:473
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:476
+msgid "rsync must be installed on both the local and remote host."
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:477
+msgid ""
+"For the ``synchronize`` module, the \"local host\" is the host `the "
+"synchronize task originates on`, and the \"destination host\" is the host"
+" `synchronize is connecting to`."
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:478
+msgid ""
+"The \"local host\" can be changed to a different host by using "
+"`delegate_to`.  This enables copying between two remote hosts or entirely"
+" on one remote machine."
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:479
+msgid ""
+"The user and permissions for the synchronize `src` are those of the user "
+"running the Ansible task on the local host (or the remote_user for a "
+"delegate_to host when delegate_to is used)."
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:481
+msgid ""
+"The user and permissions for the synchronize `dest` are those of the "
+"`remote_user` on the destination host or the `become_user` if "
+"`become=yes` is active."
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:482
+msgid ""
+"In Ansible 2.0 a bug in the synchronize module made become occur on the "
+"\"local host\".  This was fixed in Ansible 2.0.1."
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:483
+msgid ""
+"Currently, synchronize is limited to elevating permissions via "
+"passwordless sudo.  This is because rsync itself is connecting to the "
+"remote machine and rsync doesn't give us a way to pass sudo credentials "
+"in."
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:484
+msgid ""
+"Currently there are only a few connection types which support synchronize"
+" (ssh, paramiko, local, and docker) because a sync strategy has been "
+"determined for those connection types.  Note that the connection for "
+"these must not need a password as rsync itself is making the connection "
+"and rsync does not provide us a way to pass a password to the connection."
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:485
+msgid "Expect that dest=~/x will be ~<remote_user>/x even if using sudo."
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:486
+msgid ""
+"Inspect the verbose output to validate the destination user/host/path are"
+" what was expected."
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:487
+msgid ""
+"To exclude files and directories from being synchronized, you may add "
+"``.rsync-filter`` files to the source directory."
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:488
+msgid ""
+"rsync daemon must be up and running with correct permission when using "
+"rsync protocol in source or destination path."
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:489
+msgid ""
+"The ``synchronize`` module forces `--delay-updates` to avoid leaving a "
+"destination in a broken in-between state if the underlying rsync process "
+"encounters an error. Those synchronizing large numbers of files that are "
+"willing to trade safety for performance should call rsync directly."
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:490
+msgid ""
+"link_destination is subject to the same limitations as the underlaying "
+"rsync daemon. Hard links are only preserved if the relative subtrees of "
+"the source and destination are the same. Attempts to hardlink into a "
+"directory that is a subdirectory of the source will be prevented."
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:494
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:498
+msgid ":ref:`copy_module`"
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:499
+msgid "The official documentation on the **copy** module."
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:500
+msgid ":ref:`win_robocopy_module`"
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:501
+msgid "The official documentation on the **win_robocopy** module."
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:505
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:640
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:645
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:648
+msgid ""
+"This module is :ref:`maintained by the Ansible Core Team "
+"<modules_support>`. *[core]*"
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:651
+msgid "Red Hat Support"
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:653
+msgid ""
+"More information about Red Hat's support of this module is available from"
+" this `Red Hat Knowledge Base article "
+"<https://access.redhat.com/articles/3166901>`_."
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:659
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:661
+msgid "Timothy Appnel (@tima)"
+msgstr ""
+
+#: ../../rst/modules/synchronize_module.rst:665
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/files/synchronize.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

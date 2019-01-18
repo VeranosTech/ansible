@@ -1,0 +1,163 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:9
+msgid "acme_certificate_revoke -- Revoke certificates with the ACME protocol"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:20
+msgid ""
+"Allows to revoke certificates issued by a CA supporting the `ACME "
+"protocol <https://tools.ietf.org/html/draft-ietf-acme-acme-18>`_, such as"
+" `Let's Encrypt <https://letsencrypt.org/>`_."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:25
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:26
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:28
+msgid "python >= 2.6"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:29
+msgid "either openssl, ..."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:30
+msgid "... or `cryptography <https://cryptography.io/>`_ >= 1.5"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:34
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:226
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:229
+msgid ""
+"Exactly one of ``account_key_src``, ``account_key_content``, "
+"``private_key_src`` or ``private_key_content`` must be specified."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:230
+msgid ""
+"Trying to revoke an already revoked certificate should result in an "
+"unchanged status, even if the revocation reason was different than the "
+"one specified here. Also, depending on the server, it can happen that "
+"some other error is returned if the certificate has already been revoked."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:231
+msgid ""
+"If a new enough version of the ``cryptography`` library is available (see"
+" Requirements for details), it will be used instead of the ``openssl`` "
+"binary. This can be explicitly disabled or enabled with the "
+"``select_crypto_backend`` option. Note that using the ``openssl`` binary "
+"will be slower and less secure, as private key contents always have to be"
+" stored on disk (see ``account_key_content``)."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:232
+msgid ""
+"Although the defaults are chosen so that the module can be used with the "
+"`Let's Encrypt <https://letsencrypt.org/>`_ CA, the module can in "
+"principle be used with any CA providing an ACME endpoint."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:236
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:240
+msgid "`The Let's Encrypt documentation <https://letsencrypt.org/docs/>`_"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:241
+msgid ""
+"Documentation for the Let's Encrypt Certification Authority. Provides "
+"useful information for example on rate limits."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:242
+msgid ""
+"`Automatic Certificate Management Environment (ACME) "
+"<https://tools.ietf.org/html/draft-ietf-acme-acme-18>`_"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:243
+msgid "The current draft specification of the ACME protocol."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:244
+msgid ":ref:`acme_inspect_module`"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:245
+msgid "Allows to debug problems."
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:249
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:269
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:274
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:277
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:284
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:286
+msgid "Felix Fontein (@felixfontein)"
+msgstr ""
+
+#: ../../rst/modules/acme_certificate_revoke_module.rst:290
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/crypto/acme/acme_certificate_revoke.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

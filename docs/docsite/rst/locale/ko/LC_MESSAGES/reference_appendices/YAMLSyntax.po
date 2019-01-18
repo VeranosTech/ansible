@@ -1,0 +1,293 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:5
+msgid "YAML Syntax"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:7
+msgid ""
+"This page provides a basic overview of correct YAML syntax, which is how "
+"Ansible playbooks (our configuration management language) are expressed."
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:10
+msgid ""
+"We use YAML because it is easier for humans to read and write than other "
+"common data formats like XML or JSON.  Further, there are libraries "
+"available in most programming languages for working with YAML."
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:14
+msgid ""
+"You may also wish to read :ref:`working_with_playbooks` at the same time "
+"to see how this is used in practice."
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:19
+msgid "YAML Basics"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:21
+msgid ""
+"For Ansible, nearly every YAML file starts with a list. Each item in the "
+"list is a list of key/value pairs, commonly called a \"hash\" or a "
+"\"dictionary\".  So, we need to know how to write lists and dictionaries "
+"in YAML."
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:26
+msgid ""
+"There's another small quirk to YAML.  All YAML files (regardless of their"
+" association with Ansible or not) can optionally begin with ``---`` and "
+"end with ``...``.  This is part of the YAML format and indicates the "
+"start and end of a document."
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:29
+msgid ""
+"All members of a list are lines beginning at the same indentation level "
+"starting with a ``\"- \"`` (a dash and a space)::"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:39
+msgid ""
+"A dictionary is represented in a simple ``key: value`` form (the colon "
+"must be followed by a space)::"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:47
+msgid ""
+"More complicated data structures are possible, such as lists of "
+"dictionaries, dictionaries whose values are lists or a mix of both::"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:65
+msgid ""
+"Dictionaries and lists can also be represented in an abbreviated form if "
+"you really want to::"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:71
+msgid "These are called \"Flow collections\"."
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:75
+msgid ""
+"Ansible doesn't really use these too much, but you can also specify a "
+"boolean value (true/false) in several forms::"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:83
+msgid ""
+"Values can span multiple lines using ``|`` or ``>``.  Spanning multiple "
+"lines using a \"Literal Block Scalar\" ``|`` will include the newlines "
+"and any trailing spaces. Using a \"Folded Block Scalar\" ``>`` will fold "
+"newlines to spaces; it's used to make what would otherwise be a very long"
+" line easier to read and edit. In either case the indentation will be "
+"ignored. Examples are::"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:98
+msgid ""
+"While in the above ``>`` example all newlines are folded into spaces, "
+"there are two ways to enforce a newline to be kept::"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:110
+msgid ""
+"Let's combine what we learned so far in an arbitrary YAML example. This "
+"really has nothing to do with Ansible, but will give you a feel for the "
+"format::"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:133
+msgid ""
+"That's all you really need to know about YAML to start writing `Ansible` "
+"playbooks."
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:136
+msgid "Gotchas"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:138
+msgid ""
+"While you can put just about anything into an unquoted scalar, there are "
+"some exceptions. A colon followed by a space (or newline) ``\": \"`` is "
+"an indicator for a mapping. A space followed by the pound sign ``\" #\"``"
+" starts a comment."
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:142
+msgid "Because of this, the following is going to result in a YAML syntax error::"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:148
+msgid "...but this will work::"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:152
+msgid ""
+"You will want to quote hash values using colons followed by a space or "
+"the end of the line::"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:158
+msgid "...and then the colon will be preserved."
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:160
+msgid "Alternatively, you can use double quotes::"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:166
+msgid ""
+"The difference between single quotes and double quotes is that in double "
+"quotes you can use escapes::"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:171
+msgid ""
+"The list of allowed escapes can be found in the YAML Specification under "
+"\"Escape Sequences\" (YAML 1.1) or \"Escape Characters\" (YAML 1.2)."
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:173
+msgid "The following is invalid YAML::"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:178
+msgid ""
+"Further, Ansible uses \"{{ var }}\" for variables.  If a value after a "
+"colon starts with a \"{\", YAML will think it is a dictionary, so you "
+"must quote it, like so::"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:183
+msgid ""
+"If your value starts with a quote the entire value must be quoted, not "
+"just part of it. Here are some additional examples of how to properly "
+"quote things::"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:189
+msgid "Not valid::"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:193
+msgid ""
+"In addition to ``'`` and ``\"`` there are a number of characters that are"
+" special (or reserved) and cannot be used as the first character of an "
+"unquoted scalar: ``[] {} > | * & ! % # ` @ ,``."
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:196
+msgid ""
+"You should also be aware of ``? : -``. In YAML, they are allowed at the "
+"beginning of a string if a non-space character follows, but YAML "
+"processor implementations differ, so it's better to use quotes."
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:199
+msgid "In Flow Collections, the rules are a bit more strict::"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:205
+msgid ""
+"Boolean conversion is helpful, but this can be a problem when you want a "
+"literal `yes` or other boolean values as a string. In these cases just "
+"use quotes::"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:212
+msgid ""
+"YAML converts certain strings into floating-point values, such as the "
+"string `1.0`. If you need to specify a version number (in a "
+"requirements.yml file, for example), you will need to quote the value if "
+"it looks like a floating-point value::"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:222
+msgid ":ref:`working_with_playbooks`"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:223
+msgid "Learn what playbooks can do and how to write/run them."
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:224
+msgid "`YAMLLint <http://yamllint.com/>`_"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:225
+msgid "YAML Lint (online) helps you debug YAML syntax if you are having problems"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:226
+msgid "`GitHub examples directory <https://github.com/ansible/ansible-examples>`_"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:227
+msgid "Complete playbook files from the github project source"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:228
+msgid "`Wikipedia YAML syntax reference <https://en.wikipedia.org/wiki/YAML>`_"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:229
+msgid "A good guide to YAML syntax"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:230
+msgid "`Mailing List <https://groups.google.com/group/ansible-project>`_"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:231
+msgid "Questions? Help? Ideas?  Stop by the list on Google Groups"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:232
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:233
+msgid "#ansible IRC chat channel and #yaml for YAML specific questions"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:235
+msgid "`YAML 1.1 Specification <http://yaml.org/spec/1.1/>`_"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:235
+msgid ""
+"The Specification for YAML 1.1, which PyYAML and libyaml are currently "
+"implementing"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:237
+msgid "`YAML 1.2 Specification <http://yaml.org/spec/1.2/spec.html>`_"
+msgstr ""
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:238
+msgid "For completeness, YAML 1.2 is the successor of 1.1"
+msgstr ""
+

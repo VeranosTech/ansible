@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/vmware/vmware_scenario_1.rst:5
+msgid "Sample Scenario for Ansible VMware"
+msgstr ""
+
+#: ../../rst/vmware/vmware_scenario_1.rst:7
+msgid "Introductory paragraph."
+msgstr ""
+
+#: ../../rst/vmware/vmware_scenario_1.rst:13
+msgid "Scenario Requirements"
+msgstr ""
+
+#: ../../rst/vmware/vmware_scenario_1.rst:15
+msgid "Describe the requirements and assumptions for this scenario."
+msgstr ""
+
+#: ../../rst/vmware/vmware_scenario_1.rst:19
+msgid "Example Description"
+msgstr ""
+
+#: ../../rst/vmware/vmware_scenario_1.rst:21
+msgid "Description and code here."
+msgstr ""
+
+#: ../../rst/vmware/vmware_scenario_1.rst:25
+msgid "Example Output"
+msgstr ""
+
+#: ../../rst/vmware/vmware_scenario_1.rst:27
+msgid "What the user should expect to see."
+msgstr ""
+
+#: ../../rst/vmware/vmware_scenario_1.rst:31
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../rst/vmware/vmware_scenario_1.rst:33
+msgid "What to look for if it breaks."
+msgstr ""
+
+#: ../../rst/vmware/vmware_scenario_1.rst:37
+msgid "Conclusion and Where To Go Next"
+msgstr ""
+
+#: ../../rst/vmware/vmware_scenario_1.rst:39
+msgid "Recap of important points. For more information please see: links."
+msgstr ""
+

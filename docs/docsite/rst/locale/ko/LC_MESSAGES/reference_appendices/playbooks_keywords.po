@@ -1,0 +1,757 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:4
+msgid "Playbook Keywords"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:6
+msgid "These are the keywords available on common playbook objects."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:8
+msgid "Please note:"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:10
+msgid ""
+"Aliases for the directives are not reflected here, nor are mutable one. "
+"For example, :term:`action` in task can be substituted by the name of any"
+" Ansible module."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:12
+msgid "The keywords do not have ``version_added`` information at this time"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:13
+msgid ""
+"Some keywords set defaults for the objects inside of them rather than for"
+" the objects themselves"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:23
+msgid "Play"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:25
+#: ../../rst/reference_appendices/playbooks_keywords.rst:150
+#: ../../rst/reference_appendices/playbooks_keywords.rst:233
+#: ../../rst/reference_appendices/playbooks_keywords.rst:322
+msgid "any_errors_fatal"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:27
+#: ../../rst/reference_appendices/playbooks_keywords.rst:152
+#: ../../rst/reference_appendices/playbooks_keywords.rst:235
+#: ../../rst/reference_appendices/playbooks_keywords.rst:324
+msgid ""
+"Force any un-handled task errors on any host to propagate to all hosts "
+"and end the play."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:28
+#: ../../rst/reference_appendices/playbooks_keywords.rst:153
+#: ../../rst/reference_appendices/playbooks_keywords.rst:236
+#: ../../rst/reference_appendices/playbooks_keywords.rst:331
+msgid "become"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:30
+#: ../../rst/reference_appendices/playbooks_keywords.rst:155
+#: ../../rst/reference_appendices/playbooks_keywords.rst:238
+#: ../../rst/reference_appendices/playbooks_keywords.rst:333
+msgid ""
+"Boolean that controls if privilege escalation is used or not on "
+":term:`Task` execution."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:31
+#: ../../rst/reference_appendices/playbooks_keywords.rst:156
+#: ../../rst/reference_appendices/playbooks_keywords.rst:239
+#: ../../rst/reference_appendices/playbooks_keywords.rst:334
+msgid "become_flags"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:33
+#: ../../rst/reference_appendices/playbooks_keywords.rst:158
+#: ../../rst/reference_appendices/playbooks_keywords.rst:241
+#: ../../rst/reference_appendices/playbooks_keywords.rst:336
+msgid ""
+"A string of flag(s) to pass to the privilege escalation program when "
+":term:`become` is True."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:34
+#: ../../rst/reference_appendices/playbooks_keywords.rst:159
+#: ../../rst/reference_appendices/playbooks_keywords.rst:242
+#: ../../rst/reference_appendices/playbooks_keywords.rst:337
+msgid "become_method"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:36
+#: ../../rst/reference_appendices/playbooks_keywords.rst:161
+#: ../../rst/reference_appendices/playbooks_keywords.rst:244
+#: ../../rst/reference_appendices/playbooks_keywords.rst:339
+msgid "Which method of privilege escalation to use (such as sudo or su)."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:37
+#: ../../rst/reference_appendices/playbooks_keywords.rst:162
+#: ../../rst/reference_appendices/playbooks_keywords.rst:245
+#: ../../rst/reference_appendices/playbooks_keywords.rst:340
+msgid "become_user"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:39
+#: ../../rst/reference_appendices/playbooks_keywords.rst:164
+#: ../../rst/reference_appendices/playbooks_keywords.rst:247
+#: ../../rst/reference_appendices/playbooks_keywords.rst:342
+msgid ""
+"User that you 'become' after using privilege escalation. The remote/login"
+" user must have permissions to become this user."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:40
+#: ../../rst/reference_appendices/playbooks_keywords.rst:165
+#: ../../rst/reference_appendices/playbooks_keywords.rst:251
+#: ../../rst/reference_appendices/playbooks_keywords.rst:346
+msgid "check_mode"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:42
+#: ../../rst/reference_appendices/playbooks_keywords.rst:167
+#: ../../rst/reference_appendices/playbooks_keywords.rst:253
+#: ../../rst/reference_appendices/playbooks_keywords.rst:348
+msgid "A boolean that controls if a task is executed in 'check' mode"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:44
+#: ../../rst/reference_appendices/playbooks_keywords.rst:169
+#: ../../rst/reference_appendices/playbooks_keywords.rst:255
+#: ../../rst/reference_appendices/playbooks_keywords.rst:350
+msgid ":ref:`check_mode_dry`"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:46
+#: ../../rst/reference_appendices/playbooks_keywords.rst:171
+#: ../../rst/reference_appendices/playbooks_keywords.rst:257
+#: ../../rst/reference_appendices/playbooks_keywords.rst:352
+msgid "connection"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:48
+#: ../../rst/reference_appendices/playbooks_keywords.rst:173
+#: ../../rst/reference_appendices/playbooks_keywords.rst:259
+#: ../../rst/reference_appendices/playbooks_keywords.rst:354
+msgid ""
+"Allows you to change the connection plugin used for tasks to execute on "
+"the target."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:50
+#: ../../rst/reference_appendices/playbooks_keywords.rst:175
+#: ../../rst/reference_appendices/playbooks_keywords.rst:261
+#: ../../rst/reference_appendices/playbooks_keywords.rst:356
+msgid ":ref:`using_connection`"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:52
+#: ../../rst/reference_appendices/playbooks_keywords.rst:177
+#: ../../rst/reference_appendices/playbooks_keywords.rst:263
+#: ../../rst/reference_appendices/playbooks_keywords.rst:358
+msgid "debugger"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:54
+#: ../../rst/reference_appendices/playbooks_keywords.rst:179
+#: ../../rst/reference_appendices/playbooks_keywords.rst:265
+#: ../../rst/reference_appendices/playbooks_keywords.rst:360
+msgid ""
+"Enable debugging tasks based on state of the task result. See "
+":ref:`playbook_debugger`"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:55
+#: ../../rst/reference_appendices/playbooks_keywords.rst:186
+#: ../../rst/reference_appendices/playbooks_keywords.rst:272
+#: ../../rst/reference_appendices/playbooks_keywords.rst:370
+msgid "diff"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:57
+#: ../../rst/reference_appendices/playbooks_keywords.rst:188
+#: ../../rst/reference_appendices/playbooks_keywords.rst:274
+#: ../../rst/reference_appendices/playbooks_keywords.rst:372
+msgid "Toggle to make tasks return 'diff' information or not."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:58
+#: ../../rst/reference_appendices/playbooks_keywords.rst:189
+#: ../../rst/reference_appendices/playbooks_keywords.rst:275
+#: ../../rst/reference_appendices/playbooks_keywords.rst:373
+msgid "environment"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:60
+#: ../../rst/reference_appendices/playbooks_keywords.rst:191
+#: ../../rst/reference_appendices/playbooks_keywords.rst:277
+#: ../../rst/reference_appendices/playbooks_keywords.rst:375
+msgid ""
+"A dictionary that gets converted into environment vars to be provided for"
+" the task upon execution."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:61
+msgid "fact_path"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:63
+msgid ""
+"Set the fact path option for the fact gathering plugin controlled by "
+":term:`gather_facts`."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:64
+msgid "force_handlers"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:66
+msgid ""
+"Will force notified handler execution for hosts even if they failed "
+"during the play. Will not trigger if the play itself fails."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:67
+msgid "gather_facts"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:69
+msgid ""
+"A boolean that controls if the play will automatically run the 'setup' "
+"task to gather facts for the hosts."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:70
+msgid "gather_subset"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:72
+msgid ""
+"Allows you to pass subset options to the  fact gathering plugin "
+"controlled by :term:`gather_facts`."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:73
+msgid "gather_timeout"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:75
+msgid ""
+"Allows you to set the timeout for the fact gathering plugin controlled by"
+" :term:`gather_facts`."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:76
+msgid "handlers"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:78
+msgid ""
+"A section with tasks that are treated as handlers, these won't get "
+"executed normally, only when notified after each section of tasks is "
+"complete."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:79
+msgid "hosts"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:81
+msgid ""
+"A list of groups, hosts or host pattern that translates into a list of "
+"hosts that are the play's target."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:82
+#: ../../rst/reference_appendices/playbooks_keywords.rst:192
+#: ../../rst/reference_appendices/playbooks_keywords.rst:278
+#: ../../rst/reference_appendices/playbooks_keywords.rst:379
+msgid "ignore_errors"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:84
+#: ../../rst/reference_appendices/playbooks_keywords.rst:194
+#: ../../rst/reference_appendices/playbooks_keywords.rst:280
+#: ../../rst/reference_appendices/playbooks_keywords.rst:381
+msgid ""
+"Boolean that allows you to ignore task failures and continue with play. "
+"It does not affect connection errors."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:85
+#: ../../rst/reference_appendices/playbooks_keywords.rst:195
+#: ../../rst/reference_appendices/playbooks_keywords.rst:281
+#: ../../rst/reference_appendices/playbooks_keywords.rst:382
+msgid "ignore_unreachable"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:87
+#: ../../rst/reference_appendices/playbooks_keywords.rst:197
+#: ../../rst/reference_appendices/playbooks_keywords.rst:283
+#: ../../rst/reference_appendices/playbooks_keywords.rst:384
+msgid ""
+"Boolean that allows you to ignore unreachable hosts and continue with "
+"play. This does not affect other task errors (see :term:`ignore_errors`) "
+"but is useful for groups of volatile/ephemeral hosts."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:88
+msgid "max_fail_percentage"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:90
+msgid ""
+"can be used to abort the run after a given percentage of hosts in the "
+"current batch has failed."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:91
+#: ../../rst/reference_appendices/playbooks_keywords.rst:198
+#: ../../rst/reference_appendices/playbooks_keywords.rst:284
+#: ../../rst/reference_appendices/playbooks_keywords.rst:397
+msgid "module_defaults"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:93
+#: ../../rst/reference_appendices/playbooks_keywords.rst:200
+#: ../../rst/reference_appendices/playbooks_keywords.rst:286
+#: ../../rst/reference_appendices/playbooks_keywords.rst:399
+msgid "Specifies default parameter values for modules."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:94
+#: ../../rst/reference_appendices/playbooks_keywords.rst:201
+#: ../../rst/reference_appendices/playbooks_keywords.rst:287
+#: ../../rst/reference_appendices/playbooks_keywords.rst:400
+msgid "name"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:96
+#: ../../rst/reference_appendices/playbooks_keywords.rst:203
+#: ../../rst/reference_appendices/playbooks_keywords.rst:289
+#: ../../rst/reference_appendices/playbooks_keywords.rst:402
+msgid "Identifier. Can be used for documentation, in or tasks/handlers."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:97
+#: ../../rst/reference_appendices/playbooks_keywords.rst:204
+#: ../../rst/reference_appendices/playbooks_keywords.rst:290
+#: ../../rst/reference_appendices/playbooks_keywords.rst:403
+msgid "no_log"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:99
+#: ../../rst/reference_appendices/playbooks_keywords.rst:206
+#: ../../rst/reference_appendices/playbooks_keywords.rst:292
+#: ../../rst/reference_appendices/playbooks_keywords.rst:405
+msgid "Boolean that controls information disclosure."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:100
+msgid "order"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:102
+msgid ""
+"Controls the sorting of hosts as they are used for executing the play. "
+"Possible values are inventory (default), sorted, reverse_sorted, "
+"reverse_inventory and shuffle."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:103
+#: ../../rst/reference_appendices/playbooks_keywords.rst:207
+#: ../../rst/reference_appendices/playbooks_keywords.rst:293
+#: ../../rst/reference_appendices/playbooks_keywords.rst:412
+msgid "port"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:105
+#: ../../rst/reference_appendices/playbooks_keywords.rst:209
+#: ../../rst/reference_appendices/playbooks_keywords.rst:295
+#: ../../rst/reference_appendices/playbooks_keywords.rst:414
+msgid "Used to override the default port used in a connection."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:106
+msgid "post_tasks"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:108
+msgid "A list of tasks to execute after the :term:`tasks` section."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:109
+msgid "pre_tasks"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:111
+msgid "A list of tasks to execute before :term:`roles`."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:112
+#: ../../rst/reference_appendices/playbooks_keywords.rst:210
+#: ../../rst/reference_appendices/playbooks_keywords.rst:296
+#: ../../rst/reference_appendices/playbooks_keywords.rst:418
+msgid "remote_user"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:114
+#: ../../rst/reference_appendices/playbooks_keywords.rst:212
+#: ../../rst/reference_appendices/playbooks_keywords.rst:298
+#: ../../rst/reference_appendices/playbooks_keywords.rst:420
+msgid "User used to log into the target via the connection plugin."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:115
+msgid "roles"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:117
+msgid "List of roles to be imported into the play"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:118
+#: ../../rst/reference_appendices/playbooks_keywords.rst:213
+#: ../../rst/reference_appendices/playbooks_keywords.rst:302
+#: ../../rst/reference_appendices/playbooks_keywords.rst:424
+msgid "run_once"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:120
+#: ../../rst/reference_appendices/playbooks_keywords.rst:215
+#: ../../rst/reference_appendices/playbooks_keywords.rst:304
+#: ../../rst/reference_appendices/playbooks_keywords.rst:426
+msgid ""
+"Boolean that will bypass the host loop, forcing the task to attempt to "
+"execute on the first host available and afterwards apply any results and "
+"facts to all active hosts in the same batch."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:121
+msgid "serial"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:123
+msgid ""
+"Explicitly define how Ansible batches the execution of the current play "
+"on the play's target"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:125
+msgid ":ref:`rolling_update_batch_size`"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:127
+msgid "strategy"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:129
+msgid "Allows you to choose the connection plugin to use for the play."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:130
+#: ../../rst/reference_appendices/playbooks_keywords.rst:216
+#: ../../rst/reference_appendices/playbooks_keywords.rst:305
+#: ../../rst/reference_appendices/playbooks_keywords.rst:427
+msgid "tags"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:132
+#: ../../rst/reference_appendices/playbooks_keywords.rst:218
+#: ../../rst/reference_appendices/playbooks_keywords.rst:307
+#: ../../rst/reference_appendices/playbooks_keywords.rst:429
+msgid ""
+"Tags applied to the task or included tasks, this allows selecting subsets"
+" of tasks from the command line."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:133
+msgid "tasks"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:135
+msgid ""
+"Main list of tasks to execute in the play, they run after :term:`roles` "
+"and before :term:`post_tasks`."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:136
+#: ../../rst/reference_appendices/playbooks_keywords.rst:219
+#: ../../rst/reference_appendices/playbooks_keywords.rst:308
+#: ../../rst/reference_appendices/playbooks_keywords.rst:433
+msgid "vars"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:138
+#: ../../rst/reference_appendices/playbooks_keywords.rst:221
+#: ../../rst/reference_appendices/playbooks_keywords.rst:310
+#: ../../rst/reference_appendices/playbooks_keywords.rst:435
+msgid "Dictionary/map of variables"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:139
+msgid "vars_files"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:141
+msgid "List of files that contain vars to include in the play."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:142
+msgid "vars_prompt"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:144
+msgid "list of variables to prompt for."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:148
+msgid "Role"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:180
+#: ../../rst/reference_appendices/playbooks_keywords.rst:266
+#: ../../rst/reference_appendices/playbooks_keywords.rst:364
+msgid "delegate_facts"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:182
+#: ../../rst/reference_appendices/playbooks_keywords.rst:268
+#: ../../rst/reference_appendices/playbooks_keywords.rst:366
+msgid ""
+"Boolean that allows you to apply facts to a delegated host instead of "
+"inventory_hostname."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:183
+#: ../../rst/reference_appendices/playbooks_keywords.rst:269
+#: ../../rst/reference_appendices/playbooks_keywords.rst:367
+msgid "delegate_to"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:185
+#: ../../rst/reference_appendices/playbooks_keywords.rst:271
+#: ../../rst/reference_appendices/playbooks_keywords.rst:369
+msgid ""
+"Host to execute task instead of the target (inventory_hostname). "
+"Connection vars from the delegated host will also be used for the task."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:222
+#: ../../rst/reference_appendices/playbooks_keywords.rst:311
+#: ../../rst/reference_appendices/playbooks_keywords.rst:436
+msgid "when"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:224
+#: ../../rst/reference_appendices/playbooks_keywords.rst:313
+#: ../../rst/reference_appendices/playbooks_keywords.rst:438
+msgid ""
+"Conditional expression, determines if an iteration of a task is run or "
+"not."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:228
+msgid "Block"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:230
+msgid "always"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:232
+msgid ""
+"List of tasks, in a block, that execute no matter if there is an error in"
+" the block or not."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:248
+msgid "block"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:250
+msgid "List of tasks in a block."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:299
+msgid "rescue"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:301
+msgid ""
+"List of tasks in a :term:`block` that run if there is a task error in the"
+" main :term:`block` list."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:317
+msgid "Task"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:319
+msgid "action"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:321
+msgid ""
+"The 'action' to execute for a task, it normally translates into a "
+"C(module) or action plugin."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:325
+msgid "args"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:327
+msgid ""
+"A secondary way to add arguments into a task. Takes a dictionary in which"
+" keys map to options and values."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:328
+msgid "async"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:330
+msgid ""
+"Run a task asynchronously if the C(action) supports this; value is "
+"maximum runtime in seconds."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:343
+msgid "changed_when"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:345
+msgid "Conditional expression that overrides the task's normal 'changed' status."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:361
+msgid "delay"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:363
+msgid ""
+"Number of seconds to delay between retries. This setting is only used in "
+"combination with :term:`until`."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:376
+msgid "failed_when"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:378
+msgid "Conditional expression that overrides the task's normal 'failed' status."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:385
+msgid "local_action"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:387
+msgid "Same as action but also implies ``delegate_to: localhost``"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:388
+msgid "loop"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:390
+msgid ""
+"Takes a list for the task to iterate over, saving each list element into "
+"the ``item`` variable (configurable via loop_control)"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:391
+msgid "loop_control"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:393
+msgid "Several keys here allow you to modify/set loop behaviour in a task."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:395
+msgid ":ref:`loop_control`"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:406
+msgid "notify"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:408
+msgid "List of handlers to notify when the task returns a 'changed=True' status."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:409
+msgid "poll"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:411
+msgid "Sets the polling interval in seconds for async tasks (default 10s)."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:415
+msgid "register"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:417
+msgid "Name of variable that will contain task status and module return data."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:421
+msgid "retries"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:423
+msgid ""
+"Number of retries before giving up in a :term:`until` loop. This setting "
+"is only used in combination with :term:`until`."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:430
+msgid "until"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:432
+msgid ""
+"This keyword implies a ':term:`retries` loop' that will go on until the "
+"condition supplied here is met or we hit the :term:`retries` limit."
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:439
+msgid "with_<lookup_plugin>"
+msgstr ""
+
+#: ../../rst/reference_appendices/playbooks_keywords.rst:441
+msgid ""
+"The same as ``loop`` but magically adds the output of any lookup plugin "
+"to generate the item list."
+msgstr ""
+

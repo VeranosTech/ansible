@@ -1,0 +1,168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/copy_module.rst:9
+msgid "copy -- Copy files to remote locations"
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:18
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:19
+msgid ""
+"The ``copy`` module copies a file from the local or remote machine to a "
+"location on the remote machine."
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:20
+msgid ""
+"For Windows targets, use the :ref:`win_copy <win_copy_module>` module "
+"instead."
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:26
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:379
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:382
+msgid ""
+"The :ref:`copy <copy_module>` module recursively copy facility does not "
+"scale to lots (>hundreds) of files."
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:386
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:390
+msgid ":ref:`assemble_module`"
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:391
+msgid "The official documentation on the **assemble** module."
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:392
+msgid ":ref:`fetch_module`"
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:393
+msgid "The official documentation on the **fetch** module."
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:394
+msgid ":ref:`file_module`"
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:395
+msgid "The official documentation on the **file** module."
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:396
+msgid ":ref:`synchronize_module`"
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:397
+msgid "The official documentation on the **synchronize** module."
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:398
+msgid ":ref:`template_module`"
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:399
+msgid "The official documentation on the **template** module."
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:400
+msgid ":ref:`win_copy_module`"
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:401
+msgid "The official documentation on the **win_copy** module."
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:405
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:477
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:478
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:649
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:654
+msgid ""
+"This module is guaranteed to have no backward incompatible interface "
+"changes going forward. *[stableinterface]*"
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:657
+msgid ""
+"This module is :ref:`maintained by the Ansible Core Team "
+"<modules_support>`. *[core]*"
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:660
+msgid "Red Hat Support"
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:662
+msgid ""
+"More information about Red Hat's support of this module is available from"
+" this `Red Hat Knowledge Base article "
+"<https://access.redhat.com/articles/3166901>`_."
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:668
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:670
+msgid "Ansible Core Team"
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:671
+msgid "Michael DeHaan"
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:675
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/files/copy.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

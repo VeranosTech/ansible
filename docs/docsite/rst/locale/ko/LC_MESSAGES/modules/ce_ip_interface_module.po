@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/ce_ip_interface_module.rst:9
+msgid ""
+"ce_ip_interface -- Manages L3 attributes for IPv4 and IPv6 interfaces on "
+"HUAWEI CloudEngine switches"
+msgstr ""
+
+#: ../../rst/modules/ce_ip_interface_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/ce_ip_interface_module.rst:20
+msgid ""
+"Manages Layer 3 attributes for IPv4 and IPv6 interfaces on HUAWEI "
+"CloudEngine switches."
+msgstr ""
+
+#: ../../rst/modules/ce_ip_interface_module.rst:26
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/ce_ip_interface_module.rst:131
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/ce_ip_interface_module.rst:134
+msgid "Interface must already be a L3 port when using this module."
+msgstr ""
+
+#: ../../rst/modules/ce_ip_interface_module.rst:135
+msgid "Logical interfaces (loopback, vlanif) must be created first."
+msgstr ""
+
+#: ../../rst/modules/ce_ip_interface_module.rst:136
+msgid ""
+"``mask`` must be inserted in decimal format (i.e. 24) for both IPv6 and "
+"IPv4."
+msgstr ""
+
+#: ../../rst/modules/ce_ip_interface_module.rst:137
+msgid "A single interface can have multiple IPv6 configured."
+msgstr ""
+
+#: ../../rst/modules/ce_ip_interface_module.rst:142
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/ce_ip_interface_module.rst:199
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/ce_ip_interface_module.rst:200
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/ce_ip_interface_module.rst:280
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/ce_ip_interface_module.rst:285
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/ce_ip_interface_module.rst:288
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/ce_ip_interface_module.rst:295
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/ce_ip_interface_module.rst:297
+msgid "QijunPan (@QijunPan)"
+msgstr ""
+
+#: ../../rst/modules/ce_ip_interface_module.rst:301
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/cloudengine/ce_ip_interface.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

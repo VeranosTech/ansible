@@ -1,0 +1,172 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/win_domain_membership_module.rst:9
+msgid ""
+"win_domain_membership -- Manage domain/workgroup membership for a Windows"
+" host"
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:20
+msgid ""
+"Manages domain membership or workgroup membership for a Windows host. "
+"Also supports hostname changes."
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:21
+msgid ""
+"This module may require subsequent use of the :ref:`win_reboot "
+"<win_reboot_module>` action if changes are made."
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:27
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:139
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:143
+msgid ":ref:`win_domain_module`"
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:144
+msgid "The official documentation on the **win_domain** module."
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:145
+msgid ":ref:`win_domain_controller_module`"
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:146
+msgid "The official documentation on the **win_domain_controller** module."
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:147
+msgid ":ref:`win_domain_computer_module`"
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:148
+msgid "The official documentation on the **win_domain_computer** module."
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:149
+msgid ":ref:`win_domain_group_module`"
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:150
+msgid "The official documentation on the **win_domain_group** module."
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:151
+msgid ":ref:`win_domain_user_module`"
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:152
+msgid "The official documentation on the **win_domain_user** module."
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:153
+msgid ":ref:`win_group_module`"
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:154
+msgid "The official documentation on the **win_group** module."
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:155
+msgid ":ref:`win_group_membership_module`"
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:156
+msgid "The official documentation on the **win_group_membership** module."
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:157
+msgid ":ref:`win_user_module`"
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:158
+msgid "The official documentation on the **win_user** module."
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:162
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:205
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:206
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:234
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:239
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:242
+msgid ""
+"This module is :ref:`maintained by the Ansible Core Team "
+"<modules_support>`. *[core]*"
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:245
+msgid "Red Hat Support"
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:247
+msgid ""
+"More information about Red Hat's support of this module is available from"
+" this `Red Hat Knowledge Base article "
+"<https://access.redhat.com/articles/3166901>`_."
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:253
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:255
+msgid "Matt Davis (@nitzmahone)"
+msgstr ""
+
+#: ../../rst/modules/win_domain_membership_module.rst:259
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_domain_membership.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

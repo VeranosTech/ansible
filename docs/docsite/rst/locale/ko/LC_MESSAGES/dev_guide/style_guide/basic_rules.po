@@ -1,0 +1,174 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:4
+msgid "Basic rules"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:9
+msgid "Use standard American English"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:10
+msgid ""
+"Ansible uses Standard American English. Watch for common words that are "
+"spelled differently in American English (color vs colour, organize vs "
+"organise, etc.)."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:13
+msgid "Write for a global audience"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:14
+msgid ""
+"Everything you say should be understandable by people of different "
+"backgrounds and cultures. Avoid idioms and regionalism and maintain a "
+"neutral tone that cannot be misinterpreted. Avoid attempts at humor."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:17
+msgid "Follow naming conventions"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:18
+msgid "Always follow naming conventions and trademarks."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:23
+msgid "Use clear sentence structure"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:24
+msgid "Clear sentence structure means:"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:26
+msgid "Start with the important information first."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:27
+msgid ""
+"Avoid padding/adding extra words that make the sentence harder to "
+"understand."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:28
+msgid "Keep it short - Longer sentences are harder to understand."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:30
+msgid "Some examples of improving sentences:"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:33
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:39
+msgid "Bad:"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:33
+msgid ""
+"The unwise walking about upon the area near the cliff edge may result in "
+"a dangerous fall and therefore it is recommended that one remains a safe "
+"distance to maintain personal safety."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:36
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:42
+msgid "Better:"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:36
+msgid "Danger! Stay away from the cliff."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:39
+msgid ""
+"Furthermore, large volumes of water are also required for the process of "
+"extraction."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:42
+msgid "Extraction also requires large volumes of water."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:45
+msgid "Avoid verbosity"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:46
+msgid "Write short, succinct sentences. Avoid terms like:"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:48
+msgid "\"...as has been said before,\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:49
+msgid "\"..each and every,\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:50
+msgid "\"...point in time,\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:51
+msgid "\"...in order to,\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:54
+msgid "Highlight menu items and commands"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:55
+msgid ""
+"When documenting menus or commands, it helps to **bold** what is "
+"important."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:57
+msgid ""
+"For menu procedures, bold the menu names, button names, etc to help the "
+"user find them on the GUI:"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:59
+msgid "On the **File** menu, click **Open**."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:60
+msgid "Type a name in the **User Name** field."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:61
+msgid "In the **Open** dialog box, click **Save**."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:62
+msgid "On the toolbar, click the **Open File** icon."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/basic_rules.rst:64
+msgid ""
+"For code or command snippets, use the RST `code-block directive "
+"<http://www.sphinx-doc.org/en/1.5/markup/code.html#directive-code-"
+"block>`_::"
+msgstr ""
+

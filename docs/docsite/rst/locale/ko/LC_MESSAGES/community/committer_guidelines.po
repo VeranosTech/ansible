@@ -1,0 +1,643 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/community/committer_guidelines.rst:5
+msgid "Committers Guidelines"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:7
+msgid ""
+"These are the guidelines for people with commit privileges on the Ansible"
+" GitHub repository. Committers are essentially acting as members of the "
+"Ansible Core team, although not necessarily as employees of Ansible and "
+"Red Hat. Please read the guidelines before you commit."
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:9
+msgid ""
+"These guidelines apply to everyone. At the same time, this ISN'T a "
+"process document. So just use good judgement. You've been given commit "
+"access because we trust your judgement."
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:11
+msgid "That said, use the trust wisely."
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:13
+msgid ""
+"If you abuse the trust and break components and builds, etc., the trust "
+"level falls and you may be asked not to commit or you may lose your "
+"commit privileges."
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:16
+msgid "Features, high-level design, and roadmap"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:18
+msgid ""
+"As a core team member, you are an integral part of the team that develops"
+" the :ref:`roadmap <roadmaps>`. Please be engaged, and push for the "
+"features and fixes that you want to see. Also keep in mind that Red Hat, "
+"as a company, will commit to certain features, fixes, APIs, etc. for "
+"various releases. Red Hat, the company, and the Ansible team must get "
+"these committed features (etc.) completed and released as scheduled. "
+"Obligations to users, the community, and customers must come first. "
+"Because of these commitments, a feature you want to develop yourself may "
+"not get into a release if it impacts a lot of other parts within Ansible."
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:20
+msgid ""
+"Any other new features and changes to high level design should go through"
+" the proposal process (TBD), to ensure the community and core team have "
+"had a chance to review the idea and approve it. The core team has sole "
+"responsibility for merging new features based on proposals."
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:23
+msgid "Our workflow on GitHub"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:25
+msgid ""
+"As a committer, you may already know this, but our workflow forms a lot "
+"of our team policies. Please ensure you're aware of the following "
+"workflow steps:"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:27
+msgid ""
+"Fork the repository upon which you want to do some work to your own "
+"personal repository"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:28
+msgid "Work on the specific branch upon which you need to commit"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:29
+msgid ""
+"Create a Pull Request back to the Ansible repository and tag the people "
+"you would like to review; assign someone as the primary \"owner\" of your"
+" request"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:30
+msgid "Adjust code as necessary based on the Comments provided"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:31
+msgid "Ask someone on the Core Team to do a final review and merge"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:34
+msgid "Addendum to workflow for committers:"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:36
+msgid ""
+"The Core Team is aware that this can be a difficult process at times. "
+"Sometimes, the team breaks the rules by making direct commits or merging "
+"their own PRs. This section is a set of guidelines. If you're changing a "
+"comma in a doc, or making a very minor change, you can use your best "
+"judgement. This is another trust thing. The process is critical for any "
+"major change, but for little things or getting something done quickly, "
+"use your best judgement and make sure people on the team are aware of "
+"your work."
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:39
+msgid "Roles on Core"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:40
+msgid ""
+"Core committers: Fine to do PRs for most things, but we should have a "
+"timebox. Hanging PRs may merge on the judgement of these devs."
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:41
+msgid ""
+":ref:`Module maintainers <maintainers>`: Module maintainers own specific "
+"modules and have indirect commit access via the current module PR "
+"mechanisms."
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:44
+msgid "General rules"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:45
+msgid ""
+"Individuals with direct commit access to ansible/ansible are entrusted "
+"with powers that allow them to do a broad variety of things--probably "
+"more than we can write down. Rather than rules, treat these as general "
+"*guidelines*, individuals with this power are expected to use their best "
+"judgement."
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:47
+msgid "Don't"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:49
+msgid "Commit directly."
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:50
+msgid ""
+"Merge your own PRs. Someone else should have a chance to review and "
+"approve the PR merge. If you are a Core Committer, you have a small "
+"amount of leeway here for very minor changes."
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:51
+msgid ""
+"Forget about alternate environments. Consider the alternatives--yes, "
+"people have bad environments, but they are the ones who need us the most."
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:52
+msgid ""
+"Drag your community team members down. Always discuss the technical "
+"merits, but you should never address the person's limitations (you can "
+"later go for beers and call them idiots, but not in IRC/GitHub/etc.)."
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:53
+msgid ""
+"Forget about the maintenance burden. Some things are really cool to have,"
+" but they might not be worth shoehorning in if the maintenance burden is "
+"too great."
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:54
+msgid "Break playbooks. Always keep backwards compatibility in mind."
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:55
+msgid "Forget to keep it simple. Complexity breeds all kinds of problems."
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:57
+msgid "Do"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:59
+msgid ""
+"Squash, avoid merges whenever possible, use github's squash commits or "
+"cherry pick if needed (bisect thanks you)."
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:60
+msgid ""
+"Be active. Committers who have no activity on the project (through "
+"merges, triage, commits, etc.) will have their permissions suspended."
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:61
+msgid ""
+"Consider backwards compatibility (goes back to \"don't break existing "
+"playbooks\")."
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:62
+msgid ""
+"Write tests. PRs with tests are looked at with more priority than PRs "
+"without tests that should have them included. While not all changes "
+"require tests, be sure to add them for bug fixes or functionality "
+"changes."
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:63
+msgid "Discuss with other committers, specially when you are unsure of something."
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:64
+msgid ""
+"Document! If your PR is a new feature or a change to behavior, make sure "
+"you've updated all associated documentation or have notified the right "
+"people to do so. It also helps to add the version of Core against which "
+"this documentation is compatible (to avoid confusion with stable versus "
+"devel docs, for backwards compatibility, etc.)."
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:65
+msgid "Consider scope, sometimes a fix can be generalized"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:66
+msgid "Keep it simple, then things are maintainable, debuggable and intelligible."
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:68
+msgid ""
+"Committers are expected to continue to follow the same community and "
+"contribution guidelines followed by the rest of the Ansible community."
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:72
+msgid "People"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:74
+msgid ""
+"Individuals who've been asked to become a part of this group have "
+"generally been contributing in significant ways to the Ansible community "
+"for some time. Should they agree, they are requested to add their names "
+"and GitHub IDs to this file, in the section below, via a pull request. "
+"Doing so indicates that these individuals agree to act in the ways that "
+"their fellow committers trust that they will act."
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:77
+msgid "Name"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:77
+msgid "GitHub ID"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:77
+msgid "IRC Nick"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:77
+msgid "Other"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:79
+msgid "James Cammarata"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:79
+msgid "jimi-c"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:79
+msgid "jimi"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:81
+msgid "Brian Coca"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:81
+msgid "bcoca"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:83
+msgid "Matt Davis"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:83
+msgid "nitzmahone"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:85
+msgid "Toshio Kuratomi"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:85
+msgid "abadger"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:85
+msgid "abadger1999"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:87
+msgid "Jason McKerr"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:87
+msgid "mckerrj"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:87
+msgid "newtMcKerr"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:89
+msgid "Robyn Bergeron"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:89
+msgid "robynbergeron"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:89
+msgid "rbergeron"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:91
+msgid "Greg DeKoenigsberg"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:91
+msgid "gregdek"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:93
+msgid "Monty Taylor"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:93
+msgid "emonty"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:93
+msgid "mordred"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:95
+msgid "Matt Martz"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:95
+msgid "sivel"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:97
+msgid "Nate Case"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:97
+msgid "qalthos"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:97
+msgid "Qalthos"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:99
+msgid "James Tanner"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:99
+msgid "jctanner"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:99
+msgid "jtanner"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:101
+msgid "Peter Sprygada"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:101
+msgid "privateip"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:103
+msgid "Abhijit Menon-Sen"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:103
+msgid "amenonsen"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:103
+msgid "crab"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:105
+msgid "Michael Scherer"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:105
+msgid "mscherer"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:105
+msgid "misc"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:107
+msgid "René Moser"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:107
+msgid "resmo"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:109
+msgid "David Shrewsbury"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:109
+msgid "Shrews"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:111
+msgid "Sandra Wills"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:111
+msgid "docschick"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:113
+msgid "Graham Mainwaring"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:113
+msgid "ghjm"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:115
+msgid "Chris Houseknecht"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:115
+msgid "chouseknecht"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:117
+msgid "Trond Hindenes"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:117
+msgid "trondhindenes"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:119
+msgid "Jon Hawkesworth"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:119
+msgid "jhawkesworth"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:121
+msgid "Will Thames"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:121
+msgid "willthames"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:123
+msgid "Adrian Likins"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:123
+msgid "alikins"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:125
+msgid "Dag Wieers"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:125
+msgid "dagwieers"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:125
+msgid "dag@wieers.com"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:127
+msgid "Tim Rupp"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:127
+msgid "caphrim007"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:129
+msgid "Sloane Hertel"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:129
+msgid "s-hertel"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:129
+msgid "shertel"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:131
+msgid "Sam Doran"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:131
+msgid "samdoran"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:133
+msgid "Matt Clay"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:133
+msgid "mattclay"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:135
+msgid "Martin Krizek"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:135
+msgid "mkrizek"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:137
+msgid "Ganesh Nalawade"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:137
+msgid "ganeshrn"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:139
+msgid "Trishna Guha"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:139
+msgid "trishnaguha"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:139
+msgid "trishnag"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:141
+msgid "Andrew Gaffney"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:141
+msgid "agaffney"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:143
+msgid "Jordan Borean"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:143
+msgid "jborean93"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:145
+msgid "Abhijeet Kasurde"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:145
+msgid "Akasurde"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:145
+msgid "akasurde"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:147
+msgid "Adam Miller"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:147
+msgid "maxamillion"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:149
+msgid "Sviatoslav Sydorenko"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:149
+msgid "webknjaz"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:151
+msgid "Alicia Cozine"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:151
+msgid "acozine"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:153
+msgid "Sandra McCann"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:153
+msgid "samccann"
+msgstr ""
+

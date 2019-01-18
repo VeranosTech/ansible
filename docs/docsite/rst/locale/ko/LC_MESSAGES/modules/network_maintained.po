@@ -1,0 +1,763 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/network_maintained.rst:6
+msgid "Modules Maintained by the Ansible Network Team"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:8
+msgid ":ref:`checkpoint_access_layer_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:9
+msgid ":ref:`checkpoint_access_rule_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:10
+msgid ":ref:`checkpoint_access_rule_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:11
+msgid ":ref:`checkpoint_host_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:12
+msgid ":ref:`checkpoint_host_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:13
+msgid ":ref:`checkpoint_object_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:14
+msgid ":ref:`checkpoint_run_script_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:15
+msgid ":ref:`checkpoint_session_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:16
+msgid ":ref:`checkpoint_task_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:17
+msgid ":ref:`cli_command_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:18
+msgid ":ref:`cli_config_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:19
+msgid ":ref:`cnos_linkagg_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:20
+msgid ":ref:`eos_banner_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:21
+msgid ":ref:`eos_command_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:22
+msgid ":ref:`eos_config_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:23
+msgid ":ref:`eos_eapi_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:24
+msgid ":ref:`eos_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:25
+msgid ":ref:`eos_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:26
+msgid ":ref:`eos_l2_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:27
+msgid ":ref:`eos_l3_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:28
+msgid ":ref:`eos_linkagg_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:29
+msgid ":ref:`eos_lldp_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:30
+msgid ":ref:`eos_logging_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:31
+msgid ":ref:`eos_static_route_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:32
+msgid ":ref:`eos_system_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:33
+msgid ":ref:`eos_user_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:34
+msgid ":ref:`eos_vlan_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:35
+msgid ":ref:`eos_vrf_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:36
+msgid ":ref:`ftd_configuration_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:37
+msgid ":ref:`ftd_file_download_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:38
+msgid ":ref:`ftd_file_upload_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:39
+msgid ":ref:`ios_banner_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:40
+msgid ":ref:`ios_command_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:41
+msgid ":ref:`ios_config_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:42
+msgid ":ref:`ios_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:43
+msgid ":ref:`ios_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:44
+msgid ":ref:`ios_l2_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:45
+msgid ":ref:`ios_l3_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:46
+msgid ":ref:`ios_linkagg_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:47
+msgid ":ref:`ios_lldp_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:48
+msgid ":ref:`ios_logging_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:49
+msgid ":ref:`ios_static_route_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:50
+msgid ":ref:`ios_system_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:51
+msgid ":ref:`ios_user_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:52
+msgid ":ref:`ios_vlan_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:53
+msgid ":ref:`ios_vrf_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:54
+msgid ":ref:`iosxr_banner_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:55
+msgid ":ref:`iosxr_command_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:56
+msgid ":ref:`iosxr_config_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:57
+msgid ":ref:`iosxr_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:58
+msgid ":ref:`iosxr_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:59
+msgid ":ref:`iosxr_logging_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:60
+msgid ":ref:`iosxr_netconf_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:61
+msgid ":ref:`iosxr_system_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:62
+msgid ":ref:`iosxr_user_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:63
+msgid ":ref:`junos_banner_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:64
+msgid ":ref:`junos_command_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:65
+msgid ":ref:`junos_config_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:66
+msgid ":ref:`junos_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:67
+msgid ":ref:`junos_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:68
+msgid ":ref:`junos_l2_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:69
+msgid ":ref:`junos_l3_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:70
+msgid ":ref:`junos_linkagg_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:71
+msgid ":ref:`junos_lldp_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:72
+msgid ":ref:`junos_lldp_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:73
+msgid ":ref:`junos_logging_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:74
+msgid ":ref:`junos_netconf_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:75
+msgid ":ref:`junos_package_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:76
+msgid ":ref:`junos_rpc_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:77
+msgid ":ref:`junos_scp_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:78
+msgid ":ref:`junos_static_route_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:79
+msgid ":ref:`junos_system_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:80
+msgid ":ref:`junos_user_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:81
+msgid ":ref:`junos_vlan_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:82
+msgid ":ref:`junos_vrf_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:83
+msgid ":ref:`net_banner_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:84
+msgid ":ref:`net_get_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:85
+msgid ":ref:`net_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:86
+msgid ":ref:`net_l2_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:87
+msgid ":ref:`net_l3_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:88
+msgid ":ref:`net_linkagg_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:89
+msgid ":ref:`net_lldp_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:90
+msgid ":ref:`net_lldp_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:91
+msgid ":ref:`net_logging_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:92
+msgid ":ref:`net_put_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:93
+msgid ":ref:`net_static_route_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:94
+msgid ":ref:`net_system_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:95
+msgid ":ref:`net_user_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:96
+msgid ":ref:`net_vlan_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:97
+msgid ":ref:`net_vrf_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:98
+msgid ":ref:`netconf_config_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:99
+msgid ":ref:`netconf_get_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:100
+msgid ":ref:`netconf_rpc_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:101
+msgid ":ref:`nxos_aaa_server_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:102
+msgid ":ref:`nxos_aaa_server_host_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:103
+msgid ":ref:`nxos_acl_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:104
+msgid ":ref:`nxos_acl_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:105
+msgid ":ref:`nxos_banner_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:106
+msgid ":ref:`nxos_bgp_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:107
+msgid ":ref:`nxos_bgp_af_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:108
+msgid ":ref:`nxos_bgp_neighbor_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:109
+msgid ":ref:`nxos_bgp_neighbor_af_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:110
+msgid ":ref:`nxos_command_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:111
+msgid ":ref:`nxos_config_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:112
+msgid ":ref:`nxos_evpn_global_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:113
+msgid ":ref:`nxos_evpn_vni_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:114
+msgid ":ref:`nxos_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:115
+msgid ":ref:`nxos_feature_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:116
+msgid ":ref:`nxos_file_copy_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:117
+msgid ":ref:`nxos_gir_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:118
+msgid ":ref:`nxos_gir_profile_management_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:119
+msgid ":ref:`nxos_hsrp_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:120
+msgid ":ref:`nxos_igmp_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:121
+msgid ":ref:`nxos_igmp_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:122
+msgid ":ref:`nxos_igmp_snooping_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:123
+msgid ":ref:`nxos_install_os_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:124
+msgid ":ref:`nxos_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:125
+msgid ":ref:`nxos_interface_ospf_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:126
+msgid ":ref:`nxos_ip_interface_module` **(D)**"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:127
+msgid ":ref:`nxos_l2_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:128
+msgid ":ref:`nxos_l3_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:129
+msgid ":ref:`nxos_linkagg_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:130
+msgid ":ref:`nxos_lldp_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:131
+msgid ":ref:`nxos_logging_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:132
+msgid ":ref:`nxos_ntp_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:133
+msgid ":ref:`nxos_ntp_auth_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:134
+msgid ":ref:`nxos_ntp_options_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:135
+msgid ":ref:`nxos_nxapi_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:136
+msgid ":ref:`nxos_ospf_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:137
+msgid ":ref:`nxos_ospf_vrf_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:138
+msgid ":ref:`nxos_overlay_global_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:139
+msgid ":ref:`nxos_pim_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:140
+msgid ":ref:`nxos_pim_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:141
+msgid ":ref:`nxos_pim_rp_address_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:142
+msgid ":ref:`nxos_ping_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:143
+msgid ":ref:`nxos_portchannel_module` **(D)**"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:144
+msgid ":ref:`nxos_reboot_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:145
+msgid ":ref:`nxos_rollback_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:146
+msgid ":ref:`nxos_rpm_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:147
+msgid ":ref:`nxos_smu_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:148
+msgid ":ref:`nxos_snapshot_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:149
+msgid ":ref:`nxos_snmp_community_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:150
+msgid ":ref:`nxos_snmp_contact_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:151
+msgid ":ref:`nxos_snmp_host_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:152
+msgid ":ref:`nxos_snmp_location_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:153
+msgid ":ref:`nxos_snmp_traps_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:154
+msgid ":ref:`nxos_snmp_user_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:155
+msgid ":ref:`nxos_static_route_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:156
+msgid ":ref:`nxos_switchport_module` **(D)**"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:157
+msgid ":ref:`nxos_system_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:158
+msgid ":ref:`nxos_udld_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:159
+msgid ":ref:`nxos_udld_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:160
+msgid ":ref:`nxos_user_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:161
+msgid ":ref:`nxos_vlan_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:162
+msgid ":ref:`nxos_vpc_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:163
+msgid ":ref:`nxos_vpc_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:164
+msgid ":ref:`nxos_vrf_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:165
+msgid ":ref:`nxos_vrf_af_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:166
+msgid ":ref:`nxos_vrf_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:167
+msgid ":ref:`nxos_vrrp_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:168
+msgid ":ref:`nxos_vtp_domain_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:169
+msgid ":ref:`nxos_vtp_password_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:170
+msgid ":ref:`nxos_vtp_version_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:171
+msgid ":ref:`nxos_vxlan_vtep_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:172
+msgid ":ref:`nxos_vxlan_vtep_vni_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:173
+msgid ":ref:`openvswitch_bridge_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:174
+msgid ":ref:`openvswitch_db_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:175
+msgid ":ref:`openvswitch_port_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:176
+msgid ":ref:`slxos_l3_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:177
+msgid ":ref:`vyos_banner_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:178
+msgid ":ref:`vyos_command_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:179
+msgid ":ref:`vyos_config_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:180
+msgid ":ref:`vyos_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:181
+msgid ":ref:`vyos_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:182
+msgid ":ref:`vyos_l3_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:183
+msgid ":ref:`vyos_linkagg_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:184
+msgid ":ref:`vyos_lldp_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:185
+msgid ":ref:`vyos_lldp_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:186
+msgid ":ref:`vyos_logging_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:187
+msgid ":ref:`vyos_static_route_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:188
+msgid ":ref:`vyos_system_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:189
+msgid ":ref:`vyos_user_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:190
+msgid ":ref:`vyos_vlan_module`"
+msgstr ""
+
+#: ../../rst/modules/network_maintained.rst:193
+msgid ""
+"**(D)**: This marks a module as deprecated, which means a module is kept "
+"for backwards compatibility but usage is discouraged. The module "
+"documentation details page may explain more about this rationale."
+msgstr ""
+

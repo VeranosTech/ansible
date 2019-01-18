@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/ovirt_module.rst:9
+msgid "ovirt -- oVirt/RHEV platform management"
+msgstr ""
+
+#: ../../rst/modules/ovirt_module.rst:18
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/ovirt_module.rst:19
+msgid ""
+"This module only supports oVirt/RHEV version 3. A newer module "
+":ref:`ovirt_vm <ovirt_vm_module>` supports oVirt/RHV version 4."
+msgstr ""
+
+#: ../../rst/modules/ovirt_module.rst:20
+msgid ""
+"Allows you to create new instances, either from scratch or an image, in "
+"addition to deleting or stopping instances on the oVirt/RHEV platform."
+msgstr ""
+
+#: ../../rst/modules/ovirt_module.rst:25
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/ovirt_module.rst:26
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/ovirt_module.rst:28
+msgid "ovirt-engine-sdk-python"
+msgstr ""
+
+#: ../../rst/modules/ovirt_module.rst:32
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/ovirt_module.rst:444
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/ovirt_module.rst:515
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/ovirt_module.rst:520
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/ovirt_module.rst:523
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/ovirt_module.rst:530
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/ovirt_module.rst:532
+msgid "Vincent Van der Kussen (@vincentvdk)"
+msgstr ""
+
+#: ../../rst/modules/ovirt_module.rst:536
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/misc/ovirt.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

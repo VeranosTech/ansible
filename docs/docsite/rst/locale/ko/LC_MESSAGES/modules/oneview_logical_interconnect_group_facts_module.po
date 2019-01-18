@@ -1,0 +1,142 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/oneview_logical_interconnect_group_facts_module.rst:9
+msgid ""
+"oneview_logical_interconnect_group_facts -- Retrieve facts about one or "
+"more of the OneView Logical Interconnect Groups"
+msgstr ""
+
+#: ../../rst/modules/oneview_logical_interconnect_group_facts_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/oneview_logical_interconnect_group_facts_module.rst:20
+msgid ""
+"Retrieve facts about one or more of the Logical Interconnect Groups from "
+"OneView"
+msgstr ""
+
+#: ../../rst/modules/oneview_logical_interconnect_group_facts_module.rst:25
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/oneview_logical_interconnect_group_facts_module.rst:26
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/oneview_logical_interconnect_group_facts_module.rst:28
+msgid "hpOneView >= 2.0.1"
+msgstr ""
+
+#: ../../rst/modules/oneview_logical_interconnect_group_facts_module.rst:29
+msgid "python >= 2.7.9"
+msgstr ""
+
+#: ../../rst/modules/oneview_logical_interconnect_group_facts_module.rst:33
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/oneview_logical_interconnect_group_facts_module.rst:88
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/oneview_logical_interconnect_group_facts_module.rst:91
+msgid ""
+"A sample configuration file for the config parameter can be found at: "
+"https://github.com/HewlettPackard/oneview-ansible/blob/master/examples"
+"/oneview_config-rename.json"
+msgstr ""
+
+#: ../../rst/modules/oneview_logical_interconnect_group_facts_module.rst:92
+msgid ""
+"Check how to use environment variables for configuration at: "
+"https://github.com/HewlettPackard/oneview-ansible#environment-variables"
+msgstr ""
+
+#: ../../rst/modules/oneview_logical_interconnect_group_facts_module.rst:93
+msgid ""
+"Additional Playbooks for the HPE OneView Ansible modules can be found at:"
+" https://github.com/HewlettPackard/oneview-ansible/tree/master/examples"
+msgstr ""
+
+#: ../../rst/modules/oneview_logical_interconnect_group_facts_module.rst:94
+msgid ""
+"The OneView API version used will directly affect returned and expected "
+"fields in resources. Information on setting the desired API version and "
+"can be found at: https://github.com/HewlettPackard/oneview-ansible"
+"#setting-your-oneview-version"
+msgstr ""
+
+#: ../../rst/modules/oneview_logical_interconnect_group_facts_module.rst:99
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/oneview_logical_interconnect_group_facts_module.rst:147
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/oneview_logical_interconnect_group_facts_module.rst:148
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/oneview_logical_interconnect_group_facts_module.rst:174
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/oneview_logical_interconnect_group_facts_module.rst:179
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/oneview_logical_interconnect_group_facts_module.rst:182
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/oneview_logical_interconnect_group_facts_module.rst:189
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/oneview_logical_interconnect_group_facts_module.rst:191
+msgid "Felipe Bulsoni (@fgbulsoni)"
+msgstr ""
+
+#: ../../rst/modules/oneview_logical_interconnect_group_facts_module.rst:192
+msgid "Thiago Miotto (@tmiotto)"
+msgstr ""
+
+#: ../../rst/modules/oneview_logical_interconnect_group_facts_module.rst:193
+msgid "Adriane Cardozo (@adriane-cardozo)"
+msgstr ""
+
+#: ../../rst/modules/oneview_logical_interconnect_group_facts_module.rst:197
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/remote_management/oneview/oneview_logical_interconnect_group_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

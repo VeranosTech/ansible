@@ -1,0 +1,251 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/user_guide/playbooks_tags.rst:2
+msgid "Tags"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:4
+msgid ""
+"If you have a large playbook, it may become useful to be able to run only"
+" a specific part of it rather than running *everything* in the playbook. "
+"Ansible supports a \"tags:\" attribute for this reason."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:8
+msgid ""
+"When you execute a playbook, you can filter tasks based on tags in two "
+"ways:"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:10
+msgid "On the command line, with the ``--tags`` or ``--skip-tags`` options"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:11
+msgid ""
+"In Ansible configuration settings, with the ``TAGS_RUN`` and "
+"``TAGS_SKIP`` options"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:13
+msgid ""
+"Tags can be applied to *many* structures in Ansible (see \"tag "
+"inheritance\", below), but its simplest use is with individual tasks. "
+"Here is an example that tags two tasks with different tags::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:33
+msgid ""
+"If you wanted to just run the \"configuration\" and \"packages\" part of "
+"a very long playbook, you can use the ``--tags`` option on the command "
+"line::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:37
+msgid ""
+"On the other hand, if you want to run a playbook *without* certain tagged"
+" tasks, you can use the ``--skip-tags`` command-line option::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:46
+msgid "Tag Reuse"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:47
+msgid ""
+"You can apply the same tag to more than one task. When a play is run "
+"using the ``--tags`` command-line option, all tasks with that tag name "
+"will be run."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:50
+msgid "This example tags several tasks with one tag, \"ntp\"::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:79
+msgid "Tag Inheritance"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:81
+msgid ""
+"Adding ``tags:`` to a play, or to statically imported tasks and roles, "
+"adds those tags to all of the contained tasks. This is referred to as "
+"*tag inheritance*. Tag inheritance is *not* applicable to dynamic "
+"inclusions such as ``include_role`` and ``include_tasks``."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:86
+msgid ""
+"When you apply ``tags:`` attributes to structures other than tasks, "
+"Ansible processes the tag attribute to apply ONLY to the tasks they "
+"contain. Applying tags anywhere other than tasks is just a convenience so"
+" you don't have to tag tasks individually."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:91
+msgid ""
+"This example tags all tasks in the two plays. The first play has all its "
+"tasks tagged with 'bar', and the second has all its tasks tagged with "
+"'foo'::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:105
+msgid "You may also apply tags to the tasks imported by ``roles``::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:113
+msgid "And to ``import_role:`` and ``import_tasks:`` statements::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:123
+msgid ""
+"All of these apply the specified tags to EACH task inside the play, "
+"imported file, or role, so that these tasks can be selectively run when "
+"the playbook is invoked with the corresponding tags."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:127
+msgid ""
+"Tags are applied *down* the dependency chain. In order for a tag to be "
+"inherited to a dependent role's tasks, the tag should be applied to the "
+"role declaration or static import, not to all the tasks within the role."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:131
+msgid ""
+"There is no way to 'import only these tags'; you probably want to split "
+"into smaller roles/includes if you find yourself looking for such a "
+"feature."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:133
+msgid ""
+"The above information does not apply to `include_tasks` or other dynamic "
+"includes, as the attributes applied to an include, only affect the "
+"include itself."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:136
+msgid ""
+"You can see which tags are applied to tasks, roles, and static imports by"
+" running ``ansible-playbook`` with the ``--list-tasks`` option. You can "
+"display all tags applied to the tasks with the ``--list-tags`` option."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:141
+msgid ""
+"The above information does not apply to `include_tasks`, `include_roles`,"
+" or other dynamic includes. Tags applied to either of these only tag the "
+"include itself."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:145
+msgid ""
+"To use tags with tasks and roles intended for dynamic inclusions, all "
+"needed tasks should be explicitly tagged at the task level; or ``block:``"
+" may be used to tag more than one task at once. The include itself should"
+" also be tagged."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:150
+msgid ""
+"Here is an example of tagging role tasks with the tag ``mytag``, using a "
+"``block`` statement, to then be used with a dynamic include:"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:153
+msgid "Playbook file::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:161
+msgid "Role tasks file::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:175
+msgid "Special Tags"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:177
+msgid ""
+"There is a special ``always`` tag that will always run a task, unless "
+"specifically skipped (``--skip-tags always``)"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:179
+#: ../../rst/user_guide/playbooks_tags.rst:196
+msgid "Example::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:194
+msgid ""
+"Another special tag is ``never``, which will prevent a task from running "
+"unless a tag is specifically requested."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:202
+msgid ""
+"In this example, the task will only run when the ``debug`` or ``never`` "
+"tag is explicitly requested."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:205
+msgid ""
+"There are another 3 special keywords for tags: ``tagged``, ``untagged`` "
+"and ``all``, which run only tagged, only untagged and all tasks "
+"respectively."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:208
+msgid "By default, Ansible runs as if ``--tags all`` had been specified."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:212
+msgid ":doc:`playbooks`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:213
+msgid "An introduction to playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:214
+msgid ":doc:`playbooks_reuse_roles`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:215
+msgid "Playbook organization by roles"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:216
+msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:217
+msgid "Have a question?  Stop by the google group!"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:218
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tags.rst:219
+msgid "#ansible IRC chat channel"
+msgstr ""
+

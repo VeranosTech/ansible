@@ -1,0 +1,253 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/cli/ansible-vault.rst:5
+msgid "ansible-vault"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:8
+msgid ":strong:`encryption/decryption utility for Ansible data files`"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:27
+msgid "Description"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:30
+msgid ""
+"can encrypt any structured data file used by Ansible. This can include "
+"*group_vars/* or *host_vars/* inventory variables, variables loaded by "
+"*include_vars* or *vars_files*, or variable files passed on the ansible-"
+"playbook command line with *-e @file.yml* or *-e @file.json*. Role "
+"variables and defaults are also included!"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:36
+msgid ""
+"Because Ansible tasks, handlers, and other objects are data, these can "
+"also be encrypted with vault. If you'd like to not expose what variables "
+"you are using, you can keep an individual task file entirely encrypted."
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:39
+msgid ""
+"The password used with vault currently must be the same for all files you"
+" wish to use together at the same time."
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:43
+msgid "Common Options"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:50
+msgid "ask for vault password"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:55 ../../rst/cli/ansible-vault.rst:116
+#: ../../rst/cli/ansible-vault.rst:168 ../../rst/cli/ansible-vault.rst:192
+#: ../../rst/cli/ansible-vault.rst:212 ../../rst/cli/ansible-vault.rst:248
+msgid "the vault id used to encrypt (required if more than vault-id is provided)"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:60
+msgid "the new vault identity to use for rekey"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:65
+msgid "new vault password file for rekey"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:70
+msgid "the vault identity to use"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:75
+msgid "vault password file"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:80
+msgid ""
+"show program's version number, config file location, configured module "
+"search path, module location, executable location and exit"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:85
+msgid "show this help message and exit"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:90
+msgid "verbose mode (-vvv for more, -vvvv to enable connection debugging)"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:98
+msgid "Actions"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:106
+msgid "rekey"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:108
+msgid ""
+"re-encrypt a vaulted file with a new secret, the previous secret is "
+"required"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:126
+msgid "view"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:128
+msgid ""
+"open, decrypt and view an existing vaulted file using a pager using the "
+"supplied vault secret"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:138
+msgid "decrypt"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:140
+msgid "decrypt the supplied file using the provided vault secret"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:148 ../../rst/cli/ansible-vault.rst:172
+#: ../../rst/cli/ansible-vault.rst:216
+msgid "output file name for encrypt or decrypt; use - for stdout"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:158
+msgid "encrypt"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:160
+msgid "encrypt the supplied file using the provided vault secret"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:182
+msgid "edit"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:184
+msgid ""
+"open and decrypt an existing vaulted file in an editor, that will be "
+"encrypted again when closed"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:202
+msgid "encrypt_string"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:204
+msgid "encrypt the supplied string using the provided vault secret"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:220
+msgid "Specify the variable name for stdin"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:224
+msgid "Specify the variable name"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:228
+msgid "Prompt for the string to encrypt"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:238
+msgid "create"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:240
+msgid ""
+"create and open a file in an editor that will be encrypted with the "
+"provided vault secret when closed"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:257
+msgid "Environment"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:259
+msgid "The following environment variables may be specified."
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:263
+msgid ":envvar:`ANSIBLE_CONFIG` -- Override the default ansible config file"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:265
+msgid "Many more are available for most options in ansible.cfg"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:269
+msgid "Files"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:272
+msgid ":file:`/etc/ansible/ansible.cfg` -- Config file, used if present"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:274
+msgid ""
+":file:`~/.ansible.cfg` -- User config file, overrides the default config "
+"if present"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:277
+msgid "Author"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:279
+msgid "Ansible was originally written by Michael DeHaan."
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:281
+msgid "See the `AUTHORS` file for a complete list of contributors."
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:285
+msgid "Copyright"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:287
+msgid "Copyright © 2017 Red Hat, Inc | Ansible."
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:289
+msgid "Ansible is released under the terms of the GPLv3 License."
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:292
+msgid "See also"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:294
+msgid ""
+":manpage:`ansible(1)`,  :manpage:`ansible-config(1)`,  :manpage:`ansible-"
+"console(1)`,  :manpage:`ansible-doc(1)`,  :manpage:`ansible-galaxy(1)`,  "
+":manpage:`ansible-inventory(1)`,  :manpage:`ansible-playbook(1)`,  "
+":manpage:`ansible-pull(1)`,  :manpage:`ansible-vault(1)`,"
+msgstr ""
+

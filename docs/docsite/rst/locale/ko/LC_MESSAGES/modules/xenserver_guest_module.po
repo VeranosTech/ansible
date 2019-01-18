@@ -1,0 +1,166 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/xenserver_guest_module.rst:9
+msgid ""
+"xenserver_guest -- Manages virtual machines running on Citrix XenServer "
+"host or pool"
+msgstr ""
+
+#: ../../rst/modules/xenserver_guest_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/xenserver_guest_module.rst:20
+msgid ""
+"This module can be used to create new virtual machines from templates or "
+"other virtual machines, modify various virtual machine components like "
+"network and disk, rename a virtual machine and remove a virtual machine "
+"with associated components."
+msgstr ""
+
+#: ../../rst/modules/xenserver_guest_module.rst:26
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/xenserver_guest_module.rst:27
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/xenserver_guest_module.rst:29
+msgid "python >= 2.6"
+msgstr ""
+
+#: ../../rst/modules/xenserver_guest_module.rst:30
+msgid "XenAPI"
+msgstr ""
+
+#: ../../rst/modules/xenserver_guest_module.rst:34
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/xenserver_guest_module.rst:427
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/xenserver_guest_module.rst:430
+msgid "Minimal supported version of XenServer is 5.6"
+msgstr ""
+
+#: ../../rst/modules/xenserver_guest_module.rst:431
+msgid "Module was tested with XenServer 6.5, 7.1 and 7.2"
+msgstr ""
+
+#: ../../rst/modules/xenserver_guest_module.rst:432
+msgid ""
+"If no scheme is specified in ``hostname``, module defaults to ``http://``"
+" because ``https://`` is problematic in most setups. Make sure you are "
+"accessing XenServer host in trusted environment or use ``https://`` "
+"scheme explicitly."
+msgstr ""
+
+#: ../../rst/modules/xenserver_guest_module.rst:433
+msgid ""
+"To use ``https://`` scheme for ``hostname`` you have to either import "
+"host certificate to your OS certificate store or use ``validate_certs: "
+"no`` which requires XenAPI.py from XenServer 7.2 SDK or newer and Python "
+"2.7.9 or newer."
+msgstr ""
+
+#: ../../rst/modules/xenserver_guest_module.rst:434
+msgid ""
+"Network configuration inside a guest OS, by using ``networks.type``, "
+"``networks.ip``, ``networks.gateway`` etc. parameters, is supported on "
+"XenServer 7.0 or newer for Windows guests by using official XenServer "
+"Guest agent support for network configuration. The module will try to "
+"detect if such support is available and utilize it, else it will use a "
+"custom method of configuration via xenstore. Since XenServer Guest agent "
+"only support None and Static types of network configuration, where None "
+"means DHCP configured interface, ``networks.type`` and ``networks.type6``"
+" values ``none`` and ``dhcp`` have same effect. More info here: "
+"https://xenserver.org/blog/entry/set-windows-guest-vm-static-ip-address-"
+"in-xenserver.html"
+msgstr ""
+
+#: ../../rst/modules/xenserver_guest_module.rst:435
+msgid ""
+"On platforms without official support for network configuration inside a "
+"guest OS, network parameters will be written to xenstore ``vm-"
+"data/networks/<vif_device>`` key. Parameters can be inspected by using "
+"``xenstore ls`` and ``xenstore read`` tools on \\*nix guests or trough "
+"WMI interface on Windows guests. They can also be found in VM facts "
+"``instance.xenstore_data`` key as returned by the module. It is up to the"
+" user to implement a boot time scripts or custom agent that will read the"
+" parameters from xenstore and configure network with given parameters. "
+"Take note that for xenstore data to become available inside a guest, a VM"
+" restart is needed hence module will require VM restart if any parameter "
+"is changed. This is a limitation of XenAPI and xenstore. Considering "
+"these limitations, network configuration trough xenstore is most useful "
+"for bootstraping newly deployed VMs, much less for reconfiguring existing"
+" ones. More info here: https://support.citrix.com/article/CTX226713"
+msgstr ""
+
+#: ../../rst/modules/xenserver_guest_module.rst:440
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/xenserver_guest_module.rst:538
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/xenserver_guest_module.rst:539
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/xenserver_guest_module.rst:580
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/xenserver_guest_module.rst:585
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/xenserver_guest_module.rst:588
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/xenserver_guest_module.rst:595
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/xenserver_guest_module.rst:597
+msgid "Bojan Vitnik (@bvitnik) <bvitnik@mainstream.rs>"
+msgstr ""
+
+#: ../../rst/modules/xenserver_guest_module.rst:601
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/xenserver/xenserver_guest.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

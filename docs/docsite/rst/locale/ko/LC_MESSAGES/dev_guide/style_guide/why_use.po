@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/style_guide/why_use.rst:4
+msgid "Why Use a Style Guide?"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/why_use.rst:6
+msgid ""
+"Style guides are important because they ensure consistency in the "
+"content, look, and feel of a book or a website."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/why_use.rst:8
+msgid ""
+"Remember, a style guide is only useful if it is used, updated, and "
+"enforced.  Style Guides are useful for engineering-related documentation,"
+" sales and marketing materials, support docs, community contributions, "
+"and more."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/why_use.rst:10
+msgid ""
+"As changes are made to the overall Ansible site design, be sure to update"
+" this style guide with those changes. Or, should other resources listed "
+"below have major revisions, consider including company information here "
+"for ease of reference."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/why_use.rst:12
+msgid ""
+"This style guide incorporates current Ansible resources and information "
+"so that overall site and documentation consistency can be met."
+msgstr ""
+

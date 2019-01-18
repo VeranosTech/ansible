@@ -1,0 +1,142 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/postgresql_user_module.rst:9
+msgid ""
+"postgresql_user -- Adds or removes a users (roles) from a PostgreSQL "
+"database"
+msgstr ""
+
+#: ../../rst/modules/postgresql_user_module.rst:18
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/postgresql_user_module.rst:19
+msgid ""
+"Add or remove PostgreSQL users (roles) from a remote host and, "
+"optionally, grant the users access to an existing database or tables."
+msgstr ""
+
+#: ../../rst/modules/postgresql_user_module.rst:20
+msgid ""
+"The fundamental function of the module is to create, or delete, roles "
+"from a PostgreSQL cluster. Privilege assignment, or removal, is an "
+"optional step, which works on one database at a time. This allows for the"
+" module to be called several times in the same module to modify the "
+"permissions on different databases, or to grant permissions to already "
+"existing users."
+msgstr ""
+
+#: ../../rst/modules/postgresql_user_module.rst:21
+msgid ""
+"A user cannot be removed until all the privileges have been stripped from"
+" the user. In such situation, if the module tries to remove the user it "
+"will fail. To avoid this from happening the fail_on_user option signals "
+"the module to try to remove the user, but if not possible keep going; the"
+" module will report if changes happened and separately if the user was "
+"removed or not."
+msgstr ""
+
+#: ../../rst/modules/postgresql_user_module.rst:26
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/postgresql_user_module.rst:27
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/postgresql_user_module.rst:29
+msgid "psycopg2"
+msgstr ""
+
+#: ../../rst/modules/postgresql_user_module.rst:33
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/postgresql_user_module.rst:329
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/postgresql_user_module.rst:332
+msgid ""
+"The default authentication assumes that you are either logging in as or "
+"sudo'ing to the postgres account on the host."
+msgstr ""
+
+#: ../../rst/modules/postgresql_user_module.rst:333
+msgid ""
+"This module uses psycopg2, a Python PostgreSQL database adapter. You must"
+" ensure that psycopg2 is installed on the host before using this module. "
+"If the remote host is the PostgreSQL server (which is the default case), "
+"then PostgreSQL must also be installed on the remote host. For Ubuntu-"
+"based systems, install the postgresql, libpq-dev, and python-psycopg2 "
+"packages on the remote host before using this module."
+msgstr ""
+
+#: ../../rst/modules/postgresql_user_module.rst:334
+msgid ""
+"If you specify PUBLIC as the user, then the privilege changes will apply "
+"to all users. You may not specify password or role_attr_flags when the "
+"PUBLIC user is specified."
+msgstr ""
+
+#: ../../rst/modules/postgresql_user_module.rst:335
+msgid ""
+"The ssl_rootcert parameter requires at least Postgres version 8.4 and "
+"*psycopg2* version 2.4.3."
+msgstr ""
+
+#: ../../rst/modules/postgresql_user_module.rst:340
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/postgresql_user_module.rst:397
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/postgresql_user_module.rst:402
+msgid ""
+"This module is guaranteed to have no backward incompatible interface "
+"changes going forward. *[stableinterface]*"
+msgstr ""
+
+#: ../../rst/modules/postgresql_user_module.rst:405
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/postgresql_user_module.rst:412
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/postgresql_user_module.rst:414
+msgid "Ansible Core Team"
+msgstr ""
+
+#: ../../rst/modules/postgresql_user_module.rst:418
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/postgresql/postgresql_user.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

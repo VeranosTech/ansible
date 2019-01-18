@@ -1,0 +1,298 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/cli/ansible.rst:5
+msgid "ansible"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:8
+msgid ":strong:`Define and run a single task 'playbook' against a set of hosts`"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:27
+msgid "Description"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:30
+msgid ""
+"is an extra-simple tool/framework/API for doing 'remote things'. this "
+"command allows you to define and run a single task 'playbook' against a "
+"set of hosts"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:35
+msgid "Common Options"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:42
+msgid "ask for su password (deprecated, use become)"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:47
+msgid "ask for sudo password (deprecated, use become)"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:52
+msgid "ask for vault password"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:57
+msgid ""
+"privilege escalation method to use (default=sudo), valid choices: [ sudo "
+"| su | pbrun | pfexec | doas | dzdo | ksu | runas | pmrun | enable | "
+"machinectl ]"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:62
+msgid "run operations as this user (default=root)"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:67
+msgid "outputs a list of matching hosts; does not execute anything else"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:72
+msgid ""
+"Since this tool does not use playbooks, use this as a subsitute playbook "
+"directory.This sets the relative path for many features including roles/ "
+"group_vars/ etc."
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:77
+msgid "use this file to authenticate the connection"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:82
+msgid "specify extra arguments to pass to scp only (e.g. -l)"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:87
+msgid "specify extra arguments to pass to sftp only (e.g. -f, -l)"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:92
+msgid "specify common arguments to pass to sftp/scp/ssh (e.g. ProxyCommand)"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:97
+msgid "specify extra arguments to pass to ssh only (e.g. -R)"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:102
+msgid "perform a syntax check on the playbook, but do not execute it"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:107
+msgid "the vault identity to use"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:112
+msgid "vault password file"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:117
+msgid ""
+"show program's version number, config file location, configured module "
+"search path, module location, executable location and exit"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:122
+msgid "run asynchronously, failing after X seconds (default=N/A)"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:127
+msgid ""
+"don't make any changes; instead, try to predict some of the changes that "
+"may occur"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:132
+msgid ""
+"when changing (small) files and templates, show the differences in those "
+"files; works great with --check"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:137
+msgid "ask for privilege escalation password"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:142
+msgid ""
+"prepend colon-separated path(s) to module library "
+"(default=['/Users/joelkim/.ansible/plugins/modules', "
+"'/usr/share/ansible/plugins/modules'])"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:147
+msgid "set the poll interval if using -B (default=15)"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:152
+msgid ""
+"run operations with su as this user (default=None) (deprecated, use "
+"become)"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:157
+msgid "run operations with su (deprecated, use become)"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:162
+msgid "override the connection timeout in seconds (default=10)"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:167
+msgid "desired sudo user (default=root) (deprecated, use become)"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:172
+msgid "module arguments"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:177
+msgid "run operations with become (does not imply password prompting)"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:182
+msgid "connection type to use (default=smart)"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:187
+msgid ""
+"set additional variables as key=value or YAML/JSON, if filename prepend "
+"with @"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:192
+msgid "specify number of parallel processes to use (default=5)"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:197
+msgid "show this help message and exit"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:202
+msgid ""
+"specify inventory host path or comma separated host list. --inventory-"
+"file is deprecated"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:207
+msgid "ask for connection password"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:212
+msgid "further limit selected hosts to an additional pattern"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:217
+msgid "module name to execute (default=command)"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:222
+msgid "condense output"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:227
+msgid "run operations with sudo (nopasswd) (deprecated, use become)"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:232
+msgid "log output to this directory"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:237
+msgid "connect as this user (default=None)"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:242
+msgid "verbose mode (-vvv for more, -vvvv to enable connection debugging)"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:251
+msgid "Environment"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:253
+msgid "The following environment variables may be specified."
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:257
+msgid ":envvar:`ANSIBLE_CONFIG` -- Override the default ansible config file"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:259
+msgid "Many more are available for most options in ansible.cfg"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:263
+msgid "Files"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:266
+msgid ":file:`/etc/ansible/ansible.cfg` -- Config file, used if present"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:268
+msgid ""
+":file:`~/.ansible.cfg` -- User config file, overrides the default config "
+"if present"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:271
+msgid "Author"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:273
+msgid "Ansible was originally written by Michael DeHaan."
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:275
+msgid "See the `AUTHORS` file for a complete list of contributors."
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:279
+msgid "Copyright"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:281
+msgid "Copyright © 2017 Red Hat, Inc | Ansible."
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:283
+msgid "Ansible is released under the terms of the GPLv3 License."
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:286
+msgid "See also"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:288
+msgid ""
+":manpage:`ansible(1)`,  :manpage:`ansible-config(1)`,  :manpage:`ansible-"
+"console(1)`,  :manpage:`ansible-doc(1)`,  :manpage:`ansible-galaxy(1)`,  "
+":manpage:`ansible-inventory(1)`,  :manpage:`ansible-playbook(1)`,  "
+":manpage:`ansible-pull(1)`,  :manpage:`ansible-vault(1)`,"
+msgstr ""
+

@@ -1,0 +1,299 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:3
+msgid "Ansible 2.1"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:4
+msgid "**Target: April 2016**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:6
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:9
+msgid "Windows"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:10
+msgid "General"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:12
+msgid "Figuring out privilege escalation (runas w/ username/password)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:13
+msgid "Implement kerberos encryption over http"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:14
+msgid ""
+"pywinrm conversion to requests (Some mess here on pywinrm/requests. will "
+"need docs etc.)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:15
+msgid "NTLM support"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:17
+msgid "Modules"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:19
+msgid "Finish cleaning up tests and support for post-beta release"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:20
+msgid "Strict mode cleanup (one module in core)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:21
+msgid "Domain user/group management"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:22
+msgid "Finish win_host and win_rm in the domain/workgroup modules."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:24
+msgid "Close 2 existing PRs (These were deemed insufficient)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:26
+msgid ""
+"Replicate python module API in PS/C# (deprecate hodgepodge of stuff from "
+"module_utils/powershell.ps1)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:29
+msgid "Network"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:30
+msgid "Cisco modules (ios, iosxr, nxos, iosxe)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:31
+msgid "Arista modules (eos)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:32
+msgid "Juniper modules (junos)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:33
+msgid "OpenSwitch"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:34
+msgid "Cumulus"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:35
+msgid "Dell (os10) - At risk"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:36
+msgid "Netconf shared module"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:37
+msgid "Hooks for supporting Tower credentials"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:40
+msgid "VMware"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:41
+msgid ""
+"This one is a little at risk due to staffing. We're investigating some "
+"community maintainers and shifting some people at Ansible around, but it "
+"is a VERY high priority."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:43
+msgid ""
+"vsphere\\_guest brought to parity with other vmware modules (vs Viasat "
+"and 'whereismyjetpack' provided modules)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:44
+msgid "VMware modules moved to official pyvmomi bindings"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:45
+msgid "VMware inventory script updates for pyvmomi, adding tagging support"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:48
+msgid "Azure"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:49
+msgid ""
+"This is on hold until Microsoft swaps out the code generator on the Azure"
+" Python SDK, which may introduce breaking changes. We have basic modules "
+"working against all of these resources at this time. Could ship it "
+"against current SDK, but may break. Or should the version be pinned?) - "
+"Minimal Azure coverage using new ARM api - Resource Group - Virtual "
+"Network - Subnet - Public IP - Network Interface - Storage Account - "
+"Security Group - Virtual Machine - Update of inventory script to use new "
+"API, adding tagging support"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:63
+msgid "Docker"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:64
+msgid "Start Docker module refactor"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:65
+msgid "Update to match current docker CLI capabilities"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:66
+msgid "Docker exec support"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:69
+msgid "Cloud"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:70
+msgid ""
+"Upgrade other cloud modules or work with community maintainers to "
+"upgrade.  (In order)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:72
+msgid "AWS (Community maintainers)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:73
+msgid "Openstack (Community maintainers)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:74
+msgid "Google (Google/Community)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:75
+msgid "Digital Ocean (Community)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:78
+msgid "Ansiballz"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:79
+msgid "Renamed from Ziploader"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:81
+msgid ""
+"Write code to create the zipfile that gets passed across the wire to be "
+"run on the remote python"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:82
+msgid ""
+"Port most of the functionality in module\\_utils to be usage in ansiballz"
+" instead"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:83
+msgid ""
+"Port a few essential modules to use ansiballz instead of module-replacer "
+"as proof of concept"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:84
+msgid ""
+"New modules will be able to use ansiballz.  Old modules will need to be "
+"ported in future releases (Some modules will not need porting but others "
+"will)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:85
+msgid ""
+"Better testing of modules, caching of modules clientside(Have not yet "
+"arrived at an architecture for this that we like), better code sharing "
+"between ansible/ansible and modules"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:86
+msgid ""
+"ansiballz is a helpful building block for: python3 porting(high "
+"priority), better code sharing between modules(medium priority)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:87
+msgid ""
+"ansiballz is a good idea before: enabling users to have custom "
+"module_utils directories"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:90
+msgid "Diff-support"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:91
+msgid "Expand module diff support (already in progress in devel)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:93
+msgid "Framework done. Need to add to modules, test etc."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:94
+msgid "Coordinate with community to update their modules"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:97
+msgid "Other"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:98
+msgid "Things being kicking down the road that we said we'd do"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:100
+msgid "NOT remerging core with ansible/ansible this release cycle"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:103
+msgid "Community"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:104
+msgid "Define the process/ETA for reviewing PR's from community"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_1.rst:105
+msgid "Publish better docs and how-tos for submitting code/features/fixes"
+msgstr ""
+

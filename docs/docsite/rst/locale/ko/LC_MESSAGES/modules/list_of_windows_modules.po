@@ -1,0 +1,403 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/list_of_windows_modules.rst:6
+msgid "Windows modules"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:10
+msgid ":ref:`win_acl_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:11
+msgid ":ref:`win_acl_inheritance_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:12
+msgid ":ref:`win_audit_policy_system_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:13
+msgid ":ref:`win_audit_rule_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:14
+msgid ":ref:`win_certificate_store_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:15
+msgid ":ref:`win_chocolatey_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:16
+msgid ":ref:`win_chocolatey_config_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:17
+msgid ":ref:`win_chocolatey_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:18
+msgid ":ref:`win_chocolatey_feature_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:19
+msgid ":ref:`win_chocolatey_source_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:20
+msgid ":ref:`win_command_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:21
+msgid ":ref:`win_copy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:22
+msgid ":ref:`win_credential_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:23
+msgid ":ref:`win_defrag_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:24
+msgid ":ref:`win_disk_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:25
+msgid ":ref:`win_disk_image_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:26
+msgid ":ref:`win_dns_client_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:27
+msgid ":ref:`win_domain_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:28
+msgid ":ref:`win_domain_computer_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:29
+msgid ":ref:`win_domain_controller_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:30
+msgid ":ref:`win_domain_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:31
+msgid ":ref:`win_domain_membership_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:32
+msgid ":ref:`win_domain_user_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:33
+msgid ":ref:`win_dotnet_ngen_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:34
+msgid ":ref:`win_dsc_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:35
+msgid ":ref:`win_environment_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:36
+msgid ":ref:`win_eventlog_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:37
+msgid ":ref:`win_eventlog_entry_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:38
+msgid ":ref:`win_feature_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:39
+msgid ":ref:`win_file_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:40
+msgid ":ref:`win_file_version_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:41
+msgid ":ref:`win_find_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:42
+msgid ":ref:`win_firewall_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:43
+msgid ":ref:`win_firewall_rule_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:44
+msgid ":ref:`win_get_url_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:45
+msgid ":ref:`win_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:46
+msgid ":ref:`win_group_membership_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:47
+msgid ":ref:`win_hostname_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:48
+msgid ":ref:`win_hotfix_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:49
+msgid ":ref:`win_iis_virtualdirectory_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:50
+msgid ":ref:`win_iis_webapplication_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:51
+msgid ":ref:`win_iis_webapppool_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:52
+msgid ":ref:`win_iis_webbinding_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:53
+msgid ":ref:`win_iis_website_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:54
+msgid ":ref:`win_lineinfile_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:55
+msgid ":ref:`win_mapped_drive_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:56
+msgid ":ref:`win_msg_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:57
+msgid ":ref:`win_nssm_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:58
+msgid ":ref:`win_owner_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:59
+msgid ":ref:`win_package_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:60
+msgid ":ref:`win_pagefile_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:61
+msgid ":ref:`win_partition_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:62
+msgid ":ref:`win_path_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:63
+msgid ":ref:`win_pester_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:64
+msgid ":ref:`win_ping_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:65
+msgid ":ref:`win_power_plan_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:66
+msgid ":ref:`win_product_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:67
+msgid ":ref:`win_psexec_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:68
+msgid ":ref:`win_psmodule_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:69
+msgid ":ref:`win_psrepository_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:70
+msgid ":ref:`win_rabbitmq_plugin_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:71
+msgid ":ref:`win_reboot_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:72
+msgid ":ref:`win_reg_stat_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:73
+msgid ":ref:`win_regedit_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:74
+msgid ":ref:`win_region_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:75
+msgid ":ref:`win_regmerge_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:76
+msgid ":ref:`win_robocopy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:77
+msgid ":ref:`win_route_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:78
+msgid ":ref:`win_say_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:79
+msgid ":ref:`win_scheduled_task_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:80
+msgid ":ref:`win_scheduled_task_stat_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:81
+msgid ":ref:`win_security_policy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:82
+msgid ":ref:`win_service_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:83
+msgid ":ref:`win_share_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:84
+msgid ":ref:`win_shell_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:85
+msgid ":ref:`win_shortcut_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:86
+msgid ":ref:`win_snmp_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:87
+msgid ":ref:`win_stat_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:88
+msgid ":ref:`win_tempfile_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:89
+msgid ":ref:`win_template_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:90
+msgid ":ref:`win_timezone_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:91
+msgid ":ref:`win_toast_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:92
+msgid ":ref:`win_unzip_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:93
+msgid ":ref:`win_updates_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:94
+msgid ":ref:`win_uri_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:95
+msgid ":ref:`win_user_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:96
+msgid ":ref:`win_user_right_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:97
+msgid ":ref:`win_wait_for_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:98
+msgid ":ref:`win_wait_for_process_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:99
+msgid ":ref:`win_wakeonlan_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:100
+msgid ":ref:`win_webpicmd_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:101
+msgid ":ref:`win_whoami_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:102
+msgid ":ref:`win_xml_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_windows_modules.rst:106
+msgid ""
+"**(D)**: This marks a module as deprecated, which means a module is kept "
+"for backwards compatibility but usage is discouraged. The module "
+"documentation details page may explain more about this rationale."
+msgstr ""
+

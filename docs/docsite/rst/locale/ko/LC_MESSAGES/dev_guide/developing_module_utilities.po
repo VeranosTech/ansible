@@ -1,0 +1,445 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:5
+msgid "Appendix: Module Utilities"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:7
+msgid ""
+"Ansible provides a number of module utilities that provide helper "
+"functions that you can use when developing your own modules. The "
+"``basic.py`` module utility provides the main entry point for accessing "
+"the Ansible library, and all Python Ansible modules must, at minimum, "
+"import ``AnsibleModule``::"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:12
+msgid ""
+"The following is a list of ``module_utils`` files and a general "
+"description. The module utility source code lives in the "
+"``./lib/ansible/module_utils`` directory under your main Ansible path - "
+"for more details on any specific module utility, please see the source "
+"code."
+msgstr ""
+
+#: ../../rst/dev_guide/shared_snippets/licensing.txt:2
+msgid ""
+"**LICENSING REQUIREMENTS**  Ansible enforces the following licensing "
+"requirements:"
+msgstr ""
+
+#: ../../rst/dev_guide/shared_snippets/licensing.txt:6
+msgid ""
+"Utilities (files in ``lib/ansible/module_utils/``) may have one of two "
+"licenses:"
+msgstr ""
+
+#: ../../rst/dev_guide/shared_snippets/licensing.txt:5
+msgid ""
+"A ``module_util`` used **only** for a specific vendor's hardware, "
+"provider, or service may be licensed under GPLv3+."
+msgstr ""
+
+#: ../../rst/dev_guide/shared_snippets/licensing.txt:6
+msgid ""
+"All other ``module_utils`` must be licensed under BSD, so GPL-licensed "
+"third-party and Galaxy modules can use them."
+msgstr ""
+
+#: ../../rst/dev_guide/shared_snippets/licensing.txt:7
+msgid ""
+"If there's doubt about the appropriate license for a ``module_util``, the"
+" Ansible Core Team will decide during an Ansible Core Community Meeting."
+msgstr ""
+
+#: ../../rst/dev_guide/shared_snippets/licensing.txt:8
+msgid ""
+"All other files shipped with Ansible, including all modules, must be "
+"licensed under the GPL license (GPLv3 or later)."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:16
+msgid ""
+"alicloud_ecs.py - Definitions and utilities for modules working with "
+"Alibaba Cloud ECS."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:17
+msgid "api.py - Adds shared support for generic API modules."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:18
+msgid ""
+"azure_rm_common.py - Definitions and utilities for Microsoft Azure "
+"Resource Manager template deployments."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:19
+msgid "basic.py - General definitions and helper utilities for Ansible modules."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:20
+msgid "cloudstack.py  - Utilities for CloudStack modules."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:21
+msgid "database.py - Miscellaneous helper functions for PostGRES and MySQL"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:22
+msgid ""
+"docker_common.py - Definitions and helper utilities for modules working "
+"with Docker."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:23
+msgid "ec2.py - Definitions and utilities for modules working with Amazon EC2"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:24
+msgid ""
+"facts/- Folder containing helper functions for modules that return facts."
+" See https://github.com/ansible/ansible/pull/23012 for more information."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:25
+msgid ""
+"gce.py - Definitions and helper functions for modules that work with "
+"Google Compute Engine resources."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:26
+msgid "ismount.py - Contains single helper function that fixes os.path.ismount"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:27
+msgid ""
+"keycloak.py - Definitions and helper functions for modules working with "
+"the Keycloak API"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:28
+msgid "known_hosts.py - utilities for working with known_hosts file"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:29
+msgid ""
+"manageiq.py - Functions and utilities for modules that work with ManageIQ"
+" platform and its resources."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:30
+msgid ""
+"memset.py - Helper functions and utilities for interacting with Memset's "
+"API."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:31
+msgid "mysql.py - Allows modules to connect to a MySQL instance"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:32
+msgid ""
+"netapp.py - Functions and utilities for modules that work with the NetApp"
+" storage platforms."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:33
+msgid ""
+"network/a10/a10.py - Utilities used by the a10_server module to manage "
+"A10 Networks devices."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:34
+msgid ""
+"network/aci/aci.py - Definitions and helper functions for modules that "
+"manage Cisco ACI Fabrics."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:35
+msgid ""
+"network/aireos/aireos.py - Definitions and helper functions for modules "
+"that manage Cisco WLC devices."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:36
+msgid ""
+"network/aos/aos.py - Module support utilities for managing Apstra AOS "
+"Server."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:37
+msgid ""
+"network/aruba/aruba.py - Helper functions for modules working with Aruba "
+"networking devices."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:38
+msgid ""
+"network/asa/asa.py - Module support utilities for managing Cisco ASA "
+"network devices."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:39
+msgid ""
+"network/avi/avi.py - Helper functions for modules working with AVI "
+"networking devices."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:40
+msgid ""
+"network/bigswitch/bigswitch_utils.py - Utilities used by the bigswitch "
+"module to manage Big Switch Networks devices."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:41
+msgid ""
+"network/cloudengine/ce.py - Module support utilities for managing Huawei "
+"Cloudengine switch."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:42
+msgid ""
+"network/cnos/cnos.py - Helper functions for modules working on devices "
+"running Lenovo CNOS."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:43
+msgid ""
+"network/common/config.py - Configuration utility functions for use by "
+"networking modules"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:44
+msgid ""
+"network/common/netconf.py - Definitions and helper functions for modules "
+"that use Netconf transport."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:45
+msgid ""
+"network/common/parsing.py - Definitions and helper functions for Network "
+"modules."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:46
+msgid ""
+"network/common/network.py - Functions for running commands on networking "
+"devices"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:47
+msgid ""
+"network/common/utils.py - Defines commands and comparison operators and "
+"other utilises for use in networking modules"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:48
+msgid ""
+"network/dellos6/dellos6.py - Module support utilities for managing device"
+" running Dell OS6."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:49
+msgid ""
+"network/dellos9/dellos9.py - Module support utilities for managing device"
+" running Dell OS9."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:50
+msgid ""
+"network/dellos10/dellos10.py - Module support utilities for managing "
+"device running Dell OS10."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:51
+msgid ""
+"network/enos/enos.py - Helper functions for modules working with Lenovo "
+"ENOS devices."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:52
+msgid ""
+"network/eos/eos.py - Helper functions for modules working with EOS "
+"networking devices."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:53
+msgid ""
+"network/fortios/fortios.py - Module support utilities for managing "
+"FortiOS devices."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:54
+msgid ""
+"network/ios/ios.py - Definitions and helper functions for modules that "
+"manage Cisco IOS networking devices"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:55
+msgid ""
+"network/iosxr/iosxr.py - Definitions and helper functions for modules "
+"that manage Cisco IOS-XR networking devices."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:56
+msgid ""
+"network/ironware/ironware.py - Module support utilities for managing "
+"Brocade IronWare devices."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:57
+msgid ""
+"network/junos/junos.py -  Definitions and helper functions for modules "
+"that manage Junos networking devices."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:58
+msgid ""
+"network/meraki/meraki.py - Utilities specifically for the Meraki network "
+"modules."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:59
+msgid ""
+"network/netscaler/netscaler.py - Utilities specifically for the netscaler"
+" network modules."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:60
+msgid "network/nso/nso.py - Utilities for modules that work with Cisco NSO."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:61
+msgid ""
+"network/nxos/nxos.py - Contains definitions and helper functions specific"
+" to Cisco NXOS networking devices."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:62
+msgid ""
+"network/onyx/onyx.py - Definitions and helper functions for modules that "
+"manage Mellanox ONYX networking devices."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:63
+msgid ""
+"network/ordance/ordance.py - Module support utilities for managing "
+"Ordnance devices."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:64
+msgid ""
+"network/sros/sros.py - Helper functions for modules working with Open "
+"vSwitch bridges."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:65
+msgid ""
+"network/vyos/vyos.py - Definitions and functions for working with VyOS "
+"networking"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:66
+msgid "openstack.py - Utilities for modules that work with Openstack instances."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:67
+msgid ""
+"openswitch.py - Definitions and helper functions for modules that manage "
+"OpenSwitch devices"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:68
+msgid "powershell.ps1 - Utilities for working with Microsoft Windows clients"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:69
+msgid ""
+"pure.py - Functions and utilities for modules that work with the Pure "
+"Storage storage platforms."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:70
+msgid "pycompat24.py - Exception workaround for Python 2.4."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:71
+msgid ""
+"rax.py -  Definitions and helper functions for modules that work with "
+"Rackspace resources."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:72
+msgid ""
+"redhat.py - Functions for modules that manage Red Hat Network "
+"registration and subscriptions"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:73
+msgid ""
+"service.py - Contains utilities to enable modules to work with Linux "
+"services (placeholder, not in use)."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:74
+msgid ""
+"shell.py - Functions to allow modules to create shells and work with "
+"shell commands"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:75
+msgid ""
+"six/__init__.py - Bundled copy of the `Six Python library "
+"<https://pythonhosted.org/six/>`_ to aid in writing code compatible with "
+"both Python 2 and Python 3."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:76
+msgid ""
+"splitter.py - String splitting and manipulation utilities for working "
+"with Jinja2 templates"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:77
+msgid "urls.py - Utilities for working with http and https requests"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:78
+msgid ""
+"utm_utils.py - Contains base class for creating new Sophos UTM Modules "
+"and helper functions for handling the rest interface of Sophos UTM"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:79
+msgid "vca.py - Contains utilities for modules that work with VMware vCloud Air"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:80
+msgid ""
+"vmware.py - Contains utilities for modules that work with VMware vSphere "
+"VMs"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_module_utilities.rst:81
+msgid "xenserver.py - Contains utilities for modules that work with XenServer."
+msgstr ""
+

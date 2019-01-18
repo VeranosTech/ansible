@@ -1,0 +1,138 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/developing_modules_checklist.rst:6
+msgid "Contributing your module to Ansible"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_checklist.rst:8
+msgid ""
+"If you want to contribute a module to Ansible, you must meet our "
+"objective and subjective requirements. Modules accepted into the `main "
+"project repo <https://github.com/ansible/ansible>`_ ship with every "
+"Ansible installation. However, contributing to the main project isn't the"
+" only way to distribute a module - you can embed modules in roles on "
+"Galaxy or simply share copies of your module code for :ref:`local use "
+"<developing_locally>`."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_checklist.rst:11
+msgid "Contributing to Ansible: objective requirements"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_checklist.rst:13
+msgid "To contribute a module to Ansible, you must:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_checklist.rst:15
+msgid "write your module in either Python or Powershell for Windows"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_checklist.rst:16
+msgid "use the ``AnsibleModule`` common code"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_checklist.rst:17
+msgid ""
+"support Python 2.7 and Python 3.5 - if your module cannot support Python "
+"2.7, explain the required minimum Python version and rationale in the "
+"requirements section in ``DOCUMENTATION``"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_checklist.rst:18
+msgid "use proper :ref:`Python 3 syntax <developing_python_3>`"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_checklist.rst:19
+msgid ""
+"follow `PEP 8 <https://www.python.org/dev/peps/pep-0008/>`_ Python style "
+"conventions - see :ref:`testing_pep8` for more information"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_checklist.rst:20
+msgid "license your module under the GPL license (GPLv3 or later)"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_checklist.rst:21
+msgid ""
+"understand the :ref:`license agreement <contributor_license_agreement>`, "
+"which applies to all contributions"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_checklist.rst:22
+msgid ""
+"conform to Ansible's :ref:`formatting and documentation "
+"<developing_modules_documenting>` standards"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_checklist.rst:23
+msgid "include comprehensive :ref:`tests <developing_testing>` for your module"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_checklist.rst:24
+msgid "minimize module dependencies"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_checklist.rst:25
+msgid "support :ref:`check_mode <check_mode_dry>` if possible"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_checklist.rst:26
+msgid "ensure your code is readable"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_checklist.rst:28
+msgid ""
+"Please make sure your module meets these requirements before you submit "
+"your PR/proposal. If you have questions, reach out via `Ansible's IRC "
+"chat channel <http://irc.freenode.net>`_ or the `Ansible development "
+"mailing list <https://groups.google.com/group/ansible-devel>`_."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_checklist.rst:31
+msgid "Contributing to Ansible: subjective requirements"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_checklist.rst:33
+msgid ""
+"If your module meets our objective requirements, we'll review your code "
+"to see if we think it's clear, concise, secure, and maintainable. We'll "
+"consider whether your module provides a good user experience, helpful "
+"error messages, reasonable defaults, and more. This process is "
+"subjective, and we can't list exact standards for acceptance. For the "
+"best chance of getting your module accepted into the Ansible repo, follow"
+" our :ref:`tips for module development "
+"<developing_modules_best_practices>`."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_checklist.rst:36
+msgid "Other checklists"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_checklist.rst:38
+msgid ""
+"`Amazon development checklist "
+"<https://github.com/ansible/ansible/blob/devel/lib/ansible/modules/cloud/amazon/GUIDELINES.md>`_."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_checklist.rst:39
+msgid ":ref:`Windows development checklist <developing_modules_general_windows>`."
+msgstr ""
+

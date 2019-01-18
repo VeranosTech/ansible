@@ -1,0 +1,264 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/network/getting_started/first_inventory.rst:3
+msgid "Build Your Inventory"
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:5
+msgid ""
+"A fully-featured inventory file can serve as the source of truth for your"
+" network. Using an inventory file, a single playbook can maintain "
+"hundreds of network devices with a single command. This page shows you "
+"how to build an inventory file, step by step."
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:7
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:10
+msgid "Basic Inventory"
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:12
+msgid ""
+"First, group your inventory logically. Best practice is to group servers "
+"and network devices by their What (application, stack or microservice), "
+"Where (datacenter or region), and When (development stage):"
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:14
+msgid "**What**: db, web, leaf, spine"
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:15
+msgid "**Where**: east, west, floor_19, building_A"
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:16
+msgid "**When**: dev, test, staging, prod"
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:18
+msgid ""
+"Avoid spaces, hyphens, and preceding numbers (use ``floor_19``, not "
+"``19th_floor``) in your group names. Group names are case sensitive."
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:20
+msgid ""
+"This tiny example data center illustrates a basic group structure. You "
+"can group groups using the syntax ``[metagroupname:children]`` and "
+"listing groups as members of the metagroup. Here, the group ``network`` "
+"includes all leafs and all spines; the group ``datacenter`` includes all "
+"network devices plus all webservers."
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:46
+msgid "Add Variables to Inventory"
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:48
+msgid ""
+"Next, you can set values for many of the variables you needed in your "
+"first Ansible command in the inventory, so you can skip them in the "
+"ansible-playbook command. In this example, the inventory includes each "
+"network device's IP, OS, and SSH user. If your network devices are only "
+"accessible by IP, you must add the IP to the inventory file. If you "
+"access your network devices using hostnames, the IP is not necessary."
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:74
+msgid "Group Variables within Inventory"
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:76
+msgid ""
+"When devices in a group share the same variable values, such as OS or SSH"
+" user, you can reduce duplication and simplify maintenance by "
+"consolidating these into group variables:"
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:110
+msgid "Variable Syntax"
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:112
+msgid ""
+"The syntax for variable values is different in inventory, in playbooks "
+"and in ``group_vars`` files, which are covered below. Even though "
+"playbook and ``group_vars`` files are both written in YAML, you use "
+"variables differently in each."
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:114
+msgid ""
+"In an ini-style inventory file you **must** use the syntax ``key=value`` "
+"for variable values: ``ansible_network_os=vyos``."
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:115
+msgid ""
+"In any file with the ``.yml`` or ``.yaml`` extension, including playbooks"
+" and ``group_vars`` files, you **must** use YAML syntax: ``key: value``"
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:117
+msgid ""
+"In ``group_vars`` files, use the full ``key`` name: ``ansible_network_os:"
+" vyos``."
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:118
+msgid ""
+"In playbooks, use the short-form ``key`` name, which drops the "
+"``ansible`` prefix: ``network_os: vyos``"
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:122
+msgid "Group Inventory by Platform"
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:124
+msgid ""
+"As your inventory grows, you may want to group devices by platform. This "
+"allows you to specify platform-specific variables easily for all devices "
+"on that platform:"
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:156
+msgid "With this setup, you can run first_playbook.yml with only two flags:"
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:162
+msgid ""
+"With the ``-k`` flag, you provide the SSH password(s) at the prompt. "
+"Alternatively, you can store SSH and other secrets and passwords securely"
+" in your group_vars files with ``ansible-vault``."
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:166
+msgid "Protecting Sensitive Variables with ``ansible-vault``"
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:168
+msgid ""
+"The ``ansible-vault`` command provides encryption for files and/or "
+"individual variables like passwords. This tutorial will show you how to "
+"encrypt a single SSH password. You can use the commands below to encrypt "
+"other sensitive information, such as database passwords, privilege-"
+"escalation passwords and more."
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:170
+msgid ""
+"First you must create a password for ansible-vault itself. It is used as "
+"the encryption key, and with this you can encrypt dozens of different "
+"passwords across your Ansible project. You can access all those secrets "
+"(encrypted values) with a single password (the ansible-vault password) "
+"when you run your playbooks. Here's a simple example."
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:172
+msgid "Create a file and write your password for ansible-vault to it:"
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:178
+msgid ""
+"Create the encrypted ssh password for your VyOS network devices, pulling "
+"your ansible-vault password from the file you just created:"
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:184
+msgid ""
+"If you prefer to type your ansible-vault password rather than store it in"
+" a file, you can request a prompt:"
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:190
+msgid "and type in the vault password for ``my_user``."
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:192
+msgid ""
+"The :option:`--vault-id <ansible-playbook --vault-id>` flag allows "
+"different vault passwords for different users or different levels of "
+"access. The output includes the user name ``my_user`` from your "
+"``ansible-vault`` command and uses the YAML syntax ``key: value``:"
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:205
+msgid ""
+"This is an example using an extract from a  YAML inventory, as the INI "
+"format does not support inline vaults:"
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:226
+msgid ""
+"To use an inline vaulted variables with an INI inventory you need to "
+"store it in a 'vars' file in YAML format, it can reside in host_vars/ or "
+"group_vars/ to be automatically picked up or referenced from a play via "
+"``vars_files`` or ``include_vars``."
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:229
+msgid ""
+"To run a playbook with this setup, drop the ``-k`` flag and add a flag "
+"for your ``vault-id``:"
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:235
+msgid "Or with a prompt instead of the vault password file:"
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:241
+msgid ""
+"To see the original value, you can use the debug module. Please note if "
+"your YAML file defines the `ansible_connection` variable (as we used in "
+"our example), it will take effect when you execute the command below. To "
+"prevent this, please make a copy of the file without the "
+"ansible_connection variable."
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:257
+msgid ""
+"Vault content can only be decrypted with the password that was used to "
+"encrypt it. If you want to stop using one password and move to a new one,"
+" you can update and re-encrypt existing vault content with ``ansible-"
+"vault rekey myfile``, then provide the old password and the new password."
+" Copies of vault content still encrypted with the old password can still "
+"be decrypted with old password."
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:259
+msgid ""
+"For more details on building inventory files, see :doc:`the introduction "
+"to inventory<../../user_guide/intro_inventory>`; for more details on "
+"ansible-vault, see :doc:`the full Ansible Vault "
+"documentation<../../user_guide/vault>`."
+msgstr ""
+
+#: ../../rst/network/getting_started/first_inventory.rst:261
+msgid ""
+"Now that you understand the basics of commands, playbooks, and inventory,"
+" it's time to explore some more complex Ansible Network examples."
+msgstr ""
+

@@ -1,0 +1,269 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/user_guide/playbooks_reuse.rst:4
+msgid "Creating Reusable Playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:12
+msgid ""
+"While it is possible to write a playbook in one very large file (and you "
+"might start out learning playbooks this way), eventually you'll want to "
+"reuse files and start to organize things. In Ansible, there are three "
+"ways to do this: includes, imports, and roles."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:14
+msgid ""
+"Includes and imports (added in Ansible version 2.4) allow users to break "
+"up large playbooks into smaller files, which can be used across multiple "
+"parent playbooks or even multiple times within the same Playbook."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:16
+msgid ""
+"Roles allow more than just tasks to be packaged together and can include "
+"variables, handlers, or even modules and other plugins. Unlike includes "
+"and imports, roles can also be uploaded and shared via Ansible Galaxy."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:21
+msgid "Dynamic vs. Static"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:23
+msgid ""
+"Ansible has two modes of operation for reusable content: dynamic and "
+"static."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:25
+msgid ""
+"In Ansible 2.0, the concept of *dynamic* includes was introduced. Due to "
+"some limitations with making all includes dynamic in this way, the "
+"ability to force includes to be *static* was introduced in Ansible 2.1. "
+"Because the *include* task became overloaded to encompass both static and"
+" dynamic syntaxes, and because the default behavior of an include could "
+"change based on other options set on the Task, Ansible 2.4 introduces the"
+" concept of ``include`` vs. ``import``."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:27
+msgid ""
+"If you use any ``import*`` Task (``import_playbook``, ``import_tasks``, "
+"etc.), it will be *static*. If you use any ``include*`` Task "
+"(``include_tasks``, ``include_role``, etc.), it will be *dynamic*."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:30
+msgid ""
+"The bare ``include`` task (which was used for both Task files and "
+"Playbook-level includes) is still available, however it is now considered"
+" *deprecated*."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:33
+msgid "Differences Between Static and Dynamic"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:35
+msgid "The two modes of operation are pretty simple:"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:37
+msgid "Ansible pre-processes all static imports during Playbook parsing time."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:38
+msgid ""
+"Dynamic includes are processed during runtime at the point in which that "
+"task is encountered."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:40
+msgid ""
+"When it comes to Ansible task options like ``tags`` and conditional "
+"statements (``when:``):"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:42
+msgid ""
+"For static imports, the parent task options will be copied to all child "
+"tasks contained within the import."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:43
+msgid ""
+"For dynamic includes, the task options will *only* apply to the dynamic "
+"task as it is evaluated, and will not be copied to child tasks."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:46
+msgid ""
+"Roles are a somewhat special case. Prior to Ansible 2.3, roles were "
+"always statically included via the special ``roles:`` option for a given "
+"play and were always executed first before any other play tasks (unless "
+"``pre_tasks`` were used). Roles can still be used this way, however, "
+"Ansible 2.3 introduced the ``include_role`` option to allow roles to be "
+"executed inline with other tasks."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:49
+msgid "Tradeoffs and Pitfalls Between Includes and Imports"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:51
+msgid ""
+"Using ``include*`` vs. ``import*`` has some advantages as well as some "
+"tradeoffs which users should consider when choosing to use each:"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:53
+msgid ""
+"The primary advantage of using ``include*`` statements is looping. When a"
+" loop is used with an include, the included tasks or role will be "
+"executed once for each item in the loop."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:55
+msgid ""
+"Using ``include*`` does have some limitations when compared to "
+"``import*`` statements:"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:57
+msgid ""
+"Tags which only exist inside a dynamic include will not show up in "
+"``--list-tags`` output."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:58
+msgid ""
+"Tasks which only exist inside a dynamic include will not show up in "
+"``--list-tasks`` output."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:59
+msgid ""
+"You cannot use ``notify`` to trigger a handler name which comes from "
+"inside a dynamic include (see note below)."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:60
+msgid ""
+"You cannot use ``--start-at-task`` to begin execution at a task inside a "
+"dynamic include."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:62
+msgid ""
+"Using ``import*`` can also have some limitations when compared to dynamic"
+" includes:"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:64
+msgid "As noted above, loops cannot be used with imports at all."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:65
+msgid ""
+"When using variables for the target file or role name, variables from "
+"inventory sources (host/group vars, etc.) cannot be used."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:68
+msgid ""
+"Regarding the use of ``notify`` for dynamic tasks: it is still possible "
+"to trigger the dynamic include itself, which would result in all tasks "
+"within the include being run."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:72
+msgid ":ref:`utilities_modules`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:73
+msgid "Documentation of the ``include*`` and ``import*`` modules discussed here."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:74
+msgid ":ref:`working_with_playbooks`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:75
+msgid "Review the basic Playbook language features"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:76
+msgid ":ref:`playbooks_variables`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:77
+msgid "All about variables in playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:78
+msgid ":ref:`playbooks_conditionals`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:79
+msgid "Conditionals in playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:80
+msgid ":ref:`playbooks_loops`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:81
+msgid "Loops in playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:82
+msgid ":ref:`playbooks_best_practices`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:83
+msgid "Various tips about managing playbooks in the real world"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:84
+msgid ":ref:`ansible_galaxy`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:85
+msgid "How to share roles on galaxy, role management"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:86
+msgid "`GitHub Ansible examples <https://github.com/ansible/ansible-examples>`_"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:87
+msgid "Complete playbook files from the GitHub project source"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:88
+msgid "`Mailing List <https://groups.google.com/group/ansible-project>`_"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:89
+msgid "Questions? Help? Ideas?  Stop by the list on Google Groups"
+msgstr ""
+

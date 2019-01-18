@@ -1,0 +1,237 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/plugins/lookup.rst:4
+msgid "Lookup Plugins"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:10
+msgid ""
+"Lookup plugins allow Ansible to access data from outside sources. This "
+"can include reading the filesystem in addition to contacting external "
+"datastores and services. Like all templating, these plugins are evaluated"
+" on the Ansible control machine, not on the target/remote."
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:14
+msgid ""
+"The data returned by a lookup plugin is made available using the standard"
+" templating system in Ansible, and are typically used to load variables "
+"or templates with information from those systems."
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:17
+msgid ""
+"Lookups are an Ansible-specific extension to the Jinja2 templating "
+"language."
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:20
+msgid ""
+"Lookups are executed with a working directory relative to the role or "
+"play, as opposed to local tasks, which are executed relative the executed"
+" script."
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:22
+msgid ""
+"Since Ansible version 1.9, you can pass wantlist=True to lookups to use "
+"in Jinja2 template \"for\" loops."
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:23
+msgid ""
+"Lookup plugins are an advanced feature; to best leverage them you should "
+"have a good working knowledge of how to use Ansible plays."
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:26
+msgid ""
+"Some lookups pass arguments to a shell. When using variables from a "
+"remote/untrusted source, use the `|quote` filter to ensure safe usage."
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:32
+msgid "Enabling lookup plugins"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:34
+msgid ""
+"You can activate a custom lookup by either dropping it into a "
+"``lookup_plugins`` directory adjacent to your play, inside a role, or by "
+"putting it in one of the lookup directory sources configured in "
+":ref:`ansible.cfg <ansible_configuration_settings>`."
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:40
+msgid "Using lookup plugins"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:42
+msgid ""
+"Lookup plugins can be used anywhere you can use templating in Ansible: in"
+" a play, in variables file, or in a Jinja2 template for the "
+":ref:`template <template_module>` module."
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:49
+msgid ""
+"Lookups are an integral part of loops. Wherever you see ``with_``, the "
+"part after the underscore is the name of a lookup. This is also the "
+"reason most lookups output lists and take lists as input; for example, "
+"``with_items`` uses the :ref:`items <items_lookup>` lookup:"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:59
+msgid ""
+"You can combine lookups with :ref:`playbooks_filters`, "
+":ref:`playbooks_tests` and even each other to do some complex data "
+"generation and manipulation. For example:"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:73
+msgid ""
+"You can now control how errors behave in all lookup plugins by setting "
+"``errors`` to ``ignore``, ``warn``, or ``strict``. The default setting is"
+" ``strict``, which causes the task to fail. For example:"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:75
+msgid "To ignore errors::"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:87
+msgid "To get a warning instead of a failure::"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:101
+msgid "Fatal error (the default)::"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:114
+msgid "Invoking lookup plugins with ``query``"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:118
+msgid ""
+"In Ansible 2.5, a new jinja2 function called ``query`` was added for "
+"invoking lookup plugins. The difference between ``lookup`` and ``query`` "
+"is largely that ``query`` will always return a list. The default behavior"
+" of ``lookup`` is to return a string of comma separated values. "
+"``lookup`` can be explicitly configured to return a list using "
+"``wantlist=True``."
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:121
+msgid ""
+"This was done primarily to provide an easier and more consistent "
+"interface for interacting with the new ``loop`` keyword, while "
+"maintaining backwards compatibility with other uses of ``lookup``."
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:123
+msgid "The following examples are equivalent::"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:129
+msgid ""
+"As demonstrated above the behavior of ``wantlist=True`` is implicit when "
+"using ``query``."
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:131
+msgid "Additionally, ``q`` was introduced as a shortform of ``query``::"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:139
+msgid "Plugin list"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:141
+msgid ""
+"You can use ``ansible-doc -t lookup -l`` to see the list of available "
+"plugins. Use ``ansible-doc -t lookup <plugin name>`` to see specific "
+"documents and examples."
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:151
+msgid ":ref:`about_playbooks`"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:152
+msgid "An introduction to playbooks"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:153
+msgid ":ref:`inventory_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:154
+msgid "Ansible inventory plugins"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:155
+msgid ":ref:`callback_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:156
+msgid "Ansible callback plugins"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:157
+msgid ":ref:`playbooks_filters`"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:158
+msgid "Jinja2 filter plugins"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:159
+msgid ":ref:`playbooks_tests`"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:160
+msgid "Jinja2 test plugins"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:161
+msgid ":ref:`playbooks_lookups`"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:162
+msgid "Jinja2 lookup plugins"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:163
+msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:164
+msgid "Have a question?  Stop by the google group!"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:165
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:166
+msgid "#ansible IRC chat channel"
+msgstr ""
+

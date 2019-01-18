@@ -1,0 +1,179 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/cli/ansible-inventory.rst:5
+msgid "ansible-inventory"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:8
+msgid ":strong:`None`"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:27
+msgid "Description"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:30
+msgid "used to display or dump the configured inventory as Ansible sees it"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:34
+msgid "Common Options"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:41
+msgid "ask for vault password"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:46
+msgid ""
+"When doing an --list, represent in a way that is optimized for export,not"
+" as an accurate representation of how Ansible has processed it"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:51
+msgid "create inventory graph, if supplying pattern it must be a valid group name"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:56
+msgid "Output specific host info, works as inventory script"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:61
+msgid "Output all hosts info, works as inventory script"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:66
+msgid ""
+"Since this tool does not use playbooks, use this as a subsitute playbook "
+"directory.This sets the relative path for many features including roles/ "
+"group_vars/ etc."
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:71
+msgid "Use TOML format instead of default JSON, ignored for --graph"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:76
+msgid "Add vars to graph display, ignored unless used with --graph"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:81
+msgid "the vault identity to use"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:86
+msgid "vault password file"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:91
+msgid ""
+"show program's version number, config file location, configured module "
+"search path, module location, executable location and exit"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:96
+msgid "show this help message and exit"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:101
+msgid ""
+"specify inventory host path or comma separated host list. --inventory-"
+"file is deprecated"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:106
+msgid "verbose mode (-vvv for more, -vvvv to enable connection debugging)"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:111
+msgid "Use YAML format instead of default JSON, ignored for --graph"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:120
+msgid "Environment"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:122
+msgid "The following environment variables may be specified."
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:126
+msgid ":envvar:`ANSIBLE_CONFIG` -- Override the default ansible config file"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:128
+msgid "Many more are available for most options in ansible.cfg"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:132
+msgid "Files"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:135
+msgid ":file:`/etc/ansible/ansible.cfg` -- Config file, used if present"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:137
+msgid ""
+":file:`~/.ansible.cfg` -- User config file, overrides the default config "
+"if present"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:140
+msgid "Author"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:142
+msgid "Ansible was originally written by Michael DeHaan."
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:144
+msgid "See the `AUTHORS` file for a complete list of contributors."
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:148
+msgid "Copyright"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:150
+msgid "Copyright © 2017 Red Hat, Inc | Ansible."
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:152
+msgid "Ansible is released under the terms of the GPLv3 License."
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:155
+msgid "See also"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:157
+msgid ""
+":manpage:`ansible(1)`,  :manpage:`ansible-config(1)`,  :manpage:`ansible-"
+"console(1)`,  :manpage:`ansible-doc(1)`,  :manpage:`ansible-galaxy(1)`,  "
+":manpage:`ansible-inventory(1)`,  :manpage:`ansible-playbook(1)`,  "
+":manpage:`ansible-pull(1)`,  :manpage:`ansible-vault(1)`,"
+msgstr ""
+

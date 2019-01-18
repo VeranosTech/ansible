@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/deploy_helper_module.rst:9
+msgid "deploy_helper -- Manages some of the steps common in deploying projects"
+msgstr ""
+
+#: ../../rst/modules/deploy_helper_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/deploy_helper_module.rst:20
+msgid ""
+"The Deploy Helper manages some of the steps common in deploying software."
+" It creates a folder structure, manages a symlink for the current release"
+" and cleans up old releases."
+msgstr ""
+
+#: ../../rst/modules/deploy_helper_module.rst:21
+msgid ""
+"Running it with the ``state=query`` or ``state=present`` will return the "
+"``deploy_helper`` fact. ``project_path``, whatever you set in the path "
+"parameter, ``current_path``, the path to the symlink that points to the "
+"active release, ``releases_path``, the path to the folder to keep "
+"releases in, ``shared_path``, the path to the folder to keep shared "
+"resources in, ``unfinished_filename``, the file to check for to recognize"
+" unfinished builds, ``previous_release``, the release the 'current' "
+"symlink is pointing to, ``previous_release_path``, the full path to the "
+"'current' symlink target, ``new_release``, either the 'release' parameter"
+" or a generated timestamp, ``new_release_path``, the path to the new "
+"release folder (not created by the module)."
+msgstr ""
+
+#: ../../rst/modules/deploy_helper_module.rst:27
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/deploy_helper_module.rst:176
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/deploy_helper_module.rst:179
+msgid ""
+"Facts are only returned for ``state=query`` and ``state=present``. If you"
+" use both, you should pass any overridden parameters to both calls, "
+"otherwise the second call will overwrite the facts of the first one."
+msgstr ""
+
+#: ../../rst/modules/deploy_helper_module.rst:180
+msgid ""
+"When using ``state=clean``, the releases are ordered by *creation date*. "
+"You should be able to switch to a new naming strategy without problems."
+msgstr ""
+
+#: ../../rst/modules/deploy_helper_module.rst:181
+msgid ""
+"Because of the default behaviour of generating the *new_release* fact, "
+"this module will not be idempotent unless you pass your own release name "
+"with ``release``. Due to the nature of deploying software, this should "
+"not be much of a problem."
+msgstr ""
+
+#: ../../rst/modules/deploy_helper_module.rst:186
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/deploy_helper_module.rst:350
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/deploy_helper_module.rst:355
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/deploy_helper_module.rst:358
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/deploy_helper_module.rst:365
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/deploy_helper_module.rst:367
+msgid "Ramon de la Fuente (@ramondelafuente)"
+msgstr ""
+
+#: ../../rst/modules/deploy_helper_module.rst:371
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/web_infrastructure/deploy_helper.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/reference_appendices/common_return_values.rst:4
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:6
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:8
+msgid ""
+"Ansible modules normally return a data structure that can be registered "
+"into a variable, or seen directly when output by the `ansible` program. "
+"Each module can optionally document its own unique return values (visible"
+" through ansible-doc and on the :ref:`main "
+"docsite<ansible_documentation>`."
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:11
+msgid "This document covers return values common to all modules."
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:13
+msgid ""
+"Some of these keys might be set by Ansible itself once it processes the "
+"module's return information."
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:17
+msgid "Common"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:20
+msgid "backup_file"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:21
+msgid ""
+"For those modules that implement `backup=no|yes` when manipulating files,"
+" a path to the backup file created."
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:24
+msgid "changed"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:25
+msgid "A boolean indicating if the task had to make changes."
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:28
+msgid "failed"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:29
+msgid "A boolean that indicates if the task was failed or not."
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:32
+msgid "invocation"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:33
+msgid "Information on how the module was invoked."
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:36
+msgid "msg"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:37
+msgid "A string with a generic message relayed to the user."
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:40
+msgid "rc"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:41
+msgid ""
+"Some modules execute command line utilities or are geared for executing "
+"commands directly (raw, shell, command, etc), this field contains 'return"
+" code' of these utilities."
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:44
+msgid "results"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:45
+msgid ""
+"If this key exists, it indicates that a loop was present for the task and"
+" that it contains a list of the normal module 'result' per item."
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:48
+msgid "skipped"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:49
+msgid "A boolean that indicates if the task was skipped or not"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:52
+msgid "stderr"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:53
+msgid ""
+"Some modules execute command line utilities or are geared for executing "
+"commands directly (raw, shell, command, etc), this field contains the "
+"error output of these utilities."
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:56
+msgid "stderr_lines"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:57
+msgid ""
+"When `stderr` is returned we also always provide this field which is a "
+"list of strings, one item per line from the original."
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:60
+msgid "stdout"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:61
+msgid ""
+"Some modules execute command line utilities or are geared for executing "
+"commands directly (raw, shell, command, etc). This field contains the "
+"normal output of these utilities."
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:64
+msgid "stdout_lines"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:65
+msgid ""
+"When `stdout` is returned, Ansible always provides a list of strings, "
+"each containing one item per line from the original output."
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:71
+msgid "Internal use"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:73
+msgid ""
+"These keys can be added by modules but will be removed from registered "
+"variables; they are 'consumed' by Ansible itself."
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:76
+msgid "ansible_facts"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:77
+msgid ""
+"This key should contain a dictionary which will be appended to the facts "
+"assigned to the host. These will be directly accessible and don't require"
+" using a registered variable."
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:80
+msgid "exception"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:81
+msgid ""
+"This key can contain traceback information caused by an exception in a "
+"module. It will only be displayed on high verbosity (-vvv)."
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:84
+msgid "warnings"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:85
+msgid "This key contains a list of strings that will be presented to the user."
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:88
+msgid "deprecations"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:89
+msgid ""
+"This key contains a list of dictionaries that will be presented to the "
+"user. Keys of the dictionaries are `msg` and `version`, values are "
+"string, value for the `version` key can be an empty string."
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:93
+msgid ":ref:`all_modules`"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:94
+msgid "Learn about available modules"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:95
+msgid ""
+"`GitHub modules directory "
+"<https://github.com/ansible/ansible/tree/devel/lib/ansible/modules>`_"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:96
+msgid "Browse source of core and extras modules"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:97
+msgid "`Mailing List <https://groups.google.com/group/ansible-devel>`_"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:98
+msgid "Development mailing list"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:99
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/reference_appendices/common_return_values.rst:100
+msgid "#ansible IRC chat channel"
+msgstr ""
+

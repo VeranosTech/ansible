@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/developing_rebasing.rst:5
+msgid "Rebasing a pull request"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_rebasing.rst:7
+msgid ""
+"You may find that your pull request (PR) is out-of-date and needs to be "
+"rebased. This can happen for several reasons:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_rebasing.rst:9
+msgid ""
+"Files modified in your PR are in conflict with changes which have already"
+" been merged."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_rebasing.rst:10
+msgid ""
+"Your PR is old enough that significant changes to automated test "
+"infrastructure have occurred."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_rebasing.rst:12
+msgid ""
+"Rebasing the branch used to create your PR will resolve both of these "
+"issues."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_rebasing.rst:15
+msgid "Configuring your remotes"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_rebasing.rst:17
+msgid ""
+"Before you can rebase your PR, you need to make sure you have the proper "
+"remotes configured. Assuming you cloned your fork in the usual fashion, "
+"the ``origin`` remote will point to your fork::"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_rebasing.rst:24
+msgid ""
+"However, you also need to add a remote which points to the upstream "
+"repository::"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_rebasing.rst:28
+msgid "Which should leave you with the following remotes::"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_rebasing.rst:36
+msgid ""
+"Checking the status of your branch should show you're up-to-date with "
+"your fork at the ``origin`` remote::"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_rebasing.rst:44
+msgid "Rebasing your branch"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_rebasing.rst:46
+msgid ""
+"Once you have an ``upstream`` remote configured, you can rebase the "
+"branch for your PR::"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_rebasing.rst:50
+msgid ""
+"This will replay the changes in your branch on top of the changes made in"
+" the upstream ``devel`` branch. If there are merge conflicts, you will be"
+" prompted to resolve those before you can continue."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_rebasing.rst:53
+msgid "Once you've rebased, the status of your branch will have changed::"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_rebasing.rst:62
+msgid ""
+"Don't worry, this is normal after a rebase. You should ignore the ``git "
+"status`` instructions to use ``git pull``. We'll cover what to do next in"
+" the following section."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_rebasing.rst:66
+msgid "Updating your pull request"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_rebasing.rst:68
+msgid ""
+"Now that you've rebased your branch, you need to push your changes to "
+"GitHub to update your PR."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_rebasing.rst:70
+msgid "Since rebasing re-writes git history, you will need to use a force push::"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_rebasing.rst:74
+msgid ""
+"Your PR on GitHub has now been updated. This will automatically trigger "
+"testing of your changes. You should check in on the status of your PR "
+"after tests have completed to see if further changes are required."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_rebasing.rst:78
+msgid "Getting help rebasing"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_rebasing.rst:80
+msgid ""
+"For help with rebasing your PR, or other development related questions, "
+"join us on our #ansible-devel IRC chat channel on `freenode.net "
+"<https://freenode.net>`_."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_rebasing.rst:85
+msgid ":ref:`community_development_process`"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_rebasing.rst:86
+msgid "Information on roadmaps, opening PRs, Ansibullbot, and more"
+msgstr ""
+

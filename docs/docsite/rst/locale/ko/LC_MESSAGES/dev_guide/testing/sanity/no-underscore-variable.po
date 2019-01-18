@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/testing/sanity/no-underscore-variable.rst:2
+msgid "Sanity Tests » no-underscore-variable"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/no-underscore-variable.rst:4
+msgid ""
+"In the future, Ansible may use the identifier ``_`` to internationalize "
+"its message strings.  To be ready for that, we need to make sure that "
+"there are no conflicting identifiers defined in the code base."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/no-underscore-variable.rst:8
+msgid ""
+"In common practice, ``_`` is frequently used as a dummy variable (a "
+"variable to receive a value from a function where the value is useless "
+"and never used). In Ansible, we're using the identifier ``dummy`` for "
+"this purpose instead."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/no-underscore-variable.rst:12
+msgid "Example of unfixed code:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/no-underscore-variable.rst:21
+msgid "Example of fixed code:"
+msgstr ""
+

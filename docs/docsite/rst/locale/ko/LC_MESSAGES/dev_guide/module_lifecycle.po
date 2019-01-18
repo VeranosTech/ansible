@@ -1,0 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/module_lifecycle.rst:5
+msgid "The lifecycle of an Ansible module"
+msgstr ""
+
+#: ../../rst/dev_guide/module_lifecycle.rst:7
+msgid ""
+"Modules in the main Ansible repo have a defined life cycle, from first "
+"introduction to final removal. The module life cycle is tied to the "
+"`Ansible release cycle <release_cycle>` and reflected in the "
+":ref:`ansible_metadata_block`. A module may move through these four "
+"states:"
+msgstr ""
+
+#: ../../rst/dev_guide/module_lifecycle.rst:9
+msgid ""
+"When a module is first accepted into Ansible, we consider it in tech "
+"preview and mark it ``preview``. Modules in ``preview`` are not stable. "
+"You may change the parameters or dependencies, expand or reduce the "
+"functionality of ``preview`` modules. Many modules remain ``preview`` for"
+" years."
+msgstr ""
+
+#: ../../rst/dev_guide/module_lifecycle.rst:11
+msgid ""
+"If a module matures, we may mark it ``stableinterface`` and commit to "
+"maintaining its parameters, dependencies, and functionality. We support "
+"(though we cannot guarantee) backwards compatibility for "
+"``stableinterface`` modules, which means their parameters should be "
+"maintained with stable meanings."
+msgstr ""
+
+#: ../../rst/dev_guide/module_lifecycle.rst:13
+msgid ""
+"If a module's target API changes radically, or if someone creates a "
+"better implementation of its functionality, we may mark it "
+"``deprecated``. Modules that are ``deprecated`` are still available but "
+"they are reaching the end of their life cycle. We retain deprecated "
+"modules for 4 release cycles with deprecation warnings to help users "
+"update playbooks and roles that use them."
+msgstr ""
+
+#: ../../rst/dev_guide/module_lifecycle.rst:15
+msgid ""
+"When a module has been deprecated for four release cycles, we remove the "
+"code and mark the stub file ``removed``. Modules that are ``removed`` are"
+" no longer shipped with Ansible. The stub file helps users find "
+"alternative modules."
+msgstr ""
+
+#: ../../rst/dev_guide/module_lifecycle.rst:20
+msgid "Deprecating modules"
+msgstr ""
+
+#: ../../rst/dev_guide/module_lifecycle.rst:22
+msgid "To deprecate a module, you must:"
+msgstr ""
+
+#: ../../rst/dev_guide/module_lifecycle.rst:24
+msgid ""
+"Rename the file so it starts with an ``_``, for example, rename "
+"``old_cloud.py`` to ``_old_cloud.py``. This keeps the module available "
+"and marks it as deprecated on the module index pages."
+msgstr ""
+
+#: ../../rst/dev_guide/module_lifecycle.rst:25
+msgid "Mention the deprecation in the relevant ``CHANGELOG``."
+msgstr ""
+
+#: ../../rst/dev_guide/module_lifecycle.rst:26
+msgid "Reference the deprecation in the relevant ``porting_guide_x.y.rst``."
+msgstr ""
+
+#: ../../rst/dev_guide/module_lifecycle.rst:27
+msgid "Update ``ANSIBLE_METADATA`` to contain ``status: ['deprecated']``."
+msgstr ""
+
+#: ../../rst/dev_guide/module_lifecycle.rst:28
+msgid "Add ``deprecated:`` to the documentation with the following sub-values:"
+msgstr ""
+
+#: ../../rst/dev_guide/module_lifecycle.rst
+msgid "removed_in"
+msgstr ""
+
+#: ../../rst/dev_guide/module_lifecycle.rst:30
+msgid ""
+"A ``string``, such as ``\"2.9\"``; the version of Ansible where the "
+"module will be replaced with a docs-only module stub. Usually current "
+"release +4."
+msgstr ""
+
+#: ../../rst/dev_guide/module_lifecycle.rst
+msgid "why"
+msgstr ""
+
+#: ../../rst/dev_guide/module_lifecycle.rst:31
+msgid "Optional string that used to detail why this has been removed."
+msgstr ""
+
+#: ../../rst/dev_guide/module_lifecycle.rst
+msgid "alternative"
+msgstr ""
+
+#: ../../rst/dev_guide/module_lifecycle.rst:32
+msgid ""
+"Inform users they should do instead, i.e. ``Use M(whatmoduletouseinstead)"
+" instead.``."
+msgstr ""
+
+#: ../../rst/dev_guide/module_lifecycle.rst:34
+msgid ""
+"For an example of documenting deprecation, see this `PR that deprecates "
+"multiple modules <https://github.com/ansible/ansible/pull/43781/files>`_."
+msgstr ""
+
+#: ../../rst/dev_guide/module_lifecycle.rst:37
+msgid "Changing a module name"
+msgstr ""
+
+#: ../../rst/dev_guide/module_lifecycle.rst:39
+msgid ""
+"You can also rename a module and keep an alias to the old name by using a"
+" symlink that starts with _. This example allows the ``stat`` module to "
+"be called with ``fileinfo``, making the following examples equivalent::"
+msgstr ""
+

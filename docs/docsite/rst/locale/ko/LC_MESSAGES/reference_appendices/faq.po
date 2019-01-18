@@ -1,0 +1,899 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/reference_appendices/faq.rst:4
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:6
+msgid "Here are some commonly asked questions and their answers."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:12
+msgid ""
+"How can I set the PATH or any other environment variable for a task or "
+"entire playbook?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:14
+msgid ""
+"Setting environment variables can be done with the `environment` keyword."
+" It can be used at the task or other levels in the play::"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:20
+msgid ""
+"starting in 2.0.1 the setup task from gather_facts also inherits the "
+"environment directive from the play, you might need to use the `|default`"
+" filter to avoid errors if setting this at play level."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:25
+msgid ""
+"How do I handle different machines needing different user accounts or "
+"ports to log in with?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:27
+msgid "Setting inventory variables in the inventory file is the easiest way."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:29
+msgid "For instance, suppose these hosts have different usernames and ports:"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:37
+msgid "You can also dictate the connection type to be used, if you want:"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:46
+msgid ""
+"You may also wish to keep these in group variables instead, or file them "
+"in a group_vars/<groupname> file. See the rest of the documentation for "
+"more information about how to organize variables."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:52
+msgid ""
+"How do I get ansible to reuse connections, enable Kerberized SSH, or have"
+" Ansible pay attention to my local SSH config file?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:54
+msgid ""
+"Switch your default connection type in the configuration file to 'ssh', "
+"or use '-c ssh' to use Native OpenSSH for connections instead of the "
+"python paramiko library.  In Ansible 1.2.1 and later, 'ssh' will be used "
+"by default if OpenSSH is new enough to support ControlPersist as an "
+"option."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:58
+msgid ""
+"Paramiko is great for starting out, but the OpenSSH type offers many "
+"advanced options.  You will want to run Ansible from a machine new enough"
+" to support ControlPersist, if you are using this connection type.  You "
+"can still manage older clients.  If you are using RHEL 6, CentOS 6, SLES "
+"10 or SLES 11 the version of OpenSSH is still a bit old, so consider "
+"managing from a Fedora or openSUSE client even though you are managing "
+"older nodes, or just use paramiko."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:63
+msgid ""
+"We keep paramiko as the default as if you are first installing Ansible on"
+" an EL box, it offers a better experience for new users."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:69
+msgid ""
+"How do I configure a jump host to access servers that I have no direct "
+"access to?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:71
+msgid ""
+"You can set a `ProxyCommand` in the `ansible_ssh_common_args` inventory "
+"variable. Any arguments specified in this variable are added to the "
+"sftp/scp/ssh command line when connecting to the relevant host(s). "
+"Consider the following inventory group:"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:82
+msgid "You can create `group_vars/gatewayed.yml` with the following contents::"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:86
+msgid ""
+"Ansible will append these arguments to the command line when trying to "
+"connect to any hosts in the group `gatewayed`. (These arguments are used "
+"in addition to any `ssh_args` from `ansible.cfg`, so you do not need to "
+"repeat global `ControlPersist` settings in `ansible_ssh_common_args`.)"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:91
+msgid ""
+"Note that `ssh -W` is available only with OpenSSH 5.4 or later. With "
+"older versions, it's necessary to execute `nc %h:%p` or some equivalent "
+"command on the bastion host."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:95
+msgid ""
+"With earlier versions of Ansible, it was necessary to configure a "
+"suitable `ProxyCommand` for one or more hosts in `~/.ssh/config`, or "
+"globally by setting `ssh_args` in `ansible.cfg`."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:102
+msgid "How do I speed up management inside EC2?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:104
+msgid ""
+"Don't try to manage a fleet of EC2 machines from your laptop.  Connect to"
+" a management node inside EC2 first and run Ansible from there."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:110
+msgid ""
+"How do I handle python not having a Python interpreter at /usr/bin/python"
+" on a remote machine?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:112
+msgid ""
+"While you can write Ansible modules in any language, most Ansible modules"
+" are written in Python, including the ones central to letting Ansible "
+"work."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:115
+msgid ""
+"By default, Ansible assumes it can find a :command:`/usr/bin/python` on "
+"your remote system that is either Python2, version 2.6 or higher or "
+"Python3, 3.5 or higher."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:118
+msgid ""
+"Setting the inventory variable ``ansible_python_interpreter`` on any host"
+" will tell Ansible to auto-replace the Python interpreter with that value"
+" instead. Thus, you can point to any Python you want on the system if "
+":command:`/usr/bin/python` on your system does not point to a compatible "
+"Python interpreter."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:123
+msgid ""
+"Some platforms may only have Python 3 installed by default. If it is not "
+"installed as :command:`/usr/bin/python`, you will need to configure the "
+"path to the interpreter via ``ansible_python_interpreter``. Although most"
+" core modules will work with Python 3, there may be some special purpose "
+"ones which do not or you may encounter a bug in an edge case. As a "
+"temporary workaround you can install Python 2 on the managed host and "
+"configure Ansible to use that Python via ``ansible_python_interpreter``. "
+"If there's no mention in the module's documentation that the module "
+"requires Python 2, you can also report a bug on our `bug tracker "
+"<https://github.com/ansible/ansible/issues>`_ so that the incompatibility"
+" can be fixed in a future release."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:132
+msgid ""
+"Do not replace the shebang lines of your python modules.  Ansible will do"
+" this for you automatically at deploy time."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:134
+msgid ""
+"Also, this works for ANY interpreter, i.e ruby: "
+"`ansible_ruby_interpreter`, perl: `ansible_perl_interpreter`, etc, so you"
+" can use this for custom modules written in any scripting language and "
+"control the interpreter location."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:137
+msgid ""
+"Keep in mind that if you put `env` in your module shebang line "
+"(`#!/usr/bin/env <other>`), this facility will be ignored so you will be "
+"at the mercy of the remote `$PATH`."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:143
+msgid ""
+"How do I handle the package dependencies required by Ansible package "
+"dependencies during Ansible installation ?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:145
+msgid ""
+"While installing Ansible, sometimes you may encounter errors such as `No "
+"package 'libffi' found` or `fatal error: Python.h: No such file or "
+"directory` These errors are generally caused by the missing packages "
+"which are dependencies of the packages required by Ansible. For example, "
+"`libffi` package is dependency of `pynacl` and `paramiko` (Ansible -> "
+"paramiko -> pynacl -> libffi)."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:149
+msgid ""
+"In order to solve these kinds of dependency issue, you may need to "
+"install required packages using the OS native package managers (e.g., "
+"`yum`, `dnf` or `apt`) or as mentioned in the package installation guide."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:151
+msgid ""
+"Please refer the documentation of the respective package for such "
+"dependencies and their installation methods."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:154
+msgid "Common Platform Issues"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:157
+msgid "Running in a virtualenv"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:159
+msgid "You can install Ansible into a virtualenv on the controller quite simply:"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:167
+msgid ""
+"If you want to run under Python 3 instead of Python 2 you may want to "
+"change that slightly:"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:175
+msgid ""
+"If you need to use any libraries which are not available via pip (for "
+"instance, SELinux Python bindings on systems such as Red Hat Enterprise "
+"Linux or Fedora that have SELinux enabled) then you need to install them "
+"into the virtualenv.  There are two methods:"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:179
+msgid ""
+"When you create the virtualenv, specify ``--system-site-packages`` to "
+"make use of any libraries installed in the system's Python:"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:186
+msgid ""
+"Copy those files in manually from the system.  For instance, for SELinux "
+"bindings you might do:"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:196
+msgid "Running on BSD"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:198
+msgid ":ref:`working_with_bsd`"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:202
+msgid "Running on Solaris"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:204
+msgid ""
+"By default, Solaris 10 and earlier run a non-POSIX shell which does not "
+"correctly expand the default tmp directory Ansible uses ( "
+":file:`~/.ansible/tmp`). If you see module failures on Solaris machines, "
+"this is likely the problem. There are several workarounds:"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:208
+msgid ""
+"You can set ``remote_tmp`` to a path that will expand correctly with the "
+"shell you are using (see the plugin documentation for :ref:`C "
+"shell<csh_shell>`, :ref:`fish shell<fish_shell>`, and "
+":ref:`Powershell<powershell_shell>`).  For example, in the ansible config"
+" file you can set::"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:213
+msgid ""
+"In Ansible 2.5 and later, you can also set it per-host in inventory like "
+"this::"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:217
+msgid ""
+"You can set :ref:`ansible_shell_executable<ansible_shell_executable>` to "
+"the path to a POSIX compatible shell.  For instance, many Solaris hosts "
+"have a POSIX shell located at :file:`/usr/xpg4/bin/sh` so you can set "
+"this in inventory like so::"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:223
+msgid ""
+"(bash, ksh, and zsh should also be POSIX compatible if you have any of "
+"those installed)."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:226
+msgid "Running on z/OS"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:228
+msgid ""
+"There are a few common errors that one might run into when trying to "
+"execute Ansible on z/OS as a target."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:230
+msgid ""
+"Version 2.7.6 of python for z/OS will not work with Ansible because it "
+"represents strings internally as EBCDIC."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:232
+msgid ""
+"To get around this limitation, download and install a later version of "
+"`python for z/OS <https://www.rocketsoftware.com/zos-open-source>`_ "
+"(2.7.13 or 3.6.1) that represents strings internally as ascii.  Version "
+"2.7.13 is verified to work."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:235
+msgid "/usr/bin/python: EDC5129I No such file or directory"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:237
+msgid ""
+"To fix this set the path to the python installation in your inventory "
+"like so::"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:242
+msgid "EE3501S The module libpython2.7.so was not found."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:244
+msgid ""
+"On z/OS, you must execute python from gnu bash.  If gnu bash is installed"
+" at ``/usr/lpp/bash``, you can fix this in your inventory by specifying "
+"an ``ansible_shell_executable``::"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:252
+msgid "What is the best way to make content reusable/redistributable?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:254
+msgid ""
+"If you have not done so already, read all about \"Roles\" in the "
+"playbooks documentation.  This helps you make playbook content self-"
+"contained, and works well with things like git submodules for sharing "
+"content with others."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:257
+msgid ""
+"If some of these plugin types look strange to you, see the API "
+"documentation for more details about ways Ansible can be extended."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:262
+msgid "Where does the configuration file live and what can I configure in it?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:265
+msgid "See :doc:`../installation_guide/intro_configuration`."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:270
+msgid "How do I disable cowsay?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:272
+msgid ""
+"If cowsay is installed, Ansible takes it upon itself to make your day "
+"happier when running playbooks.  If you decide that you would like to "
+"work in a professional cow-free environment, you can either uninstall "
+"cowsay, set ``nocows=1`` in ansible.cfg, or set the "
+":envvar:`ANSIBLE_NOCOWS` environment variable:"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:282
+msgid "How do I see a list of all of the ansible\\_ variables?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:284
+msgid ""
+"Ansible by default gathers \"facts\" about the machines under management,"
+" and these facts can be accessed in Playbooks and in templates. To see a "
+"list of all of the facts that are available about a machine, you can run "
+"the \"setup\" module as an ad-hoc action:"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:290
+msgid ""
+"This will print out a dictionary of all of the facts that are available "
+"for that particular host. You might want to pipe the output to a "
+"pager.This does NOT include inventory variables or internal 'magic' "
+"variables. See the next question if you need more than just 'facts'."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:296
+msgid "How do I see all the inventory variables defined for my host?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:298
+msgid ""
+"By running the following command, you can see inventory variables for a "
+"host:"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:308
+msgid "How do I see all the variables specific to my host?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:310
+msgid ""
+"To see all host specific variables, which might include facts and other "
+"sources:"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:316
+msgid ""
+"Unless you are using a fact cache, you normally need to use a play that "
+"gathers facts first, for facts included in the task above."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:322
+msgid "How do I loop over a list of hosts in a group, inside of a template?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:324
+msgid ""
+"A pretty common pattern is to iterate over a list of hosts inside of a "
+"host group, perhaps to populate a template configuration file with a list"
+" of servers. To do this, you can just access the \"$groups\" dictionary "
+"in your template, like this:"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:333
+msgid ""
+"If you need to access facts about these hosts, for instance, the IP "
+"address of each hostname, you need to make sure that the facts have been "
+"populated. For example, make sure you have a play that talks to "
+"db_servers::"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:339
+msgid "Then you can use the facts inside your template, like this:"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:350
+msgid "How do I access a variable name programmatically?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:352
+msgid ""
+"An example may come up where we need to get the ipv4 address of an "
+"arbitrary interface, where the interface to be used may be supplied via a"
+" role parameter or other input.  Variable names can be built by adding "
+"strings together, like so:"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:359
+msgid ""
+"The trick about going through hostvars is necessary because it's a "
+"dictionary of the entire namespace of variables.  'inventory_hostname' is"
+" a magic variable that indicates the current host you are looping over in"
+" the host loop."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:362
+msgid "Also see dynamic_variables_."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:368
+msgid "How do I access a group variable?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:370
+msgid ""
+"Technically, you don't, Ansible does not really use groups directly. "
+"Groups are label for host selection and a way to bulk assign variables, "
+"they are not a first class entity, Ansible only cares about Hosts and "
+"Tasks."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:372
+msgid ""
+"That said, you could just access the variable by selecting a host that is"
+" part of that group, see first_host_in_a_group_ below for an example."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:378
+msgid "How do I access a variable of the first host in a group?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:380
+msgid ""
+"What happens if we want the ip address of the first webserver in the "
+"webservers group?  Well, we can do that too.  Note that if we are using "
+"dynamic inventory, which host is the 'first' may not be consistent, so "
+"you wouldn't want to do this unless your inventory is static and "
+"predictable.  (If you are using :doc:`../reference_appendices/tower`, it "
+"will use database order, so this isn't a problem even if you are using "
+"cloud based inventory scripts)."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:385
+msgid "Anyway, here's the trick:"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:391
+msgid ""
+"Notice how we're pulling out the hostname of the first machine of the "
+"webservers group.  If you are doing this in a template, you could use the"
+" Jinja2 '#set' directive to simplify this, or in a playbook, you could "
+"also use set_fact::"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:398
+msgid ""
+"Notice how we interchanged the bracket syntax for dots -- that can be "
+"done anywhere."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:403
+msgid "How do I copy files recursively onto a target host?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:405
+msgid ""
+"The \"copy\" module has a recursive parameter.  However, take a look at "
+"the \"synchronize\" module if you want to do something more efficient for"
+" a large number of files.  The \"synchronize\" module wraps rsync.  See "
+"the module index for info on both of these modules."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:410
+msgid "How do I access shell environment variables?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:412
+msgid ""
+"If you just need to access existing variables ON THE CONTROLLER, use the "
+"'env' lookup plugin. For example, to access the value of the HOME "
+"environment variable on the management machine::"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:421
+msgid ""
+"For environment variables on the TARGET machines, they are available via "
+"facts in the 'ansible_env' variable:"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:427
+msgid ""
+"If you need to set environment variables for TASK execution, see "
+":ref:`playbooks_environment` in the :ref:`Advanced Playbooks "
+"<playbooks_special_topics>` section. There are several ways to set "
+"environment variables on your target machines. You can use the "
+":ref:`template <template_module>`, :ref:`replace <replace_module>`, or "
+":ref:`lineinfile <lineinfile_module>` modules to introduce environment "
+"variables into files. The exact files to edit vary depending on your OS "
+"and distribution and local configuration."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:434
+msgid "How do I generate encrypted passwords for the user module?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:436
+msgid "Ansible ad-hoc command is the easiest option:"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:442
+msgid ""
+"The mkpasswd utility that is available on most Linux systems is also a "
+"great option:"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:449
+msgid ""
+"If this utility is not installed on your system (e.g. you are using "
+"macOS) then you can still easily generate these passwords using Python. "
+"First, ensure that the `Passlib "
+"<https://bitbucket.org/ecollins/passlib/wiki/Home>`_ password hashing "
+"library is installed:"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:457
+msgid ""
+"Once the library is ready, SHA512 password values can then be generated "
+"as follows:"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:463
+msgid ""
+"Use the integrated :ref:`hash_filters` to generate a hashed version of a "
+"password. You shouldn't put plaintext passwords in your playbook or "
+"host_vars; instead, use :doc:`../user_guide/playbooks_vault` to encrypt "
+"sensitive data."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:466
+msgid ""
+"In OpenBSD, a similar option is available in the base system called "
+"encrypt(1):"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:475
+msgid ""
+"Ansible supports dot notation and array notation for variables. Which "
+"notation should I use?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:477
+msgid ""
+"The dot notation comes from Jinja and works fine for variables without "
+"special characters. If your variable contains dots (.), colons (:), or "
+"dashes (-), if a key begins and ends with two underscores, or if a key "
+"uses any of the known public attributes, it is safer to use the array "
+"notation. See :ref:`playbooks_variables` for a list of the known public "
+"attributes."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:490
+msgid ""
+"Also array notation allows for dynamic variable composition, see "
+"dynamic_variables_."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:492
+msgid ""
+"Another problem with 'dot notation' is that some keys can cause problems "
+"because they collide with attributes and methods of python dictionaries."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:503
+msgid "When is it unsafe to bulk-set task arguments from a variable?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:506
+msgid ""
+"You can set all of a task's arguments from a dictionary-typed variable. "
+"This technique can be useful in some dynamic execution scenarios. "
+"However, it introduces a security risk. We do not recommend it, so "
+"Ansible issues a warning when you do something like this::"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:520
+msgid ""
+"This particular example is safe. However, constructing tasks like this is"
+" risky because the parameters and values passed to ``usermod_args`` could"
+" be overwritten by malicious values in the ``host facts`` on a "
+"compromised target machine. To mitigate this risk:"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:525
+msgid ""
+"set bulk variables at a level of precedence greater than ``host facts`` "
+"in the order of precedence found in :ref:`ansible_variable_precedence` "
+"(the example above is safe because play vars take precedence over facts)"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:526
+msgid ""
+"disable the :ref:`inject_facts_as_vars` configuration setting to prevent "
+"fact values from colliding with variables (this will also disable the "
+"original warning)"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:532
+msgid "Can I get training on Ansible?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:534
+msgid ""
+"Yes!  See our `services page "
+"<https://www.ansible.com/products/consulting>`_ for information on our "
+"services and training offerings. Email `info@ansible.com "
+"<mailto:info@ansible.com>`_ for further details."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:536
+msgid ""
+"We also offer free web-based training classes on a regular basis. See our"
+" `webinar page <https://www.ansible.com/resources/webinars-training>`_ "
+"for more info on upcoming webinars."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:542
+msgid "Is there a web interface / REST API / etc?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:544
+msgid ""
+"Yes!  Ansible, Inc makes a great product that makes Ansible even more "
+"powerful and easy to use. See :doc:`../reference_appendices/tower`."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:550
+msgid "How do I submit a change to the documentation?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:552
+msgid ""
+"Great question!  Documentation for Ansible is kept in the main project "
+"git repository, and complete instructions for contributing can be found "
+"in the docs README `viewable on GitHub "
+"<https://github.com/ansible/ansible/blob/devel/docs/docsite/README.md>`_."
+"  Thanks!"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:558
+msgid "How do I keep secret data in my playbook?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:560
+msgid ""
+"If you would like to keep secret data in your Ansible content and still "
+"share it publicly or keep things in source control, see "
+":doc:`../user_guide/playbooks_vault`."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:562
+msgid ""
+"If you have a task that you don't want to show the results or command "
+"given to it when using -v (verbose) mode, the following task or playbook "
+"attribute can be useful::"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:568
+msgid ""
+"This can be used to keep verbose output but hide sensitive information "
+"from others who would otherwise like to be able to see the output."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:570
+msgid "The no_log attribute can also apply to an entire play::"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:575
+msgid ""
+"Though this will make the play somewhat difficult to debug.  It's "
+"recommended that this be applied to single tasks only, once a playbook is"
+" completed. Note that the use of the no_log attribute does not prevent "
+"data from being shown when debugging Ansible itself via the "
+":envvar:`ANSIBLE_DEBUG` environment variable."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:586
+msgid ""
+"When should I use {{ }}? Also, how to interpolate variables or dynamic "
+"variable names"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:588
+msgid ""
+"A steadfast rule is 'always use ``{{ }}`` except when ``when:``'. "
+"Conditionals are always run through Jinja2 as to resolve the expression, "
+"so ``when:``, ``failed_when:`` and ``changed_when:`` are always templated"
+" and you should avoid adding ``{{ }}``."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:592
+msgid ""
+"In most other cases you should always use the brackets, even if "
+"previously you could use variables without specifying (like ``loop`` or "
+"``with_`` clauses), as this made it hard to distinguish between an "
+"undefined variable and a string."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:594
+msgid "Another rule is 'moustaches don't stack'. We often see this:"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:600
+msgid ""
+"The above DOES NOT WORK as you expect, if you need to use a dynamic "
+"variable use the following as appropriate:"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:606
+msgid ""
+"For 'non host vars' you can use the :ref:`vars lookup<vars_lookup>` "
+"plugin:"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:616
+msgid "Why don't you ship in X format?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:618
+msgid ""
+"Several reasons, in most cases it has to do with maintainability, there "
+"are tons of ways to ship software and it is a herculean task to try to "
+"support them all. In other cases there are technical issues, for example,"
+" for python wheels, our dependencies are not present so there is little "
+"to no gain."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:625
+msgid "How do I get the original ansible_host when I delegate a task?"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:627
+msgid ""
+"As the documentation states, connection variables are taken from the "
+"``delegate_to`` host so ``ansible_host`` is overwritten, but you can "
+"still access the original via ``hostvars``::"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:632
+msgid ""
+"This works for all overriden connection variables, like ``ansible_user``,"
+" ``ansible_port``, etc."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:638
+msgid "I don't see my question here"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:640
+msgid ""
+"Please see the section below for a link to IRC and the Google Group, "
+"where you can ask your question there."
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:644
+msgid ":doc:`../user_guide/playbooks`"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:645
+msgid "An introduction to playbooks"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:646
+msgid ":doc:`../user_guide/playbooks_best_practices`"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:647
+msgid "Best practices advice"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:648
+msgid "`User Mailing List <https://groups.google.com/group/ansible-project>`_"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:649
+msgid "Have a question?  Stop by the google group!"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:650
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/reference_appendices/faq.rst:651
+msgid "#ansible IRC chat channel"
+msgstr ""
+

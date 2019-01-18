@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/list_of_identity_modules.rst:6
+msgid "Identity modules"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:10
+msgid ":ref:`onepassword_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:16
+msgid "Cyberark"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:20
+msgid ":ref:`cyberark_authentication_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:21
+msgid ":ref:`cyberark_user_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:27
+msgid "Ipa"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:31
+msgid ":ref:`ipa_config_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:32
+msgid ":ref:`ipa_dnsrecord_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:33
+msgid ":ref:`ipa_dnszone_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:34
+msgid ":ref:`ipa_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:35
+msgid ":ref:`ipa_hbacrule_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:36
+msgid ":ref:`ipa_host_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:37
+msgid ":ref:`ipa_hostgroup_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:38
+msgid ":ref:`ipa_role_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:39
+msgid ":ref:`ipa_service_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:40
+msgid ":ref:`ipa_subca_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:41
+msgid ":ref:`ipa_sudocmd_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:42
+msgid ":ref:`ipa_sudocmdgroup_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:43
+msgid ":ref:`ipa_sudorule_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:44
+msgid ":ref:`ipa_user_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:45
+msgid ":ref:`ipa_vault_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:51
+msgid "Keycloak"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:55
+msgid ":ref:`keycloak_client_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:56
+msgid ":ref:`keycloak_clienttemplate_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:62
+msgid "Opendj"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:66
+msgid ":ref:`opendj_backendprop_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:70
+msgid ""
+"**(D)**: This marks a module as deprecated, which means a module is kept "
+"for backwards compatibility but usage is discouraged. The module "
+"documentation details page may explain more about this rationale."
+msgstr ""
+

@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/plugins/connection/libvirt_lxc.rst:8
+msgid "libvirt_lxc -- Run tasks in lxc containers via libvirt"
+msgstr ""
+
+#: ../../rst/plugins/connection/libvirt_lxc.rst:18
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/plugins/connection/libvirt_lxc.rst:19
+msgid "Run commands or put/fetch files to an existing lxc container using libvirt"
+msgstr ""
+
+#: ../../rst/plugins/connection/libvirt_lxc.rst:25
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/plugins/connection/libvirt_lxc.rst:65
+msgid "Status"
+msgstr ""
+
+#: ../../rst/plugins/connection/libvirt_lxc.rst:70
+msgid ""
+"This connection is not guaranteed to have a backwards compatible "
+"interface. *[preview]*"
+msgstr ""
+
+#: ../../rst/plugins/connection/libvirt_lxc.rst:73
+msgid ""
+"This connection is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/plugins/connection/libvirt_lxc.rst:80
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/plugins/connection/libvirt_lxc.rst:82
+msgid "Michael Scherer <misc@zarb.org>"
+msgstr ""
+
+#: ../../rst/plugins/connection/libvirt_lxc.rst:86
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/connection/libvirt_lxc.py>`_"
+" to improve it."
+msgstr ""
+

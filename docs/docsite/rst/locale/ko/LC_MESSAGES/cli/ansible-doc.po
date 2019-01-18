@@ -1,0 +1,164 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/cli/ansible-doc.rst:5
+msgid "ansible-doc"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:8
+msgid ":strong:`plugin documentation tool`"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:27
+msgid "Description"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:30
+msgid ""
+"displays information on modules installed in Ansible libraries. It "
+"displays a terse listing of plugins and their short descriptions, "
+"provides a printout of their DOCUMENTATION strings, and it can create a "
+"short \"snippet\" which can be pasted into a playbook."
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:37
+msgid "Common Options"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:44
+msgid ""
+"show program's version number, config file location, configured module "
+"search path, module location, executable location and exit"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:49
+msgid ""
+"Show plugin names and their source files without summaries (implies "
+"--list)"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:54
+msgid ""
+"prepend colon-separated path(s) to module library "
+"(default=['/Users/joelkim/.ansible/plugins/modules', "
+"'/usr/share/ansible/plugins/modules'])"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:59
+msgid "**For internal testing only** Show documentation for all plugins."
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:64
+msgid "show this help message and exit"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:69
+msgid "**For internal testing only** Dump json metadata for all plugins."
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:74
+msgid "List available plugins"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:79
+msgid "Show playbook snippet for specified plugin(s)"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:84
+msgid ""
+"Choose which plugin type (defaults to \"module\"). Available plugin types"
+" are : ('cache', 'callback', 'connection', 'inventory', 'lookup', "
+"'shell', 'cliconf', 'httpapi', 'module', 'strategy', 'vars')"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:89
+msgid "verbose mode (-vvv for more, -vvvv to enable connection debugging)"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:98
+msgid "Environment"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:100
+msgid "The following environment variables may be specified."
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:104
+msgid ":envvar:`ANSIBLE_CONFIG` -- Override the default ansible config file"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:106
+msgid "Many more are available for most options in ansible.cfg"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:110
+msgid "Files"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:113
+msgid ":file:`/etc/ansible/ansible.cfg` -- Config file, used if present"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:115
+msgid ""
+":file:`~/.ansible.cfg` -- User config file, overrides the default config "
+"if present"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:118
+msgid "Author"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:120
+msgid "Ansible was originally written by Michael DeHaan."
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:122
+msgid "See the `AUTHORS` file for a complete list of contributors."
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:126
+msgid "Copyright"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:128
+msgid "Copyright © 2017 Red Hat, Inc | Ansible."
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:130
+msgid "Ansible is released under the terms of the GPLv3 License."
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:133
+msgid "See also"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:135
+msgid ""
+":manpage:`ansible(1)`,  :manpage:`ansible-config(1)`,  :manpage:`ansible-"
+"console(1)`,  :manpage:`ansible-doc(1)`,  :manpage:`ansible-galaxy(1)`,  "
+":manpage:`ansible-inventory(1)`,  :manpage:`ansible-playbook(1)`,  "
+":manpage:`ansible-pull(1)`,  :manpage:`ansible-vault(1)`,"
+msgstr ""
+

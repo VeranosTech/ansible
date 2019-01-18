@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/vmware/vmware_inventory.rst:5
+msgid "Using VMware dynamic inventory plugin"
+msgstr ""
+
+#: ../../rst/vmware/vmware_inventory.rst:7
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/vmware/vmware_inventory.rst:10
+msgid "VMware Dynamic Inventory Plugin"
+msgstr ""
+
+#: ../../rst/vmware/vmware_inventory.rst:13
+msgid ""
+"The best way to interact with your hosts is to use the VMware dynamic "
+"inventory plugin, which dynamically queries VMware APIs and tells Ansible"
+" what nodes can be managed."
+msgstr ""
+
+#: ../../rst/vmware/vmware_inventory.rst:16
+msgid ""
+"To be able to use this VMware dynamic inventory plugin, you need to "
+"enable it first by specifying the following in the ``ansible.cfg`` file:"
+msgstr ""
+
+#: ../../rst/vmware/vmware_inventory.rst:23
+msgid ""
+"Then, create a file that ends in ``.vmware.yml`` or ``.vmware.yaml`` in "
+"your working directory."
+msgstr ""
+
+#: ../../rst/vmware/vmware_inventory.rst:25
+msgid ""
+"The ``vmware_vm_inventory`` script takes in the same authentication "
+"information as any VMware module."
+msgstr ""
+
+#: ../../rst/vmware/vmware_inventory.rst:27
+msgid "Here's an example of a valid inventory file:"
+msgstr ""
+
+#: ../../rst/vmware/vmware_inventory.rst:40
+msgid ""
+"Executing ``ansible-inventory --list -i <filename>.vmware.yml`` will "
+"create a list of VMware instances that are ready to be configured using "
+"Ansible."
+msgstr ""
+
+#: ../../rst/vmware/vmware_inventory.rst:45
+msgid "`pyVmomi <https://github.com/vmware/pyvmomi>`_"
+msgstr ""
+
+#: ../../rst/vmware/vmware_inventory.rst:46
+msgid "The GitHub Page of pyVmomi"
+msgstr ""
+
+#: ../../rst/vmware/vmware_inventory.rst:47
+msgid "`pyVmomi Issue Tracker <https://github.com/vmware/pyvmomi/issues>`_"
+msgstr ""
+
+#: ../../rst/vmware/vmware_inventory.rst:48
+msgid "The issue tracker for the pyVmomi project"
+msgstr ""
+
+#: ../../rst/vmware/vmware_inventory.rst:49
+msgid ":ref:`working_with_playbooks`"
+msgstr ""
+
+#: ../../rst/vmware/vmware_inventory.rst:50
+msgid "An introduction to playbooks"
+msgstr ""
+

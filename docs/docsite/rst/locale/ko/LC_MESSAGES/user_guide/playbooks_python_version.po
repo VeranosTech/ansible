@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/user_guide/playbooks_python_version.rst:4
+msgid "Python Version and Templating"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_python_version.rst:6
+msgid ""
+"Jinja2 templates leverage Python data types and standard functions.  This"
+" makes for a rich set of operations that can be performed on data.  "
+"However, this also means that certain specifics of the underlying Python "
+"becomes visible to template authors.  Since Ansible playbooks use Jinja2 "
+"for templates and variables, this means that playbook authors need to be "
+"aware of these specifics as well."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_python_version.rst:13
+msgid ""
+"Unless otherwise noted, these differences are only of interest when "
+"running Ansible in Python2 versus Python3.  Changes within Python2 and "
+"Python3 are generally small enough that they are not visible at the "
+"jinja2 level."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_python_version.rst:20
+msgid "Dictionary Views"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_python_version.rst:22
+msgid ""
+"In Python2, the :meth:`dict.keys`, :meth:`dict.values`, and "
+":meth:`dict.items` methods returns a list.  Jinja2 returns that to "
+"Ansible via a string representation that Ansible can turn back into a "
+"list.  In Python3, those methods return a :ref:`dictionary view <python3"
+":dict-views>` object.  The string representation that Jinja2 returns for "
+"dictionary views cannot be parsed back into a list by Ansible.  It is, "
+"however, easy to make this portable by using the :func:`list "
+"<jinja2:list>` filter whenever using :meth:`dict.keys`, "
+":meth:`dict.values`, or :meth:`dict.items`::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_python_version.rst:46
+msgid "dict.iteritems()"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_python_version.rst:48
+msgid ""
+"In Python2, dictionaries have :meth:`~dict.iterkeys`, "
+":meth:`~dict.itervalues`, and :meth:`~dict.iteritems` methods.  These "
+"methods have been removed in Python3.  Playbooks and Jinja2 templates "
+"should use :meth:`dict.keys`, :meth:`dict.values`, and :meth:`dict.items`"
+" in order to be compatible with both Python2 and Python3::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_python_version.rst:67
+msgid ""
+"The :ref:`pb-py-compat-dict-views` entry for information on why the "
+":func:`list filter <jinja2:list>` is necessary here."
+msgstr ""
+

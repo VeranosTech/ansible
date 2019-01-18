@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:9
+msgid "nxos_igmp_interface -- Manages IGMP interface configuration"
+msgstr ""
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:20
+msgid "Manages IGMP interface configuration settings."
+msgstr ""
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:26
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:516
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:519
+msgid "Tested against NXOSv 7.3.(0)D1(1) on VIRL"
+msgstr ""
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:520
+msgid ""
+"When ``state=default``, supported params will be reset to a default "
+"state. These include ``version``, ``startup_query_interval``, "
+"``startup_query_count``, ``robustness``, ``querier_timeout``, "
+"``query_mrt``, ``query_interval``, ``last_member_qrt``, "
+"``last_member_query_count``, ``group_timeout``, ``report_llg``, and "
+"``immediate_leave``."
+msgstr ""
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:521
+msgid ""
+"When ``state=absent``, all configs for ``oif_ps``, and ``oif_routemap`` "
+"will be removed."
+msgstr ""
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:522
+msgid "PIM must be enabled to use this module."
+msgstr ""
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:523
+msgid "This module is for Layer 3 interfaces."
+msgstr ""
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:524
+msgid ""
+"Route-map check not performed (same as CLI) check when configuring route-"
+"map with 'static-oif'"
+msgstr ""
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:525
+msgid ""
+"If restart is set to true with other params set, the restart will happen "
+"last, i.e. after the configuration takes place. However, 'restart' itself"
+" is not idempotent as it is an action and not configuration."
+msgstr ""
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:526
+msgid ""
+"For information on using CLI and NX-API see the :ref:`NXOS Platform "
+"Options guide <nxos_platform_options>`"
+msgstr ""
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:527
+msgid ""
+"For more information on using Ansible to manage network devices see the "
+":ref:`Ansible Network Guide <network_guide>`"
+msgstr ""
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:528
+msgid ""
+"For more information on using Ansible to manage Cisco devices see the "
+"`Cisco integration page "
+"<https://www.ansible.com/integrations/networks/cisco>`_."
+msgstr ""
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:533
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:550
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:551
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:631
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:636
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:639
+msgid ""
+"This module is :ref:`maintained by the Ansible Network Team "
+"<modules_support>`. *[network]*"
+msgstr ""
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:642
+msgid "Red Hat Support"
+msgstr ""
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:644
+msgid ""
+"More information about Red Hat's support of this module is available from"
+" this `Red Hat Knowledge Base article "
+"<https://access.redhat.com/articles/3166901>`_."
+msgstr ""
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:650
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:652
+msgid "Jason Edelman (@jedelman8)"
+msgstr ""
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:653
+msgid "Gabriele Gerbino (@GGabriele)"
+msgstr ""
+
+#: ../../rst/modules/nxos_igmp_interface_module.rst:657
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_igmp_interface.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

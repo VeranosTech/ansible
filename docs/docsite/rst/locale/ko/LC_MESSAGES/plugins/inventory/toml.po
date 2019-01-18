@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/plugins/inventory/toml.rst:8
+msgid "toml -- Uses a specific TOML file as an inventory source"
+msgstr ""
+
+#: ../../rst/plugins/inventory/toml.rst:18
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/plugins/inventory/toml.rst:19
+msgid "TOML based inventory format"
+msgstr ""
+
+#: ../../rst/plugins/inventory/toml.rst:20
+msgid "File MUST have a valid '.toml' file extension"
+msgstr ""
+
+#: ../../rst/plugins/inventory/toml.rst:27
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/plugins/inventory/toml.rst:30
+msgid "Requires the 'toml' python library"
+msgstr ""
+
+#: ../../rst/plugins/inventory/toml.rst:35
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/plugins/inventory/toml.rst:114
+msgid "Status"
+msgstr ""
+
+#: ../../rst/plugins/inventory/toml.rst:119
+msgid ""
+"This inventory is not guaranteed to have a backwards compatible "
+"interface. *[preview]*"
+msgstr ""
+
+#: ../../rst/plugins/inventory/toml.rst:122
+msgid ""
+"This inventory is :ref:`maintained by the Ansible Core Team "
+"<modules_support>`. *[core]*"
+msgstr ""
+
+#: ../../rst/plugins/inventory/toml.rst:125
+msgid "Red Hat Support"
+msgstr ""
+
+#: ../../rst/plugins/inventory/toml.rst:127
+msgid ""
+"More information about Red Hat's support of this inventory is available "
+"from this `Red Hat Knowledge Base article "
+"<https://access.redhat.com/articles/3166901>`_."
+msgstr ""
+
+#: ../../rst/plugins/inventory/toml.rst:133
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/plugins/inventory/toml.rst:135
+msgid "UNKNOWN"
+msgstr ""
+
+#: ../../rst/plugins/inventory/toml.rst:139
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/inventory/toml.py>`_"
+" to improve it."
+msgstr ""
+

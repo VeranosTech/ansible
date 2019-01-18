@@ -1,0 +1,3439 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/list_of_cloud_modules.rst:6
+msgid "Cloud modules"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:14
+msgid "Alicloud"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:18
+msgid ":ref:`ali_instance_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:19
+msgid ":ref:`ali_instance_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:25
+msgid "Amazon"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:29
+msgid ":ref:`aws_acm_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:30
+msgid ":ref:`aws_api_gateway_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:31
+msgid ":ref:`aws_application_scaling_policy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:32
+msgid ":ref:`aws_az_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:33
+msgid ":ref:`aws_batch_compute_environment_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:34
+msgid ":ref:`aws_batch_job_definition_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:35
+msgid ":ref:`aws_batch_job_queue_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:36
+msgid ":ref:`aws_caller_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:37
+msgid ":ref:`aws_codecommit_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:38
+msgid ":ref:`aws_config_aggregation_authorization_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:39
+msgid ":ref:`aws_config_aggregator_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:40
+msgid ":ref:`aws_config_delivery_channel_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:41
+msgid ":ref:`aws_config_recorder_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:42
+msgid ":ref:`aws_config_rule_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:43
+msgid ":ref:`aws_direct_connect_connection_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:44
+msgid ":ref:`aws_direct_connect_gateway_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:45
+msgid ":ref:`aws_direct_connect_link_aggregation_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:46
+msgid ":ref:`aws_direct_connect_virtual_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:47
+msgid ":ref:`aws_eks_cluster_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:48
+msgid ":ref:`aws_elasticbeanstalk_app_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:49
+msgid ":ref:`aws_glue_connection_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:50
+msgid ":ref:`aws_glue_job_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:51
+msgid ":ref:`aws_inspector_target_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:52
+msgid ":ref:`aws_kms_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:53
+msgid ":ref:`aws_kms_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:54
+msgid ":ref:`aws_region_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:55
+msgid ":ref:`aws_s3_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:56
+msgid ":ref:`aws_s3_bucket_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:57
+msgid ":ref:`aws_s3_cors_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:58
+msgid ":ref:`aws_ses_identity_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:59
+msgid ":ref:`aws_ses_identity_policy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:60
+msgid ":ref:`aws_ses_rule_set_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:61
+msgid ":ref:`aws_sgw_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:62
+msgid ":ref:`aws_ssm_parameter_store_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:63
+msgid ":ref:`aws_waf_condition_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:64
+msgid ":ref:`aws_waf_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:65
+msgid ":ref:`aws_waf_rule_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:66
+msgid ":ref:`aws_waf_web_acl_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:67
+msgid ":ref:`cloudformation_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:68
+msgid ":ref:`cloudformation_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:69
+msgid ":ref:`cloudformation_stack_set_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:70
+msgid ":ref:`cloudfront_distribution_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:71
+msgid ":ref:`cloudfront_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:72
+msgid ":ref:`cloudfront_invalidation_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:73
+msgid ":ref:`cloudfront_origin_access_identity_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:74
+msgid ":ref:`cloudtrail_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:75
+msgid ":ref:`cloudwatchevent_rule_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:76
+msgid ":ref:`cloudwatchlogs_log_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:77
+msgid ":ref:`cloudwatchlogs_log_group_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:78
+msgid ":ref:`data_pipeline_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:79
+msgid ":ref:`dynamodb_table_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:80
+msgid ":ref:`dynamodb_ttl_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:81
+msgid ":ref:`ec2_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:82
+msgid ":ref:`ec2_ami_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:83
+msgid ":ref:`ec2_ami_copy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:84
+msgid ":ref:`ec2_ami_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:85
+msgid ":ref:`ec2_ami_find_module` **(D)**"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:86
+msgid ":ref:`ec2_asg_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:87
+msgid ":ref:`ec2_asg_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:88
+msgid ":ref:`ec2_asg_lifecycle_hook_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:89
+msgid ":ref:`ec2_customer_gateway_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:90
+msgid ":ref:`ec2_customer_gateway_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:91
+msgid ":ref:`ec2_eip_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:92
+msgid ":ref:`ec2_eip_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:93
+msgid ":ref:`ec2_elb_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:94
+msgid ":ref:`ec2_elb_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:95
+msgid ":ref:`ec2_elb_lb_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:96
+msgid ":ref:`ec2_eni_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:97
+msgid ":ref:`ec2_eni_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:98
+msgid ":ref:`ec2_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:99
+msgid ":ref:`ec2_group_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:100
+msgid ":ref:`ec2_instance_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:101
+msgid ":ref:`ec2_instance_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:102
+msgid ":ref:`ec2_key_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:103
+msgid ":ref:`ec2_launch_template_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:104
+msgid ":ref:`ec2_lc_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:105
+msgid ":ref:`ec2_lc_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:106
+msgid ":ref:`ec2_lc_find_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:107
+msgid ":ref:`ec2_metadata_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:108
+msgid ":ref:`ec2_metric_alarm_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:109
+msgid ":ref:`ec2_placement_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:110
+msgid ":ref:`ec2_placement_group_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:111
+msgid ":ref:`ec2_scaling_policy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:112
+msgid ":ref:`ec2_snapshot_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:113
+msgid ":ref:`ec2_snapshot_copy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:114
+msgid ":ref:`ec2_snapshot_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:115
+msgid ":ref:`ec2_tag_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:116
+msgid ":ref:`ec2_vol_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:117
+msgid ":ref:`ec2_vol_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:118
+msgid ":ref:`ec2_vpc_dhcp_option_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:119
+msgid ":ref:`ec2_vpc_dhcp_option_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:120
+msgid ":ref:`ec2_vpc_egress_igw_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:121
+msgid ":ref:`ec2_vpc_endpoint_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:122
+msgid ":ref:`ec2_vpc_endpoint_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:123
+msgid ":ref:`ec2_vpc_igw_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:124
+msgid ":ref:`ec2_vpc_igw_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:125
+msgid ":ref:`ec2_vpc_nacl_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:126
+msgid ":ref:`ec2_vpc_nacl_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:127
+msgid ":ref:`ec2_vpc_nat_gateway_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:128
+msgid ":ref:`ec2_vpc_nat_gateway_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:129
+msgid ":ref:`ec2_vpc_net_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:130
+msgid ":ref:`ec2_vpc_net_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:131
+msgid ":ref:`ec2_vpc_peer_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:132
+msgid ":ref:`ec2_vpc_peering_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:133
+msgid ":ref:`ec2_vpc_route_table_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:134
+msgid ":ref:`ec2_vpc_route_table_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:135
+msgid ":ref:`ec2_vpc_subnet_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:136
+msgid ":ref:`ec2_vpc_subnet_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:137
+msgid ":ref:`ec2_vpc_vgw_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:138
+msgid ":ref:`ec2_vpc_vgw_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:139
+msgid ":ref:`ec2_vpc_vpn_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:140
+msgid ":ref:`ec2_vpc_vpn_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:141
+msgid ":ref:`ec2_win_password_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:142
+msgid ":ref:`ecs_attribute_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:143
+msgid ":ref:`ecs_cluster_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:144
+msgid ":ref:`ecs_ecr_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:145
+msgid ":ref:`ecs_service_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:146
+msgid ":ref:`ecs_service_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:147
+msgid ":ref:`ecs_task_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:148
+msgid ":ref:`ecs_taskdefinition_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:149
+msgid ":ref:`ecs_taskdefinition_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:150
+msgid ":ref:`efs_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:151
+msgid ":ref:`efs_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:152
+msgid ":ref:`elasticache_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:153
+msgid ":ref:`elasticache_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:154
+msgid ":ref:`elasticache_parameter_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:155
+msgid ":ref:`elasticache_snapshot_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:156
+msgid ":ref:`elasticache_subnet_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:157
+msgid ":ref:`elb_application_lb_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:158
+msgid ":ref:`elb_application_lb_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:159
+msgid ":ref:`elb_classic_lb_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:160
+msgid ":ref:`elb_classic_lb_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:161
+msgid ":ref:`elb_instance_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:162
+msgid ":ref:`elb_network_lb_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:163
+msgid ":ref:`elb_target_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:164
+msgid ":ref:`elb_target_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:165
+msgid ":ref:`elb_target_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:166
+msgid ":ref:`elb_target_group_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:167
+msgid ":ref:`execute_lambda_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:168
+msgid ":ref:`iam_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:169
+msgid ":ref:`iam_cert_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:170
+msgid ":ref:`iam_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:171
+msgid ":ref:`iam_managed_policy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:172
+msgid ":ref:`iam_mfa_device_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:173
+msgid ":ref:`iam_password_policy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:174
+msgid ":ref:`iam_policy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:175
+msgid ":ref:`iam_role_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:176
+msgid ":ref:`iam_role_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:177
+msgid ":ref:`iam_server_certificate_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:178
+msgid ":ref:`iam_user_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:179
+msgid ":ref:`kinesis_stream_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:180
+msgid ":ref:`lambda_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:181
+msgid ":ref:`lambda_alias_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:182
+msgid ":ref:`lambda_event_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:183
+msgid ":ref:`lambda_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:184
+msgid ":ref:`lambda_policy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:185
+msgid ":ref:`lightsail_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:186
+msgid ":ref:`rds_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:187
+msgid ":ref:`rds_instance_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:188
+msgid ":ref:`rds_instance_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:189
+msgid ":ref:`rds_param_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:190
+msgid ":ref:`rds_snapshot_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:191
+msgid ":ref:`rds_subnet_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:192
+msgid ":ref:`redshift_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:193
+msgid ":ref:`redshift_cross_region_snapshots_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:194
+msgid ":ref:`redshift_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:195
+msgid ":ref:`redshift_subnet_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:196
+msgid ":ref:`route53_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:197
+msgid ":ref:`route53_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:198
+msgid ":ref:`route53_health_check_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:199
+msgid ":ref:`route53_zone_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:200
+msgid ":ref:`s3_bucket_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:201
+msgid ":ref:`s3_lifecycle_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:202
+msgid ":ref:`s3_logging_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:203
+msgid ":ref:`s3_sync_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:204
+msgid ":ref:`s3_website_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:205
+msgid ":ref:`sns_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:206
+msgid ":ref:`sns_topic_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:207
+msgid ":ref:`sqs_queue_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:208
+msgid ":ref:`sts_assume_role_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:209
+msgid ":ref:`sts_session_token_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:215
+msgid "Atomic"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:219
+msgid ":ref:`atomic_container_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:220
+msgid ":ref:`atomic_host_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:221
+msgid ":ref:`atomic_image_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:227
+msgid "Azure"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:231
+msgid ":ref:`azure_rm_acs_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:232
+msgid ":ref:`azure_rm_aks_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:233
+msgid ":ref:`azure_rm_aks_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:234
+msgid ":ref:`azure_rm_appgateway_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:235
+msgid ":ref:`azure_rm_appserviceplan_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:236
+msgid ":ref:`azure_rm_appserviceplan_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:237
+msgid ":ref:`azure_rm_autoscale_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:238
+msgid ":ref:`azure_rm_autoscale_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:239
+msgid ":ref:`azure_rm_availabilityset_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:240
+msgid ":ref:`azure_rm_availabilityset_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:241
+msgid ":ref:`azure_rm_cdnendpoint_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:242
+msgid ":ref:`azure_rm_cdnprofile_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:243
+msgid ":ref:`azure_rm_cdnprofile_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:244
+msgid ":ref:`azure_rm_containerinstance_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:245
+msgid ":ref:`azure_rm_containerinstance_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:246
+msgid ":ref:`azure_rm_containerregistry_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:247
+msgid ":ref:`azure_rm_containerregistry_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:248
+msgid ":ref:`azure_rm_deployment_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:249
+msgid ":ref:`azure_rm_dnsrecordset_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:250
+msgid ":ref:`azure_rm_dnsrecordset_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:251
+msgid ":ref:`azure_rm_dnszone_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:252
+msgid ":ref:`azure_rm_dnszone_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:253
+msgid ":ref:`azure_rm_functionapp_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:254
+msgid ":ref:`azure_rm_functionapp_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:255
+msgid ":ref:`azure_rm_image_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:256
+msgid ":ref:`azure_rm_image_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:257
+msgid ":ref:`azure_rm_keyvault_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:258
+msgid ":ref:`azure_rm_keyvaultkey_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:259
+msgid ":ref:`azure_rm_keyvaultsecret_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:260
+msgid ":ref:`azure_rm_loadbalancer_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:261
+msgid ":ref:`azure_rm_loadbalancer_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:262
+msgid ":ref:`azure_rm_managed_disk_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:263
+msgid ":ref:`azure_rm_managed_disk_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:264
+msgid ":ref:`azure_rm_mysqldatabase_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:265
+msgid ":ref:`azure_rm_mysqldatabase_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:266
+msgid ":ref:`azure_rm_mysqlfirewallrule_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:267
+msgid ":ref:`azure_rm_mysqlfirewallrule_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:268
+msgid ":ref:`azure_rm_mysqlserver_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:269
+msgid ":ref:`azure_rm_mysqlserver_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:270
+msgid ":ref:`azure_rm_networkinterface_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:271
+msgid ":ref:`azure_rm_networkinterface_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:272
+msgid ":ref:`azure_rm_postgresqldatabase_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:273
+msgid ":ref:`azure_rm_postgresqldatabase_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:274
+msgid ":ref:`azure_rm_postgresqlfirewallrule_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:275
+msgid ":ref:`azure_rm_postgresqlfirewallrule_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:276
+msgid ":ref:`azure_rm_postgresqlserver_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:277
+msgid ":ref:`azure_rm_postgresqlserver_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:278
+msgid ":ref:`azure_rm_publicipaddress_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:279
+msgid ":ref:`azure_rm_publicipaddress_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:280
+msgid ":ref:`azure_rm_rediscache_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:281
+msgid ":ref:`azure_rm_resource_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:282
+msgid ":ref:`azure_rm_resource_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:283
+msgid ":ref:`azure_rm_resourcegroup_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:284
+msgid ":ref:`azure_rm_resourcegroup_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:285
+msgid ":ref:`azure_rm_route_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:286
+msgid ":ref:`azure_rm_routetable_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:287
+msgid ":ref:`azure_rm_routetable_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:288
+msgid ":ref:`azure_rm_securitygroup_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:289
+msgid ":ref:`azure_rm_securitygroup_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:290
+msgid ":ref:`azure_rm_sqldatabase_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:291
+msgid ":ref:`azure_rm_sqlfirewallrule_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:292
+msgid ":ref:`azure_rm_sqlfirewallrule_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:293
+msgid ":ref:`azure_rm_sqlserver_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:294
+msgid ":ref:`azure_rm_sqlserver_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:295
+msgid ":ref:`azure_rm_storageaccount_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:296
+msgid ":ref:`azure_rm_storageaccount_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:297
+msgid ":ref:`azure_rm_storageblob_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:298
+msgid ":ref:`azure_rm_subnet_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:299
+msgid ":ref:`azure_rm_trafficmanagerendpoint_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:300
+msgid ":ref:`azure_rm_trafficmanagerendpoint_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:301
+msgid ":ref:`azure_rm_trafficmanagerprofile_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:302
+msgid ":ref:`azure_rm_trafficmanagerprofile_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:303
+msgid ":ref:`azure_rm_virtualmachine_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:304
+msgid ":ref:`azure_rm_virtualmachine_extension_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:305
+msgid ":ref:`azure_rm_virtualmachine_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:306
+msgid ":ref:`azure_rm_virtualmachine_scaleset_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:307
+msgid ":ref:`azure_rm_virtualmachine_scaleset_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:308
+msgid ":ref:`azure_rm_virtualmachineimage_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:309
+msgid ":ref:`azure_rm_virtualmachinescalesetinstance_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:310
+msgid ":ref:`azure_rm_virtualnetwork_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:311
+msgid ":ref:`azure_rm_virtualnetwork_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:312
+msgid ":ref:`azure_rm_virtualnetworkpeering_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:313
+msgid ":ref:`azure_rm_webapp_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:314
+msgid ":ref:`azure_rm_webapp_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:320
+msgid "Centurylink"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:324
+msgid ":ref:`clc_aa_policy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:325
+msgid ":ref:`clc_alert_policy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:326
+msgid ":ref:`clc_blueprint_package_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:327
+msgid ":ref:`clc_firewall_policy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:328
+msgid ":ref:`clc_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:329
+msgid ":ref:`clc_loadbalancer_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:330
+msgid ":ref:`clc_modify_server_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:331
+msgid ":ref:`clc_publicip_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:332
+msgid ":ref:`clc_server_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:333
+msgid ":ref:`clc_server_snapshot_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:339
+msgid "Cloudscale"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:343
+msgid ":ref:`cloudscale_floating_ip_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:344
+msgid ":ref:`cloudscale_server_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:345
+msgid ":ref:`cloudscale_volume_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:351
+msgid "Cloudstack"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:355
+msgid ":ref:`cs_account_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:356
+msgid ":ref:`cs_affinitygroup_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:357
+msgid ":ref:`cs_cluster_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:358
+msgid ":ref:`cs_configuration_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:359
+msgid ":ref:`cs_disk_offering_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:360
+msgid ":ref:`cs_domain_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:361
+msgid ":ref:`cs_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:362
+msgid ":ref:`cs_firewall_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:363
+msgid ":ref:`cs_host_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:364
+msgid ":ref:`cs_instance_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:365
+msgid ":ref:`cs_instance_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:366
+msgid ":ref:`cs_instance_nic_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:367
+msgid ":ref:`cs_instance_nic_secondaryip_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:368
+msgid ":ref:`cs_instance_password_reset_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:369
+msgid ":ref:`cs_instancegroup_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:370
+msgid ":ref:`cs_ip_address_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:371
+msgid ":ref:`cs_iso_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:372
+msgid ":ref:`cs_loadbalancer_rule_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:373
+msgid ":ref:`cs_loadbalancer_rule_member_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:374
+msgid ":ref:`cs_network_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:375
+msgid ":ref:`cs_network_acl_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:376
+msgid ":ref:`cs_network_acl_rule_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:377
+msgid ":ref:`cs_network_offering_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:378
+msgid ":ref:`cs_pod_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:379
+msgid ":ref:`cs_portforward_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:380
+msgid ":ref:`cs_project_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:381
+msgid ":ref:`cs_region_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:382
+msgid ":ref:`cs_resourcelimit_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:383
+msgid ":ref:`cs_role_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:384
+msgid ":ref:`cs_role_permission_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:385
+msgid ":ref:`cs_router_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:386
+msgid ":ref:`cs_securitygroup_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:387
+msgid ":ref:`cs_securitygroup_rule_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:388
+msgid ":ref:`cs_service_offering_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:389
+msgid ":ref:`cs_snapshot_policy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:390
+msgid ":ref:`cs_sshkeypair_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:391
+msgid ":ref:`cs_staticnat_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:392
+msgid ":ref:`cs_storage_pool_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:393
+msgid ":ref:`cs_template_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:394
+msgid ":ref:`cs_user_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:395
+msgid ":ref:`cs_vmsnapshot_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:396
+msgid ":ref:`cs_volume_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:397
+msgid ":ref:`cs_vpc_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:398
+msgid ":ref:`cs_vpc_offering_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:399
+msgid ":ref:`cs_vpn_connection_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:400
+msgid ":ref:`cs_vpn_customer_gateway_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:401
+msgid ":ref:`cs_vpn_gateway_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:402
+msgid ":ref:`cs_zone_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:403
+msgid ":ref:`cs_zone_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:409
+msgid "Digital_Ocean"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:413
+msgid ":ref:`digital_ocean_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:414
+msgid ":ref:`digital_ocean_account_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:415
+msgid ":ref:`digital_ocean_block_storage_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:416
+msgid ":ref:`digital_ocean_certificate_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:417
+msgid ":ref:`digital_ocean_certificate_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:418
+msgid ":ref:`digital_ocean_domain_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:419
+msgid ":ref:`digital_ocean_domain_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:420
+msgid ":ref:`digital_ocean_firewall_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:421
+msgid ":ref:`digital_ocean_floating_ip_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:422
+msgid ":ref:`digital_ocean_floating_ip_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:423
+msgid ":ref:`digital_ocean_image_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:424
+msgid ":ref:`digital_ocean_load_balancer_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:425
+msgid ":ref:`digital_ocean_region_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:426
+msgid ":ref:`digital_ocean_size_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:427
+msgid ":ref:`digital_ocean_snapshot_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:428
+msgid ":ref:`digital_ocean_sshkey_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:429
+msgid ":ref:`digital_ocean_sshkey_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:430
+msgid ":ref:`digital_ocean_tag_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:431
+msgid ":ref:`digital_ocean_tag_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:432
+msgid ":ref:`digital_ocean_volume_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:438
+msgid "Dimensiondata"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:442
+msgid ":ref:`dimensiondata_network_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:443
+msgid ":ref:`dimensiondata_vlan_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:449
+msgid "Docker"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:453
+msgid ":ref:`docker_config_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:454
+msgid ":ref:`docker_container_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:455
+msgid ":ref:`docker_container_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:456
+msgid ":ref:`docker_image_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:457
+msgid ":ref:`docker_image_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:458
+msgid ":ref:`docker_login_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:459
+msgid ":ref:`docker_network_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:460
+msgid ":ref:`docker_network_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:461
+msgid ":ref:`docker_node_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:462
+msgid ":ref:`docker_prune_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:463
+msgid ":ref:`docker_secret_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:464
+msgid ":ref:`docker_service_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:465
+msgid ":ref:`docker_stack_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:466
+msgid ":ref:`docker_swarm_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:467
+msgid ":ref:`docker_swarm_service_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:468
+msgid ":ref:`docker_volume_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:469
+msgid ":ref:`docker_volume_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:475
+msgid "Google"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:479
+msgid ":ref:`gc_storage_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:480
+msgid ":ref:`gcdns_record_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:481
+msgid ":ref:`gcdns_zone_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:482
+msgid ":ref:`gce_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:483
+msgid ":ref:`gce_eip_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:484
+msgid ":ref:`gce_img_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:485
+msgid ":ref:`gce_instance_template_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:486
+msgid ":ref:`gce_labels_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:487
+msgid ":ref:`gce_lb_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:488
+msgid ":ref:`gce_mig_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:489
+msgid ":ref:`gce_net_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:490
+msgid ":ref:`gce_pd_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:491
+msgid ":ref:`gce_snapshot_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:492
+msgid ":ref:`gce_tag_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:493
+msgid ":ref:`gcp_backend_service_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:494
+msgid ":ref:`gcp_bigquery_dataset_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:495
+msgid ":ref:`gcp_bigquery_dataset_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:496
+msgid ":ref:`gcp_bigquery_table_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:497
+msgid ":ref:`gcp_bigquery_table_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:498
+msgid ":ref:`gcp_compute_address_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:499
+msgid ":ref:`gcp_compute_address_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:500
+msgid ":ref:`gcp_compute_backend_bucket_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:501
+msgid ":ref:`gcp_compute_backend_bucket_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:502
+msgid ":ref:`gcp_compute_backend_service_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:503
+msgid ":ref:`gcp_compute_backend_service_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:504
+msgid ":ref:`gcp_compute_disk_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:505
+msgid ":ref:`gcp_compute_disk_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:506
+msgid ":ref:`gcp_compute_firewall_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:507
+msgid ":ref:`gcp_compute_firewall_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:508
+msgid ":ref:`gcp_compute_forwarding_rule_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:509
+msgid ":ref:`gcp_compute_forwarding_rule_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:510
+msgid ":ref:`gcp_compute_global_address_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:511
+msgid ":ref:`gcp_compute_global_address_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:512
+msgid ":ref:`gcp_compute_global_forwarding_rule_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:513
+msgid ":ref:`gcp_compute_global_forwarding_rule_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:514
+msgid ":ref:`gcp_compute_health_check_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:515
+msgid ":ref:`gcp_compute_health_check_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:516
+msgid ":ref:`gcp_compute_http_health_check_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:517
+msgid ":ref:`gcp_compute_http_health_check_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:518
+msgid ":ref:`gcp_compute_https_health_check_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:519
+msgid ":ref:`gcp_compute_https_health_check_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:520
+msgid ":ref:`gcp_compute_image_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:521
+msgid ":ref:`gcp_compute_image_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:522
+msgid ":ref:`gcp_compute_instance_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:523
+msgid ":ref:`gcp_compute_instance_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:524
+msgid ":ref:`gcp_compute_instance_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:525
+msgid ":ref:`gcp_compute_instance_group_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:526
+msgid ":ref:`gcp_compute_instance_group_manager_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:527
+msgid ":ref:`gcp_compute_instance_group_manager_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:528
+msgid ":ref:`gcp_compute_instance_template_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:529
+msgid ":ref:`gcp_compute_instance_template_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:530
+msgid ":ref:`gcp_compute_interconnect_attachment_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:531
+msgid ":ref:`gcp_compute_interconnect_attachment_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:532
+msgid ":ref:`gcp_compute_network_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:533
+msgid ":ref:`gcp_compute_network_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:534
+msgid ":ref:`gcp_compute_region_disk_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:535
+msgid ":ref:`gcp_compute_region_disk_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:536
+msgid ":ref:`gcp_compute_route_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:537
+msgid ":ref:`gcp_compute_route_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:538
+msgid ":ref:`gcp_compute_router_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:539
+msgid ":ref:`gcp_compute_router_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:540
+msgid ":ref:`gcp_compute_ssl_certificate_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:541
+msgid ":ref:`gcp_compute_ssl_certificate_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:542
+msgid ":ref:`gcp_compute_ssl_policy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:543
+msgid ":ref:`gcp_compute_ssl_policy_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:544
+msgid ":ref:`gcp_compute_subnetwork_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:545
+msgid ":ref:`gcp_compute_subnetwork_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:546
+msgid ":ref:`gcp_compute_target_http_proxy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:547
+msgid ":ref:`gcp_compute_target_http_proxy_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:548
+msgid ":ref:`gcp_compute_target_https_proxy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:549
+msgid ":ref:`gcp_compute_target_https_proxy_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:550
+msgid ":ref:`gcp_compute_target_pool_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:551
+msgid ":ref:`gcp_compute_target_pool_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:552
+msgid ":ref:`gcp_compute_target_ssl_proxy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:553
+msgid ":ref:`gcp_compute_target_ssl_proxy_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:554
+msgid ":ref:`gcp_compute_target_tcp_proxy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:555
+msgid ":ref:`gcp_compute_target_tcp_proxy_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:556
+msgid ":ref:`gcp_compute_target_vpn_gateway_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:557
+msgid ":ref:`gcp_compute_target_vpn_gateway_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:558
+msgid ":ref:`gcp_compute_url_map_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:559
+msgid ":ref:`gcp_compute_url_map_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:560
+msgid ":ref:`gcp_compute_vpn_tunnel_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:561
+msgid ":ref:`gcp_compute_vpn_tunnel_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:562
+msgid ":ref:`gcp_container_cluster_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:563
+msgid ":ref:`gcp_container_cluster_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:564
+msgid ":ref:`gcp_container_node_pool_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:565
+msgid ":ref:`gcp_container_node_pool_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:566
+msgid ":ref:`gcp_dns_managed_zone_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:567
+msgid ":ref:`gcp_dns_managed_zone_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:568
+msgid ":ref:`gcp_dns_resource_record_set_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:569
+msgid ":ref:`gcp_dns_resource_record_set_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:570
+msgid ":ref:`gcp_forwarding_rule_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:571
+msgid ":ref:`gcp_healthcheck_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:572
+msgid ":ref:`gcp_iam_service_account_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:573
+msgid ":ref:`gcp_iam_service_account_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:574
+msgid ":ref:`gcp_pubsub_subscription_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:575
+msgid ":ref:`gcp_pubsub_subscription_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:576
+msgid ":ref:`gcp_pubsub_topic_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:577
+msgid ":ref:`gcp_pubsub_topic_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:578
+msgid ":ref:`gcp_resourcemanager_project_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:579
+msgid ":ref:`gcp_resourcemanager_project_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:580
+msgid ":ref:`gcp_spanner_database_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:581
+msgid ":ref:`gcp_spanner_database_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:582
+msgid ":ref:`gcp_spanner_instance_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:583
+msgid ":ref:`gcp_spanner_instance_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:584
+msgid ":ref:`gcp_sql_database_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:585
+msgid ":ref:`gcp_sql_database_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:586
+msgid ":ref:`gcp_sql_instance_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:587
+msgid ":ref:`gcp_sql_instance_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:588
+msgid ":ref:`gcp_sql_user_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:589
+msgid ":ref:`gcp_sql_user_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:590
+msgid ":ref:`gcp_storage_bucket_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:591
+msgid ":ref:`gcp_storage_bucket_access_control_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:592
+msgid ":ref:`gcp_storage_object_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:593
+msgid ":ref:`gcp_target_proxy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:594
+msgid ":ref:`gcp_url_map_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:595
+msgid ":ref:`gcpubsub_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:596
+msgid ":ref:`gcpubsub_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:597
+msgid ":ref:`gcspanner_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:603
+msgid "Heroku"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:607
+msgid ":ref:`heroku_collaborator_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:613
+msgid "Linode"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:617
+msgid ":ref:`linode_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:618
+msgid ":ref:`linode_v4_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:624
+msgid "Lxc"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:628
+msgid ":ref:`lxc_container_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:634
+msgid "Lxd"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:638
+msgid ":ref:`lxd_container_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:639
+msgid ":ref:`lxd_profile_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:645
+msgid "Memset"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:649
+msgid ":ref:`memset_dns_reload_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:650
+msgid ":ref:`memset_memstore_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:651
+msgid ":ref:`memset_server_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:652
+msgid ":ref:`memset_zone_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:653
+msgid ":ref:`memset_zone_domain_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:654
+msgid ":ref:`memset_zone_record_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:660
+msgid "Misc"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:664
+msgid ":ref:`cloud_init_data_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:665
+msgid ":ref:`helm_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:666
+msgid ":ref:`ovirt_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:667
+msgid ":ref:`proxmox_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:668
+msgid ":ref:`proxmox_kvm_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:669
+msgid ":ref:`proxmox_template_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:670
+msgid ":ref:`rhevm_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:671
+msgid ":ref:`serverless_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:672
+msgid ":ref:`terraform_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:673
+msgid ":ref:`virt_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:674
+msgid ":ref:`virt_net_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:675
+msgid ":ref:`virt_pool_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:676
+msgid ":ref:`xenserver_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:682
+msgid "Oneandone"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:686
+msgid ":ref:`oneandone_firewall_policy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:687
+msgid ":ref:`oneandone_load_balancer_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:688
+msgid ":ref:`oneandone_monitoring_policy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:689
+msgid ":ref:`oneandone_private_network_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:690
+msgid ":ref:`oneandone_public_ip_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:691
+msgid ":ref:`oneandone_server_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:697
+msgid "Online"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:701
+msgid ":ref:`online_server_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:702
+msgid ":ref:`online_user_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:708
+msgid "Opennebula"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:712
+msgid ":ref:`one_host_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:713
+msgid ":ref:`one_image_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:714
+msgid ":ref:`one_image_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:715
+msgid ":ref:`one_service_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:716
+msgid ":ref:`one_vm_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:722
+msgid "Openstack"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:726
+msgid ":ref:`os_auth_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:727
+msgid ":ref:`os_client_config_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:728
+msgid ":ref:`os_coe_cluster_template_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:729
+msgid ":ref:`os_flavor_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:730
+msgid ":ref:`os_floating_ip_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:731
+msgid ":ref:`os_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:732
+msgid ":ref:`os_image_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:733
+msgid ":ref:`os_image_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:734
+msgid ":ref:`os_ironic_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:735
+msgid ":ref:`os_ironic_inspect_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:736
+msgid ":ref:`os_ironic_node_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:737
+msgid ":ref:`os_keypair_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:738
+msgid ":ref:`os_keystone_domain_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:739
+msgid ":ref:`os_keystone_domain_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:740
+msgid ":ref:`os_keystone_endpoint_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:741
+msgid ":ref:`os_keystone_role_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:742
+msgid ":ref:`os_keystone_service_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:743
+msgid ":ref:`os_listener_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:744
+msgid ":ref:`os_loadbalancer_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:745
+msgid ":ref:`os_member_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:746
+msgid ":ref:`os_network_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:747
+msgid ":ref:`os_networks_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:748
+msgid ":ref:`os_nova_flavor_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:749
+msgid ":ref:`os_nova_host_aggregate_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:750
+msgid ":ref:`os_object_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:751
+msgid ":ref:`os_pool_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:752
+msgid ":ref:`os_port_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:753
+msgid ":ref:`os_port_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:754
+msgid ":ref:`os_project_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:755
+msgid ":ref:`os_project_access_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:756
+msgid ":ref:`os_project_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:757
+msgid ":ref:`os_quota_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:758
+msgid ":ref:`os_recordset_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:759
+msgid ":ref:`os_router_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:760
+msgid ":ref:`os_security_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:761
+msgid ":ref:`os_security_group_rule_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:762
+msgid ":ref:`os_server_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:763
+msgid ":ref:`os_server_action_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:764
+msgid ":ref:`os_server_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:765
+msgid ":ref:`os_server_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:766
+msgid ":ref:`os_server_metadata_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:767
+msgid ":ref:`os_server_volume_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:768
+msgid ":ref:`os_stack_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:769
+msgid ":ref:`os_subnet_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:770
+msgid ":ref:`os_subnets_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:771
+msgid ":ref:`os_user_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:772
+msgid ":ref:`os_user_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:773
+msgid ":ref:`os_user_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:774
+msgid ":ref:`os_user_role_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:775
+msgid ":ref:`os_volume_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:776
+msgid ":ref:`os_volume_snapshot_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:777
+msgid ":ref:`os_zone_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:783
+msgid "Ovh"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:787
+msgid ":ref:`ovh_ip_loadbalancing_backend_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:793
+msgid "Ovirt"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:797
+msgid ":ref:`ovirt_affinity_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:798
+msgid ":ref:`ovirt_affinity_label_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:799
+msgid ":ref:`ovirt_affinity_label_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:800
+msgid ":ref:`ovirt_api_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:801
+msgid ":ref:`ovirt_auth_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:802
+msgid ":ref:`ovirt_cluster_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:803
+msgid ":ref:`ovirt_cluster_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:804
+msgid ":ref:`ovirt_datacenter_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:805
+msgid ":ref:`ovirt_datacenter_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:806
+msgid ":ref:`ovirt_disk_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:807
+msgid ":ref:`ovirt_disk_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:808
+msgid ":ref:`ovirt_external_provider_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:809
+msgid ":ref:`ovirt_external_provider_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:810
+msgid ":ref:`ovirt_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:811
+msgid ":ref:`ovirt_group_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:812
+msgid ":ref:`ovirt_host_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:813
+msgid ":ref:`ovirt_host_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:814
+msgid ":ref:`ovirt_host_network_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:815
+msgid ":ref:`ovirt_host_pm_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:816
+msgid ":ref:`ovirt_host_storage_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:817
+msgid ":ref:`ovirt_mac_pool_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:818
+msgid ":ref:`ovirt_network_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:819
+msgid ":ref:`ovirt_network_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:820
+msgid ":ref:`ovirt_nic_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:821
+msgid ":ref:`ovirt_nic_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:822
+msgid ":ref:`ovirt_permission_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:823
+msgid ":ref:`ovirt_permission_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:824
+msgid ":ref:`ovirt_quota_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:825
+msgid ":ref:`ovirt_quota_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:826
+msgid ":ref:`ovirt_scheduling_policy_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:827
+msgid ":ref:`ovirt_snapshot_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:828
+msgid ":ref:`ovirt_snapshot_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:829
+msgid ":ref:`ovirt_storage_connection_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:830
+msgid ":ref:`ovirt_storage_domain_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:831
+msgid ":ref:`ovirt_storage_domain_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:832
+msgid ":ref:`ovirt_storage_template_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:833
+msgid ":ref:`ovirt_storage_vm_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:834
+msgid ":ref:`ovirt_tag_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:835
+msgid ":ref:`ovirt_tag_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:836
+msgid ":ref:`ovirt_template_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:837
+msgid ":ref:`ovirt_template_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:838
+msgid ":ref:`ovirt_user_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:839
+msgid ":ref:`ovirt_user_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:840
+msgid ":ref:`ovirt_vm_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:841
+msgid ":ref:`ovirt_vm_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:842
+msgid ":ref:`ovirt_vmpool_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:843
+msgid ":ref:`ovirt_vmpool_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:844
+msgid ":ref:`ovirt_vnic_profile_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:850
+msgid "Packet"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:854
+msgid ":ref:`packet_device_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:855
+msgid ":ref:`packet_sshkey_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:861
+msgid "Profitbricks"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:865
+msgid ":ref:`profitbricks_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:866
+msgid ":ref:`profitbricks_datacenter_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:867
+msgid ":ref:`profitbricks_nic_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:868
+msgid ":ref:`profitbricks_volume_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:869
+msgid ":ref:`profitbricks_volume_attachments_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:875
+msgid "Pubnub"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:879
+msgid ":ref:`pubnub_blocks_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:885
+msgid "Rackspace"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:889
+msgid ":ref:`rax_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:890
+msgid ":ref:`rax_cbs_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:891
+msgid ":ref:`rax_cbs_attachments_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:892
+msgid ":ref:`rax_cdb_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:893
+msgid ":ref:`rax_cdb_database_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:894
+msgid ":ref:`rax_cdb_user_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:895
+msgid ":ref:`rax_clb_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:896
+msgid ":ref:`rax_clb_nodes_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:897
+msgid ":ref:`rax_clb_ssl_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:898
+msgid ":ref:`rax_dns_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:899
+msgid ":ref:`rax_dns_record_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:900
+msgid ":ref:`rax_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:901
+msgid ":ref:`rax_files_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:902
+msgid ":ref:`rax_files_objects_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:903
+msgid ":ref:`rax_identity_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:904
+msgid ":ref:`rax_keypair_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:905
+msgid ":ref:`rax_meta_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:906
+msgid ":ref:`rax_mon_alarm_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:907
+msgid ":ref:`rax_mon_check_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:908
+msgid ":ref:`rax_mon_entity_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:909
+msgid ":ref:`rax_mon_notification_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:910
+msgid ":ref:`rax_mon_notification_plan_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:911
+msgid ":ref:`rax_network_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:912
+msgid ":ref:`rax_queue_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:913
+msgid ":ref:`rax_scaling_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:914
+msgid ":ref:`rax_scaling_policy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:920
+msgid "Scaleway"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:924
+msgid ":ref:`scaleway_compute_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:925
+msgid ":ref:`scaleway_image_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:926
+msgid ":ref:`scaleway_ip_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:927
+msgid ":ref:`scaleway_ip_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:928
+msgid ":ref:`scaleway_organization_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:929
+msgid ":ref:`scaleway_security_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:930
+msgid ":ref:`scaleway_security_group_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:931
+msgid ":ref:`scaleway_security_group_rule_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:932
+msgid ":ref:`scaleway_server_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:933
+msgid ":ref:`scaleway_snapshot_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:934
+msgid ":ref:`scaleway_sshkey_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:935
+msgid ":ref:`scaleway_user_data_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:936
+msgid ":ref:`scaleway_volume_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:937
+msgid ":ref:`scaleway_volume_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:943
+msgid "Smartos"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:947
+msgid ":ref:`imgadm_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:948
+msgid ":ref:`smartos_image_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:949
+msgid ":ref:`vmadm_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:955
+msgid "Softlayer"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:959
+msgid ":ref:`sl_vm_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:965
+msgid "Spotinst"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:969
+msgid ":ref:`spotinst_aws_elastigroup_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:975
+msgid "Univention"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:979
+msgid ":ref:`udm_dns_record_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:980
+msgid ":ref:`udm_dns_zone_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:981
+msgid ":ref:`udm_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:982
+msgid ":ref:`udm_share_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:983
+msgid ":ref:`udm_user_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:989
+msgid "Vmware"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:993
+msgid ":ref:`vca_fw_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:994
+msgid ":ref:`vca_nat_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:995
+msgid ":ref:`vca_vapp_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:996
+msgid ":ref:`vcenter_extension_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:997
+msgid ":ref:`vcenter_extension_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:998
+msgid ":ref:`vcenter_folder_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:999
+msgid ":ref:`vcenter_license_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1000
+msgid ":ref:`vmware_about_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1001
+msgid ":ref:`vmware_category_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1002
+msgid ":ref:`vmware_category_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1003
+msgid ":ref:`vmware_cfg_backup_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1004
+msgid ":ref:`vmware_cluster_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1005
+msgid ":ref:`vmware_cluster_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1006
+msgid ":ref:`vmware_datacenter_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1007
+msgid ":ref:`vmware_datastore_cluster_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1008
+msgid ":ref:`vmware_datastore_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1009
+msgid ":ref:`vmware_datastore_maintenancemode_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1010
+msgid ":ref:`vmware_deploy_ovf_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1011
+msgid ":ref:`vmware_dns_config_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1012
+msgid ":ref:`vmware_drs_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1013
+msgid ":ref:`vmware_drs_group_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1014
+msgid ":ref:`vmware_drs_rule_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1015
+msgid ":ref:`vmware_dvs_host_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1016
+msgid ":ref:`vmware_dvs_portgroup_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1017
+msgid ":ref:`vmware_dvswitch_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1018
+msgid ":ref:`vmware_dvswitch_lacp_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1019
+msgid ":ref:`vmware_dvswitch_pvlans_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1020
+msgid ":ref:`vmware_dvswitch_uplink_pg_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1021
+msgid ":ref:`vmware_guest_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1022
+msgid ":ref:`vmware_guest_boot_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1023
+msgid ":ref:`vmware_guest_boot_manager_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1024
+msgid ":ref:`vmware_guest_custom_attribute_defs_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1025
+msgid ":ref:`vmware_guest_custom_attributes_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1026
+msgid ":ref:`vmware_guest_disk_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1027
+msgid ":ref:`vmware_guest_disk_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1028
+msgid ":ref:`vmware_guest_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1029
+msgid ":ref:`vmware_guest_file_operation_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1030
+msgid ":ref:`vmware_guest_find_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1031
+msgid ":ref:`vmware_guest_move_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1032
+msgid ":ref:`vmware_guest_powerstate_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1033
+msgid ":ref:`vmware_guest_snapshot_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1034
+msgid ":ref:`vmware_guest_snapshot_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1035
+msgid ":ref:`vmware_guest_tools_upgrade_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1036
+msgid ":ref:`vmware_guest_tools_wait_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1037
+msgid ":ref:`vmware_guest_video_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1038
+msgid ":ref:`vmware_guest_vnc_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1039
+msgid ":ref:`vmware_host_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1040
+msgid ":ref:`vmware_host_acceptance_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1041
+msgid ":ref:`vmware_host_active_directory_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1042
+msgid ":ref:`vmware_host_capability_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1043
+msgid ":ref:`vmware_host_config_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1044
+msgid ":ref:`vmware_host_config_manager_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1045
+msgid ":ref:`vmware_host_datastore_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1046
+msgid ":ref:`vmware_host_dns_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1047
+msgid ":ref:`vmware_host_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1048
+msgid ":ref:`vmware_host_feature_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1049
+msgid ":ref:`vmware_host_firewall_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1050
+msgid ":ref:`vmware_host_firewall_manager_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1051
+msgid ":ref:`vmware_host_hyperthreading_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1052
+msgid ":ref:`vmware_host_ipv6_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1053
+msgid ":ref:`vmware_host_lockdown_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1054
+msgid ":ref:`vmware_host_ntp_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1055
+msgid ":ref:`vmware_host_ntp_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1056
+msgid ":ref:`vmware_host_package_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1057
+msgid ":ref:`vmware_host_powermgmt_policy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1058
+msgid ":ref:`vmware_host_powerstate_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1059
+msgid ":ref:`vmware_host_service_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1060
+msgid ":ref:`vmware_host_service_manager_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1061
+msgid ":ref:`vmware_host_snmp_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1062
+msgid ":ref:`vmware_host_ssl_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1063
+msgid ":ref:`vmware_host_vmhba_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1064
+msgid ":ref:`vmware_host_vmnic_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1065
+msgid ":ref:`vmware_local_role_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1066
+msgid ":ref:`vmware_local_role_manager_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1067
+msgid ":ref:`vmware_local_user_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1068
+msgid ":ref:`vmware_local_user_manager_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1069
+msgid ":ref:`vmware_maintenancemode_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1070
+msgid ":ref:`vmware_migrate_vmk_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1071
+msgid ":ref:`vmware_object_role_permission_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1072
+msgid ":ref:`vmware_portgroup_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1073
+msgid ":ref:`vmware_portgroup_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1074
+msgid ":ref:`vmware_resource_pool_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1075
+msgid ":ref:`vmware_resource_pool_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1076
+msgid ":ref:`vmware_tag_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1077
+msgid ":ref:`vmware_tag_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1078
+msgid ":ref:`vmware_target_canonical_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1079
+msgid ":ref:`vmware_vcenter_settings_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1080
+msgid ":ref:`vmware_vcenter_statistics_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1081
+msgid ":ref:`vmware_vm_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1082
+msgid ":ref:`vmware_vm_shell_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1083
+msgid ":ref:`vmware_vm_vm_drs_rule_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1084
+msgid ":ref:`vmware_vm_vss_dvs_migrate_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1085
+msgid ":ref:`vmware_vmkernel_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1086
+msgid ":ref:`vmware_vmkernel_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1087
+msgid ":ref:`vmware_vmkernel_ip_config_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1088
+msgid ":ref:`vmware_vmotion_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1089
+msgid ":ref:`vmware_vsan_cluster_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1090
+msgid ":ref:`vmware_vswitch_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1091
+msgid ":ref:`vmware_vswitch_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1092
+msgid ":ref:`vsphere_copy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1093
+msgid ":ref:`vsphere_guest_module` **(D)**"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1099
+msgid "Vultr"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1103
+msgid ":ref:`vultr_account_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1104
+msgid ":ref:`vultr_block_storage_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1105
+msgid ":ref:`vultr_block_storage_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1106
+msgid ":ref:`vultr_dns_domain_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1107
+msgid ":ref:`vultr_dns_domain_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1108
+msgid ":ref:`vultr_dns_record_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1109
+msgid ":ref:`vultr_firewall_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1110
+msgid ":ref:`vultr_firewall_group_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1111
+msgid ":ref:`vultr_firewall_rule_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1112
+msgid ":ref:`vultr_network_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1113
+msgid ":ref:`vultr_network_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1114
+msgid ":ref:`vultr_os_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1115
+msgid ":ref:`vultr_plan_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1116
+msgid ":ref:`vultr_region_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1117
+msgid ":ref:`vultr_server_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1118
+msgid ":ref:`vultr_server_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1119
+msgid ":ref:`vultr_ssh_key_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1120
+msgid ":ref:`vultr_ssh_key_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1121
+msgid ":ref:`vultr_startup_script_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1122
+msgid ":ref:`vultr_startup_script_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1123
+msgid ":ref:`vultr_user_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1124
+msgid ":ref:`vultr_user_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1130
+msgid "Webfaction"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1134
+msgid ":ref:`webfaction_app_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1135
+msgid ":ref:`webfaction_db_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1136
+msgid ":ref:`webfaction_domain_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1137
+msgid ":ref:`webfaction_mailbox_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1138
+msgid ":ref:`webfaction_site_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1144
+msgid "Xenserver"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1148
+msgid ":ref:`xenserver_guest_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_cloud_modules.rst:1152
+msgid ""
+"**(D)**: This marks a module as deprecated, which means a module is kept "
+"for backwards compatibility but usage is discouraged. The module "
+"documentation details page may explain more about this rationale."
+msgstr ""
+

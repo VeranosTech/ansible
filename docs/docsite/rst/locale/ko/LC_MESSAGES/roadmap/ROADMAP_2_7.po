@@ -1,0 +1,294 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:3
+msgid "Ansible 2.7"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:5
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:8
+msgid "Release Schedule"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:11
+msgid "Expected"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:13
+msgid "2018-08-23 Core Freeze (Engine and Core Modules/Plugins)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:14
+msgid "2018-08-23 Alpha Release 1"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:15
+msgid "2018-08-30 Community Freeze (Non-Core Modules/Plugins)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:16
+msgid "2018-08-30 Beta Release 1"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:17
+msgid "2018-09-06 Release Candidate 1 (If needed)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:18
+msgid "2018-09-13 Release Candidate 2 (If needed)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:19
+msgid "2018-09-20 Release Candidate 3 (If needed)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:20
+msgid "2018-09-27 Release Candidate 4 (If needed)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:21
+msgid "2018-10-04 General Availability"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:24
+msgid "Release Manager"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:25
+msgid "Toshio Kuratomi (IRC: abadger1999; GitHub: @abadger)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:29
+msgid "Cleaning Duty"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:31
+msgid ""
+"Drop Py2.6 for controllers  `Docs PR #42971 "
+"<https://github.com/ansible/ansible/pull/42971>`_ and `issue #42972 "
+"<https://github.com/ansible/ansible/issues/42972>`_"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:33
+msgid ""
+"Remove dependency on simplejson `issue #42761 "
+"<https://github.com/ansible/ansible/issues/42761>`_"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:37
+msgid "Engine Improvements"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:39
+msgid ""
+"Performance improvement invoking Python modules `pr #41749 "
+"<https://github.com/ansible/ansible/pull/41749>`_"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:40
+msgid ""
+"Jinja native types will allow for users to render a Python native type. "
+"`pr #32738 <https://github.com/ansible/ansible/pull/32738>`_"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:44
+msgid "Core Modules"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:46
+msgid "Include feature changes and improvements"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:48
+msgid ""
+"Create new argument ``apply`` that will allow for included tasks to "
+"inherit explicitly provided attributes. `pr #39236 "
+"<https://github.com/ansible/ansible/pull/39236>`_"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:49
+msgid ""
+"Create \"private\" functionality for allowing vars/default to be exposed "
+"outside of roles. `pr #41330 "
+"<https://github.com/ansible/ansible/pull/41330>`_"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:50
+msgid ""
+"Provide a parameter for the ``template`` module to output to different "
+"encoding formats `pr #42171 "
+"<https://github.com/ansible/ansible/pull/42171>`_"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:52
+msgid ""
+"``reboot`` module for Linux hosts (@samdoran) `pr #35205 "
+"<https://github.com/ansible/ansible/pull/35205>`_"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:55
+msgid "Cloud Modules"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:58 ../../rst/roadmap/ROADMAP_2_7.rst:80
+#: ../../rst/roadmap/ROADMAP_2_7.rst:97
+msgid "General"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:59
+msgid ""
+"Cloud auth plugin `proposal #24 "
+"<https://github.com/ansible/proposals/issues/24>`_"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:62
+msgid "AWS"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:63
+msgid ""
+"Inventory plugin for RDS `pr #41919 "
+"<https://github.com/ansible/ansible/pull/41919>`_"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:64
+msgid "Count support for `ec2_instance`"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:65
+msgid ""
+"`aws_eks` module `pr #41183 "
+"<https://github.com/ansible/ansible/pull/41183>`_"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:66
+msgid ""
+"Cloudformation stack sets support (`PR#41669 "
+"<https://github.com/ansible/ansible/pull/41669>`_)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:67
+msgid ""
+"RDS instance and snapshot modules `pr #39994 "
+"<https://github.com/ansible/ansible/pull/39994>`_ `pr #43789 "
+"<https://github.com/ansible/ansible/pull/43789>`_"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:68
+msgid ""
+"Diff mode improvements for cloud modules `pr #44533 "
+"<https://github.com/ansible/ansible/pull/44533>`_"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:71
+msgid "Azure"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:73
+msgid ""
+"Azure inventory plugin `issue #42769 "
+"<https://github.com/ansible/ansible/issues/42769>`__"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:77
+msgid "Network"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:82
+msgid ""
+"Refactor the APIs in cliconf (`issue #39056 "
+"<https://github.com/ansible/ansible/issues/39056>`_) and netconf (`issue "
+"#39160 <https://github.com/ansible/ansible/issues/39160>`_) plugins so "
+"that they have a uniform signature across supported network platforms. "
+"**done** (`PR #41846 <https://github.com/ansible/ansible/pull/41846>`_) "
+"(`PR #43643 <https://github.com/ansible/ansible/pull/43643>`_) (`PR "
+"#43837 <https://github.com/ansible/ansible/pull/43837>`_) (`PR #43203 "
+"<https://github.com/ansible/ansible/pull/43203>`_) (`PR #42300 "
+"<https://github.com/ansible/ansible/pull/42300>`_) (`PR #44157 "
+"<https://github.com/ansible/ansible/pull/44157>`_)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:87 ../../rst/roadmap/ROADMAP_2_7.rst:102
+msgid "Modules"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:89
+msgid ""
+"New ``cli_config`` module `issue #39228 "
+"<https://github.com/ansible/ansible/issues/39228>`_ **done** `PR #42413 "
+"<https://github.com/ansible/ansible/pull/42413>`_."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:90
+msgid ""
+"New ``cli_command`` module `issue #39284 "
+"<https://github.com/ansible/ansible/issues/39284>`_"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:91
+msgid ""
+"Refactor ``netconf_config`` module to add additional functionality. "
+"**done** `proposal #104 "
+"<https://github.com/ansible/proposals/issues/104>`_ (`PR #44379 "
+"<https://github.com/ansible/ansible/pull/44379>`_)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:94
+msgid "Windows"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:99
+msgid ""
+"Added new connection plugin that uses PSRP as the connection protocol `pr"
+" #41729 <https://github.com/ansible/ansible/pull/41729>`__"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:104
+msgid ""
+"Revamp Chocolatey to fix bugs and support offline installation `pr #43013"
+" <https://github.com/ansible/ansible/pull/43013>`_."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:105
+msgid "Add Chocolatey modules that can manage the following Chocolatey features"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:107
+msgid ""
+"`Sources <https://chocolatey.org/docs/commands-sources>`_ `pr #42790 "
+"<https://github.com/ansible/ansible/pull/42790>`_"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:108
+msgid ""
+"`Features <https://chocolatey.org/docs/chocolatey-"
+"configuration#features>`_ `pr #42848 "
+"<https://github.com/ansible/ansible/pull/42848>`_"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_7.rst:109
+msgid ""
+"`Config <https://chocolatey.org/docs/chocolatey-configuration#config-"
+"settings>`_ `pr #42915 <h*ttps://github.com/ansible/ansible/pull/42915>`_"
+msgstr ""
+

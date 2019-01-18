@@ -1,0 +1,307 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/cli/ansible-pull.rst:5
+msgid "ansible-pull"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:8
+msgid ""
+":strong:`pulls playbooks from a VCS repo and executes them for the local "
+"host`"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:27
+msgid "Description"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:30
+msgid ""
+"is used to up a remote copy of ansible on each managed node, each set to "
+"run via cron and update playbook source via a source repository. This "
+"inverts the default *push* architecture of ansible into a *pull* "
+"architecture, which has near-limitless scaling potential."
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:35
+msgid ""
+"The setup playbook can be tuned to change the cron frequency, logging "
+"locations, and parameters to ansible-pull. This is useful both for "
+"extreme scale-out as well as periodic remediation. Usage of the 'fetch' "
+"module to retrieve logs from ansible-pull runs would be an excellent way "
+"to gather and analyze remote logs from ansible-pull."
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:42
+msgid "Common Options"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:49
+msgid "adds the hostkey for the repo url if not already added"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:54
+msgid "ask for su password (deprecated, use become)"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:59
+msgid "ask for sudo password (deprecated, use become)"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:64
+msgid "ask for vault password"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:69
+msgid ""
+"don't make any changes; instead, try to predict some of the changes that "
+"may occur"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:74
+msgid "modified files in the working repository will be discarded"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:79
+msgid ""
+"when changing (small) files and templates, show the differences in those "
+"files; works great with --check"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:84
+msgid "Do a full clone, instead of a shallow one."
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:89
+msgid "outputs a list of matching hosts; does not execute anything else"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:94
+msgid "use this file to authenticate the connection"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:99
+msgid "purge checkout after playbook run"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:104
+msgid "specify extra arguments to pass to scp only (e.g. -l)"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:109
+msgid "specify extra arguments to pass to sftp only (e.g. -f, -l)"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:114
+msgid "only run plays and tasks whose tags do not match these values"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:119
+msgid "specify common arguments to pass to sftp/scp/ssh (e.g. ProxyCommand)"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:124
+msgid "specify extra arguments to pass to ssh only (e.g. -R)"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:129
+msgid ""
+"submodules will track the latest changes. This is equivalent to "
+"specifying the --remote flag to git submodule update"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:134
+msgid "the vault identity to use"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:139
+msgid "vault password file"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:144
+msgid ""
+"verify GPG signature of checked out commit, if it fails abort running the"
+" playbook. This needs the corresponding VCS module to support such an "
+"operation"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:149
+msgid ""
+"show program's version number, config file location, configured module "
+"search path, module location, executable location and exit"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:154
+msgid "branch/tag/commit to checkout. Defaults to behavior of repository module."
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:159
+msgid "ask for privilege escalation password"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:164
+msgid ""
+"prepend colon-separated path(s) to module library "
+"(default=['/Users/joelkim/.ansible/plugins/modules', "
+"'/usr/share/ansible/plugins/modules'])"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:169
+msgid "override the connection timeout in seconds (default=10)"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:174
+msgid "URL of the playbook repository"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:179
+msgid "connection type to use (default=smart)"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:184
+msgid "directory to checkout repository to"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:189
+msgid ""
+"set additional variables as key=value or YAML/JSON, if filename prepend "
+"with @"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:194
+msgid "run the playbook even if the repository could not be updated"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:199
+msgid "show this help message and exit"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:204
+msgid ""
+"specify inventory host path or comma separated host list. --inventory-"
+"file is deprecated"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:209
+msgid "ask for connection password"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:214
+msgid "further limit selected hosts to an additional pattern"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:219
+msgid ""
+"Repository module name, which ansible will use to check out the repo. "
+"Choices are ('git', 'subversion', 'hg', 'bzr'). Default is git."
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:224
+msgid "only run the playbook if the repository has been updated"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:229
+msgid ""
+"sleep for random interval (between 0 and n number of seconds) before "
+"starting. This is a useful way to disperse git requests"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:234
+msgid "only run plays and tasks tagged with these values"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:239
+msgid "connect as this user (default=None)"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:244
+msgid "verbose mode (-vvv for more, -vvvv to enable connection debugging)"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:253
+msgid "Environment"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:255
+msgid "The following environment variables may be specified."
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:259
+msgid ":envvar:`ANSIBLE_CONFIG` -- Override the default ansible config file"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:261
+msgid "Many more are available for most options in ansible.cfg"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:265
+msgid "Files"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:268
+msgid ":file:`/etc/ansible/ansible.cfg` -- Config file, used if present"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:270
+msgid ""
+":file:`~/.ansible.cfg` -- User config file, overrides the default config "
+"if present"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:273
+msgid "Author"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:275
+msgid "Ansible was originally written by Michael DeHaan."
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:277
+msgid "See the `AUTHORS` file for a complete list of contributors."
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:281
+msgid "Copyright"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:283
+msgid "Copyright © 2017 Red Hat, Inc | Ansible."
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:285
+msgid "Ansible is released under the terms of the GPLv3 License."
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:288
+msgid "See also"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:290
+msgid ""
+":manpage:`ansible(1)`,  :manpage:`ansible-config(1)`,  :manpage:`ansible-"
+"console(1)`,  :manpage:`ansible-doc(1)`,  :manpage:`ansible-galaxy(1)`,  "
+":manpage:`ansible-inventory(1)`,  :manpage:`ansible-playbook(1)`,  "
+":manpage:`ansible-pull(1)`,  :manpage:`ansible-vault(1)`,"
+msgstr ""
+

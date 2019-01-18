@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/reference_appendices/tower.rst:4
+msgid "Ansible Tower"
+msgstr ""
+
+#: ../../rst/reference_appendices/tower.rst:6
+msgid ""
+"`Ansible Tower <https://www.ansible.com/products/tower>`_ (formerly "
+"'AWX') is a web-based solution that makes Ansible even more easy to use "
+"for IT teams of all kinds.  It's designed to be the hub for all of your "
+"automation tasks."
+msgstr ""
+
+#: ../../rst/reference_appendices/tower.rst:8
+msgid ""
+"Tower allows you to control access to who can access what, even allowing "
+"sharing of SSH credentials without someone being able to transfer those "
+"credentials.  Inventory can be graphically managed or synced with a wide "
+"variety of cloud sources.  It logs all of your jobs, integrates well with"
+" LDAP, and has an amazing browsable REST API.  Command line tools are "
+"available for easy integration with Jenkins as well.  Provisioning "
+"callbacks provide great support for autoscaling topologies."
+msgstr ""
+
+#: ../../rst/reference_appendices/tower.rst:10
+msgid ""
+"Find out more about Tower features and how to download it on the `Ansible"
+" Tower webpage <https://www.ansible.com/products/tower>`_.  Tower is free"
+" for usage for up to 10 nodes, and comes bundled with amazing support "
+"from Ansible, Inc.  As you would expect, Tower is installed using Ansible"
+" playbooks!"
+msgstr ""
+

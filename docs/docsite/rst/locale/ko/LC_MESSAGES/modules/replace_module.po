@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/replace_module.rst:9
+msgid ""
+"replace -- Replace all instances of a particular string in a file using a"
+" back-referenced regular expression"
+msgstr ""
+
+#: ../../rst/modules/replace_module.rst:18
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/replace_module.rst:19
+msgid "This module will replace all instances of a pattern within a file."
+msgstr ""
+
+#: ../../rst/modules/replace_module.rst:20
+msgid ""
+"It is up to the user to maintain idempotence by ensuring that the same "
+"pattern would never match any replacements made."
+msgstr ""
+
+#: ../../rst/modules/replace_module.rst:26
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/replace_module.rst:318
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/replace_module.rst:321
+msgid ""
+"As of Ansible 2.3, the *dest* option has been changed to *path* as "
+"default, but *dest* still works as well."
+msgstr ""
+
+#: ../../rst/modules/replace_module.rst:322
+msgid ""
+"Option *follow* has been removed in Ansible 2.5, because this module "
+"modifies the contents of the file so *follow=no* doesn't make sense."
+msgstr ""
+
+#: ../../rst/modules/replace_module.rst:327
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/replace_module.rst:391
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/replace_module.rst:396
+msgid ""
+"This module is guaranteed to have no backward incompatible interface "
+"changes going forward. *[stableinterface]*"
+msgstr ""
+
+#: ../../rst/modules/replace_module.rst:399
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/replace_module.rst:406
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/replace_module.rst:408
+msgid "Evan Kaufman (@EvanK)"
+msgstr ""
+
+#: ../../rst/modules/replace_module.rst:412
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/files/replace.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

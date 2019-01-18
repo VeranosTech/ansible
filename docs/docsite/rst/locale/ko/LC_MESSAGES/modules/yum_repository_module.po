@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/yum_repository_module.rst:9
+msgid "yum_repository -- Add or remove YUM repositories"
+msgstr ""
+
+#: ../../rst/modules/yum_repository_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/yum_repository_module.rst:20
+msgid "Add or remove YUM repositories in RPM-based Linux distributions."
+msgstr ""
+
+#: ../../rst/modules/yum_repository_module.rst:21
+msgid ""
+"If you wish to update an existing repository definition use "
+":ref:`ini_file <ini_file_module>` instead."
+msgstr ""
+
+#: ../../rst/modules/yum_repository_module.rst:27
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/yum_repository_module.rst:919
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/yum_repository_module.rst:922
+msgid "All comments will be removed if modifying an existing repo file."
+msgstr ""
+
+#: ../../rst/modules/yum_repository_module.rst:923
+msgid "Section order is preserved in an existing repo file."
+msgstr ""
+
+#: ../../rst/modules/yum_repository_module.rst:924
+msgid ""
+"Parameters in a section are ordered alphabetically in an existing repo "
+"file."
+msgstr ""
+
+#: ../../rst/modules/yum_repository_module.rst:925
+msgid "The repo file will be automatically deleted if it contains no repository."
+msgstr ""
+
+#: ../../rst/modules/yum_repository_module.rst:926
+msgid ""
+"When removing a repository, beware that the metadata cache may still "
+"remain on disk until you run ``yum clean all``. Use a notification "
+"handler for this."
+msgstr ""
+
+#: ../../rst/modules/yum_repository_module.rst:927
+msgid ""
+"The ``params`` parameter was removed in Ansible 2.5 due to circumventing "
+"Ansible's parameter handling"
+msgstr ""
+
+#: ../../rst/modules/yum_repository_module.rst:932
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/yum_repository_module.rst:983
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/yum_repository_module.rst:984
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/yum_repository_module.rst:1025
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/yum_repository_module.rst:1030
+msgid ""
+"This module is guaranteed to have no backward incompatible interface "
+"changes going forward. *[stableinterface]*"
+msgstr ""
+
+#: ../../rst/modules/yum_repository_module.rst:1033
+msgid ""
+"This module is :ref:`maintained by the Ansible Core Team "
+"<modules_support>`. *[core]*"
+msgstr ""
+
+#: ../../rst/modules/yum_repository_module.rst:1036
+msgid "Red Hat Support"
+msgstr ""
+
+#: ../../rst/modules/yum_repository_module.rst:1038
+msgid ""
+"More information about Red Hat's support of this module is available from"
+" this `Red Hat Knowledge Base article "
+"<https://access.redhat.com/articles/3166901>`_."
+msgstr ""
+
+#: ../../rst/modules/yum_repository_module.rst:1044
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/yum_repository_module.rst:1046
+msgid "Jiri Tyr (@jtyr)"
+msgstr ""
+
+#: ../../rst/modules/yum_repository_module.rst:1050
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/packaging/os/yum_repository.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

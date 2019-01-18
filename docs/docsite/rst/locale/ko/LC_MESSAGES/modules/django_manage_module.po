@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/django_manage_module.rst:9
+msgid "django_manage -- Manages a Django application"
+msgstr ""
+
+#: ../../rst/modules/django_manage_module.rst:18
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/django_manage_module.rst:19
+msgid ""
+"Manages a Django application using the *manage.py* application frontend "
+"to *django-admin*. With the *virtualenv* parameter, all management "
+"commands will be executed by the given *virtualenv* installation."
+msgstr ""
+
+#: ../../rst/modules/django_manage_module.rst:24
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/django_manage_module.rst:25
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/django_manage_module.rst:27
+msgid "virtualenv"
+msgstr ""
+
+#: ../../rst/modules/django_manage_module.rst:28
+msgid "django"
+msgstr ""
+
+#: ../../rst/modules/django_manage_module.rst:32
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/django_manage_module.rst:263
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/django_manage_module.rst:266
+msgid ""
+"*virtualenv* (http://www.virtualenv.org) must be installed on the remote "
+"host if the virtualenv parameter is specified."
+msgstr ""
+
+#: ../../rst/modules/django_manage_module.rst:267
+msgid ""
+"This module will create a virtualenv if the virtualenv parameter is "
+"specified and a virtualenv does not already exist at the given location."
+msgstr ""
+
+#: ../../rst/modules/django_manage_module.rst:268
+msgid ""
+"This module assumes English error messages for the 'createcachetable' "
+"command to detect table existence, unfortunately."
+msgstr ""
+
+#: ../../rst/modules/django_manage_module.rst:269
+msgid ""
+"To be able to use the migrate command with django versions < 1.7, you "
+"must have south installed and added as an app in your settings."
+msgstr ""
+
+#: ../../rst/modules/django_manage_module.rst:270
+msgid ""
+"To be able to use the collectstatic command, you must have enabled "
+"staticfiles in your settings."
+msgstr ""
+
+#: ../../rst/modules/django_manage_module.rst:271
+msgid ""
+"As of ansible 2.x, your *manage.py* application must be executable (rwxr-"
+"xr-x), and must have a valid *shebang*, i.e. \"#!/usr/bin/env python\", "
+"for invoking the appropriate Python interpreter."
+msgstr ""
+
+#: ../../rst/modules/django_manage_module.rst:276
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/django_manage_module.rst:316
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/django_manage_module.rst:321
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/django_manage_module.rst:324
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/django_manage_module.rst:331
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/django_manage_module.rst:333
+msgid "Scott Anderson (@tastychutney)"
+msgstr ""
+
+#: ../../rst/modules/django_manage_module.rst:337
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/web_infrastructure/django_manage.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

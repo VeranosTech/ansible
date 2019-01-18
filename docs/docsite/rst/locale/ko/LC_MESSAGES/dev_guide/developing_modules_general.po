@@ -1,0 +1,329 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/developing_modules_general.rst:6
+msgid "Ansible module development: getting started"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:8
+msgid ""
+"A module is a reusable, standalone script that Ansible runs on your "
+"behalf, either locally or remotely. Modules interact with your local "
+"machine, an API, or a remote system to perform specific tasks like "
+"changing a database password or spinning up a cloud instance. Each module"
+" can be used by the Ansible API, or by the :command:`ansible` or :command"
+":`ansible-playbook` programs. A module provides a defined interface, "
+"accepting arguments and returning information to Ansible by printing a "
+"JSON string to stdout before exiting. Ansible ships with thousands of "
+"modules, and you can easily write your own. If you're writing a module "
+"for local use, you can choose any programming language and follow your "
+"own rules. This tutorial illustrates how to get started developing an "
+"Ansible module in Python."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:11
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:16
+msgid "Environment setup"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:19
+msgid "Prerequisites via apt (Ubuntu)"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:21
+msgid "Due to dependencies (for example ansible -> paramiko -> pynacl -> libffi):"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:29
+msgid "Common environment setup"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:31
+msgid ""
+"Clone the Ansible repository: ``$ git clone "
+"https://github.com/ansible/ansible.git``"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:33
+msgid "Change directory into the repository root dir: ``$ cd ansible``"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:34
+msgid ""
+"Create a virtual environment: ``$ python3 -m venv venv`` (or for Python 2"
+" ``$ virtualenv venv``. Note, this requires you to install the virtualenv"
+" package: ``$ pip install virtualenv``)"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:37
+msgid "Activate the virtual environment: ``$ . venv/bin/activate``"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:38
+msgid "Install development requirements: ``$ pip install -r requirements.txt``"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:40
+msgid ""
+"Run the environment setup script for each new dev shell process: ``$ . "
+"hacking/env-setup``"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:43
+msgid ""
+"After the initial setup above, every time you are ready to start "
+"developing Ansible you should be able to just run the following from the "
+"root of the Ansible repo: ``$ . venv/bin/activate && . hacking/env-"
+"setup``"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:50
+msgid "Starting a new module"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:52
+msgid "To create a new module:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:54
+msgid ""
+"Navigate to the correct directory for your new module: ``$ cd "
+"lib/ansible/modules/cloud/azure/``"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:55
+msgid "Create your new module file: ``$ touch my_new_test_module.py``"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:56
+msgid ""
+"Paste the content below into your new module file. It includes the "
+":ref:`required Ansible format and documentation "
+"<developing_modules_documenting>` and some example code."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:57
+msgid ""
+"Modify and extend the code to do what you want your new module to do. See"
+" the :ref:`programming tips <developing_modules_best_practices>` and "
+":ref:`Python 3 compatibility <developing_python_3>` pages for pointers on"
+" writing clean, concise module code."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:189
+msgid "Exercising your module code"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:191
+msgid ""
+"Once you've modified the sample code above to do what you want, you can "
+"try out your module. Our :ref:`debugging tips <debugging>` will help if "
+"you run into bugs as you exercise your module code."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:195
+msgid "Exercising module code locally"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:197
+msgid ""
+"If your module does not need to target a remote host, you can quickly and"
+" easily exercise your code locally like this:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:199
+msgid ""
+"Create an arguments file, a basic JSON config file that passes parameters"
+" to your module so you can run it. Name the arguments file "
+"``/tmp/args.json`` and add the following content:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:210
+msgid ""
+"If you are using a virtual environment (highly recommended for "
+"development) activate it: ``$ . venv/bin/activate``"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:212
+msgid "Setup the environment for development: ``$ . hacking/env-setup``"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:213
+msgid ""
+"Run your test module locally and directly: ``$ python -m "
+"ansible.modules.cloud.azure.my_new_test_module /tmp/args.json``"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:216
+msgid "This should return output like this:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:224
+msgid "Exercising module code in a playbook"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:226
+msgid ""
+"The next step in testing your new module is to consume it with an Ansible"
+" playbook."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:228
+msgid "Create a playbook in any directory: ``$ touch testmod.yml``"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:229
+msgid "Add the following to the new playbook file::"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:243
+msgid ""
+"Run the playbook and analyze the output: ``$ ansible-playbook "
+"./testmod.yml``"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:246
+msgid "Testing basics"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:248
+msgid ""
+"These two examples will get you started with testing your module code. "
+"Please review our :ref:`testing <developing_testing>` section for more "
+"detailed information, including instructions for :ref:`testing module "
+"documentation <testing_module_documentation>`, adding :ref:`integration "
+"tests <testing_integration>`, and more."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:252
+msgid "Sanity tests"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:254
+msgid "You can run through Ansible's sanity checks in a container:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:256
+msgid "``$ ansible-test sanity -v --docker --python 2.7 MODULE_NAME``"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:258
+msgid ""
+"Note that this example requires Docker to be installed and running. If "
+"you'd rather not use a container for this, you can choose to use "
+"``--tox`` instead of ``--docker``."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:262
+msgid "Unit tests"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:264
+msgid ""
+"You can add unit tests for your module in ``./test/units/modules``. You "
+"must first setup your testing environment. In this example, we're using "
+"Python 3.5."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:266
+msgid ""
+"Install the requirements (outside of your virtual environment): ``$ pip3 "
+"install -r ./test/runner/requirements/units.txt``"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:267
+msgid ""
+"To run all tests do the following: ``$ ansible-test units --python 3.5`` "
+"(you must run ``. hacking/env-setup`` prior to this)"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:269
+msgid "Ansible uses pytest for unit testing."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:271
+msgid ""
+"To run pytest against a single test module, you can do the following "
+"(provide the path to the test module appropriately):"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:273
+msgid ""
+"``$ pytest -r a --cov=. --cov-report=html --fulltrace --color yes "
+"test/units/modules/.../test/my_new_test_module.py``"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:277
+msgid "Contributing back to Ansible"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:279
+msgid ""
+"If you would like to contribute to the main Ansible repository by adding "
+"a new feature or fixing a bug, `create a fork "
+"<https://help.github.com/articles/fork-a-repo/>`_ of the Ansible "
+"repository and develop against a new feature branch using the ``devel`` "
+"branch as a starting point. When you you have a good working code change,"
+" you can submit a pull request to the Ansible repository by selecting "
+"your feature branch as a source and the Ansible devel branch as a target."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:288
+msgid ""
+"If you want to contribute your module back to the upstream Ansible repo, "
+"review our :ref:`submission checklist <developing_modules_checklist>`, "
+":ref:`programming tips <developing_modules_best_practices>`, and "
+":ref:`strategy for maintaining Python 2 and Python 3 compatibility "
+"<developing_python_3>`, as well as information about :ref:`testing "
+"<developing_testing>` before you open a pull request. The :ref:`Community"
+" Guide <ansible_community_guide>` covers how to open a pull request and "
+"what happens next."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:296
+msgid "Communication and development support"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:298
+msgid ""
+"Join the IRC channel ``#ansible-devel`` on freenode for discussions "
+"surrounding Ansible development."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:301
+msgid ""
+"For questions and discussions pertaining to using the Ansible product, "
+"use the ``#ansible`` channel."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:305
+msgid "Credit"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_general.rst:307
+msgid ""
+"Thank you to Thomas Stringer (`@tstringer "
+"<https://github.com/tstringer>`_) for contributing source material for "
+"this topic."
+msgstr ""
+

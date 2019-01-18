@@ -1,0 +1,563 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:6
+msgid "Conventions, tips, and pitfalls"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:9
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:11
+msgid ""
+"As you design and develop modules, follow these basic conventions and "
+"tips for clean, usable code:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:14
+msgid "Scoping your module(s)"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:16
+msgid ""
+"Especially if you want to contribute your module(s) back to Ansible Core,"
+" make sure each module includes enough logic and functionality, but not "
+"too much. If you're finding these guidelines tricky, consider "
+":ref:`whether you really need to write a module <module_dev_should_you>` "
+"at all."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:18
+msgid ""
+"Each module should have a concise and well-defined functionality. "
+"Basically, follow the UNIX philosophy of doing one thing well."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:19
+msgid ""
+"Do not add ``list`` or ``info`` state options to an existing module - "
+"create a new ``_facts`` module."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:20
+msgid ""
+"Modules should not require that a user know all the underlying options of"
+" an API/tool to be used. For instance, if the legal values for a required"
+" module parameter cannot be documented, the module does not belong in "
+"Ansible Core."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:21
+msgid ""
+"Modules should encompass much of the logic for interacting with a "
+"resource. A lightweight wrapper around a complex API forces users to "
+"offload too much logic into their playbooks. If you want to connect "
+"Ansible to a complex API, :ref:`create multiple modules "
+"<developing_modules_in_groups>` that interact with smaller individual "
+"pieces of the API."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:22
+msgid ""
+"Avoid creating a module that does the work of other modules; this leads "
+"to code duplication and divergence, and makes things less uniform, "
+"unpredictable and harder to maintain. Modules should be the building "
+"blocks. If you are asking 'how can I have a module execute other modules'"
+" ... you want to write a role."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:25
+msgid "Designing module interfaces"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:27
+msgid ""
+"If your module is addressing an object, the parameter for that object "
+"should be called ``name`` whenever possible, or accept ``name`` as an "
+"alias."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:28
+msgid ""
+"Modules accepting boolean status should accept ``yes``, ``no``, ``true``,"
+" ``false``, or anything else a user may likely throw at them. The "
+"AnsibleModule common code supports this with ``type='bool'``."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:29
+msgid ""
+"Avoid ``action``/``command``, they are imperative and not declarative, "
+"there are other ways to express the same thing."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:32
+msgid "General guidelines & tips"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:34
+msgid ""
+"Each module should be self-contained in one file, so it can be be auto-"
+"transferred by Ansible."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:35
+msgid ""
+"Module name MUST use underscores instead of hyphens or spaces as a word "
+"separator. Using hyphens and spaces will prevent Ansible from importing "
+"your module."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:36
+msgid ""
+"Always use the ``hacking/test-module`` script when developing modules - "
+"it will warn you about common pitfalls."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:37
+msgid ""
+"If you have a local module that returns facts specific to your "
+"installations, a good name for this module is ``site_facts``."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:38
+msgid ""
+"Eliminate or minimize dependencies. If your module has dependencies, "
+"document them at the top of the module file and raise JSON error messages"
+" when dependency import fails."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:39
+msgid ""
+"Don't write to files directly; use a temporary file and then use the "
+"``atomic_move`` function from ``ansible.module_utils.basic`` to move the "
+"updated temporary file into place. This prevents data corruption and "
+"ensures that the correct context for the file is kept."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:40
+msgid ""
+"Avoid creating caches. Ansible is designed without a central server or "
+"authority, so you cannot guarantee it will not run with different "
+"permissions, options or locations. If you need a central authority, have "
+"it on top of Ansible (for example, using bastion/cm/ci server or tower); "
+"do not try to build it into modules."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:41
+msgid ""
+"If you package your module(s) in an RPM, install the modules on the "
+"control machine in ``/usr/share/ansible``. Packaging modules in RPMs is "
+"optional."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:44
+msgid "Functions and Methods"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:46
+msgid ""
+"Each function should be concise and should describe a meaningful amount "
+"of work."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:47
+msgid "\"Don't repeat yourself\" is generally a good philosophy."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:48
+msgid "Function names should use underscores: ``my_function_name``."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:49
+msgid "Each function's name should describes what it does."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:50
+msgid "Each function should have a docstring."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:51
+msgid ""
+"If your code is too nested, that's usually a sign the loop body could "
+"benefit from being a function. Parts of our existing code are not the "
+"best examples of this at times."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:54
+msgid "Python tips"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:56
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:174
+msgid ""
+"When fetching URLs, use ``fetch_url`` or ``open_url`` from "
+"``ansible.module_utils.urls``. Do not use ``urllib2``, which does not "
+"natively verify TLS certificates and so is insecure for https."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:57
+msgid "Include a ``main`` function that wraps the normal execution."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:58
+msgid ""
+"Call your ``main`` function from a conditional so you can import it into "
+"unit tests - for example:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:68
+msgid "Importing and using shared code"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:70
+msgid ""
+"Use shared code whenever possible - don't reinvent the wheel. Ansible "
+"offers the ``AnsibleModule`` common Python code, plus :ref:`utilities "
+"<appendix_module_utilities>` for many common use cases and patterns."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:71
+msgid ""
+"Import ``ansible.module_utils`` code in the same place as you import "
+"other libraries."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:72
+msgid ""
+"Do NOT use wildcards (*) for importing other python modules; instead, "
+"list the function(s) you are importing (for example, ``from "
+"some.other_python_module.basic import otherFunction``)."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:73
+msgid ""
+"Import custom packages in ``try``/``except``, capture any import errors, "
+"and handle them with ``fail_json()`` in ``main()``. For example:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:90
+msgid "Then in ``main()``, just after the argspec, do"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:99
+msgid ""
+"And document the dependency in the ``requirements`` section of your "
+"module's :ref:`documentation_block`."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:104
+msgid "Handling module failures"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:106
+msgid ""
+"When your module fails, help users understand what went wrong. If you are"
+" using the ``AnsibleModule`` common Python code, the ``failed`` element "
+"will be included for you automatically when you call ``fail_json``. For "
+"polite module failure behavior:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:108
+msgid ""
+"Include a key of ``failed`` along with a string explanation in ``msg``. "
+"If you don't do this, Ansible will use standard return codes: 0=success "
+"and non-zero=failure."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:109
+msgid ""
+"Don't raise a traceback (stacktrace). Ansible can deal with stacktraces "
+"and automatically converts anything unparseable into a failed result, but"
+" raising a stacktrace on module failure is not user-friendly."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:110
+msgid "Do not use ``sys.exit()``. Use ``fail_json()`` from the module object."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:113
+msgid "Handling exceptions (bugs) gracefully"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:115
+msgid "Validate upfront--fail fast and return useful and clear error messages."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:116
+msgid ""
+"Use defensive programming--use a simple design for your module, handle "
+"errors gracefully, and avoid direct stacktraces."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:117
+msgid ""
+"Fail predictably--if we must fail, do it in a way that is the most "
+"expected. Either mimic the underlying tool or the general way the system "
+"works."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:118
+msgid ""
+"Give out a useful message on what you were doing and add exception "
+"messages to that."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:119
+msgid ""
+"Avoid catchall exceptions, they are not very useful unless the underlying"
+" API gives very good error messages pertaining the attempted action."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:124
+msgid "Creating correct and informative module output"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:126
+msgid ""
+"Modules must output valid JSON only. Follow these guidelines for creating"
+" correct, useful module output:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:128
+msgid "Make your top-level return type a hash (dictionary)."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:129
+msgid "Nest complex return values within the top-level hash."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:130
+msgid ""
+"Incorporate any lists or simple scalar values within the top-level return"
+" hash."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:131
+msgid ""
+"Do not send module output to standard error, because the system will "
+"merge standard out with standard error and prevent the JSON from parsing."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:132
+msgid ""
+"Capture standard error and return it as a variable in the JSON on "
+"standard out. This is how the command module is implemented."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:133
+msgid ""
+"Never do ``print(\"some status message\")`` in a module, because it will "
+"not produce valid JSON output."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:134
+msgid "Always return useful data, even when there is no change."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:135
+msgid ""
+"Be consistent about returns (some modules are too random), unless it is "
+"detrimental to the state/action."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:136
+msgid ""
+"Make returns reusable--most of the time you don't want to read it, but "
+"you do want to process it and re-purpose it."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:137
+msgid ""
+"Return diff if in diff mode. This is not required for all modules, as it "
+"won't make sense for certain ones, but please include it when applicable."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:138
+msgid ""
+"Enable your return values to be serialized as JSON with Python's standard"
+" `JSON encoder and decoder "
+"<https://docs.python.org/3/library/json.html>`_ library. Basic python "
+"types (strings, int, dicts, lists, etc) are serializable."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:139
+msgid ""
+"Do not return an object via exit_json(). Instead, convert the fields you "
+"need from the object into the fields of a dictionary and return the "
+"dictionary."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:140
+msgid ""
+"Results from many hosts will be aggregated at once, so your module should"
+" return only relevant output. Returning the entire contents of a log file"
+" is generally bad form."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:142
+msgid ""
+"If a module returns stderr or otherwise fails to produce valid JSON, the "
+"actual output will still be shown in Ansible, but the command will not "
+"succeed."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:147
+msgid "Following Ansible conventions"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:149
+msgid ""
+"Ansible conventions offer a predictable user interface across all "
+"modules, playbooks, and roles. To follow Ansible conventions in your "
+"module development:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:151
+msgid ""
+"Use consistent names across modules (yes, we have many legacy deviations "
+"- don't make the problem worse!)."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:152
+msgid "Use consistent parameters (arguments) within your module(s)."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:153
+msgid ""
+"Normalize parameters with other modules - if Ansible and the API your "
+"module connects to use different names for the same parameter, add "
+"aliases to your parameters so the user can choose which names to use in "
+"tasks and playbooks."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:154
+msgid ""
+"Return facts from ``*_facts`` modules in the ``ansible_facts`` field of "
+"the :ref:`result dictionary<common_return_values>` so other modules can "
+"access them."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:155
+msgid ""
+"Implement ``check_mode`` in all ``*_facts`` modules. Playbooks which "
+"conditionalize based on fact information will only conditionalize "
+"correctly in ``check_mode`` if the facts are returned in ``check_mode``. "
+"Usually you can add ``check_mode=True`` when instantiating "
+"``AnsibleModule``."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:156
+msgid ""
+"Use module-specific environment variables. For example, if you use the "
+"helpers in ``module_utils.api`` for basic authentication with "
+"``module_utils.urls.fetch_url()`` and you fall back on environment "
+"variables for default values, use a module-specific environment variable "
+"like :code:`API_<MODULENAME>_USERNAME` to avoid conflict between modules."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:157
+msgid ""
+"Keep module options simple and focused - if you're loading a lot of "
+"choices/states on an existing option, consider adding a new, simple "
+"option instead."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:158
+msgid ""
+"Keep options small when possible. Passing a large data structure to an "
+"option might save us a few tasks, but it adds a complex requirement that "
+"we cannot easily validate before passing on to the module."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:159
+msgid ""
+"If you want to pass complex data to an option, write an expert module "
+"that allows this, along with several smaller modules that provide a more "
+"'atomic' operation against the underlying APIs and services. Complex "
+"operations require complex data. Let the user choose whether to reflect "
+"that complexity in tasks and plays or in  vars files."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:160
+msgid ""
+"Implement declarative operations (not CRUD) so the user can ignore "
+"existing state and focus on final state. For example, use "
+"``started/stopped``, ``present/absent``."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:161
+msgid ""
+"Strive for a consistent final state (aka idempotency). If running your "
+"module twice in a row against the same system would result in two "
+"different states, see if you can redesign or rewrite to achieve "
+"consistent final state. If you can't, document the behavior and the "
+"reasons for it."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:162
+msgid ""
+"Provide consistent return values within the standard Ansible return "
+"structure, even if NA/None are used for keys normally returned under "
+"other options."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:163
+msgid ""
+"Follow additional guidelines that apply to families of modules if "
+"applicable. For example, AWS modules should follow `the Amazon guidelines"
+" "
+"<https://github.com/ansible/ansible/blob/devel/lib/ansible/modules/cloud/amazon/GUIDELINES.md>`_"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:166
+msgid "Module Security"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:168
+msgid "Avoid passing user input from the shell."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:169
+msgid "Always check return codes."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:170
+msgid ""
+"You must always use ``module.run_command``, not ``subprocess`` or "
+"``Popen`` or ``os.system``."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:171
+msgid "Avoid using the shell unless absolutely necessary."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:172
+msgid ""
+"If you must use the shell, you must pass ``use_unsafe_shell=True`` to "
+"``module.run_command``."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_best_practices.rst:173
+msgid ""
+"If any variables in your module can come from user input with "
+"``use_unsafe_shell=True``, you must wrap them with ``pipes.quote(x)``."
+msgstr ""
+

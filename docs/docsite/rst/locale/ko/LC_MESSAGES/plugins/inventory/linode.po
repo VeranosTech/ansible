@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/plugins/inventory/linode.rst:8
+msgid "linode -- Ansible dynamic inventory plugin for Linode"
+msgstr ""
+
+#: ../../rst/plugins/inventory/linode.rst:18
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/plugins/inventory/linode.rst:19
+msgid "Reads inventories from the Linode API v4."
+msgstr ""
+
+#: ../../rst/plugins/inventory/linode.rst:20
+msgid "Uses a YAML configuration file that ends with linode.(yml|yaml)."
+msgstr ""
+
+#: ../../rst/plugins/inventory/linode.rst:21
+msgid "Linode labels are used by default as the hostnames."
+msgstr ""
+
+#: ../../rst/plugins/inventory/linode.rst:22
+msgid "The inventory groups are built from groups and not tags."
+msgstr ""
+
+#: ../../rst/plugins/inventory/linode.rst:27
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/plugins/inventory/linode.rst:28
+msgid ""
+"The below requirements are needed on the local master node that executes "
+"this inventory."
+msgstr ""
+
+#: ../../rst/plugins/inventory/linode.rst:30
+msgid "python >= 2.7"
+msgstr ""
+
+#: ../../rst/plugins/inventory/linode.rst:31
+msgid "linode_api4 >= 2.0.0"
+msgstr ""
+
+#: ../../rst/plugins/inventory/linode.rst:35
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/plugins/inventory/linode.rst:119
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/plugins/inventory/linode.rst:140
+msgid "Status"
+msgstr ""
+
+#: ../../rst/plugins/inventory/linode.rst:145
+msgid ""
+"This inventory is not guaranteed to have a backwards compatible "
+"interface. *[preview]*"
+msgstr ""
+
+#: ../../rst/plugins/inventory/linode.rst:148
+msgid ""
+"This inventory is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/plugins/inventory/linode.rst:155
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/plugins/inventory/linode.rst:157
+msgid "UNKNOWN"
+msgstr ""
+
+#: ../../rst/plugins/inventory/linode.rst:161
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/inventory/linode.py>`_"
+" to improve it."
+msgstr ""
+

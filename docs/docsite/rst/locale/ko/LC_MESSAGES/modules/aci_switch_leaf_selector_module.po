@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/aci_switch_leaf_selector_module.rst:9
+msgid ""
+"aci_switch_leaf_selector -- Bind leaf selectors to switch policy leaf "
+"profiles (infra:LeafS, infra:NodeBlk, infra:RsAccNodePGrep)"
+msgstr ""
+
+#: ../../rst/modules/aci_switch_leaf_selector_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/aci_switch_leaf_selector_module.rst:20
+msgid ""
+"Bind leaf selectors (with node block range and policy group) to switch "
+"policy leaf profiles on Cisco ACI fabrics."
+msgstr ""
+
+#: ../../rst/modules/aci_switch_leaf_selector_module.rst:26
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/aci_switch_leaf_selector_module.rst:345
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/aci_switch_leaf_selector_module.rst:348
+msgid ""
+"This module is to be used with :ref:`aci_switch_policy_leaf_profile "
+"<aci_switch_policy_leaf_profile_module>`. One first creates a leaf "
+"profile (infra:NodeP) and then creates an associated selector "
+"(infra:LeafS),"
+msgstr ""
+
+#: ../../rst/modules/aci_switch_leaf_selector_module.rst:352
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/aci_switch_leaf_selector_module.rst:356
+msgid ":ref:`aci_switch_policy_leaf_profile_module`"
+msgstr ""
+
+#: ../../rst/modules/aci_switch_leaf_selector_module.rst:357
+msgid ""
+"The official documentation on the **aci_switch_policy_leaf_profile** "
+"module."
+msgstr ""
+
+#: ../../rst/modules/aci_switch_leaf_selector_module.rst:358
+msgid ""
+"`APIC Management Information Model reference "
+"<https://developer.cisco.com/docs/apic-mim-ref/>`_"
+msgstr ""
+
+#: ../../rst/modules/aci_switch_leaf_selector_module.rst:359
+msgid ""
+"More information about the internal APIC classes **infra:LeafS**, "
+"**infra:NodeBlk** and **infra:RsAccNodePGrp**."
+msgstr ""
+
+#: ../../rst/modules/aci_switch_leaf_selector_module.rst:360
+msgid ":ref:`aci_guide`"
+msgstr ""
+
+#: ../../rst/modules/aci_switch_leaf_selector_module.rst:361
+msgid ""
+"Detailed information on how to manage your ACI infrastructure using "
+"Ansible."
+msgstr ""
+
+#: ../../rst/modules/aci_switch_leaf_selector_module.rst:362
+msgid ":ref:`aci_dev_guide`"
+msgstr ""
+
+#: ../../rst/modules/aci_switch_leaf_selector_module.rst:363
+msgid "Detailed guide on how to write your own Cisco ACI modules to contribute."
+msgstr ""
+
+#: ../../rst/modules/aci_switch_leaf_selector_module.rst:367
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/aci_switch_leaf_selector_module.rst:424
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/aci_switch_leaf_selector_module.rst:425
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/aci_switch_leaf_selector_module.rst:583
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/aci_switch_leaf_selector_module.rst:588
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/aci_switch_leaf_selector_module.rst:591
+msgid ""
+"This module is :ref:`maintained by an Ansible Partner <modules_support>`."
+" *[certified]*"
+msgstr ""
+
+#: ../../rst/modules/aci_switch_leaf_selector_module.rst:598
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/aci_switch_leaf_selector_module.rst:600
+msgid "Bruno Calogero (@brunocalogero)"
+msgstr ""
+
+#: ../../rst/modules/aci_switch_leaf_selector_module.rst:604
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/aci/aci_switch_leaf_selector.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

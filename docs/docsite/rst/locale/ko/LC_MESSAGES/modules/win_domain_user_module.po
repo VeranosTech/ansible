@@ -1,0 +1,157 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/win_domain_user_module.rst:9
+msgid "win_domain_user -- Manages Windows Active Directory user accounts"
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:20
+msgid "Manages Windows Active Directory user accounts."
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:26
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:453
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:456
+msgid "Works with Windows 2012R2 and newer."
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:457
+msgid ""
+"If running on a server that is not a Domain Controller, credential "
+"delegation through CredSSP or Kerberos with delegation must be used or "
+"the *domain_username*, *domain_password* must be set."
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:458
+msgid ""
+"Note that some individuals have confirmed successful operation on Windows"
+" 2008R2 servers with AD and AD Web Services enabled, but this has not "
+"received the same degree of testing as Windows 2012R2."
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:462
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:466
+msgid ":ref:`win_domain_module`"
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:467
+msgid "The official documentation on the **win_domain** module."
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:468
+msgid ":ref:`win_domain_controller_module`"
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:469
+msgid "The official documentation on the **win_domain_controller** module."
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:470
+msgid ":ref:`win_domain_computer_module`"
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:471
+msgid "The official documentation on the **win_domain_computer** module."
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:472
+msgid ":ref:`win_domain_group_module`"
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:473
+msgid "The official documentation on the **win_domain_group** module."
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:474
+msgid ":ref:`win_domain_membership_module`"
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:475
+msgid "The official documentation on the **win_domain_membership** module."
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:476
+msgid ":ref:`win_user_module`"
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:477
+msgid "The official documentation on the **win_user** module."
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:481
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:533
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:534
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:840
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:845
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:848
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:855
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:857
+msgid "Nick Chandler (@nwchandler)"
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:861
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_domain_user.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

@@ -1,0 +1,347 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:2
+msgid "CloudStack Cloud Guide"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:7
+msgid "Introduction"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:8
+msgid ""
+"The purpose of this section is to explain how to put Ansible modules "
+"together to use Ansible in a CloudStack context. You will find more usage"
+" examples in the details section of each module."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:10
+msgid ""
+"Ansible contains a number of extra modules for interacting with "
+"CloudStack based clouds. All modules support check mode, are designed to "
+"be idempotent, have been created and tested, and are maintained by the "
+"community."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:12
+msgid "Some of the modules will require domain admin or root admin privileges."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:15
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:16
+msgid ""
+"Prerequisites for using the CloudStack modules are minimal. In addition "
+"to Ansible itself, all of the modules require the python library ``cs`` "
+"https://pypi.org/project/cs/"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:18
+msgid ""
+"You'll need this Python module installed on the execution host, usually "
+"your workstation."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:24
+msgid "Or alternatively starting with Debian 9 and Ubuntu 16.04:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:30
+msgid ""
+"cs also includes a command line interface for ad-hoc interaction with the"
+" CloudStack API e.g. ``$ cs listVirtualMachines state=Running``."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:33
+msgid "Limitations and Known Issues"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:34
+msgid ""
+"VPC support has been improved since Ansible 2.3 but is still not yet "
+"fully implemented. The community is working on the VPC integration."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:37
+msgid "Credentials File"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:38
+msgid ""
+"You can pass credentials and the endpoint of your cloud as module "
+"arguments, however in most cases it is a far less work to store your "
+"credentials in the cloudstack.ini file."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:40
+msgid ""
+"The python library cs looks for the credentials file in the following "
+"order (last one wins):"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:42
+msgid "A ``.cloudstack.ini`` (note the dot) file in the home directory."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:43
+msgid "A ``CLOUDSTACK_CONFIG`` environment variable pointing to an .ini file."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:44
+msgid ""
+"A ``cloudstack.ini`` (without the dot) file in the current working "
+"directory, same directory as your playbooks are located."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:46
+msgid "The structure of the ini file must look like this:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:57
+msgid ""
+"The section ``[cloudstack]`` is the default section. "
+"``CLOUDSTACK_REGION`` environment variable can be used to define the "
+"default section."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:61
+msgid ""
+"The ENV variables support ``CLOUDSTACK_*`` as written in the "
+"documentation of the library ``cs``,  like e.g ``CLOUDSTACK_TIMEOUT``, "
+"``CLOUDSTACK_METHOD``, etc. has been implemented into Ansible. It is even"
+" possible to have some incomplete config in your cloudstack.ini:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:70
+msgid ""
+"and fulfill the missing data by either setting ENV variables or tasks "
+"params:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:86
+msgid "Regions"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:87
+msgid ""
+"If you use more than one CloudStack region, you can define as many "
+"sections as you want and name them as you like, e.g.:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:107
+msgid ""
+"Sections can also be used to for login into the same region using "
+"different accounts."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:109
+msgid ""
+"By passing the argument ``api_region`` with the CloudStack modules, the "
+"region wanted will be selected."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:120
+msgid ""
+"Or by looping over a regions list if you want to do the task in every "
+"region:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:135
+msgid "Environment Variables"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:138
+msgid ""
+"Since Ansible 2.3 it is possible to use environment variables for domain "
+"(``CLOUDSTACK_DOMAIN``), account (``CLOUDSTACK_ACCOUNT``), project "
+"(``CLOUDSTACK_PROJECT``), VPC (``CLOUDSTACK_VPC``) and zone "
+"(``CLOUDSTACK_ZONE``). This simplifies the tasks by not repeating the "
+"arguments for every tasks."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:140
+msgid ""
+"Below you see an example how it can be used in combination with Ansible's"
+" block feature:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:166
+msgid ""
+"You are still able overwrite the environment variables using the module "
+"arguments, e.g. ``zone: sf-2``"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:168
+msgid ""
+"Unlike ``CLOUDSTACK_REGION`` these additional environment variables are "
+"ignored in the CLI ``cs``."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:171
+msgid "Use Cases"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:172
+msgid ""
+"The following should give you some ideas how to use the modules to "
+"provision VMs to the cloud. As always, there isn't only one way to do it."
+" But as always: keep it simple for the beginning is always a good start."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:175
+msgid "Use Case: Provisioning in a Advanced Networking CloudStack setup"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:176
+msgid ""
+"Our CloudStack cloud has an advanced networking setup, we would like to "
+"provision web servers, which get a static NAT and open firewall ports 80 "
+"and 443. Further we provision database servers, to which we do not give "
+"any access to. For accessing the VMs by SSH we use a SSH jump host."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:178
+#: ../../rst/scenario_guides/guide_cloudstack.rst:285
+msgid "This is how our inventory looks like:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:198
+msgid ""
+"As you can see, the public IPs for our web servers and jumphost has been "
+"assigned as variable ``public_ip`` directly in the inventory."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:200
+msgid ""
+"The configure the jumphost, web servers and database servers, we use "
+"``group_vars``. The ``group_vars`` directory contains 4 files for "
+"configuration of the groups: cloud-vm, jumphost, webserver and db-server."
+" The cloud-vm is there for specifying the defaults of our cloud "
+"infrastructure."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:209
+msgid ""
+"Our database servers should get more CPU and RAM, so we define to use a "
+"``Large`` offering for them."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:217
+msgid ""
+"The web servers should get a ``Small`` offering as we would scale them "
+"horizontally, which is also our default offering. We also ensure the "
+"known web ports are opened for the world."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:227
+msgid ""
+"Further we provision a jump host which has only port 22 opened for "
+"accessing the VMs from our office IPv4 network."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:236
+msgid ""
+"Now to the fun part. We create a playbook to create our infrastructure we"
+" call it ``infra.yml``:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:267
+msgid ""
+"In the above play we defined 3 tasks and use the group ``cloud-vm`` as "
+"target to handle all VMs in the cloud but instead SSH to these VMs, we "
+"use ``delegate_to: localhost`` to execute the API calls locally from our "
+"workstation."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:269
+msgid ""
+"In the first task, we ensure we have a running VM created with the Debian"
+" template. If the VM is already created but stopped, it would just start "
+"it. If you like to change the offering on an existing VM, you must add "
+"``force: yes`` to the task, which would stop the VM, change the offering "
+"and start the VM again."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:271
+msgid ""
+"In the second task we ensure the ports are opened if we give a public IP "
+"to the VM."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:273
+msgid "In the third task we add static NAT to the VMs having a public IP defined."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:276
+msgid ""
+"The public IP addresses must have been acquired in advance, also see "
+"``cs_ip_address``"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:278
+msgid ""
+"For some modules, e.g. ``cs_sshkeypair`` you usually want this to be "
+"executed only once, not for every VM. Therefore you would make a separate"
+" play for it targeting localhost. You find an example in the use cases "
+"below."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:281
+msgid "Use Case: Provisioning on a Basic Networking CloudStack setup"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:283
+msgid ""
+"A basic networking CloudStack setup is slightly different: Every VM gets "
+"a public IP directly assigned and security groups are used for access "
+"restriction policy."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:296
+msgid "The default for your VMs looks like this:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:305
+msgid "Our webserver will also be in security group ``web``:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:313
+msgid "The playbook looks like the following:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:375
+msgid ""
+"In the first play we setup the security groups, in the second play the "
+"VMs will created be assigned to these groups. Further you see, that we "
+"assign the public IP returned from the modules to the host inventory. "
+"This is needed as we do not know the IPs we will get in advance. In a "
+"next step you would configure the DNS servers with these IPs for "
+"accessing the VMs with their DNS name."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_cloudstack.rst:377
+msgid ""
+"In the last task we wait for SSH to be accessible, so any later play "
+"would be able to access the VM by SSH without failure."
+msgstr ""
+

@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/vmware/faq.rst:5
+msgid "Ansible VMware FAQ"
+msgstr ""
+
+#: ../../rst/vmware/faq.rst:8
+msgid "vmware_guest"
+msgstr ""
+
+#: ../../rst/vmware/faq.rst:11
+msgid "Can I deploy a virtual machine on a standalone ESXi server ?"
+msgstr ""
+
+#: ../../rst/vmware/faq.rst:13
+msgid ""
+"Yes. ``vmware_guest`` can deploy a virtual machine with required settings"
+" on a standalone ESXi server."
+msgstr ""
+
+#: ../../rst/vmware/faq.rst:17
+msgid "Is ``/vm`` required for ``vmware_guest`` module ?"
+msgstr ""
+
+#: ../../rst/vmware/faq.rst:19
+msgid ""
+"Prior to Ansible version 2.5, ``folder`` was an optional parameter with a"
+" default value of ``/vm``."
+msgstr ""
+
+#: ../../rst/vmware/faq.rst:21
+msgid ""
+"The folder parameter was used to discover information about virtual "
+"machines in the given infrastructure."
+msgstr ""
+
+#: ../../rst/vmware/faq.rst:23
+msgid ""
+"Starting with Ansible version 2.5, ``folder`` is still an optional "
+"parameter with no default value. This parameter will be now used to "
+"identify a user's virtual machine, if multiple virtual machines or "
+"virtual machine templates are found with same name. VMware does not "
+"restrict the system administrator from creating virtual machines with "
+"same name."
+msgstr ""
+

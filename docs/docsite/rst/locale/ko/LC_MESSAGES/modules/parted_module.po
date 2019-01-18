@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/parted_module.rst:9
+msgid "parted -- Configure block device partitions"
+msgstr ""
+
+#: ../../rst/modules/parted_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/parted_module.rst:20
+msgid ""
+"This module allows configuring block device partition using the "
+"``parted`` command line tool. For a full description of the fields and "
+"the options check the GNU parted manual."
+msgstr ""
+
+#: ../../rst/modules/parted_module.rst:25
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/parted_module.rst:26
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/parted_module.rst:28
+msgid "This module requires parted version 1.8.3 and above."
+msgstr ""
+
+#: ../../rst/modules/parted_module.rst:29
+msgid ""
+"If the version of parted is below 3.1, it requires a Linux version "
+"running the sysfs file system ``/sys/``."
+msgstr ""
+
+#: ../../rst/modules/parted_module.rst:33
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/parted_module.rst:244
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/parted_module.rst:247
+msgid ""
+"When fetching information about a new disk and when the version of parted"
+" installed on the system is before version 3.1, the module queries the "
+"kernel through ``/sys/`` to obtain disk information. In this case the "
+"units CHS and CYL are not supported."
+msgstr ""
+
+#: ../../rst/modules/parted_module.rst:252
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/parted_module.rst:301
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/parted_module.rst:302
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/parted_module.rst:364
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/parted_module.rst:369
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/parted_module.rst:372
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/parted_module.rst:379
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/parted_module.rst:381
+msgid "Fabrizio Colonna (@ColOfAbRiX)"
+msgstr ""
+
+#: ../../rst/modules/parted_module.rst:385
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/parted.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

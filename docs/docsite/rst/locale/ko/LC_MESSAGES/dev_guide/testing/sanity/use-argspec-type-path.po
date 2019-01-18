@@ -1,0 +1,40 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/testing/sanity/use-argspec-type-path.rst:2
+msgid "Sanity Tests » use-argspec-type-path"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/use-argspec-type-path.rst:4
+msgid ""
+"The AnsibleModule argument_spec knows of several types beyond the "
+"standard python types.  One of these is ``path``.  When used, type "
+"``path`` ensures that an argument is a string and expands any shell "
+"variables and tilde characters."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/use-argspec-type-path.rst:8
+msgid ""
+"This test looks for use of :func:`os.path.expanduser "
+"<python:os.path.expanduser>` in modules.  When found, it tells the user "
+"to replace it with ``type='path'`` in the module's argument_spec or list "
+"it as a false positive in the test."
+msgstr ""
+

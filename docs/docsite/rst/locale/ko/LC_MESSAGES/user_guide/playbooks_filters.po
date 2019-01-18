@@ -1,0 +1,1156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/user_guide/playbooks_filters.rst:4
+msgid "Filters"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:7
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:9
+msgid ""
+"Filters in Ansible are from Jinja2, and are used for transforming data "
+"inside a template expression.  Jinja2 ships with many filters. See "
+"`builtin filters`_ in the official Jinja2 template documentation."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:11
+msgid ""
+"Take into account that templating happens on the Ansible controller, "
+"**not** on the task's target host, so filters also execute on the "
+"controller as they manipulate local data."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:13
+msgid ""
+"In addition the ones provided by Jinja2, Ansible ships with its own and "
+"allows users to add their own custom filters."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:18
+msgid "Filters For Formatting Data"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:20
+msgid ""
+"The following filters will take a data structure in a template and render"
+" it in a slightly different format.  These are occasionally useful for "
+"debugging::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:26
+msgid "For human readable output, you can use::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:31
+msgid ""
+"It's also possible to change the indentation of both (new in version "
+"2.2)::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:37
+msgid ""
+"``to_yaml`` and ``to_nice_yaml`` filters use `PyYAML library`_ which has "
+"a default 80 symbol string length limit. That causes unexpected line "
+"break after 80th symbol (if there is a space after 80th symbol) To avoid "
+"such behaviour and generate long lines it is possible to use ``width`` "
+"option::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:43
+msgid ""
+"While it would be nicer to use a construction like ``float(\"inf\")`` "
+"instead of hardcoded number, unfortunately the filter doesn't support "
+"proxying python functions. Note that it also supports passing through "
+"other YAML parameters. Full list can be found in `PyYAML documentation`_."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:47
+msgid "Alternatively, you may be reading in some already formatted data::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:52
+#: ../../rst/user_guide/playbooks_filters.rst:67
+msgid "for example::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:64
+msgid ""
+"To parse multi-document yaml strings, the ``from_yaml_all`` filter is "
+"provided. The ``from_yaml_all`` filter will return a generator of parsed "
+"yaml documents."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:80
+msgid "Forcing Variables To Be Defined"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:82
+msgid ""
+"The default behavior from ansible and ansible.cfg is to fail if variables"
+" are undefined, but you can turn this off."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:84
+msgid "This allows an explicit check with this feature off::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:88
+msgid ""
+"The variable value will be used as is, but the template evaluation will "
+"raise an error if it is undefined."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:94
+msgid "Defaulting Undefined Variables"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:96
+msgid ""
+"Jinja2 provides a useful 'default' filter that is often a better approach"
+" to failing if a variable is not defined::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:100
+msgid ""
+"In the above example, if the variable 'some_variable' is not defined, the"
+" value used will be 5, rather than an error being raised."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:103
+msgid ""
+"If you want to use the default value when variables evaluate to false or "
+"an empty string you have to set the second parameter to ``true``::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:112
+msgid "Omitting Parameters"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:114
+msgid ""
+"As of Ansible 1.8, it is possible to use the default filter to omit "
+"module parameters using the special `omit` variable::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:124
+msgid ""
+"For the first two files in the list, the default mode will be determined "
+"by the umask of the system as the `mode=` parameter will not be sent to "
+"the file module while the final file will receive the `mode=0444` option."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:127
+msgid ""
+"If you are \"chaining\" additional filters after the `default(omit)` "
+"filter, you should instead do something like this: `\"{{ foo | "
+"default(None) | some_filter or omit }}\"`. In this example, the default "
+"`None` (python null) value will cause the later filters to fail, which "
+"will trigger the `or omit` portion of the logic. Using omit in this "
+"manner is very specific to the later filters you're chaining though, so "
+"be prepared for some trial and error if you do this."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:135
+msgid "List Filters"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:137
+msgid "These filters all operate on list variables."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:141
+msgid "To get the minimum value from list of numbers::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:145
+msgid "To get the maximum value from a list of numbers::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:151
+msgid "Flatten a list (same thing the `flatten` lookup does)::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:155
+msgid "Flatten only the first level of a list (akin to the `items` lookup)::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:163
+msgid "Set Theory Filters"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:164
+msgid "All these functions return a unique set from sets or lists."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:168
+msgid "To get a unique set from a list::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:172
+msgid "To get a union of two lists::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:176
+msgid "To get the intersection of 2 lists (unique list of all items in both)::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:180
+msgid "To get the difference of 2 lists (items in 1 that don't exist in 2)::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:184
+msgid ""
+"To get the symmetric difference of 2 lists (items exclusive to each "
+"list)::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:192
+msgid "Dict Filter"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:197
+msgid ""
+"To turn a dictionary into a list of items, suitable for looping, use "
+"`dict2items`::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:201
+#: ../../rst/user_guide/playbooks_filters.rst:220
+#: ../../rst/user_guide/playbooks_filters.rst:242
+#: ../../rst/user_guide/playbooks_filters.rst:290
+#: ../../rst/user_guide/playbooks_filters.rst:313
+msgid "Which turns::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:207
+#: ../../rst/user_guide/playbooks_filters.rst:226
+#: ../../rst/user_guide/playbooks_filters.rst:250
+#: ../../rst/user_guide/playbooks_filters.rst:299
+msgid "into::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:216
+msgid ""
+"``dict2items`` accepts 2 keyword arguments, ``key_name`` and "
+"``value_name`` that allow configuration of the names of the keys to use "
+"for the transformation::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:234
+msgid "items2dict filter"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:238
+msgid ""
+"This filter turns a list of dicts with 2 keys, into a dict, mapping the "
+"values of those keys into ``key: value`` pairs::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:255
+msgid "This is the reverse of the ``dict2items`` filter."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:257
+msgid ""
+"``items2dict`` accepts 2 keyword arguments, ``key_name`` and "
+"``value_name`` that allow configuration of the names of the keys to use "
+"for the transformation::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:265
+msgid "zip and zip_longest filters"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:269
+msgid "To get a list combining the elements of other lists use ``zip``::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:279
+msgid "To always exhaust all list use ``zip_longest``::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:286
+msgid ""
+"Similarly to the output of the ``items2dict`` filter mentioned above, "
+"these filters can be used to contruct a ``dict``::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:305
+msgid "subelements Filter"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:309
+msgid ""
+"Produces a product of an object, and subelement values of that object, "
+"similar to the ``subelements`` lookup::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:329
+msgid "Into::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:357
+msgid "An example of using this filter with ``loop``::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:368
+msgid "Random Mac Address Filter"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:372
+msgid ""
+"This filter can be used to generate a random MAC address from a string "
+"prefix."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:374
+msgid ""
+"To get a random MAC address from a string prefix starting with "
+"'52:54:00'::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:379
+msgid ""
+"Note that if anything is wrong with the prefix string, the filter will "
+"issue an error."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:384
+msgid "Random Number Filter"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:388
+msgid ""
+"This filter can be used similar to the default jinja2 random filter "
+"(returning a random item from a sequence of items), but can also generate"
+" a random number based on a range."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:391
+msgid "To get a random item from a list::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:396
+msgid "To get a random number between 0 and a specified number::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:401
+msgid "Get a random number from 0 to 100 but in steps of 10::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:406
+msgid "Get a random number from 1 to 100 but in steps of 10::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:413
+msgid ""
+"As of Ansible version 2.3, it's also possible to initialize the random "
+"number generator from a seed. This way, you can create random-but-"
+"idempotent numbers::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:419
+msgid "Shuffle Filter"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:423
+msgid ""
+"This filter will randomize an existing list, giving a different order "
+"every invocation."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:425
+msgid "To get a random list from an existing  list::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:432
+msgid ""
+"As of Ansible version 2.3, it's also possible to shuffle a list "
+"idempotent. All you need is a seed.::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:437
+msgid ""
+"note that when used with a non 'listable' item it is a noop, otherwise it"
+" always returns a list"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:443
+msgid "Math"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:448
+msgid "Get the logarithm (default is e)::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:452
+msgid "Get the base 10 logarithm::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:456
+msgid "Give me the power of 2! (or 5)::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:461
+msgid "Square root, or the 5th::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:466
+msgid "Note that jinja2 already provides some like abs() and round()."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:471
+msgid "JSON Query Filter"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:475
+msgid ""
+"Sometimes you end up with a complex data structure in JSON format and you"
+" need to extract only a small set of data within it. The **json_query** "
+"filter lets you query a complex JSON structure and iterate over it using "
+"a loop structure."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:477
+msgid ""
+"This filter is built upon **jmespath**, and you can use the same syntax. "
+"For examples, see `jmespath examples "
+"<http://jmespath.org/examples.html>`_."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:479
+msgid "Now, let's take the following data structure::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:505
+msgid ""
+"To extract all clusters from this structure, you can use the following "
+"query::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:512
+msgid "Same thing for all server names::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:519
+msgid "This example shows ports from cluster1::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:528
+msgid "You can use a variable to make the query more readable."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:530
+msgid "Or, alternatively print out the ports in a comma separated string::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:536
+msgid ""
+"Here, quoting literals using backticks avoids escaping quotes and "
+"maintains readability."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:538
+msgid ""
+"Or, using YAML `single quote escaping "
+"<http://yaml.org/spec/current.html#id2534365>`_::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:545
+msgid ""
+"Escaping single quotes within single quotes in YAML is done by doubling "
+"the single quote."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:547
+msgid "In this example, we get a hash map with all ports and names of a cluster::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:559
+msgid "IP address filter"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:563
+msgid "To test if a string is a valid IP address::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:567
+msgid "You can also require a specific IP protocol version::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:572
+msgid ""
+"IP address filter can also be used to extract specific information from "
+"an IP address. For example, to get the IP address itself from a CIDR, you"
+" can use::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:577
+msgid ""
+"More information about ``ipaddr`` filter and complete usage guide can be "
+"found in :doc:`playbooks_filters_ipaddr`."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:583
+msgid "Network CLI filters"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:587
+msgid ""
+"To convert the output of a network device CLI command into structured "
+"JSON output, use the ``parse_cli`` filter::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:593
+msgid ""
+"The ``parse_cli`` filter will load the spec file and pass the command "
+"output through it, returning JSON output. The YAML spec file defines how "
+"to parse the CLI output."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:596
+msgid ""
+"The spec file should be valid formatted YAML.  It defines how to parse "
+"the CLI output and return JSON data.  Below is an example of a valid spec"
+" file that will parse the output from the ``show vlan`` command."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:618
+#: ../../rst/user_guide/playbooks_filters.rst:721
+msgid ""
+"The spec file above will return a JSON data structure that is a list of "
+"hashes with the parsed VLAN information."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:621
+msgid ""
+"The same command could be parsed into a hash by using the key and values "
+"directives.  Here is an example of how to parse the output into a hash "
+"value using the same ``show vlan`` command."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:645
+msgid ""
+"Another common use case for parsing CLI commands is to break a large "
+"command into blocks that can be parsed.  This can be done using the "
+"``start_block`` and ``end_block`` directives to break the command into "
+"blocks that can be parsed."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:669
+msgid ""
+"The example above will parse the output of ``show interface`` into a list"
+" of hashes."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:672
+msgid ""
+"The network filters also support parsing the output of a CLI command "
+"using the TextFSM library.  To parse the CLI output with TextFSM use the "
+"following filter::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:678
+msgid "Use of the TextFSM filter requires the TextFSM library to be installed."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:681
+msgid "Network XML filters"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:685
+msgid ""
+"To convert the XML output of a network device command into structured "
+"JSON output, use the ``parse_xml`` filter::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:690
+msgid ""
+"The ``parse_xml`` filter will load the spec file and pass the command "
+"output through formatted as JSON."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:693
+msgid ""
+"The spec file should be valid formatted YAML. It defines how to parse the"
+" XML output and return JSON data."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:696
+msgid ""
+"Below is an example of a valid spec file that will parse the output from "
+"the ``show vlan | display xml`` command."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:724
+msgid ""
+"The same command could be parsed into a hash by using the key and values "
+"directives.  Here is an example of how to parse the output into a hash "
+"value using the same ``show vlan | display xml`` command."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:752
+msgid ""
+"The value of ``top`` is the XPath relative to the XML root node. In the "
+"example XML output given below, the value of ``top`` is "
+"``configuration/vlans/vlan``, which is an XPath expression relative to "
+"the root node (<rpc-reply>). ``configuration`` in the value of ``top`` is"
+" the outer most container node, and ``vlan`` is the inner-most container "
+"node."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:758
+msgid ""
+"``items`` is a dictionary of key-value pairs that map user-defined names "
+"to XPath expressions that select elements. The Xpath expression is "
+"relative to the value of the XPath value contained in ``top``. For "
+"example, the ``vlan_id`` in the spec file is a user defined name and its "
+"value ``vlan-id`` is the relative to the value of XPath in ``top``"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:763
+msgid ""
+"Attributes of XML tags can be extracted using XPath expressions. The "
+"value of ``state`` in the spec is an XPath expression used to get the "
+"attributes of the ``vlan`` tag in output XML.::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:778
+msgid ""
+"For more information on supported XPath expressions, see "
+"`<https://docs.python.org/2/library/xml.etree.elementtree.html#xpath-"
+"support>`_."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:783
+msgid "Hashing filters"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:787
+msgid "To get the sha1 hash of a string::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:791
+msgid "To get the md5 hash of a string::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:795
+msgid "Get a string checksum::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:799
+msgid "Other hashes (platform dependent)::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:803
+msgid "To get a sha512 password hash (random salt)::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:807
+msgid "To get a sha256 password hash with a specific salt::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:811
+msgid ""
+"An idempotent method to generate unique hashes per system is to use a "
+"salt that is consistent between runs::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:815
+msgid ""
+"Hash types available depend on the master system running ansible, 'hash' "
+"depends on hashlib password_hash depends on passlib "
+"(https://passlib.readthedocs.io/en/stable/lib/passlib.hash.html)."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:820
+msgid "Some hash types allow providing a rounds parameter::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:827
+msgid "Combining hashes/dictionaries"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:831
+msgid ""
+"The `combine` filter allows hashes to be merged. For example, the "
+"following would override keys in one hash::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:836
+msgid "The resulting hash would be::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:840
+msgid ""
+"The filter also accepts an optional `recursive=True` parameter to not "
+"only override keys in the first hash, but also recurse into nested hashes"
+" and merge their keys too"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:848
+#: ../../rst/user_guide/playbooks_filters.rst:1277
+#: ../../rst/user_guide/playbooks_filters.rst:1318
+#: ../../rst/user_guide/playbooks_filters.rst:1341
+msgid "This would result in::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:852
+msgid "The filter can also take multiple arguments to merge::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:856
+msgid ""
+"In this case, keys in `d` would override those in `c`, which would "
+"override those in `b`, and so on."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:859
+msgid ""
+"This behaviour does not depend on the value of the `hash_behaviour` "
+"setting in `ansible.cfg`."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:865
+msgid "Extracting values from containers"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:869
+msgid ""
+"The `extract` filter is used to map from a list of indices to a list of "
+"values from a container (hash or array)::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:875
+msgid "The results of the above expressions would be::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:880
+msgid "The filter can take another argument::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:884
+msgid ""
+"This takes the list of hosts in group 'x', looks them up in `hostvars`, "
+"and then looks up the `ec2_ip_address` of the result. The final result is"
+" a list of IP addresses for the hosts in group 'x'."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:888
+msgid ""
+"The third argument to the filter can also be a list, for a recursive "
+"lookup inside the container::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:893
+msgid "This would return a list containing the value of `b['a']['x']['y']`."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:898
+msgid "Comment Filter"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:902
+msgid ""
+"The `comment` filter allows to decorate the text with a chosen comment "
+"style. For example the following::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:907
+msgid "will produce this output::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:913
+msgid ""
+"Similar way can be applied style for C (``//...``), C block "
+"(``/*...*/``), Erlang (``%...``) and XML (``<!--...-->``)::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:921
+msgid ""
+"If you need a specific comment character that is not included by any of "
+"the above, you can customize it with::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:926
+msgid "producing::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:932
+msgid "It is also possible to fully customize the comment style::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:936
+msgid "That will create the following output:"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:948
+msgid ""
+"The filter can also be applied to any Ansible variable. For example to "
+"make the output of the ``ansible_managed`` variable more readable, we can"
+" change the definition in the ``ansible.cfg`` file to this:"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:962
+msgid "and then use the variable with the `comment` filter::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:966
+msgid "which will produce this output:"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:983
+msgid "URL Split Filter"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:987
+msgid ""
+"The ``urlsplit`` filter extracts the fragment, hostname, netloc, "
+"password, path, port, query, scheme, and username from an URL. With no "
+"arguments, returns a dictionary of all the fields::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1032
+msgid "Regular Expression Filters"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1034
+msgid "To search a string with a regex, use the \"regex_search\" filter::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1046
+msgid ""
+"To search for all occurrences of regex matches, use the \"regex_findall\""
+" filter::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1052
+msgid "To replace text in a string with regex, use the \"regex_replace\" filter::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1069
+msgid ""
+"Prior to ansible 2.0, if \"regex_replace\" filter was used with variables"
+" inside YAML arguments (as opposed to simpler 'key=value' arguments), "
+"then you needed to escape backreferences (e.g. ``\\\\1``) with 4 "
+"backslashes (``\\\\\\\\``) instead of 2 (``\\\\``)."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1074
+msgid ""
+"To escape special characters within a regex, use the \"regex_escape\" "
+"filter::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1081
+msgid "Kubernetes Filters"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1083
+msgid ""
+"Use the \"k8s_config_resource_name\" filter to obtain the name of a "
+"Kubernetes ConfigMap or Secret, including its hash::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1088
+msgid "This can then be used to reference hashes in Pod specifications::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1107
+msgid "Other Useful Filters"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1109
+msgid "To add quotes for shell usage::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1113
+msgid "To use one value on true and another on false (new in version 1.9)::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1117
+msgid ""
+"To use one value on true, one value on false and a third value on null "
+"(new in version 2.8)::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1121
+msgid "To concatenate a list into a string::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1125
+msgid ""
+"To get the last name of a file path, like 'foo.txt' out of "
+"'/etc/asdf/foo.txt'::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1129
+msgid "To get the last name of a windows style file path (new in version 2.0)::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1133
+msgid ""
+"To separate the windows drive letter from the rest of a file path (new in"
+" version 2.0)::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1137
+msgid "To get only the windows drive letter::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1141
+msgid "To get the rest of the path without the drive letter::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1145
+msgid "To get the directory from a path::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1149
+msgid "To get the directory from a windows path (new version 2.0)::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1153
+msgid "To expand a path containing a tilde (`~`) character (new in version 1.5)::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1157
+msgid "To expand a path containing environment variables::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1161
+msgid ""
+"`expandvars` expands local variables; using it on remote paths can lead "
+"to errors."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1165
+msgid "To get the real path of a link (new in version 1.8)::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1169
+msgid ""
+"To get the relative path of a link, from a start point (new in version "
+"1.7)::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1173
+msgid "To get the root and extension of a path or filename (new in version 2.0)::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1178
+msgid "To work with Base64 encoded strings::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1183
+msgid ""
+"As of version 2.6, you can define the type of encoding to use, the "
+"default is ``utf-8``::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1190
+msgid "To create a UUID from a string (new in version 1.9)::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1194
+msgid ""
+"To cast values as certain types, such as when you input a string as "
+"\"True\" from a vars_prompt and the system doesn't know it is a boolean "
+"value::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1203
+msgid ""
+"To make use of one attribute from each item in a list of complex "
+"variables, use the \"map\" filter (see the `Jinja2 map() docs`_ for "
+"more)::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1208
+msgid ""
+"To get date object from string use the `to_datetime` filter, (new in "
+"version in 2.2)::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1222
+msgid ""
+"To format a date using a string (like with the shell date command), use "
+"the \"strftime\" filter::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1237
+msgid ""
+"To get all string possibilities, check "
+"https://docs.python.org/2/library/time.html#time.strftime"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1240
+msgid "Combination Filters"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1244
+msgid ""
+"This set of filters returns a list of combined lists. To get permutations"
+" of a list::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1255
+msgid "Combinations always require a set size::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1262
+msgid "Also see the :ref:`zip_filter`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1265
+msgid "Product Filters"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1267
+msgid ""
+"The product filter returns the `cartesian product "
+"<https://docs.python.org/3/library/itertools.html#itertools.product>`_ of"
+" the input iterables."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1269
+msgid "This is roughly equivalent to nested for-loops in a generator expression."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1271
+#: ../../rst/user_guide/playbooks_filters.rst:1306
+#: ../../rst/user_guide/playbooks_filters.rst:1327
+msgid "For example::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1283
+msgid "Debugging Filters"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1287
+msgid ""
+"Use the ``type_debug`` filter to display the underlying Python type of a "
+"variable. This can be useful in debugging in situations where you may "
+"need to know the exact type of a variable::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1295
+msgid "Computer Theory Assertions"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1297
+msgid ""
+"The ``human_readable`` and ``human_to_bytes`` functions let you test your"
+" playbooks to make sure you are using the right size format in your tasks"
+" - that you're providing Byte format to computers and human-readable "
+"format to people."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1302
+msgid "Human Readable"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1304
+msgid "Asserts whether the given string is human readable or not."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1323
+msgid "Human to Bytes"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1325
+msgid "Returns the given string in the Bytes format."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1346
+msgid ""
+"A few useful filters are typically added with each new Ansible release.  "
+"The development documentation shows how to extend Ansible filters by "
+"writing your own as plugins, though in general, we encourage new ones to "
+"be added to core so everyone can make use of them."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1361
+msgid ":doc:`playbooks`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1362
+msgid "An introduction to playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1363
+msgid ":doc:`playbooks_conditionals`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1364
+msgid "Conditional statements in playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1365
+msgid ":doc:`playbooks_variables`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1366
+msgid "All about variables"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1367
+msgid ":doc:`playbooks_loops`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1368
+msgid "Looping in playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1369
+msgid ":doc:`playbooks_reuse_roles`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1370
+msgid "Playbook organization by roles"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1371
+msgid ":doc:`playbooks_best_practices`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1372
+msgid "Best practices in playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1373
+msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1374
+msgid "Have a question?  Stop by the google group!"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1375
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters.rst:1376
+msgid "#ansible IRC chat channel"
+msgstr ""
+

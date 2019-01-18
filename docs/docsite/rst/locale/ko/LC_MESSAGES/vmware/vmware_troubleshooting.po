@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/vmware/vmware_troubleshooting.rst:5
+msgid "Troubleshooting Ansible for VMware"
+msgstr ""
+
+#: ../../rst/vmware/vmware_troubleshooting.rst:7
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/vmware/vmware_troubleshooting.rst:9
+msgid "This section lists things that can go wrong and possible ways to fix them."
+msgstr ""
+
+#: ../../rst/vmware/vmware_troubleshooting.rst:12
+msgid "Debugging"
+msgstr ""
+
+#: ../../rst/vmware/vmware_troubleshooting.rst:14
+msgid ""
+"When debugging or creating a new issue, you will need information about "
+"your VMware infrastructure. You can get this information using `govc "
+"<https://github.com/vmware/govmomi/tree/master/govc>`_, For example:"
+msgstr ""
+
+#: ../../rst/vmware/vmware_troubleshooting.rst:26
+msgid "Known issues"
+msgstr ""
+
+#: ../../rst/vmware/vmware_troubleshooting.rst:30
+msgid "Network settings with vmware_guest in Ubuntu 18.04"
+msgstr ""
+
+#: ../../rst/vmware/vmware_troubleshooting.rst:32
+msgid ""
+"Setting the network with ``vmware_guest`` in Ubuntu 18.04 is known to be "
+"broken, due to missing support for ``netplan`` in the ``open-vm-tools``. "
+"This issue is tracked via:"
+msgstr ""
+
+#: ../../rst/vmware/vmware_troubleshooting.rst:35
+msgid "https://github.com/vmware/open-vm-tools/issues/240"
+msgstr ""
+
+#: ../../rst/vmware/vmware_troubleshooting.rst:36
+msgid "https://github.com/ansible/ansible/issues/41133"
+msgstr ""
+
+#: ../../rst/vmware/vmware_troubleshooting.rst:39
+#: ../../rst/vmware/vmware_troubleshooting.rst:111
+msgid "Potential Workaround"
+msgstr ""
+
+#: ../../rst/vmware/vmware_troubleshooting.rst:41
+msgid "There are several workarounds for this issue."
+msgstr ""
+
+#: ../../rst/vmware/vmware_troubleshooting.rst:43
+msgid ""
+"Modifying the Ubuntu 18.04 images and installing ``ifupdown`` in them via"
+" ``sudo apt install ifupdown``. If so you need to remove ``netplan`` via "
+"``sudo apt remove netplan.io`` and you need stop ``systemd-networkd`` via"
+" ``sudo systemctl disable systemctl-networkd``."
+msgstr ""
+
+#: ../../rst/vmware/vmware_troubleshooting.rst:46
+msgid ""
+"You can generate the ``systemd-networkd`` files with a task in your "
+"vmware Ansible role:"
+msgstr ""
+
+#: ../../rst/vmware/vmware_troubleshooting.rst:102
+msgid "Wait for ``netplan`` support in ``open-vm-tools``"
+msgstr ""
+
+#: ../../rst/vmware/vmware_troubleshooting.rst:106
+msgid "Troubleshooting Item"
+msgstr ""
+
+#: ../../rst/vmware/vmware_troubleshooting.rst:108
+msgid "Description"
+msgstr ""
+
+#: ../../rst/vmware/vmware_troubleshooting.rst:113
+msgid "How to fix..."
+msgstr ""
+

@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/vmware/vmware_concepts.rst:5
+msgid "Ansible for VMware Concepts"
+msgstr ""
+
+#: ../../rst/vmware/vmware_concepts.rst:7
+msgid ""
+"These concepts are common to all uses of Ansible, including VMware "
+"automation. You need to understand them to use Ansible for VMware "
+"automation. This basic introduction provides the background you need to "
+"follow the examples in this guide."
+msgstr ""
+
+#: ../../rst/vmware/vmware_concepts.rst:9
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/vmware/vmware_concepts.rst:12
+msgid "Control Node"
+msgstr ""
+
+#: ../../rst/vmware/vmware_concepts.rst:14
+msgid ""
+"Any machine with Ansible installed. You can run commands and playbooks, "
+"invoking ``/usr/bin/ansible`` or ``/usr/bin/ansible-playbook``, from any "
+"control node. You can use any computer that has Python installed on it as"
+" a control node - laptops, shared desktops, and servers can all run "
+"Ansible. However, you cannot use a Windows machine as a control node. You"
+" can have multiple control nodes."
+msgstr ""
+
+#: ../../rst/vmware/vmware_concepts.rst:17
+msgid "Delegation"
+msgstr ""
+
+#: ../../rst/vmware/vmware_concepts.rst:19
+msgid ""
+"If you want to perform a VMware specific task on one host with reference "
+"to ESXi server or vCenter server, use the ``delegate_to`` keyword on a "
+"task. This delegation host will be any host where you have ``pyVmomi`` "
+"installed. Your control node and ``delegate_to`` host can be same or "
+"different."
+msgstr ""
+
+#: ../../rst/vmware/vmware_concepts.rst:22
+msgid "Modules"
+msgstr ""
+
+#: ../../rst/vmware/vmware_concepts.rst:24
+msgid ""
+"The units of code Ansible executes. Each module has a particular use, "
+"from creating virtual machines on vCenter to managing distributed virtual"
+" switches on vCenter environment. You can invoke a single module with a "
+"task, or invoke several different modules in a playbook. For an idea of "
+"how many modules Ansible includes, take a look at the :ref:`list of "
+"VMware modules<vmware_cloud_modules>`."
+msgstr ""
+
+#: ../../rst/vmware/vmware_concepts.rst:28
+msgid "Playbooks"
+msgstr ""
+
+#: ../../rst/vmware/vmware_concepts.rst:30
+msgid ""
+"Ordered lists of tasks, saved so you can run those tasks in that order "
+"repeatedly. Playbooks can include variables as well as tasks. Playbooks "
+"are written in YAML and are easy to read, write, share and understand."
+msgstr ""
+
+#: ../../rst/vmware/vmware_concepts.rst:34
+msgid "pyVmomi"
+msgstr ""
+
+#: ../../rst/vmware/vmware_concepts.rst:36
+msgid ""
+"Ansible VMware modules are written on top of `pyVmomi "
+"<https://github.com/vmware/pyvmomi>`_. ``pyVmomi`` is the official Python"
+" SDK for the VMware vSphere API that allows user to manage ESX, ESXi, and"
+" vCenter infrastructure."
+msgstr ""
+
+#: ../../rst/vmware/vmware_concepts.rst:38
+msgid ""
+"You need to install this Python SDK on host from where you want to invoke"
+" VMware automation. For example, if you are using control node then "
+"``pyVmomi`` must be installed on control node."
+msgstr ""
+
+#: ../../rst/vmware/vmware_concepts.rst:40
+msgid ""
+"If you are using any ``delegate_to`` host which is different from your "
+"control node then you need to install ``pyVmomi`` on that ``delegate_to``"
+" node."
+msgstr ""
+
+#: ../../rst/vmware/vmware_concepts.rst:42
+msgid "You can install pyVmomi using pip:"
+msgstr ""
+

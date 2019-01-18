@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/user_guide/playbooks_strategies.rst:4
+msgid "Strategies"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_strategies.rst:6
+msgid ""
+"Strategies are a way to control play execution. By default, plays run "
+"with a  ``linear`` strategy, in which all hosts will run each task before"
+" any host starts the next task, using the number of forks (default 5) to "
+"parallelize."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_strategies.rst:8
+msgid ""
+"The ``serial`` directive can 'batch' this behaviour to a subset of the "
+"hosts, which then run to completion of the play before the next 'batch' "
+"starts."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_strategies.rst:11
+msgid ""
+"A second ``strategy`` ships with Ansible - ``free`` - which allows each "
+"host to run until the end of the play as fast as it can.::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_strategies.rst:21
+msgid "Strategy Plugins"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_strategies.rst:23
+msgid ""
+"The strategies are implemented as plugins. In the future, new execution "
+"strategies can be added, either locally by users or to Ansible itself by "
+"a code contribution."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_strategies.rst:27
+msgid ""
+"One example is ``debug`` strategy. See :doc:`playbooks_debugger` for "
+"details."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_strategies.rst:31
+msgid ":doc:`playbooks`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_strategies.rst:32
+msgid "An introduction to playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_strategies.rst:33
+msgid ":doc:`playbooks_reuse_roles`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_strategies.rst:34
+msgid "Playbook organization by roles"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_strategies.rst:35
+msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_strategies.rst:36
+msgid "Have a question?  Stop by the google group!"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_strategies.rst:37
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_strategies.rst:38
+msgid "#ansible IRC chat channel"
+msgstr ""
+

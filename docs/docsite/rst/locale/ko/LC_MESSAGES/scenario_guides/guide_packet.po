@@ -1,0 +1,346 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/scenario_guides/guide_packet.rst:3
+msgid "Packet.net Guide"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:6
+msgid "Introduction"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:8
+msgid ""
+"`Packet.net <https://packet.net>`_ is a bare metal infrastructure host "
+"that's supported by Ansible (>=2.3) via a dynamic inventory script and "
+"two cloud modules. The two modules are:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:10
+msgid ""
+"packet_sshkey: adds a public SSH key from file or value to the Packet "
+"infrastructure. Every subsequently-created device will have this public "
+"key installed in .ssh/authorized_keys."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:11
+msgid ""
+"packet_device: manages servers on Packet. You can use this module to "
+"create, restart and delete devices."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:13
+msgid ""
+"Note, this guide assumes you are familiar with Ansible and how it works. "
+"If you're not, have a look at their :ref:`docs <ansible_documentation>` "
+"before getting started."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:16
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:18
+msgid ""
+"The Packet modules and inventory script connect to the Packet API using "
+"the packet-python package. You can install it with pip:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:24
+msgid ""
+"In order to check the state of devices created by Ansible on Packet, it's"
+" a good idea to install one of the `Packet CLI clients "
+"<https://www.packet.net/developers/integrations/>`_. Otherwise you can "
+"check them via the `Packet portal <https://app.packet.net/portal>`_."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:26
+msgid ""
+"To use the modules and inventory script you'll need a Packet API token. "
+"You can generate an API token via the Packet portal `here "
+"<https://app.packet.net/portal#/api-keys>`__. The simplest way to "
+"authenticate yourself is to set the Packet API token in an environment "
+"variable:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:32
+msgid ""
+"If you're not comfortable exporting your API token, you can pass it as a "
+"parameter to the modules."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:34
+msgid ""
+"On Packet, devices and reserved IP addresses belong to `projects "
+"<https://www.packet.net/developers/api/projects/>`_. In order to use the "
+"packet_device module, you need to specify the UUID of the project in "
+"which you want to create or manage devices. You can find a project's UUID"
+" in the Packet portal `here "
+"<https://app.packet.net/portal#/projects/list/table/>`_ (it's just under "
+"the project table) or via one of the available `CLIs "
+"<https://www.packet.net/developers/integrations/>`_."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:37
+msgid ""
+"If you want to use a new SSH keypair in this tutorial, you can generate "
+"it to ``./id_rsa`` and ``./id_rsa.pub`` as:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:43
+msgid ""
+"If you want to use an existing keypair, just copy the private and public "
+"key over to the playbook directory."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:47
+msgid "Device Creation"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:49
+msgid ""
+"The following code block is a simple playbook that creates one `Type 0 "
+"<https://www.packet.net/bare-metal/servers/type-0/>`_ server (the 'plan' "
+"parameter). You have to supply 'plan' and 'operating_system'. 'location' "
+"defaults to 'ewr1' (Parsippany, NJ). You can find all the possible values"
+" for the parameters via a `CLI client "
+"<https://www.packet.net/developers/integrations/>`_."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:70
+msgid ""
+"After running ``ansible-playbook playbook_create.yml``, you should have a"
+" server provisioned on Packet. You can verify via a CLI or in the `Packet"
+" portal <https://app.packet.net/portal#/projects/list/table>`__."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:72
+msgid ""
+"If you get an error with the message \"failed to set machine state "
+"present, error: Error 404: Not Found\", please verify your project UUID."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:76
+msgid "Updating Devices"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:78
+msgid ""
+"The two parameters used to uniquely identify Packet devices are: "
+"\"device_ids\" and \"hostnames\". Both parameters accept either a single "
+"string (later converted to a one-element list), or a list of strings."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:80
+msgid ""
+"The 'device_ids' and 'hostnames' parameters are mutually exclusive. The "
+"following values are all acceptable:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:82
+msgid "device_ids: a27b7a83-fc93-435b-a128-47a5b04f2dcf"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:84
+msgid "hostnames: mydev1"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:86
+msgid ""
+"device_ids: [a27b7a83-fc93-435b-a128-47a5b04f2dcf, 4887130f-0ccd-"
+"49a0-99b0-323c1ceb527b]"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:88
+msgid "hostnames: [mydev1, mydev2]"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:90
+#, python-format
+msgid ""
+"In addition, hostnames can contain a special '%d' formatter along with a "
+"'count' parameter that lets you easily expand hostnames that follow a "
+"simple name and number pattern; i.e. ``hostnames: \"mydev%d\", count: 2``"
+" will expand to [mydev1, mydev2]."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:92
+msgid ""
+"If your playbook acts on existing Packet devices, you can only pass the "
+"'hostname' and 'device_ids' parameters. The following playbook shows how "
+"you can reboot a specific Packet device by setting the 'hostname' "
+"parameter:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:107
+msgid ""
+"You can also identify specific Packet devices with the 'device_ids' "
+"parameter. The device's UUID can be found in the `Packet Portal "
+"<https://app.packet.net/portal>`_ or by using a `CLI "
+"<https://www.packet.net/developers/integrations/>`_. The following "
+"playbook removes a Packet device using the 'device_ids' field:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:124
+msgid "More Complex Playbooks"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:126
+msgid ""
+"In this example, we'll create a CoreOS cluster with `user data "
+"<https://support.packet.net/en/support/solutions/articles/22000058261"
+"-the-basics-of-cloud-config-and-user-data>`_."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:129
+msgid ""
+"The CoreOS cluster will use `etcd <https://coreos.com/etcd/>`_ for "
+"discovery of other servers in the cluster. Before provisioning your "
+"servers, you'll need to generate a discovery token for your cluster:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:135
+msgid ""
+"The following playbook will create an SSH key, 3 Packet servers, and then"
+" wait until SSH is ready (or until 5 minutes passed). Make sure to "
+"substitute the discovery token URL in 'user_data', and the 'project_id' "
+"before running ``ansible-playbook``. Also, feel free to change 'plan' and"
+" 'facility'."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:184
+msgid ""
+"As with most Ansible modules, the default states of the Packet modules "
+"are idempotent, meaning the resources in your project will remain the "
+"same after re-runs of a playbook. Thus, we can keep the ``packet_sshkey``"
+" module call in our playbook. If the public key is already in your Packet"
+" account, the call will have no effect."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:186
+msgid ""
+"The second module call provisions 3 Packet Type 0 (specified using the "
+"'plan' parameter) servers in the project identified via the 'project_id' "
+"parameter. The servers are all provisioned with CoresOS beta (the "
+"'operating_system' parameter) and are customized with cloud-config user "
+"data passed to the 'user_data' parameter."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:188
+msgid ""
+"The ``packet_device`` module has a ``wait_for_public_IPv`` that is used "
+"to specify the version of the IP address to wait for (valid values are "
+"``4`` or ``6`` for IPv4 or IPv6). If specified, Ansible will wait until "
+"the GET API call for a device contains an Internet-routeable IP address "
+"of the specified version. When referring to an IP address of a created "
+"device in subsequent module calls, it's wise to use the "
+"``wait_for_public_IPv`` parameter, or ``state: active`` in the "
+"packet_device module call."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:190
+msgid "Run the playbook:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:196
+msgid ""
+"Once the playbook quits, your new devices should be reachable via SSH. "
+"Try to connect to one and check if etcd has started properly:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:203
+msgid ""
+"Once you create a couple of devices, you might appreciate the dynamic "
+"inventory script..."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:207
+msgid "Dynamic Inventory Script"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:209
+msgid ""
+"The dynamic inventory script queries the Packet API for a list of hosts, "
+"and exposes it to Ansible so you can easily identify and act on Packet "
+"devices. You can find it in Ansible's git repo at "
+"`contrib/inventory/packet_net.py "
+"<https://github.com/ansible/ansible/blob/devel/contrib/inventory/packet_net.py>`_."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:211
+msgid ""
+"The inventory script is configurable via a `ini file "
+"<https://github.com/ansible/ansible/blob/devel/contrib/inventory/packet_net.ini>`_."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:213
+msgid ""
+"If you want to use the inventory script, you must first export your "
+"Packet API token to a PACKET_API_TOKEN environment variable."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:215
+msgid ""
+"You can either copy the inventory and ini config out from the cloned git "
+"repo, or you can download it to your working directory like so:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:223
+msgid ""
+"In order to understand what the inventory script gives to Ansible you can"
+" run:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:229
+msgid ""
+"It should print a JSON document looking similar to following trimmed "
+"dictionary:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:287
+msgid ""
+"In the ``['_meta']['hostvars']`` key, there is a list of devices "
+"(uniquely identified by their public IPv4 address) with their parameters."
+" The other keys under ``['_meta']`` are lists of devices grouped by some "
+"parameter. Here, it is type (all devices are of type baremetal_0), "
+"operating system, and facility (ewr1 and sjc1)."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:289
+msgid ""
+"In addition to the parameter groups, there are also one-item groups with "
+"the UUID or hostname of the device."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:291
+msgid ""
+"You can now target groups in playbooks! The following playbook will "
+"install a role that supplies resources for an Ansible target into all "
+"devices in the \"coreos_beta\" group:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:302
+msgid "Don't forget to supply the dynamic inventory in the ``-i`` argument!"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_packet.rst:309
+msgid "If you have any questions or comments let us know! help@packet.net"
+msgstr ""
+

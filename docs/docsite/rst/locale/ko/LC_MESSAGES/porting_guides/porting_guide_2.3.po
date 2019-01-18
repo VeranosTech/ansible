@@ -1,0 +1,333 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:5
+msgid "Ansible 2.3 Porting Guide"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:7
+msgid ""
+"This section discusses the behavioral changes between Ansible 2.2 and "
+"Ansible 2.3."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:9
+msgid ""
+"It is intended to assist in updating your playbooks, plugins and other "
+"parts of your Ansible infrastructure so they will work with this version "
+"of Ansible."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:12
+msgid ""
+"We suggest you read this page along with `Ansible Changelog for 2.3 "
+"<https://github.com/ansible/ansible/blob/stable-2.3/CHANGELOG.md>`_ to "
+"understand what updates you may need to make."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:14
+msgid ""
+"This document is part of a collection on porting. The complete list of "
+"porting guides can be found at :ref:`porting guides <porting_guides>`."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:16
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:19
+msgid "Playbook"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:22
+msgid "Restructued async to work with action plugins"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:24
+msgid ""
+"In Ansible 2.2 (and possibly earlier) the `async:` keyword could not be "
+"used in conjunction with the action plugins such as `service`. This "
+"limitation has been removed in Ansible 2.3"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:26
+#: ../../rst/porting_guides/porting_guide_2.3.rst:52
+#: ../../rst/porting_guides/porting_guide_2.3.rst:68
+#: ../../rst/porting_guides/porting_guide_2.3.rst:207
+msgid "**NEW** In Ansible 2.3:"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:39
+msgid "OpenBSD version facts"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:41
+msgid ""
+"The `ansible_distribution_release` and `ansible_distribution_version` "
+"facts on OpenBSD hosts were reversed in Ansible 2.2 and earlier. This has"
+" been changed so that version has the numeric portion and release has the"
+" name of the release."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:43
+msgid "**OLD** In Ansible 2.2 (and earlier)"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:63
+msgid "Names Blocks"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:65
+msgid ""
+"Blocks can now have names, this allows you to avoid the ugly `# this "
+"block is for...` comments."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:90
+msgid "Use of multiple tags"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:92
+msgid ""
+"Specifying ``--tags`` (or ``--skip-tags``) multiple times on the command "
+"line currently leads to the last specified tag overriding all the other "
+"specified tags. This behaviour is deprecated. In the future, if you "
+"specify --tags multiple times the tags will be merged together. From now "
+"on, using ``--tags`` multiple times on one command line will emit a "
+"deprecation warning. Setting the ``merge_multiple_cli_tags`` option to "
+"True in the ``ansible.cfg`` file will enable the new behaviour."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:94
+msgid ""
+"In 2.4, the default will be to merge the tags. You can enable the old "
+"overwriting behavior via the config option. In 2.5, multiple ``--tags`` "
+"options will be merged with no way to go back to the old behaviour."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:99
+msgid "Other caveats"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:101
+msgid ""
+"Here are some rare cases that might be encountered when updating. These "
+"are mostly caused by the more stringent parser validation and the capture"
+" of errors that were previously ignored."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:104
+msgid ""
+"Made ``any_errors_fatal`` inheritable from play to task and all other "
+"objects in between."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:107
+msgid "Modules"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:109
+#: ../../rst/porting_guides/porting_guide_2.3.rst:114
+#: ../../rst/porting_guides/porting_guide_2.3.rst:156
+#: ../../rst/porting_guides/porting_guide_2.3.rst:161
+msgid "No major changes in this version."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:112
+msgid "Modules removed"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:117
+msgid "Deprecation notices"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:119
+msgid ""
+"The following modules will be removed in Ansible 2.5. Please update your "
+"playbooks accordingly."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:121
+msgid "ec2_vpc"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:122
+msgid "cl_bond"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:123
+msgid "cl_bridge"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:124
+msgid "cl_img_install"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:125
+msgid "cl_interface"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:126
+msgid "cl_interface_policy"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:127
+msgid "cl_license"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:128
+msgid "cl_ports"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:129
+msgid "nxos_mtu use :ref:`nxos_system <nxos_system_module>` instead"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:133
+msgid ""
+"These modules may no longer have documentation in the current release.  "
+"Please see the `Ansible 2.3 module documentation "
+"<https://docs.ansible.com/ansible/2.3/list_of_all_modules.html>`_ if you "
+"need to know how they worked for porting your playbooks."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:140
+msgid "Noteworthy module changes"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:143
+msgid "AWS lambda"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:144
+msgid ""
+"Previously ignored changes that only affected one parameter. Existing "
+"deployments may have outstanding changes that this bug fix will apply."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:148
+msgid "Mount"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:150
+msgid ""
+"Mount: Some fixes so bind mounts are not mounted each time the playbook "
+"runs."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:154
+msgid "Plugins"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:159
+msgid "Porting custom scripts"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:164
+msgid "Networking"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:166
+msgid ""
+"There have been a number of changes to number of changes to how "
+"Networking Modules operate."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:168
+msgid "Playbooks should still use ``connection: local``."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:170
+msgid "The following changes apply to:"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:172
+msgid "dellos6"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:173
+msgid "dellos9"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:174
+msgid "dellos10"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:175
+msgid "eos"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:176
+msgid "ios"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:177
+msgid "iosxr"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:178
+msgid "junos"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:179
+msgid "sros"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:180
+msgid "vyos"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:183
+msgid "Deprecation of top-level connection arguments"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:185
+msgid "**OLD** In Ansible 2.2:"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:198
+msgid "Will result in:"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:222
+msgid "delegate_to vs ProxyCommand"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:224
+msgid ""
+"The new connection framework for Network Modules in Ansible 2.3 that uses"
+" ``cli`` transport no longer supports the use of the ``delegate_to`` "
+"directive. In order to use a bastion or intermediate jump host to connect"
+" to network devices over ``cli`` transport, network modules now support "
+"the use of ``ProxyCommand``."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:229
+msgid ""
+"To use ``ProxyCommand`` configure the proxy settings in the Ansible "
+"inventory file to specify the proxy host via ``ansible_ssh_common_args``."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.3.rst:232
+msgid ""
+"For details on how to do this see the :ref:`network proxy guide "
+"<network_delegate_to_vs_ProxyCommand>`."
+msgstr ""
+

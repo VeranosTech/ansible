@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/apt_module.rst:9
+msgid "apt -- Manages apt-packages"
+msgstr ""
+
+#: ../../rst/modules/apt_module.rst:18
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/apt_module.rst:19
+msgid "Manages *apt* packages (such as for Debian/Ubuntu)."
+msgstr ""
+
+#: ../../rst/modules/apt_module.rst:24
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/apt_module.rst:25
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/apt_module.rst:27
+msgid "python-apt (python 2)"
+msgstr ""
+
+#: ../../rst/modules/apt_module.rst:28
+msgid "python3-apt (python 3)"
+msgstr ""
+
+#: ../../rst/modules/apt_module.rst:29
+msgid "aptitude (before 2.4)"
+msgstr ""
+
+#: ../../rst/modules/apt_module.rst:33
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/apt_module.rst:339
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/apt_module.rst:342
+msgid ""
+"Three of the upgrade modes (``full``, ``safe`` and its alias ``yes``) "
+"required ``aptitude`` up to 2.3, since 2.4 ``apt-get`` is used as a fall-"
+"back."
+msgstr ""
+
+#: ../../rst/modules/apt_module.rst:343
+msgid ""
+"apt starts newly installed services by default, this is what the "
+"underlying tooling does, to avoid this you can set the ``RUNLEVEL`` "
+"environment variable to 1."
+msgstr ""
+
+#: ../../rst/modules/apt_module.rst:344
+msgid ""
+"The apt-get commandline supports implicit regex matches here but we do "
+"not because it can let typos through easier (If you typo ``foo`` as "
+"``fo`` apt-get would install packages that have \"fo\" in their name with"
+" a warning and a prompt for the user. Since we don't have warnings and "
+"prompts before installing we disallow this.Use an explicit fnmatch "
+"pattern if you want wildcarding)"
+msgstr ""
+
+#: ../../rst/modules/apt_module.rst:345
+msgid ""
+"When used with a `loop:` each package will be processed individually, it "
+"is much more efficient to pass the list directly to the `name` option."
+msgstr ""
+
+#: ../../rst/modules/apt_module.rst:350
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/apt_module.rst:451
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/apt_module.rst:452
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/apt_module.rst:519
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/apt_module.rst:524
+msgid ""
+"This module is guaranteed to have no backward incompatible interface "
+"changes going forward. *[stableinterface]*"
+msgstr ""
+
+#: ../../rst/modules/apt_module.rst:527
+msgid ""
+"This module is :ref:`maintained by the Ansible Core Team "
+"<modules_support>`. *[core]*"
+msgstr ""
+
+#: ../../rst/modules/apt_module.rst:530
+msgid "Red Hat Support"
+msgstr ""
+
+#: ../../rst/modules/apt_module.rst:532
+msgid ""
+"More information about Red Hat's support of this module is available from"
+" this `Red Hat Knowledge Base article "
+"<https://access.redhat.com/articles/3166901>`_."
+msgstr ""
+
+#: ../../rst/modules/apt_module.rst:538
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/apt_module.rst:540
+msgid "Matthew Williams (@mgwilliams)"
+msgstr ""
+
+#: ../../rst/modules/apt_module.rst:544
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/packaging/os/apt.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

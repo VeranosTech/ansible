@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/user_guide/modules_support.rst:5
+msgid "Module Maintenance & Support"
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:12
+msgid "Maintenance"
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:14
+msgid ""
+"To clarify who maintains each included module, adding features and fixing"
+" bugs, each included module now has associated metadata that provides "
+"information about maintenance."
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:17
+msgid "Core"
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:19
+msgid ""
+":ref:`Core Maintained<core_supported>` modules are maintained by the "
+"Ansible Engineering Team. These modules are integral to the basic "
+"foundations of the Ansible distribution."
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:23
+msgid "Network"
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:25
+msgid ""
+":ref:`Network Maintained<network_supported>` modules are are maintained "
+"by the Ansible Network Team. Please note there are additional networking "
+"modules that are categorized as Certified or Community not maintained by "
+"Ansible."
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:29
+msgid "Certified"
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:31
+msgid ""
+"`Certified <https://access.redhat.com/articles/3642632>`_ modules are "
+"maintained by Ansible Partners."
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:34
+msgid "Community"
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:36
+msgid ""
+":ref:`Community Maintained<community_supported>` modules are submitted "
+"and maintained by the Ansible community.  These modules are not "
+"maintained by Ansible, and are included as a convenience."
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:39
+msgid "Issue Reporting"
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:41
+msgid ""
+"If you believe you have found a bug in a module and are already running "
+"the latest stable or development version of Ansible, first look at the "
+"`issue tracker in the Ansible repo "
+"<https://github.com/ansible/ansible/issues>`_ to see if an issue has "
+"already been filed. If not, please file one."
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:43
+#, python-format
+msgid ""
+"Should you have a question rather than a bug report, inquiries are "
+"welcome on the `ansible-project Google group "
+"<https://groups.google.com/forum/#%21forum/ansible-project>`_ or on "
+"Ansible's \"#ansible\" channel, located on irc.freenode.net."
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:45
+#, python-format
+msgid ""
+"For development-oriented topics, use the `ansible-devel Google group "
+"<https://groups.google.com/forum/#%21forum/ansible-devel>`_ or Ansible's "
+"#ansible and #ansible-devel channels, located on irc.freenode.net. You "
+"should also read :doc:`Community Information & Contributing "
+"<../community/index>`, :doc:`Testing Ansible <../dev_guide/testing>`, and"
+" :doc:`Developing Modules <../dev_guide/developing_modules>`."
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:47
+msgid ""
+"The modules are hosted on GitHub in a subdirectory of the `Ansible "
+"<https://github.com/ansible/ansible/tree/devel/lib/ansible/modules>`_ "
+"repo."
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:49
+msgid ""
+"NOTE: If you have a Red Hat Ansible Engine product subscription, please "
+"follow the standard issue reporting process via the Red Hat Customer "
+"Portal."
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:52
+msgid "Support"
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:54
+msgid ""
+"For more information on how included Ansible modules are supported by Red"
+" Hat, please refer to the following `knowledge base article "
+"<https://access.redhat.com/articles/3166901>`_ as well as other resources"
+" on the `Red Hat Customer Portal. <https://access.redhat.com/>`_"
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:59
+msgid ":ref:`Modules by category<modules_by_category>`"
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:60
+msgid "A complete list of all available modules."
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:61
+msgid ":ref:`intro_adhoc`"
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:62
+msgid "Examples of using modules in /usr/bin/ansible"
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:63
+msgid ":ref:`working_with_playbooks`"
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:64
+msgid "Examples of using modules with /usr/bin/ansible-playbook"
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:65
+msgid ":ref:`developing_modules`"
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:66
+msgid "How to write your own modules"
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:67
+msgid ""
+"`List of Ansible Certified Modules "
+"<https://access.redhat.com/articles/3642632>`_"
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:68
+msgid "High level list of Ansible certified modules from Partners"
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:69
+msgid "`Mailing List <https://groups.google.com/group/ansible-project>`_"
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:70
+msgid "Questions? Help? Ideas?  Stop by the list on Google Groups"
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:71
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/user_guide/modules_support.rst:72
+msgid "#ansible IRC chat channel"
+msgstr ""
+

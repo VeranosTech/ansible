@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/win_shell_module.rst:9
+msgid "win_shell -- Execute shell commands on target hosts"
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:20
+msgid ""
+"The ``win_shell`` module takes the command name followed by a list of "
+"space-delimited arguments. It is similar to the :ref:`win_command "
+"<win_command_module>` module, but runs the command via a shell (defaults "
+"to PowerShell) on the target host."
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:21
+msgid ""
+"For non-Windows targets, use the :ref:`shell <shell_module>` module "
+"instead."
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:27
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:122
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:125
+msgid ""
+"If you want to run an executable securely and predictably, it may be "
+"better to use the :ref:`win_command <win_command_module>` module instead."
+" Best practices when writing playbooks will follow the trend of using "
+":ref:`win_command <win_command_module>` unless ``win_shell`` is "
+"explicitly required. When running ad-hoc commands, use your best "
+"judgement."
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:126
+msgid ""
+"WinRM will not return from a command execution until all child processes "
+"created have exited. Thus, it is not possible to use ``win_shell`` to "
+"spawn long-running child or background processes. Consider creating a "
+"Windows service for managing background processes."
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:130
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:134
+msgid ":ref:`psexec_module`"
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:135
+msgid "The official documentation on the **psexec** module."
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:136
+msgid ":ref:`raw_module`"
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:137
+msgid "The official documentation on the **raw** module."
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:138
+msgid ":ref:`script_module`"
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:139
+msgid "The official documentation on the **script** module."
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:140
+msgid ":ref:`shell_module`"
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:141
+msgid "The official documentation on the **shell** module."
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:142
+msgid ":ref:`win_command_module`"
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:143
+msgid "The official documentation on the **win_command** module."
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:144
+msgid ":ref:`win_psexec_module`"
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:145
+msgid "The official documentation on the **win_psexec** module."
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:149
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:192
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:193
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:323
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:328
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:331
+msgid ""
+"This module is :ref:`maintained by the Ansible Core Team "
+"<modules_support>`. *[core]*"
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:334
+msgid "Red Hat Support"
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:336
+msgid ""
+"More information about Red Hat's support of this module is available from"
+" this `Red Hat Knowledge Base article "
+"<https://access.redhat.com/articles/3166901>`_."
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:342
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:344
+msgid "Matt Davis (@nitzmahone)"
+msgstr ""
+
+#: ../../rst/modules/win_shell_module.rst:348
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_shell.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

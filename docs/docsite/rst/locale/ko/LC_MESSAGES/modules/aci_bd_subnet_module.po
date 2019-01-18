@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:9
+msgid "aci_bd_subnet -- Manage Subnets (fv:Subnet)"
+msgstr ""
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:20
+msgid "Manage Subnets on Cisco ACI fabrics."
+msgstr ""
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:26
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:443
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:446
+msgid ""
+"The ``gateway`` parameter is the root key used to access the Subnet (not "
+"name), so the ``gateway`` is required when the state is ``absent`` or "
+"``present``."
+msgstr ""
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:447
+msgid ""
+"The ``tenant`` and ``bd`` used must exist before using this module in "
+"your playbook. The :ref:`aci_tenant <aci_tenant_module>` module and "
+":ref:`aci_bd <aci_bd_module>` can be used for these."
+msgstr ""
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:451
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:455
+msgid ":ref:`aci_bd_module`"
+msgstr ""
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:456
+msgid "The official documentation on the **aci_bd** module."
+msgstr ""
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:457
+msgid ":ref:`aci_tenant_module`"
+msgstr ""
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:458
+msgid "The official documentation on the **aci_tenant** module."
+msgstr ""
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:459
+msgid ""
+"`APIC Management Information Model reference "
+"<https://developer.cisco.com/docs/apic-mim-ref/>`_"
+msgstr ""
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:460
+msgid "More information about the internal APIC class **fv:Subnet**."
+msgstr ""
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:461
+msgid ":ref:`aci_guide`"
+msgstr ""
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:462
+msgid ""
+"Detailed information on how to manage your ACI infrastructure using "
+"Ansible."
+msgstr ""
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:463
+msgid ":ref:`aci_dev_guide`"
+msgstr ""
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:464
+msgid "Detailed guide on how to write your own Cisco ACI modules to contribute."
+msgstr ""
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:468
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:583
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:584
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:742
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:747
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:750
+msgid ""
+"This module is :ref:`maintained by an Ansible Partner <modules_support>`."
+" *[certified]*"
+msgstr ""
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:757
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:759
+msgid "Jacob McGill (@jmcgill298)"
+msgstr ""
+
+#: ../../rst/modules/aci_bd_subnet_module.rst:763
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/aci/aci_bd_subnet.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

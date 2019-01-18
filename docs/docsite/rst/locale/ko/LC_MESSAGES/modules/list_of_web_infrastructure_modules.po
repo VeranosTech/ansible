@@ -1,0 +1,211 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:6
+msgid "Web Infrastructure modules"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:10
+msgid ":ref:`apache2_mod_proxy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:11
+msgid ":ref:`apache2_module_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:12
+msgid ":ref:`deploy_helper_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:13
+msgid ":ref:`django_manage_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:14
+msgid ":ref:`ejabberd_user_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:15
+msgid ":ref:`gunicorn_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:16
+msgid ":ref:`htpasswd_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:17
+msgid ":ref:`jboss_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:18
+msgid ":ref:`jenkins_job_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:19
+msgid ":ref:`jenkins_job_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:20
+msgid ":ref:`jenkins_plugin_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:21
+msgid ":ref:`jenkins_script_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:22
+msgid ":ref:`jira_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:23
+msgid ":ref:`nginx_status_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:24
+msgid ":ref:`rundeck_acl_policy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:25
+msgid ":ref:`rundeck_project_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:26
+msgid ":ref:`supervisorctl_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:27
+msgid ":ref:`taiga_issue_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:33
+msgid "Ansible_Tower"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:37
+msgid ":ref:`tower_credential_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:38
+msgid ":ref:`tower_credential_type_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:39
+msgid ":ref:`tower_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:40
+msgid ":ref:`tower_host_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:41
+msgid ":ref:`tower_inventory_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:42
+msgid ":ref:`tower_inventory_source_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:43
+msgid ":ref:`tower_job_cancel_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:44
+msgid ":ref:`tower_job_launch_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:45
+msgid ":ref:`tower_job_list_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:46
+msgid ":ref:`tower_job_template_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:47
+msgid ":ref:`tower_job_wait_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:48
+msgid ":ref:`tower_label_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:49
+msgid ":ref:`tower_organization_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:50
+msgid ":ref:`tower_project_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:51
+msgid ":ref:`tower_role_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:52
+msgid ":ref:`tower_settings_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:53
+msgid ":ref:`tower_team_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:54
+msgid ":ref:`tower_user_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:55
+msgid ":ref:`tower_workflow_template_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:61
+msgid "Sophos_Utm"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:65
+msgid ":ref:`utm_ca_host_key_cert_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:66
+msgid ":ref:`utm_dns_host_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:67
+msgid ":ref:`utm_network_interface_address_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:68
+msgid ":ref:`utm_proxy_auth_profile_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:69
+msgid ":ref:`utm_proxy_frontend_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:70
+msgid ":ref:`utm_proxy_location_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:74
+msgid ""
+"**(D)**: This marks a module as deprecated, which means a module is kept "
+"for backwards compatibility but usage is discouraged. The module "
+"documentation details page may explain more about this rationale."
+msgstr ""
+

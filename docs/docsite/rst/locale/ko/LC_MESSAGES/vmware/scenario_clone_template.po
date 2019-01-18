@@ -1,0 +1,385 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/vmware/scenario_clone_template.rst:5
+msgid "Deploy a virtual machine from a template"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:7
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:10
+msgid "Introduction"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:12
+msgid ""
+"This guide will show you how to utilize Ansible to clone a virtual "
+"machine from already existing VMware template or existing VMware guest."
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:15
+msgid "Scenario Requirements"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:17
+msgid "Software"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:19
+msgid "Ansible 2.5 or later must be installed"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:21
+msgid ""
+"The Python module ``Pyvmomi`` must be installed on the Ansible (or Target"
+" host if not executing against localhost)"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:23
+msgid ""
+"Installing the latest ``Pyvmomi`` via ``pip`` is recommended [as the OS "
+"provided packages are usually out of date and incompatible]"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:25
+msgid "Hardware"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:27
+msgid "vCenter Server with at least one ESXi server"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:29
+msgid "Access / Credentials"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:31
+msgid ""
+"Ansible (or the target server) must have network access to the either "
+"vCenter server or the ESXi server you will be deploying to"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:33
+msgid "Username and Password"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:35
+msgid "Administrator user with following privileges"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:37
+msgid ""
+"``Datastore.AllocateSpace`` on the destination datastore or datastore "
+"folder"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:38
+msgid ""
+"``Network.Assign`` on the network to which the virtual machine will be "
+"assigned"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:39
+msgid ""
+"``Resource.AssignVMToPool`` on the destination host, cluster, or resource"
+" pool"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:40
+msgid ""
+"``VirtualMachine.Config.AddNewDisk`` on the datacenter or virtual machine"
+" folder"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:41
+msgid ""
+"``VirtualMachine.Config.AddRemoveDevice`` on the datacenter or virtual "
+"machine folder"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:42
+msgid ""
+"``VirtualMachine.Interact.PowerOn`` on the datacenter or virtual machine "
+"folder"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:43
+msgid ""
+"``VirtualMachine.Inventory.CreateFromExisting`` on the datacenter or "
+"virtual machine folder"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:44
+msgid ""
+"``VirtualMachine.Provisioning.Clone`` on the virtual machine you are "
+"cloning"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:45
+msgid ""
+"``VirtualMachine.Provisioning.Customize`` on the virtual machine or "
+"virtual machine folder if you are customizing the guest operating system"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:46
+msgid ""
+"``VirtualMachine.Provisioning.DeployTemplate`` on the template you are "
+"using"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:47
+msgid ""
+"``VirtualMachine.Provisioning.ReadCustSpecs`` on the root vCenter Server "
+"if you are customizing the guest operating system"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:49
+msgid ""
+"Depending on your requirements, you could also need one or more of the "
+"following privileges:"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:51
+msgid ""
+"``VirtualMachine.Config.CPUCount`` on the datacenter or virtual machine "
+"folder"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:52
+msgid ""
+"``VirtualMachine.Config.Memory`` on the datacenter or virtual machine "
+"folder"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:53
+msgid ""
+"``VirtualMachine.Config.DiskExtend`` on the datacenter or virtual machine"
+" folder"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:54
+msgid ""
+"``VirtualMachine.Config.Annotation`` on the datacenter or virtual machine"
+" folder"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:55
+msgid ""
+"``VirtualMachine.Config.AdvancedConfig`` on the datacenter or virtual "
+"machine folder"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:56
+msgid ""
+"``VirtualMachine.Config.EditDevice`` on the datacenter or virtual machine"
+" folder"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:57
+msgid ""
+"``VirtualMachine.Config.Resource`` on the datacenter or virtual machine "
+"folder"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:58
+msgid ""
+"``VirtualMachine.Config.Settings`` on the datacenter or virtual machine "
+"folder"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:59
+msgid ""
+"``VirtualMachine.Config.UpgradeVirtualHardware`` on the datacenter or "
+"virtual machine folder"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:60
+msgid ""
+"``VirtualMachine.Interact.SetCDMedia`` on the datacenter or virtual "
+"machine folder"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:61
+msgid ""
+"``VirtualMachine.Interact.SetFloppyMedia`` on the datacenter or virtual "
+"machine folder"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:62
+msgid ""
+"``VirtualMachine.Interact.DeviceConnection`` on the datacenter or virtual"
+" machine folder"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:65
+msgid "Assumptions"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:67
+msgid "All variable names and VMware object names are case sensitive"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:68
+msgid ""
+"VMware allows creation of virtual machine and templates with same name "
+"across datacenters and within datacenters"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:69
+msgid ""
+"You need to use Python 2.7.9 version in order to use ``validate_certs`` "
+"option, as this version is capable of changing the SSL verification "
+"behaviours"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:72
+msgid "Caveats"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:74
+msgid ""
+"Hosts in the ESXi cluster must have access to the datastore that the "
+"template resides on."
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:75
+msgid "Multiple templates with the same name will cause module failures."
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:76
+msgid ""
+"In order to utilize Guest Customization, VMWare Tools must be installed "
+"on the template. For Linux, the ``open-vm-tools`` package is recommended,"
+" and it requires that ``Perl`` be installed."
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:80
+msgid "Example Description"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:82
+msgid ""
+"In this use case / example, we will be selecting a virtual machine "
+"template and cloning it into a specific folder in our Datacenter / "
+"Cluster.  The following Ansible playbook showcases the basic parameters "
+"that are needed for this."
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:106
+msgid ""
+"Since Ansible utilizes the VMware API to perform actions, in this use "
+"case we will be connecting directly to the API from our localhost. This "
+"means that our playbooks will not be running from the vCenter or ESXi "
+"Server. We do not necessarily need to collect facts about our localhost, "
+"so the ``gather_facts`` parameter will be disabled. You can run these "
+"modules against another server that would then connect to the API if your"
+" localhost does not have access to vCenter. If so, the required Python "
+"modules will need to be installed on that target server."
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:108
+msgid ""
+"To begin, there are a few bits of information we will need. First and "
+"foremost is the hostname of the ESXi server or vCenter server. After "
+"this, you will need the username and password for this server. For now, "
+"you will be entering these directly, but in a more advanced playbook this"
+" can be abstracted out and stored in a more secure fashion using  :ref"
+":`ansible-vault` or using `Ansible Tower credentials "
+"<https://docs.ansible.com/ansible-"
+"tower/latest/html/userguide/credentials.html>`_. If your vCenter or ESXi "
+"server is not setup with proper CA certificates that can be verified from"
+" the Ansible server, then it is necessary to disable validation of these "
+"certificates by using the ``validate_certs`` parameter. To do this you "
+"need to set ``validate_certs=False`` in your playbook."
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:110
+msgid ""
+"Now you need to supply the information about the virtual machine which "
+"will be created. Give your virtual machine a name, one that conforms to "
+"all VMware requirements for naming conventions.  Next, select the display"
+" name of the template from which you want to clone new virtual machine. "
+"This must match what's displayed in VMware Web UI exactly. Then you can "
+"specify a folder to place this new virtual machine in. This path can "
+"either be a relative path or a full path to the folder including the "
+"Datacenter. You may need to specify a state for the virtual machine.  "
+"This simply tells the module which action you want to take, in this case "
+"you will be ensure that the virtual machine exists and is powered on.  An"
+" optional parameter is ``wait_for_ip_address``, this will tell Ansible to"
+" wait for the virtual machine to fully boot up and VMware Tools is "
+"running before completing this task."
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:114
+msgid "What to expect"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:116
+msgid ""
+"You will see a bit of JSON output after this playbook completes. This "
+"output shows various parameters that are returned from the module and "
+"from vCenter about the newly created VM."
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:207
+msgid ""
+"State is changed to ``True`` which notifies that the virtual machine is "
+"built using given template. The module will not complete until the clone "
+"task in VMware is finished. This can take some time depending on your "
+"environment."
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:209
+msgid ""
+"If you utilize the ``wait_for_ip_address`` parameter, then it will also "
+"increase the clone time as it will wait until virtual machine boots into "
+"the OS and an IP Address has been assigned to the given NIC."
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:214
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:216
+msgid "Things to inspect"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:218
+msgid "Check if the values provided for username and password are correct"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:219
+msgid "Check if the datacenter you provided is available"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:220
+msgid ""
+"Check if the template specified exists and you have permissions to access"
+" the datastore"
+msgstr ""
+
+#: ../../rst/vmware/scenario_clone_template.rst:221
+msgid ""
+"Ensure the full folder path you specified already exists. It will not "
+"create folders automatically for you"
+msgstr ""
+

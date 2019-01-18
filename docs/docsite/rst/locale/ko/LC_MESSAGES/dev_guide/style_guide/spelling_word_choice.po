@@ -1,0 +1,782 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:2
+msgid "Spelling - Word Usage - Common Words and Phrases to Use and Avoid"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:5
+msgid "Acronyms"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:7
+msgid ""
+"Always uppercase. An acronym is a word formed from the initial letters of"
+" a name, such as ROM for Read-only memory, SaaS for Software as a "
+"Service, or by combining initial letters or part of a series of words, "
+"such as LILO for LInux LOader."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:11
+msgid ""
+"Spell out the acronym before using it in alone text, such as \"The "
+"Embedded DevKit (EDK)...\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:14
+msgid "Applications"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:15
+msgid ""
+"When used as a proper name, use the capitalization of the product, such "
+"as GNUPro, Source-Navigator, and Ansible Tower. When used as a command, "
+"use lowercase as appropriate, such as \"To start GCC, type ``gcc``.\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:19
+msgid "\"vi\" is always lowercase."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:22
+msgid "As"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:23
+msgid ""
+"This is often used to mean \"because\", but has other connotations, for "
+"example, parallel or simultaneous actions. If you mean \"because\", say "
+"\"because\"."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:26
+msgid "Asks for"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:27
+msgid "Use \"requests\" instead."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:30
+msgid "Assure/Ensure/Insure"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:31
+msgid ""
+"Assure implies a sort of mental comfort. As in \"I assured my husband "
+"that I would eventually bring home beer.\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:33
+msgid "Ensure means \"to make sure.\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:35
+msgid "Insure relates to monetary insurance."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:39
+msgid "Back up"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:40
+msgid "This is a verb. You \"back up\" files; you do not \"backup\" files."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:43
+msgid "Backup"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:44
+msgid ""
+"This is a noun. You create \"backup\" files; you do not create \"back "
+"up\" files."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:47
+msgid "Backward"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:48
+msgid ""
+"Correct. Avoid using backwards unless you are stating that something has "
+"\"backwards compatibility.\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:51
+msgid "Backwards compatibility"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:52
+msgid "Correct as is."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:55
+msgid "By way of"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:56
+msgid "Use \"using\" instead."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:59
+msgid "Can/May"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:60
+msgid ""
+"Use \"can\" to describe actions or conditions that are possible. Use "
+"\"may\" only to describe situations where permission is being given. If "
+"either \"can,\" \"could,\" or \"may\" apply, use \"can\" because it's "
+"less tentative."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:63
+msgid "CD or cd"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:64
+msgid ""
+"When referring to a compact disk, use CD, such as \"Insert the CD into "
+"the CD-ROM drive.\" When referring to the change directory command, use "
+"cd."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:67
+msgid "CD-ROM"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:68
+msgid ""
+"Correct. Do not use \"cdrom,\" \"CD-Rom,\" \"CDROM,\" \"cd-rom\" or any "
+"other variation. When referring to the drive, use CD-ROM drive, such as "
+"\"Insert the CD into the CD-ROM drive.\" The plural is \"CD-ROMs.\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:72
+msgid "Command line"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:73
+msgid "Correct. Do not use \"command-line\" or \"commandline.\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:75
+msgid ""
+"Use to describes where to place options for a command, but not where to "
+"type the command. Use \"shell prompt\" instead to describe where to type "
+"commands. The line on the display screen where a command is expected. "
+"Generally, the command line is the line that contains the most recently "
+"displayed command prompt."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:79
+msgid "Daylight saving time (DST)"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:81
+msgid ""
+"Correct. Do not use daylight savings time. Daylight Saving Time (DST) is "
+"often misspelled \"Daylight Savings\", with an \"s\" at the end. Other "
+"common variations are \"Summer Time\"and \"Daylight-Saving Time\". "
+"(https://www.timeanddate.com/time/dst/daylight-savings-time.html)"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:85
+msgid "Download"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:86
+msgid "Correct. Do not use \"down load\" or \"down-load.\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:89
+msgid "e.g."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:90
+msgid "Spell it out: \"For example.\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:93
+msgid "Failover"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:94
+msgid ""
+"When used as a noun, a failover is a backup operation that automatically "
+"switches to a standby database, server or network if the primary system "
+"fails or is temporarily shut down for servicing. Failover is an important"
+" fault tolerance function of mission-critical systems that rely on "
+"constant accessibility. Failover automatically and transparently to the "
+"user redirects requests from the failed or down system to the backup "
+"system that mimics the operations of the primary system."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:97
+msgid "Fail over"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:98
+msgid ""
+"When used as a verb, fail over is two words since there can be different "
+"tenses such as failed over."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:101
+msgid "Fewer"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:102
+msgid ""
+"Fewer is used with plural nouns. Think things you could count.  Time, "
+"money, distance, and weight are often listed as exceptions to the "
+"traditional \"can you count it\" rule, often thought of a singular "
+"amounts (the work will take less than 5 hours, for example)."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:105
+msgid "File name"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:106
+msgid "Correct. Do not use \"filename.\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:109
+msgid "File system"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:110
+msgid ""
+"Correct. Do not use \"filesystem.\" The system that an operating system "
+"or program uses to organize and keep track of files. For example, a "
+"hierarchical file system is one that uses directories to organize files "
+"into a tree structure. Although the operating system provides its own "
+"file management system, you can buy separate file management systems. "
+"These systems interact smoothly with the operating system but provide "
+"more features, such as improved backup procedures and stricter file "
+"protection."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:113
+msgid "For instance"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:114
+msgid "For example,\" instead."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:117
+msgid "For further/additional/whatever information"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:118
+msgid "Use \"For more information\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:121
+msgid "For this reason"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:122
+msgid "Use \"therefore\"."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:125
+msgid "Forward"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:126
+msgid "Correct. Avoid using \"forwards.\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:129
+msgid "Gigabyte (GB)"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:130
+msgid ""
+"2 to the 30th power (1,073,741,824) bytes. One gigabyte is equal to 1,024"
+" megabytes. Gigabyte is often abbreviated as G or GB."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:133
+msgid "Got"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:134
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:208
+msgid "Avoid. Use \"must\" instead."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:137
+msgid "High-availability"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:138
+msgid "Correct. Do not use \"high availability.\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:141
+msgid "Highly available"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:142
+msgid "Correct. Do not use highly-available.\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:145
+msgid "Hostname"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:146
+msgid "Correct. Do not use host name."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:149
+msgid "i.e."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:150
+msgid "Spell it out: \"That is.\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:153
+msgid "Installer"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:154
+msgid "Avoid. Use \"installation program\" instead."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:157
+msgid "It's and its"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:158
+msgid ""
+"\"It's\" is a contraction for \"it is;\" use \"it is\" instead of "
+"\"it's.\" Use \"its\" as a possessive pronoun (for example, \"the store "
+"is known for its low prices\")."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:161
+msgid "Less"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:162
+msgid ""
+"Less is used with singular nouns. For example \"View less details\" "
+"wouldn't be correct but \"View less detail\" works. Use fewer when you "
+"have plural nouns (things you can count)."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:165
+msgid "Linux"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:166
+msgid ""
+"Correct. Do not use \"LINUX\" or \"linux\" unless referring to a command,"
+" such as \"To start Linux, type linux.\" Linux is a registered trademark "
+"of Linus Torvalds."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:169
+msgid "Login"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:170
+msgid ""
+"A noun used to refer to the login prompt, such as \"At the login prompt, "
+"enter your username.\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:173
+msgid "Log in"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:174
+msgid ""
+"A verb used to refer to the act of logging in. Do not use \"login,\" "
+"\"loggin,\" \"logon,\" and other variants. For example, \"When starting "
+"your computer, you are requested to log in...\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:177
+msgid "Log on"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:178
+msgid ""
+"To make a computer system or network recognize you so that you can begin "
+"a computer session. Most personal computers have no log-on procedure -- "
+"you just turn the machine on and begin working. For larger systems and "
+"networks, however, you usually need to enter a username and password "
+"before the computer system will allow you to execute programs."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:181
+msgid "Lots of"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:182
+msgid "Use \"Several\" or something equivalent instead."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:185
+msgid "Make sure"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:186
+msgid ""
+"This means \"be careful to remember, attend to, or find out something.\" "
+"For example, \"...make sure that the rhedk group is listed in the "
+"output.\" Try to use verify or ensure instead."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:190
+msgid "Manual/man page"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:191
+msgid "Correct. Two words. Do not use \"manpage\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:194
+msgid "MB"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:195
+msgid ""
+"When spelled MB, short for megabyte (1,000,000 or 1,048,576 bytes, "
+"depending on the context)."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:196
+msgid "When spelled Mb, short for megabit."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:199
+msgid "MBps"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:200
+msgid ""
+"Short for megabytes per second, a measure of data transfer speed. Mass "
+"storage devices are generally measured in MBps."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:203
+msgid "MySQL"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:204
+msgid ""
+"Common open source database server and client package. Do not use "
+"\"MYSQL\" or \"mySQL.\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:207
+msgid "Need to"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:211
+msgid "Read-only"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:212
+msgid ""
+"Correct. Use when referring to the access permissions of files or "
+"directories."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:215
+msgid "Real time/real-time"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:216
+msgid ""
+"Depends. If used as a noun, it is the actual time during which something "
+"takes place. For example, \"The computer may partly analyze the data in "
+"real time (as it comes in) -- R. H. March.\" If used as an adjective, "
+"\"real-time\" is appropriate. For example, \"XEmacs is a self-"
+"documenting, customizable, extensible, real-time display editor.\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:219
+msgid "Refer to"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:220
+msgid ""
+"Use to indicate a reference (within a manual or website) or a cross-"
+"reference (to another manual or documentation source)."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:223
+msgid "See"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:224
+msgid "Don't use. Use \"Refer to\" instead."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:227
+msgid "Since"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:228
+msgid ""
+"This is often used to mean \"because\", but \"since\" has connotations of"
+" time, so be careful. If you mean \"because\", say \"because\"."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:231
+msgid "Tells"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:232
+msgid "Use \"Instructs\" instead."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:235
+msgid "That/which"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:236
+msgid ""
+"\"That\" introduces a restrictive clause-a clause that must be there for "
+"the sentence to make sense. A restrictive clause often defines the noun "
+"or phrase preceding it. \"Which\" introduces a non-restrictive, "
+"parenthetical clause-a clause that could be omitted without affecting the"
+" meaning of the sentence. For example: The car was travelling at a speed "
+"that would endanger lives. The car, which was traveling at a speed that "
+"would endanger lives, swerved onto the sidewalk. Use \"who\" or \"whom,\""
+" rather than \"that\" or \"which,\" when referring to a person."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:239
+msgid "Then/than"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:240
+msgid ""
+"\"Then\" refers to a time in the past or the next step in a sequence. "
+"\"Than\" is used for comparisons."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:245
+msgid "Third-party"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:246
+msgid "Correct. Do not use \"third party\"."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:249
+msgid "Troubleshoot"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:250
+msgid ""
+"Correct. Do not use \"trouble shoot\" or \"trouble-shoot.\" To isolate "
+"the source of a problem and fix it. In the case of computer systems, the "
+"term troubleshoot is usually used when the problem is suspected to be "
+"hardware -related. If the problem is known to be in software, the term "
+"debug is more commonly used."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:253
+msgid "UK"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:254
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:266
+msgid "Correct as is, no periods."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:257
+msgid "UNIX®"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:258
+msgid ""
+"Correct. Do not use \"Unix\" or \"unix.\" UNIX® is a registered trademark"
+" of The Open Group."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:261
+msgid "Unset"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:262
+msgid "Don't use. Use Clear."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:265
+msgid "US"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:269
+msgid "User"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:270
+msgid ""
+"When referring to the reader, use \"you\" instead of \"user.\" For "
+"example, \"The user must...\" is incorrect. Use \"You must...\" instead. "
+"If referring to more than one user, calling the collection \"users\" is "
+"acceptable, such as \"Other users may wish to access your database.\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:273
+msgid "Username"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:274
+msgid "Correct. Do not use \"user name.\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:277
+msgid "View"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:278
+msgid ""
+"When using as a reference (\"View the documentation available online.\"),"
+" do not use View. Use \"Refer to\" instead."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:281
+msgid "Within"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:282
+msgid "Don't use to refer to a file that exists in a directory. Use \"In\"."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:285
+msgid "World Wide Web"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:286
+msgid "Correct. Capitalize each word. Abbreviate as \"WWW\" or \"Web.\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:289
+msgid "Webpage"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:290
+msgid "Correct. Do not use \"web page\" or \"Web page.\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:293
+msgid "Web server"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:294
+msgid ""
+"Correct. Do not use \"webserver\". For example, \"The Apache HTTP Server "
+"is the default Web server...\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:297
+msgid "Website"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:298
+msgid ""
+"Correct. Do not use \"web site\" or \"Web site.\" For example, \"The "
+"Ansible website contains ...\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:301
+msgid "Who/whom"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:302
+msgid ""
+"Use the pronoun \"who\" as a subject. Use the pronoun \"whom\" as a "
+"direct object, an indirect object, or the object of a preposition. For "
+"example: Who owns this? To whom does this belong?"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:305
+msgid "Will"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:306
+msgid ""
+"Do not use future tense unless it is absolutely necessary. For instance, "
+"do not use the sentence, \"The next section will describe the process in "
+"more detail.\" Instead, use the sentence, \"The next section describes "
+"the process in more detail.\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:309
+msgid "Wish"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:310
+msgid ""
+"Use \"need\" instead of \"desire\" and \"wish.\" Use \"want\" when the "
+"reader's actions are optional (that is, they may not \"need\" something "
+"but may still \"want\" something)."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:313
+msgid "x86"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:314
+msgid "Correct. Do not capitalize the \"x.\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:317
+msgid "x86_64"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:318
+msgid ""
+"Do not use. Do not use \"Hammer\". Always use \"AMD64 and Intel® EM64T\" "
+"when referring to this architecture."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:321
+msgid "You"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:322
+msgid "Correct. Do not use \"I,\" \"he,\" or \"she.\""
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:325
+msgid "You may"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/spelling_word_choice.rst:326
+msgid ""
+"Try to avoid using this. For example, \"you may\" can be eliminated from "
+"this sentence \"You may double-click on the desktop...\""
+msgstr ""
+

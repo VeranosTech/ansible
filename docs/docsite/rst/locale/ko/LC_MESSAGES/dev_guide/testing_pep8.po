@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/testing_pep8.rst:7
+msgid "PEP 8"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_pep8.rst:9
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_pep8.rst:11
+msgid ""
+"`PEP 8`_ style guidelines are enforced by `pycodestyle`_ on all python "
+"files in the repository by default."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_pep8.rst:14
+msgid "Current Rule Set"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_pep8.rst:16
+msgid ""
+"By default all files are tested using the current rule set. All `PEP 8`_ "
+"tests are executed, except those listed in the `current ignore list`_."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_pep8.rst:24
+msgid "Legacy Rule Set"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_pep8.rst:26
+msgid ""
+"Files which are listed in the `legacy file list`_ are tested using the "
+"legacy rule set."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_pep8.rst:28
+msgid ""
+"All `PEP 8`_ tests are executed, except those listed in the `current "
+"ignore list`_ or `legacy ignore list`_."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_pep8.rst:30
+msgid ""
+"Files listed in the legacy file list which pass the current rule set will"
+" result in an error."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_pep8.rst:32
+msgid ""
+"This is intended to prevent regressions on style guidelines for files "
+"which pass the more stringent current rule set."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_pep8.rst:35
+msgid "Skipping Tests"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_pep8.rst:37
+msgid "Files listed in the `skip list`_ are not tested by `pycodestyle`_."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_pep8.rst:40
+msgid "Removed Files"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_pep8.rst:42
+msgid ""
+"Files which have been removed from the repository must be removed from "
+"the legacy file list and the skip list."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_pep8.rst:45
+msgid "Running Locally"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_pep8.rst:47
+msgid "The `PEP 8`_ check can be run locally with::"
+msgstr ""
+

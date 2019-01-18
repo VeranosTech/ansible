@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/aos_rack_type_module.rst:9
+msgid "aos_rack_type -- Manage AOS Rack Type"
+msgstr ""
+
+#: ../../rst/modules/aos_rack_type_module.rst:18
+msgid "DEPRECATED"
+msgstr ""
+
+#: ../../rst/modules/aos_rack_type_module.rst
+msgid "Removed in Ansible"
+msgstr ""
+
+#: ../../rst/modules/aos_rack_type_module.rst:19
+msgid "version: 2.9"
+msgstr ""
+
+#: ../../rst/modules/aos_rack_type_module.rst
+msgid "Why"
+msgstr ""
+
+#: ../../rst/modules/aos_rack_type_module.rst:20
+msgid "This module does not support AOS 2.1 or later"
+msgstr ""
+
+#: ../../rst/modules/aos_rack_type_module.rst
+msgid "Alternative"
+msgstr ""
+
+#: ../../rst/modules/aos_rack_type_module.rst:21
+msgid "See new modules at https://www.ansible.com/ansible-apstra."
+msgstr ""
+
+#: ../../rst/modules/aos_rack_type_module.rst:26
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/aos_rack_type_module.rst:27
+msgid ""
+"Apstra AOS Rack Type module let you manage your Rack Type easily. You can"
+" create create and delete Rack Type by Name, ID or by using a JSON File. "
+"This module is idempotent and support the *check* mode. It's using the "
+"AOS REST API."
+msgstr ""
+
+#: ../../rst/modules/aos_rack_type_module.rst:32
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/aos_rack_type_module.rst:33
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/aos_rack_type_module.rst:35
+msgid "aos-pyez >= 0.6.0"
+msgstr ""
+
+#: ../../rst/modules/aos_rack_type_module.rst:39
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/aos_rack_type_module.rst:125
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/aos_rack_type_module.rst:178
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/aos_rack_type_module.rst:181
+msgid "This module will be removed in version 2.9. *[deprecated]*"
+msgstr ""
+
+#: ../../rst/modules/aos_rack_type_module.rst:182
+msgid "For more information see `DEPRECATED`_."
+msgstr ""
+
+#: ../../rst/modules/aos_rack_type_module.rst:186
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/aos_rack_type_module.rst:188
+msgid "Damien Garros (@dgarros)"
+msgstr ""
+
+#: ../../rst/modules/aos_rack_type_module.rst:192
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/aos/_aos_rack_type.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/win_updates_module.rst:9
+msgid "win_updates -- Download and install Windows updates"
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:20
+msgid ""
+"Searches, downloads, and installs Windows updates synchronously by "
+"automating the Windows Update client."
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:26
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:171
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:174
+msgid ""
+"``win_updates`` must be run by a user with membership in the local "
+"Administrators group."
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:175
+msgid ""
+"``win_updates`` will use the default update service configured for the "
+"machine (Windows Update, Microsoft Update, WSUS, etc)."
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:176
+msgid ""
+"By default ``win_updates`` does not manage reboots, but will signal when "
+"a reboot is required with the *reboot_required* return value, as of "
+"Ansible v2.5 ``reboot`` can be used to reboot the host if required in the"
+" one task."
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:177
+msgid ""
+"``win_updates`` can take a significant amount of time to complete (hours,"
+" in some cases). Performance depends on many factors, including OS "
+"version, number of updates, system load, and update server load."
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:178
+msgid ""
+"Beware that just after ``win_updates`` reboots the system, the Windows "
+"system may not have settled yet and some base services could be in limbo."
+" This can result in unexpected behavior. Check the examples for ways to "
+"mitigate this."
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:179
+msgid ""
+"More information about PowerShell and how it handles RegEx strings can be"
+" found at https://technet.microsoft.com/en-"
+"us/library/2007.11.powershell.aspx."
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:183
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:187
+msgid ":ref:`win_chocolatey_module`"
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:188
+msgid "The official documentation on the **win_chocolatey** module."
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:189
+msgid ":ref:`win_feature_module`"
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:190
+msgid "The official documentation on the **win_feature** module."
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:191
+msgid ":ref:`win_hotfix_module`"
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:192
+msgid "The official documentation on the **win_hotfix** module."
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:193
+msgid ":ref:`win_package_module`"
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:194
+msgid "The official documentation on the **win_package** module."
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:198
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:260
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:261
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:450
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:455
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:458
+msgid ""
+"This module is :ref:`maintained by the Ansible Core Team "
+"<modules_support>`. *[core]*"
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:461
+msgid "Red Hat Support"
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:463
+msgid ""
+"More information about Red Hat's support of this module is available from"
+" this `Red Hat Knowledge Base article "
+"<https://access.redhat.com/articles/3166901>`_."
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:469
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:471
+msgid "Matt Davis (@nitzmahone)"
+msgstr ""
+
+#: ../../rst/modules/win_updates_module.rst:475
+#, python-format
+msgid ""
+"If you notice any issues in this documentation you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_updates.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/scenario_guides/guide_alicloud.rst:2
+msgid "Alibaba Cloud Compute Services Guide"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_alicloud.rst:7
+msgid "Introduction"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_alicloud.rst:9
+msgid ""
+"Ansible contains several modules for controlling and managing Alibaba "
+"Cloud Compute Services (Alicloud).  This guide explains how to use the "
+"Alicloud Ansible modules together."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_alicloud.rst:12
+msgid ""
+"All Alicloud modules require ``footmark`` - install it on your control "
+"machine with ``pip install footmark``."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_alicloud.rst:14
+msgid ""
+"Cloud modules, including Alicloud modules, execute on your local machine "
+"(the control machine) with ``connection: local``, rather than on remote "
+"machines defined in your hosts."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_alicloud.rst:16
+msgid ""
+"Normally, you'll use the following pattern for plays that provision "
+"Alicloud resources::"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_alicloud.rst:28
+msgid "Authentication"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_alicloud.rst:30
+msgid ""
+"You can specify your Alicloud authentication credentials (access key and "
+"secret key) by passing them as environment variables or by storing them "
+"in a vars file."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_alicloud.rst:33
+msgid "To pass authentication credentials as environment variables::"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_alicloud.rst:38
+msgid ""
+"To store authentication credentials in a vars_file, encrypt them with "
+":doc:`Ansible Vault<../user_guide/vault>` to keep them secure, then list "
+"them::"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_alicloud.rst:44
+msgid ""
+"Note that if you store your credentials in a vars_file, you need to refer"
+" to them in each Alicloud module. For example::"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_alicloud.rst:54
+msgid "Provisioning"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_alicloud.rst:56
+msgid ""
+"Alicloud modules create Alicloud ECS instances, disks, virtual private "
+"clouds, virtual switches, security groups and other resources."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_alicloud.rst:58
+msgid ""
+"You can use the ``count`` parameter to control the number of resources "
+"you create or terminate. For example, if you want exactly 5 instances "
+"tagged ``NewECS``, set the ``count`` of instances to 5 and the "
+"``count_tag`` to ``NewECS``, as shown in the last task of the example "
+"playbook below. If there are no instances with the tag ``NewECS``, the "
+"task creates 5 new instances. If there are 2 instances with that tag, the"
+" task creates 3 more. If there are 8 instances with that tag, the task "
+"terminates 3 of those instances."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_alicloud.rst:63
+msgid ""
+"If you do not specify a ``count_tag``, the task creates the number of "
+"instances you specify in ``count`` with the ``instance_name`` you "
+"provide."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_alicloud.rst:121
+msgid ""
+"In the example playbook above, data about the vpc, vswitch, group, and "
+"instances created by this playbook are saved in the variables defined by "
+"the \"register\" keyword in each task."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_alicloud.rst:124
+msgid ""
+"Each Alicloud module offers a variety of parameter options. Not all "
+"options are demonstrated in the above example. See each individual module"
+" for further details and examples."
+msgstr ""
+

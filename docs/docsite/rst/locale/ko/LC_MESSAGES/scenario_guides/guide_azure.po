@@ -1,0 +1,572 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/scenario_guides/guide_azure.rst:2
+msgid "Microsoft Azure Guide"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:4
+msgid ""
+"Ansible includes a suite of modules for interacting with Azure Resource "
+"Manager, giving you the tools to easily create and orchestrate "
+"infrastructure on the Microsoft Azure Cloud."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:8
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:10
+msgid ""
+"Using the Azure Resource Manager modules requires having specific Azure "
+"SDK modules installed on the host running Ansible."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:17
+msgid ""
+"If you are running Ansible from source, you can install the dependencies "
+"from the root directory of the Ansible repo."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:24
+msgid ""
+"You can also directly run Ansible in `Azure Cloud Shell "
+"<https://shell.azure.com>`_, where Ansible is pre-installed."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:27
+msgid "Authenticating with Azure"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:29
+msgid ""
+"Using the Azure Resource Manager modules requires authenticating with the"
+" Azure API. You can choose from two authentication strategies:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:31
+msgid "Active Directory Username/Password"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:32
+msgid "Service Principal Credentials"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:34
+msgid ""
+"Follow the directions for the strategy you wish to use, then proceed to "
+"`Providing Credentials to Azure Modules`_ for instructions on how to "
+"actually use the modules and authenticate with the Azure API."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:39
+msgid "Using Service Principal"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:41
+msgid ""
+"There is now a detailed official tutorial describing `how to create a "
+"service principal <https://docs.microsoft.com/en-us/azure/azure-resource-"
+"manager/resource-group-create-service-principal-portal>`_."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:43
+msgid "After stepping through the tutorial you will have:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:45
+msgid ""
+"Your Client ID, which is found in the \"client id\" box in the "
+"\"Configure\" page of your application in the Azure portal"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:46
+msgid ""
+"Your Secret key, generated when you created the application. You cannot "
+"show the key after creation. If you lost the key, you must create a new "
+"one in the \"Configure\" page of your application."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:48
+msgid ""
+"And finally, a tenant ID. It's a UUID (e.g. "
+"ABCDEFGH-1234-ABCD-1234-ABCDEFGHIJKL) pointing to the AD containing your "
+"application. You will find it in the URL from within the Azure portal, or"
+" in the \"view endpoints\" of any given URL."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:53
+msgid "Using Active Directory Username/Password"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:55
+msgid "To create an Active Directory username/password:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:57
+msgid "Connect to the Azure Classic Portal with your admin account"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:58
+msgid ""
+"Create a user in your default AAD. You must NOT activate Multi-Factor "
+"Authentication"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:59
+msgid "Go to Settings - Administrators"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:60
+msgid "Click on Add and enter the email of the new user."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:61
+msgid "Check the checkbox of the subscription you want to test with this user."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:62
+msgid ""
+"Login to Azure Portal with this new user to change the temporary password"
+" to a new one. You will not be able to use the temporary password for "
+"OAuth login."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:66
+msgid "Providing Credentials to Azure Modules"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:68
+msgid ""
+"The modules offer several ways to provide your credentials. For a CI/CD "
+"tool such as Ansible Tower or Jenkins, you will most likely want to use "
+"environment variables. For local development you may wish to store your "
+"credentials in a file within your home directory. And of course, you can "
+"always pass credentials as parameters to a task within a playbook. The "
+"order of precedence is parameters, then environment variables, and "
+"finally a file found in your home directory."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:74
+msgid "Using Environment Variables"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:76
+msgid ""
+"To pass service principal credentials via the environment, define the "
+"following variables:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:78
+#: ../../rst/scenario_guides/guide_azure.rst:92
+msgid "AZURE_CLIENT_ID"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:79
+msgid "AZURE_SECRET"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:80
+msgid "AZURE_SUBSCRIPTION_ID"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:81
+#: ../../rst/scenario_guides/guide_azure.rst:93
+msgid "AZURE_TENANT"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:83
+msgid ""
+"To pass Active Directory username/password via the environment, define "
+"the following variables:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:85
+#: ../../rst/scenario_guides/guide_azure.rst:90
+msgid "AZURE_AD_USER"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:86
+#: ../../rst/scenario_guides/guide_azure.rst:91
+msgid "AZURE_PASSWORD"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:88
+msgid ""
+"To pass Active Directory username/password in ADFS via the environment, "
+"define the following variables:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:94
+msgid "AZURE_ADFS_AUTHORITY_URL"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:96
+msgid ""
+"\"AZURE_ADFS_AUTHORITY_URL\" is optional. It's necessary only when you "
+"have own ADFS authority like https://yourdomain.com/adfs."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:99
+msgid "Storing in a File"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:101
+msgid ""
+"When working in a development environment, it may be desirable to store "
+"credentials in a file. The modules will look for credentials in "
+"``$HOME/.azure/credentials``. This file is an ini style file. It will "
+"look as follows:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:112
+msgid ""
+"It is possible to store multiple sets of credentials within the "
+"credentials file by creating multiple sections. Each section is "
+"considered a profile. The modules look for the [default] profile "
+"automatically. Define AZURE_PROFILE in the environment or pass a profile "
+"parameter to specify a specific profile."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:117
+msgid "Passing as Parameters"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:119
+msgid ""
+"If you wish to pass credentials as parameters to a task, use the "
+"following parameters for service principal:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:121
+#: ../../rst/scenario_guides/guide_azure.rst:135
+msgid "client_id"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:122
+msgid "secret"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:123
+msgid "subscription_id"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:124
+#: ../../rst/scenario_guides/guide_azure.rst:136
+msgid "tenant"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:126
+msgid "Or, pass the following parameters for Active Directory username/password:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:128
+#: ../../rst/scenario_guides/guide_azure.rst:133
+msgid "ad_user"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:129
+#: ../../rst/scenario_guides/guide_azure.rst:134
+msgid "password"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:131
+msgid "Or, pass the following parameters for ADFS username/pasword:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:137
+msgid "adfs_authority_url"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:139
+msgid ""
+"\"adfs_authority_url\" is optional. It's necessary only when you have own"
+" ADFS authority like https://yourdomain.com/adfs."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:143
+msgid "Other Cloud Environments"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:145
+msgid ""
+"To use an Azure Cloud other than the default public cloud (eg, Azure "
+"China Cloud, Azure US Government Cloud, Azure Stack), pass the "
+"\"cloud_environment\" argument to modules, configure it in a credential "
+"profile, or set the \"AZURE_CLOUD_ENVIRONMENT\" environment variable. The"
+" value is either a cloud name as defined by the Azure Python SDK (eg, "
+"\"AzureChinaCloud\", \"AzureUSGovernment\"; defaults to \"AzureCloud\") "
+"or an Azure metadata discovery URL (for Azure Stack)."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:151
+msgid "Creating Virtual Machines"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:153
+msgid ""
+"There are two ways to create a virtual machine, both involving the "
+"azure_rm_virtualmachine module. We can either create a storage account, "
+"network interface, security group and public IP address and pass the "
+"names of these objects to the module as parameters, or we can let the "
+"module do the work for us and accept the defaults it chooses."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:158
+msgid "Creating Individual Components"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:160
+msgid ""
+"An Azure module is available to help you create a storage account, "
+"virtual network, subnet, network interface, security group and public IP."
+" Here is a full example of creating each of these and passing the names "
+"to the azure_rm_virtualmachine module at the end:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:229
+msgid ""
+"Each of the Azure modules offers a variety of parameter options. Not all "
+"options are demonstrated in the above example. See each individual module"
+" for further details and examples."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:234
+msgid "Creating a Virtual Machine with Default Options"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:236
+msgid ""
+"If you simply want to create a virtual machine without specifying all the"
+" details, you can do that as well. The only caveat is that you will need "
+"a virtual network with one subnet already in your resource group. "
+"Assuming you have a virtual network already with an existing subnet, you "
+"can run the following to create a VM:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:257
+msgid "Dynamic Inventory Script"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:259
+msgid ""
+"If you are not familiar with Ansible's dynamic inventory scripts, check "
+"out :ref:`Intro to Dynamic Inventory <intro_dynamic_inventory>`."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:261
+msgid ""
+"The Azure Resource Manager inventory script is called  `azure_rm.py  "
+"<https://raw.githubusercontent.com/ansible/ansible/devel/contrib/inventory/azure_rm.py>`_."
+" It authenticates with the Azure API exactly the same as the Azure "
+"modules, which means you will either define the same environment "
+"variables described above in `Using Environment Variables`_, create a "
+"``$HOME/.azure/credentials`` file (also described above in `Storing in a "
+"File`_), or pass command line parameters. To see available command line "
+"options execute the following:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:270
+msgid ""
+"As with all dynamic inventory scripts, the script can be executed "
+"directly, passed as a parameter to the ansible command, or passed "
+"directly to ansible-playbook using the -i option. No matter how it is "
+"executed the script produces JSON representing all of the hosts found in "
+"your Azure subscription. You can narrow this down to just hosts found in "
+"a specific set of Azure resource groups, or even down to a specific host."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:275
+msgid ""
+"For a given host, the inventory script provides the following host "
+"variables:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:321
+msgid "Host Groups"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:323
+msgid "By default hosts are grouped by:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:325
+msgid "azure (all hosts)"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:326
+msgid "location name"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:327
+msgid "resource group name"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:328
+msgid "security group name"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:329
+msgid "tag key"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:330
+msgid "tag key_value"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:331
+msgid "os_disk operating_system_type (Windows/Linux)"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:333
+msgid ""
+"You can control host groupings and host selection by either defining "
+"environment variables or creating an azure_rm.ini file in your current "
+"working directory."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:336
+msgid "NOTE: An .ini file will take precedence over environment variables."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:338
+msgid ""
+"NOTE: The name of the .ini file is the basename of the inventory script "
+"(i.e. 'azure_rm') with a '.ini' extension. This allows you to copy, "
+"rename and customize the inventory script and have matching .ini files "
+"all in the same directory."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:342
+msgid "Control grouping using the following variables defined in the environment:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:344
+msgid "AZURE_GROUP_BY_RESOURCE_GROUP=yes"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:345
+msgid "AZURE_GROUP_BY_LOCATION=yes"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:346
+msgid "AZURE_GROUP_BY_SECURITY_GROUP=yes"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:347
+msgid "AZURE_GROUP_BY_TAG=yes"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:348
+msgid "AZURE_GROUP_BY_OS_FAMILY=yes"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:350
+msgid ""
+"Select hosts within specific resource groups by assigning a comma "
+"separated list to:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:352
+msgid "AZURE_RESOURCE_GROUPS=resource_group_a,resource_group_b"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:354
+msgid ""
+"Select hosts for specific tag key by assigning a comma separated list of "
+"tag keys to:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:356
+msgid "AZURE_TAGS=key1,key2,key3"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:358
+msgid ""
+"Select hosts for specific locations by assigning a comma separated list "
+"of locations to:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:360
+msgid "AZURE_LOCATIONS=eastus,eastus2,westus"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:362
+msgid ""
+"Or, select hosts for specific tag key:value pairs by assigning a comma "
+"separated list key:value pairs to:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:364
+msgid "AZURE_TAGS=key1:value1,key2:value2"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:366
+msgid ""
+"If you don't need the powerstate, you can improve performance by turning "
+"off powerstate fetching:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:368
+msgid "AZURE_INCLUDE_POWERSTATE=no"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:370
+msgid ""
+"A sample azure_rm.ini file is included along with the inventory script in"
+" contrib/inventory. An .ini file will contain the following:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:398
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:400
+msgid "Here are some examples using the inventory script:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:419
+msgid "Here is a simple playbook to exercise the Azure inventory script:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:430
+msgid "You can execute the playbook with something like:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:438
+msgid "Disabling certificate validation on Azure endpoints"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_azure.rst:440
+msgid ""
+"When an HTTPS proxy is present, or when using Azure Stack, it may be "
+"necessary to disable certificate validation for Azure endpoints in the "
+"Azure modules. This is not a recommended security practice, but may be "
+"necessary when the system CA store cannot be altered to include the "
+"necessary CA certificate. Certificate validation can be controlled by "
+"setting the \"cert_validation_mode\" value in a credential profile, via "
+"the \"AZURE_CERT_VALIDATION_MODE\" environment variable, or by passing "
+"the \"cert_validation_mode\" argument to any Azure module. The default "
+"value is \"validate\"; setting the value to \"ignore\" will prevent all "
+"certificate validation. The module argument takes precedence over a "
+"credential profile value, which takes precedence over the environment "
+"value."
+msgstr ""
+

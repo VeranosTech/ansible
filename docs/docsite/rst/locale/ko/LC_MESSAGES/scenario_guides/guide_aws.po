@@ -1,0 +1,374 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/scenario_guides/guide_aws.rst:2
+msgid "Amazon Web Services Guide"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:7
+msgid "Introduction"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:9
+msgid ""
+"Ansible contains a number of modules for controlling Amazon Web Services "
+"(AWS).  The purpose of this section is to explain how to put Ansible "
+"modules together (and use inventory scripts) to use Ansible in AWS "
+"context."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:12
+msgid "Requirements for the AWS modules are minimal."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:14
+msgid ""
+"All of the modules require and are tested against recent versions of "
+"boto.  You'll need this Python module installed on your control machine."
+"  Boto can be installed from your OS distribution or python's \"pip "
+"install boto\"."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:16
+msgid ""
+"Whereas classically ansible will execute tasks in its host loop against "
+"multiple remote machines, most cloud-control steps occur on your local "
+"machine with reference to the regions to control."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:18
+msgid ""
+"In your playbook steps we'll typically be using the following pattern for"
+" provisioning steps::"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:29
+msgid "Authentication"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:31
+msgid ""
+"Authentication with the AWS-related modules is handled by either "
+"specifying your access and secret key as ENV variables or module "
+"arguments."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:34
+msgid "For environment variables::"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:39
+msgid "For storing these in a vars_file, ideally encrypted with ansible-vault::"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:45
+msgid ""
+"Note that if you store your credentials in vars_file, you need to refer "
+"to them in each AWS-module. For example::"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:55
+msgid "Provisioning"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:57
+msgid "The ec2 module provisions and de-provisions instances within EC2."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:59
+msgid ""
+"An example of making sure there are only 5 instances tagged 'Demo' in EC2"
+" follows."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:61
+msgid ""
+"In the example below, the \"exact_count\" of instances is set to 5.  This"
+" means if there are 0 instances already existing, then 5 new instances "
+"would be created.  If there were 2 instances, only 3 would be created, "
+"and if there were 8 instances, 3 instances would be terminated."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:65
+msgid ""
+"What is being counted is specified by the \"count_tag\" parameter.  The "
+"parameter \"instance_tags\" is used to apply tags to the newly created "
+"instance.::"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:90
+msgid ""
+"The data about what instances are created is being saved by the "
+"\"register\" keyword in the variable named \"ec2\"."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:92
+msgid ""
+"From this, we'll use the add_host module to dynamically create a host "
+"group consisting of these new instances.  This facilitates performing "
+"configuration actions on the hosts immediately in a subsequent task.::"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:120
+msgid ""
+"With the host group now created, a second play at the bottom of the same "
+"provisioning playbook file might now have some configuration steps::"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:141
+msgid "Host Inventory"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:143
+msgid ""
+"Once your nodes are spun up, you'll probably want to talk to them again."
+"  With a cloud setup, it's best to not maintain a static list of cloud "
+"hostnames in text files.  Rather, the best way to handle this is to use "
+"the ec2 dynamic inventory script. See :ref:`dynamic_inventory`."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:146
+msgid ""
+"This will also dynamically select nodes that were even created outside of"
+" Ansible, and allow Ansible to manage them."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:148
+msgid ""
+"See :ref:`dynamic_inventory` for how to use this, then return to this "
+"chapter."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:153
+msgid "Tags And Groups And Variables"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:155
+msgid ""
+"When using the ec2 inventory script, hosts automatically appear in groups"
+" based on how they are tagged in EC2."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:157
+msgid ""
+"For instance, if a host is given the \"class\" tag with the value of "
+"\"webserver\", it will be automatically discoverable via a dynamic group "
+"like so::"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:164
+msgid ""
+"Using this philosophy can be a great way to keep systems separated by the"
+" function they perform."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:166
+msgid ""
+"In this example, if we wanted to define variables that are automatically "
+"applied to each machine tagged with the 'class' of 'webserver', "
+"'group_vars' in ansible can be used.  See :ref:`splitting_out_vars`."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:169
+msgid ""
+"Similar groups are available for regions and other classifications, and "
+"can be similarly assigned variables using the same mechanism."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:174
+msgid "Autoscaling with Ansible Pull"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:176
+msgid ""
+"Amazon Autoscaling features automatically increase or decrease capacity "
+"based on load.  There are also Ansible modules shown in the cloud "
+"documentation that can configure autoscaling policy."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:179
+msgid ""
+"When nodes come online, it may not be sufficient to wait for the next "
+"cycle of an ansible command to come along and configure that node."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:181
+msgid ""
+"To do this, pre-bake machine images which contain the necessary ansible-"
+"pull invocation.  Ansible-pull is a command line tool that fetches a "
+"playbook from a git server and runs it locally."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:183
+msgid ""
+"One of the challenges of this approach is that there needs to be a "
+"centralized way to store data about the results of pull commands in an "
+"autoscaling context. For this reason, the autoscaling solution provided "
+"below in the next section can be a better approach."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:186
+msgid "Read :ref:`ansible-pull` for more information on pull-mode playbooks."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:191
+msgid "Autoscaling with Ansible Tower"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:193
+msgid ""
+":ref:`ansible_tower` also contains a very nice feature for auto-scaling "
+"use cases.  In this mode, a simple curl script can call a defined URL and"
+" the server will \"dial out\" to the requester and configure an instance "
+"that is spinning up.  This can be a great way to reconfigure ephemeral "
+"nodes.  See the Tower install and product documentation for more details."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:197
+msgid ""
+"A benefit of using the callback in Tower over pull mode is that job "
+"results are still centrally recorded and less information has to be "
+"shared with remote hosts."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:203
+msgid "Ansible With (And Versus) CloudFormation"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:205
+msgid ""
+"CloudFormation is a Amazon technology for defining a cloud stack as a "
+"JSON or YAML document."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:207
+msgid ""
+"Ansible modules provide an easier to use interface than CloudFormation in"
+" many examples, without defining a complex JSON/YAML document. This is "
+"recommended for most users."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:210
+msgid ""
+"However, for users that have decided to use CloudFormation, there is an "
+"Ansible module that can be used to apply a CloudFormation template to "
+"Amazon."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:213
+msgid ""
+"When using Ansible with CloudFormation, typically Ansible will be used "
+"with a tool like Packer to build images, and CloudFormation will launch "
+"those images, or ansible will be invoked through user data once the image"
+" comes online, or a combination of the two."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:216
+msgid ""
+"Please see the examples in the Ansible CloudFormation module for more "
+"details."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:221
+msgid "AWS Image Building With Ansible"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:223
+msgid ""
+"Many users may want to have images boot to a more complete configuration "
+"rather than configuring them entirely after instantiation.  To do this, "
+"one of many programs can be used with Ansible playbooks to define and "
+"upload a base image, which will then get its own AMI ID for usage with "
+"the ec2 module or other Ansible AWS modules such as ec2_asg or the "
+"cloudformation module.   Possible tools include Packer, aminator, and "
+"Ansible's ec2_ami module."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:228
+msgid "Generally speaking, we find most users using Packer."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:230
+msgid ""
+"See the Packer documentation of the `Ansible local Packer provisioner "
+"<https://www.packer.io/docs/provisioners/ansible-local.html>`_ and "
+"`Ansible remote Packer provisioner "
+"<https://www.packer.io/docs/provisioners/ansible.html>`_."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:232
+msgid ""
+"If you do not want to adopt Packer at this time, configuring a base-image"
+" with Ansible after provisioning (as shown above) is acceptable."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:237
+msgid "Next Steps: Explore Modules"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:239
+msgid ""
+"Ansible ships with lots of modules for configuring a wide array of EC2 "
+"services.  Browse the \"Cloud\" category of the module documentation for "
+"a full list with examples."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:244
+msgid ":ref:`all_modules`"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:245
+msgid "All the documentation for Ansible modules"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:246
+msgid ":ref:`working_with_playbooks`"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:247
+msgid "An introduction to playbooks"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:248
+msgid ":ref:`playbooks_delegation`"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:249
+msgid ""
+"Delegation, useful for working with loud balancers, clouds, and locally "
+"executed steps."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:250
+msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:251
+msgid "Have a question?  Stop by the google group!"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:252
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_aws.rst:253
+msgid "#ansible IRC chat channel"
+msgstr ""
+

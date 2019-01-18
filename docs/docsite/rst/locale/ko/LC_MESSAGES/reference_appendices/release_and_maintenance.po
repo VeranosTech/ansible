@@ -1,0 +1,408 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:4
+msgid "Release and maintenance"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:12
+msgid "Release cycle"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:14
+msgid ""
+"Ansible is developed and released on a flexible 4 months release cycle. "
+"This cycle can be extended in order to allow for larger changes to be "
+"properly implemented and tested before a new release is made available."
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:18
+msgid ""
+"Ansible has a graduated support structure that extends to three major "
+"releases. For more information, read about the "
+":ref:`development_and_stable_version_maintenance_workflow` or see the "
+"chart in :ref:`release_schedule` for the degrees to which current "
+"releases are supported."
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:22
+msgid ""
+"If you are using a release of Ansible that is no longer supported, we "
+"strongly encourage you to upgrade as soon as possible in order to benefit"
+" from the latest features and security fixes."
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:26
+msgid ""
+"Older, unsupported versions of Ansible can contain unfixed security "
+"vulnerabilities (*CVE*)."
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:29
+msgid ""
+"You can refer to the :ref:`porting guides<porting_guides>` for tips on "
+"updating your Ansible playbooks to run on newer versions."
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:35
+msgid "Release status"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:38
+msgid "Ansible Release"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:38
+msgid "Latest Version"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:38
+msgid "Status"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:40
+msgid "devel"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:40
+msgid "2.8 (unreleased, trunk)"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:40
+msgid "In development"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:41
+msgid "`2.7`_"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:41
+msgid "2.7.0 (2018-10-04)"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:41
+msgid "Supported (security **and** general bug fixes)"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:42
+msgid "`2.6`_"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:42
+msgid "2.6.5 (2018-09-28)"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:42
+msgid "Supported (security **and** critical bug fixes)"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:43
+msgid "`2.5`_"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:43
+msgid "2.5.9 (2018-09-10)"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:43
+msgid "Supported (security fixes)"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:44
+msgid "`2.4`_"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:44
+msgid "2.4.6 (2018-07-05)"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:44
+#: ../../rst/reference_appendices/release_and_maintenance.rst:45
+#: ../../rst/reference_appendices/release_and_maintenance.rst:46
+#: ../../rst/reference_appendices/release_and_maintenance.rst:47
+#: ../../rst/reference_appendices/release_and_maintenance.rst:48
+#: ../../rst/reference_appendices/release_and_maintenance.rst:49
+#: ../../rst/reference_appendices/release_and_maintenance.rst:50
+msgid "Unsupported (end of life)"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:45
+msgid "`2.3`_"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:45
+msgid "2.3.3 (2017-12-20)"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:46
+msgid "`2.2`_"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:46
+msgid "2.2.3 (2017-05-09)"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:47
+msgid "`2.1`_"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:47
+msgid "2.1.6 (2017-06-01)"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:48
+msgid "`2.0`_"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:48
+msgid "2.0.2 (2016-04-19)"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:49
+msgid "`1.9`_"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:49
+msgid "1.9.6 (2016-04-15)"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:50
+msgid "<1.9"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:50
+msgid "n/a"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:53
+msgid ""
+"Starting with Ansible-2.4, support lasts for 3 releases.  Thus "
+"Ansible-2.4 will receive security and general bug fixes when it is first "
+"released, security and critical bug fixes when 2.5 is released, and "
+"**only** security fixes once 2.6 is released."
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:75
+msgid "Development and stable version maintenance workflow"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:77
+msgid "The Ansible community develops and maintains Ansible on GitHub_."
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:79
+msgid ""
+"New modules, plugins, features and bugfixes will always be integrated in "
+"what will become the next major version of Ansible.  This work is tracked"
+" on the ``devel`` git branch."
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:82
+msgid ""
+"Ansible provides bugfixes and security improvements for the most recent "
+"major release. The previous major release will only receive fixes for "
+"security issues and critical bugs. Ansible only applies security fixes to"
+" releases which are two releases old. This work is tracked on the "
+"``stable-<version>`` git branches."
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:87
+msgid ""
+"Support for three major releases began with Ansible-2.4. Ansible-2.3 and "
+"older versions are only supported for two releases with the first stage "
+"including both security and general bug fixes while the second stage "
+"includes security and critical bug fixes"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:91
+msgid ""
+"The fixes that land in supported stable branches will eventually be "
+"released as a new version when necessary."
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:94
+msgid ""
+"Note that while there are no guarantees for providing fixes for "
+"unsupported releases of Ansible, there can sometimes be exceptions for "
+"critical issues."
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:102
+msgid "Changelogs"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:104
+msgid ""
+"Older versions logged changes in ``stable-<version>`` branches at "
+"``stable-<version>/CHANGELOG.md``. For example, here is the changelog for"
+" 2.4_ on GitHub."
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:106
+msgid ""
+"We now generate changelogs based on fragments. Here is the generated "
+"changelog for 2.6_ as an example. When creating new features or fixing "
+"bugs, create a changelog fragment describing the change. A changelog "
+"entry is not needed for new modules or plugins. Details for those items "
+"will be generated from the module documentation."
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:108
+msgid ""
+"We've got :ref:`examples and instructions on creating changelog fragments"
+" <changelogs_how_to>` in the Community Guide."
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:112
+msgid "Release candidates"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:114
+msgid ""
+"Before a new release or version of Ansible can be done, it will typically"
+" go through a release candidate process."
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:117
+msgid ""
+"This provides the Ansible community the opportunity to test Ansible and "
+"report bugs or issues they might come across."
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:120
+msgid ""
+"Ansible tags the first release candidate (``RC1``) which is usually "
+"scheduled to last five business days. The final release is done if no "
+"major bugs or issues are identified during this period."
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:124
+msgid ""
+"If there are major problems with the first candidate, a second candidate "
+"will be tagged (``RC2``) once the necessary fixes have landed. This "
+"second candidate lasts for a shorter duration than the first. If no "
+"problems have been reported after two business days, the final release is"
+" done."
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:130
+msgid ""
+"More release candidates can be tagged as required, so long as there are "
+"bugs that the Ansible core maintainers consider should be fixed before "
+"the final release."
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:137
+msgid "Feature freeze"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:139
+msgid ""
+"While there is a pending release candidate, the focus of core developers "
+"and maintainers will on fixes towards the release candidate."
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:142
+msgid ""
+"Merging new features or fixes that are not related to the release "
+"candidate may be delayed in order to allow the new release to be shipped "
+"as soon as possible."
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:147
+msgid "Deprecation Cycle"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:149
+msgid ""
+"Sometimes we need to remove a feature, normally in favor of a "
+"reimplementation that we hope does a better job. To do this we have a "
+"deprecation cycle. First we mark a feature as 'deprecated'. This is "
+"normally accompanied with warnings to the user as to why we deprecated "
+"it, what alternatives they should switch to and when (which version) we "
+"are scheduled to remove the feature permanently."
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:154
+msgid ""
+"The cycle is normally across 4 feature releases (2.x.y, where the x marks"
+" a feature release and the y a bugfix release), so the feature is "
+"normally removed in the 4th release after we announce the deprecation. "
+"For example, something deprecated in 2.5 will be removed in 2.9, assuming"
+" we don't jump to 3.x before that point. The tracking is tied to the "
+"number of releases, not the release numbering."
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:159
+msgid ""
+"For modules/plugins, we keep the documentation after the removal for "
+"users of older versions."
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:163
+msgid ":ref:`community_committer_guidelines`"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:164
+msgid "Guidelines for Ansible core contributors and maintainers"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:165
+msgid ":ref:`testing_strategies`"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:166
+msgid "Testing strategies"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:167
+msgid ":ref:`ansible_community_guide`"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:168
+msgid "Community information and contributing"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:169
+msgid "`Ansible release tarballs <https://releases.ansible.com/ansible/>`_"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:170
+msgid "Ansible release tarballs"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:171
+msgid ""
+"`Development Mailing List <https://groups.google.com/group/ansible-"
+"devel>`_"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:172
+msgid "Mailing list for development topics"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:173
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/reference_appendices/release_and_maintenance.rst:174
+msgid "#ansible IRC chat channel"
+msgstr ""
+

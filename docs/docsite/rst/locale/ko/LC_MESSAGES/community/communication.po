@@ -1,0 +1,332 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/community/communication.rst:5
+msgid "Communicating"
+msgstr ""
+
+#: ../../rst/community/communication.rst:11
+msgid "Code of Conduct"
+msgstr ""
+
+#: ../../rst/community/communication.rst:13
+msgid "Please read and understand the :ref:`code_of_conduct`."
+msgstr ""
+
+#: ../../rst/community/communication.rst:16
+msgid "Mailing list information"
+msgstr ""
+
+#: ../../rst/community/communication.rst:18
+msgid ""
+"Ansible has several mailing lists.  Your first post to the mailing list "
+"will be moderated (to reduce spam), so please allow up to a day or so for"
+" your first post to appear."
+msgstr ""
+
+#: ../../rst/community/communication.rst:20
+msgid ""
+"`Ansible Announce list <https://groups.google.com/forum/#!forum/ansible-"
+"announce>`_ is a read-only list that shares information about new "
+"releases of Ansible, and also rare infrequent event information, such as "
+"announcements about an upcoming AnsibleFest, which is our official "
+"conference series. Worth subscribing to!"
+msgstr ""
+
+#: ../../rst/community/communication.rst:21
+msgid ""
+"`Ansible AWX List <https://groups.google.com/forum/#!forum/awx-project>`_"
+" is for `Ansible AWX <https://github.com/ansible/awx>`_ the upstream "
+"version of `Ansible Tower <https://www.ansible.com/products/tower>`_"
+msgstr ""
+
+#: ../../rst/community/communication.rst:22
+msgid ""
+"`Ansible Container List <https://groups.google.com/forum/#!forum/ansible-"
+"container>`_ is for users and developers of the Ansible Container "
+"project."
+msgstr ""
+
+#: ../../rst/community/communication.rst:23
+msgid ""
+"`Ansible Development List <https://groups.google.com/forum/#!forum"
+"/ansible-devel>`_ is for learning how to develop on Ansible, asking about"
+" prospective feature design, or discussions about extending ansible or "
+"features in progress."
+msgstr ""
+
+#: ../../rst/community/communication.rst:24
+msgid ""
+"`Ansible Lockdown List <https://groups.google.com/forum/#!forum/ansible-"
+"lockdown>`_ is for all things related to Ansible Lockdown projects, "
+"including DISA STIG automation and CIS Benchmarks."
+msgstr ""
+
+#: ../../rst/community/communication.rst:25
+msgid ""
+"`Ansible Outreach List <https://groups.google.com/forum/#!forum/ansible-"
+"outreach>`_ help with promoting Ansible and `Ansible Meetups "
+"<http://ansible.meetup.com/>`_"
+msgstr ""
+
+#: ../../rst/community/communication.rst:26
+msgid ""
+"`Ansible Project List <https://groups.google.com/forum/#!forum/ansible-"
+"project>`_ is for sharing Ansible tips, answering questions, and general "
+"user discussion."
+msgstr ""
+
+#: ../../rst/community/communication.rst:27
+msgid ""
+"`Molecule List <https://groups.google.com/forum/#!forum/molecule-users>`_"
+" is designed to aid with the development and testing of Ansible roles "
+"with Molecule."
+msgstr ""
+
+#: ../../rst/community/communication.rst:29
+msgid ""
+"To subscribe to a group from a non-Google account, you can send an email "
+"to the subscription address requesting the subscription. For example: "
+"``ansible-devel+subscribe@googlegroups.com``"
+msgstr ""
+
+#: ../../rst/community/communication.rst:32
+msgid "IRC channels"
+msgstr ""
+
+#: ../../rst/community/communication.rst:34
+msgid "Ansible has several IRC channels on `Freenode <https://freenode.net/>`_."
+msgstr ""
+
+#: ../../rst/community/communication.rst:36
+msgid ""
+"Our IRC channels may require you to register your nickname. If you "
+"receive an error when you connect, see `Freenode's Nickname Registration "
+"guide <https://freenode.net/kb/answer/registration>`_ for instructions."
+msgstr ""
+
+#: ../../rst/community/communication.rst:39
+msgid "General channels"
+msgstr ""
+
+#: ../../rst/community/communication.rst:41
+msgid "``#ansible`` - For general use questions and support."
+msgstr ""
+
+#: ../../rst/community/communication.rst:42
+msgid ""
+"``#ansible-devel`` - For discussions on developer topics and code related"
+" to features or bugs."
+msgstr ""
+
+#: ../../rst/community/communication.rst:43
+msgid ""
+"``#ansible-meeting`` - For public community meetings. We will generally "
+"announce these on one or more of the above mailing lists. See the "
+"`meeting schedule and agenda page "
+"<https://github.com/ansible/community/blob/master/meetings/README.md>`_"
+msgstr ""
+
+#: ../../rst/community/communication.rst:48
+msgid "Working groups"
+msgstr ""
+
+#: ../../rst/community/communication.rst:50
+msgid ""
+"Many of our community Working Groups meet on Freenode IRC channels. If "
+"you want to get involved in a working group, join the channel where it "
+"meets or comment on the agenda."
+msgstr ""
+
+#: ../../rst/community/communication.rst:52
+msgid ""
+"`Amazon (AWS) Working Group "
+"<https://github.com/ansible/community/tree/master/group-aws>`_ - "
+"``#ansible-aws``"
+msgstr ""
+
+#: ../../rst/community/communication.rst:53
+msgid ""
+"`Ansible Lockdown Working Group <https://ansiblelockdown.io>`_ "
+"`gh/ansible/ansible-lockdown <https://github.com/ansible/ansible-"
+"lockdown>`_ - ``#ansible-lockdown``- Security playbooks/roles"
+msgstr ""
+
+#: ../../rst/community/communication.rst:54
+msgid ""
+"`AWX Working Group <https://github.com/ansible/awx>`_ - ``#ansible-awx`` "
+"- Upstream Ansible Tower"
+msgstr ""
+
+#: ../../rst/community/communication.rst:55
+msgid ""
+"`Azure Working Group <https://github.com/ansible/community/tree/master"
+"/group-azure>`_ - ``#ansible-azure``"
+msgstr ""
+
+#: ../../rst/community/communication.rst:56
+msgid ""
+"`Community Working Group "
+"<https://github.com/ansible/community/tree/master/group-community>`_ - "
+"``#ansible-community`` - Including Meetups"
+msgstr ""
+
+#: ../../rst/community/communication.rst:57
+msgid ""
+"`Container Working Group "
+"<https://github.com/ansible/community/tree/master/group-container>`_ - "
+"``#ansible-container``"
+msgstr ""
+
+#: ../../rst/community/communication.rst:58
+msgid ""
+"`Contributor Experience Working Group "
+"<https://github.com/ansible/community/tree/master/group-contributor-"
+"experience>`_ - ``#ansible-community``"
+msgstr ""
+
+#: ../../rst/community/communication.rst:59
+msgid ""
+"`Docker Working Group <https://github.com/ansible/community/issues/408>`_"
+" - ``#ansible-devel``"
+msgstr ""
+
+#: ../../rst/community/communication.rst:60
+msgid ""
+"`Documentation Working Group "
+"<https://github.com/ansible/community/tree/master/group-docs>`_- "
+"``#ansible-docs``"
+msgstr ""
+
+#: ../../rst/community/communication.rst:61
+msgid ""
+"`Galaxy Working Group <https://github.com/ansible/community/tree/master"
+"/group-galaxy>`_ - ``#ansible-galaxy``"
+msgstr ""
+
+#: ../../rst/community/communication.rst:62
+msgid ""
+"`JBoss Working Group <https://github.com/ansible/community/tree/master"
+"/group-jboss>`_ - ``#ansible-jboss``"
+msgstr ""
+
+#: ../../rst/community/communication.rst:63
+msgid ""
+"`Lightbulb Training <https://github.com/ansible/lightbulb>`_ - "
+"``#ansible-lightbulb`` - Ansible training"
+msgstr ""
+
+#: ../../rst/community/communication.rst:64
+msgid ""
+"`Linode Working Group <https://github.com/ansible/community/tree/master"
+"/group-linode>`_ - ``#ansible-linode``"
+msgstr ""
+
+#: ../../rst/community/communication.rst:65
+msgid ""
+"`Molecule <https://molecule.readthedocs.io>`_ - ``#ansible-molecule`` - "
+"testing platform for Ansible playbooks and roles"
+msgstr ""
+
+#: ../../rst/community/communication.rst:66
+msgid ""
+"`Network Working Group <https://github.com/ansible/community/tree/master"
+"/group-network>`_ - ``#ansible-network``"
+msgstr ""
+
+#: ../../rst/community/communication.rst:67
+msgid ""
+"`Remote Management Working Group "
+"<https://github.com/ansible/community/issues/409>`_ - ``#ansible-devel``"
+msgstr ""
+
+#: ../../rst/community/communication.rst:68
+msgid ""
+"`Testing Working Group <https://github.com/ansible/community/tree/master"
+"/group-testing>`_  - ``#ansible-devel``"
+msgstr ""
+
+#: ../../rst/community/communication.rst:69
+msgid ""
+"`VMware Working Group <https://github.com/ansible/community/tree/master"
+"/group-vmware>`_ - ``#ansible-vmware``"
+msgstr ""
+
+#: ../../rst/community/communication.rst:70
+msgid ""
+"`Windows Working Group <https://github.com/ansible/community/tree/master"
+"/group-windows>`_ - ``#ansible-windows``"
+msgstr ""
+
+#: ../../rst/community/communication.rst:72
+msgid ""
+"Want to `form a new Working Group "
+"<https://github.com/ansible/community/blob/master/WORKING-GROUPS.md>`_?"
+msgstr ""
+
+#: ../../rst/community/communication.rst:75
+msgid "Regional and Language-specific channels"
+msgstr ""
+
+#: ../../rst/community/communication.rst:77
+msgid "``#ansible-es`` - Channel for Spanish speaking Ansible community."
+msgstr ""
+
+#: ../../rst/community/communication.rst:78
+msgid "``#ansibleu`` - Channel for the European Ansible Community."
+msgstr ""
+
+#: ../../rst/community/communication.rst:79
+msgid "``#ansible-fr`` - Channel for French speaking Ansible community."
+msgstr ""
+
+#: ../../rst/community/communication.rst:80
+msgid "``#ansiblezh`` - Channel for Zurich/Swiss Ansible community."
+msgstr ""
+
+#: ../../rst/community/communication.rst:83
+msgid "IRC meetings"
+msgstr ""
+
+#: ../../rst/community/communication.rst:85
+msgid ""
+"The Ansible community holds regular IRC meetings on various topics, and "
+"anyone who is interested is invited to participate. For more information "
+"about Ansible meetings, consult the `meeting schedule and agenda page "
+"<https://github.com/ansible/community/blob/master/meetings/README.md>`_."
+msgstr ""
+
+#: ../../rst/community/communication.rst:89
+msgid "Tower support questions"
+msgstr ""
+
+#: ../../rst/community/communication.rst:91
+msgid ""
+"Ansible `Tower <https://www.ansible.com/products/tower>`_ is a UI, "
+"Server, and REST endpoint for Ansible."
+msgstr ""
+
+#: ../../rst/community/communication.rst:93
+msgid ""
+"If you have a question about Ansible Tower, visit `Red Hat support "
+"<https://access.redhat.com/products/ansible-tower-red-hat/>`_ rather than"
+" using the IRC channel or the general project mailing list."
+msgstr ""
+

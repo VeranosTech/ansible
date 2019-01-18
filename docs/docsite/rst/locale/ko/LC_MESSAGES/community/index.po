@@ -1,0 +1,239 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/community/index.rst:5
+msgid "Ansible Community Guide"
+msgstr ""
+
+#: ../../rst/community/index.rst:7
+msgid "Welcome to the Ansible Community Guide!"
+msgstr ""
+
+#: ../../rst/community/index.rst:9
+msgid ""
+"The purpose of this guide is to teach you everything you need to know "
+"about being a contributing member of the Ansible community. All types of "
+"contributions are welcome, and necessary to Ansible's continued success."
+msgstr ""
+
+#: ../../rst/community/index.rst:11
+msgid ""
+"This page outlines the most common situations and questions that bring "
+"readers to this section. If you prefer a traditional table of contents, "
+"there's one at the bottom of the page."
+msgstr ""
+
+#: ../../rst/community/index.rst:15
+msgid "Getting started"
+msgstr ""
+
+#: ../../rst/community/index.rst:17
+msgid ""
+"I'm new to the community. Where can I find the Ansible "
+":ref:`code_of_conduct`?"
+msgstr ""
+
+#: ../../rst/community/index.rst:18
+msgid ""
+"I'd like to know what I'm agreeing to when I contribute to Ansible. Does "
+"Ansible have a :ref:`contributor_license_agreement`?"
+msgstr ""
+
+#: ../../rst/community/index.rst:19
+msgid ""
+"I'd like to contribute but I'm not sure how. Are there :ref:`easy ways to"
+" contribute <how_can_i_help>`?"
+msgstr ""
+
+#: ../../rst/community/index.rst:20
+msgid ""
+"I want to talk to other Ansible users. How do I find an `Ansible Meetup "
+"near me <https://www.meetup.com/topics/ansible/>`_?"
+msgstr ""
+
+#: ../../rst/community/index.rst:21
+msgid ""
+"I have a question. Which :ref:`Ansible email lists and IRC channels "
+"<communication>` will help me find answers?"
+msgstr ""
+
+#: ../../rst/community/index.rst:22
+msgid "I want to learn more about Ansible. What can I do?"
+msgstr ""
+
+#: ../../rst/community/index.rst:24
+msgid "`Read books <https://www.ansible.com/resources/ebooks>`_."
+msgstr ""
+
+#: ../../rst/community/index.rst:25
+msgid ""
+"`Get certified <https://www.ansible.com/products/training-"
+"certification>`_."
+msgstr ""
+
+#: ../../rst/community/index.rst:26
+msgid "`Attend events <https://www.ansible.com/community/events>`_."
+msgstr ""
+
+#: ../../rst/community/index.rst:27
+msgid ""
+"`Review getting started guides <https://www.ansible.com/resources/get-"
+"started>`_."
+msgstr ""
+
+#: ../../rst/community/index.rst:28
+msgid ""
+"`Watch videos <https://www.ansible.com/resources/videos>`_ - includes "
+"Ansible Automates, AnsibleFest & webinar recordings."
+msgstr ""
+
+#: ../../rst/community/index.rst:30
+msgid ""
+"I'd like updates about new Ansible versions. How are `new releases "
+"announced <https://groups.google.com/forum/#!forum/ansible-announce>`_?"
+msgstr ""
+
+#: ../../rst/community/index.rst:31
+msgid ""
+"I want to use the current release. How do I know which :ref:`releases are"
+" current <release_schedule>`?"
+msgstr ""
+
+#: ../../rst/community/index.rst:34
+msgid "Going deeper"
+msgstr ""
+
+#: ../../rst/community/index.rst:36
+msgid "I think Ansible is broken. How do I :ref:`report a bug <reporting_bugs>`?"
+msgstr ""
+
+#: ../../rst/community/index.rst:37
+msgid ""
+"I need functionality that Ansible doesn't offer. How do I :ref:`request a"
+" feature <request_features>`?"
+msgstr ""
+
+#: ../../rst/community/index.rst:38
+msgid ""
+"I'm waiting for a particular feature. How do I see what's :ref:`planned "
+"for future Ansible Releases <roadmaps>`?"
+msgstr ""
+
+#: ../../rst/community/index.rst:39
+msgid ""
+"I have a specific Ansible interest or expertise (for example, VMware, "
+"Linode, etc.). How do I get involved in a :ref:`working group "
+"<working_group_list>`?"
+msgstr ""
+
+#: ../../rst/community/index.rst:40
+msgid ""
+"I'd like to participate in conversations about features and fixes. How do"
+" I review GitHub issues and pull requests?"
+msgstr ""
+
+#: ../../rst/community/index.rst:41
+msgid ""
+"I found a typo or another problem on docs.ansible.com. How can I "
+":ref:`improve the documentation <community_documentation_contributions>`?"
+msgstr ""
+
+#: ../../rst/community/index.rst:45
+msgid "Working with the Ansible repo"
+msgstr ""
+
+#: ../../rst/community/index.rst:47
+msgid ""
+"I want to code my first changes to Ansible. How do I :ref:`set up my "
+"Python development environment <environment_setup>`?"
+msgstr ""
+
+#: ../../rst/community/index.rst:48
+msgid ""
+"I'd like to get more efficient as a developer. How can I find "
+":ref:`editors, linters, and other tools <other_tools_and_programs>` that "
+"will support my Ansible development efforts?"
+msgstr ""
+
+#: ../../rst/community/index.rst:49
+msgid ""
+"I want my PR to meet Ansible's guidelines. Where can I find  guidance on "
+":ref:`coding in Ansible <developer_guide>`?"
+msgstr ""
+
+#: ../../rst/community/index.rst:50
+msgid ""
+"I want to learn more about Ansible roadmaps, releases, and projects. How "
+"do I find information on :ref:`the development cycle "
+"<community_development_process>`?"
+msgstr ""
+
+#: ../../rst/community/index.rst:51
+msgid ""
+"I'd like to connect Ansible to a new API or other resource. How do I "
+":ref:`contribute a group of related modules "
+"<developing_modules_in_groups>`?"
+msgstr ""
+
+#: ../../rst/community/index.rst:52
+msgid ""
+"My pull request is marked ``needs_rebase``. How do I :ref:`rebase my PR "
+"<rebase_guide>`?"
+msgstr ""
+
+#: ../../rst/community/index.rst:53
+msgid ""
+"I'm using an older version of Ansible and want a bug fixed in my version "
+"that's already been fixed on the ``devel`` branch. How do I "
+":ref:`backport a bugfix PR <backport_process>`?"
+msgstr ""
+
+#: ../../rst/community/index.rst:54
+msgid ""
+"I have an open pull request with a failing test. How do I learn about "
+"Ansible's :ref:`testing (CI) process <developing_testing>`?"
+msgstr ""
+
+#: ../../rst/community/index.rst:55
+msgid ""
+"I'm ready to step up as a module maintainer. What are the "
+":ref:`guidelines for maintainers <maintainers>`?"
+msgstr ""
+
+#: ../../rst/community/index.rst:56
+msgid ""
+"A module I maintain is obsolete. How do I :ref:`deprecate a module "
+"<deprecating_modules>`?"
+msgstr ""
+
+#: ../../rst/community/index.rst:59
+msgid "Traditional Table of Contents"
+msgstr ""
+
+#: ../../rst/community/index.rst:61
+msgid ""
+"If you prefer to read the entire Community Guide, here's a list of the "
+"pages in order:"
+msgstr ""
+
+#: ../../rst/community/index.rst:77
+msgid "Guidelines for specific types of contributors"
+msgstr ""
+

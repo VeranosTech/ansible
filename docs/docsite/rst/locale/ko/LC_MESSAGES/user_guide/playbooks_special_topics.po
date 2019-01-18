@@ -1,0 +1,33 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/user_guide/playbooks_special_topics.rst:4
+msgid "Advanced Playbooks Features"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_special_topics.rst:6
+msgid ""
+"Here are some playbook features that not everyone may need to learn, but "
+"can be quite useful for particular applications. Browsing these topics is"
+" recommended as you may find some useful tips here, but feel free to "
+"learn the basics of Ansible first and adopt these only if they seem "
+"relevant or useful to your environment."
+msgstr ""
+

@@ -1,0 +1,439 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/core_maintained.rst:6
+msgid "Modules Maintained by the Ansible Core Team"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:8
+msgid ":ref:`acl_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:9
+msgid ":ref:`add_host_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:10
+msgid ":ref:`apt_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:11
+msgid ":ref:`apt_key_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:12
+msgid ":ref:`apt_repository_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:13
+msgid ":ref:`assemble_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:14
+msgid ":ref:`assert_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:15
+msgid ":ref:`async_status_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:16
+msgid ":ref:`at_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:17
+msgid ":ref:`authorized_key_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:18
+msgid ":ref:`aws_s3_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:19
+msgid ":ref:`blockinfile_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:20
+msgid ":ref:`cloudformation_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:21
+msgid ":ref:`command_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:22
+msgid ":ref:`copy_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:23
+msgid ":ref:`debconf_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:24
+msgid ":ref:`debug_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:25
+msgid ":ref:`dnf_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:26
+msgid ":ref:`ec2_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:27
+msgid ":ref:`ec2_group_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:28
+msgid ":ref:`ec2_metadata_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:29
+msgid ":ref:`ec2_snapshot_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:30
+msgid ":ref:`ec2_vol_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:31
+msgid ":ref:`ec2_vpc_net_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:32
+msgid ":ref:`ec2_vpc_net_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:33
+msgid ":ref:`ec2_vpc_subnet_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:34
+msgid ":ref:`ec2_vpc_subnet_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:35
+msgid ":ref:`fail_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:36
+msgid ":ref:`fetch_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:37
+msgid ":ref:`file_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:38
+msgid ":ref:`find_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:39
+msgid ":ref:`get_url_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:40
+msgid ":ref:`getent_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:41
+msgid ":ref:`git_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:42
+msgid ":ref:`group_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:43
+msgid ":ref:`group_by_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:44
+msgid ":ref:`import_playbook_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:45
+msgid ":ref:`import_role_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:46
+msgid ":ref:`import_tasks_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:47
+msgid ":ref:`include_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:48
+msgid ":ref:`include_role_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:49
+msgid ":ref:`include_tasks_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:50
+msgid ":ref:`include_vars_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:51
+msgid ":ref:`iptables_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:52
+msgid ":ref:`lineinfile_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:53
+msgid ":ref:`meta_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:54
+msgid ":ref:`mount_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:55
+msgid ":ref:`package_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:56
+msgid ":ref:`pause_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:57
+msgid ":ref:`ping_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:58
+msgid ":ref:`pip_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:59
+msgid ":ref:`raw_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:60
+msgid ":ref:`reboot_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:61
+msgid ":ref:`rpm_key_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:62
+msgid ":ref:`s3_bucket_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:63
+msgid ":ref:`script_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:64
+msgid ":ref:`seboolean_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:65
+msgid ":ref:`selinux_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:66
+msgid ":ref:`service_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:67
+msgid ":ref:`set_fact_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:68
+msgid ":ref:`setup_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:69
+msgid ":ref:`shell_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:70
+msgid ":ref:`slurp_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:71
+msgid ":ref:`stat_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:72
+msgid ":ref:`subversion_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:73
+msgid ":ref:`synchronize_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:74
+msgid ":ref:`sysctl_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:75
+msgid ":ref:`systemd_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:76
+msgid ":ref:`sysvinit_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:77
+msgid ":ref:`template_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:78
+msgid ":ref:`unarchive_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:79
+msgid ":ref:`uri_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:80
+msgid ":ref:`user_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:81
+msgid ":ref:`wait_for_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:82
+msgid ":ref:`wait_for_connection_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:83
+msgid ":ref:`win_acl_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:84
+msgid ":ref:`win_acl_inheritance_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:85
+msgid ":ref:`win_command_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:86
+msgid ":ref:`win_copy_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:87
+msgid ":ref:`win_disk_image_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:88
+msgid ":ref:`win_dns_client_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:89
+msgid ":ref:`win_domain_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:90
+msgid ":ref:`win_domain_controller_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:91
+msgid ":ref:`win_domain_membership_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:92
+msgid ":ref:`win_file_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:93
+msgid ":ref:`win_get_url_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:94
+msgid ":ref:`win_group_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:95
+msgid ":ref:`win_owner_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:96
+msgid ":ref:`win_package_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:97
+msgid ":ref:`win_path_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:98
+msgid ":ref:`win_ping_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:99
+msgid ":ref:`win_reboot_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:100
+msgid ":ref:`win_regedit_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:101
+msgid ":ref:`win_service_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:102
+msgid ":ref:`win_share_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:103
+msgid ":ref:`win_shell_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:104
+msgid ":ref:`win_stat_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:105
+msgid ":ref:`win_template_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:106
+msgid ":ref:`win_updates_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:107
+msgid ":ref:`win_user_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:108
+msgid ":ref:`yum_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:109
+msgid ":ref:`yum_repository_module`"
+msgstr ""
+
+#: ../../rst/modules/core_maintained.rst:112
+msgid ""
+"**(D)**: This marks a module as deprecated, which means a module is kept "
+"for backwards compatibility but usage is discouraged. The module "
+"documentation details page may explain more about this rationale."
+msgstr ""
+

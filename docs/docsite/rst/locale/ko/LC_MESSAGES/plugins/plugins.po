@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/plugins/plugins.rst:5
+msgid "Working With Plugins"
+msgstr ""
+
+#: ../../rst/plugins/plugins.rst:7
+msgid ""
+"Plugins are pieces of code that augment Ansible's core functionality. "
+"Ansible uses a plugin architecture to enable a rich, flexible and "
+"expandable feature set."
+msgstr ""
+
+#: ../../rst/plugins/plugins.rst:9
+msgid ""
+"Ansible ships with a number of handy plugins, and you can easily write "
+"your own."
+msgstr ""
+
+#: ../../rst/plugins/plugins.rst:11
+msgid ""
+"This section covers the various types of plugins that are included with "
+"Ansible:"
+msgstr ""
+
+#: ../../rst/plugins/plugins.rst:31
+msgid ":ref:`about_playbooks`"
+msgstr ""
+
+#: ../../rst/plugins/plugins.rst:32
+msgid "An introduction to playbooks"
+msgstr ""
+
+#: ../../rst/plugins/plugins.rst:33
+msgid ":ref:`ansible_configuration_settings`"
+msgstr ""
+
+#: ../../rst/plugins/plugins.rst:34
+msgid "Ansible configuration documentation and settings"
+msgstr ""
+
+#: ../../rst/plugins/plugins.rst:35
+msgid ":ref:`command_line_tools`"
+msgstr ""
+
+#: ../../rst/plugins/plugins.rst:36
+msgid "Ansible tools, description and options"
+msgstr ""
+
+#: ../../rst/plugins/plugins.rst:37
+msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
+msgstr ""
+
+#: ../../rst/plugins/plugins.rst:38
+msgid "Have a question?  Stop by the google group!"
+msgstr ""
+
+#: ../../rst/plugins/plugins.rst:39
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/plugins/plugins.rst:40
+msgid "#ansible IRC chat channel"
+msgstr ""
+

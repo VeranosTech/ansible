@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:3
+msgid "Ansible 2.6"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:5
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:8
+msgid "Release Schedule"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:11
+msgid "Actual"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:13
+msgid "2018-05-17 Core Freeze (Engine and Core Modules/Plugins)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:14
+msgid "2018-05-21 Alpha Release 1"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:15
+msgid "2018-05-25 Community Freeze (Non-Core Modules/Plugins)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:16
+msgid "2018-05-25 Branch stable-2.6"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:17
+msgid "2018-05-30 Alpha Release 2"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:18
+msgid "2018-06-05 Release Candidate 1"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:19
+msgid "2018-06-08 Release Candidate 2"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:20
+msgid "2018-06-18 Release Candidate 3"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:21
+msgid "2018-06-25 Release Candidate 4"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:22
+msgid "2018-06-26 Release Candidate 5"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:23
+msgid "2018-06-28 Final Release"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:27
+msgid "Release Manager"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:28
+msgid "Matt Clay (IRC/GitHub: @mattclay)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:32
+msgid "Engine improvements"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:34
+msgid "Version 2.6 is largely going to be a stabilization release for Core code."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:35
+msgid ""
+"Some of the items covered in this release, but are not limited to are the"
+" following:"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:37
+msgid "``ansible-inventory``"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:38
+msgid "``import_*``"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:39
+msgid "``include_*``"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:40
+msgid "Test coverage"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:41
+msgid "Performance Testing"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:44
+msgid "Core Modules"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:45
+msgid "Adopt-a-module Campaign"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:47
+msgid "Review current status of all Core Modules"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:48
+msgid "Reduce backlog of open issues against these modules"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:51
+msgid "Cloud Modules"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:54
+msgid "Network"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:57
+msgid "Connection work"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:59
+msgid ""
+"New connection plugin: eAPI `proposal#102 "
+"<https://github.com/ansible/proposals/issues/102>`_"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:60
+msgid "New connection plugin: NX-API"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:61
+msgid "Support for configurable options for network_cli & netconf"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:64
+msgid "Modules"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:66
+msgid ""
+"New ``net_get`` - platform agnostic module for pulling configuration via "
+"SCP/SFTP over network_cli"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:67
+msgid ""
+"New ``net_put`` - platform agnostic module for pushing configuration via "
+"SCP/SFTP over network_cli"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:68
+msgid ""
+"New ``netconf_get`` - Netconf module to fetch configuration and state "
+"data `proposal#104 <https://github.com/ansible/proposals/issues/104>`_"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:71
+msgid "Other Features"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:73
+msgid ""
+"Stretch & tech preview: Configuration caching for network_cli. Opt-in "
+"feature to avoid ``show running`` performance hit"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:77
+msgid "Windows"
+msgstr ""
+

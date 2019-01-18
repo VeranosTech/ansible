@@ -1,0 +1,267 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/scenario_guides/guide_gce.rst:2
+msgid "Google Cloud Platform Guide"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:7
+msgid "Introduction"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:9
+msgid ""
+"Ansible + Google have been working together on a set of auto-generated "
+"Ansible modules designed to consistently and comprehensively cover the "
+"entirety of the Google Cloud Platform."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:13
+msgid ""
+"Ansible contains modules for managing Google Cloud Platform resources, "
+"including creating instances, controlling network access, working with "
+"persistent disks, managing load balancers, and a lot more."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:17
+msgid ""
+"These new modules can be found under a new consistent name scheme "
+"\"gcp_*\" (Note: gcp_target_proxy and gcp_url_map are legacy modules, "
+"despite the \"gcp_*\" name. Please use gcp_compute_target_proxy and "
+"gcp_compute_url_map instead)."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:21
+msgid ""
+"Additionally, the gcp_compute inventory plugin can discover all GCE "
+"instances and make them automatically available in your Ansible "
+"inventory."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:24
+msgid ""
+"You may see a collection of other GCP modules that do not conform to this"
+" naming convention. These are the original modules primarily developed by"
+" the Ansible community. You will find some overlapping functionality such"
+" as with the \"gce\" module and the new \"gcp_compute_instance\" module. "
+"Either can be used, but you may experience issues trying to use them "
+"together."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:30
+msgid ""
+"While the community GCP modules are not going away, Google is investing "
+"effort into the new \"gcp_*\" modules. Google is committed to ensuring "
+"the Ansible community has a great experience with GCP and therefore "
+"recommends adopting these new modules if possible."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:37
+msgid "Requisites"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:38
+msgid ""
+"The Google Cloud Platform (GCP) modules require both the ``requests`` and"
+" the ``google-auth`` libraries to be installed."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:45
+msgid ""
+"Alternatively for RHEL / CentOS, the ``python-requests`` package is also "
+"available to satisfy ``requests`` libraries."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:53
+msgid "Credentials"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:54
+msgid ""
+"It's easy to create a GCP account with credentials for Ansible. You have "
+"multiple options to get your credentials - here are two of the most "
+"common options:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:57
+msgid ""
+"Service Accounts (Recommended): Use JSON service accounts with specific "
+"permissions."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:58
+msgid ""
+"Machine Accounts: Use the permissions associated with the GCP Instance "
+"you're using Ansible on."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:60
+msgid "For the following examples, we'll be using service account credentials."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:62
+msgid ""
+"To work with the GCP modules, you'll first need to get some credentials "
+"in the JSON format:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:65
+msgid ""
+"`Create a Service Account "
+"<https://developers.google.com/identity/protocols/OAuth2ServiceAccount#creatinganaccount>`_"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:66
+msgid ""
+"`Download JSON credentials "
+"<https://support.google.com/cloud/answer/6158849?hl=en&ref_topic=6262490#serviceaccounts>`_"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:68
+msgid ""
+"Once you have your credentials, there are two different ways to provide "
+"them to Ansible:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:70
+msgid "by specifying them directly as module parameters"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:71
+msgid "by setting environment variables"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:74
+msgid "Providing Credentials as Module Parameters"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:76
+msgid "For the GCE modules you can specify the credentials as arguments:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:78
+msgid ""
+"``auth_kind``: type of authentication being used (choices: "
+"machineaccount, serviceaccount, application)"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:79
+msgid "``service_account_email``: email associated with the project"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:80
+msgid "``service_account_file``: path to the JSON credentials file"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:81
+msgid "``project``: id of the project"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:82
+msgid "``scopes``: The specific scopes that you want the actions to use."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:84
+msgid ""
+"For example, to create a new IP address using the `gcp_compute_address` "
+"module, you can use the following configuration:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:114
+msgid "Providing Credentials as Environment Variables"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:116
+msgid ""
+"Set the following environment variables before running Ansible in order "
+"to configure your credentials:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:126
+msgid "GCE Dynamic Inventory"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:128
+msgid ""
+"The best way to interact with your hosts is to use the gcp_compute "
+"inventory plugin, which dynamically queries GCE and tells Ansible what "
+"nodes can be managed."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:130
+msgid ""
+"To be able to use this GCE dynamic inventory plugin, you need to enable "
+"it first by specifying the following in the ``ansible.cfg`` file:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:137
+msgid "Then, create a file that ends in ``.gcp.yml`` in your root directory."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:139
+msgid ""
+"The gcp_compute inventory script takes in the same authentication "
+"information as any module."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:141
+msgid "Here's an example of a valid inventory file:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:153
+msgid ""
+"Executing ``ansible-inventory --list -i <filename>.gcp.yml`` will create "
+"a list of GCP instances that are ready to be configured using Ansible."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:156
+msgid "Create an instance"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:158
+msgid ""
+"The full range of GCP modules provide the ability to create a wide "
+"variety of GCP resources with the full support of the entire GCP API."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:161
+msgid ""
+"The following playbook creates a GCE Instance. This instance relies on a "
+"GCP network and a Disk. By creating the Disk and Network separately, we "
+"can give as much detail as necessary about how we want the disk and "
+"network formatted. By registering a Disk/Network to a variable, we can "
+"simply insert the variable into the instance task. The "
+"gcp_compute_instance module will figure out the rest."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:254
+msgid ""
+"Note that use of the \"add_host\" module above creates a temporary, in-"
+"memory group.  This means that a play in the same playbook can then "
+"manage machines in the 'new_instances' group, if so desired.  Any sort of"
+" arbitrary configuration is possible at this point."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:257
+msgid ""
+"For more information about Google Cloud, please visit the `Google Cloud "
+"website <https://cloud.google.com>`_."
+msgstr ""
+

@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/roadmap/ROADMAP_2_8.rst:3
+msgid "Ansible 2.8"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_8.rst:9
+msgid "Release Schedule"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_8.rst:12
+msgid "Expected"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_8.rst:14
+msgid ""
+"PRs must be raised well in advance of the dates below to have a chance of"
+" being included in this Ansible release."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_8.rst:16
+msgid "2019-03-14 Alpha 1 **Core freeze**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_8.rst:18
+msgid ""
+"No new features to ``support:core`` code. Includes no new options to "
+"existing Core modules"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_8.rst:20
+msgid "2019-03-21 Beta 1 **Feature freeze**"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_8.rst:22
+msgid "No new functionality (including modules/plugins) to any code"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_8.rst:23
+msgid "2019-04-04 Release Candidate 1"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_8.rst:24
+msgid "2019-04-11 Release Candidate 2 (if needed)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_8.rst:25
+msgid "2019-04-18 Release Candidate 3 (if needed)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_8.rst:26
+msgid "2019-04-25 Release Candidate 4 (if needed)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_8.rst:27
+msgid "2019-05-02 Release"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_8.rst:32
+msgid "Release Manager"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_8.rst:34
+msgid "Adam Miller (IRC: maxamillion; GitHub: @maxamillion)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_8.rst:37
+msgid "Planned work"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_8.rst:39
+msgid ""
+"See the `Ansible 2.8 Project Board "
+"<https://github.com/ansible/ansible/projects/30>`_"
+msgstr ""
+

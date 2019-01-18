@@ -1,0 +1,238 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2018 Ansible, Inc
+# This file is distributed under the same license as the Ansible
+# Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible Documentation 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/vmware/scenario_rename_vm.rst:5
+msgid "Rename an existing virtual machine"
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:7
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:10
+msgid "Introduction"
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:12
+msgid ""
+"This guide will show you how to utilize Ansible to rename an existing "
+"virtual machine."
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:15
+msgid "Scenario Requirements"
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:17
+msgid "Software"
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:19
+msgid "Ansible 2.5 or later must be installed."
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:21
+msgid ""
+"The Python module ``Pyvmomi`` must be installed on the Ansible control "
+"node (or Target host if not executing against localhost)."
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:23
+msgid ""
+"We recommend installing the latest version with pip: ``pip install "
+"Pyvmomi`` (as the OS packages are usually out of date and incompatible)."
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:25
+msgid "Hardware"
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:27
+msgid "At least one standalone ESXi server or"
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:29
+msgid "vCenter Server with at least one ESXi server"
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:31
+msgid "Access / Credentials"
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:33
+msgid ""
+"Ansible (or the target server) must have network access to the either "
+"vCenter server or the ESXi server"
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:35
+msgid "Username and Password for vCenter or ESXi server"
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:37
+msgid ""
+"Hosts in the ESXi cluster must have access to the datastore that the "
+"template resides on."
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:40
+msgid "Caveats"
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:42
+msgid "All variable names and VMware object names are case sensitive."
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:43
+msgid ""
+"You need to use Python 2.7.9 version in order to use ``validate_certs`` "
+"option, as this version is capable of changing the SSL verification "
+"behaviours."
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:47
+msgid "Example Description"
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:49
+msgid ""
+"With the following Ansible playbook you can rename an existing virtual "
+"machine by changing the UUID."
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:89
+msgid ""
+"Since Ansible utilizes the VMware API to perform actions, in this use "
+"case it will be connecting directly to the API from localhost."
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:91
+msgid ""
+"This means that playbooks will not be running from the vCenter or ESXi "
+"Server."
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:93
+msgid ""
+"Note that this play disables the ``gather_facts`` parameter, since you "
+"don't want to collect facts about localhost."
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:95
+msgid ""
+"You can run these modules against another server that would then connect "
+"to the API if localhost does not have access to vCenter. If so, the "
+"required Python modules will need to be installed on that target server. "
+"We recommend installing the latest version with pip: ``pip install "
+"Pyvmomi`` (as the OS packages are usually out of date and incompatible)."
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:97
+msgid "Before you begin, make sure you have:"
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:99
+msgid "Hostname of the ESXi server or vCenter server"
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:100
+msgid "Username and password for the ESXi or vCenter server"
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:101
+msgid "The UUID of the existing Virtual Machine you want to rename"
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:103
+msgid ""
+"For now, you will be entering these directly, but in a more advanced "
+"playbook this can be abstracted out and stored in a more secure fashion "
+"using :ref:`ansible-vault` or using `Ansible Tower credentials "
+"<https://docs.ansible.com/ansible-"
+"tower/latest/html/userguide/credentials.html>`_."
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:105
+msgid ""
+"If your vCenter or ESXi server is not setup with proper CA certificates "
+"that can be verified from the Ansible server, then it is necessary to "
+"disable validation of these certificates by using the ``validate_certs`` "
+"parameter. To do this you need to set ``validate_certs=False`` in your "
+"playbook."
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:107
+msgid ""
+"Now you need to supply the information about the existing virtual machine"
+" which will be renamed. For renaming virtual machine, ``vmware_guest`` "
+"module uses VMware UUID, which is unique across vCenter environment. This"
+" value is autogenerated and can not be changed. You will use "
+"``vmware_guest_facts`` module to find virtual machine and get information"
+" about VMware UUID of the virtual machine."
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:109
+msgid ""
+"This value will be used input for ``vmware_guest`` module. Specify new "
+"name to virtual machine which conforms to all VMware requirements for "
+"naming conventions as ``name`` parameter. Also, provide ``uuid`` as the "
+"value of VMware UUID."
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:112
+msgid "What to expect"
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:114
+msgid ""
+"Running this playbook can take some time, depending on your environment "
+"and network connectivity. When the run is complete you will see"
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:162
+msgid "confirming that you've renamed the virtual machine."
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:166
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:168
+msgid "If your playbook fails:"
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:170
+msgid "Check if the values provided for username and password are correct."
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:171
+msgid "Check if the datacenter you provided is available."
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:172
+msgid ""
+"Check if the virtual machine specified exists and you have permissions to"
+" access the datastore."
+msgstr ""
+
+#: ../../rst/vmware/scenario_rename_vm.rst:173
+msgid "Ensure the full folder path you specified already exists."
+msgstr ""
+
