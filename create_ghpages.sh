@@ -14,7 +14,7 @@ echo '!env/' >> .gitignore
 
 cd docs/docsite
 make generate_rst
-sphinx-build -j auto -D language='ko' rst _build
+sphinx-build -j auto -D language='ko' rst _build/html
 cd ../..
 
 git add . -A

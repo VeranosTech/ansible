@@ -32,8 +32,8 @@ msgid ""
 "software, and orchestrate more advanced IT tasks such as continuous "
 "deployments or zero downtime rolling updates."
 msgstr ""
-"Ansible은 IT 자동화 도구이다. 시스템을 설정하고 소프트웨어를 설치하며"
-"지속적 배포(Continuous Deployment) 혹은 무정지 업데이트(Zero-Downtime Rolling Update) 등의"
+"Ansible은 IT 자동화 도구이다. 시스템을 설정하고 소프트웨어를 설치하며 "
+"지속적 배포(Continuous Deployment) 혹은 무정지 업데이트(Zero-Downtime Rolling Update) 등의 "
 "복잡한 IT 업무를 자동화할 수 있다."
 
 #: ../../rst/index.rst:11
@@ -44,7 +44,10 @@ msgid ""
 "alternatives), and a language that is designed around auditability by "
 "humans--even those not familiar with the program."
 msgstr ""
-"Ansible의 주목표는 단순함과 쉬운 사용이다."
+"Ansible의 주목표는 단순함과 쉬운 사용이다. "
+"Ansible은 보안성과 안정성에 주안점을 두고 바뀌는 부분을 최소화하였다. "
+"전송층에는 OpenSSH를 사용하고 (대안으로 다른 전송방법이나 pull 모드도 지원한다.) "
+"사람이 읽기 쉬울 뿐 아니라 감사가능성도 가지도록 설계된 언어를 사용한다. "  
 
 #: ../../rst/index.rst:13
 msgid ""
@@ -54,6 +57,11 @@ msgid ""
 "for managing all environments, from small setups with a handful of "
 "instances to enterprise environments with many thousands of instances."
 msgstr ""
+"우리는 단순할 수록 사용가능한 환경이 늘어난다고 믿는다. "
+"그래서 사용자를 개발자, 시스템관리자, 릴리스 엔지니어, IT 매니저, "
+"그리고 그 사이의 누군가라는 유형으로 나누었다. "
+"Ansible은 몇 개의 인스턴스를 가지는 작은 환경부터 수천개의 인스턴스를 "
+"가지는 기업환경까지 모두 다룰 수 있다. "
 
 #: ../../rst/index.rst:15
 msgid ""
@@ -66,6 +74,14 @@ msgid ""
 "Ansible can easily connect with Kerberos, LDAP, and other centralized "
 "authentication management systems."
 msgstr ""
+"Ansible은 무-에이전트(agent-less) 방식으로 관리한다. "
+"원격 데몬(daemon)을 업데이트하는 방법이나 데몬이 설치되지 않는 원격 시스템을 "
+"다루는 방법 등은 신경쓰지 않아도 된다."
+"OpenSSH는 오픈 소스 구성품 중에서 가장 많이 검토되어 보안 위험이 낮은 "
+"것 중 하나이다. 또한 Ansible은 비집중식(decentralized)이다. "
+"원격 시스템에 접근하기 위해서 OS 보안기능에 의존한다. "
+"필요하다면 커베로스(Kerberos), LDAP 등의 집중식 인증 관리 시스템과도 "
+"쉽게 연결할 수 있다. "
 
 #: ../../rst/index.rst:18
 msgid ""
@@ -75,6 +91,9 @@ msgid ""
 "documentation that covers the version of Ansible you're using. For recent"
 " features, we note the version of Ansible where the feature was added."
 msgstr ""
+"이 문서는 좌측 상단에 있는 Ansible 버전을 다룬다. "
+"Ansible 버전에 따라 문서를 따로 관리하기 때문에 사용하고 있는 Ansible "
+"버전에 맞는 문서를 참조하라. 최근에 추가된 기능은 각 버전에서 설명한다. "
 
 #: ../../rst/index.rst:20
 msgid ""
@@ -84,40 +103,44 @@ msgid ""
 " the community around new modules and plugins being developed and "
 "contributed moves very quickly, adding many new modules in each release."
 msgstr ""
+"Ansible은 1년에 3~4번 메이저 릴리스를 한다. "
+"핵심 애플리케이션은 언어 설계 및 셋업의 단순함에 중점을 두고 보수적으로 "
+"관리하지만 새로운 모듈과 플러그인은 빠르게 추가된다. 매 릴리스마다 많은 "
+"새 모듈이 추가된다."
 
 #: ../../rst/index.rst:23
 msgid "Installation, Upgrade & Configuration"
-msgstr ""
+msgstr "설치, 업그레이드, 설정"
 
 #: ../../rst/index.rst:30
 msgid "Using Ansible"
-msgstr ""
+msgstr "Ansible 사용법"
 
 #: ../../rst/index.rst:36
 msgid "Contributing to Ansible"
-msgstr ""
+msgstr "Ansible에 기여하기"
 
 #: ../../rst/index.rst:42
 msgid "Extending Ansible"
-msgstr ""
+msgstr "Ansible 확장하기"
 
 #: ../../rst/index.rst:48
 msgid "Scenario Guides"
-msgstr ""
+msgstr "시나리오별 안내서"
 
 #: ../../rst/index.rst:55
 msgid "Ansible for VMWare"
-msgstr ""
+msgstr "VMWare용 Ansible"
 
 #: ../../rst/index.rst:61
 msgid "Ansible for Network Automation"
-msgstr ""
+msgstr "네트워크 자동화용 Ansible"
 
 #: ../../rst/index.rst:67
 msgid "Reference & Appendices"
-msgstr ""
+msgstr "참조서와 부록"
 
 #: ../../rst/index.rst:92
 msgid "Roadmaps"
-msgstr ""
+msgstr "장기계획"
 
