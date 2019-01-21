@@ -20,15 +20,15 @@ msgstr ""
 
 #: ../../rst/user_guide/intro_getting_started.rst:4
 msgid "Getting Started"
-msgstr ""
+msgstr "시작하기"
 
 #: ../../rst/user_guide/intro_getting_started.rst:6
 msgid "Topics"
-msgstr ""
+msgstr "주제"
 
 #: ../../rst/user_guide/intro_getting_started.rst:11
 msgid "Foreword"
-msgstr ""
+msgstr "서문"
 
 #: ../../rst/user_guide/intro_getting_started.rst:13
 msgid ""
@@ -36,6 +36,8 @@ msgid ""
 "and installed Ansible, it's time to get started with some ad-hoc "
 "commands."
 msgstr ""
+":ref:`설치 안내서<installation_guide>`\ 를 읽고 Ansible을 설치했으니 "
+"이제 몇가지 명령부터 시작할 시간이다."
 
 #: ../../rst/user_guide/intro_getting_started.rst:16
 msgid ""
@@ -44,6 +46,8 @@ msgid ""
 "features are handled by playbooks which are covered in a separate "
 "section."
 msgstr ""
+"처음에 보여줄 것은 Ansible의 강력한 설정/배포/조화 기능이다. "
+"이 기능들은 별도로 다룰 플레이북이라는 것을 이용한다."
 
 #: ../../rst/user_guide/intro_getting_started.rst:19
 msgid ""
@@ -52,10 +56,13 @@ msgid ""
 "and then you'll be ready to begin learning about playbooks and explore "
 "the most interesting parts!"
 msgstr ""
+"이 절에서는 초기에 Ansible을 구동하는 방법에 대해 설명한다. "
+"일단 이 개념을 이해하고 나면 :doc:`intro_adhoc`\ 를 읽고 좀 더 자세한 사항을 공부한다. "
+"그러면 플레이북과 더 재미있는 부분에 대해 공부할 준비가 될 것이다."
 
 #: ../../rst/user_guide/intro_getting_started.rst:24
 msgid "Remote Connection Information"
-msgstr ""
+msgstr "원격 접속 정보"
 
 #: ../../rst/user_guide/intro_getting_started.rst:26
 msgid ""
@@ -63,6 +70,8 @@ msgid ""
 "communicates with remote machines over the `SSH protocol "
 "<https://www.ssh.com/ssh/protocol/>`_."
 msgstr ""
+"시작하기 전에 Ansible은 원격 머신관 `SSH 프로토콜 <https://www.ssh.com/ssh/protocol/>`_\ 이라는 "
+"것으로 통신한다는 것을 알아야 한다."
 
 #: ../../rst/user_guide/intro_getting_started.rst:29
 msgid ""

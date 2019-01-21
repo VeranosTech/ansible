@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../rst/user_guide/quickstart.rst:2
 msgid "Ansible Quickstart"
-msgstr ""
+msgstr "빠른 사용법"
 
 #: ../../rst/user_guide/quickstart.rst:4
 msgid "We've recorded a short video that introduces Ansible."
-msgstr ""
+msgstr "Ansible을 소개하는 짧은 비디오를 녹화했다."
 
 #: ../../rst/user_guide/quickstart.rst:6
 msgid ""
@@ -33,8 +33,11 @@ msgid ""
 "introduction to Ansible -- what it does and how to use it. We'll also "
 "tell you about other products in the Ansible ecosystem."
 msgstr ""
+"`Ansible 소개 비디오 <https://www.ansible.com/resources/videos/quick-start-video>`_\ 는 "
+"13분 정도로 Ansible이 무엇이고 어떻게 사용하는가에 에 대해 개괄적인 소개를 한다. "
+"Ansible 환경체제의 다른 제품들에 대해서도 이야기한다."
 
 #: ../../rst/user_guide/quickstart.rst:9
 msgid "Enjoy, and be sure to visit the rest of the documentation to learn more."
 msgstr ""
-
+"이 비디오 청취후 더 많은 내용을 배우고 싶다면 문서의 다른 부분을 읽기 바란다."
