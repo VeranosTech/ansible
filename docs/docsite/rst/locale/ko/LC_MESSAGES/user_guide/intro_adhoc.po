@@ -20,11 +20,13 @@ msgstr ""
 
 #: ../../rst/user_guide/intro_adhoc.rst:4
 msgid "Introduction To Ad-Hoc Commands"
-msgstr "임시변통 명령의 소개 "
+msgstr ""
+"임시변통 명령의 소개"
 
 #: ../../rst/user_guide/intro_adhoc.rst:6
 msgid "Topics"
-msgstr "주제"
+msgstr ""
+"주제"
 
 #: ../../rst/user_guide/intro_adhoc.rst:8
 msgid ""
@@ -53,12 +55,17 @@ msgid ""
 "also be used to do quick things that you might not necessarily want to "
 "write a full playbook for."
 msgstr ""
+"이 절은 플레이북 언어를 공부하기 전에 Ansible로 무엇을 할 수 있는지 "
+"알려준다. 임시변통 명령은 완전한 플레이북을 작성할 필요가 없이 "
+"무언가를 빨리 하고싶을 때 쓸 수 있다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:20
 msgid ""
 "Generally speaking, the true power of Ansible lies in playbooks. Why "
 "would you use ad-hoc tasks versus playbooks?"
 msgstr ""
+"보통은 Ansible의 가장 큰 장점이 플레이북에서 발휘된다. "
+"그러면 왜 플레이북이 아닌 임시변통 업무가 필요한가?"
 
 #: ../../rst/user_guide/intro_adhoc.rst:23
 msgid ""
@@ -66,6 +73,8 @@ msgid ""
 "vacation, you could execute a quick one-liner in Ansible without writing "
 "a playbook."
 msgstr ""
+"예를 들어 크리스마스 휴가때 연구실의 모든 파워를 내리고 싶을 때, "
+"한줄 짜리 플레북을 작성할 수도 있을 것이다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:26
 msgid ""
@@ -73,10 +82,13 @@ msgid ""
 " up on using '/usr/bin/ansible-playbook' -- the concepts you will learn "
 "here will port over directly to the playbook language."
 msgstr ""
+"하지만 관리와 배포 설정을 위해 여기서 배울 '/usr/bin/ansible-playbook'\ 를 "
+"사용해도 나중에 쉽게 플레이북 언어로 변환할 수 있다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:30
 msgid "(See :doc:`playbooks` for more information about those)"
 msgstr ""
+"(보다 자세한 내용은 :doc:`playbooks`\ 를 참조한다.)"
 
 #: ../../rst/user_guide/intro_adhoc.rst:32
 msgid ""
