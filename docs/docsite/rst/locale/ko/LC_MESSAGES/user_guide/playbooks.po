@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../rst/user_guide/playbooks.rst:4
 msgid "Working With Playbooks"
-msgstr ""
+msgstr "플레이북 작업"
 
 #: ../../rst/user_guide/playbooks.rst:6
 msgid ""

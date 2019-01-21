@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../rst/installation_guide/intro_configuration.rst:5
 msgid "Configuring Ansible"
-msgstr ""
+msgstr "Ansible 설정"
 
 #: ../../rst/installation_guide/intro_configuration.rst:8
 msgid "Topics"
-msgstr ""
+msgstr "주제"
 
 #: ../../rst/installation_guide/intro_configuration.rst:10
 msgid "This topic describes how to control Ansible settings."

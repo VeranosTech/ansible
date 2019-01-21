@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../rst/user_guide/intro_inventory.rst:6
 msgid "Working with Inventory"
-msgstr ""
+msgstr "인벤토리 작업"
 
 #: ../../rst/user_guide/intro_inventory.rst:11
 msgid ""

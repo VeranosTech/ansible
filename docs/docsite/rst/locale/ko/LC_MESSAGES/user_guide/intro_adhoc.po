@@ -20,27 +20,31 @@ msgstr ""
 
 #: ../../rst/user_guide/intro_adhoc.rst:4
 msgid "Introduction To Ad-Hoc Commands"
-msgstr ""
+msgstr "임시변통 명령의 소개 "
 
 #: ../../rst/user_guide/intro_adhoc.rst:6
 msgid "Topics"
-msgstr ""
+msgstr "주제"
 
 #: ../../rst/user_guide/intro_adhoc.rst:8
 msgid ""
 "The following examples show how to use `/usr/bin/ansible` for running ad "
 "hoc tasks."
 msgstr ""
+"다음 예제는 임시변통으로 작업해야할 때 `/usr/bin/ansible`\ 를 사용하면 방법에 대한 것이다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:11
 msgid "What's an ad-hoc command?"
 msgstr ""
+"임시변통 명령이란?"
 
 #: ../../rst/user_guide/intro_adhoc.rst:13
 msgid ""
 "An ad-hoc command is something that you might type in to do something "
 "really quick, but don't want to save for later."
 msgstr ""
+"임시변통 명령(ad-hoc command)은 무언가를 빠르게, 하지만 두 번 이상은 "
+"하지 않는 것을 말한다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:16
 msgid ""

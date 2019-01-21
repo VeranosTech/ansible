@@ -95,7 +95,7 @@ msgstr ""
 "ControlPersist를 지원하지 않는다. "
 "이런 운영체제에서는 Ansible이 'paramiko'라는 파이썬 OpenSSH 구현체를 "
 "사용한다. 만약 Kerberos 기능 등을 사용하려면 OpenSSH 새 버전을 쓸 수 "
-"있을 때까지는 페도라, 맥, 우분투 등을 제어 머신으로 사용하는 것을 고려해라. "
+"있을 때까지는 페도라, 맥, 우분투 등을 제어 머신으로 사용하는 것을 고려하라. "
 
 #: ../../rst/user_guide/intro_getting_started.rst:33
 msgid ""
@@ -117,8 +117,8 @@ msgid ""
 msgstr ""
 "Ansible은 원격 머신을 쓸 때 기본적으로 SSH 키를 사용하고 있다고 가정한다. "
 "SSH 키는 패스워드 인증을 추가하고 ``--ask-pass`` 옵션을 쓰도록 권장한다. "
-"만약 sudo 기능을 써야하는데 패스워드를 입력해야 한다면 `--ask-become-pass`` "
-"옵션(과거에는 ``--ask-sudo-pass`` 옵션이었지만 이제 사용하지 않는다)을 "
+"만약 sudo 기능을 써야하는데 패스워드를 입력해야 한다면 ``--ask-become-pass`` "
+"옵션(과거에는 ``--ask-sudo-pass`` 옵션이었지만 바뀌었다)을 "
 "지원한다."
 
 #: ../../rst/user_guide/shared_snippets/SSH_password_prompt.txt:2
@@ -141,7 +141,7 @@ msgid ""
 "that cloud.  In most cases this will work better than on the open "
 "Internet."
 msgstr ""
-"상식이지만 다시 강조하자면 모든 관리 시스템은 관리되는 시스템이 가까이 있는게 좋다. "
+"상식이지만 다시 강조하자면 모든 관리 시스템은 관리되는 시스템에 가까이 있을수록 좋다. "
 "만약 Ansible을 클라우드에서 돌려야 하면 클라우드 내부의 머신에서 돌리는 것을 고려하라. "
 "대부분의 경우에 개방된 인터넷보다 이게 더 낫다."
 
@@ -156,7 +156,7 @@ msgid ""
 msgstr ""
 "고급 주제로 Ansible은 SSH를 통해서만 원격 연결하지 않는다. "
 "전송계층은 플러그인 형태이므로 로컬에서 chroot, lxc, jail 컨테이너 등을 사용하는 "
-"옵션도 가능하다. 'ansible-pull'\ 이라는 모듈을 쓰면 반대 방식으로 제어되는 시스템이 "
+"옵션도 가능하다. 'ansible-pull'\ 이라는 모듈을 쓰면 제어되는 시스템이 "
 "스케줄을 따라 git 체크아웃해서 설정을 중앙 레포지토리에서 꺼내올 수도 있다."
 
 #: ../../rst/user_guide/intro_getting_started.rst:46
@@ -219,7 +219,7 @@ msgstr ""
 #: ../../rst/user_guide/intro_getting_started.rst:79
 msgid "If you would like to access sudo mode, there are also flags to do that:"
 msgstr ""
-"만약 sudo 모드를 써야 하면 플래그(flag)를 지정한다.:"
+"만약 sudo 모드를 써야 하면 다음처럼 ``-b`` 플래그(flag)를 지정한다.:"
 
 #: ../../rst/user_guide/intro_getting_started.rst:96
 msgid ""
@@ -246,7 +246,7 @@ msgid ""
 "already have a fully working infrastructure!"
 msgstr ""
 "축하한다! 이제 Ansible로 노드를 연결했다. 이제 :doc:`intro_adhoc`\ 에 나온 "
-"실제 케이드들에 대해 읽고 Ansible의 :doc:`playbooks` 언어를 공부할 차례이다. "
+"실제 케이스들에 대해 읽고 Ansible의 :doc:`playbooks` 언어를 공부할 차례이다. "
 "Ansible은 단순히 명령을 실행할 뿐 아니라 강력한 관리 및 배포 관련 설정 "
 "기능이 있다. 더 많은 기능도 있지만 이것으로 완벽하게 작동하는 인프라스트럭처를 "
 "가지게 되었다."
@@ -261,7 +261,7 @@ msgid ""
 "When running commands, you can specify the local server by using "
 "\"localhost\" or \"127.0.0.1\" for the server name."
 msgstr ""
-"명령을 실행할 때는 서버 이름에 \"localhost\" or \"127.0.0.1\"  "
+"명령을 실행할 때는 서버 이름에 \"localhost\" 또는 \"127.0.0.1\"  "
 "등을 써서 로컬 서버를 지정할 수 있다."
 
 #: ../../rst/user_guide/intro_getting_started.rst:116
@@ -306,7 +306,7 @@ msgid ""
 "``~/.ansible.cfg``::"
 msgstr ""
 "이러한 동작을 원치 않는다면  ``/etc/ansible/ansible.cfg`` 또는 "
-"`~/.ansible.cfg`` 파일을 편집하여 수정할 수 있다.::"
+"``~/.ansible.cfg`` 파일을 편집하여 수정할 수 있다.::"
 
 #: ../../rst/user_guide/intro_getting_started.rst:140
 msgid ""
