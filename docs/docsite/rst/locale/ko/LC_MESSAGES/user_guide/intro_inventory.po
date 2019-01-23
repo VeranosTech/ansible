@@ -232,10 +232,13 @@ msgid ""
 "**variables are always flattened to the host level** before a play is "
 "executed."
 msgstr ""
+"이 방법은 복수의 호스트에 여러개의 변수를 동시 적용하는 편의적 방법일 뿐이다. "
+"호스트를 그룹단위로 적용하더라고 실제로는 플레이북이 실행되기 전에 "
+"번수가 호스트 레벨로 내려온다."
 
 #: ../../rst/user_guide/intro_inventory.rst:203
 msgid "Inheriting variable values: group variables for groups of groups"
-msgstr ""
+msgstr "변수 값 상속: 그룹의 그룹에 대한 그룹 변수"
 
 #: ../../rst/user_guide/intro_inventory.rst:205
 msgid ""
@@ -243,6 +246,9 @@ msgid ""
 "the ``children:`` entry in YAML. You can apply variables to these groups "
 "of groups using ``:vars`` or ``vars:``:"
 msgstr ""
+"INI 파일에서는 ``:children`` 접미사, YAML 파일에서는 ``children:`` 엔트리를 "
+"사용라면 그룹의 그룹을 만들 수 있다. ``:vars`` 또는 ``vars:``를 이용하면 "
+"그룹의 그룹에 변수를 적용할 수 있다.:"
 
 #: ../../rst/user_guide/intro_inventory.rst:260
 msgid ""
@@ -250,34 +256,41 @@ msgid ""
 " specific variables separate from the inventory file, see the next "
 "section. Child groups have a couple of properties to note:"
 msgstr ""
+"리스트나 해시 데이터를 저장해야 하거나 인벤토리 파일에서 호스트나 그룹용 변수를 "
+"인벤토리 파일에서 떼어서 관리하는 것을 선호하면 다음 절을 참조하라. "
+"자식 그룹은 몇가지 특징이 있다.:"
 
 #: ../../rst/user_guide/intro_inventory.rst:263
 msgid ""
 "Any host that is member of a child group is automatically a member of the"
 " parent group."
 msgstr ""
+"자식 그룹의 멤버인 호스트는 자동으로 부모 그룹의 멤버가 된다."
 
 #: ../../rst/user_guide/intro_inventory.rst:264
 msgid ""
 "A child group's variables will have higher precedence (override) a parent"
 " group's variables."
 msgstr ""
+"자식 그룹의 변수는 그룹 그룹의 변수보다 우선순위가 높다."
 
 #: ../../rst/user_guide/intro_inventory.rst:265
 msgid ""
 "Groups can have multiple parents and children, but not circular "
 "relationships."
 msgstr ""
+"그룹은 복수의 부모와 자식을 가질 수 있다. 하지만 환형 관계(circular relationships)는 안된다."
 
 #: ../../rst/user_guide/intro_inventory.rst:266
 msgid ""
 "Hosts can also be in multiple groups, but there will only be **one** "
 "instance of a host, merging the data from the multiple groups."
 msgstr ""
+"호스트는 여러 그룹에 있어도 되지만 실제로 그 호스트의 인스턴스는 하나만 존재하게 된다."
 
 #: ../../rst/user_guide/intro_inventory.rst:271
 msgid "Default groups"
-msgstr ""
+msgstr "디폴트 그룹"
 
 #: ../../rst/user_guide/intro_inventory.rst:273
 msgid ""
@@ -287,10 +300,14 @@ msgid ""
 "groups. Though ``all`` and ``ungrouped`` are always present, they can be "
 "implicit and not appear in group listings like ``group_names``."
 msgstr ""
+"Ansible에는 ``all``\ 과 ``ungrouped``\ 이라는 두 개의 디폴트 그룹이 있다. "
+"``all``\ 은 모든 호스트를 포함한다. ``ungrouped``\ 는 ``all`` 이외의 다른 그룹에 "
+"포함되지 않는 모든 호스트를 포함한다. ``all`` 및 ``ungrouped`` 그룹은 항상 "
+"존재하고 ``group_names`` 같은 그룹 리스팅에 넣지 않아도 된다."
 
 #: ../../rst/user_guide/intro_inventory.rst:281
 msgid "Organizing host and group variables"
-msgstr ""
+msgstr "호스트와 그룹 변수의 조직화"
 
 #: ../../rst/user_guide/intro_inventory.rst:283
 msgid ""
@@ -298,12 +315,15 @@ msgid ""
 "separate host and group variables files may help you track your variable "
 "values more easily."
 msgstr ""
+"변수를 메인 인벤토리 파일에 저장할 수도 있지만 호스트나 그룹별로 별도로 "
+"저장하면 변수값을 관리하는데 도움이 된다."
 
 #: ../../rst/user_guide/intro_inventory.rst:285
 msgid ""
 "Host and group variables can be stored in individual files relative to "
 "the inventory file (not directory, it is always the file)."
 msgstr ""
+"호스트와 그룹 변수는 인벤토리 파일을 기준으로 각각 다른 파일에 저장할 수 있다."
 
 #: ../../rst/user_guide/intro_inventory.rst:287
 msgid ""
@@ -311,6 +331,8 @@ msgid ""
 "'.yml', '.yaml', '.json', or no file extension. See :ref:`yaml_syntax` if"
 " you are new to YAML."
 msgstr ""
+"이 변수 파일은 YAML 포맷이다. 올바른 파일 확장자는 '.yml', '.yaml', '.json', "
+"또는 확장자가 없는 것이다. YAML 포맷이 낯설다면 :ref:`yaml_syntax`\ 를 참조한다."
 
 #: ../../rst/user_guide/intro_inventory.rst:290
 msgid ""
@@ -319,6 +341,9 @@ msgid ""
 "of two groups: 'raleigh' and 'webservers'. That host will use variables "
 "in YAML files at the following locations::"
 msgstr ""
+"예를 들어 인벤토리 파일이 ``/etc/ansible/hosts``\ 이고  두 개의 그룹 "
+"'raleigh' 및 'webservers'\ 의 멤버인 'foosball'\ 이라는 호스트가 있다고 하면, "
+"이 호스트의 변수는 다음 위치에 YAML 파일로 저장된다.::"
 
 #: ../../rst/user_guide/intro_inventory.rst:297
 msgid ""
@@ -327,10 +352,13 @@ msgid ""
 "'/etc/ansible/group_vars/raleigh' for the 'raleigh' group might look "
 "like::"
 msgstr ""
+"예를 들어 데이터센터 그룹이 여러개고 각 데이터센터가 다른 서버를 가지고 있다면 "
+"'/etc/ansible/group_vars/raleigh' 그룹 파일의 'raleigh' 그룹은 다음과 같다::"
 
 #: ../../rst/user_guide/intro_inventory.rst:305
 msgid "It is okay if these files do not exist, as this is an optional feature."
 msgstr ""
+"부가적인 기능이기 때문에 이 파일들이 없어도 상관없다."
 
 #: ../../rst/user_guide/intro_inventory.rst:307
 msgid ""
@@ -338,6 +366,8 @@ msgid ""
 "groups or hosts, and Ansible will read all the files in these directories"
 " in lexicographical order. An example with the 'raleigh' group::"
 msgstr ""
+"좀 더 고급 사례로 호스트나 그룹별 디렉토리를 생성할 수 있다. Ansible은 이 "
+"디렉토리의 파일을 사전식 순서로 읽어들인다. 'raleigh' 그룹의 예를 들면 다음과 같다::"
 
 #: ../../rst/user_guide/intro_inventory.rst:313
 msgid ""
@@ -347,6 +377,9 @@ msgid ""
 "want to use :ref:`Ansible Vault<playbooks_vault>` on a part of a group's "
 "variables."
 msgstr ""
+"'raleigh' 그룹의 모든 호스트는 이 파일에서 제공되는 변수를 가지게 된다. "
+"이 방법은 단일 파일을 사용하기에는 너무 크거나 일부 변수만 "
+":ref:`Ansible Vault<playbooks_vault>`\ 에서 쓸 때 유용한다."
 
 #: ../../rst/user_guide/intro_inventory.rst:318
 msgid ""
