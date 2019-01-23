@@ -74,7 +74,7 @@ msgid ""
 "a playbook."
 msgstr ""
 "예를 들어 크리스마스 휴가때 연구실의 모든 파워를 내리고 싶을 때, "
-"한줄 짜리 플레북을 작성할 수도 있을 것이다."
+"한 줄 짜리 플레이북을 작성할 수도 있을 것이다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:26
 msgid ""
@@ -95,14 +95,16 @@ msgid ""
 "If you haven't read :doc:`intro_inventory` already, please look that over"
 " a bit first and then we'll get going."
 msgstr ""
+"아직 :doc:`intro_inventory`\ 를 읽지 않았다면 읽어보고 다음으로 진행하기를 권장한다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:38
 msgid "Parallelism and Shell Commands"
-msgstr ""
+msgstr "동시실행과 셸 명령"
 
 #: ../../rst/user_guide/intro_adhoc.rst:40
 msgid "Arbitrary example."
 msgstr ""
+"예제"
 
 #: ../../rst/user_guide/intro_adhoc.rst:42
 msgid ""
@@ -110,6 +112,8 @@ msgid ""
 "Atlanta, 10 at a time.  First, let's set up SSH-agent so it can remember "
 "our credentials::"
 msgstr ""
+"Ansible 명령줄 도구를 사용하여 아틀란타에 있는 모든 서버를 한번에 10개씩 "
+"리부팅해보자. 우선 SSH-agent를 설정해서 암호를 기억하도록 한다.::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:48
 msgid ""
@@ -117,12 +121,16 @@ msgid ""
 "password instead of keys, you can with ``--ask-pass`` (``-k``), but it's "
 "much better to just use ssh-agent."
 msgstr ""
+"키와 ssh-agent를 사용하지 않고 패스워드를 사용하려면 ``--ask-pass`` (``-k``) "
+"옵션을 사용한다. 하지만 ssh-agent를 사용하는 것이 훨씬 낫다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:52
 msgid ""
 "Now to run the command on all servers in a group, in this case, "
 "*atlanta*, in 10 parallel forks::"
 msgstr ""
+"이제 그룹(이 예제에서는 *atlanta*)안의 모든 서버에 대새 한번에 10개씩 "
+"명령이 실행되도록 한다.::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:57
 msgid ""
@@ -130,12 +138,17 @@ msgid ""
 "do not like this behavior, pass in \"-u username\".  If you want to run "
 "commands as a different user, it looks like this::"
 msgstr ""
+"디폴트 사용자 계정에서 /usr/bin/ansible 가 실행될 것이다. "
+"만약 다른 사용자 계정을 쓰고 싶다면 \"-u username\" 옵션을 추가하라. "
+"다음과 같이 된다.::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:62
 msgid ""
 "Often you'll not want to just do things from your user account.  If you "
 "want to run commands through privilege escalation::"
 msgstr ""
+"사용자 계정이 아니라 관리자 계정으로 작업을 하길 원할 수도 있다. "
+"더 높은 권한으로 명령을 실행하려면::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:66
 msgid ""
@@ -144,12 +157,17 @@ msgid ""
 "interactively prompt you for the password to use. Use of a passwordless "
 "setup makes things easier to automate, but it's not required."
 msgstr ""
+"sudo/su/pfexec/doas 등을 써서 패스워드 없이 권한을 올리려면 "
+"``--ask-become-pass`` (``-K``) 옵션을 사용한다. "
+"이 때는 사용할 패스워드를 물어볼 것이다. "
+"패스워드 없이 사용하면 자동화가 더 용이하지만 반드시 그래야 하는 것은 아니다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:70
 msgid ""
 "It is also possible to become a user other than root using ``--become-"
 "user``::"
 msgstr ""
+"``--become-user`` 옵션으로 루트가 아닌 다른 사용자가 될 수도 있다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:77
 msgid ""
@@ -163,12 +181,20 @@ msgid ""
 "members of certain organizations use it on their behalf without having "
 "direct access."
 msgstr ""
+"가끔씩 어떤 사용자는 보안상 sudo/pbrun/doas 사용을 특정 명령만 할 수 있도록 "
+"제한된다.Ansible의  이는 no-bootstrapping 정책, 그리고 수백개의 모듈과 맞지 않는다. "
+"이런 제한이 없는 계정으로 Ansible을 사용하라. "
+"권한이 없는 사용자에게 권한을 공유하지 않으면서 이렇게 하는 방법중의 하나는 "
+":ref:`ansible_tower`\ 를 사용하는 것이다. :ref:`ansible_tower`\ 는 모든 SSH 암호를 "
+"가지고 있어서 조직의 특정 사용자를 대신하여 직접 제어를 할 수 있다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:83
 msgid ""
 "Ok, so those are basics.  If you didn't read about patterns and groups "
 "yet, go back and read :ref:`intro_patterns`."
 msgstr ""
+"이제 기본을 마쳤다. 패턴과 그룹에 대해 읽기 않았다면 돌아가서 "
+":ref:`intro_patterns`\ 를 읽기 바란다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:85
 msgid ""
@@ -181,6 +207,7 @@ msgid ""
 "but it will take a little longer.  Feel free to push this value as high "
 "as your system can handle!"
 msgstr ""
+
 
 #: ../../rst/user_guide/intro_adhoc.rst:91
 msgid ""
