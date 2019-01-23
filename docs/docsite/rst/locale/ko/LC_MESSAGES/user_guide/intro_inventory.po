@@ -30,6 +30,10 @@ msgid ""
 "``/etc/ansible/hosts``. You can specify a different inventory file using "
 "the ``-i <path>`` option on the command line."
 msgstr ""
+"Ansible은 인프라스트럭처 내의 여러 시스템을 동시에 다룰 수 있다. "
+"이 때 Ansible의 인벤토리에 나열된 시스템 중에서 선택할 수 있는데 인벤토리는 "
+"``/etc/ansible/hosts`` 파일에 저장된다. 명령줄에서 ``-i <path>`` 옵션을 쓰면 "
+"다른 인벤토리 파일을 지정할 수도 있다."
 
 #: ../../rst/user_guide/intro_inventory.rst:16
 msgid ""
@@ -39,10 +43,15 @@ msgid ""
 ":ref:`intro_dynamic_inventory`. Introduced in version 2.4, Ansible has "
 ":ref:`inventory_plugins` to make this flexible and customizable."
 msgstr ""
+"여러개의 인벤토리 파일을 동시에 이용할 수도 있고 "
+":ref:`intro_dynamic_inventory`\ 에 설명된 것처럼 클라우드 소스에서 인벤토리를 "
+"가져오거나 (YAML, ini 등) 다른 포맷을 사용할 수도 있다. "
+"버전 2.4부터는 :ref:`inventory_plugins` 기능으로 인벤토리를 더 유연하게 "
+"맞춤 설정 할 수 있다."
 
 #: ../../rst/user_guide/intro_inventory.rst:23
 msgid "Inventory basics: hosts and groups"
-msgstr ""
+msgstr "인벤토리 기초: 호스트와 그룹"
 
 #: ../../rst/user_guide/intro_inventory.rst:25
 msgid ""
@@ -51,6 +60,9 @@ msgid ""
 "``/etc/ansible/hosts`` is an INI-like (one of Ansible's defaults) and "
 "looks like this:"
 msgstr ""
+"인벤토리 파일은 사용자가 가진 인벤토리 플러그인에 따라 여러가지 포맷이 가능하다. "
+"예를 들어 ``/etc/ansible/hosts``\ 는 (Ansible의 디폴트 포맷의 하나인) INI 포맷으로 "
+"다음처럼 생겼다:"
 
 #: ../../rst/user_guide/intro_inventory.rst:41
 msgid ""
@@ -58,10 +70,11 @@ msgid ""
 "systems and deciding what systems you are controlling at what times and "
 "for what purpose."
 msgstr ""
+"대괄호안의 제목은 그룹 이름으로 목적에 따라 시스템을 분류하고 제어할 때 사용한다."
 
 #: ../../rst/user_guide/intro_inventory.rst:44
 msgid "A YAML version would look like:"
-msgstr ""
+msgstr "YAML 버전은 다음처럼 생겼다.:"
 
 #: ../../rst/user_guide/intro_inventory.rst:63
 msgid ""
@@ -70,6 +83,9 @@ msgid ""
 "will come from all of the groups they are a member of. Variable "
 "precedence is detailed in a later chapter."
 msgstr ""
+"하나의 시스템을 여러개의 그룹에 넣어도 된다. 예를 들어 하나의 서버가 "
+"웹서버이면서 동시에 디비서버일 수도 있다. 이렇게 하면 변수는 그 시스템이 "
+"포함된 모든 그룹에서 가져오게 된다. 변수 우선순위에 대해서는 나중에 자세히 다룬다."
 
 #: ../../rst/user_guide/intro_inventory.rst:66
 msgid ""
@@ -78,12 +94,16 @@ msgid ""
 "file won't be used with the `paramiko` connection but will be used with "
 "the `openssh` connection."
 msgstr ""
+"만약 비표준 SSH 포트로 호스트를 접속하면 호스트이름 뒤에 콜론(:)을 "
+"붙이고 그 위에 포트번호를 쓴다. SSH 설정 파일에 있는 포트번호는 "
+"`paramiko`  접속에서는 사용되지 않지만 `openssh` 접속에는 쓰인다."
 
 #: ../../rst/user_guide/intro_inventory.rst:69
 msgid ""
 "To make things explicit, it is suggested that you set them if things are "
 "not running on the default port:"
 msgstr ""
+"디폴트 포트에서 실행하되는지 아닌지 설정을 명시하는게 좋다."
 
 #: ../../rst/user_guide/intro_inventory.rst:75
 msgid ""
@@ -91,16 +111,19 @@ msgid ""
 "live in your host file, or you are connecting through tunnels. You can "
 "also describe hosts via variables:"
 msgstr ""
+"정적 IP 주소를 가지고 호스트 파일에 있는 alias를 사용하거나 터널링으로 "
+"접속할 때도 변수를 사용하여 호스트를 설정할 수 있다."
+
 
 #: ../../rst/user_guide/intro_inventory.rst:78
 #: ../../rst/user_guide/intro_inventory.rst:107
 msgid "In INI:"
-msgstr ""
+msgstr "INI 포맷:"
 
 #: ../../rst/user_guide/intro_inventory.rst:84
 #: ../../rst/user_guide/intro_inventory.rst:114
 msgid "In YAML:"
-msgstr ""
+msgstr "YAML 포맷:"
 
 #: ../../rst/user_guide/intro_inventory.rst:94
 msgid ""
@@ -111,6 +134,10 @@ msgid ""
 "define variables that describe your system policy, but we'll share "
 "suggestions on doing this later."
 msgstr ""
+"위 예에서 호스트 alias  \"jumper\"(실제 호스트이름이 아닐 수 있다.)에 "
+"작업을 할때는 포트 5555로 192.0.2.50에 접속한다. 이는 인벤토리 파일에서 "
+"특수 변수를 정의하는 기능을 사용한 것이다. 일반적으로 이 방법은 시스템 정책을 "
+"서술하는 좋은 방법이 아니다. 나중에 이에 대해 다시 이야기할 것이다."
 
 #: ../../rst/user_guide/intro_inventory.rst:98
 msgid ""
@@ -130,22 +157,35 @@ msgid ""
 "confusion on the actual type of a variable. The YAML inventory plugin "
 "processes variable values consistently and correctly."
 msgstr ""
+"INI 포맷에서 ``key=value`` 문법으로 지정된 값은 선언 방법에 따라 다르게 해석된다. "
+" * When 인라인으로 선언되면 파이썬 리터럴자료형(strings, numbers, tuples, lists, "
+"dicts, booleans, None)으로 해석한다. 한 줄에 여러개의 ``key=value`` 인수를 넣어도 된다. "
+"만약 공백글자 자체가 인수라면 구분자(separator)와 구분할 방법이 필요하다."
+" * ``:vars`` 섹션에서 선언되면 INI 값은 문자열로 해석한다. 예를 들어 ``var=FALSE``\ 는 "
+"'FALSE'\ 라는 문자열을 생성한다. ``:vars`` 섹션에서는 한 줄에 하나의 인수만 사용한다. "
+" * 선언 중에는 자료형을 가정하면 안된다. 변수를 소비할 때 필터로 자료형을 지정하도록 "
+"해야 한다. "
+" * 변수의 자료형에 대한 혼돈을 피하고 싶다면 YAML 포맷을 사용하라. "
+"YAML 인벤토리 플러그인 프로세스는 변수값을 정확하고 일관성있게 처리한다."
 
 #: ../../rst/user_guide/intro_inventory.rst:105
 msgid ""
 "If you are adding a lot of hosts following similar patterns, you can do "
 "this rather than listing each hostname:"
 msgstr ""
+"비슷한 패턴으로 많은 호스트를 추가하려면 각각의 호스트 이름을 입력하는 것보다 이 방식이 좋다."
 
 #: ../../rst/user_guide/intro_inventory.rst:123
 msgid ""
 "For numeric patterns, leading zeros can be included or removed, as "
 "desired. Ranges are inclusive.  You can also define alphabetic ranges:"
 msgstr ""
+"숫자를 사용하는 패턴에서는 자릿수를 위해 앞에 0을 붙일 수도 있다. "
+"숫자 범위 지정뿐 아니라 알파벳 범위 지정도 된다."
 
 #: ../../rst/user_guide/intro_inventory.rst:130
 msgid "You can also select the connection type and user on a per host basis:"
-msgstr ""
+msgstr "접속 유형과 사용자를 호스트별로 지정할 수도 있다.:"
 
 #: ../../rst/user_guide/intro_inventory.rst:140
 msgid ""
@@ -153,33 +193,37 @@ msgid ""
 "shorthand, and we'll discuss how to store them in individual files in the"
 " 'host_vars' directory a bit later on."
 msgstr ""
+"위에서 이야기한대로 인벤토리 파일에 설정을 하는 방법은 단지 빠른 설정 방법일 뿐이다. "
+"나중에는 'host_vars' 디렉토리에 개별 파일을 저장하는 방법에 대해 설명한다."
 
 #: ../../rst/user_guide/intro_inventory.rst:145
 msgid "Assigning a variable to one machine: host variables"
-msgstr ""
+msgstr "단일 머신에 대해 변수를 할당하는 방법: 호스트 변수"
 
 #: ../../rst/user_guide/intro_inventory.rst:147
 msgid ""
 "As described above, it is easy to assign variables to hosts that will be "
 "used later in playbooks:"
 msgstr ""
+"위에서 이야기한 바와 같이 나중에 플레이북에서 쓸 수 있도록 호스트에 변수를 "
+"할당할 수 있다. "
 
 #: ../../rst/user_guide/intro_inventory.rst:155
 #: ../../rst/user_guide/intro_inventory.rst:186
 msgid "The YAML version:"
-msgstr ""
+msgstr "YAML 버전"
 
 #: ../../rst/user_guide/intro_inventory.rst:170
 msgid "Assigning a variable to many machines: group variables"
-msgstr ""
+msgstr "다수의 머신에 변수를 할당하기: 그룹 변수"
 
 #: ../../rst/user_guide/intro_inventory.rst:172
 msgid "Variables can also be applied to an entire group at once:"
-msgstr ""
+msgstr "전체 그룹에 한번에 변수를 적용할 수도 있다."
 
 #: ../../rst/user_guide/intro_inventory.rst:174
 msgid "The INI way:"
-msgstr ""
+msgstr "INI 버전:"
 
 #: ../../rst/user_guide/intro_inventory.rst:198
 msgid ""
