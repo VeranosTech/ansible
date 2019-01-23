@@ -207,7 +207,10 @@ msgid ""
 "but it will take a little longer.  Feel free to push this value as high "
 "as your system can handle!"
 msgstr ""
-
+"위 코드의 ``-f 10`` 옵션은 10개씩 동시에 실행하라는 뜻이다. "
+":ref:`intro_configuration` 설정에서 할 수도 있다. 디폴트는 5개로 보수적으로 "
+"작게 잡혀있다. 이 옵션을 사용하면 더 많은 호스트를 쓰고 싶을 때 자유롭게 증가시킬 수 있다. "
+"실제 호스트 수가 이보다 많으면 시간이 더 걸린다. 자유롭게 이 값을 올려서 사용하라."
 
 #: ../../rst/user_guide/intro_adhoc.rst:91
 msgid ""
@@ -225,10 +228,14 @@ msgid ""
 "`shell` module instead. Read more about the differences on the "
 ":ref:`working_with_modules` page."
 msgstr ""
+":ref:`command 모듈 <command_module>`\ 은 파이프라인이나 리다이렉션같은 "
+"셸의 고급 문법을 지원하지 않는다. (셸 변수는 동작한다.) 만약 셀에 종속적인 "
+"기능을 사용하고 싶으면 `shell` 모듈을 사용하라. 차이점에 대해서는 "
+":ref:`working_with_modules` 페이지에 나와 있다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:102
 msgid "Using the :ref:`shell module <shell_module>` looks like this::"
-msgstr ""
+msgstr ":ref:`shell 모듈 <shell_module>` 사용방법은 다음과 같다.::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:106
 msgid ""
@@ -238,6 +245,10 @@ msgid ""
 " Ansible. For example, using double rather than single quotes in the "
 "above example would evaluate the variable on the box you were on."
 msgstr ""
+"만약 (:doc:`플레이북 <playbooks>`\ 을 쓰지 않고) 명령줄을 사용하여 명령을 "
+"실행시킬 때는 셸의 따옴표 규칙에 주의해야 한다. 로컬 셸은 Ansible에 변수를 "
+"전달하기 전에 값을 풀어낼 수 있다. 예를 들어 위 명령에서 홑따옴표를 쓰지 않고 "
+"겹따옴표를 쓴다면 변수값이 지금 사용하고 있는 컴퓨터의 값으로 풀어져서 들어간다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:112
 msgid ""
@@ -250,20 +261,29 @@ msgid ""
 "we also recognize that running arbitrary commands can be valuable, so "
 "Ansible easily supports both."
 msgstr ""
+"지금까지 간단한 명령 실행을 보였는데 대부분의 Ansible 모듈은 단순한 명령형 스크립트가 "
+"아니라 선언형 모형을 사용해서 지시한 최종 상태에 도달하기 위해 필요한 행위를 계산하고 "
+"실행한다. 또한 시작전에 현재 상태를 확인해서 시스템의 항등성(idempotence)을 확보한다. "
+"만약 현재의 상태가 지시한 상태와 같다면 아무것도 하지 않을 것이다. "
+"하지만 상태에 관계없이 명령을 반드시 실행해야하는 경우도 있기 때문에 "
+"Ansible은 두 가지 모두 지원한다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:122
 msgid "File Transfer"
-msgstr ""
+msgstr "파일 전송"
 
 #: ../../rst/user_guide/intro_adhoc.rst:124
 msgid ""
 "Here's another use case for the `/usr/bin/ansible` command line.  Ansible"
 " can SCP lots of files to multiple machines in parallel."
 msgstr ""
+"`/usr/bin/ansible`  명령을 사용하는 다른 경우는 SCP로 여러대의 머신에 파일을 "
+"동시 전송하는 것이다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:126
 msgid "To transfer a file directly to many servers::"
 msgstr ""
+"파일을 복수 서버에 직접 전송하려면::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:130
 msgid ""
@@ -271,6 +291,8 @@ msgid ""
 "module, which takes this another step further.  (See module and playbook "
 "documentation)."
 msgstr ""
+"만약 플레이북을 사용하면 ``template`` 모듈도 쓸 수 있다. "
+"(모듈과 플레이북 문서를 참조하라.)"
 
 #: ../../rst/user_guide/intro_adhoc.rst:133
 msgid ""
@@ -278,40 +300,49 @@ msgid ""
 "These same options can be passed directly to the ``copy`` module as "
 "well::"
 msgstr ""
+"``file`` 모듈은 파일의 소유자와 권한도 바꿀 수 있다. 이 옵션은 ``copy`` 모듈에도 적용된다.::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:139
 msgid "The ``file`` module can also create directories, similar to ``mkdir -p``::"
 msgstr ""
+"``file`` 모듈은 ``mkdir -p`` 명령처럼 디렉토리도 만들 수 있다.::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:143
 msgid "As well as delete directories (recursively) and delete files::"
 msgstr ""
+"디렉토리와 파일을 재귀적으로 지울 수도 있다.::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:150
 msgid "Managing Packages"
 msgstr ""
+"패키지 관리"
 
 #: ../../rst/user_guide/intro_adhoc.rst:152
 msgid ""
 "There are modules available for yum and apt.  Here are some examples with"
 " yum."
 msgstr ""
+"yum와 apt용 모듈도 있다. 다음은 yum 예제들이다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:155
 msgid "Ensure a package is installed, but don't update it::"
 msgstr ""
+"패키지가 설치되었는지 확인하여 설치한다. 업데이트하지는 않는다::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:159
 msgid "Ensure a package is installed to a specific version::"
 msgstr ""
+"패키지가 특정 버전으로 설치되었는지 확인하여 설치한다::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:163
 msgid "Ensure a package is at the latest version::"
 msgstr ""
+"패키지가 최신버전인지 확인하여 설치한다.::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:167
 msgid "Ensure a package is not installed::"
 msgstr ""
+"패키지가 설치되지 않았는지 확인하여 제거한다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:171
 msgid ""
@@ -320,30 +351,40 @@ msgid ""
 "the command module or (better!) contribute a module for your package "
 "manager. Stop by the mailing list for info/details."
 msgstr ""
+"Ansible은 여러 플랫폼의 패키지를 관리하는 모듈을 가지고 있다. "
+"만약 원하는 패키지 관리자가 없으면 command 모듈로 설치하거나 패키지 관리자를 "
+"직접 제작하여 Ansible에 기여할 수도 있다. 자세한 내용은 메일링 리스트를 참조한다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:179
 msgid "Users and Groups"
 msgstr ""
+"사용자와 그룹"
 
 #: ../../rst/user_guide/intro_adhoc.rst:181
 msgid ""
 "The 'user' module allows easy creation and manipulation of existing user "
 "accounts, as well as removal of user accounts that may exist::"
 msgstr ""
+"'user' 모듈은 사용자 계정 생성 및 관리를 돕는다. 이미 있는 사용자 계정을 "
+"삭제할 수도 있다.::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:189
 msgid ""
 "See the :doc:`modules` section for details on all of the available "
 "options, including how to manipulate groups and group membership."
 msgstr ""
+":doc:`modules` 절에 자세한 내용과 사용할 수 있는 옵션이 나와 있다. "
+"그룹과 그룹 구성원을 관리하는 방법도 있다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:195
 msgid "Deploying From Source Control"
 msgstr ""
+"소스 제어시에 배포하는 방법"
 
 #: ../../rst/user_guide/intro_adhoc.rst:197
 msgid "Deploy your webapp straight from git::"
 msgstr ""
+"git에서 직접 배포하려면::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:201
 msgid ""
@@ -351,26 +392,29 @@ msgid ""
 "Ansible to run specific tasks when the code is updated, such as deploying"
 " Perl/Python/PHP/Ruby directly from git and then restarting apache."
 msgstr ""
+"Ansible 모듈은 변동 사항을 알려줄 수 있으므로 코드가 업데이트 되었을 때 "
+"특정한 작업을 실시하도록 할 수 있다. 예를 들어 Perl/Python/PHP/Ruby를 git에서 "
+"배포한 후 아파치를 재시작할 수 있다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:209
 msgid "Managing Services"
-msgstr ""
+msgstr "서비스 관리"
 
 #: ../../rst/user_guide/intro_adhoc.rst:211
 msgid "Ensure a service is started on all webservers::"
-msgstr ""
+msgstr "모든 웹서버의 서비스를 시작하려면::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:215
 msgid "Alternatively, restart a service on all webservers::"
-msgstr ""
+msgstr "모든 웹서버의 서비스를 재시작하려면::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:219
 msgid "Ensure a service is stopped::"
-msgstr ""
+msgstr "서비스를 멈추려면::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:226
 msgid "Time Limited Background Operations"
-msgstr ""
+msgstr "시간제한 백그라운드 동작"
 
 #: ../../rst/user_guide/intro_adhoc.rst:228
 msgid ""
@@ -379,6 +423,9 @@ msgid ""
 "``long_running_operation`` asynchronously in the background, with a "
 "timeout of 3600 seconds (``-B``), and without polling (``-P``)::"
 msgstr ""
+"시간이 오래 걸리는 동작은 백그라운드에서 실행한 후에 나중에 상태를 확인할 "
+"수 있다. 예를 들어 ``long_running_operation``\ 을 3600 초 시간제한을 두고 (``-B``) "
+"폴링 없이 (``-P``) 백그라운드에서 비동기적으로 실행하려면::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:235
 msgid ""
@@ -386,16 +433,20 @@ msgid ""
 "the async_status module, passing it the job id that was returned when you"
 " ran the original job in the background::"
 msgstr ""
+"작업 상태를 나중에 확인하기로 했다면 async_status 모듈을 사용한다. "
+"작업 아이디를 넘기면 백그라운드에서 작업을 실시할 때 반환된다.::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:241
 msgid "Polling is built-in and looks like this::"
-msgstr ""
+msgstr "폴링도 구현되어 있다::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:245
 msgid ""
 "The above example says \"run for 30 minutes max (``-B`` 30*60=1800), poll"
 " for status (``-P``) every 60 seconds\"."
 msgstr ""
+"위 예제는 \"최대 30분동안 (``-B`` 30*60=1800) 실행하고 60초마다 상태를 "
+"확인하라(``-P``)는 뜻이다. "
 
 #: ../../rst/user_guide/intro_adhoc.rst:248
 msgid ""
@@ -405,6 +456,9 @@ msgid ""
 "(in seconds) runs out (``-B``), the process on the remote nodes will be "
 "terminated."
 msgstr ""
+"폴 모드는 모든 작업이 머신에서 시작한 다음에 시작된다. "
+"만약 모든 작업을 빨리 시작하고 싶다면 ``--forks`` 수를 크게 하라. "
+"(초단위) 시간 제한 (``-B``)이 지나면 원격 노드의 프로세스가 강제종료된다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:253
 msgid ""
@@ -413,10 +467,13 @@ msgid ""
 "background file transfer.  :doc:`Playbooks <playbooks>` also support "
 "polling, and have a simplified syntax for this."
 msgstr ""
+"보통은 소프트웨어 업그레이드나 시간이 오래걸리는 셸 명령을 백그라운에서 돌린다. "
+"copy 모듈을 백그라운드에서 돌린다고 파일 전송이 백그라운드에서 되지는 않는다. "
+"doc:`Playbooks <playbooks>`\ 도 폴링을 지원하고 간단한 문법이 있다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:259
 msgid "Gathering Facts"
-msgstr ""
+msgstr "팩트 수집"
 
 #: ../../rst/user_guide/intro_adhoc.rst:261
 msgid ""
@@ -425,18 +482,24 @@ msgid ""
 "execution of tasks but also just to get ad-hoc information about your "
 "system. You can see all facts via::"
 msgstr ""
+"팩트는 시스템에 관련된 정보로서 플레이북 문서에서 설명한다. "
+"조건부 작업을 구현하기위해 쓰이지만 간단히 시스템 정보를 수집할 수도 있다::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:266
 msgid ""
 "It's also possible to filter this output to just export certain facts, "
 "see the \"setup\" module documentation for details."
 msgstr ""
+"이 출력에서 특정 팩트만 필터링하여 출력할 수도 있다. "
+"자세한 내용은 \"setup\" 모듈을 참조한다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:268
 msgid ""
 "Read more about facts at :doc:`playbooks_variables` once you're ready to "
 "read up on :doc:`Playbooks <playbooks>`."
 msgstr ""
+":doc:`플레이북 문서 <playbooks>`\ 를 읽은 후에 :doc:`playbooks_variables`\ 에 "
+"있는 팩트수집에 대한 내용을 참조하라."
 
 #: ../../rst/user_guide/intro_adhoc.rst:272
 msgid ":ref:`intro_configuration`"
@@ -444,7 +507,7 @@ msgstr ""
 
 #: ../../rst/user_guide/intro_adhoc.rst:273
 msgid "All about the Ansible config file"
-msgstr ""
+msgstr "Ansible 설정 파일"
 
 #: ../../rst/user_guide/intro_adhoc.rst:274
 msgid ":ref:`all_modules`"
@@ -452,7 +515,7 @@ msgstr ""
 
 #: ../../rst/user_guide/intro_adhoc.rst:275
 msgid "A list of available modules"
-msgstr ""
+msgstr "전체 모듈 목록"
 
 #: ../../rst/user_guide/intro_adhoc.rst:276
 msgid ":ref:`working_with_playbooks`"
@@ -460,15 +523,15 @@ msgstr ""
 
 #: ../../rst/user_guide/intro_adhoc.rst:277
 msgid "Using Ansible for configuration management & deployment"
-msgstr ""
+msgstr "Ansible을 이용한 설정 관리 및 배포"
 
 #: ../../rst/user_guide/intro_adhoc.rst:278
 msgid "`Mailing List <https://groups.google.com/group/ansible-project>`_"
-msgstr ""
+msgstr "`메일링 리스트 <https://groups.google.com/group/ansible-project>`_"
 
 #: ../../rst/user_guide/intro_adhoc.rst:279
 msgid "Questions? Help? Ideas?  Stop by the list on Google Groups"
-msgstr ""
+msgstr "질문이나 도움요청, 아이디어 재공은 구글 그룹을 참조하라."
 
 #: ../../rst/user_guide/intro_adhoc.rst:280
 msgid "`irc.freenode.net <http://irc.freenode.net>`_"
