@@ -388,6 +388,9 @@ msgid ""
 "variables in the playbook directory will override variables set in the "
 "inventory directory."
 msgstr ""
+"팁: ``group_vars/``, ``host_vars/`` 디렉토리는 플레이북 디렉토리에 엤어도 되고 "
+"인벤토리 디렉토리에 있어도 된다. 만약 둘 다 존재하면 플레이북 디렉토리가 "
+"인벤토리 디렉토리보다 우선한다."
 
 #: ../../rst/user_guide/intro_inventory.rst:322
 msgid ""
@@ -397,6 +400,10 @@ msgid ""
 "``group_vars/`` and ``host_vars/`` in the inventory directory unless you "
 "provide the ``--playbook-dir`` option on the command line."
 msgstr ""
+"팁: ``ansible-playbook`` 명령은 디폴트로 현재 워킹 디렉토리에서 플레이북을 찾는다. "
+"다른 Ansible 명령(예를 들어 ``ansible``, ``ansible-console``, 등)은 "
+"``--playbook-dir`` 옵션을 지정하지 않는 한 인벤토리 디렉토리 안의 "
+"``group_vars/``, ``host_vars/`` 디렉토리를 찾는다."
 
 #: ../../rst/user_guide/intro_inventory.rst:326
 msgid ""
@@ -404,10 +411,12 @@ msgid ""
 "version control) is an excellent way to track changes to your inventory "
 "and host variables."
 msgstr ""
+"팁: 인벤토리 파일과 변수를 git 레포(또는 다른 버전 관리 시스템)에 보관하면 "
+"인벤토리와 호스트 변수의 변화를 추적하기 좋다."
 
 #: ../../rst/user_guide/intro_inventory.rst:332
 msgid "How variables are merged"
-msgstr ""
+msgstr "변수가 어떻게 합쳐지는가"
 
 #: ../../rst/user_guide/intro_inventory.rst:334
 msgid ""
@@ -418,22 +427,28 @@ msgid ""
 "and/or host (see :ref:`DEFAULT_HASH_BEHAVIOUR<DEFAULT_HASH_BEHAVIOUR>`). "
 "The order/precedence is (from lowest to highest):"
 msgstr ""
+"특정 호스트에서 플레이가 실행되기전에 변수값이 합쳐진다(merge). "
+"따라서 그룹은 사실 인벤토리와 호스트 매칭된 다음에는 존재하지 않는다. "
+"이렇게 하면 Ansible이 호스트와 태스크에 집중할 수 있다. "
+"Ansible은 그룹이나 호스트에서 정의된 변수를 덮어쓰는데 "
+"(:ref:`DEFAULT_HASH_BEHAVIOUR<DEFAULT_HASH_BEHAVIOUR>` 참조) "
+"우선순위는 다음과 같다.(가장 낮은 우선 순위에서 높은 순위로):"
 
 #: ../../rst/user_guide/intro_inventory.rst:336
 msgid "all group (because it is the 'parent' of all other groups)"
-msgstr ""
+msgstr "all 그룹(모든 다른 그룹의 부모 그룹이므로)"
 
 #: ../../rst/user_guide/intro_inventory.rst:337
 msgid "parent group"
-msgstr ""
+msgstr "부모 그룹"
 
 #: ../../rst/user_guide/intro_inventory.rst:338
 msgid "child group"
-msgstr ""
+msgstr "자식 그룹"
 
 #: ../../rst/user_guide/intro_inventory.rst:339
 msgid "host"
-msgstr ""
+msgstr "호스트"
 
 #: ../../rst/user_guide/intro_inventory.rst:341
 msgid ""
@@ -442,6 +457,9 @@ msgid ""
 " For example, an a_group will be merged with b_group and b_group vars "
 "that match will overwrite the ones in a_group."
 msgstr ""
+"같은 부모/자식 레벨의 그룹은 알파벳 순서로 합쳐지고 나중에 로드된 그룹이 "
+"앞에 있는 그룹을 덮어쓴다. 예를 들어 a_group은 b_group과 합쳐지고 "
+"b_group 변수와 같은 이름의 a_group 그룹 변수는 덮어씌워진다."
 
 #: ../../rst/user_guide/intro_inventory.rst:345
 msgid ""
@@ -451,6 +469,10 @@ msgid ""
 "number, the later it will be merged, giving it higher priority. This "
 "variable defaults to ``1`` if not set. For example:"
 msgstr ""
+"Ansible 2.4부터는 사용자가 ``ansible_group_priority`` 그룹 변수로 "
+"(부모/자식 순서가 해결된 이후에) 같은 레벨에 있는 그룹의 머지 순서를 바꿀 수 있다. "
+"숫자가 클수로 나중에 머지되므로 우선순위가 높아진다. "
+"이 변수는 지정하지 않으면 디폴트가 ``1``\ 이다.::"
 
 #: ../../rst/user_guide/intro_inventory.rst:355
 msgid ""
@@ -458,10 +480,12 @@ msgid ""
 "normally have been ``testvar == b``, but since we are giving the "
 "``a_group`` a higher priority the result will be ``testvar == a``."
 msgstr ""
+"이 예에서는 두 그룹의 우선순위가 같으므로 보통의 결과는 ``testvar == b``\ 가 되지만 "
+"``a_group`` 우선순위가 높기 때문에 ``testvar == a``\ 가 된다."
 
 #: ../../rst/user_guide/intro_inventory.rst:361
 msgid "Using multiple inventory sources"
-msgstr ""
+msgstr "복수의 인벤토리 소스를 사용하는 경우"
 
 #: ../../rst/user_guide/intro_inventory.rst:363
 msgid ""
@@ -472,10 +496,15 @@ msgid ""
 "be useful when you want to target normally separate environments, like "
 "staging and production, at the same time for a specific action."
 msgstr ""
+"고급 사용법으로 (디렉토리, 다이나믹 인벤토리 스크립트, 또는 인벤토리 "
+"플러그인 파일 등을 사용하여) 복수의 인벤토리 소스를 목표로 하여 동시에 "
+"여러개의 인벤토리 파라미터를 명령줄에서 주거나 :envvar:`ANSIBLE_INVENTORY` "
+"환경 변수로 설정할 수 있다. 같은 명령을 주어도 개발 환경과 운영 환경을 "
+"구분하여 다르게 실행하고 싶을 때 유용하다."
 
 #: ../../rst/user_guide/intro_inventory.rst:368
 msgid "Target two sources from the command line like this::"
-msgstr ""
+msgstr "명령줄로 두 개의 소스를 지정할 때는 다음과 같이 한다.::"
 
 #: ../../rst/user_guide/intro_inventory.rst:372
 msgid ""
@@ -488,10 +517,18 @@ msgid ""
 "would be reversed if the playbook was run with ``-i production -i "
 "staging``."
 msgstr ""
+"만약 인벤토리에 있는 변수가 충돌하면 :ref:`how_we_merge`\ 과 "
+":ref:`ansible_variable_precedence`\ 에 나온 규칙에 따라 "
+"충돌을 해결한다. 머지 순서는 인벤토리 소스 파라미터 순서로 조정한다. "
+"만약 개발 환경의 ``[all:vars]`` 섹션에서 ``myvar = 1``\ 라고 정의했는데 "
+"운영 환경의 인벤토리에서 ``myvar = 2``\ 라고 정의하면 플레이북은 "
+"``myvar = 2``\ 로 실행한다. 만약 플레이북을 실행할 때 "
+"``-i production -i staging``\ 이라고 옵션을 주었다면 반대가 될 수 있다."
+
 
 #: ../../rst/user_guide/intro_inventory.rst:379
 msgid "**Aggregating inventory sources with a directory**"
-msgstr ""
+msgstr "**디렉토리내의 인벤토리 소스를 합치기**"
 
 #: ../../rst/user_guide/intro_inventory.rst:381
 msgid ""
@@ -501,10 +538,14 @@ msgid ""
 "following inventory combines an inventory plugin source, a dynamic "
 "inventory script, and a file with static hosts::"
 msgstr ""
+"디렉토리 안에 있는 여러개의 인벤토리 소스를 합쳐서 하나의 인벤토리를 만들 수도 있다. "
+"정적 호스트와 다이나믹 호스트를 합쳐서 하나의 인벤토리로 만들 때 유용한다. "
+"다음 인벤토리는 인벤토리 플러그인 소스와 다이나믹 인벤토리 스크립트, "
+"그리고 정적 호스트 파일을 합친다.::"
 
 #: ../../rst/user_guide/intro_inventory.rst:393
 msgid "You can target this inventory directory simply like this::"
-msgstr ""
+msgstr "이 인벤토리 디렉토리를 타겟으로 지정하려면::"
 
 #: ../../rst/user_guide/intro_inventory.rst:397
 msgid ""
