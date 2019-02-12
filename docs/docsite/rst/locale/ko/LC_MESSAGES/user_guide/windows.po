@@ -20,13 +20,14 @@ msgstr ""
 
 #: ../../rst/user_guide/windows.rst:2
 msgid "Windows Guides"
-msgstr ""
+msgstr "윈도우 안내서"
 
 #: ../../rst/user_guide/windows.rst:4
 msgid ""
 "The following sections provide information on managing Windows hosts with"
 " Ansible."
 msgstr ""
+"다음 절은 앤서블로 윈도우 호스트를 관리하는 방법에 대한 정보를 제공한다."
 
 #: ../../rst/user_guide/windows.rst:7
 msgid ""
@@ -35,4 +36,8 @@ msgid ""
 "works. These guides will highlight some of the differences between "
 "Linux/Unix hosts and hosts running Windows."
 msgstr ""
+"윈도우는 POSIX 호환 운영체제가 아니므로 앤서블이 다루는 방법이나 윈도우가 "
+"동작하는 방법이 다르다. 이 안내서는 리눅스/유닉스 호스트와 윈도우 호스트의 "
+"차이점들에 집중한다. "
+
 
