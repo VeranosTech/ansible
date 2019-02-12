@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../rst/installation_guide/intro_configuration.rst:5
 msgid "Configuring Ansible"
-msgstr "Ansible 설정"
+msgstr "앤서블 설정"
 
 #: ../../rst/installation_guide/intro_configuration.rst:8
 msgid "Topics"
@@ -28,11 +28,11 @@ msgstr "주제"
 
 #: ../../rst/installation_guide/intro_configuration.rst:10
 msgid "This topic describes how to control Ansible settings."
-msgstr ""
+msgstr "여기에서는 앤서블 설정을 제어하는 법을 설명한다."
 
 #: ../../rst/installation_guide/intro_configuration.rst:16
 msgid "Configuration file"
-msgstr ""
+msgstr "설정 파일"
 
 #: ../../rst/installation_guide/intro_configuration.rst:18
 msgid ""
@@ -42,10 +42,13 @@ msgid ""
 "where configuration file is searched are listed in :ref:`reference "
 "documentation<ansible_configuration_settings_locations>`."
 msgstr ""
+"앤서블에서 특성 설명은 설정 파일(ansible.cfg)을 통해 조절할 수 있다. "
+"대부분의 사용자는 디폴트 설정으로도 충분하지만 이것을 바꾸고 싶을 때도 있을 수 있다. "
+"설정 파일을 찾는 경로는 :ref:`레퍼런스 <ansible_configuration_settings_locations>`\ 에 나와있다." 
 
 #: ../../rst/installation_guide/intro_configuration.rst:25
 msgid "Getting the latest configuration"
-msgstr ""
+msgstr "최신 설정 얻기"
 
 #: ../../rst/installation_guide/intro_configuration.rst:27
 msgid ""
@@ -53,18 +56,23 @@ msgid ""
 "file should be present in ``/etc/ansible``, possibly as a ``.rpmnew`` "
 "file (or other) as appropriate in the case of updates."
 msgstr ""
+"리눅스 패키지매니저로 앤서블을 설치하면 최신의 ``ansible.cfg`` 파일이 ``/etc/ansible``\ 에 "
+"있게 된다. ``.rpmnew`` 파일이나 다른 형태로 업데이트 된다."
 
 #: ../../rst/installation_guide/intro_configuration.rst:30
 msgid ""
 "If you installed Ansible from pip or from source, you may want to create "
 "this file in order to override default settings in Ansible."
 msgstr ""
+"만약 pip나 소스코드에서 앤서블을 설치하면 앤서블 디폴트 설정을 바꾸기 위해 "
+"이 파일을 사용자가 만들어야 한다."
 
 #: ../../rst/installation_guide/intro_configuration.rst:33
 msgid ""
 "An `example file is available on GitHub "
 "<https://raw.githubusercontent.com/ansible/ansible/devel/examples/ansible.cfg>`_."
 msgstr ""
+"`GitHub에 올라와 있는 예제 파일 <https://raw.githubusercontent.com/ansible/ansible/devel/examples/ansible.cfg>`_."
 
 #: ../../rst/installation_guide/intro_configuration.rst:35
 msgid ""
@@ -74,14 +82,16 @@ msgid ""
 "line utility to list your available options and inspect the current "
 "values."
 msgstr ""
+"사용가능한 설정들의 자세한 전체 목록은 :ref:`설정값 목록 <ansible_configuration_settings>`\ 을 참조하라. "
+"앤서블 버전 2.4부터는 :ref:`ansible-config` 명령으로 가능한 옵션과 현재값을 알아볼 수 있다."
 
 #: ../../rst/installation_guide/intro_configuration.rst:37
 msgid "For in-depth details, see :ref:`ansible_configuration_settings`."
-msgstr ""
+msgstr "더 자세한 내용은 :ref:`ansible_configuration_settings`\ 를 참조한다."
 
 #: ../../rst/installation_guide/intro_configuration.rst:42
 msgid "Environmental configuration"
-msgstr ""
+msgstr "환경 설정"
 
 #: ../../rst/installation_guide/intro_configuration.rst:44
 msgid ""
@@ -89,16 +99,19 @@ msgid ""
 "variables. If these environment variables are set, they will override any"
 " setting loaded from the configuration file."
 msgstr ""
+"환경변수를 사용하여 앤서블 설정을 할 수도 있다. 만약 환경변수가 설정되어 있으면 "
+"설정 파일에 있는 설정값보다 우선한다."
 
 #: ../../rst/installation_guide/intro_configuration.rst:47
 msgid ""
 "You can get a full listing of available environment variables from "
 ":ref:`ansible_configuration_settings`."
 msgstr ""
+"설정가능한 환경변수 목록은 :ref:`ansible_configuration_settings`\ 를 참조한다."
 
 #: ../../rst/installation_guide/intro_configuration.rst:53
 msgid "Command line options"
-msgstr ""
+msgstr "명령줄 옵션"
 
 #: ../../rst/installation_guide/intro_configuration.rst:55
 msgid ""
@@ -106,10 +119,14 @@ msgid ""
 "ones deemed most useful or common. Settings in the command line will "
 "override those passed through the configuration file and the environment."
 msgstr ""
+"명령줄에서는 모든 설정이 가능하지 않고 가장 유용하거나 일반적인 것만 지정할 수 있다. "
+"명령줄에서 지정한 설정은 설정 파일이나 환경변수로 지정한 것에 우선한다."
 
 #: ../../rst/installation_guide/intro_configuration.rst:58
 msgid ""
 "The full list of options available is in :ref:`ansible-playbook` and "
 ":ref:`ansible`."
 msgstr ""
+"전체 옵션 목록은 :ref:`ansible-playbook` 및 :ref:`ansible`\ 를 참조한다."
+
 

@@ -105,6 +105,11 @@ msgid ""
 " file from the current working directory if the directory is world-"
 "writable."
 msgstr ""
+"만약 모든 사용자가 쓸 수 있는 현재 작업 디렉토리의 :file:ansible.cfg 파일을 로드하면 "
+"심각한 보안상 위험이 있다. 다른 사용자가 악성 코드를 로컬이나 원격에서 "
+"관리자 권한으로 실행하도록 자신의 설정 파일을 올렸을 수도 있다. " 
+"따라서 앤서블은 현재 작업 디렉토리가 모든 사용자가 쓸 수 있도록 되어 있으면 "
+"설정파일을 자동으로 로드하지 않는다."
 
 #: ../../rst/reference_appendices/config.rst:52
 msgid ""
