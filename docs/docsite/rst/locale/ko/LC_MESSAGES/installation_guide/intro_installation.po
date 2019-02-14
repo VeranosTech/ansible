@@ -214,7 +214,7 @@ msgid ""
 msgstr ""
 "앤서블은 (명령을 직접적으로 실행하는) \"raw\" 모듈이 있어서 파이썬이 설치되어 "
 "있지 않는 상황에서도 스크립트를 돌릴 수 있다. 파이썬을 설치하기 위해 "
-"`raw module<raw_module>` 모듈을 사용할 수도 있고 다른 목적에도 쓸 수 있다. "
+"`raw module<raw_module>`_ 모듈을 사용할 수도 있고 다른 목적에도 쓸 수 있다. "
 "예를 들어 레드햇 기반의 시스템에 파이썬 2를 깔고 싶다면 다음과 같이 설치한다. "
 
 #: ../../rst/installation_guide/intro_installation.rst:98
@@ -223,7 +223,7 @@ msgstr "제어 머신 설치"
 
 #: ../../rst/installation_guide/intro_installation.rst:102
 msgid "Latest Release via DNF or Yum"
-msgstr "DNF나 Yum을 사용"
+msgstr "DNF, Yum"
 
 #: ../../rst/installation_guide/intro_installation.rst:104
 msgid "On Fedora:"
@@ -279,7 +279,7 @@ msgid ""
 "Ubuntu builds are available `in a PPA here "
 "<https://launchpad.net/~ansible/+archive/ubuntu/ansible>`_."
 msgstr ""
-"우분투 버전은 <https://launchpad.net/~ansible/+archive/ubuntu/ansible>`_ PPA에 있다."
+"우분투 버전은 `<https://launchpad.net/~ansible/+archive/ubuntu/ansible>`_ PPA에 있다."
 
 #: ../../rst/installation_guide/intro_installation.rst:144
 msgid ""
@@ -354,32 +354,35 @@ msgid ""
 "Though Ansible works with both Python 2 and 3 versions, FreeBSD has "
 "different packages for each Python version. So to install you can use:"
 msgstr ""
+"앤서블 자체는 파이썬 2, 3에서 모두 돌아가지만 FreeBSD는 파이썬 버전에 따라 "
+"패키지를 따로 관리하므로 다음처럼 설치한다.:"
 
 #: ../../rst/installation_guide/intro_installation.rst:207
 msgid "or:"
-msgstr ""
+msgstr "또는:"
 
 #: ../../rst/installation_guide/intro_installation.rst:214
 msgid "You may also wish to install from ports, run:"
-msgstr ""
+msgstr "ports에서 설치하려면:"
 
 #: ../../rst/installation_guide/intro_installation.rst:220
 msgid "You can also choose a specific version, i.e  ``ansible25``."
-msgstr ""
+msgstr " ``ansible25``\ 처럼 특정 버전을 선택할 수도 있다."
 
 #: ../../rst/installation_guide/intro_installation.rst:222
 msgid ""
 "Older versions of FreeBSD worked with something like this (substitute for"
 " your choice of package manager):"
 msgstr ""
+"옛날 버전 FreeBSD에서는:"
 
 #: ../../rst/installation_guide/intro_installation.rst:231
 msgid "Latest Releases on macOS"
-msgstr ""
+msgstr "맥OS"
 
 #: ../../rst/installation_guide/intro_installation.rst:233
 msgid "The preferred way to install Ansible on a Mac is via pip."
-msgstr ""
+msgstr "맥에서는 pip로 앤서블을 설치하는 것을 추천한다."
 
 #: ../../rst/installation_guide/intro_installation.rst:235
 msgid ""
@@ -388,40 +391,47 @@ msgid ""
 "to the latest pip (9.0.3 or newer) to connect to the Python Package Index"
 " securely."
 msgstr ""
+"`Latest Releases via Pip`_ 부분을 참조하라. "
+"만약 맥OS 10.12 이하 버전을 사용한다면 pip를 9.0.3 이상으로 업그레이드 해야 한다. 
 
 #: ../../rst/installation_guide/intro_installation.rst:240
 msgid "Latest Releases via OpenCSW (Solaris)"
-msgstr ""
+msgstr "솔라리스 OpenCSW"
 
 #: ../../rst/installation_guide/intro_installation.rst:242
 msgid ""
 "Ansible is available for Solaris as `SysV package from OpenCSW "
 "<https://www.opencsw.org/packages/ansible/>`_."
 msgstr ""
+"솔라리스용 앤서블은 `SysV package from OpenCSW "
+"<https://www.opencsw.org/packages/ansible/>`_ 사용."
 
 #: ../../rst/installation_guide/intro_installation.rst:252
 msgid "Latest Releases via Pacman (Arch Linux)"
-msgstr ""
+msgstr "Arch 리눅스 Pacman"
 
 #: ../../rst/installation_guide/intro_installation.rst:254
 msgid "Ansible is available in the Community repository::"
-msgstr ""
+msgstr "앤서블은 커뮤니티 레포에 있다.:"
 
 #: ../../rst/installation_guide/intro_installation.rst:258
 msgid ""
 "The AUR has a PKGBUILD for pulling directly from GitHub called `ansible-"
 "git <https://aur.archlinux.org/packages/ansible-git>`_."
 msgstr ""
+"깃헙 `ansible-git <https://aur.archlinux.org/packages/ansible-git>`_\ 에서 "
+"직접 pull하거나 PKGBUILD 사용"
 
 #: ../../rst/installation_guide/intro_installation.rst:260
 msgid ""
 "Also see the `Ansible <https://wiki.archlinux.org/index.php/Ansible>`_ "
 "page on the ArchWiki."
 msgstr ""
+"ArchWiki의 `Ansible <https://wiki.archlinux.org/index.php/Ansible>`_ 항목 참조"
 
 #: ../../rst/installation_guide/intro_installation.rst:265
 msgid "Latest Releases via sbopkg (Slackware Linux)"
-msgstr ""
+msgstr "슬랙웨어 리눅스 sbopkg"
 
 #: ../../rst/installation_guide/intro_installation.rst:267
 msgid ""
