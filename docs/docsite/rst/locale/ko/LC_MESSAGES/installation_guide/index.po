@@ -20,9 +20,9 @@ msgstr ""
 
 #: ../../rst/installation_guide/index.rst:1
 msgid "Welcome to the Ansible Installation Guide!"
-msgstr ""
+msgstr "이 문서는 앤서블 설치 안내서입니다."
 
 #: ../../rst/installation_guide/index.rst:3
 msgid "Introductory install guide text here."
-msgstr ""
+msgstr "설치 안내서 문서는 여기에 있습니다."
 
