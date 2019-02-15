@@ -439,34 +439,40 @@ msgid ""
 "<https://slackbuilds.org/apps/ansible/>`_ repository. Can be built and "
 "installed using `sbopkg <https://sbopkg.org/>`_."
 msgstr ""
+"`SlackBuilds.org <https://slackbuilds.org/apps/ansible/>`_ 레포지토리에 "
+"앤서블 빌드 스크립트가 있다. `sbopkg <https://sbopkg.org/>`_\ 를 이용하여 "
+"빌드할 수 있다."
 
 #: ../../rst/installation_guide/intro_installation.rst:270
 msgid "Create queue with Ansible and all dependencies::"
-msgstr ""
+msgstr "앤서블과 앤서블이 의존하는 라이브러리들에 대한 queue는 다음과 같이 만든다::"
 
 #: ../../rst/installation_guide/intro_installation.rst:274
 msgid ""
 "Build and install packages from created queuefile (answer Q for question "
 "if sbopkg should use queue or package)::"
 msgstr ""
+"생성된 queuefile로부터 패키지를 빌드하고 설치한다.(만약 sbopkg가 queue 또는 "
+package를 사용하느가는 질문이 나오면 Q라고 답한다.)::"
 
 #: ../../rst/installation_guide/intro_installation.rst:281
 msgid "Latest Release via swupd (Clear Linux)"
-msgstr ""
+msgstr "Clear 리눅스 swupd"
 
 #: ../../rst/installation_guide/intro_installation.rst:283
 msgid ""
 "Ansible and its dependencies are available as part of the sysadmin host "
 "management bundle::"
 msgstr ""
+"앤서블과 앤서블이 의존하는 라이브러리는 sysadmin 호스트 관리 번들에 포함되어 있다.::"
 
 #: ../../rst/installation_guide/intro_installation.rst:287
 msgid "Update of the software will be managed by the swupd tool::"
-msgstr ""
+msgstr "swupd 도구로 소프트웨어 업데이트를 할 수 있다::"
 
 #: ../../rst/installation_guide/intro_installation.rst:294
 msgid "Latest Releases via Pip"
-msgstr ""
+msgstr "Pip를 사용한 최신 버전 설치"
 
 #: ../../rst/installation_guide/intro_installation.rst:296
 msgid ""
@@ -474,20 +480,24 @@ msgid ""
 "'pip' isn't already available in your version of Python, you can get pip "
 "by::"
 msgstr ""
+"파이썬 패키지 매니저인 \"pip\"\ 를 사용하면 최신버전 앤서블을 설치할 수 있다. "
+"만약 현재 파이썬에 'pip'\ 가 없으면 다음처럼 설치한다.::" 
 
 #: ../../rst/installation_guide/intro_installation.rst:301
 msgid "Then install Ansible with [1]_::"
-msgstr ""
+msgstr "[1]_\ 로 앤서블을 설치::"
 
 #: ../../rst/installation_guide/intro_installation.rst:305
 msgid "Or if you are looking for the latest development version::"
-msgstr ""
+msgstr "아니면 최신 개발 버전을 설치::"
 
 #: ../../rst/installation_guide/intro_installation.rst:309
 msgid ""
 "If you are installing on macOS Mavericks, you may encounter some noise "
 "from your compiler.  A workaround is to do the following::"
 msgstr ""
+"만약 맥OS 매버릭에서 설치하려면 컴파일러가 경고를 밷을 수도 있다. "
+"다음처럼 하면 피할 수 있다.::"
 
 #: ../../rst/installation_guide/intro_installation.rst:313
 msgid ""
@@ -495,6 +505,9 @@ msgid ""
 "though we'd recommend to not worry about it and just install Ansible "
 "globally. Do not use easy_install to install Ansible directly."
 msgstr ""
+"virtualenv를 사용하는 독자는 virtualenv아래에만 앤서블을 설치할 수도 있다. "
+"하지만 권장하는 방식은 아니다. 되도록 앤서블을 글로벌로 설치하라. "
+"앤서블을 설치할 때는 easy_install 명령은 사용하지 말아라."
 
 #: ../../rst/installation_guide/intro_installation.rst:317
 msgid ""
@@ -504,10 +517,13 @@ msgid ""
 "<https://pip.pypa.io/en/stable/installing/#installation>`_ about "
 "installing latest pip."
 msgstr ""
+"옛날 버전의 pip는 http://pypi.python.org/simple\ 에 있어도 더이상 사용할 수 없다. "
+"앤서블을 설치하기 전에 (버전 10 이상의) 최신 버전 pip인지 확인하라. "
+"pip 버전을 확인하려면 `여기 <https://pip.pypa.io/en/stable/installing/#installation>`_\ 를 참조한다."
 
 #: ../../rst/installation_guide/intro_installation.rst:324
 msgid "Tarballs of Tagged Releases"
-msgstr ""
+msgstr "태그 버전의 타볼(tarball) 설치"
 
 #: ../../rst/installation_guide/intro_installation.rst:326
 msgid ""
@@ -515,16 +531,21 @@ msgid ""
 " want to do a git checkout?  Tarballs of releases are available on the "
 "`Ansible downloads <https://releases.ansible.com/ansible>`_ page."
 msgstr ""
+"앤서블을 패키징하거나 자신만 쓰는 로컬 빌드를 원하지만 git 체크아웃은 하고 싶지 않다면 "
+"`앤서블 다운로드 <https://releases.ansible.com/ansible>`_  페이지에 있는 "
+"타볼을 이용하라. "
 
 #: ../../rst/installation_guide/intro_installation.rst:328
 msgid ""
 "These releases are also tagged in the `git repository "
 "<https://github.com/ansible/ansible/releases>`_ with the release version."
 msgstr ""
+"이 버전들은 `git repository <https://github.com/ansible/ansible/releases>`_\ 에 "
+"태그되어 있다."
 
 #: ../../rst/installation_guide/intro_installation.rst:336
 msgid "Running From Source"
-msgstr ""
+msgstr "소스코드에서 바로 실행"
 
 #: ../../rst/installation_guide/intro_installation.rst:338
 msgid ""
@@ -537,6 +558,11 @@ msgid ""
 "following the development version is significantly easier than most open "
 "source projects."
 msgstr ""
+"앤서블은 체크아웃해서 바로 사용할 수 있다. 사용하는데 루트 권한이 필요하지도 않고 "
+"추가로 소프트웨어를 설치할 필요도 없다. 데몬이나 데이터베이스도 필요없다. 따라서 "
+"컴뮤니티의 많은 사용자들은 앤서블 개발 버전을 통해 새로운 기능을 즐기고 프로젝트에 "
+"기여한다. 설치할 것이 없기 때문에 대부분의 다른 오픈소스 프로젝트보다도 개발버전 "
+"사용이 쉽다." 
 
 #: ../../rst/installation_guide/intro_installation.rst:348
 msgid ""
@@ -544,42 +570,47 @@ msgid ""
 "source install. Please use OS package manager (like ``apt/yum``) or "
 "``pip`` to install a stable version."
 msgstr ""
+"만약 타워(Tower)를 제어 기계로 사용하고 있다면 소스코드 설치를 하지 말아라. "
+"운영체제에서 제공하는 (``apt/yum`` 같은) 프로젝트 관리자나 ``pip``\ 로 "
+"안정 버전을 설치하라."
 
 #: ../../rst/installation_guide/intro_installation.rst:351
 msgid "To install from source, clone the Ansible git repository:"
-msgstr ""
+msgstr "소스코드에서 설치하려면 앤서블 git 레포를 클론한다:"
 
 #: ../../rst/installation_guide/intro_installation.rst:358
 msgid "Once git has cloned the Ansible repository, setup the Ansible environment:"
-msgstr ""
+msgstr "일단 앤서블 레포를 클론한 다음에는 앤서블 환경을 설정한다.::"
 
 #: ../../rst/installation_guide/intro_installation.rst:360
 msgid "Using Bash:"
-msgstr ""
+msgstr "배쉬셸을 사용하는 경우:"
 
 #: ../../rst/installation_guide/intro_installation.rst:366
 msgid "Using Fish::"
-msgstr ""
+msgstr "피쉬셸을 사용하는 경우::"
 
 #: ../../rst/installation_guide/intro_installation.rst:370
 msgid "If you want to suppress spurious warnings/errors, use::"
-msgstr ""
+msgstr "만약 쓸데없는 경고/에러가 보이지 않게 하고 싶으면::"
 
 #: ../../rst/installation_guide/intro_installation.rst:374
 msgid "If you don't have pip installed in your version of Python, install pip::"
-msgstr ""
+msgstr "만약 현재 파이썬에 pip가 없으면 pip를 설치한다.::"
 
 #: ../../rst/installation_guide/intro_installation.rst:378
 msgid ""
 "Ansible also uses the following Python modules that need to be installed "
 "[1]_:"
 msgstr ""
+"앤서블은 다음 파이썬 모듈이 있어야 설치된다 [1]_:"
 
 #: ../../rst/installation_guide/intro_installation.rst:384
 msgid ""
 "To update ansible checkouts, use pull-with-rebase so any local changes "
 "are replayed."
 msgstr ""
+"앤서블 체크아웃을 업데이트하려면 pull-with-rebase를 사용하여 변화 내용을 반영한다."
 
 #: ../../rst/installation_guide/intro_installation.rst:390
 msgid ""
@@ -587,6 +618,8 @@ msgid ""
 " not only update the source tree, but also the \"submodules\" in git "
 "which point at Ansible's own modules."
 msgstr ""
+"주의: 버전 2.2 이하의 앤서블 체크아웃을 업데이트할 때는 소스 트리만 업데이트하지 말고 "
+"앤서블 모듈에 대한 \"submodules\"\ 도 없데이트 한다." 
 
 #: ../../rst/installation_guide/intro_installation.rst:399
 msgid ""
@@ -595,22 +628,24 @@ msgid ""
 "specify an inventory file (see :ref:`inventory`) other than "
 "/etc/ansible/hosts:"
 msgstr ""
+"일단 체크아웃해서 환경 설정 스크립트를 돌리면 디폴트 인벤토리 파일이 /etc/ansible/hosts\ 에 있다. "
+"츄거족욿 인벤토리 파일을 지정할 수 있다. 추가적으로 인벤토리 파일 위치를 지저하면 된다.:"
 
 #: ../../rst/installation_guide/intro_installation.rst:408
 msgid "You can read more about the inventory file in later parts of the manual."
-msgstr ""
+msgstr "매뉴얼 뒷부분에서 인벤토리 파일에 대해 더 많은 설명을 읽을 수 있다."
 
 #: ../../rst/installation_guide/intro_installation.rst:410
 msgid "Now let's test things with a ping command:"
-msgstr ""
+msgstr "이제 ping 명령이 되는지 테스트하자:"
 
 #: ../../rst/installation_guide/intro_installation.rst:416
 msgid "You can also use \"sudo make install\"."
-msgstr ""
+msgstr "\"sudo make install\" 명령을 사용할 수도 있다."
 
 #: ../../rst/installation_guide/intro_installation.rst:421
 msgid "Ansible on GitHub"
-msgstr ""
+msgstr "Github"
 
 #: ../../rst/installation_guide/intro_installation.rst:423
 msgid ""
@@ -619,6 +654,9 @@ msgid ""
 "This is also where we keep the issue tracker for sharing bugs and feature"
 " ideas."
 msgstr ""
+"만약 Github 계쩡이 있다면 "
+"`Github 프로젝트 <https://github.com/ansible/ansible>`_\ 를 팔로우할 수도 있다. "
+"버그 정보나 기능 추가를 위한 이슈관리를 사용할 수 있다.
 
 #: ../../rst/installation_guide/intro_installation.rst:430
 msgid ":ref:`intro_adhoc`"
@@ -626,7 +664,7 @@ msgstr ""
 
 #: ../../rst/installation_guide/intro_installation.rst:431
 msgid "Examples of basic commands"
-msgstr ""
+msgstr "기본적 명령의 예"
 
 #: ../../rst/installation_guide/intro_installation.rst:432
 msgid ":ref:`working_with_playbooks`"
@@ -634,7 +672,7 @@ msgstr ""
 
 #: ../../rst/installation_guide/intro_installation.rst:433
 msgid "Learning ansible's configuration management language"
-msgstr ""
+msgstr "앤서블 설정관리 언어 학습"
 
 #: ../../rst/installation_guide/intro_installation.rst:434
 msgid ":ref:`installation_faqs`"
@@ -642,15 +680,15 @@ msgstr ""
 
 #: ../../rst/installation_guide/intro_installation.rst:435
 msgid "Ansible Installation related to FAQs"
-msgstr ""
+msgstr "앤서블 설치 관련 FAQ"
 
 #: ../../rst/installation_guide/intro_installation.rst:436
 msgid "`Mailing List <https://groups.google.com/group/ansible-project>`_"
-msgstr ""
+msgstr "`메일링 리스트 <https://groups.google.com/group/ansible-project>`_"
 
 #: ../../rst/installation_guide/intro_installation.rst:437
 msgid "Questions? Help? Ideas?  Stop by the list on Google Groups"
-msgstr ""
+msgstr "질문 및 도움말은 구글 그룹을 참조한다."
 
 #: ../../rst/installation_guide/intro_installation.rst:438
 msgid "`irc.freenode.net <http://irc.freenode.net>`_"
@@ -658,11 +696,13 @@ msgstr ""
 
 #: ../../rst/installation_guide/intro_installation.rst:439
 msgid "#ansible IRC chat channel"
-msgstr ""
+msgstr "#ansible IRC 채널"
 
 #: ../../rst/installation_guide/intro_installation.rst:441
 msgid ""
 "If you have issues with the \"pycrypto\" package install on macOS, then "
 "you may need to try ``CC=clang sudo -E pip install pycrypto``."
 msgstr ""
+"만약 맥OS에서 \"pycrypto\" 패키지에 문제가 있으면 "
+" ``CC=clang sudo -E pip install pycrypto`` 명령을 시도해 본다." 
 
