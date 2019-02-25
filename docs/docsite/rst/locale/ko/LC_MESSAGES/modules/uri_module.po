@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../rst/modules/uri_module.rst:9
 msgid "uri -- Interacts with webservices"
-msgstr ""
+msgstr "uri -- 웹서비스 상호작용"
 
 #: ../../rst/modules/uri_module.rst:18
 msgid "Synopsis"
-msgstr ""
+msgstr "개요"
 
 #: ../../rst/modules/uri_module.rst:19
 msgid ""
@@ -36,27 +36,27 @@ msgstr ""
 msgid ""
 "For Windows targets, use the :ref:`win_uri <win_uri_module>` module "
 "instead."
-msgstr ""
+msgstr "윈도 타겟에서는 이 모듈 대신 :ref:`win_uri <win_uri_module>`\ 을 사용한다"
 
 #: ../../rst/modules/uri_module.rst:26
 msgid "Parameters"
-msgstr ""
+msgstr "인수"
 
 #: ../../rst/modules/uri_module.rst:376
 msgid "Notes"
-msgstr ""
+msgstr "주의점"
 
 #: ../../rst/modules/uri_module.rst:379
 msgid "The dependency on httplib2 was removed in Ansible 2.1."
-msgstr ""
+msgstr "httplib2 의존성은 Ansible 2.1에서 없어졌다."
 
 #: ../../rst/modules/uri_module.rst:380
 msgid "The module returns all the HTTP headers in lower-case."
-msgstr ""
+msgstr "이 모듈은 모든 HTTP 헤더를 소문자로 반환한다."
 
 #: ../../rst/modules/uri_module.rst:385
 msgid "See Also"
-msgstr ""
+msgstr "참고사항"
 
 #: ../../rst/modules/uri_module.rst:389
 msgid ":ref:`get_url_module`"
@@ -64,7 +64,7 @@ msgstr ""
 
 #: ../../rst/modules/uri_module.rst:390
 msgid "The official documentation on the **get_url** module."
-msgstr ""
+msgstr "**get_url** 모듈에 대한 공식 문서"
 
 #: ../../rst/modules/uri_module.rst:391
 msgid ":ref:`win_uri_module`"
@@ -72,41 +72,45 @@ msgstr ""
 
 #: ../../rst/modules/uri_module.rst:392
 msgid "The official documentation on the **win_uri** module."
-msgstr ""
+msgstr "**win_uri** 모듈에 대한 공식 문서"
 
 #: ../../rst/modules/uri_module.rst:396
 msgid "Examples"
-msgstr ""
+msgstr "예제"
 
 #: ../../rst/modules/uri_module.rst:483
 msgid "Return Values"
-msgstr ""
+msgstr "반환값"
 
 #: ../../rst/modules/uri_module.rst:484
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
-msgstr ""
+msgstr "일반적인 반환값은 :ref:`여기 <common_return_values>`\ 에 문서화되어 있다. "
+"다음은 이 모듈에만 있는 것들이다."
 
 #: ../../rst/modules/uri_module.rst:562
 msgid "Status"
-msgstr ""
+msgstr "상태"
 
 #: ../../rst/modules/uri_module.rst:567
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
+"이 모듈의 인터페이스는 하위 호환을 보장하지 않는다. "
+"상위 호환만 보장한다. *[stableinterface]*"
 
 #: ../../rst/modules/uri_module.rst:570
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
+"이 모듈은 :ref:`앤서블 코어 팀이 관리 <modules_support>`\ 한다. *[core]*"
 
 #: ../../rst/modules/uri_module.rst:573
 msgid "Red Hat Support"
-msgstr ""
+msgstr "레드햇 지원"
 
 #: ../../rst/modules/uri_module.rst:575
 msgid ""
@@ -114,10 +118,12 @@ msgid ""
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
+"이 모듈의 레드햇 지원에 대한 내용은 `Red Hat Knowledge Base article "
+"<https://access.redhat.com/articles/3166901>`_\ 를 참조한다."
 
 #: ../../rst/modules/uri_module.rst:581
 msgid "Authors"
-msgstr ""
+msgstr "저자"
 
 #: ../../rst/modules/uri_module.rst:583
 msgid "Romeo Theriault (@romeotheriault)"
