@@ -31,6 +31,7 @@ msgid ""
 "Interacts with HTTP and HTTPS web services and supports Digest, Basic and"
 " WSSE HTTP authentication mechanisms."
 msgstr ""
+"HTTP, HTTPS 웹서비스와 상호작용하고 Digest, Basic, WSSE HTTP 인증 메커니즘을 지원한다."
 
 #: ../../rst/modules/uri_module.rst:20 ../../rst/modules/uri_module.rst:381
 msgid ""
