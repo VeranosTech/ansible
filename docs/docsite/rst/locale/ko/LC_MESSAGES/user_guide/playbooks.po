@@ -28,12 +28,15 @@ msgid ""
 "language. They can describe a policy you want your remote systems to "
 "enforce, or a set of steps in a general IT process."
 msgstr ""
+"플레이북은 앤서블의 설정, 배포, 오케스트레이션 언어이다. "
+"원격 시스템에 적용할 정책이나 일반적 IT 프로세스 집합을 서술할 수 있다. "
 
 #: ../../rst/user_guide/playbooks.rst:8
 msgid ""
 "If Ansible modules are the tools in your workshop, playbooks are your "
 "instruction manuals, and your inventory of hosts are your raw material."
 msgstr ""
+"만약 앤서블 모듈이 도구라면 플레이북은 설명서이다. 호스트 인벤토리는 재료가 된다."
 
 #: ../../rst/user_guide/playbooks.rst:10
 msgid ""
@@ -43,6 +46,9 @@ msgid ""
 "actions to other hosts, interacting with monitoring servers and load "
 "balancers along the way."
 msgstr ""
+"플레이북의 가장 간단한 사용법은 원격 머신의 설정과 배포를 관리하는 것이다. "
+"고급 사용법은 롤링 업데이트와 같이 멀티-티어 롤아웃 시퀀스를 줄 수도 있고 "
+"모니터링 서버나 로드 밸랜서를 이용하여 다른 호스트에 대한 작업을 위임할 수도 있다. "
 
 #: ../../rst/user_guide/playbooks.rst:12
 msgid ""
@@ -50,6 +56,8 @@ msgid ""
 "everything at once.  You can start small and pick up more features over "
 "time as you need them."
 msgstr ""
+"이 문서에는 많은 정보가 있지만 한꺼번에 모두 익힐 필요는 없다. "
+"시간이 흐르면 차츰 여러 가능들을 더 사용할 수 있을 것이다. "
 
 #: ../../rst/user_guide/playbooks.rst:15
 msgid ""
@@ -58,6 +66,9 @@ msgid ""
 "files they include, and we'll offer up some suggestions on that and "
 "making the most out of Ansible."
 msgstr ""
+"플레이북은 사람이 읽기 쉽도록 기본적인 텍스트 언어로 설계되었다. "
+"여러가지 방법으로 플레이북을 조직화하거나 다른 파일을 인클러드할 수 있다. "
+"앞으로 앤서블의 기능을 최대한 발휘할 수 있도록 몇가지 방법들을 제공할 것이다. "
 
 #: ../../rst/user_guide/playbooks.rst:18
 msgid ""
@@ -66,4 +77,6 @@ msgid ""
 "  These illustrate best practices as well as how to put many of the "
 "various concepts together."
 msgstr ""
+"플레이북 문서를 읽으면서 `플레이북 예제 <https://github.com/ansible/ansible-examples>`_\ 를 같이 참조하라. "
+"여기에서는 여러가지 개념을 동시에 사용하는 최선의 방법을 설명한다. "
 
