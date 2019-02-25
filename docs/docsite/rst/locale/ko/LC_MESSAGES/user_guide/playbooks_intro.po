@@ -126,10 +126,12 @@ msgid ""
 "you were just defining one particular state or model, and you can run "
 "different plays at different times."
 msgstr ""
+"\"plays\"\ 라는 이름은 스포츠 경기처럼 여러번 반복하여 다른 일을 할 수 있다는 비유이다. "
+"어떤 하나의 특정한 상태나 모형을 만드는 게 아니고 여러번 반복해서 플레이할 수 있다는 뜻이다. "
 
 #: ../../rst/user_guide/playbooks_intro.rst:55
 msgid "For starters, here's a playbook that contains just one play::"
-msgstr ""
+msgstr "처음 시작하는 사용자를 위해 하나의 플레이만 있는 플레이북의 예를 보인다::"
 
 #: ../../rst/user_guide/playbooks_intro.rst:84
 msgid ""
@@ -137,6 +139,8 @@ msgid ""
 "targets first the web servers, and then the database servers. For "
 "example::"
 msgstr ""
+"플레이북은 여러개의 플레이를 담을 수도 있다. "
+"다음처럼 우선 웹 서버를 목표로 하고 그 다음에 데이터베이스 서버를 목표를 하는 플레이북도 있을 수 있다.:: "
 
 #: ../../rst/user_guide/playbooks_intro.rst:114
 msgid ""
@@ -145,20 +149,23 @@ msgid ""
 "or not, and so forth. Plays, like tasks, run in the order specified in "
 "the playbook: top to bottom."
 msgstr ""
+"이런 방법으로 여러개의 호스트 그룹 사이를 왔다갔다할 수 있다. 원격서버에 sudo로 접근할 수도 있고 "
+"특정 사용자로 로그인할 수도 있다. 플레이는 작업처럼 플레이북에서 위에서 아래로 순차적으로 실행된다."
 
 #: ../../rst/user_guide/playbooks_intro.rst:119
 msgid ""
 "Below, we'll break down what the various features of the playbook "
 "language are."
 msgstr ""
+"이제 플레북 언어의 여러가지 특징을 설명한다."
 
 #: ../../rst/user_guide/playbooks_intro.rst:124
 msgid "Basics"
-msgstr ""
+msgstr "기초"
 
 #: ../../rst/user_guide/playbooks_intro.rst:129
 msgid "Hosts and Users"
-msgstr ""
+msgstr "호스트와 사용자"
 
 #: ../../rst/user_guide/playbooks_intro.rst:131
 msgid ""
