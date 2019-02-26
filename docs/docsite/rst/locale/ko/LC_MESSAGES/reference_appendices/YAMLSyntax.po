@@ -104,7 +104,7 @@ msgstr ""
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:71
 msgid "These are called \"Flow collections\"."
-msgstr "이를 \"플로우 콜렉션\"\ 이라고 부른다. "
+msgstr "이를 \"플로우 콜렉션(flow collection)\"\ 이라고 부른다. "
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:75
 msgid ""
@@ -180,11 +180,11 @@ msgid ""
 "You will want to quote hash values using colons followed by a space or "
 "the end of the line::"
 msgstr ""
-"해시 밸류를 이용하려면 콜론 다음에 공백이나 줄바꿈을 사용한다.::"
+"해시 값이 되려면 콜론 다음에 공백이나 줄바꿈을 사용한다.::"
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:158
 msgid "...and then the colon will be preserved."
-msgstr "구리고 콜론은 유지된다."
+msgstr "그러면 콜론이 남아있을 수 있다."
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:160
 msgid "Alternatively, you can use double quotes::"
@@ -225,7 +225,7 @@ msgid ""
 "just part of it. Here are some additional examples of how to properly "
 "quote things::"
 msgstr ""
-"만약 값이 따옴표로 싲가하면 값의 일부가 아니라 전체에 대해 따옴표를 붙여야 한다."
+"만약 값이 따옴표로 시작하면 값의 일부가 아니라 전체에 대해 따옴표를 붙여야 한다."
 "다음은 따옴표의 올바른 사용법이다.::"
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:189
@@ -253,7 +253,7 @@ msgstr ""
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:199
 msgid "In Flow Collections, the rules are a bit more strict::"
-msgstr "플로우 콜렛션"\ 에서 규칙은 좀 더 엄격하다.
+msgstr "\"플로우 콜렉션\"\ 에서의 규칙은 좀 더 엄격하다.
 
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:205
@@ -263,7 +263,7 @@ msgid ""
 "use quotes::"
 msgstr ""
 "불리언 변환이 도움이 되지만 문자로 된 리터럴 `yes` 또는 다른 불리언값을 "
-"원할 수도 있다.:"
+"원할 수도 있다.::"
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:212
 msgid ""
@@ -272,9 +272,9 @@ msgid ""
 "requirements.yml file, for example), you will need to quote the value if "
 "it looks like a floating-point value::"
 msgstr ""
-"YAML은 `1.0` 등의 특정한 문자열을 부동소수점으로 변환한다. 만약 버전 넘버를 "
-"표시해야 하면 정말 부동소수점인  것처럼 변환한다. 만약 (예를 들어 requirements.yml "
-파일의) 버전 넘러를 지정하고 잇다. 만약 부송소수점처럼 
+"YAML은 `1.0`\ 등의 특정한 문자열을 부동소수점으로 변환한다. 만약 "
+"(예를 들어 requirements.ym 파일에서처럼) 버전 넘버를 "
+"표시해야 하면 따옴표로 인용해야 한다. 아니면 정말 부동소수점인 것처럼 변환한다"
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:222
 msgid ":ref:`working_with_playbooks`"
@@ -306,7 +306,7 @@ msgstr ""
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:229
 msgid "A good guide to YAML syntax"
-msgstr ""
+msgstr "YAML 문법에 대한 안내서"
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:230
 msgid "`Mailing List <https://groups.google.com/group/ansible-project>`_"
