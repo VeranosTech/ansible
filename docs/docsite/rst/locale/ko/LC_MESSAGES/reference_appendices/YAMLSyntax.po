@@ -20,13 +20,15 @@ msgstr ""
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:5
 msgid "YAML Syntax"
-msgstr ""
+msgstr "YAML 문법"
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:7
 msgid ""
 "This page provides a basic overview of correct YAML syntax, which is how "
 "Ansible playbooks (our configuration management language) are expressed."
 msgstr ""
+"이 페이지는 앤서블 플레이북에(그리고 설정 관리 언어로) 쓰이는 YAML의 "
+"올바른 문법을 설명한다."
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:10
 msgid ""
@@ -34,16 +36,20 @@ msgid ""
 "common data formats like XML or JSON.  Further, there are libraries "
 "available in most programming languages for working with YAML."
 msgstr ""
+"YAML이 XML이나 JSON과 같은 다른 데이터 형식보다 사람이 읽고 쓰기 쉽기 때문에 "
+"우리는 YAML을 사용한다. 또한 YAML을 다룰 수 있는 라이브러리는 대부분의 "
+"프로그래밍 언어에서 제공한다."
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:14
 msgid ""
 "You may also wish to read :ref:`working_with_playbooks` at the same time "
 "to see how this is used in practice."
 msgstr ""
+"실제로 YAML이 어떻게 쓰이는지를 보려면 :ref:`working_with_playbooks`\ 도 같이 읽으면 좋다."
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:19
 msgid "YAML Basics"
-msgstr ""
+msgstr "YAML 기초"
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:21
 msgid ""
@@ -52,6 +58,9 @@ msgid ""
 "\"dictionary\".  So, we need to know how to write lists and dictionaries "
 "in YAML."
 msgstr ""
+"앤서블에서는 거의 모든 YAML 파일이 리스트로 시작한다. 리스트의 각 아이템은 "
+"\"해시\" 또는 \"딕셔너리\"\ 로 불리는 키/밸류 쌍의 리스트이다. "
+"따라서 우선 YAML에서 리스트와 딕셔너리를 쓰는 법을 알아야 한다."
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:26
 msgid ""
@@ -60,40 +69,49 @@ msgid ""
 "end with ``...``.  This is part of the YAML format and indicates the "
 "start and end of a document."
 msgstr ""
+"YAML에는 또다른 특징이 있는데 모든 YAML 파일은 (앤서블과 상관없이) ``---``\ 로 "
+"시작할 수 있고 ``...``\ 로 끝날 수 있다. 이 것은 YAML 형식의 일부로서 문서의 "
+"시작과 끝을 나타낸다."
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:29
 msgid ""
 "All members of a list are lines beginning at the same indentation level "
 "starting with a ``\"- \"`` (a dash and a space)::"
 msgstr ""
+"리스트의 모든 원소는 같은 들여쓰기이고 ``\"- \"`` (대시와 공백)으로 시작한다::" 
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:39
 msgid ""
 "A dictionary is represented in a simple ``key: value`` form (the colon "
 "must be followed by a space)::"
 msgstr ""
+"딕셔너리는 ``key: value`` 형식이다. (콜론 뒤에 반드시 공백이 있어야 한다.)::"
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:47
 msgid ""
 "More complicated data structures are possible, such as lists of "
 "dictionaries, dictionaries whose values are lists or a mix of both::"
 msgstr ""
+"딕셔너리의 리스트라든가 리스트를 원소로 가지는 딕셔너처럼 더 복잡한 자료구조도 "
+"가능하다."
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:65
 msgid ""
 "Dictionaries and lists can also be represented in an abbreviated form if "
 "you really want to::"
 msgstr ""
+"딕셔너리와 리스트는 다음처럼 단축형식으로 쓸 수도 있다.::"
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:71
 msgid "These are called \"Flow collections\"."
-msgstr ""
+msgstr "이를 \"플로우 콜렉션\"\ 이라고 부른다. "
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:75
 msgid ""
 "Ansible doesn't really use these too much, but you can also specify a "
 "boolean value (true/false) in several forms::"
 msgstr ""
+"앤서블에서는 잘 쓰이지 않지만 불리언 값도 여러가지 형식으로 지정할 수 있다.::"
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:83
 msgid ""
@@ -104,12 +122,19 @@ msgid ""
 " line easier to read and edit. In either case the indentation will be "
 "ignored. Examples are::"
 msgstr ""
+"값을 여러줄에 걸처 쓰러면 ``|`` 또는 ``>``\ 를 사용한다. "
+"여러줄에 걸처 \"리터럴 블럭 스칼라(Literal Block Scalar)\"\ 를 쓰면 ``|``\ 는 "
+"줄넘기기와 뒤쪽 공백도 포함하게 된다. \"Folded Block Scalar\" ``>``\ 를 "
+"사용하면 줄넘기기와 뒤쪽 공백은 없어진다. 원래 한 줄인 것을 읽거나 편집하기 "
+"편하게 나눌 때 사용한다. 어느 경우든 들여쓰기는 무시된다. 예제는 다음과 같다.::"
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:98
 msgid ""
 "While in the above ``>`` example all newlines are folded into spaces, "
 "there are two ways to enforce a newline to be kept::"
 msgstr ""
+"앞에서 ``>`` 예제는 모든 줄넘기기가 공백으로 변환되었다. "
+"줄넘기기를 유지하려면 두 가지 방법이 있다.::"
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:110
 msgid ""
@@ -117,12 +142,15 @@ msgid ""
 "really has nothing to do with Ansible, but will give you a feel for the "
 "format::"
 msgstr ""
+"지금까지 배운것을 종합하여 임의의 YAML을 만들어보자. 앤서블과는 관계없지만 "
+"YAML 형식에 대해 감이 올 것이다.::"
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:133
 msgid ""
 "That's all you really need to know about YAML to start writing `Ansible` "
 "playbooks."
 msgstr ""
+"이게 앤서블 플레이북을 만들기 위해 필요한 YAML의 전부이다."
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:136
 msgid "Gotchas"
