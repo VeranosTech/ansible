@@ -43,12 +43,11 @@ Use the ``ansible-galaxy`` command to download roles from the `Galaxy website <h
 roles_path
 ==========
 
-Be aware that by default Ansible downloads roles to the path specified by the environment variable :envvar:`ANSIBLE_ROLES_PATH`. This can be set to a series of
-directories (i.e. */etc/ansible/roles:~/.ansible/roles*), in which case the first writable path will be used. When Ansible is first installed it defaults
-to */etc/ansible/roles*, which requires *root* privileges.
+By default Ansible downloads roles to the first writable directory in the default list of paths ``~/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles``. This will install roles in the home directory of the user running ``ansible-galaxy``.
 
-You can override this by setting the environment variable in your session, defining *roles_path* in an *ansible.cfg* file, or by using the *--roles-path* option.
-The following provides an example of using *--roles-path* to install the role into the current working directory:
+You can override this by setting the environment variable :envvar:`ANSIBLE_ROLES_PATH` in your session, defining ``roles_path`` in an ``ansible.cfg`` file, or by using the ``--roles-path`` option.
+
+The following provides an example of using ``--roles-path`` to install the role into the current working directory:
 
 ::
 
@@ -97,9 +96,9 @@ Each role in the file will have one or more of the following attributes:
      The source of the role. Use the format *username.role_name*, if downloading from Galaxy; otherwise, provide a URL pointing
      to a repository within a git based SCM. See the examples below. This is a required attribute.
    scm
-     Specify the SCM. As of this writing only *git* or *hg* are supported. See the examples below. Defaults to *git*.
+     Specify the SCM. As of this writing only *git* or *hg* are allowed. See the examples below. Defaults to *git*.
    version:
-     The version of the role to download. Provide a release tag value, commit hash, or branch name. Defaults to *master*.
+     The version of the role to download. Provide a release tag value, commit hash, or branch name. Defaults to the branch set as a default in the repository, otherwise defaults to the *master*.
    name:
      Download the role to a specific name. Defaults to the Galaxy name when downloading from Galaxy, otherwise it defaults
      to the name of the repository.
@@ -121,7 +120,15 @@ Use the following example as a guide for specifying roles in *requirements.yml*:
 
     # from a webserver, where the role is packaged in a tar.gz
     - src: https://some.webserver.example.com/files/master.tar.gz
-      name: http-role
+      name: http-role-gz
+
+    # from a webserver, where the role is packaged in a tar.bz2
+    - src: https://some.webserver.example.com/files/master.tar.bz2
+      name: http-role-bz2
+
+    # from a webserver, where the role is packaged in a tar.xz (Python 3.x only)
+    - src: https://some.webserver.example.com/files/master.tar.xz
+      name: http-role-xz
 
     # from Bitbucket
     - src: git+https://bitbucket.org/willthames/git-ansible-galaxy
@@ -176,7 +183,7 @@ Dependencies
 Roles can also be dependent on other roles, and when you install a role that has dependencies, those dependencies will automatically be installed.
 
 You specify role dependencies in the ``meta/main.yml`` file by providing a list of roles. If the source of a role is Galaxy, you can simply specify the role in
-the format ``username.role_name``. The more complex format used in ``requirements.yml`` is also supported, allowing you to provide ``src``, ``scm``, ``version``, and ``name``.
+the format ``username.role_name``. You can also use the more complex format in ``requirements.yml``, allowing you to provide ``src``, ``scm``, ``version``, and ``name``.
 
 Tags are inherited *down* the dependency chain. In order for tags to be applied to a role and all its dependencies, the tag should be applied to the role, not to all the tasks within a role.
 
@@ -222,21 +229,24 @@ The above will create the following directory structure in the current working d
 
 ::
 
-   README.md
-   .travis.yml
-   defaults/
-       main.yml
-   files/
-   handlers/
-       main.yml
-   meta/
-       main.yml
-   templates/
-   tests/
-       inventory
-       test.yml
-   vars/
-       main.yml
+   role_name/
+       README.md
+       .travis.yml
+       defaults/
+           main.yml
+       files/
+       handlers/
+           main.yml
+       meta/
+           main.yml
+       templates/
+       tests/
+           inventory
+           test.yml
+       vars/
+           main.yml
+
+If you want to create a repository for the role the repository root should be `role_name`.
 
 Force
 =====

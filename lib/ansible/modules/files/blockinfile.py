@@ -119,8 +119,8 @@ EXAMPLES = r'''
 
 - name: Insert/Update configuration using a local file and validate it
   blockinfile:
-    block: "{{ lookup('file', './local/ssh_config') }}"
-    dest: /etc/ssh/ssh_config
+    block: "{{ lookup('file', './local/sshd_config') }}"
+    dest: /etc/ssh/sshd_config
     backup: yes
     validate: /usr/sbin/sshd -T -f %s
 
@@ -129,7 +129,7 @@ EXAMPLES = r'''
     path: /var/www/html/index.html
     marker: "<!-- {mark} ANSIBLE MANAGED BLOCK -->"
     insertafter: "<body>"
-    content: |
+    block: |
       <h1>Welcome to {{ ansible_hostname }}</h1>
       <p>Last updated on {{ ansible_date_time.iso8601 }}</p>
 
@@ -137,7 +137,7 @@ EXAMPLES = r'''
   blockinfile:
     path: /var/www/html/index.html
     marker: "<!-- {mark} ANSIBLE MANAGED BLOCK -->"
-    content: ""
+    block: ""
 
 - name: Add mappings to /etc/hosts
   blockinfile:
@@ -145,10 +145,10 @@ EXAMPLES = r'''
     block: |
       {{ item.ip }} {{ item.name }}
     marker: "# {mark} ANSIBLE MANAGED BLOCK {{ item.name }}"
-  with_items:
-  - { name: host1, ip: 10.10.1.10 }
-  - { name: host2, ip: 10.10.1.11 }
-  - { name: host3, ip: 10.10.1.12 }
+  loop:
+    - { name: host1, ip: 10.10.1.10 }
+    - { name: host2, ip: 10.10.1.11 }
+    - { name: host3, ip: 10.10.1.12 }
 '''
 
 import re

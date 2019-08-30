@@ -18,15 +18,14 @@
 # ----------------------------------------------------------------------------
 
 from __future__ import absolute_import, division, print_function
+
 __metaclass__ = type
 
 ################################################################################
 # Documentation
 ################################################################################
 
-ANSIBLE_METADATA = {'metadata_version': '1.1',
-                    'status': ["preview"],
-                    'supported_by': 'community'}
+ANSIBLE_METADATA = {'metadata_version': '1.1', 'status': ["preview"], 'supported_by': 'community'}
 
 DOCUMENTATION = '''
 ---
@@ -58,15 +57,18 @@ options:
     - present
     - absent
     default: present
+    type: str
   description:
     description:
     - An optional description of this resource. Provide this property when you create
       the resource.
     required: false
+    type: str
   disk_size_gb:
     description:
     - Size of the image when restored onto a persistent disk (in GB).
     required: false
+    type: int
   family:
     description:
     - The name of the image family to which this image belongs. You can create disks
@@ -74,6 +76,7 @@ options:
       always returns its latest image that is not deprecated. The name of the image
       family must comply with RFC1035.
     required: false
+    type: str
   guest_os_features:
     description:
     - A list of features to enable on the guest OS. Applicable for bootable images
@@ -85,42 +88,42 @@ options:
       WINDOWS, to indicate that this is a Windows image.
     - This value is purely informational and does not enable or disable any features.
     required: false
+    type: list
     suboptions:
       type:
         description:
-        - The type of supported feature. Currenty only VIRTIO_SCSI_MULTIQUEUE is supported.
-          For newer Windows images, the server might also populate this property with
-          the value WINDOWS to indicate that this is a Windows image. This value is
-          purely informational and does not enable or disable any features.
+        - The type of supported feature. Currently only VIRTIO_SCSI_MULTIQUEUE is
+          supported. For newer Windows images, the server might also populate this
+          property with the value WINDOWS to indicate that this is a Windows image.
+          This value is purely informational and does not enable or disable any features.
+        - 'Some valid choices include: "VIRTIO_SCSI_MULTIQUEUE"'
         required: false
-        choices:
-        - VIRTIO_SCSI_MULTIQUEUE
+        type: str
   image_encryption_key:
     description:
     - Encrypts the image using a customer-supplied encryption key.
     - After you encrypt an image with a customer-supplied key, you must provide the
       same key if you use the image later (e.g. to create a disk from the image) .
     required: false
+    type: dict
     suboptions:
       raw_key:
         description:
         - Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648
           base64 to either encrypt or decrypt this resource.
         required: false
-      sha256:
-        description:
-        - The RFC 4648 base64 encoded SHA-256 hash of the customer-supplied encryption
-          key that protects this resource.
-        required: false
+        type: str
   labels:
     description:
     - Labels to apply to this Image.
     required: false
+    type: dict
     version_added: 2.8
   licenses:
     description:
     - Any applicable license URI.
     required: false
+    type: list
   name:
     description:
     - Name of the resource; provided by the client when the resource is created. The
@@ -130,93 +133,97 @@ options:
       characters must be a dash, lowercase letter, or digit, except the last character,
       which cannot be a dash.
     required: true
+    type: str
   raw_disk:
     description:
     - The parameters of the raw disk image.
     required: false
+    type: dict
     suboptions:
       container_type:
         description:
         - The format used to encode and transmit the block device, which should be
           TAR. This is just a container and transmission format and not a runtime
           format. Provided by the client when the disk image is created.
+        - 'Some valid choices include: "TAR"'
         required: false
-        choices:
-        - TAR
+        type: str
       sha1_checksum:
         description:
         - An optional SHA1 checksum of the disk image before unpackaging.
         - This is provided by the client when the disk image is created.
         required: false
+        type: str
       source:
         description:
         - The full Google Cloud Storage URL where disk storage is stored You must
           provide either this property or the sourceDisk property but not both.
         required: true
+        type: str
   source_disk:
     description:
     - The source disk to create this image based on.
     - You must provide either this property or the rawDisk.source property but not
       both to create an image.
     - 'This field represents a link to a Disk resource in GCP. It can be specified
-      in two ways. First, you can place in the selfLink of the resource here as a
-      string Alternatively, you can add `register: name-of-resource` to a gcp_compute_disk
-      task and then set this source_disk field to "{{ name-of-resource }}"'
+      in two ways. First, you can place a dictionary with key ''selfLink'' and value
+      of your resource''s selfLink Alternatively, you can add `register: name-of-resource`
+      to a gcp_compute_disk task and then set this source_disk field to "{{ name-of-resource
+      }}"'
     required: false
+    type: dict
   source_disk_encryption_key:
     description:
     - The customer-supplied encryption key of the source disk. Required if the source
       disk is protected by a customer-supplied encryption key.
     required: false
+    type: dict
     suboptions:
       raw_key:
         description:
         - Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648
           base64 to either encrypt or decrypt this resource.
         required: false
-      sha256:
-        description:
-        - The RFC 4648 base64 encoded SHA-256 hash of the customer-supplied encryption
-          key that protects this resource.
-        required: false
+        type: str
   source_disk_id:
     description:
     - The ID value of the disk used to create this image. This value may be used to
       determine whether the image was taken from the current or a previous instance
       of a given disk name.
     required: false
+    type: str
   source_type:
     description:
     - The type of the image used to create this disk. The default and only value is
       RAW .
+    - 'Some valid choices include: "RAW"'
     required: false
-    choices:
-    - RAW
+    type: str
 extends_documentation_fragment: gcp
 notes:
-- 'API Reference: U(https://cloud.google.com/compute/docs/reference/latest/images)'
+- 'API Reference: U(https://cloud.google.com/compute/docs/reference/v1/images)'
 - 'Official Documentation: U(https://cloud.google.com/compute/docs/images)'
 '''
 
 EXAMPLES = '''
 - name: create a disk
   gcp_compute_disk:
-      name: "disk-image"
-      zone: us-central1-a
-      project: "{{ gcp_project }}"
-      auth_kind: "{{ gcp_cred_kind }}"
-      service_account_file: "{{ gcp_cred_file }}"
-      state: present
+    name: disk-image
+    zone: us-central1-a
+    project: "{{ gcp_project }}"
+    auth_kind: "{{ gcp_cred_kind }}"
+    service_account_file: "{{ gcp_cred_file }}"
+    state: present
   register: disk
 
 - name: create a image
   gcp_compute_image:
-      name: "test_object"
-      source_disk: "{{ disk }}"
-      project: "test_project"
-      auth_kind: "serviceaccount"
-      service_account_file: "/tmp/auth.pem"
-      state: present
+    name: test_object
+    source_disk: "{{ disk }}"
+    project: test_project
+    auth_kind: serviceaccount
+    service_account_file: "/tmp/auth.pem"
+    state: present
 '''
 
 RETURN = '''
@@ -307,7 +314,7 @@ guestOsFeatures:
   contains:
     type:
       description:
-      - The type of supported feature. Currenty only VIRTIO_SCSI_MULTIQUEUE is supported.
+      - The type of supported feature. Currently only VIRTIO_SCSI_MULTIQUEUE is supported.
         For newer Windows images, the server might also populate this property with
         the value WINDOWS to indicate that this is a Windows image. This value is
         purely informational and does not enable or disable any features.
@@ -395,7 +402,7 @@ sourceDisk:
   - You must provide either this property or the rawDisk.source property but not both
     to create an image.
   returned: success
-  type: str
+  type: dict
 sourceDiskEncryptionKey:
   description:
   - The customer-supplied encryption key of the source disk. Required if the source
@@ -436,6 +443,7 @@ sourceType:
 
 from ansible.module_utils.gcp_utils import navigate_hash, GcpSession, GcpModule, GcpRequest, remove_nones_from_dict, replace_resource_dict
 import json
+import re
 import time
 
 ################################################################################
@@ -452,28 +460,16 @@ def main():
             description=dict(type='str'),
             disk_size_gb=dict(type='int'),
             family=dict(type='str'),
-            guest_os_features=dict(type='list', elements='dict', options=dict(
-                type=dict(type='str', choices=['VIRTIO_SCSI_MULTIQUEUE'])
-            )),
-            image_encryption_key=dict(type='dict', options=dict(
-                raw_key=dict(type='str'),
-                sha256=dict(type='str')
-            )),
+            guest_os_features=dict(type='list', elements='dict', options=dict(type=dict(type='str'))),
+            image_encryption_key=dict(type='dict', options=dict(raw_key=dict(type='str'))),
             labels=dict(type='dict'),
             licenses=dict(type='list', elements='str'),
             name=dict(required=True, type='str'),
-            raw_disk=dict(type='dict', options=dict(
-                container_type=dict(type='str', choices=['TAR']),
-                sha1_checksum=dict(type='str'),
-                source=dict(required=True, type='str')
-            )),
-            source_disk=dict(),
-            source_disk_encryption_key=dict(type='dict', options=dict(
-                raw_key=dict(type='str'),
-                sha256=dict(type='str')
-            )),
+            raw_disk=dict(type='dict', options=dict(container_type=dict(type='str'), sha1_checksum=dict(type='str'), source=dict(required=True, type='str'))),
+            source_disk=dict(type='dict'),
+            source_disk_encryption_key=dict(type='dict', options=dict(raw_key=dict(type='str'))),
             source_disk_id=dict(type='str'),
-            source_type=dict(type='str', choices=['RAW'])
+            source_type=dict(type='str'),
         )
     )
 
@@ -514,8 +510,7 @@ def create(module, link, kind):
 
 
 def update(module, link, kind, fetch):
-    update_fields(module, resource_to_request(module),
-                  response_to_hash(module, fetch))
+    update_fields(module, resource_to_request(module), response_to_hash(module, fetch))
     return fetch_resource(module, self_link(module), kind)
 
 
@@ -527,14 +522,8 @@ def update_fields(module, request, response):
 def labels_update(module, request, response):
     auth = GcpSession(module, 'compute')
     auth.post(
-        ''.join([
-            "https://www.googleapis.com/compute/v1/",
-            "projects/{project}/global/images/{name}/setLabels"
-        ]).format(**module.params),
-        {
-            u'labels': module.params.get('labels'),
-            u'labelFingerprint': response.get('labelFingerprint')
-        }
+        ''.join(["https://www.googleapis.com/compute/v1/", "projects/{project}/global/images/{name}/setLabels"]).format(**module.params),
+        {u'labels': module.params.get('labels'), u'labelFingerprint': response.get('labelFingerprint')},
     )
 
 
@@ -558,7 +547,7 @@ def resource_to_request(module):
         u'sourceDisk': replace_resource_dict(module.params.get(u'source_disk', {}), 'selfLink'),
         u'sourceDiskEncryptionKey': ImageSourcediskencryptionkey(module.params.get('source_disk_encryption_key', {}), module).to_request(),
         u'sourceDiskId': module.params.get('source_disk_id'),
-        u'sourceType': module.params.get('source_type')
+        u'sourceType': module.params.get('source_type'),
     }
     return_vals = {}
     for k, v in request.items():
@@ -593,8 +582,8 @@ def return_if_object(module, response, kind, allow_not_found=False):
     try:
         module.raise_for_status(response)
         result = response.json()
-    except getattr(json.decoder, 'JSONDecodeError', ValueError) as inst:
-        module.fail_json(msg="Invalid JSON response with error: %s" % inst)
+    except getattr(json.decoder, 'JSONDecodeError', ValueError):
+        module.fail_json(msg="Invalid JSON response with error: %s" % response.text)
 
     if navigate_hash(result, ['error', 'errors']):
         module.fail_json(msg=navigate_hash(result, ['error', 'errors']))
@@ -641,8 +630,17 @@ def response_to_hash(module, response):
         u'sourceDisk': response.get(u'sourceDisk'),
         u'sourceDiskEncryptionKey': ImageSourcediskencryptionkey(response.get(u'sourceDiskEncryptionKey', {}), module).from_response(),
         u'sourceDiskId': response.get(u'sourceDiskId'),
-        u'sourceType': response.get(u'sourceType')
+        u'sourceType': response.get(u'sourceType'),
     }
+
+
+def license_selflink(name, params):
+    if name is None:
+        return
+    url = r"https://www.googleapis.com/compute/v1//projects/.*/global/licenses/.*"
+    if not re.match(url, name):
+        name = "https://www.googleapis.com/compute/v1//projects/{project}/global/licenses/%s".format(**params) % name
+    return name
 
 
 def async_op_url(module, extra_data=None):
@@ -667,9 +665,9 @@ def wait_for_completion(status, op_result, module):
     op_id = navigate_hash(op_result, ['name'])
     op_uri = async_op_url(module, {'op_id': op_id})
     while status != 'DONE':
-        raise_if_errors(op_result, ['error', 'errors'], 'message')
+        raise_if_errors(op_result, ['error', 'errors'], module)
         time.sleep(1.0)
-        op_result = fetch_resource(module, op_uri, 'compute#operation')
+        op_result = fetch_resource(module, op_uri, 'compute#operation', False)
         status = navigate_hash(op_result, ['status'])
     return op_result
 
@@ -689,22 +687,26 @@ class ImageDeprecated(object):
             self.request = {}
 
     def to_request(self):
-        return remove_nones_from_dict({
-            u'deleted': self.request.get('deleted'),
-            u'deprecated': self.request.get('deprecated'),
-            u'obsolete': self.request.get('obsolete'),
-            u'replacement': self.request.get('replacement'),
-            u'state': self.request.get('state')
-        })
+        return remove_nones_from_dict(
+            {
+                u'deleted': self.request.get('deleted'),
+                u'deprecated': self.request.get('deprecated'),
+                u'obsolete': self.request.get('obsolete'),
+                u'replacement': self.request.get('replacement'),
+                u'state': self.request.get('state'),
+            }
+        )
 
     def from_response(self):
-        return remove_nones_from_dict({
-            u'deleted': self.request.get(u'deleted'),
-            u'deprecated': self.request.get(u'deprecated'),
-            u'obsolete': self.request.get(u'obsolete'),
-            u'replacement': self.request.get(u'replacement'),
-            u'state': self.request.get(u'state')
-        })
+        return remove_nones_from_dict(
+            {
+                u'deleted': self.request.get(u'deleted'),
+                u'deprecated': self.request.get(u'deprecated'),
+                u'obsolete': self.request.get(u'obsolete'),
+                u'replacement': self.request.get(u'replacement'),
+                u'state': self.request.get(u'state'),
+            }
+        )
 
 
 class ImageGuestosfeaturesArray(object):
@@ -728,14 +730,10 @@ class ImageGuestosfeaturesArray(object):
         return items
 
     def _request_for_item(self, item):
-        return remove_nones_from_dict({
-            u'type': item.get('type')
-        })
+        return remove_nones_from_dict({u'type': item.get('type')})
 
     def _response_from_item(self, item):
-        return remove_nones_from_dict({
-            u'type': item.get(u'type')
-        })
+        return remove_nones_from_dict({u'type': item.get(u'type')})
 
 
 class ImageImageencryptionkey(object):
@@ -747,16 +745,10 @@ class ImageImageencryptionkey(object):
             self.request = {}
 
     def to_request(self):
-        return remove_nones_from_dict({
-            u'rawKey': self.request.get('raw_key'),
-            u'sha256': self.request.get('sha256')
-        })
+        return remove_nones_from_dict({u'rawKey': self.request.get('raw_key')})
 
     def from_response(self):
-        return remove_nones_from_dict({
-            u'rawKey': self.request.get(u'rawKey'),
-            u'sha256': self.request.get(u'sha256')
-        })
+        return remove_nones_from_dict({u'rawKey': self.request.get(u'rawKey')})
 
 
 class ImageRawdisk(object):
@@ -768,18 +760,14 @@ class ImageRawdisk(object):
             self.request = {}
 
     def to_request(self):
-        return remove_nones_from_dict({
-            u'containerType': self.request.get('container_type'),
-            u'sha1Checksum': self.request.get('sha1_checksum'),
-            u'source': self.request.get('source')
-        })
+        return remove_nones_from_dict(
+            {u'containerType': self.request.get('container_type'), u'sha1Checksum': self.request.get('sha1_checksum'), u'source': self.request.get('source')}
+        )
 
     def from_response(self):
-        return remove_nones_from_dict({
-            u'containerType': self.request.get(u'containerType'),
-            u'sha1Checksum': self.request.get(u'sha1Checksum'),
-            u'source': self.request.get(u'source')
-        })
+        return remove_nones_from_dict(
+            {u'containerType': self.request.get(u'containerType'), u'sha1Checksum': self.request.get(u'sha1Checksum'), u'source': self.request.get(u'source')}
+        )
 
 
 class ImageSourcediskencryptionkey(object):
@@ -791,16 +779,10 @@ class ImageSourcediskencryptionkey(object):
             self.request = {}
 
     def to_request(self):
-        return remove_nones_from_dict({
-            u'rawKey': self.request.get('raw_key'),
-            u'sha256': self.request.get('sha256')
-        })
+        return remove_nones_from_dict({u'rawKey': self.request.get('raw_key')})
 
     def from_response(self):
-        return remove_nones_from_dict({
-            u'rawKey': self.request.get(u'rawKey'),
-            u'sha256': self.request.get(u'sha256')
-        })
+        return remove_nones_from_dict({u'rawKey': self.request.get(u'rawKey')})
 
 
 if __name__ == '__main__':

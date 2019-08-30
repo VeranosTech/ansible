@@ -18,15 +18,14 @@
 # ----------------------------------------------------------------------------
 
 from __future__ import absolute_import, division, print_function
+
 __metaclass__ = type
 
 ################################################################################
 # Documentation
 ################################################################################
 
-ANSIBLE_METADATA = {'metadata_version': '1.1',
-                    'status': ["preview"],
-                    'supported_by': 'community'}
+ANSIBLE_METADATA = {'metadata_version': '1.1', 'status': ["preview"], 'supported_by': 'community'}
 
 DOCUMENTATION = '''
 ---
@@ -48,13 +47,13 @@ options:
     - present
     - absent
     default: present
+    type: str
   action:
     description:
     - Upload or download from the bucket.
+    - 'Some valid choices include: "download", "upload"'
     required: false
-    choices:
-    - download
-    - upload
+    type: str
   overwrite:
     description:
     - "'Overwrite the file on the bucket/local machine. If overwrite is false and
@@ -65,29 +64,31 @@ options:
     description:
     - Source location of file (may be local machine or cloud depending on action).
     required: false
+    type: path
   dest:
     description:
     - Destination location of file (may be local machine or cloud depending on action).
     required: false
+    type: path
   bucket:
     description:
     - The name of the bucket.
     required: false
+    type: str
 extends_documentation_fragment: gcp
 '''
 
 EXAMPLES = '''
 - name: create a object
   gcp_storage_object:
-      name: ansible-storage-module
-      action: download
-      bucket: ansible-bucket
-      src: modules.zip
-      dest: "~/modules.zip"
-      project: "test_project"
-      auth_kind: "serviceaccount"
-      service_account_file: "/tmp/auth.pem"
-      state: present
+    action: download
+    bucket: ansible-bucket
+    src: modules.zip
+    dest: "~/modules.zip"
+    project: test_project
+    auth_kind: serviceaccount
+    service_account_file: "/tmp/auth.pem"
+    state: present
 '''
 
 RETURN = '''
@@ -141,11 +142,11 @@ def main():
     module = GcpModule(
         argument_spec=dict(
             state=dict(default='present', choices=['present', 'absent'], type='str'),
-            action=dict(type='str', choices=['download', 'upload']),
+            action=dict(type='str'),
             overwrite=dict(type='bool'),
             src=dict(type='path'),
             dest=dict(type='path'),
-            bucket=dict(type='str')
+            bucket=dict(type='str'),
         )
     )
 
@@ -277,7 +278,7 @@ def object_headers(module):
     return {
         "name": module.params['dest'],
         "Content-Type": mimetypes.guess_type(module.params['src'])[0],
-        "Content-Length": str(os.path.getsize(module.params['src']))
+        "Content-Length": str(os.path.getsize(module.params['src'])),
     }
 
 

@@ -35,8 +35,8 @@ Roles expect files to be in certain directory names. Roles must include at least
 
 - ``tasks`` - contains the main list of tasks to be executed by the role.
 - ``handlers`` - contains handlers, which may be used by this role or even anywhere outside this role.
-- ``defaults`` - default variables for the role (see :doc:`playbooks_variables` for more information).
-- ``vars`` - other variables for the role (see :doc:`playbooks_variables` for more information).
+- ``defaults`` - default variables for the role (see :ref:`playbooks_variables` for more information).
+- ``vars`` - other variables for the role (see :ref:`playbooks_variables` for more information).
 - ``files`` - contains files which can be deployed via this role.
 - ``templates`` - contains templates which can be deployed via this role.
 - ``meta`` - defines some meta data for this role. See below for more details.
@@ -70,8 +70,8 @@ The classic (original) way to use roles is via the ``roles:`` option for a given
     ---
     - hosts: webservers
       roles:
-         - common
-         - webservers
+        - common
+        - webservers
 
 This designates the following behaviors, for each role 'x':
 
@@ -149,7 +149,7 @@ Or, using the newer syntax::
     - hosts: webservers
       tasks:
       - include_role:
-           name: foo_app_instance
+          name: foo_app_instance
         vars:
           dir: '/opt/a'
           app_port: 5000
@@ -334,7 +334,7 @@ The resulting order of execution would be as follows::
 Note that we did not have to use ``allow_duplicates: true`` for ``wheel``, because each instance defined by ``car`` uses different parameter values.
 
 .. note::
-   Variable inheritance and scope are detailed in the :doc:`playbooks_variables`.
+   Variable inheritance and scope are detailed in the :ref:`playbooks_variables`.
 
 .. _embedding_modules_and_plugins_in_roles:
 

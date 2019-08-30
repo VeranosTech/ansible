@@ -63,6 +63,7 @@ options:
     vars:
       - name: ansible_password
       - name: ansible_ssh_pass
+      - name: ansible_ssh_password
   private_key_file:
     description:
       - The private SSH key or certificate file used to authenticate to the
@@ -151,7 +152,7 @@ options:
         return from the remote device.  If this timer is exceeded before the
         command returns, the connection plugin will raise an exception and
         close.
-    default: 10
+    default: 30
     ini:
       - section: persistent_connection
         key: command_timeout
@@ -190,6 +191,86 @@ options:
       - name: ANSIBLE_PERSISTENT_LOG_MESSAGES
     vars:
       - name: ansible_persistent_log_messages
+  terminal_stdout_re:
+    type: list
+    elements: dict
+    version_added: '2.9'
+    description:
+      - A single regex pattern or a sequence of patterns along with optional flags
+        to match the command prompt from the received response chunk. This option
+        accepts C(pattern) and C(flags) keys. The value of C(pattern) is a python
+        regex pattern to match the response and the value of C(flags) is the value
+        accepted by I(flags) argument of I(re.compile) python method to control
+        the way regex is matched with the response, for example I('re.I').
+    vars:
+      - name: ansible_terminal_stdout_re
+  terminal_stderr_re:
+    type: list
+    elements: dict
+    version_added: '2.9'
+    description:
+      - This option provides the regex pattern and optional flags to match the
+        error string from the received response chunk. This option
+        accepts C(pattern) and C(flags) keys. The value of C(pattern) is a python
+        regex pattern to match the response and the value of C(flags) is the value
+        accepted by I(flags) argument of I(re.compile) python method to control
+        the way regex is matched with the response, for example I('re.I').
+    vars:
+      - name: ansible_terminal_stderr_re
+  terminal_initial_prompt:
+    type: list
+    version_added: '2.9'
+    description:
+      - A single regex pattern or a sequence of patterns to evaluate the expected
+        prompt at the time of initial login to the remote host.
+    vars:
+      - name: ansible_terminal_initial_prompt
+  terminal_initial_answer:
+    type: list
+    version_added: '2.9'
+    description:
+      - The answer to reply with if the C(terminal_initial_prompt) is matched. The value can be a single answer
+        or a list of answers for multiple terminal_initial_prompt. In case the login menu has
+        multiple prompts the sequence of the prompt and excepted answer should be in same order and the value
+        of I(terminal_prompt_checkall) should be set to I(True) if all the values in C(terminal_initial_prompt) are
+        expected to be matched and set to I(False) if any one login prompt is to be matched.
+    vars:
+      - name: ansible_terminal_initial_answer
+  terminal_initial_prompt_checkall:
+    type: boolean
+    version_added: '2.9'
+    description:
+      - By default the value is set to I(False) and any one of the prompts mentioned in C(terminal_initial_prompt)
+        option is matched it won't check for other prompts. When set to I(True) it will check for all the prompts
+        mentioned in C(terminal_initial_prompt) option in the given order and all the prompts
+        should be received from remote host if not it will result in timeout.
+    default: False
+    vars:
+      - name: ansible_terminal_initial_prompt_checkall
+  terminal_inital_prompt_newline:
+    type: boolean
+    version_added: '2.9'
+    description:
+      - This boolean flag, that when set to I(True) will send newline in the response if any of values
+        in I(terminal_initial_prompt) is matched.
+    default: True
+    vars:
+      - name: ansible_terminal_initial_prompt_newline
+  network_cli_retries:
+    description:
+      - Number of attempts to connect to remote host. The delay time between the retires increases after
+        every attempt by power of 2 in seconds till either the maximum attempts are exhausted or any of the
+        C(persistent_command_timeout) or C(persistent_connect_timeout) timers are triggered.
+    default: 3
+    version_added: '2.9'
+    type: integer
+    env:
+        - name: ANSIBLE_NETWORK_CLI_RETRIES
+    ini:
+        - section: persistent_connection
+          key: network_cli_retries
+    vars:
+        - name: ansible_network_cli_retries
 """
 
 import getpass
@@ -199,6 +280,7 @@ import re
 import os
 import signal
 import socket
+import time
 import traceback
 from io import BytesIO
 
@@ -208,7 +290,7 @@ from ansible.module_utils.six.moves import cPickle
 from ansible.module_utils.network.common.utils import to_list
 from ansible.module_utils._text import to_bytes, to_text
 from ansible.playbook.play_context import PlayContext
-from ansible.plugins.connection import NetworkConnectionBase
+from ansible.plugins.connection import NetworkConnectionBase, ensure_connect
 from ansible.plugins.loader import cliconf_loader, terminal_loader, connection_loader
 
 
@@ -242,6 +324,9 @@ class Connection(NetworkConnectionBase):
             logging.getLogger('paramiko').setLevel(logging.DEBUG)
 
         if self._network_os:
+            self._terminal = terminal_loader.get(self._network_os, self)
+            if not self._terminal:
+                raise AnsibleConnectionFailure('network os %s is not supported' % self._network_os)
 
             self.cliconf = cliconf_loader.get(self._network_os, self)
             if self.cliconf:
@@ -323,22 +408,43 @@ class Connection(NetworkConnectionBase):
             self.paramiko_conn._set_log_channel(self._get_log_channel())
             self.paramiko_conn.set_options(direct={'look_for_keys': not bool(self._play_context.password and not self._play_context.private_key_file)})
             self.paramiko_conn.force_persistence = self.force_persistence
-            ssh = self.paramiko_conn._connect()
 
-            host = self.get_option('host')
+            command_timeout = self.get_option('persistent_command_timeout')
+            max_pause = min([self.get_option('persistent_connect_timeout'), command_timeout])
+            retries = self.get_option('network_cli_retries')
+            total_pause = 0
+
+            for attempt in range(retries + 1):
+                try:
+                    ssh = self.paramiko_conn._connect()
+                    break
+                except Exception as e:
+                    pause = 2 ** (attempt + 1)
+                    if attempt == retries or total_pause >= max_pause:
+                        raise AnsibleConnectionFailure(to_text(e, errors='surrogate_or_strict'))
+                    else:
+                        msg = (u"network_cli_retry: attempt: %d, caught exception(%s), "
+                               u"pausing for %d seconds" % (attempt + 1, to_text(e, errors='surrogate_or_strict'), pause))
+
+                        self.queue_message('vv', msg)
+                        time.sleep(pause)
+                        total_pause += pause
+                        continue
+
             self.queue_message('vvvv', 'ssh connection done, setting terminal')
+            self._connected = True
 
             self._ssh_shell = ssh.ssh.invoke_shell()
-            self._ssh_shell.settimeout(self.get_option('persistent_command_timeout'))
-
-            self._terminal = terminal_loader.get(self._network_os, self)
-            if not self._terminal:
-                raise AnsibleConnectionFailure('network os %s is not supported' % self._network_os)
+            self._ssh_shell.settimeout(command_timeout)
 
             self.queue_message('vvvv', 'loaded terminal plugin for network_os %s' % self._network_os)
 
-            self.receive(prompts=self._terminal.terminal_initial_prompt, answer=self._terminal.terminal_initial_answer,
-                         newline=self._terminal.terminal_inital_prompt_newline)
+            terminal_initial_prompt = self.get_option('terminal_initial_prompt') or self._terminal.terminal_initial_prompt
+            terminal_initial_answer = self.get_option('terminal_initial_answer') or self._terminal.terminal_initial_answer
+            newline = self.get_option('terminal_inital_prompt_newline') or self._terminal.terminal_inital_prompt_newline
+            check_all = self.get_option('terminal_initial_prompt_checkall') or False
+
+            self.receive(prompts=terminal_initial_prompt, answer=terminal_initial_answer, newline=newline, check_all=check_all)
 
             self.queue_message('vvvv', 'firing event: on_open_shell()')
             self._terminal.on_open_shell()
@@ -349,7 +455,6 @@ class Connection(NetworkConnectionBase):
                 self._terminal.on_become(passwd=auth_pass)
 
             self.queue_message('vvvv', 'ssh connection has completed successfully')
-            self._connected = True
 
         return self
 
@@ -382,6 +487,10 @@ class Connection(NetworkConnectionBase):
         handled = False
         command_prompt_matched = False
         matched_prompt_window = window_count = 0
+
+        # set terminal regex values for command prompt and errors in response
+        self._terminal_stderr_re = self._get_terminal_std_re('terminal_stderr_re')
+        self._terminal_stdout_re = self._get_terminal_std_re('terminal_stdout_re')
 
         cache_socket_timeout = self._ssh_shell.gettimeout()
         command_timeout = self.get_option('persistent_command_timeout')
@@ -449,6 +558,7 @@ class Connection(NetworkConnectionBase):
                 else:
                     command_prompt_matched = True
 
+    @ensure_connect
     def send(self, command, prompt=None, answer=None, newline=True, sendonly=False, prompt_retry_check=False, check_all=False):
         '''
         Sends the command to the device in the opened shell
@@ -459,8 +569,10 @@ class Connection(NetworkConnectionBase):
             if prompt_len != answer_len:
                 raise AnsibleConnectionFailure("Number of prompts (%s) is not same as that of answers (%s)" % (prompt_len, answer_len))
         try:
-            self._history.append(command)
-            self._ssh_shell.sendall(b'%s\r' % command)
+            cmd = b'%s\r' % command
+            self._history.append(cmd)
+            self._ssh_shell.sendall(cmd)
+            self._log_messages('send command: %s' % cmd)
             if sendonly:
                 return
             response = self.receive(command, prompt, answer, newline, prompt_retry_check, check_all)
@@ -509,7 +621,7 @@ class Connection(NetworkConnectionBase):
             single_prompt = True
         if not isinstance(answer, list):
             answer = [answer]
-        prompts_regex = [re.compile(r, re.I) for r in prompts]
+        prompts_regex = [re.compile(to_bytes(r), re.I) for r in prompts]
         for index, regex in enumerate(prompts_regex):
             match = regex.search(resp)
             if match:
@@ -523,7 +635,7 @@ class Connection(NetworkConnectionBase):
                     self._ssh_shell.sendall(b'%s' % prompt_answer)
                     if newline:
                         self._ssh_shell.sendall(b'\r')
-                        prompt_answer += '\r'
+                        prompt_answer += b'\r'
                     self._log_messages("matched command prompt answer: %s" % prompt_answer)
                 if check_all and prompts and not single_prompt:
                     prompts.pop(0)
@@ -538,9 +650,14 @@ class Connection(NetworkConnectionBase):
         '''
         cleaned = []
         for line in resp.splitlines():
-            if (command and line.strip() == command.strip()) or self._matched_prompt.strip() in line:
+            if command and line.strip() == command.strip():
                 continue
-            cleaned.append(line)
+
+            for prompt in self._matched_prompt.strip().splitlines():
+                if prompt.strip() in line:
+                    break
+            else:
+                cleaned.append(line)
         return b'\n'.join(cleaned).strip()
 
     def _find_prompt(self, response):
@@ -548,13 +665,14 @@ class Connection(NetworkConnectionBase):
         '''
         errored_response = None
         is_error_message = False
-        for regex in self._terminal.terminal_stderr_re:
+
+        for regex in self._terminal_stderr_re:
             if regex.search(response):
                 is_error_message = True
 
                 # Check if error response ends with command prompt if not
                 # receive it buffered prompt
-                for regex in self._terminal.terminal_stdout_re:
+                for regex in self._terminal_stdout_re:
                     match = regex.search(response)
                     if match:
                         errored_response = response
@@ -564,7 +682,7 @@ class Connection(NetworkConnectionBase):
                         break
 
         if not is_error_message:
-            for regex in self._terminal.terminal_stdout_re:
+            for regex in self._terminal_stdout_re:
                 match = regex.search(response)
                 if match:
                     self._matched_pattern = regex.pattern
@@ -581,3 +699,37 @@ class Connection(NetworkConnectionBase):
     def _validate_timeout_value(self, timeout, timer_name):
         if timeout < 0:
             raise AnsibleConnectionFailure("'%s' timer value '%s' is invalid, value should be greater than or equal to zero." % (timer_name, timeout))
+
+    def transport_test(self, connect_timeout):
+        """This method enables wait_for_connection to work.
+
+        As it is used by wait_for_connection, it is called by that module's action plugin,
+        which is on the controller process, which means that nothing done on this instance
+        should impact the actual persistent connection... this check is for informational
+        purposes only and should be properly cleaned up.
+        """
+
+        # Force a fresh connect if for some reason we have connected before.
+        self.close()
+        self._connect()
+        self.close()
+
+    def _get_terminal_std_re(self, option):
+        terminal_std_option = self.get_option(option)
+        terminal_std_re = []
+
+        if terminal_std_option:
+            for item in terminal_std_option:
+                if "pattern" not in item:
+                    raise AnsibleConnectionFailure("'pattern' is a required key for option '%s',"
+                                                   " received option value is %s" % (option, item))
+                pattern = br"%s" % to_bytes(item['pattern'])
+                flag = item.get('flags', 0)
+                if flag:
+                    flag = getattr(re, flag.split('.')[1])
+                terminal_std_re.append(re.compile(pattern, flag))
+        else:
+            # To maintain backward compatibility
+            terminal_std_re = getattr(self._terminal, option)
+
+        return terminal_std_re

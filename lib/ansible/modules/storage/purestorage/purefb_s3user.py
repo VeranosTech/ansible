@@ -19,19 +19,22 @@ short_description: Create or delete FlashBlade Object Store account users
 description:
 - Create or delete object store account users on a Pure Stoage FlashBlade.
 author:
-- Simon Dodsley (@sdodsley)
+- Pure Storage Ansible Team (@sdodsley) <pure-ansible-team@purestorage.com>
 options:
   state:
     description:
     - Create or delete object store account user
     default: present
     choices: [ absent, present ]
+    type: str
   name:
     description:
     - The name of object store user
+    type: str
   account:
     description:
     - The name of object store account associated with user
+    type: str
   access_key:
     description:
     - Create secret access key.
@@ -49,9 +52,10 @@ EXAMPLES = r'''
     account: bar
     fb_url: 10.10.10.2
     api_token: e31060a7-21fc-e277-6240-25983c6c4592
+  register: result
 
-  debug:
-    var: ansible_facts.fb_s3user
+- debug:
+    msg: "S3 User: {{ result['s3user_info'] }}"
 
 - name: Delete object store user foo in account bar
   purefb_s3user:
@@ -117,7 +121,7 @@ def update_s3user(module, blade):
             delete_s3user(module, blade)
             module.fail_json(msg='Object Store User {0}: Creation failed'.format(user))
     changed = True
-    module.exit_json(changed=changed, ansible_facts=s3user_facts)
+    module.exit_json(changed=changed, s3user_info=s3user_facts)
 
 
 def create_s3user(module, blade):
@@ -140,7 +144,7 @@ def create_s3user(module, blade):
         changed = True
     except Exception:
         module.fail_json(msg='Object Store User {0}: Creation failed'.format(user))
-    module.exit_json(changed=changed, ansible_facts=s3user_facts)
+    module.exit_json(changed=changed, s3user_info=s3user_facts)
 
 
 def delete_s3user(module, blade):

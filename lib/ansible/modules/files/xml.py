@@ -251,15 +251,14 @@ EXAMPLES = r'''
     value: 1976-08-05
 
 # How to read an attribute value and access it in Ansible
-- name: Read attribute value
+- name: Read an element's attribute values
   xml:
     path: /foo/bar.xml
     xpath: /business/website/validxhtml
     content: attribute
-    attribute: validatedon
   register: xmlresp
 
-- name: Show attribute value
+- name: Show an attribute value
   debug:
     var: xmlresp.matches[0].validxhtml.validatedon
 
@@ -335,13 +334,15 @@ import traceback
 from distutils.version import LooseVersion
 from io import BytesIO
 
+LXML_IMP_ERR = None
 try:
     from lxml import etree, objectify
     HAS_LXML = True
 except ImportError:
+    LXML_IMP_ERR = traceback.format_exc()
     HAS_LXML = False
 
-from ansible.module_utils.basic import AnsibleModule, json_dict_bytes_to_unicode
+from ansible.module_utils.basic import AnsibleModule, json_dict_bytes_to_unicode, missing_required_lib
 from ansible.module_utils.six import iteritems, string_types
 from ansible.module_utils._text import to_bytes, to_native
 from ansible.module_utils.common._collections_compat import MutableMapping
@@ -829,16 +830,15 @@ def main():
             insertafter=dict(type='bool', default=False),
         ),
         supports_check_mode=True,
-        # TODO: Implement this as soon as #28662 (required_by functionality) is merged
-        # required_by=dict(
-        #    add_children=['xpath'],
-        #    attribute=['value'],
-        #    set_children=['xpath'],
-        #    value=['xpath'],
-        # ),
+        required_by=dict(
+            add_children=['xpath'],
+            # TODO: Reinstate this in Ansible v2.12 when we have deprecated the incorrect use below
+            # attribute=['value'],
+            content=['xpath'],
+            set_children=['xpath'],
+            value=['xpath'],
+        ),
         required_if=[
-            ['content', 'attribute', ['xpath']],
-            ['content', 'text', ['xpath']],
             ['count', True, ['xpath']],
             ['print_match', True, ['xpath']],
             ['insertbefore', True, ['xpath']],
@@ -876,11 +876,16 @@ def main():
 
     # Check if we have lxml 2.3.0 or newer installed
     if not HAS_LXML:
-        module.fail_json(msg='The xml ansible module requires the lxml python library installed on the managed machine')
+        module.fail_json(msg=missing_required_lib("lxml"), exception=LXML_IMP_ERR)
     elif LooseVersion('.'.join(to_native(f) for f in etree.LXML_VERSION)) < LooseVersion('2.3.0'):
         module.fail_json(msg='The xml ansible module requires lxml 2.3.0 or newer installed on the managed machine')
     elif LooseVersion('.'.join(to_native(f) for f in etree.LXML_VERSION)) < LooseVersion('3.0.0'):
         module.warn('Using lxml version lower than 3.0.0 does not guarantee predictable element attribute order.')
+
+    # Report wrongly used attribute parameter when using content=attribute
+    # TODO: Remove this in Ansible v2.12 (and reinstate strict parameter test above) and remove the integration test example
+    if content == 'attribute' and attribute is not None:
+        module.deprecate("Parameter 'attribute=%s' is ignored when using 'content=attribute' only 'xpath' is used. Please remove entry." % attribute, '2.12')
 
     # Check if the file exists
     if xml_string:

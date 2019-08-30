@@ -33,9 +33,11 @@ options:
   mode:
     description:
       - File mode applied on versioned plugins.
+    default: '0644'
   name:
     description:
       - Plugin name.
+    required: yes
   owner:
     description:
       - Name of the Jenkins user on the OS.
@@ -65,7 +67,7 @@ options:
       - URL of the Update Centre.
       - Used as the base URL to download the plugins and the
         I(update-center.json) JSON file.
-    default: https://updates.jenkins-ci.org
+    default: https://updates.jenkins.io
   url:
     description:
       - URL of the Jenkins server.
@@ -84,7 +86,7 @@ options:
       - Defines whether to install plugin dependencies.
       - This option takes effect only if the I(version) is not defined.
     type: bool
-    default: 'yes'
+    default: yes
 
 notes:
   - Plugin installation should be run under root or the same user which owns
@@ -478,7 +480,7 @@ class JenkinsPlugin(object):
                             self._write_file(plugin_file, data)
 
                         changed = True
-            else:
+            elif self.params['version'] == 'latest':
                 # Check for update from the updates JSON file
                 plugin_data = self._download_updates()
 
@@ -721,7 +723,7 @@ def main():
             default='present'),
         timeout=dict(default=30, type="int"),
         updates_expiration=dict(default=86400, type="int"),
-        updates_url=dict(default='https://updates.jenkins-ci.org'),
+        updates_url=dict(default='https://updates.jenkins.io'),
         url=dict(default='http://localhost:8080'),
         url_password=dict(no_log=True),
         version=dict(),

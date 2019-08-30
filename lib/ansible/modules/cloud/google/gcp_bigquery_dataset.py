@@ -18,15 +18,14 @@
 # ----------------------------------------------------------------------------
 
 from __future__ import absolute_import, division, print_function
+
 __metaclass__ = type
 
 ################################################################################
 # Documentation
 ################################################################################
 
-ANSIBLE_METADATA = {'metadata_version': '1.1',
-                    'status': ["preview"],
-                    'supported_by': 'community'}
+ANSIBLE_METADATA = {'metadata_version': '1.1', 'status': ["preview"], 'supported_by': 'community'}
 
 DOCUMENTATION = '''
 ---
@@ -48,42 +47,53 @@ options:
     - present
     - absent
     default: present
+    type: str
   name:
     description:
     - Dataset name.
     required: false
+    type: str
   access:
     description:
-    - Access controls on the bucket.
+    - An array of objects that define dataset access for one or more entities.
     required: false
+    type: list
     suboptions:
       domain:
         description:
         - A domain to grant access to. Any users signed in with the domain specified
           will be granted the specified access .
         required: false
+        type: str
       group_by_email:
         description:
         - An email address of a Google Group to grant access to.
         required: false
+        type: str
       role:
         description:
         - Describes the rights granted to the user specified by the other member of
-          the access object .
+          the access object. Primitive, Predefined and custom roles are supported.
+          Predefined roles that have equivalent primitive roles are swapped by the
+          API to their Primitive counterparts, and will show a diff post-create. See
+          [official docs](U(https://cloud.google.com/bigquery/docs/access-control)).
         required: false
-        choices:
-        - READER
-        - WRITER
-        - OWNER
+        type: str
       special_group:
         description:
         - A special group to grant access to.
+        - 'Possible values include: * `projectOwners`: Owners of the enclosing project.'
+        - "* `projectReaders`: Readers of the enclosing project."
+        - "* `projectWriters`: Writers of the enclosing project."
+        - "* `allAuthenticatedUsers`: All authenticated BigQuery users. ."
         required: false
+        type: str
       user_by_email:
         description:
         - 'An email address of a user to grant access to. For example: fred@example.com
           .'
         required: false
+        type: str
       view:
         description:
         - A view from a different dataset to grant access to. Queries executed against
@@ -91,24 +101,29 @@ options:
           is not required when this field is set. If that view is updated by any user,
           access to the view needs to be granted again via an update operation.
         required: false
+        type: dict
         suboptions:
           dataset_id:
             description:
             - The ID of the dataset containing this table.
             required: true
+            type: str
           project_id:
             description:
             - The ID of the project containing this table.
             required: true
+            type: str
           table_id:
             description:
             - The ID of the table. The ID must contain only letters (a-z, A-Z), numbers
               (0-9), or underscores. The maximum length is 1,024 characters.
             required: true
+            type: str
   dataset_reference:
     description:
     - A reference that identifies the dataset.
     required: true
+    type: dict
     suboptions:
       dataset_id:
         description:
@@ -116,46 +131,88 @@ options:
           only letters (a-z, A-Z), numbers (0-9), or underscores. The maximum length
           is 1,024 characters.
         required: true
+        type: str
       project_id:
         description:
         - The ID of the project containing this dataset.
         required: false
+        type: str
   default_table_expiration_ms:
     description:
-    - The default lifetime of all tables in the dataset, in milliseconds .
+    - The default lifetime of all tables in the dataset, in milliseconds.
+    - The minimum value is 3600000 milliseconds (one hour).
+    - Once this property is set, all newly-created tables in the dataset will have
+      an `expirationTime` property set to the creation time plus the value in this
+      property, and changing the value will only affect new tables, not existing ones.
+      When the `expirationTime` for a given table is reached, that table will be deleted
+      automatically.
+    - If a table's `expirationTime` is modified or removed before the table expires,
+      or if you provide an explicit `expirationTime` when creating a table, that value
+      takes precedence over the default expiration time indicated by this property.
     required: false
+    type: int
+  default_partition_expiration_ms:
+    description:
+    - The default partition expiration for all partitioned tables in the dataset,
+      in milliseconds.
+    - Once this property is set, all newly-created partitioned tables in the dataset
+      will have an `expirationMs` property in the `timePartitioning` settings set
+      to this value, and changing the value will only affect new tables, not existing
+      ones. The storage in a partition will have an expiration time of its partition
+      time plus this value.
+    - 'Setting this property overrides the use of `defaultTableExpirationMs` for partitioned
+      tables: only one of `defaultTableExpirationMs` and `defaultPartitionExpirationMs`
+      will be used for any new partitioned table. If you provide an explicit `timePartitioning.expirationMs`
+      when creating or updating a partitioned table, that value takes precedence over
+      the default partition expiration time indicated by this property.'
+    required: false
+    type: int
+    version_added: 2.9
   description:
     description:
     - A user-friendly description of the dataset.
     required: false
+    type: str
   friendly_name:
     description:
     - A descriptive name for the dataset.
     required: false
+    type: str
   labels:
     description:
     - The labels associated with this dataset. You can use these to organize and group
       your datasets .
     required: false
+    type: dict
   location:
     description:
-    - The geographic location where the dataset should reside. Possible values include
-      EU and US. The default value is US.
+    - The geographic location where the dataset should reside.
+    - See [official docs](U(https://cloud.google.com/bigquery/docs/dataset-locations)).
+    - There are two types of locations, regional or multi-regional. A regional location
+      is a specific geographic place, such as Tokyo, and a multi-regional location
+      is a large geographic area, such as the United States, that contains at least
+      two geographic places.
+    - 'Possible regional values include: `asia-east1`, `asia-northeast1`, `asia-southeast1`,
+      `australia-southeast1`, `europe-north1`, `europe-west2` and `us-east4`.'
+    - 'Possible multi-regional values: `EU` and `US`.'
+    - The default value is multi-regional location `US`.
+    - Changing this forces a new resource to be created.
     required: false
     default: US
+    type: str
 extends_documentation_fragment: gcp
 '''
 
 EXAMPLES = '''
 - name: create a dataset
   gcp_bigquery_dataset:
-      name: my_example_dataset
-      dataset_reference:
-        dataset_id: my_example_dataset
-      project: "test_project"
-      auth_kind: "serviceaccount"
-      service_account_file: "/tmp/auth.pem"
-      state: present
+    name: my_example_dataset
+    dataset_reference:
+      dataset_id: my_example_dataset
+    project: test_project
+    auth_kind: serviceaccount
+    service_account_file: "/tmp/auth.pem"
+    state: present
 '''
 
 RETURN = '''
@@ -166,7 +223,7 @@ name:
   type: str
 access:
   description:
-  - Access controls on the bucket.
+  - An array of objects that define dataset access for one or more entities.
   returned: success
   type: complex
   contains:
@@ -184,12 +241,18 @@ access:
     role:
       description:
       - Describes the rights granted to the user specified by the other member of
-        the access object .
+        the access object. Primitive, Predefined and custom roles are supported. Predefined
+        roles that have equivalent primitive roles are swapped by the API to their
+        Primitive counterparts, and will show a diff post-create. See [official docs](U(https://cloud.google.com/bigquery/docs/access-control)).
       returned: success
       type: str
     specialGroup:
       description:
       - A special group to grant access to.
+      - 'Possible values include: * `projectOwners`: Owners of the enclosing project.'
+      - "* `projectReaders`: Readers of the enclosing project."
+      - "* `projectWriters`: Writers of the enclosing project."
+      - "* `allAuthenticatedUsers`: All authenticated BigQuery users. ."
       returned: success
       type: str
     userByEmail:
@@ -248,12 +311,41 @@ datasetReference:
       type: str
 defaultTableExpirationMs:
   description:
-  - The default lifetime of all tables in the dataset, in milliseconds .
+  - The default lifetime of all tables in the dataset, in milliseconds.
+  - The minimum value is 3600000 milliseconds (one hour).
+  - Once this property is set, all newly-created tables in the dataset will have an
+    `expirationTime` property set to the creation time plus the value in this property,
+    and changing the value will only affect new tables, not existing ones. When the
+    `expirationTime` for a given table is reached, that table will be deleted automatically.
+  - If a table's `expirationTime` is modified or removed before the table expires,
+    or if you provide an explicit `expirationTime` when creating a table, that value
+    takes precedence over the default expiration time indicated by this property.
+  returned: success
+  type: int
+defaultPartitionExpirationMs:
+  description:
+  - The default partition expiration for all partitioned tables in the dataset, in
+    milliseconds.
+  - Once this property is set, all newly-created partitioned tables in the dataset
+    will have an `expirationMs` property in the `timePartitioning` settings set to
+    this value, and changing the value will only affect new tables, not existing ones.
+    The storage in a partition will have an expiration time of its partition time
+    plus this value.
+  - 'Setting this property overrides the use of `defaultTableExpirationMs` for partitioned
+    tables: only one of `defaultTableExpirationMs` and `defaultPartitionExpirationMs`
+    will be used for any new partitioned table. If you provide an explicit `timePartitioning.expirationMs`
+    when creating or updating a partitioned table, that value takes precedence over
+    the default partition expiration time indicated by this property.'
   returned: success
   type: int
 description:
   description:
   - A user-friendly description of the dataset.
+  returned: success
+  type: str
+etag:
+  description:
+  - A hash of the resource.
   returned: success
   type: str
 friendlyName:
@@ -281,8 +373,17 @@ lastModifiedTime:
   type: int
 location:
   description:
-  - The geographic location where the dataset should reside. Possible values include
-    EU and US. The default value is US.
+  - The geographic location where the dataset should reside.
+  - See [official docs](U(https://cloud.google.com/bigquery/docs/dataset-locations)).
+  - There are two types of locations, regional or multi-regional. A regional location
+    is a specific geographic place, such as Tokyo, and a multi-regional location is
+    a large geographic area, such as the United States, that contains at least two
+    geographic places.
+  - 'Possible regional values include: `asia-east1`, `asia-northeast1`, `asia-southeast1`,
+    `australia-southeast1`, `europe-north1`, `europe-west2` and `us-east4`.'
+  - 'Possible multi-regional values: `EU` and `US`.'
+  - The default value is multi-regional location `US`.
+  - Changing this forces a new resource to be created.
   returned: success
   type: str
 '''
@@ -306,27 +407,30 @@ def main():
         argument_spec=dict(
             state=dict(default='present', choices=['present', 'absent'], type='str'),
             name=dict(type='str'),
-            access=dict(type='list', elements='dict', options=dict(
-                domain=dict(type='str'),
-                group_by_email=dict(type='str'),
-                role=dict(type='str', choices=['READER', 'WRITER', 'OWNER']),
-                special_group=dict(type='str'),
-                user_by_email=dict(type='str'),
-                view=dict(type='dict', options=dict(
-                    dataset_id=dict(required=True, type='str'),
-                    project_id=dict(required=True, type='str'),
-                    table_id=dict(required=True, type='str')
-                ))
-            )),
-            dataset_reference=dict(required=True, type='dict', options=dict(
-                dataset_id=dict(required=True, type='str'),
-                project_id=dict(type='str')
-            )),
+            access=dict(
+                type='list',
+                elements='dict',
+                options=dict(
+                    domain=dict(type='str'),
+                    group_by_email=dict(type='str'),
+                    role=dict(type='str'),
+                    special_group=dict(type='str'),
+                    user_by_email=dict(type='str'),
+                    view=dict(
+                        type='dict',
+                        options=dict(
+                            dataset_id=dict(required=True, type='str'), project_id=dict(required=True, type='str'), table_id=dict(required=True, type='str')
+                        ),
+                    ),
+                ),
+            ),
+            dataset_reference=dict(required=True, type='dict', options=dict(dataset_id=dict(required=True, type='str'), project_id=dict(type='str'))),
             default_table_expiration_ms=dict(type='int'),
+            default_partition_expiration_ms=dict(type='int'),
             description=dict(type='str'),
             friendly_name=dict(type='str'),
             labels=dict(type='dict'),
-            location=dict(default='US', type='str')
+            location=dict(default='US', type='str'),
         )
     )
 
@@ -383,10 +487,11 @@ def resource_to_request(module):
         u'access': DatasetAccessArray(module.params.get('access', []), module).to_request(),
         u'datasetReference': DatasetDatasetreference(module.params.get('dataset_reference', {}), module).to_request(),
         u'defaultTableExpirationMs': module.params.get('default_table_expiration_ms'),
+        u'defaultPartitionExpirationMs': module.params.get('default_partition_expiration_ms'),
         u'description': module.params.get('description'),
         u'friendlyName': module.params.get('friendly_name'),
         u'labels': module.params.get('labels'),
-        u'location': module.params.get('location')
+        u'location': module.params.get('location'),
     }
     return_vals = {}
     for k, v in request.items():
@@ -421,8 +526,8 @@ def return_if_object(module, response, kind, allow_not_found=False):
     try:
         module.raise_for_status(response)
         result = response.json()
-    except getattr(json.decoder, 'JSONDecodeError', ValueError) as inst:
-        module.fail_json(msg="Invalid JSON response with error: %s" % inst)
+    except getattr(json.decoder, 'JSONDecodeError', ValueError):
+        module.fail_json(msg="Invalid JSON response with error: %s" % response.text)
 
     if navigate_hash(result, ['error', 'errors']):
         module.fail_json(msg=navigate_hash(result, ['error', 'errors']))
@@ -457,12 +562,14 @@ def response_to_hash(module, response):
         u'creationTime': response.get(u'creationTime'),
         u'datasetReference': DatasetDatasetreference(response.get(u'datasetReference', {}), module).from_response(),
         u'defaultTableExpirationMs': response.get(u'defaultTableExpirationMs'),
+        u'defaultPartitionExpirationMs': response.get(u'defaultPartitionExpirationMs'),
         u'description': response.get(u'description'),
+        u'etag': response.get(u'etag'),
         u'friendlyName': response.get(u'friendlyName'),
         u'id': response.get(u'id'),
         u'labels': response.get(u'labels'),
         u'lastModifiedTime': response.get(u'lastModifiedTime'),
-        u'location': response.get(u'location')
+        u'location': response.get(u'location'),
     }
 
 
@@ -487,24 +594,28 @@ class DatasetAccessArray(object):
         return items
 
     def _request_for_item(self, item):
-        return remove_nones_from_dict({
-            u'domain': item.get('domain'),
-            u'groupByEmail': item.get('group_by_email'),
-            u'role': item.get('role'),
-            u'specialGroup': item.get('special_group'),
-            u'userByEmail': item.get('user_by_email'),
-            u'view': DatasetView(item.get('view', {}), self.module).to_request()
-        })
+        return remove_nones_from_dict(
+            {
+                u'domain': item.get('domain'),
+                u'groupByEmail': item.get('group_by_email'),
+                u'role': item.get('role'),
+                u'specialGroup': item.get('special_group'),
+                u'userByEmail': item.get('user_by_email'),
+                u'view': DatasetView(item.get('view', {}), self.module).to_request(),
+            }
+        )
 
     def _response_from_item(self, item):
-        return remove_nones_from_dict({
-            u'domain': item.get(u'domain'),
-            u'groupByEmail': item.get(u'groupByEmail'),
-            u'role': item.get(u'role'),
-            u'specialGroup': item.get(u'specialGroup'),
-            u'userByEmail': item.get(u'userByEmail'),
-            u'view': DatasetView(item.get(u'view', {}), self.module).from_response()
-        })
+        return remove_nones_from_dict(
+            {
+                u'domain': item.get(u'domain'),
+                u'groupByEmail': item.get(u'groupByEmail'),
+                u'role': item.get(u'role'),
+                u'specialGroup': item.get(u'specialGroup'),
+                u'userByEmail': item.get(u'userByEmail'),
+                u'view': DatasetView(item.get(u'view', {}), self.module).from_response(),
+            }
+        )
 
 
 class DatasetView(object):
@@ -516,18 +627,14 @@ class DatasetView(object):
             self.request = {}
 
     def to_request(self):
-        return remove_nones_from_dict({
-            u'datasetId': self.request.get('dataset_id'),
-            u'projectId': self.request.get('project_id'),
-            u'tableId': self.request.get('table_id')
-        })
+        return remove_nones_from_dict(
+            {u'datasetId': self.request.get('dataset_id'), u'projectId': self.request.get('project_id'), u'tableId': self.request.get('table_id')}
+        )
 
     def from_response(self):
-        return remove_nones_from_dict({
-            u'datasetId': self.request.get(u'datasetId'),
-            u'projectId': self.request.get(u'projectId'),
-            u'tableId': self.request.get(u'tableId')
-        })
+        return remove_nones_from_dict(
+            {u'datasetId': self.request.get(u'datasetId'), u'projectId': self.request.get(u'projectId'), u'tableId': self.request.get(u'tableId')}
+        )
 
 
 class DatasetDatasetreference(object):
@@ -539,16 +646,10 @@ class DatasetDatasetreference(object):
             self.request = {}
 
     def to_request(self):
-        return remove_nones_from_dict({
-            u'datasetId': self.request.get('dataset_id'),
-            u'projectId': self.request.get('project_id')
-        })
+        return remove_nones_from_dict({u'datasetId': self.request.get('dataset_id'), u'projectId': self.request.get('project_id')})
 
     def from_response(self):
-        return remove_nones_from_dict({
-            u'datasetId': self.request.get(u'datasetId'),
-            u'projectId': self.request.get(u'projectId')
-        })
+        return remove_nones_from_dict({u'datasetId': self.request.get(u'datasetId'), u'projectId': self.request.get(u'projectId')})
 
 
 if __name__ == '__main__':

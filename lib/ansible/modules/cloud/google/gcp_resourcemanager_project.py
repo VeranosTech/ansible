@@ -18,15 +18,14 @@
 # ----------------------------------------------------------------------------
 
 from __future__ import absolute_import, division, print_function
+
 __metaclass__ = type
 
 ################################################################################
 # Documentation
 ################################################################################
 
-ANSIBLE_METADATA = {'metadata_version': '1.1',
-                    'status': ["preview"],
-                    'supported_by': 'community'}
+ANSIBLE_METADATA = {'metadata_version': '1.1', 'status': ["preview"], 'supported_by': 'community'}
 
 DOCUMENTATION = '''
 ---
@@ -49,12 +48,14 @@ options:
     - present
     - absent
     default: present
+    type: str
   name:
     description:
     - 'The user-assigned display name of the Project. It must be 4 to 30 characters.
       Allowed characters are: lowercase and uppercase letters, numbers, hyphen, single-quote,
       double-quote, space, and exclamation point.'
     required: false
+    type: str
   labels:
     description:
     - The labels associated with this Project.
@@ -66,39 +67,44 @@ options:
     - Clients should store labels in a representation such as JSON that does not depend
       on specific characters being disallowed .
     required: false
+    type: dict
   parent:
     description:
     - A parent organization.
     required: false
+    type: dict
     suboptions:
       type:
         description:
         - Must be organization.
         required: false
+        type: str
       id:
         description:
         - Id of the organization.
         required: false
+        type: str
   id:
     description:
     - The unique, user-assigned ID of the Project. It must be 6 to 30 lowercase letters,
       digits, or hyphens. It must start with a letter.
     - Trailing hyphens are prohibited.
     required: true
+    type: str
 extends_documentation_fragment: gcp
 '''
 
 EXAMPLES = '''
 - name: create a project
   gcp_resourcemanager_project:
-      name: My Sample Project
-      id: alextest-{{ 10000000000 | random }}
-      auth_kind: "serviceaccount"
-      service_account_file: "/tmp/auth.pem"
-      parent:
-        type: organization
-        id: 636173955921
-      state: present
+    name: My Sample Project
+    id: alextest-{{ 10000000000 | random }}
+    auth_kind: serviceaccount
+    service_account_file: "/tmp/auth.pem"
+    parent:
+      type: organization
+      id: 636173955921
+    state: present
 '''
 
 RETURN = '''
@@ -182,11 +188,8 @@ def main():
             state=dict(default='present', choices=['present', 'absent'], type='str'),
             name=dict(type='str'),
             labels=dict(type='dict'),
-            parent=dict(type='dict', options=dict(
-                type=dict(type='str'),
-                id=dict(type='str')
-            )),
-            id=dict(required=True, type='str')
+            parent=dict(type='dict', options=dict(type=dict(type='str'), id=dict(type='str'))),
+            id=dict(required=True, type='str'),
         )
     )
 
@@ -240,7 +243,7 @@ def resource_to_request(module):
         u'projectId': module.params.get('id'),
         u'name': module.params.get('name'),
         u'labels': module.params.get('labels'),
-        u'parent': ProjectParent(module.params.get('parent', {}), module).to_request()
+        u'parent': ProjectParent(module.params.get('parent', {}), module).to_request(),
     }
     return_vals = {}
     for k, v in request.items():
@@ -309,12 +312,12 @@ def is_different(module, response):
 # This is for doing comparisons with Ansible's current parameters.
 def response_to_hash(module, response):
     return {
-        u'projectNumber': response.get(u'number'),
+        u'projectNumber': response.get(u'projectNumber'),
         u'lifecycleState': response.get(u'lifecycleState'),
         u'name': response.get(u'name'),
         u'createTime': response.get(u'createTime'),
         u'labels': response.get(u'labels'),
-        u'parent': ProjectParent(response.get(u'parent', {}), module).from_response()
+        u'parent': ProjectParent(response.get(u'parent', {}), module).from_response(),
     }
 
 
@@ -333,16 +336,17 @@ def wait_for_operation(module, response):
         return {}
     status = navigate_hash(op_result, ['done'])
     wait_done = wait_for_completion(status, op_result, module)
+    raise_if_errors(wait_done, ['error'], module)
     return navigate_hash(wait_done, ['response'])
 
 
 def wait_for_completion(status, op_result, module):
     op_id = navigate_hash(op_result, ['name'])
     op_uri = async_op_url(module, {'op_id': op_id})
-    if not status:
-        raise_if_errors(op_result, ['error'], 'message')
+    while not status:
+        raise_if_errors(op_result, ['error'], module)
         time.sleep(1.0)
-        op_result = fetch_resource(module, op_uri)
+        op_result = fetch_resource(module, op_uri, False)
         status = navigate_hash(op_result, ['done'])
     return op_result
 
@@ -362,16 +366,10 @@ class ProjectParent(object):
             self.request = {}
 
     def to_request(self):
-        return remove_nones_from_dict({
-            u'type': self.request.get('type'),
-            u'id': self.request.get('id')
-        })
+        return remove_nones_from_dict({u'type': self.request.get('type'), u'id': self.request.get('id')})
 
     def from_response(self):
-        return remove_nones_from_dict({
-            u'type': self.request.get(u'type'),
-            u'id': self.request.get(u'id')
-        })
+        return remove_nones_from_dict({u'type': self.request.get(u'type'), u'id': self.request.get(u'id')})
 
 
 if __name__ == '__main__':

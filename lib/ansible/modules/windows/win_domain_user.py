@@ -73,13 +73,11 @@ options:
     type: str
   update_password:
     description:
-      - C(always) will update passwords if they differ.
+      - C(always) will always update passwords.
       - C(on_create) will only set the password for newly created users.
-      - Note that C(always) will always report an Ansible status of 'changed'
-        because we cannot determine whether the new password differs from
-        the old password.
+      - C(when_changed) will only set the password when changed (added in ansible 2.9).
     type: str
-    choices: [ always, on_create ]
+    choices: [ always, on_create, when_changed ]
     default: always
   password_expired:
     description:
@@ -196,6 +194,7 @@ seealso:
 - module: win_domain_group
 - module: win_domain_membership
 - module: win_user
+- module: win_user_profile
 author:
     - Nick Chandler (@nwchandler)
 '''
@@ -361,4 +360,9 @@ user_cannot_change_password:
     returned: always
     type: str
     sample: false
+created:
+  description: Whether a user was created
+  returned: always
+  type: bool
+  sample: true
 '''
