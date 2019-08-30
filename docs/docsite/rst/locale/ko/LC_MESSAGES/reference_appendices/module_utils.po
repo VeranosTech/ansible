@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -86,13 +86,6 @@ msgstr ""
 
 #: ansible.module_utils.basic.AnsibleModule.fail_json:1 of
 msgid "return from the module, with an error message"
-msgstr ""
-
-#: ansible.module_utils.basic.AnsibleModule.fail_on_missing_params:1 of
-msgid ""
-"This is for checking for required params when we can not check via "
-"argspec because we need more information than is simply given in the "
-"argspec."
 msgstr ""
 
 #: ansible.module_utils.basic.AnsibleModule.get_bin_path:1 of
@@ -416,24 +409,6 @@ msgstr ""
 msgid "Remove strings that look like passwords from log messages"
 msgstr ""
 
-#: ansible.module_utils.basic.human_to_bytes:1 of
-msgid ""
-"Convert number in string format into bytes (ex: '2K' => 2048) or using "
-"unit argument. example: human_to_bytes('10M') <=> human_to_bytes(10, 'M')"
-msgstr ""
-
-#: ansible.module_utils.basic.json_dict_bytes_to_unicode:1
-#: ansible.module_utils.basic.json_dict_unicode_to_bytes:1 of
-msgid "Recursively convert dict keys and values to byte str"
-msgstr ""
-
-#: ansible.module_utils.basic.json_dict_bytes_to_unicode:3
-#: ansible.module_utils.basic.json_dict_unicode_to_bytes:3 of
-msgid ""
-"Specialized for json return because this only handles, lists, tuples, and"
-" dict container types (the containers that the json module returns)"
-msgstr ""
-
 #: ansible.module_utils.basic.load_platform_subclass:1 of
 msgid ""
 "**Deprecated**: Use "
@@ -446,11 +421,34 @@ msgid ""
 "type, then remove a lot more"
 msgstr ""
 
-#: ansible.module_utils.basic.return_values:1 of
-msgid "Return native stringified values from datastructures."
-msgstr ""
+#~ msgid ""
+#~ "This is for checking for required "
+#~ "params when we can not check via"
+#~ " argspec because we need more "
+#~ "information than is simply given in "
+#~ "the argspec."
+#~ msgstr ""
 
-#: ansible.module_utils.basic.return_values:3 of
-msgid "For use with removing sensitive values pre-jsonification."
-msgstr ""
+#~ msgid ""
+#~ "Convert number in string format into "
+#~ "bytes (ex: '2K' => 2048) or using"
+#~ " unit argument. example: human_to_bytes('10M')"
+#~ " <=> human_to_bytes(10, 'M')"
+#~ msgstr ""
+
+#~ msgid "Recursively convert dict keys and values to byte str"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Specialized for json return because this"
+#~ " only handles, lists, tuples, and "
+#~ "dict container types (the containers "
+#~ "that the json module returns)"
+#~ msgstr ""
+
+#~ msgid "Return native stringified values from datastructures."
+#~ msgstr ""
+
+#~ msgid "For use with removing sensitive values pre-jsonification."
+#~ msgstr ""
 

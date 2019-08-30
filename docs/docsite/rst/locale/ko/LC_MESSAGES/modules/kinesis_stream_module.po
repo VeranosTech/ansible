@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,55 +22,55 @@ msgstr ""
 msgid "kinesis_stream -- Manage a Kinesis Stream"
 msgstr ""
 
-#: ../../rst/modules/kinesis_stream_module.rst:19
+#: ../../rst/modules/kinesis_stream_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/kinesis_stream_module.rst:20
+#: ../../rst/modules/kinesis_stream_module.rst:19
 msgid "Create or Delete a Kinesis Stream."
 msgstr ""
 
-#: ../../rst/modules/kinesis_stream_module.rst:21
+#: ../../rst/modules/kinesis_stream_module.rst:20
 msgid "Update the retention period of a Kinesis Stream."
 msgstr ""
 
-#: ../../rst/modules/kinesis_stream_module.rst:22
+#: ../../rst/modules/kinesis_stream_module.rst:21
 msgid "Update Tags on a Kinesis Stream."
 msgstr ""
 
-#: ../../rst/modules/kinesis_stream_module.rst:23
+#: ../../rst/modules/kinesis_stream_module.rst:22
 msgid "Enable/disable server side encryption on a Kinesis Stream."
 msgstr ""
 
-#: ../../rst/modules/kinesis_stream_module.rst:28
+#: ../../rst/modules/kinesis_stream_module.rst:27
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/kinesis_stream_module.rst:29
+#: ../../rst/modules/kinesis_stream_module.rst:28
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/kinesis_stream_module.rst:31
+#: ../../rst/modules/kinesis_stream_module.rst:30
 msgid "boto"
 msgstr ""
 
-#: ../../rst/modules/kinesis_stream_module.rst:32
+#: ../../rst/modules/kinesis_stream_module.rst:31
 msgid "boto3"
 msgstr ""
 
-#: ../../rst/modules/kinesis_stream_module.rst:33
+#: ../../rst/modules/kinesis_stream_module.rst:32
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/kinesis_stream_module.rst:37
+#: ../../rst/modules/kinesis_stream_module.rst:36
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/kinesis_stream_module.rst:298
+#: ../../rst/modules/kinesis_stream_module.rst:314
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/kinesis_stream_module.rst:301
+#: ../../rst/modules/kinesis_stream_module.rst:317
 msgid ""
 "If parameters are not set within the module, the following environment "
 "variables can be used in decreasing order of precedence ``AWS_URL`` or "
@@ -80,64 +80,72 @@ msgid ""
 "``AWS_REGION`` or ``EC2_REGION``"
 msgstr ""
 
-#: ../../rst/modules/kinesis_stream_module.rst:302
+#: ../../rst/modules/kinesis_stream_module.rst:318
 msgid ""
 "Ansible uses the boto configuration file (typically ~/.boto) if no "
 "credentials are provided. See "
 "https://boto.readthedocs.io/en/latest/boto_config_tut.html"
 msgstr ""
 
-#: ../../rst/modules/kinesis_stream_module.rst:303
+#: ../../rst/modules/kinesis_stream_module.rst:319
 msgid ""
 "``AWS_REGION`` or ``EC2_REGION`` can be typically be used to specify the "
 "AWS region, when required, but this can also be configured in the boto "
 "config file"
 msgstr ""
 
-#: ../../rst/modules/kinesis_stream_module.rst:308
+#: ../../rst/modules/kinesis_stream_module.rst:324
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/kinesis_stream_module.rst:384
+#: ../../rst/modules/kinesis_stream_module.rst:400
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/kinesis_stream_module.rst:385
+#: ../../rst/modules/kinesis_stream_module.rst:401
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/kinesis_stream_module.rst:465
+#: ../../rst/modules/kinesis_stream_module.rst:481
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/kinesis_stream_module.rst:470
+#: ../../rst/modules/kinesis_stream_module.rst:486
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/kinesis_stream_module.rst:473
+#: ../../rst/modules/kinesis_stream_module.rst:489
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/kinesis_stream_module.rst:480
+#: ../../rst/modules/kinesis_stream_module.rst:496
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/kinesis_stream_module.rst:482
+#: ../../rst/modules/kinesis_stream_module.rst:498
 msgid "Allen Sanabria (@linuxdynasty)"
 msgstr ""
 
-#: ../../rst/modules/kinesis_stream_module.rst:486
+#: ../../rst/modules/kinesis_stream_module.rst:502
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/kinesis_stream.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/kinesis_stream.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/kinesis_stream.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

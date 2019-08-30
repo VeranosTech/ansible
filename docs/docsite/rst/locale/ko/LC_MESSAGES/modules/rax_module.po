@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,11 +52,11 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/rax_module.rst:549
+#: ../../rst/modules/rax_module.rst:550
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/rax_module.rst:552
+#: ../../rst/modules/rax_module.rst:553
 msgid ""
 "*exact_count* can be \"destructive\" if the number of running servers in "
 "the *group* is larger than that specified in *count*. In such a case, the"
@@ -66,67 +66,75 @@ msgid ""
 " deleted."
 msgstr ""
 
-#: ../../rst/modules/rax_module.rst:553
+#: ../../rst/modules/rax_module.rst:554
 msgid ""
 "The following environment variables can be used, ``RAX_USERNAME``, "
 "``RAX_API_KEY``, ``RAX_CREDS_FILE``, ``RAX_CREDENTIALS``, ``RAX_REGION``."
 msgstr ""
 
-#: ../../rst/modules/rax_module.rst:554
+#: ../../rst/modules/rax_module.rst:555
 msgid ""
 "``RAX_CREDENTIALS`` and ``RAX_CREDS_FILE`` points to a credentials file "
 "appropriate for pyrax. See "
 "https://github.com/rackspace/pyrax/blob/master/docs/getting_started.md#authenticating"
 msgstr ""
 
-#: ../../rst/modules/rax_module.rst:555
+#: ../../rst/modules/rax_module.rst:556
 msgid "``RAX_USERNAME`` and ``RAX_API_KEY`` obviate the use of a credentials file"
 msgstr ""
 
-#: ../../rst/modules/rax_module.rst:556
+#: ../../rst/modules/rax_module.rst:557
 msgid ""
 "``RAX_REGION`` defines a Rackspace Public Cloud region (DFW, ORD, LON, "
 "...)"
 msgstr ""
 
-#: ../../rst/modules/rax_module.rst:561
+#: ../../rst/modules/rax_module.rst:562
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/rax_module.rst:610
+#: ../../rst/modules/rax_module.rst:611
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/rax_module.rst:615
+#: ../../rst/modules/rax_module.rst:616
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/rax_module.rst:618
+#: ../../rst/modules/rax_module.rst:619
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/rax_module.rst:625
+#: ../../rst/modules/rax_module.rst:626
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/rax_module.rst:627
+#: ../../rst/modules/rax_module.rst:628
 msgid "Jesse Keating (@omgjlk)"
 msgstr ""
 
-#: ../../rst/modules/rax_module.rst:628
+#: ../../rst/modules/rax_module.rst:629
 msgid "Matt Martz (@sivel)"
 msgstr ""
 
-#: ../../rst/modules/rax_module.rst:632
+#: ../../rst/modules/rax_module.rst:633
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/rackspace/rax.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/rackspace/rax.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/rackspace/rax.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

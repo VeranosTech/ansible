@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,11 +44,11 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/win_package_module.rst:230
+#: ../../rst/modules/win_package_module.rst:245
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/win_package_module.rst:233
+#: ../../rst/modules/win_package_module.rst:248
 msgid ""
 "When ``state=absent`` and the product is an exe, the path may be "
 "different from what was used to install the package originally. If path "
@@ -56,125 +56,133 @@ msgid ""
 "``UninstallString`` in the registry for that product_id."
 msgstr ""
 
-#: ../../rst/modules/win_package_module.rst:234
+#: ../../rst/modules/win_package_module.rst:249
 msgid ""
 "Not all product ids are in a GUID form, some programs incorrectly use a "
 "different structure but this module should support any format."
 msgstr ""
 
-#: ../../rst/modules/win_package_module.rst:235
+#: ../../rst/modules/win_package_module.rst:250
 msgid ""
 "By default all msi installs and uninstalls will be run with the options "
 "``/log, /qn, /norestart``."
 msgstr ""
 
-#: ../../rst/modules/win_package_module.rst:236
+#: ../../rst/modules/win_package_module.rst:251
 msgid ""
 "It is recommended you download the package first from the URL using the "
 ":ref:`win_get_url <win_get_url_module>` module as it opens up more "
 "flexibility with what must be set when calling ``win_package``."
 msgstr ""
 
-#: ../../rst/modules/win_package_module.rst:237
+#: ../../rst/modules/win_package_module.rst:252
 msgid ""
 "Packages will be temporarily downloaded or copied locally when path is a "
 "network location and credential delegation is not set, or path is a URL "
 "and the file is not an MSI."
 msgstr ""
 
-#: ../../rst/modules/win_package_module.rst:238
+#: ../../rst/modules/win_package_module.rst:253
 msgid ""
 "All the installation checks under ``product_id`` and ``creates_*`` add "
 "together, if one fails then the program is considered to be absent."
 msgstr ""
 
-#: ../../rst/modules/win_package_module.rst:242
+#: ../../rst/modules/win_package_module.rst:257
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/win_package_module.rst:246
+#: ../../rst/modules/win_package_module.rst:261
 msgid ":ref:`win_chocolatey_module`"
 msgstr ""
 
-#: ../../rst/modules/win_package_module.rst:247
+#: ../../rst/modules/win_package_module.rst:262
 msgid "The official documentation on the **win_chocolatey** module."
 msgstr ""
 
-#: ../../rst/modules/win_package_module.rst:248
+#: ../../rst/modules/win_package_module.rst:263
 msgid ":ref:`win_hotfix_module`"
 msgstr ""
 
-#: ../../rst/modules/win_package_module.rst:249
+#: ../../rst/modules/win_package_module.rst:264
 msgid "The official documentation on the **win_hotfix** module."
 msgstr ""
 
-#: ../../rst/modules/win_package_module.rst:250
+#: ../../rst/modules/win_package_module.rst:265
 msgid ":ref:`win_updates_module`"
 msgstr ""
 
-#: ../../rst/modules/win_package_module.rst:251
+#: ../../rst/modules/win_package_module.rst:266
 msgid "The official documentation on the **win_updates** module."
 msgstr ""
 
-#: ../../rst/modules/win_package_module.rst:255
+#: ../../rst/modules/win_package_module.rst:270
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/win_package_module.rst:338
+#: ../../rst/modules/win_package_module.rst:354
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/win_package_module.rst:339
+#: ../../rst/modules/win_package_module.rst:355
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/win_package_module.rst:417
+#: ../../rst/modules/win_package_module.rst:433
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/win_package_module.rst:422
+#: ../../rst/modules/win_package_module.rst:438
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/win_package_module.rst:425
+#: ../../rst/modules/win_package_module.rst:441
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/win_package_module.rst:428
+#: ../../rst/modules/win_package_module.rst:444
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/win_package_module.rst:430
+#: ../../rst/modules/win_package_module.rst:446
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/win_package_module.rst:436
+#: ../../rst/modules/win_package_module.rst:452
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/win_package_module.rst:438
+#: ../../rst/modules/win_package_module.rst:454
 msgid "Trond Hindenes (@trondhindenes)"
 msgstr ""
 
-#: ../../rst/modules/win_package_module.rst:439
+#: ../../rst/modules/win_package_module.rst:455
 msgid "Jordan Borean (@jborean93)"
 msgstr ""
 
-#: ../../rst/modules/win_package_module.rst:443
+#: ../../rst/modules/win_package_module.rst:459
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_package.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_package.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_package.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

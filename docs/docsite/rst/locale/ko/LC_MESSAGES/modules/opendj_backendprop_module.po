@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,60 +24,68 @@ msgid ""
 " the dsconfig set-backend-prop command"
 msgstr ""
 
-#: ../../rst/modules/opendj_backendprop_module.rst:19
+#: ../../rst/modules/opendj_backendprop_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/opendj_backendprop_module.rst:20
+#: ../../rst/modules/opendj_backendprop_module.rst:19
 msgid ""
 "This module will update settings for OpenDJ with the command set-backend-"
 "prop."
 msgstr ""
 
-#: ../../rst/modules/opendj_backendprop_module.rst:21
+#: ../../rst/modules/opendj_backendprop_module.rst:20
 msgid ""
 "It will check first via de get-backend-prop if configuration needs to be "
 "applied."
 msgstr ""
 
-#: ../../rst/modules/opendj_backendprop_module.rst:27
+#: ../../rst/modules/opendj_backendprop_module.rst:26
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/opendj_backendprop_module.rst:179
+#: ../../rst/modules/opendj_backendprop_module.rst:178
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/opendj_backendprop_module.rst:199
+#: ../../rst/modules/opendj_backendprop_module.rst:198
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/opendj_backendprop_module.rst:204
+#: ../../rst/modules/opendj_backendprop_module.rst:203
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/opendj_backendprop_module.rst:207
+#: ../../rst/modules/opendj_backendprop_module.rst:206
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/opendj_backendprop_module.rst:214
+#: ../../rst/modules/opendj_backendprop_module.rst:213
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/opendj_backendprop_module.rst:216
+#: ../../rst/modules/opendj_backendprop_module.rst:215
 msgid "Werner Dijkerman (@dj-wasabi)"
 msgstr ""
 
-#: ../../rst/modules/opendj_backendprop_module.rst:220
+#: ../../rst/modules/opendj_backendprop_module.rst:219
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/identity/opendj/opendj_backendprop.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/identity/opendj/opendj_backendprop.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/identity/opendj/opendj_backendprop.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

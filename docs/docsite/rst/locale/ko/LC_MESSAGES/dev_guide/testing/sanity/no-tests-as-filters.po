@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,17 +18,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-#: ../../rst/dev_guide/testing/sanity/no-tests-as-filters.rst:2
-msgid "Sanity Tests » no-tests-as-filters"
+#: ../../rst/dev_guide/testing/sanity/no-tests-as-filters.rst:4
+msgid "no-tests-as-filters"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/no-tests-as-filters.rst:4
+#: ../../rst/dev_guide/testing/sanity/no-tests-as-filters.rst:6
 msgid ""
 "Using Ansible provided Jinja2 tests as filters will be removed in Ansible"
 " 2.9."
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/no-tests-as-filters.rst:6
+#: ../../rst/dev_guide/testing/sanity/no-tests-as-filters.rst:8
 msgid ""
 "Prior to Ansible 2.5, Jinja2 tests included within Ansible were most "
 "often used as filters. The large difference in use is that filters are "
@@ -36,7 +36,7 @@ msgid ""
 "referenced as ``variable is test_name``."
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/no-tests-as-filters.rst:8
+#: ../../rst/dev_guide/testing/sanity/no-tests-as-filters.rst:10
 msgid ""
 "Jinja2 tests are used for comparisons, whereas filters are used for data "
 "manipulation, and have different applications in Jinja2. This change is "
@@ -44,9 +44,12 @@ msgid ""
 "and where each can be appropriately used."
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/no-tests-as-filters.rst:10
+#: ../../rst/dev_guide/testing/sanity/no-tests-as-filters.rst:12
 msgid ""
 "As of Ansible 2.5 using an Ansible provided Jinja2 test with filter "
 "syntax will display a deprecation error."
 msgstr ""
+
+#~ msgid "Sanity Tests » no-tests-as-filters"
+#~ msgstr ""
 

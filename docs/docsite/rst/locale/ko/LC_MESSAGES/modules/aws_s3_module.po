@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,17 +62,17 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/aws_s3_module.rst:473
+#: ../../rst/modules/aws_s3_module.rst:490
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/aws_s3_module.rst:476
+#: ../../rst/modules/aws_s3_module.rst:493
 msgid ""
 "In 2.4, this module has been renamed from ``s3`` into :ref:`aws_s3 "
 "<aws_s3_module>`."
 msgstr ""
 
-#: ../../rst/modules/aws_s3_module.rst:477
+#: ../../rst/modules/aws_s3_module.rst:494
 msgid ""
 "If parameters are not set within the module, the following environment "
 "variables can be used in decreasing order of precedence ``AWS_URL`` or "
@@ -82,79 +82,87 @@ msgid ""
 "``AWS_REGION`` or ``EC2_REGION``"
 msgstr ""
 
-#: ../../rst/modules/aws_s3_module.rst:478
+#: ../../rst/modules/aws_s3_module.rst:495
 msgid ""
 "Ansible uses the boto configuration file (typically ~/.boto) if no "
 "credentials are provided. See "
 "https://boto.readthedocs.io/en/latest/boto_config_tut.html"
 msgstr ""
 
-#: ../../rst/modules/aws_s3_module.rst:479
+#: ../../rst/modules/aws_s3_module.rst:496
 msgid ""
 "``AWS_REGION`` or ``EC2_REGION`` can be typically be used to specify the "
 "AWS region, when required, but this can also be configured in the boto "
 "config file"
 msgstr ""
 
-#: ../../rst/modules/aws_s3_module.rst:484
+#: ../../rst/modules/aws_s3_module.rst:501
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/aws_s3_module.rst:585
+#: ../../rst/modules/aws_s3_module.rst:602
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/aws_s3_module.rst:586
+#: ../../rst/modules/aws_s3_module.rst:603
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/aws_s3_module.rst:666
+#: ../../rst/modules/aws_s3_module.rst:683
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/aws_s3_module.rst:671
+#: ../../rst/modules/aws_s3_module.rst:688
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/aws_s3_module.rst:674
+#: ../../rst/modules/aws_s3_module.rst:691
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/aws_s3_module.rst:677
+#: ../../rst/modules/aws_s3_module.rst:694
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/aws_s3_module.rst:679
+#: ../../rst/modules/aws_s3_module.rst:696
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/aws_s3_module.rst:685
+#: ../../rst/modules/aws_s3_module.rst:702
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/aws_s3_module.rst:687
+#: ../../rst/modules/aws_s3_module.rst:704
 msgid "Lester Wade (@lwade)"
 msgstr ""
 
-#: ../../rst/modules/aws_s3_module.rst:688
+#: ../../rst/modules/aws_s3_module.rst:705
 msgid "Sloane Hertel (@s-hertel)"
 msgstr ""
 
-#: ../../rst/modules/aws_s3_module.rst:692
+#: ../../rst/modules/aws_s3_module.rst:709
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/aws_s3.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/aws_s3.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/aws_s3.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

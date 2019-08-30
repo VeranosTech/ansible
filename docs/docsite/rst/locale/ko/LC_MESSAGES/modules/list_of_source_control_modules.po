@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,63 +23,63 @@ msgid "Source Control modules"
 msgstr ""
 
 #: ../../rst/modules/list_of_source_control_modules.rst:10
-msgid ":ref:`bitbucket_deploy_key_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_source_control_modules.rst:11
 msgid ":ref:`bzr_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_source_control_modules.rst:12
+#: ../../rst/modules/list_of_source_control_modules.rst:11
 msgid ":ref:`git_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_source_control_modules.rst:13
+#: ../../rst/modules/list_of_source_control_modules.rst:12
 msgid ":ref:`git_config_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_source_control_modules.rst:14
+#: ../../rst/modules/list_of_source_control_modules.rst:13
 msgid ":ref:`github_deploy_key_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_source_control_modules.rst:15
+#: ../../rst/modules/list_of_source_control_modules.rst:14
 msgid ":ref:`github_hooks_module` **(D)**"
 msgstr ""
 
-#: ../../rst/modules/list_of_source_control_modules.rst:16
+#: ../../rst/modules/list_of_source_control_modules.rst:15
 msgid ":ref:`github_issue_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_source_control_modules.rst:17
+#: ../../rst/modules/list_of_source_control_modules.rst:16
 msgid ":ref:`github_key_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_source_control_modules.rst:18
+#: ../../rst/modules/list_of_source_control_modules.rst:17
 msgid ":ref:`github_release_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_source_control_modules.rst:19
+#: ../../rst/modules/list_of_source_control_modules.rst:18
 msgid ":ref:`github_webhook_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_source_control_modules.rst:20
-msgid ":ref:`github_webhook_facts_module`"
+#: ../../rst/modules/list_of_source_control_modules.rst:19
+msgid ":ref:`github_webhook_info_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_source_control_modules.rst:21
+#: ../../rst/modules/list_of_source_control_modules.rst:20
 msgid ":ref:`gitlab_deploy_key_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_source_control_modules.rst:22
+#: ../../rst/modules/list_of_source_control_modules.rst:21
 msgid ":ref:`gitlab_group_module`"
 msgstr ""
 
+#: ../../rst/modules/list_of_source_control_modules.rst:22
+msgid ":ref:`gitlab_hook_module`"
+msgstr ""
+
 #: ../../rst/modules/list_of_source_control_modules.rst:23
-msgid ":ref:`gitlab_hooks_module`"
+msgid ":ref:`gitlab_project_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_source_control_modules.rst:24
-msgid ":ref:`gitlab_project_module`"
+msgid ":ref:`gitlab_project_variable_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_source_control_modules.rst:25
@@ -98,10 +98,39 @@ msgstr ""
 msgid ":ref:`subversion_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_source_control_modules.rst:32
+#: ../../rst/modules/list_of_source_control_modules.rst:34
+msgid "Bitbucket"
+msgstr ""
+
+#: ../../rst/modules/list_of_source_control_modules.rst:38
+msgid ":ref:`bitbucket_access_key_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_source_control_modules.rst:39
+msgid ":ref:`bitbucket_pipeline_key_pair_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_source_control_modules.rst:40
+msgid ":ref:`bitbucket_pipeline_known_host_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_source_control_modules.rst:41
+msgid ":ref:`bitbucket_pipeline_variable_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_source_control_modules.rst:45
 msgid ""
 "**(D)**: This marks a module as deprecated, which means a module is kept "
 "for backwards compatibility but usage is discouraged. The module "
 "documentation details page may explain more about this rationale."
 msgstr ""
+
+#~ msgid ":ref:`bitbucket_deploy_key_module`"
+#~ msgstr ""
+
+#~ msgid ":ref:`github_webhook_facts_module`"
+#~ msgstr ""
+
+#~ msgid ":ref:`gitlab_hooks_module`"
+#~ msgstr ""
 

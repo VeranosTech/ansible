@@ -1,0 +1,213 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:2
+msgid "ignores"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:4
+msgid ""
+"Sanity tests for individual files can be skipped, and specific errors can"
+" be ignored."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:7
+msgid "When to Ignore Errors"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:9
+msgid ""
+"Sanity tests are designed to improve code quality and identify common "
+"issues with content. When issues are identified during development, those"
+" issues should be corrected."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:12
+msgid ""
+"As development of Ansible continues, sanity tests are expanded to detect "
+"issues that previous releases could not. To allow time for existing "
+"content to be updated to pass newer tests, ignore entries can be added. "
+"New content should not use ignores for existing sanity tests."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:16
+msgid ""
+"When code is fixed to resolve sanity test errors, any relevant ignores "
+"must also be removed. If the ignores are not removed, this will be "
+"reported as an unnecessary ignore error. This is intended to prevent "
+"future regressions due to the same error recurring after being fixed."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:21
+msgid "When to Skip Tests"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:23
+msgid ""
+"Although rare, there are reasons for skipping a sanity test instead of "
+"ignoring the errors it reports."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:25
+msgid ""
+"If a sanity test results in a traceback when processing content, that "
+"error cannot be ignored. If this occurs, open a new `bug report "
+"<https://github.com/ansible/ansible/issues/new?template=bug_report.md>`_ "
+"for the issue so it can be fixed. If the traceback occurs due to an issue"
+" with the content, that issue should be fixed. If the content is correct,"
+" the test will need to be skipped until the bug in the sanity test is "
+"fixed."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:30
+msgid ""
+"Caution should be used when skipping sanity tests instead of ignoring "
+"them. Since the test is skipped entirely, resolution of the issue will "
+"not be automatically detected. This will prevent prevent regression "
+"detection from working once the issue has been resolved. For this reason "
+"it is a good idea to periodically review skipped entries manually to "
+"verify they are required."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:36
+msgid "Ignore File Location"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:38
+msgid ""
+"The location of the ignore file depends on the type of content being "
+"tested."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:41
+msgid "Ansible Collections"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:43
+msgid ""
+"Since sanity tests change between Ansible releases, a separate ignore "
+"file is needed for each Ansible major release."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:45
+msgid ""
+"The filename is ``test/sanity/ignore-X.Y.txt`` where ``X.Y`` is the "
+"Ansible release being used to test the collection."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:47
+msgid ""
+"Maintaining a separate file for each Ansible release allows a collection "
+"to pass tests for multiple versions of Ansible."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:50
+msgid "Ansible"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:52
+msgid ""
+"When testing Ansible, all ignores are placed in the "
+"``test/sanity/ignore.txt`` file."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:54
+msgid ""
+"Only a single file is needed because ``ansible-test`` is developed and "
+"released as a part of Ansible itself."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:57
+msgid "Ignore File Format"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:59
+msgid ""
+"The ignore file contains one entry per line. Each line consists of two "
+"columns, separated by a single space. Comments may be added at the end of"
+" an entry, started with a hash (``#``) character, which can be proceeded "
+"by zero or more spaces. Blank and comment only lines are not allowed."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:64
+msgid ""
+"The first column specifies the file path that the entry applies to. File "
+"paths must be relative to the root of the content being tested. This is "
+"either the Ansible source or an Ansible collection. File paths cannot "
+"contain a space or the hash (``#``) character."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:69
+msgid ""
+"The second column specifies the sanity test that the entry applies to. "
+"This will be the name of the sanity test. If the sanity test is specific "
+"to a version of Python, the name will include a dash (``-``) and the "
+"relevant Python version. If the named test uses error codes then the "
+"error code to ignore must be appended to the name of the test, separated "
+"by a colon (``:``)."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:74
+msgid "Below are some example ignore entries for an Ansible collection::"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:80
+msgid ""
+"It is also possible to skip a sanity test for a specific file. This is "
+"done by adding ``!skip`` after the sanity test name in the second column."
+" When this is done, no error code is included, even if the sanity test "
+"uses error codes."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:84
+msgid "Below are some example skip entries for an Ansible collection::"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:90
+msgid "Ignore File Errors"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:92
+msgid "There are various errors that can be reported for the ignore file itself:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:94
+msgid "syntax errors parsing the ignore file"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:95
+msgid "references a file path that does not exist"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:96
+msgid "references to a sanity test that does not exist"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:97
+msgid "ignoring an error that does not occur"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:98
+msgid "ignoring a file which is skipped"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/ignores.rst:99
+msgid "duplicate entries"
+msgstr ""
+

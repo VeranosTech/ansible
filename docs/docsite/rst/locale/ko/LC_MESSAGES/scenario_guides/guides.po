@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,19 +18,40 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-#: ../../rst/scenario_guides/guides.rst:5
+#: ../../rst/scenario_guides/guides.rst:7
 msgid "Scenario Guides"
 msgstr ""
 
-#: ../../rst/scenario_guides/guides.rst:7
+#: ../../rst/scenario_guides/guides.rst:9
 msgid ""
-"The guides in this section explore particular use cases in greater depth "
-"and provide a more \"top-down\" explanation of some basic features."
+"The guides in this section cover integrating Ansible with a variety of "
+"platforms, products, and technologies. They explore particular use cases "
+"in greater depth and provide a more \"top-down\" explanation of some "
+"basic features."
 msgstr ""
 
-#: ../../rst/scenario_guides/guides.rst:15
-msgid ""
-"Pending topics may include: Jenkins, Linode/DigitalOcean, Continuous "
-"Deployment, and more."
+#: ../../rst/scenario_guides/guides.rst:12
+msgid "Public Cloud Guides"
 msgstr ""
+
+#: ../../rst/scenario_guides/guides.rst:28
+msgid "Network Technology Guides"
+msgstr ""
+
+#: ../../rst/scenario_guides/guides.rst:36
+msgid "Virtualization & Containerization Guides"
+msgstr ""
+
+#~ msgid ""
+#~ "The guides in this section explore "
+#~ "particular use cases in greater depth"
+#~ " and provide a more \"top-down\" "
+#~ "explanation of some basic features."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pending topics may include: Jenkins, "
+#~ "Linode/DigitalOcean, Continuous Deployment, and "
+#~ "more."
+#~ msgstr ""
 

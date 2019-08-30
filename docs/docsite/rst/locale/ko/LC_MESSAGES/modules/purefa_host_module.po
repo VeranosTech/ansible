@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,58 +50,69 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/purefa_host_module.rst:215
+#: ../../rst/modules/purefa_host_module.rst:229
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/purefa_host_module.rst:218
+#: ../../rst/modules/purefa_host_module.rst:232
 msgid "If specifying ``lun`` option ensure host support requested value"
 msgstr ""
 
-#: ../../rst/modules/purefa_host_module.rst:219
+#: ../../rst/modules/purefa_host_module.rst:233
 msgid "This module requires the ``purestorage`` Python library"
 msgstr ""
 
-#: ../../rst/modules/purefa_host_module.rst:220
+#: ../../rst/modules/purefa_host_module.rst:234
 msgid ""
 "You must set ``PUREFA_URL`` and ``PUREFA_API`` environment variables if "
 "*fa_url* and *api_token* arguments are not passed to the module directly"
 msgstr ""
 
-#: ../../rst/modules/purefa_host_module.rst:225
+#: ../../rst/modules/purefa_host_module.rst:239
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/purefa_host_module.rst:299
+#: ../../rst/modules/purefa_host_module.rst:329
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/purefa_host_module.rst:304
+#: ../../rst/modules/purefa_host_module.rst:334
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/purefa_host_module.rst:307
+#: ../../rst/modules/purefa_host_module.rst:337
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/purefa_host_module.rst:314
+#: ../../rst/modules/purefa_host_module.rst:344
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/purefa_host_module.rst:316
-msgid "Simon Dodsley (@sdodsley)"
+#: ../../rst/modules/purefa_host_module.rst:346
+msgid "Pure Storage Ansible Team (@sdodsley) <pure-ansible-team@purestorage.com>"
 msgstr ""
 
-#: ../../rst/modules/purefa_host_module.rst:320
+#: ../../rst/modules/purefa_host_module.rst:350
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/purestorage/purefa_host.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/purestorage/purefa_host.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "Simon Dodsley (@sdodsley)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/purestorage/purefa_host.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

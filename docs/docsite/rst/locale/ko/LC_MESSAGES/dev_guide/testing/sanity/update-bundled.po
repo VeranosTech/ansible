@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/testing/sanity/update-bundled.rst:4
+msgid "update-bundled"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/update-bundled.rst:6
+msgid ""
+"Check whether any of our known bundled code needs to be updated for a new"
+" upstream release."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/update-bundled.rst:8
+msgid "This test can error in the following ways:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/update-bundled.rst:10
+msgid ""
+"The bundled code is out of date with regard to the latest release on "
+"pypi.  Update the code to the new version and update the version in "
+"_BUNDLED_METADATA to solve this."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/update-bundled.rst:13
+msgid ""
+"The code is lacking a _BUNDLED_METADATA variable.  This typically happens"
+" when a bundled version is updated and we forget to add a "
+"_BUNDLED_METADATA variable to the updated file.  Once that is added, this"
+" error should go away."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/update-bundled.rst:17
+msgid ""
+"A file has a _BUNDLED_METADATA variable but the file isn't specified in "
+":file:`test/sanity/code-smell/update-bundled.py`.  This typically happens"
+" when a new bundled library is added.  Add the file to the "
+"`get_bundled_libs()` function in the `update-bundled.py` test script to "
+"solve this error."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/update-bundled.rst:22
+msgid "_BUNDLED_METADATA has the following fields:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/update-bundled.rst
+msgid "pypi_name"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/update-bundled.rst:24
+msgid "Name of the bundled package on pypi"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/update-bundled.rst
+msgid "version"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/update-bundled.rst:26
+msgid "Version of the package that we are including here"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/update-bundled.rst
+msgid "version_constraints"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/update-bundled.rst:28
+msgid ""
+"Optional PEP440 specifier for the version range that we are bundling. "
+"Currently, the only valid use of this is to follow a version that is "
+"compatible with the Python stdlib when newer versions of the pypi package"
+" implement a new API."
+msgstr ""
+

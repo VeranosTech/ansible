@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,120 +19,124 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/modules/oneview_enclosure_facts_module.rst:9
-msgid "oneview_enclosure_facts -- Retrieve facts about one or more Enclosures"
-msgstr ""
-
-#: ../../rst/modules/oneview_enclosure_facts_module.rst:19
-msgid "Synopsis"
-msgstr ""
-
-#: ../../rst/modules/oneview_enclosure_facts_module.rst:20
-msgid "Retrieve facts about one or more of the Enclosures from OneView."
-msgstr ""
-
-#: ../../rst/modules/oneview_enclosure_facts_module.rst:25
-msgid "Requirements"
-msgstr ""
-
-#: ../../rst/modules/oneview_enclosure_facts_module.rst:26
-msgid "The below requirements are needed on the host that executes this module."
-msgstr ""
-
-#: ../../rst/modules/oneview_enclosure_facts_module.rst:28
-msgid "hpOneView >= 2.0.1"
-msgstr ""
-
-#: ../../rst/modules/oneview_enclosure_facts_module.rst:29
-msgid "python >= 2.7.9"
-msgstr ""
-
-#: ../../rst/modules/oneview_enclosure_facts_module.rst:33
-msgid "Parameters"
-msgstr ""
-
-#: ../../rst/modules/oneview_enclosure_facts_module.rst:101
-msgid "Notes"
-msgstr ""
-
-#: ../../rst/modules/oneview_enclosure_facts_module.rst:104
 msgid ""
-"A sample configuration file for the config parameter can be found at: "
-"https://github.com/HewlettPackard/oneview-ansible/blob/master/examples"
-"/oneview_config-rename.json"
+"oneview_enclosure_facts -- Retrieve information about one or more "
+"Enclosures"
 msgstr ""
 
-#: ../../rst/modules/oneview_enclosure_facts_module.rst:105
+#: ../../rst/modules/oneview_enclosure_facts_module.rst:11
 msgid ""
-"Check how to use environment variables for configuration at: "
-"https://github.com/HewlettPackard/oneview-ansible#environment-variables"
+"This is an alias for :ref:`oneview_enclosure_info "
+"<oneview_enclosure_info_module>`. This name has been **deprecated**. "
+"Please update your tasks to use the new name ``oneview_enclosure_info`` "
+"instead."
 msgstr ""
 
-#: ../../rst/modules/oneview_enclosure_facts_module.rst:106
-msgid ""
-"Additional Playbooks for the HPE OneView Ansible modules can be found at:"
-" https://github.com/HewlettPackard/oneview-ansible/tree/master/examples"
-msgstr ""
+#~ msgid "oneview_enclosure_facts -- Retrieve facts about one or more Enclosures"
+#~ msgstr ""
 
-#: ../../rst/modules/oneview_enclosure_facts_module.rst:107
-msgid ""
-"The OneView API version used will directly affect returned and expected "
-"fields in resources. Information on setting the desired API version and "
-"can be found at: https://github.com/HewlettPackard/oneview-ansible"
-"#setting-your-oneview-version"
-msgstr ""
+#~ msgid "Synopsis"
+#~ msgstr ""
 
-#: ../../rst/modules/oneview_enclosure_facts_module.rst:112
-msgid "Examples"
-msgstr ""
+#~ msgid "Retrieve facts about one or more of the Enclosures from OneView."
+#~ msgstr ""
 
-#: ../../rst/modules/oneview_enclosure_facts_module.rst:196
-msgid "Return Values"
-msgstr ""
+#~ msgid "Requirements"
+#~ msgstr ""
 
-#: ../../rst/modules/oneview_enclosure_facts_module.rst:197
-msgid ""
-"Common return values are documented :ref:`here <common_return_values>`, "
-"the following are the fields unique to this module:"
-msgstr ""
+#~ msgid ""
+#~ "The below requirements are needed on "
+#~ "the host that executes this module."
+#~ msgstr ""
 
-#: ../../rst/modules/oneview_enclosure_facts_module.rst:256
-msgid "Status"
-msgstr ""
+#~ msgid "hpOneView >= 2.0.1"
+#~ msgstr ""
 
-#: ../../rst/modules/oneview_enclosure_facts_module.rst:261
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
-msgstr ""
+#~ msgid "python >= 2.7.9"
+#~ msgstr ""
 
-#: ../../rst/modules/oneview_enclosure_facts_module.rst:264
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
-msgstr ""
+#~ msgid "Parameters"
+#~ msgstr ""
 
-#: ../../rst/modules/oneview_enclosure_facts_module.rst:271
-msgid "Authors"
-msgstr ""
+#~ msgid "Notes"
+#~ msgstr ""
 
-#: ../../rst/modules/oneview_enclosure_facts_module.rst:273
-msgid "Felipe Bulsoni (@fgbulsoni)"
-msgstr ""
+#~ msgid ""
+#~ "A sample configuration file for the "
+#~ "config parameter can be found at: "
+#~ "https://github.com/HewlettPackard/oneview-"
+#~ "ansible/blob/master/examples/oneview_config-rename.json"
+#~ msgstr ""
 
-#: ../../rst/modules/oneview_enclosure_facts_module.rst:274
-msgid "Thiago Miotto (@tmiotto)"
-msgstr ""
+#~ msgid ""
+#~ "Check how to use environment variables"
+#~ " for configuration at: "
+#~ "https://github.com/HewlettPackard/oneview-ansible"
+#~ "#environment-variables"
+#~ msgstr ""
 
-#: ../../rst/modules/oneview_enclosure_facts_module.rst:275
-msgid "Adriane Cardozo (@adriane-cardozo)"
-msgstr ""
+#~ msgid ""
+#~ "Additional Playbooks for the HPE OneView"
+#~ " Ansible modules can be found at: "
+#~ "https://github.com/HewlettPackard/oneview-"
+#~ "ansible/tree/master/examples"
+#~ msgstr ""
 
-#: ../../rst/modules/oneview_enclosure_facts_module.rst:279
-#, python-format
-msgid ""
-"If you notice any issues in this documentation you can `edit this "
-"document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/remote_management/oneview/oneview_enclosure_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
-" to improve it."
-msgstr ""
+#~ msgid ""
+#~ "The OneView API version used will "
+#~ "directly affect returned and expected "
+#~ "fields in resources. Information on "
+#~ "setting the desired API version and "
+#~ "can be found at: "
+#~ "https://github.com/HewlettPackard/oneview-ansible#setting-"
+#~ "your-oneview-version"
+#~ msgstr ""
+
+#~ msgid "Examples"
+#~ msgstr ""
+
+#~ msgid "Return Values"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Common return values are documented "
+#~ ":ref:`here <common_return_values>`, the following"
+#~ " are the fields unique to this "
+#~ "module:"
+#~ msgstr ""
+
+#~ msgid "Status"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid "Authors"
+#~ msgstr ""
+
+#~ msgid "Felipe Bulsoni (@fgbulsoni)"
+#~ msgstr ""
+
+#~ msgid "Thiago Miotto (@tmiotto)"
+#~ msgstr ""
+
+#~ msgid "Adriane Cardozo (@adriane-cardozo)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/remote_management/oneview/oneview_enclosure_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

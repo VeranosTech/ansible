@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,88 +22,108 @@ msgstr ""
 msgid "zabbix_screen -- Create/update/delete Zabbix screens"
 msgstr ""
 
-#: ../../rst/modules/zabbix_screen_module.rst:19
+#: ../../rst/modules/zabbix_screen_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/zabbix_screen_module.rst:20
+#: ../../rst/modules/zabbix_screen_module.rst:19
 msgid ""
 "This module allows you to create, modify and delete Zabbix screens and "
 "associated graph data."
 msgstr ""
 
-#: ../../rst/modules/zabbix_screen_module.rst:25
+#: ../../rst/modules/zabbix_screen_module.rst:24
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/zabbix_screen_module.rst:26
+#: ../../rst/modules/zabbix_screen_module.rst:25
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/zabbix_screen_module.rst:28
+#: ../../rst/modules/zabbix_screen_module.rst:27
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/zabbix_screen_module.rst:29
-msgid "zabbix-api"
+#: ../../rst/modules/zabbix_screen_module.rst:28
+msgid "zabbix-api >= 0.5.3"
 msgstr ""
 
-#: ../../rst/modules/zabbix_screen_module.rst:33
+#: ../../rst/modules/zabbix_screen_module.rst:32
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/zabbix_screen_module.rst:163
+#: ../../rst/modules/zabbix_screen_module.rst:286
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/zabbix_screen_module.rst:166
+#: ../../rst/modules/zabbix_screen_module.rst:289
 msgid ""
 "Too many concurrent updates to the same screen may cause Zabbix to return"
 " errors, see examples for a workaround if needed."
 msgstr ""
 
-#: ../../rst/modules/zabbix_screen_module.rst:171
+#: ../../rst/modules/zabbix_screen_module.rst:290
+msgid ""
+"If you use *login_password=zabbix*, the word \"zabbix\" is replaced by "
+"\"********\" in all module output, because *login_password* uses "
+"``no_log``. See `this FAQ "
+"<https://docs.ansible.com/ansible/latest/network/user_guide/faq.html#why-"
+"is-my-output-sometimes-replaced-with>`_ for more information."
+msgstr ""
+
+#: ../../rst/modules/zabbix_screen_module.rst:295
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/zabbix_screen_module.rst:243
+#: ../../rst/modules/zabbix_screen_module.rst:367
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/zabbix_screen_module.rst:248
+#: ../../rst/modules/zabbix_screen_module.rst:372
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/zabbix_screen_module.rst:251
+#: ../../rst/modules/zabbix_screen_module.rst:375
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/zabbix_screen_module.rst:258
+#: ../../rst/modules/zabbix_screen_module.rst:382
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/zabbix_screen_module.rst:260
+#: ../../rst/modules/zabbix_screen_module.rst:384
 msgid "Cove (@cove)"
 msgstr ""
 
-#: ../../rst/modules/zabbix_screen_module.rst:261
+#: ../../rst/modules/zabbix_screen_module.rst:385
 msgid "Tony Minfei Ding (!UNKNOWN)"
 msgstr ""
 
-#: ../../rst/modules/zabbix_screen_module.rst:262
+#: ../../rst/modules/zabbix_screen_module.rst:386
 msgid "Harrison Gu (@harrisongu)"
 msgstr ""
 
-#: ../../rst/modules/zabbix_screen_module.rst:266
+#: ../../rst/modules/zabbix_screen_module.rst:390
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/monitoring/zabbix/zabbix_screen.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/monitoring/zabbix/zabbix_screen.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "zabbix-api"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/monitoring/zabbix/zabbix_screen.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

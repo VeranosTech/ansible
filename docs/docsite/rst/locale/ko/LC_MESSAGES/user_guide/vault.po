@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-#: ../../rst/user_guide/vault.rst:2
+#: ../../rst/user_guide/vault.rst:4
 msgid "Ansible Vault"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:4
+#: ../../rst/user_guide/vault.rst:6
 msgid "Topics"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:6
+#: ../../rst/user_guide/vault.rst:8
 msgid ""
 "Ansible Vault is a feature of ansible that allows you to keep sensitive "
 "data such as passwords or keys in encrypted files, rather than as "
@@ -34,44 +34,52 @@ msgid ""
 "distributed or placed in source control."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:8
+#: ../../rst/user_guide/vault.rst:10
 msgid ""
 "To enable this feature, a command line tool - :ref:`ansible-vault` - is "
 "used to edit files, and a command line flag (:option:`--ask-vault-pass "
-"<ansible-playbook --ask-vault-pass>` or :option:`--vault-password-file "
-"<ansible-playbook --vault-password-file>`) is used. Alternately, you may "
-"specify the location of a password file or command Ansible to always "
-"prompt for the password in your ansible.cfg file. These options require "
-"no command line flag usage."
+"<ansible-playbook --ask-vault-pass>`, :option:`--vault-password-file "
+"<ansible-playbook --vault-password-file>` or  :option:`--vault-id "
+"<ansible-playbook --vault-id>`) is used. Alternately, you may specify the"
+" location of a password file or command Ansible to always prompt for the "
+"password in your ansible.cfg file. These options require no command line "
+"flag usage."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:10
+#: ../../rst/user_guide/vault.rst:12
 msgid ""
 "For best practices advice, refer to "
 ":ref:`best_practices_for_variables_and_vaults`."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:15
+#: ../../rst/user_guide/vault.rst:17
 msgid "What Can Be Encrypted With Vault"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:17
+#: ../../rst/user_guide/vault.rst:20
+msgid "File-level encryption"
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:22
+msgid "Ansible Vault can encrypt any structured data file used by Ansible."
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:24
 msgid ""
-"Ansible Vault can encrypt any structured data file used by Ansible.  This"
-" can include \"group_vars/\" or \"host_vars/\" inventory variables, "
+"This can include \"group_vars/\" or \"host_vars/\" inventory variables, "
 "variables loaded by \"include_vars\" or \"vars_files\", or variable files"
 " passed on the ansible-playbook command line with ``-e @file.yml`` or "
 "``-e @file.json``.  Role variables and defaults are also included."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:19
+#: ../../rst/user_guide/vault.rst:26
 msgid ""
 "Ansible tasks, handlers, and so on are also data so these can be "
 "encrypted with vault as well. To hide the names of variables that you're "
 "using, you can encrypt the task files in their entirety."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:21
+#: ../../rst/user_guide/vault.rst:28
 msgid ""
 "Ansible Vault can also encrypt arbitrary files, even binary files.  If a "
 "vault-encrypted file is given as the ``src`` argument to the :ref:`copy "
@@ -82,45 +90,107 @@ msgid ""
 "when running the play)."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:27
-msgid ""
-"As of version 2.3, Ansible supports encrypting single values inside a "
-"YAML file, using the `!vault` tag to let YAML and Ansible know it uses "
-"special processing. This feature is covered in more details below."
-msgstr ""
-
-#: ../../rst/user_guide/vault.rst:33
-msgid "Creating Encrypted Files"
-msgstr ""
-
 #: ../../rst/user_guide/vault.rst:35
-msgid "To create a new encrypted data file, run the following command:"
+msgid ""
+"The advantages of file-level encryption are that it is easy to use and "
+"that password rotation is straightforward with :ref:`rekeying "
+"<rekeying_files>`. The drawback is that the contents of files are no "
+"longer easy to access and read. This may be problematic if it is a list "
+"of tasks (when encrypting a variables file, :ref:`best practice "
+"<best_practices_for_variables_and_vaults>` is to keep references to these"
+" variables in a non-encrypted file)."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:41
-msgid ""
-"First you will be prompted for a password.  The password used with vault "
-"currently must be the same for all files you wish to use together at the "
-"same time."
+#: ../../rst/user_guide/vault.rst:40
+msgid "Variable-level encryption"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:43
+#: ../../rst/user_guide/vault.rst:42
 msgid ""
-"After providing a password, the tool will launch whatever editor you have"
-" defined with $EDITOR, and defaults to vi (before 2.1 the default was "
-"vim).  Once you are done with the editor session, the file will be saved "
-"as encrypted data."
+"Ansible also supports encrypting single values inside a YAML file, using "
+"the `!vault` tag to let YAML and Ansible know it uses special processing."
+" This feature is covered in more detail :ref:`below "
+"<encrypt_string_for_use_in_yaml>`."
 msgstr ""
 
 #: ../../rst/user_guide/vault.rst:45
+msgid ""
+"The advantage of variable-level encryption is that files are still easily"
+" legible even if they mix plaintext and encrypted variables. The drawback"
+" is that password rotation is not as simple as with file-level "
+"encryption: the :ref:`rekey <ansible_vault_rekey>` command does not work "
+"with this method."
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:52
+msgid "Vault IDs and Multiple Vault Passwords"
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:55
+msgid ""
+"A vault ID is an identifier for one or more vault secrets; Ansible "
+"supports multiple vault passwords."
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:58
+msgid ""
+"Vault IDs provide labels to distinguish between individual vault "
+"passwords."
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:60
+msgid ""
+"To use vault IDs, you must provide an ID *label* of your choosing and a "
+"*source* to obtain its password (either ``prompt`` or a file path):"
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:66
+msgid ""
+"This switch is available for all Ansible commands that can interact with "
+"vaults: :ref:`ansible-vault`, :ref:`ansible-playbook`, etc."
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:68
+msgid "Vault-encrypted content can specify which vault ID it was encrypted with."
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:70
+msgid ""
+"For example, a playbook can now include a vars file encrypted with a "
+"'dev' vault ID and a 'prod' vault ID."
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:80
+msgid "Creating Encrypted Files"
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:82
+msgid "To create a new encrypted data file, run the following command:"
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:88
+msgid ""
+"First you will be prompted for a password. After providing a password, "
+"the tool will launch whatever editor you have defined with $EDITOR, and "
+"defaults to vi.  Once you are done with the editor session, the file will"
+" be saved as encrypted data."
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:90
 msgid "The default cipher is AES (which is shared-secret based)."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:51
+#: ../../rst/user_guide/vault.rst:92
+msgid ""
+"To create a new encrypted data file with the Vault ID 'password1' "
+"assigned to it and be prompted for the password, run:"
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:102
 msgid "Editing Encrypted Files"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:53
+#: ../../rst/user_guide/vault.rst:104
 msgid ""
 "To edit an encrypted file in place, use the :ref:`ansible-vault edit "
 "<ansible_vault_edit>` command. This command will decrypt the file to a "
@@ -128,38 +198,75 @@ msgid ""
 "and removing the temporary file:"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:65
+#: ../../rst/user_guide/vault.rst:112
+msgid ""
+"To edit a file encrypted with the 'vault2' password file and assigned the"
+" 'pass2' vault ID:"
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:122
 msgid "Rekeying Encrypted Files"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:67
+#: ../../rst/user_guide/vault.rst:124
 msgid ""
 "Should you wish to change your password on a vault-encrypted file or "
 "files, you can do so with the rekey command:"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:73
+#: ../../rst/user_guide/vault.rst:130
 msgid ""
 "This command can rekey multiple data files at once and will ask for the "
 "original password and also the new password."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:80
+#: ../../rst/user_guide/vault.rst:133
+msgid ""
+"To rekey files encrypted with the 'preprod2' vault ID and the 'ppold' "
+"file and be prompted for the new password:"
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:139
+msgid ""
+"A different ID could have been set for the rekeyed files by passing it to"
+" ``--new-vault-id``."
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:144
 msgid "Encrypting Unencrypted Files"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:82
+#: ../../rst/user_guide/vault.rst:146
 msgid ""
 "If you have existing files that you wish to encrypt, use the :ref"
 ":`ansible-vault encrypt <ansible_vault_encrypt>` command.  This command "
 "can operate on multiple files at once:"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:93
+#: ../../rst/user_guide/vault.rst:153
+msgid ""
+"To encrypt existing files with the 'project' ID and be prompted for the "
+"password:"
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:161
+msgid ""
+"It is technically possible to separately encrypt files or strings with "
+"the *same* vault ID but *different* passwords, if different password "
+"files or prompted passwords are provided each time. This could be "
+"desirable if you use vault IDs as references to classes of passwords "
+"(rather than a single password) and you always know which specific "
+"password or file to use in context. However this may be an unnecessarily "
+"complex use-case. If two files are encrypted with the same vault ID but "
+"different passwords by accident, you can use the :ref:`rekey "
+"<rekeying_files>` command to fix the issue."
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:169
 msgid "Decrypting Encrypted Files"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:95
+#: ../../rst/user_guide/vault.rst:171
 msgid ""
 "If you have existing files that you no longer want to keep encrypted, you"
 " can permanently decrypt them by running the :ref:`ansible-vault decrypt "
@@ -168,226 +275,255 @@ msgid ""
 "edit <ansible_vault_edit>` instead:"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:107
+#: ../../rst/user_guide/vault.rst:183
 msgid "Viewing Encrypted Files"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:109
+#: ../../rst/user_guide/vault.rst:185
 msgid ""
 "If you want to view the contents of an encrypted file without editing it,"
 " you can use the :ref:`ansible-vault view <ansible_vault_view>` command:"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:119
+#: ../../rst/user_guide/vault.rst:195
 msgid "Use encrypt_string to create encrypted variables to embed in yaml"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:121
+#: ../../rst/user_guide/vault.rst:197
 msgid ""
 "The :ref:`ansible-vault encrypt_string <ansible_vault_encrypt_string>` "
 "command will encrypt and format a provided string into a format that can "
 "be included in :ref:`ansible-playbook` YAML files."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:124
+#: ../../rst/user_guide/vault.rst:200
 msgid "To encrypt a string provided as a cli arg:"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:130 ../../rst/user_guide/vault.rst:146
-#: ../../rst/user_guide/vault.rst:162 ../../rst/user_guide/vault.rst:186
+#: ../../rst/user_guide/vault.rst:206 ../../rst/user_guide/vault.rst:222
+#: ../../rst/user_guide/vault.rst:242 ../../rst/user_guide/vault.rst:270
 msgid "Result::"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:140
+#: ../../rst/user_guide/vault.rst:216
 msgid "To use a vault-id label for 'dev' vault-id:"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:156
+#: ../../rst/user_guide/vault.rst:232
 msgid "To encrypt a string read from stdin and name it 'db_password':"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:173
+#: ../../rst/user_guide/vault.rst:240
+msgid ""
+"This method leaves the string in your shell history. Do not use it "
+"outside of testing."
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:253
 msgid ""
 "To be prompted for a string to encrypt, encrypt it, and give it the name "
 "'new_user_password':"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:180
+#: ../../rst/user_guide/vault.rst:260
 msgid "Output::"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:184
+#: ../../rst/user_guide/vault.rst:264
 msgid "User enters 'hunter2' and hits ctrl-d."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:196
+#: ../../rst/user_guide/vault.rst:268
+msgid ""
+"Do not press Enter after supplying the string. That will add a newline to"
+" the encrypted value."
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:280
 msgid "See also :ref:`single_encrypted_variable`"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:202
-msgid "Vault Ids and Multiple Vault Passwords"
-msgstr ""
-
-#: ../../rst/user_guide/vault.rst:204
-msgid "*Available since Ansible 2.4*"
-msgstr ""
-
-#: ../../rst/user_guide/vault.rst:206
+#: ../../rst/user_guide/vault.rst:282
 msgid ""
-"A vault id is an identifier for one or more vault secrets. Since Ansible "
-"2.4, Ansible supports multiple vault passwords. Vault ids is a way to "
-"provide a label for a particular vault password."
+"After you added the encrypted value to a var file (vars.yml), you can see"
+" the original value using the debug module."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:210
-msgid "Vault encrypted content can specify which vault id it was encrypted with."
-msgstr ""
-
-#: ../../rst/user_guide/vault.rst:212
-msgid ""
-"Prior to Ansible 2.4, only one vault password could be used at a time. "
-"Post Ansible 2.4, multiple vault passwords can be used each time Ansible "
-"runs, so any vault files or vars that needed to be decrypted all had to "
-"use the same password."
-msgstr ""
-
-#: ../../rst/user_guide/vault.rst:216
-msgid ""
-"Since Ansible 2.4, vault files or vars that are encrypted with different "
-"passwords can be used at the same time."
-msgstr ""
-
-#: ../../rst/user_guide/vault.rst:219
-msgid ""
-"For example, a playbook can now include a vars file encrypted with a "
-"'dev' vault id and a 'prod' vault id."
-msgstr ""
-
-#: ../../rst/user_guide/vault.rst:225
+#: ../../rst/user_guide/vault.rst:297
 msgid "Providing Vault Passwords"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:227
+#: ../../rst/user_guide/vault.rst:299
 msgid ""
-"Since Ansible 2.4, the recommended way to provide a vault password from "
-"the cli is to use the :option:`--vault-id <ansible-playbook --vault-id>` "
-"cli option."
+"When all data is encrypted using a single password the :option:`--ask-"
+"vault-pass <ansible-playbook --ask-vault-pass>` or :option:`--vault-"
+"password-file <ansible-playbook --vault-password-file>` cli options "
+"should be used."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:230
+#: ../../rst/user_guide/vault.rst:302
 msgid ""
 "For example, to use a password store in the text file :file:`/path/to/my"
 "/vault-password-file`:"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:236
+#: ../../rst/user_guide/vault.rst:308
 msgid "To prompt for a password:"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:242
+#: ../../rst/user_guide/vault.rst:314
 msgid ""
 "To get the password from a vault password executable script :file:`my-"
 "vault-password.py`:"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:248
+#: ../../rst/user_guide/vault.rst:320
 msgid ""
-"The value for :option:`--vault-id <ansible-playbook --vault-id>` can "
-"specify the type of vault id (prompt, a file path, etc) and a label for "
-"the vault id ('dev', 'prod', 'cloud', etc)"
+"The config option :ref:`DEFAULT_VAULT_PASSWORD_FILE` can be used to "
+"specify a vault password file so that the :option:`--vault-password-file "
+"<ansible-playbook --vault-password-file>` cli option does not have to be "
+"specified every time."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:251
+#: ../../rst/user_guide/vault.rst:328
+msgid "Labelling Vaults"
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:330
+msgid ""
+"Since Ansible 2.4 the :option:`--vault-id <ansible-playbook --vault-id>` "
+"can be used to indicate which vault ID ('dev', 'prod', 'cloud', etc) a "
+"password is for as well as how to source the password (prompt, a file "
+"path, etc)."
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:333
+msgid ""
+"By default the vault-id label is only a hint, any values encrypted with "
+"the password will be decrypted. The config option "
+":ref:`DEFAULT_VAULT_ID_MATCH` can be set to require the vault id to match"
+" the vault ID used when the value was encrypted. This can reduce errors "
+"when different values are encrypted with different passwords."
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:338
 msgid ""
 "For example, to use a password file :file:`dev-password` for the vault-id"
 " 'dev':"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:257
-msgid "To prompt for the 'dev' vault id:"
+#: ../../rst/user_guide/vault.rst:344
+msgid "To prompt for the password for the 'dev' vault ID:"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:263
-msgid "*Prior to Ansible 2.4*"
-msgstr ""
-
-#: ../../rst/user_guide/vault.rst:265
+#: ../../rst/user_guide/vault.rst:350
 msgid ""
-"To be prompted for a vault password, use the :option:`--ask-vault-pass "
-"<ansible-playbook --vault-id>` cli option:"
+"To get the 'dev' vault ID password from an executable script :file:`my-"
+"vault-password.py`:"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:271
+#: ../../rst/user_guide/vault.rst:357
 msgid ""
-"To specify a vault password in a text file 'dev-password', use the "
-":option:`--vault-password-file <ansible-playbook --vault-password-file>` "
-"option:"
+"The config option :ref:`DEFAULT_VAULT_IDENTITY_LIST` can be used to "
+"specify a default vault ID and password source so that the :option"
+":`--vault-id <ansible-playbook --vault-id>` cli option does not have to "
+"be specified every time."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:277
+#: ../../rst/user_guide/vault.rst:361
 msgid ""
-"There is a config option (:ref:`DEFAULT_VAULT_PASSWORD_FILE`) to specify "
-"a vault password file to use without requiring the :option:`--vault-"
-"password-file <ansible-playbook --vault-password-file>` cli option."
+"The :option:`--vault-id <ansible-playbook --vault-id>` option can also be"
+" used without specifying a vault-id. This behaviour is equivalent to "
+":option:`--ask-vault-pass <ansible-playbook --ask-vault-pass>` or :option"
+":`--vault-password-file <ansible-playbook --vault-password-file>` so is "
+"rarely used."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:282
-msgid "Multiple vault passwords"
+#: ../../rst/user_guide/vault.rst:365
+msgid "For example, to use a password file :file:`dev-password`:"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:284
+#: ../../rst/user_guide/vault.rst:371
+msgid "To prompt for the password:"
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:377
 msgid ""
-"Since Ansible 2.4 and later support using multiple vault passwords, "
-":option:`--vault-id <ansible-playbook --vault-id>` can be provided "
-"multiple times."
+"To get the password from an executable script :file:`my-vault-"
+"password.py`:"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:287
+#: ../../rst/user_guide/vault.rst:384
 msgid ""
-"If multiple vault passwords are provided, by default Ansible will attempt"
-" to decrypt vault content by trying each vault secret in the order they "
-"were provided on the command line."
+"Prior to Ansible 2.4, the :option:`--vault-id <ansible-playbook --vault-"
+"id>` option is not supported so :option:`--ask-vault-pass <ansible-"
+"playbook --ask-vault-pass>` or :option:`--vault-password-file <ansible-"
+"playbook --vault-password-file>` must be used."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:290
+#: ../../rst/user_guide/vault.rst:390
+msgid "Multiple Vault Passwords"
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:392
+msgid ""
+"Ansible 2.4 and later support using multiple vault passwords, :option"
+":`--vault-id <ansible-playbook --vault-id>` can be provided multiple "
+"times."
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:395
 msgid ""
 "For example, to use a 'dev' password read from a file and to be prompted "
 "for the 'prod' password:"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:296
+#: ../../rst/user_guide/vault.rst:401
+msgid ""
+"By default the vault ID labels (dev, prod etc.) are only hints, Ansible "
+"will attempt to decrypt vault content with each password. The password "
+"with the same label as the encrypted data will be tried first, after that"
+" each vault secret will be tried in the order they were provided on the "
+"command line."
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:405
+msgid ""
+"Where the encrypted data doesn't have a label, or the label doesn't match"
+" any of the provided labels, the passwords will be tried in the order "
+"they are specified."
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:408
 msgid ""
 "In the above case, the 'dev' password will be tried first, then the "
-"'prod' password for cases where Ansible doesn't know which vault id is "
+"'prod' password for cases where Ansible doesn't know which vault ID is "
 "used to encrypt something."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:299
+#: ../../rst/user_guide/vault.rst:411
 msgid ""
-"If the vault content was encrypted using a :option:`--vault-id <ansible-"
-"vault --vault-id>` option, then the label of the vault id is stored with "
-"the vault content. When Ansible knows the right vault-id, it will try the"
-" matching vault id's secret first before trying the rest of the vault-"
-"ids."
+"To add a vault ID label to the encrypted data use the :option:`--vault-id"
+" <ansible-vault-create --vault-id>` option with a label when encrypting "
+"the data."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:303
+#: ../../rst/user_guide/vault.rst:414
 msgid ""
-"There is a config option (:ref:`DEFAULT_VAULT_ID_MATCH` ) to force the "
-"vault content's vault id label to match with one of the provided vault "
-"ids. But the default is to try the matching id first, then try the other "
-"vault ids in order."
+"The :ref:`DEFAULT_VAULT_ID_MATCH` config option can be set so that "
+"Ansible will only use the password with the same label as the encrypted "
+"data. This is more efficient and may be more predictable when multiple "
+"passwords are used."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:307
+#: ../../rst/user_guide/vault.rst:418
 msgid ""
-"There is also a config option (:ref:`DEFAULT_VAULT_IDENTITY_LIST`) to "
-"specify a default list of vault ids to use. For example, instead of "
-"requiring the cli option on every use, the "
-"(:ref:`DEFAULT_VAULT_IDENTITY_LIST`) config option can be used:"
+"The config option :ref:`DEFAULT_VAULT_IDENTITY_LIST` can have multiple "
+"values which is equivalent to multiple :option:`--vault-id <ansible-"
+"playbook --vault-id>` cli options."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:314
+#: ../../rst/user_guide/vault.rst:420
 msgid ""
 "The :option:`--vault-id <ansible-playbook --vault-id>` can be used in "
 "lieu of the :option:`--vault-password-file <ansible-playbook --vault-"
@@ -395,7 +531,7 @@ msgid ""
 "vault-pass>` options, or it can be used in combination with them."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:317
+#: ../../rst/user_guide/vault.rst:423
 msgid ""
 "When using :ref:`ansible-vault` commands that encrypt content (:ref"
 ":`ansible-vault encrypt <ansible_vault_encrypt>`, :ref:`ansible-vault "
@@ -403,60 +539,92 @@ msgid ""
 "can be used."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:323
-msgid ""
-"Prior to Ansible 2.4, only one vault password could be used in each "
-"Ansible run. The :option:`--vault-id <ansible-playbook --vault-id>` "
-"option is not support prior to Ansible 2.4."
+#: ../../rst/user_guide/vault.rst:430
+msgid "Vault Password Client Scripts"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:330
+#: ../../rst/user_guide/vault.rst:432
+msgid ""
+"When implementing a script to obtain a vault password it may be "
+"convenient to know which vault ID label was requested. For example a "
+"script loading passwords from a secret manager may want to use the vault "
+"ID label to pick either the 'dev' or 'prod' password."
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:436
+msgid ""
+"Since Ansible 2.5 this is supported through the use of Client Scripts. A "
+"Client Script is an executable script with a name ending in ``-client``. "
+"Client Scripts are used to obtain vault passwords in the same way as any "
+"other executable script. For example:"
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:444
+msgid ""
+"The difference is in the implementation of the script. Client Scripts are"
+" executed with a ``--vault-id`` option so they know which vault ID label "
+"was requested. So the above Ansible execution results in the below "
+"execution of the Client Script:"
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:452
+msgid ""
+":file:`contrib/vault/vault-keyring-client.py` is an example of Client "
+"Script that loads passwords from the system keyring."
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:459
 msgid "Speeding Up Vault Operations"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:332
+#: ../../rst/user_guide/vault.rst:461
 msgid ""
-"By default, Ansible uses PyCrypto to encrypt and decrypt vault files. If "
-"you have many encrypted files, decrypting them at startup may cause a "
+"If you have many encrypted files, decrypting them at startup may cause a "
 "perceptible delay. To speed this up, install the cryptography package:"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:342
+#: ../../rst/user_guide/vault.rst:471
 msgid "Vault Format"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:344
+#: ../../rst/user_guide/vault.rst:473
 msgid "A vault encrypted file is a UTF-8 encoded txt file."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:346
+#: ../../rst/user_guide/vault.rst:475
 msgid "The file format includes a newline terminated header."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:348
+#: ../../rst/user_guide/vault.rst:477
 msgid "For example::"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:353
-msgid ""
-"The header contains the vault format id, the vault format version, and a "
-"cipher id, separated by semi-colons ';'"
+#: ../../rst/user_guide/vault.rst:481
+msgid "or::"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:355
+#: ../../rst/user_guide/vault.rst:485
+msgid ""
+"The header contains the vault format id, the vault format version, the "
+"vault cipher, and a vault-id label (with format version 1.2), separated "
+"by semi-colons ';'"
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:487
 msgid ""
 "The first field ``$ANSIBLE_VAULT`` is the format id. Currently "
 "``$ANSIBLE_VAULT`` is the only valid file format id. This is used to "
 "identify files that are vault encrypted (via vault.is_encrypted_file())."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:357
+#: ../../rst/user_guide/vault.rst:489
 msgid ""
-"The second field (`1.1`) is the vault format version. All supported "
-"versions of ansible will currently default to '1.1'."
+"The second field (``1.X``) is the vault format version. All supported "
+"versions of ansible will currently default to '1.1' or '1.2' if a labeled"
+" vault-id is supplied."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:359
+#: ../../rst/user_guide/vault.rst:491
 msgid ""
 "The '1.0' format is supported for reading only (and will be converted "
 "automatically to the '1.1' format on write). The format version is "
@@ -464,14 +632,21 @@ msgid ""
 "currently 'compared')."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:361
+#: ../../rst/user_guide/vault.rst:493
 msgid ""
 "The third field (``AES256``) identifies the cipher algorithm used to "
 "encrypt the data. Currently, the only supported cipher is 'AES256'. "
 "[vault format 1.0 used 'AES', but current code always uses 'AES256']"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:363
+#: ../../rst/user_guide/vault.rst:495
+msgid ""
+"The fourth field (``vault-id-label``) identifies the vault-id label used "
+"to encrypt the data. For example using a vault-id of ``dev@prompt`` "
+"results in a vault-id-label of 'dev' being used."
+msgstr ""
+
+#: ../../rst/user_guide/vault.rst:497
 msgid ""
 "Note: In the future, the header could change. Anything after the vault id"
 " and version can be considered to depend on the vault format version. "
@@ -479,121 +654,363 @@ msgid ""
 "after that."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:365
+#: ../../rst/user_guide/vault.rst:499
 msgid ""
 "The rest of the content of the file is the 'vaulttext'. The vaulttext is "
 "a text armored version of the encrypted ciphertext. Each line will be 80 "
 "characters wide, except for the last line which may be shorter."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:369
-msgid "Vault Payload Format 1.1"
+#: ../../rst/user_guide/vault.rst:503
+msgid "Vault Payload Format 1.1 - 1.2"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:371
+#: ../../rst/user_guide/vault.rst:505
 msgid ""
 "The vaulttext is a concatenation of the ciphertext and a SHA256 digest "
 "with the result 'hexlifyied'."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:373
+#: ../../rst/user_guide/vault.rst:507
 msgid ""
 "'hexlify' refers to the ``hexlify()`` method of the Python Standard "
 "Library's `binascii <https://docs.python.org/3/library/binascii.html>`_ "
 "module."
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:375
+#: ../../rst/user_guide/vault.rst:509
 msgid "hexlify()'ed result of:"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:377
+#: ../../rst/user_guide/vault.rst:511
 msgid "hexlify()'ed string of the salt, followed by a newline (``0x0a``)"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:378
+#: ../../rst/user_guide/vault.rst:512
 msgid ""
 "hexlify()'ed string of the crypted HMAC, followed by a newline. The HMAC "
 "is:"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:380
+#: ../../rst/user_guide/vault.rst:514
 msgid "a `RFC2104 <https://www.ietf.org/rfc/rfc2104.txt>`_ style HMAC"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:382
+#: ../../rst/user_guide/vault.rst:516
 msgid "inputs are:"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:384
+#: ../../rst/user_guide/vault.rst:518
 msgid "The AES256 encrypted ciphertext"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:385
+#: ../../rst/user_guide/vault.rst:519
 msgid ""
 "A PBKDF2 key. This key, the cipher key, and the cipher IV are generated "
 "from:"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:387
+#: ../../rst/user_guide/vault.rst:521
 msgid "the salt, in bytes"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:388
+#: ../../rst/user_guide/vault.rst:522
 msgid "10000 iterations"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:389
+#: ../../rst/user_guide/vault.rst:523
 msgid "SHA256() algorithm"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:390
+#: ../../rst/user_guide/vault.rst:524
 msgid "the first 32 bytes are the cipher key"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:391
+#: ../../rst/user_guide/vault.rst:525
 msgid "the second 32 bytes are the HMAC key"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:392
+#: ../../rst/user_guide/vault.rst:526
 msgid "remaining 16 bytes are the cipher IV"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:394
+#: ../../rst/user_guide/vault.rst:528
 msgid "hexlify()'ed string of the ciphertext. The ciphertext is:"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:396
+#: ../../rst/user_guide/vault.rst:530
 msgid "AES256 encrypted data. The data is encrypted using:"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:398
+#: ../../rst/user_guide/vault.rst:532
 msgid "AES-CTR stream cipher"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:399
+#: ../../rst/user_guide/vault.rst:533
 msgid "cipher key"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:400
+#: ../../rst/user_guide/vault.rst:534
 msgid "IV"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:401
+#: ../../rst/user_guide/vault.rst:535
 msgid "a 128 bit counter block seeded from an integer IV"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:402
+#: ../../rst/user_guide/vault.rst:536
 msgid "the plaintext"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:404
+#: ../../rst/user_guide/vault.rst:538
 msgid "the original plaintext"
 msgstr ""
 
-#: ../../rst/user_guide/vault.rst:405
+#: ../../rst/user_guide/vault.rst:539
 msgid ""
 "padding up to the AES256 blocksize. (The data used for padding is based "
 "on `RFC5652 <https://tools.ietf.org/html/rfc5652#section-6.3>`_)"
 msgstr ""
+
+#~ msgid ""
+#~ "To enable this feature, a command "
+#~ "line tool - :ref:`ansible-vault` - "
+#~ "is used to edit files, and a "
+#~ "command line flag (:option:`--ask-vault-"
+#~ "pass <ansible-playbook --ask-vault-"
+#~ "pass>` or :option:`--vault-password-file "
+#~ "<ansible-playbook --vault-password-file>`) "
+#~ "is used. Alternately, you may specify"
+#~ " the location of a password file "
+#~ "or command Ansible to always prompt "
+#~ "for the password in your ansible.cfg "
+#~ "file. These options require no command"
+#~ " line flag usage."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Ansible Vault can encrypt any structured"
+#~ " data file used by Ansible.  This "
+#~ "can include \"group_vars/\" or \"host_vars/\""
+#~ " inventory variables, variables loaded by"
+#~ " \"include_vars\" or \"vars_files\", or "
+#~ "variable files passed on the ansible-"
+#~ "playbook command line with ``-e "
+#~ "@file.yml`` or ``-e @file.json``.  Role "
+#~ "variables and defaults are also "
+#~ "included."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "As of version 2.3, Ansible supports "
+#~ "encrypting single values inside a YAML"
+#~ " file, using the `!vault` tag to "
+#~ "let YAML and Ansible know it uses"
+#~ " special processing. This feature is "
+#~ "covered in more details below."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "First you will be prompted for a"
+#~ " password.  The password used with "
+#~ "vault currently must be the same "
+#~ "for all files you wish to use "
+#~ "together at the same time."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "After providing a password, the tool "
+#~ "will launch whatever editor you have "
+#~ "defined with $EDITOR, and defaults to"
+#~ " vi (before 2.1 the default was "
+#~ "vim).  Once you are done with the"
+#~ " editor session, the file will be "
+#~ "saved as encrypted data."
+#~ msgstr ""
+
+#~ msgid "Vault Ids and Multiple Vault Passwords"
+#~ msgstr ""
+
+#~ msgid "*Available since Ansible 2.4*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A vault id is an identifier for"
+#~ " one or more vault secrets. Since "
+#~ "Ansible 2.4, Ansible supports multiple "
+#~ "vault passwords. Vault ids is a "
+#~ "way to provide a label for a "
+#~ "particular vault password."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Vault encrypted content can specify "
+#~ "which vault id it was encrypted "
+#~ "with."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Prior to Ansible 2.4, only one "
+#~ "vault password could be used at a"
+#~ " time. Post Ansible 2.4, multiple "
+#~ "vault passwords can be used each "
+#~ "time Ansible runs, so any vault "
+#~ "files or vars that needed to be"
+#~ " decrypted all had to use the "
+#~ "same password."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Since Ansible 2.4, vault files or "
+#~ "vars that are encrypted with different"
+#~ " passwords can be used at the "
+#~ "same time."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For example, a playbook can now "
+#~ "include a vars file encrypted with "
+#~ "a 'dev' vault id and a 'prod' "
+#~ "vault id."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Since Ansible 2.4, the recommended way"
+#~ " to provide a vault password from "
+#~ "the cli is to use the :option"
+#~ ":`--vault-id <ansible-playbook --vault-id>`"
+#~ " cli option."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The value for :option:`--vault-id "
+#~ "<ansible-playbook --vault-id>` can specify"
+#~ " the type of vault id (prompt, "
+#~ "a file path, etc) and a label "
+#~ "for the vault id ('dev', 'prod', "
+#~ "'cloud', etc)"
+#~ msgstr ""
+
+#~ msgid "To prompt for the 'dev' vault id:"
+#~ msgstr ""
+
+#~ msgid "*Prior to Ansible 2.4*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To be prompted for a vault "
+#~ "password, use the :option:`--ask-vault-"
+#~ "pass <ansible-playbook --vault-id>` cli"
+#~ " option:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To specify a vault password in a"
+#~ " text file 'dev-password', use the"
+#~ " :option:`--vault-password-file <ansible-"
+#~ "playbook --vault-password-file>` option:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "There is a config option "
+#~ "(:ref:`DEFAULT_VAULT_PASSWORD_FILE`) to specify a"
+#~ " vault password file to use without"
+#~ " requiring the :option:`--vault-password-"
+#~ "file <ansible-playbook --vault-password-"
+#~ "file>` cli option."
+#~ msgstr ""
+
+#~ msgid "Multiple vault passwords"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Since Ansible 2.4 and later support "
+#~ "using multiple vault passwords, :option"
+#~ ":`--vault-id <ansible-playbook --vault-id>`"
+#~ " can be provided multiple times."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If multiple vault passwords are "
+#~ "provided, by default Ansible will "
+#~ "attempt to decrypt vault content by "
+#~ "trying each vault secret in the "
+#~ "order they were provided on the "
+#~ "command line."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In the above case, the 'dev' "
+#~ "password will be tried first, then "
+#~ "the 'prod' password for cases where "
+#~ "Ansible doesn't know which vault id "
+#~ "is used to encrypt something."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the vault content was encrypted "
+#~ "using a :option:`--vault-id <ansible-"
+#~ "vault --vault-id>` option, then the "
+#~ "label of the vault id is stored"
+#~ " with the vault content. When Ansible"
+#~ " knows the right vault-id, it "
+#~ "will try the matching vault id's "
+#~ "secret first before trying the rest "
+#~ "of the vault-ids."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "There is a config option "
+#~ "(:ref:`DEFAULT_VAULT_ID_MATCH` ) to force the"
+#~ " vault content's vault id label to"
+#~ " match with one of the provided "
+#~ "vault ids. But the default is to"
+#~ " try the matching id first, then "
+#~ "try the other vault ids in order."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "There is also a config option "
+#~ "(:ref:`DEFAULT_VAULT_IDENTITY_LIST`) to specify a"
+#~ " default list of vault ids to "
+#~ "use. For example, instead of requiring"
+#~ " the cli option on every use, "
+#~ "the (:ref:`DEFAULT_VAULT_IDENTITY_LIST`) config "
+#~ "option can be used:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Prior to Ansible 2.4, only one "
+#~ "vault password could be used in "
+#~ "each Ansible run. The :option:`--vault-"
+#~ "id <ansible-playbook --vault-id>` option"
+#~ " is not support prior to Ansible "
+#~ "2.4."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "By default, Ansible uses PyCrypto to "
+#~ "encrypt and decrypt vault files. If "
+#~ "you have many encrypted files, "
+#~ "decrypting them at startup may cause "
+#~ "a perceptible delay. To speed this "
+#~ "up, install the cryptography package:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The header contains the vault format "
+#~ "id, the vault format version, and "
+#~ "a cipher id, separated by semi-"
+#~ "colons ';'"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The second field (`1.1`) is the "
+#~ "vault format version. All supported "
+#~ "versions of ansible will currently "
+#~ "default to '1.1'."
+#~ msgstr ""
+
+#~ msgid "Vault Payload Format 1.1"
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/modules/bigip_command_module.rst:9
-msgid "bigip_command -- Run arbitrary command on F5 devices"
+msgid "bigip_command -- Run TMSH and BASH commands on F5 devices"
 msgstr ""
 
 #: ../../rst/modules/bigip_command_module.rst:19
@@ -28,10 +28,10 @@ msgstr ""
 
 #: ../../rst/modules/bigip_command_module.rst:20
 msgid ""
-"Sends an arbitrary command to an BIG-IP node and returns the results read"
-" from the device. This module includes an argument that will cause the "
-"module to wait for a specific condition before returning or timing out if"
-" the condition is not met."
+"Sends a TMSH or BASH command to an BIG-IP node and returns the results "
+"read from the device. This module includes an argument that will cause "
+"the module to wait for a specific condition before returning or timing "
+"out if the condition is not met."
 msgstr ""
 
 #: ../../rst/modules/bigip_command_module.rst:21
@@ -51,21 +51,21 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/bigip_command_module.rst:384
+#: ../../rst/modules/bigip_command_module.rst:321
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/bigip_command_module.rst:387
+#: ../../rst/modules/bigip_command_module.rst:324
 msgid ""
 "For more information on using Ansible to manage F5 Networks devices see "
 "https://www.ansible.com/integrations/networks/f5."
 msgstr ""
 
-#: ../../rst/modules/bigip_command_module.rst:388
+#: ../../rst/modules/bigip_command_module.rst:325
 msgid "Requires BIG-IP software version >= 12."
 msgstr ""
 
-#: ../../rst/modules/bigip_command_module.rst:389
+#: ../../rst/modules/bigip_command_module.rst:326
 msgid ""
 "The F5 modules only manipulate the running configuration of the F5 "
 "product. To ensure that BIG-IP specific configuration persists to disk, "
@@ -75,54 +75,76 @@ msgid ""
 "your running configuration."
 msgstr ""
 
-#: ../../rst/modules/bigip_command_module.rst:394
+#: ../../rst/modules/bigip_command_module.rst:331
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/bigip_command_module.rst:471
+#: ../../rst/modules/bigip_command_module.rst:408
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/bigip_command_module.rst:472
+#: ../../rst/modules/bigip_command_module.rst:409
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/bigip_command_module.rst:539
+#: ../../rst/modules/bigip_command_module.rst:476
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/bigip_command_module.rst:544
+#: ../../rst/modules/bigip_command_module.rst:481
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/bigip_command_module.rst:547
+#: ../../rst/modules/bigip_command_module.rst:484
 msgid ""
 "This module is :ref:`maintained by an Ansible Partner <modules_support>`."
 " *[certified]*"
 msgstr ""
 
-#: ../../rst/modules/bigip_command_module.rst:554
+#: ../../rst/modules/bigip_command_module.rst:491
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/bigip_command_module.rst:556
+#: ../../rst/modules/bigip_command_module.rst:493
 msgid "Tim Rupp (@caphrim007)"
 msgstr ""
 
-#: ../../rst/modules/bigip_command_module.rst:557
+#: ../../rst/modules/bigip_command_module.rst:494
 msgid "Wojciech Wypior (@wojtek0806)"
 msgstr ""
 
-#: ../../rst/modules/bigip_command_module.rst:561
+#: ../../rst/modules/bigip_command_module.rst:498
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_command.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_command.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "bigip_command -- Run arbitrary command on F5 devices"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Sends an arbitrary command to an "
+#~ "BIG-IP node and returns the results"
+#~ " read from the device. This module"
+#~ " includes an argument that will cause"
+#~ " the module to wait for a "
+#~ "specific condition before returning or "
+#~ "timing out if the condition is not"
+#~ " met."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_command.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

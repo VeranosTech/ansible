@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,70 +44,87 @@ msgid "Notes"
 msgstr ""
 
 #: ../../rst/modules/vyos_user_module.rst:266
-msgid "Tested against VYOS 1.1.7"
+msgid "Tested against VyOS 1.1.8 (helium)."
 msgstr ""
 
 #: ../../rst/modules/vyos_user_module.rst:267
+msgid ""
+"This module works with connection ``network_cli``. See `the VyOS OS "
+"Platform Options <../network/user_guide/platform_vyos.html>`_."
+msgstr ""
+
+#: ../../rst/modules/vyos_user_module.rst:268
 msgid ""
 "For more information on using Ansible to manage network devices see the "
 ":ref:`Ansible Network Guide <network_guide>`"
 msgstr ""
 
-#: ../../rst/modules/vyos_user_module.rst:272
+#: ../../rst/modules/vyos_user_module.rst:273
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/vyos_user_module.rst:303
+#: ../../rst/modules/vyos_user_module.rst:304
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/vyos_user_module.rst:304
+#: ../../rst/modules/vyos_user_module.rst:305
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/vyos_user_module.rst:332
+#: ../../rst/modules/vyos_user_module.rst:333
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/vyos_user_module.rst:337
+#: ../../rst/modules/vyos_user_module.rst:338
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/vyos_user_module.rst:340
+#: ../../rst/modules/vyos_user_module.rst:341
 msgid ""
 "This module is :ref:`maintained by the Ansible Network Team "
 "<modules_support>`. *[network]*"
 msgstr ""
 
-#: ../../rst/modules/vyos_user_module.rst:343
+#: ../../rst/modules/vyos_user_module.rst:344
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/vyos_user_module.rst:345
+#: ../../rst/modules/vyos_user_module.rst:346
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/vyos_user_module.rst:351
+#: ../../rst/modules/vyos_user_module.rst:352
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/vyos_user_module.rst:353
+#: ../../rst/modules/vyos_user_module.rst:354
 msgid "Trishna Guha (@trishnaguha)"
 msgstr ""
 
-#: ../../rst/modules/vyos_user_module.rst:357
+#: ../../rst/modules/vyos_user_module.rst:358
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/vyos/vyos_user.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/vyos/vyos_user.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "Tested against VYOS 1.1.7"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/vyos/vyos_user.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

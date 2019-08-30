@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,91 +27,112 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/selinux_module.rst:19
-msgid ""
-"Configures the SELinux mode and policy. A reboot may be required after "
-"usage. Ansible will not issue this reboot but will let you know when it "
-"is required."
+msgid "Configures the SELinux mode and policy."
 msgstr ""
 
-#: ../../rst/modules/selinux_module.rst:24
+#: ../../rst/modules/selinux_module.rst:20
+msgid "A reboot may be required after usage."
+msgstr ""
+
+#: ../../rst/modules/selinux_module.rst:21
+msgid ""
+"Ansible will not issue this reboot but will let you know when it is "
+"required."
+msgstr ""
+
+#: ../../rst/modules/selinux_module.rst:26
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/selinux_module.rst:25
+#: ../../rst/modules/selinux_module.rst:27
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/selinux_module.rst:27
+#: ../../rst/modules/selinux_module.rst:29
 msgid "libselinux-python"
 msgstr ""
 
-#: ../../rst/modules/selinux_module.rst:31
+#: ../../rst/modules/selinux_module.rst:33
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/selinux_module.rst:92
-msgid "Notes"
-msgstr ""
-
-#: ../../rst/modules/selinux_module.rst:95
-msgid "Not tested on any debian based system"
-msgstr ""
-
-#: ../../rst/modules/selinux_module.rst:100
+#: ../../rst/modules/selinux_module.rst:96
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/selinux_module.rst:123
+#: ../../rst/modules/selinux_module.rst:119
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/selinux_module.rst:124
+#: ../../rst/modules/selinux_module.rst:120
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/selinux_module.rst:204
+#: ../../rst/modules/selinux_module.rst:200
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/selinux_module.rst:209
+#: ../../rst/modules/selinux_module.rst:205
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/selinux_module.rst:212
+#: ../../rst/modules/selinux_module.rst:208
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/selinux_module.rst:215
+#: ../../rst/modules/selinux_module.rst:211
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/selinux_module.rst:217
+#: ../../rst/modules/selinux_module.rst:213
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/selinux_module.rst:223
+#: ../../rst/modules/selinux_module.rst:219
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/selinux_module.rst:225
+#: ../../rst/modules/selinux_module.rst:221
 msgid "Derek Carter (@goozbach) <goozbach@friocorte.com>"
 msgstr ""
 
-#: ../../rst/modules/selinux_module.rst:229
+#: ../../rst/modules/selinux_module.rst:225
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/selinux.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/selinux.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "Configures the SELinux mode and policy."
+#~ " A reboot may be required after "
+#~ "usage. Ansible will not issue this "
+#~ "reboot but will let you know when"
+#~ " it is required."
+#~ msgstr ""
+
+#~ msgid "Notes"
+#~ msgstr ""
+
+#~ msgid "Not tested on any debian based system"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/selinux.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

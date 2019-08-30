@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,50 +34,58 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/ipa_dnsrecord_module.rst:267
+#: ../../rst/modules/ipa_dnsrecord_module.rst:277
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/ipa_dnsrecord_module.rst:328
+#: ../../rst/modules/ipa_dnsrecord_module.rst:358
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/ipa_dnsrecord_module.rst:329
+#: ../../rst/modules/ipa_dnsrecord_module.rst:359
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/ipa_dnsrecord_module.rst:355
+#: ../../rst/modules/ipa_dnsrecord_module.rst:385
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/ipa_dnsrecord_module.rst:360
+#: ../../rst/modules/ipa_dnsrecord_module.rst:390
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/ipa_dnsrecord_module.rst:363
+#: ../../rst/modules/ipa_dnsrecord_module.rst:393
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/ipa_dnsrecord_module.rst:370
+#: ../../rst/modules/ipa_dnsrecord_module.rst:400
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/ipa_dnsrecord_module.rst:372
+#: ../../rst/modules/ipa_dnsrecord_module.rst:402
 msgid "Abhijeet Kasurde (@Akasurde)"
 msgstr ""
 
-#: ../../rst/modules/ipa_dnsrecord_module.rst:376
+#: ../../rst/modules/ipa_dnsrecord_module.rst:406
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/identity/ipa/ipa_dnsrecord.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/identity/ipa/ipa_dnsrecord.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/identity/ipa/ipa_dnsrecord.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

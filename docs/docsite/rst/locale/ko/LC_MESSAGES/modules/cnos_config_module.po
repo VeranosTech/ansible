@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,58 +38,69 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/cnos_config_module.rst:305
+#: ../../rst/modules/cnos_config_module.rst:247
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/cnos_config_module.rst:308
-msgid "Tested against CNOS 10.8.1"
+#: ../../rst/modules/cnos_config_module.rst:250
+msgid "Tested against CNOS 10.9.1"
 msgstr ""
 
-#: ../../rst/modules/cnos_config_module.rst:313
+#: ../../rst/modules/cnos_config_module.rst:255
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/cnos_config_module.rst:340
+#: ../../rst/modules/cnos_config_module.rst:290
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/cnos_config_module.rst:341
+#: ../../rst/modules/cnos_config_module.rst:291
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/cnos_config_module.rst:382
+#: ../../rst/modules/cnos_config_module.rst:332
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/cnos_config_module.rst:387
+#: ../../rst/modules/cnos_config_module.rst:337
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/cnos_config_module.rst:390
+#: ../../rst/modules/cnos_config_module.rst:340
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/cnos_config_module.rst:397
+#: ../../rst/modules/cnos_config_module.rst:347
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/cnos_config_module.rst:399
+#: ../../rst/modules/cnos_config_module.rst:349
 msgid "Anil Kumar Muraleedharan (@amuraleedhar)"
 msgstr ""
 
-#: ../../rst/modules/cnos_config_module.rst:403
+#: ../../rst/modules/cnos_config_module.rst:353
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/cnos/cnos_config.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/cnos/cnos_config.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "Tested against CNOS 10.8.1"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/cnos/cnos_config.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

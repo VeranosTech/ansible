@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,125 +22,133 @@ msgstr ""
 msgid "nxos_vpc -- Manages global VPC configuration"
 msgstr ""
 
-#: ../../rst/modules/nxos_vpc_module.rst:19
+#: ../../rst/modules/nxos_vpc_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/nxos_vpc_module.rst:20
+#: ../../rst/modules/nxos_vpc_module.rst:19
 msgid "Manages global VPC configuration"
 msgstr ""
 
-#: ../../rst/modules/nxos_vpc_module.rst:26
+#: ../../rst/modules/nxos_vpc_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/nxos_vpc_module.rst:394
+#: ../../rst/modules/nxos_vpc_module.rst:439
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/nxos_vpc_module.rst:397
+#: ../../rst/modules/nxos_vpc_module.rst:442
 msgid "Tested against NXOSv 7.3.(0)D1(1) on VIRL"
 msgstr ""
 
-#: ../../rst/modules/nxos_vpc_module.rst:398
+#: ../../rst/modules/nxos_vpc_module.rst:443
 msgid "The feature vpc must be enabled before this module can be used"
 msgstr ""
 
-#: ../../rst/modules/nxos_vpc_module.rst:399
+#: ../../rst/modules/nxos_vpc_module.rst:444
 msgid ""
 "If not using management vrf, vrf must be globally on the device before "
 "using in the pkl config"
 msgstr ""
 
-#: ../../rst/modules/nxos_vpc_module.rst:400
+#: ../../rst/modules/nxos_vpc_module.rst:445
 msgid ""
 "Although source IP isn't required on the command line it is required when"
 " using this module.  The PKL VRF must also be configured prior to using "
 "this module."
 msgstr ""
 
-#: ../../rst/modules/nxos_vpc_module.rst:401
+#: ../../rst/modules/nxos_vpc_module.rst:446
 msgid "Both pkl_src and pkl_dest are needed when changing PKL VRF."
 msgstr ""
 
-#: ../../rst/modules/nxos_vpc_module.rst:402
+#: ../../rst/modules/nxos_vpc_module.rst:447
 msgid ""
 "For information on using CLI and NX-API see the :ref:`NXOS Platform "
 "Options guide <nxos_platform_options>`"
 msgstr ""
 
-#: ../../rst/modules/nxos_vpc_module.rst:403
+#: ../../rst/modules/nxos_vpc_module.rst:448
 msgid ""
 "For more information on using Ansible to manage network devices see the "
 ":ref:`Ansible Network Guide <network_guide>`"
 msgstr ""
 
-#: ../../rst/modules/nxos_vpc_module.rst:404
+#: ../../rst/modules/nxos_vpc_module.rst:449
 msgid ""
 "For more information on using Ansible to manage Cisco devices see the "
 "`Cisco integration page "
 "<https://www.ansible.com/integrations/networks/cisco>`_."
 msgstr ""
 
-#: ../../rst/modules/nxos_vpc_module.rst:409
+#: ../../rst/modules/nxos_vpc_module.rst:454
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/nxos_vpc_module.rst:450
+#: ../../rst/modules/nxos_vpc_module.rst:495
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/nxos_vpc_module.rst:451
+#: ../../rst/modules/nxos_vpc_module.rst:496
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/nxos_vpc_module.rst:479
+#: ../../rst/modules/nxos_vpc_module.rst:524
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/nxos_vpc_module.rst:484
+#: ../../rst/modules/nxos_vpc_module.rst:529
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/nxos_vpc_module.rst:487
+#: ../../rst/modules/nxos_vpc_module.rst:532
 msgid ""
 "This module is :ref:`maintained by the Ansible Network Team "
 "<modules_support>`. *[network]*"
 msgstr ""
 
-#: ../../rst/modules/nxos_vpc_module.rst:490
+#: ../../rst/modules/nxos_vpc_module.rst:535
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/nxos_vpc_module.rst:492
+#: ../../rst/modules/nxos_vpc_module.rst:537
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/nxos_vpc_module.rst:498
+#: ../../rst/modules/nxos_vpc_module.rst:543
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/nxos_vpc_module.rst:500
+#: ../../rst/modules/nxos_vpc_module.rst:545
 msgid "Jason Edelman (@jedelman8)"
 msgstr ""
 
-#: ../../rst/modules/nxos_vpc_module.rst:501
+#: ../../rst/modules/nxos_vpc_module.rst:546
 msgid "Gabriele Gerbino (@GGabriele)"
 msgstr ""
 
-#: ../../rst/modules/nxos_vpc_module.rst:505
+#: ../../rst/modules/nxos_vpc_module.rst:550
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_vpc.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_vpc.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_vpc.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,27 +50,37 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:326
+#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:325
 msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:328
+msgid ""
+"For authentication with Azure you can pass parameters, set environment "
+"variables, use a profile stored in ~/.azure/credentials, or log in before"
+" you run your tasks or playbook with ``az login``."
 msgstr ""
 
 #: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:329
 msgid ""
-"For authentication with Azure you can pass parameters, set environment "
-"variables or use a profile stored in ~/.azure/credentials. Authentication"
-" is possible using a service principal or Active Directory user. To "
-"authenticate via service principal, pass subscription_id, client_id, "
+"Authentication is also possible using a service principal or Active "
+"Directory user."
+msgstr ""
+
+#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:330
+msgid ""
+"To authenticate via service principal, pass subscription_id, client_id, "
 "secret and tenant or set environment variables AZURE_SUBSCRIPTION_ID, "
 "AZURE_CLIENT_ID, AZURE_SECRET and AZURE_TENANT."
 msgstr ""
 
-#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:330
+#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:331
 msgid ""
 "To authenticate via Active Directory user, pass ad_user and password, or "
 "set AZURE_AD_USER and AZURE_PASSWORD in the environment."
 msgstr ""
 
-#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:331
+#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:332
 msgid ""
 "Alternatively, credentials can be stored in ~/.azure/credentials. This is"
 " an ini file containing a [default] section and the following keys: "
@@ -81,49 +91,84 @@ msgid ""
 msgstr ""
 
 #: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:336
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:340
+msgid ""
+"`Sign in with Azure CLI <https://docs.microsoft.com/en-us/cli/azure"
+"/authenticate-azure-cli?view=azure-cli-latest>`_"
+msgstr ""
+
+#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:341
+msgid "How to authenticate using the ``az login`` command."
+msgstr ""
+
+#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:345
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:351
+#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:360
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:352
+#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:361
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:393
+#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:402
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:398
+#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:407
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:401
+#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:410
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:408
+#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:417
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:410
+#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:419
 msgid "Zim Kalinowski (@zikalino)"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:414
+#: ../../rst/modules/azure_rm_postgresqldatabase_module.rst:423
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/azure/azure_rm_postgresqldatabase.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/azure/azure_rm_postgresqldatabase.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "For authentication with Azure you can"
+#~ " pass parameters, set environment variables"
+#~ " or use a profile stored in "
+#~ "~/.azure/credentials. Authentication is possible "
+#~ "using a service principal or Active "
+#~ "Directory user. To authenticate via "
+#~ "service principal, pass subscription_id, "
+#~ "client_id, secret and tenant or set "
+#~ "environment variables AZURE_SUBSCRIPTION_ID, "
+#~ "AZURE_CLIENT_ID, AZURE_SECRET and AZURE_TENANT."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/azure/azure_rm_postgresqldatabase.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

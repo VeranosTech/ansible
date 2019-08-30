@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,21 +34,28 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_member_module.rst:570
+#: ../../rst/modules/bigip_pool_member_module.rst:546
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_member_module.rst:573
+#: ../../rst/modules/bigip_pool_member_module.rst:549
+msgid ""
+"In previous versions of this module, which used the SDK, the ``name`` "
+"parameter would act as ``fqdn`` if ``address`` or ``fqdn`` were not "
+"provided."
+msgstr ""
+
+#: ../../rst/modules/bigip_pool_member_module.rst:550
 msgid ""
 "For more information on using Ansible to manage F5 Networks devices see "
 "https://www.ansible.com/integrations/networks/f5."
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_member_module.rst:574
+#: ../../rst/modules/bigip_pool_member_module.rst:551
 msgid "Requires BIG-IP software version >= 12."
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_member_module.rst:575
+#: ../../rst/modules/bigip_pool_member_module.rst:552
 msgid ""
 "The F5 modules only manipulate the running configuration of the F5 "
 "product. To ensure that BIG-IP specific configuration persists to disk, "
@@ -58,54 +65,62 @@ msgid ""
 "your running configuration."
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_member_module.rst:580
+#: ../../rst/modules/bigip_pool_member_module.rst:557
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_member_module.rst:672
+#: ../../rst/modules/bigip_pool_member_module.rst:712
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_member_module.rst:673
+#: ../../rst/modules/bigip_pool_member_module.rst:713
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_member_module.rst:805
+#: ../../rst/modules/bigip_pool_member_module.rst:858
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_member_module.rst:810
+#: ../../rst/modules/bigip_pool_member_module.rst:863
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_member_module.rst:813
+#: ../../rst/modules/bigip_pool_member_module.rst:866
 msgid ""
 "This module is :ref:`maintained by an Ansible Partner <modules_support>`."
 " *[certified]*"
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_member_module.rst:820
+#: ../../rst/modules/bigip_pool_member_module.rst:873
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_member_module.rst:822
+#: ../../rst/modules/bigip_pool_member_module.rst:875
 msgid "Tim Rupp (@caphrim007)"
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_member_module.rst:823
+#: ../../rst/modules/bigip_pool_member_module.rst:876
 msgid "Wojciech Wypior (@wojtek0806)"
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_member_module.rst:827
+#: ../../rst/modules/bigip_pool_member_module.rst:880
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_pool_member.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_pool_member.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_pool_member.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

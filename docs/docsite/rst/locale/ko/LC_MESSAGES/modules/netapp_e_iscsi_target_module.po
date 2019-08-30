@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,88 +34,96 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_target_module.rst:190
+#: ../../rst/modules/netapp_e_iscsi_target_module.rst:192
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_target_module.rst:193
+#: ../../rst/modules/netapp_e_iscsi_target_module.rst:195
 msgid "Check mode is supported."
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_target_module.rst:194
+#: ../../rst/modules/netapp_e_iscsi_target_module.rst:196
 msgid ""
 "Some of the settings are dependent on the settings applied to the iSCSI "
 "interfaces. These can be configured using :ref:`netapp_e_iscsi_interface "
 "<netapp_e_iscsi_interface_module>`."
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_target_module.rst:195
+#: ../../rst/modules/netapp_e_iscsi_target_module.rst:197
 msgid "This module requires a Web Services API version of >= 1.3."
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_target_module.rst:196
+#: ../../rst/modules/netapp_e_iscsi_target_module.rst:198
 msgid ""
 "The E-Series Ansible modules require either an instance of the Web "
 "Services Proxy (WSP), to be available to manage the storage-system, or an"
 " E-Series storage-system that supports the Embedded Web Services API."
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_target_module.rst:197
+#: ../../rst/modules/netapp_e_iscsi_target_module.rst:199
 msgid ""
 "Embedded Web Services is currently available on the E2800, E5700, EF570, "
 "and newer hardware models."
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_target_module.rst:198
+#: ../../rst/modules/netapp_e_iscsi_target_module.rst:200
 msgid ""
 ":ref:`netapp_e_storage_system <netapp_e_storage_system_module>` may be "
 "utilized for configuring the systems managed by a WSP instance."
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_target_module.rst:203
+#: ../../rst/modules/netapp_e_iscsi_target_module.rst:205
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_target_module.rst:232
+#: ../../rst/modules/netapp_e_iscsi_target_module.rst:234
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_target_module.rst:233
+#: ../../rst/modules/netapp_e_iscsi_target_module.rst:235
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_target_module.rst:287
+#: ../../rst/modules/netapp_e_iscsi_target_module.rst:289
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_target_module.rst:292
+#: ../../rst/modules/netapp_e_iscsi_target_module.rst:294
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_target_module.rst:295
+#: ../../rst/modules/netapp_e_iscsi_target_module.rst:297
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_target_module.rst:302
+#: ../../rst/modules/netapp_e_iscsi_target_module.rst:304
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_target_module.rst:304
+#: ../../rst/modules/netapp_e_iscsi_target_module.rst:306
 msgid "Michael Price (@lmprice)"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_target_module.rst:308
+#: ../../rst/modules/netapp_e_iscsi_target_module.rst:310
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/netapp_e_iscsi_target.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/netapp_e_iscsi_target.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/netapp_e_iscsi_target.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

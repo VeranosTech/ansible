@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,90 +24,108 @@ msgid ""
 "existing line using a back-referenced regular expression"
 msgstr ""
 
-#: ../../rst/modules/win_lineinfile_module.rst:19
+#: ../../rst/modules/win_lineinfile_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/win_lineinfile_module.rst:20
+#: ../../rst/modules/win_lineinfile_module.rst:19
 msgid ""
 "This module will search a file for a line, and ensure that it is present "
 "or absent."
 msgstr ""
 
-#: ../../rst/modules/win_lineinfile_module.rst:21
+#: ../../rst/modules/win_lineinfile_module.rst:20
 msgid ""
 "This is primarily useful when you want to change a single line in a file "
 "only."
 msgstr ""
 
-#: ../../rst/modules/win_lineinfile_module.rst:27
+#: ../../rst/modules/win_lineinfile_module.rst:26
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/win_lineinfile_module.rst:237
+#: ../../rst/modules/win_lineinfile_module.rst:238
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/win_lineinfile_module.rst:240
+#: ../../rst/modules/win_lineinfile_module.rst:241
 msgid ""
 "As of Ansible 2.3, the *dest* option has been changed to *path* as "
 "default, but *dest* still works as well."
 msgstr ""
 
-#: ../../rst/modules/win_lineinfile_module.rst:244
+#: ../../rst/modules/win_lineinfile_module.rst:245
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/win_lineinfile_module.rst:248
+#: ../../rst/modules/win_lineinfile_module.rst:249
 msgid ":ref:`assemble_module`"
 msgstr ""
 
-#: ../../rst/modules/win_lineinfile_module.rst:249
+#: ../../rst/modules/win_lineinfile_module.rst:250
 msgid "The official documentation on the **assemble** module."
 msgstr ""
 
-#: ../../rst/modules/win_lineinfile_module.rst:250
+#: ../../rst/modules/win_lineinfile_module.rst:251
 msgid ":ref:`lineinfile_module`"
 msgstr ""
 
-#: ../../rst/modules/win_lineinfile_module.rst:251
+#: ../../rst/modules/win_lineinfile_module.rst:252
 msgid "The official documentation on the **lineinfile** module."
 msgstr ""
 
-#: ../../rst/modules/win_lineinfile_module.rst:255
+#: ../../rst/modules/win_lineinfile_module.rst:256
 msgid "Examples"
 msgstr ""
 
 #: ../../rst/modules/win_lineinfile_module.rst:318
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/win_lineinfile_module.rst:319
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/win_lineinfile_module.rst:361
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/win_lineinfile_module.rst:323
+#: ../../rst/modules/win_lineinfile_module.rst:366
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/win_lineinfile_module.rst:326
+#: ../../rst/modules/win_lineinfile_module.rst:369
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/win_lineinfile_module.rst:333
+#: ../../rst/modules/win_lineinfile_module.rst:376
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/win_lineinfile_module.rst:335
+#: ../../rst/modules/win_lineinfile_module.rst:378
 msgid "Brian Lloyd (@brianlloyd)"
 msgstr ""
 
-#: ../../rst/modules/win_lineinfile_module.rst:339
+#: ../../rst/modules/win_lineinfile_module.rst:382
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_lineinfile.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_lineinfile.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_lineinfile.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

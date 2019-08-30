@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,88 +24,139 @@ msgid ""
 "virtual machine"
 msgstr ""
 
+#: ../../rst/modules/vmware_guest_boot_facts_module.rst:18
+msgid "DEPRECATED"
+msgstr ""
+
+#: ../../rst/modules/vmware_guest_boot_facts_module.rst
+msgid "Removed in Ansible"
+msgstr ""
+
 #: ../../rst/modules/vmware_guest_boot_facts_module.rst:19
-msgid "Synopsis"
+msgid "version: 2.13"
+msgstr ""
+
+#: ../../rst/modules/vmware_guest_boot_facts_module.rst
+msgid "Why"
 msgstr ""
 
 #: ../../rst/modules/vmware_guest_boot_facts_module.rst:20
-msgid ""
-"This module can be used to gather facts aboyt boot options for the given "
-"virtual machine."
+msgid "Deprecated in favour of ``_info`` module."
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_boot_facts_module.rst:25
-msgid "Requirements"
+#: ../../rst/modules/vmware_guest_boot_facts_module.rst
+msgid "Alternative"
+msgstr ""
+
+#: ../../rst/modules/vmware_guest_boot_facts_module.rst:21
+msgid "Use :ref:`vmware_guest_boot_info <vmware_guest_boot_info_module>` instead."
 msgstr ""
 
 #: ../../rst/modules/vmware_guest_boot_facts_module.rst:26
-msgid "The below requirements are needed on the host that executes this module."
+msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_boot_facts_module.rst:28
-msgid "python >= 2.6"
+#: ../../rst/modules/vmware_guest_boot_facts_module.rst:27
+msgid "Gather facts about boot options for the given virtual machine."
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_boot_facts_module.rst:29
-msgid "PyVmomi"
+#: ../../rst/modules/vmware_guest_boot_facts_module.rst:32
+msgid "Requirements"
 msgstr ""
 
 #: ../../rst/modules/vmware_guest_boot_facts_module.rst:33
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/vmware_guest_boot_facts_module.rst:35
+msgid "python >= 2.6"
+msgstr ""
+
+#: ../../rst/modules/vmware_guest_boot_facts_module.rst:36
+msgid "PyVmomi"
+msgstr ""
+
+#: ../../rst/modules/vmware_guest_boot_facts_module.rst:40
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_boot_facts_module.rst:176
+#: ../../rst/modules/vmware_guest_boot_facts_module.rst:244
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_boot_facts_module.rst:179
+#: ../../rst/modules/vmware_guest_boot_facts_module.rst:247
 msgid "Tested on vSphere 6.5"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_boot_facts_module.rst:184
+#: ../../rst/modules/vmware_guest_boot_facts_module.rst:252
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_boot_facts_module.rst:202
+#: ../../rst/modules/vmware_guest_boot_facts_module.rst:279
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_boot_facts_module.rst:203
+#: ../../rst/modules/vmware_guest_boot_facts_module.rst:280
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_boot_facts_module.rst:231
+#: ../../rst/modules/vmware_guest_boot_facts_module.rst:308
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_boot_facts_module.rst:236
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
+#: ../../rst/modules/vmware_guest_boot_facts_module.rst:311
+msgid "This module will be removed in version 2.13. *[deprecated]*"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_boot_facts_module.rst:239
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
+#: ../../rst/modules/vmware_guest_boot_facts_module.rst:312
+msgid "For more information see `DEPRECATED`_."
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_boot_facts_module.rst:246
+#: ../../rst/modules/vmware_guest_boot_facts_module.rst:316
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_boot_facts_module.rst:248
-msgid "Abhijeet Kasurde (@Akasurde) <akasurde@redhat.com>"
+#: ../../rst/modules/vmware_guest_boot_facts_module.rst:318
+msgid "Abhijeet Kasurde (@Akasurde)"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_boot_facts_module.rst:252
+#: ../../rst/modules/vmware_guest_boot_facts_module.rst:322
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_guest_boot_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/_vmware_guest_boot_facts.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module can be used to gather"
+#~ " facts aboyt boot options for the "
+#~ "given virtual machine."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid "Abhijeet Kasurde (@Akasurde) <akasurde@redhat.com>"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_guest_boot_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

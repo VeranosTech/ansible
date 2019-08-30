@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,95 +24,92 @@ msgid ""
 "PubSub"
 msgstr ""
 
-#: ../../rst/modules/gcpubsub_facts_module.rst:19
-msgid "Synopsis"
-msgstr ""
-
-#: ../../rst/modules/gcpubsub_facts_module.rst:20
+#: ../../rst/modules/gcpubsub_facts_module.rst:11
 msgid ""
-"List Topics/Subscriptions from Google PubSub.  Use the gcpubsub module "
-"for topic/subscription management. See "
-"https://cloud.google.com/pubsub/docs for an overview."
+"This is an alias for :ref:`gcpubsub_info <gcpubsub_info_module>`. This "
+"name has been **deprecated**. Please update your tasks to use the new "
+"name ``gcpubsub_info`` instead."
 msgstr ""
 
-#: ../../rst/modules/gcpubsub_facts_module.rst:25
-msgid "Requirements"
-msgstr ""
+#~ msgid "Synopsis"
+#~ msgstr ""
 
-#: ../../rst/modules/gcpubsub_facts_module.rst:26
-msgid "The below requirements are needed on the host that executes this module."
-msgstr ""
+#~ msgid ""
+#~ "List Topics/Subscriptions from Google PubSub."
+#~ "  Use the gcpubsub module for "
+#~ "topic/subscription management. See "
+#~ "https://cloud.google.com/pubsub/docs for an "
+#~ "overview."
+#~ msgstr ""
 
-#: ../../rst/modules/gcpubsub_facts_module.rst:28
-msgid "python >= 2.6"
-msgstr ""
+#~ msgid "Requirements"
+#~ msgstr ""
 
-#: ../../rst/modules/gcpubsub_facts_module.rst:29
-msgid "google-auth >= 0.5.0"
-msgstr ""
+#~ msgid ""
+#~ "The below requirements are needed on "
+#~ "the host that executes this module."
+#~ msgstr ""
 
-#: ../../rst/modules/gcpubsub_facts_module.rst:30
-msgid "google-cloud-pubsub >= 0.22.0"
-msgstr ""
+#~ msgid "python >= 2.6"
+#~ msgstr ""
 
-#: ../../rst/modules/gcpubsub_facts_module.rst:34
-msgid "Parameters"
-msgstr ""
+#~ msgid "google-auth >= 0.5.0"
+#~ msgstr ""
 
-#: ../../rst/modules/gcpubsub_facts_module.rst:88
-msgid "Notes"
-msgstr ""
+#~ msgid "google-cloud-pubsub >= 0.22.0"
+#~ msgstr ""
 
-#: ../../rst/modules/gcpubsub_facts_module.rst:91
-msgid ""
-"list state enables user to list topics or subscriptions in the project.  "
-"See examples for details."
-msgstr ""
+#~ msgid "Parameters"
+#~ msgstr ""
 
-#: ../../rst/modules/gcpubsub_facts_module.rst:96
-msgid "Examples"
-msgstr ""
+#~ msgid "Notes"
+#~ msgstr ""
 
-#: ../../rst/modules/gcpubsub_facts_module.rst:121
-msgid "Return Values"
-msgstr ""
+#~ msgid ""
+#~ "list state enables user to list "
+#~ "topics or subscriptions in the project."
+#~ "  See examples for details."
+#~ msgstr ""
 
-#: ../../rst/modules/gcpubsub_facts_module.rst:122
-msgid ""
-"Common return values are documented :ref:`here <common_return_values>`, "
-"the following are the fields unique to this module:"
-msgstr ""
+#~ msgid "Examples"
+#~ msgstr ""
 
-#: ../../rst/modules/gcpubsub_facts_module.rst:176
-msgid "Status"
-msgstr ""
+#~ msgid "Return Values"
+#~ msgstr ""
 
-#: ../../rst/modules/gcpubsub_facts_module.rst:181
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
-msgstr ""
+#~ msgid ""
+#~ "Common return values are documented "
+#~ ":ref:`here <common_return_values>`, the following"
+#~ " are the fields unique to this "
+#~ "module:"
+#~ msgstr ""
 
-#: ../../rst/modules/gcpubsub_facts_module.rst:184
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
-msgstr ""
+#~ msgid "Status"
+#~ msgstr ""
 
-#: ../../rst/modules/gcpubsub_facts_module.rst:191
-msgid "Authors"
-msgstr ""
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
 
-#: ../../rst/modules/gcpubsub_facts_module.rst:193
-msgid "Tom Melendez (@supertom) <tom@supertom.com>"
-msgstr ""
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
 
-#: ../../rst/modules/gcpubsub_facts_module.rst:197
-#, python-format
-msgid ""
-"If you notice any issues in this documentation you can `edit this "
-"document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/gcpubsub_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
-" to improve it."
-msgstr ""
+#~ msgid "Authors"
+#~ msgstr ""
+
+#~ msgid "Tom Melendez (@supertom) <tom@supertom.com>"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/gcpubsub_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,13 +24,13 @@ msgstr ""
 
 #: ../../rst/reference_appendices/python_3_support.rst:5
 msgid ""
-"Ansible 2.5 and above have support for Python 3.  Previous to 2.5, the "
-"Python 3 support was considered a tech preview.  This topic discusses how"
-" to setup your controller and managed machines to use Python 3."
+"Ansible 2.5 and above work with Python 3. Previous to 2.5, using Python 3"
+" was considered a tech preview.  This topic discusses how to set up your "
+"controller and managed machines to use Python 3."
 msgstr ""
 
 #: ../../rst/reference_appendices/python_3_support.rst:9
-msgid "Ansible supports Python version 3.5 and above only."
+msgid "Ansible works with Python version 3.5 and above only."
 msgstr ""
 
 #: ../../rst/reference_appendices/python_3_support.rst:12
@@ -68,21 +68,27 @@ msgstr ""
 
 #: ../../rst/reference_appendices/python_3_support.rst:42
 msgid ""
-"Set the ``ansible_python_interpreter`` configuration option to "
-":command:`/usr/bin/python3`. The ``ansible_python_interpreter`` "
-"configuration option is usually set as an inventory variable associated "
-"with a host or group of hosts:"
+"Ansible will automatically detect and use Python 3 on many platforms that"
+" ship with it. To explicitly configure a Python 3 interpreter, set the "
+"``ansible_python_interpreter`` inventory variable at a group or host "
+"level to the location of a Python 3 interpreter, such as "
+":command:`/usr/bin/python3`. The default interpreter path may also be set"
+" in ``ansible.cfg``."
 msgstr ""
 
-#: ../../rst/reference_appendices/python_3_support.rst:59
+#: ../../rst/reference_appendices/python_3_support.rst:47
+msgid ":ref:`interpreter_discovery` for more information."
+msgstr ""
+
+#: ../../rst/reference_appendices/python_3_support.rst:62
 msgid ":ref:`intro_inventory` for more information."
 msgstr ""
 
-#: ../../rst/reference_appendices/python_3_support.rst:61
+#: ../../rst/reference_appendices/python_3_support.rst:64
 msgid "Run your command or playbook:"
 msgstr ""
 
-#: ../../rst/reference_appendices/python_3_support.rst:69
+#: ../../rst/reference_appendices/python_3_support.rst:72
 msgid ""
 "Note that you can also use the `-e` command line option to manually set "
 "the python interpreter when you run a command.   This can be useful if "
@@ -90,11 +96,11 @@ msgid ""
 " Python 3.  For example:"
 msgstr ""
 
-#: ../../rst/reference_appendices/python_3_support.rst:79
+#: ../../rst/reference_appendices/python_3_support.rst:82
 msgid "What to do if an incompatibility is found"
 msgstr ""
 
-#: ../../rst/reference_appendices/python_3_support.rst:81
+#: ../../rst/reference_appendices/python_3_support.rst:84
 msgid ""
 "We have spent several releases squashing bugs and adding new tests so "
 "that Ansible's core feature set runs under both Python 2 and Python 3.  "
@@ -103,7 +109,7 @@ msgid ""
 " may be ported yet."
 msgstr ""
 
-#: ../../rst/reference_appendices/python_3_support.rst:86
+#: ../../rst/reference_appendices/python_3_support.rst:89
 msgid ""
 "If you find a bug running under Python 3 you can submit a bug report on "
 "`Ansible's GitHub project <https://github.com/ansible/ansible/issues/>`_."
@@ -111,10 +117,31 @@ msgid ""
 "look at it."
 msgstr ""
 
-#: ../../rst/reference_appendices/python_3_support.rst:90
+#: ../../rst/reference_appendices/python_3_support.rst:93
 msgid ""
 "If you would like to fix the code and submit a pull request on github, "
 "you can refer to :ref:`developing_python_3` for information on how we fix"
 " common Python3 compatibility issues in the Ansible codebase."
 msgstr ""
+
+#~ msgid ""
+#~ "Ansible 2.5 and above have support "
+#~ "for Python 3.  Previous to 2.5, "
+#~ "the Python 3 support was considered "
+#~ "a tech preview.  This topic discusses"
+#~ " how to setup your controller and "
+#~ "managed machines to use Python 3."
+#~ msgstr ""
+
+#~ msgid "Ansible supports Python version 3.5 and above only."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Set the ``ansible_python_interpreter`` configuration"
+#~ " option to :command:`/usr/bin/python3`. The "
+#~ "``ansible_python_interpreter`` configuration option "
+#~ "is usually set as an inventory "
+#~ "variable associated with a host or "
+#~ "group of hosts:"
+#~ msgstr ""
 

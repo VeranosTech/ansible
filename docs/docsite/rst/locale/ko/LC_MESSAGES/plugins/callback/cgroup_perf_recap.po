@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,56 +57,65 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/plugins/callback/cgroup_perf_recap.rst:219
+#: ../../rst/plugins/callback/cgroup_perf_recap.rst:259
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/plugins/callback/cgroup_perf_recap.rst:222
+#: ../../rst/plugins/callback/cgroup_perf_recap.rst:262
 msgid ""
 "Requires ansible to be run from within a cgroup, such as with ``cgexec -g"
 " cpuacct,memory,pids:ansible_profile ansible-playbook ...``"
 msgstr ""
 
-#: ../../rst/plugins/callback/cgroup_perf_recap.rst:223
+#: ../../rst/plugins/callback/cgroup_perf_recap.rst:263
 msgid "This cgroup should only be used by ansible to get accurate results"
 msgstr ""
 
-#: ../../rst/plugins/callback/cgroup_perf_recap.rst:224
+#: ../../rst/plugins/callback/cgroup_perf_recap.rst:264
 msgid ""
 "To create the cgroup, first use a command such as ``sudo cgcreate -a "
 "ec2-user:ec2-user -t ec2-user:ec2-user -g "
 "cpuacct,memory,pids:ansible_profile``"
 msgstr ""
 
-#: ../../rst/plugins/callback/cgroup_perf_recap.rst:233
+#: ../../rst/plugins/callback/cgroup_perf_recap.rst:273
 msgid "Status"
 msgstr ""
 
-#: ../../rst/plugins/callback/cgroup_perf_recap.rst:238
+#: ../../rst/plugins/callback/cgroup_perf_recap.rst:278
 msgid ""
 "This callback is not guaranteed to have a backwards compatible interface."
 " *[preview]*"
 msgstr ""
 
-#: ../../rst/plugins/callback/cgroup_perf_recap.rst:241
+#: ../../rst/plugins/callback/cgroup_perf_recap.rst:281
 msgid ""
 "This callback is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/plugins/callback/cgroup_perf_recap.rst:248
+#: ../../rst/plugins/callback/cgroup_perf_recap.rst:288
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/plugins/callback/cgroup_perf_recap.rst:250
+#: ../../rst/plugins/callback/cgroup_perf_recap.rst:290
 msgid "UNKNOWN"
 msgstr ""
 
-#: ../../rst/plugins/callback/cgroup_perf_recap.rst:254
+#: ../../rst/plugins/callback/cgroup_perf_recap.rst:294
+#, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/callback/cgroup_perf_recap.py>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/callback/cgroup_perf_recap.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/callback/cgroup_perf_recap.py>`_"
+#~ " to improve it."
+#~ msgstr ""
 

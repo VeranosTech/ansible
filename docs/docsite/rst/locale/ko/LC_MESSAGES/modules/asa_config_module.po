@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,11 @@ msgstr ""
 msgid "asa_config -- Manage configuration sections on Cisco ASA devices"
 msgstr ""
 
-#: ../../rst/modules/asa_config_module.rst:19
+#: ../../rst/modules/asa_config_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/asa_config_module.rst:20
+#: ../../rst/modules/asa_config_module.rst:19
 msgid ""
 "Cisco ASA configurations use a simple block indent file syntax for "
 "segmenting configuration into sections.  This module provides an "
@@ -34,64 +34,72 @@ msgid ""
 "deterministic way."
 msgstr ""
 
-#: ../../rst/modules/asa_config_module.rst:26
+#: ../../rst/modules/asa_config_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/asa_config_module.rst:394
+#: ../../rst/modules/asa_config_module.rst:435
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/asa_config_module.rst:397
+#: ../../rst/modules/asa_config_module.rst:438
 msgid ""
 "For more information on using Ansible to manage network devices see the "
 ":ref:`Ansible Network Guide <network_guide>`"
 msgstr ""
 
-#: ../../rst/modules/asa_config_module.rst:402
+#: ../../rst/modules/asa_config_module.rst:443
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/asa_config_module.rst:497
+#: ../../rst/modules/asa_config_module.rst:547
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/asa_config_module.rst:498
+#: ../../rst/modules/asa_config_module.rst:548
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/asa_config_module.rst:539
+#: ../../rst/modules/asa_config_module.rst:589
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/asa_config_module.rst:544
+#: ../../rst/modules/asa_config_module.rst:594
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/asa_config_module.rst:547
+#: ../../rst/modules/asa_config_module.rst:597
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/asa_config_module.rst:554
+#: ../../rst/modules/asa_config_module.rst:604
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/asa_config_module.rst:556
+#: ../../rst/modules/asa_config_module.rst:606
 msgid "Peter Sprygada (@privateip), Patrick Ogenstad (@ogenstad)"
 msgstr ""
 
-#: ../../rst/modules/asa_config_module.rst:560
+#: ../../rst/modules/asa_config_module.rst:610
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/asa/asa_config.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/asa/asa_config.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/asa/asa_config.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

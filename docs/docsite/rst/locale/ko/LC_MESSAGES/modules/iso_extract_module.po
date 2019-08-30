@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,66 +64,74 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/iso_extract_module.rst:124
+#: ../../rst/modules/iso_extract_module.rst:125
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/iso_extract_module.rst:127
+#: ../../rst/modules/iso_extract_module.rst:128
 msgid ""
 "Only the file checksum (content) is taken into account when extracting "
 "files from the ISO image. If ``force=no``, only checks the presence of "
 "the file."
 msgstr ""
 
-#: ../../rst/modules/iso_extract_module.rst:128
+#: ../../rst/modules/iso_extract_module.rst:129
 msgid ""
 "In Ansible 2.3 this module was using ``mount`` and ``umount`` commands "
 "only, requiring root access. This is no longer needed with the "
 "introduction of 7zip for extraction."
 msgstr ""
 
-#: ../../rst/modules/iso_extract_module.rst:133
+#: ../../rst/modules/iso_extract_module.rst:134
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/iso_extract_module.rst:151
+#: ../../rst/modules/iso_extract_module.rst:152
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/iso_extract_module.rst:156
+#: ../../rst/modules/iso_extract_module.rst:157
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/iso_extract_module.rst:159
+#: ../../rst/modules/iso_extract_module.rst:160
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/iso_extract_module.rst:166
+#: ../../rst/modules/iso_extract_module.rst:167
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/iso_extract_module.rst:168
+#: ../../rst/modules/iso_extract_module.rst:169
 msgid "Jeroen Hoekx (@jhoekx)"
 msgstr ""
 
-#: ../../rst/modules/iso_extract_module.rst:169
+#: ../../rst/modules/iso_extract_module.rst:170
 msgid "Matt Robinson (@ribbons)"
 msgstr ""
 
-#: ../../rst/modules/iso_extract_module.rst:170
+#: ../../rst/modules/iso_extract_module.rst:171
 msgid "Dag Wieers (@dagwieers)"
 msgstr ""
 
-#: ../../rst/modules/iso_extract_module.rst:174
+#: ../../rst/modules/iso_extract_module.rst:175
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/files/iso_extract.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/files/iso_extract.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/files/iso_extract.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

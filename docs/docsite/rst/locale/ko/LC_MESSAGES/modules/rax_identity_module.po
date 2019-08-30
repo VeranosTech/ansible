@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,71 +50,79 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/rax_identity_module.rst:203
+#: ../../rst/modules/rax_identity_module.rst:204
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/rax_identity_module.rst:206
+#: ../../rst/modules/rax_identity_module.rst:207
 msgid ""
 "The following environment variables can be used, ``RAX_USERNAME``, "
 "``RAX_API_KEY``, ``RAX_CREDS_FILE``, ``RAX_CREDENTIALS``, ``RAX_REGION``."
 msgstr ""
 
-#: ../../rst/modules/rax_identity_module.rst:207
+#: ../../rst/modules/rax_identity_module.rst:208
 msgid ""
 "``RAX_CREDENTIALS`` and ``RAX_CREDS_FILE`` points to a credentials file "
 "appropriate for pyrax. See "
 "https://github.com/rackspace/pyrax/blob/master/docs/getting_started.md#authenticating"
 msgstr ""
 
-#: ../../rst/modules/rax_identity_module.rst:208
+#: ../../rst/modules/rax_identity_module.rst:209
 msgid "``RAX_USERNAME`` and ``RAX_API_KEY`` obviate the use of a credentials file"
 msgstr ""
 
-#: ../../rst/modules/rax_identity_module.rst:209
+#: ../../rst/modules/rax_identity_module.rst:210
 msgid ""
 "``RAX_REGION`` defines a Rackspace Public Cloud region (DFW, ORD, LON, "
 "...)"
 msgstr ""
 
-#: ../../rst/modules/rax_identity_module.rst:214
+#: ../../rst/modules/rax_identity_module.rst:215
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/rax_identity_module.rst:236
+#: ../../rst/modules/rax_identity_module.rst:237
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/rax_identity_module.rst:241
+#: ../../rst/modules/rax_identity_module.rst:242
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/rax_identity_module.rst:244
+#: ../../rst/modules/rax_identity_module.rst:245
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/rax_identity_module.rst:251
+#: ../../rst/modules/rax_identity_module.rst:252
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/rax_identity_module.rst:253
+#: ../../rst/modules/rax_identity_module.rst:254
 msgid "Christopher H. Laco (@claco)"
 msgstr ""
 
-#: ../../rst/modules/rax_identity_module.rst:254
+#: ../../rst/modules/rax_identity_module.rst:255
 msgid "Matt Martz (@sivel)"
 msgstr ""
 
-#: ../../rst/modules/rax_identity_module.rst:258
+#: ../../rst/modules/rax_identity_module.rst:259
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/rackspace/rax_identity.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/rackspace/rax_identity.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/rackspace/rax_identity.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

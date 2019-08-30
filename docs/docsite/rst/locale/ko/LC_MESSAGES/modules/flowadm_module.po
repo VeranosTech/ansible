@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,64 +24,72 @@ msgid ""
 "services and zones on Solaris/illumos systems"
 msgstr ""
 
-#: ../../rst/modules/flowadm_module.rst:19
+#: ../../rst/modules/flowadm_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/flowadm_module.rst:20
+#: ../../rst/modules/flowadm_module.rst:19
 msgid ""
 "Create/modify/remove networking bandwidth and associated resources for a "
 "type of traffic on a particular link."
 msgstr ""
 
-#: ../../rst/modules/flowadm_module.rst:26
+#: ../../rst/modules/flowadm_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/flowadm_module.rst:201
+#: ../../rst/modules/flowadm_module.rst:200
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/flowadm_module.rst:233
+#: ../../rst/modules/flowadm_module.rst:232
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/flowadm_module.rst:234
+#: ../../rst/modules/flowadm_module.rst:233
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/flowadm_module.rst:392
+#: ../../rst/modules/flowadm_module.rst:391
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/flowadm_module.rst:397
+#: ../../rst/modules/flowadm_module.rst:396
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/flowadm_module.rst:400
+#: ../../rst/modules/flowadm_module.rst:399
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/flowadm_module.rst:407
+#: ../../rst/modules/flowadm_module.rst:406
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/flowadm_module.rst:409
+#: ../../rst/modules/flowadm_module.rst:408
 msgid "Adam Števko (@xen0l)"
 msgstr ""
 
-#: ../../rst/modules/flowadm_module.rst:413
+#: ../../rst/modules/flowadm_module.rst:412
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/illumos/flowadm.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/illumos/flowadm.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/illumos/flowadm.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,7 +112,7 @@ msgid ""
 msgstr ""
 
 #: ../../rst/dev_guide/developing_modules_general.rst:55
-msgid "Create your new module file: ``$ touch my_new_test_module.py``"
+msgid "Create your new module file: ``$ touch my_test.py``"
 msgstr ""
 
 #: ../../rst/dev_guide/developing_modules_general.rst:56
@@ -130,83 +130,83 @@ msgid ""
 " writing clean, concise module code."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:189
+#: ../../rst/dev_guide/developing_modules_general.rst:192
 msgid "Exercising your module code"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:191
+#: ../../rst/dev_guide/developing_modules_general.rst:194
 msgid ""
 "Once you've modified the sample code above to do what you want, you can "
 "try out your module. Our :ref:`debugging tips <debugging>` will help if "
 "you run into bugs as you exercise your module code."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:195
+#: ../../rst/dev_guide/developing_modules_general.rst:198
 msgid "Exercising module code locally"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:197
+#: ../../rst/dev_guide/developing_modules_general.rst:200
 msgid ""
 "If your module does not need to target a remote host, you can quickly and"
 " easily exercise your code locally like this:"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:199
+#: ../../rst/dev_guide/developing_modules_general.rst:202
 msgid ""
 "Create an arguments file, a basic JSON config file that passes parameters"
 " to your module so you can run it. Name the arguments file "
 "``/tmp/args.json`` and add the following content:"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:210
+#: ../../rst/dev_guide/developing_modules_general.rst:213
 msgid ""
 "If you are using a virtual environment (highly recommended for "
 "development) activate it: ``$ . venv/bin/activate``"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:212
+#: ../../rst/dev_guide/developing_modules_general.rst:215
 msgid "Setup the environment for development: ``$ . hacking/env-setup``"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:213
+#: ../../rst/dev_guide/developing_modules_general.rst:216
 msgid ""
 "Run your test module locally and directly: ``$ python -m "
-"ansible.modules.cloud.azure.my_new_test_module /tmp/args.json``"
+"ansible.modules.cloud.azure.my_test /tmp/args.json``"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:216
+#: ../../rst/dev_guide/developing_modules_general.rst:219
 msgid "This should return output like this:"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:224
+#: ../../rst/dev_guide/developing_modules_general.rst:227
 msgid "Exercising module code in a playbook"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:226
+#: ../../rst/dev_guide/developing_modules_general.rst:229
 msgid ""
 "The next step in testing your new module is to consume it with an Ansible"
 " playbook."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:228
+#: ../../rst/dev_guide/developing_modules_general.rst:231
 msgid "Create a playbook in any directory: ``$ touch testmod.yml``"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:229
+#: ../../rst/dev_guide/developing_modules_general.rst:232
 msgid "Add the following to the new playbook file::"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:243
+#: ../../rst/dev_guide/developing_modules_general.rst:246
 msgid ""
 "Run the playbook and analyze the output: ``$ ansible-playbook "
 "./testmod.yml``"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:246
+#: ../../rst/dev_guide/developing_modules_general.rst:249
 msgid "Testing basics"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:248
+#: ../../rst/dev_guide/developing_modules_general.rst:251
 msgid ""
 "These two examples will get you started with testing your module code. "
 "Please review our :ref:`testing <developing_testing>` section for more "
@@ -215,69 +215,69 @@ msgid ""
 "tests <testing_integration>`, and more."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:252
+#: ../../rst/dev_guide/developing_modules_general.rst:255
 msgid "Sanity tests"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:254
+#: ../../rst/dev_guide/developing_modules_general.rst:257
 msgid "You can run through Ansible's sanity checks in a container:"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:256
+#: ../../rst/dev_guide/developing_modules_general.rst:259
 msgid "``$ ansible-test sanity -v --docker --python 2.7 MODULE_NAME``"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:258
+#: ../../rst/dev_guide/developing_modules_general.rst:261
 msgid ""
 "Note that this example requires Docker to be installed and running. If "
 "you'd rather not use a container for this, you can choose to use "
 "``--tox`` instead of ``--docker``."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:262
+#: ../../rst/dev_guide/developing_modules_general.rst:265
 msgid "Unit tests"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:264
+#: ../../rst/dev_guide/developing_modules_general.rst:267
 msgid ""
 "You can add unit tests for your module in ``./test/units/modules``. You "
 "must first setup your testing environment. In this example, we're using "
 "Python 3.5."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:266
+#: ../../rst/dev_guide/developing_modules_general.rst:269
 msgid ""
 "Install the requirements (outside of your virtual environment): ``$ pip3 "
 "install -r ./test/runner/requirements/units.txt``"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:267
+#: ../../rst/dev_guide/developing_modules_general.rst:270
 msgid ""
 "To run all tests do the following: ``$ ansible-test units --python 3.5`` "
 "(you must run ``. hacking/env-setup`` prior to this)"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:269
+#: ../../rst/dev_guide/developing_modules_general.rst:272
 msgid "Ansible uses pytest for unit testing."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:271
+#: ../../rst/dev_guide/developing_modules_general.rst:274
 msgid ""
 "To run pytest against a single test module, you can do the following "
 "(provide the path to the test module appropriately):"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:273
+#: ../../rst/dev_guide/developing_modules_general.rst:276
 msgid ""
 "``$ pytest -r a --cov=. --cov-report=html --fulltrace --color yes "
-"test/units/modules/.../test/my_new_test_module.py``"
+"test/units/modules/.../test/my_test.py``"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:277
+#: ../../rst/dev_guide/developing_modules_general.rst:280
 msgid "Contributing back to Ansible"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:279
+#: ../../rst/dev_guide/developing_modules_general.rst:282
 msgid ""
 "If you would like to contribute to the main Ansible repository by adding "
 "a new feature or fixing a bug, `create a fork "
@@ -288,7 +288,7 @@ msgid ""
 "your feature branch as a source and the Ansible devel branch as a target."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:288
+#: ../../rst/dev_guide/developing_modules_general.rst:291
 msgid ""
 "If you want to contribute your module back to the upstream Ansible repo, "
 "review our :ref:`submission checklist <developing_modules_checklist>`, "
@@ -300,30 +300,52 @@ msgid ""
 "what happens next."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:296
+#: ../../rst/dev_guide/developing_modules_general.rst:299
 msgid "Communication and development support"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:298
+#: ../../rst/dev_guide/developing_modules_general.rst:301
 msgid ""
 "Join the IRC channel ``#ansible-devel`` on freenode for discussions "
 "surrounding Ansible development."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:301
+#: ../../rst/dev_guide/developing_modules_general.rst:304
 msgid ""
 "For questions and discussions pertaining to using the Ansible product, "
 "use the ``#ansible`` channel."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:305
+#: ../../rst/dev_guide/developing_modules_general.rst:308
 msgid "Credit"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_general.rst:307
+#: ../../rst/dev_guide/developing_modules_general.rst:310
 msgid ""
-"Thank you to Thomas Stringer (`@tstringer "
-"<https://github.com/tstringer>`_) for contributing source material for "
+"Thank you to Thomas Stringer (`@trstringer "
+"<https://github.com/trstringer>`_) for contributing source material for "
 "this topic."
 msgstr ""
+
+#~ msgid "Create your new module file: ``$ touch my_new_test_module.py``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Run your test module locally and "
+#~ "directly: ``$ python -m "
+#~ "ansible.modules.cloud.azure.my_new_test_module /tmp/args.json``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``$ pytest -r a --cov=. --cov-"
+#~ "report=html --fulltrace --color yes "
+#~ "test/units/modules/.../test/my_new_test_module.py``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Thank you to Thomas Stringer "
+#~ "(`@tstringer <https://github.com/tstringer>`_) for "
+#~ "contributing source material for this "
+#~ "topic."
+#~ msgstr ""
 

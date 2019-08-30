@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,39 +22,39 @@ msgstr ""
 msgid "nxos_vrf -- Manages global VRF configuration"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrf_module.rst:19
+#: ../../rst/modules/nxos_vrf_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrf_module.rst:20
+#: ../../rst/modules/nxos_vrf_module.rst:19
 msgid ""
 "This module provides declarative management of VRFs on CISCO NXOS network"
 " devices."
 msgstr ""
 
-#: ../../rst/modules/nxos_vrf_module.rst:26
+#: ../../rst/modules/nxos_vrf_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrf_module.rst:404
+#: ../../rst/modules/nxos_vrf_module.rst:406
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrf_module.rst:407
+#: ../../rst/modules/nxos_vrf_module.rst:409
 msgid "Tested against NXOSv 7.3.(0)D1(1) on VIRL"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrf_module.rst:408
+#: ../../rst/modules/nxos_vrf_module.rst:410
 msgid ""
 "Cisco NX-OS creates the default VRF by itself. Therefore, you're not "
 "allowed to use default as *vrf* name in this module."
 msgstr ""
 
-#: ../../rst/modules/nxos_vrf_module.rst:409
+#: ../../rst/modules/nxos_vrf_module.rst:411
 msgid "``vrf`` name must be shorter than 32 chars."
 msgstr ""
 
-#: ../../rst/modules/nxos_vrf_module.rst:410
+#: ../../rst/modules/nxos_vrf_module.rst:412
 msgid ""
 "VRF names are not case sensible in NX-OS. Anyway, the name is stored just"
 " like it's inserted by the user and it'll not be changed again unless the"
@@ -63,88 +63,96 @@ msgid ""
 " change."
 msgstr ""
 
-#: ../../rst/modules/nxos_vrf_module.rst:411
+#: ../../rst/modules/nxos_vrf_module.rst:413
 msgid ""
 "For information on using CLI and NX-API see the :ref:`NXOS Platform "
 "Options guide <nxos_platform_options>`"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrf_module.rst:412
+#: ../../rst/modules/nxos_vrf_module.rst:414
 msgid ""
 "For more information on using Ansible to manage network devices see the "
 ":ref:`Ansible Network Guide <network_guide>`"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrf_module.rst:413
+#: ../../rst/modules/nxos_vrf_module.rst:415
 msgid ""
 "For more information on using Ansible to manage Cisco devices see the "
 "`Cisco integration page "
 "<https://www.ansible.com/integrations/networks/cisco>`_."
 msgstr ""
 
-#: ../../rst/modules/nxos_vrf_module.rst:418
+#: ../../rst/modules/nxos_vrf_module.rst:420
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrf_module.rst:479
+#: ../../rst/modules/nxos_vrf_module.rst:481
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrf_module.rst:480
+#: ../../rst/modules/nxos_vrf_module.rst:482
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrf_module.rst:508
+#: ../../rst/modules/nxos_vrf_module.rst:510
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrf_module.rst:513
+#: ../../rst/modules/nxos_vrf_module.rst:515
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrf_module.rst:516
+#: ../../rst/modules/nxos_vrf_module.rst:518
 msgid ""
 "This module is :ref:`maintained by the Ansible Network Team "
 "<modules_support>`. *[network]*"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrf_module.rst:519
+#: ../../rst/modules/nxos_vrf_module.rst:521
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrf_module.rst:521
+#: ../../rst/modules/nxos_vrf_module.rst:523
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/nxos_vrf_module.rst:527
+#: ../../rst/modules/nxos_vrf_module.rst:529
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrf_module.rst:529
+#: ../../rst/modules/nxos_vrf_module.rst:531
 msgid "Jason Edelman (@jedelman8)"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrf_module.rst:530
+#: ../../rst/modules/nxos_vrf_module.rst:532
 msgid "Gabriele Gerbino (@GGabriele)"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrf_module.rst:531
+#: ../../rst/modules/nxos_vrf_module.rst:533
 msgid "Trishna Guha (@trishnaguha)"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrf_module.rst:535
+#: ../../rst/modules/nxos_vrf_module.rst:537
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_vrf.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_vrf.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_vrf.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

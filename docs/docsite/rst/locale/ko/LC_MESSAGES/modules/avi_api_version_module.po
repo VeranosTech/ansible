@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,60 +48,71 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/avi_api_version_module.rst:158
+#: ../../rst/modules/avi_api_version_module.rst:333
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/avi_api_version_module.rst:161
+#: ../../rst/modules/avi_api_version_module.rst:336
 msgid ""
 "For more information on using Ansible to manage Avi Network devices see "
 "https://www.ansible.com/ansible-avi-networks."
 msgstr ""
 
-#: ../../rst/modules/avi_api_version_module.rst:166
+#: ../../rst/modules/avi_api_version_module.rst:341
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/avi_api_version_module.rst:183
+#: ../../rst/modules/avi_api_version_module.rst:358
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/avi_api_version_module.rst:184
+#: ../../rst/modules/avi_api_version_module.rst:359
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/avi_api_version_module.rst:210
+#: ../../rst/modules/avi_api_version_module.rst:385
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/avi_api_version_module.rst:215
+#: ../../rst/modules/avi_api_version_module.rst:390
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/avi_api_version_module.rst:218
+#: ../../rst/modules/avi_api_version_module.rst:393
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/avi_api_version_module.rst:225
+#: ../../rst/modules/avi_api_version_module.rst:400
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/avi_api_version_module.rst:227
-msgid "Vilian Atmadzhov (@grastogi23) <vilian.atmadzhov@paddypowerbetfair.com>"
+#: ../../rst/modules/avi_api_version_module.rst:402
+msgid "Vilian Atmadzhov (@vivobg) <vilian.atmadzhov@paddypowerbetfair.com>"
 msgstr ""
 
-#: ../../rst/modules/avi_api_version_module.rst:231
+#: ../../rst/modules/avi_api_version_module.rst:406
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/avi/avi_api_version.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/avi/avi_api_version.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "Vilian Atmadzhov (@grastogi23) <vilian.atmadzhov@paddypowerbetfair.com>"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/avi/avi_api_version.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

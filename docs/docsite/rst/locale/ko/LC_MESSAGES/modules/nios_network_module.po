@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,56 +53,64 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/nios_network_module.rst:351
+#: ../../rst/modules/nios_network_module.rst:369
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/nios_network_module.rst:354
+#: ../../rst/modules/nios_network_module.rst:372
 msgid ""
 "This module must be run locally, which can be achieved by specifying "
 "``connection: local``."
 msgstr ""
 
-#: ../../rst/modules/nios_network_module.rst:355
+#: ../../rst/modules/nios_network_module.rst:373
 msgid ""
 "Please read the :ref:`nios_guide` for more detailed information on how to"
 " use Infoblox with Ansible."
 msgstr ""
 
-#: ../../rst/modules/nios_network_module.rst:360
+#: ../../rst/modules/nios_network_module.rst:378
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/nios_network_module.rst:413
+#: ../../rst/modules/nios_network_module.rst:464
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/nios_network_module.rst:418
+#: ../../rst/modules/nios_network_module.rst:469
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/nios_network_module.rst:421
+#: ../../rst/modules/nios_network_module.rst:472
 msgid ""
 "This module is :ref:`maintained by an Ansible Partner <modules_support>`."
 " *[certified]*"
 msgstr ""
 
-#: ../../rst/modules/nios_network_module.rst:428
+#: ../../rst/modules/nios_network_module.rst:479
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/nios_network_module.rst:430
+#: ../../rst/modules/nios_network_module.rst:481
 msgid "Peter Sprygada (@privateip)"
 msgstr ""
 
-#: ../../rst/modules/nios_network_module.rst:434
+#: ../../rst/modules/nios_network_module.rst:485
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/nios/nios_network.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/nios/nios_network.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/nios/nios_network.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

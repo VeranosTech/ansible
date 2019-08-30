@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,21 +35,21 @@ msgid "Tested against VyOS 1.1.8 (helium)"
 msgstr ""
 
 #: ../../rst/modules/vyos_ping_module.rst:22
-#: ../../rst/modules/vyos_ping_module.rst:248
+#: ../../rst/modules/vyos_ping_module.rst:249
 msgid ""
 "For a general purpose network module, see the :ref:`net_ping "
 "<net_ping_module>` module."
 msgstr ""
 
 #: ../../rst/modules/vyos_ping_module.rst:23
-#: ../../rst/modules/vyos_ping_module.rst:249
+#: ../../rst/modules/vyos_ping_module.rst:250
 msgid ""
 "For Windows targets, use the :ref:`win_ping <win_ping_module>` module "
 "instead."
 msgstr ""
 
 #: ../../rst/modules/vyos_ping_module.rst:24
-#: ../../rst/modules/vyos_ping_module.rst:250
+#: ../../rst/modules/vyos_ping_module.rst:251
 msgid ""
 "For targets running Python, use the :ref:`ping <ping_module>` module "
 "instead."
@@ -63,56 +63,77 @@ msgstr ""
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/vyos_ping_module.rst:251
+#: ../../rst/modules/vyos_ping_module.rst:248
+msgid "Tested against VyOS 1.1.8 (helium)."
+msgstr ""
+
+#: ../../rst/modules/vyos_ping_module.rst:252
+msgid ""
+"This module works with connection ``network_cli``. See `the VyOS OS "
+"Platform Options <../network/user_guide/platform_vyos.html>`_."
+msgstr ""
+
+#: ../../rst/modules/vyos_ping_module.rst:253
 msgid ""
 "For more information on using Ansible to manage network devices see the "
 ":ref:`Ansible Network Guide <network_guide>`"
 msgstr ""
 
-#: ../../rst/modules/vyos_ping_module.rst:256
+#: ../../rst/modules/vyos_ping_module.rst:258
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/vyos_ping_module.rst:288
+#: ../../rst/modules/vyos_ping_module.rst:290
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/vyos_ping_module.rst:289
+#: ../../rst/modules/vyos_ping_module.rst:291
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/vyos_ping_module.rst:369
+#: ../../rst/modules/vyos_ping_module.rst:371
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/vyos_ping_module.rst:374
+#: ../../rst/modules/vyos_ping_module.rst:376
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/vyos_ping_module.rst:377
+#: ../../rst/modules/vyos_ping_module.rst:379
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/vyos_ping_module.rst:384
+#: ../../rst/modules/vyos_ping_module.rst:386
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/vyos_ping_module.rst:386
-msgid "Nilashish Chakraborty (@nilashishc)"
+#: ../../rst/modules/vyos_ping_module.rst:388
+msgid "Nilashish Chakraborty (@NilashishC)"
 msgstr ""
 
-#: ../../rst/modules/vyos_ping_module.rst:390
+#: ../../rst/modules/vyos_ping_module.rst:392
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/vyos/vyos_ping.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/vyos/vyos_ping.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "Nilashish Chakraborty (@nilashishc)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/vyos/vyos_ping.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

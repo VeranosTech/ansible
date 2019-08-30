@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,7 @@ msgstr ""
 
 #: ../../rst/modules/k8s_module.rst:25
 msgid ""
-"Use the :ref:`k8s_facts <k8s_facts_module>` module to obtain a list of "
+"Use the :ref:`k8s_info <k8s_info_module>` module to obtain a list of "
 "items about an object of type ``kind``"
 msgstr ""
 
@@ -55,7 +55,7 @@ msgid "Supports check mode."
 msgstr ""
 
 #: ../../rst/modules/k8s_module.rst:30
-msgid "Aliases: k8s_raw,openshift_raw"
+msgid "Aliases: openshift_raw,k8s_raw"
 msgstr ""
 
 #: ../../rst/modules/k8s_module.rst:33
@@ -82,11 +82,20 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/k8s_module.rst:447
+#: ../../rst/modules/k8s_module.rst:732
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/k8s_module.rst:450
+#: ../../rst/modules/k8s_module.rst:735
+msgid ""
+"If your OpenShift Python library is not 0.9.0 or newer and you are trying"
+" to remove an item from an associative array/dictionary, for example a "
+"label or an annotation, you will need to explicitly set the value of the "
+"item to be removed to `null`. Simply deleting the entry in the dictionary"
+" will not remove it from openshift or kubernetes."
+msgstr ""
+
+#: ../../rst/modules/k8s_module.rst:736
 msgid ""
 "The OpenShift Python client wraps the K8s Python client, providing full "
 "access to all of the APIS and models available on both platforms. For API"
@@ -94,61 +103,87 @@ msgid ""
 "https://github.com/openshift/openshift-restclient-python"
 msgstr ""
 
-#: ../../rst/modules/k8s_module.rst:451
+#: ../../rst/modules/k8s_module.rst:737
 msgid ""
-"To avoid SSL certificate validation errors when ``verify_ssl`` is *True*,"
-" the full certificate chain for the API server must be provided via "
-"``ssl_ca_cert`` or in the kubeconfig file."
+"To avoid SSL certificate validation errors when ``validate_certs`` is "
+"*True*, the full certificate chain for the API server must be provided "
+"via ``ca_cert`` or in the kubeconfig file."
 msgstr ""
 
-#: ../../rst/modules/k8s_module.rst:456
+#: ../../rst/modules/k8s_module.rst:742
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/k8s_module.rst:541
+#: ../../rst/modules/k8s_module.rst:827
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/k8s_module.rst:542
+#: ../../rst/modules/k8s_module.rst:828
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/k8s_module.rst:655
+#: ../../rst/modules/k8s_module.rst:941
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/k8s_module.rst:660
+#: ../../rst/modules/k8s_module.rst:946
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/k8s_module.rst:663
+#: ../../rst/modules/k8s_module.rst:949
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/k8s_module.rst:670
+#: ../../rst/modules/k8s_module.rst:956
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/k8s_module.rst:672
+#: ../../rst/modules/k8s_module.rst:958
 msgid "Chris Houseknecht (@chouseknecht)"
 msgstr ""
 
-#: ../../rst/modules/k8s_module.rst:673
+#: ../../rst/modules/k8s_module.rst:959
 msgid "Fabian von Feilitzsch (@fabianvf)"
 msgstr ""
 
-#: ../../rst/modules/k8s_module.rst:677
+#: ../../rst/modules/k8s_module.rst:963
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/clustering/k8s/k8s.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/clustering/k8s/k8s.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "Use the :ref:`k8s_facts <k8s_facts_module>` "
+#~ "module to obtain a list of items"
+#~ " about an object of type ``kind``"
+#~ msgstr ""
+
+#~ msgid "Aliases: k8s_raw,openshift_raw"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To avoid SSL certificate validation "
+#~ "errors when ``verify_ssl`` is *True*, "
+#~ "the full certificate chain for the "
+#~ "API server must be provided via "
+#~ "``ssl_ca_cert`` or in the kubeconfig "
+#~ "file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/clustering/k8s/k8s.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

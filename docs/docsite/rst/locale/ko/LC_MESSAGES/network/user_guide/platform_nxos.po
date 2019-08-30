@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr ""
 #: ../../rst/network/user_guide/platform_nxos.rst:7
 msgid ""
 "Cisco NXOS supports multiple connections. This page offers details on how"
-" each connection works in Ansible 2.6 and how to use it."
+" each connection works in Ansible and how to use it."
 msgstr ""
 
 #: ../../rst/network/user_guide/platform_nxos.rst:9
@@ -36,150 +36,130 @@ msgstr ""
 msgid "Connections Available"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:15
+#: ../../rst/network/user_guide/platform_nxos.rst:18
 msgid "CLI"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:15
+#: ../../rst/network/user_guide/platform_nxos.rst:18
 msgid "NX-API"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:17
-msgid "**Protocol**"
+#: ../../rst/network/user_guide/platform_nxos.rst:20
+msgid "Protocol"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:17
+#: ../../rst/network/user_guide/platform_nxos.rst:20
 msgid "SSH"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:17
+#: ../../rst/network/user_guide/platform_nxos.rst:20
 msgid "HTTP(S)"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst
-msgid "**Credentials**"
+#: ../../rst/network/user_guide/platform_nxos.rst:22
+msgid "Credentials"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst
+#: ../../rst/network/user_guide/platform_nxos.rst:22
 msgid "uses SSH keys / SSH-agent if present"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst
+#: ../../rst/network/user_guide/platform_nxos.rst:24
 msgid "accepts ``-u myuser -k`` if using password"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst
+#: ../../rst/network/user_guide/platform_nxos.rst:22
 msgid "uses HTTPS certificates if present"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:22
-msgid "**Indirect Access**"
+#: ../../rst/network/user_guide/platform_nxos.rst:26
+msgid "Indirect Access"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:22
+#: ../../rst/network/user_guide/platform_nxos.rst:26
 msgid "via a bastion (jump host)"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:22
+#: ../../rst/network/user_guide/platform_nxos.rst:26
 msgid "via a web proxy"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst
-msgid "**Connection Settings**"
+#: ../../rst/network/user_guide/platform_nxos.rst:28
+msgid "Connection Settings"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst
+#: ../../rst/network/user_guide/platform_nxos.rst:28
 msgid "``ansible_connection: network_cli``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst
+#: ../../rst/network/user_guide/platform_nxos.rst:28
 msgid "``ansible_connection: httpapi``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst
+#: ../../rst/network/user_guide/platform_nxos.rst:30
 msgid "OR"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst
-msgid "``ansible_connection: local``"
+#: ../../rst/network/user_guide/platform_nxos.rst:32
+msgid ""
+"``ansible_connection: local`` with ``transport: nxapi`` in the "
+"``provider`` dictionary"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst
-msgid "with ``transport: nxapi``"
+#: ../../rst/network/user_guide/platform_nxos.rst:36
+msgid "|enable_mode|"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst
-msgid "in the ``provider`` dictionary"
+#: ../../rst/network/user_guide/platform_nxos.rst:36
+msgid ""
+"supported: use ``ansible_become: yes`` with ``ansible_become_method: "
+"enable`` and ``ansible_become_password:``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst
-msgid "**Enable Mode**"
-msgstr ""
-
-#: ../../rst/network/user_guide/platform_nxos.rst
-msgid "(Privilege Escalation)"
-msgstr ""
-
-#: ../../rst/network/user_guide/platform_nxos.rst
-msgid "supported as of 2.5.3"
-msgstr ""
-
-#: ../../rst/network/user_guide/platform_nxos.rst
-msgid "supported - use ``ansible_become: yes``"
-msgstr ""
-
-#: ../../rst/network/user_guide/platform_nxos.rst
-msgid "with ``ansible_become_method: enable``"
-msgstr ""
-
-#: ../../rst/network/user_guide/platform_nxos.rst
-msgid "and ``ansible_become_pass:``"
-msgstr ""
-
-#: ../../rst/network/user_guide/platform_nxos.rst
+#: ../../rst/network/user_guide/platform_nxos.rst:36
 msgid "not supported by NX-API"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:34
-msgid "**Returned Data Format**"
+#: ../../rst/network/user_guide/platform_nxos.rst:40
+msgid "Returned Data Format"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:34
+#: ../../rst/network/user_guide/platform_nxos.rst:40
 msgid "``stdout[0].``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:34
+#: ../../rst/network/user_guide/platform_nxos.rst:40
 msgid "``stdout[0].messages[0].``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:37
+#: ../../rst/network/user_guide/platform_nxos.rst:46
 msgid ""
 "For legacy playbooks, NXOS still supports ``ansible_connection: local``. "
 "We recommend modernizing to use ``ansible_connection: network_cli`` or "
 "``ansible_connection: httpapi`` as soon as possible."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:40
-msgid "Using CLI in Ansible 2.6"
+#: ../../rst/network/user_guide/platform_nxos.rst:49
+msgid "Using CLI in Ansible"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:43
+#: ../../rst/network/user_guide/platform_nxos.rst:52
 msgid "Example CLI ``group_vars/nxos.yml``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:57
+#: ../../rst/network/user_guide/platform_nxos.rst:66
 msgid ""
 "If you are using SSH keys (including an ssh-agent) you can remove the "
-"``ansible_ssh_pass`` configuration."
+"``ansible_password`` configuration."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:58
+#: ../../rst/network/user_guide/platform_nxos.rst:67
 msgid ""
 "If you are accessing your host directly (not through a bastion/jump host)"
 " you can remove the ``ansible_ssh_common_args`` configuration."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:59
+#: ../../rst/network/user_guide/platform_nxos.rst:68
 msgid ""
 "If you are accessing your host through a bastion/jump host, you cannot "
 "include your SSH password in the ``ProxyCommand`` directive. To prevent "
@@ -187,19 +167,19 @@ msgid ""
 "support providing passwords via environment variables."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:62
+#: ../../rst/network/user_guide/platform_nxos.rst:71
 msgid "Example CLI Task"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:75
-msgid "Using NX-API in Ansible 2.6"
+#: ../../rst/network/user_guide/platform_nxos.rst:84
+msgid "Using NX-API in Ansible"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:78
+#: ../../rst/network/user_guide/platform_nxos.rst:87
 msgid "Enabling NX-API"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:80
+#: ../../rst/network/user_guide/platform_nxos.rst:89
 msgid ""
 "Before you can use NX-API to connect to a switch, you must enable NX-API."
 " To enable NX-API on a new switch via Ansible, use the ``nxos_nxapi`` "
@@ -207,39 +187,39 @@ msgid ""
 "the CLI example above, then run a playbook task like this:"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:90
+#: ../../rst/network/user_guide/platform_nxos.rst:99
 msgid ""
 "To find out more about the options for enabling HTTP/HTTPS and local http"
 " see the :ref:`nxos_nxapi <nxos_nxapi_module>` module documentation."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:92
+#: ../../rst/network/user_guide/platform_nxos.rst:101
 msgid ""
 "Once NX-API is enabled, change your ``group_vars/nxos.yml`` to use the "
 "NX-API connection."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:95
+#: ../../rst/network/user_guide/platform_nxos.rst:104
 msgid "Example NX-API ``group_vars/nxos.yml``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:106
+#: ../../rst/network/user_guide/platform_nxos.rst:115
 msgid ""
 "If you are accessing your host directly (not through a web proxy) you can"
 " remove the ``proxy_env`` configuration."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:107
+#: ../../rst/network/user_guide/platform_nxos.rst:116
 msgid ""
 "If you are accessing your host through a web proxy using ``https``, "
 "change ``http_proxy`` to ``https_proxy``."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:111
+#: ../../rst/network/user_guide/platform_nxos.rst:120
 msgid "Example NX-API Task"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_nxos.rst:122
+#: ../../rst/network/user_guide/platform_nxos.rst:131
 msgid ""
 "In this example the ``proxy_env`` variable defined in ``group_vars`` gets"
 " passed to the ``environment`` option of the module used in the task."
@@ -252,4 +232,173 @@ msgid ""
 "SSH keys. If you must use passwords to authenticate SSH connections, we "
 "recommend encrypting them with :ref:`Ansible Vault <playbooks_vault>`."
 msgstr ""
+
+#: ../../rst/network/user_guide/platform_nxos.rst:136
+msgid "Cisco Nexus Platform Support Matrix"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_nxos.rst:138
+msgid ""
+"The following platforms and software versions have been certified by "
+"Cisco to work with this version of Ansible."
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_nxos.rst:140
+msgid "Platform / Software Mininum Requirements"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_nxos.rst:144
+msgid "Supported Platforms"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_nxos.rst:144
+msgid "Minimum NX-OS Version"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_nxos.rst:146
+msgid "Cisco Nexus N3k"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_nxos.rst:146
+#: ../../rst/network/user_guide/platform_nxos.rst:147
+msgid "7.0(3)I2(5) and later"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_nxos.rst:147
+msgid "Cisco Nexus N9k"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_nxos.rst:148
+msgid "Cisco Nexus N5k"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_nxos.rst:148
+#: ../../rst/network/user_guide/platform_nxos.rst:149
+msgid "7.3(0)N1(1) and later"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_nxos.rst:149
+msgid "Cisco Nexus N6k"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_nxos.rst:150
+msgid "Cisco Nexus N7k"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_nxos.rst:150
+msgid "7.3(0)D1(1) and later"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_nxos.rst:153
+msgid "Platform Models"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_nxos.rst:157
+msgid "Platform"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_nxos.rst:157
+msgid "Description"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_nxos.rst:159
+msgid "N3k"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_nxos.rst:159
+msgid "Support includes N30xx, N31xx and N35xx models"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_nxos.rst:160
+msgid "N5k"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_nxos.rst:160
+msgid "Support includes all N5xxx models"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_nxos.rst:161
+msgid "N6k"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_nxos.rst:161
+msgid "Support includes all N6xxx models"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_nxos.rst:162
+msgid "N7k"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_nxos.rst:162
+msgid "Support includes all N7xxx models"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_nxos.rst:163
+msgid "N9k"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_nxos.rst:163
+msgid "Support includes all N9xxx models"
+msgstr ""
+
+#~ msgid ""
+#~ "Cisco NXOS supports multiple connections. "
+#~ "This page offers details on how "
+#~ "each connection works in Ansible 2.6 "
+#~ "and how to use it."
+#~ msgstr ""
+
+#~ msgid "**Protocol**"
+#~ msgstr ""
+
+#~ msgid "**Credentials**"
+#~ msgstr ""
+
+#~ msgid "**Indirect Access**"
+#~ msgstr ""
+
+#~ msgid "**Connection Settings**"
+#~ msgstr ""
+
+#~ msgid "``ansible_connection: local``"
+#~ msgstr ""
+
+#~ msgid "with ``transport: nxapi``"
+#~ msgstr ""
+
+#~ msgid "in the ``provider`` dictionary"
+#~ msgstr ""
+
+#~ msgid "**Enable Mode**"
+#~ msgstr ""
+
+#~ msgid "(Privilege Escalation)"
+#~ msgstr ""
+
+#~ msgid "supported as of 2.5.3"
+#~ msgstr ""
+
+#~ msgid "supported - use ``ansible_become: yes``"
+#~ msgstr ""
+
+#~ msgid "with ``ansible_become_method: enable``"
+#~ msgstr ""
+
+#~ msgid "and ``ansible_become_pass:``"
+#~ msgstr ""
+
+#~ msgid "**Returned Data Format**"
+#~ msgstr ""
+
+#~ msgid "Using CLI in Ansible 2.6"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you are using SSH keys "
+#~ "(including an ssh-agent) you can "
+#~ "remove the ``ansible_ssh_pass`` configuration."
+#~ msgstr ""
+
+#~ msgid "Using NX-API in Ansible 2.6"
+#~ msgstr ""
 

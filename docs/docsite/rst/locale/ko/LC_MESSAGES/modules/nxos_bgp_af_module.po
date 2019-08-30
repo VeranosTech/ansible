@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,108 +22,116 @@ msgstr ""
 msgid "nxos_bgp_af -- Manages BGP Address-family configuration"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_af_module.rst:19
+#: ../../rst/modules/nxos_bgp_af_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_af_module.rst:20
+#: ../../rst/modules/nxos_bgp_af_module.rst:19
 msgid "Manages BGP Address-family configurations on NX-OS switches."
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_af_module.rst:26
+#: ../../rst/modules/nxos_bgp_af_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_af_module.rst:715
+#: ../../rst/modules/nxos_bgp_af_module.rst:717
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_af_module.rst:718
+#: ../../rst/modules/nxos_bgp_af_module.rst:720
 msgid "Tested against NXOSv 7.3.(0)D1(1) on VIRL"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_af_module.rst:719
+#: ../../rst/modules/nxos_bgp_af_module.rst:721
 msgid "``state=absent`` removes the whole BGP ASN configuration"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_af_module.rst:720
+#: ../../rst/modules/nxos_bgp_af_module.rst:722
 msgid "Default, where supported, restores params default value."
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_af_module.rst:721
+#: ../../rst/modules/nxos_bgp_af_module.rst:723
 msgid ""
 "For information on using CLI and NX-API see the :ref:`NXOS Platform "
 "Options guide <nxos_platform_options>`"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_af_module.rst:722
+#: ../../rst/modules/nxos_bgp_af_module.rst:724
 msgid ""
 "For more information on using Ansible to manage network devices see the "
 ":ref:`Ansible Network Guide <network_guide>`"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_af_module.rst:723
+#: ../../rst/modules/nxos_bgp_af_module.rst:725
 msgid ""
 "For more information on using Ansible to manage Cisco devices see the "
 "`Cisco integration page "
 "<https://www.ansible.com/integrations/networks/cisco>`_."
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_af_module.rst:728
+#: ../../rst/modules/nxos_bgp_af_module.rst:730
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_af_module.rst:746
+#: ../../rst/modules/nxos_bgp_af_module.rst:748
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_af_module.rst:747
+#: ../../rst/modules/nxos_bgp_af_module.rst:749
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_af_module.rst:775
+#: ../../rst/modules/nxos_bgp_af_module.rst:777
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_af_module.rst:780
+#: ../../rst/modules/nxos_bgp_af_module.rst:782
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_af_module.rst:783
+#: ../../rst/modules/nxos_bgp_af_module.rst:785
 msgid ""
 "This module is :ref:`maintained by the Ansible Network Team "
 "<modules_support>`. *[network]*"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_af_module.rst:786
+#: ../../rst/modules/nxos_bgp_af_module.rst:788
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_af_module.rst:788
+#: ../../rst/modules/nxos_bgp_af_module.rst:790
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_af_module.rst:794
+#: ../../rst/modules/nxos_bgp_af_module.rst:796
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_af_module.rst:796
+#: ../../rst/modules/nxos_bgp_af_module.rst:798
 msgid "Gabriele Gerbino (@GGabriele)"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_af_module.rst:800
+#: ../../rst/modules/nxos_bgp_af_module.rst:802
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_bgp_af.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_bgp_af.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_bgp_af.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

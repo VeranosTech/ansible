@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/modules/na_ontap_igroup_module.rst:9
-msgid "na_ontap_igroup -- NetApp ONTAP iSCSI igroup configuration"
+msgid "na_ontap_igroup -- NetApp ONTAP iSCSI or FC igroup configuration"
 msgstr ""
 
 #: ../../rst/modules/na_ontap_igroup_module.rst:19
@@ -27,7 +27,7 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/na_ontap_igroup_module.rst:20
-msgid "create, destroy or rename Igroups and add or remove initiator in igroups."
+msgid "Create/Delete/Rename Igroups and Modify initiators belonging to an igroup"
 msgstr ""
 
 #: ../../rst/modules/na_ontap_igroup_module.rst:25
@@ -70,50 +70,72 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_igroup_module.rst:284
+#: ../../rst/modules/na_ontap_igroup_module.rst:309
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_igroup_module.rst:287
+#: ../../rst/modules/na_ontap_igroup_module.rst:312
 msgid ""
-"The modules prefixed with na\\_ontap are built to support the ONTAP "
+"The modules prefixed with na\\\\_ontap are built to support the ONTAP "
 "storage platform."
 msgstr ""
 
-#: ../../rst/modules/na_ontap_igroup_module.rst:292
+#: ../../rst/modules/na_ontap_igroup_module.rst:317
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_igroup_module.rst:340
+#: ../../rst/modules/na_ontap_igroup_module.rst:385
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_igroup_module.rst:345
+#: ../../rst/modules/na_ontap_igroup_module.rst:390
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_igroup_module.rst:348
+#: ../../rst/modules/na_ontap_igroup_module.rst:393
 msgid ""
 "This module is :ref:`maintained by an Ansible Partner <modules_support>`."
 " *[certified]*"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_igroup_module.rst:355
+#: ../../rst/modules/na_ontap_igroup_module.rst:400
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_igroup_module.rst:357
+#: ../../rst/modules/na_ontap_igroup_module.rst:402
 msgid "NetApp Ansible Team (@carchi8py) <ng-ansibleteam@netapp.com>"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_igroup_module.rst:361
+#: ../../rst/modules/na_ontap_igroup_module.rst:406
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/na_ontap_igroup.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/na_ontap_igroup.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "na_ontap_igroup -- NetApp ONTAP iSCSI igroup configuration"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "create, destroy or rename Igroups and"
+#~ " add or remove initiator in igroups."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The modules prefixed with na\\_ontap are"
+#~ " built to support the ONTAP storage"
+#~ " platform."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/na_ontap_igroup.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,60 +52,68 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/avi_cloudproperties_module.rst:292
+#: ../../rst/modules/avi_cloudproperties_module.rst:467
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/avi_cloudproperties_module.rst:295
+#: ../../rst/modules/avi_cloudproperties_module.rst:470
 msgid ""
 "For more information on using Ansible to manage Avi Network devices see "
 "https://www.ansible.com/ansible-avi-networks."
 msgstr ""
 
-#: ../../rst/modules/avi_cloudproperties_module.rst:300
+#: ../../rst/modules/avi_cloudproperties_module.rst:475
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/avi_cloudproperties_module.rst:317
+#: ../../rst/modules/avi_cloudproperties_module.rst:492
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/avi_cloudproperties_module.rst:318
+#: ../../rst/modules/avi_cloudproperties_module.rst:493
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/avi_cloudproperties_module.rst:344
+#: ../../rst/modules/avi_cloudproperties_module.rst:519
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/avi_cloudproperties_module.rst:349
+#: ../../rst/modules/avi_cloudproperties_module.rst:524
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/avi_cloudproperties_module.rst:352
+#: ../../rst/modules/avi_cloudproperties_module.rst:527
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/avi_cloudproperties_module.rst:359
+#: ../../rst/modules/avi_cloudproperties_module.rst:534
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/avi_cloudproperties_module.rst:361
+#: ../../rst/modules/avi_cloudproperties_module.rst:536
 msgid "Gaurav Rastogi (@grastogi23) <grastogi@avinetworks.com>"
 msgstr ""
 
-#: ../../rst/modules/avi_cloudproperties_module.rst:365
+#: ../../rst/modules/avi_cloudproperties_module.rst:540
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/avi/avi_cloudproperties.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/avi/avi_cloudproperties.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/avi/avi_cloudproperties.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

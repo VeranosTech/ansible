@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,14 +22,18 @@ msgstr ""
 msgid "cronvar -- Manage variables in crontabs"
 msgstr ""
 
-#: ../../rst/modules/cronvar_module.rst:19
+#: ../../rst/modules/cronvar_module.rst:18
 msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/cronvar_module.rst:19
+msgid "Use this module to manage crontab variables."
 msgstr ""
 
 #: ../../rst/modules/cronvar_module.rst:20
 msgid ""
-"Use this module to manage crontab variables. This module allows you to "
-"create, update, or delete cron variable definitions."
+"This module allows you to create, update, or delete cron variable "
+"definitions."
 msgstr ""
 
 #: ../../rst/modules/cronvar_module.rst:25
@@ -48,40 +52,55 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/cronvar_module.rst:164
+#: ../../rst/modules/cronvar_module.rst:166
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/cronvar_module.rst:191
+#: ../../rst/modules/cronvar_module.rst:193
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/cronvar_module.rst:196
+#: ../../rst/modules/cronvar_module.rst:198
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/cronvar_module.rst:199
+#: ../../rst/modules/cronvar_module.rst:201
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/cronvar_module.rst:206
+#: ../../rst/modules/cronvar_module.rst:208
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/cronvar_module.rst:208
+#: ../../rst/modules/cronvar_module.rst:210
 msgid "Doug Luce (@dougluce)"
 msgstr ""
 
-#: ../../rst/modules/cronvar_module.rst:212
+#: ../../rst/modules/cronvar_module.rst:214
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/cronvar.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/cronvar.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "Use this module to manage crontab "
+#~ "variables. This module allows you to "
+#~ "create, update, or delete cron variable"
+#~ " definitions."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/cronvar.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

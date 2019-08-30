@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -175,34 +175,34 @@ msgid ""
 msgstr ""
 
 #: ../../rst/dev_guide/style_guide/index.rst:66
-msgid "``###`` with overline, for parts::"
+msgid "``###`` with overline, for parts:"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:72
-msgid "``***`` with overline, for chapters::"
+#: ../../rst/dev_guide/style_guide/index.rst:74
+msgid "``***`` with overline, for chapters:"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:78
-msgid "``===`` for sections::"
+#: ../../rst/dev_guide/style_guide/index.rst:82
+msgid "``===`` for sections:"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:83
-msgid "``---`` for subsections::"
+#: ../../rst/dev_guide/style_guide/index.rst:89
+msgid "``---`` for subsections:"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:88
-msgid "``^^^`` for sub-subsections::"
+#: ../../rst/dev_guide/style_guide/index.rst:96
+msgid "``^^^`` for sub-subsections:"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:93
-msgid "``\"\"\"`` for paragraphs::"
+#: ../../rst/dev_guide/style_guide/index.rst:103
+msgid "``\"\"\"`` for paragraphs:"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:100
+#: ../../rst/dev_guide/style_guide/index.rst:112
 msgid "Internal navigation"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:102
+#: ../../rst/dev_guide/style_guide/index.rst:114
 msgid ""
 "`Anchors (also called labels) and links <http://www.sphinx-"
 "doc.org/en/master/usage/restructuredtext/roles.html#ref-role>`_ work "
@@ -213,100 +213,141 @@ msgid ""
 "pages with multiple levels of headers, can also include a local TOC."
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:110
+#: ../../rst/dev_guide/style_guide/index.rst:122
 msgid "Adding anchors"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:112
+#: ../../rst/dev_guide/style_guide/index.rst:124
 msgid "Include at least one anchor on every page"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:113
+#: ../../rst/dev_guide/style_guide/index.rst:125
 msgid "Place the main anchor above the main header"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:114
+#: ../../rst/dev_guide/style_guide/index.rst:126
 msgid "If the file has a unique title, use that for the main page anchor::"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:118
+#: ../../rst/dev_guide/style_guide/index.rst:130
 msgid "You may also add anchors elsewhere on the page"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:121
+#: ../../rst/dev_guide/style_guide/index.rst:133
 msgid "Adding internal links"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:123
+#: ../../rst/dev_guide/style_guide/index.rst:135
 msgid ""
 "All internal links must use ``:ref:`` syntax. These links both point to "
-"the anchor defined above::"
+"the anchor defined above:"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:128
+#: ../../rst/dev_guide/style_guide/index.rst:142
 msgid "The second example adds custom text for the link."
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:131
+#: ../../rst/dev_guide/style_guide/index.rst:145
+msgid "Adding links to modules and plugins"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/index.rst:147
+msgid "Module links use the module name followed by ``_module`` for the anchor."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/index.rst:148
+msgid ""
+"Plugin links use the plugin name followed by the plugin type. For "
+"example, :ref:`enable become plugin <enable_become>`)."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/index.rst:156
 msgid "Adding local TOCs"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:133
+#: ../../rst/dev_guide/style_guide/index.rst:158
 msgid ""
 "The page you're reading includes a `local TOC "
 "<http://docutils.sourceforge.net/docs/ref/rst/directives.html#table-of-"
 "contents>`_. If you include a local TOC:"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:136
+#: ../../rst/dev_guide/style_guide/index.rst:161
 msgid ""
 "place it below, not above, the main heading and (optionally) introductory"
 " text"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:137
+#: ../../rst/dev_guide/style_guide/index.rst:162
 msgid "use the ``:local:`` directive so the page's main header is not included"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:138
+#: ../../rst/dev_guide/style_guide/index.rst:163
 msgid "do not include a title"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:140
-msgid "The syntax is::"
+#: ../../rst/dev_guide/style_guide/index.rst:165
+msgid "The syntax is:"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:146
+#: ../../rst/dev_guide/style_guide/index.rst:173
 msgid "More resources"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:148
+#: ../../rst/dev_guide/style_guide/index.rst:175
 msgid ""
 "These pages offer more help with grammatical, stylistic, and technical "
 "rules for documentation."
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:162
+#: ../../rst/dev_guide/style_guide/index.rst:189
 msgid ":ref:`community_documentation_contributions`"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:163
+#: ../../rst/dev_guide/style_guide/index.rst:190
 msgid "How to contribute to the Ansible documentation"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:164
+#: ../../rst/dev_guide/style_guide/index.rst:191
 msgid ":ref:`testing_documentation_locally`"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:165
+#: ../../rst/dev_guide/style_guide/index.rst:192
 msgid "How to build the Ansible documentation"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:166
+#: ../../rst/dev_guide/style_guide/index.rst:193
 msgid "`irc.freenode.net <http://irc.freenode.net>`_"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:167
+#: ../../rst/dev_guide/style_guide/index.rst:194
 msgid "#ansible-docs IRC chat channel"
 msgstr ""
+
+#~ msgid "``###`` with overline, for parts::"
+#~ msgstr ""
+
+#~ msgid "``***`` with overline, for chapters::"
+#~ msgstr ""
+
+#~ msgid "``===`` for sections::"
+#~ msgstr ""
+
+#~ msgid "``---`` for subsections::"
+#~ msgstr ""
+
+#~ msgid "``^^^`` for sub-subsections::"
+#~ msgstr ""
+
+#~ msgid "``\"\"\"`` for paragraphs::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "All internal links must use ``:ref:``"
+#~ " syntax. These links both point to"
+#~ " the anchor defined above::"
+#~ msgstr ""
+
+#~ msgid "The syntax is::"
+#~ msgstr ""
 

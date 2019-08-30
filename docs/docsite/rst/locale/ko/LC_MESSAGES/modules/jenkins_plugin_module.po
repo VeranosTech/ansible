@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,23 +22,23 @@ msgstr ""
 msgid "jenkins_plugin -- Add or remove Jenkins plugin"
 msgstr ""
 
-#: ../../rst/modules/jenkins_plugin_module.rst:19
+#: ../../rst/modules/jenkins_plugin_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/jenkins_plugin_module.rst:20
+#: ../../rst/modules/jenkins_plugin_module.rst:19
 msgid "Ansible module which helps to manage Jenkins plugins."
 msgstr ""
 
-#: ../../rst/modules/jenkins_plugin_module.rst:26
+#: ../../rst/modules/jenkins_plugin_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/jenkins_plugin_module.rst:364
+#: ../../rst/modules/jenkins_plugin_module.rst:365
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/jenkins_plugin_module.rst:367
+#: ../../rst/modules/jenkins_plugin_module.rst:368
 msgid ""
 "Plugin installation should be run under root or the same user which owns "
 "the plugin files on the disk. Only if the plugin is not installed yet and"
@@ -46,75 +46,83 @@ msgid ""
 "requires only the Web UI credentials."
 msgstr ""
 
-#: ../../rst/modules/jenkins_plugin_module.rst:368
+#: ../../rst/modules/jenkins_plugin_module.rst:369
 msgid ""
 "It's necessary to notify the handler or call the *service* module to "
 "restart the Jenkins service after a new plugin was installed."
 msgstr ""
 
-#: ../../rst/modules/jenkins_plugin_module.rst:369
+#: ../../rst/modules/jenkins_plugin_module.rst:370
 msgid ""
 "Pinning works only if the plugin is installed and Jenkis service was "
 "successfully restarted after the plugin installation."
 msgstr ""
 
-#: ../../rst/modules/jenkins_plugin_module.rst:370
+#: ../../rst/modules/jenkins_plugin_module.rst:371
 msgid ""
 "It is not possible to run the module remotely by changing the *url* "
 "parameter to point to the Jenkins server. The module must be used on the "
 "host where Jenkins runs as it needs direct access to the plugin files."
 msgstr ""
 
-#: ../../rst/modules/jenkins_plugin_module.rst:371
+#: ../../rst/modules/jenkins_plugin_module.rst:372
 msgid ""
 "The ``params`` option was removed in Ansible 2.5 due to circumventing "
 "Ansible's option handling"
 msgstr ""
 
-#: ../../rst/modules/jenkins_plugin_module.rst:376
+#: ../../rst/modules/jenkins_plugin_module.rst:377
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/jenkins_plugin_module.rst:527
+#: ../../rst/modules/jenkins_plugin_module.rst:528
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/jenkins_plugin_module.rst:528
+#: ../../rst/modules/jenkins_plugin_module.rst:529
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/jenkins_plugin_module.rst:569
+#: ../../rst/modules/jenkins_plugin_module.rst:570
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/jenkins_plugin_module.rst:574
+#: ../../rst/modules/jenkins_plugin_module.rst:575
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/jenkins_plugin_module.rst:577
+#: ../../rst/modules/jenkins_plugin_module.rst:578
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/jenkins_plugin_module.rst:584
+#: ../../rst/modules/jenkins_plugin_module.rst:585
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/jenkins_plugin_module.rst:586
+#: ../../rst/modules/jenkins_plugin_module.rst:587
 msgid "Jiri Tyr (@jtyr)"
 msgstr ""
 
-#: ../../rst/modules/jenkins_plugin_module.rst:590
+#: ../../rst/modules/jenkins_plugin_module.rst:591
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/web_infrastructure/jenkins_plugin.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/web_infrastructure/jenkins_plugin.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/web_infrastructure/jenkins_plugin.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

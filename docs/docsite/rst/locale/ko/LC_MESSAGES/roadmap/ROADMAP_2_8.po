@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,58 +37,81 @@ msgid ""
 msgstr ""
 
 #: ../../rst/roadmap/ROADMAP_2_8.rst:16
-msgid "2019-03-14 Alpha 1 **Core freeze**"
-msgstr ""
-
-#: ../../rst/roadmap/ROADMAP_2_8.rst:18
 msgid ""
-"No new features to ``support:core`` code. Includes no new options to "
-"existing Core modules"
+"2019-04-04 Alpha 1 **Core freeze** No new features to ``support:core`` "
+"code. Includes no new options to existing Core modules"
 msgstr ""
 
 #: ../../rst/roadmap/ROADMAP_2_8.rst:20
-msgid "2019-03-21 Beta 1 **Feature freeze**"
-msgstr ""
-
-#: ../../rst/roadmap/ROADMAP_2_8.rst:22
-msgid "No new functionality (including modules/plugins) to any code"
+msgid ""
+"2019-04-11 Beta 1 **Feature freeze** No new functionality (including "
+"modules/plugins) to any code"
 msgstr ""
 
 #: ../../rst/roadmap/ROADMAP_2_8.rst:23
-msgid "2019-04-04 Release Candidate 1"
+msgid "2019-04-25 Release Candidate 1"
 msgstr ""
 
 #: ../../rst/roadmap/ROADMAP_2_8.rst:24
-msgid "2019-04-11 Release Candidate 2 (if needed)"
+msgid "2019-05-02 Release Candidate 2"
 msgstr ""
 
 #: ../../rst/roadmap/ROADMAP_2_8.rst:25
-msgid "2019-04-18 Release Candidate 3 (if needed)"
+msgid "2019-05-10 Release Candidate 3"
 msgstr ""
 
 #: ../../rst/roadmap/ROADMAP_2_8.rst:26
-msgid "2019-04-25 Release Candidate 4 (if needed)"
+msgid "2019-05-16 Release"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_8.rst:27
-msgid "2019-05-02 Release"
-msgstr ""
-
-#: ../../rst/roadmap/ROADMAP_2_8.rst:32
+#: ../../rst/roadmap/ROADMAP_2_8.rst:31
 msgid "Release Manager"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_8.rst:34
-msgid "Adam Miller (IRC: maxamillion; GitHub: @maxamillion)"
+#: ../../rst/roadmap/ROADMAP_2_8.rst:33
+msgid "Toshio Kuratomi (IRC: abadger1999; GitHub: @abadger)"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_8.rst:37
+#: ../../rst/roadmap/ROADMAP_2_8.rst:36
 msgid "Planned work"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_8.rst:39
+#: ../../rst/roadmap/ROADMAP_2_8.rst:38
 msgid ""
 "See the `Ansible 2.8 Project Board "
 "<https://github.com/ansible/ansible/projects/30>`_"
 msgstr ""
+
+#~ msgid "2019-03-14 Alpha 1 **Core freeze**"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "No new features to ``support:core`` "
+#~ "code. Includes no new options to "
+#~ "existing Core modules"
+#~ msgstr ""
+
+#~ msgid "2019-03-21 Beta 1 **Feature freeze**"
+#~ msgstr ""
+
+#~ msgid "No new functionality (including modules/plugins) to any code"
+#~ msgstr ""
+
+#~ msgid "2019-04-04 Release Candidate 1"
+#~ msgstr ""
+
+#~ msgid "2019-04-11 Release Candidate 2 (if needed)"
+#~ msgstr ""
+
+#~ msgid "2019-04-18 Release Candidate 3 (if needed)"
+#~ msgstr ""
+
+#~ msgid "2019-04-25 Release Candidate 4 (if needed)"
+#~ msgstr ""
+
+#~ msgid "2019-05-02 Release"
+#~ msgstr ""
+
+#~ msgid "Adam Miller (IRC: maxamillion; GitHub: @maxamillion)"
+#~ msgstr ""
 

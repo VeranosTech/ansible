@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,18 +22,24 @@ msgstr ""
 msgid "vmware_cluster -- Manage VMware vSphere clusters"
 msgstr ""
 
-#: ../../rst/modules/vmware_cluster_module.rst:19
+#: ../../rst/modules/vmware_cluster_module.rst:18
 msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/vmware_cluster_module.rst:19
+msgid "Adds or removes VMware vSphere clusters."
 msgstr ""
 
 #: ../../rst/modules/vmware_cluster_module.rst:20
 msgid ""
-"This module can be used to add, remove and update VMware vSphere clusters"
-" and its configurations."
+"Although this module can manage DRS, HA and VSAN related configurations, "
+"this functionality is deprecated and will be removed in 2.12."
 msgstr ""
 
 #: ../../rst/modules/vmware_cluster_module.rst:21
-msgid "Module can manage HA, DRS and VSAN related configurations."
+msgid ""
+"To manage DRS, HA and VSAN related configurations, use the new modules "
+"vmware_cluster_drs, vmware_cluster_ha and vmware_cluster_vsan."
 msgstr ""
 
 #: ../../rst/modules/vmware_cluster_module.rst:22
@@ -60,44 +66,61 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/vmware_cluster_module.rst:469
+#: ../../rst/modules/vmware_cluster_module.rst:550
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/vmware_cluster_module.rst:519
+#: ../../rst/modules/vmware_cluster_module.rst:600
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/vmware_cluster_module.rst:524
+#: ../../rst/modules/vmware_cluster_module.rst:605
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/vmware_cluster_module.rst:527
+#: ../../rst/modules/vmware_cluster_module.rst:608
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/vmware_cluster_module.rst:534
+#: ../../rst/modules/vmware_cluster_module.rst:615
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/vmware_cluster_module.rst:536
+#: ../../rst/modules/vmware_cluster_module.rst:617
 msgid "Joseph Callen (@jcpowermac)"
 msgstr ""
 
-#: ../../rst/modules/vmware_cluster_module.rst:537
+#: ../../rst/modules/vmware_cluster_module.rst:618
 msgid "Abhijeet Kasurde (@Akasurde)"
 msgstr ""
 
-#: ../../rst/modules/vmware_cluster_module.rst:541
+#: ../../rst/modules/vmware_cluster_module.rst:622
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_cluster.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_cluster.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module can be used to add,"
+#~ " remove and update VMware vSphere "
+#~ "clusters and its configurations."
+#~ msgstr ""
+
+#~ msgid "Module can manage HA, DRS and VSAN related configurations."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_cluster.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

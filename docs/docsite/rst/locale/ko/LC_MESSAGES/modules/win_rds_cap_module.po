@@ -1,0 +1,126 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/win_rds_cap_module.rst:9
+msgid ""
+"win_rds_cap -- Manage Connection Authorization Policies (CAP) on a Remote"
+" Desktop Gateway server"
+msgstr ""
+
+#: ../../rst/modules/win_rds_cap_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/win_rds_cap_module.rst:20
+msgid ""
+"Creates, removes and configures a Remote Desktop connection authorization"
+" policy (RD CAP)."
+msgstr ""
+
+#: ../../rst/modules/win_rds_cap_module.rst:21
+msgid ""
+"A RD CAP allows you to specify the users who can connect to a Remote "
+"Desktop Gateway server."
+msgstr ""
+
+#: ../../rst/modules/win_rds_cap_module.rst:26
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/win_rds_cap_module.rst:27
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/win_rds_cap_module.rst:29
+msgid "Windows Server 2008R2 (6.1) or higher."
+msgstr ""
+
+#: ../../rst/modules/win_rds_cap_module.rst:30
+msgid "The Windows Feature \"RDS-Gateway\" must be enabled."
+msgstr ""
+
+#: ../../rst/modules/win_rds_cap_module.rst:34
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/win_rds_cap_module.rst:298
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/win_rds_cap_module.rst:302
+msgid ":ref:`win_rds_cap_module`"
+msgstr ""
+
+#: ../../rst/modules/win_rds_cap_module.rst:303
+msgid "The official documentation on the **win_rds_cap** module."
+msgstr ""
+
+#: ../../rst/modules/win_rds_cap_module.rst:304
+msgid ":ref:`win_rds_rap_module`"
+msgstr ""
+
+#: ../../rst/modules/win_rds_cap_module.rst:305
+msgid "The official documentation on the **win_rds_rap** module."
+msgstr ""
+
+#: ../../rst/modules/win_rds_cap_module.rst:306
+msgid ":ref:`win_rds_settings_module`"
+msgstr ""
+
+#: ../../rst/modules/win_rds_cap_module.rst:307
+msgid "The official documentation on the **win_rds_settings** module."
+msgstr ""
+
+#: ../../rst/modules/win_rds_cap_module.rst:311
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/win_rds_cap_module.rst:336
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/win_rds_cap_module.rst:341
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/win_rds_cap_module.rst:344
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/win_rds_cap_module.rst:351
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/win_rds_cap_module.rst:353
+msgid "Kevin Subileau (@ksubileau)"
+msgstr ""
+
+#: ../../rst/modules/win_rds_cap_module.rst:357
+#, python-format
+msgid ""
+"If you notice any issues in this documentation, you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_rds_cap.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

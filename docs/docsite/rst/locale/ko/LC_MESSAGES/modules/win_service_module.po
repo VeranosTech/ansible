@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,81 +40,97 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/win_service_module.rst:245
+#: ../../rst/modules/win_service_module.rst:246
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/win_service_module.rst:249
+#: ../../rst/modules/win_service_module.rst:250
 msgid ":ref:`service_module`"
 msgstr ""
 
-#: ../../rst/modules/win_service_module.rst:250
+#: ../../rst/modules/win_service_module.rst:251
 msgid "The official documentation on the **service** module."
 msgstr ""
 
-#: ../../rst/modules/win_service_module.rst:251
+#: ../../rst/modules/win_service_module.rst:252
 msgid ":ref:`win_nssm_module`"
 msgstr ""
 
-#: ../../rst/modules/win_service_module.rst:252
+#: ../../rst/modules/win_service_module.rst:253
 msgid "The official documentation on the **win_nssm** module."
 msgstr ""
 
-#: ../../rst/modules/win_service_module.rst:256
+#: ../../rst/modules/win_service_module.rst:254
+msgid ":ref:`win_user_right_module`"
+msgstr ""
+
+#: ../../rst/modules/win_service_module.rst:255
+msgid "The official documentation on the **win_user_right** module."
+msgstr ""
+
+#: ../../rst/modules/win_service_module.rst:259
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/win_service_module.rst:374
+#: ../../rst/modules/win_service_module.rst:385
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/win_service_module.rst:375
+#: ../../rst/modules/win_service_module.rst:386
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/win_service_module.rst:540
+#: ../../rst/modules/win_service_module.rst:551
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/win_service_module.rst:545
+#: ../../rst/modules/win_service_module.rst:556
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/win_service_module.rst:548
+#: ../../rst/modules/win_service_module.rst:559
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/win_service_module.rst:551
+#: ../../rst/modules/win_service_module.rst:562
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/win_service_module.rst:553
+#: ../../rst/modules/win_service_module.rst:564
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/win_service_module.rst:559
+#: ../../rst/modules/win_service_module.rst:570
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/win_service_module.rst:561
+#: ../../rst/modules/win_service_module.rst:572
 msgid "Chris Hoffman (@chrishoffman)"
 msgstr ""
 
-#: ../../rst/modules/win_service_module.rst:565
+#: ../../rst/modules/win_service_module.rst:576
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_service.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_service.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_service.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

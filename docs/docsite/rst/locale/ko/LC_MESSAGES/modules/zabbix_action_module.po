@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,62 +46,79 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/zabbix_action_module.rst:873
+#: ../../rst/modules/zabbix_action_module.rst:970
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/zabbix_action_module.rst:876
+#: ../../rst/modules/zabbix_action_module.rst:973
 msgid "Only Zabbix >= 3.0 is supported."
 msgstr ""
 
-#: ../../rst/modules/zabbix_action_module.rst:881
+#: ../../rst/modules/zabbix_action_module.rst:974
+msgid ""
+"If you use *login_password=zabbix*, the word \"zabbix\" is replaced by "
+"\"********\" in all module output, because *login_password* uses "
+"``no_log``. See `this FAQ "
+"<https://docs.ansible.com/ansible/latest/network/user_guide/faq.html#why-"
+"is-my-output-sometimes-replaced-with>`_ for more information."
+msgstr ""
+
+#: ../../rst/modules/zabbix_action_module.rst:979
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/zabbix_action_module.rst:976
+#: ../../rst/modules/zabbix_action_module.rst:1074
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/zabbix_action_module.rst:977
+#: ../../rst/modules/zabbix_action_module.rst:1075
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/zabbix_action_module.rst:1005
+#: ../../rst/modules/zabbix_action_module.rst:1103
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/zabbix_action_module.rst:1010
+#: ../../rst/modules/zabbix_action_module.rst:1108
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/zabbix_action_module.rst:1013
+#: ../../rst/modules/zabbix_action_module.rst:1111
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/zabbix_action_module.rst:1020
+#: ../../rst/modules/zabbix_action_module.rst:1118
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/zabbix_action_module.rst:1022
+#: ../../rst/modules/zabbix_action_module.rst:1120
 msgid "Ruben Tsirunyan (@rubentsirunyan)"
 msgstr ""
 
-#: ../../rst/modules/zabbix_action_module.rst:1023
+#: ../../rst/modules/zabbix_action_module.rst:1121
 msgid "Ruben Harutyunov (@K-DOT)"
 msgstr ""
 
-#: ../../rst/modules/zabbix_action_module.rst:1027
+#: ../../rst/modules/zabbix_action_module.rst:1125
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/monitoring/zabbix/zabbix_action.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/monitoring/zabbix/zabbix_action.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/monitoring/zabbix/zabbix_action.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

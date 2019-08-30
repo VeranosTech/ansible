@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,43 +55,52 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/plugins/inventory/tower.rst:149
+#: ../../rst/plugins/inventory/tower.rst:169
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/plugins/inventory/tower.rst:184
+#: ../../rst/plugins/inventory/tower.rst:204
 msgid "Status"
 msgstr ""
 
-#: ../../rst/plugins/inventory/tower.rst:189
+#: ../../rst/plugins/inventory/tower.rst:209
 msgid ""
 "This inventory is not guaranteed to have a backwards compatible "
 "interface. *[preview]*"
 msgstr ""
 
-#: ../../rst/plugins/inventory/tower.rst:192
+#: ../../rst/plugins/inventory/tower.rst:212
 msgid ""
 "This inventory is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/plugins/inventory/tower.rst:199
+#: ../../rst/plugins/inventory/tower.rst:219
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/plugins/inventory/tower.rst:201
+#: ../../rst/plugins/inventory/tower.rst:221
 msgid "Matthew Jones (@matburt)"
 msgstr ""
 
-#: ../../rst/plugins/inventory/tower.rst:202
+#: ../../rst/plugins/inventory/tower.rst:222
 msgid "Yunfan Zhang (@YunfanZhang42)"
 msgstr ""
 
-#: ../../rst/plugins/inventory/tower.rst:206
+#: ../../rst/plugins/inventory/tower.rst:226
+#, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/inventory/tower.py>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/inventory/tower.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/inventory/tower.py>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,54 +22,54 @@ msgstr ""
 msgid "smartos_image_facts -- Get SmartOS image details"
 msgstr ""
 
-#: ../../rst/modules/smartos_image_facts_module.rst:19
-msgid "Synopsis"
-msgstr ""
-
-#: ../../rst/modules/smartos_image_facts_module.rst:20
+#: ../../rst/modules/smartos_image_facts_module.rst:11
 msgid ""
-"Retrieve facts about all installed images on SmartOS. Facts will be "
-"inserted to the ansible_facts key."
+"This is an alias for :ref:`smartos_image_info "
+"<smartos_image_info_module>`. This name has been **deprecated**. Please "
+"update your tasks to use the new name ``smartos_image_info`` instead."
 msgstr ""
 
-#: ../../rst/modules/smartos_image_facts_module.rst:26
-msgid "Parameters"
-msgstr ""
+#~ msgid "Synopsis"
+#~ msgstr ""
 
-#: ../../rst/modules/smartos_image_facts_module.rst:56
-msgid "Examples"
-msgstr ""
+#~ msgid ""
+#~ "Retrieve facts about all installed "
+#~ "images on SmartOS. Facts will be "
+#~ "inserted to the ansible_facts key."
+#~ msgstr ""
 
-#: ../../rst/modules/smartos_image_facts_module.rst:79
-msgid "Status"
-msgstr ""
+#~ msgid "Parameters"
+#~ msgstr ""
 
-#: ../../rst/modules/smartos_image_facts_module.rst:84
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
-msgstr ""
+#~ msgid "Examples"
+#~ msgstr ""
 
-#: ../../rst/modules/smartos_image_facts_module.rst:87
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
-msgstr ""
+#~ msgid "Status"
+#~ msgstr ""
 
-#: ../../rst/modules/smartos_image_facts_module.rst:94
-msgid "Authors"
-msgstr ""
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
 
-#: ../../rst/modules/smartos_image_facts_module.rst:96
-msgid "Adam Števko (@xen0l)"
-msgstr ""
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
 
-#: ../../rst/modules/smartos_image_facts_module.rst:100
-#, python-format
-msgid ""
-"If you notice any issues in this documentation you can `edit this "
-"document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/smartos/smartos_image_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
-" to improve it."
-msgstr ""
+#~ msgid "Authors"
+#~ msgstr ""
+
+#~ msgid "Adam Števko (@xen0l)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/smartos/smartos_image_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

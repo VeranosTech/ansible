@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,60 +22,78 @@ msgstr ""
 msgid "azure_rm_subnet -- Manage Azure subnets"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_subnet_module.rst:19
+#: ../../rst/modules/azure_rm_subnet_module.rst:18
 msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/azure_rm_subnet_module.rst:19
+msgid "Create, update or delete a subnet within a given virtual network."
 msgstr ""
 
 #: ../../rst/modules/azure_rm_subnet_module.rst:20
 msgid ""
-"Create, update or delete a subnet within a given virtual network. Allows "
-"setting and updating the address prefix CIDR, which must be valid within "
-"the context of the virtual network. Use the azure_rm_networkinterface "
-"module to associate interfaces with the subnet and assign specific IP "
-"addresses."
+"Allows setting and updating the address prefix CIDR, which must be valid "
+"within the context of the virtual network."
 msgstr ""
 
-#: ../../rst/modules/azure_rm_subnet_module.rst:25
-msgid "Requirements"
+#: ../../rst/modules/azure_rm_subnet_module.rst:21
+msgid ""
+"Use the :ref:`azure_rm_networkinterface "
+"<azure_rm_networkinterface_module>` module to associate interfaces with "
+"the subnet and assign specific IP addresses."
 msgstr ""
 
 #: ../../rst/modules/azure_rm_subnet_module.rst:26
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/azure_rm_subnet_module.rst:27
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/azure_rm_subnet_module.rst:28
+#: ../../rst/modules/azure_rm_subnet_module.rst:29
 msgid "python >= 2.7"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_subnet_module.rst:29
+#: ../../rst/modules/azure_rm_subnet_module.rst:30
 msgid "azure >= 2.0.0"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_subnet_module.rst:33
+#: ../../rst/modules/azure_rm_subnet_module.rst:34
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_subnet_module.rst:400
+#: ../../rst/modules/azure_rm_subnet_module.rst:369
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_subnet_module.rst:403
+#: ../../rst/modules/azure_rm_subnet_module.rst:372
 msgid ""
 "For authentication with Azure you can pass parameters, set environment "
-"variables or use a profile stored in ~/.azure/credentials. Authentication"
-" is possible using a service principal or Active Directory user. To "
-"authenticate via service principal, pass subscription_id, client_id, "
+"variables, use a profile stored in ~/.azure/credentials, or log in before"
+" you run your tasks or playbook with ``az login``."
+msgstr ""
+
+#: ../../rst/modules/azure_rm_subnet_module.rst:373
+msgid ""
+"Authentication is also possible using a service principal or Active "
+"Directory user."
+msgstr ""
+
+#: ../../rst/modules/azure_rm_subnet_module.rst:374
+msgid ""
+"To authenticate via service principal, pass subscription_id, client_id, "
 "secret and tenant or set environment variables AZURE_SUBSCRIPTION_ID, "
 "AZURE_CLIENT_ID, AZURE_SECRET and AZURE_TENANT."
 msgstr ""
 
-#: ../../rst/modules/azure_rm_subnet_module.rst:404
+#: ../../rst/modules/azure_rm_subnet_module.rst:375
 msgid ""
 "To authenticate via Active Directory user, pass ad_user and password, or "
 "set AZURE_AD_USER and AZURE_PASSWORD in the environment."
 msgstr ""
 
-#: ../../rst/modules/azure_rm_subnet_module.rst:405
+#: ../../rst/modules/azure_rm_subnet_module.rst:376
 msgid ""
 "Alternatively, credentials can be stored in ~/.azure/credentials. This is"
 " an ini file containing a [default] section and the following keys: "
@@ -85,54 +103,101 @@ msgid ""
 "environment."
 msgstr ""
 
-#: ../../rst/modules/azure_rm_subnet_module.rst:410
+#: ../../rst/modules/azure_rm_subnet_module.rst:380
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/azure_rm_subnet_module.rst:384
+msgid ""
+"`Sign in with Azure CLI <https://docs.microsoft.com/en-us/cli/azure"
+"/authenticate-azure-cli?view=azure-cli-latest>`_"
+msgstr ""
+
+#: ../../rst/modules/azure_rm_subnet_module.rst:385
+msgid "How to authenticate using the ``az login`` command."
+msgstr ""
+
+#: ../../rst/modules/azure_rm_subnet_module.rst:389
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_subnet_module.rst:444
+#: ../../rst/modules/azure_rm_subnet_module.rst:423
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_subnet_module.rst:445
+#: ../../rst/modules/azure_rm_subnet_module.rst:424
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_subnet_module.rst:558
+#: ../../rst/modules/azure_rm_subnet_module.rst:550
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_subnet_module.rst:563
+#: ../../rst/modules/azure_rm_subnet_module.rst:555
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_subnet_module.rst:566
+#: ../../rst/modules/azure_rm_subnet_module.rst:558
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_subnet_module.rst:573
+#: ../../rst/modules/azure_rm_subnet_module.rst:565
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_subnet_module.rst:575
+#: ../../rst/modules/azure_rm_subnet_module.rst:567
 msgid "Chris Houseknecht (@chouseknecht)"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_subnet_module.rst:576
+#: ../../rst/modules/azure_rm_subnet_module.rst:568
 msgid "Matt Davis (@nitzmahone)"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_subnet_module.rst:580
+#: ../../rst/modules/azure_rm_subnet_module.rst:572
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/azure/azure_rm_subnet.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/azure/azure_rm_subnet.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "Create, update or delete a subnet "
+#~ "within a given virtual network. Allows"
+#~ " setting and updating the address "
+#~ "prefix CIDR, which must be valid "
+#~ "within the context of the virtual "
+#~ "network. Use the azure_rm_networkinterface "
+#~ "module to associate interfaces with the"
+#~ " subnet and assign specific IP "
+#~ "addresses."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For authentication with Azure you can"
+#~ " pass parameters, set environment variables"
+#~ " or use a profile stored in "
+#~ "~/.azure/credentials. Authentication is possible "
+#~ "using a service principal or Active "
+#~ "Directory user. To authenticate via "
+#~ "service principal, pass subscription_id, "
+#~ "client_id, secret and tenant or set "
+#~ "environment variables AZURE_SUBSCRIPTION_ID, "
+#~ "AZURE_CLIENT_ID, AZURE_SECRET and AZURE_TENANT."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/azure/azure_rm_subnet.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

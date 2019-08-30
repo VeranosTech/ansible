@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,11 +50,11 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/route53_module.rst:451
+#: ../../rst/modules/route53_module.rst:470
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/route53_module.rst:454
+#: ../../rst/modules/route53_module.rst:473
 msgid ""
 "If parameters are not set within the module, the following environment "
 "variables can be used in decreasing order of precedence ``AWS_URL`` or "
@@ -64,68 +64,76 @@ msgid ""
 "``AWS_REGION`` or ``EC2_REGION``"
 msgstr ""
 
-#: ../../rst/modules/route53_module.rst:455
+#: ../../rst/modules/route53_module.rst:474
 msgid ""
 "Ansible uses the boto configuration file (typically ~/.boto) if no "
 "credentials are provided. See "
 "https://boto.readthedocs.io/en/latest/boto_config_tut.html"
 msgstr ""
 
-#: ../../rst/modules/route53_module.rst:456
+#: ../../rst/modules/route53_module.rst:475
 msgid ""
 "``AWS_REGION`` or ``EC2_REGION`` can be typically be used to specify the "
 "AWS region, when required, but this can also be configured in the boto "
 "config file"
 msgstr ""
 
-#: ../../rst/modules/route53_module.rst:461
+#: ../../rst/modules/route53_module.rst:480
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/route53_module.rst:615
+#: ../../rst/modules/route53_module.rst:634
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/route53_module.rst:616
+#: ../../rst/modules/route53_module.rst:635
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/route53_module.rst:814
+#: ../../rst/modules/route53_module.rst:833
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/route53_module.rst:819
+#: ../../rst/modules/route53_module.rst:838
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/route53_module.rst:822
+#: ../../rst/modules/route53_module.rst:841
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/route53_module.rst:829
+#: ../../rst/modules/route53_module.rst:848
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/route53_module.rst:831
+#: ../../rst/modules/route53_module.rst:850
 msgid "Bruce Pennypacker (@bpennypacker)"
 msgstr ""
 
-#: ../../rst/modules/route53_module.rst:832
+#: ../../rst/modules/route53_module.rst:851
 msgid "Mike Buzzetti (@jimbydamonk)"
 msgstr ""
 
-#: ../../rst/modules/route53_module.rst:836
+#: ../../rst/modules/route53_module.rst:855
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/route53.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/route53.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/route53.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

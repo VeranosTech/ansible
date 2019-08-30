@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,8 +29,8 @@ msgstr ""
 #: ../../rst/modules/acme_inspect_module.rst:20
 msgid ""
 "Allows to send direct requests to an ACME server with the `ACME protocol "
-"<https://tools.ietf.org/html/draft-ietf-acme-acme-18>`_, which is "
-"supported by CAs such as `Let's Encrypt <https://letsencrypt.org/>`_."
+"<https://tools.ietf.org/html/rfc8555>`_, which is supported by CAs such "
+"as `Let's Encrypt <https://letsencrypt.org/>`_."
 msgstr ""
 
 #: ../../rst/modules/acme_inspect_module.rst:21
@@ -59,14 +59,10 @@ msgid "python >= 2.6"
 msgstr ""
 
 #: ../../rst/modules/acme_inspect_module.rst:31
-msgid "either openssl, ..."
+msgid "either openssl or `cryptography <https://cryptography.io/>`_ >= 1.5"
 msgstr ""
 
-#: ../../rst/modules/acme_inspect_module.rst:32
-msgid "... or `cryptography <https://cryptography.io/>`_ >= 1.5"
-msgstr ""
-
-#: ../../rst/modules/acme_inspect_module.rst:36
+#: ../../rst/modules/acme_inspect_module.rst:35
 msgid "Parameters"
 msgstr ""
 
@@ -118,11 +114,11 @@ msgstr ""
 #: ../../rst/modules/acme_inspect_module.rst:252
 msgid ""
 "`Automatic Certificate Management Environment (ACME) "
-"<https://tools.ietf.org/html/draft-ietf-acme-acme-18>`_"
+"<https://tools.ietf.org/html/rfc8555>`_"
 msgstr ""
 
 #: ../../rst/modules/acme_inspect_module.rst:253
-msgid "The current draft specification of the ACME protocol."
+msgid "The specification of the ACME protocol (RFC 8555)."
 msgstr ""
 
 #: ../../rst/modules/acme_inspect_module.rst:254
@@ -176,9 +172,41 @@ msgstr ""
 #: ../../rst/modules/acme_inspect_module.rst:492
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/crypto/acme/acme_inspect.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/crypto/acme/acme_inspect.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "Allows to send direct requests to "
+#~ "an ACME server with the `ACME "
+#~ "protocol <https://tools.ietf.org/html/draft-ietf-"
+#~ "acme-acme-18>`_, which is supported by "
+#~ "CAs such as `Let's Encrypt "
+#~ "<https://letsencrypt.org/>`_."
+#~ msgstr ""
+
+#~ msgid "either openssl, ..."
+#~ msgstr ""
+
+#~ msgid "... or `cryptography <https://cryptography.io/>`_ >= 1.5"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Automatic Certificate Management Environment "
+#~ "(ACME) <https://tools.ietf.org/html/draft-ietf-"
+#~ "acme-acme-18>`_"
+#~ msgstr ""
+
+#~ msgid "The current draft specification of the ACME protocol."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/crypto/acme/acme_inspect.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

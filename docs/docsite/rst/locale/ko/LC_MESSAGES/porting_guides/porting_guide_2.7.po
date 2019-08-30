@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -502,11 +502,18 @@ msgid ""
 "managing."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.7.rst:229
-msgid "Plugins"
+#: ../../rst/porting_guides/porting_guide_2.7.rst:227
+msgid ""
+"Prior to Ansible 2.7.10, the ``replace`` module did the opposite of what "
+"was intended when using the ``before`` and ``after`` options together. "
+"This now works properly but may require changes to tasks."
 msgstr ""
 
 #: ../../rst/porting_guides/porting_guide_2.7.rst:231
+msgid "Plugins"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.7.rst:233
 msgid ""
 "The hash_password filter now throws an error if the hash algorithm "
 "specified is not supported by the controller.  This increases the safety "
@@ -517,16 +524,16 @@ msgid ""
 "this filter."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.7.rst:239
+#: ../../rst/porting_guides/porting_guide_2.7.rst:241
 msgid "Porting custom scripts"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.7.rst:241
-#: ../../rst/porting_guides/porting_guide_2.7.rst:246
+#: ../../rst/porting_guides/porting_guide_2.7.rst:243
+#: ../../rst/porting_guides/porting_guide_2.7.rst:248
 msgid "No notable changes."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.7.rst:244
+#: ../../rst/porting_guides/porting_guide_2.7.rst:246
 msgid "Networking"
 msgstr ""
 

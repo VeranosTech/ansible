@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,60 +49,68 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/nios_nsgroup_module.rst:706
+#: ../../rst/modules/nios_nsgroup_module.rst:707
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/nios_nsgroup_module.rst:709
+#: ../../rst/modules/nios_nsgroup_module.rst:710
 msgid ""
 "This module must be run locally, which can be achieved by specifying "
 "``connection: local``."
 msgstr ""
 
-#: ../../rst/modules/nios_nsgroup_module.rst:710
+#: ../../rst/modules/nios_nsgroup_module.rst:711
 msgid ""
 "Please read the :ref:`nios_guide` for more detailed information on how to"
 " use Infoblox with Ansible."
 msgstr ""
 
-#: ../../rst/modules/nios_nsgroup_module.rst:715
+#: ../../rst/modules/nios_nsgroup_module.rst:716
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/nios_nsgroup_module.rst:768
+#: ../../rst/modules/nios_nsgroup_module.rst:769
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/nios_nsgroup_module.rst:773
+#: ../../rst/modules/nios_nsgroup_module.rst:774
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/nios_nsgroup_module.rst:776
+#: ../../rst/modules/nios_nsgroup_module.rst:777
 msgid ""
 "This module is :ref:`maintained by an Ansible Partner <modules_support>`."
 " *[certified]*"
 msgstr ""
 
-#: ../../rst/modules/nios_nsgroup_module.rst:783
+#: ../../rst/modules/nios_nsgroup_module.rst:784
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/nios_nsgroup_module.rst:785
+#: ../../rst/modules/nios_nsgroup_module.rst:786
 msgid "Erich Birngruber (@ebirn)"
 msgstr ""
 
-#: ../../rst/modules/nios_nsgroup_module.rst:786
+#: ../../rst/modules/nios_nsgroup_module.rst:787
 msgid "Sumit Jaiswal (@sjaiswal)"
 msgstr ""
 
-#: ../../rst/modules/nios_nsgroup_module.rst:790
+#: ../../rst/modules/nios_nsgroup_module.rst:791
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/nios/nios_nsgroup.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/nios/nios_nsgroup.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/nios/nios_nsgroup.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

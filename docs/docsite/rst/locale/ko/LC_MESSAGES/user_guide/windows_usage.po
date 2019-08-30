@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -394,29 +394,37 @@ msgid ""
 msgstr ""
 
 #: ../../rst/user_guide/windows_usage.rst:399
-#: ../../rst/user_guide/windows_usage.rst:446
+#: ../../rst/user_guide/windows_usage.rst:449
 msgid "``\\x..`` -- 2-digit hex escape"
 msgstr ""
 
 #: ../../rst/user_guide/windows_usage.rst:401
-#: ../../rst/user_guide/windows_usage.rst:448
+#: ../../rst/user_guide/windows_usage.rst:451
 msgid "``\\u....`` -- 4-digit hex escape"
 msgstr ""
 
 #: ../../rst/user_guide/windows_usage.rst:403
-#: ../../rst/user_guide/windows_usage.rst:450
+#: ../../rst/user_guide/windows_usage.rst:453
 msgid "``\\U........`` -- 8-digit hex escape"
 msgstr ""
 
 #: ../../rst/user_guide/windows_usage.rst:405
-msgid "Here are some examples on how to write Windows paths:"
+msgid "Here are some examples on how to write Windows paths::"
 msgstr ""
 
-#: ../../rst/user_guide/windows_usage.rst:432
+#: ../../rst/user_guide/windows_usage.rst:419
+msgid "This is an example which will fail:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_usage.rst:426
+msgid "This example shows the use of single quotes when they are required::"
+msgstr ""
+
+#: ../../rst/user_guide/windows_usage.rst:435
 msgid "Legacy key=value Style"
 msgstr ""
 
-#: ../../rst/user_guide/windows_usage.rst:433
+#: ../../rst/user_guide/windows_usage.rst:436
 msgid ""
 "The legacy ``key=value`` syntax is used on the command line for ad-hoc "
 "commands, or inside playbooks. The use of this style is discouraged "
@@ -426,56 +434,56 @@ msgid ""
 "have any effect on how it is parsed by Ansible."
 msgstr ""
 
-#: ../../rst/user_guide/windows_usage.rst:440
+#: ../../rst/user_guide/windows_usage.rst:443
 msgid ""
 "The Ansible key=value parser parse_kv() considers the following escape "
 "sequences:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_usage.rst:443
+#: ../../rst/user_guide/windows_usage.rst:446
 msgid ""
 "``\\``, ``'``, ``\"``, ``\\a``, ``\\b``, ``\\f``, ``\\n``, ``\\r``, "
 "``\\t`` and ``\\v`` -- Single character escape"
 msgstr ""
 
-#: ../../rst/user_guide/windows_usage.rst:452
+#: ../../rst/user_guide/windows_usage.rst:455
 msgid "``\\N{...}`` -- Unicode character by name"
 msgstr ""
 
-#: ../../rst/user_guide/windows_usage.rst:454
+#: ../../rst/user_guide/windows_usage.rst:457
 msgid ""
 "This means that the backslash is an escape character for some sequences, "
 "and it is usually safer to escape a backslash when in this form."
 msgstr ""
 
-#: ../../rst/user_guide/windows_usage.rst:457
+#: ../../rst/user_guide/windows_usage.rst:460
 msgid "Here are some examples of using Windows paths with the key=value style:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_usage.rst:479
+#: ../../rst/user_guide/windows_usage.rst:482
 msgid ""
 "The failing examples don't fail outright but will substitute ``\\t`` with"
 " the ``<TAB>`` character resulting in ``tempdir`` being "
 "``C:\\Windows<TAB>emp``."
 msgstr ""
 
-#: ../../rst/user_guide/windows_usage.rst:483
+#: ../../rst/user_guide/windows_usage.rst:486
 msgid "Limitations"
 msgstr ""
 
-#: ../../rst/user_guide/windows_usage.rst:484
+#: ../../rst/user_guide/windows_usage.rst:487
 msgid "Some things you cannot do with Ansible and Windows are:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_usage.rst:486
+#: ../../rst/user_guide/windows_usage.rst:489
 msgid "Upgrade PowerShell"
 msgstr ""
 
-#: ../../rst/user_guide/windows_usage.rst:488
+#: ../../rst/user_guide/windows_usage.rst:491
 msgid "Interact with the WinRM listeners"
 msgstr ""
 
-#: ../../rst/user_guide/windows_usage.rst:490
+#: ../../rst/user_guide/windows_usage.rst:493
 msgid ""
 "Because WinRM is reliant on the services being online and running during "
 "normal operations, you cannot upgrade PowerShell or interact with WinRM "
@@ -486,11 +494,11 @@ msgid ""
 "bootstrapping process or before an image is created."
 msgstr ""
 
-#: ../../rst/user_guide/windows_usage.rst:494
+#: ../../rst/user_guide/windows_usage.rst:497
 msgid "Developing Windows Modules"
 msgstr ""
 
-#: ../../rst/user_guide/windows_usage.rst:495
+#: ../../rst/user_guide/windows_usage.rst:498
 msgid ""
 "Because Ansible modules for Windows are written in PowerShell, the "
 "development guides for Windows modules differ substantially from those "
@@ -498,51 +506,58 @@ msgid ""
 ":ref:`developing_modules_general_windows` for more information."
 msgstr ""
 
-#: ../../rst/user_guide/windows_usage.rst:501
-msgid ":doc:`index`"
-msgstr ""
-
-#: ../../rst/user_guide/windows_usage.rst:502
-msgid "The documentation index"
-msgstr ""
-
-#: ../../rst/user_guide/windows_usage.rst:503
-msgid ":doc:`playbooks`"
-msgstr ""
-
 #: ../../rst/user_guide/windows_usage.rst:504
-msgid "An introduction to playbooks"
+msgid ":ref:`playbooks_intro`"
 msgstr ""
 
 #: ../../rst/user_guide/windows_usage.rst:505
-msgid ":doc:`playbooks_best_practices`"
+msgid "An introduction to playbooks"
 msgstr ""
 
 #: ../../rst/user_guide/windows_usage.rst:506
-msgid "Best practices advice"
+msgid ":ref:`playbooks_best_practices`"
 msgstr ""
 
 #: ../../rst/user_guide/windows_usage.rst:507
-msgid ":ref:`List of Windows Modules <windows_modules>`"
+msgid "Best practices advice"
 msgstr ""
 
 #: ../../rst/user_guide/windows_usage.rst:508
-msgid "Windows specific module list, all implemented in PowerShell"
+msgid ":ref:`List of Windows Modules <windows_modules>`"
 msgstr ""
 
 #: ../../rst/user_guide/windows_usage.rst:509
-msgid "`User Mailing List <https://groups.google.com/group/ansible-project>`_"
+msgid "Windows specific module list, all implemented in PowerShell"
 msgstr ""
 
 #: ../../rst/user_guide/windows_usage.rst:510
-msgid "Have a question?  Stop by the google group!"
+msgid "`User Mailing List <https://groups.google.com/group/ansible-project>`_"
 msgstr ""
 
 #: ../../rst/user_guide/windows_usage.rst:511
-msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgid "Have a question?  Stop by the google group!"
 msgstr ""
 
 #: ../../rst/user_guide/windows_usage.rst:512
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/user_guide/windows_usage.rst:513
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid "Here are some examples on how to write Windows paths:"
+#~ msgstr ""
+
+#~ msgid ":doc:`index`"
+#~ msgstr ""
+
+#~ msgid "The documentation index"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks_best_practices`"
+#~ msgstr ""
 

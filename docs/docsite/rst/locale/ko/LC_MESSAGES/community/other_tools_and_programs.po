@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -222,101 +222,102 @@ msgid ""
 "development."
 msgstr ""
 
-#: ../../rst/community/other_tools_and_programs.rst:89
+#: ../../rst/community/other_tools_and_programs.rst:90
 msgid "Tools for Validating Playbooks"
 msgstr ""
 
-#: ../../rst/community/other_tools_and_programs.rst:91
+#: ../../rst/community/other_tools_and_programs.rst:92
 msgid ""
 "`Ansible Lint <https://github.com/ansible/ansible-lint>`_ - the official,"
 " highly configurable best-practices linter for Ansible playbooks, by "
 "Ansible."
 msgstr ""
 
-#: ../../rst/community/other_tools_and_programs.rst:92
+#: ../../rst/community/other_tools_and_programs.rst:93
 msgid ""
 "`Ansible Review <https://github.com/willthames/ansible-review>`_ - an "
 "extension of Ansible Lint designed for code review."
 msgstr ""
 
-#: ../../rst/community/other_tools_and_programs.rst:93
+#: ../../rst/community/other_tools_and_programs.rst:94
 msgid ""
 "`Molecule <https://github.com/ansible/molecule>`_ is a testing framework "
 "for Ansible plays and roles, by Ansible"
 msgstr ""
 
-#: ../../rst/community/other_tools_and_programs.rst:94
+#: ../../rst/community/other_tools_and_programs.rst:95
 msgid ""
 "`yamllint <https://yamllint.readthedocs.io/en/stable/>`__ is a command-"
 "line utility to check syntax validity including key repetition and "
 "indentation issues."
 msgstr ""
 
-#: ../../rst/community/other_tools_and_programs.rst:99
+#: ../../rst/community/other_tools_and_programs.rst:100
 msgid "Other Tools"
 msgstr ""
 
-#: ../../rst/community/other_tools_and_programs.rst:101
+#: ../../rst/community/other_tools_and_programs.rst:102
 msgid ""
 "`Ansible cmdb <https://github.com/fboender/ansible-cmdb>`_ - takes the "
 "output of Ansible's fact gathering and converts it into a static HTML "
 "overview page containing system configuration information."
 msgstr ""
 
-#: ../../rst/community/other_tools_and_programs.rst:102
+#: ../../rst/community/other_tools_and_programs.rst:103
 msgid ""
 "`Ansible Inventory Grapher <https://github.com/willthames/ansible-"
 "inventory-grapher>`_ - visually displays inventory inheritance "
 "hierarchies and at what level a variable is defined in inventory."
 msgstr ""
 
-#: ../../rst/community/other_tools_and_programs.rst:103
+#: ../../rst/community/other_tools_and_programs.rst:104
 msgid ""
 "`Ansible Playbook Grapher <https://github.com/haidaraM/ansible-playbook-"
 "grapher>`_ - A command line tool to create a graph representing your "
 "Ansible playbook tasks and roles."
 msgstr ""
 
-#: ../../rst/community/other_tools_and_programs.rst:104
+#: ../../rst/community/other_tools_and_programs.rst:105
 msgid ""
 "`Ansible Shell <https://github.com/dominis/ansible-shell>`_ - an "
 "interactive shell for Ansible with built-in tab completion for all the "
 "modules."
 msgstr ""
 
-#: ../../rst/community/other_tools_and_programs.rst:105
+#: ../../rst/community/other_tools_and_programs.rst:106
 msgid ""
 "`Ansible Silo <https://github.com/groupon/ansible-silo>`_ - a self-"
 "contained Ansible environment via Docker."
 msgstr ""
 
-#: ../../rst/community/other_tools_and_programs.rst:106
+#: ../../rst/community/other_tools_and_programs.rst:107
 msgid ""
 "`Ansigenome <https://github.com/nickjj/ansigenome>`_ - a command line "
 "tool designed to help you manage your Ansible roles."
 msgstr ""
 
-#: ../../rst/community/other_tools_and_programs.rst:107
+#: ../../rst/community/other_tools_and_programs.rst:108
 msgid ""
 "`ARA <https://github.com/openstack/ara>`_ - records Ansible playbook runs"
 " and makes the recorded data available and intuitive for users and "
 "systems by integrating with Ansible as a callback plugin."
 msgstr ""
 
-#: ../../rst/community/other_tools_and_programs.rst:108
+#: ../../rst/community/other_tools_and_programs.rst:109
 msgid ""
 "`Awesome Ansible <https://github.com/jdauphant/awesome-ansible>`_ - a "
 "collaboratively curated list of awesome Ansible resources."
 msgstr ""
 
-#: ../../rst/community/other_tools_and_programs.rst:109
+#: ../../rst/community/other_tools_and_programs.rst:110
 msgid ""
 "`AWX <https://github.com/ansible/awx>`_ - provides a web-based user "
 "interface, REST API, and task engine built on top of Ansible. AWX is the "
-"upstream project for Tower, a commercial derivative of AWX."
+"upstream project for Red Hat Ansible Tower, part of the Red Hat Ansible "
+"Automation subscription."
 msgstr ""
 
-#: ../../rst/community/other_tools_and_programs.rst:110
+#: ../../rst/community/other_tools_and_programs.rst:111
 msgid ""
 "`Mitogen for Ansible "
 "<https://mitogen.readthedocs.io/en/latest/ansible.html>`_ - uses the "
@@ -324,7 +325,7 @@ msgid ""
 "playbooks in a more efficient way (decreases the execution time)."
 msgstr ""
 
-#: ../../rst/community/other_tools_and_programs.rst:111
+#: ../../rst/community/other_tools_and_programs.rst:112
 msgid ""
 "`OpsTools-ansible <https://github.com/centos-opstools/opstools-ansible>`_"
 " - uses Ansible to configure an environment that provides the support of "
@@ -333,11 +334,20 @@ msgid ""
 "performance monitoring."
 msgstr ""
 
-#: ../../rst/community/other_tools_and_programs.rst:112
+#: ../../rst/community/other_tools_and_programs.rst:113
 msgid ""
 "`TD4A <https://github.com/cidrblock/td4a>`_ - a template designer for "
 "automation. TD4A is a visual design aid for building and testing jinja2 "
 "templates. It will combine data in yaml format with a jinja2 template and"
 " render the output."
 msgstr ""
+
+#~ msgid ""
+#~ "`AWX <https://github.com/ansible/awx>`_ - provides"
+#~ " a web-based user interface, REST "
+#~ "API, and task engine built on top"
+#~ " of Ansible. AWX is the upstream "
+#~ "project for Tower, a commercial "
+#~ "derivative of AWX."
+#~ msgstr ""
 

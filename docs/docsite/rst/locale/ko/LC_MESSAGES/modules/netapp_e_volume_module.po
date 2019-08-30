@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,87 +24,99 @@ msgid ""
 "thin)"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_volume_module.rst:19
+#: ../../rst/modules/netapp_e_volume_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_volume_module.rst:20
+#: ../../rst/modules/netapp_e_volume_module.rst:19
 msgid ""
 "Create or remove volumes (standard and thin) for NetApp E/EF-series "
 "storage arrays."
 msgstr ""
 
-#: ../../rst/modules/netapp_e_volume_module.rst:26
+#: ../../rst/modules/netapp_e_volume_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_volume_module.rst:284
+#: ../../rst/modules/netapp_e_volume_module.rst:490
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_volume_module.rst:287
+#: ../../rst/modules/netapp_e_volume_module.rst:493
 msgid ""
 "The E-Series Ansible modules require either an instance of the Web "
 "Services Proxy (WSP), to be available to manage the storage-system, or an"
 " E-Series storage-system that supports the Embedded Web Services API."
 msgstr ""
 
-#: ../../rst/modules/netapp_e_volume_module.rst:288
+#: ../../rst/modules/netapp_e_volume_module.rst:494
 msgid ""
 "Embedded Web Services is currently available on the E2800, E5700, EF570, "
 "and newer hardware models."
 msgstr ""
 
-#: ../../rst/modules/netapp_e_volume_module.rst:289
+#: ../../rst/modules/netapp_e_volume_module.rst:495
 msgid ""
 ":ref:`netapp_e_storage_system <netapp_e_storage_system_module>` may be "
 "utilized for configuring the systems managed by a WSP instance."
 msgstr ""
 
-#: ../../rst/modules/netapp_e_volume_module.rst:294
+#: ../../rst/modules/netapp_e_volume_module.rst:500
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_volume_module.rst:328
+#: ../../rst/modules/netapp_e_volume_module.rst:580
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_volume_module.rst:329
+#: ../../rst/modules/netapp_e_volume_module.rst:581
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_volume_module.rst:357
+#: ../../rst/modules/netapp_e_volume_module.rst:609
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_volume_module.rst:362
+#: ../../rst/modules/netapp_e_volume_module.rst:614
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_volume_module.rst:365
+#: ../../rst/modules/netapp_e_volume_module.rst:617
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_volume_module.rst:372
+#: ../../rst/modules/netapp_e_volume_module.rst:624
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_volume_module.rst:374
+#: ../../rst/modules/netapp_e_volume_module.rst:626
 msgid "Kevin Hulquest (@hulquest)"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_volume_module.rst:378
+#: ../../rst/modules/netapp_e_volume_module.rst:627
+msgid "Nathan Swartz (@ndswartz)"
+msgstr ""
+
+#: ../../rst/modules/netapp_e_volume_module.rst:631
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/netapp_e_volume.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/netapp_e_volume.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/netapp_e_volume.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

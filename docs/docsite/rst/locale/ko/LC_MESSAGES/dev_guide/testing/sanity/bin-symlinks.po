@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/testing/sanity/bin-symlinks.rst:2
+msgid "bin-symlinks"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/bin-symlinks.rst:4
+msgid ""
+"The ``bin/`` directory in Ansible must contain only symbolic links to "
+"executable files. These files must reside in the ``lib/ansible/`` or "
+"``test/lib/ansible_test/`` directories."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/bin-symlinks.rst:7
+msgid ""
+"This is required to allow ``ansible-test`` to work with containers and "
+"remote hosts when running from an installed version of Ansible."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/bin-symlinks.rst:9
+msgid ""
+"Symlinks for each entry point in ``bin/`` must also be present in "
+"``test/lib/ansible_test/_data/injector/``. Each symlink should point to "
+"the ``python.py`` script in the same directory. This facilitates running "
+"with the correct Python interpreter and enabling code coverage."
+msgstr ""
+

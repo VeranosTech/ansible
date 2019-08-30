@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/testing/sanity/obsolete-files.rst:2
+msgid "obsolete-files"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/obsolete-files.rst:4
+msgid ""
+"Directories in the Ansible source tree are sometimes made obsolete. Files"
+" should not exist in these directories. The new location (if any) is "
+"dependent on which directory has been made obsolete."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/obsolete-files.rst:8
+msgid "Below are some of the obsolete directories and their new locations:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/obsolete-files.rst:10
+msgid ""
+"All of ``test/runner/`` is now under ``test/lib/ansible_test/`` instead. "
+"The organization of files in the new directory has changed."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/obsolete-files.rst:11
+msgid ""
+"Most subdirectories of ``test/sanity/`` (with some exceptions) are now "
+"under ``test/lib/ansible_test/_data/sanity/`` instead."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/obsolete-files.rst:13
+msgid ""
+"This error occurs most frequently for open pull requests which add or "
+"modify files in directories which are now obsolete. Make sure the branch "
+"you are working from is current so that changes can be made in the "
+"correct location."
+msgstr ""
+

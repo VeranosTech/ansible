@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr ""
 #: ../../rst/network/user_guide/platform_eos.rst:7
 msgid ""
 "Arista EOS supports multiple connections. This page offers details on how"
-" each connection works in Ansible 2.6 and how to use it."
+" each connection works in Ansible and how to use it."
 msgstr ""
 
 #: ../../rst/network/user_guide/platform_eos.rst:9
@@ -36,162 +36,140 @@ msgstr ""
 msgid "Connections Available"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:15
+#: ../../rst/network/user_guide/platform_eos.rst:18
 msgid "CLI"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:15
+#: ../../rst/network/user_guide/platform_eos.rst:18
 msgid "eAPI"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:17
-msgid "**Protocol**"
+#: ../../rst/network/user_guide/platform_eos.rst:20
+msgid "Protocol"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:17
+#: ../../rst/network/user_guide/platform_eos.rst:20
 msgid "SSH"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:17
+#: ../../rst/network/user_guide/platform_eos.rst:20
 msgid "HTTP(S)"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst
-msgid "**Credentials**"
+#: ../../rst/network/user_guide/platform_eos.rst:22
+msgid "Credentials"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst
+#: ../../rst/network/user_guide/platform_eos.rst:22
 msgid "uses SSH keys / SSH-agent if present"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst
+#: ../../rst/network/user_guide/platform_eos.rst:24
 msgid "accepts ``-u myuser -k`` if using password"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst
+#: ../../rst/network/user_guide/platform_eos.rst:22
 msgid "uses HTTPS certificates if present"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:22
-msgid "**Indirect Access**"
+#: ../../rst/network/user_guide/platform_eos.rst:26
+msgid "Indirect Access"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:22
+#: ../../rst/network/user_guide/platform_eos.rst:26
 msgid "via a bastion (jump host)"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:22
+#: ../../rst/network/user_guide/platform_eos.rst:26
 msgid "via a web proxy"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst
-msgid "**Connection Settings**"
+#: ../../rst/network/user_guide/platform_eos.rst:28
+msgid "Connection Settings"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst
+#: ../../rst/network/user_guide/platform_eos.rst:28
 msgid "``ansible_connection: network_cli``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst
+#: ../../rst/network/user_guide/platform_eos.rst:28
 msgid "``ansible_connection: httpapi``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst
+#: ../../rst/network/user_guide/platform_eos.rst:30
 msgid "OR"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst
-msgid "``ansible_connection: local``"
+#: ../../rst/network/user_guide/platform_eos.rst:32
+msgid ""
+"``ansible_connection: local`` with ``transport: eapi`` in the "
+"``provider`` dictionary"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst
-msgid "with ``transport: eapi``"
+#: ../../rst/network/user_guide/platform_eos.rst:36
+msgid "|enable_mode|"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst
-msgid "in the ``provider`` dictionary"
+#: ../../rst/network/user_guide/platform_eos.rst:36
+msgid "supported: |br|"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst
-msgid "**Enable Mode**"
+#: ../../rst/network/user_guide/platform_eos.rst:38
+msgid "use ``ansible_become: yes`` with ``ansible_become_method: enable``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst
-msgid "(Privilege Escalation)"
-msgstr ""
-
-#: ../../rst/network/user_guide/platform_eos.rst
-msgid "supported - use ``ansible_become: yes``"
-msgstr ""
-
-#: ../../rst/network/user_guide/platform_eos.rst
-msgid "with ``ansible_become_method: enable``"
-msgstr ""
-
-#: ../../rst/network/user_guide/platform_eos.rst
-msgid "supported:"
-msgstr ""
-
-#: ../../rst/network/user_guide/platform_eos.rst
-msgid "``httpapi``"
-msgstr ""
-
-#: ../../rst/network/user_guide/platform_eos.rst
-msgid "uses ``ansible_become: yes``"
-msgstr ""
-
-#: ../../rst/network/user_guide/platform_eos.rst
-msgid "``local``"
-msgstr ""
-
-#: ../../rst/network/user_guide/platform_eos.rst
-msgid "uses ``authorize: yes``"
-msgstr ""
-
-#: ../../rst/network/user_guide/platform_eos.rst
-msgid "and ``auth_pass:``"
-msgstr ""
-
-#: ../../rst/network/user_guide/platform_eos.rst:39
-msgid "**Returned Data Format**"
-msgstr ""
-
-#: ../../rst/network/user_guide/platform_eos.rst:39
-msgid "``stdout[0].``"
-msgstr ""
-
-#: ../../rst/network/user_guide/platform_eos.rst:39
-msgid "``stdout[0].messages[0].``"
+#: ../../rst/network/user_guide/platform_eos.rst:38
+msgid ""
+"``httpapi`` uses ``ansible_become: yes`` with ``ansible_become_method: "
+"enable``"
 msgstr ""
 
 #: ../../rst/network/user_guide/platform_eos.rst:42
+msgid ""
+"``local`` uses ``authorize: yes`` and ``auth_pass:`` in the ``provider`` "
+"dictionary"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_eos.rst:47
+msgid "Returned Data Format"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_eos.rst:47
+msgid "``stdout[0].``"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_eos.rst:47
+msgid "``stdout[0].messages[0].``"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_eos.rst:53
 msgid ""
 "For legacy playbooks, EOS still supports ``ansible_connection: local``. "
 "We recommend modernizing to use ``ansible_connection: network_cli`` or "
 "``ansible_connection: httpapi`` as soon as possible."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:45
-msgid "Using CLI in Ansible 2.6"
+#: ../../rst/network/user_guide/platform_eos.rst:56
+msgid "Using CLI in Ansible"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:48
+#: ../../rst/network/user_guide/platform_eos.rst:59
 msgid "Example CLI ``group_vars/eos.yml``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:62
+#: ../../rst/network/user_guide/platform_eos.rst:73
 msgid ""
 "If you are using SSH keys (including an ssh-agent) you can remove the "
-"``ansible_ssh_pass`` configuration."
+"``ansible_password`` configuration."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:63
+#: ../../rst/network/user_guide/platform_eos.rst:74
 msgid ""
 "If you are accessing your host directly (not through a bastion/jump host)"
 " you can remove the ``ansible_ssh_common_args`` configuration."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:64
+#: ../../rst/network/user_guide/platform_eos.rst:75
 msgid ""
 "If you are accessing your host through a bastion/jump host, you cannot "
 "include your SSH password in the ``ProxyCommand`` directive. To prevent "
@@ -199,19 +177,19 @@ msgid ""
 "support providing passwords via environment variables."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:67
+#: ../../rst/network/user_guide/platform_eos.rst:78
 msgid "Example CLI Task"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:80
-msgid "Using eAPI in Ansible 2.6"
+#: ../../rst/network/user_guide/platform_eos.rst:91
+msgid "Using eAPI in Ansible"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:83
+#: ../../rst/network/user_guide/platform_eos.rst:94
 msgid "Enabling eAPI"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:85
+#: ../../rst/network/user_guide/platform_eos.rst:96
 msgid ""
 "Before you can use eAPI to connect to a switch, you must enable eAPI. To "
 "enable eAPI on a new switch via Ansible, use the ``eos_eapi`` module via "
@@ -219,67 +197,67 @@ msgid ""
 "example above, then run a playbook task like this:"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:97
+#: ../../rst/network/user_guide/platform_eos.rst:108
 msgid ""
 "You can find more options for enabling HTTP/HTTPS connections in the "
 ":ref:`eos_eapi <eos_eapi_module>` module documentation."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:99
+#: ../../rst/network/user_guide/platform_eos.rst:110
 msgid ""
 "Once eAPI is enabled, change your ``group_vars/eos.yml`` to use the eAPI "
 "connection."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:102
+#: ../../rst/network/user_guide/platform_eos.rst:113
 msgid "Example eAPI ``group_vars/eos.yml``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:115
+#: ../../rst/network/user_guide/platform_eos.rst:126
 msgid ""
 "If you are accessing your host directly (not through a web proxy) you can"
 " remove the ``proxy_env`` configuration."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:116
+#: ../../rst/network/user_guide/platform_eos.rst:127
 msgid ""
 "If you are accessing your host through a web proxy using ``https``, "
 "change ``http_proxy`` to ``https_proxy``."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:120
+#: ../../rst/network/user_guide/platform_eos.rst:131
 msgid "Example eAPI Task"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:131
+#: ../../rst/network/user_guide/platform_eos.rst:142
 msgid ""
 "In this example the ``proxy_env`` variable defined in ``group_vars`` gets"
 " passed to the ``environment`` option of the module in the task."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:134
+#: ../../rst/network/user_guide/platform_eos.rst:145
 msgid "eAPI examples with ``connection: local``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:136
+#: ../../rst/network/user_guide/platform_eos.rst:147
 msgid "``group_vars/eos.yml``:"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:152
+#: ../../rst/network/user_guide/platform_eos.rst:163
 msgid "eAPI task:"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:164
+#: ../../rst/network/user_guide/platform_eos.rst:175
 msgid ""
 "In this example two variables defined in ``group_vars`` get passed to the"
 " module of the task:"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:166
+#: ../../rst/network/user_guide/platform_eos.rst:177
 msgid "the ``eapi`` variable gets passed to the ``provider`` option of the module"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_eos.rst:167
+#: ../../rst/network/user_guide/platform_eos.rst:178
 msgid ""
 "the ``proxy_env`` variable gets passed to the ``environment`` option of "
 "the module"
@@ -292,4 +270,77 @@ msgid ""
 "SSH keys. If you must use passwords to authenticate SSH connections, we "
 "recommend encrypting them with :ref:`Ansible Vault <playbooks_vault>`."
 msgstr ""
+
+#~ msgid ""
+#~ "Arista EOS supports multiple connections. "
+#~ "This page offers details on how "
+#~ "each connection works in Ansible 2.6 "
+#~ "and how to use it."
+#~ msgstr ""
+
+#~ msgid "**Protocol**"
+#~ msgstr ""
+
+#~ msgid "**Credentials**"
+#~ msgstr ""
+
+#~ msgid "**Indirect Access**"
+#~ msgstr ""
+
+#~ msgid "**Connection Settings**"
+#~ msgstr ""
+
+#~ msgid "``ansible_connection: local``"
+#~ msgstr ""
+
+#~ msgid "with ``transport: eapi``"
+#~ msgstr ""
+
+#~ msgid "in the ``provider`` dictionary"
+#~ msgstr ""
+
+#~ msgid "**Enable Mode**"
+#~ msgstr ""
+
+#~ msgid "(Privilege Escalation)"
+#~ msgstr ""
+
+#~ msgid "supported - use ``ansible_become: yes``"
+#~ msgstr ""
+
+#~ msgid "with ``ansible_become_method: enable``"
+#~ msgstr ""
+
+#~ msgid "supported:"
+#~ msgstr ""
+
+#~ msgid "``httpapi``"
+#~ msgstr ""
+
+#~ msgid "uses ``ansible_become: yes``"
+#~ msgstr ""
+
+#~ msgid "``local``"
+#~ msgstr ""
+
+#~ msgid "uses ``authorize: yes``"
+#~ msgstr ""
+
+#~ msgid "and ``auth_pass:``"
+#~ msgstr ""
+
+#~ msgid "**Returned Data Format**"
+#~ msgstr ""
+
+#~ msgid "Using CLI in Ansible 2.6"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you are using SSH keys "
+#~ "(including an ssh-agent) you can "
+#~ "remove the ``ansible_ssh_pass`` configuration."
+#~ msgstr ""
+
+#~ msgid "Using eAPI in Ansible 2.6"
+#~ msgstr ""
 

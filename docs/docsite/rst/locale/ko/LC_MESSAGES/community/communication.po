@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,8 @@ msgstr ""
 msgid ""
 "`Ansible AWX List <https://groups.google.com/forum/#!forum/awx-project>`_"
 " is for `Ansible AWX <https://github.com/ansible/awx>`_ the upstream "
-"version of `Ansible Tower <https://www.ansible.com/products/tower>`_"
+"version of `Red Hat Ansible Tower "
+"<https://www.ansible.com/products/tower>`_"
 msgstr ""
 
 #: ../../rst/community/communication.rst:22
@@ -150,81 +151,82 @@ msgstr ""
 
 #: ../../rst/community/communication.rst:50
 msgid ""
-"Many of our community Working Groups meet on Freenode IRC channels. If "
-"you want to get involved in a working group, join the channel where it "
-"meets or comment on the agenda."
+"Many of our community `Working Groups "
+"<https://github.com/ansible/community/wiki#working-groups>`_ meet on "
+"Freenode IRC channels. If you want to get involved in a working group, "
+"join the channel where it meets or comment on the agenda."
 msgstr ""
 
 #: ../../rst/community/communication.rst:52
 msgid ""
 "`Amazon (AWS) Working Group "
-"<https://github.com/ansible/community/tree/master/group-aws>`_ - "
-"``#ansible-aws``"
+"<https://github.com/ansible/community/wiki/AWS>`_ - ``#ansible-aws``"
 msgstr ""
 
 #: ../../rst/community/communication.rst:53
 msgid ""
-"`Ansible Lockdown Working Group <https://ansiblelockdown.io>`_ "
-"`gh/ansible/ansible-lockdown <https://github.com/ansible/ansible-"
-"lockdown>`_ - ``#ansible-lockdown``- Security playbooks/roles"
+"`Ansible Lockdown Working Group "
+"<https://github.com/ansible/community/wiki/Lockdown>`_ | `gh/ansible"
+"/ansible-lockdown <https://github.com/ansible/ansible-lockdown>`_ - "
+"``#ansible-lockdown``- Security playbooks/roles"
 msgstr ""
 
 #: ../../rst/community/communication.rst:54
 msgid ""
 "`AWX Working Group <https://github.com/ansible/awx>`_ - ``#ansible-awx`` "
-"- Upstream Ansible Tower"
+"- Upstream for Ansible Tower"
 msgstr ""
 
 #: ../../rst/community/communication.rst:55
 msgid ""
-"`Azure Working Group <https://github.com/ansible/community/tree/master"
-"/group-azure>`_ - ``#ansible-azure``"
+"`Azure Working Group <https://github.com/ansible/community/wiki/Azure>`_ "
+"- ``#ansible-azure``"
 msgstr ""
 
 #: ../../rst/community/communication.rst:56
 msgid ""
 "`Community Working Group "
-"<https://github.com/ansible/community/tree/master/group-community>`_ - "
-"``#ansible-community`` - Including Meetups"
+"<https://github.com/ansible/community/wiki/Community>`_ - ``#ansible-"
+"community`` - Including Meetups"
 msgstr ""
 
 #: ../../rst/community/communication.rst:57
 msgid ""
 "`Container Working Group "
-"<https://github.com/ansible/community/tree/master/group-container>`_ - "
-"``#ansible-container``"
+"<https://github.com/ansible/community/wiki/Container>`_ - ``#ansible-"
+"container``"
 msgstr ""
 
 #: ../../rst/community/communication.rst:58
 msgid ""
 "`Contributor Experience Working Group "
-"<https://github.com/ansible/community/tree/master/group-contributor-"
-"experience>`_ - ``#ansible-community``"
+"<https://github.com/ansible/community/wiki/Contributor-Experience>`_ - "
+"``#ansible-community``"
 msgstr ""
 
 #: ../../rst/community/communication.rst:59
 msgid ""
-"`Docker Working Group <https://github.com/ansible/community/issues/408>`_"
-" - ``#ansible-devel``"
+"`Docker Working Group "
+"<https://github.com/ansible/community/wiki/Docker>`_ - ``#ansible-devel``"
 msgstr ""
 
 #: ../../rst/community/communication.rst:60
 msgid ""
 "`Documentation Working Group "
-"<https://github.com/ansible/community/tree/master/group-docs>`_- "
-"``#ansible-docs``"
+"<https://github.com/ansible/community/wiki/Docs>`_- ``#ansible-docs``"
 msgstr ""
 
 #: ../../rst/community/communication.rst:61
 msgid ""
-"`Galaxy Working Group <https://github.com/ansible/community/tree/master"
-"/group-galaxy>`_ - ``#ansible-galaxy``"
+"`Galaxy Working Group "
+"<https://github.com/ansible/community/wiki/Galaxy>`_ - ``#ansible-"
+"galaxy``"
 msgstr ""
 
 #: ../../rst/community/communication.rst:62
 msgid ""
-"`JBoss Working Group <https://github.com/ansible/community/tree/master"
-"/group-jboss>`_ - ``#ansible-jboss``"
+"`JBoss Working Group <https://github.com/ansible/community/wiki/JBoss>`_ "
+"- ``#ansible-jboss``"
 msgstr ""
 
 #: ../../rst/community/communication.rst:63
@@ -235,20 +237,24 @@ msgstr ""
 
 #: ../../rst/community/communication.rst:64
 msgid ""
-"`Linode Working Group <https://github.com/ansible/community/tree/master"
-"/group-linode>`_ - ``#ansible-linode``"
+"`Linode Working Group "
+"<https://github.com/ansible/community/wiki/Linode>`_ - ``#ansible-"
+"linode``"
 msgstr ""
 
 #: ../../rst/community/communication.rst:65
 msgid ""
-"`Molecule <https://molecule.readthedocs.io>`_ - ``#ansible-molecule`` - "
-"testing platform for Ansible playbooks and roles"
+"`Molecule Working Group "
+"<https://github.com/ansible/community/wiki/Molecule>`_ | `molecule.io "
+"<https://molecule.readthedocs.io>`_ - ``#ansible-molecule`` - testing "
+"platform for Ansible playbooks and roles"
 msgstr ""
 
 #: ../../rst/community/communication.rst:66
 msgid ""
-"`Network Working Group <https://github.com/ansible/community/tree/master"
-"/group-network>`_ - ``#ansible-network``"
+"`Network Working Group "
+"<https://github.com/ansible/community/wiki/Network>`_ - ``#ansible-"
+"network``"
 msgstr ""
 
 #: ../../rst/community/communication.rst:67
@@ -259,20 +265,23 @@ msgstr ""
 
 #: ../../rst/community/communication.rst:68
 msgid ""
-"`Testing Working Group <https://github.com/ansible/community/tree/master"
-"/group-testing>`_  - ``#ansible-devel``"
+"`Testing Working Group "
+"<https://github.com/ansible/community/wiki/Testing>`_  - ``#ansible-"
+"devel``"
 msgstr ""
 
 #: ../../rst/community/communication.rst:69
 msgid ""
-"`VMware Working Group <https://github.com/ansible/community/tree/master"
-"/group-vmware>`_ - ``#ansible-vmware``"
+"`VMware Working Group "
+"<https://github.com/ansible/community/wiki/VMware>`_ - ``#ansible-"
+"vmware``"
 msgstr ""
 
 #: ../../rst/community/communication.rst:70
 msgid ""
-"`Windows Working Group <https://github.com/ansible/community/tree/master"
-"/group-windows>`_ - ``#ansible-windows``"
+"`Windows Working Group "
+"<https://github.com/ansible/community/wiki/Windows>`_ - ``#ansible-"
+"windows``"
 msgstr ""
 
 #: ../../rst/community/communication.rst:72
@@ -314,19 +323,154 @@ msgid ""
 msgstr ""
 
 #: ../../rst/community/communication.rst:89
-msgid "Tower support questions"
+msgid "Ansible Tower support questions"
 msgstr ""
 
 #: ../../rst/community/communication.rst:91
 msgid ""
-"Ansible `Tower <https://www.ansible.com/products/tower>`_ is a UI, "
-"Server, and REST endpoint for Ansible."
+"Red Hat Ansible `Tower <https://www.ansible.com/products/tower>`_ is a "
+"UI, Server, and REST endpoint for Ansible. The Red Hat Ansible Automation"
+" subscription contains support for Ansible, Ansible Tower, Ansible "
+"Automation for Networking, and more."
 msgstr ""
 
-#: ../../rst/community/communication.rst:93
+#: ../../rst/community/communication.rst:94
 msgid ""
 "If you have a question about Ansible Tower, visit `Red Hat support "
 "<https://access.redhat.com/products/ansible-tower-red-hat/>`_ rather than"
 " using the IRC channel or the general project mailing list."
 msgstr ""
+
+#~ msgid ""
+#~ "`Ansible AWX List "
+#~ "<https://groups.google.com/forum/#!forum/awx-project>`_ is"
+#~ " for `Ansible AWX "
+#~ "<https://github.com/ansible/awx>`_ the upstream "
+#~ "version of `Ansible Tower "
+#~ "<https://www.ansible.com/products/tower>`_"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Many of our community Working Groups "
+#~ "meet on Freenode IRC channels. If "
+#~ "you want to get involved in a "
+#~ "working group, join the channel where"
+#~ " it meets or comment on the "
+#~ "agenda."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Amazon (AWS) Working Group "
+#~ "<https://github.com/ansible/community/tree/master/group-aws>`_"
+#~ " - ``#ansible-aws``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Ansible Lockdown Working Group "
+#~ "<https://ansiblelockdown.io>`_ `gh/ansible/ansible-"
+#~ "lockdown <https://github.com/ansible/ansible-lockdown>`_"
+#~ " - ``#ansible-lockdown``- Security "
+#~ "playbooks/roles"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`AWX Working Group "
+#~ "<https://github.com/ansible/awx>`_ - ``#ansible-"
+#~ "awx`` - Upstream Ansible Tower"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Azure Working Group "
+#~ "<https://github.com/ansible/community/tree/master/group-azure>`_"
+#~ " - ``#ansible-azure``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Community Working Group "
+#~ "<https://github.com/ansible/community/tree/master/group-"
+#~ "community>`_ - ``#ansible-community`` - "
+#~ "Including Meetups"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Container Working Group "
+#~ "<https://github.com/ansible/community/tree/master/group-"
+#~ "container>`_ - ``#ansible-container``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Contributor Experience Working Group "
+#~ "<https://github.com/ansible/community/tree/master/group-"
+#~ "contributor-experience>`_ - ``#ansible-"
+#~ "community``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Docker Working Group "
+#~ "<https://github.com/ansible/community/issues/408>`_ - "
+#~ "``#ansible-devel``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Documentation Working Group "
+#~ "<https://github.com/ansible/community/tree/master/group-docs>`_-"
+#~ " ``#ansible-docs``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Galaxy Working Group "
+#~ "<https://github.com/ansible/community/tree/master/group-"
+#~ "galaxy>`_ - ``#ansible-galaxy``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`JBoss Working Group "
+#~ "<https://github.com/ansible/community/tree/master/group-jboss>`_"
+#~ " - ``#ansible-jboss``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Linode Working Group "
+#~ "<https://github.com/ansible/community/tree/master/group-"
+#~ "linode>`_ - ``#ansible-linode``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Molecule <https://molecule.readthedocs.io>`_ - "
+#~ "``#ansible-molecule`` - testing platform "
+#~ "for Ansible playbooks and roles"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Network Working Group "
+#~ "<https://github.com/ansible/community/tree/master/group-"
+#~ "network>`_ - ``#ansible-network``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Testing Working Group "
+#~ "<https://github.com/ansible/community/tree/master/group-"
+#~ "testing>`_  - ``#ansible-devel``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`VMware Working Group "
+#~ "<https://github.com/ansible/community/tree/master/group-"
+#~ "vmware>`_ - ``#ansible-vmware``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Windows Working Group "
+#~ "<https://github.com/ansible/community/tree/master/group-"
+#~ "windows>`_ - ``#ansible-windows``"
+#~ msgstr ""
+
+#~ msgid "Tower support questions"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Ansible `Tower <https://www.ansible.com/products/tower>`_"
+#~ " is a UI, Server, and REST "
+#~ "endpoint for Ansible."
+#~ msgstr ""
 

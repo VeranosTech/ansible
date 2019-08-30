@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,24 +22,28 @@ msgstr ""
 msgid "redshift -- create, delete, or modify an Amazon Redshift instance"
 msgstr ""
 
-#: ../../rst/modules/redshift_module.rst:19
+#: ../../rst/modules/redshift_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/redshift_module.rst:20
+#: ../../rst/modules/redshift_module.rst:19
 msgid "Creates, deletes, or modifies amazon Redshift cluster instances."
 msgstr ""
 
-#: ../../rst/modules/redshift_module.rst:25
+#: ../../rst/modules/redshift_module.rst:24
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/redshift_module.rst:26
+#: ../../rst/modules/redshift_module.rst:25
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/redshift_module.rst:28
+#: ../../rst/modules/redshift_module.rst:27
 msgid "boto"
+msgstr ""
+
+#: ../../rst/modules/redshift_module.rst:28
+msgid "boto3"
 msgstr ""
 
 #: ../../rst/modules/redshift_module.rst:29
@@ -50,11 +54,11 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/redshift_module.rst:533
+#: ../../rst/modules/redshift_module.rst:550
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/redshift_module.rst:536
+#: ../../rst/modules/redshift_module.rst:553
 msgid ""
 "If parameters are not set within the module, the following environment "
 "variables can be used in decreasing order of precedence ``AWS_URL`` or "
@@ -64,64 +68,76 @@ msgid ""
 "``AWS_REGION`` or ``EC2_REGION``"
 msgstr ""
 
-#: ../../rst/modules/redshift_module.rst:537
+#: ../../rst/modules/redshift_module.rst:554
 msgid ""
 "Ansible uses the boto configuration file (typically ~/.boto) if no "
 "credentials are provided. See "
 "https://boto.readthedocs.io/en/latest/boto_config_tut.html"
 msgstr ""
 
-#: ../../rst/modules/redshift_module.rst:538
+#: ../../rst/modules/redshift_module.rst:555
 msgid ""
 "``AWS_REGION`` or ``EC2_REGION`` can be typically be used to specify the "
 "AWS region, when required, but this can also be configured in the boto "
 "config file"
 msgstr ""
 
-#: ../../rst/modules/redshift_module.rst:543
+#: ../../rst/modules/redshift_module.rst:560
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/redshift_module.rst:567
+#: ../../rst/modules/redshift_module.rst:584
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/redshift_module.rst:568
+#: ../../rst/modules/redshift_module.rst:585
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/redshift_module.rst:735
+#: ../../rst/modules/redshift_module.rst:764
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/redshift_module.rst:740
+#: ../../rst/modules/redshift_module.rst:769
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/redshift_module.rst:743
+#: ../../rst/modules/redshift_module.rst:772
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/redshift_module.rst:750
+#: ../../rst/modules/redshift_module.rst:779
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/redshift_module.rst:752
+#: ../../rst/modules/redshift_module.rst:781
 msgid "Jens Carl (@j-carl), Hothead Games Inc."
 msgstr ""
 
-#: ../../rst/modules/redshift_module.rst:756
+#: ../../rst/modules/redshift_module.rst:782
+msgid "Rafael Driutti (@rafaeldriutti)"
+msgstr ""
+
+#: ../../rst/modules/redshift_module.rst:786
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/redshift.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/redshift.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/redshift.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,26 +22,36 @@ msgstr ""
 msgid "nmcli -- Manage Networking"
 msgstr ""
 
-#: ../../rst/modules/nmcli_module.rst:19
+#: ../../rst/modules/nmcli_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/nmcli_module.rst:20
+#: ../../rst/modules/nmcli_module.rst:19
 msgid ""
 "Manage the network devices. Create, modify and manage various connection "
 "and device type e.g., ethernet, teams, bonds, vlans etc."
 msgstr ""
 
+#: ../../rst/modules/nmcli_module.rst:20
+msgid ""
+"On CentOS and Fedora like systems, the requirements can be met by "
+"installing the following packages: NetworkManager-glib, libnm-qt-"
+"devel.x86_64, nm-connection-editor.x86_64, libsemanage-python, "
+"policycoreutils-python."
+msgstr ""
+
 #: ../../rst/modules/nmcli_module.rst:21
 msgid ""
-"On CentOS and Fedora like systems, install dependencies as 'yum/dnf "
-"install -y python-gobject NetworkManager-glib'"
+"On Ubuntu and Debian like systems, the requirements can be met by "
+"installing the following packages: network-manager, python-dbus (or "
+"python3-dbus, depending on the Python version in use), libnm-glib-dev."
 msgstr ""
 
 #: ../../rst/modules/nmcli_module.rst:22
 msgid ""
-"On Ubuntu and Debian like systems, install dependencies as 'apt-get "
-"install -y libnm-glib-dev'"
+"On openSUSE, the requirements can be met by installing the following "
+"packages: NetworkManager, python2-dbus-python (or python3-dbus-python), "
+"typelib-1_0-NMClient-1_0 and typelib-1_0-NetworkManager-1_0."
 msgstr ""
 
 #: ../../rst/modules/nmcli_module.rst:27
@@ -53,55 +63,75 @@ msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
 #: ../../rst/modules/nmcli_module.rst:30
-msgid "nmcli"
-msgstr ""
-
-#: ../../rst/modules/nmcli_module.rst:31
 msgid "dbus"
 msgstr ""
 
-#: ../../rst/modules/nmcli_module.rst:32
+#: ../../rst/modules/nmcli_module.rst:31
 msgid "NetworkManager-glib"
+msgstr ""
+
+#: ../../rst/modules/nmcli_module.rst:32
+msgid "nmcli"
 msgstr ""
 
 #: ../../rst/modules/nmcli_module.rst:36
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/nmcli_module.rst:680
+#: ../../rst/modules/nmcli_module.rst:687
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/nmcli_module.rst:984
+#: ../../rst/modules/nmcli_module.rst:991
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/nmcli_module.rst:989
+#: ../../rst/modules/nmcli_module.rst:996
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/nmcli_module.rst:992
+#: ../../rst/modules/nmcli_module.rst:999
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/nmcli_module.rst:999
+#: ../../rst/modules/nmcli_module.rst:1006
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/nmcli_module.rst:1001
+#: ../../rst/modules/nmcli_module.rst:1008
 msgid "Chris Long (@alcamie101)"
 msgstr ""
 
-#: ../../rst/modules/nmcli_module.rst:1005
+#: ../../rst/modules/nmcli_module.rst:1012
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/nmcli.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/nmcli.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "On CentOS and Fedora like systems, "
+#~ "install dependencies as 'yum/dnf install "
+#~ "-y python-gobject NetworkManager-glib'"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "On Ubuntu and Debian like systems, "
+#~ "install dependencies as 'apt-get install"
+#~ " -y libnm-glib-dev'"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/nmcli.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

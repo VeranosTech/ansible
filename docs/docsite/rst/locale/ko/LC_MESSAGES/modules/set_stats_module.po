@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgid ""
 msgstr ""
 
 #: ../../rst/modules/set_stats_module.rst:21
-#: ../../rst/modules/set_stats_module.rst:86
+#: ../../rst/modules/set_stats_module.rst:93
 msgid "This module is also supported for Windows targets."
 msgstr ""
 
@@ -41,51 +41,66 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/set_stats_module.rst:83
+#: ../../rst/modules/set_stats_module.rst:89
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/set_stats_module.rst:87
+#: ../../rst/modules/set_stats_module.rst:92
 msgid ""
 "In order for custom stats to be displayed, you must set "
 "``show_custom_stats`` in ``ansible.cfg`` or ``ANSIBLE_SHOW_CUSTOM_STATS``"
-" to ``true``."
+" to ``yes``."
 msgstr ""
 
-#: ../../rst/modules/set_stats_module.rst:92
+#: ../../rst/modules/set_stats_module.rst:98
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/set_stats_module.rst:122
+#: ../../rst/modules/set_stats_module.rst:129
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/set_stats_module.rst:127
+#: ../../rst/modules/set_stats_module.rst:134
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/set_stats_module.rst:130
+#: ../../rst/modules/set_stats_module.rst:137
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/set_stats_module.rst:137
+#: ../../rst/modules/set_stats_module.rst:144
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/set_stats_module.rst:139
+#: ../../rst/modules/set_stats_module.rst:146
 msgid "Brian Coca (@bcoca)"
 msgstr ""
 
-#: ../../rst/modules/set_stats_module.rst:143
+#: ../../rst/modules/set_stats_module.rst:150
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/set_stats.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/set_stats.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "In order for custom stats to be"
+#~ " displayed, you must set "
+#~ "``show_custom_stats`` in ``ansible.cfg`` or "
+#~ "``ANSIBLE_SHOW_CUSTOM_STATS`` to ``true``."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/set_stats.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

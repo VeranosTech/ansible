@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,99 +19,96 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/modules/vmware_vm_facts_module.rst:9
+msgid "vmware_vm_facts -- Return basic info pertaining to a VMware machine guest"
+msgstr ""
+
+#: ../../rst/modules/vmware_vm_facts_module.rst:11
 msgid ""
-"vmware_vm_facts -- Return basic facts pertaining to a vSphere virtual "
-"machine guest"
+"This is an alias for :ref:`vmware_vm_info <vmware_vm_info_module>`. This "
+"name has been **deprecated**. Please update your tasks to use the new "
+"name ``vmware_vm_info`` instead."
 msgstr ""
 
-#: ../../rst/modules/vmware_vm_facts_module.rst:19
-msgid "Synopsis"
-msgstr ""
+#~ msgid ""
+#~ "vmware_vm_facts -- Return basic facts "
+#~ "pertaining to a vSphere virtual machine"
+#~ " guest"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_vm_facts_module.rst:20
-msgid "Return basic facts pertaining to a vSphere virtual machine guest."
-msgstr ""
+#~ msgid "Synopsis"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_vm_facts_module.rst:21
-msgid "Cluster name as fact is added in version 2.7."
-msgstr ""
+#~ msgid "Return basic facts pertaining to a vSphere virtual machine guest."
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_vm_facts_module.rst:26
-msgid "Requirements"
-msgstr ""
+#~ msgid "Cluster name as fact is added in version 2.7."
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_vm_facts_module.rst:27
-msgid "The below requirements are needed on the host that executes this module."
-msgstr ""
+#~ msgid "Requirements"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_vm_facts_module.rst:29
-msgid "python >= 2.6"
-msgstr ""
+#~ msgid ""
+#~ "The below requirements are needed on "
+#~ "the host that executes this module."
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_vm_facts_module.rst:30
-msgid "PyVmomi"
-msgstr ""
+#~ msgid "python >= 2.6"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_vm_facts_module.rst:34
-msgid "Parameters"
-msgstr ""
+#~ msgid "PyVmomi"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_vm_facts_module.rst:152
-msgid "Notes"
-msgstr ""
+#~ msgid "Parameters"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_vm_facts_module.rst:155
-msgid "Tested on vSphere 5.5 and vSphere 6.5"
-msgstr ""
+#~ msgid "Notes"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_vm_facts_module.rst:160
-msgid "Examples"
-msgstr ""
+#~ msgid "Tested on vSphere 5.5 and vSphere 6.5"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_vm_facts_module.rst:204
-msgid "Return Values"
-msgstr ""
+#~ msgid "Examples"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_vm_facts_module.rst:205
-msgid ""
-"Common return values are documented :ref:`here <common_return_values>`, "
-"the following are the fields unique to this module:"
-msgstr ""
+#~ msgid "Return Values"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_vm_facts_module.rst:233
-msgid "Status"
-msgstr ""
+#~ msgid ""
+#~ "Common return values are documented "
+#~ ":ref:`here <common_return_values>`, the following"
+#~ " are the fields unique to this "
+#~ "module:"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_vm_facts_module.rst:238
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
-msgstr ""
+#~ msgid "Status"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_vm_facts_module.rst:241
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
-msgstr ""
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_vm_facts_module.rst:248
-msgid "Authors"
-msgstr ""
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_vm_facts_module.rst:250
-msgid "Joseph Callen (@jcpowermac)"
-msgstr ""
+#~ msgid "Authors"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_vm_facts_module.rst:251
-msgid "Abhijeet Kasurde (@Akasurde)"
-msgstr ""
+#~ msgid "Joseph Callen (@jcpowermac)"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_vm_facts_module.rst:255
-#, python-format
-msgid ""
-"If you notice any issues in this documentation you can `edit this "
-"document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_vm_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
-" to improve it."
-msgstr ""
+#~ msgid "Abhijeet Kasurde (@Akasurde)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_vm_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

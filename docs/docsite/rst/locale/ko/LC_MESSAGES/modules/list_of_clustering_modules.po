@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,33 +59,37 @@ msgid ":ref:`k8s_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_clustering_modules.rst:27
-msgid ":ref:`k8s_facts_module`"
+msgid ":ref:`k8s_auth_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_clustering_modules.rst:28
-msgid ":ref:`k8s_scale_module`"
+msgid ":ref:`k8s_info_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_clustering_modules.rst:29
-msgid ":ref:`k8s_service_module`"
+msgid ":ref:`k8s_scale_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_clustering_modules.rst:30
-msgid ":ref:`kubernetes_module` **(D)**"
+msgid ":ref:`k8s_service_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_clustering_modules.rst:36
-msgid "Openshift"
-msgstr ""
-
-#: ../../rst/modules/list_of_clustering_modules.rst:40
-msgid ":ref:`oc_module` **(D)**"
-msgstr ""
-
-#: ../../rst/modules/list_of_clustering_modules.rst:44
+#: ../../rst/modules/list_of_clustering_modules.rst:34
 msgid ""
 "**(D)**: This marks a module as deprecated, which means a module is kept "
 "for backwards compatibility but usage is discouraged. The module "
 "documentation details page may explain more about this rationale."
 msgstr ""
+
+#~ msgid ":ref:`k8s_facts_module`"
+#~ msgstr ""
+
+#~ msgid ":ref:`kubernetes_module` **(D)**"
+#~ msgstr ""
+
+#~ msgid "Openshift"
+#~ msgstr ""
+
+#~ msgid ":ref:`oc_module` **(D)**"
+#~ msgstr ""
 

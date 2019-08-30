@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,11 +66,11 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/s3_sync_module.rst:328
+#: ../../rst/modules/s3_sync_module.rst:345
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/s3_sync_module.rst:331
+#: ../../rst/modules/s3_sync_module.rst:348
 msgid ""
 "If parameters are not set within the module, the following environment "
 "variables can be used in decreasing order of precedence ``AWS_URL`` or "
@@ -80,64 +80,72 @@ msgid ""
 "``AWS_REGION`` or ``EC2_REGION``"
 msgstr ""
 
-#: ../../rst/modules/s3_sync_module.rst:332
+#: ../../rst/modules/s3_sync_module.rst:349
 msgid ""
 "Ansible uses the boto configuration file (typically ~/.boto) if no "
 "credentials are provided. See "
 "https://boto.readthedocs.io/en/latest/boto_config_tut.html"
 msgstr ""
 
-#: ../../rst/modules/s3_sync_module.rst:333
+#: ../../rst/modules/s3_sync_module.rst:350
 msgid ""
 "``AWS_REGION`` or ``EC2_REGION`` can be typically be used to specify the "
 "AWS region, when required, but this can also be configured in the boto "
 "config file"
 msgstr ""
 
-#: ../../rst/modules/s3_sync_module.rst:338
+#: ../../rst/modules/s3_sync_module.rst:355
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/s3_sync_module.rst:366
+#: ../../rst/modules/s3_sync_module.rst:383
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/s3_sync_module.rst:367
+#: ../../rst/modules/s3_sync_module.rst:384
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/s3_sync_module.rst:460
+#: ../../rst/modules/s3_sync_module.rst:477
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/s3_sync_module.rst:465
+#: ../../rst/modules/s3_sync_module.rst:482
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/s3_sync_module.rst:468
+#: ../../rst/modules/s3_sync_module.rst:485
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/s3_sync_module.rst:475
+#: ../../rst/modules/s3_sync_module.rst:492
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/s3_sync_module.rst:477
+#: ../../rst/modules/s3_sync_module.rst:494
 msgid "Ted Timmons (@tedder)"
 msgstr ""
 
-#: ../../rst/modules/s3_sync_module.rst:481
+#: ../../rst/modules/s3_sync_module.rst:498
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/s3_sync.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/s3_sync.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/s3_sync.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

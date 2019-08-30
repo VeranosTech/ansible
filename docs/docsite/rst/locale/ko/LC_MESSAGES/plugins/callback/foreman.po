@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,79 +22,88 @@ msgstr ""
 msgid "foreman -- Sends events to Foreman"
 msgstr ""
 
-#: ../../rst/plugins/callback/foreman.rst:18
+#: ../../rst/plugins/callback/foreman.rst:17
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/plugins/callback/foreman.rst:19
+#: ../../rst/plugins/callback/foreman.rst:18
 msgid ""
 "This callback will report facts and task events to Foreman "
 "https://theforeman.org/"
 msgstr ""
 
-#: ../../rst/plugins/callback/foreman.rst:20
+#: ../../rst/plugins/callback/foreman.rst:19
 msgid ""
 "Before 2.4, if you wanted to use an ini configuration, the file must be "
 "placed in the same directory as this plugin and named foreman.ini"
 msgstr ""
 
-#: ../../rst/plugins/callback/foreman.rst:21
+#: ../../rst/plugins/callback/foreman.rst:20
 msgid ""
 "In 2.4 and above you can just put it in the main Ansible configuration "
 "file."
 msgstr ""
 
-#: ../../rst/plugins/callback/foreman.rst:26
+#: ../../rst/plugins/callback/foreman.rst:25
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/plugins/callback/foreman.rst:27
+#: ../../rst/plugins/callback/foreman.rst:26
 msgid ""
 "The below requirements are needed on the local master node that executes "
 "this callback."
 msgstr ""
 
-#: ../../rst/plugins/callback/foreman.rst:29
+#: ../../rst/plugins/callback/foreman.rst:28
 msgid "whitelisting in configuration"
 msgstr ""
 
-#: ../../rst/plugins/callback/foreman.rst:30
+#: ../../rst/plugins/callback/foreman.rst:29
 msgid "requests (python library)"
 msgstr ""
 
-#: ../../rst/plugins/callback/foreman.rst:34
+#: ../../rst/plugins/callback/foreman.rst:33
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/plugins/callback/foreman.rst:138
+#: ../../rst/plugins/callback/foreman.rst:141
 msgid "Status"
 msgstr ""
 
-#: ../../rst/plugins/callback/foreman.rst:143
+#: ../../rst/plugins/callback/foreman.rst:146
 msgid ""
 "This callback is not guaranteed to have a backwards compatible interface."
 " *[preview]*"
 msgstr ""
 
-#: ../../rst/plugins/callback/foreman.rst:146
+#: ../../rst/plugins/callback/foreman.rst:149
 msgid ""
 "This callback is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/plugins/callback/foreman.rst:153
+#: ../../rst/plugins/callback/foreman.rst:156
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/plugins/callback/foreman.rst:155
+#: ../../rst/plugins/callback/foreman.rst:158
 msgid "UNKNOWN"
 msgstr ""
 
-#: ../../rst/plugins/callback/foreman.rst:159
+#: ../../rst/plugins/callback/foreman.rst:162
+#, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/callback/foreman.py>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/callback/foreman.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/callback/foreman.py>`_"
+#~ " to improve it."
+#~ msgstr ""
 

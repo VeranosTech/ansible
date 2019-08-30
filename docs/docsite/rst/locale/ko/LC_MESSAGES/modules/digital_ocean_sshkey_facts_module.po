@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,66 +22,92 @@ msgstr ""
 msgid "digital_ocean_sshkey_facts -- DigitalOcean SSH keys facts"
 msgstr ""
 
+#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:18
+msgid "DEPRECATED"
+msgstr ""
+
+#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst
+msgid "Removed in Ansible"
+msgstr ""
+
 #: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:19
-msgid "Synopsis"
+msgid "version: 2.13"
+msgstr ""
+
+#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst
+msgid "Why"
 msgstr ""
 
 #: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:20
-msgid "Fetch DigitalOcean SSH keys facts."
+msgid "Deprecated in favour of ``_info`` module."
 msgstr ""
 
-#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:25
-msgid "Requirements"
+#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst
+msgid "Alternative"
+msgstr ""
+
+#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:21
+msgid ""
+"Use :ref:`digital_ocean_sshkey_info <digital_ocean_sshkey_info_module>` "
+"instead."
 msgstr ""
 
 #: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:26
-msgid "The below requirements are needed on the host that executes this module."
+msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:28
-msgid "python >= 2.6"
+#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:27
+msgid "Fetch DigitalOcean SSH keys facts."
 msgstr ""
 
 #: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:32
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:33
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:35
+msgid "python >= 2.6"
+msgstr ""
+
+#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:39
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:95
+#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:102
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:98
+#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:105
 msgid "Version 2 of DigitalOcean API is used."
 msgstr ""
 
-#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:103
+#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:110
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:124
+#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:131
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:125
+#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:132
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:153
+#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:160
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:158
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
+#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:163
+msgid "This module will be removed in version 2.13. *[deprecated]*"
 msgstr ""
 
-#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:161
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
+#: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:164
+msgid "For more information see `DEPRECATED`_."
 msgstr ""
 
 #: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:168
@@ -95,9 +121,29 @@ msgstr ""
 #: ../../rst/modules/digital_ocean_sshkey_facts_module.rst:174
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/digital_ocean/digital_ocean_sshkey_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/digital_ocean/_digital_ocean_sshkey_facts.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/digital_ocean/digital_ocean_sshkey_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

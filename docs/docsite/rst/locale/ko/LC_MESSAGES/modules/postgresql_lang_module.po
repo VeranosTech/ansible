@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,21 +35,28 @@ msgstr ""
 #: ../../rst/modules/postgresql_lang_module.rst:20
 msgid ""
 "This module allows you to add a language, remote a language or change the"
-" trust relationship with a PostgreSQL database. The module can be used on"
-" the machine where executed or on a remote host."
+" trust relationship with a PostgreSQL database."
 msgstr ""
 
 #: ../../rst/modules/postgresql_lang_module.rst:21
+msgid "The module can be used on the machine where executed or on a remote host."
+msgstr ""
+
+#: ../../rst/modules/postgresql_lang_module.rst:22
 msgid ""
 "When removing a language from a database, it is possible that "
 "dependencies prevent the database from being removed. In that case, you "
 "can specify casade to automatically drop objects that depend on the "
-"language (such as functions in the language). In case the language can't "
-"be deleted because it is required by the database system, you can specify"
-" fail_on_drop=no to ignore the error."
+"language (such as functions in the language)."
 msgstr ""
 
-#: ../../rst/modules/postgresql_lang_module.rst:22
+#: ../../rst/modules/postgresql_lang_module.rst:23
+msgid ""
+"In case the language can't be deleted because it is required by the "
+"database system, you can specify fail_on_drop=no to ignore the error."
+msgstr ""
+
+#: ../../rst/modules/postgresql_lang_module.rst:24
 msgid ""
 "Be carefull when marking a language as trusted since this could be a "
 "potential security breach. Untrusted languages allow only users with the "
@@ -57,76 +64,207 @@ msgid ""
 "functions."
 msgstr ""
 
-#: ../../rst/modules/postgresql_lang_module.rst:27
+#: ../../rst/modules/postgresql_lang_module.rst:29
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/postgresql_lang_module.rst:28
+#: ../../rst/modules/postgresql_lang_module.rst:30
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/postgresql_lang_module.rst:30
+#: ../../rst/modules/postgresql_lang_module.rst:32
 msgid "psycopg2"
 msgstr ""
 
-#: ../../rst/modules/postgresql_lang_module.rst:34
+#: ../../rst/modules/postgresql_lang_module.rst:36
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/postgresql_lang_module.rst:218
+#: ../../rst/modules/postgresql_lang_module.rst:289
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/postgresql_lang_module.rst:221
+#: ../../rst/modules/postgresql_lang_module.rst:292
 msgid ""
 "The default authentication assumes that you are either logging in as or "
-"sudo'ing to the postgres account on the host."
+"sudo'ing to the ``postgres`` account on the host."
 msgstr ""
 
-#: ../../rst/modules/postgresql_lang_module.rst:222
+#: ../../rst/modules/postgresql_lang_module.rst:293
+msgid ""
+"To avoid \"Peer authentication failed for user postgres\" error, use "
+"postgres user as a *become_user*."
+msgstr ""
+
+#: ../../rst/modules/postgresql_lang_module.rst:294
 msgid ""
 "This module uses psycopg2, a Python PostgreSQL database adapter. You must"
-" ensure that psycopg2 is installed on the host before using this module. "
-"If the remote host is the PostgreSQL server (which is the default case), "
-"then PostgreSQL must also be installed on the remote host. For Ubuntu-"
-"based systems, install the postgresql, libpq-dev, and python-psycopg2 "
-"packages on the remote host before using this module."
+" ensure that psycopg2 is installed on the host before using this module."
 msgstr ""
 
-#: ../../rst/modules/postgresql_lang_module.rst:227
+#: ../../rst/modules/postgresql_lang_module.rst:295
+msgid ""
+"If the remote host is the PostgreSQL server (which is the default case), "
+"then PostgreSQL must also be installed on the remote host."
+msgstr ""
+
+#: ../../rst/modules/postgresql_lang_module.rst:296
+msgid ""
+"For Ubuntu-based systems, install the postgresql, libpq-dev, and python-"
+"psycopg2 packages on the remote host before using this module."
+msgstr ""
+
+#: ../../rst/modules/postgresql_lang_module.rst:297
+msgid ""
+"The ca_cert parameter requires at least Postgres version 8.4 and "
+"*psycopg2* version 2.4.3."
+msgstr ""
+
+#: ../../rst/modules/postgresql_lang_module.rst:301
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/postgresql_lang_module.rst:305
+msgid ""
+"`PostgreSQL languages "
+"<https://www.postgresql.org/docs/current/xplang.html>`_"
+msgstr ""
+
+#: ../../rst/modules/postgresql_lang_module.rst:306
+msgid "General information about PostgreSQL languages."
+msgstr ""
+
+#: ../../rst/modules/postgresql_lang_module.rst:307
+msgid ""
+"`CREATE LANGUAGE reference <https://www.postgresql.org/docs/current/sql-"
+"createlanguage.html>`_"
+msgstr ""
+
+#: ../../rst/modules/postgresql_lang_module.rst:308
+msgid "Complete reference of the CREATE LANGUAGE command documentation."
+msgstr ""
+
+#: ../../rst/modules/postgresql_lang_module.rst:309
+msgid ""
+"`ALTER LANGUAGE reference <https://www.postgresql.org/docs/current/sql-"
+"alterlanguage.html>`_"
+msgstr ""
+
+#: ../../rst/modules/postgresql_lang_module.rst:310
+msgid "Complete reference of the ALTER LANGUAGE command documentation."
+msgstr ""
+
+#: ../../rst/modules/postgresql_lang_module.rst:311
+msgid ""
+"`DROP LANGUAGE reference <https://www.postgresql.org/docs/current/sql-"
+"droplanguage.html>`_"
+msgstr ""
+
+#: ../../rst/modules/postgresql_lang_module.rst:312
+msgid "Complete reference of the DROP LANGUAGE command documentation."
+msgstr ""
+
+#: ../../rst/modules/postgresql_lang_module.rst:316
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/postgresql_lang_module.rst:270
+#: ../../rst/modules/postgresql_lang_module.rst:359
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/postgresql_lang_module.rst:360
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/postgresql_lang_module.rst:388
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/postgresql_lang_module.rst:275
+#: ../../rst/modules/postgresql_lang_module.rst:393
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/postgresql_lang_module.rst:278
+#: ../../rst/modules/postgresql_lang_module.rst:396
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/postgresql_lang_module.rst:285
+#: ../../rst/modules/postgresql_lang_module.rst:403
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/postgresql_lang_module.rst:287
+#: ../../rst/modules/postgresql_lang_module.rst:405
 msgid "Jens Depuydt (@jensdepuydt)"
 msgstr ""
 
-#: ../../rst/modules/postgresql_lang_module.rst:291
+#: ../../rst/modules/postgresql_lang_module.rst:406
+msgid "Thomas O'Donnell (@andytom)"
+msgstr ""
+
+#: ../../rst/modules/postgresql_lang_module.rst:410
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/postgresql/postgresql_lang.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/postgresql/postgresql_lang.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module allows you to add a"
+#~ " language, remote a language or "
+#~ "change the trust relationship with a "
+#~ "PostgreSQL database. The module can be"
+#~ " used on the machine where executed"
+#~ " or on a remote host."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When removing a language from a "
+#~ "database, it is possible that "
+#~ "dependencies prevent the database from "
+#~ "being removed. In that case, you "
+#~ "can specify casade to automatically drop"
+#~ " objects that depend on the language"
+#~ " (such as functions in the language)."
+#~ " In case the language can't be "
+#~ "deleted because it is required by "
+#~ "the database system, you can specify "
+#~ "fail_on_drop=no to ignore the error."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The default authentication assumes that "
+#~ "you are either logging in as or"
+#~ " sudo'ing to the postgres account on"
+#~ " the host."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module uses psycopg2, a Python "
+#~ "PostgreSQL database adapter. You must "
+#~ "ensure that psycopg2 is installed on "
+#~ "the host before using this module. "
+#~ "If the remote host is the "
+#~ "PostgreSQL server (which is the default"
+#~ " case), then PostgreSQL must also be"
+#~ " installed on the remote host. For"
+#~ " Ubuntu-based systems, install the "
+#~ "postgresql, libpq-dev, and python-"
+#~ "psycopg2 packages on the remote host "
+#~ "before using this module."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/postgresql/postgresql_lang.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

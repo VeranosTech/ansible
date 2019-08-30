@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,11 @@ msgstr ""
 msgid "dellos9_command -- Run commands on remote devices running Dell OS9"
 msgstr ""
 
-#: ../../rst/modules/dellos9_command_module.rst:19
+#: ../../rst/modules/dellos9_command_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/dellos9_command_module.rst:20
+#: ../../rst/modules/dellos9_command_module.rst:19
 msgid ""
 "Sends arbitrary commands to a Dell OS9 node and returns the results read "
 "from the device. This module includes an argument that will cause the "
@@ -34,26 +34,26 @@ msgid ""
 " the condition is not met."
 msgstr ""
 
-#: ../../rst/modules/dellos9_command_module.rst:21
+#: ../../rst/modules/dellos9_command_module.rst:20
 msgid ""
 "This module does not support running commands in configuration mode. "
 "Please use :ref:`dellos9_config <dellos9_config_module>` to configure "
 "Dell OS9 devices."
 msgstr ""
 
-#: ../../rst/modules/dellos9_command_module.rst:27
+#: ../../rst/modules/dellos9_command_module.rst:26
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/dellos9_command_module.rst:213
+#: ../../rst/modules/dellos9_command_module.rst:212
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/dellos9_command_module.rst:216
+#: ../../rst/modules/dellos9_command_module.rst:215
 msgid "This module requires Dell OS9 version 9.10.0.1P13 or above."
 msgstr ""
 
-#: ../../rst/modules/dellos9_command_module.rst:217
+#: ../../rst/modules/dellos9_command_module.rst:216
 msgid ""
 "This module requires to increase the ssh connection rate limit. Use the "
 "following command *ip ssh connection-rate-limit 60* to configure the "
@@ -61,56 +61,64 @@ msgid ""
 "module as well."
 msgstr ""
 
-#: ../../rst/modules/dellos9_command_module.rst:218
+#: ../../rst/modules/dellos9_command_module.rst:217
 msgid ""
 "For more information on using Ansible to manage Dell EMC Network devices "
 "see https://www.ansible.com/ansible-dell-networking."
 msgstr ""
 
-#: ../../rst/modules/dellos9_command_module.rst:223
+#: ../../rst/modules/dellos9_command_module.rst:222
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/dellos9_command_module.rst:257
+#: ../../rst/modules/dellos9_command_module.rst:256
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/dellos9_command_module.rst:258
+#: ../../rst/modules/dellos9_command_module.rst:257
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/dellos9_command_module.rst:325
+#: ../../rst/modules/dellos9_command_module.rst:324
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/dellos9_command_module.rst:330
+#: ../../rst/modules/dellos9_command_module.rst:329
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/dellos9_command_module.rst:333
+#: ../../rst/modules/dellos9_command_module.rst:332
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/dellos9_command_module.rst:340
+#: ../../rst/modules/dellos9_command_module.rst:339
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/dellos9_command_module.rst:342
+#: ../../rst/modules/dellos9_command_module.rst:341
 msgid "Dhivya P (@dhivyap)"
 msgstr ""
 
-#: ../../rst/modules/dellos9_command_module.rst:346
+#: ../../rst/modules/dellos9_command_module.rst:345
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/dellos9/dellos9_command.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/dellos9/dellos9_command.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/dellos9/dellos9_command.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,61 +24,61 @@ msgid ""
 "registry"
 msgstr ""
 
-#: ../../rst/modules/win_regmerge_module.rst:19
+#: ../../rst/modules/win_regmerge_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/win_regmerge_module.rst:20
+#: ../../rst/modules/win_regmerge_module.rst:19
 msgid "Wraps the reg.exe command to import the contents of a registry file."
 msgstr ""
 
-#: ../../rst/modules/win_regmerge_module.rst:21
+#: ../../rst/modules/win_regmerge_module.rst:20
 msgid ""
 "Suitable for use with registry files created using :ref:`win_template "
 "<win_template_module>`."
 msgstr ""
 
-#: ../../rst/modules/win_regmerge_module.rst:22
+#: ../../rst/modules/win_regmerge_module.rst:21
 msgid ""
 "Windows registry files have a specific format and must be constructed "
 "correctly with carriage return and line feed line endings otherwise they "
 "will not be merged."
 msgstr ""
 
-#: ../../rst/modules/win_regmerge_module.rst:23
+#: ../../rst/modules/win_regmerge_module.rst:22
 msgid ""
 "Exported registry files often start with a Byte Order Mark which must be "
 "removed if the file is to templated using :ref:`win_template "
 "<win_template_module>`."
 msgstr ""
 
-#: ../../rst/modules/win_regmerge_module.rst:24
+#: ../../rst/modules/win_regmerge_module.rst:23
 msgid ""
 "Registry file format is described at https://support.microsoft.com/en-"
 "us/kb/310516"
 msgstr ""
 
-#: ../../rst/modules/win_regmerge_module.rst:25
+#: ../../rst/modules/win_regmerge_module.rst:24
 msgid ""
 "See also :ref:`win_template <win_template_module>`, :ref:`win_regedit "
 "<win_regedit_module>`"
 msgstr ""
 
-#: ../../rst/modules/win_regmerge_module.rst:31
+#: ../../rst/modules/win_regmerge_module.rst:30
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/win_regmerge_module.rst:72
+#: ../../rst/modules/win_regmerge_module.rst:71
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/win_regmerge_module.rst:75
+#: ../../rst/modules/win_regmerge_module.rst:74
 msgid ""
 "Organise your registry files so that they contain a single root registry "
 "key if you want to use the compare_to functionality."
 msgstr ""
 
-#: ../../rst/modules/win_regmerge_module.rst:76
+#: ../../rst/modules/win_regmerge_module.rst:75
 msgid ""
 "This module does not force registry settings to be in the state described"
 " in the file.  If registry settings have been modified externally the "
@@ -86,76 +86,84 @@ msgid ""
 "differences on subsequent runs."
 msgstr ""
 
-#: ../../rst/modules/win_regmerge_module.rst:77
+#: ../../rst/modules/win_regmerge_module.rst:76
 msgid ""
 "To force registry change, use :ref:`win_regedit <win_regedit_module>` "
 "with ``state=absent`` before using ``win_regmerge``."
 msgstr ""
 
-#: ../../rst/modules/win_regmerge_module.rst:81
+#: ../../rst/modules/win_regmerge_module.rst:80
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/win_regmerge_module.rst:85
+#: ../../rst/modules/win_regmerge_module.rst:84
 msgid ":ref:`win_reg_stat_module`"
 msgstr ""
 
-#: ../../rst/modules/win_regmerge_module.rst:86
+#: ../../rst/modules/win_regmerge_module.rst:85
 msgid "The official documentation on the **win_reg_stat** module."
 msgstr ""
 
-#: ../../rst/modules/win_regmerge_module.rst:87
+#: ../../rst/modules/win_regmerge_module.rst:86
 msgid ":ref:`win_regedit_module`"
 msgstr ""
 
-#: ../../rst/modules/win_regmerge_module.rst:88
+#: ../../rst/modules/win_regmerge_module.rst:87
 msgid "The official documentation on the **win_regedit** module."
 msgstr ""
 
-#: ../../rst/modules/win_regmerge_module.rst:92
+#: ../../rst/modules/win_regmerge_module.rst:91
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/win_regmerge_module.rst:110
+#: ../../rst/modules/win_regmerge_module.rst:109
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/win_regmerge_module.rst:111
+#: ../../rst/modules/win_regmerge_module.rst:110
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/win_regmerge_module.rst:163
+#: ../../rst/modules/win_regmerge_module.rst:162
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/win_regmerge_module.rst:168
+#: ../../rst/modules/win_regmerge_module.rst:167
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/win_regmerge_module.rst:171
+#: ../../rst/modules/win_regmerge_module.rst:170
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/win_regmerge_module.rst:178
+#: ../../rst/modules/win_regmerge_module.rst:177
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/win_regmerge_module.rst:180
+#: ../../rst/modules/win_regmerge_module.rst:179
 msgid "Jon Hawkesworth (@jhawkesworth)"
 msgstr ""
 
-#: ../../rst/modules/win_regmerge_module.rst:184
+#: ../../rst/modules/win_regmerge_module.rst:183
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_regmerge.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_regmerge.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_regmerge.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

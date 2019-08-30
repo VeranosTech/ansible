@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,58 +22,82 @@ msgstr ""
 msgid "panos_interface -- configure data-port network interface for DHCP"
 msgstr ""
 
+#: ../../rst/modules/panos_interface_module.rst:18
+msgid "DEPRECATED"
+msgstr ""
+
+#: ../../rst/modules/panos_interface_module.rst
+msgid "Removed in Ansible"
+msgstr ""
+
 #: ../../rst/modules/panos_interface_module.rst:19
-msgid "Synopsis"
+msgid "version: 2.12"
+msgstr ""
+
+#: ../../rst/modules/panos_interface_module.rst
+msgid "Why"
 msgstr ""
 
 #: ../../rst/modules/panos_interface_module.rst:20
+msgid "Consolidating code base."
+msgstr ""
+
+#: ../../rst/modules/panos_interface_module.rst
+msgid "Alternative"
+msgstr ""
+
+#: ../../rst/modules/panos_interface_module.rst:21
+msgid "Use https://galaxy.ansible.com/PaloAltoNetworks/paloaltonetworks instead."
+msgstr ""
+
+#: ../../rst/modules/panos_interface_module.rst:26
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/panos_interface_module.rst:27
 msgid ""
 "Configure data-port (DP) network interface for DHCP. By default DP "
 "interfaces are static."
 msgstr ""
 
-#: ../../rst/modules/panos_interface_module.rst:25
+#: ../../rst/modules/panos_interface_module.rst:32
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/panos_interface_module.rst:26
+#: ../../rst/modules/panos_interface_module.rst:33
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/panos_interface_module.rst:28
+#: ../../rst/modules/panos_interface_module.rst:35
 msgid "pan-python can be obtained from PyPI https://pypi.org/project/pan-python/"
 msgstr ""
 
-#: ../../rst/modules/panos_interface_module.rst:32
+#: ../../rst/modules/panos_interface_module.rst:39
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/panos_interface_module.rst:147
+#: ../../rst/modules/panos_interface_module.rst:154
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/panos_interface_module.rst:150
+#: ../../rst/modules/panos_interface_module.rst:157
 msgid "Checkmode is not supported."
 msgstr ""
 
-#: ../../rst/modules/panos_interface_module.rst:155
+#: ../../rst/modules/panos_interface_module.rst:162
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/panos_interface_module.rst:173
+#: ../../rst/modules/panos_interface_module.rst:180
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/panos_interface_module.rst:178
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
+#: ../../rst/modules/panos_interface_module.rst:183
+msgid "This module will be removed in version 2.12. *[deprecated]*"
 msgstr ""
 
-#: ../../rst/modules/panos_interface_module.rst:181
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
+#: ../../rst/modules/panos_interface_module.rst:184
+msgid "For more information see `DEPRECATED`_."
 msgstr ""
 
 #: ../../rst/modules/panos_interface_module.rst:188
@@ -87,9 +111,29 @@ msgstr ""
 #: ../../rst/modules/panos_interface_module.rst:194
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/panos/panos_interface.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/panos/_panos_interface.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/panos/panos_interface.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

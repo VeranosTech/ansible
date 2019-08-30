@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,51 +22,51 @@ msgstr ""
 msgid "ecs_task -- run, start or stop a task in ecs"
 msgstr ""
 
-#: ../../rst/modules/ecs_task_module.rst:19
+#: ../../rst/modules/ecs_task_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/ecs_task_module.rst:20
+#: ../../rst/modules/ecs_task_module.rst:19
 msgid "Creates or deletes instances of task definitions."
 msgstr ""
 
-#: ../../rst/modules/ecs_task_module.rst:25
+#: ../../rst/modules/ecs_task_module.rst:24
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/ecs_task_module.rst:26
+#: ../../rst/modules/ecs_task_module.rst:25
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/ecs_task_module.rst:28
+#: ../../rst/modules/ecs_task_module.rst:27
 msgid "boto"
 msgstr ""
 
-#: ../../rst/modules/ecs_task_module.rst:29
+#: ../../rst/modules/ecs_task_module.rst:28
 msgid "boto3"
 msgstr ""
 
-#: ../../rst/modules/ecs_task_module.rst:30
+#: ../../rst/modules/ecs_task_module.rst:29
 msgid "botocore"
 msgstr ""
 
-#: ../../rst/modules/ecs_task_module.rst:31
+#: ../../rst/modules/ecs_task_module.rst:30
 msgid "json"
 msgstr ""
 
-#: ../../rst/modules/ecs_task_module.rst:32
+#: ../../rst/modules/ecs_task_module.rst:31
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/ecs_task_module.rst:36
+#: ../../rst/modules/ecs_task_module.rst:35
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/ecs_task_module.rst:273
+#: ../../rst/modules/ecs_task_module.rst:306
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/ecs_task_module.rst:276
+#: ../../rst/modules/ecs_task_module.rst:309
 msgid ""
 "If parameters are not set within the module, the following environment "
 "variables can be used in decreasing order of precedence ``AWS_URL`` or "
@@ -76,64 +76,72 @@ msgid ""
 "``AWS_REGION`` or ``EC2_REGION``"
 msgstr ""
 
-#: ../../rst/modules/ecs_task_module.rst:277
+#: ../../rst/modules/ecs_task_module.rst:310
 msgid ""
 "Ansible uses the boto configuration file (typically ~/.boto) if no "
 "credentials are provided. See "
 "https://boto.readthedocs.io/en/latest/boto_config_tut.html"
 msgstr ""
 
-#: ../../rst/modules/ecs_task_module.rst:278
+#: ../../rst/modules/ecs_task_module.rst:311
 msgid ""
 "``AWS_REGION`` or ``EC2_REGION`` can be typically be used to specify the "
 "AWS region, when required, but this can also be configured in the boto "
 "config file"
 msgstr ""
 
-#: ../../rst/modules/ecs_task_module.rst:283
+#: ../../rst/modules/ecs_task_module.rst:316
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/ecs_task_module.rst:328
+#: ../../rst/modules/ecs_task_module.rst:377
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/ecs_task_module.rst:329
+#: ../../rst/modules/ecs_task_module.rst:378
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/ecs_task_module.rst:512
+#: ../../rst/modules/ecs_task_module.rst:573
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/ecs_task_module.rst:517
+#: ../../rst/modules/ecs_task_module.rst:578
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/ecs_task_module.rst:520
+#: ../../rst/modules/ecs_task_module.rst:581
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/ecs_task_module.rst:527
+#: ../../rst/modules/ecs_task_module.rst:588
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/ecs_task_module.rst:529
+#: ../../rst/modules/ecs_task_module.rst:590
 msgid "Mark Chance (@Java1Guy)"
 msgstr ""
 
-#: ../../rst/modules/ecs_task_module.rst:533
+#: ../../rst/modules/ecs_task_module.rst:594
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/ecs_task.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/ecs_task.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/ecs_task.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

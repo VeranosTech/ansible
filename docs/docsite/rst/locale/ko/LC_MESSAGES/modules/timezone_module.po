@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,44 +22,48 @@ msgstr ""
 msgid "timezone -- Configure timezone setting"
 msgstr ""
 
-#: ../../rst/modules/timezone_module.rst:19
+#: ../../rst/modules/timezone_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/timezone_module.rst:20
+#: ../../rst/modules/timezone_module.rst:19
 msgid ""
 "This module configures the timezone setting, both of the system clock and"
 " of the hardware clock. If you want to set up the NTP, use :ref:`service "
 "<service_module>` module."
 msgstr ""
 
-#: ../../rst/modules/timezone_module.rst:21
+#: ../../rst/modules/timezone_module.rst:20
 msgid ""
 "It is recommended to restart ``crond`` after changing the timezone, "
 "otherwise the jobs may run at the wrong time."
 msgstr ""
 
-#: ../../rst/modules/timezone_module.rst:22
+#: ../../rst/modules/timezone_module.rst:21
 msgid ""
 "Several different tools are used depending on the OS/Distribution "
 "involved. For Linux it can use ``timedatectl`` or edit "
 "``/etc/sysconfig/clock`` or ``/etc/timezone`` and ``hwclock``. On "
 "SmartOS, ``sm-set-timezone``, for macOS, ``systemsetup``, for BSD, "
-"``/etc/localtime`` is modified."
+"``/etc/localtime`` is modified. On AIX, ``chtz`` is used."
 msgstr ""
 
-#: ../../rst/modules/timezone_module.rst:23
+#: ../../rst/modules/timezone_module.rst:22
 msgid "As of Ansible 2.3 support was added for SmartOS and BSDs."
 msgstr ""
 
-#: ../../rst/modules/timezone_module.rst:24
+#: ../../rst/modules/timezone_module.rst:23
 msgid "As of Ansible 2.4 support was added for macOS."
+msgstr ""
+
+#: ../../rst/modules/timezone_module.rst:24
+msgid "As of Ansible 2.9 support was added for AIX 6.1+"
 msgstr ""
 
 #: ../../rst/modules/timezone_module.rst:25
 msgid ""
-"Windows, AIX and HPUX are not supported, please let us know if you find "
-"any other OS/distro in which this fails."
+"Windows and HPUX are not supported, please let us know if you find any "
+"other OS/distro in which this fails."
 msgstr ""
 
 #: ../../rst/modules/timezone_module.rst:31
@@ -76,58 +80,91 @@ msgid ""
 "is required to set the zone timezone"
 msgstr ""
 
-#: ../../rst/modules/timezone_module.rst:91
+#: ../../rst/modules/timezone_module.rst:87
+msgid ""
+"On AIX only Olson/tz database timezones are useable (POSIX is not "
+"supported). - An OS reboot is also required on AIX for the new timezone "
+"setting to take effect."
+msgstr ""
+
+#: ../../rst/modules/timezone_module.rst:92
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/timezone_module.rst:104
+#: ../../rst/modules/timezone_module.rst:105
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/timezone_module.rst:105
+#: ../../rst/modules/timezone_module.rst:106
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/timezone_module.rst:156
+#: ../../rst/modules/timezone_module.rst:157
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/timezone_module.rst:161
+#: ../../rst/modules/timezone_module.rst:162
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/timezone_module.rst:164
+#: ../../rst/modules/timezone_module.rst:165
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/timezone_module.rst:171
+#: ../../rst/modules/timezone_module.rst:172
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/timezone_module.rst:173
+#: ../../rst/modules/timezone_module.rst:174
 msgid "Shinichi TAMURA (@tmshn)"
 msgstr ""
 
-#: ../../rst/modules/timezone_module.rst:174
+#: ../../rst/modules/timezone_module.rst:175
 msgid "Jasper Lievisse Adriaanse (@jasperla)"
 msgstr ""
 
-#: ../../rst/modules/timezone_module.rst:175
+#: ../../rst/modules/timezone_module.rst:176
 msgid "Indrajit Raychaudhuri (@indrajitr)"
 msgstr ""
 
-#: ../../rst/modules/timezone_module.rst:179
+#: ../../rst/modules/timezone_module.rst:180
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/timezone.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/timezone.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "Several different tools are used "
+#~ "depending on the OS/Distribution involved. "
+#~ "For Linux it can use ``timedatectl`` "
+#~ "or edit ``/etc/sysconfig/clock`` or "
+#~ "``/etc/timezone`` and ``hwclock``. On SmartOS,"
+#~ " ``sm-set-timezone``, for macOS, "
+#~ "``systemsetup``, for BSD, ``/etc/localtime`` "
+#~ "is modified."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Windows, AIX and HPUX are not "
+#~ "supported, please let us know if "
+#~ "you find any other OS/distro in "
+#~ "which this fails."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/timezone.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

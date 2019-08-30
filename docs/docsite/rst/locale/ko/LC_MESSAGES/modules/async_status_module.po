@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,59 +39,92 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/async_status_module.rst:71
+#: ../../rst/modules/async_status_module.rst:72
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/async_status_module.rst:74
-msgid "See also https://docs.ansible.com/playbooks_async.html"
+#: ../../rst/modules/async_status_module.rst:79
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/async_status_module.rst:83
+msgid ":ref:`playbooks_async`"
 msgstr ""
 
 #: ../../rst/modules/async_status_module.rst:84
+msgid "Detailed information on how to use asynchronous actions and polling."
+msgstr ""
+
+#: ../../rst/modules/async_status_module.rst:88
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/async_status_module.rst:113
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/async_status_module.rst:114
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/async_status_module.rst:168
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/async_status_module.rst:89
+#: ../../rst/modules/async_status_module.rst:173
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/async_status_module.rst:92
+#: ../../rst/modules/async_status_module.rst:176
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/async_status_module.rst:95
+#: ../../rst/modules/async_status_module.rst:179
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/async_status_module.rst:97
+#: ../../rst/modules/async_status_module.rst:181
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/async_status_module.rst:103
+#: ../../rst/modules/async_status_module.rst:187
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/async_status_module.rst:105
+#: ../../rst/modules/async_status_module.rst:189
 msgid "Ansible Core Team"
 msgstr ""
 
-#: ../../rst/modules/async_status_module.rst:106
+#: ../../rst/modules/async_status_module.rst:190
 msgid "Michael DeHaan"
 msgstr ""
 
-#: ../../rst/modules/async_status_module.rst:110
+#: ../../rst/modules/async_status_module.rst:194
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/async_status.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/async_status.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "See also https://docs.ansible.com/playbooks_async.html"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/async_status.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

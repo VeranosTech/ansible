@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,68 +46,76 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/ig_config_module.rst:433
+#: ../../rst/modules/ig_config_module.rst:437
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/ig_config_module.rst:436
+#: ../../rst/modules/ig_config_module.rst:440
 msgid ""
 "If ``store_download`` is set to True, and ``path`` and ``filename`` is "
 "omitted, the file will be stored in the current directory with an "
 "automatic filename."
 msgstr ""
 
-#: ../../rst/modules/ig_config_module.rst:437
+#: ../../rst/modules/ig_config_module.rst:441
 msgid ""
 "This module requires that the Ingate Python SDK is installed on the host."
 " To install the SDK use the pip command from your shell ``pip install "
 "ingatesdk``."
 msgstr ""
 
-#: ../../rst/modules/ig_config_module.rst:442
+#: ../../rst/modules/ig_config_module.rst:446
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/ig_config_module.rst:601
+#: ../../rst/modules/ig_config_module.rst:605
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/ig_config_module.rst:602
+#: ../../rst/modules/ig_config_module.rst:606
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/ig_config_module.rst:1002
+#: ../../rst/modules/ig_config_module.rst:1006
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/ig_config_module.rst:1007
+#: ../../rst/modules/ig_config_module.rst:1011
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/ig_config_module.rst:1010
+#: ../../rst/modules/ig_config_module.rst:1014
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/ig_config_module.rst:1017
+#: ../../rst/modules/ig_config_module.rst:1021
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/ig_config_module.rst:1019
+#: ../../rst/modules/ig_config_module.rst:1023
 msgid "Ingate Systems AB (@ingatesystems)"
 msgstr ""
 
-#: ../../rst/modules/ig_config_module.rst:1023
+#: ../../rst/modules/ig_config_module.rst:1027
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/ingate/ig_config.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/ingate/ig_config.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/ingate/ig_config.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

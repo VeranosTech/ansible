@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,68 +29,86 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/cyberark_user_module.rst:20
-msgid ""
-"CyberArk User Management using PAS Web Services SDK. It currently "
-"supports the following actions Get User Details, Add User, Update User, "
-"Delete User."
+msgid "CyberArk User Management using PAS Web Services SDK."
 msgstr ""
 
-#: ../../rst/modules/cyberark_user_module.rst:26
+#: ../../rst/modules/cyberark_user_module.rst:21
+msgid ""
+"It currently supports the following actions Get User Details, Add User, "
+"Update User, Delete User."
+msgstr ""
+
+#: ../../rst/modules/cyberark_user_module.rst:27
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/cyberark_user_module.rst:238
+#: ../../rst/modules/cyberark_user_module.rst:241
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/cyberark_user_module.rst:275
+#: ../../rst/modules/cyberark_user_module.rst:278
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/cyberark_user_module.rst:276
+#: ../../rst/modules/cyberark_user_module.rst:279
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/cyberark_user_module.rst:328
+#: ../../rst/modules/cyberark_user_module.rst:331
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/cyberark_user_module.rst:333
+#: ../../rst/modules/cyberark_user_module.rst:336
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/cyberark_user_module.rst:336
+#: ../../rst/modules/cyberark_user_module.rst:339
 msgid ""
 "This module is :ref:`maintained by an Ansible Partner <modules_support>`."
 " *[certified]*"
 msgstr ""
 
-#: ../../rst/modules/cyberark_user_module.rst:343
+#: ../../rst/modules/cyberark_user_module.rst:346
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/cyberark_user_module.rst:345
+#: ../../rst/modules/cyberark_user_module.rst:348
 msgid "Edward Nunez (@enunez-cyberark) CyberArk BizDev"
 msgstr ""
 
-#: ../../rst/modules/cyberark_user_module.rst:346
+#: ../../rst/modules/cyberark_user_module.rst:349
 msgid "Cyberark Bizdev (@cyberark-bizdev)"
 msgstr ""
 
-#: ../../rst/modules/cyberark_user_module.rst:347
+#: ../../rst/modules/cyberark_user_module.rst:350
 msgid "erasmix (@erasmix)"
 msgstr ""
 
-#: ../../rst/modules/cyberark_user_module.rst:351
+#: ../../rst/modules/cyberark_user_module.rst:354
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/identity/cyberark/cyberark_user.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/identity/cyberark/cyberark_user.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "CyberArk User Management using PAS Web"
+#~ " Services SDK. It currently supports "
+#~ "the following actions Get User Details,"
+#~ " Add User, Update User, Delete User."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/identity/cyberark/cyberark_user.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

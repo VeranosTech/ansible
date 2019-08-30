@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,116 +24,124 @@ msgid ""
 "configuration"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:19
+#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:20
+#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:19
 msgid "Manages BGP address-family's neighbors configurations on NX-OS switches."
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:26
+#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:777
+#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:779
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:780
+#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:782
 msgid "Tested against NXOSv 7.3.(0)D1(1) on VIRL"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:781
+#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:783
 msgid ""
 "``state=absent`` removes the whole BGP address-family's neighbor "
 "configuration."
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:782
+#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:784
 msgid "Default, when supported, removes properties"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:783
+#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:785
 msgid ""
 "In order to default maximum-prefix configuration, only "
 "``max_prefix_limit=default`` is needed."
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:784
+#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:786
 msgid ""
 "For information on using CLI and NX-API see the :ref:`NXOS Platform "
 "Options guide <nxos_platform_options>`"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:785
+#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:787
 msgid ""
 "For more information on using Ansible to manage network devices see the "
 ":ref:`Ansible Network Guide <network_guide>`"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:786
+#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:788
 msgid ""
 "For more information on using Ansible to manage Cisco devices see the "
 "`Cisco integration page "
 "<https://www.ansible.com/integrations/networks/cisco>`_."
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:791
+#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:793
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:809
+#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:811
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:810
+#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:812
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:838
+#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:840
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:843
+#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:845
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:846
+#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:848
 msgid ""
 "This module is :ref:`maintained by the Ansible Network Team "
 "<modules_support>`. *[network]*"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:849
+#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:851
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:851
+#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:853
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:857
+#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:859
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:859
+#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:861
 msgid "Gabriele Gerbino (@GGabriele)"
 msgstr ""
 
-#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:863
+#: ../../rst/modules/nxos_bgp_neighbor_af_module.rst:865
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_bgp_neighbor_af.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_bgp_neighbor_af.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_bgp_neighbor_af.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

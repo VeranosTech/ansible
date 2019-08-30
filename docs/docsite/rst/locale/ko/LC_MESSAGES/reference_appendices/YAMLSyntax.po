@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,9 +26,7 @@ msgstr "YAML 문법"
 msgid ""
 "This page provides a basic overview of correct YAML syntax, which is how "
 "Ansible playbooks (our configuration management language) are expressed."
-msgstr ""
-"이 페이지는 앤서블 플레이북에(그리고 설정 관리 언어로) 쓰이는 YAML의 "
-"올바른 문법을 설명한다."
+msgstr "이 페이지는 앤서블 플레이북에(그리고 설정 관리 언어로) 쓰이는 YAML의 올바른 문법을 설명한다."
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:10
 msgid ""
@@ -36,16 +34,14 @@ msgid ""
 "common data formats like XML or JSON.  Further, there are libraries "
 "available in most programming languages for working with YAML."
 msgstr ""
-"YAML이 XML이나 JSON과 같은 다른 데이터 형식보다 사람이 읽고 쓰기 쉽기 때문에 "
-"우리는 YAML을 사용한다. 또한 YAML을 다룰 수 있는 라이브러리는 대부분의 "
-"프로그래밍 언어에서 제공한다."
+"YAML이 XML이나 JSON과 같은 다른 데이터 형식보다 사람이 읽고 쓰기 쉽기 때문에 우리는 YAML을 사용한다. 또한 "
+"YAML을 다룰 수 있는 라이브러리는 대부분의 프로그래밍 언어에서 제공한다."
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:14
 msgid ""
 "You may also wish to read :ref:`working_with_playbooks` at the same time "
 "to see how this is used in practice."
-msgstr ""
-"실제로 YAML이 어떻게 쓰이는지를 보려면 :ref:`working_with_playbooks`\ 도 같이 읽으면 좋다."
+msgstr "실제로 YAML이 어떻게 쓰이는지를 보려면 :ref:`working_with_playbooks`\\ 도 같이 읽으면 좋다."
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:19
 msgid "YAML Basics"
@@ -58,9 +54,8 @@ msgid ""
 "\"dictionary\".  So, we need to know how to write lists and dictionaries "
 "in YAML."
 msgstr ""
-"앤서블에서는 거의 모든 YAML 파일이 리스트로 시작한다. 리스트의 각 아이템은 "
-"\"해시\" 또는 \"딕셔너리\"\ 로 불리는 키/밸류 쌍의 리스트이다. "
-"따라서 우선 YAML에서 리스트와 딕셔너리를 쓰는 법을 알아야 한다."
+"앤서블에서는 거의 모든 YAML 파일이 리스트로 시작한다. 리스트의 각 아이템은 \"해시\" 또는 \"딕셔너리\"\\ 로 불리는 "
+"키/밸류 쌍의 리스트이다. 따라서 우선 YAML에서 리스트와 딕셔너리를 쓰는 법을 알아야 한다."
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:26
 msgid ""
@@ -69,49 +64,42 @@ msgid ""
 "end with ``...``.  This is part of the YAML format and indicates the "
 "start and end of a document."
 msgstr ""
-"YAML에는 또다른 특징이 있는데 모든 YAML 파일은 (앤서블과 상관없이) ``---``\ 로 "
-"시작할 수 있고 ``...``\ 로 끝날 수 있다. 이 것은 YAML 형식의 일부로서 문서의 "
-"시작과 끝을 나타낸다."
+"YAML에는 또다른 특징이 있는데 모든 YAML 파일은 (앤서블과 상관없이) ``---``\\ 로 시작할 수 있고 ``...``\\"
+" 로 끝날 수 있다. 이 것은 YAML 형식의 일부로서 문서의 시작과 끝을 나타낸다."
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:29
 msgid ""
 "All members of a list are lines beginning at the same indentation level "
 "starting with a ``\"- \"`` (a dash and a space)::"
-msgstr ""
-"리스트의 모든 원소는 같은 들여쓰기이고 ``\"- \"`` (대시와 공백)으로 시작한다::" 
+msgstr "리스트의 모든 원소는 같은 들여쓰기이고 ``\"- \"`` (대시와 공백)으로 시작한다::"
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:39
 msgid ""
 "A dictionary is represented in a simple ``key: value`` form (the colon "
 "must be followed by a space)::"
-msgstr ""
-"딕셔너리는 ``key: value`` 형식이다. (콜론 뒤에 반드시 공백이 있어야 한다.)::"
+msgstr "딕셔너리는 ``key: value`` 형식이다. (콜론 뒤에 반드시 공백이 있어야 한다.)::"
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:47
 msgid ""
 "More complicated data structures are possible, such as lists of "
 "dictionaries, dictionaries whose values are lists or a mix of both::"
-msgstr ""
-"딕셔너리의 리스트라든가 리스트를 원소로 가지는 딕셔너처럼 더 복잡한 자료구조도 "
-"가능하다."
+msgstr "딕셔너리의 리스트라든가 리스트를 원소로 가지는 딕셔너처럼 더 복잡한 자료구조도 가능하다."
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:65
 msgid ""
 "Dictionaries and lists can also be represented in an abbreviated form if "
 "you really want to::"
-msgstr ""
-"딕셔너리와 리스트는 다음처럼 단축형식으로 쓸 수도 있다.::"
+msgstr "딕셔너리와 리스트는 다음처럼 단축형식으로 쓸 수도 있다.::"
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:71
 msgid "These are called \"Flow collections\"."
-msgstr "이를 \"플로우 콜렉션(flow collection)\"\ 이라고 부른다. "
+msgstr "이를 \"플로우 콜렉션(flow collection)\"\\ 이라고 부른다. "
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:75
 msgid ""
 "Ansible doesn't really use these too much, but you can also specify a "
 "boolean value (true/false) in several forms::"
-msgstr ""
-"앤서블에서는 잘 쓰이지 않지만 불리언 값도 여러가지 형식으로 지정할 수 있다.::"
+msgstr "앤서블에서는 잘 쓰이지 않지만 불리언 값도 여러가지 형식으로 지정할 수 있다.::"
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:83
 msgid ""
@@ -122,35 +110,29 @@ msgid ""
 " line easier to read and edit. In either case the indentation will be "
 "ignored. Examples are::"
 msgstr ""
-"값을 여러줄에 걸처 쓰러면 ``|`` 또는 ``>``\ 를 사용한다. "
-"여러줄에 걸처 \"리터럴 블럭 스칼라(Literal Block Scalar)\"  ``|``\ 를 쓰면 "
-"줄넘기기와 뒤쪽 공백도 포함하게 된다. \"폴디드 블럭 스칼라(Folded Block Scalar)\" ``>``\ 를 "
-"사용하면 줄넘기기와 뒤쪽 공백은 없어진다. 원래 한 줄인 것을 읽거나 편집하기 "
-"편하게 나눌 때 사용한다. 어느 경우든 들여쓰기는 무시된다. 예제는 다음과 같다.::"
+"값을 여러줄에 걸처 쓰러면 ``|`` 또는 ``>``\\ 를 사용한다. 여러줄에 걸처 \"리터럴 블럭 스칼라(Literal "
+"Block Scalar)\"  ``|``\\ 를 쓰면 줄넘기기와 뒤쪽 공백도 포함하게 된다. \"폴디드 블럭 스칼라(Folded "
+"Block Scalar)\" ``>``\\ 를 사용하면 줄넘기기와 뒤쪽 공백은 없어진다. 원래 한 줄인 것을 읽거나 편집하기 편하게"
+" 나눌 때 사용한다. 어느 경우든 들여쓰기는 무시된다. 예제는 다음과 같다.::"
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:98
 msgid ""
 "While in the above ``>`` example all newlines are folded into spaces, "
 "there are two ways to enforce a newline to be kept::"
-msgstr ""
-"앞에서 ``>`` 예제는 모든 줄넘기기가 공백으로 변환되었다. "
-"줄넘기기를 유지하려면 두 가지 방법이 있다.::"
+msgstr "앞에서 ``>`` 예제는 모든 줄넘기기가 공백으로 변환되었다. 줄넘기기를 유지하려면 두 가지 방법이 있다.::"
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:110
 msgid ""
 "Let's combine what we learned so far in an arbitrary YAML example. This "
 "really has nothing to do with Ansible, but will give you a feel for the "
 "format::"
-msgstr ""
-"지금까지 배운것을 종합하여 임의의 YAML을 만들어보자. 앤서블과는 관계없지만 "
-"YAML 형식에 대해 감이 올 것이다.::"
+msgstr "지금까지 배운것을 종합하여 임의의 YAML을 만들어보자. 앤서블과는 관계없지만 YAML 형식에 대해 감이 올 것이다.::"
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:133
 msgid ""
 "That's all you really need to know about YAML to start writing `Ansible` "
 "playbooks."
-msgstr ""
-"이게 앤서블 플레이북을 만들기 위해 필요한 YAML의 전부이다."
+msgstr "이게 앤서블 플레이북을 만들기 위해 필요한 YAML의 전부이다."
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:136
 msgid "Gotchas"
@@ -163,9 +145,8 @@ msgid ""
 "an indicator for a mapping. A space followed by the pound sign ``\" #\"``"
 " starts a comment."
 msgstr ""
-"따옴표가 없는 스칼라값으로 넣을 수 없는 것이 몇가지 있다. "
-"콜론 뒤에 공백(또는 줄바꿈)이오는 ``\": \"``\ 는 딕셔너리에 쓰이는 기호이다. "
-"공백다음에 파운드 기호  ``\" #\"``\ 도 주석(comment)의 시작이다."
+"따옴표가 없는 스칼라값으로 넣을 수 없는 것이 몇가지 있다. 콜론 뒤에 공백(또는 줄바꿈)이오는 ``\": \"``\\ 는 "
+"딕셔너리에 쓰이는 기호이다. 공백다음에 파운드 기호  ``\" #\"``\\ 도 주석(comment)의 시작이다."
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:142
 msgid "Because of this, the following is going to result in a YAML syntax error::"
@@ -179,8 +160,7 @@ msgstr "하지만 다음 코드는 동작한다.::"
 msgid ""
 "You will want to quote hash values using colons followed by a space or "
 "the end of the line::"
-msgstr ""
-"해시 값이 되려면 콜론 다음에 공백이나 줄바꿈을 사용한다.::"
+msgstr "해시 값이 되려면 콜론 다음에 공백이나 줄바꿈을 사용한다.::"
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:158
 msgid "...and then the colon will be preserved."
@@ -194,151 +174,141 @@ msgstr "아니면 겹따옴표를 쓸 수 있다.::"
 msgid ""
 "The difference between single quotes and double quotes is that in double "
 "quotes you can use escapes::"
-msgstr ""
-"홑따옴표와 겹따옴표의 차이는 겹따옴표에서는 이스케이프(escape)가 된다는 것이다.::"
+msgstr "홑따옴표와 겹따옴표의 차이는 겹따옴표에서는 이스케이프(escape)가 된다는 것이다.::"
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:171
 msgid ""
 "The list of allowed escapes can be found in the YAML Specification under "
 "\"Escape Sequences\" (YAML 1.1) or \"Escape Characters\" (YAML 1.2)."
 msgstr ""
-"\"Escape Sequences\" (YAML 1.1) 또는 \"Escape Characters\" (YAML 1.2) YAML 표준에 "
-"따르면 허용되는 이스케이프 문자는 다음과 같다."
+"\"Escape Sequences\" (YAML 1.1) 또는 \"Escape Characters\" (YAML 1.2) YAML "
+"표준에 따르면 허용되는 이스케이프 문자는 다음과 같다."
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:173
-msgid "The following is invalid YAML::"
+#, fuzzy
+msgid "The following is invalid YAML:"
 msgstr "다음은 올바른 YAML이 아니다::"
 
-#: ../../rst/reference_appendices/YAMLSyntax.rst:178
+#: ../../rst/reference_appendices/YAMLSyntax.rst:180
 msgid ""
 "Further, Ansible uses \"{{ var }}\" for variables.  If a value after a "
 "colon starts with a \"{\", YAML will think it is a dictionary, so you "
 "must quote it, like so::"
 msgstr ""
-"또 앤서블에서는 변수에 대해  \"{{ var }}\"\ 를 쓸 수 있다. "
-"만약 콜론 다음의 값이 \"{\"\ 로 시작하면 YAML은 이를 딕셔너리로 인식한다. "
-"따라서 다음처럼 따옴표가 있어야 한다.::"
+"또 앤서블에서는 변수에 대해  \"{{ var }}\"\\ 를 쓸 수 있다. 만약 콜론 다음의 값이 \"{\"\\ 로 시작하면 "
+"YAML은 이를 딕셔너리로 인식한다. 따라서 다음처럼 따옴표가 있어야 한다.::"
 
-#: ../../rst/reference_appendices/YAMLSyntax.rst:183
+#: ../../rst/reference_appendices/YAMLSyntax.rst:185
 msgid ""
 "If your value starts with a quote the entire value must be quoted, not "
 "just part of it. Here are some additional examples of how to properly "
 "quote things::"
-msgstr ""
-"만약 값이 따옴표로 시작하면 값의 일부가 아니라 전체에 대해 따옴표를 붙여야 한다."
-"다음은 따옴표의 올바른 사용법이다.::"
+msgstr "만약 값이 따옴표로 시작하면 값의 일부가 아니라 전체에 대해 따옴표를 붙여야 한다.다음은 따옴표의 올바른 사용법이다.::"
 
-#: ../../rst/reference_appendices/YAMLSyntax.rst:189
+#: ../../rst/reference_appendices/YAMLSyntax.rst:191
 msgid "Not valid::"
 msgstr "잘못된 코드의 예"
 
-#: ../../rst/reference_appendices/YAMLSyntax.rst:193
+#: ../../rst/reference_appendices/YAMLSyntax.rst:195
 msgid ""
 "In addition to ``'`` and ``\"`` there are a number of characters that are"
 " special (or reserved) and cannot be used as the first character of an "
 "unquoted scalar: ``[] {} > | * & ! % # ` @ ,``."
-msgstr ""
-"``'``\ 와 ``\"`` 이외에도 특별이 예약된 문자가 있다. 이글자들은 "
-"따옴표가 없은 스칼라값의 첫 글자로 오지 못한다."
+msgstr "``'``\\ 와 ``\"`` 이외에도 특별이 예약된 문자가 있다. 이글자들은 따옴표가 없은 스칼라값의 첫 글자로 오지 못한다."
 
-#: ../../rst/reference_appendices/YAMLSyntax.rst:196
+#: ../../rst/reference_appendices/YAMLSyntax.rst:198
 msgid ""
 "You should also be aware of ``? : -``. In YAML, they are allowed at the "
 "beginning of a string if a non-space character follows, but YAML "
 "processor implementations differ, so it's better to use quotes."
 msgstr ""
-"``? : -``\ 에 주의하라. 만약 공백문자가 아닌 클자가 붙으면 문자열의 "
-"시작에 쓸 수 있다. 하지만 YAML 처리기는 다르게 구현할 수 있기 때문에 "
-"함부로 인용하면 안된다."
+"``? : -``\\ 에 주의하라. 만약 공백문자가 아닌 클자가 붙으면 문자열의 시작에 쓸 수 있다. 하지만 YAML 처리기는 "
+"다르게 구현할 수 있기 때문에 함부로 인용하면 안된다."
 
-#: ../../rst/reference_appendices/YAMLSyntax.rst:199
+#: ../../rst/reference_appendices/YAMLSyntax.rst:201
 msgid "In Flow Collections, the rules are a bit more strict::"
-msgstr "\"플로우 콜렉션\"\ 에서의 규칙은 좀 더 엄격하다.
+msgstr "\"플로우 콜렉션\"\\ 에서의 규칙은 좀 더 엄격하다"
 
-
-#: ../../rst/reference_appendices/YAMLSyntax.rst:205
+#: ../../rst/reference_appendices/YAMLSyntax.rst:207
 msgid ""
 "Boolean conversion is helpful, but this can be a problem when you want a "
 "literal `yes` or other boolean values as a string. In these cases just "
 "use quotes::"
-msgstr ""
-"불리언 변환이 도움이 되지만 문자로 된 리터럴 `yes` 또는 다른 불리언값을 "
-"원할 수도 있다.::"
+msgstr "불리언 변환이 도움이 되지만 문자로 된 리터럴 `yes` 또는 다른 불리언값을 원할 수도 있다.::"
 
-#: ../../rst/reference_appendices/YAMLSyntax.rst:212
+#: ../../rst/reference_appendices/YAMLSyntax.rst:214
 msgid ""
 "YAML converts certain strings into floating-point values, such as the "
 "string `1.0`. If you need to specify a version number (in a "
 "requirements.yml file, for example), you will need to quote the value if "
 "it looks like a floating-point value::"
 msgstr ""
-"YAML은 `1.0`\ 등의 특정한 문자열을 부동소수점으로 변환한다. 만약 "
-"(예를 들어 requirements.ym 파일에서처럼) 버전 넘버를 "
-"표시해야 하면 따옴표로 인용해야 한다. 아니면 정말 부동소수점인 것처럼 변환한다"
+"YAML은 `1.0`\\ 등의 특정한 문자열을 부동소수점으로 변환한다. 만약 (예를 들어 requirements.ym 파일에서처럼)"
+" 버전 넘버를 표시해야 하면 따옴표로 인용해야 한다. 아니면 정말 부동소수점인 것처럼 변환한다"
 
-#: ../../rst/reference_appendices/YAMLSyntax.rst:222
+#: ../../rst/reference_appendices/YAMLSyntax.rst:224
 msgid ":ref:`working_with_playbooks`"
 msgstr "플레이북 작업"
 
-#: ../../rst/reference_appendices/YAMLSyntax.rst:223
+#: ../../rst/reference_appendices/YAMLSyntax.rst:225
 msgid "Learn what playbooks can do and how to write/run them."
 msgstr "플레이북이 무엇을 할 수 있고 어떻게 읽고 생각할 수 있는가."
 
-#: ../../rst/reference_appendices/YAMLSyntax.rst:224
+#: ../../rst/reference_appendices/YAMLSyntax.rst:226
 msgid "`YAMLLint <http://yamllint.com/>`_"
 msgstr ""
 
-#: ../../rst/reference_appendices/YAMLSyntax.rst:225
+#: ../../rst/reference_appendices/YAMLSyntax.rst:227
 msgid "YAML Lint (online) helps you debug YAML syntax if you are having problems"
-msgstr ""YAML Lint(온라인)은 문제가 있을 때 YAML 문법을 디버그하는데 도움이 된다."
- 
-#: ../../rst/reference_appendices/YAMLSyntax.rst:226
+msgstr "\"YAML Lint(온라인)은 문제가 있을 때 YAML 문법을 디버그하는데 도움이 된다."
+
+#: ../../rst/reference_appendices/YAMLSyntax.rst:228
 msgid "`GitHub examples directory <https://github.com/ansible/ansible-examples>`_"
 msgstr "Github 예제 디렉토리 <https://github.com/ansible/ansible-examples>`_"
 
-#: ../../rst/reference_appendices/YAMLSyntax.rst:227
+#: ../../rst/reference_appendices/YAMLSyntax.rst:229
 msgid "Complete playbook files from the github project source"
 msgstr "github 프로젝트 소스의 전체 플레이북 파일"
 
-#: ../../rst/reference_appendices/YAMLSyntax.rst:228
+#: ../../rst/reference_appendices/YAMLSyntax.rst:230
 msgid "`Wikipedia YAML syntax reference <https://en.wikipedia.org/wiki/YAML>`_"
 msgstr ""
 
-#: ../../rst/reference_appendices/YAMLSyntax.rst:229
+#: ../../rst/reference_appendices/YAMLSyntax.rst:231
 msgid "A good guide to YAML syntax"
 msgstr "YAML 문법에 대한 안내서"
 
-#: ../../rst/reference_appendices/YAMLSyntax.rst:230
+#: ../../rst/reference_appendices/YAMLSyntax.rst:232
 msgid "`Mailing List <https://groups.google.com/group/ansible-project>`_"
 msgstr ""
 
-#: ../../rst/reference_appendices/YAMLSyntax.rst:231
+#: ../../rst/reference_appendices/YAMLSyntax.rst:233
 msgid "Questions? Help? Ideas?  Stop by the list on Google Groups"
 msgstr ""
 
-#: ../../rst/reference_appendices/YAMLSyntax.rst:232
+#: ../../rst/reference_appendices/YAMLSyntax.rst:234
 msgid "`irc.freenode.net <http://irc.freenode.net>`_"
 msgstr ""
 
-#: ../../rst/reference_appendices/YAMLSyntax.rst:233
+#: ../../rst/reference_appendices/YAMLSyntax.rst:235
 msgid "#ansible IRC chat channel and #yaml for YAML specific questions"
 msgstr ""
 
-#: ../../rst/reference_appendices/YAMLSyntax.rst:235
+#: ../../rst/reference_appendices/YAMLSyntax.rst:237
 msgid "`YAML 1.1 Specification <http://yaml.org/spec/1.1/>`_"
 msgstr ""
 
-#: ../../rst/reference_appendices/YAMLSyntax.rst:235
+#: ../../rst/reference_appendices/YAMLSyntax.rst:237
 msgid ""
 "The Specification for YAML 1.1, which PyYAML and libyaml are currently "
 "implementing"
 msgstr ""
 
-#: ../../rst/reference_appendices/YAMLSyntax.rst:237
+#: ../../rst/reference_appendices/YAMLSyntax.rst:239
 msgid "`YAML 1.2 Specification <http://yaml.org/spec/1.2/spec.html>`_"
 msgstr ""
 
-#: ../../rst/reference_appendices/YAMLSyntax.rst:238
+#: ../../rst/reference_appendices/YAMLSyntax.rst:240
 msgid "For completeness, YAML 1.2 is the successor of 1.1"
 msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,83 +22,91 @@ msgstr ""
 msgid "gce_tag -- add or remove tag(s) to/from GCE instances"
 msgstr ""
 
-#: ../../rst/modules/gce_tag_module.rst:19
+#: ../../rst/modules/gce_tag_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/gce_tag_module.rst:20
+#: ../../rst/modules/gce_tag_module.rst:19
 msgid ""
 "This module can add or remove tags https://cloud.google.com/compute/docs"
 "/label-or-tag-resources#tags to/from GCE instances.  Use "
 "'instance_pattern' to update multiple instances in a specify zone."
 msgstr ""
 
-#: ../../rst/modules/gce_tag_module.rst:25
+#: ../../rst/modules/gce_tag_module.rst:24
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/gce_tag_module.rst:26
+#: ../../rst/modules/gce_tag_module.rst:25
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/gce_tag_module.rst:28
+#: ../../rst/modules/gce_tag_module.rst:27
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/gce_tag_module.rst:29
+#: ../../rst/modules/gce_tag_module.rst:28
 msgid "apache-libcloud >= 0.17.0"
 msgstr ""
 
-#: ../../rst/modules/gce_tag_module.rst:33
+#: ../../rst/modules/gce_tag_module.rst:32
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/gce_tag_module.rst:159
+#: ../../rst/modules/gce_tag_module.rst:158
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/gce_tag_module.rst:162
+#: ../../rst/modules/gce_tag_module.rst:161
 msgid "Either *instance_name* or *instance_pattern* is required."
 msgstr ""
 
-#: ../../rst/modules/gce_tag_module.rst:167
+#: ../../rst/modules/gce_tag_module.rst:166
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/gce_tag_module.rst:197
+#: ../../rst/modules/gce_tag_module.rst:196
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/gce_tag_module.rst:202
+#: ../../rst/modules/gce_tag_module.rst:201
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/gce_tag_module.rst:205
+#: ../../rst/modules/gce_tag_module.rst:204
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/gce_tag_module.rst:212
+#: ../../rst/modules/gce_tag_module.rst:211
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/gce_tag_module.rst:214
+#: ../../rst/modules/gce_tag_module.rst:213
 msgid "Do Hoang Khiem (@dohoangkhiem) <(dohoangkhiem@gmail.com>"
 msgstr ""
 
-#: ../../rst/modules/gce_tag_module.rst:215
+#: ../../rst/modules/gce_tag_module.rst:214
 msgid "Tom Melendez (@supertom)"
 msgstr ""
 
-#: ../../rst/modules/gce_tag_module.rst:219
+#: ../../rst/modules/gce_tag_module.rst:218
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/gce_tag.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/gce_tag.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/gce_tag.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/eric_eccli_command_module.rst:9
+msgid ""
+"eric_eccli_command -- Run commands on remote devices running ERICSSON "
+"ECCLI"
+msgstr ""
+
+#: ../../rst/modules/eric_eccli_command_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/eric_eccli_command_module.rst:20
+msgid ""
+"Sends arbitrary commands to an ERICSSON eccli node and returns the "
+"results read from the device. This module includes an argument that will "
+"cause the module to wait for a specific condition before returning or "
+"timing out if the condition is not met."
+msgstr ""
+
+#: ../../rst/modules/eric_eccli_command_module.rst:21
+msgid ""
+"This module also support running commands in configuration mode in raw "
+"command style."
+msgstr ""
+
+#: ../../rst/modules/eric_eccli_command_module.rst:27
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/eric_eccli_command_module.rst:114
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/eric_eccli_command_module.rst:117
+msgid "Tested against IPOS 19.3"
+msgstr ""
+
+#: ../../rst/modules/eric_eccli_command_module.rst:118
+msgid ""
+"For more information on using Ansible to manage network devices see the "
+":ref:`Ansible Network Guide <network_guide>`"
+msgstr ""
+
+#: ../../rst/modules/eric_eccli_command_module.rst:119
+msgid ""
+"For more information on using Ansible to manage Ericsson devices see the "
+"Ericsson documents."
+msgstr ""
+
+#: ../../rst/modules/eric_eccli_command_module.rst:120
+msgid "Starting with Ansible 2.5 we recommend using ``connection: network_cli``."
+msgstr ""
+
+#: ../../rst/modules/eric_eccli_command_module.rst:121
+msgid ""
+"For more information please see the `ERIC_ECCLI Platform Options guide "
+"<../network/user_guide/platform_eric_eccli.html>`_."
+msgstr ""
+
+#: ../../rst/modules/eric_eccli_command_module.rst:126
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/eric_eccli_command_module.rst:160
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/eric_eccli_command_module.rst:161
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/eric_eccli_command_module.rst:215
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/eric_eccli_command_module.rst:220
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/eric_eccli_command_module.rst:223
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/eric_eccli_command_module.rst:230
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/eric_eccli_command_module.rst:232
+msgid "Ericsson IPOS OAM team (@itercheng)"
+msgstr ""
+
+#: ../../rst/modules/eric_eccli_command_module.rst:236
+#, python-format
+msgid ""
+"If you notice any issues in this documentation, you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/eric_eccli/eric_eccli_command.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

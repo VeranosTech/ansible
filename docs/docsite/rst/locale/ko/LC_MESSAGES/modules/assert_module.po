@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgid ""
 msgstr ""
 
 #: ../../rst/modules/assert_module.rst:20
-#: ../../rst/modules/assert_module.rst:86
+#: ../../rst/modules/assert_module.rst:102
 msgid "This module is also supported for Windows targets."
 msgstr ""
 
@@ -41,59 +41,95 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/assert_module.rst:83
+#: ../../rst/modules/assert_module.rst:99
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/assert_module.rst:91
+#: ../../rst/modules/assert_module.rst:106
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/assert_module.rst:110
+msgid ":ref:`debug_module`"
+msgstr ""
+
+#: ../../rst/modules/assert_module.rst:111
+msgid "The official documentation on the **debug** module."
+msgstr ""
+
+#: ../../rst/modules/assert_module.rst:112
+msgid ":ref:`fail_module`"
+msgstr ""
+
+#: ../../rst/modules/assert_module.rst:113
+msgid "The official documentation on the **fail** module."
+msgstr ""
+
+#: ../../rst/modules/assert_module.rst:114
+msgid ":ref:`meta_module`"
+msgstr ""
+
+#: ../../rst/modules/assert_module.rst:115
+msgid "The official documentation on the **meta** module."
+msgstr ""
+
+#: ../../rst/modules/assert_module.rst:119
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/assert_module.rst:123
+#: ../../rst/modules/assert_module.rst:158
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/assert_module.rst:128
+#: ../../rst/modules/assert_module.rst:163
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/assert_module.rst:131
+#: ../../rst/modules/assert_module.rst:166
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/assert_module.rst:134
+#: ../../rst/modules/assert_module.rst:169
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/assert_module.rst:136
+#: ../../rst/modules/assert_module.rst:171
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/assert_module.rst:142
+#: ../../rst/modules/assert_module.rst:177
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/assert_module.rst:144
+#: ../../rst/modules/assert_module.rst:179
 msgid "Ansible Core Team"
 msgstr ""
 
-#: ../../rst/modules/assert_module.rst:145
+#: ../../rst/modules/assert_module.rst:180
 msgid "Michael DeHaan"
 msgstr ""
 
-#: ../../rst/modules/assert_module.rst:149
+#: ../../rst/modules/assert_module.rst:184
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/assert.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/assert.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/assert.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

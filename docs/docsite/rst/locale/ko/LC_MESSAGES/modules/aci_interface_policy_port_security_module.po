@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,82 +40,90 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_port_security_module.rst:281
+#: ../../rst/modules/aci_interface_policy_port_security_module.rst:297
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_port_security_module.rst:285
+#: ../../rst/modules/aci_interface_policy_port_security_module.rst:301
 msgid ""
 "`APIC Management Information Model reference "
 "<https://developer.cisco.com/docs/apic-mim-ref/>`_"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_port_security_module.rst:286
+#: ../../rst/modules/aci_interface_policy_port_security_module.rst:302
 msgid "More information about the internal APIC class **l2:PortSecurityPol**."
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_port_security_module.rst:287
+#: ../../rst/modules/aci_interface_policy_port_security_module.rst:303
 msgid ":ref:`aci_guide`"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_port_security_module.rst:288
+#: ../../rst/modules/aci_interface_policy_port_security_module.rst:304
 msgid ""
 "Detailed information on how to manage your ACI infrastructure using "
 "Ansible."
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_port_security_module.rst:289
+#: ../../rst/modules/aci_interface_policy_port_security_module.rst:305
 msgid ":ref:`aci_dev_guide`"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_port_security_module.rst:290
+#: ../../rst/modules/aci_interface_policy_port_security_module.rst:306
 msgid "Detailed guide on how to write your own Cisco ACI modules to contribute."
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_port_security_module.rst:294
+#: ../../rst/modules/aci_interface_policy_port_security_module.rst:310
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_port_security_module.rst:312
+#: ../../rst/modules/aci_interface_policy_port_security_module.rst:329
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_port_security_module.rst:313
+#: ../../rst/modules/aci_interface_policy_port_security_module.rst:330
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_port_security_module.rst:471
+#: ../../rst/modules/aci_interface_policy_port_security_module.rst:488
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_port_security_module.rst:476
+#: ../../rst/modules/aci_interface_policy_port_security_module.rst:493
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_port_security_module.rst:479
+#: ../../rst/modules/aci_interface_policy_port_security_module.rst:496
 msgid ""
 "This module is :ref:`maintained by an Ansible Partner <modules_support>`."
 " *[certified]*"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_port_security_module.rst:486
+#: ../../rst/modules/aci_interface_policy_port_security_module.rst:503
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_port_security_module.rst:488
+#: ../../rst/modules/aci_interface_policy_port_security_module.rst:505
 msgid "Dag Wieers (@dagwieers)"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_port_security_module.rst:492
+#: ../../rst/modules/aci_interface_policy_port_security_module.rst:509
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/aci/aci_interface_policy_port_security.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/aci/aci_interface_policy_port_security.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/aci/aci_interface_policy_port_security.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

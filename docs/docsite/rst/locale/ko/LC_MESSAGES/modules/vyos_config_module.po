@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,98 +22,130 @@ msgstr ""
 msgid "vyos_config -- Manage VyOS configuration on remote device"
 msgstr ""
 
-#: ../../rst/modules/vyos_config_module.rst:19
+#: ../../rst/modules/vyos_config_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/vyos_config_module.rst:20
+#: ../../rst/modules/vyos_config_module.rst:19
 msgid ""
-"This module provides configuration file management of VyOS devices.  It "
+"This module provides configuration file management of VyOS devices. It "
 "provides arguments for managing both the configuration file and state of "
-"the active configuration.   All configuration statements are based on "
-"`set` and `delete` commands in the device configuration."
+"the active configuration. All configuration statements are based on `set`"
+" and `delete` commands in the device configuration."
 msgstr ""
 
-#: ../../rst/modules/vyos_config_module.rst:26
+#: ../../rst/modules/vyos_config_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/vyos_config_module.rst:249
+#: ../../rst/modules/vyos_config_module.rst:290
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/vyos_config_module.rst:252
-msgid "Tested against VYOS 1.1.7"
+#: ../../rst/modules/vyos_config_module.rst:293
+msgid "Tested against VyOS 1.1.8 (helium)."
 msgstr ""
 
-#: ../../rst/modules/vyos_config_module.rst:253
+#: ../../rst/modules/vyos_config_module.rst:294
 msgid ""
-"Abbreviated commands are NOT idempotent, see `Network FAQ "
-"<../network/user_guide/faq.html#why-do-the-config-modules-always-return-"
-"changed-true-with-abbreviated-commands>`_."
+"This module works with connection ``network_cli``. See `the VyOS OS "
+"Platform Options <../network/user_guide/platform_vyos.html>`_."
 msgstr ""
 
-#: ../../rst/modules/vyos_config_module.rst:254
+#: ../../rst/modules/vyos_config_module.rst:295
 msgid ""
 "For more information on using Ansible to manage network devices see the "
 ":ref:`Ansible Network Guide <network_guide>`"
 msgstr ""
 
-#: ../../rst/modules/vyos_config_module.rst:259
+#: ../../rst/modules/vyos_config_module.rst:300
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/vyos_config_module.rst:290
+#: ../../rst/modules/vyos_config_module.rst:338
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/vyos_config_module.rst:291
+#: ../../rst/modules/vyos_config_module.rst:339
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/vyos_config_module.rst:345
+#: ../../rst/modules/vyos_config_module.rst:445
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/vyos_config_module.rst:350
+#: ../../rst/modules/vyos_config_module.rst:450
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/vyos_config_module.rst:353
+#: ../../rst/modules/vyos_config_module.rst:453
 msgid ""
 "This module is :ref:`maintained by the Ansible Network Team "
 "<modules_support>`. *[network]*"
 msgstr ""
 
-#: ../../rst/modules/vyos_config_module.rst:356
+#: ../../rst/modules/vyos_config_module.rst:456
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/vyos_config_module.rst:358
+#: ../../rst/modules/vyos_config_module.rst:458
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/vyos_config_module.rst:364
+#: ../../rst/modules/vyos_config_module.rst:464
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/vyos_config_module.rst:366
-msgid "Nathaniel Case (@qalthos)"
+#: ../../rst/modules/vyos_config_module.rst:466
+msgid "Nathaniel Case (@Qalthos)"
 msgstr ""
 
-#: ../../rst/modules/vyos_config_module.rst:370
+#: ../../rst/modules/vyos_config_module.rst:470
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/vyos/vyos_config.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/vyos/vyos_config.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module provides configuration file "
+#~ "management of VyOS devices.  It provides"
+#~ " arguments for managing both the "
+#~ "configuration file and state of the "
+#~ "active configuration.   All configuration "
+#~ "statements are based on `set` and "
+#~ "`delete` commands in the device "
+#~ "configuration."
+#~ msgstr ""
+
+#~ msgid "Tested against VYOS 1.1.7"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Abbreviated commands are NOT idempotent, "
+#~ "see `Network FAQ <../network/user_guide/faq.html"
+#~ "#why-do-the-config-modules-always-"
+#~ "return-changed-true-with-abbreviated-"
+#~ "commands>`_."
+#~ msgstr ""
+
+#~ msgid "Nathaniel Case (@qalthos)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/vyos/vyos_config.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

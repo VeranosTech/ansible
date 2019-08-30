@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,11 +24,11 @@ msgid ""
 "Networking OS9"
 msgstr ""
 
-#: ../../rst/modules/dellos9_facts_module.rst:19
+#: ../../rst/modules/dellos9_facts_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/dellos9_facts_module.rst:20
+#: ../../rst/modules/dellos9_facts_module.rst:19
 msgid ""
 "Collects a base set of device facts from a remote device that is running "
 "OS9.  This module prepends all of the base network fact keys with "
@@ -37,19 +37,19 @@ msgid ""
 "additional facts."
 msgstr ""
 
-#: ../../rst/modules/dellos9_facts_module.rst:26
+#: ../../rst/modules/dellos9_facts_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/dellos9_facts_module.rst:155
+#: ../../rst/modules/dellos9_facts_module.rst:154
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/dellos9_facts_module.rst:158
+#: ../../rst/modules/dellos9_facts_module.rst:157
 msgid "This module requires OS9 version 9.10.0.1P13 or above."
 msgstr ""
 
-#: ../../rst/modules/dellos9_facts_module.rst:159
+#: ../../rst/modules/dellos9_facts_module.rst:158
 msgid ""
 "This module requires an increase of the SSH connection rate limit. Use "
 "the following command *ip ssh connection-rate-limit 60* to configure the "
@@ -57,56 +57,64 @@ msgid ""
 "<dellos9_config_module>` module."
 msgstr ""
 
-#: ../../rst/modules/dellos9_facts_module.rst:160
+#: ../../rst/modules/dellos9_facts_module.rst:159
 msgid ""
 "For more information on using Ansible to manage Dell EMC Network devices "
 "see https://www.ansible.com/ansible-dell-networking."
 msgstr ""
 
-#: ../../rst/modules/dellos9_facts_module.rst:165
+#: ../../rst/modules/dellos9_facts_module.rst:164
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/dellos9_facts_module.rst:188
+#: ../../rst/modules/dellos9_facts_module.rst:187
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/dellos9_facts_module.rst:189
+#: ../../rst/modules/dellos9_facts_module.rst:188
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/dellos9_facts_module.rst:358
+#: ../../rst/modules/dellos9_facts_module.rst:357
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/dellos9_facts_module.rst:363
+#: ../../rst/modules/dellos9_facts_module.rst:362
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/dellos9_facts_module.rst:366
+#: ../../rst/modules/dellos9_facts_module.rst:365
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/dellos9_facts_module.rst:373
+#: ../../rst/modules/dellos9_facts_module.rst:372
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/dellos9_facts_module.rst:375
+#: ../../rst/modules/dellos9_facts_module.rst:374
 msgid "Dhivya P (@dhivyap)"
 msgstr ""
 
-#: ../../rst/modules/dellos9_facts_module.rst:379
+#: ../../rst/modules/dellos9_facts_module.rst:378
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/dellos9/dellos9_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/dellos9/dellos9_facts.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/dellos9/dellos9_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

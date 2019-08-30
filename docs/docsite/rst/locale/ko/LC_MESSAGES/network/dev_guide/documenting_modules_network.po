@@ -1,0 +1,119 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/network/dev_guide/documenting_modules_network.rst:6
+msgid "Documenting new network platforms"
+msgstr ""
+
+#: ../../rst/network/dev_guide/documenting_modules_network.rst:11
+msgid ""
+"When you create network modules for a new platform, or modify the "
+"connections provided by an existing network platform(such as "
+"``network_cli`` and ``httpapi``), you also need to update  the "
+":ref:`settings_by_platform` table and add or modify the Platform Options "
+"file for your platform."
+msgstr ""
+
+#: ../../rst/network/dev_guide/documenting_modules_network.rst:13
+msgid ""
+"You should already have documented each module as described in "
+":ref:`developing_modules_documenting`."
+msgstr ""
+
+#: ../../rst/network/dev_guide/documenting_modules_network.rst:16
+msgid "Modifying the platform options table"
+msgstr ""
+
+#: ../../rst/network/dev_guide/documenting_modules_network.rst:18
+msgid ""
+"The :ref:`settings_by_platform` table is a convenient summary of the "
+"connections options provided by each network platform that has modules in"
+" Ansible. Add a row for your platform to this table, in alphabetical "
+"order.  For example:"
+msgstr ""
+
+#: ../../rst/network/dev_guide/documenting_modules_network.rst:25
+msgid "Ensure that the table stays formatted correctly. That is:"
+msgstr ""
+
+#: ../../rst/network/dev_guide/documenting_modules_network.rst:27
+msgid "Each row is inserted in alphabetical order."
+msgstr ""
+
+#: ../../rst/network/dev_guide/documenting_modules_network.rst:28
+msgid "The cell division ``|`` markers line up with the ``+`` markers."
+msgstr ""
+
+#: ../../rst/network/dev_guide/documenting_modules_network.rst:29
+msgid ""
+"The check marks appear only for the connection types provided by the "
+"network modules."
+msgstr ""
+
+#: ../../rst/network/dev_guide/documenting_modules_network.rst:34
+msgid "Adding a platform-specific options section"
+msgstr ""
+
+#: ../../rst/network/dev_guide/documenting_modules_network.rst:36
+msgid ""
+"The platform- specific sections are individual ``.rst`` files that "
+"provide more detailed information for the users of your network platform "
+"modules.   Name your new file ``platform_<name>.rst`` (for example, "
+"``platform_myos.rst``).  The platform name should match the module "
+"prefix. See `platform_eos.rst "
+"<https://github.com/ansible/ansible/blob/devel/docs/docsite/rst/network/user_guide/platform_eos.rst>`_"
+" and :ref:`eos_platform_options` for an example of the details you should"
+" provide in your platform-specific options section."
+msgstr ""
+
+#: ../../rst/network/dev_guide/documenting_modules_network.rst:38
+msgid "Your platform-specific section should include the following:"
+msgstr ""
+
+#: ../../rst/network/dev_guide/documenting_modules_network.rst:40
+msgid ""
+"**Connections available table** - a deeper dive into each connection "
+"type, including details on credentials, indirect access, connections "
+"settings, and enable mode."
+msgstr ""
+
+#: ../../rst/network/dev_guide/documenting_modules_network.rst:41
+msgid ""
+"**How to use each connection type** - with working examples of each "
+"connection type."
+msgstr ""
+
+#: ../../rst/network/dev_guide/documenting_modules_network.rst:43
+msgid ""
+"If your network platform supports SSH connections, also include the "
+"following at the bottom of your ``.rst`` file:"
+msgstr ""
+
+#: ../../rst/network/dev_guide/documenting_modules_network.rst:50
+msgid "Adding your new file to the table of contents"
+msgstr ""
+
+#: ../../rst/network/dev_guide/documenting_modules_network.rst:52
+msgid ""
+"As a final step, add your new file in alphabetical order in the "
+"``platform_index.rst`` file. You should then build the documentation to "
+"verify your additions. See :ref:`community_documentation_contributions` "
+"for more details."
+msgstr ""
+

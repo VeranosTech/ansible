@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,8 +42,8 @@ msgstr ""
 msgid ""
 "The bigip_facts module relies on SOAP to communicate with the BIG-IP, and"
 " has a large amount of code that does not conform to existing F5 "
-"standards. The :ref:`bigip_device_facts <bigip_device_facts_module>` "
-"module is easier to maintain and use."
+"standards. The :ref:`bigip_device_info <bigip_device_info_module>` module"
+" is easier to maintain and use."
 msgstr ""
 
 #: ../../rst/modules/bigip_facts_module.rst
@@ -51,7 +51,7 @@ msgid "Alternative"
 msgstr ""
 
 #: ../../rst/modules/bigip_facts_module.rst:21
-msgid "bigip_device_facts"
+msgid "bigip_device_info"
 msgstr ""
 
 #: ../../rst/modules/bigip_facts_module.rst:26
@@ -78,45 +78,45 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/bigip_facts_module.rst:338
+#: ../../rst/modules/bigip_facts_module.rst:275
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/bigip_facts_module.rst:341
+#: ../../rst/modules/bigip_facts_module.rst:278
 msgid "Requires BIG-IP software version >= 11.4"
 msgstr ""
 
-#: ../../rst/modules/bigip_facts_module.rst:342
+#: ../../rst/modules/bigip_facts_module.rst:279
 msgid "F5 developed module 'bigsuds' required (see http://devcentral.f5.com)"
 msgstr ""
 
-#: ../../rst/modules/bigip_facts_module.rst:343
+#: ../../rst/modules/bigip_facts_module.rst:280
 msgid "Best run as a local_action in your playbook"
 msgstr ""
 
-#: ../../rst/modules/bigip_facts_module.rst:344
+#: ../../rst/modules/bigip_facts_module.rst:281
 msgid "Tested with manager and above account privilege level"
 msgstr ""
 
-#: ../../rst/modules/bigip_facts_module.rst:345
+#: ../../rst/modules/bigip_facts_module.rst:282
 msgid "``provision`` facts were added in 2.2"
 msgstr ""
 
-#: ../../rst/modules/bigip_facts_module.rst:346
-msgid "This module is deprecated. Use the ``bigip_device_facts`` module instead."
+#: ../../rst/modules/bigip_facts_module.rst:283
+msgid "This module is deprecated. Use the ``bigip_device_info`` module instead."
 msgstr ""
 
-#: ../../rst/modules/bigip_facts_module.rst:347
+#: ../../rst/modules/bigip_facts_module.rst:284
 msgid ""
 "For more information on using Ansible to manage F5 Networks devices see "
 "https://www.ansible.com/integrations/networks/f5."
 msgstr ""
 
-#: ../../rst/modules/bigip_facts_module.rst:348
+#: ../../rst/modules/bigip_facts_module.rst:285
 msgid "Requires BIG-IP software version >= 12."
 msgstr ""
 
-#: ../../rst/modules/bigip_facts_module.rst:349
+#: ../../rst/modules/bigip_facts_module.rst:286
 msgid ""
 "The F5 modules only manipulate the running configuration of the F5 "
 "product. To ensure that BIG-IP specific configuration persists to disk, "
@@ -126,40 +126,66 @@ msgid ""
 "your running configuration."
 msgstr ""
 
-#: ../../rst/modules/bigip_facts_module.rst:354
+#: ../../rst/modules/bigip_facts_module.rst:291
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/bigip_facts_module.rst:374
+#: ../../rst/modules/bigip_facts_module.rst:311
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/bigip_facts_module.rst:377
+#: ../../rst/modules/bigip_facts_module.rst:314
 msgid "This module will be removed in version 2.11. *[deprecated]*"
 msgstr ""
 
-#: ../../rst/modules/bigip_facts_module.rst:378
+#: ../../rst/modules/bigip_facts_module.rst:315
 msgid "For more information see `DEPRECATED`_."
 msgstr ""
 
-#: ../../rst/modules/bigip_facts_module.rst:382
+#: ../../rst/modules/bigip_facts_module.rst:319
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/bigip_facts_module.rst:384
+#: ../../rst/modules/bigip_facts_module.rst:321
 msgid "Matt Hite (@mhite)"
 msgstr ""
 
-#: ../../rst/modules/bigip_facts_module.rst:385
+#: ../../rst/modules/bigip_facts_module.rst:322
 msgid "Tim Rupp (@caphrim007)"
 msgstr ""
 
-#: ../../rst/modules/bigip_facts_module.rst:389
+#: ../../rst/modules/bigip_facts_module.rst:326
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/_bigip_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/_bigip_facts.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "The bigip_facts module relies on SOAP"
+#~ " to communicate with the BIG-IP, "
+#~ "and has a large amount of code "
+#~ "that does not conform to existing "
+#~ "F5 standards. The :ref:`bigip_device_facts "
+#~ "<bigip_device_facts_module>` module is easier "
+#~ "to maintain and use."
+#~ msgstr ""
+
+#~ msgid "bigip_device_facts"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is deprecated. Use the "
+#~ "``bigip_device_facts`` module instead."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/_bigip_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

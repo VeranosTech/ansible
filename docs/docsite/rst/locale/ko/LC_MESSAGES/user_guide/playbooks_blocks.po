@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-#: ../../rst/user_guide/playbooks_blocks.rst:2
+#: ../../rst/user_guide/playbooks_blocks.rst:4
 msgid "Blocks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_blocks.rst:4
+#: ../../rst/user_guide/playbooks_blocks.rst:6
 msgid ""
 "Blocks allow for logical grouping of tasks and in play error handling. "
 "Most of what you can apply to a single task (with the exception of loops)"
@@ -33,19 +33,21 @@ msgid ""
 "block itself."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_blocks.rst:7
+#: ../../rst/user_guide/playbooks_blocks.rst:9
 msgid "Block example with named tasks inside the block"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_blocks.rst:34
+#: ../../rst/user_guide/playbooks_blocks.rst:37
 msgid ""
 "In the example above, each of the 3 tasks will be executed after "
 "appending the `when` condition from the block and evaluating it in the "
 "task's context. Also they inherit the privilege escalation directives "
-"enabling \"become to root\" for all the enclosed tasks."
+"enabling \"become to root\" for all the enclosed tasks. Finally, "
+"``ignore_errors: yes`` will continue executing the playbook even if some "
+"of the tasks fail."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_blocks.rst:38
+#: ../../rst/user_guide/playbooks_blocks.rst:41
 msgid ""
 "Names for tasks within blocks have been available since Ansible 2.3. We "
 "recommend using names in all tasks, within blocks or elsewhere, for "
@@ -53,47 +55,47 @@ msgid ""
 "playbook."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_blocks.rst:43
-msgid "Error Handling"
+#: ../../rst/user_guide/playbooks_blocks.rst:46
+msgid "Blocks error handling"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_blocks.rst:45
+#: ../../rst/user_guide/playbooks_blocks.rst:48
 msgid ""
 "Blocks also introduce the ability to handle errors in a way similar to "
 "exceptions in most programming languages. Blocks only deal with 'failed' "
-"status of a task. A bad task definition, an undefined variable or an "
-"unreachable host are not `rescuable`  errors."
+"status of a task. A bad task definition or an unreachable host are not "
+"'rescuable' errors."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_blocks.rst:49
+#: ../../rst/user_guide/playbooks_blocks.rst:52
 msgid "Block error handling example"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_blocks.rst:66
+#: ../../rst/user_guide/playbooks_blocks.rst:69
 msgid ""
 "This will 'revert' the failed status of the task for the run and the play"
 " will continue as if it had succeeded."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_blocks.rst:68
+#: ../../rst/user_guide/playbooks_blocks.rst:71
 msgid ""
 "There is also an ``always`` section, that will run no matter what the "
 "task status is."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_blocks.rst:71
+#: ../../rst/user_guide/playbooks_blocks.rst:74
 msgid "Block with always section"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_blocks.rst:87
+#: ../../rst/user_guide/playbooks_blocks.rst:90
 msgid "They can be added all together to do complex error handling."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_blocks.rst:89
+#: ../../rst/user_guide/playbooks_blocks.rst:92
 msgid "Block with all sections"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_blocks.rst:113
+#: ../../rst/user_guide/playbooks_blocks.rst:116
 msgid ""
 "The tasks in the ``block`` would execute normally, if there is any error "
 "the ``rescue`` section would get executed with whatever you need to do to"
@@ -106,69 +108,100 @@ msgid ""
 "statistics."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_blocks.rst:119
+#: ../../rst/user_guide/playbooks_blocks.rst:122
 msgid "Another example is how to run handlers after an error occurred :"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_blocks.rst:121
+#: ../../rst/user_guide/playbooks_blocks.rst:124
 msgid "Block run handlers in error handling"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_blocks.rst:144
+#: ../../rst/user_guide/playbooks_blocks.rst:148
 msgid ""
 "Ansible also provides a couple of variables for tasks in the ``rescue`` "
 "portion of a block:"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_blocks.rst:147
+#: ../../rst/user_guide/playbooks_blocks.rst:151
 msgid "ansible_failed_task"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_blocks.rst:147
+#: ../../rst/user_guide/playbooks_blocks.rst:151
 msgid ""
 "The task that returned 'failed' and triggered the rescue. For example, to"
 " get the name use ``ansible_failed_task.name``."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_blocks.rst:150
+#: ../../rst/user_guide/playbooks_blocks.rst:154
 msgid "ansible_failed_result"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_blocks.rst:150
+#: ../../rst/user_guide/playbooks_blocks.rst:154
 msgid ""
 "The captured return result of the failed task that triggered the rescue. "
 "This would equate to having used this var in the ``register`` keyword."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_blocks.rst:154
-msgid ":doc:`playbooks`"
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_blocks.rst:155
-msgid "An introduction to playbooks"
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_blocks.rst:156
-msgid ":doc:`playbooks_reuse_roles`"
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_blocks.rst:157
-msgid "Playbook organization by roles"
-msgstr ""
-
 #: ../../rst/user_guide/playbooks_blocks.rst:158
-msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
+msgid ":ref:`playbooks_intro`"
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_blocks.rst:159
-msgid "Have a question?  Stop by the google group!"
+msgid "An introduction to playbooks"
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_blocks.rst:160
-msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgid ":ref:`playbooks_reuse_roles`"
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_blocks.rst:161
+msgid "Playbook organization by roles"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_blocks.rst:162
+msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_blocks.rst:163
+msgid "Have a question?  Stop by the google group!"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_blocks.rst:164
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_blocks.rst:165
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ""
+#~ "In the example above, each of the"
+#~ " 3 tasks will be executed after "
+#~ "appending the `when` condition from the"
+#~ " block and evaluating it in the "
+#~ "task's context. Also they inherit the"
+#~ " privilege escalation directives enabling "
+#~ "\"become to root\" for all the "
+#~ "enclosed tasks."
+#~ msgstr ""
+
+#~ msgid "Error Handling"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Blocks also introduce the ability to "
+#~ "handle errors in a way similar to"
+#~ " exceptions in most programming languages."
+#~ " Blocks only deal with 'failed' "
+#~ "status of a task. A bad task "
+#~ "definition, an undefined variable or an"
+#~ " unreachable host are not `rescuable`  "
+#~ "errors."
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks_reuse_roles`"
+#~ msgstr ""
 

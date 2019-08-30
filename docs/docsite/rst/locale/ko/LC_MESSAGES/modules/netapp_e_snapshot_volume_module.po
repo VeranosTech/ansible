@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,25 +22,25 @@ msgstr ""
 msgid "netapp_e_snapshot_volume -- NetApp E-Series manage snapshot volumes"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:19
+#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:20
+#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:19
 msgid ""
 "Create, update, remove snapshot volumes for NetApp E/EF-Series storage "
 "arrays."
 msgstr ""
 
-#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:26
+#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:214
+#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:213
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:217
+#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:216
 msgid ""
 "Only *full_threshold* is supported for update operations. If the snapshot"
 " volume already exists and the threshold matches, then an ``ok`` status "
@@ -48,50 +48,58 @@ msgid ""
 " volume."
 msgstr ""
 
-#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:222
+#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:221
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:242
+#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:241
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:243
+#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:242
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:271
+#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:270
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:276
+#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:275
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:279
+#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:278
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:286
+#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:285
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:288
+#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:287
 msgid "Kevin Hulquest (@hulquest)"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:292
+#: ../../rst/modules/netapp_e_snapshot_volume_module.rst:291
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/netapp_e_snapshot_volume.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/netapp_e_snapshot_volume.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/netapp_e_snapshot_volume.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,68 +27,115 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/fail_module.rst:19
-msgid ""
-"This module fails the progress with a custom message. It can be useful "
-"for bailing out when a certain condition is met using ``when``."
+msgid "This module fails the progress with a custom message."
 msgstr ""
 
-#: ../../rst/modules/fail_module.rst:20 ../../rst/modules/fail_module.rst:58
+#: ../../rst/modules/fail_module.rst:20
+msgid ""
+"It can be useful for bailing out when a certain condition is met using "
+"``when``."
+msgstr ""
+
+#: ../../rst/modules/fail_module.rst:21 ../../rst/modules/fail_module.rst:60
 msgid "This module is also supported for Windows targets."
 msgstr ""
 
-#: ../../rst/modules/fail_module.rst:26
+#: ../../rst/modules/fail_module.rst:27
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/fail_module.rst:55
+#: ../../rst/modules/fail_module.rst:57
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/fail_module.rst:63
+#: ../../rst/modules/fail_module.rst:64
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/fail_module.rst:68
+msgid ":ref:`assert_module`"
+msgstr ""
+
+#: ../../rst/modules/fail_module.rst:69
+msgid "The official documentation on the **assert** module."
+msgstr ""
+
+#: ../../rst/modules/fail_module.rst:70
+msgid ":ref:`debug_module`"
+msgstr ""
+
+#: ../../rst/modules/fail_module.rst:71
+msgid "The official documentation on the **debug** module."
+msgstr ""
+
+#: ../../rst/modules/fail_module.rst:72
+msgid ":ref:`meta_module`"
+msgstr ""
+
+#: ../../rst/modules/fail_module.rst:73
+msgid "The official documentation on the **meta** module."
+msgstr ""
+
+#: ../../rst/modules/fail_module.rst:77
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/fail_module.rst:78
+#: ../../rst/modules/fail_module.rst:92
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/fail_module.rst:83
+#: ../../rst/modules/fail_module.rst:97
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/fail_module.rst:86
+#: ../../rst/modules/fail_module.rst:100
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/fail_module.rst:89
+#: ../../rst/modules/fail_module.rst:103
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/fail_module.rst:91
+#: ../../rst/modules/fail_module.rst:105
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/fail_module.rst:97
+#: ../../rst/modules/fail_module.rst:111
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/fail_module.rst:99
+#: ../../rst/modules/fail_module.rst:113
 msgid "Dag Wieers (@dagwieers)"
 msgstr ""
 
-#: ../../rst/modules/fail_module.rst:103
+#: ../../rst/modules/fail_module.rst:117
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/fail.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/fail.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module fails the progress with "
+#~ "a custom message. It can be useful"
+#~ " for bailing out when a certain "
+#~ "condition is met using ``when``."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/fail.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

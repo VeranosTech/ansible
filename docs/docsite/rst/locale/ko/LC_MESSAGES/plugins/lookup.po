@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,28 +96,28 @@ msgid ""
 "Lookups are an integral part of loops. Wherever you see ``with_``, the "
 "part after the underscore is the name of a lookup. This is also the "
 "reason most lookups output lists and take lists as input; for example, "
-"``with_items`` uses the :ref:`items <items_lookup>` lookup:"
+"``with_items`` uses the :ref:`items <items_lookup>` lookup::"
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:59
+#: ../../rst/plugins/lookup.rst:57
 msgid ""
 "You can combine lookups with :ref:`playbooks_filters`, "
 ":ref:`playbooks_tests` and even each other to do some complex data "
-"generation and manipulation. For example:"
+"generation and manipulation. For example::"
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:73
+#: ../../rst/plugins/lookup.rst:69
 msgid ""
 "You can now control how errors behave in all lookup plugins by setting "
 "``errors`` to ``ignore``, ``warn``, or ``strict``. The default setting is"
 " ``strict``, which causes the task to fail. For example:"
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:75
+#: ../../rst/plugins/lookup.rst:71
 msgid "To ignore errors::"
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:87
+#: ../../rst/plugins/lookup.rst:85
 msgid "To get a warning instead of a failure::"
 msgstr ""
 
@@ -125,11 +125,11 @@ msgstr ""
 msgid "Fatal error (the default)::"
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:114
+#: ../../rst/plugins/lookup.rst:116
 msgid "Invoking lookup plugins with ``query``"
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:118
+#: ../../rst/plugins/lookup.rst:120
 msgid ""
 "In Ansible 2.5, a new jinja2 function called ``query`` was added for "
 "invoking lookup plugins. The difference between ``lookup`` and ``query`` "
@@ -139,99 +139,124 @@ msgid ""
 "``wantlist=True``."
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:121
+#: ../../rst/plugins/lookup.rst:123
 msgid ""
 "This was done primarily to provide an easier and more consistent "
 "interface for interacting with the new ``loop`` keyword, while "
 "maintaining backwards compatibility with other uses of ``lookup``."
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:123
-msgid "The following examples are equivalent::"
+#: ../../rst/plugins/lookup.rst:125
+msgid "The following examples are equivalent:"
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:129
+#: ../../rst/plugins/lookup.rst:133
 msgid ""
 "As demonstrated above the behavior of ``wantlist=True`` is implicit when "
 "using ``query``."
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:131
-msgid "Additionally, ``q`` was introduced as a shortform of ``query``::"
+#: ../../rst/plugins/lookup.rst:135
+msgid "Additionally, ``q`` was introduced as a shortform of ``query``:"
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:139
+#: ../../rst/plugins/lookup.rst:145
 msgid "Plugin list"
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:141
+#: ../../rst/plugins/lookup.rst:147
 msgid ""
 "You can use ``ansible-doc -t lookup -l`` to see the list of available "
 "plugins. Use ``ansible-doc -t lookup <plugin name>`` to see specific "
 "documents and examples."
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:151
+#: ../../rst/plugins/lookup.rst:157
 msgid ":ref:`about_playbooks`"
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:152
+#: ../../rst/plugins/lookup.rst:158
 msgid "An introduction to playbooks"
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:153
+#: ../../rst/plugins/lookup.rst:159
 msgid ":ref:`inventory_plugins`"
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:154
+#: ../../rst/plugins/lookup.rst:160
 msgid "Ansible inventory plugins"
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:155
+#: ../../rst/plugins/lookup.rst:161
 msgid ":ref:`callback_plugins`"
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:156
+#: ../../rst/plugins/lookup.rst:162
 msgid "Ansible callback plugins"
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:157
+#: ../../rst/plugins/lookup.rst:163
 msgid ":ref:`playbooks_filters`"
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:158
+#: ../../rst/plugins/lookup.rst:164
 msgid "Jinja2 filter plugins"
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:159
+#: ../../rst/plugins/lookup.rst:165
 msgid ":ref:`playbooks_tests`"
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:160
+#: ../../rst/plugins/lookup.rst:166
 msgid "Jinja2 test plugins"
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:161
+#: ../../rst/plugins/lookup.rst:167
 msgid ":ref:`playbooks_lookups`"
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:162
+#: ../../rst/plugins/lookup.rst:168
 msgid "Jinja2 lookup plugins"
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:163
+#: ../../rst/plugins/lookup.rst:169
 msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:164
+#: ../../rst/plugins/lookup.rst:170
 msgid "Have a question?  Stop by the google group!"
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:165
+#: ../../rst/plugins/lookup.rst:171
 msgid "`irc.freenode.net <http://irc.freenode.net>`_"
 msgstr ""
 
-#: ../../rst/plugins/lookup.rst:166
+#: ../../rst/plugins/lookup.rst:172
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ""
+#~ "Lookups are an integral part of "
+#~ "loops. Wherever you see ``with_``, the"
+#~ " part after the underscore is the "
+#~ "name of a lookup. This is also "
+#~ "the reason most lookups output lists "
+#~ "and take lists as input; for "
+#~ "example, ``with_items`` uses the :ref:`items"
+#~ " <items_lookup>` lookup:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can combine lookups with "
+#~ ":ref:`playbooks_filters`, :ref:`playbooks_tests` and "
+#~ "even each other to do some complex"
+#~ " data generation and manipulation. For "
+#~ "example:"
+#~ msgstr ""
+
+#~ msgid "The following examples are equivalent::"
+#~ msgstr ""
+
+#~ msgid "Additionally, ``q`` was introduced as a shortform of ``query``::"
+#~ msgstr ""
 

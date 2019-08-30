@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/ios_bgp_module.rst:9
+msgid "ios_bgp -- Configure global BGP protocol settings on Cisco IOS"
+msgstr ""
+
+#: ../../rst/modules/ios_bgp_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/ios_bgp_module.rst:20
+msgid ""
+"This module provides configuration management of global BGP parameters on"
+" devices running Cisco IOS"
+msgstr ""
+
+#: ../../rst/modules/ios_bgp_module.rst:26
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/ios_bgp_module.rst:846
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/ios_bgp_module.rst:849
+msgid "Tested against Cisco IOS Version 15.6(3)M2"
+msgstr ""
+
+#: ../../rst/modules/ios_bgp_module.rst:854
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/ios_bgp_module.rst:948
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/ios_bgp_module.rst:949
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/ios_bgp_module.rst:977
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/ios_bgp_module.rst:982
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/ios_bgp_module.rst:985
+msgid ""
+"This module is :ref:`maintained by the Ansible Network Team "
+"<modules_support>`. *[network]*"
+msgstr ""
+
+#: ../../rst/modules/ios_bgp_module.rst:988
+msgid "Red Hat Support"
+msgstr ""
+
+#: ../../rst/modules/ios_bgp_module.rst:990
+msgid ""
+"More information about Red Hat's support of this module is available from"
+" this `Red Hat Knowledge Base article "
+"<https://access.redhat.com/articles/3166901>`_."
+msgstr ""
+
+#: ../../rst/modules/ios_bgp_module.rst:996
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/ios_bgp_module.rst:998
+msgid "Nilashish Chakraborty (@NilashishC)"
+msgstr ""
+
+#: ../../rst/modules/ios_bgp_module.rst:1002
+#, python-format
+msgid ""
+"If you notice any issues in this documentation, you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/ios/ios_bgp.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

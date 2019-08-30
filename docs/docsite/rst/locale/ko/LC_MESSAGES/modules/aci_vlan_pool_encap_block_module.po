@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,102 +38,118 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:342
+#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:343
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:345
+#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:346
 msgid "The ``pool`` must exist in order to add or delete a encap block."
 msgstr ""
 
-#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:349
+#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:350
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:353
-msgid ":ref:`aci_vlan_pool_module`"
-msgstr ""
-
 #: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:354
-msgid "The official documentation on the **aci_vlan_pool** module."
+msgid ":ref:`aci_encap_pool_range_module`"
 msgstr ""
 
 #: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:355
+msgid "The official documentation on the **aci_encap_pool_range** module."
+msgstr ""
+
+#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:356
+msgid ":ref:`aci_vlan_pool_module`"
+msgstr ""
+
+#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:357
+msgid "The official documentation on the **aci_vlan_pool** module."
+msgstr ""
+
+#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:358
 msgid ""
 "`APIC Management Information Model reference "
 "<https://developer.cisco.com/docs/apic-mim-ref/>`_"
 msgstr ""
 
-#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:356
+#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:359
 msgid "More information about the internal APIC class **fvns:EncapBlk**."
 msgstr ""
 
-#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:357
+#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:360
 msgid ":ref:`aci_guide`"
 msgstr ""
 
-#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:358
+#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:361
 msgid ""
 "Detailed information on how to manage your ACI infrastructure using "
 "Ansible."
 msgstr ""
 
-#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:359
+#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:362
 msgid ":ref:`aci_dev_guide`"
 msgstr ""
 
-#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:360
+#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:363
 msgid "Detailed guide on how to write your own Cisco ACI modules to contribute."
 msgstr ""
 
-#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:364
+#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:367
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:426
+#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:429
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:427
+#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:430
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:585
+#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:588
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:590
+#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:593
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:593
+#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:596
 msgid ""
 "This module is :ref:`maintained by an Ansible Partner <modules_support>`."
 " *[certified]*"
 msgstr ""
 
-#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:600
+#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:603
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:602
+#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:605
 msgid "Jacob McGill (@jmcgill298)"
 msgstr ""
 
-#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:603
+#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:606
 msgid "Dag Wieers (@dagwieers)"
 msgstr ""
 
-#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:607
+#: ../../rst/modules/aci_vlan_pool_encap_block_module.rst:610
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/aci/aci_vlan_pool_encap_block.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/aci/aci_vlan_pool_encap_block.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/aci/aci_vlan_pool_encap_block.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

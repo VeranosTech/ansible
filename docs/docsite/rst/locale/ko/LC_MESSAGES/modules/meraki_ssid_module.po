@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,68 +34,89 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/meraki_ssid_module.rst:762
+#: ../../rst/modules/meraki_ssid_module.rst:814
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/meraki_ssid_module.rst:765
+#: ../../rst/modules/meraki_ssid_module.rst:817
 msgid "Deleting an SSID does not delete RADIUS servers."
 msgstr ""
 
-#: ../../rst/modules/meraki_ssid_module.rst:766
+#: ../../rst/modules/meraki_ssid_module.rst:818
 msgid ""
 "More information about the Meraki API can be found at "
 "https://dashboard.meraki.com/api_docs."
 msgstr ""
 
-#: ../../rst/modules/meraki_ssid_module.rst:767
+#: ../../rst/modules/meraki_ssid_module.rst:819
 msgid "Some of the options are likely only used for developers within Meraki."
 msgstr ""
 
-#: ../../rst/modules/meraki_ssid_module.rst:772
+#: ../../rst/modules/meraki_ssid_module.rst:820
+msgid ""
+"As of Ansible 2.9, Meraki modules output keys as snake case. To use camel"
+" case, set the ``ANSIBLE_MERAKI_FORMAT`` environment variable to "
+"``camelcase``."
+msgstr ""
+
+#: ../../rst/modules/meraki_ssid_module.rst:821
+msgid ""
+"Ansible's Meraki modules will stop supporting camel case output in "
+"Ansible 2.13. Please update your playbooks."
+msgstr ""
+
+#: ../../rst/modules/meraki_ssid_module.rst:826
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/meraki_ssid_module.rst:782
+#: ../../rst/modules/meraki_ssid_module.rst:882
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/meraki_ssid_module.rst:783
+#: ../../rst/modules/meraki_ssid_module.rst:883
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/meraki_ssid_module.rst:811
+#: ../../rst/modules/meraki_ssid_module.rst:1103
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/meraki_ssid_module.rst:816
+#: ../../rst/modules/meraki_ssid_module.rst:1108
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/meraki_ssid_module.rst:819
+#: ../../rst/modules/meraki_ssid_module.rst:1111
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/meraki_ssid_module.rst:826
+#: ../../rst/modules/meraki_ssid_module.rst:1118
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/meraki_ssid_module.rst:828
+#: ../../rst/modules/meraki_ssid_module.rst:1120
 msgid "Kevin Breit (@kbreit)"
 msgstr ""
 
-#: ../../rst/modules/meraki_ssid_module.rst:832
+#: ../../rst/modules/meraki_ssid_module.rst:1124
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/meraki/meraki_ssid.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/meraki/meraki_ssid.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/meraki/meraki_ssid.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

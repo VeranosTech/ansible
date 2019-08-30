@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,14 +22,18 @@ msgstr ""
 msgid "rhevm -- RHEV/oVirt automation"
 msgstr ""
 
-#: ../../rst/modules/rhevm_module.rst:19
+#: ../../rst/modules/rhevm_module.rst:18
 msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/rhevm_module.rst:19
+msgid "This module only supports oVirt/RHEV version 3."
 msgstr ""
 
 #: ../../rst/modules/rhevm_module.rst:20
 msgid ""
-"This module only supports oVirt/RHEV version 3. A newer module "
-":ref:`ovirt_vm <ovirt_vm_module>` supports oVirt/RHV version 4."
+"A newer module :ref:`ovirt_vm <ovirt_vm_module>` supports oVirt/RHV "
+"version 4."
 msgstr ""
 
 #: ../../rst/modules/rhevm_module.rst:21
@@ -54,50 +58,65 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/rhevm_module.rst:390
+#: ../../rst/modules/rhevm_module.rst:403
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/rhevm_module.rst:509
+#: ../../rst/modules/rhevm_module.rst:522
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/rhevm_module.rst:510
+#: ../../rst/modules/rhevm_module.rst:523
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/rhevm_module.rst:538
+#: ../../rst/modules/rhevm_module.rst:551
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/rhevm_module.rst:543
+#: ../../rst/modules/rhevm_module.rst:556
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/rhevm_module.rst:546
+#: ../../rst/modules/rhevm_module.rst:559
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/rhevm_module.rst:553
+#: ../../rst/modules/rhevm_module.rst:566
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/rhevm_module.rst:555
+#: ../../rst/modules/rhevm_module.rst:568
 msgid "Timothy Vandenbrande (@TimothyVandenbrande)"
 msgstr ""
 
-#: ../../rst/modules/rhevm_module.rst:559
+#: ../../rst/modules/rhevm_module.rst:572
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/misc/rhevm.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/misc/rhevm.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module only supports oVirt/RHEV "
+#~ "version 3. A newer module :ref:`ovirt_vm"
+#~ " <ovirt_vm_module>` supports oVirt/RHV version"
+#~ " 4."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/misc/rhevm.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

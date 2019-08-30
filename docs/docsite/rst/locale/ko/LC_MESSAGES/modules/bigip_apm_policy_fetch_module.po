@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,31 +36,31 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:348
+#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:285
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:351
+#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:288
 msgid ""
 "Due to ID685681 it is not possible to execute ng_* tools via REST api on "
 "v12.x and 13.x, once this is fixed this restriction will be removed."
 msgstr ""
 
-#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:352
+#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:289
 msgid "Requires BIG-IP >= 14.0.0"
 msgstr ""
 
-#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:353
+#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:290
 msgid ""
 "For more information on using Ansible to manage F5 Networks devices see "
 "https://www.ansible.com/integrations/networks/f5."
 msgstr ""
 
-#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:354
+#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:291
 msgid "Requires BIG-IP software version >= 12."
 msgstr ""
 
-#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:355
+#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:292
 msgid ""
 "The F5 modules only manipulate the running configuration of the F5 "
 "product. To ensure that BIG-IP specific configuration persists to disk, "
@@ -70,50 +70,58 @@ msgid ""
 "your running configuration."
 msgstr ""
 
-#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:360
+#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:297
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:402
+#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:339
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:403
+#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:340
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:470
+#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:407
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:475
+#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:412
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:478
+#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:415
 msgid ""
 "This module is :ref:`maintained by an Ansible Partner <modules_support>`."
 " *[certified]*"
 msgstr ""
 
-#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:485
+#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:422
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:487
+#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:424
 msgid "Wojciech Wypior (@wojtek0806)"
 msgstr ""
 
-#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:491
+#: ../../rst/modules/bigip_apm_policy_fetch_module.rst:428
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_apm_policy_fetch.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_apm_policy_fetch.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_apm_policy_fetch.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

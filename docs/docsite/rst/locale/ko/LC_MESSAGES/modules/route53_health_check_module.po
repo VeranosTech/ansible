@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,45 +24,45 @@ msgid ""
 "DNS service"
 msgstr ""
 
-#: ../../rst/modules/route53_health_check_module.rst:19
+#: ../../rst/modules/route53_health_check_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/route53_health_check_module.rst:20
+#: ../../rst/modules/route53_health_check_module.rst:19
 msgid "Creates and deletes DNS Health checks in Amazons Route53 service"
 msgstr ""
 
-#: ../../rst/modules/route53_health_check_module.rst:21
+#: ../../rst/modules/route53_health_check_module.rst:20
 msgid ""
 "Only the port, resource_path, string_match and request_interval are "
 "considered when updating existing health-checks."
 msgstr ""
 
-#: ../../rst/modules/route53_health_check_module.rst:26
+#: ../../rst/modules/route53_health_check_module.rst:25
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/route53_health_check_module.rst:27
+#: ../../rst/modules/route53_health_check_module.rst:26
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/route53_health_check_module.rst:29
+#: ../../rst/modules/route53_health_check_module.rst:28
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/route53_health_check_module.rst:30
+#: ../../rst/modules/route53_health_check_module.rst:29
 msgid "boto"
 msgstr ""
 
-#: ../../rst/modules/route53_health_check_module.rst:34
+#: ../../rst/modules/route53_health_check_module.rst:33
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/route53_health_check_module.rst:295
+#: ../../rst/modules/route53_health_check_module.rst:311
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/route53_health_check_module.rst:298
+#: ../../rst/modules/route53_health_check_module.rst:314
 msgid ""
 "If parameters are not set within the module, the following environment "
 "variables can be used in decreasing order of precedence ``AWS_URL`` or "
@@ -72,54 +72,62 @@ msgid ""
 "``AWS_REGION`` or ``EC2_REGION``"
 msgstr ""
 
-#: ../../rst/modules/route53_health_check_module.rst:299
+#: ../../rst/modules/route53_health_check_module.rst:315
 msgid ""
 "Ansible uses the boto configuration file (typically ~/.boto) if no "
 "credentials are provided. See "
 "https://boto.readthedocs.io/en/latest/boto_config_tut.html"
 msgstr ""
 
-#: ../../rst/modules/route53_health_check_module.rst:300
+#: ../../rst/modules/route53_health_check_module.rst:316
 msgid ""
 "``AWS_REGION`` or ``EC2_REGION`` can be typically be used to specify the "
 "AWS region, when required, but this can also be configured in the boto "
 "config file"
 msgstr ""
 
-#: ../../rst/modules/route53_health_check_module.rst:305
+#: ../../rst/modules/route53_health_check_module.rst:321
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/route53_health_check_module.rst:344
+#: ../../rst/modules/route53_health_check_module.rst:360
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/route53_health_check_module.rst:349
+#: ../../rst/modules/route53_health_check_module.rst:365
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/route53_health_check_module.rst:352
+#: ../../rst/modules/route53_health_check_module.rst:368
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/route53_health_check_module.rst:359
+#: ../../rst/modules/route53_health_check_module.rst:375
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/route53_health_check_module.rst:361
+#: ../../rst/modules/route53_health_check_module.rst:377
 msgid "zimbatm (@zimbatm)"
 msgstr ""
 
-#: ../../rst/modules/route53_health_check_module.rst:365
+#: ../../rst/modules/route53_health_check_module.rst:381
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/route53_health_check.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/route53_health_check.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/route53_health_check.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

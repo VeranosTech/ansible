@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/modules/zabbix_template_module.rst:9
-msgid "zabbix_template -- Create/delete/dump Zabbix template"
+msgid "zabbix_template -- Create/update/delete/dump Zabbix template"
 msgstr ""
 
 #: ../../rst/modules/zabbix_template_module.rst:19
@@ -27,77 +27,116 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/zabbix_template_module.rst:20
-msgid "Create/delete/dump Zabbix template."
+msgid ""
+"This module allows you to create, modify, delete and dump Zabbix "
+"templates."
 msgstr ""
 
-#: ../../rst/modules/zabbix_template_module.rst:25
-msgid "Requirements"
+#: ../../rst/modules/zabbix_template_module.rst:21
+msgid ""
+"Multiple templates can be created or modified at once if passing JSON or "
+"XML to module."
 msgstr ""
 
 #: ../../rst/modules/zabbix_template_module.rst:26
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/zabbix_template_module.rst:27
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/zabbix_template_module.rst:28
+#: ../../rst/modules/zabbix_template_module.rst:29
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/zabbix_template_module.rst:29
+#: ../../rst/modules/zabbix_template_module.rst:30
 msgid "zabbix-api >= 0.5.3"
 msgstr ""
 
-#: ../../rst/modules/zabbix_template_module.rst:33
+#: ../../rst/modules/zabbix_template_module.rst:34
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/zabbix_template_module.rst:244
+#: ../../rst/modules/zabbix_template_module.rst:319
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/zabbix_template_module.rst:322
+msgid ""
+"If you use *login_password=zabbix*, the word \"zabbix\" is replaced by "
+"\"********\" in all module output, because *login_password* uses "
+"``no_log``. See `this FAQ "
+"<https://docs.ansible.com/ansible/latest/network/user_guide/faq.html#why-"
+"is-my-output-sometimes-replaced-with>`_ for more information."
+msgstr ""
+
+#: ../../rst/modules/zabbix_template_module.rst:327
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/zabbix_template_module.rst:349
+#: ../../rst/modules/zabbix_template_module.rst:449
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/zabbix_template_module.rst:350
+#: ../../rst/modules/zabbix_template_module.rst:450
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/zabbix_template_module.rst:378
+#: ../../rst/modules/zabbix_template_module.rst:520
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/zabbix_template_module.rst:383
+#: ../../rst/modules/zabbix_template_module.rst:525
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/zabbix_template_module.rst:386
+#: ../../rst/modules/zabbix_template_module.rst:528
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/zabbix_template_module.rst:393
+#: ../../rst/modules/zabbix_template_module.rst:535
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/zabbix_template_module.rst:395
+#: ../../rst/modules/zabbix_template_module.rst:537
 msgid "sookido (@sookido)"
 msgstr ""
 
-#: ../../rst/modules/zabbix_template_module.rst:396
+#: ../../rst/modules/zabbix_template_module.rst:538
 msgid "Logan Vig (@logan2211)"
 msgstr ""
 
-#: ../../rst/modules/zabbix_template_module.rst:400
+#: ../../rst/modules/zabbix_template_module.rst:539
+msgid "Dusan Matejka (@D3DeFi)"
+msgstr ""
+
+#: ../../rst/modules/zabbix_template_module.rst:543
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/monitoring/zabbix/zabbix_template.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/monitoring/zabbix/zabbix_template.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "zabbix_template -- Create/delete/dump Zabbix template"
+#~ msgstr ""
+
+#~ msgid "Create/delete/dump Zabbix template."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/monitoring/zabbix/zabbix_template.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

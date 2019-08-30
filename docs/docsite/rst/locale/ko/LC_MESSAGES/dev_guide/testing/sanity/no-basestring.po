@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/dev_guide/testing/sanity/no-basestring.rst:2
-msgid "Sanity Tests » no-basestring"
+msgid "no-basestring"
 msgstr ""
 
 #: ../../rst/dev_guide/testing/sanity/no-basestring.rst:4
@@ -37,4 +37,7 @@ msgid ""
 "``ansible.module_utils._text`` contains several functions that may be "
 "even better for you: ``to_text``, ``to_bytes``, and ``to_native``."
 msgstr ""
+
+#~ msgid "Sanity Tests » no-basestring"
+#~ msgstr ""
 

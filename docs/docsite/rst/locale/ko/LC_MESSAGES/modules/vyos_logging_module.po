@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,70 +41,87 @@ msgid "Notes"
 msgstr ""
 
 #: ../../rst/modules/vyos_logging_module.rst:237
-msgid "Tested against VYOS 1.1.7"
+msgid "Tested against VyOS 1.1.8 (helium)."
 msgstr ""
 
 #: ../../rst/modules/vyos_logging_module.rst:238
+msgid ""
+"This module works with connection ``network_cli``. See `the VyOS OS "
+"Platform Options <../network/user_guide/platform_vyos.html>`_."
+msgstr ""
+
+#: ../../rst/modules/vyos_logging_module.rst:239
 msgid ""
 "For more information on using Ansible to manage network devices see the "
 ":ref:`Ansible Network Guide <network_guide>`"
 msgstr ""
 
-#: ../../rst/modules/vyos_logging_module.rst:243
+#: ../../rst/modules/vyos_logging_module.rst:244
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/vyos_logging_module.rst:285
+#: ../../rst/modules/vyos_logging_module.rst:286
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/vyos_logging_module.rst:286
+#: ../../rst/modules/vyos_logging_module.rst:287
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/vyos_logging_module.rst:314
+#: ../../rst/modules/vyos_logging_module.rst:315
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/vyos_logging_module.rst:319
+#: ../../rst/modules/vyos_logging_module.rst:320
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/vyos_logging_module.rst:322
+#: ../../rst/modules/vyos_logging_module.rst:323
 msgid ""
 "This module is :ref:`maintained by the Ansible Network Team "
 "<modules_support>`. *[network]*"
 msgstr ""
 
-#: ../../rst/modules/vyos_logging_module.rst:325
+#: ../../rst/modules/vyos_logging_module.rst:326
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/vyos_logging_module.rst:327
+#: ../../rst/modules/vyos_logging_module.rst:328
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/vyos_logging_module.rst:333
+#: ../../rst/modules/vyos_logging_module.rst:334
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/vyos_logging_module.rst:335
+#: ../../rst/modules/vyos_logging_module.rst:336
 msgid "Trishna Guha (@trishnaguha)"
 msgstr ""
 
-#: ../../rst/modules/vyos_logging_module.rst:339
+#: ../../rst/modules/vyos_logging_module.rst:340
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/vyos/vyos_logging.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/vyos/vyos_logging.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "Tested against VYOS 1.1.7"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/vyos/vyos_logging.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

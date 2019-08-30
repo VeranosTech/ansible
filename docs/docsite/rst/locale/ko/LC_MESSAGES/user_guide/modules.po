@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,8 +25,8 @@ msgstr ""
 #: ../../rst/user_guide/modules.rst:15
 msgid ""
 "Ansible ships with a number of modules (called the 'module library') that"
-" can be executed directly on remote hosts or through :doc:`Playbooks "
-"<playbooks>`."
+" can be executed directly on remote hosts or through :ref:`Playbooks "
+"<working_with_playbooks>`."
 msgstr ""
 
 #: ../../rst/user_guide/modules.rst:18
@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 
 #: ../../rst/user_guide/modules.rst:24
-msgid ":doc:`intro_adhoc`"
+msgid ":ref:`intro_adhoc`"
 msgstr ""
 
 #: ../../rst/user_guide/modules.rst:25
@@ -45,15 +45,15 @@ msgid "Examples of using modules in /usr/bin/ansible"
 msgstr ""
 
 #: ../../rst/user_guide/modules.rst:26
-msgid ":doc:`playbooks`"
+msgid ":ref:`playbooks_intro`"
 msgstr ""
 
 #: ../../rst/user_guide/modules.rst:27
-msgid "Examples of using modules with /usr/bin/ansible-playbook"
+msgid "Introduction to using modules with /usr/bin/ansible-playbook"
 msgstr ""
 
 #: ../../rst/user_guide/modules.rst:28
-msgid ":doc:`../dev_guide/developing_modules`"
+msgid ":ref:`developing_modules_general`"
 msgstr ""
 
 #: ../../rst/user_guide/modules.rst:29
@@ -61,7 +61,7 @@ msgid "How to write your own modules"
 msgstr ""
 
 #: ../../rst/user_guide/modules.rst:30
-msgid ":doc:`../dev_guide/developing_api`"
+msgid ":ref:`developing_api`"
 msgstr ""
 
 #: ../../rst/user_guide/modules.rst:31
@@ -69,18 +69,49 @@ msgid "Examples of using modules with the Python API"
 msgstr ""
 
 #: ../../rst/user_guide/modules.rst:32
-msgid "`Mailing List <https://groups.google.com/group/ansible-project>`_"
+msgid ":ref:`interpreter_discovery`"
 msgstr ""
 
 #: ../../rst/user_guide/modules.rst:33
-msgid "Questions? Help? Ideas?  Stop by the list on Google Groups"
+msgid "Configuring the right Python interpreter on target hosts"
 msgstr ""
 
 #: ../../rst/user_guide/modules.rst:34
-msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgid "`Mailing List <https://groups.google.com/group/ansible-project>`_"
 msgstr ""
 
 #: ../../rst/user_guide/modules.rst:35
+msgid "Questions? Help? Ideas?  Stop by the list on Google Groups"
+msgstr ""
+
+#: ../../rst/user_guide/modules.rst:36
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/user_guide/modules.rst:37
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ""
+#~ "Ansible ships with a number of "
+#~ "modules (called the 'module library') "
+#~ "that can be executed directly on "
+#~ "remote hosts or through :doc:`Playbooks "
+#~ "<playbooks>`."
+#~ msgstr ""
+
+#~ msgid ":doc:`intro_adhoc`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks`"
+#~ msgstr ""
+
+#~ msgid "Examples of using modules with /usr/bin/ansible-playbook"
+#~ msgstr ""
+
+#~ msgid ":doc:`../dev_guide/developing_modules`"
+#~ msgstr ""
+
+#~ msgid ":doc:`../dev_guide/developing_api`"
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,76 +22,129 @@ msgstr ""
 msgid "net_banner -- Manage multiline banners on network devices"
 msgstr ""
 
+#: ../../rst/modules/net_banner_module.rst:18
+msgid "DEPRECATED"
+msgstr ""
+
+#: ../../rst/modules/net_banner_module.rst
+msgid "Removed in Ansible"
+msgstr ""
+
 #: ../../rst/modules/net_banner_module.rst:19
-msgid "Synopsis"
+msgid "version: 2.13"
+msgstr ""
+
+#: ../../rst/modules/net_banner_module.rst
+msgid "Why"
 msgstr ""
 
 #: ../../rst/modules/net_banner_module.rst:20
+msgid "Updated modules released with more functionality"
+msgstr ""
+
+#: ../../rst/modules/net_banner_module.rst
+msgid "Alternative"
+msgstr ""
+
+#: ../../rst/modules/net_banner_module.rst:21
+msgid "Use platform-specific \"[netos]_banner\" module"
+msgstr ""
+
+#: ../../rst/modules/net_banner_module.rst:26
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/net_banner_module.rst:27
 msgid ""
 "This will configure both login and motd banners on network devices. It "
 "allows playbooks to add or remove banner text from the active running "
 "configuration."
 msgstr ""
 
-#: ../../rst/modules/net_banner_module.rst:26
+#: ../../rst/modules/net_banner_module.rst:33
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/net_banner_module.rst:90
+#: ../../rst/modules/net_banner_module.rst:95
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/net_banner_module.rst:98
+msgid ""
+"This module is supported on ``ansible_network_os`` network platforms. See"
+" the :ref:`Network Platform Options <platform_options>` for details."
+msgstr ""
+
+#: ../../rst/modules/net_banner_module.rst:103
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/net_banner_module.rst:120
+#: ../../rst/modules/net_banner_module.rst:133
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/net_banner_module.rst:121
+#: ../../rst/modules/net_banner_module.rst:134
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/net_banner_module.rst:149
+#: ../../rst/modules/net_banner_module.rst:162
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/net_banner_module.rst:154
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
+#: ../../rst/modules/net_banner_module.rst:165
+msgid "This module will be removed in version 2.13. *[deprecated]*"
 msgstr ""
 
-#: ../../rst/modules/net_banner_module.rst:157
-msgid ""
-"This module is :ref:`maintained by the Ansible Network Team "
-"<modules_support>`. *[network]*"
-msgstr ""
-
-#: ../../rst/modules/net_banner_module.rst:160
-msgid "Red Hat Support"
-msgstr ""
-
-#: ../../rst/modules/net_banner_module.rst:162
-msgid ""
-"More information about Red Hat's support of this module is available from"
-" this `Red Hat Knowledge Base article "
-"<https://access.redhat.com/articles/3166901>`_."
-msgstr ""
-
-#: ../../rst/modules/net_banner_module.rst:168
-msgid "Authors"
+#: ../../rst/modules/net_banner_module.rst:166
+msgid "For more information see `DEPRECATED`_."
 msgstr ""
 
 #: ../../rst/modules/net_banner_module.rst:170
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/net_banner_module.rst:172
 msgid "Ricardo Carrillo Cruz (@rcarrillocruz)"
 msgstr ""
 
-#: ../../rst/modules/net_banner_module.rst:174
+#: ../../rst/modules/net_banner_module.rst:176
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/system/net_banner.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/system/_net_banner.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Network Team <modules_support>`. "
+#~ "*[network]*"
+#~ msgstr ""
+
+#~ msgid "Red Hat Support"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "More information about Red Hat's support"
+#~ " of this module is available from "
+#~ "this `Red Hat Knowledge Base article "
+#~ "<https://access.redhat.com/articles/3166901>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/system/net_banner.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

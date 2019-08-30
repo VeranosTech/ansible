@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,170 +39,194 @@ msgid ":ref:`haproxy_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_net_tools_modules.rst:14
-msgid ":ref:`ip_netns_module`"
+msgid ":ref:`hetzner_failover_ip_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_net_tools_modules.rst:15
-msgid ":ref:`ipify_facts_module`"
+msgid ":ref:`hetzner_failover_ip_info_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_net_tools_modules.rst:16
-msgid ":ref:`ipinfoio_facts_module`"
+msgid ":ref:`ip_netns_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_net_tools_modules.rst:17
-msgid ":ref:`lldp_module`"
+msgid ":ref:`ipify_facts_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_net_tools_modules.rst:18
-msgid ":ref:`netcup_dns_module`"
+msgid ":ref:`ipinfoio_facts_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_net_tools_modules.rst:19
-msgid ":ref:`nmcli_module`"
+msgid ":ref:`lldp_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_net_tools_modules.rst:20
-msgid ":ref:`nsupdate_module`"
+msgid ":ref:`netcup_dns_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_net_tools_modules.rst:21
-msgid ":ref:`omapi_host_module`"
+msgid ":ref:`nmcli_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_net_tools_modules.rst:22
+msgid ":ref:`nsupdate_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_net_tools_modules.rst:23
+msgid ":ref:`omapi_host_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_net_tools_modules.rst:24
 msgid ":ref:`snmp_facts_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_net_tools_modules.rst:28
+#: ../../rst/modules/list_of_net_tools_modules.rst:30
 msgid "Basics"
 msgstr ""
 
-#: ../../rst/modules/list_of_net_tools_modules.rst:32
+#: ../../rst/modules/list_of_net_tools_modules.rst:34
 msgid ":ref:`get_url_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_net_tools_modules.rst:33
+#: ../../rst/modules/list_of_net_tools_modules.rst:35
 msgid ":ref:`slurp_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_net_tools_modules.rst:34
+#: ../../rst/modules/list_of_net_tools_modules.rst:36
 msgid ":ref:`uri_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_net_tools_modules.rst:40
+#: ../../rst/modules/list_of_net_tools_modules.rst:42
 msgid "Exoscale"
 msgstr ""
 
-#: ../../rst/modules/list_of_net_tools_modules.rst:44
+#: ../../rst/modules/list_of_net_tools_modules.rst:46
 msgid ":ref:`exo_dns_domain_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_net_tools_modules.rst:45
+#: ../../rst/modules/list_of_net_tools_modules.rst:47
 msgid ":ref:`exo_dns_record_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_net_tools_modules.rst:51
+#: ../../rst/modules/list_of_net_tools_modules.rst:53
 msgid "Infinity"
 msgstr ""
 
-#: ../../rst/modules/list_of_net_tools_modules.rst:55
+#: ../../rst/modules/list_of_net_tools_modules.rst:57
 msgid ":ref:`infinity_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_net_tools_modules.rst:61
+#: ../../rst/modules/list_of_net_tools_modules.rst:63
 msgid "Ldap"
 msgstr ""
 
-#: ../../rst/modules/list_of_net_tools_modules.rst:65
+#: ../../rst/modules/list_of_net_tools_modules.rst:67
 msgid ":ref:`ldap_attr_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_net_tools_modules.rst:66
+#: ../../rst/modules/list_of_net_tools_modules.rst:68
 msgid ":ref:`ldap_entry_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_net_tools_modules.rst:67
+#: ../../rst/modules/list_of_net_tools_modules.rst:69
 msgid ":ref:`ldap_passwd_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_net_tools_modules.rst:73
+#: ../../rst/modules/list_of_net_tools_modules.rst:75
 msgid "Netbox"
 msgstr ""
 
-#: ../../rst/modules/list_of_net_tools_modules.rst:77
+#: ../../rst/modules/list_of_net_tools_modules.rst:79
 msgid ":ref:`netbox_device_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_net_tools_modules.rst:78
+#: ../../rst/modules/list_of_net_tools_modules.rst:80
+msgid ":ref:`netbox_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_net_tools_modules.rst:81
 msgid ":ref:`netbox_ip_address_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_net_tools_modules.rst:84
-msgid "Nios"
+#: ../../rst/modules/list_of_net_tools_modules.rst:82
+msgid ":ref:`netbox_prefix_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_net_tools_modules.rst:88
-msgid ":ref:`nios_a_record_module`"
+#: ../../rst/modules/list_of_net_tools_modules.rst:83
+msgid ":ref:`netbox_site_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_net_tools_modules.rst:89
-msgid ":ref:`nios_aaaa_record_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_net_tools_modules.rst:90
-msgid ":ref:`nios_cname_record_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_net_tools_modules.rst:91
-msgid ":ref:`nios_dns_view_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_net_tools_modules.rst:92
-msgid ":ref:`nios_fixed_address_module`"
+msgid "Nios"
 msgstr ""
 
 #: ../../rst/modules/list_of_net_tools_modules.rst:93
-msgid ":ref:`nios_host_record_module`"
+msgid ":ref:`nios_a_record_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_net_tools_modules.rst:94
-msgid ":ref:`nios_mx_record_module`"
+msgid ":ref:`nios_aaaa_record_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_net_tools_modules.rst:95
-msgid ":ref:`nios_naptr_record_module`"
+msgid ":ref:`nios_cname_record_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_net_tools_modules.rst:96
-msgid ":ref:`nios_network_module`"
+msgid ":ref:`nios_dns_view_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_net_tools_modules.rst:97
-msgid ":ref:`nios_network_view_module`"
+msgid ":ref:`nios_fixed_address_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_net_tools_modules.rst:98
-msgid ":ref:`nios_nsgroup_module`"
+msgid ":ref:`nios_host_record_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_net_tools_modules.rst:99
-msgid ":ref:`nios_ptr_record_module`"
+msgid ":ref:`nios_member_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_net_tools_modules.rst:100
-msgid ":ref:`nios_srv_record_module`"
+msgid ":ref:`nios_mx_record_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_net_tools_modules.rst:101
-msgid ":ref:`nios_txt_record_module`"
+msgid ":ref:`nios_naptr_record_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_net_tools_modules.rst:102
-msgid ":ref:`nios_zone_module`"
+msgid ":ref:`nios_network_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_net_tools_modules.rst:103
+msgid ":ref:`nios_network_view_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_net_tools_modules.rst:104
+msgid ":ref:`nios_nsgroup_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_net_tools_modules.rst:105
+msgid ":ref:`nios_ptr_record_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_net_tools_modules.rst:106
+msgid ":ref:`nios_srv_record_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_net_tools_modules.rst:107
+msgid ":ref:`nios_txt_record_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_net_tools_modules.rst:108
+msgid ":ref:`nios_zone_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_net_tools_modules.rst:112
 msgid ""
 "**(D)**: This marks a module as deprecated, which means a module is kept "
 "for backwards compatibility but usage is discouraged. The module "

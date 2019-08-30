@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,7 @@ msgstr ""
 #: ../../rst/porting_guides/porting_guide_2.8.rst:11
 msgid ""
 "We suggest you read this page along with `Ansible Changelog for 2.8 "
-"<https://github.com/ansible/ansible/blob/devel/changelogs/CHANGELOG-v2.8.rst>`_"
+"<https://github.com/ansible/ansible/blob/stable-2.8/changelogs/CHANGELOG-v2.8.rst>`_"
 " to understand what updates you may need to make."
 msgstr ""
 
@@ -48,19 +48,15 @@ msgid ""
 "porting guides can be found at :ref:`porting guides <porting_guides>`."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:15
-msgid "Topics"
-msgstr ""
-
-#: ../../rst/porting_guides/porting_guide_2.8.rst:18
+#: ../../rst/porting_guides/porting_guide_2.8.rst:19
 msgid "Playbook"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:21
+#: ../../rst/porting_guides/porting_guide_2.8.rst:22
 msgid "Distribution Facts"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:23
+#: ../../rst/porting_guides/porting_guide_2.8.rst:24
 msgid ""
 "The information returned for the ``ansible_distribution_*`` group of "
 "facts may have changed slightly.  Ansible 2.8 uses a new backend library "
@@ -69,7 +65,7 @@ msgid ""
 "fixes many bugs, including correcting release and version names."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:26
+#: ../../rst/porting_guides/porting_guide_2.8.rst:27
 msgid ""
 "The two facts used in playbooks most often, ``ansible_distribution`` and "
 "``ansible_distribution_major_version``, should not change. If you "
@@ -80,42 +76,440 @@ msgid ""
 msgstr ""
 
 #: ../../rst/porting_guides/porting_guide_2.8.rst:32
-msgid "Command Line"
+msgid "Imports as handlers"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:35
-msgid "Become Prompting"
-msgstr ""
-
-#: ../../rst/porting_guides/porting_guide_2.8.rst:37
+#: ../../rst/porting_guides/porting_guide_2.8.rst:34
 msgid ""
-"Beginning in version 2.8, by default Ansible will use the word ``BECOME``"
-" to prompt you for a password for elevated privileges (``sudo`` "
-"privileges on unix systems or ``enable`` mode on network devices):"
+"Beginning in version 2.8, a task cannot notify ``import_tasks`` or a "
+"static ``include`` that is specified in ``handlers``."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:36
+msgid ""
+"The goal of a static import is to act as a pre-processor, where the "
+"import is replaced by the tasks defined within the imported file. When "
+"using an import, a task can notify any of the named tasks within the "
+"imported file, but not the name of the import itself."
 msgstr ""
 
 #: ../../rst/porting_guides/porting_guide_2.8.rst:39
-msgid "By default in Ansible 2.8::"
+msgid ""
+"To achieve the results of notifying a single name but running multiple "
+"handlers, utilize ``include_tasks``, or ``listen`` :ref:`handlers`."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:42
+msgid "Jinja Undefined values"
 msgstr ""
 
 #: ../../rst/porting_guides/porting_guide_2.8.rst:44
+msgid ""
+"Beginning in version 2.8, attempting to access an attribute of an "
+"Undefined value in Jinja will return another Undefined value, rather than"
+" throwing an error immediately. This means that you can now simply use a "
+"default with a value in a nested data structure when you don't know if "
+"the intermediate values are defined."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:47
+msgid "In Ansible 2.8::"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:51
+msgid "In Ansible 2.7 and older::"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:60
+msgid "Module option conversion to string"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:62
+msgid ""
+"Beginning in version 2.8, Ansible will warn if a module expects a string,"
+" but a non-string value is passed and automatically converted to a "
+"string. This highlights potential problems where, for example, a ``yes`` "
+"or ``true`` (parsed as truish boolean value) would be converted to the "
+"string ``'True'``, or where a version number ``1.10`` (parsed as float "
+"value) would be converted to ``'1.0'``. Such conversions can result in "
+"unexpected behavior depending on context."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:64
+msgid ""
+"This behavior can be changed to be an error or to be ignored by setting "
+"the ``ANSIBLE_STRING_CONVERSION_ACTION`` environment variable, or by "
+"setting the ``string_conversion_action`` configuration in the "
+"``defaults`` section of ``ansible.cfg``."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:67
+msgid "Command line facts"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:69
+msgid ""
+"``cmdline`` facts returned in system will be deprecated in favor of "
+"``proc_cmdline``. This change handles special case where Kernel command "
+"line parameter contains multiple values with the same key."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:72
+msgid "Bare variables in conditionals"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:74
+msgid ""
+"In Ansible 2.7 and earlier, top-level variables sometimes treated boolean"
+" strings as if they were boolean values. This led to inconsistent "
+"behavior in conditional tests built on top-level variables defined as "
+"strings. Ansible 2.8 began changing this behavior. For example, if you "
+"set two conditions like this:"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:85
+msgid ""
+"based on a variable you define **as a string** (with quotation marks "
+"around it):"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:87
+msgid ""
+"In Ansible 2.7 and earlier, the two conditions above evaluated as "
+"``True`` and ``False`` respectively if ``teardown: 'true'``"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:88
+msgid ""
+"In Ansible 2.7 and earlier, both conditions evaluated as ``False`` if "
+"``teardown: 'false'``"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:89
+msgid ""
+"In Ansible 2.8 and later, you have the option of disabling conditional "
+"bare variables, so ``when: teardown`` always evaluates as ``True`` and "
+"``when: not teardown`` always evaluates as ``False`` when ``teardown`` is"
+" a non-empty string (including ``'true'`` or ``'false'``)"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:91
+msgid ""
+"Ultimately, ``when: 'string'`` will always evaluate as ``True`` and "
+"``when: not 'string'`` will always evaluate as ``False``, as long as "
+"``'string'`` is not empty, even if the value of ``'string'`` itself looks"
+" like a boolean. For users with playbooks that depend on the old "
+"behavior, we added a config setting that preserves it. You can use the "
+"``ANSIBLE_CONDITIONAL_BARE_VARS`` environment variable or "
+"``conditional_bare_variables`` in the ``defaults`` section of "
+"``ansible.cfg`` to select the behavior you want on your control node. The"
+" default setting is ``true``, which preserves the old behavior. Set the "
+"config value or environment variable to ``false`` to start using the new "
+"option."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:95
+msgid ""
+"In 2.10 the default setting for ``conditional_bare_variables`` will "
+"change to ``false``. In 2.12 the old behavior will be deprecated."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:98
+msgid "Updating your playbooks"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:100
+msgid ""
+"To prepare your playbooks for the new behavior, you must update your "
+"conditional statements so they accept only boolean values. For variables,"
+" you can use the ``bool`` filter to evaluate the string ``'false'`` as "
+"``False``:"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:114
+msgid ""
+"Alternatively, you can re-define your variables as boolean values "
+"(without quotation marks) instead of strings:"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:128
+msgid ""
+"For dictionaries and lists, use the ``length`` filter to evaluate the "
+"presence of a dictionary or list as ``True``:"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:138
+msgid ""
+"Do not use the ``bool`` filter with lists or dictionaries. If you use "
+"``bool`` with a list or dict, Ansible will always evaluate it as "
+"``False``."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:141
+msgid "Double-interpolation"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:143
+msgid ""
+"The ``conditional_bare_variables`` setting also affects variables set "
+"based on other variables. The old behavior unexpectedly double-"
+"interpolated those variables. For example:"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:155
+msgid ""
+"In Ansible 2.7 and earlier, ``when: double_interpolated`` evaluated to "
+"the value of ``bare_variable``, in this case, ``False``. If the variable "
+"``bare_variable`` is undefined, the conditional fails."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:156
+msgid ""
+"In Ansible 2.8 and later, with bare variables disabled, Ansible evaluates"
+" ``double_interpolated`` as the string ``'bare_variable'``, which is "
+"``True``."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:158
+msgid "To double-interpolate variable values, use curly braces:"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:167
+msgid "Nested variables"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:169
+msgid ""
+"The ``conditional_bare_variables`` setting does not affect nested "
+"variables. Any string value assigned to a subkey is already respected and"
+" not treated as a boolean. If ``complex_variable['subkey']`` is a non-"
+"empty string, then ``when: complex_variable['subkey']`` is always "
+"``True`` and ``when: not complex_variable['subkey']`` is always "
+"``False``. If you want a string subkey like "
+"``complex_variable['subkey']`` to be evaluated as a boolean, you must use"
+" the ``bool`` filter."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:172
+msgid "Gathering Facts"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:174
+msgid ""
+"In Ansible 2.8 the implicit \"Gathering Facts\" task in a play was "
+"changed to obey play tags. Previous to 2.8, the \"Gathering Facts\" task "
+"would ignore play tags and tags supplied from the command line and always"
+" run in a task."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:178
+msgid "The behavior change affects the following example play."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:193
+msgid ""
+"In Ansible 2.8, if you supply ``--tags nginx``, the implicit \"Gathering "
+"Facts\" task will be skipped, as the task now inherits the tag of "
+"``webserver`` instead of ``always``."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:197
+msgid ""
+"If no play level tags are set, the \"Gathering Facts\" task will be given"
+" a tag of ``always`` and will effectively match prior behavior."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:201
+msgid ""
+"You can achieve similar results to the pre-2.8 behavior, by using an "
+"explicit ``gather_facts`` task in your ``tasks`` list."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:224
+msgid "Python Interpreter Discovery"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:226
+msgid ""
+"In Ansible 2.7 and earlier, Ansible defaulted to "
+":command:`/usr/bin/python` as the setting for "
+"``ansible_python_interpreter``. If you ran Ansible against a system that "
+"installed Python with a different name or a different path, your "
+"playbooks would fail with ``/usr/bin/python: bad interpreter: No such "
+"file or directory`` unless you either set ``ansible_python_interpreter`` "
+"to the correct value for that system or added a Python interpreter and "
+"any necessary dependencies at :command:`usr/bin/python`."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:234
+msgid ""
+"Starting in Ansible 2.8, Ansible searches for the correct path and "
+"executable name for Python on each target system, first in a lookup table"
+" of default Python interpreters for common distros, then in an ordered "
+"fallback list of possible Python interpreter names/paths."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:239
+msgid ""
+"It's risky to rely on a Python interpreter set from the fallback list, "
+"because the interpreter may change on future runs. If an interpreter from"
+" higher in the fallback list gets installed (for example, as a side-"
+"effect of installing other packages), your original interpreter and its "
+"dependencies will no longer be used. For this reason, Ansible warns you "
+"when it uses a Python interpreter discovered from the fallback list. If "
+"you see this warning, the best solution is to explicitly set "
+"``ansible_python_interpreter`` to the path of the correct interpreter for"
+" those target systems."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:248
+msgid ""
+"You can still set ``ansible_python_interpreter`` to a specific path at "
+"any variable level (as a host variable, in vars files, in playbooks, "
+"etc.). If you prefer to use the Python interpreter discovery behavior, "
+"use one of the four new values for ``ansible_python_interpreter`` "
+"introduced in Ansible 2.8:"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:255
+msgid "New value"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:255
+msgid "Behavior"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:257
+msgid "auto |br| (future default)"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:257
+msgid ""
+"If a Python interpreter is discovered, Ansible uses the discovered "
+"Python, even if :command:`/usr/bin/python` is also present. Warns when "
+"using the fallback list."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:262
+msgid "**auto_legacy** |br| (Ansible 2.8 default)"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:262
+msgid ""
+"If a Python interpreter is discovered, and :command:`/usr/bin/python` is "
+"absent, Ansible uses the discovered Python. Warns when using the fallback"
+" list."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:267
+msgid ""
+"If a Python interpreter is discovered, and :command:`/usr/bin/python` is "
+"present, Ansible uses :command:`/usr/bin/python` and prints a deprecation"
+" warning about future default behavior. Warns when using the fallback "
+"list."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:274
+msgid "auto_legacy_silent"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:274
+msgid ""
+"Behaves like ``auto_legacy`` but suppresses the deprecation and fallback-"
+"list warnings."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:277
+msgid "auto_silent"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:277
+msgid "Behaves like ``auto`` but suppresses the fallback-list warning."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:282
+msgid ""
+"In Ansible 2.12, Ansible will switch the default from "
+":literal:`auto_legacy` to :literal:`auto`. The difference in behaviour is"
+" that :literal:`auto_legacy` uses :command:`/usr/bin/python` if present "
+"and falls back to the discovered Python when it is not present.  "
+":literal:`auto` will always use the discovered Python, regardless of "
+"whether :command:`/usr/bin/python` exists.  The :literal:`auto_legacy` "
+"setting provides compatibility with previous versions of Ansible that "
+"always defaulted to :command:`/usr/bin/python`."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:289
+msgid ""
+"If you installed Python and dependencies (``boto``, etc.) to "
+":command:`/usr/bin/python` as a workaround on distros with a different "
+"default Python interpreter (for example, Ubuntu 16.04+, RHEL8, Fedora "
+"23+), you have two options:"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:294
+msgid ""
+"Move existing dependencies over to the default Python for each "
+"platform/distribution/version."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:295
+msgid ""
+"Use ``auto_legacy``. This setting lets Ansible find and use the "
+"workaround Python on hosts that have it, while also finding the correct "
+"default Python on newer hosts. But remember, the default will change in 4"
+" releases."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:299
+msgid "Retry File Creation default"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:301
+msgid ""
+"In Ansible 2.8, ``retry_files_enabled`` now defaults to ``False`` instead"
+" of ``True``.  The behavior can be modified to previous version by "
+"editing the default ``ansible.cfg`` file and setting the value to "
+"``True``."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:305
+msgid "Command Line"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:308
+msgid "Become Prompting"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:310
+msgid ""
+"Beginning in version 2.8, by default Ansible will use the word ``BECOME``"
+" to prompt you for a password for elevated privileges (``sudo`` "
+"privileges on Unix systems or ``enable`` mode on network devices):"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:312
+msgid "By default in Ansible 2.8::"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:317
 msgid ""
 "If you want the prompt to display the specific ``become_method`` you're "
 "using, instead of the agnostic value ``BECOME``, set "
 ":ref:`AGNOSTIC_BECOME_PROMPT` to ``False`` in your Ansible configuration."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:46
+#: ../../rst/porting_guides/porting_guide_2.8.rst:319
 msgid ""
 "By default in Ansible 2.7, or with ``AGNOSTIC_BECOME_PROMPT=False`` in "
 "Ansible 2.8::"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:52
+#: ../../rst/porting_guides/porting_guide_2.8.rst:325
 msgid "Deprecated"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:54
+#: ../../rst/porting_guides/porting_guide_2.8.rst:327
 msgid ""
 "Setting the async directory using ``ANSIBLE_ASYNC_DIR`` as an task/play "
 "environment key is deprecated and will be removed in Ansible 2.12. You "
@@ -123,13 +517,13 @@ msgid ""
 "variable like::"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:63
+#: ../../rst/porting_guides/porting_guide_2.8.rst:336
 msgid ""
 "Plugin writers who need a ``FactCache`` object should be aware of two "
 "deprecations:"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:65
+#: ../../rst/porting_guides/porting_guide_2.8.rst:338
 msgid ""
 "The ``FactCache`` class has moved from "
 "``ansible.plugins.cache.FactCache`` to "
@@ -140,109 +534,198 @@ msgid ""
 "old location will be removed in Ansible 2.12."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:71
+#: ../../rst/porting_guides/porting_guide_2.8.rst:344
 msgid ""
 "The ``FactCache.update()`` method has been converted to follow the dict "
 "API.  It now takes a dictionary as its sole argument and updates itself "
 "with the dictionary's items.  The previous API where ``update()`` took a "
 "key and a value will now issue a deprecation warning and will be removed "
-"in 2.12.  If you need the old behaviour switch to "
+"in 2.12.  If you need the old behavior switch to "
 "``FactCache.first_order_merge()`` instead."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:78
+#: ../../rst/porting_guides/porting_guide_2.8.rst:350
+msgid ""
+"Supporting file-backed caching via self.cache is deprecated and will be "
+"removed in Ansible 2.12. If you maintain an inventory plugin, update it "
+"to use ``self._cache`` as a dictionary. For implementation details, see "
+"the :ref:`developer guide on inventory "
+"plugins<inventory_plugin_caching>`."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:354
+msgid ""
+"Importing cache plugins directly is deprecated and will be removed in "
+"Ansible 2.12. Use the plugin_loader so direct options, environment "
+"variables, and other means of configuration can be reconciled using the "
+"config system rather than constants."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:364
 msgid "Modules"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:80
+#: ../../rst/porting_guides/porting_guide_2.8.rst:366
 msgid "Major changes in popular modules are detailed here"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:82
+#: ../../rst/porting_guides/porting_guide_2.8.rst:368
 msgid ""
 "The exec wrapper that runs PowerShell modules has been changed to set "
 "``$ErrorActionPreference = \"Stop\"`` globally. This may mean that custom"
-" modules can fail if they implicitly relied on this behaviour. To get the"
-" old behaviour back, add ``$ErrorActionPreference = \"Continue\"`` to the"
-" top of the module. This change was made to restore the old behaviour of "
+" modules can fail if they implicitly relied on this behavior. To get the "
+"old behavior back, add ``$ErrorActionPreference = \"Continue\"`` to the "
+"top of the module. This change was made to restore the old behavior of "
 "the EAP that was accidentally removed in a previous release and ensure "
-"that modules are more resiliant to errors that may occur in execution."
+"that modules are more resilient to errors that may occur in execution."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:90
+#: ../../rst/porting_guides/porting_guide_2.8.rst:375
 msgid "Modules removed"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:92
+#: ../../rst/porting_guides/porting_guide_2.8.rst:377
 msgid "The following modules no longer exist:"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:94
+#: ../../rst/porting_guides/porting_guide_2.8.rst:379
 msgid "ec2_remote_facts"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:95
+#: ../../rst/porting_guides/porting_guide_2.8.rst:380
 msgid "azure"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:96
+#: ../../rst/porting_guides/porting_guide_2.8.rst:381
 msgid "cs_nic"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:97
+#: ../../rst/porting_guides/porting_guide_2.8.rst:382
 msgid "netscaler"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:98
+#: ../../rst/porting_guides/porting_guide_2.8.rst:383
 msgid "win_msi"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:101
+#: ../../rst/porting_guides/porting_guide_2.8.rst:386
 msgid "Deprecation notices"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:103
+#: ../../rst/porting_guides/porting_guide_2.8.rst:388
 msgid ""
 "The following modules will be removed in Ansible 2.12. Please update your"
 " playbooks accordingly."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:105
+#: ../../rst/porting_guides/porting_guide_2.8.rst:390
 msgid ""
-"``foreman`` use <https://github.com/theforeman/foreman-ansible-modules> "
-"instead."
+"``foreman`` use `foreman-ansible-modules <https://github.com/theforeman"
+"/foreman-ansible-modules>`_ instead."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:106
+#: ../../rst/porting_guides/porting_guide_2.8.rst:391
 msgid ""
-"``katello`` use <https://github.com/theforeman/foreman-ansible-modules> "
-"instead."
+"``katello`` use `foreman-ansible-modules <https://github.com/theforeman"
+"/foreman-ansible-modules>`_ instead."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:107
+#: ../../rst/porting_guides/porting_guide_2.8.rst:392
 msgid ""
 "``github_hooks`` use :ref:`github_webhook <github_webhook_module>` and "
 ":ref:`github_webhook_facts <github_webhook_facts_module>` instead."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:111
+#: ../../rst/porting_guides/porting_guide_2.8.rst:393
+msgid ""
+"``digital_ocean`` use :ref:`digital_ocean_droplet "
+"<digital_ocean_droplet_module>` instead."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:394
+msgid ""
+"``gce`` use :ref:`gcp_compute_instance <gcp_compute_instance_module>` "
+"instead."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:395
+msgid ""
+"``gcspanner`` use :ref:`gcp_spanner_instance "
+"<gcp_spanner_instance_module>` and :ref:`gcp_spanner_database "
+"<gcp_spanner_database_module>` instead."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:396
+msgid ""
+"``gcdns_record`` use :ref:`gcp_dns_resource_record_set "
+"<gcp_dns_resource_record_set_module>` instead."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:397
+msgid ""
+"``gcdns_zone`` use :ref:`gcp_dns_managed_zone "
+"<gcp_dns_managed_zone_module>` instead."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:398
+msgid ""
+"``gcp_forwarding_rule`` use :ref:`gcp_compute_global_forwarding_rule "
+"<gcp_compute_global_forwarding_rule_module>` or "
+":ref:`gcp_compute_forwarding_rule <gcp_compute_forwarding_rule_module>` "
+"instead."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:399
+msgid ""
+"``gcp_healthcheck`` use :ref:`gcp_compute_health_check "
+"<gcp_compute_health_check_module>`, :ref:`gcp_compute_http_health_check "
+"<gcp_compute_http_health_check_module>`, or "
+":ref:`gcp_compute_https_health_check "
+"<gcp_compute_https_health_check_module>` instead."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:400
+msgid ""
+"``gcp_backend_service`` use :ref:`gcp_compute_backend_service "
+"<gcp_compute_backend_service_module>` instead."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:401
+msgid ""
+"``gcp_target_proxy`` use :ref:`gcp_compute_target_http_proxy "
+"<gcp_compute_target_http_proxy_module>` instead."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:402
+msgid ""
+"``gcp_url_map`` use :ref:`gcp_compute_url_map "
+"<gcp_compute_url_map_module>` instead."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:403
+msgid ""
+"``panos`` use the `Palo Alto Networks Ansible Galaxy role "
+"<https://galaxy.ansible.com/PaloAltoNetworks/paloaltonetworks>`_ instead."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:407
 msgid "Noteworthy module changes"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:113
+#: ../../rst/porting_guides/porting_guide_2.8.rst:409
 msgid ""
 "The ``foreman`` and ``katello`` modules have been deprecated in favor of "
 "a set of modules that are broken out per entity with better idempotency "
 "in mind."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:114
+#: ../../rst/porting_guides/porting_guide_2.8.rst:410
 msgid ""
 "The ``foreman`` and ``katello`` modules replacement is officially part of"
 " the Foreman Community and supported there."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:115
+#: ../../rst/porting_guides/porting_guide_2.8.rst:411
 msgid ""
 "The ``tower_credential`` module originally required the ``ssh_key_data`` "
 "to be the path to a ssh_key_file. In order to work like Tower/AWX, "
@@ -250,46 +733,46 @@ msgid ""
 "behavior can be achieved with ``lookup('file', '/path/to/file')``."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:118
+#: ../../rst/porting_guides/porting_guide_2.8.rst:414
 msgid ""
 "The ``win_scheduled_task`` module deprecated support for specifying a "
 "trigger repetition as a list and this format will be removed in Ansible "
 "2.12. Instead specify the repetition as a dictionary value."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:121
+#: ../../rst/porting_guides/porting_guide_2.8.rst:417
 msgid ""
 "The ``win_feature`` module has removed the deprecated ``restart_needed`` "
-"return value, use the standardised ``reboot_required`` value instead."
+"return value, use the standardized ``reboot_required`` value instead."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:124
+#: ../../rst/porting_guides/porting_guide_2.8.rst:420
 msgid ""
 "The ``win_package`` module has removed the deprecated "
-"``restart_required`` and ``exit_code`` return value, use the standardised"
+"``restart_required`` and ``exit_code`` return value, use the standardized"
 " ``reboot_required`` and ``rc`` value instead."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:127
+#: ../../rst/porting_guides/porting_guide_2.8.rst:423
 msgid ""
 "The ``win_get_url`` module has removed the deprecated ``win_get_url`` "
 "return dictionary, contained values are returned directly."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:130
+#: ../../rst/porting_guides/porting_guide_2.8.rst:426
 msgid ""
 "The ``win_get_url`` module has removed the deprecated "
-"``skip_certificate_validation`` option, use the standardised "
+"``skip_certificate_validation`` option, use the standardized "
 "``validate_certs`` option instead."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:133
+#: ../../rst/porting_guides/porting_guide_2.8.rst:429
 msgid ""
 "The ``vmware_local_role_facts`` module now returns a list of dicts "
 "instead of a dict of dicts for role information."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:135
+#: ../../rst/porting_guides/porting_guide_2.8.rst:431
 msgid ""
 "If ``docker_network`` or ``docker_volume`` were called with ``diff: "
 "yes``, ``check_mode: yes`` or ``debug: yes``, a return value called "
@@ -298,7 +781,7 @@ msgid ""
 "``diff.differences``."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:139
+#: ../../rst/porting_guides/porting_guide_2.8.rst:435
 msgid ""
 "The ``na_ontap_cluster_peer`` module has replaced "
 "``source_intercluster_lif`` and ``dest_intercluster_lif`` string options "
@@ -306,7 +789,7 @@ msgid ""
 "options"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:142
+#: ../../rst/porting_guides/porting_guide_2.8.rst:438
 msgid ""
 "The ``modprobe`` module now detects kernel builtins. Previously, "
 "attempting to remove (with ``state: absent``) a builtin kernel module "
@@ -321,11 +804,189 @@ msgid ""
 " or ``ignore_errors: true`` in your playbook."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:151
+#: ../../rst/porting_guides/porting_guide_2.8.rst:446
+msgid ""
+"The ``digital_ocean`` module has been deprecated in favor of modules that"
+" do not require external dependencies. This allows for more flexibility "
+"and better module support."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:449
+msgid ""
+"The ``docker_container`` module has deprecated the returned fact "
+"``docker_container``. The same value is available as the returned "
+"variable ``container``. The returned fact will be removed in Ansible "
+"2.12."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:451
+msgid ""
+"The ``docker_network`` module has deprecated the returned fact "
+"``docker_container``. The same value is available as the returned "
+"variable ``network``. The returned fact will be removed in Ansible 2.12."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:453
+msgid ""
+"The ``docker_volume`` module has deprecated the returned fact "
+"``docker_container``. The same value is available as the returned "
+"variable ``volume``. The returned fact will be removed in Ansible 2.12."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:456
+msgid ""
+"The ``docker_service`` module was renamed to :ref:`docker_compose "
+"<docker_compose_module>`."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:457
+msgid ""
+"The renamed ``docker_compose`` module used to return one fact per "
+"service, named same as the service. A dictionary of these facts is "
+"returned as the regular return value ``services``. The returned facts "
+"will be removed in Ansible 2.12."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:464
+msgid ""
+"The ``docker_swarm_service`` module no longer sets a defaults for the "
+"following options:"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:462
+msgid "``user``. Before, the default was ``root``."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:463
+msgid "``update_delay``. Before, the default was ``10``."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:464
+msgid "``update_parallelism``. Before, the default was ``1``."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:466
+msgid ""
+"``vmware_vm_facts`` used to return dict of dict with virtual machine's "
+"facts. Ansible 2.8 and onwards will return list of dict with virtual "
+"machine's facts. Please see module ``vmware_vm_facts`` documentation for "
+"example."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:469
+msgid ""
+"``vmware_guest_snapshot`` module used to return ``results``. Since "
+"Ansible 2.8 and onwards ``results`` is a reserved keyword, it is replaced"
+" by ``snapshot_results``. Please see module ``vmware_guest_snapshots`` "
+"documentation for example."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:472
+msgid ""
+"The ``panos`` modules have been deprecated in favor of using the Palo "
+"Alto Networks `Ansible Galaxy role "
+"<https://galaxy.ansible.com/PaloAltoNetworks/paloaltonetworks>`_.  "
+"Contributions to the role can be made `here "
+"<https://github.com/PaloAltoNetworks/ansible-pan>`_."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:476
+msgid ""
+"The ``ipa_user`` module originally always sent ``password`` to FreeIPA "
+"regardless of whether the password changed. Now the module only sends "
+"``password`` if ``update_password`` is set to ``always``, which is the "
+"default."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:478
+msgid ""
+"The ``win_psexec`` has deprecated the undocumented ``extra_opts`` module "
+"option. This will be removed in Ansible 2.10."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:480
+msgid ""
+"The ``win_nssm`` module has deprecated the following options in favor of "
+"using the ``win_service`` module to configure the service after "
+"installing it with ``win_nssm``: * ``dependencies``, use ``dependencies``"
+" of ``win_service`` instead * ``start_mode``, use ``start_mode`` of "
+"``win_service`` instead * ``user``, use ``username`` of ``win_service`` "
+"instead * ``password``, use ``password`` of ``win_service`` instead These"
+" options will be removed in Ansible 2.12."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:487
+msgid ""
+"The ``win_nssm`` module has also deprecated the ``start``, ``stop``, and "
+"``restart`` values of the ``status`` option. You should use the "
+"``win_service`` module to control the running state of the service. This "
+"will be removed in Ansible 2.12."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:490
+msgid ""
+"The ``status`` module option for ``win_nssm`` has changed its default "
+"value to ``present``. Before, the default was ``start``. Consequently, "
+"the service is no longer started by default after creation with "
+"``win_nssm``, and you should use the ``win_service`` module to start it "
+"if needed."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:494
+msgid ""
+"The ``app_parameters`` module option for ``win_nssm`` has been "
+"deprecated; use ``argument`` instead. This will be removed in Ansible "
+"2.12."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:496
+msgid ""
+"The ``app_parameters_free_form`` module option for ``win_nssm`` has been "
+"aliased to the new ``arguments`` option."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:498
+msgid ""
+"The ``win_dsc`` module will now validate the input options for a DSC "
+"resource. In previous versions invalid options would be ignored but are "
+"now not."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:501
+msgid ""
+"The ``openssl_pkcs12`` module will now regenerate the pkcs12 file if "
+"there are differences between the file on disk and the parameters passed "
+"to the module."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:504
 msgid "Plugins"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:153
+#: ../../rst/porting_guides/porting_guide_2.8.rst:506
+msgid ""
+"Ansible no longer defaults to the ``paramiko`` connection plugin when "
+"using macOS as the control node. Ansible will now use the ``ssh`` "
+"connection plugin by default on a macOS control node.  Since ``ssh`` "
+"supports connection persistence between tasks and playbook runs, it "
+"performs better than ``paramiko``. If you are using password "
+"authentication, you will need to install ``sshpass`` when using the "
+"``ssh`` connection plugin. Or you can explicitly set the connection type "
+"to ``paramiko`` to maintain the pre-2.8 behavior on macOS."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:508
+msgid ""
+"Connection plugins have been standardized to allow use of ``ansible_"
+"<conn-type>_user`` and ``ansible_<conn-type>_password`` variables.  "
+"Variables such as ``ansible_<conn-type>_pass`` and ``ansible_<conn-"
+"type>_username`` are treated with lower priority than the standardized "
+"names and may be deprecated in the future.  In general, the "
+"``ansible_user`` and ``ansible_password`` vars should be used unless "
+"there is a reason to use the connection-specific variables."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:515
 msgid ""
 "The ``powershell`` shell plugin now uses ``async_dir`` to define the "
 "async path for the results file and the default has changed to "
@@ -334,14 +995,14 @@ msgid ""
 "``powershell`` section of the config ini."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:157
+#: ../../rst/porting_guides/porting_guide_2.8.rst:519
 msgid ""
 "Order of enabled inventory plugins (:ref:`INVENTORY_ENABLED`) has been "
 "updated, :ref:`auto <auto_inventory>` is now before :ref:`yaml "
 "<yaml_inventory>` and :ref:`ini <ini_inventory>`."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:159
+#: ../../rst/porting_guides/porting_guide_2.8.rst:521
 msgid ""
 "The private ``_options`` attribute has been removed from the "
 "``CallbackBase`` class of callback plugins.  If you have a third-party "
@@ -349,7 +1010,7 @@ msgid ""
 "code like the following instead of trying to use ``self._options``:"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:169
+#: ../../rst/porting_guides/porting_guide_2.8.rst:531
 msgid ""
 "``context.CLIARGS`` is a read-only dictionary so normal dictionary "
 "retrieval methods like ``CLIARGS.get('tags')`` and ``CLIARGS['tags']`` "
@@ -357,36 +1018,157 @@ msgid ""
 "all."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:175
+#: ../../rst/porting_guides/porting_guide_2.8.rst:535
+msgid ""
+"Play recap now counts ``ignored`` and ``rescued`` tasks as well as "
+"``ok``, ``changed``, ``unreachable``, ``failed`` and ``skipped`` tasks, "
+"thanks to two additional stat counters in the ``default`` callback "
+"plugin. Tasks that fail and have ``ignore_errors: yes`` set are listed as"
+" ``ignored``. Tasks that fail and then execute a rescue section are "
+"listed as ``rescued``. Note that ``rescued`` tasks are no longer counted "
+"as ``failed`` as in Ansible 2.7 (and earlier)."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:537
+msgid "``osx_say`` callback plugin was renamed into :ref:`say <say_callback>`."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:539
+msgid ""
+"Inventory plugins now support caching via cache plugins. To start using a"
+" cache plugin with your inventory see the section on caching in the "
+":ref:`inventory guide<using_inventory>`. To port a custom cache plugin to"
+" be compatible with inventory see :ref:`developer guide on cache "
+"plugins<developing_cache_plugins>`."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:542
 msgid "Porting custom scripts"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:178
+#: ../../rst/porting_guides/porting_guide_2.8.rst:545
 msgid "Display class"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:180
+#: ../../rst/porting_guides/porting_guide_2.8.rst:547
 msgid ""
 "As of Ansible 2.8, the ``Display`` class is now a \"singleton\". Instead "
 "of using ``__main__.display`` each file should import and instantiate "
 "``ansible.utils.display.Display`` on its own."
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:183
+#: ../../rst/porting_guides/porting_guide_2.8.rst:550
 msgid ""
 "**OLD** In Ansible 2.7 (and earlier) the following was used to access the"
 " ``display`` object:"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:193
+#: ../../rst/porting_guides/porting_guide_2.8.rst:560
 msgid "**NEW** In Ansible 2.8 the following should be used:"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:201
+#: ../../rst/porting_guides/porting_guide_2.8.rst:568
 msgid "Networking"
 msgstr ""
 
-#: ../../rst/porting_guides/porting_guide_2.8.rst:203
-msgid "No notable changes."
+#: ../../rst/porting_guides/porting_guide_2.8.rst:570
+msgid ""
+"The ``eos_config``, ``ios_config``, and ``nxos_config`` modules have "
+"removed the deprecated ``save`` and ``force`` parameters, use the "
+"``save_when`` parameter to replicate their functionality."
 msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.8.rst:574
+msgid ""
+"The ``nxos_vrf_af`` module has removed the ``safi`` parameter. This "
+"parameter was deprecated in Ansible 2.4 and has had no impact on the "
+"module since then."
+msgstr ""
+
+#~ msgid ""
+#~ "We suggest you read this page "
+#~ "along with `Ansible Changelog for 2.8"
+#~ " "
+#~ "<https://github.com/ansible/ansible/blob/devel/changelogs/CHANGELOG-v2.8.rst>`_"
+#~ " to understand what updates you may"
+#~ " need to make."
+#~ msgstr ""
+
+#~ msgid "Topics"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Beginning in version 2.8, by default "
+#~ "Ansible will use the word ``BECOME`` "
+#~ "to prompt you for a password for"
+#~ " elevated privileges (``sudo`` privileges "
+#~ "on unix systems or ``enable`` mode "
+#~ "on network devices):"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The ``FactCache.update()`` method has been "
+#~ "converted to follow the dict API.  "
+#~ "It now takes a dictionary as its"
+#~ " sole argument and updates itself "
+#~ "with the dictionary's items.  The "
+#~ "previous API where ``update()`` took a"
+#~ " key and a value will now issue"
+#~ " a deprecation warning and will be"
+#~ " removed in 2.12.  If you need "
+#~ "the old behaviour switch to "
+#~ "``FactCache.first_order_merge()`` instead."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The exec wrapper that runs PowerShell"
+#~ " modules has been changed to set "
+#~ "``$ErrorActionPreference = \"Stop\"`` globally. "
+#~ "This may mean that custom modules "
+#~ "can fail if they implicitly relied "
+#~ "on this behaviour. To get the old"
+#~ " behaviour back, add ``$ErrorActionPreference "
+#~ "= \"Continue\"`` to the top of the"
+#~ " module. This change was made to "
+#~ "restore the old behaviour of the "
+#~ "EAP that was accidentally removed in "
+#~ "a previous release and ensure that "
+#~ "modules are more resiliant to errors "
+#~ "that may occur in execution."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``foreman`` use <https://github.com/theforeman/foreman-"
+#~ "ansible-modules> instead."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``katello`` use <https://github.com/theforeman/foreman-"
+#~ "ansible-modules> instead."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The ``win_feature`` module has removed "
+#~ "the deprecated ``restart_needed`` return "
+#~ "value, use the standardised "
+#~ "``reboot_required`` value instead."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The ``win_package`` module has removed "
+#~ "the deprecated ``restart_required`` and "
+#~ "``exit_code`` return value, use the "
+#~ "standardised ``reboot_required`` and ``rc`` "
+#~ "value instead."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The ``win_get_url`` module has removed "
+#~ "the deprecated ``skip_certificate_validation`` "
+#~ "option, use the standardised "
+#~ "``validate_certs`` option instead."
+#~ msgstr ""
+
+#~ msgid "No notable changes."
+#~ msgstr ""
 

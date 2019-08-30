@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,35 +41,37 @@ msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
 #: ../../rst/modules/docker_prune_module.rst:28
-msgid "python >= 2.6"
+msgid "Docker API >= 1.25"
 msgstr ""
 
 #: ../../rst/modules/docker_prune_module.rst:29
-msgid "docker >= 2.1.0"
+msgid ""
+"Docker SDK for Python: Please note that the `docker-py "
+"<https://pypi.org/project/docker-py/>`_ Python module has been superseded"
+" by `docker <https://pypi.org/project/docker/>`_ (see `here "
+"<https://github.com/docker/docker-py/issues/1310>`_ for details). This "
+"module does *not* work with docker-py."
 msgstr ""
 
 #: ../../rst/modules/docker_prune_module.rst:30
 msgid ""
-"Please note that the `docker-py <https://pypi.org/project/docker-py/>`_ "
-"Python module has been superseded by `docker "
-"<https://pypi.org/project/docker/>`_ (see `here "
-"<https://github.com/docker/docker-py/issues/1310>`_ for details). Version"
-" 2.1.0 or newer is only available with the ``docker`` module."
+"`Docker SDK for Python <https://docker-py.readthedocs.io/en/stable/>`_ >="
+" 2.1.0"
 msgstr ""
 
 #: ../../rst/modules/docker_prune_module.rst:31
-msgid "Docker API >= 1.25"
+msgid "Python >= 2.7"
 msgstr ""
 
 #: ../../rst/modules/docker_prune_module.rst:35
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/docker_prune_module.rst:369
+#: ../../rst/modules/docker_prune_module.rst:370
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/docker_prune_module.rst:372
+#: ../../rst/modules/docker_prune_module.rst:373
 msgid ""
 "Connect to the Docker daemon by providing parameters with each task or by"
 " defining environment variables. You can define ``DOCKER_HOST``, "
@@ -81,7 +83,7 @@ msgid ""
 "py.readthedocs.io/en/stable/machine/ for more details."
 msgstr ""
 
-#: ../../rst/modules/docker_prune_module.rst:373
+#: ../../rst/modules/docker_prune_module.rst:374
 msgid ""
 "When connecting to Docker daemon with TLS, you might need to install "
 "additional Python packages. For the Docker SDK for Python, version 2.4 or"
@@ -89,59 +91,95 @@ msgid ""
 "<pip_module>`."
 msgstr ""
 
-#: ../../rst/modules/docker_prune_module.rst:374
+#: ../../rst/modules/docker_prune_module.rst:375
 msgid ""
 "Note that the Docker SDK for Python only allows to specify the path to "
 "the Docker configuration for very few functions. In general, it will use "
-"``$HOME/docker/config.json`` if the ``DOCKER_CONFIG`` environment "
+"``$HOME/.docker/config.json`` if the ``DOCKER_CONFIG`` environment "
 "variable is not specified, and use ``$DOCKER_CONFIG/config.json`` "
 "otherwise."
 msgstr ""
 
-#: ../../rst/modules/docker_prune_module.rst:379
+#: ../../rst/modules/docker_prune_module.rst:380
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/docker_prune_module.rst:403
+#: ../../rst/modules/docker_prune_module.rst:414
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/docker_prune_module.rst:404
+#: ../../rst/modules/docker_prune_module.rst:415
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/docker_prune_module.rst:523
+#: ../../rst/modules/docker_prune_module.rst:534
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/docker_prune_module.rst:528
+#: ../../rst/modules/docker_prune_module.rst:539
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/docker_prune_module.rst:531
+#: ../../rst/modules/docker_prune_module.rst:542
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/docker_prune_module.rst:538
+#: ../../rst/modules/docker_prune_module.rst:549
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/docker_prune_module.rst:540
+#: ../../rst/modules/docker_prune_module.rst:551
 msgid "Felix Fontein (@felixfontein)"
 msgstr ""
 
-#: ../../rst/modules/docker_prune_module.rst:544
+#: ../../rst/modules/docker_prune_module.rst:555
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/docker/docker_prune.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/docker/docker_prune.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "python >= 2.6"
+#~ msgstr ""
+
+#~ msgid "docker >= 2.1.0"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Please note that the `docker-py "
+#~ "<https://pypi.org/project/docker-py/>`_ Python "
+#~ "module has been superseded by `docker"
+#~ " <https://pypi.org/project/docker/>`_ (see `here "
+#~ "<https://github.com/docker/docker-py/issues/1310>`_ for"
+#~ " details). Version 2.1.0 or newer is"
+#~ " only available with the ``docker`` "
+#~ "module."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Note that the Docker SDK for "
+#~ "Python only allows to specify the "
+#~ "path to the Docker configuration for "
+#~ "very few functions. In general, it "
+#~ "will use ``$HOME/docker/config.json`` if the"
+#~ " ``DOCKER_CONFIG`` environment variable is "
+#~ "not specified, and use "
+#~ "``$DOCKER_CONFIG/config.json`` otherwise."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/docker/docker_prune.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,110 +36,118 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/nxos_rpm_module.rst:304
+#: ../../rst/modules/nxos_rpm_module.rst:307
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/nxos_rpm_module.rst:307
+#: ../../rst/modules/nxos_rpm_module.rst:310
 msgid ""
 "Tested against NXOSv 7.0(3)I2(5), 7.0(3)I4(6), 7.0(3)I5(3), 7.0(3)I6(1), "
 "7.0(3)I7(3)"
 msgstr ""
 
-#: ../../rst/modules/nxos_rpm_module.rst:308
+#: ../../rst/modules/nxos_rpm_module.rst:311
 msgid "For patches, the minimum platform version needed is 7.0(3)I2(5)"
 msgstr ""
 
-#: ../../rst/modules/nxos_rpm_module.rst:309
+#: ../../rst/modules/nxos_rpm_module.rst:312
 msgid "For feature rpms, the minimum platform version needed is 7.0(3)I6(1)"
 msgstr ""
 
-#: ../../rst/modules/nxos_rpm_module.rst:310
+#: ../../rst/modules/nxos_rpm_module.rst:313
 msgid ""
 "The module manages the entire RPM lifecycle (Add, activate, commit, "
 "deactivate, remove)"
 msgstr ""
 
-#: ../../rst/modules/nxos_rpm_module.rst:311
+#: ../../rst/modules/nxos_rpm_module.rst:314
 msgid ""
 "For reload patches, this module is NOT idempotent until the patch is "
 "committed."
 msgstr ""
 
-#: ../../rst/modules/nxos_rpm_module.rst:312
+#: ../../rst/modules/nxos_rpm_module.rst:315
 msgid ""
 "For information on using CLI and NX-API see the :ref:`NXOS Platform "
 "Options guide <nxos_platform_options>`"
 msgstr ""
 
-#: ../../rst/modules/nxos_rpm_module.rst:313
+#: ../../rst/modules/nxos_rpm_module.rst:316
 msgid ""
 "For more information on using Ansible to manage network devices see the "
 ":ref:`Ansible Network Guide <network_guide>`"
 msgstr ""
 
-#: ../../rst/modules/nxos_rpm_module.rst:314
+#: ../../rst/modules/nxos_rpm_module.rst:317
 msgid ""
 "For more information on using Ansible to manage Cisco devices see the "
 "`Cisco integration page "
 "<https://www.ansible.com/integrations/networks/cisco>`_."
 msgstr ""
 
-#: ../../rst/modules/nxos_rpm_module.rst:319
+#: ../../rst/modules/nxos_rpm_module.rst:322
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/nxos_rpm_module.rst:331
+#: ../../rst/modules/nxos_rpm_module.rst:334
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/nxos_rpm_module.rst:332
+#: ../../rst/modules/nxos_rpm_module.rst:335
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/nxos_rpm_module.rst:360
+#: ../../rst/modules/nxos_rpm_module.rst:363
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/nxos_rpm_module.rst:365
+#: ../../rst/modules/nxos_rpm_module.rst:368
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/nxos_rpm_module.rst:368
+#: ../../rst/modules/nxos_rpm_module.rst:371
 msgid ""
 "This module is :ref:`maintained by the Ansible Network Team "
 "<modules_support>`. *[network]*"
 msgstr ""
 
-#: ../../rst/modules/nxos_rpm_module.rst:371
+#: ../../rst/modules/nxos_rpm_module.rst:374
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/nxos_rpm_module.rst:373
+#: ../../rst/modules/nxos_rpm_module.rst:376
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/nxos_rpm_module.rst:379
+#: ../../rst/modules/nxos_rpm_module.rst:382
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/nxos_rpm_module.rst:381
+#: ../../rst/modules/nxos_rpm_module.rst:384
 msgid "Sai Chintalapudi (@saichint)"
 msgstr ""
 
-#: ../../rst/modules/nxos_rpm_module.rst:385
+#: ../../rst/modules/nxos_rpm_module.rst:388
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_rpm.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_rpm.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_rpm.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

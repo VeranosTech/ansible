@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/plugins/httpapi.rst:4
+msgid "Httpapi Plugins"
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:10
+msgid ""
+"Httpapi plugins tell Ansible how to interact with a remote device's HTTP-"
+"based API and execute tasks on the device."
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:13
+msgid ""
+"Each plugin represents a particular dialect of API. Some are platform-"
+"specific (Arista eAPI, Cisco NXAPI), while others might be usable on a "
+"variety of platforms (RESTCONF)."
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:19
+msgid "Adding httpapi plugins"
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:21
+msgid ""
+"You can extend Ansible to support other APIs by dropping a custom plugin "
+"into the ``httpapi_plugins`` directory. See "
+":ref:`developing_plugins_httpapi` for details."
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:26
+msgid "Using httpapi plugins"
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:28
+msgid ""
+"The httpapi plugin to use is determined automatically from the "
+"``ansible_network_os`` variable."
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:30
+msgid ""
+"Most httpapi plugins can operate without configuration. Additional "
+"options may be defined by each plugin."
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:32
+msgid ""
+"Plugins are self-documenting. Each plugin should document its "
+"configuration options."
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:38
+msgid "Plugin List"
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:40
+msgid ""
+"You can use ``ansible-doc -t httpapi -l`` to see the list of available "
+"plugins. Use ``ansible-doc -t httpapi <plugin name>`` to see detailed "
+"documentation and examples."
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:52
+msgid ":ref:`Ansible for Network Automation<network_guide>`"
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:53
+msgid "An overview of using Ansible to automate networking devices."
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:54
+msgid ":ref:`Developing network modules<developing_modules_network>`"
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:55
+msgid "How to develop network modules."
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:56
+msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:57
+msgid "Have a question?  Stop by the google group!"
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:58
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:59
+msgid "#ansible-network IRC chat channel"
+msgstr ""
+

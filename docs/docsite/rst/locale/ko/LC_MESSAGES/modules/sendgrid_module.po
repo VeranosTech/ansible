@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,92 +22,100 @@ msgstr ""
 msgid "sendgrid -- Sends an email with the SendGrid API"
 msgstr ""
 
-#: ../../rst/modules/sendgrid_module.rst:19
+#: ../../rst/modules/sendgrid_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/sendgrid_module.rst:20
+#: ../../rst/modules/sendgrid_module.rst:19
 msgid ""
 "Sends an email with a SendGrid account through their API, not through the"
 " SMTP service."
 msgstr ""
 
-#: ../../rst/modules/sendgrid_module.rst:25
+#: ../../rst/modules/sendgrid_module.rst:24
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/sendgrid_module.rst:26
+#: ../../rst/modules/sendgrid_module.rst:25
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/sendgrid_module.rst:28
+#: ../../rst/modules/sendgrid_module.rst:27
 msgid "sendgrid python library"
 msgstr ""
 
-#: ../../rst/modules/sendgrid_module.rst:32
+#: ../../rst/modules/sendgrid_module.rst:31
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/sendgrid_module.rst:209
+#: ../../rst/modules/sendgrid_module.rst:208
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/sendgrid_module.rst:212
+#: ../../rst/modules/sendgrid_module.rst:211
 msgid ""
 "This module is non-idempotent because it sends an email through the "
 "external API. It is idempotent only in the case that the module fails."
 msgstr ""
 
-#: ../../rst/modules/sendgrid_module.rst:213
+#: ../../rst/modules/sendgrid_module.rst:212
 msgid ""
 "Like the other notification modules, this one requires an external "
 "dependency to work. In this case, you'll need an active SendGrid account."
 msgstr ""
 
-#: ../../rst/modules/sendgrid_module.rst:214
+#: ../../rst/modules/sendgrid_module.rst:213
 msgid ""
 "In order to use api_key, cc, bcc, attachments, from_name, html_body, "
 "headers you must pip install sendgrid"
 msgstr ""
 
-#: ../../rst/modules/sendgrid_module.rst:215
+#: ../../rst/modules/sendgrid_module.rst:214
 msgid "since 2.2 username and password are not required if you supply an api_key"
 msgstr ""
 
-#: ../../rst/modules/sendgrid_module.rst:220
+#: ../../rst/modules/sendgrid_module.rst:219
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/sendgrid_module.rst:253
+#: ../../rst/modules/sendgrid_module.rst:252
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/sendgrid_module.rst:258
+#: ../../rst/modules/sendgrid_module.rst:257
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/sendgrid_module.rst:261
+#: ../../rst/modules/sendgrid_module.rst:260
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/sendgrid_module.rst:268
+#: ../../rst/modules/sendgrid_module.rst:267
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/sendgrid_module.rst:270
+#: ../../rst/modules/sendgrid_module.rst:269
 msgid "Matt Makai (@makaimc)"
 msgstr ""
 
-#: ../../rst/modules/sendgrid_module.rst:274
+#: ../../rst/modules/sendgrid_module.rst:273
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/notification/sendgrid.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/notification/sendgrid.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/notification/sendgrid.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,7 +40,7 @@ msgid ""
 "Ansible integrates all of these options via a dynamic external inventory "
 "system. Ansible supports two ways to connect with external inventory:  "
 ":ref:`inventory_plugins` and `inventory scripts "
-"<https://github.com/ansible/ansible/tree/devel/contrib/inventory>`."
+"<https://github.com/ansible/ansible/tree/devel/contrib/inventory>`_."
 msgstr ""
 
 #: ../../rst/user_guide/intro_dynamic_inventory.rst:15
@@ -698,7 +698,7 @@ msgid ""
 msgstr ""
 
 #: ../../rst/user_guide/intro_dynamic_inventory.rst:359
-msgid ":doc:`intro_inventory`"
+msgid ":ref:`intro_inventory`"
 msgstr ""
 
 #: ../../rst/user_guide/intro_dynamic_inventory.rst:360
@@ -720,4 +720,16 @@ msgstr ""
 #: ../../rst/user_guide/intro_dynamic_inventory.rst:364
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ""
+#~ "Ansible integrates all of these options"
+#~ " via a dynamic external inventory "
+#~ "system. Ansible supports two ways to "
+#~ "connect with external inventory:  "
+#~ ":ref:`inventory_plugins` and `inventory scripts "
+#~ "<https://github.com/ansible/ansible/tree/devel/contrib/inventory>`."
+#~ msgstr ""
+
+#~ msgid ":doc:`intro_inventory`"
+#~ msgstr ""
 

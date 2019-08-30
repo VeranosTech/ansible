@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,35 +43,38 @@ msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
 #: ../../rst/modules/docker_swarm_module.rst:29
-msgid "python >= 2.7"
+msgid "Docker API >= 1.25"
 msgstr ""
 
 #: ../../rst/modules/docker_swarm_module.rst:30
-msgid "docker >= 2.6.0"
+msgid ""
+"Docker SDK for Python: Please note that the `docker-py "
+"<https://pypi.org/project/docker-py/>`_ Python module has been superseded"
+" by `docker <https://pypi.org/project/docker/>`_ (see `here "
+"<https://github.com/docker/docker-py/issues/1310>`_ for details). For "
+"Python 2.6, ``docker-py`` must be used. Otherwise, it is recommended to "
+"install the ``docker`` Python module. Note that both modules should *not*"
+" be installed at the same time. Also note that when both modules are "
+"installed and one of them is uninstalled, the other might no longer "
+"function and a reinstall of it is required."
 msgstr ""
 
 #: ../../rst/modules/docker_swarm_module.rst:31
 msgid ""
-"Please note that the `docker-py <https://pypi.org/project/docker-py/>`_ "
-"Python module has been superseded by `docker "
-"<https://pypi.org/project/docker/>`_ (see `here "
-"<https://github.com/docker/docker-py/issues/1310>`_ for details). Version"
-" 2.1.0 or newer is only available with the ``docker`` module."
+"`Docker SDK for Python <https://docker-py.readthedocs.io/en/stable/>`_ >="
+" 1.10.0 (use `docker-py <https://pypi.org/project/docker-py/>`_ for "
+"Python 2.6)"
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_module.rst:32
-msgid "Docker API >= 1.25"
-msgstr ""
-
-#: ../../rst/modules/docker_swarm_module.rst:36
+#: ../../rst/modules/docker_swarm_module.rst:35
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_module.rst:571
+#: ../../rst/modules/docker_swarm_module.rst:611
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_module.rst:574
+#: ../../rst/modules/docker_swarm_module.rst:614
 msgid ""
 "Connect to the Docker daemon by providing parameters with each task or by"
 " defining environment variables. You can define ``DOCKER_HOST``, "
@@ -83,7 +86,7 @@ msgid ""
 "py.readthedocs.io/en/stable/machine/ for more details."
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_module.rst:575
+#: ../../rst/modules/docker_swarm_module.rst:615
 msgid ""
 "When connecting to Docker daemon with TLS, you might need to install "
 "additional Python packages. For the Docker SDK for Python, version 2.4 or"
@@ -91,59 +94,99 @@ msgid ""
 "<pip_module>`."
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_module.rst:576
+#: ../../rst/modules/docker_swarm_module.rst:616
 msgid ""
 "Note that the Docker SDK for Python only allows to specify the path to "
 "the Docker configuration for very few functions. In general, it will use "
-"``$HOME/docker/config.json`` if the ``DOCKER_CONFIG`` environment "
+"``$HOME/.docker/config.json`` if the ``DOCKER_CONFIG`` environment "
 "variable is not specified, and use ``$DOCKER_CONFIG/config.json`` "
 "otherwise."
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_module.rst:581
+#: ../../rst/modules/docker_swarm_module.rst:621
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_module.rst:626
+#: ../../rst/modules/docker_swarm_module.rst:666
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_module.rst:627
+#: ../../rst/modules/docker_swarm_module.rst:667
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_module.rst:704
+#: ../../rst/modules/docker_swarm_module.rst:756
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_module.rst:709
+#: ../../rst/modules/docker_swarm_module.rst:761
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_module.rst:712
+#: ../../rst/modules/docker_swarm_module.rst:764
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_module.rst:719
+#: ../../rst/modules/docker_swarm_module.rst:771
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_module.rst:721
+#: ../../rst/modules/docker_swarm_module.rst:773
 msgid "Thierry Bouvet (@tbouvet)"
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_module.rst:725
+#: ../../rst/modules/docker_swarm_module.rst:774
+msgid "Piotr Wojciechowski (@WojciechowskiPiotr)"
+msgstr ""
+
+#: ../../rst/modules/docker_swarm_module.rst:778
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/docker/docker_swarm.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/docker/docker_swarm.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "python >= 2.7"
+#~ msgstr ""
+
+#~ msgid "docker >= 2.6.0"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Please note that the `docker-py "
+#~ "<https://pypi.org/project/docker-py/>`_ Python "
+#~ "module has been superseded by `docker"
+#~ " <https://pypi.org/project/docker/>`_ (see `here "
+#~ "<https://github.com/docker/docker-py/issues/1310>`_ for"
+#~ " details). Version 2.1.0 or newer is"
+#~ " only available with the ``docker`` "
+#~ "module."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Note that the Docker SDK for "
+#~ "Python only allows to specify the "
+#~ "path to the Docker configuration for "
+#~ "very few functions. In general, it "
+#~ "will use ``$HOME/docker/config.json`` if the"
+#~ " ``DOCKER_CONFIG`` environment variable is "
+#~ "not specified, and use "
+#~ "``$DOCKER_CONFIG/config.json`` otherwise."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/docker/docker_swarm.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,65 +48,72 @@ msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
 #: ../../rst/modules/spotinst_aws_elastigroup_module.rst:28
-msgid "spotinst >= 1.0.21"
-msgstr ""
-
-#: ../../rst/modules/spotinst_aws_elastigroup_module.rst:29
 msgid "python >= 2.7"
 msgstr ""
 
-#: ../../rst/modules/spotinst_aws_elastigroup_module.rst:30
+#: ../../rst/modules/spotinst_aws_elastigroup_module.rst:29
 msgid "spotinst_sdk >= 1.0.38"
 msgstr ""
 
-#: ../../rst/modules/spotinst_aws_elastigroup_module.rst:34
+#: ../../rst/modules/spotinst_aws_elastigroup_module.rst:33
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/spotinst_aws_elastigroup_module.rst:895
+#: ../../rst/modules/spotinst_aws_elastigroup_module.rst:894
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/spotinst_aws_elastigroup_module.rst:1158
+#: ../../rst/modules/spotinst_aws_elastigroup_module.rst:1157
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/spotinst_aws_elastigroup_module.rst:1159
+#: ../../rst/modules/spotinst_aws_elastigroup_module.rst:1158
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/spotinst_aws_elastigroup_module.rst:1200
+#: ../../rst/modules/spotinst_aws_elastigroup_module.rst:1199
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/spotinst_aws_elastigroup_module.rst:1205
+#: ../../rst/modules/spotinst_aws_elastigroup_module.rst:1204
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/spotinst_aws_elastigroup_module.rst:1208
+#: ../../rst/modules/spotinst_aws_elastigroup_module.rst:1207
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/spotinst_aws_elastigroup_module.rst:1215
+#: ../../rst/modules/spotinst_aws_elastigroup_module.rst:1214
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/spotinst_aws_elastigroup_module.rst:1217
+#: ../../rst/modules/spotinst_aws_elastigroup_module.rst:1216
 msgid "Spotinst (@talzur)"
 msgstr ""
 
-#: ../../rst/modules/spotinst_aws_elastigroup_module.rst:1221
+#: ../../rst/modules/spotinst_aws_elastigroup_module.rst:1220
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/spotinst/spotinst_aws_elastigroup.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/spotinst/spotinst_aws_elastigroup.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "spotinst >= 1.0.21"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/spotinst/spotinst_aws_elastigroup.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

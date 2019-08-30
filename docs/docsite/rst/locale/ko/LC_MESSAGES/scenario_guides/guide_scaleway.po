@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/scenario_guides/guide_scaleway.rst:5
-msgid "Using Scaleway with Ansible"
+msgid "Scaleway Guide"
 msgstr ""
 
 #: ../../rst/scenario_guides/guide_scaleway.rst:10
@@ -193,24 +193,28 @@ msgid ""
 "command:"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_scaleway.rst:239
+#: ../../rst/scenario_guides/guide_scaleway.rst:200
+msgid "The output will be:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_scaleway.rst:243
 msgid ""
 "As you can see, we get different groups of hosts. ``par1`` and ``ams1`` "
 "are groups based on location. ``web_server`` is a group based on a tag."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_scaleway.rst:243
+#: ../../rst/scenario_guides/guide_scaleway.rst:247
 msgid ""
 "In case a filter parameter is not defined, the plugin supposes all values"
 " possible are wanted. This means that for each tag that exists on your "
 "Scaleway compute nodes, a group based on each tag will be created."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_scaleway.rst:247
+#: ../../rst/scenario_guides/guide_scaleway.rst:251
 msgid "Scaleway S3 object storage"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_scaleway.rst:249
+#: ../../rst/scenario_guides/guide_scaleway.rst:253
 msgid ""
 "`Object Storage <https://www.scaleway.com/object-storage>`_ allows you to"
 " store any kind of objects (documents, images, videos, etc.). As the "
@@ -218,7 +222,10 @@ msgid ""
 "modules: :ref:`s3_bucket_module`, :ref:`aws_s3_module`."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_scaleway.rst:252
+#: ../../rst/scenario_guides/guide_scaleway.rst:256
 msgid "You can find many examples in ``./test/legacy/roles/scaleway_s3``"
 msgstr ""
+
+#~ msgid "Using Scaleway with Ansible"
+#~ msgstr ""
 

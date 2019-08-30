@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,47 +22,47 @@ msgstr ""
 msgid "cs_template -- Manages templates on Apache CloudStack based clouds"
 msgstr ""
 
-#: ../../rst/modules/cs_template_module.rst:19
+#: ../../rst/modules/cs_template_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/cs_template_module.rst:20
+#: ../../rst/modules/cs_template_module.rst:19
 msgid "Register templates from an URL."
 msgstr ""
 
-#: ../../rst/modules/cs_template_module.rst:21
+#: ../../rst/modules/cs_template_module.rst:20
 msgid "Create templates from a ROOT volume of a stopped VM or its snapshot."
 msgstr ""
 
-#: ../../rst/modules/cs_template_module.rst:22
+#: ../../rst/modules/cs_template_module.rst:21
 msgid "Update (since version 2.7), extract and delete templates."
 msgstr ""
 
-#: ../../rst/modules/cs_template_module.rst:27
+#: ../../rst/modules/cs_template_module.rst:26
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/cs_template_module.rst:28
+#: ../../rst/modules/cs_template_module.rst:27
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/cs_template_module.rst:30
+#: ../../rst/modules/cs_template_module.rst:29
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/cs_template_module.rst:31
+#: ../../rst/modules/cs_template_module.rst:30
 msgid "cs >= 0.6.10"
 msgstr ""
 
-#: ../../rst/modules/cs_template_module.rst:35
+#: ../../rst/modules/cs_template_module.rst:34
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/cs_template_module.rst:683
+#: ../../rst/modules/cs_template_module.rst:663
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/cs_template_module.rst:686
+#: ../../rst/modules/cs_template_module.rst:666
 msgid ""
 "Ansible uses the ``cs`` library's configuration method if credentials are"
 " not provided by the arguments ``api_url``, ``api_key``, ``api_secret``. "
@@ -78,60 +78,68 @@ msgid ""
 "https://github.com/exoscale/cs for more information."
 msgstr ""
 
-#: ../../rst/modules/cs_template_module.rst:687
+#: ../../rst/modules/cs_template_module.rst:667
 msgid ""
 "A detailed guide about cloudstack modules can be found in the `CloudStack"
 " Cloud Guide <../scenario_guides/guide_cloudstack.html>`_."
 msgstr ""
 
-#: ../../rst/modules/cs_template_module.rst:688
+#: ../../rst/modules/cs_template_module.rst:668
 msgid "This module supports check mode."
 msgstr ""
 
-#: ../../rst/modules/cs_template_module.rst:693
+#: ../../rst/modules/cs_template_module.rst:673
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/cs_template_module.rst:752
+#: ../../rst/modules/cs_template_module.rst:732
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/cs_template_module.rst:753
+#: ../../rst/modules/cs_template_module.rst:733
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/cs_template_module.rst:1100
+#: ../../rst/modules/cs_template_module.rst:1080
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/cs_template_module.rst:1105
+#: ../../rst/modules/cs_template_module.rst:1085
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/cs_template_module.rst:1108
+#: ../../rst/modules/cs_template_module.rst:1088
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/cs_template_module.rst:1115
+#: ../../rst/modules/cs_template_module.rst:1095
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/cs_template_module.rst:1117
+#: ../../rst/modules/cs_template_module.rst:1097
 msgid "René Moser (@resmo)"
 msgstr ""
 
-#: ../../rst/modules/cs_template_module.rst:1121
+#: ../../rst/modules/cs_template_module.rst:1101
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/cloudstack/cs_template.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/cloudstack/cs_template.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/cloudstack/cs_template.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

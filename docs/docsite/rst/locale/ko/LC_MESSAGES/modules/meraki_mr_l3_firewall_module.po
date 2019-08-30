@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,58 +34,83 @@ msgid ""
 "implemented on Meraki MR access points."
 msgstr ""
 
-#: ../../rst/modules/meraki_mr_l3_firewall_module.rst:26
+#: ../../rst/modules/meraki_mr_l3_firewall_module.rst:21
+msgid "Module is not idempotent as of current release."
+msgstr ""
+
+#: ../../rst/modules/meraki_mr_l3_firewall_module.rst:27
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/meraki_mr_l3_firewall_module.rst:361
+#: ../../rst/modules/meraki_mr_l3_firewall_module.rst:407
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/meraki_mr_l3_firewall_module.rst:364
+#: ../../rst/modules/meraki_mr_l3_firewall_module.rst:410
 msgid ""
 "More information about the Meraki API can be found at "
 "https://dashboard.meraki.com/api_docs."
 msgstr ""
 
-#: ../../rst/modules/meraki_mr_l3_firewall_module.rst:365
+#: ../../rst/modules/meraki_mr_l3_firewall_module.rst:411
 msgid "Some of the options are likely only used for developers within Meraki."
 msgstr ""
 
-#: ../../rst/modules/meraki_mr_l3_firewall_module.rst:370
+#: ../../rst/modules/meraki_mr_l3_firewall_module.rst:412
+msgid ""
+"As of Ansible 2.9, Meraki modules output keys as snake case. To use camel"
+" case, set the ``ANSIBLE_MERAKI_FORMAT`` environment variable to "
+"``camelcase``."
+msgstr ""
+
+#: ../../rst/modules/meraki_mr_l3_firewall_module.rst:413
+msgid ""
+"Ansible's Meraki modules will stop supporting camel case output in "
+"Ansible 2.13. Please update your playbooks."
+msgstr ""
+
+#: ../../rst/modules/meraki_mr_l3_firewall_module.rst:418
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/meraki_mr_l3_firewall_module.rst:416
+#: ../../rst/modules/meraki_mr_l3_firewall_module.rst:464
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/meraki_mr_l3_firewall_module.rst:421
+#: ../../rst/modules/meraki_mr_l3_firewall_module.rst:469
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/meraki_mr_l3_firewall_module.rst:424
+#: ../../rst/modules/meraki_mr_l3_firewall_module.rst:472
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/meraki_mr_l3_firewall_module.rst:431
+#: ../../rst/modules/meraki_mr_l3_firewall_module.rst:479
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/meraki_mr_l3_firewall_module.rst:433
+#: ../../rst/modules/meraki_mr_l3_firewall_module.rst:481
 msgid "Kevin Breit (@kbreit)"
 msgstr ""
 
-#: ../../rst/modules/meraki_mr_l3_firewall_module.rst:437
+#: ../../rst/modules/meraki_mr_l3_firewall_module.rst:485
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/meraki/meraki_mr_l3_firewall.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/meraki/meraki_mr_l3_firewall.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/meraki/meraki_mr_l3_firewall.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

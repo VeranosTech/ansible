@@ -1,0 +1,119 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/win_format_module.rst:9
+msgid ""
+"win_format -- Formats an existing volume or a new volume on an existing "
+"partition on Windows"
+msgstr ""
+
+#: ../../rst/modules/win_format_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/win_format_module.rst:20
+msgid ""
+"The :ref:`win_format <win_format_module>` module formats an existing "
+"volume or a new volume on an existing partition on Windows"
+msgstr ""
+
+#: ../../rst/modules/win_format_module.rst:26
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/win_format_module.rst:214
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/win_format_module.rst:217
+msgid ""
+"One of three parameters (*drive_letter*, *path* and *label*) are "
+"mandatory to identify the target volume but more than one cannot be "
+"specified at the same time."
+msgstr ""
+
+#: ../../rst/modules/win_format_module.rst:218
+msgid ""
+"This module is idempotent if *force* is not specified and file system "
+"labels remain preserved."
+msgstr ""
+
+#: ../../rst/modules/win_format_module.rst:219
+msgid ""
+"For more information, see https://docs.microsoft.com/en-us/previous-"
+"versions/windows/desktop/stormgmt/format-msft-volume"
+msgstr ""
+
+#: ../../rst/modules/win_format_module.rst:223
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/win_format_module.rst:227
+msgid ":ref:`win_disk_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/win_format_module.rst:228
+msgid "The official documentation on the **win_disk_facts** module."
+msgstr ""
+
+#: ../../rst/modules/win_format_module.rst:229
+msgid ":ref:`win_partition_module`"
+msgstr ""
+
+#: ../../rst/modules/win_format_module.rst:230
+msgid "The official documentation on the **win_partition** module."
+msgstr ""
+
+#: ../../rst/modules/win_format_module.rst:234
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/win_format_module.rst:257
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/win_format_module.rst:262
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/win_format_module.rst:265
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/win_format_module.rst:272
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/win_format_module.rst:274
+msgid "Varun Chopra (@chopraaa) <v@chopraaa.com>"
+msgstr ""
+
+#: ../../rst/modules/win_format_module.rst:278
+#, python-format
+msgid ""
+"If you notice any issues in this documentation, you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_format.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

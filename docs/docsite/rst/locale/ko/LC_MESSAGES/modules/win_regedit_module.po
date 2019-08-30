@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,130 +22,138 @@ msgstr ""
 msgid "win_regedit -- Add, change, or remove registry keys and values"
 msgstr ""
 
-#: ../../rst/modules/win_regedit_module.rst:19
+#: ../../rst/modules/win_regedit_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/win_regedit_module.rst:20
+#: ../../rst/modules/win_regedit_module.rst:19
 msgid "Add, modify or remove registry keys and values."
 msgstr ""
 
-#: ../../rst/modules/win_regedit_module.rst:21
+#: ../../rst/modules/win_regedit_module.rst:20
 msgid ""
 "More information about the windows registry from Wikipedia "
 "https://en.wikipedia.org/wiki/Windows_Registry."
 msgstr ""
 
-#: ../../rst/modules/win_regedit_module.rst:27
+#: ../../rst/modules/win_regedit_module.rst:26
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/win_regedit_module.rst:165
+#: ../../rst/modules/win_regedit_module.rst:164
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/win_regedit_module.rst:168
+#: ../../rst/modules/win_regedit_module.rst:167
 msgid ""
 "Check-mode ``-C/--check`` and diff output ``-D/--diff`` are supported, so"
 " that you can test every change against the active configuration before "
 "applying changes."
 msgstr ""
 
-#: ../../rst/modules/win_regedit_module.rst:169
+#: ../../rst/modules/win_regedit_module.rst:168
 msgid ""
 "Beware that some registry hives (``HKEY_USERS`` in particular) do not "
 "allow to create new registry paths in the root folder."
 msgstr ""
 
-#: ../../rst/modules/win_regedit_module.rst:170
+#: ../../rst/modules/win_regedit_module.rst:169
 msgid ""
 "Since ansible 2.4, when checking if a string registry value has changed, "
 "a case-sensitive test is used. Previously the test was case-insensitive."
 msgstr ""
 
-#: ../../rst/modules/win_regedit_module.rst:174
+#: ../../rst/modules/win_regedit_module.rst:173
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/win_regedit_module.rst:178
+#: ../../rst/modules/win_regedit_module.rst:177
 msgid ":ref:`win_reg_stat_module`"
 msgstr ""
 
-#: ../../rst/modules/win_regedit_module.rst:179
+#: ../../rst/modules/win_regedit_module.rst:178
 msgid "The official documentation on the **win_reg_stat** module."
 msgstr ""
 
-#: ../../rst/modules/win_regedit_module.rst:180
+#: ../../rst/modules/win_regedit_module.rst:179
 msgid ":ref:`win_regmerge_module`"
 msgstr ""
 
-#: ../../rst/modules/win_regedit_module.rst:181
+#: ../../rst/modules/win_regedit_module.rst:180
 msgid "The official documentation on the **win_regmerge** module."
 msgstr ""
 
-#: ../../rst/modules/win_regedit_module.rst:185
+#: ../../rst/modules/win_regedit_module.rst:184
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/win_regedit_module.rst:287
+#: ../../rst/modules/win_regedit_module.rst:286
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/win_regedit_module.rst:288
+#: ../../rst/modules/win_regedit_module.rst:287
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/win_regedit_module.rst:327
+#: ../../rst/modules/win_regedit_module.rst:326
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/win_regedit_module.rst:332
+#: ../../rst/modules/win_regedit_module.rst:331
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/win_regedit_module.rst:335
+#: ../../rst/modules/win_regedit_module.rst:334
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/win_regedit_module.rst:338
+#: ../../rst/modules/win_regedit_module.rst:337
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/win_regedit_module.rst:340
+#: ../../rst/modules/win_regedit_module.rst:339
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/win_regedit_module.rst:346
+#: ../../rst/modules/win_regedit_module.rst:345
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/win_regedit_module.rst:348
+#: ../../rst/modules/win_regedit_module.rst:347
 msgid "Adam Keech (@smadam813)"
 msgstr ""
 
-#: ../../rst/modules/win_regedit_module.rst:349
+#: ../../rst/modules/win_regedit_module.rst:348
 msgid "Josh Ludwig (@joshludwig)"
 msgstr ""
 
-#: ../../rst/modules/win_regedit_module.rst:350
+#: ../../rst/modules/win_regedit_module.rst:349
 msgid "Jordan Borean (@jborean93)"
 msgstr ""
 
-#: ../../rst/modules/win_regedit_module.rst:354
+#: ../../rst/modules/win_regedit_module.rst:353
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_regedit.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_regedit.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_regedit.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

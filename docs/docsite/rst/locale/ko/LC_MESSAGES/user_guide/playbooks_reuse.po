@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,9 +67,9 @@ msgstr ""
 
 #: ../../rst/user_guide/playbooks_reuse.rst:27
 msgid ""
-"If you use any ``import*`` Task (``import_playbook``, ``import_tasks``, "
-"etc.), it will be *static*. If you use any ``include*`` Task "
-"(``include_tasks``, ``include_role``, etc.), it will be *dynamic*."
+"If you use any ``include*`` Task (``include_tasks``, ``include_role``, "
+"etc.), it will be *dynamic*. If you use any ``import*`` Task "
+"(``import_playbook``, ``import_tasks``, etc.), it will be *static*."
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_reuse.rst:30
@@ -80,7 +80,7 @@ msgid ""
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_reuse.rst:33
-msgid "Differences Between Static and Dynamic"
+msgid "Differences Between Dynamic and Static"
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_reuse.rst:35
@@ -88,13 +88,13 @@ msgid "The two modes of operation are pretty simple:"
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_reuse.rst:37
-msgid "Ansible pre-processes all static imports during Playbook parsing time."
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_reuse.rst:38
 msgid ""
 "Dynamic includes are processed during runtime at the point in which that "
 "task is encountered."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_reuse.rst:38
+msgid "Ansible pre-processes all static imports during Playbook parsing time."
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_reuse.rst:40
@@ -105,14 +105,14 @@ msgstr ""
 
 #: ../../rst/user_guide/playbooks_reuse.rst:42
 msgid ""
-"For static imports, the parent task options will be copied to all child "
-"tasks contained within the import."
+"For dynamic includes, the task options will *only* apply to the dynamic "
+"task as it is evaluated, and will not be copied to child tasks."
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_reuse.rst:43
 msgid ""
-"For dynamic includes, the task options will *only* apply to the dynamic "
-"task as it is evaluated, and will not be copied to child tasks."
+"For static imports, the parent task options will be copied to all child "
+"tasks contained within the import."
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_reuse.rst:46
@@ -266,4 +266,16 @@ msgstr ""
 #: ../../rst/user_guide/playbooks_reuse.rst:89
 msgid "Questions? Help? Ideas?  Stop by the list on Google Groups"
 msgstr ""
+
+#~ msgid ""
+#~ "If you use any ``import*`` Task "
+#~ "(``import_playbook``, ``import_tasks``, etc.), it"
+#~ " will be *static*. If you use "
+#~ "any ``include*`` Task (``include_tasks``, "
+#~ "``include_role``, etc.), it will be "
+#~ "*dynamic*."
+#~ msgstr ""
+
+#~ msgid "Differences Between Static and Dynamic"
+#~ msgstr ""
 

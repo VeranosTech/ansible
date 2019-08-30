@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,117 +22,160 @@ msgstr ""
 msgid "nxos_linkagg -- Manage link aggregation groups on Cisco NXOS devices"
 msgstr ""
 
+#: ../../rst/modules/nxos_linkagg_module.rst:18
+msgid "DEPRECATED"
+msgstr ""
+
+#: ../../rst/modules/nxos_linkagg_module.rst
+msgid "Removed in Ansible"
+msgstr ""
+
 #: ../../rst/modules/nxos_linkagg_module.rst:19
-msgid "Synopsis"
+msgid "version: 2.13"
+msgstr ""
+
+#: ../../rst/modules/nxos_linkagg_module.rst
+msgid "Why"
 msgstr ""
 
 #: ../../rst/modules/nxos_linkagg_module.rst:20
+msgid "Updated modules released with more functionality."
+msgstr ""
+
+#: ../../rst/modules/nxos_linkagg_module.rst
+msgid "Alternative"
+msgstr ""
+
+#: ../../rst/modules/nxos_linkagg_module.rst:21
+msgid "nxos_lag_interfaces"
+msgstr ""
+
+#: ../../rst/modules/nxos_linkagg_module.rst:26
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/nxos_linkagg_module.rst:27
 msgid ""
 "This module provides declarative management of link aggregation groups on"
 " Cisco NXOS devices."
 msgstr ""
 
-#: ../../rst/modules/nxos_linkagg_module.rst:26
+#: ../../rst/modules/nxos_linkagg_module.rst:33
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/nxos_linkagg_module.rst:368
+#: ../../rst/modules/nxos_linkagg_module.rst:378
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/nxos_linkagg_module.rst:371
+#: ../../rst/modules/nxos_linkagg_module.rst:381
 msgid "Tested against NXOSv 7.0(3)I5(1)."
 msgstr ""
 
-#: ../../rst/modules/nxos_linkagg_module.rst:372
+#: ../../rst/modules/nxos_linkagg_module.rst:382
 msgid ""
 "``state=absent`` removes the portchannel config and interface if it "
 "already exists. If members to be removed are not explicitly passed, all "
 "existing members (if any), are removed."
 msgstr ""
 
-#: ../../rst/modules/nxos_linkagg_module.rst:373
+#: ../../rst/modules/nxos_linkagg_module.rst:383
 msgid "Members must be a list."
 msgstr ""
 
-#: ../../rst/modules/nxos_linkagg_module.rst:374
+#: ../../rst/modules/nxos_linkagg_module.rst:384
 msgid "LACP needs to be enabled first if active/passive modes are used."
 msgstr ""
 
-#: ../../rst/modules/nxos_linkagg_module.rst:375
+#: ../../rst/modules/nxos_linkagg_module.rst:385
 msgid ""
 "For information on using CLI and NX-API see the :ref:`NXOS Platform "
 "Options guide <nxos_platform_options>`"
 msgstr ""
 
-#: ../../rst/modules/nxos_linkagg_module.rst:376
+#: ../../rst/modules/nxos_linkagg_module.rst:386
 msgid ""
 "For more information on using Ansible to manage network devices see the "
 ":ref:`Ansible Network Guide <network_guide>`"
 msgstr ""
 
-#: ../../rst/modules/nxos_linkagg_module.rst:377
+#: ../../rst/modules/nxos_linkagg_module.rst:387
 msgid ""
 "For more information on using Ansible to manage Cisco devices see the "
 "`Cisco integration page "
 "<https://www.ansible.com/integrations/networks/cisco>`_."
 msgstr ""
 
-#: ../../rst/modules/nxos_linkagg_module.rst:382
+#: ../../rst/modules/nxos_linkagg_module.rst:392
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/nxos_linkagg_module.rst:431
+#: ../../rst/modules/nxos_linkagg_module.rst:441
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/nxos_linkagg_module.rst:432
+#: ../../rst/modules/nxos_linkagg_module.rst:442
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/nxos_linkagg_module.rst:460
+#: ../../rst/modules/nxos_linkagg_module.rst:470
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/nxos_linkagg_module.rst:465
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
-msgstr ""
-
-#: ../../rst/modules/nxos_linkagg_module.rst:468
-msgid ""
-"This module is :ref:`maintained by the Ansible Network Team "
-"<modules_support>`. *[network]*"
-msgstr ""
-
-#: ../../rst/modules/nxos_linkagg_module.rst:471
-msgid "Red Hat Support"
-msgstr ""
-
 #: ../../rst/modules/nxos_linkagg_module.rst:473
-msgid ""
-"More information about Red Hat's support of this module is available from"
-" this `Red Hat Knowledge Base article "
-"<https://access.redhat.com/articles/3166901>`_."
+msgid "This module will be removed in version 2.13. *[deprecated]*"
 msgstr ""
 
-#: ../../rst/modules/nxos_linkagg_module.rst:479
+#: ../../rst/modules/nxos_linkagg_module.rst:474
+msgid "For more information see `DEPRECATED`_."
+msgstr ""
+
+#: ../../rst/modules/nxos_linkagg_module.rst:478
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/nxos_linkagg_module.rst:481
+#: ../../rst/modules/nxos_linkagg_module.rst:480
 msgid "Trishna Guha (@trishnaguha)"
 msgstr ""
 
-#: ../../rst/modules/nxos_linkagg_module.rst:485
+#: ../../rst/modules/nxos_linkagg_module.rst:484
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_linkagg.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/_nxos_linkagg.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Network Team <modules_support>`. "
+#~ "*[network]*"
+#~ msgstr ""
+
+#~ msgid "Red Hat Support"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "More information about Red Hat's support"
+#~ " of this module is available from "
+#~ "this `Red Hat Knowledge Base article "
+#~ "<https://access.redhat.com/articles/3166901>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_linkagg.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

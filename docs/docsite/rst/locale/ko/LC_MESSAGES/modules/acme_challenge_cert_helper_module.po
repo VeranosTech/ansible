@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,11 +70,11 @@ msgstr ""
 #: ../../rst/modules/acme_challenge_cert_helper_module.rst:111
 msgid ""
 "`Automatic Certificate Management Environment (ACME) "
-"<https://tools.ietf.org/html/draft-ietf-acme-acme-18>`_"
+"<https://tools.ietf.org/html/rfc8555>`_"
 msgstr ""
 
 #: ../../rst/modules/acme_challenge_cert_helper_module.rst:112
-msgid "The current draft specification of the ACME protocol."
+msgid "The specification of the ACME protocol (RFC 8555)."
 msgstr ""
 
 #: ../../rst/modules/acme_challenge_cert_helper_module.rst:113
@@ -101,36 +101,53 @@ msgid ""
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/acme_challenge_cert_helper_module.rst:217
+#: ../../rst/modules/acme_challenge_cert_helper_module.rst:239
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/acme_challenge_cert_helper_module.rst:222
+#: ../../rst/modules/acme_challenge_cert_helper_module.rst:244
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/acme_challenge_cert_helper_module.rst:225
+#: ../../rst/modules/acme_challenge_cert_helper_module.rst:247
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/acme_challenge_cert_helper_module.rst:232
+#: ../../rst/modules/acme_challenge_cert_helper_module.rst:254
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/acme_challenge_cert_helper_module.rst:234
+#: ../../rst/modules/acme_challenge_cert_helper_module.rst:256
 msgid "Felix Fontein (@felixfontein)"
 msgstr ""
 
-#: ../../rst/modules/acme_challenge_cert_helper_module.rst:238
+#: ../../rst/modules/acme_challenge_cert_helper_module.rst:260
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/crypto/acme/acme_challenge_cert_helper.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/crypto/acme/acme_challenge_cert_helper.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "`Automatic Certificate Management Environment "
+#~ "(ACME) <https://tools.ietf.org/html/draft-ietf-"
+#~ "acme-acme-18>`_"
+#~ msgstr ""
+
+#~ msgid "The current draft specification of the ACME protocol."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/crypto/acme/acme_challenge_cert_helper.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

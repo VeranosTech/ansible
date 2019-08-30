@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,74 +22,118 @@ msgstr ""
 msgid "panos_sag -- Create a static address group"
 msgstr ""
 
+#: ../../rst/modules/panos_sag_module.rst:18
+msgid "DEPRECATED"
+msgstr ""
+
+#: ../../rst/modules/panos_sag_module.rst
+msgid "Removed in Ansible"
+msgstr ""
+
 #: ../../rst/modules/panos_sag_module.rst:19
-msgid "Synopsis"
+msgid "version: 2.12"
+msgstr ""
+
+#: ../../rst/modules/panos_sag_module.rst
+msgid "Why"
 msgstr ""
 
 #: ../../rst/modules/panos_sag_module.rst:20
+msgid "Consolidating code base."
+msgstr ""
+
+#: ../../rst/modules/panos_sag_module.rst
+msgid "Alternative"
+msgstr ""
+
+#: ../../rst/modules/panos_sag_module.rst:21
+msgid "Use https://galaxy.ansible.com/PaloAltoNetworks/paloaltonetworks instead."
+msgstr ""
+
+#: ../../rst/modules/panos_sag_module.rst:26
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/panos_sag_module.rst:27
 msgid ""
 "Create a static address group object in the firewall used for policy "
 "rules."
 msgstr ""
 
-#: ../../rst/modules/panos_sag_module.rst:25
+#: ../../rst/modules/panos_sag_module.rst:32
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/panos_sag_module.rst:26
+#: ../../rst/modules/panos_sag_module.rst:33
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/panos_sag_module.rst:28
+#: ../../rst/modules/panos_sag_module.rst:35
 msgid "pan-python can be obtained from PyPI https://pypi.org/project/pan-python/"
 msgstr ""
 
-#: ../../rst/modules/panos_sag_module.rst:29
+#: ../../rst/modules/panos_sag_module.rst:36
 msgid "pandevice can be obtained from PyPI https://pypi.org/project/pandevice/"
 msgstr ""
 
-#: ../../rst/modules/panos_sag_module.rst:30
+#: ../../rst/modules/panos_sag_module.rst:37
 msgid "xmltodict can be obtained from PyPI https://pypi.org/project/xmltodict/"
 msgstr ""
 
-#: ../../rst/modules/panos_sag_module.rst:34
+#: ../../rst/modules/panos_sag_module.rst:41
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/panos_sag_module.rst:199
+#: ../../rst/modules/panos_sag_module.rst:211
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/panos_sag_module.rst:218
+#: ../../rst/modules/panos_sag_module.rst:230
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/panos_sag_module.rst:223
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
-msgstr ""
-
-#: ../../rst/modules/panos_sag_module.rst:226
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
-msgstr ""
-
 #: ../../rst/modules/panos_sag_module.rst:233
+msgid "This module will be removed in version 2.12. *[deprecated]*"
+msgstr ""
+
+#: ../../rst/modules/panos_sag_module.rst:234
+msgid "For more information see `DEPRECATED`_."
+msgstr ""
+
+#: ../../rst/modules/panos_sag_module.rst:238
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/panos_sag_module.rst:235
+#: ../../rst/modules/panos_sag_module.rst:240
 msgid "Vinay Venkataraghavan (@vinayvenkat)"
 msgstr ""
 
-#: ../../rst/modules/panos_sag_module.rst:239
+#: ../../rst/modules/panos_sag_module.rst:244
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/panos/panos_sag.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/panos/_panos_sag.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/panos/panos_sag.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

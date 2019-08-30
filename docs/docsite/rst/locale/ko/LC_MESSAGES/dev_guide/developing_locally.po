@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,10 +20,6 @@ msgstr ""
 
 #: ../../rst/dev_guide/developing_locally.rst:6
 msgid "Adding modules and plugins locally"
-msgstr ""
-
-#: ../../rst/dev_guide/developing_locally.rst:9
-msgid "Topics"
 msgstr ""
 
 #: ../../rst/dev_guide/developing_locally.rst:11
@@ -90,14 +86,16 @@ msgid ""
 "API, the :command:`ansible` command, or the :command:`ansible-playbook` "
 "command. Modules provide a defined interface, accepting arguments and "
 "returning information to Ansible by printing a JSON string to stdout "
-"before exiting."
+"before exiting. Modules execute on the target system (usually that means "
+"on a remote system) in separate processes."
 msgstr ""
 
 #: ../../rst/dev_guide/developing_locally.rst:30
 msgid ""
-"Plugins are shared code that can be used by any module. They provide "
-"abilities like caching information or copying files that are useful for "
-"many modules."
+":ref:`Plugins <plugins_lookup>` augment Ansible's core functionality and "
+"execute on the control node within the ``/usr/bin/ansible`` process. "
+"Plugins offer options and extensions for the core features of Ansible - "
+"transforming data, logging output, connecting to inventory, and more."
 msgstr ""
 
 #: ../../rst/dev_guide/developing_locally.rst:35
@@ -215,7 +213,9 @@ msgid "vars_plugins"
 msgstr ""
 
 #: ../../rst/dev_guide/developing_locally.rst:75
-msgid "You can create or add a local plugin in any of these locations:"
+msgid ""
+"To load your local plugins automatically, create or add them in any of "
+"these locations:"
 msgstr ""
 
 #: ../../rst/dev_guide/developing_locally.rst:77
@@ -229,21 +229,23 @@ msgstr ""
 #: ../../rst/dev_guide/developing_locally.rst:78
 msgid ""
 "the directory named for the correct ``plugin_type`` within "
-"``~/.ansible/plugins/`` - for example, "
-"``~/.ansible/plugins/callback_plugins``"
+"``~/.ansible/plugins/`` - for example, ``~/.ansible/plugins/callback``"
 msgstr ""
 
 #: ../../rst/dev_guide/developing_locally.rst:79
 msgid ""
 "the directory named for the correct ``plugin_type`` within "
 "``/usr/share/ansible/plugins/`` - for example, "
-"``/usr/share/ansible/plugins/plugin_type/action_plugins``"
+"``/usr/share/ansible/plugins/action``"
 msgstr ""
 
 #: ../../rst/dev_guide/developing_locally.rst:81
 msgid ""
 "Once your plugin file is in one of these locations, Ansible will load it "
-"and you can use it in a any local module, task, playbook, or role."
+"and you can use it in a any local module, task, playbook, or role. "
+"Alternatively, you can edit your ``ansible.cfg`` file to add directories "
+"that contain local plugins - see :ref:`ansible_configuration_settings` "
+"for details."
 msgstr ""
 
 #: ../../rst/dev_guide/developing_locally.rst:83
@@ -285,4 +287,50 @@ msgid ""
 "When shipped as part of a role, the plugin will be available as soon as "
 "the role is called in the play."
 msgstr ""
+
+#~ msgid "Topics"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Modules are reusable, standalone scripts "
+#~ "that can be used by the Ansible"
+#~ " API, the :command:`ansible` command, or"
+#~ " the :command:`ansible-playbook` command. "
+#~ "Modules provide a defined interface, "
+#~ "accepting arguments and returning information"
+#~ " to Ansible by printing a JSON "
+#~ "string to stdout before exiting."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Plugins are shared code that can "
+#~ "be used by any module. They "
+#~ "provide abilities like caching information "
+#~ "or copying files that are useful "
+#~ "for many modules."
+#~ msgstr ""
+
+#~ msgid "You can create or add a local plugin in any of these locations:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "the directory named for the correct "
+#~ "``plugin_type`` within ``~/.ansible/plugins/`` - "
+#~ "for example, ``~/.ansible/plugins/callback_plugins``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "the directory named for the correct "
+#~ "``plugin_type`` within ``/usr/share/ansible/plugins/`` "
+#~ "- for example, "
+#~ "``/usr/share/ansible/plugins/plugin_type/action_plugins``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once your plugin file is in one"
+#~ " of these locations, Ansible will "
+#~ "load it and you can use it "
+#~ "in a any local module, task, "
+#~ "playbook, or role."
+#~ msgstr ""
 

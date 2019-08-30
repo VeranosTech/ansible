@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,96 +20,97 @@ msgstr ""
 
 #: ../../rst/modules/vmware_datastore_facts_module.rst:9
 msgid ""
-"vmware_datastore_facts -- Gather facts about datastores available in "
-"given vCenter"
+"vmware_datastore_facts -- Gather info about datastores available in given"
+" vCenter"
 msgstr ""
 
-#: ../../rst/modules/vmware_datastore_facts_module.rst:19
-msgid "Synopsis"
-msgstr ""
-
-#: ../../rst/modules/vmware_datastore_facts_module.rst:20
+#: ../../rst/modules/vmware_datastore_facts_module.rst:11
 msgid ""
-"This module can be used to gather facts about datastores in VMWare "
-"infrastructure."
+"This is an alias for :ref:`vmware_datastore_info "
+"<vmware_datastore_info_module>`. This name has been **deprecated**. "
+"Please update your tasks to use the new name ``vmware_datastore_info`` "
+"instead."
 msgstr ""
 
-#: ../../rst/modules/vmware_datastore_facts_module.rst:21
-msgid "All values and VMware object names are case sensitive."
-msgstr ""
+#~ msgid ""
+#~ "vmware_datastore_facts -- Gather facts about"
+#~ " datastores available in given vCenter"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_datastore_facts_module.rst:26
-msgid "Requirements"
-msgstr ""
+#~ msgid "Synopsis"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_datastore_facts_module.rst:27
-msgid "The below requirements are needed on the host that executes this module."
-msgstr ""
+#~ msgid ""
+#~ "This module can be used to gather"
+#~ " facts about datastores in VMWare "
+#~ "infrastructure."
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_datastore_facts_module.rst:29
-msgid "python >= 2.6"
-msgstr ""
+#~ msgid "All values and VMware object names are case sensitive."
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_datastore_facts_module.rst:30
-msgid "PyVmomi"
-msgstr ""
+#~ msgid "Requirements"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_datastore_facts_module.rst:34
-msgid "Parameters"
-msgstr ""
+#~ msgid ""
+#~ "The below requirements are needed on "
+#~ "the host that executes this module."
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_datastore_facts_module.rst:212
-msgid "Notes"
-msgstr ""
+#~ msgid "python >= 2.6"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_datastore_facts_module.rst:215
-msgid "Tested on vSphere 5.5, 6.0 and 6.5"
-msgstr ""
+#~ msgid "PyVmomi"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_datastore_facts_module.rst:220
-msgid "Examples"
-msgstr ""
+#~ msgid "Parameters"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_datastore_facts_module.rst:249
-msgid "Return Values"
-msgstr ""
+#~ msgid "Notes"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_datastore_facts_module.rst:250
-msgid ""
-"Common return values are documented :ref:`here <common_return_values>`, "
-"the following are the fields unique to this module:"
-msgstr ""
+#~ msgid "Tested on vSphere 5.5, 6.0 and 6.5"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_datastore_facts_module.rst:278
-msgid "Status"
-msgstr ""
+#~ msgid "Examples"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_datastore_facts_module.rst:283
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
-msgstr ""
+#~ msgid "Return Values"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_datastore_facts_module.rst:286
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
-msgstr ""
+#~ msgid ""
+#~ "Common return values are documented "
+#~ ":ref:`here <common_return_values>`, the following"
+#~ " are the fields unique to this "
+#~ "module:"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_datastore_facts_module.rst:293
-msgid "Authors"
-msgstr ""
+#~ msgid "Status"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_datastore_facts_module.rst:295
-msgid "Tim Rightnour (@garbled1)"
-msgstr ""
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_datastore_facts_module.rst:299
-#, python-format
-msgid ""
-"If you notice any issues in this documentation you can `edit this "
-"document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_datastore_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
-" to improve it."
-msgstr ""
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid "Authors"
+#~ msgstr ""
+
+#~ msgid "Tim Rightnour (@garbled1)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_datastore_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

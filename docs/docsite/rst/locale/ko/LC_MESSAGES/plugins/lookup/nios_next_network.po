@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,65 +52,74 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/plugins/lookup/nios_next_network.rst:271
+#: ../../rst/plugins/lookup/nios_next_network.rst:272
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/plugins/lookup/nios_next_network.rst:274
+#: ../../rst/plugins/lookup/nios_next_network.rst:275
 msgid ""
 "This module must be run locally, which can be achieved by specifying "
 "``connection: local``."
 msgstr ""
 
-#: ../../rst/plugins/lookup/nios_next_network.rst:275
+#: ../../rst/plugins/lookup/nios_next_network.rst:276
 msgid ""
 "Please read the :ref:`nios_guide` for more detailed information on how to"
 " use Infoblox with Ansible."
 msgstr ""
 
-#: ../../rst/plugins/lookup/nios_next_network.rst:280
+#: ../../rst/plugins/lookup/nios_next_network.rst:281
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/plugins/lookup/nios_next_network.rst:303
+#: ../../rst/plugins/lookup/nios_next_network.rst:304
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/plugins/lookup/nios_next_network.rst:304
+#: ../../rst/plugins/lookup/nios_next_network.rst:305
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this lookup:"
 msgstr ""
 
-#: ../../rst/plugins/lookup/nios_next_network.rst:330
+#: ../../rst/plugins/lookup/nios_next_network.rst:331
 msgid "Status"
 msgstr ""
 
-#: ../../rst/plugins/lookup/nios_next_network.rst:335
+#: ../../rst/plugins/lookup/nios_next_network.rst:336
 msgid ""
 "This lookup is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/plugins/lookup/nios_next_network.rst:338
+#: ../../rst/plugins/lookup/nios_next_network.rst:339
 msgid ""
 "This lookup is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/plugins/lookup/nios_next_network.rst:345
+#: ../../rst/plugins/lookup/nios_next_network.rst:346
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/plugins/lookup/nios_next_network.rst:347
+#: ../../rst/plugins/lookup/nios_next_network.rst:348
 msgid "UNKNOWN"
 msgstr ""
 
-#: ../../rst/plugins/lookup/nios_next_network.rst:351
+#: ../../rst/plugins/lookup/nios_next_network.rst:352
+#, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/lookup/nios_next_network.py>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/lookup/nios_next_network.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/lookup/nios_next_network.py>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,11 +38,11 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/haproxy_module.rst:209
+#: ../../rst/modules/haproxy_module.rst:216
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/haproxy_module.rst:212
+#: ../../rst/modules/haproxy_module.rst:219
 msgid ""
 "Enable, disable and drain commands are restricted and can only be issued "
 "on sockets configured for level 'admin'. For example, you can add the "
@@ -51,47 +51,55 @@ msgid ""
 "http://haproxy.1wt.eu/download/1.5/doc/configuration.txt."
 msgstr ""
 
-#: ../../rst/modules/haproxy_module.rst:213
+#: ../../rst/modules/haproxy_module.rst:220
 msgid ""
 "Depends on netcat (nc) being available; you need to install the "
 "appropriate package for your operating system before this module can be "
 "used."
 msgstr ""
 
-#: ../../rst/modules/haproxy_module.rst:218
+#: ../../rst/modules/haproxy_module.rst:225
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/haproxy_module.rst:318
+#: ../../rst/modules/haproxy_module.rst:325
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/haproxy_module.rst:323
+#: ../../rst/modules/haproxy_module.rst:330
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/haproxy_module.rst:326
+#: ../../rst/modules/haproxy_module.rst:333
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/haproxy_module.rst:333
+#: ../../rst/modules/haproxy_module.rst:340
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/haproxy_module.rst:335
+#: ../../rst/modules/haproxy_module.rst:342
 msgid "Ravi Bhure (@ravibhure)"
 msgstr ""
 
-#: ../../rst/modules/haproxy_module.rst:339
+#: ../../rst/modules/haproxy_module.rst:346
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/haproxy.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/haproxy.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/haproxy.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

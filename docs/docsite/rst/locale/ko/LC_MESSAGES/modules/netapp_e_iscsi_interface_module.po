@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,94 +36,102 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:256
+#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:257
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:259
+#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:260
 msgid "Check mode is supported."
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:260
+#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:261
 msgid ""
 "The interface settings are applied synchronously, but changes to the "
 "interface itself (receiving a new IP address via dhcp, etc), can take "
 "seconds or minutes longer to take effect."
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:261
+#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:262
 msgid ""
 "This module will not be useful/usable on an E-Series system without any "
 "iSCSI interfaces."
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:262
+#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:263
 msgid "This module requires a Web Services API version of >= 1.3."
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:263
+#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:264
 msgid ""
 "The E-Series Ansible modules require either an instance of the Web "
 "Services Proxy (WSP), to be available to manage the storage-system, or an"
 " E-Series storage-system that supports the Embedded Web Services API."
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:264
+#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:265
 msgid ""
 "Embedded Web Services is currently available on the E2800, E5700, EF570, "
 "and newer hardware models."
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:265
+#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:266
 msgid ""
 ":ref:`netapp_e_storage_system <netapp_e_storage_system_module>` may be "
 "utilized for configuring the systems managed by a WSP instance."
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:270
+#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:271
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:319
+#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:320
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:320
+#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:321
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:362
+#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:363
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:367
+#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:368
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:370
+#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:371
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:377
+#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:378
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:379
+#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:380
 msgid "Michael Price (@lmprice)"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:383
+#: ../../rst/modules/netapp_e_iscsi_interface_module.rst:384
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/netapp_e_iscsi_interface.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/netapp_e_iscsi_interface.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/netapp_e_iscsi_interface.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

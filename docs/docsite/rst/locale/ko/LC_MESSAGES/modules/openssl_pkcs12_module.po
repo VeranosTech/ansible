@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,50 +46,102 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/openssl_pkcs12_module.rst:373
+#: ../../rst/modules/openssl_pkcs12_module.rst:391
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/openssl_pkcs12_module.rst:395
+msgid ":ref:`openssl_certificate_module`"
+msgstr ""
+
+#: ../../rst/modules/openssl_pkcs12_module.rst:396
+msgid "The official documentation on the **openssl_certificate** module."
+msgstr ""
+
+#: ../../rst/modules/openssl_pkcs12_module.rst:397
+msgid ":ref:`openssl_csr_module`"
+msgstr ""
+
+#: ../../rst/modules/openssl_pkcs12_module.rst:398
+msgid "The official documentation on the **openssl_csr** module."
+msgstr ""
+
+#: ../../rst/modules/openssl_pkcs12_module.rst:399
+msgid ":ref:`openssl_dhparam_module`"
+msgstr ""
+
+#: ../../rst/modules/openssl_pkcs12_module.rst:400
+msgid "The official documentation on the **openssl_dhparam** module."
+msgstr ""
+
+#: ../../rst/modules/openssl_pkcs12_module.rst:401
+msgid ":ref:`openssl_privatekey_module`"
+msgstr ""
+
+#: ../../rst/modules/openssl_pkcs12_module.rst:402
+msgid "The official documentation on the **openssl_privatekey** module."
+msgstr ""
+
+#: ../../rst/modules/openssl_pkcs12_module.rst:403
+msgid ":ref:`openssl_publickey_module`"
+msgstr ""
+
+#: ../../rst/modules/openssl_pkcs12_module.rst:404
+msgid "The official documentation on the **openssl_publickey** module."
+msgstr ""
+
+#: ../../rst/modules/openssl_pkcs12_module.rst:408
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/openssl_pkcs12_module.rst:428
+#: ../../rst/modules/openssl_pkcs12_module.rst:463
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/openssl_pkcs12_module.rst:429
+#: ../../rst/modules/openssl_pkcs12_module.rst:464
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/openssl_pkcs12_module.rst:470
+#: ../../rst/modules/openssl_pkcs12_module.rst:518
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/openssl_pkcs12_module.rst:475
+#: ../../rst/modules/openssl_pkcs12_module.rst:523
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/openssl_pkcs12_module.rst:478
+#: ../../rst/modules/openssl_pkcs12_module.rst:526
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/openssl_pkcs12_module.rst:485
+#: ../../rst/modules/openssl_pkcs12_module.rst:533
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/openssl_pkcs12_module.rst:487
+#: ../../rst/modules/openssl_pkcs12_module.rst:535
 msgid "Guillaume Delpierre (@gdelpierre)"
 msgstr ""
 
-#: ../../rst/modules/openssl_pkcs12_module.rst:491
+#: ../../rst/modules/openssl_pkcs12_module.rst:539
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/crypto/openssl_pkcs12.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/crypto/openssl_pkcs12.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/crypto/openssl_pkcs12.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

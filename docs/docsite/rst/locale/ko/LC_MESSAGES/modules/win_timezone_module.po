@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,35 +22,35 @@ msgstr ""
 msgid "win_timezone -- Sets Windows machine timezone"
 msgstr ""
 
-#: ../../rst/modules/win_timezone_module.rst:19
+#: ../../rst/modules/win_timezone_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/win_timezone_module.rst:20
+#: ../../rst/modules/win_timezone_module.rst:19
 msgid "Sets machine time to the specified timezone."
 msgstr ""
 
-#: ../../rst/modules/win_timezone_module.rst:26
+#: ../../rst/modules/win_timezone_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/win_timezone_module.rst:55
+#: ../../rst/modules/win_timezone_module.rst:54
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/win_timezone_module.rst:58
+#: ../../rst/modules/win_timezone_module.rst:57
 msgid ""
 "The module will check if the provided timezone is supported on the "
 "machine."
 msgstr ""
 
-#: ../../rst/modules/win_timezone_module.rst:59
+#: ../../rst/modules/win_timezone_module.rst:58
 msgid ""
 "A list of possible timezones is available from ``tzutil.exe /l`` and from"
 " https://msdn.microsoft.com/en-us/library/ms912391.aspx"
 msgstr ""
 
-#: ../../rst/modules/win_timezone_module.rst:60
+#: ../../rst/modules/win_timezone_module.rst:59
 msgid ""
 "If running on Server 2008 the hotfix https://support.microsoft.com/en-"
 "us/help/2556308/tzutil-command-line-tool-is-added-to-windows-vista-and-"
@@ -58,62 +58,70 @@ msgid ""
 "module."
 msgstr ""
 
-#: ../../rst/modules/win_timezone_module.rst:64
+#: ../../rst/modules/win_timezone_module.rst:63
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/win_timezone_module.rst:68
+#: ../../rst/modules/win_timezone_module.rst:67
 msgid ":ref:`win_region_module`"
 msgstr ""
 
-#: ../../rst/modules/win_timezone_module.rst:69
+#: ../../rst/modules/win_timezone_module.rst:68
 msgid "The official documentation on the **win_region** module."
 msgstr ""
 
-#: ../../rst/modules/win_timezone_module.rst:73
+#: ../../rst/modules/win_timezone_module.rst:72
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/win_timezone_module.rst:94
+#: ../../rst/modules/win_timezone_module.rst:93
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/win_timezone_module.rst:95
+#: ../../rst/modules/win_timezone_module.rst:94
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/win_timezone_module.rst:136
+#: ../../rst/modules/win_timezone_module.rst:135
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/win_timezone_module.rst:141
+#: ../../rst/modules/win_timezone_module.rst:140
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/win_timezone_module.rst:144
+#: ../../rst/modules/win_timezone_module.rst:143
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/win_timezone_module.rst:151
+#: ../../rst/modules/win_timezone_module.rst:150
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/win_timezone_module.rst:153
+#: ../../rst/modules/win_timezone_module.rst:152
 msgid "Phil Schwartz (@schwartzmx)"
 msgstr ""
 
-#: ../../rst/modules/win_timezone_module.rst:157
+#: ../../rst/modules/win_timezone_module.rst:156
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_timezone.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_timezone.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_timezone.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

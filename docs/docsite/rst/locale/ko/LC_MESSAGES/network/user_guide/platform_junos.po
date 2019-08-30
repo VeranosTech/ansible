@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr ""
 #: ../../rst/network/user_guide/platform_junos.rst:7
 msgid ""
 "Juniper Junos OS supports multiple connections. This page offers details "
-"on how each connection works in Ansible 2.6 and how to use it."
+"on how each connection works in Ansible and how to use it."
 msgstr ""
 
 #: ../../rst/network/user_guide/platform_junos.rst:9
@@ -36,105 +36,101 @@ msgstr ""
 msgid "Connections Available"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst
+#: ../../rst/network/user_guide/platform_junos.rst:18
 msgid "CLI"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst
-msgid "* ``junos_netconf`` & ``junos_command`` modules only"
+#: ../../rst/network/user_guide/platform_junos.rst:20
+msgid "``junos_netconf`` & ``junos_command`` modules only"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst
+#: ../../rst/network/user_guide/platform_junos.rst:18
 msgid "NETCONF"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst
-msgid "* all modules except ``junos_netconf``, which enables NETCONF"
+#: ../../rst/network/user_guide/platform_junos.rst:20
+msgid "all modules except ``junos_netconf``, which enables NETCONF"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst:18
-msgid "**Protocol**"
+#: ../../rst/network/user_guide/platform_junos.rst:23
+msgid "Protocol"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst:18
+#: ../../rst/network/user_guide/platform_junos.rst:23
 msgid "SSH"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst:18
+#: ../../rst/network/user_guide/platform_junos.rst:23
 msgid "XML over SSH"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst
-msgid "**Credentials**"
+#: ../../rst/network/user_guide/platform_junos.rst:25
+msgid "Credentials"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst
+#: ../../rst/network/user_guide/platform_junos.rst:25
 msgid "uses SSH keys / SSH-agent if present"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst
+#: ../../rst/network/user_guide/platform_junos.rst:27
 msgid "accepts ``-u myuser -k`` if using password"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst:23
-msgid "**Indirect Access**"
+#: ../../rst/network/user_guide/platform_junos.rst:29
+msgid "Indirect Access"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst:23
+#: ../../rst/network/user_guide/platform_junos.rst:29
 msgid "via a bastion (jump host)"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst:25
-msgid "**Connection Settings**"
+#: ../../rst/network/user_guide/platform_junos.rst:31
+msgid "Connection Settings"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst:25
+#: ../../rst/network/user_guide/platform_junos.rst:31
 msgid "``ansible_connection: network_cli``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst:25
+#: ../../rst/network/user_guide/platform_junos.rst:31
 msgid "``ansible_connection: netconf``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst
-msgid "**Enable Mode**"
+#: ../../rst/network/user_guide/platform_junos.rst:33
+msgid "|enable_mode|"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst
-msgid "(Privilege Escalation)"
-msgstr ""
-
-#: ../../rst/network/user_guide/platform_junos.rst
+#: ../../rst/network/user_guide/platform_junos.rst:33
 msgid "not supported by Junos OS"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst
-msgid "**Returned Data Format**"
+#: ../../rst/network/user_guide/platform_junos.rst:35
+msgid "Returned Data Format"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst
+#: ../../rst/network/user_guide/platform_junos.rst:35
 msgid "``stdout[0].``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst
+#: ../../rst/network/user_guide/platform_junos.rst:35
 msgid ""
 "json: ``result[0]['software-information'][0]['host-name'][0]['data'] foo "
 "lo0``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst
+#: ../../rst/network/user_guide/platform_junos.rst:36
 msgid ""
 "text: ``result[1].interface-information[0].physical-"
 "interface[0].name[0].data foo lo0``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst
+#: ../../rst/network/user_guide/platform_junos.rst:37
 msgid ""
 "xml: ``result[1].rpc-reply.interface-information[0].physical-"
 "interface[0].name[0].data foo lo0``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst:35
+#: ../../rst/network/user_guide/platform_junos.rst:43
 msgid ""
 "For legacy playbooks, Ansible still supports ``ansible_connection=local``"
 " on all JUNOS modules. We recommend modernizing to use "
@@ -142,27 +138,27 @@ msgid ""
 "soon as possible."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst:38
-msgid "Using CLI in Ansible 2.6"
+#: ../../rst/network/user_guide/platform_junos.rst:46
+msgid "Using CLI in Ansible"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst:41
+#: ../../rst/network/user_guide/platform_junos.rst:49
 msgid "Example CLI inventory ``[junos:vars]``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst:53
+#: ../../rst/network/user_guide/platform_junos.rst:61
 msgid ""
 "If you are using SSH keys (including an ssh-agent) you can remove the "
-"``ansible_ssh_pass`` configuration."
+"``ansible_password`` configuration."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst:54
+#: ../../rst/network/user_guide/platform_junos.rst:62
 msgid ""
 "If you are accessing your host directly (not through a bastion/jump host)"
 " you can remove the ``ansible_ssh_common_args`` configuration."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst:55
+#: ../../rst/network/user_guide/platform_junos.rst:63
 msgid ""
 "If you are accessing your host through a bastion/jump host, you cannot "
 "include your SSH password in the ``ProxyCommand`` directive. To prevent "
@@ -170,50 +166,50 @@ msgid ""
 "support providing passwords via environment variables."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst:58
+#: ../../rst/network/user_guide/platform_junos.rst:66
 msgid "Example CLI Task"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst:69
-msgid "Using NETCONF in Ansible 2.6"
+#: ../../rst/network/user_guide/platform_junos.rst:77
+msgid "Using NETCONF in Ansible"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst:72
+#: ../../rst/network/user_guide/platform_junos.rst:80
 msgid "Enabling NETCONF"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst:74
+#: ../../rst/network/user_guide/platform_junos.rst:82
 msgid "Before you can use NETCONF to connect to a switch, you must:"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst:76
+#: ../../rst/network/user_guide/platform_junos.rst:84
 msgid ""
 "install the ``ncclient`` python package on your control node(s) with "
 "``pip install ncclient``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst:77
+#: ../../rst/network/user_guide/platform_junos.rst:85
 msgid "enable NETCONF on the Junos OS device(s)"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst:79
+#: ../../rst/network/user_guide/platform_junos.rst:87
 msgid ""
 "To enable NETCONF on a new switch via Ansible, use the ``junos_netconf`` "
 "module via the CLI connection. Set up your platform-level variables just "
 "like in the CLI example above, then run a playbook task like this:"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst:88
+#: ../../rst/network/user_guide/platform_junos.rst:96
 msgid ""
 "Once NETCONF is enabled, change your variables to use the NETCONF "
 "connection."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst:91
+#: ../../rst/network/user_guide/platform_junos.rst:99
 msgid "Example NETCONF inventory ``[junos:vars]``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_junos.rst:104
+#: ../../rst/network/user_guide/platform_junos.rst:112
 msgid "Example NETCONF Task"
 msgstr ""
 
@@ -224,4 +220,50 @@ msgid ""
 "SSH keys. If you must use passwords to authenticate SSH connections, we "
 "recommend encrypting them with :ref:`Ansible Vault <playbooks_vault>`."
 msgstr ""
+
+#~ msgid ""
+#~ "Juniper Junos OS supports multiple "
+#~ "connections. This page offers details on"
+#~ " how each connection works in Ansible"
+#~ " 2.6 and how to use it."
+#~ msgstr ""
+
+#~ msgid "* ``junos_netconf`` & ``junos_command`` modules only"
+#~ msgstr ""
+
+#~ msgid "* all modules except ``junos_netconf``, which enables NETCONF"
+#~ msgstr ""
+
+#~ msgid "**Protocol**"
+#~ msgstr ""
+
+#~ msgid "**Credentials**"
+#~ msgstr ""
+
+#~ msgid "**Indirect Access**"
+#~ msgstr ""
+
+#~ msgid "**Connection Settings**"
+#~ msgstr ""
+
+#~ msgid "**Enable Mode**"
+#~ msgstr ""
+
+#~ msgid "(Privilege Escalation)"
+#~ msgstr ""
+
+#~ msgid "**Returned Data Format**"
+#~ msgstr ""
+
+#~ msgid "Using CLI in Ansible 2.6"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you are using SSH keys "
+#~ "(including an ssh-agent) you can "
+#~ "remove the ``ansible_ssh_pass`` configuration."
+#~ msgstr ""
+
+#~ msgid "Using NETCONF in Ansible 2.6"
+#~ msgstr ""
 

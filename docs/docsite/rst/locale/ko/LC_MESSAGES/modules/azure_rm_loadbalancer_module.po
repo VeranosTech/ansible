@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/azure_rm_loadbalancer_module.rst:20
-msgid "Create, update and delete Azure load balancers"
+msgid "Create, update and delete Azure load balancers."
 msgstr ""
 
 #: ../../rst/modules/azure_rm_loadbalancer_module.rst:25
@@ -50,27 +50,37 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1065
+#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1215
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1068
+#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1218
 msgid ""
 "For authentication with Azure you can pass parameters, set environment "
-"variables or use a profile stored in ~/.azure/credentials. Authentication"
-" is possible using a service principal or Active Directory user. To "
-"authenticate via service principal, pass subscription_id, client_id, "
+"variables, use a profile stored in ~/.azure/credentials, or log in before"
+" you run your tasks or playbook with ``az login``."
+msgstr ""
+
+#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1219
+msgid ""
+"Authentication is also possible using a service principal or Active "
+"Directory user."
+msgstr ""
+
+#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1220
+msgid ""
+"To authenticate via service principal, pass subscription_id, client_id, "
 "secret and tenant or set environment variables AZURE_SUBSCRIPTION_ID, "
 "AZURE_CLIENT_ID, AZURE_SECRET and AZURE_TENANT."
 msgstr ""
 
-#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1069
+#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1221
 msgid ""
 "To authenticate via Active Directory user, pass ad_user and password, or "
 "set AZURE_AD_USER and AZURE_PASSWORD in the environment."
 msgstr ""
 
-#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1070
+#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1222
 msgid ""
 "Alternatively, credentials can be stored in ~/.azure/credentials. This is"
 " an ini file containing a [default] section and the following keys: "
@@ -80,54 +90,95 @@ msgid ""
 "environment."
 msgstr ""
 
-#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1075
+#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1226
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1230
+msgid ""
+"`Sign in with Azure CLI <https://docs.microsoft.com/en-us/cli/azure"
+"/authenticate-azure-cli?view=azure-cli-latest>`_"
+msgstr ""
+
+#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1231
+msgid "How to authenticate using the ``az login`` command."
+msgstr ""
+
+#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1235
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1111
+#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1277
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1112
+#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1278
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1149
+#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1315
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1154
+#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1320
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1157
+#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1323
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1164
+#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1330
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1166
-msgid "Thomas Stringer (@tstringer)"
+#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1332
+msgid "Thomas Stringer (@trstringer)"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1167
+#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1333
 msgid "Yuwei Zhou (@yuwzho)"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1171
+#: ../../rst/modules/azure_rm_loadbalancer_module.rst:1337
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/azure/azure_rm_loadbalancer.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/azure/azure_rm_loadbalancer.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "Create, update and delete Azure load balancers"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For authentication with Azure you can"
+#~ " pass parameters, set environment variables"
+#~ " or use a profile stored in "
+#~ "~/.azure/credentials. Authentication is possible "
+#~ "using a service principal or Active "
+#~ "Directory user. To authenticate via "
+#~ "service principal, pass subscription_id, "
+#~ "client_id, secret and tenant or set "
+#~ "environment variables AZURE_SUBSCRIPTION_ID, "
+#~ "AZURE_CLIENT_ID, AZURE_SECRET and AZURE_TENANT."
+#~ msgstr ""
+
+#~ msgid "Thomas Stringer (@tstringer)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/azure/azure_rm_loadbalancer.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

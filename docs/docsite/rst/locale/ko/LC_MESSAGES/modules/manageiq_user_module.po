@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,40 +48,48 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/manageiq_user_module.rst:247
+#: ../../rst/modules/manageiq_user_module.rst:252
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/manageiq_user_module.rst:320
+#: ../../rst/modules/manageiq_user_module.rst:325
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/manageiq_user_module.rst:325
+#: ../../rst/modules/manageiq_user_module.rst:330
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/manageiq_user_module.rst:328
+#: ../../rst/modules/manageiq_user_module.rst:333
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/manageiq_user_module.rst:335
+#: ../../rst/modules/manageiq_user_module.rst:340
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/manageiq_user_module.rst:337
+#: ../../rst/modules/manageiq_user_module.rst:342
 msgid "Daniel Korn (@dkorn)"
 msgstr ""
 
-#: ../../rst/modules/manageiq_user_module.rst:341
+#: ../../rst/modules/manageiq_user_module.rst:346
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/remote_management/manageiq/manageiq_user.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/remote_management/manageiq/manageiq_user.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/remote_management/manageiq/manageiq_user.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

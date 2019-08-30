@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,34 +22,43 @@ msgstr ""
 msgid "win_scheduled_task -- Manage scheduled tasks"
 msgstr ""
 
-#: ../../rst/modules/win_scheduled_task_module.rst:19
+#: ../../rst/modules/win_scheduled_task_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/win_scheduled_task_module.rst:20
+#: ../../rst/modules/win_scheduled_task_module.rst:19
 msgid "Creates/modified or removes Windows scheduled tasks."
 msgstr ""
 
-#: ../../rst/modules/win_scheduled_task_module.rst:26
+#: ../../rst/modules/win_scheduled_task_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/win_scheduled_task_module.rst:988
+#: ../../rst/modules/win_scheduled_task_module.rst:987
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/win_scheduled_task_module.rst:991
+#: ../../rst/modules/win_scheduled_task_module.rst:990
 msgid ""
 "In Ansible 2.4 and earlier, this could only be run on Server 2012/Windows"
 " 8 or newer. Since Ansible 2.5 this restriction has been lifted."
 msgstr ""
 
-#: ../../rst/modules/win_scheduled_task_module.rst:992
+#: ../../rst/modules/win_scheduled_task_module.rst:991
 msgid ""
 "The option names and structure for actions and triggers of a service "
 "follow the ``RegisteredTask`` naming standard and requirements, it would "
 "be useful to read up on this guide if coming across any issues "
 "https://msdn.microsoft.com/en-us/library/windows/desktop/aa382542.aspx."
+msgstr ""
+
+#: ../../rst/modules/win_scheduled_task_module.rst:992
+msgid ""
+"A Group Managed Service Account (gMSA) can be used by setting "
+"``logon_type`` to ``password`` and omitting the password parameter. For "
+"more information on gMSAs, see https://techcommunity.microsoft.com/t5"
+"/Core-Infrastructure-and-Security/Windows-Server-2012-Group-Managed-"
+"Service-Accounts/ba-p/255910"
 msgstr ""
 
 #: ../../rst/modules/win_scheduled_task_module.rst:996
@@ -68,40 +77,48 @@ msgstr ""
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/win_scheduled_task_module.rst:1097
+#: ../../rst/modules/win_scheduled_task_module.rst:1103
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/win_scheduled_task_module.rst:1102
+#: ../../rst/modules/win_scheduled_task_module.rst:1108
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/win_scheduled_task_module.rst:1105
+#: ../../rst/modules/win_scheduled_task_module.rst:1111
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/win_scheduled_task_module.rst:1112
+#: ../../rst/modules/win_scheduled_task_module.rst:1118
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/win_scheduled_task_module.rst:1114
+#: ../../rst/modules/win_scheduled_task_module.rst:1120
 msgid "Peter Mounce (@petemounce)"
 msgstr ""
 
-#: ../../rst/modules/win_scheduled_task_module.rst:1115
+#: ../../rst/modules/win_scheduled_task_module.rst:1121
 msgid "Jordan Borean (@jborean93)"
 msgstr ""
 
-#: ../../rst/modules/win_scheduled_task_module.rst:1119
+#: ../../rst/modules/win_scheduled_task_module.rst:1125
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_scheduled_task.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_scheduled_task.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_scheduled_task.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,81 +38,105 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/win_stat_module.rst:112
+#: ../../rst/modules/win_stat_module.rst:131
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/win_stat_module.rst:116
+#: ../../rst/modules/win_stat_module.rst:135
 msgid ":ref:`stat_module`"
 msgstr ""
 
-#: ../../rst/modules/win_stat_module.rst:117
+#: ../../rst/modules/win_stat_module.rst:136
 msgid "The official documentation on the **stat** module."
 msgstr ""
 
-#: ../../rst/modules/win_stat_module.rst:118
+#: ../../rst/modules/win_stat_module.rst:137
+msgid ":ref:`win_acl_module`"
+msgstr ""
+
+#: ../../rst/modules/win_stat_module.rst:138
+msgid "The official documentation on the **win_acl** module."
+msgstr ""
+
+#: ../../rst/modules/win_stat_module.rst:139
 msgid ":ref:`win_file_module`"
 msgstr ""
 
-#: ../../rst/modules/win_stat_module.rst:119
+#: ../../rst/modules/win_stat_module.rst:140
 msgid "The official documentation on the **win_file** module."
 msgstr ""
 
-#: ../../rst/modules/win_stat_module.rst:123
+#: ../../rst/modules/win_stat_module.rst:141
+msgid ":ref:`win_owner_module`"
+msgstr ""
+
+#: ../../rst/modules/win_stat_module.rst:142
+msgid "The official documentation on the **win_owner** module."
+msgstr ""
+
+#: ../../rst/modules/win_stat_module.rst:146
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/win_stat_module.rst:171
+#: ../../rst/modules/win_stat_module.rst:194
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/win_stat_module.rst:172
+#: ../../rst/modules/win_stat_module.rst:195
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/win_stat_module.rst:560
+#: ../../rst/modules/win_stat_module.rst:583
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/win_stat_module.rst:565
+#: ../../rst/modules/win_stat_module.rst:588
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/win_stat_module.rst:568
+#: ../../rst/modules/win_stat_module.rst:591
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/win_stat_module.rst:571
+#: ../../rst/modules/win_stat_module.rst:594
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/win_stat_module.rst:573
+#: ../../rst/modules/win_stat_module.rst:596
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/win_stat_module.rst:579
+#: ../../rst/modules/win_stat_module.rst:602
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/win_stat_module.rst:581
+#: ../../rst/modules/win_stat_module.rst:604
 msgid "Chris Church (@cchurch)"
 msgstr ""
 
-#: ../../rst/modules/win_stat_module.rst:585
+#: ../../rst/modules/win_stat_module.rst:608
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_stat.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_stat.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_stat.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

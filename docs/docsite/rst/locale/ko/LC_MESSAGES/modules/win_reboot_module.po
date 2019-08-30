@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,41 +22,49 @@ msgstr ""
 msgid "win_reboot -- Reboot a windows machine"
 msgstr ""
 
-#: ../../rst/modules/win_reboot_module.rst:19
+#: ../../rst/modules/win_reboot_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/win_reboot_module.rst:20
+#: ../../rst/modules/win_reboot_module.rst:19
 msgid ""
 "Reboot a Windows machine, wait for it to go down, come back up, and "
 "respond to commands."
 msgstr ""
 
-#: ../../rst/modules/win_reboot_module.rst:21
+#: ../../rst/modules/win_reboot_module.rst:20
 msgid ""
 "For non-Windows targets, use the :ref:`reboot <reboot_module>` module "
 "instead."
 msgstr ""
 
-#: ../../rst/modules/win_reboot_module.rst:27
+#: ../../rst/modules/win_reboot_module.rst:26
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/win_reboot_module.rst:149
+#: ../../rst/modules/win_reboot_module.rst:148
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/win_reboot_module.rst:152
+#: ../../rst/modules/win_reboot_module.rst:151
 msgid ""
 "If a shutdown was already scheduled on the system, ``win_reboot`` will "
 "abort the scheduled shutdown and enforce its own shutdown."
 msgstr ""
 
-#: ../../rst/modules/win_reboot_module.rst:153
+#: ../../rst/modules/win_reboot_module.rst:152
 msgid ""
 "Beware that when ``win_reboot`` returns, the Windows system may not have "
 "settled yet and some base services could be in limbo. This can result in "
 "unexpected behavior. Check the examples for ways to mitigate this."
+msgstr ""
+
+#: ../../rst/modules/win_reboot_module.rst:153
+msgid ""
+"The connection user must have the ``SeRemoteShutdownPrivilege`` privilege"
+" enabled, see https://docs.microsoft.com/en-us/windows/security/threat-"
+"protection/security-policy-settings/force-shutdown-from-a-remote-system "
+"for more information."
 msgstr ""
 
 #: ../../rst/modules/win_reboot_module.rst:157
@@ -123,9 +131,17 @@ msgstr ""
 #: ../../rst/modules/win_reboot_module.rst:276
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_reboot.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_reboot.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_reboot.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,71 +19,98 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/modules/vsphere_copy_module.rst:9
-msgid "vsphere_copy -- Copy a file to a vCenter datastore"
+msgid "vsphere_copy -- Copy a file to a VMware datastore"
 msgstr ""
 
-#: ../../rst/modules/vsphere_copy_module.rst:19
+#: ../../rst/modules/vsphere_copy_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/vsphere_copy_module.rst:20
-msgid "Upload files to a vCenter datastore"
+#: ../../rst/modules/vsphere_copy_module.rst:19
+msgid "Upload files to a VMware datastore through a vCenter REST API."
 msgstr ""
 
-#: ../../rst/modules/vsphere_copy_module.rst:26
+#: ../../rst/modules/vsphere_copy_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/vsphere_copy_module.rst:165
+#: ../../rst/modules/vsphere_copy_module.rst:220
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/vsphere_copy_module.rst:168
+#: ../../rst/modules/vsphere_copy_module.rst:223
 msgid ""
-"This module ought to be run from a system that can access vCenter "
-"directly and has the file to transfer. It can be the normal remote target"
-" or you can change it either by using ``transport: local`` or using "
-"``delegate_to``."
+"This module ought to be run from a system that can access the vCenter or "
+"the ESXi directly and has the file to transfer. It can be the normal "
+"remote target or you can change it either by using ``transport: local`` "
+"or using ``delegate_to``."
 msgstr ""
 
-#: ../../rst/modules/vsphere_copy_module.rst:169
-msgid "Tested on vSphere 5.5"
+#: ../../rst/modules/vsphere_copy_module.rst:224
+msgid "Tested on vSphere 5.5 and ESXi 6.7"
 msgstr ""
 
-#: ../../rst/modules/vsphere_copy_module.rst:174
+#: ../../rst/modules/vsphere_copy_module.rst:229
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/vsphere_copy_module.rst:204
+#: ../../rst/modules/vsphere_copy_module.rst:272
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/vsphere_copy_module.rst:209
+#: ../../rst/modules/vsphere_copy_module.rst:277
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/vsphere_copy_module.rst:212
+#: ../../rst/modules/vsphere_copy_module.rst:280
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/vsphere_copy_module.rst:219
+#: ../../rst/modules/vsphere_copy_module.rst:287
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/vsphere_copy_module.rst:221
+#: ../../rst/modules/vsphere_copy_module.rst:289
 msgid "Dag Wieers (@dagwieers)"
 msgstr ""
 
-#: ../../rst/modules/vsphere_copy_module.rst:225
+#: ../../rst/modules/vsphere_copy_module.rst:293
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vsphere_copy.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vsphere_copy.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "vsphere_copy -- Copy a file to a vCenter datastore"
+#~ msgstr ""
+
+#~ msgid "Upload files to a vCenter datastore"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module ought to be run from"
+#~ " a system that can access vCenter "
+#~ "directly and has the file to "
+#~ "transfer. It can be the normal "
+#~ "remote target or you can change it"
+#~ " either by using ``transport: local`` "
+#~ "or using ``delegate_to``."
+#~ msgstr ""
+
+#~ msgid "Tested on vSphere 5.5"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vsphere_copy.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

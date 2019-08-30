@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,71 +27,141 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/openssl_dhparam_module.rst:20
-msgid ""
-"This module allows one to (re)generate OpenSSL DH-params. This module "
-"uses file common arguments to specify generated file permissions."
+msgid "This module allows one to (re)generate OpenSSL DH-params."
 msgstr ""
 
-#: ../../rst/modules/openssl_dhparam_module.rst:25
+#: ../../rst/modules/openssl_dhparam_module.rst:21
+msgid ""
+"This module uses file common arguments to specify generated file "
+"permissions."
+msgstr ""
+
+#: ../../rst/modules/openssl_dhparam_module.rst:22
+msgid ""
+"Please note that the module regenerates existing DH params if they don't "
+"match the module's options. If you are concerned that this could "
+"overwrite your existing DH params, consider using the *backup* option."
+msgstr ""
+
+#: ../../rst/modules/openssl_dhparam_module.rst:27
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/openssl_dhparam_module.rst:26
+#: ../../rst/modules/openssl_dhparam_module.rst:28
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/openssl_dhparam_module.rst:28
+#: ../../rst/modules/openssl_dhparam_module.rst:30
 msgid "OpenSSL"
 msgstr ""
 
-#: ../../rst/modules/openssl_dhparam_module.rst:32
+#: ../../rst/modules/openssl_dhparam_module.rst:34
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/openssl_dhparam_module.rst:250
-msgid "Examples"
+#: ../../rst/modules/openssl_dhparam_module.rst:268
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/openssl_dhparam_module.rst:272
+msgid ":ref:`openssl_certificate_module`"
+msgstr ""
+
+#: ../../rst/modules/openssl_dhparam_module.rst:273
+msgid "The official documentation on the **openssl_certificate** module."
 msgstr ""
 
 #: ../../rst/modules/openssl_dhparam_module.rst:274
-msgid "Return Values"
+msgid ":ref:`openssl_csr_module`"
 msgstr ""
 
 #: ../../rst/modules/openssl_dhparam_module.rst:275
+msgid "The official documentation on the **openssl_csr** module."
+msgstr ""
+
+#: ../../rst/modules/openssl_dhparam_module.rst:276
+msgid ":ref:`openssl_pkcs12_module`"
+msgstr ""
+
+#: ../../rst/modules/openssl_dhparam_module.rst:277
+msgid "The official documentation on the **openssl_pkcs12** module."
+msgstr ""
+
+#: ../../rst/modules/openssl_dhparam_module.rst:278
+msgid ":ref:`openssl_privatekey_module`"
+msgstr ""
+
+#: ../../rst/modules/openssl_dhparam_module.rst:279
+msgid "The official documentation on the **openssl_privatekey** module."
+msgstr ""
+
+#: ../../rst/modules/openssl_dhparam_module.rst:280
+msgid ":ref:`openssl_publickey_module`"
+msgstr ""
+
+#: ../../rst/modules/openssl_dhparam_module.rst:281
+msgid "The official documentation on the **openssl_publickey** module."
+msgstr ""
+
+#: ../../rst/modules/openssl_dhparam_module.rst:285
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/openssl_dhparam_module.rst:308
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/openssl_dhparam_module.rst:309
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/openssl_dhparam_module.rst:316
+#: ../../rst/modules/openssl_dhparam_module.rst:363
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/openssl_dhparam_module.rst:321
+#: ../../rst/modules/openssl_dhparam_module.rst:368
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/openssl_dhparam_module.rst:324
+#: ../../rst/modules/openssl_dhparam_module.rst:371
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/openssl_dhparam_module.rst:331
+#: ../../rst/modules/openssl_dhparam_module.rst:378
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/openssl_dhparam_module.rst:333
+#: ../../rst/modules/openssl_dhparam_module.rst:380
 msgid "Thom Wiggers (@thomwiggers)"
 msgstr ""
 
-#: ../../rst/modules/openssl_dhparam_module.rst:337
+#: ../../rst/modules/openssl_dhparam_module.rst:384
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/crypto/openssl_dhparam.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/crypto/openssl_dhparam.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module allows one to (re)generate"
+#~ " OpenSSL DH-params. This module uses"
+#~ " file common arguments to specify "
+#~ "generated file permissions."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/crypto/openssl_dhparam.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

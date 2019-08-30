@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/vcenter_license_module.rst:20
-msgid "Add and delete vCenter license keys."
+msgid "Add and delete vCenter, ESXi server license keys."
 msgstr ""
 
 #: ../../rst/modules/vcenter_license_module.rst:25
@@ -46,67 +46,84 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/vcenter_license_module.rst:175
+#: ../../rst/modules/vcenter_license_module.rst:244
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/vcenter_license_module.rst:178
+#: ../../rst/modules/vcenter_license_module.rst:247
 msgid ""
 "This module will also auto-assign the current vCenter to the license key "
 "if the product matches the license key, and vCenter us currently assigned"
 " an evaluation license only."
 msgstr ""
 
-#: ../../rst/modules/vcenter_license_module.rst:179
+#: ../../rst/modules/vcenter_license_module.rst:248
 msgid ""
 "The evaluation license (00000-00000-00000-00000-00000) is not listed when"
 " unused."
 msgstr ""
 
-#: ../../rst/modules/vcenter_license_module.rst:184
+#: ../../rst/modules/vcenter_license_module.rst:249
+msgid ""
+"If ``esxi_hostname`` is specified, then will assign the ``license`` key "
+"to the ESXi host."
+msgstr ""
+
+#: ../../rst/modules/vcenter_license_module.rst:254
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/vcenter_license_module.rst:211
+#: ../../rst/modules/vcenter_license_module.rst:302
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/vcenter_license_module.rst:212
+#: ../../rst/modules/vcenter_license_module.rst:303
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/vcenter_license_module.rst:240
+#: ../../rst/modules/vcenter_license_module.rst:331
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/vcenter_license_module.rst:245
+#: ../../rst/modules/vcenter_license_module.rst:336
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/vcenter_license_module.rst:248
+#: ../../rst/modules/vcenter_license_module.rst:339
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/vcenter_license_module.rst:255
+#: ../../rst/modules/vcenter_license_module.rst:346
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/vcenter_license_module.rst:257
+#: ../../rst/modules/vcenter_license_module.rst:348
 msgid "Dag Wieers (@dagwieers)"
 msgstr ""
 
-#: ../../rst/modules/vcenter_license_module.rst:261
+#: ../../rst/modules/vcenter_license_module.rst:352
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vcenter_license.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vcenter_license.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "Add and delete vCenter license keys."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vcenter_license.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

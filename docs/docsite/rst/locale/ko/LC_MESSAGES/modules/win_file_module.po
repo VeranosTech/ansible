@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,106 +51,128 @@ msgid "See Also"
 msgstr ""
 
 #: ../../rst/modules/win_file_module.rst:82
-msgid ":ref:`assemble_module`"
-msgstr ""
-
-#: ../../rst/modules/win_file_module.rst:83
-msgid "The official documentation on the **assemble** module."
-msgstr ""
-
-#: ../../rst/modules/win_file_module.rst:84
-msgid ":ref:`copy_module`"
-msgstr ""
-
-#: ../../rst/modules/win_file_module.rst:85
-msgid "The official documentation on the **copy** module."
-msgstr ""
-
-#: ../../rst/modules/win_file_module.rst:86
 msgid ":ref:`file_module`"
 msgstr ""
 
-#: ../../rst/modules/win_file_module.rst:87
+#: ../../rst/modules/win_file_module.rst:83
 msgid "The official documentation on the **file** module."
 msgstr ""
 
+#: ../../rst/modules/win_file_module.rst:84
+msgid ":ref:`win_acl_module`"
+msgstr ""
+
+#: ../../rst/modules/win_file_module.rst:85
+msgid "The official documentation on the **win_acl** module."
+msgstr ""
+
+#: ../../rst/modules/win_file_module.rst:86
+msgid ":ref:`win_acl_inheritance_module`"
+msgstr ""
+
+#: ../../rst/modules/win_file_module.rst:87
+msgid "The official documentation on the **win_acl_inheritance** module."
+msgstr ""
+
 #: ../../rst/modules/win_file_module.rst:88
-msgid ":ref:`template_module`"
+msgid ":ref:`win_owner_module`"
 msgstr ""
 
 #: ../../rst/modules/win_file_module.rst:89
-msgid "The official documentation on the **template** module."
+msgid "The official documentation on the **win_owner** module."
 msgstr ""
 
 #: ../../rst/modules/win_file_module.rst:90
-msgid ":ref:`win_copy_module`"
-msgstr ""
-
-#: ../../rst/modules/win_file_module.rst:91
-msgid "The official documentation on the **win_copy** module."
-msgstr ""
-
-#: ../../rst/modules/win_file_module.rst:92
 msgid ":ref:`win_stat_module`"
 msgstr ""
 
-#: ../../rst/modules/win_file_module.rst:93
+#: ../../rst/modules/win_file_module.rst:91
 msgid "The official documentation on the **win_stat** module."
 msgstr ""
 
-#: ../../rst/modules/win_file_module.rst:94
-msgid ":ref:`win_template_module`"
-msgstr ""
-
 #: ../../rst/modules/win_file_module.rst:95
-msgid "The official documentation on the **win_template** module."
-msgstr ""
-
-#: ../../rst/modules/win_file_module.rst:99
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/win_file_module.rst:129
+#: ../../rst/modules/win_file_module.rst:125
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/win_file_module.rst:134
+#: ../../rst/modules/win_file_module.rst:130
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/win_file_module.rst:137
+#: ../../rst/modules/win_file_module.rst:133
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/win_file_module.rst:140
+#: ../../rst/modules/win_file_module.rst:136
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/win_file_module.rst:142
+#: ../../rst/modules/win_file_module.rst:138
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/win_file_module.rst:148
+#: ../../rst/modules/win_file_module.rst:144
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/win_file_module.rst:150
+#: ../../rst/modules/win_file_module.rst:146
 msgid "Jon Hawkesworth (@jhawkesworth)"
 msgstr ""
 
-#: ../../rst/modules/win_file_module.rst:154
+#: ../../rst/modules/win_file_module.rst:150
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_file.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_file.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ":ref:`assemble_module`"
+#~ msgstr ""
+
+#~ msgid "The official documentation on the **assemble** module."
+#~ msgstr ""
+
+#~ msgid ":ref:`copy_module`"
+#~ msgstr ""
+
+#~ msgid "The official documentation on the **copy** module."
+#~ msgstr ""
+
+#~ msgid ":ref:`template_module`"
+#~ msgstr ""
+
+#~ msgid "The official documentation on the **template** module."
+#~ msgstr ""
+
+#~ msgid ":ref:`win_copy_module`"
+#~ msgstr ""
+
+#~ msgid "The official documentation on the **win_copy** module."
+#~ msgstr ""
+
+#~ msgid ":ref:`win_template_module`"
+#~ msgstr ""
+
+#~ msgid "The official documentation on the **win_template** module."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_file.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

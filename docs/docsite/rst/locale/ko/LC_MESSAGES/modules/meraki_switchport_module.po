@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,64 +34,85 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/meraki_switchport_module.rst:427
+#: ../../rst/modules/meraki_switchport_module.rst:472
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/meraki_switchport_module.rst:430
+#: ../../rst/modules/meraki_switchport_module.rst:475
 msgid ""
 "More information about the Meraki API can be found at "
 "https://dashboard.meraki.com/api_docs."
 msgstr ""
 
-#: ../../rst/modules/meraki_switchport_module.rst:431
+#: ../../rst/modules/meraki_switchport_module.rst:476
 msgid "Some of the options are likely only used for developers within Meraki."
 msgstr ""
 
-#: ../../rst/modules/meraki_switchport_module.rst:436
+#: ../../rst/modules/meraki_switchport_module.rst:477
+msgid ""
+"As of Ansible 2.9, Meraki modules output keys as snake case. To use camel"
+" case, set the ``ANSIBLE_MERAKI_FORMAT`` environment variable to "
+"``camelcase``."
+msgstr ""
+
+#: ../../rst/modules/meraki_switchport_module.rst:478
+msgid ""
+"Ansible's Meraki modules will stop supporting camel case output in "
+"Ansible 2.13. Please update your playbooks."
+msgstr ""
+
+#: ../../rst/modules/meraki_switchport_module.rst:483
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/meraki_switchport_module.rst:513
+#: ../../rst/modules/meraki_switchport_module.rst:560
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/meraki_switchport_module.rst:514
+#: ../../rst/modules/meraki_switchport_module.rst:561
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/meraki_switchport_module.rst:542
+#: ../../rst/modules/meraki_switchport_module.rst:770
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/meraki_switchport_module.rst:547
+#: ../../rst/modules/meraki_switchport_module.rst:775
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/meraki_switchport_module.rst:550
+#: ../../rst/modules/meraki_switchport_module.rst:778
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/meraki_switchport_module.rst:557
+#: ../../rst/modules/meraki_switchport_module.rst:785
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/meraki_switchport_module.rst:559
+#: ../../rst/modules/meraki_switchport_module.rst:787
 msgid "Kevin Breit (@kbreit)"
 msgstr ""
 
-#: ../../rst/modules/meraki_switchport_module.rst:563
+#: ../../rst/modules/meraki_switchport_module.rst:791
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/meraki/meraki_switchport.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/meraki/meraki_switchport.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/meraki/meraki_switchport.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

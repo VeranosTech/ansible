@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -123,22 +123,26 @@ msgid ":ref:`snow_record_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_notification_modules.rst:35
-msgid ":ref:`syslogger_module`"
+msgid ":ref:`snow_record_find_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_notification_modules.rst:36
-msgid ":ref:`telegram_module`"
+msgid ":ref:`syslogger_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_notification_modules.rst:37
-msgid ":ref:`twilio_module`"
+msgid ":ref:`telegram_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_notification_modules.rst:38
+msgid ":ref:`twilio_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_notification_modules.rst:39
 msgid ":ref:`typetalk_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_notification_modules.rst:42
+#: ../../rst/modules/list_of_notification_modules.rst:43
 msgid ""
 "**(D)**: This marks a module as deprecated, which means a module is kept "
 "for backwards compatibility but usage is discouraged. The module "

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,93 +22,100 @@ msgstr ""
 msgid "consul_acl -- Manipulate Consul ACL keys and rules"
 msgstr ""
 
-#: ../../rst/modules/consul_acl_module.rst:19
+#: ../../rst/modules/consul_acl_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/consul_acl_module.rst:20
+#: ../../rst/modules/consul_acl_module.rst:19
 msgid ""
 "Allows the addition, modification and deletion of ACL keys and associated"
 " rules in a consul cluster via the agent. For more details on using and "
 "configuring ACLs, see https://www.consul.io/docs/guides/acl.html."
 msgstr ""
 
-#: ../../rst/modules/consul_acl_module.rst:25
+#: ../../rst/modules/consul_acl_module.rst:24
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/consul_acl_module.rst:26
+#: ../../rst/modules/consul_acl_module.rst:25
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/consul_acl_module.rst:28
-msgid "python >= 2.6"
-msgstr ""
-
-#: ../../rst/modules/consul_acl_module.rst:29
+#: ../../rst/modules/consul_acl_module.rst:27
 msgid "python-consul"
 msgstr ""
 
-#: ../../rst/modules/consul_acl_module.rst:30
+#: ../../rst/modules/consul_acl_module.rst:28
 msgid "pyhcl"
 msgstr ""
 
-#: ../../rst/modules/consul_acl_module.rst:31
+#: ../../rst/modules/consul_acl_module.rst:29
 msgid "requests"
 msgstr ""
 
-#: ../../rst/modules/consul_acl_module.rst:35
+#: ../../rst/modules/consul_acl_module.rst:33
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/consul_acl_module.rst:194
+#: ../../rst/modules/consul_acl_module.rst:195
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/consul_acl_module.rst:255
+#: ../../rst/modules/consul_acl_module.rst:256
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/consul_acl_module.rst:256
+#: ../../rst/modules/consul_acl_module.rst:257
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/consul_acl_module.rst:310
+#: ../../rst/modules/consul_acl_module.rst:311
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/consul_acl_module.rst:315
+#: ../../rst/modules/consul_acl_module.rst:316
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/consul_acl_module.rst:318
+#: ../../rst/modules/consul_acl_module.rst:319
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/consul_acl_module.rst:325
+#: ../../rst/modules/consul_acl_module.rst:326
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/consul_acl_module.rst:327
+#: ../../rst/modules/consul_acl_module.rst:328
 msgid "Steve Gargan (@sgargan)"
 msgstr ""
 
-#: ../../rst/modules/consul_acl_module.rst:328
+#: ../../rst/modules/consul_acl_module.rst:329
 msgid "Colin Nolan (@colin-nolan)"
 msgstr ""
 
-#: ../../rst/modules/consul_acl_module.rst:332
+#: ../../rst/modules/consul_acl_module.rst:333
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/clustering/consul_acl.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/clustering/consul_acl.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "python >= 2.6"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/clustering/consul_acl.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,37 +36,77 @@ msgid "To check the HTML output of your module documentation:"
 msgstr ""
 
 #: ../../rst/dev_guide/testing_documentation.rst:13
-msgid ""
-"Save your completed module file into the correct directory: "
-"``lib/ansible/modules/$CATEGORY/my_code.py``."
+msgid "Ensure working :ref:`development environment <environment_setup>`."
 msgstr ""
 
 #: ../../rst/dev_guide/testing_documentation.rst:14
-msgid "Move to the docsite directory: ``cd /path/to/ansible/docs/docsite/``."
+#: ../../rst/dev_guide/testing_documentation.rst:28
+msgid "Install required Python packages (drop '--user' in venv/virtualenv):"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_documentation.rst:15
+#: ../../rst/dev_guide/testing_documentation.rst:21
 msgid ""
-"Run the command to build the docs for your module: ``MODULES=my_code make"
-" webdocs``."
+"Ensure your module is in the correct directory: "
+"``lib/ansible/modules/$CATEGORY/mymodule.py``."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_documentation.rst:16
+#: ../../rst/dev_guide/testing_documentation.rst:22
 msgid ""
-"View the HTML page at "
-"``file:///path/to/ansible/docs/docsite/_build/html/my_code_module.html``."
-msgstr ""
-
-#: ../../rst/dev_guide/testing_documentation.rst:18
-msgid ""
-"To build the HTML documentation for multiple modules, use a comma-"
-"separated list of module names: ``MODULES=my_code,my_other_code make "
+"Build HTML from your module documentation: ``MODULES=mymodule make "
 "webdocs``."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_documentation.rst:20
+#: ../../rst/dev_guide/testing_documentation.rst:23
 msgid ""
-"To ensure that your documentation matches your ``argument_spec``, run the"
-" ``validate-modules`` test."
+"To build the HTML documentation for multiple modules, use a comma-"
+"separated list of module names: ``MODULES=mymodule,mymodule2 make "
+"webdocs``."
 msgstr ""
+
+#: ../../rst/dev_guide/testing_documentation.rst:24
+msgid ""
+"View the HTML page at "
+"``file:///path/to/docs/docsite/_build/html/modules/mymodule_module.html``."
+msgstr ""
+
+#: ../../rst/dev_guide/testing_documentation.rst:26
+msgid "To ensure that your module documentation matches your ``argument_spec``:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_documentation.rst:34
+msgid "run the ``validate-modules`` test::"
+msgstr ""
+
+#~ msgid ""
+#~ "Save your completed module file into "
+#~ "the correct directory: "
+#~ "``lib/ansible/modules/$CATEGORY/my_code.py``."
+#~ msgstr ""
+
+#~ msgid "Move to the docsite directory: ``cd /path/to/ansible/docs/docsite/``."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Run the command to build the docs"
+#~ " for your module: ``MODULES=my_code make"
+#~ " webdocs``."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "View the HTML page at "
+#~ "``file:///path/to/ansible/docs/docsite/_build/html/my_code_module.html``."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To build the HTML documentation for "
+#~ "multiple modules, use a comma-separated"
+#~ " list of module names: "
+#~ "``MODULES=my_code,my_other_code make webdocs``."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To ensure that your documentation "
+#~ "matches your ``argument_spec``, run the "
+#~ "``validate-modules`` test."
+#~ msgstr ""
 

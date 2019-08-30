@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,11 +44,11 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/win_get_url_module.rst:234
+#: ../../rst/modules/win_get_url_module.rst:418
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/win_get_url_module.rst:237
+#: ../../rst/modules/win_get_url_module.rst:421
 #, python-format
 msgid ""
 "If your URL includes an escaped slash character (%2F) this module will "
@@ -58,93 +58,116 @@ msgid ""
 "schema/network/schemesettings-element-uri-settings#remarks>`_."
 msgstr ""
 
-#: ../../rst/modules/win_get_url_module.rst:241
+#: ../../rst/modules/win_get_url_module.rst:422
+msgid ""
+"Since Ansible 2.8, the module will skip reporting a change if the remote "
+"checksum is the same as the local local even when ``force=yes``. This is "
+"to better align with :ref:`get_url <get_url_module>`."
+msgstr ""
+
+#: ../../rst/modules/win_get_url_module.rst:426
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/win_get_url_module.rst:245
+#: ../../rst/modules/win_get_url_module.rst:430
 msgid ":ref:`get_url_module`"
 msgstr ""
 
-#: ../../rst/modules/win_get_url_module.rst:246
+#: ../../rst/modules/win_get_url_module.rst:431
 msgid "The official documentation on the **get_url** module."
 msgstr ""
 
-#: ../../rst/modules/win_get_url_module.rst:247
+#: ../../rst/modules/win_get_url_module.rst:432
 msgid ":ref:`uri_module`"
 msgstr ""
 
-#: ../../rst/modules/win_get_url_module.rst:248
+#: ../../rst/modules/win_get_url_module.rst:433
 msgid "The official documentation on the **uri** module."
 msgstr ""
 
-#: ../../rst/modules/win_get_url_module.rst:249
+#: ../../rst/modules/win_get_url_module.rst:434
 msgid ":ref:`win_uri_module`"
 msgstr ""
 
-#: ../../rst/modules/win_get_url_module.rst:250
+#: ../../rst/modules/win_get_url_module.rst:435
 msgid "The official documentation on the **win_uri** module."
 msgstr ""
 
-#: ../../rst/modules/win_get_url_module.rst:254
+#: ../../rst/modules/win_get_url_module.rst:436
+msgid ":ref:`win_inet_proxy_module`"
+msgstr ""
+
+#: ../../rst/modules/win_get_url_module.rst:437
+msgid "The official documentation on the **win_inet_proxy** module."
+msgstr ""
+
+#: ../../rst/modules/win_get_url_module.rst:441
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/win_get_url_module.rst:289
+#: ../../rst/modules/win_get_url_module.rst:492
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/win_get_url_module.rst:290
+#: ../../rst/modules/win_get_url_module.rst:493
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/win_get_url_module.rst:370
+#: ../../rst/modules/win_get_url_module.rst:612
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/win_get_url_module.rst:375
+#: ../../rst/modules/win_get_url_module.rst:617
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/win_get_url_module.rst:378
+#: ../../rst/modules/win_get_url_module.rst:620
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/win_get_url_module.rst:381
+#: ../../rst/modules/win_get_url_module.rst:623
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/win_get_url_module.rst:383
+#: ../../rst/modules/win_get_url_module.rst:625
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/win_get_url_module.rst:389
+#: ../../rst/modules/win_get_url_module.rst:631
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/win_get_url_module.rst:391
+#: ../../rst/modules/win_get_url_module.rst:633
 msgid "Paul Durivage (@angstwad)"
 msgstr ""
 
-#: ../../rst/modules/win_get_url_module.rst:392
+#: ../../rst/modules/win_get_url_module.rst:634
 msgid "Takeshi Kuramochi (@tksarah)"
 msgstr ""
 
-#: ../../rst/modules/win_get_url_module.rst:396
+#: ../../rst/modules/win_get_url_module.rst:638
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_get_url.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_get_url.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_get_url.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

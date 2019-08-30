@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgstr ""
 msgid ""
 "This module is basically a wrapper around most of the functionality of "
 "PostgreSQL's GRANT and REVOKE statements with detection of changes "
-"(GRANT/REVOKE *privs* ON *type* *objs* TO/FROM *roles*)"
+"(GRANT/REVOKE *privs* ON *type* *objs* TO/FROM *roles*)."
 msgstr ""
 
 #: ../../rst/modules/postgresql_privs_module.rst:25
@@ -55,46 +55,30 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/postgresql_privs_module.rst:343
+#: ../../rst/modules/postgresql_privs_module.rst:395
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/postgresql_privs_module.rst:346
-msgid ""
-"Default authentication assumes that postgresql_privs is run by the "
-"``postgres`` user on the remote host. (Ansible's ``user`` or ``sudo-"
-"user``)."
-msgstr ""
-
-#: ../../rst/modules/postgresql_privs_module.rst:347
-msgid ""
-"This module requires Python package *psycopg2* to be installed on the "
-"remote host. In the default case of the remote host also being the "
-"PostgreSQL server, PostgreSQL has to be installed there as well, "
-"obviously. For Debian/Ubuntu-based systems, install packages *postgresql*"
-" and *python-psycopg2*."
-msgstr ""
-
-#: ../../rst/modules/postgresql_privs_module.rst:348
+#: ../../rst/modules/postgresql_privs_module.rst:398
 msgid ""
 "Parameters that accept comma separated lists (*privs*, *objs*, *roles*) "
 "have singular alias names (*priv*, *obj*, *role*)."
 msgstr ""
 
-#: ../../rst/modules/postgresql_privs_module.rst:349
+#: ../../rst/modules/postgresql_privs_module.rst:399
 msgid ""
 "To revoke only ``GRANT OPTION`` for a specific object, set *state* to "
 "``present`` and *grant_option* to ``no`` (see examples)."
 msgstr ""
 
-#: ../../rst/modules/postgresql_privs_module.rst:350
+#: ../../rst/modules/postgresql_privs_module.rst:400
 msgid ""
 "Note that when revoking privileges from a role R, this role  may still "
 "have access via privileges granted to any role R is a member of including"
 " ``PUBLIC``."
 msgstr ""
 
-#: ../../rst/modules/postgresql_privs_module.rst:351
+#: ../../rst/modules/postgresql_privs_module.rst:401
 msgid ""
 "Note that when revoking privileges from a role R, you do so as the user "
 "specified via *login*. If R has been granted the same privileges by "
@@ -102,67 +86,205 @@ msgid ""
 "privileges."
 msgstr ""
 
-#: ../../rst/modules/postgresql_privs_module.rst:352
+#: ../../rst/modules/postgresql_privs_module.rst:402
 msgid "When revoking privileges, ``RESTRICT`` is assumed (see PostgreSQL docs)."
 msgstr ""
 
-#: ../../rst/modules/postgresql_privs_module.rst:353
-#: ../../rst/modules/postgresql_privs_module.rst:356
-msgid ""
-"The ssl_rootcert parameter requires at least Postgres version 8.4 and "
-"*psycopg2* version 2.4.3."
-msgstr ""
-
-#: ../../rst/modules/postgresql_privs_module.rst:354
+#: ../../rst/modules/postgresql_privs_module.rst:403
 msgid ""
 "The default authentication assumes that you are either logging in as or "
 "sudo'ing to the ``postgres`` account on the host."
 msgstr ""
 
-#: ../../rst/modules/postgresql_privs_module.rst:355
+#: ../../rst/modules/postgresql_privs_module.rst:404
 msgid ""
-"This module uses *psycopg2*, a Python PostgreSQL database adapter. You "
-"must ensure that psycopg2 is installed on the host before using this "
-"module. If the remote host is the PostgreSQL server (which is the default"
-" case), then PostgreSQL must also be installed on the remote host. For "
-"Ubuntu-based systems, install the ``postgresql``, ``libpq-dev``, and "
-"``python-psycopg2`` packages on the remote host before using this module."
+"To avoid \"Peer authentication failed for user postgres\" error, use "
+"postgres user as a *become_user*."
 msgstr ""
 
-#: ../../rst/modules/postgresql_privs_module.rst:361
+#: ../../rst/modules/postgresql_privs_module.rst:405
+msgid ""
+"This module uses psycopg2, a Python PostgreSQL database adapter. You must"
+" ensure that psycopg2 is installed on the host before using this module."
+msgstr ""
+
+#: ../../rst/modules/postgresql_privs_module.rst:406
+msgid ""
+"If the remote host is the PostgreSQL server (which is the default case), "
+"then PostgreSQL must also be installed on the remote host."
+msgstr ""
+
+#: ../../rst/modules/postgresql_privs_module.rst:407
+msgid ""
+"For Ubuntu-based systems, install the postgresql, libpq-dev, and python-"
+"psycopg2 packages on the remote host before using this module."
+msgstr ""
+
+#: ../../rst/modules/postgresql_privs_module.rst:408
+msgid ""
+"The ca_cert parameter requires at least Postgres version 8.4 and "
+"*psycopg2* version 2.4.3."
+msgstr ""
+
+#: ../../rst/modules/postgresql_privs_module.rst:412
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/postgresql_privs_module.rst:416
+msgid ":ref:`postgresql_user_module`"
+msgstr ""
+
+#: ../../rst/modules/postgresql_privs_module.rst:417
+msgid "The official documentation on the **postgresql_user** module."
+msgstr ""
+
+#: ../../rst/modules/postgresql_privs_module.rst:418
+msgid ":ref:`postgresql_owner_module`"
+msgstr ""
+
+#: ../../rst/modules/postgresql_privs_module.rst:419
+msgid "The official documentation on the **postgresql_owner** module."
+msgstr ""
+
+#: ../../rst/modules/postgresql_privs_module.rst:420
+msgid ":ref:`postgresql_membership_module`"
+msgstr ""
+
+#: ../../rst/modules/postgresql_privs_module.rst:421
+msgid "The official documentation on the **postgresql_membership** module."
+msgstr ""
+
+#: ../../rst/modules/postgresql_privs_module.rst:422
+msgid ""
+"`PostgreSQL privileges <https://www.postgresql.org/docs/current/ddl-"
+"priv.html>`_"
+msgstr ""
+
+#: ../../rst/modules/postgresql_privs_module.rst:423
+msgid "General information about PostgreSQL privileges."
+msgstr ""
+
+#: ../../rst/modules/postgresql_privs_module.rst:424
+msgid ""
+"`PostgreSQL GRANT command reference "
+"<https://www.postgresql.org/docs/current/sql-grant.html>`_"
+msgstr ""
+
+#: ../../rst/modules/postgresql_privs_module.rst:425
+msgid "Complete reference of the PostgreSQL GRANT command documentation."
+msgstr ""
+
+#: ../../rst/modules/postgresql_privs_module.rst:426
+msgid ""
+"`PostgreSQL REVOKE command reference "
+"<https://www.postgresql.org/docs/current/sql-revoke.html>`_"
+msgstr ""
+
+#: ../../rst/modules/postgresql_privs_module.rst:427
+msgid "Complete reference of the PostgreSQL REVOKE command documentation."
+msgstr ""
+
+#: ../../rst/modules/postgresql_privs_module.rst:431
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/postgresql_privs_module.rst:492
+#: ../../rst/modules/postgresql_privs_module.rst:623
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/postgresql_privs_module.rst:624
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/postgresql_privs_module.rst:652
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/postgresql_privs_module.rst:497
+#: ../../rst/modules/postgresql_privs_module.rst:657
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/postgresql_privs_module.rst:500
+#: ../../rst/modules/postgresql_privs_module.rst:660
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/postgresql_privs_module.rst:507
+#: ../../rst/modules/postgresql_privs_module.rst:667
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/postgresql_privs_module.rst:509
+#: ../../rst/modules/postgresql_privs_module.rst:669
 msgid "Bernhard Weitzhofer (@b6d)"
 msgstr ""
 
-#: ../../rst/modules/postgresql_privs_module.rst:513
+#: ../../rst/modules/postgresql_privs_module.rst:673
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/postgresql/postgresql_privs.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/postgresql/postgresql_privs.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module is basically a wrapper "
+#~ "around most of the functionality of "
+#~ "PostgreSQL's GRANT and REVOKE statements "
+#~ "with detection of changes (GRANT/REVOKE "
+#~ "*privs* ON *type* *objs* TO/FROM "
+#~ "*roles*)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Default authentication assumes that "
+#~ "postgresql_privs is run by the "
+#~ "``postgres`` user on the remote host."
+#~ " (Ansible's ``user`` or ``sudo-user``)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module requires Python package "
+#~ "*psycopg2* to be installed on the "
+#~ "remote host. In the default case "
+#~ "of the remote host also being the"
+#~ " PostgreSQL server, PostgreSQL has to "
+#~ "be installed there as well, obviously."
+#~ " For Debian/Ubuntu-based systems, install"
+#~ " packages *postgresql* and *python-"
+#~ "psycopg2*."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The ssl_rootcert parameter requires at "
+#~ "least Postgres version 8.4 and "
+#~ "*psycopg2* version 2.4.3."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module uses *psycopg2*, a Python"
+#~ " PostgreSQL database adapter. You must "
+#~ "ensure that psycopg2 is installed on "
+#~ "the host before using this module. "
+#~ "If the remote host is the "
+#~ "PostgreSQL server (which is the default"
+#~ " case), then PostgreSQL must also be"
+#~ " installed on the remote host. For"
+#~ " Ubuntu-based systems, install the "
+#~ "``postgresql``, ``libpq-dev``, and "
+#~ "``python-psycopg2`` packages on the remote"
+#~ " host before using this module."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/postgresql/postgresql_privs.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

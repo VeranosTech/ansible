@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,128 +22,127 @@ msgstr ""
 msgid "acme_account_facts -- Retrieves information on ACME accounts"
 msgstr ""
 
-#: ../../rst/modules/acme_account_facts_module.rst:19
-msgid "Synopsis"
-msgstr ""
-
-#: ../../rst/modules/acme_account_facts_module.rst:20
+#: ../../rst/modules/acme_account_facts_module.rst:11
 msgid ""
-"Allows to retrieve information on accounts a CA supporting the `ACME "
-"protocol <https://tools.ietf.org/html/draft-ietf-acme-acme-18>`_, such as"
-" `Let's Encrypt <https://letsencrypt.org/>`_."
+"This is an alias for :ref:`acme_account_info <acme_account_info_module>`."
+" This name has been **deprecated**. Please update your tasks to use the "
+"new name ``acme_account_info`` instead."
 msgstr ""
 
-#: ../../rst/modules/acme_account_facts_module.rst:21
-msgid "This module only works with the ACME v2 protocol."
-msgstr ""
+#~ msgid "Synopsis"
+#~ msgstr ""
 
-#: ../../rst/modules/acme_account_facts_module.rst:26
-msgid "Requirements"
-msgstr ""
+#~ msgid ""
+#~ "Allows to retrieve information on "
+#~ "accounts a CA supporting the `ACME "
+#~ "protocol <https://tools.ietf.org/html/draft-ietf-"
+#~ "acme-acme-18>`_, such as `Let's Encrypt "
+#~ "<https://letsencrypt.org/>`_."
+#~ msgstr ""
 
-#: ../../rst/modules/acme_account_facts_module.rst:27
-msgid "The below requirements are needed on the host that executes this module."
-msgstr ""
+#~ msgid "This module only works with the ACME v2 protocol."
+#~ msgstr ""
 
-#: ../../rst/modules/acme_account_facts_module.rst:29
-msgid "python >= 2.6"
-msgstr ""
+#~ msgid "Requirements"
+#~ msgstr ""
 
-#: ../../rst/modules/acme_account_facts_module.rst:30
-msgid "either openssl, ..."
-msgstr ""
+#~ msgid ""
+#~ "The below requirements are needed on "
+#~ "the host that executes this module."
+#~ msgstr ""
 
-#: ../../rst/modules/acme_account_facts_module.rst:31
-msgid "... or `cryptography <https://cryptography.io/>`_ >= 1.5"
-msgstr ""
+#~ msgid "python >= 2.6"
+#~ msgstr ""
 
-#: ../../rst/modules/acme_account_facts_module.rst:35
-msgid "Parameters"
-msgstr ""
+#~ msgid "either openssl, ..."
+#~ msgstr ""
 
-#: ../../rst/modules/acme_account_facts_module.rst:171
-msgid "Notes"
-msgstr ""
+#~ msgid "... or `cryptography <https://cryptography.io/>`_ >= 1.5"
+#~ msgstr ""
 
-#: ../../rst/modules/acme_account_facts_module.rst:174
-msgid ""
-"The :ref:`acme_account <acme_account_module>` module allows to modify, "
-"create and delete ACME accounts."
-msgstr ""
+#~ msgid "Parameters"
+#~ msgstr ""
 
-#: ../../rst/modules/acme_account_facts_module.rst:175
-msgid ""
-"If a new enough version of the ``cryptography`` library is available (see"
-" Requirements for details), it will be used instead of the ``openssl`` "
-"binary. This can be explicitly disabled or enabled with the "
-"``select_crypto_backend`` option. Note that using the ``openssl`` binary "
-"will be slower and less secure, as private key contents always have to be"
-" stored on disk (see ``account_key_content``)."
-msgstr ""
+#~ msgid "Notes"
+#~ msgstr ""
 
-#: ../../rst/modules/acme_account_facts_module.rst:176
-msgid ""
-"Although the defaults are chosen so that the module can be used with the "
-"`Let's Encrypt <https://letsencrypt.org/>`_ CA, the module can in "
-"principle be used with any CA providing an ACME endpoint."
-msgstr ""
+#~ msgid ""
+#~ "The :ref:`acme_account <acme_account_module>` module"
+#~ " allows to modify, create and delete"
+#~ " ACME accounts."
+#~ msgstr ""
 
-#: ../../rst/modules/acme_account_facts_module.rst:180
-msgid "See Also"
-msgstr ""
+#~ msgid ""
+#~ "If a new enough version of the "
+#~ "``cryptography`` library is available (see "
+#~ "Requirements for details), it will be"
+#~ " used instead of the ``openssl`` "
+#~ "binary. This can be explicitly disabled"
+#~ " or enabled with the "
+#~ "``select_crypto_backend`` option. Note that "
+#~ "using the ``openssl`` binary will be "
+#~ "slower and less secure, as private "
+#~ "key contents always have to be "
+#~ "stored on disk (see ``account_key_content``)."
+#~ msgstr ""
 
-#: ../../rst/modules/acme_account_facts_module.rst:184
-msgid ":ref:`acme_account_module`"
-msgstr ""
+#~ msgid ""
+#~ "Although the defaults are chosen so "
+#~ "that the module can be used with"
+#~ " the `Let's Encrypt <https://letsencrypt.org/>`_"
+#~ " CA, the module can in principle "
+#~ "be used with any CA providing an"
+#~ " ACME endpoint."
+#~ msgstr ""
 
-#: ../../rst/modules/acme_account_facts_module.rst:185
-msgid "Allows to create, modify or delete an ACME account."
-msgstr ""
+#~ msgid "See Also"
+#~ msgstr ""
 
-#: ../../rst/modules/acme_account_facts_module.rst:189
-msgid "Examples"
-msgstr ""
+#~ msgid ":ref:`acme_account_module`"
+#~ msgstr ""
 
-#: ../../rst/modules/acme_account_facts_module.rst:223
-msgid "Return Values"
-msgstr ""
+#~ msgid "Allows to create, modify or delete an ACME account."
+#~ msgstr ""
 
-#: ../../rst/modules/acme_account_facts_module.rst:224
-msgid ""
-"Common return values are documented :ref:`here <common_return_values>`, "
-"the following are the fields unique to this module:"
-msgstr ""
+#~ msgid "Examples"
+#~ msgstr ""
 
-#: ../../rst/modules/acme_account_facts_module.rst:329
-msgid "Status"
-msgstr ""
+#~ msgid "Return Values"
+#~ msgstr ""
 
-#: ../../rst/modules/acme_account_facts_module.rst:334
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
-msgstr ""
+#~ msgid ""
+#~ "Common return values are documented "
+#~ ":ref:`here <common_return_values>`, the following"
+#~ " are the fields unique to this "
+#~ "module:"
+#~ msgstr ""
 
-#: ../../rst/modules/acme_account_facts_module.rst:337
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
-msgstr ""
+#~ msgid "Status"
+#~ msgstr ""
 
-#: ../../rst/modules/acme_account_facts_module.rst:344
-msgid "Authors"
-msgstr ""
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
 
-#: ../../rst/modules/acme_account_facts_module.rst:346
-msgid "Felix Fontein (@felixfontein)"
-msgstr ""
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
 
-#: ../../rst/modules/acme_account_facts_module.rst:350
-#, python-format
-msgid ""
-"If you notice any issues in this documentation you can `edit this "
-"document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/crypto/acme/acme_account_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
-" to improve it."
-msgstr ""
+#~ msgid "Authors"
+#~ msgstr ""
+
+#~ msgid "Felix Fontein (@felixfontein)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/crypto/acme/acme_account_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

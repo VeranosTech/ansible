@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -552,7 +552,7 @@ msgid "You can run from your fork something like:"
 msgstr ""
 
 #: ../../rst/dev_guide/developing_modules_general_aci.rst:402
-msgid ":doc:`testing_sanity`"
+msgid ":ref:`testing_sanity`"
 msgstr ""
 
 #: ../../rst/dev_guide/developing_modules_general_aci.rst:403
@@ -581,7 +581,7 @@ msgid ""
 msgstr ""
 
 #: ../../rst/dev_guide/developing_modules_general_aci.rst:432
-msgid ":doc:`testing_integration`"
+msgid ":ref:`testing_integration`"
 msgstr ""
 
 #: ../../rst/dev_guide/developing_modules_general_aci.rst:433
@@ -591,4 +591,10 @@ msgstr ""
 #: ../../rst/dev_guide/developing_modules_general_aci.rst:437
 msgid "Testing for test coverage"
 msgstr ""
+
+#~ msgid ":doc:`testing_sanity`"
+#~ msgstr ""
+
+#~ msgid ":doc:`testing_integration`"
+#~ msgstr ""
 

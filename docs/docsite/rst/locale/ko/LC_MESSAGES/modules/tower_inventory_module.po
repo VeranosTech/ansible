@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,56 +48,64 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/tower_inventory_module.rst:215
+#: ../../rst/modules/tower_inventory_module.rst:218
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/tower_inventory_module.rst:218
+#: ../../rst/modules/tower_inventory_module.rst:221
 msgid ""
 "If no *config_file* is provided we will attempt to use the tower-cli "
 "library defaults to find your Tower host information."
 msgstr ""
 
-#: ../../rst/modules/tower_inventory_module.rst:219
+#: ../../rst/modules/tower_inventory_module.rst:222
 msgid ""
 "*config_file* should contain Tower configuration in the following format "
 "host=hostname username=username password=password"
 msgstr ""
 
-#: ../../rst/modules/tower_inventory_module.rst:224
+#: ../../rst/modules/tower_inventory_module.rst:227
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/tower_inventory_module.rst:242
+#: ../../rst/modules/tower_inventory_module.rst:245
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/tower_inventory_module.rst:247
+#: ../../rst/modules/tower_inventory_module.rst:250
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/tower_inventory_module.rst:250
+#: ../../rst/modules/tower_inventory_module.rst:253
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/tower_inventory_module.rst:257
+#: ../../rst/modules/tower_inventory_module.rst:260
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/tower_inventory_module.rst:259
+#: ../../rst/modules/tower_inventory_module.rst:262
 msgid "Wayne Witzel III (@wwitzel3)"
 msgstr ""
 
-#: ../../rst/modules/tower_inventory_module.rst:263
+#: ../../rst/modules/tower_inventory_module.rst:266
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/web_infrastructure/ansible_tower/tower_inventory.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/web_infrastructure/ansible_tower/tower_inventory.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/web_infrastructure/ansible_tower/tower_inventory.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

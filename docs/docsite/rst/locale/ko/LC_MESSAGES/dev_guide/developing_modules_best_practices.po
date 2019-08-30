@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,7 @@ msgstr ""
 #: ../../rst/dev_guide/developing_modules_best_practices.rst:19
 msgid ""
 "Do not add ``list`` or ``info`` state options to an existing module - "
-"create a new ``_facts`` module."
+"create a new ``_info`` or ``_facts`` module."
 msgstr ""
 
 #: ../../rst/dev_guide/developing_modules_best_practices.rst:20
@@ -127,8 +127,8 @@ msgstr ""
 
 #: ../../rst/dev_guide/developing_modules_best_practices.rst:36
 msgid ""
-"Always use the ``hacking/test-module`` script when developing modules - "
-"it will warn you about common pitfalls."
+"Always use the ``hacking/test-module.py`` script when developing modules "
+"- it will warn you about common pitfalls."
 msgstr ""
 
 #: ../../rst/dev_guide/developing_modules_best_practices.rst:37
@@ -231,7 +231,9 @@ msgstr ""
 msgid ""
 "Use shared code whenever possible - don't reinvent the wheel. Ansible "
 "offers the ``AnsibleModule`` common Python code, plus :ref:`utilities "
-"<appendix_module_utilities>` for many common use cases and patterns."
+"<developing_module_utilities>` for many common use cases and patterns. "
+"You can also create documentation fragments for docs that apply to "
+"multiple modules."
 msgstr ""
 
 #: ../../rst/dev_guide/developing_modules_best_practices.rst:71
@@ -457,11 +459,11 @@ msgstr ""
 
 #: ../../rst/dev_guide/developing_modules_best_practices.rst:155
 msgid ""
-"Implement ``check_mode`` in all ``*_facts`` modules. Playbooks which "
-"conditionalize based on fact information will only conditionalize "
-"correctly in ``check_mode`` if the facts are returned in ``check_mode``. "
-"Usually you can add ``check_mode=True`` when instantiating "
-"``AnsibleModule``."
+"Implement ``check_mode`` in all ``*_info`` and ``*_facts`` modules. "
+"Playbooks which conditionalize based on fact information will only "
+"conditionalize correctly in ``check_mode`` if the facts are returned in "
+"``check_mode``. Usually you can add ``supports_check_mode=True`` when "
+"instantiating ``AnsibleModule``."
 msgstr ""
 
 #: ../../rst/dev_guide/developing_modules_best_practices.rst:156
@@ -560,4 +562,36 @@ msgid ""
 "If any variables in your module can come from user input with "
 "``use_unsafe_shell=True``, you must wrap them with ``pipes.quote(x)``."
 msgstr ""
+
+#~ msgid ""
+#~ "Do not add ``list`` or ``info`` "
+#~ "state options to an existing module "
+#~ "- create a new ``_facts`` module."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Always use the ``hacking/test-module`` "
+#~ "script when developing modules - it "
+#~ "will warn you about common pitfalls."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Use shared code whenever possible - "
+#~ "don't reinvent the wheel. Ansible offers"
+#~ " the ``AnsibleModule`` common Python code,"
+#~ " plus :ref:`utilities <appendix_module_utilities>` "
+#~ "for many common use cases and "
+#~ "patterns."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Implement ``check_mode`` in all ``*_facts``"
+#~ " modules. Playbooks which conditionalize "
+#~ "based on fact information will only "
+#~ "conditionalize correctly in ``check_mode`` if"
+#~ " the facts are returned in "
+#~ "``check_mode``. Usually you can add "
+#~ "``check_mode=True`` when instantiating "
+#~ "``AnsibleModule``."
+#~ msgstr ""
 

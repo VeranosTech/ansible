@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,41 @@ msgstr ""
 msgid "gcp_backend_service -- Create or Destroy a Backend Service"
 msgstr ""
 
+#: ../../rst/modules/gcp_backend_service_module.rst:18
+msgid "DEPRECATED"
+msgstr ""
+
+#: ../../rst/modules/gcp_backend_service_module.rst
+msgid "Removed in Ansible"
+msgstr ""
+
 #: ../../rst/modules/gcp_backend_service_module.rst:19
-msgid "Synopsis"
+msgid "version: 2.12"
+msgstr ""
+
+#: ../../rst/modules/gcp_backend_service_module.rst
+msgid "Why"
 msgstr ""
 
 #: ../../rst/modules/gcp_backend_service_module.rst:20
+msgid "Updated modules released with increased functionality"
+msgstr ""
+
+#: ../../rst/modules/gcp_backend_service_module.rst
+msgid "Alternative"
+msgstr ""
+
+#: ../../rst/modules/gcp_backend_service_module.rst:21
+msgid ""
+"Use :ref:`gcp_compute_backend_service "
+"<gcp_compute_backend_service_module>` instead."
+msgstr ""
+
+#: ../../rst/modules/gcp_backend_service_module.rst:26
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/gcp_backend_service_module.rst:27
 msgid ""
 "Create or Destroy a Backend Service.  See "
 "https://cloud.google.com/compute/docs/load-balancing/http/backend-service"
@@ -34,72 +64,68 @@ msgid ""
 "Cloud modules can be found in the comments of ansible/test/gce_tests.py."
 msgstr ""
 
-#: ../../rst/modules/gcp_backend_service_module.rst:25
+#: ../../rst/modules/gcp_backend_service_module.rst:32
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/gcp_backend_service_module.rst:26
+#: ../../rst/modules/gcp_backend_service_module.rst:33
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/gcp_backend_service_module.rst:28
+#: ../../rst/modules/gcp_backend_service_module.rst:35
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/gcp_backend_service_module.rst:29
+#: ../../rst/modules/gcp_backend_service_module.rst:36
 msgid "apache-libcloud >= 1.3.0"
 msgstr ""
 
-#: ../../rst/modules/gcp_backend_service_module.rst:33
+#: ../../rst/modules/gcp_backend_service_module.rst:40
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/gcp_backend_service_module.rst:199
+#: ../../rst/modules/gcp_backend_service_module.rst:206
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/gcp_backend_service_module.rst:202
+#: ../../rst/modules/gcp_backend_service_module.rst:209
 msgid "Update is not currently supported."
 msgstr ""
 
-#: ../../rst/modules/gcp_backend_service_module.rst:203
+#: ../../rst/modules/gcp_backend_service_module.rst:210
 msgid ""
 "Only global backend services are currently supported. Regional backends "
 "not currently supported."
 msgstr ""
 
-#: ../../rst/modules/gcp_backend_service_module.rst:204
+#: ../../rst/modules/gcp_backend_service_module.rst:211
 msgid "Internal load balancing not currently supported."
 msgstr ""
 
-#: ../../rst/modules/gcp_backend_service_module.rst:209
+#: ../../rst/modules/gcp_backend_service_module.rst:216
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/gcp_backend_service_module.rst:250
+#: ../../rst/modules/gcp_backend_service_module.rst:257
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/gcp_backend_service_module.rst:251
+#: ../../rst/modules/gcp_backend_service_module.rst:258
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/gcp_backend_service_module.rst:383
+#: ../../rst/modules/gcp_backend_service_module.rst:390
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/gcp_backend_service_module.rst:388
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
+#: ../../rst/modules/gcp_backend_service_module.rst:393
+msgid "This module will be removed in version 2.12. *[deprecated]*"
 msgstr ""
 
-#: ../../rst/modules/gcp_backend_service_module.rst:391
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
+#: ../../rst/modules/gcp_backend_service_module.rst:394
+msgid "For more information see `DEPRECATED`_."
 msgstr ""
 
 #: ../../rst/modules/gcp_backend_service_module.rst:398
@@ -113,9 +139,29 @@ msgstr ""
 #: ../../rst/modules/gcp_backend_service_module.rst:404
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/gcp_backend_service.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/_gcp_backend_service.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/gcp_backend_service.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

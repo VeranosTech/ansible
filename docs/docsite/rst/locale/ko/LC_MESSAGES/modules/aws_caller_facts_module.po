@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,130 +20,137 @@ msgstr ""
 
 #: ../../rst/modules/aws_caller_facts_module.rst:9
 msgid ""
-"aws_caller_facts -- Get facts about the user and account being used to "
-"make AWS calls"
+"aws_caller_facts -- Get information about the user and account being used"
+" to make AWS calls"
 msgstr ""
 
-#: ../../rst/modules/aws_caller_facts_module.rst:19
-msgid "Synopsis"
-msgstr ""
-
-#: ../../rst/modules/aws_caller_facts_module.rst:20
+#: ../../rst/modules/aws_caller_facts_module.rst:11
 msgid ""
-"This module returns information about the account and user / role from "
-"which the AWS access tokens originate."
+"This is an alias for :ref:`aws_caller_info <aws_caller_info_module>`. "
+"This name has been **deprecated**. Please update your tasks to use the "
+"new name ``aws_caller_info`` instead."
 msgstr ""
 
-#: ../../rst/modules/aws_caller_facts_module.rst:21
-msgid ""
-"The primary use of this is to get the account id for templating into ARNs"
-" or similar to avoid needing to specify this information in inventory."
-msgstr ""
+#~ msgid ""
+#~ "aws_caller_facts -- Get facts about the"
+#~ " user and account being used to "
+#~ "make AWS calls"
+#~ msgstr ""
 
-#: ../../rst/modules/aws_caller_facts_module.rst:26
-msgid "Requirements"
-msgstr ""
+#~ msgid "Synopsis"
+#~ msgstr ""
 
-#: ../../rst/modules/aws_caller_facts_module.rst:27
-msgid "The below requirements are needed on the host that executes this module."
-msgstr ""
+#~ msgid ""
+#~ "This module returns information about "
+#~ "the account and user / role from"
+#~ " which the AWS access tokens "
+#~ "originate."
+#~ msgstr ""
 
-#: ../../rst/modules/aws_caller_facts_module.rst:29
-msgid "boto"
-msgstr ""
+#~ msgid ""
+#~ "The primary use of this is to "
+#~ "get the account id for templating "
+#~ "into ARNs or similar to avoid "
+#~ "needing to specify this information in"
+#~ " inventory."
+#~ msgstr ""
 
-#: ../../rst/modules/aws_caller_facts_module.rst:30
-msgid "boto3"
-msgstr ""
+#~ msgid "Requirements"
+#~ msgstr ""
 
-#: ../../rst/modules/aws_caller_facts_module.rst:31
-msgid "botocore"
-msgstr ""
+#~ msgid ""
+#~ "The below requirements are needed on "
+#~ "the host that executes this module."
+#~ msgstr ""
 
-#: ../../rst/modules/aws_caller_facts_module.rst:32
-msgid "python >= 2.6"
-msgstr ""
+#~ msgid "boto"
+#~ msgstr ""
 
-#: ../../rst/modules/aws_caller_facts_module.rst:36
-msgid "Parameters"
-msgstr ""
+#~ msgid "boto3"
+#~ msgstr ""
 
-#: ../../rst/modules/aws_caller_facts_module.rst:150
-msgid "Notes"
-msgstr ""
+#~ msgid "botocore"
+#~ msgstr ""
 
-#: ../../rst/modules/aws_caller_facts_module.rst:153
-msgid ""
-"If parameters are not set within the module, the following environment "
-"variables can be used in decreasing order of precedence ``AWS_URL`` or "
-"``EC2_URL``, ``AWS_ACCESS_KEY_ID`` or ``AWS_ACCESS_KEY`` or "
-"``EC2_ACCESS_KEY``, ``AWS_SECRET_ACCESS_KEY`` or ``AWS_SECRET_KEY`` or "
-"``EC2_SECRET_KEY``, ``AWS_SECURITY_TOKEN`` or ``EC2_SECURITY_TOKEN``, "
-"``AWS_REGION`` or ``EC2_REGION``"
-msgstr ""
+#~ msgid "python >= 2.6"
+#~ msgstr ""
 
-#: ../../rst/modules/aws_caller_facts_module.rst:154
-msgid ""
-"Ansible uses the boto configuration file (typically ~/.boto) if no "
-"credentials are provided. See "
-"https://boto.readthedocs.io/en/latest/boto_config_tut.html"
-msgstr ""
+#~ msgid "Parameters"
+#~ msgstr ""
 
-#: ../../rst/modules/aws_caller_facts_module.rst:155
-msgid ""
-"``AWS_REGION`` or ``EC2_REGION`` can be typically be used to specify the "
-"AWS region, when required, but this can also be configured in the boto "
-"config file"
-msgstr ""
+#~ msgid "Notes"
+#~ msgstr ""
 
-#: ../../rst/modules/aws_caller_facts_module.rst:160
-msgid "Examples"
-msgstr ""
+#~ msgid ""
+#~ "If parameters are not set within "
+#~ "the module, the following environment "
+#~ "variables can be used in decreasing "
+#~ "order of precedence ``AWS_URL`` or "
+#~ "``EC2_URL``, ``AWS_ACCESS_KEY_ID`` or "
+#~ "``AWS_ACCESS_KEY`` or ``EC2_ACCESS_KEY``, "
+#~ "``AWS_SECRET_ACCESS_KEY`` or ``AWS_SECRET_KEY`` or"
+#~ " ``EC2_SECRET_KEY``, ``AWS_SECURITY_TOKEN`` or "
+#~ "``EC2_SECURITY_TOKEN``, ``AWS_REGION`` or "
+#~ "``EC2_REGION``"
+#~ msgstr ""
 
-#: ../../rst/modules/aws_caller_facts_module.rst:175
-msgid "Return Values"
-msgstr ""
+#~ msgid ""
+#~ "Ansible uses the boto configuration file"
+#~ " (typically ~/.boto) if no credentials "
+#~ "are provided. See "
+#~ "https://boto.readthedocs.io/en/latest/boto_config_tut.html"
+#~ msgstr ""
 
-#: ../../rst/modules/aws_caller_facts_module.rst:176
-msgid ""
-"Common return values are documented :ref:`here <common_return_values>`, "
-"the following are the fields unique to this module:"
-msgstr ""
+#~ msgid ""
+#~ "``AWS_REGION`` or ``EC2_REGION`` can be "
+#~ "typically be used to specify the "
+#~ "AWS region, when required, but this "
+#~ "can also be configured in the boto"
+#~ " config file"
+#~ msgstr ""
 
-#: ../../rst/modules/aws_caller_facts_module.rst:244
-msgid "Status"
-msgstr ""
+#~ msgid "Examples"
+#~ msgstr ""
 
-#: ../../rst/modules/aws_caller_facts_module.rst:249
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
-msgstr ""
+#~ msgid "Return Values"
+#~ msgstr ""
 
-#: ../../rst/modules/aws_caller_facts_module.rst:252
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
-msgstr ""
+#~ msgid ""
+#~ "Common return values are documented "
+#~ ":ref:`here <common_return_values>`, the following"
+#~ " are the fields unique to this "
+#~ "module:"
+#~ msgstr ""
 
-#: ../../rst/modules/aws_caller_facts_module.rst:259
-msgid "Authors"
-msgstr ""
+#~ msgid "Status"
+#~ msgstr ""
 
-#: ../../rst/modules/aws_caller_facts_module.rst:261
-msgid "Ed Costello (@orthanc)"
-msgstr ""
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
 
-#: ../../rst/modules/aws_caller_facts_module.rst:262
-msgid "Stijn Dubrul (@sdubrul)"
-msgstr ""
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
 
-#: ../../rst/modules/aws_caller_facts_module.rst:266
-#, python-format
-msgid ""
-"If you notice any issues in this documentation you can `edit this "
-"document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/aws_caller_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
-" to improve it."
-msgstr ""
+#~ msgid "Authors"
+#~ msgstr ""
+
+#~ msgid "Ed Costello (@orthanc)"
+#~ msgstr ""
+
+#~ msgid "Stijn Dubrul (@sdubrul)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/aws_caller_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

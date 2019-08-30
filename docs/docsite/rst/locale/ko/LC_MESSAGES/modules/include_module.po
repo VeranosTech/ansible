@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,8 +40,8 @@ msgstr ""
 
 #: ../../rst/modules/include_module.rst:21
 msgid ""
-"Before Ansible version 2.0, all includes were 'static' and were executed "
-"when the play was compiled."
+"Before Ansible 2.0, all includes were 'static' and were executed when the"
+" play was compiled."
 msgstr ""
 
 #: ../../rst/modules/include_module.rst:22
@@ -54,8 +54,8 @@ msgstr ""
 msgid ""
 "Since Ansible 2.0, task includes are dynamic and behave more like real "
 "tasks. This means they can be looped, skipped and use variables from any "
-"source. Ansible tries to auto detect this, but you can use the `static` "
-"directive (which was added in Ansible 2.1) to bypass autodetection."
+"source. Ansible tries to auto detect this, but you can use the ``static``"
+" directive (which was added in Ansible 2.1) to bypass autodetection."
 msgstr ""
 
 #: ../../rst/modules/include_module.rst:24
@@ -84,55 +84,158 @@ msgid ""
 "(:ref:`include_tasks <include_tasks_module>`, :ref:`include_role "
 "<include_role_module>`, :ref:`import_playbook <import_playbook_module>`, "
 ":ref:`import_tasks <import_tasks_module>`) that have well established and"
-" clear behaviours. This module will still be supported for some time but "
-"we are looking at deprecating it in the near future."
+" clear behaviours."
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:63
+msgid ""
+"**This module will still be supported for some time but we are looking at"
+" deprecating it in the near future.**"
 msgstr ""
 
 #: ../../rst/modules/include_module.rst:67
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:71
+msgid ":ref:`import_playbook_module`"
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:72
+msgid "The official documentation on the **import_playbook** module."
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:73
+msgid ":ref:`import_role_module`"
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:74
+msgid "The official documentation on the **import_role** module."
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:75
+msgid ":ref:`import_tasks_module`"
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:76
+msgid "The official documentation on the **import_tasks** module."
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:77
+msgid ":ref:`include_role_module`"
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:78
+msgid "The official documentation on the **include_role** module."
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:79
+msgid ":ref:`include_tasks_module`"
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:80
+msgid "The official documentation on the **include_tasks** module."
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:81
+msgid ":ref:`playbooks_reuse_includes`"
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:82
+msgid ""
+"More information related to including and importing playbooks, roles and "
+"tasks."
+msgstr ""
+
+#: ../../rst/modules/include_module.rst:86
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/include_module.rst:107
+#: ../../rst/modules/include_module.rst:126
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/include_module.rst:112
+#: ../../rst/modules/include_module.rst:131
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/include_module.rst:115
+#: ../../rst/modules/include_module.rst:134
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/include_module.rst:118
+#: ../../rst/modules/include_module.rst:137
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/include_module.rst:120
+#: ../../rst/modules/include_module.rst:139
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/include_module.rst:126
+#: ../../rst/modules/include_module.rst:145
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/include_module.rst:128
+#: ../../rst/modules/include_module.rst:147
 msgid "Ansible Core Team (@ansible)"
 msgstr ""
 
-#: ../../rst/modules/include_module.rst:132
+#: ../../rst/modules/include_module.rst:151
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/include.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/include.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "Before Ansible version 2.0, all includes"
+#~ " were 'static' and were executed when"
+#~ " the play was compiled."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Since Ansible 2.0, task includes are "
+#~ "dynamic and behave more like real "
+#~ "tasks. This means they can be "
+#~ "looped, skipped and use variables from"
+#~ " any source. Ansible tries to auto"
+#~ " detect this, but you can use "
+#~ "the `static` directive (which was added"
+#~ " in Ansible 2.1) to bypass "
+#~ "autodetection."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Include has some unintuitive behaviours "
+#~ "depending on if it is running in"
+#~ " a static or dynamic in play or"
+#~ " in playbook context, in an effort"
+#~ " to clarify behaviours we are moving"
+#~ " to a new set modules "
+#~ "(:ref:`include_tasks <include_tasks_module>`, "
+#~ ":ref:`include_role <include_role_module>`, "
+#~ ":ref:`import_playbook <import_playbook_module>`, "
+#~ ":ref:`import_tasks <import_tasks_module>`) that have"
+#~ " well established and clear behaviours. "
+#~ "This module will still be supported "
+#~ "for some time but we are looking"
+#~ " at deprecating it in the near "
+#~ "future."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/include.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

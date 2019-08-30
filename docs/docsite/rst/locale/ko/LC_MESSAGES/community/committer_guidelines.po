@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -204,7 +204,7 @@ msgstr ""
 
 #: ../../rst/community/committer_guidelines.rst:59
 msgid ""
-"Squash, avoid merges whenever possible, use github's squash commits or "
+"Squash, avoid merges whenever possible, use GitHub's squash commits or "
 "cherry pick if needed (bisect thanks you)."
 msgstr ""
 
@@ -640,4 +640,22 @@ msgstr ""
 #: ../../rst/community/committer_guidelines.rst:153
 msgid "samccann"
 msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:155
+msgid "Felix Fontein"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:155
+msgid "felixfontein"
+msgstr ""
+
+#: ../../rst/community/committer_guidelines.rst:155
+msgid "felix@fontein.de"
+msgstr ""
+
+#~ msgid ""
+#~ "Squash, avoid merges whenever possible, "
+#~ "use github's squash commits or cherry"
+#~ " pick if needed (bisect thanks you)."
+#~ msgstr ""
 

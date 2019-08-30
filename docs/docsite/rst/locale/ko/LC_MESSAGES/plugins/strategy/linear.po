@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,11 @@ msgstr ""
 msgid "linear -- Executes tasks in a linear fashion"
 msgstr ""
 
-#: ../../rst/plugins/strategy/linear.rst:18
+#: ../../rst/plugins/strategy/linear.rst:17
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/plugins/strategy/linear.rst:19
+#: ../../rst/plugins/strategy/linear.rst:18
 msgid ""
 "Task execution is in lockstep per host batch as defined by ``serial`` "
 "(default all). Up to the fork limit of hosts will execute each task at "
@@ -34,45 +34,54 @@ msgid ""
 "before going on to the next task."
 msgstr ""
 
-#: ../../rst/plugins/strategy/linear.rst:26
+#: ../../rst/plugins/strategy/linear.rst:25
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/plugins/strategy/linear.rst:29
+#: ../../rst/plugins/strategy/linear.rst:28
 msgid ""
 "This was the default Ansible behaviour before 'strategy plugins' were "
 "introduced in 2.0."
 msgstr ""
 
-#: ../../rst/plugins/strategy/linear.rst:38
+#: ../../rst/plugins/strategy/linear.rst:37
 msgid "Status"
 msgstr ""
 
-#: ../../rst/plugins/strategy/linear.rst:43
+#: ../../rst/plugins/strategy/linear.rst:42
 msgid ""
 "This strategy is not guaranteed to have a backwards compatible interface."
 " *[preview]*"
 msgstr ""
 
-#: ../../rst/plugins/strategy/linear.rst:46
+#: ../../rst/plugins/strategy/linear.rst:45
 msgid ""
 "This strategy is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/plugins/strategy/linear.rst:53
+#: ../../rst/plugins/strategy/linear.rst:52
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/plugins/strategy/linear.rst:55
+#: ../../rst/plugins/strategy/linear.rst:54
 msgid "Ansible Core Team"
 msgstr ""
 
-#: ../../rst/plugins/strategy/linear.rst:59
+#: ../../rst/plugins/strategy/linear.rst:58
+#, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/strategy/linear.py>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/strategy/linear.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/strategy/linear.py>`_"
+#~ " to improve it."
+#~ msgstr ""
 

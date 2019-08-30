@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,45 +22,45 @@ msgstr ""
 msgid "cs_router -- Manages routers on Apache CloudStack based clouds"
 msgstr ""
 
-#: ../../rst/modules/cs_router_module.rst:19
+#: ../../rst/modules/cs_router_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/cs_router_module.rst:20
+#: ../../rst/modules/cs_router_module.rst:19
 msgid "Start, restart, stop and destroy routers."
 msgstr ""
 
-#: ../../rst/modules/cs_router_module.rst:21
+#: ../../rst/modules/cs_router_module.rst:20
 msgid ""
-"``state=present`` is not able to create routers, use :ref:`cs_network "
+"*state=present* is not able to create routers, use :ref:`cs_network "
 "<cs_network_module>` instead."
 msgstr ""
 
-#: ../../rst/modules/cs_router_module.rst:26
+#: ../../rst/modules/cs_router_module.rst:25
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/cs_router_module.rst:27
+#: ../../rst/modules/cs_router_module.rst:26
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/cs_router_module.rst:29
+#: ../../rst/modules/cs_router_module.rst:28
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/cs_router_module.rst:30
+#: ../../rst/modules/cs_router_module.rst:29
 msgid "cs >= 0.6.10"
 msgstr ""
 
-#: ../../rst/modules/cs_router_module.rst:34
+#: ../../rst/modules/cs_router_module.rst:33
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/cs_router_module.rst:261
+#: ../../rst/modules/cs_router_module.rst:260
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/cs_router_module.rst:264
+#: ../../rst/modules/cs_router_module.rst:263
 msgid ""
 "Ansible uses the ``cs`` library's configuration method if credentials are"
 " not provided by the arguments ``api_url``, ``api_key``, ``api_secret``. "
@@ -76,60 +76,74 @@ msgid ""
 "https://github.com/exoscale/cs for more information."
 msgstr ""
 
-#: ../../rst/modules/cs_router_module.rst:265
+#: ../../rst/modules/cs_router_module.rst:264
 msgid ""
 "A detailed guide about cloudstack modules can be found in the `CloudStack"
 " Cloud Guide <../scenario_guides/guide_cloudstack.html>`_."
 msgstr ""
 
-#: ../../rst/modules/cs_router_module.rst:266
+#: ../../rst/modules/cs_router_module.rst:265
 msgid "This module supports check mode."
 msgstr ""
 
-#: ../../rst/modules/cs_router_module.rst:271
+#: ../../rst/modules/cs_router_module.rst:270
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/cs_router_module.rst:313
+#: ../../rst/modules/cs_router_module.rst:314
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/cs_router_module.rst:314
+#: ../../rst/modules/cs_router_module.rst:315
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/cs_router_module.rst:483
+#: ../../rst/modules/cs_router_module.rst:484
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/cs_router_module.rst:488
+#: ../../rst/modules/cs_router_module.rst:489
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/cs_router_module.rst:491
+#: ../../rst/modules/cs_router_module.rst:492
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/cs_router_module.rst:498
+#: ../../rst/modules/cs_router_module.rst:499
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/cs_router_module.rst:500
+#: ../../rst/modules/cs_router_module.rst:501
 msgid "René Moser (@resmo)"
 msgstr ""
 
-#: ../../rst/modules/cs_router_module.rst:504
+#: ../../rst/modules/cs_router_module.rst:505
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/cloudstack/cs_router.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/cloudstack/cs_router.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "``state=present`` is not able to create"
+#~ " routers, use :ref:`cs_network "
+#~ "<cs_network_module>` instead."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/cloudstack/cs_router.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

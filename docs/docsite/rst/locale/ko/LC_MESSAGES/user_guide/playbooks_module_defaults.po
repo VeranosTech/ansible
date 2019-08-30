@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,50 +18,136 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-#: ../../rst/user_guide/playbooks_module_defaults.rst:2
+#: ../../rst/user_guide/playbooks_module_defaults.rst:4
 msgid "Module defaults"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_module_defaults.rst:4
+#: ../../rst/user_guide/playbooks_module_defaults.rst:6
 msgid ""
 "If you find yourself calling the same module repeatedly with the same "
 "arguments, it can be useful to define default arguments for that "
 "particular module using the ``module_defaults`` attribute."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_module_defaults.rst:6
+#: ../../rst/user_guide/playbooks_module_defaults.rst:8
 msgid "Here is a basic example::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_module_defaults.rst:25
+#: ../../rst/user_guide/playbooks_module_defaults.rst:27
 msgid ""
 "The ``module_defaults`` attribute can be used at the play, block, and "
 "task level. Any module arguments explicitly specified in a task will "
 "override any established default for that module argument::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_module_defaults.rst:34
+#: ../../rst/user_guide/playbooks_module_defaults.rst:36
 msgid ""
 "It's also possible to remove any previously established defaults for a "
 "module by specifying an empty dict::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_module_defaults.rst:43
+#: ../../rst/user_guide/playbooks_module_defaults.rst:45
 msgid ""
 "Any module defaults set at the play level (and block/task level when "
 "using ``include_role`` or ``import_role``) will apply to any roles used, "
 "which may cause unexpected behavior in the role."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_module_defaults.rst:45
+#: ../../rst/user_guide/playbooks_module_defaults.rst:47
 msgid "Here are some more realistic use cases for this feature."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_module_defaults.rst:47
+#: ../../rst/user_guide/playbooks_module_defaults.rst:49
 msgid "Interacting with an API that requires auth::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_module_defaults.rst:63
+#: ../../rst/user_guide/playbooks_module_defaults.rst:65
 msgid "Setting a default AWS region for specific EC2-related modules::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_module_defaults.rst:81
+msgid "Module defaults groups"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_module_defaults.rst:85
+msgid ""
+"Ansible 2.7 adds a preview-status feature to group together modules that "
+"share common sets of parameters. This makes it easier to author playbooks"
+" making heavy use of API-based modules such as cloud modules."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_module_defaults.rst:89
+msgid "Group"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_module_defaults.rst:89
+msgid "Purpose"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_module_defaults.rst:89
+msgid "Ansible Version"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_module_defaults.rst:91
+msgid "aws"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_module_defaults.rst:91
+msgid "Amazon Web Services"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_module_defaults.rst:91
+#: ../../rst/user_guide/playbooks_module_defaults.rst:93
+#: ../../rst/user_guide/playbooks_module_defaults.rst:95
+msgid "2.7"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_module_defaults.rst:93
+msgid "azure"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_module_defaults.rst:93
+msgid "Azure"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_module_defaults.rst:95
+msgid "gcp"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_module_defaults.rst:95
+msgid "Google Cloud Platform"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_module_defaults.rst:97
+msgid "k8s"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_module_defaults.rst:97
+msgid "Kubernetes"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_module_defaults.rst:97
+#: ../../rst/user_guide/playbooks_module_defaults.rst:99
+msgid "2.8"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_module_defaults.rst:99
+msgid "os"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_module_defaults.rst:99
+msgid "OpenStack"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_module_defaults.rst:102
+msgid ""
+"Use the groups with `module_defaults` by prefixing the group name with "
+"`group/` - e.g. `group/aws`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_module_defaults.rst:104
+msgid ""
+"In a playbook, you can set module defaults for whole groups of modules, "
+"such as setting a common AWS region."
 msgstr ""
 

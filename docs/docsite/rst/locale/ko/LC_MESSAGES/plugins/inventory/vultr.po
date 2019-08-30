@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,57 +22,83 @@ msgstr ""
 msgid "vultr -- Vultr inventory source"
 msgstr ""
 
-#: ../../rst/plugins/inventory/vultr.rst:17
+#: ../../rst/plugins/inventory/vultr.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/plugins/inventory/vultr.rst:18
+#: ../../rst/plugins/inventory/vultr.rst:19
 msgid "Get inventory hosts from Vultr public cloud."
 msgstr ""
 
-#: ../../rst/plugins/inventory/vultr.rst:19
+#: ../../rst/plugins/inventory/vultr.rst:20
 msgid ""
-"Uses ``api_config``, ``~/.vultr.ini``, ``./vultr.ini`` or "
-"VULTR_API_CONFIG path to config file."
+"Uses an YAML configuration file ending with either *vultr.yml* or "
+"*vultr.yaml* to set parameter values (also see examples)."
 msgstr ""
 
-#: ../../rst/plugins/inventory/vultr.rst:25
+#: ../../rst/plugins/inventory/vultr.rst:21
+msgid ""
+"Uses *api_config*, *~/.vultr.ini*, *./vultr.ini* or ``VULTR_API_CONFIG`` "
+"pointing to a Vultr credentials INI file (see "
+"https://docs.ansible.com/ansible/latest/scenario_guides/guide_vultr.html)."
+msgstr ""
+
+#: ../../rst/plugins/inventory/vultr.rst:27
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/plugins/inventory/vultr.rst:129
+#: ../../rst/plugins/inventory/vultr.rst:214
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/plugins/inventory/vultr.rst:144
+#: ../../rst/plugins/inventory/vultr.rst:239
 msgid "Status"
 msgstr ""
 
-#: ../../rst/plugins/inventory/vultr.rst:149
+#: ../../rst/plugins/inventory/vultr.rst:244
 msgid ""
 "This inventory is not guaranteed to have a backwards compatible "
 "interface. *[preview]*"
 msgstr ""
 
-#: ../../rst/plugins/inventory/vultr.rst:152
+#: ../../rst/plugins/inventory/vultr.rst:247
 msgid ""
 "This inventory is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/plugins/inventory/vultr.rst:159
+#: ../../rst/plugins/inventory/vultr.rst:254
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/plugins/inventory/vultr.rst:161
+#: ../../rst/plugins/inventory/vultr.rst:256
 msgid "Yanis Guenane (@Spredzy)"
 msgstr ""
 
-#: ../../rst/plugins/inventory/vultr.rst:165
+#: ../../rst/plugins/inventory/vultr.rst:257
+msgid "René Moser (@resmo)"
+msgstr ""
+
+#: ../../rst/plugins/inventory/vultr.rst:261
+#, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/inventory/vultr.py>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/inventory/vultr.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "Uses ``api_config``, ``~/.vultr.ini``, "
+#~ "``./vultr.ini`` or VULTR_API_CONFIG path to"
+#~ " config file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/inventory/vultr.py>`_"
+#~ " to improve it."
+#~ msgstr ""
 

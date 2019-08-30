@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,66 +46,181 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/postgresql_db_module.rst:294
+#: ../../rst/modules/postgresql_db_module.rst:340
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/postgresql_db_module.rst:297
+#: ../../rst/modules/postgresql_db_module.rst:343
+msgid "State ``dump`` and ``restore`` don't require *psycopg2* since version 2.8."
+msgstr ""
+
+#: ../../rst/modules/postgresql_db_module.rst:344
 msgid ""
 "The default authentication assumes that you are either logging in as or "
 "sudo'ing to the ``postgres`` account on the host."
 msgstr ""
 
-#: ../../rst/modules/postgresql_db_module.rst:298
+#: ../../rst/modules/postgresql_db_module.rst:345
 msgid ""
-"This module uses *psycopg2*, a Python PostgreSQL database adapter. You "
-"must ensure that psycopg2 is installed on the host before using this "
-"module. If the remote host is the PostgreSQL server (which is the default"
-" case), then PostgreSQL must also be installed on the remote host. For "
-"Ubuntu-based systems, install the ``postgresql``, ``libpq-dev``, and "
-"``python-psycopg2`` packages on the remote host before using this module."
+"To avoid \"Peer authentication failed for user postgres\" error, use "
+"postgres user as a *become_user*."
 msgstr ""
 
-#: ../../rst/modules/postgresql_db_module.rst:299
+#: ../../rst/modules/postgresql_db_module.rst:346
 msgid ""
-"The ssl_rootcert parameter requires at least Postgres version 8.4 and "
-"*psycopg2* version 2.4.3."
-msgstr ""
-
-#: ../../rst/modules/postgresql_db_module.rst:304
-msgid "Examples"
+"This module uses psycopg2, a Python PostgreSQL database adapter. You must"
+" ensure that psycopg2 is installed on the host before using this module."
 msgstr ""
 
 #: ../../rst/modules/postgresql_db_module.rst:347
+msgid ""
+"If the remote host is the PostgreSQL server (which is the default case), "
+"then PostgreSQL must also be installed on the remote host."
+msgstr ""
+
+#: ../../rst/modules/postgresql_db_module.rst:348
+msgid ""
+"For Ubuntu-based systems, install the postgresql, libpq-dev, and python-"
+"psycopg2 packages on the remote host before using this module."
+msgstr ""
+
+#: ../../rst/modules/postgresql_db_module.rst:349
+msgid ""
+"The ca_cert parameter requires at least Postgres version 8.4 and "
+"*psycopg2* version 2.4.3."
+msgstr ""
+
+#: ../../rst/modules/postgresql_db_module.rst:353
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/postgresql_db_module.rst:357
+msgid ""
+"`CREATE DATABASE reference <https://www.postgresql.org/docs/current/sql-"
+"createdatabase.html>`_"
+msgstr ""
+
+#: ../../rst/modules/postgresql_db_module.rst:358
+msgid "Complete reference of the CREATE DATABASE command documentation."
+msgstr ""
+
+#: ../../rst/modules/postgresql_db_module.rst:359
+msgid ""
+"`DROP DATABASE reference <https://www.postgresql.org/docs/current/sql-"
+"dropdatabase.html>`_"
+msgstr ""
+
+#: ../../rst/modules/postgresql_db_module.rst:360
+msgid "Complete reference of the DROP DATABASE command documentation."
+msgstr ""
+
+#: ../../rst/modules/postgresql_db_module.rst:361
+msgid ""
+"`pg_dump reference <https://www.postgresql.org/docs/current/app-"
+"pgdump.html>`_"
+msgstr ""
+
+#: ../../rst/modules/postgresql_db_module.rst:362
+msgid "Complete reference of pg_dump documentation."
+msgstr ""
+
+#: ../../rst/modules/postgresql_db_module.rst:363
+msgid ""
+"`pg_restore reference <https://www.postgresql.org/docs/current/app-"
+"pgrestore.html>`_"
+msgstr ""
+
+#: ../../rst/modules/postgresql_db_module.rst:364
+msgid "Complete reference of pg_restore documentation."
+msgstr ""
+
+#: ../../rst/modules/postgresql_db_module.rst:365
+msgid ":ref:`postgresql_tablespace_module`"
+msgstr ""
+
+#: ../../rst/modules/postgresql_db_module.rst:366
+msgid "The official documentation on the **postgresql_tablespace** module."
+msgstr ""
+
+#: ../../rst/modules/postgresql_db_module.rst:367
+msgid ":ref:`postgresql_info_module`"
+msgstr ""
+
+#: ../../rst/modules/postgresql_db_module.rst:368
+msgid "The official documentation on the **postgresql_info** module."
+msgstr ""
+
+#: ../../rst/modules/postgresql_db_module.rst:369
+msgid ":ref:`postgresql_ping_module`"
+msgstr ""
+
+#: ../../rst/modules/postgresql_db_module.rst:370
+msgid "The official documentation on the **postgresql_ping** module."
+msgstr ""
+
+#: ../../rst/modules/postgresql_db_module.rst:374
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/postgresql_db_module.rst:430
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/postgresql_db_module.rst:352
+#: ../../rst/modules/postgresql_db_module.rst:435
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/postgresql_db_module.rst:355
+#: ../../rst/modules/postgresql_db_module.rst:438
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/postgresql_db_module.rst:362
+#: ../../rst/modules/postgresql_db_module.rst:445
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/postgresql_db_module.rst:364
+#: ../../rst/modules/postgresql_db_module.rst:447
 msgid "Ansible Core Team"
 msgstr ""
 
-#: ../../rst/modules/postgresql_db_module.rst:368
+#: ../../rst/modules/postgresql_db_module.rst:451
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/postgresql/postgresql_db.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/postgresql/postgresql_db.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module uses *psycopg2*, a Python"
+#~ " PostgreSQL database adapter. You must "
+#~ "ensure that psycopg2 is installed on "
+#~ "the host before using this module. "
+#~ "If the remote host is the "
+#~ "PostgreSQL server (which is the default"
+#~ " case), then PostgreSQL must also be"
+#~ " installed on the remote host. For"
+#~ " Ubuntu-based systems, install the "
+#~ "``postgresql``, ``libpq-dev``, and "
+#~ "``python-psycopg2`` packages on the remote"
+#~ " host before using this module."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The ssl_rootcert parameter requires at "
+#~ "least Postgres version 8.4 and "
+#~ "*psycopg2* version 2.4.3."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/postgresql/postgresql_db.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

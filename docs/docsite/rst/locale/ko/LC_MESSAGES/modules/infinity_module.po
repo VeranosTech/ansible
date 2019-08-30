@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/modules/infinity_module.rst:9
-msgid "infinity -- manage Infinity IPAM using Rest API"
+msgid "infinity -- Manage Infinity IPAM using Rest API"
 msgstr ""
 
 #: ../../rst/modules/infinity_module.rst:19
@@ -27,7 +27,7 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/infinity_module.rst:20
-msgid "Manage Infinity IPAM using REST API"
+msgid "Manage Infinity IPAM using REST API."
 msgstr ""
 
 #: ../../rst/modules/infinity_module.rst:26
@@ -38,46 +38,60 @@ msgstr ""
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/infinity_module.rst:254
+#: ../../rst/modules/infinity_module.rst:253
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/infinity_module.rst:255
+#: ../../rst/modules/infinity_module.rst:254
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/infinity_module.rst:309
+#: ../../rst/modules/infinity_module.rst:308
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/infinity_module.rst:314
+#: ../../rst/modules/infinity_module.rst:313
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/infinity_module.rst:317
+#: ../../rst/modules/infinity_module.rst:316
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/infinity_module.rst:324
+#: ../../rst/modules/infinity_module.rst:323
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/infinity_module.rst:326
+#: ../../rst/modules/infinity_module.rst:325
 msgid "Meirong Liu (@MeganLiu)"
 msgstr ""
 
-#: ../../rst/modules/infinity_module.rst:330
+#: ../../rst/modules/infinity_module.rst:329
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/infinity/infinity.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/infinity/infinity.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "infinity -- manage Infinity IPAM using Rest API"
+#~ msgstr ""
+
+#~ msgid "Manage Infinity IPAM using REST API"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/infinity/infinity.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

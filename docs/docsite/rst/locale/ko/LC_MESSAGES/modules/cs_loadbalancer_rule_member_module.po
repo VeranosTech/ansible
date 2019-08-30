@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,39 +24,39 @@ msgid ""
 "Apache CloudStack based clouds"
 msgstr ""
 
-#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:19
+#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:20
+#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:19
 msgid "Add and remove load balancer rule members."
 msgstr ""
 
-#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:25
+#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:24
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:26
+#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:25
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:28
+#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:27
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:29
+#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:28
 msgid "cs >= 0.6.10"
 msgstr ""
 
-#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:33
+#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:32
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:273
+#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:272
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:276
+#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:275
 msgid ""
 "Ansible uses the ``cs`` library's configuration method if credentials are"
 " not provided by the arguments ``api_url``, ``api_key``, ``api_secret``. "
@@ -72,64 +72,72 @@ msgid ""
 "https://github.com/exoscale/cs for more information."
 msgstr ""
 
-#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:277
+#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:276
 msgid ""
 "A detailed guide about cloudstack modules can be found in the `CloudStack"
 " Cloud Guide <../scenario_guides/guide_cloudstack.html>`_."
 msgstr ""
 
-#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:278
+#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:277
 msgid "This module supports check mode."
 msgstr ""
 
-#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:283
+#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:282
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:329
+#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:328
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:330
+#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:329
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:551
+#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:552
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:556
+#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:557
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:559
+#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:560
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:566
+#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:567
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:568
+#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:569
 msgid "Darren Worrall (@dazworrall)"
 msgstr ""
 
-#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:569
+#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:570
 msgid "René Moser (@resmo)"
 msgstr ""
 
-#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:573
+#: ../../rst/modules/cs_loadbalancer_rule_member_module.rst:574
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/cloudstack/cs_loadbalancer_rule_member.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/cloudstack/cs_loadbalancer_rule_member.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/cloudstack/cs_loadbalancer_rule_member.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

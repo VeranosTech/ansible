@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/plugins/callback/osx_say.rst:8
-msgid "osx_say -- oneline Ansible screen output"
+msgid "osx_say -- notify using software speech synthesizer"
 msgstr ""
 
 #: ../../rst/plugins/callback/osx_say.rst:17
@@ -27,7 +27,9 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/plugins/callback/osx_say.rst:18
-msgid "This plugin will use the 'say' program to \"speak\" about play events."
+msgid ""
+"This plugin will use the 'say' or 'espeak' program to \"speak\" about "
+"play events."
 msgstr ""
 
 #: ../../rst/plugins/callback/osx_say.rst:23
@@ -45,38 +47,68 @@ msgid "whitelisting in configuration"
 msgstr ""
 
 #: ../../rst/plugins/callback/osx_say.rst:27
-msgid "the '/usr/bin/say' command line program (standard on macOS)"
+msgid ""
+"the '/usr/bin/say' command line program (standard on macOS) or 'espeak' "
+"command line program"
 msgstr ""
 
-#: ../../rst/plugins/callback/osx_say.rst:38
+#: ../../rst/plugins/callback/osx_say.rst:32
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/plugins/callback/osx_say.rst:35
+msgid ""
+"In 2.8, this callback has been renamed from ``osx_say`` into :ref:`say "
+"<say_module>`."
+msgstr ""
+
+#: ../../rst/plugins/callback/osx_say.rst:44
 msgid "Status"
 msgstr ""
 
-#: ../../rst/plugins/callback/osx_say.rst:43
+#: ../../rst/plugins/callback/osx_say.rst:49
 msgid ""
 "This callback is not guaranteed to have a backwards compatible interface."
 " *[preview]*"
 msgstr ""
 
-#: ../../rst/plugins/callback/osx_say.rst:46
+#: ../../rst/plugins/callback/osx_say.rst:52
 msgid ""
 "This callback is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/plugins/callback/osx_say.rst:53
+#: ../../rst/plugins/callback/osx_say.rst:59
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/plugins/callback/osx_say.rst:55
+#: ../../rst/plugins/callback/osx_say.rst:61
 msgid "UNKNOWN"
 msgstr ""
 
-#: ../../rst/plugins/callback/osx_say.rst:59
+#: ../../rst/plugins/callback/osx_say.rst:65
+#, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/callback/osx_say.py>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/callback/osx_say.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "osx_say -- oneline Ansible screen output"
+#~ msgstr ""
+
+#~ msgid "This plugin will use the 'say' program to \"speak\" about play events."
+#~ msgstr ""
+
+#~ msgid "the '/usr/bin/say' command line program (standard on macOS)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/callback/osx_say.py>`_"
+#~ " to improve it."
+#~ msgstr ""
 

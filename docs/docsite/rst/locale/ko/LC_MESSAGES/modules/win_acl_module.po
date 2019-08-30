@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,95 +24,127 @@ msgid ""
 "group"
 msgstr ""
 
-#: ../../rst/modules/win_acl_module.rst:19
+#: ../../rst/modules/win_acl_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/win_acl_module.rst:20
+#: ../../rst/modules/win_acl_module.rst:19
 msgid ""
 "Add or remove rights/permissions for a given user or group for the "
 "specified file, folder, registry key or AppPool identifies."
 msgstr ""
 
-#: ../../rst/modules/win_acl_module.rst:26
+#: ../../rst/modules/win_acl_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/win_acl_module.rst:155
+#: ../../rst/modules/win_acl_module.rst:154
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/win_acl_module.rst:158
+#: ../../rst/modules/win_acl_module.rst:157
 msgid ""
 "If adding ACL's for AppPool identities (available since 2.3), the Windows"
 " Feature \"Web-Scripting-Tools\" must be enabled."
 msgstr ""
 
-#: ../../rst/modules/win_acl_module.rst:162
+#: ../../rst/modules/win_acl_module.rst:161
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/win_acl_module.rst:166
+#: ../../rst/modules/win_acl_module.rst:165
 msgid ":ref:`win_acl_inheritance_module`"
 msgstr ""
 
-#: ../../rst/modules/win_acl_module.rst:167
+#: ../../rst/modules/win_acl_module.rst:166
 msgid "The official documentation on the **win_acl_inheritance** module."
 msgstr ""
 
+#: ../../rst/modules/win_acl_module.rst:167
+msgid ":ref:`win_file_module`"
+msgstr ""
+
+#: ../../rst/modules/win_acl_module.rst:168
+msgid "The official documentation on the **win_file** module."
+msgstr ""
+
+#: ../../rst/modules/win_acl_module.rst:169
+msgid ":ref:`win_owner_module`"
+msgstr ""
+
+#: ../../rst/modules/win_acl_module.rst:170
+msgid "The official documentation on the **win_owner** module."
+msgstr ""
+
 #: ../../rst/modules/win_acl_module.rst:171
+msgid ":ref:`win_stat_module`"
+msgstr ""
+
+#: ../../rst/modules/win_acl_module.rst:172
+msgid "The official documentation on the **win_stat** module."
+msgstr ""
+
+#: ../../rst/modules/win_acl_module.rst:176
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/win_acl_module.rst:226
+#: ../../rst/modules/win_acl_module.rst:231
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/win_acl_module.rst:231
+#: ../../rst/modules/win_acl_module.rst:236
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/win_acl_module.rst:234
+#: ../../rst/modules/win_acl_module.rst:239
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/win_acl_module.rst:237
+#: ../../rst/modules/win_acl_module.rst:242
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/win_acl_module.rst:239
+#: ../../rst/modules/win_acl_module.rst:244
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/win_acl_module.rst:245
+#: ../../rst/modules/win_acl_module.rst:250
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/win_acl_module.rst:247
+#: ../../rst/modules/win_acl_module.rst:252
 msgid "Phil Schwartz (@schwartzmx)"
 msgstr ""
 
-#: ../../rst/modules/win_acl_module.rst:248
+#: ../../rst/modules/win_acl_module.rst:253
 msgid "Trond Hindenes (@trondhindenes)"
 msgstr ""
 
-#: ../../rst/modules/win_acl_module.rst:249
+#: ../../rst/modules/win_acl_module.rst:254
 msgid "Hans-Joachim Kliemeck (@h0nIg)"
 msgstr ""
 
-#: ../../rst/modules/win_acl_module.rst:253
+#: ../../rst/modules/win_acl_module.rst:258
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_acl.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_acl.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_acl.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

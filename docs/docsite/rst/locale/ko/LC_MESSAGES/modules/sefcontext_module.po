@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,47 +22,47 @@ msgstr ""
 msgid "sefcontext -- Manages SELinux file context mapping definitions"
 msgstr ""
 
-#: ../../rst/modules/sefcontext_module.rst:19
+#: ../../rst/modules/sefcontext_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/sefcontext_module.rst:20
+#: ../../rst/modules/sefcontext_module.rst:19
 msgid "Manages SELinux file context mapping definitions."
 msgstr ""
 
-#: ../../rst/modules/sefcontext_module.rst:21
+#: ../../rst/modules/sefcontext_module.rst:20
 msgid "Similar to the ``semanage fcontext`` command."
 msgstr ""
 
-#: ../../rst/modules/sefcontext_module.rst:26
+#: ../../rst/modules/sefcontext_module.rst:25
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/sefcontext_module.rst:27
+#: ../../rst/modules/sefcontext_module.rst:26
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/sefcontext_module.rst:29
+#: ../../rst/modules/sefcontext_module.rst:28
 msgid "libselinux-python"
 msgstr ""
 
-#: ../../rst/modules/sefcontext_module.rst:30
+#: ../../rst/modules/sefcontext_module.rst:29
 msgid "policycoreutils-python"
 msgstr ""
 
-#: ../../rst/modules/sefcontext_module.rst:34
+#: ../../rst/modules/sefcontext_module.rst:33
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/sefcontext_module.rst:178
+#: ../../rst/modules/sefcontext_module.rst:186
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/sefcontext_module.rst:181
+#: ../../rst/modules/sefcontext_module.rst:189
 msgid "The changes are persistent across reboots."
 msgstr ""
 
-#: ../../rst/modules/sefcontext_module.rst:182
+#: ../../rst/modules/sefcontext_module.rst:190
 msgid ""
 "The :ref:`sefcontext <sefcontext_module>` module does not modify existing"
 " files to the new SELinux context(s), so it is advisable to first create "
@@ -71,7 +71,7 @@ msgid ""
 "contexts."
 msgstr ""
 
-#: ../../rst/modules/sefcontext_module.rst:183
+#: ../../rst/modules/sefcontext_module.rst:191
 msgid ""
 "Not applying SELinux fcontexts to existing files is a deliberate decision"
 " as it would be unclear what reported changes would entail to, and "
@@ -79,40 +79,48 @@ msgid ""
 "other unrelated prior changes."
 msgstr ""
 
-#: ../../rst/modules/sefcontext_module.rst:188
+#: ../../rst/modules/sefcontext_module.rst:196
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/sefcontext_module.rst:207
+#: ../../rst/modules/sefcontext_module.rst:215
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/sefcontext_module.rst:212
+#: ../../rst/modules/sefcontext_module.rst:220
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/sefcontext_module.rst:215
+#: ../../rst/modules/sefcontext_module.rst:223
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/sefcontext_module.rst:222
+#: ../../rst/modules/sefcontext_module.rst:230
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/sefcontext_module.rst:224
+#: ../../rst/modules/sefcontext_module.rst:232
 msgid "Dag Wieers (@dagwieers)"
 msgstr ""
 
-#: ../../rst/modules/sefcontext_module.rst:228
+#: ../../rst/modules/sefcontext_module.rst:236
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/sefcontext.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/sefcontext.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/sefcontext.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

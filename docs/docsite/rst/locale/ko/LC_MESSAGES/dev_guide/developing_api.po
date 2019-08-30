@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,7 +79,7 @@ msgid ""
 msgstr ""
 
 #: ../../rst/dev_guide/developing_api.rst:116
-msgid ":doc:`developing_inventory`"
+msgid ":ref:`developing_inventory`"
 msgstr ""
 
 #: ../../rst/dev_guide/developing_api.rst:117
@@ -87,15 +87,15 @@ msgid "Developing dynamic inventory integrations"
 msgstr ""
 
 #: ../../rst/dev_guide/developing_api.rst:118
-msgid ":doc:`developing_modules`"
+msgid ":ref:`developing_modules_general`"
 msgstr ""
 
 #: ../../rst/dev_guide/developing_api.rst:119
-msgid "How to develop modules"
+msgid "Getting started on developing a module"
 msgstr ""
 
 #: ../../rst/dev_guide/developing_api.rst:120
-msgid ":doc:`developing_plugins`"
+msgid ":ref:`developing_plugins`"
 msgstr ""
 
 #: ../../rst/dev_guide/developing_api.rst:121
@@ -119,4 +119,16 @@ msgstr ""
 #: ../../rst/dev_guide/developing_api.rst:125
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ":doc:`developing_inventory`"
+#~ msgstr ""
+
+#~ msgid ":doc:`developing_modules`"
+#~ msgstr ""
+
+#~ msgid "How to develop modules"
+#~ msgstr ""
+
+#~ msgid ":doc:`developing_plugins`"
+#~ msgstr ""
 

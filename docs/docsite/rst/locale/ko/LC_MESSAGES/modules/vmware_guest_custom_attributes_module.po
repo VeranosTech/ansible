@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../rst/modules/vmware_guest_custom_attributes_module.rst:9
 msgid ""
-"vmware_guest_custom_attributes -- Manage custom attributes from VMWare "
+"vmware_guest_custom_attributes -- Manage custom attributes from VMware "
 "for the given virtual machine"
 msgstr ""
 
@@ -54,62 +54,76 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_custom_attributes_module.rst:219
+#: ../../rst/modules/vmware_guest_custom_attributes_module.rst:281
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_custom_attributes_module.rst:222
+#: ../../rst/modules/vmware_guest_custom_attributes_module.rst:284
 msgid "Tested on vSphere 6.5"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_custom_attributes_module.rst:227
+#: ../../rst/modules/vmware_guest_custom_attributes_module.rst:289
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_custom_attributes_module.rst:277
+#: ../../rst/modules/vmware_guest_custom_attributes_module.rst:350
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_custom_attributes_module.rst:278
+#: ../../rst/modules/vmware_guest_custom_attributes_module.rst:351
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_custom_attributes_module.rst:306
+#: ../../rst/modules/vmware_guest_custom_attributes_module.rst:379
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_custom_attributes_module.rst:311
+#: ../../rst/modules/vmware_guest_custom_attributes_module.rst:384
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_custom_attributes_module.rst:314
+#: ../../rst/modules/vmware_guest_custom_attributes_module.rst:387
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_custom_attributes_module.rst:321
+#: ../../rst/modules/vmware_guest_custom_attributes_module.rst:394
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_custom_attributes_module.rst:323
+#: ../../rst/modules/vmware_guest_custom_attributes_module.rst:396
 msgid "Jimmy Conner (@cigamit)"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_custom_attributes_module.rst:324
+#: ../../rst/modules/vmware_guest_custom_attributes_module.rst:397
 msgid "Abhijeet Kasurde (@Akasurde)"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_custom_attributes_module.rst:328
+#: ../../rst/modules/vmware_guest_custom_attributes_module.rst:401
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_guest_custom_attributes.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_guest_custom_attributes.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "vmware_guest_custom_attributes -- Manage custom "
+#~ "attributes from VMWare for the given "
+#~ "virtual machine"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_guest_custom_attributes.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

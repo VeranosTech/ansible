@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,55 +24,55 @@ msgid ""
 "obtain temporary credentials"
 msgstr ""
 
-#: ../../rst/modules/sts_assume_role_module.rst:19
+#: ../../rst/modules/sts_assume_role_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/sts_assume_role_module.rst:20
+#: ../../rst/modules/sts_assume_role_module.rst:19
 msgid ""
 "Assume a role using AWS Security Token Service and obtain temporary "
 "credentials"
 msgstr ""
 
-#: ../../rst/modules/sts_assume_role_module.rst:25
+#: ../../rst/modules/sts_assume_role_module.rst:24
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/sts_assume_role_module.rst:26
+#: ../../rst/modules/sts_assume_role_module.rst:25
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/sts_assume_role_module.rst:28
+#: ../../rst/modules/sts_assume_role_module.rst:27
 msgid "boto"
 msgstr ""
 
-#: ../../rst/modules/sts_assume_role_module.rst:29
+#: ../../rst/modules/sts_assume_role_module.rst:28
 msgid "boto3"
 msgstr ""
 
-#: ../../rst/modules/sts_assume_role_module.rst:30
+#: ../../rst/modules/sts_assume_role_module.rst:29
 msgid "botocore"
 msgstr ""
 
-#: ../../rst/modules/sts_assume_role_module.rst:31
+#: ../../rst/modules/sts_assume_role_module.rst:30
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/sts_assume_role_module.rst:35
+#: ../../rst/modules/sts_assume_role_module.rst:34
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/sts_assume_role_module.rst:240
+#: ../../rst/modules/sts_assume_role_module.rst:256
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/sts_assume_role_module.rst:243
+#: ../../rst/modules/sts_assume_role_module.rst:259
 msgid ""
 "In order to use the assumed role in a following playbook task you must "
 "pass the access_key, access_secret and access_token."
 msgstr ""
 
-#: ../../rst/modules/sts_assume_role_module.rst:244
+#: ../../rst/modules/sts_assume_role_module.rst:260
 msgid ""
 "If parameters are not set within the module, the following environment "
 "variables can be used in decreasing order of precedence ``AWS_URL`` or "
@@ -82,68 +82,76 @@ msgid ""
 "``AWS_REGION`` or ``EC2_REGION``"
 msgstr ""
 
-#: ../../rst/modules/sts_assume_role_module.rst:245
+#: ../../rst/modules/sts_assume_role_module.rst:261
 msgid ""
 "Ansible uses the boto configuration file (typically ~/.boto) if no "
 "credentials are provided. See "
 "https://boto.readthedocs.io/en/latest/boto_config_tut.html"
 msgstr ""
 
-#: ../../rst/modules/sts_assume_role_module.rst:246
+#: ../../rst/modules/sts_assume_role_module.rst:262
 msgid ""
 "``AWS_REGION`` or ``EC2_REGION`` can be typically be used to specify the "
 "AWS region, when required, but this can also be configured in the boto "
 "config file"
 msgstr ""
 
-#: ../../rst/modules/sts_assume_role_module.rst:251
+#: ../../rst/modules/sts_assume_role_module.rst:267
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/sts_assume_role_module.rst:279
+#: ../../rst/modules/sts_assume_role_module.rst:295
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/sts_assume_role_module.rst:280
+#: ../../rst/modules/sts_assume_role_module.rst:296
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/sts_assume_role_module.rst:332
+#: ../../rst/modules/sts_assume_role_module.rst:348
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/sts_assume_role_module.rst:337
+#: ../../rst/modules/sts_assume_role_module.rst:353
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/sts_assume_role_module.rst:340
+#: ../../rst/modules/sts_assume_role_module.rst:356
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/sts_assume_role_module.rst:347
+#: ../../rst/modules/sts_assume_role_module.rst:363
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/sts_assume_role_module.rst:349
+#: ../../rst/modules/sts_assume_role_module.rst:365
 msgid "Boris Ekelchik (@bekelchik)"
 msgstr ""
 
-#: ../../rst/modules/sts_assume_role_module.rst:350
+#: ../../rst/modules/sts_assume_role_module.rst:366
 msgid "Marek Piatek (@piontas)"
 msgstr ""
 
-#: ../../rst/modules/sts_assume_role_module.rst:354
+#: ../../rst/modules/sts_assume_role_module.rst:370
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/sts_assume_role.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/sts_assume_role.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/sts_assume_role.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

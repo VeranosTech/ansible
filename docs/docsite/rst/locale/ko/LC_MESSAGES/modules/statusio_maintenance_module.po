@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,72 +24,80 @@ msgid ""
 "dashboard"
 msgstr ""
 
-#: ../../rst/modules/statusio_maintenance_module.rst:19
+#: ../../rst/modules/statusio_maintenance_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/statusio_maintenance_module.rst:20
+#: ../../rst/modules/statusio_maintenance_module.rst:19
 msgid "Creates a maintenance window for status.io"
 msgstr ""
 
-#: ../../rst/modules/statusio_maintenance_module.rst:21
+#: ../../rst/modules/statusio_maintenance_module.rst:20
 msgid "Deletes a maintenance window for status.io"
 msgstr ""
 
-#: ../../rst/modules/statusio_maintenance_module.rst:27
+#: ../../rst/modules/statusio_maintenance_module.rst:26
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/statusio_maintenance_module.rst:325
+#: ../../rst/modules/statusio_maintenance_module.rst:324
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/statusio_maintenance_module.rst:328
+#: ../../rst/modules/statusio_maintenance_module.rst:327
 msgid ""
 "You can use the apiary API url (http://docs.statusio.apiary.io/) to "
 "capture API traffic"
 msgstr ""
 
-#: ../../rst/modules/statusio_maintenance_module.rst:329
+#: ../../rst/modules/statusio_maintenance_module.rst:328
 msgid ""
 "Use start_date and start_time with minutes to set future maintenance "
 "window"
 msgstr ""
 
-#: ../../rst/modules/statusio_maintenance_module.rst:334
+#: ../../rst/modules/statusio_maintenance_module.rst:333
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/statusio_maintenance_module.rst:392
+#: ../../rst/modules/statusio_maintenance_module.rst:391
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/statusio_maintenance_module.rst:397
+#: ../../rst/modules/statusio_maintenance_module.rst:396
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/statusio_maintenance_module.rst:400
+#: ../../rst/modules/statusio_maintenance_module.rst:399
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/statusio_maintenance_module.rst:407
+#: ../../rst/modules/statusio_maintenance_module.rst:406
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/statusio_maintenance_module.rst:409
+#: ../../rst/modules/statusio_maintenance_module.rst:408
 msgid "Benjamin Copeland (@bhcopeland) <ben@copeland.me.uk>"
 msgstr ""
 
-#: ../../rst/modules/statusio_maintenance_module.rst:413
+#: ../../rst/modules/statusio_maintenance_module.rst:412
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/monitoring/statusio_maintenance.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/monitoring/statusio_maintenance.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/monitoring/statusio_maintenance.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

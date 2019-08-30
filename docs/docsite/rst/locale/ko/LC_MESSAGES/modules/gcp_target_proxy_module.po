@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,41 @@ msgstr ""
 msgid "gcp_target_proxy -- Create, Update or Destroy a Target_Proxy"
 msgstr ""
 
+#: ../../rst/modules/gcp_target_proxy_module.rst:18
+msgid "DEPRECATED"
+msgstr ""
+
+#: ../../rst/modules/gcp_target_proxy_module.rst
+msgid "Removed in Ansible"
+msgstr ""
+
 #: ../../rst/modules/gcp_target_proxy_module.rst:19
-msgid "Synopsis"
+msgid "version: 2.12"
+msgstr ""
+
+#: ../../rst/modules/gcp_target_proxy_module.rst
+msgid "Why"
 msgstr ""
 
 #: ../../rst/modules/gcp_target_proxy_module.rst:20
+msgid "Updated modules released with increased functionality"
+msgstr ""
+
+#: ../../rst/modules/gcp_target_proxy_module.rst
+msgid "Alternative"
+msgstr ""
+
+#: ../../rst/modules/gcp_target_proxy_module.rst:21
+msgid ""
+"Use :ref:`gcp_compute_target_http_proxy "
+"<gcp_compute_target_http_proxy_module>` instead."
+msgstr ""
+
+#: ../../rst/modules/gcp_target_proxy_module.rst:26
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/gcp_target_proxy_module.rst:27
 msgid ""
 "Create, Update or Destroy a Target_Proxy. See "
 "https://cloud.google.com/compute/docs/load-balancing/http/target-proxies "
@@ -35,70 +65,66 @@ msgid ""
 "#resource-representations."
 msgstr ""
 
-#: ../../rst/modules/gcp_target_proxy_module.rst:25
+#: ../../rst/modules/gcp_target_proxy_module.rst:32
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/gcp_target_proxy_module.rst:26
+#: ../../rst/modules/gcp_target_proxy_module.rst:33
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/gcp_target_proxy_module.rst:28
+#: ../../rst/modules/gcp_target_proxy_module.rst:35
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/gcp_target_proxy_module.rst:29
+#: ../../rst/modules/gcp_target_proxy_module.rst:36
 msgid "google-api-python-client >= 1.6.2"
 msgstr ""
 
-#: ../../rst/modules/gcp_target_proxy_module.rst:30
+#: ../../rst/modules/gcp_target_proxy_module.rst:37
 msgid "google-auth >= 0.9.0"
 msgstr ""
 
-#: ../../rst/modules/gcp_target_proxy_module.rst:31
+#: ../../rst/modules/gcp_target_proxy_module.rst:38
 msgid "google-auth-httplib2 >= 0.0.2"
 msgstr ""
 
-#: ../../rst/modules/gcp_target_proxy_module.rst:35
+#: ../../rst/modules/gcp_target_proxy_module.rst:42
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/gcp_target_proxy_module.rst:89
+#: ../../rst/modules/gcp_target_proxy_module.rst:96
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/gcp_target_proxy_module.rst:92
+#: ../../rst/modules/gcp_target_proxy_module.rst:99
 msgid "Currently only supports global HTTP proxy."
 msgstr ""
 
-#: ../../rst/modules/gcp_target_proxy_module.rst:97
+#: ../../rst/modules/gcp_target_proxy_module.rst:104
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/gcp_target_proxy_module.rst:116
+#: ../../rst/modules/gcp_target_proxy_module.rst:123
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/gcp_target_proxy_module.rst:117
+#: ../../rst/modules/gcp_target_proxy_module.rst:124
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/gcp_target_proxy_module.rst:197
+#: ../../rst/modules/gcp_target_proxy_module.rst:204
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/gcp_target_proxy_module.rst:202
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
+#: ../../rst/modules/gcp_target_proxy_module.rst:207
+msgid "This module will be removed in version 2.12. *[deprecated]*"
 msgstr ""
 
-#: ../../rst/modules/gcp_target_proxy_module.rst:205
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
+#: ../../rst/modules/gcp_target_proxy_module.rst:208
+msgid "For more information see `DEPRECATED`_."
 msgstr ""
 
 #: ../../rst/modules/gcp_target_proxy_module.rst:212
@@ -112,9 +138,29 @@ msgstr ""
 #: ../../rst/modules/gcp_target_proxy_module.rst:218
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/gcp_target_proxy.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/_gcp_target_proxy.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/gcp_target_proxy.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

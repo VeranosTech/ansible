@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,64 +46,187 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/postgresql_ext_module.rst:192
+#: ../../rst/modules/postgresql_ext_module.rst:258
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/postgresql_ext_module.rst:195
+#: ../../rst/modules/postgresql_ext_module.rst:261
+#: ../../rst/modules/postgresql_ext_module.rst:266
 msgid ""
 "The default authentication assumes that you are either logging in as or "
 "sudo'ing to the ``postgres`` account on the host."
 msgstr ""
 
-#: ../../rst/modules/postgresql_ext_module.rst:196
+#: ../../rst/modules/postgresql_ext_module.rst:262
+msgid "This module uses *psycopg2*, a Python PostgreSQL database adapter."
+msgstr ""
+
+#: ../../rst/modules/postgresql_ext_module.rst:263
 msgid ""
-"This module uses *psycopg2*, a Python PostgreSQL database adapter. You "
-"must ensure that psycopg2 is installed on the host before using this "
-"module. If the remote host is the PostgreSQL server (which is the default"
-" case), then PostgreSQL must also be installed on the remote host. For "
-"Ubuntu-based systems, install the ``postgresql``, ``libpq-dev``, and "
+"You must ensure that psycopg2 is installed on the host before using this "
+"module."
+msgstr ""
+
+#: ../../rst/modules/postgresql_ext_module.rst:264
+#: ../../rst/modules/postgresql_ext_module.rst:269
+msgid ""
+"If the remote host is the PostgreSQL server (which is the default case), "
+"then PostgreSQL must also be installed on the remote host."
+msgstr ""
+
+#: ../../rst/modules/postgresql_ext_module.rst:265
+msgid ""
+"For Ubuntu-based systems, install the ``postgresql``, ``libpq-dev``, and "
 "``python-psycopg2`` packages on the remote host before using this module."
 msgstr ""
 
-#: ../../rst/modules/postgresql_ext_module.rst:201
+#: ../../rst/modules/postgresql_ext_module.rst:267
+msgid ""
+"To avoid \"Peer authentication failed for user postgres\" error, use "
+"postgres user as a *become_user*."
+msgstr ""
+
+#: ../../rst/modules/postgresql_ext_module.rst:268
+msgid ""
+"This module uses psycopg2, a Python PostgreSQL database adapter. You must"
+" ensure that psycopg2 is installed on the host before using this module."
+msgstr ""
+
+#: ../../rst/modules/postgresql_ext_module.rst:270
+msgid ""
+"For Ubuntu-based systems, install the postgresql, libpq-dev, and python-"
+"psycopg2 packages on the remote host before using this module."
+msgstr ""
+
+#: ../../rst/modules/postgresql_ext_module.rst:271
+msgid ""
+"The ca_cert parameter requires at least Postgres version 8.4 and "
+"*psycopg2* version 2.4.3."
+msgstr ""
+
+#: ../../rst/modules/postgresql_ext_module.rst:275
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/postgresql_ext_module.rst:279
+msgid ""
+"`PostgreSQL extensions <https://www.postgresql.org/docs/current/external-"
+"extensions.html>`_"
+msgstr ""
+
+#: ../../rst/modules/postgresql_ext_module.rst:280
+msgid "General information about PostgreSQL extensions."
+msgstr ""
+
+#: ../../rst/modules/postgresql_ext_module.rst:281
+msgid ""
+"`CREATE EXTENSION reference <https://www.postgresql.org/docs/current/sql-"
+"createextension.html>`_"
+msgstr ""
+
+#: ../../rst/modules/postgresql_ext_module.rst:282
+msgid "Complete reference of the CREATE EXTENSION command documentation."
+msgstr ""
+
+#: ../../rst/modules/postgresql_ext_module.rst:283
+msgid ""
+"`ALTER EXTENSION reference <https://www.postgresql.org/docs/current/sql-"
+"alterextension.html>`_"
+msgstr ""
+
+#: ../../rst/modules/postgresql_ext_module.rst:284
+msgid "Complete reference of the ALTER EXTENSION command documentation."
+msgstr ""
+
+#: ../../rst/modules/postgresql_ext_module.rst:285
+msgid ""
+"`DROP EXTENSION reference <https://www.postgresql.org/docs/current/sql-"
+"droppublication.html>`_"
+msgstr ""
+
+#: ../../rst/modules/postgresql_ext_module.rst:286
+msgid "Complete reference of the DROP EXTENSION command documentation."
+msgstr ""
+
+#: ../../rst/modules/postgresql_ext_module.rst:290
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/postgresql_ext_module.rst:216
+#: ../../rst/modules/postgresql_ext_module.rst:338
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/postgresql_ext_module.rst:339
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/postgresql_ext_module.rst:367
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/postgresql_ext_module.rst:221
+#: ../../rst/modules/postgresql_ext_module.rst:372
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/postgresql_ext_module.rst:224
+#: ../../rst/modules/postgresql_ext_module.rst:375
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/postgresql_ext_module.rst:231
+#: ../../rst/modules/postgresql_ext_module.rst:382
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/postgresql_ext_module.rst:233
+#: ../../rst/modules/postgresql_ext_module.rst:384
 msgid "Daniel Schep (@dschep)"
 msgstr ""
 
-#: ../../rst/modules/postgresql_ext_module.rst:234
+#: ../../rst/modules/postgresql_ext_module.rst:385
 msgid "Thomas O'Donnell (@andytom)"
 msgstr ""
 
-#: ../../rst/modules/postgresql_ext_module.rst:238
+#: ../../rst/modules/postgresql_ext_module.rst:386
+msgid "Sandro Santilli (@strk)"
+msgstr ""
+
+#: ../../rst/modules/postgresql_ext_module.rst:387
+msgid "Andrew Klychkov (@Andersson007)"
+msgstr ""
+
+#: ../../rst/modules/postgresql_ext_module.rst:391
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/postgresql/postgresql_ext.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/postgresql/postgresql_ext.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module uses *psycopg2*, a Python"
+#~ " PostgreSQL database adapter. You must "
+#~ "ensure that psycopg2 is installed on "
+#~ "the host before using this module. "
+#~ "If the remote host is the "
+#~ "PostgreSQL server (which is the default"
+#~ " case), then PostgreSQL must also be"
+#~ " installed on the remote host. For"
+#~ " Ubuntu-based systems, install the "
+#~ "``postgresql``, ``libpq-dev``, and "
+#~ "``python-psycopg2`` packages on the remote"
+#~ " host before using this module."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/postgresql/postgresql_ext.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

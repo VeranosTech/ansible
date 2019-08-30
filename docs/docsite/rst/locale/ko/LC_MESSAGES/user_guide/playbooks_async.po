@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,53 +36,106 @@ msgid ""
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_async.rst:12
+msgid "The behaviour of asynchronous mode depends on the value of `poll`."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_async.rst:16
+msgid "Avoid connection timeouts: poll > 0"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_async.rst:18
+msgid ""
+"When ``poll`` is a positive value, the playbook will *still* block on the"
+" task until it either completes, fails or times out."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_async.rst:20
+msgid ""
+"In this case, however, `async` explicitly sets the timeout you wish to "
+"apply to this task rather than being limited by the connection method "
+"timeout."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_async.rst:22
 msgid ""
 "To launch a task asynchronously, specify its maximum runtime and how "
 "frequently you would like to poll for status.  The default poll value is "
-"10 seconds if you do not specify a value for `poll`::"
+"set by the ``DEFAULT_POLL_INTERVAL`` setting if you do not specify a "
+"value for `poll`::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_async.rst:29
+#: ../../rst/user_guide/playbooks_async.rst:39
 msgid ""
 "There is no default for the async time limit.  If you leave off the "
 "'async' keyword, the task runs synchronously, which is Ansible's default."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_async.rst:34
+#: ../../rst/user_guide/playbooks_async.rst:44
 msgid ""
 "As of Ansible 2.3, async does not support check mode and will fail the "
-"task when run in check mode. See :doc:`playbooks_checkmode` on how to "
-"skip a task in check mode."
+"task when run in check mode. See :ref:`check_mode_dry` on how to skip a "
+"task in check mode."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_async.rst:38
+#: ../../rst/user_guide/playbooks_async.rst:50
+msgid "Concurrent tasks: poll = 0"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_async.rst:52
 msgid ""
-"Alternatively, if you do not need to wait on the task to complete, you "
-"may run the task asynchronously by specifying a poll value of 0::"
+"When ``poll`` is 0, Ansible will start the task and immediately move on "
+"to the next one without waiting for a result."
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_async.rst:54
 msgid ""
+"From the point of view of sequencing this is asynchronous programming: "
+"tasks may now run concurrently."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_async.rst:56
+msgid "The playbook run will end without checking back on async tasks."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_async.rst:58
+msgid ""
+"The async tasks will run until they either complete, fail or timeout "
+"according to their `async` value."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_async.rst:60
+msgid ""
+"If you need a synchronization point with a task, register it to obtain "
+"its job ID and use the :ref:`async_status <async_status_module>` module "
+"to observe it."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_async.rst:62
+msgid "You may run a task asynchronously by specifying a poll value of 0::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_async.rst:77
+msgid ""
 "You shouldn't attempt run a task asynchronously by specifying a poll "
-"value of 0:: to with operations that require exclusive locks (such as yum"
-" transactions) if you expect to run other commands later in the playbook "
+"value of 0 with operations that require exclusive locks (such as yum "
+"transactions) if you expect to run other commands later in the playbook "
 "against those same resources."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_async.rst:59
+#: ../../rst/user_guide/playbooks_async.rst:82
 msgid ""
 "Using a higher value for ``--forks`` will result in kicking off "
 "asynchronous tasks even faster.  This also increases the efficiency of "
 "polling."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_async.rst:62
+#: ../../rst/user_guide/playbooks_async.rst:85
 msgid ""
 "If you would like to perform a task asynchronously and check on it later "
 "you can perform a task similar to the following::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_async.rst:83
+#: ../../rst/user_guide/playbooks_async.rst:106
 msgid ""
 "If the value of ``async:`` is not high enough, this will cause the "
 "\"check on it later\" task to fail because the temporary status file that"
@@ -90,33 +143,71 @@ msgid ""
 "longer exist"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_async.rst:87
+#: ../../rst/user_guide/playbooks_async.rst:110
 msgid ""
 "If you would like to run multiple asynchronous tasks while limiting the "
 "amount of tasks running concurrently, you can do it this way::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_async.rst:129
-msgid ":doc:`playbooks`"
+#: ../../rst/user_guide/playbooks_async.rst:152
+msgid ":ref:`playbooks_intro`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_async.rst:130
+#: ../../rst/user_guide/playbooks_async.rst:153
 msgid "An introduction to playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_async.rst:131
+#: ../../rst/user_guide/playbooks_async.rst:154
 msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_async.rst:132
+#: ../../rst/user_guide/playbooks_async.rst:155
 msgid "Have a question?  Stop by the google group!"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_async.rst:133
+#: ../../rst/user_guide/playbooks_async.rst:156
 msgid "`irc.freenode.net <http://irc.freenode.net>`_"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_async.rst:134
+#: ../../rst/user_guide/playbooks_async.rst:157
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ""
+#~ "To launch a task asynchronously, specify"
+#~ " its maximum runtime and how "
+#~ "frequently you would like to poll "
+#~ "for status.  The default poll value "
+#~ "is 10 seconds if you do not "
+#~ "specify a value for `poll`::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "As of Ansible 2.3, async does not"
+#~ " support check mode and will fail "
+#~ "the task when run in check mode."
+#~ " See :doc:`playbooks_checkmode` on how to"
+#~ " skip a task in check mode."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Alternatively, if you do not need "
+#~ "to wait on the task to complete,"
+#~ " you may run the task asynchronously"
+#~ " by specifying a poll value of "
+#~ "0::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You shouldn't attempt run a task "
+#~ "asynchronously by specifying a poll "
+#~ "value of 0:: to with operations "
+#~ "that require exclusive locks (such as"
+#~ " yum transactions) if you expect to"
+#~ " run other commands later in the "
+#~ "playbook against those same resources."
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks`"
+#~ msgstr ""
 

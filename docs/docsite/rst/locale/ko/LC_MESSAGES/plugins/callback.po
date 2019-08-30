@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,8 +44,8 @@ msgstr ""
 
 #: ../../rst/plugins/callback.rst:22
 msgid ""
-"The :ref:`osx_say <osx_say_callback>` callback responds with computer "
-"synthesized speech on macOS in relation to playbook events."
+"The :ref:`say <say_callback>` callback responds with computer synthesized"
+" speech in relation to playbook events."
 msgstr ""
 
 #: ../../rst/plugins/callback.rst:27
@@ -194,4 +194,11 @@ msgstr ""
 #: ../../rst/plugins/callback.rst:107
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ""
+#~ "The :ref:`osx_say <osx_say_callback>` callback "
+#~ "responds with computer synthesized speech "
+#~ "on macOS in relation to playbook "
+#~ "events."
+#~ msgstr ""
 

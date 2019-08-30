@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/modules/postgresql_idx_module.rst:9
-msgid "postgresql_idx -- Creates or drops indexes from a PostgreSQL database"
+msgid "postgresql_idx -- Create or drop indexes from a PostgreSQL database"
 msgstr ""
 
 #: ../../rst/modules/postgresql_idx_module.rst:19
@@ -27,7 +27,7 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/postgresql_idx_module.rst:20
-msgid "Create or drop indexes from a remote PostgreSQL database."
+msgid "Create or drop indexes from a PostgreSQL database."
 msgstr ""
 
 #: ../../rst/modules/postgresql_idx_module.rst:25
@@ -46,60 +46,196 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/postgresql_idx_module.rst:262
+#: ../../rst/modules/postgresql_idx_module.rst:352
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/postgresql_idx_module.rst:265
+#: ../../rst/modules/postgresql_idx_module.rst:355
+msgid "The index building process can affect database performance."
+msgstr ""
+
+#: ../../rst/modules/postgresql_idx_module.rst:356
+msgid ""
+"To avoid table locks on production databases, use *concurrent=yes* "
+"(default behavior)."
+msgstr ""
+
+#: ../../rst/modules/postgresql_idx_module.rst:357
 msgid ""
 "The default authentication assumes that you are either logging in as or "
-"sudo'ing to the postgres account on the host."
+"sudo'ing to the ``postgres`` account on the host."
 msgstr ""
 
-#: ../../rst/modules/postgresql_idx_module.rst:266
+#: ../../rst/modules/postgresql_idx_module.rst:358
+msgid ""
+"To avoid \"Peer authentication failed for user postgres\" error, use "
+"postgres user as a *become_user*."
+msgstr ""
+
+#: ../../rst/modules/postgresql_idx_module.rst:359
 msgid ""
 "This module uses psycopg2, a Python PostgreSQL database adapter. You must"
-" ensure that psycopg2 is installed on the host before using this module. "
-"If the remote host is the PostgreSQL server (which is the default case), "
-"then PostgreSQL must also be installed on the remote host. For Ubuntu-"
-"based systems, install the postgresql, libpq-dev, and python-psycopg2 "
-"packages on the remote host before using this module."
+" ensure that psycopg2 is installed on the host before using this module."
 msgstr ""
 
-#: ../../rst/modules/postgresql_idx_module.rst:271
+#: ../../rst/modules/postgresql_idx_module.rst:360
+msgid ""
+"If the remote host is the PostgreSQL server (which is the default case), "
+"then PostgreSQL must also be installed on the remote host."
+msgstr ""
+
+#: ../../rst/modules/postgresql_idx_module.rst:361
+msgid ""
+"For Ubuntu-based systems, install the postgresql, libpq-dev, and python-"
+"psycopg2 packages on the remote host before using this module."
+msgstr ""
+
+#: ../../rst/modules/postgresql_idx_module.rst:362
+msgid ""
+"The ca_cert parameter requires at least Postgres version 8.4 and "
+"*psycopg2* version 2.4.3."
+msgstr ""
+
+#: ../../rst/modules/postgresql_idx_module.rst:366
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/postgresql_idx_module.rst:370
+msgid ":ref:`postgresql_table_module`"
+msgstr ""
+
+#: ../../rst/modules/postgresql_idx_module.rst:371
+msgid "The official documentation on the **postgresql_table** module."
+msgstr ""
+
+#: ../../rst/modules/postgresql_idx_module.rst:372
+msgid ":ref:`postgresql_tablespace_module`"
+msgstr ""
+
+#: ../../rst/modules/postgresql_idx_module.rst:373
+msgid "The official documentation on the **postgresql_tablespace** module."
+msgstr ""
+
+#: ../../rst/modules/postgresql_idx_module.rst:374
+msgid ""
+"`PostgreSQL indexes reference "
+"<https://www.postgresql.org/docs/current/indexes.html>`_"
+msgstr ""
+
+#: ../../rst/modules/postgresql_idx_module.rst:375
+msgid "General information about PostgreSQL indexes."
+msgstr ""
+
+#: ../../rst/modules/postgresql_idx_module.rst:376
+msgid ""
+"`CREATE INDEX reference <https://www.postgresql.org/docs/current/sql-"
+"createindex.html>`_"
+msgstr ""
+
+#: ../../rst/modules/postgresql_idx_module.rst:377
+msgid "Complete reference of the CREATE INDEX command documentation."
+msgstr ""
+
+#: ../../rst/modules/postgresql_idx_module.rst:378
+msgid ""
+"`ALTER INDEX reference <https://www.postgresql.org/docs/current/sql-"
+"alterindex.html>`_"
+msgstr ""
+
+#: ../../rst/modules/postgresql_idx_module.rst:379
+msgid "Complete reference of the ALTER INDEX command documentation."
+msgstr ""
+
+#: ../../rst/modules/postgresql_idx_module.rst:380
+msgid ""
+"`DROP INDEX reference <https://www.postgresql.org/docs/current/sql-"
+"dropindex.html>`_"
+msgstr ""
+
+#: ../../rst/modules/postgresql_idx_module.rst:381
+msgid "Complete reference of the DROP INDEX command documentation."
+msgstr ""
+
+#: ../../rst/modules/postgresql_idx_module.rst:385
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/postgresql_idx_module.rst:319
+#: ../../rst/modules/postgresql_idx_module.rst:452
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/postgresql_idx_module.rst:453
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/postgresql_idx_module.rst:559
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/postgresql_idx_module.rst:324
+#: ../../rst/modules/postgresql_idx_module.rst:564
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/postgresql_idx_module.rst:327
+#: ../../rst/modules/postgresql_idx_module.rst:567
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/postgresql_idx_module.rst:334
+#: ../../rst/modules/postgresql_idx_module.rst:574
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/postgresql_idx_module.rst:336
+#: ../../rst/modules/postgresql_idx_module.rst:576
 msgid "Andrew Klychkov (@Andersson007)"
 msgstr ""
 
-#: ../../rst/modules/postgresql_idx_module.rst:340
+#: ../../rst/modules/postgresql_idx_module.rst:580
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/postgresql/postgresql_idx.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/postgresql/postgresql_idx.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "postgresql_idx -- Creates or drops indexes from a PostgreSQL database"
+#~ msgstr ""
+
+#~ msgid "Create or drop indexes from a remote PostgreSQL database."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The default authentication assumes that "
+#~ "you are either logging in as or"
+#~ " sudo'ing to the postgres account on"
+#~ " the host."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module uses psycopg2, a Python "
+#~ "PostgreSQL database adapter. You must "
+#~ "ensure that psycopg2 is installed on "
+#~ "the host before using this module. "
+#~ "If the remote host is the "
+#~ "PostgreSQL server (which is the default"
+#~ " case), then PostgreSQL must also be"
+#~ " installed on the remote host. For"
+#~ " Ubuntu-based systems, install the "
+#~ "postgresql, libpq-dev, and python-"
+#~ "psycopg2 packages on the remote host "
+#~ "before using this module."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/postgresql/postgresql_idx.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,112 +22,120 @@ msgstr ""
 msgid "nxos_igmp_snooping -- Manages IGMP snooping global configuration"
 msgstr ""
 
-#: ../../rst/modules/nxos_igmp_snooping_module.rst:19
+#: ../../rst/modules/nxos_igmp_snooping_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/nxos_igmp_snooping_module.rst:20
+#: ../../rst/modules/nxos_igmp_snooping_module.rst:19
 msgid "Manages IGMP snooping global configuration."
 msgstr ""
 
-#: ../../rst/modules/nxos_igmp_snooping_module.rst:26
+#: ../../rst/modules/nxos_igmp_snooping_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/nxos_igmp_snooping_module.rst:345
+#: ../../rst/modules/nxos_igmp_snooping_module.rst:347
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/nxos_igmp_snooping_module.rst:348
+#: ../../rst/modules/nxos_igmp_snooping_module.rst:350
 msgid "Tested against NXOSv 7.3.(0)D1(1) on VIRL"
 msgstr ""
 
-#: ../../rst/modules/nxos_igmp_snooping_module.rst:349
+#: ../../rst/modules/nxos_igmp_snooping_module.rst:351
 msgid "When ``state=default``, params will be reset to a default state."
 msgstr ""
 
-#: ../../rst/modules/nxos_igmp_snooping_module.rst:350
+#: ../../rst/modules/nxos_igmp_snooping_module.rst:352
 msgid "``group_timeout`` also accepts *never* as an input."
 msgstr ""
 
-#: ../../rst/modules/nxos_igmp_snooping_module.rst:351
+#: ../../rst/modules/nxos_igmp_snooping_module.rst:353
 msgid ""
 "For information on using CLI and NX-API see the :ref:`NXOS Platform "
 "Options guide <nxos_platform_options>`"
 msgstr ""
 
-#: ../../rst/modules/nxos_igmp_snooping_module.rst:352
+#: ../../rst/modules/nxos_igmp_snooping_module.rst:354
 msgid ""
 "For more information on using Ansible to manage network devices see the "
 ":ref:`Ansible Network Guide <network_guide>`"
 msgstr ""
 
-#: ../../rst/modules/nxos_igmp_snooping_module.rst:353
+#: ../../rst/modules/nxos_igmp_snooping_module.rst:355
 msgid ""
 "For more information on using Ansible to manage Cisco devices see the "
 "`Cisco integration page "
 "<https://www.ansible.com/integrations/networks/cisco>`_."
 msgstr ""
 
-#: ../../rst/modules/nxos_igmp_snooping_module.rst:358
+#: ../../rst/modules/nxos_igmp_snooping_module.rst:360
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/nxos_igmp_snooping_module.rst:380
+#: ../../rst/modules/nxos_igmp_snooping_module.rst:382
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/nxos_igmp_snooping_module.rst:381
+#: ../../rst/modules/nxos_igmp_snooping_module.rst:383
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/nxos_igmp_snooping_module.rst:409
+#: ../../rst/modules/nxos_igmp_snooping_module.rst:411
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/nxos_igmp_snooping_module.rst:414
+#: ../../rst/modules/nxos_igmp_snooping_module.rst:416
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/nxos_igmp_snooping_module.rst:417
+#: ../../rst/modules/nxos_igmp_snooping_module.rst:419
 msgid ""
 "This module is :ref:`maintained by the Ansible Network Team "
 "<modules_support>`. *[network]*"
 msgstr ""
 
-#: ../../rst/modules/nxos_igmp_snooping_module.rst:420
+#: ../../rst/modules/nxos_igmp_snooping_module.rst:422
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/nxos_igmp_snooping_module.rst:422
+#: ../../rst/modules/nxos_igmp_snooping_module.rst:424
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/nxos_igmp_snooping_module.rst:428
+#: ../../rst/modules/nxos_igmp_snooping_module.rst:430
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/nxos_igmp_snooping_module.rst:430
+#: ../../rst/modules/nxos_igmp_snooping_module.rst:432
 msgid "Jason Edelman (@jedelman8)"
 msgstr ""
 
-#: ../../rst/modules/nxos_igmp_snooping_module.rst:431
+#: ../../rst/modules/nxos_igmp_snooping_module.rst:433
 msgid "Gabriele Gerbino (@GGabriele)"
 msgstr ""
 
-#: ../../rst/modules/nxos_igmp_snooping_module.rst:435
+#: ../../rst/modules/nxos_igmp_snooping_module.rst:437
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_igmp_snooping.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_igmp_snooping.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_igmp_snooping.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

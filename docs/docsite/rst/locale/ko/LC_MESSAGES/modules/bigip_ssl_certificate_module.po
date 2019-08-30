@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,38 +22,38 @@ msgstr ""
 msgid "bigip_ssl_certificate -- Import/Delete certificates from BIG-IP"
 msgstr ""
 
-#: ../../rst/modules/bigip_ssl_certificate_module.rst:19
+#: ../../rst/modules/bigip_ssl_certificate_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/bigip_ssl_certificate_module.rst:20
+#: ../../rst/modules/bigip_ssl_certificate_module.rst:19
 msgid ""
 "This module will import/delete SSL certificates on BIG-IP LTM. "
 "Certificates can be imported from certificate and key files on the local "
 "disk, in PEM format."
 msgstr ""
 
-#: ../../rst/modules/bigip_ssl_certificate_module.rst:25
+#: ../../rst/modules/bigip_ssl_certificate_module.rst:24
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/bigip_ssl_certificate_module.rst:26
+#: ../../rst/modules/bigip_ssl_certificate_module.rst:25
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/bigip_ssl_certificate_module.rst:28
+#: ../../rst/modules/bigip_ssl_certificate_module.rst:27
 msgid "BIG-IP >= v12"
 msgstr ""
 
-#: ../../rst/modules/bigip_ssl_certificate_module.rst:32
+#: ../../rst/modules/bigip_ssl_certificate_module.rst:31
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/bigip_ssl_certificate_module.rst:340
+#: ../../rst/modules/bigip_ssl_certificate_module.rst:276
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/bigip_ssl_certificate_module.rst:343
+#: ../../rst/modules/bigip_ssl_certificate_module.rst:279
 msgid ""
 "This module does not behave like other modules that you might include in "
 "roles where referencing files or templates first looks in the role's "
@@ -62,17 +62,17 @@ msgid ""
 "in a role context."
 msgstr ""
 
-#: ../../rst/modules/bigip_ssl_certificate_module.rst:344
+#: ../../rst/modules/bigip_ssl_certificate_module.rst:280
 msgid ""
 "For more information on using Ansible to manage F5 Networks devices see "
 "https://www.ansible.com/integrations/networks/f5."
 msgstr ""
 
-#: ../../rst/modules/bigip_ssl_certificate_module.rst:345
+#: ../../rst/modules/bigip_ssl_certificate_module.rst:281
 msgid "Requires BIG-IP software version >= 12."
 msgstr ""
 
-#: ../../rst/modules/bigip_ssl_certificate_module.rst:346
+#: ../../rst/modules/bigip_ssl_certificate_module.rst:282
 msgid ""
 "The F5 modules only manipulate the running configuration of the F5 "
 "product. To ensure that BIG-IP specific configuration persists to disk, "
@@ -82,54 +82,62 @@ msgid ""
 "your running configuration."
 msgstr ""
 
-#: ../../rst/modules/bigip_ssl_certificate_module.rst:351
+#: ../../rst/modules/bigip_ssl_certificate_module.rst:287
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/bigip_ssl_certificate_module.rst:392
+#: ../../rst/modules/bigip_ssl_certificate_module.rst:328
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/bigip_ssl_certificate_module.rst:393
+#: ../../rst/modules/bigip_ssl_certificate_module.rst:329
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/bigip_ssl_certificate_module.rst:460
+#: ../../rst/modules/bigip_ssl_certificate_module.rst:396
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/bigip_ssl_certificate_module.rst:465
+#: ../../rst/modules/bigip_ssl_certificate_module.rst:401
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/bigip_ssl_certificate_module.rst:468
+#: ../../rst/modules/bigip_ssl_certificate_module.rst:404
 msgid ""
 "This module is :ref:`maintained by an Ansible Partner <modules_support>`."
 " *[certified]*"
 msgstr ""
 
-#: ../../rst/modules/bigip_ssl_certificate_module.rst:475
+#: ../../rst/modules/bigip_ssl_certificate_module.rst:411
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/bigip_ssl_certificate_module.rst:477
+#: ../../rst/modules/bigip_ssl_certificate_module.rst:413
 msgid "Tim Rupp (@caphrim007)"
 msgstr ""
 
-#: ../../rst/modules/bigip_ssl_certificate_module.rst:478
+#: ../../rst/modules/bigip_ssl_certificate_module.rst:414
 msgid "Wojciech Wypior (@wojtek0806)"
 msgstr ""
 
-#: ../../rst/modules/bigip_ssl_certificate_module.rst:482
+#: ../../rst/modules/bigip_ssl_certificate_module.rst:418
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_ssl_certificate.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_ssl_certificate.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_ssl_certificate.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

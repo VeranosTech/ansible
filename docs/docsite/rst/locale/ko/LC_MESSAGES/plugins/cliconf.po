@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/plugins/cliconf.rst:4
+msgid "Cliconf Plugins"
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:10
+msgid ""
+"Cliconf plugins are abstactions over the CLI interface to network "
+"devices. They provide a standard interface for Ansible to execute tasks "
+"on those network devices."
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:13
+msgid ""
+"These plugins generally correspond one-to-one to network device "
+"platforms. The appropriate cliconf plugin will thus be automatically "
+"loaded based on the ``ansible_network_os`` variable."
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:19
+msgid "Adding cliconf plugins"
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:21
+msgid ""
+"You can extend Ansible to support other network devices by dropping a "
+"custom plugin into the ``cliconf_plugins`` directory."
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:26
+msgid "Using cliconf plugins"
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:28
+msgid ""
+"The cliconf plugin to use is determined automatically from the "
+"``ansible_network_os`` variable. There should be no reason to override "
+"this functionality."
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:30
+msgid ""
+"Most cliconf plugins can operate without configuration. A few have "
+"additional options that can be set to impact how tasks are translated "
+"into CLI commands."
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:33
+msgid ""
+"Plugins are self-documenting. Each plugin should document its "
+"configuration options."
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:38
+msgid "Plugin list"
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:40
+msgid ""
+"You can use ``ansible-doc -t cliconf -l`` to see the list of available "
+"plugins. Use ``ansible-doc -t cliconf <plugin name>`` to see detailed "
+"documentation and examples."
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:52
+msgid ":ref:`Ansible for Network Automation<network_guide>`"
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:53
+msgid "An overview of using Ansible to automate networking devices."
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:54
+msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:55
+msgid "Have a question?  Stop by the google group!"
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:56
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:57
+msgid "#ansible-network IRC chat channel"
+msgstr ""
+

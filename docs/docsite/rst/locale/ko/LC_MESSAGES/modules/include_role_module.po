@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,104 +22,211 @@ msgstr ""
 msgid "include_role -- Load and execute a role"
 msgstr ""
 
-#: ../../rst/modules/include_role_module.rst:19
+#: ../../rst/modules/include_role_module.rst:18
 msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/include_role_module.rst:19
+msgid "Dynamically loads and executes a specified role as a task."
 msgstr ""
 
 #: ../../rst/modules/include_role_module.rst:20
 msgid ""
-"Loads and executes a role as a task dynamically. This frees roles from "
-"the `roles:` directive and allows them to be treated more as tasks."
+"May be used only where Ansible tasks are allowed - inside ``pre_tasks``, "
+"``tasks``, or ``post_tasks`` playbook objects, or as a task inside a "
+"role."
 msgstr ""
 
 #: ../../rst/modules/include_role_module.rst:21
 msgid ""
-"Unlike :ref:`import_role <import_role_module>`, most keywords, including "
-"loop, with_items, and conditionals, apply to this statement."
+"Task-level keywords, loops, and conditionals apply only to the "
+"``include_role`` statement itself."
 msgstr ""
 
 #: ../../rst/modules/include_role_module.rst:22
 msgid ""
-"The do until loop is not supported on :ref:`include_role "
-"<include_role_module>`."
+"To apply keywords to the tasks within the role, pass them using the "
+"``apply`` option or use :ref:`import_role <import_role_module>` instead."
 msgstr ""
 
 #: ../../rst/modules/include_role_module.rst:23
+msgid "Ignores some keywords, like ``until`` and ``retries``."
+msgstr ""
+
+#: ../../rst/modules/include_role_module.rst:24
 msgid "This module is also supported for Windows targets."
 msgstr ""
 
-#: ../../rst/modules/include_role_module.rst:29
+#: ../../rst/modules/include_role_module.rst:30
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/include_role_module.rst:160
+#: ../../rst/modules/include_role_module.rst:161
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/include_role_module.rst:163
-msgid "Handlers are made available to the whole play."
-msgstr ""
-
 #: ../../rst/modules/include_role_module.rst:164
-msgid ""
-"Before Ansible 2.4, as with ``include``, this task could be static or "
-"dynamic, If static, it implied that it won't need templating, loops or "
-"conditionals and will show included tasks in the `--list` options. "
-"Ansible would try to autodetect what is needed, but you can set `static` "
-"to `yes` or `no` at task level to control this."
+msgid "Handlers are made available to the whole play."
 msgstr ""
 
 #: ../../rst/modules/include_role_module.rst:165
 msgid ""
+"Before Ansible 2.4, as with ``include``, this task could be static or "
+"dynamic, If static, it implied that it won't need templating, loops or "
+"conditionals and will show included tasks in the ``--list`` options. "
+"Ansible would try to autodetect what is needed, but you can set "
+"``static`` to ``yes`` or ``no`` at task level to control this."
+msgstr ""
+
+#: ../../rst/modules/include_role_module.rst:166
+msgid ""
 "After Ansible 2.4, you can use :ref:`import_role <import_role_module>` "
-"for 'static' behaviour and this action for 'dynamic' one."
+"for ``static`` behaviour and this action for ``dynamic`` one."
 msgstr ""
 
 #: ../../rst/modules/include_role_module.rst:170
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/include_role_module.rst:174
+msgid ":ref:`import_playbook_module`"
+msgstr ""
+
+#: ../../rst/modules/include_role_module.rst:175
+msgid "The official documentation on the **import_playbook** module."
+msgstr ""
+
+#: ../../rst/modules/include_role_module.rst:176
+msgid ":ref:`import_role_module`"
+msgstr ""
+
+#: ../../rst/modules/include_role_module.rst:177
+msgid "The official documentation on the **import_role** module."
+msgstr ""
+
+#: ../../rst/modules/include_role_module.rst:178
+msgid ":ref:`import_tasks_module`"
+msgstr ""
+
+#: ../../rst/modules/include_role_module.rst:179
+msgid "The official documentation on the **import_tasks** module."
+msgstr ""
+
+#: ../../rst/modules/include_role_module.rst:180
+msgid ":ref:`include_tasks_module`"
+msgstr ""
+
+#: ../../rst/modules/include_role_module.rst:181
+msgid "The official documentation on the **include_tasks** module."
+msgstr ""
+
+#: ../../rst/modules/include_role_module.rst:182
+msgid ":ref:`playbooks_reuse_includes`"
+msgstr ""
+
+#: ../../rst/modules/include_role_module.rst:183
+msgid ""
+"More information related to including and importing playbooks, roles and "
+"tasks."
+msgstr ""
+
+#: ../../rst/modules/include_role_module.rst:187
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/include_role_module.rst:217
+#: ../../rst/modules/include_role_module.rst:234
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/include_role_module.rst:222
+#: ../../rst/modules/include_role_module.rst:239
 msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
+"This module is guaranteed to have no backward incompatible interface "
+"changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/include_role_module.rst:225
+#: ../../rst/modules/include_role_module.rst:242
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/include_role_module.rst:228
+#: ../../rst/modules/include_role_module.rst:245
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/include_role_module.rst:230
+#: ../../rst/modules/include_role_module.rst:247
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/include_role_module.rst:236
+#: ../../rst/modules/include_role_module.rst:253
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/include_role_module.rst:238
+#: ../../rst/modules/include_role_module.rst:255
 msgid "Ansible Core Team (@ansible)"
 msgstr ""
 
-#: ../../rst/modules/include_role_module.rst:242
+#: ../../rst/modules/include_role_module.rst:259
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/include_role.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/include_role.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "Loads and executes a role as a "
+#~ "task dynamically. This frees roles from"
+#~ " the `roles:` directive and allows "
+#~ "them to be treated more as tasks."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Unlike :ref:`import_role <import_role_module>`, most"
+#~ " keywords, including loop, with_items, and"
+#~ " conditionals, apply to this statement."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The do until loop is not supported"
+#~ " on :ref:`include_role <include_role_module>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Before Ansible 2.4, as with ``include``,"
+#~ " this task could be static or "
+#~ "dynamic, If static, it implied that "
+#~ "it won't need templating, loops or "
+#~ "conditionals and will show included "
+#~ "tasks in the `--list` options. Ansible"
+#~ " would try to autodetect what is "
+#~ "needed, but you can set `static` "
+#~ "to `yes` or `no` at task level "
+#~ "to control this."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "After Ansible 2.4, you can use "
+#~ ":ref:`import_role <import_role_module>` for 'static'"
+#~ " behaviour and this action for "
+#~ "'dynamic' one."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/include_role.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

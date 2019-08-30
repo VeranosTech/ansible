@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,33 +20,27 @@ msgstr ""
 
 #: ../../rst/user_guide/intro_adhoc.rst:4
 msgid "Introduction To Ad-Hoc Commands"
-msgstr ""
-"임시변통 명령의 소개"
+msgstr "임시변통 명령의 소개"
 
 #: ../../rst/user_guide/intro_adhoc.rst:6
 msgid "Topics"
-msgstr ""
-"주제"
+msgstr "주제"
 
 #: ../../rst/user_guide/intro_adhoc.rst:8
 msgid ""
 "The following examples show how to use `/usr/bin/ansible` for running ad "
 "hoc tasks."
-msgstr ""
-"다음 예제는 임시변통으로 작업해야할 때 `/usr/bin/ansible`\ 를 사용하면 방법에 대한 것이다."
+msgstr "다음 예제는 임시변통으로 작업해야할 때 `/usr/bin/ansible`\\ 를 사용하면 방법에 대한 것이다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:11
 msgid "What's an ad-hoc command?"
-msgstr ""
-"임시변통 명령이란?"
+msgstr "임시변통 명령이란?"
 
 #: ../../rst/user_guide/intro_adhoc.rst:13
 msgid ""
 "An ad-hoc command is something that you might type in to do something "
 "really quick, but don't want to save for later."
-msgstr ""
-"임시변통 명령(ad-hoc command)은 무언가를 빠르게, 하지만 두 번 이상은 "
-"하지 않는 것을 말한다."
+msgstr "임시변통 명령(ad-hoc command)은 무언가를 빠르게, 하지만 두 번 이상은 하지 않는 것을 말한다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:16
 msgid ""
@@ -55,26 +49,21 @@ msgid ""
 "also be used to do quick things that you might not necessarily want to "
 "write a full playbook for."
 msgstr ""
-"이 절은 플레이북 언어를 공부하기 전에 Ansible로 무엇을 할 수 있는지 "
-"알려준다. 임시변통 명령은 완전한 플레이북을 작성할 필요가 없이 "
-"무언가를 빨리 하고싶을 때 쓸 수 있다."
+"이 절은 플레이북 언어를 공부하기 전에 Ansible로 무엇을 할 수 있는지 알려준다. 임시변통 명령은 완전한 플레이북을 작성할 "
+"필요가 없이 무언가를 빨리 하고싶을 때 쓸 수 있다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:20
 msgid ""
 "Generally speaking, the true power of Ansible lies in playbooks. Why "
 "would you use ad-hoc tasks versus playbooks?"
-msgstr ""
-"보통은 Ansible의 가장 큰 장점이 플레이북에서 발휘된다. "
-"그러면 왜 플레이북이 아닌 임시변통 업무가 필요한가?"
+msgstr "보통은 Ansible의 가장 큰 장점이 플레이북에서 발휘된다. 그러면 왜 플레이북이 아닌 임시변통 업무가 필요한가?"
 
 #: ../../rst/user_guide/intro_adhoc.rst:23
 msgid ""
 "For instance, if you wanted to power off all of your lab for Christmas "
 "vacation, you could execute a quick one-liner in Ansible without writing "
 "a playbook."
-msgstr ""
-"예를 들어 크리스마스 휴가때 연구실의 모든 파워를 내리고 싶을 때, "
-"한 줄 짜리 플레이북을 작성할 수도 있을 것이다."
+msgstr "예를 들어 크리스마스 휴가때 연구실의 모든 파워를 내리고 싶을 때, 한 줄 짜리 플레이북을 작성할 수도 있을 것이다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:26
 msgid ""
@@ -82,20 +71,20 @@ msgid ""
 " up on using '/usr/bin/ansible-playbook' -- the concepts you will learn "
 "here will port over directly to the playbook language."
 msgstr ""
-"하지만 관리와 배포 설정을 위해 여기서 배울 '/usr/bin/ansible-playbook'\ 를 "
-"사용해도 나중에 쉽게 플레이북 언어로 변환할 수 있다."
+"하지만 관리와 배포 설정을 위해 여기서 배울 '/usr/bin/ansible-playbook'\\ 를 사용해도 나중에 쉽게 플레이북"
+" 언어로 변환할 수 있다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:30
-msgid "(See :doc:`playbooks` for more information about those)"
-msgstr ""
-"(보다 자세한 내용은 :doc:`playbooks`\ 를 참조한다.)"
+#, fuzzy
+msgid "(See :ref:`working_with_playbooks` for more information about those)"
+msgstr "(보다 자세한 내용은 :doc:`playbooks`\\ 를 참조한다.)"
 
 #: ../../rst/user_guide/intro_adhoc.rst:32
+#, fuzzy
 msgid ""
-"If you haven't read :doc:`intro_inventory` already, please look that over"
+"If you haven't read :ref:`intro_inventory` already, please look that over"
 " a bit first and then we'll get going."
-msgstr ""
-"아직 :doc:`intro_inventory`\ 를 읽지 않았다면 읽어보고 다음으로 진행하기를 권장한다."
+msgstr "아직 :doc:`intro_inventory`\\ 를 읽지 않았다면 읽어보고 다음으로 진행하기를 권장한다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:38
 msgid "Parallelism and Shell Commands"
@@ -103,8 +92,7 @@ msgstr "동시실행과 셸 명령"
 
 #: ../../rst/user_guide/intro_adhoc.rst:40
 msgid "Arbitrary example."
-msgstr ""
-"예제"
+msgstr "예제"
 
 #: ../../rst/user_guide/intro_adhoc.rst:42
 msgid ""
@@ -112,8 +100,8 @@ msgid ""
 "Atlanta, 10 at a time.  First, let's set up SSH-agent so it can remember "
 "our credentials::"
 msgstr ""
-"Ansible 명령줄 도구를 사용하여 아틀란타에 있는 모든 서버를 한번에 10개씩 "
-"리부팅해보자. 우선 SSH-agent를 설정해서 암호를 기억하도록 한다.::"
+"Ansible 명령줄 도구를 사용하여 아틀란타에 있는 모든 서버를 한번에 10개씩 리부팅해보자. 우선 SSH-agent를 설정해서 "
+"암호를 기억하도록 한다.::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:48
 msgid ""
@@ -121,16 +109,14 @@ msgid ""
 "password instead of keys, you can with ``--ask-pass`` (``-k``), but it's "
 "much better to just use ssh-agent."
 msgstr ""
-"키와 ssh-agent를 사용하지 않고 패스워드를 사용하려면 ``--ask-pass`` (``-k``) "
-"옵션을 사용한다. 하지만 ssh-agent를 사용하는 것이 훨씬 낫다."
+"키와 ssh-agent를 사용하지 않고 패스워드를 사용하려면 ``--ask-pass`` (``-k``) 옵션을 사용한다. 하지만 "
+"ssh-agent를 사용하는 것이 훨씬 낫다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:52
 msgid ""
 "Now to run the command on all servers in a group, in this case, "
 "*atlanta*, in 10 parallel forks::"
-msgstr ""
-"이제 그룹(이 예제에서는 *atlanta*)안의 모든 서버에 대새 한번에 10개씩 "
-"명령이 실행되도록 한다.::"
+msgstr "이제 그룹(이 예제에서는 *atlanta*)안의 모든 서버에 대새 한번에 10개씩 명령이 실행되도록 한다.::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:57
 msgid ""
@@ -138,17 +124,14 @@ msgid ""
 "do not like this behavior, pass in \"-u username\".  If you want to run "
 "commands as a different user, it looks like this::"
 msgstr ""
-"디폴트 사용자 계정에서 /usr/bin/ansible 가 실행될 것이다. "
-"만약 다른 사용자 계정을 쓰고 싶다면 \"-u username\" 옵션을 추가하라. "
-"다음과 같이 된다.::"
+"디폴트 사용자 계정에서 /usr/bin/ansible 가 실행될 것이다. 만약 다른 사용자 계정을 쓰고 싶다면 \"-u "
+"username\" 옵션을 추가하라. 다음과 같이 된다.::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:62
 msgid ""
 "Often you'll not want to just do things from your user account.  If you "
 "want to run commands through privilege escalation::"
-msgstr ""
-"사용자 계정이 아니라 관리자 계정으로 작업을 하길 원할 수도 있다. "
-"더 높은 권한으로 명령을 실행하려면::"
+msgstr "사용자 계정이 아니라 관리자 계정으로 작업을 하길 원할 수도 있다. 더 높은 권한으로 명령을 실행하려면::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:66
 msgid ""
@@ -157,17 +140,15 @@ msgid ""
 "interactively prompt you for the password to use. Use of a passwordless "
 "setup makes things easier to automate, but it's not required."
 msgstr ""
-"sudo/su/pfexec/doas 등을 써서 패스워드 없이 권한을 올리려면 "
-"``--ask-become-pass`` (``-K``) 옵션을 사용한다. "
-"이 때는 사용할 패스워드를 물어볼 것이다. "
-"패스워드 없이 사용하면 자동화가 더 용이하지만 반드시 그래야 하는 것은 아니다."
+"sudo/su/pfexec/doas 등을 써서 패스워드 없이 권한을 올리려면 ``--ask-become-pass`` (``-K``)"
+" 옵션을 사용한다. 이 때는 사용할 패스워드를 물어볼 것이다. 패스워드 없이 사용하면 자동화가 더 용이하지만 반드시 그래야 하는 "
+"것은 아니다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:70
 msgid ""
 "It is also possible to become a user other than root using ``--become-"
 "user``::"
-msgstr ""
-"``--become-user`` 옵션으로 루트가 아닌 다른 사용자가 될 수도 있다."
+msgstr "``--become-user`` 옵션으로 루트가 아닌 다른 사용자가 될 수도 있다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:77
 msgid ""
@@ -181,20 +162,17 @@ msgid ""
 "members of certain organizations use it on their behalf without having "
 "direct access."
 msgstr ""
-"가끔씩 어떤 사용자는 보안상 sudo/pbrun/doas 사용을 특정 명령만 할 수 있도록 "
-"제한된다.Ansible의  이는 no-bootstrapping 정책, 그리고 수백개의 모듈과 맞지 않는다. "
-"이런 제한이 없는 계정으로 Ansible을 사용하라. "
-"권한이 없는 사용자에게 권한을 공유하지 않으면서 이렇게 하는 방법중의 하나는 "
-":ref:`ansible_tower`\ 를 사용하는 것이다. :ref:`ansible_tower`\ 는 모든 SSH 암호를 "
-"가지고 있어서 조직의 특정 사용자를 대신하여 직접 제어를 할 수 있다."
+"가끔씩 어떤 사용자는 보안상 sudo/pbrun/doas 사용을 특정 명령만 할 수 있도록 제한된다.Ansible의  이는 no-"
+"bootstrapping 정책, 그리고 수백개의 모듈과 맞지 않는다. 이런 제한이 없는 계정으로 Ansible을 사용하라. 권한이 "
+"없는 사용자에게 권한을 공유하지 않으면서 이렇게 하는 방법중의 하나는 :ref:`ansible_tower`\\ 를 사용하는 것이다."
+" :ref:`ansible_tower`\\ 는 모든 SSH 암호를 가지고 있어서 조직의 특정 사용자를 대신하여 직접 제어를 할 수 "
+"있다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:83
 msgid ""
 "Ok, so those are basics.  If you didn't read about patterns and groups "
 "yet, go back and read :ref:`intro_patterns`."
-msgstr ""
-"이제 기본을 마쳤다. 패턴과 그룹에 대해 읽기 않았다면 돌아가서 "
-":ref:`intro_patterns`\ 를 읽기 바란다."
+msgstr "이제 기본을 마쳤다. 패턴과 그룹에 대해 읽기 않았다면 돌아가서 :ref:`intro_patterns`\\ 를 읽기 바란다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:85
 msgid ""
@@ -207,21 +185,20 @@ msgid ""
 "but it will take a little longer.  Feel free to push this value as high "
 "as your system can handle!"
 msgstr ""
-"위 코드의 ``-f 10`` 옵션은 10개씩 동시에 실행하라는 뜻이다. "
-":ref:`intro_configuration` 설정에서 할 수도 있다. 디폴트는 5개로 보수적으로 "
-"작게 잡혀있다. 이 옵션을 사용하면 더 많은 호스트를 쓰고 싶을 때 자유롭게 증가시킬 수 있다. "
-"실제 호스트 수가 이보다 많으면 시간이 더 걸린다. 자유롭게 이 값을 올려서 사용하라."
+"위 코드의 ``-f 10`` 옵션은 10개씩 동시에 실행하라는 뜻이다. :ref:`intro_configuration` 설정에서 할"
+" 수도 있다. 디폴트는 5개로 보수적으로 작게 잡혀있다. 이 옵션을 사용하면 더 많은 호스트를 쓰고 싶을 때 자유롭게 증가시킬 수 "
+"있다. 실제 호스트 수가 이보다 많으면 시간이 더 걸린다. 자유롭게 이 값을 올려서 사용하라."
 
 #: ../../rst/user_guide/intro_adhoc.rst:91
+#, fuzzy
 msgid ""
 "You can also select what Ansible \"module\" you want to run.  Normally "
 "commands also take a ``-m`` for module name, but the default module name "
 "is 'command', so we didn't need to specify that all of the time.  We'll "
-"use ``-m`` in later examples to run some other :doc:`modules`."
+"use ``-m`` in later examples to run some other modules."
 msgstr ""
-"실행할 Ansible \"모듈\"\ 도 지정할 수 있다. 보통은 ``-m`` 옵션에 모듈이름을 "
-"붙인다.  'command' 모듈은 디폴트라서 지정할 필요가 없다. "
-":doc:`modules`\ 에 있는 다른 모듈을 지정할 때는 ``-m`` 옵션을 사용한다."
+"실행할 Ansible \"모듈\"\\ 도 지정할 수 있다. 보통은 ``-m`` 옵션에 모듈이름을 붙인다.  'command' 모듈은"
+" 디폴트라서 지정할 필요가 없다. :doc:`modules`\\ 에 있는 다른 모듈을 지정할 때는 ``-m`` 옵션을 사용한다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:97
 msgid ""
@@ -231,9 +208,8 @@ msgid ""
 "`shell` module instead. Read more about the differences on the "
 ":ref:`working_with_modules` page."
 msgstr ""
-":ref:`command 모듈 <command_module>`\ 은 파이프라인이나 리다이렉션같은 "
-"셸의 고급 문법을 지원하지 않는다. (셸 변수는 동작한다.) 만약 셀에 종속적인 "
-"기능을 사용하고 싶으면 `shell` 모듈을 사용하라. 차이점에 대해서는 "
+":ref:`command 모듈 <command_module>`\\ 은 파이프라인이나 리다이렉션같은 셸의 고급 문법을 지원하지 "
+"않는다. (셸 변수는 동작한다.) 만약 셀에 종속적인 기능을 사용하고 싶으면 `shell` 모듈을 사용하라. 차이점에 대해서는 "
 ":ref:`working_with_modules` 페이지에 나와 있다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:102
@@ -241,17 +217,18 @@ msgid "Using the :ref:`shell module <shell_module>` looks like this::"
 msgstr ":ref:`shell 모듈 <shell_module>` 사용방법은 다음과 같다.::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:106
+#, fuzzy
 msgid ""
 "When running any command with the Ansible *ad hoc* CLI (as opposed to "
-":doc:`Playbooks <playbooks>`), pay particular attention to shell quoting "
-"rules, so the local shell doesn't eat a variable before it gets passed to"
-" Ansible. For example, using double rather than single quotes in the "
-"above example would evaluate the variable on the box you were on."
+":ref:`Playbooks <working_with_playbooks>`), pay particular attention to "
+"shell quoting rules, so the local shell doesn't eat a variable before it "
+"gets passed to Ansible. For example, using double rather than single "
+"quotes in the above example would evaluate the variable on the box you "
+"were on."
 msgstr ""
-"만약 (:doc:`플레이북 <playbooks>`\ 을 쓰지 않고) 명령줄을 사용하여 명령을 "
-"실행시킬 때는 셸의 따옴표 규칙에 주의해야 한다. 로컬 셸은 Ansible에 변수를 "
-"전달하기 전에 값을 풀어낼 수 있다. 예를 들어 위 명령에서 홑따옴표를 쓰지 않고 "
-"겹따옴표를 쓴다면 변수값이 지금 사용하고 있는 컴퓨터의 값으로 풀어져서 들어간다."
+"만약 (:doc:`플레이북 <playbooks>`\\ 을 쓰지 않고) 명령줄을 사용하여 명령을 실행시킬 때는 셸의 따옴표 규칙에 "
+"주의해야 한다. 로컬 셸은 Ansible에 변수를 전달하기 전에 값을 풀어낼 수 있다. 예를 들어 위 명령에서 홑따옴표를 쓰지 않고"
+" 겹따옴표를 쓴다면 변수값이 지금 사용하고 있는 컴퓨터의 값으로 풀어져서 들어간다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:112
 msgid ""
@@ -264,12 +241,10 @@ msgid ""
 "we also recognize that running arbitrary commands can be valuable, so "
 "Ansible easily supports both."
 msgstr ""
-"지금까지 간단한 명령 실행을 보였는데 대부분의 Ansible 모듈은 단순한 명령형 스크립트가 "
-"아니라 선언형 모형을 사용해서 지시한 최종 상태에 도달하기 위해 필요한 행위를 계산하고 "
-"실행한다. 또한 시작전에 현재 상태를 확인해서 시스템의 항등성(idempotence)을 확보한다. "
-"만약 현재의 상태가 지시한 상태와 같다면 아무것도 하지 않을 것이다. "
-"하지만 상태에 관계없이 명령을 반드시 실행해야하는 경우도 있기 때문에 "
-"Ansible은 두 가지 모두 지원한다."
+"지금까지 간단한 명령 실행을 보였는데 대부분의 Ansible 모듈은 단순한 명령형 스크립트가 아니라 선언형 모형을 사용해서 지시한 "
+"최종 상태에 도달하기 위해 필요한 행위를 계산하고 실행한다. 또한 시작전에 현재 상태를 확인해서 시스템의 "
+"항등성(idempotence)을 확보한다. 만약 현재의 상태가 지시한 상태와 같다면 아무것도 하지 않을 것이다. 하지만 상태에 "
+"관계없이 명령을 반드시 실행해야하는 경우도 있기 때문에 Ansible은 두 가지 모두 지원한다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:122
 msgid "File Transfer"
@@ -279,73 +254,59 @@ msgstr "파일 전송"
 msgid ""
 "Here's another use case for the `/usr/bin/ansible` command line.  Ansible"
 " can SCP lots of files to multiple machines in parallel."
-msgstr ""
-"`/usr/bin/ansible`  명령을 사용하는 다른 경우는 SCP로 여러대의 머신에 파일을 "
-"동시 전송하는 것이다."
+msgstr "`/usr/bin/ansible`  명령을 사용하는 다른 경우는 SCP로 여러대의 머신에 파일을 동시 전송하는 것이다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:126
 msgid "To transfer a file directly to many servers::"
-msgstr ""
-"파일을 복수 서버에 직접 전송하려면::"
+msgstr "파일을 복수 서버에 직접 전송하려면::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:130
 msgid ""
 "If you use playbooks, you can also take advantage of the ``template`` "
 "module, which takes this another step further.  (See module and playbook "
 "documentation)."
-msgstr ""
-"만약 플레이북을 사용하면 ``template`` 모듈도 쓸 수 있다. "
-"(모듈과 플레이북 문서를 참조하라.)"
+msgstr "만약 플레이북을 사용하면 ``template`` 모듈도 쓸 수 있다. (모듈과 플레이북 문서를 참조하라.)"
 
 #: ../../rst/user_guide/intro_adhoc.rst:133
 msgid ""
 "The ``file`` module allows changing ownership and permissions on files.  "
 "These same options can be passed directly to the ``copy`` module as "
 "well::"
-msgstr ""
-"``file`` 모듈은 파일의 소유자와 권한도 바꿀 수 있다. 이 옵션은 ``copy`` 모듈에도 적용된다.::"
+msgstr "``file`` 모듈은 파일의 소유자와 권한도 바꿀 수 있다. 이 옵션은 ``copy`` 모듈에도 적용된다.::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:139
 msgid "The ``file`` module can also create directories, similar to ``mkdir -p``::"
-msgstr ""
-"``file`` 모듈은 ``mkdir -p`` 명령처럼 디렉토리도 만들 수 있다.::"
+msgstr "``file`` 모듈은 ``mkdir -p`` 명령처럼 디렉토리도 만들 수 있다.::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:143
 msgid "As well as delete directories (recursively) and delete files::"
-msgstr ""
-"디렉토리와 파일을 재귀적으로 지울 수도 있다.::"
+msgstr "디렉토리와 파일을 재귀적으로 지울 수도 있다.::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:150
 msgid "Managing Packages"
-msgstr ""
-"패키지 관리"
+msgstr "패키지 관리"
 
 #: ../../rst/user_guide/intro_adhoc.rst:152
 msgid ""
 "There are modules available for yum and apt.  Here are some examples with"
 " yum."
-msgstr ""
-"yum와 apt용 모듈도 있다. 다음은 yum 예제들이다."
+msgstr "yum와 apt용 모듈도 있다. 다음은 yum 예제들이다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:155
 msgid "Ensure a package is installed, but don't update it::"
-msgstr ""
-"패키지가 설치되었는지 확인하여 설치한다. 업데이트하지는 않는다::"
+msgstr "패키지가 설치되었는지 확인하여 설치한다. 업데이트하지는 않는다::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:159
 msgid "Ensure a package is installed to a specific version::"
-msgstr ""
-"패키지가 특정 버전으로 설치되었는지 확인하여 설치한다::"
+msgstr "패키지가 특정 버전으로 설치되었는지 확인하여 설치한다::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:163
 msgid "Ensure a package is at the latest version::"
-msgstr ""
-"패키지가 최신버전인지 확인하여 설치한다.::"
+msgstr "패키지가 최신버전인지 확인하여 설치한다.::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:167
 msgid "Ensure a package is not installed::"
-msgstr ""
-"패키지가 설치되지 않았는지 확인하여 제거한다."
+msgstr "패키지가 설치되지 않았는지 확인하여 제거한다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:171
 msgid ""
@@ -354,40 +315,34 @@ msgid ""
 "the command module or (better!) contribute a module for your package "
 "manager. Stop by the mailing list for info/details."
 msgstr ""
-"Ansible은 여러 플랫폼의 패키지를 관리하는 모듈을 가지고 있다. "
-"만약 원하는 패키지 관리자가 없으면 command 모듈로 설치하거나 패키지 관리자를 "
-"직접 제작하여 Ansible에 기여할 수도 있다. 자세한 내용은 메일링 리스트를 참조한다."
+"Ansible은 여러 플랫폼의 패키지를 관리하는 모듈을 가지고 있다. 만약 원하는 패키지 관리자가 없으면 command 모듈로 "
+"설치하거나 패키지 관리자를 직접 제작하여 Ansible에 기여할 수도 있다. 자세한 내용은 메일링 리스트를 참조한다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:179
 msgid "Users and Groups"
-msgstr ""
-"사용자와 그룹"
+msgstr "사용자와 그룹"
 
 #: ../../rst/user_guide/intro_adhoc.rst:181
 msgid ""
 "The 'user' module allows easy creation and manipulation of existing user "
 "accounts, as well as removal of user accounts that may exist::"
-msgstr ""
-"'user' 모듈은 사용자 계정 생성 및 관리를 돕는다. 이미 있는 사용자 계정을 "
-"삭제할 수도 있다.::"
+msgstr "'user' 모듈은 사용자 계정 생성 및 관리를 돕는다. 이미 있는 사용자 계정을 삭제할 수도 있다.::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:189
+#, fuzzy
 msgid ""
-"See the :doc:`modules` section for details on all of the available "
-"options, including how to manipulate groups and group membership."
-msgstr ""
-":doc:`modules` 절에 자세한 내용과 사용할 수 있는 옵션이 나와 있다. "
-"그룹과 그룹 구성원을 관리하는 방법도 있다."
+"See the :ref:`Module Docs <modules_by_category>` section for details on "
+"all of the available options, including how to manipulate groups and "
+"group membership."
+msgstr ":doc:`modules` 절에 자세한 내용과 사용할 수 있는 옵션이 나와 있다. 그룹과 그룹 구성원을 관리하는 방법도 있다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:195
 msgid "Deploying From Source Control"
-msgstr ""
-"소스 제어시에 배포하는 방법"
+msgstr "소스 제어시에 배포하는 방법"
 
 #: ../../rst/user_guide/intro_adhoc.rst:197
 msgid "Deploy your webapp straight from git::"
-msgstr ""
-"git에서 직접 배포하려면::"
+msgstr "git에서 직접 배포하려면::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:201
 msgid ""
@@ -395,9 +350,8 @@ msgid ""
 "Ansible to run specific tasks when the code is updated, such as deploying"
 " Perl/Python/PHP/Ruby directly from git and then restarting apache."
 msgstr ""
-"Ansible 모듈은 변동 사항을 알려줄 수 있으므로 코드가 업데이트 되었을 때 "
-"특정한 작업을 실시하도록 할 수 있다. 예를 들어 Perl/Python/PHP/Ruby를 git에서 "
-"배포한 후 아파치를 재시작할 수 있다."
+"Ansible 모듈은 변동 사항을 알려줄 수 있으므로 코드가 업데이트 되었을 때 특정한 작업을 실시하도록 할 수 있다. 예를 들어 "
+"Perl/Python/PHP/Ruby를 git에서 배포한 후 아파치를 재시작할 수 있다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:209
 msgid "Managing Services"
@@ -426,9 +380,9 @@ msgid ""
 "``long_running_operation`` asynchronously in the background, with a "
 "timeout of 3600 seconds (``-B``), and without polling (``-P``)::"
 msgstr ""
-"시간이 오래 걸리는 동작은 백그라운드에서 실행한 후에 나중에 상태를 확인할 "
-"수 있다. 예를 들어 ``long_running_operation``\ 을 3600 초 시간제한을 두고 (``-B``) "
-"폴링 없이 (``-P``) 백그라운드에서 비동기적으로 실행하려면::"
+"시간이 오래 걸리는 동작은 백그라운드에서 실행한 후에 나중에 상태를 확인할 수 있다. 예를 들어 "
+"``long_running_operation``\\ 을 3600 초 시간제한을 두고 (``-B``) 폴링 없이 (``-P``) "
+"백그라운드에서 비동기적으로 실행하려면::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:235
 msgid ""
@@ -436,8 +390,8 @@ msgid ""
 "the async_status module, passing it the job id that was returned when you"
 " ran the original job in the background::"
 msgstr ""
-"작업 상태를 나중에 확인하기로 했다면 async_status 모듈을 사용한다. "
-"작업 아이디를 넘기면 백그라운드에서 작업을 실시할 때 반환된다.::"
+"작업 상태를 나중에 확인하기로 했다면 async_status 모듈을 사용한다. 작업 아이디를 넘기면 백그라운드에서 작업을 실시할 때"
+" 반환된다.::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:241
 msgid "Polling is built-in and looks like this::"
@@ -447,9 +401,7 @@ msgstr "폴링도 구현되어 있다::"
 msgid ""
 "The above example says \"run for 30 minutes max (``-B`` 30*60=1800), poll"
 " for status (``-P``) every 60 seconds\"."
-msgstr ""
-"위 예제는 \"최대 30분동안 (``-B`` 30*60=1800) 실행하고 60초마다 상태를 "
-"확인하라(``-P``)는 뜻이다. "
+msgstr "위 예제는 \"최대 30분동안 (``-B`` 30*60=1800) 실행하고 60초마다 상태를 확인하라(``-P``)는 뜻이다. "
 
 #: ../../rst/user_guide/intro_adhoc.rst:248
 msgid ""
@@ -459,20 +411,19 @@ msgid ""
 "(in seconds) runs out (``-B``), the process on the remote nodes will be "
 "terminated."
 msgstr ""
-"폴 모드는 모든 작업이 머신에서 시작한 다음에 시작된다. "
-"만약 모든 작업을 빨리 시작하고 싶다면 ``--forks`` 수를 크게 하라. "
-"(초단위) 시간 제한 (``-B``)이 지나면 원격 노드의 프로세스가 강제종료된다."
+"폴 모드는 모든 작업이 머신에서 시작한 다음에 시작된다. 만약 모든 작업을 빨리 시작하고 싶다면 ``--forks`` 수를 크게 "
+"하라. (초단위) 시간 제한 (``-B``)이 지나면 원격 노드의 프로세스가 강제종료된다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:253
+#, fuzzy
 msgid ""
 "Typically you'll only be backgrounding long-running shell commands or "
 "software upgrades.  Backgrounding the copy module does not do a "
-"background file transfer.  :doc:`Playbooks <playbooks>` also support "
-"polling, and have a simplified syntax for this."
+"background file transfer. :ref:`Playbooks <working_with_playbooks>` also "
+"support polling, and have a simplified syntax for this."
 msgstr ""
-"보통은 소프트웨어 업그레이드나 시간이 오래걸리는 셸 명령을 백그라운에서 돌린다. "
-"copy 모듈을 백그라운드에서 돌린다고 파일 전송이 백그라운드에서 되지는 않는다. "
-"doc:`Playbooks <playbooks>`\ 도 폴링을 지원하고 간단한 문법이 있다."
+"보통은 소프트웨어 업그레이드나 시간이 오래걸리는 셸 명령을 백그라운에서 돌린다. copy 모듈을 백그라운드에서 돌린다고 파일 전송이"
+" 백그라운드에서 되지는 않는다. doc:`Playbooks <playbooks>`\\ 도 폴링을 지원하고 간단한 문법이 있다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:259
 msgid "Gathering Facts"
@@ -485,24 +436,23 @@ msgid ""
 "execution of tasks but also just to get ad-hoc information about your "
 "system. You can see all facts via::"
 msgstr ""
-"팩트는 시스템에 관련된 정보로서 플레이북 문서에서 설명한다. "
-"조건부 작업을 구현하기위해 쓰이지만 간단히 시스템 정보를 수집할 수도 있다::"
+"팩트는 시스템에 관련된 정보로서 플레이북 문서에서 설명한다. 조건부 작업을 구현하기위해 쓰이지만 간단히 시스템 정보를 수집할 수도 "
+"있다::"
 
 #: ../../rst/user_guide/intro_adhoc.rst:266
 msgid ""
 "It's also possible to filter this output to just export certain facts, "
 "see the \"setup\" module documentation for details."
-msgstr ""
-"이 출력에서 특정 팩트만 필터링하여 출력할 수도 있다. "
-"자세한 내용은 \"setup\" 모듈을 참조한다."
+msgstr "이 출력에서 특정 팩트만 필터링하여 출력할 수도 있다. 자세한 내용은 \"setup\" 모듈을 참조한다."
 
 #: ../../rst/user_guide/intro_adhoc.rst:268
+#, fuzzy
 msgid ""
-"Read more about facts at :doc:`playbooks_variables` once you're ready to "
-"read up on :doc:`Playbooks <playbooks>`."
+"Read more about facts at :ref:`playbooks_variables` once you're ready to "
+"read up on :ref:`Playbooks <playbooks_intro>`."
 msgstr ""
-":doc:`플레이북 문서 <playbooks>`\ 를 읽은 후에 :doc:`playbooks_variables`\ 에 "
-"있는 팩트수집에 대한 내용을 참조하라."
+":doc:`플레이북 문서 <playbooks>`\\ 를 읽은 후에 :doc:`playbooks_variables`\\ 에 있는 "
+"팩트수집에 대한 내용을 참조하라."
 
 #: ../../rst/user_guide/intro_adhoc.rst:272
 msgid ":ref:`intro_configuration`"

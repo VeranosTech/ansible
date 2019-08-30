@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,11 +68,14 @@ msgid ""
 "To start using an inventory plugin with a YAML configuration source, "
 "create a file with the accepted filename schema for the plugin in "
 "question, then add ``plugin: plugin_name``. Each plugin documents any "
-"naming restrictions. For example, the aws_ec2 inventory plugin:"
+"naming restrictions. For example, the aws_ec2 inventory plugin has to end"
+" with ``aws_ec2.(yml|yaml)``"
 msgstr ""
 
 #: ../../rst/plugins/inventory.rst:51
-msgid "Or for the openstack plugin:"
+msgid ""
+"Or for the openstack plugin the file has to be called ``clouds.yml`` or "
+"``openstack.(yml|yaml)``:"
 msgstr ""
 
 #: ../../rst/plugins/inventory.rst:58
@@ -81,12 +84,12 @@ msgid ""
 "the ``plugin`` field to indicate the plugin that should attempt to parse "
 "it. You can configure the whitelist/precedence of inventory plugins used "
 "to parse source using the `ansible.cfg` ['inventory'] ``enable_plugins`` "
-"list. After enabling the plugin and providing any required options you "
+"list. After enabling the plugin and providing any required options, you "
 "can view the populated inventory with ``ansible-inventory -i "
-"demo.aws_ec2.yml --graph``::"
+"demo.aws_ec2.yml --graph``:"
 msgstr ""
 
-#: ../../rst/plugins/inventory.rst:66
+#: ../../rst/plugins/inventory.rst:68
 msgid ""
 "You can set the default inventory path (via ``inventory`` in the "
 "`ansible.cfg` [defaults] section or the :envvar:`ANSIBLE_INVENTORY` "
@@ -96,7 +99,7 @@ msgid ""
 "plugins to your plugin path to use in the same way."
 msgstr ""
 
-#: ../../rst/plugins/inventory.rst:68
+#: ../../rst/plugins/inventory.rst:70
 msgid ""
 "Your inventory source might be a directory of inventory configuration "
 "files. The constructed inventory plugin only operates on those hosts "
@@ -111,7 +114,7 @@ msgid ""
 "clouds.yml -i constructed.yml``."
 msgstr ""
 
-#: ../../rst/plugins/inventory.rst:70
+#: ../../rst/plugins/inventory.rst:72
 msgid ""
 "You can create dynamic groups using host variables with the constructed "
 "``keyed_groups`` option. The option ``groups`` can also be used to create"
@@ -119,11 +122,11 @@ msgid ""
 "aws_ec2 example utilizing constructed features:"
 msgstr ""
 
-#: ../../rst/plugins/inventory.rst:91
-msgid "Now the output of ``ansible-inventory -i demo.aws_ec2.yml --graph``::"
+#: ../../rst/plugins/inventory.rst:93
+msgid "Now the output of ``ansible-inventory -i demo.aws_ec2.yml --graph``:"
 msgstr ""
 
-#: ../../rst/plugins/inventory.rst:107
+#: ../../rst/plugins/inventory.rst:111
 msgid ""
 "If a host does not have the variables in the configuration above (i.e. "
 "``tags.Name``, ``tags``, ``private_ip_address``), the host will not be "
@@ -131,86 +134,137 @@ msgid ""
 "the ``ansible_host`` host variable will not be modified."
 msgstr ""
 
-#: ../../rst/plugins/inventory.rst:112
+#: ../../rst/plugins/inventory.rst:113
+msgid ""
+"If an inventory plugin supports caching, you can enable and set caching "
+"options for an individual YAML configuration source or for multiple "
+"inventory sources using environment variables or Ansible configuration "
+"files. If you enable caching for an inventory plugin without providing "
+"inventory-specific caching options, the inventory plugin will use fact-"
+"caching options. Here is an example of enabling caching for an individual"
+" YAML configuration file:"
+msgstr ""
+
+#: ../../rst/plugins/inventory.rst:125
+msgid ""
+"Here is an example of setting inventory caching with some fact caching "
+"defaults for the cache plugin used and the timeout in an ``ansible.cfg`` "
+"file:"
+msgstr ""
+
+#: ../../rst/plugins/inventory.rst:141
 msgid "Plugin List"
 msgstr ""
 
-#: ../../rst/plugins/inventory.rst:114
+#: ../../rst/plugins/inventory.rst:143
 msgid ""
 "You can use ``ansible-doc -t inventory -l`` to see the list of available "
 "plugins. Use ``ansible-doc -t inventory <plugin name>`` to see plugin-"
 "specific documentation and examples."
 msgstr ""
 
-#: ../../rst/plugins/inventory.rst:124
+#: ../../rst/plugins/inventory.rst:153
 msgid ":ref:`about_playbooks`"
 msgstr ""
 
-#: ../../rst/plugins/inventory.rst:125
+#: ../../rst/plugins/inventory.rst:154
 msgid "An introduction to playbooks"
 msgstr ""
 
-#: ../../rst/plugins/inventory.rst:126
+#: ../../rst/plugins/inventory.rst:155
 msgid ":ref:`callback_plugins`"
 msgstr ""
 
-#: ../../rst/plugins/inventory.rst:127
+#: ../../rst/plugins/inventory.rst:156
 msgid "Ansible callback plugins"
 msgstr ""
 
-#: ../../rst/plugins/inventory.rst:128
+#: ../../rst/plugins/inventory.rst:157
 msgid ":ref:`connection_plugins`"
 msgstr ""
 
-#: ../../rst/plugins/inventory.rst:129
+#: ../../rst/plugins/inventory.rst:158
 msgid "Ansible connection plugins"
 msgstr ""
 
-#: ../../rst/plugins/inventory.rst:130
+#: ../../rst/plugins/inventory.rst:159
 msgid ":ref:`playbooks_filters`"
 msgstr ""
 
-#: ../../rst/plugins/inventory.rst:131
+#: ../../rst/plugins/inventory.rst:160
 msgid "Jinja2 filter plugins"
 msgstr ""
 
-#: ../../rst/plugins/inventory.rst:132
+#: ../../rst/plugins/inventory.rst:161
 msgid ":ref:`playbooks_tests`"
 msgstr ""
 
-#: ../../rst/plugins/inventory.rst:133
+#: ../../rst/plugins/inventory.rst:162
 msgid "Jinja2 test plugins"
 msgstr ""
 
-#: ../../rst/plugins/inventory.rst:134
+#: ../../rst/plugins/inventory.rst:163
 msgid ":ref:`playbooks_lookups`"
 msgstr ""
 
-#: ../../rst/plugins/inventory.rst:135
+#: ../../rst/plugins/inventory.rst:164
 msgid "Jinja2 lookup plugins"
 msgstr ""
 
-#: ../../rst/plugins/inventory.rst:136
+#: ../../rst/plugins/inventory.rst:165
 msgid ":ref:`vars_plugins`"
 msgstr ""
 
-#: ../../rst/plugins/inventory.rst:137
+#: ../../rst/plugins/inventory.rst:166
 msgid "Ansible vars plugins"
 msgstr ""
 
-#: ../../rst/plugins/inventory.rst:138
+#: ../../rst/plugins/inventory.rst:167
 msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
 msgstr ""
 
-#: ../../rst/plugins/inventory.rst:139
+#: ../../rst/plugins/inventory.rst:168
 msgid "Have a question?  Stop by the google group!"
 msgstr ""
 
-#: ../../rst/plugins/inventory.rst:140
+#: ../../rst/plugins/inventory.rst:169
 msgid "`irc.freenode.net <http://irc.freenode.net>`_"
 msgstr ""
 
-#: ../../rst/plugins/inventory.rst:141
+#: ../../rst/plugins/inventory.rst:170
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ""
+#~ "To start using an inventory plugin "
+#~ "with a YAML configuration source, create"
+#~ " a file with the accepted filename"
+#~ " schema for the plugin in question,"
+#~ " then add ``plugin: plugin_name``. Each "
+#~ "plugin documents any naming restrictions. "
+#~ "For example, the aws_ec2 inventory "
+#~ "plugin:"
+#~ msgstr ""
+
+#~ msgid "Or for the openstack plugin:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The ``auto`` inventory plugin is enabled"
+#~ " by default and works by using "
+#~ "the ``plugin`` field to indicate the "
+#~ "plugin that should attempt to parse "
+#~ "it. You can configure the "
+#~ "whitelist/precedence of inventory plugins used"
+#~ " to parse source using the "
+#~ "`ansible.cfg` ['inventory'] ``enable_plugins`` list."
+#~ " After enabling the plugin and "
+#~ "providing any required options you can"
+#~ " view the populated inventory with "
+#~ "``ansible-inventory -i demo.aws_ec2.yml "
+#~ "--graph``::"
+#~ msgstr ""
+
+#~ msgid "Now the output of ``ansible-inventory -i demo.aws_ec2.yml --graph``::"
+#~ msgstr ""
 

@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/network/dev_guide/developing_plugins_network.rst:7
+msgid "Network connection plugins"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_plugins_network.rst:9
+msgid ""
+"Each network connection plugin has a set of its own plugins which provide"
+" a specification of the connection for a particular set of devices. The "
+"specific plugin used is selected at runtime based on the value of the "
+"``ansible_network_os`` variable assigned to the host. This variable "
+"should be set to the same value as the name of the plugin to be loaed. "
+"Thus, ``ansible_network_os=nxos`` will try to load a plugin in a file "
+"named ``nxos.py``, so it is important to name the plugin in a way that "
+"will be sensible to users."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_plugins_network.rst:16
+msgid ""
+"Public methods of these plugins may be called from a module or "
+"module_utils with the connection proxy object just as other connection "
+"methods can. The following is a very simple example of using such a call "
+"in a module_utils file so it may be shared with other modules."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_plugins_network.rst:38
+msgid "Developing httpapi plugins"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_plugins_network.rst:40
+msgid ""
+":ref:`httpapi plugins <httpapi_plugins>` serve as adapters for various "
+"HTTP(S) APIs for use with the ``httpapi`` connection plugin. They should "
+"implement a minimal set of convenience methods tailored to the API you "
+"are attempting to use."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_plugins_network.rst:42
+msgid ""
+"Specifically, there are a few methods that the ``httpapi`` connection "
+"plugin expects to exist."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_plugins_network.rst:45
+msgid "Making requests"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_plugins_network.rst:47
+msgid ""
+"The ``httpapi`` connection plugin has a ``send()`` method, but an httpapi"
+" plugin needs a ``send_request(self, data, **message_kwargs)`` method as "
+"a higher-level wrapper to ``send()``. This method should prepare requests"
+" by adding fixed values like common headers or URL root paths. This "
+"method may do more complex work such as turning data into formatted "
+"payloads, or determining which path or method to request. It may then "
+"also unpack responses to be more easily consumed by the caller."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_plugins_network.rst:67
+msgid "Authenticating"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_plugins_network.rst:69
+msgid ""
+"By default, all requests will authenticate with HTTP Basic "
+"authentication. If a request can return some kind of token to stand in "
+"place of HTTP Basic, the ``update_auth(self, response, response_text)`` "
+"method should be implemented to inspect responses for such tokens. If the"
+" token is meant to be included with the headers of each request, it is "
+"sufficient to return a dictionary which will be merged with the computed "
+"headers for each request. The default implementation of this method does "
+"exactly this for cookies. If the token is used in another way, say in a "
+"query string, you should instead save that token to an instance variable,"
+" where the ``send_request()`` method (above) can add it to each request"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_plugins_network.rst:80
+msgid ""
+"If instead an explicit login endpoint needs to be requested to receive an"
+" authentication token, the ``login(self, username, password)`` method can"
+" be implemented to call that endpoint. If implemented, this method will "
+"be called once before requesting any other resources of the server. By "
+"default, it will also be attempted once when a HTTP 401 is returned from "
+"a request."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_plugins_network.rst:98
+msgid ""
+"Similarly, ``logout(self)`` can be implemented to call an endpoint to "
+"invalidate and/or release the current token, if such an endpoint exists. "
+"This will be automatically called when the connection is closed (and, by "
+"extension, when reset)."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_plugins_network.rst:110
+msgid "Error handling"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_plugins_network.rst:112
+msgid ""
+"The ``handle_httperror(self, exception)`` method can deal with status "
+"codes returned by the server. The return value indicates how the plugin "
+"will continue with the request:"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_plugins_network.rst:114
+msgid ""
+"A value of ``true`` means that the request can be retried. This my be "
+"used to indicate a transient error, or one that has been resolved. For "
+"example, the default implementation will try to call ``login()`` when "
+"presented with a 401, and return ``true`` if successful."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_plugins_network.rst:116
+msgid ""
+"A value of ``false`` means that the plugin is unable to recover from this"
+" response. The status code will be returned to the calling module as an "
+"exception. Any other value will be taken as a nonfatal response from the "
+"request. This may be useful if the server returns error messages in the "
+"body of the response. Returning the original exception is usually "
+"sufficient in this case, as HTTPError objects have the same interface as "
+"a successful response."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_plugins_network.rst:118
+msgid ""
+"For example httpapi plugins, see the `source code for the httpapi plugins"
+" "
+"<https://github.com/ansible/ansible/tree/devel/lib/ansible/plugins/httpapi>`_"
+" included with Ansible Core."
+msgstr ""
+

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,11 @@ msgstr ""
 msgid "bigip_gtm_datacenter -- Manage Datacenter configuration in BIG-IP"
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_datacenter_module.rst:19
+#: ../../rst/modules/bigip_gtm_datacenter_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_datacenter_module.rst:20
+#: ../../rst/modules/bigip_gtm_datacenter_module.rst:19
 msgid ""
 "Manage BIG-IP data center configuration. A data center defines the "
 "location where the physical network components reside, such as the server"
@@ -34,25 +34,25 @@ msgid ""
 "is able to manipulate the data center definitions in a BIG-IP."
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_datacenter_module.rst:26
+#: ../../rst/modules/bigip_gtm_datacenter_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_datacenter_module.rst:346
+#: ../../rst/modules/bigip_gtm_datacenter_module.rst:282
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_datacenter_module.rst:349
+#: ../../rst/modules/bigip_gtm_datacenter_module.rst:285
 msgid ""
 "For more information on using Ansible to manage F5 Networks devices see "
 "https://www.ansible.com/integrations/networks/f5."
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_datacenter_module.rst:350
+#: ../../rst/modules/bigip_gtm_datacenter_module.rst:286
 msgid "Requires BIG-IP software version >= 12."
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_datacenter_module.rst:351
+#: ../../rst/modules/bigip_gtm_datacenter_module.rst:287
 msgid ""
 "The F5 modules only manipulate the running configuration of the F5 "
 "product. To ensure that BIG-IP specific configuration persists to disk, "
@@ -62,54 +62,62 @@ msgid ""
 "your running configuration."
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_datacenter_module.rst:356
+#: ../../rst/modules/bigip_gtm_datacenter_module.rst:292
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_datacenter_module.rst:375
+#: ../../rst/modules/bigip_gtm_datacenter_module.rst:311
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_datacenter_module.rst:376
+#: ../../rst/modules/bigip_gtm_datacenter_module.rst:312
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_datacenter_module.rst:469
+#: ../../rst/modules/bigip_gtm_datacenter_module.rst:405
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_datacenter_module.rst:474
+#: ../../rst/modules/bigip_gtm_datacenter_module.rst:410
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_datacenter_module.rst:477
+#: ../../rst/modules/bigip_gtm_datacenter_module.rst:413
 msgid ""
 "This module is :ref:`maintained by an Ansible Partner <modules_support>`."
 " *[certified]*"
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_datacenter_module.rst:484
+#: ../../rst/modules/bigip_gtm_datacenter_module.rst:420
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_datacenter_module.rst:486
+#: ../../rst/modules/bigip_gtm_datacenter_module.rst:422
 msgid "Tim Rupp (@caphrim007)"
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_datacenter_module.rst:487
+#: ../../rst/modules/bigip_gtm_datacenter_module.rst:423
 msgid "Wojciech Wypior (@wojtek0806)"
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_datacenter_module.rst:491
+#: ../../rst/modules/bigip_gtm_datacenter_module.rst:427
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_gtm_datacenter.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_gtm_datacenter.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_gtm_datacenter.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

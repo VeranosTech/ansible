@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/modules/na_ontap_snapmirror_module.rst:9
-msgid "na_ontap_snapmirror -- NetApp ONTAP Manage SnapMirror"
+msgid "na_ontap_snapmirror -- NetApp ONTAP or ElementSW Manage SnapMirror"
 msgstr ""
 
 #: ../../rst/modules/na_ontap_snapmirror_module.rst:19
@@ -27,97 +27,148 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/na_ontap_snapmirror_module.rst:20
-msgid "Create/Delete/Initialize SnapMirror volume/vserver relationships"
+msgid ""
+"Create/Delete/Initialize SnapMirror volume/vserver relationships for "
+"ONTAP/ONTAP"
 msgstr ""
 
 #: ../../rst/modules/na_ontap_snapmirror_module.rst:21
-msgid "Modify schedule for a SnapMirror relationship"
+msgid ""
+"Create/Delete/Initialize SnapMirror volume relationship between ElementSW"
+" and ONTAP"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_snapmirror_module.rst:26
+#: ../../rst/modules/na_ontap_snapmirror_module.rst:22
+msgid ""
+"Modify schedule for a SnapMirror relationship for ONTAP/ONTAP and "
+"ElementSW/ONTAP"
+msgstr ""
+
+#: ../../rst/modules/na_ontap_snapmirror_module.rst:23
+msgid ""
+"Pre-requisite for ElementSW to ONTAP relationship or vice-versa is an "
+"established SnapMirror endpoint for ONTAP cluster with ElementSW UI"
+msgstr ""
+
+#: ../../rst/modules/na_ontap_snapmirror_module.rst:24
+msgid ""
+"Pre-requisite for ElementSW to ONTAP relationship or vice-versa is to "
+"have SnapMirror enabled in the ElementSW volume"
+msgstr ""
+
+#: ../../rst/modules/na_ontap_snapmirror_module.rst:25
+msgid ""
+"For creating a SnapMirror ElementSW/ONTAP relationship, an existing "
+"ONTAP/ElementSW relationship should be present"
+msgstr ""
+
+#: ../../rst/modules/na_ontap_snapmirror_module.rst:30
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_snapmirror_module.rst:27
+#: ../../rst/modules/na_ontap_snapmirror_module.rst:31
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/na_ontap_snapmirror_module.rst:29
+#: ../../rst/modules/na_ontap_snapmirror_module.rst:33
 msgid ""
 "A physical or virtual clustered Data ONTAP system. The modules support "
 "Data ONTAP 9.1 and onward"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_snapmirror_module.rst:30
+#: ../../rst/modules/na_ontap_snapmirror_module.rst:34
 msgid "Ansible 2.6"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_snapmirror_module.rst:31
+#: ../../rst/modules/na_ontap_snapmirror_module.rst:35
 msgid ""
 "Python2 netapp-lib (2017.10.30) or later. Install using 'pip install "
 "netapp-lib'"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_snapmirror_module.rst:32
+#: ../../rst/modules/na_ontap_snapmirror_module.rst:36
 msgid ""
 "Python3 netapp-lib (2018.11.13) or later. Install using 'pip install "
 "netapp-lib'"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_snapmirror_module.rst:33
+#: ../../rst/modules/na_ontap_snapmirror_module.rst:37
 msgid ""
 "To enable http on the cluster you must run the following commands 'set "
 "-privilege advanced;' 'system services web modify -http-enabled true;'"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_snapmirror_module.rst:37
+#: ../../rst/modules/na_ontap_snapmirror_module.rst:41
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_snapmirror_module.rst:326
+#: ../../rst/modules/na_ontap_snapmirror_module.rst:420
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_snapmirror_module.rst:329
+#: ../../rst/modules/na_ontap_snapmirror_module.rst:423
 msgid ""
-"The modules prefixed with na\\_ontap are built to support the ONTAP "
+"The modules prefixed with na\\\\_ontap are built to support the ONTAP "
 "storage platform."
 msgstr ""
 
-#: ../../rst/modules/na_ontap_snapmirror_module.rst:334
+#: ../../rst/modules/na_ontap_snapmirror_module.rst:428
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_snapmirror_module.rst:382
+#: ../../rst/modules/na_ontap_snapmirror_module.rst:522
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_snapmirror_module.rst:387
+#: ../../rst/modules/na_ontap_snapmirror_module.rst:527
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_snapmirror_module.rst:390
+#: ../../rst/modules/na_ontap_snapmirror_module.rst:530
 msgid ""
 "This module is :ref:`maintained by an Ansible Partner <modules_support>`."
 " *[certified]*"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_snapmirror_module.rst:397
+#: ../../rst/modules/na_ontap_snapmirror_module.rst:537
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_snapmirror_module.rst:399
+#: ../../rst/modules/na_ontap_snapmirror_module.rst:539
 msgid "NetApp Ansible Team (@carchi8py) <ng-ansibleteam@netapp.com>"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_snapmirror_module.rst:403
+#: ../../rst/modules/na_ontap_snapmirror_module.rst:543
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/na_ontap_snapmirror.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/na_ontap_snapmirror.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "na_ontap_snapmirror -- NetApp ONTAP Manage SnapMirror"
+#~ msgstr ""
+
+#~ msgid "Create/Delete/Initialize SnapMirror volume/vserver relationships"
+#~ msgstr ""
+
+#~ msgid "Modify schedule for a SnapMirror relationship"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The modules prefixed with na\\_ontap are"
+#~ " built to support the ONTAP storage"
+#~ " platform."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/na_ontap_snapmirror.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

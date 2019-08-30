@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,67 +24,93 @@ msgid ""
 "organizations available"
 msgstr ""
 
+#: ../../rst/modules/scaleway_organization_facts_module.rst:18
+msgid "DEPRECATED"
+msgstr ""
+
+#: ../../rst/modules/scaleway_organization_facts_module.rst
+msgid "Removed in Ansible"
+msgstr ""
+
 #: ../../rst/modules/scaleway_organization_facts_module.rst:19
-msgid "Synopsis"
+msgid "version: 2.13"
+msgstr ""
+
+#: ../../rst/modules/scaleway_organization_facts_module.rst
+msgid "Why"
 msgstr ""
 
 #: ../../rst/modules/scaleway_organization_facts_module.rst:20
-msgid "Gather facts about the Scaleway organizations available."
+msgid "Deprecated in favour of ``_info`` module."
+msgstr ""
+
+#: ../../rst/modules/scaleway_organization_facts_module.rst
+msgid "Alternative"
+msgstr ""
+
+#: ../../rst/modules/scaleway_organization_facts_module.rst:21
+msgid ""
+"Use :ref:`scaleway_organization_info <scaleway_organization_info_module>`"
+" instead."
 msgstr ""
 
 #: ../../rst/modules/scaleway_organization_facts_module.rst:26
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/scaleway_organization_facts_module.rst:27
+msgid "Gather facts about the Scaleway organizations available."
+msgstr ""
+
+#: ../../rst/modules/scaleway_organization_facts_module.rst:33
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/scaleway_organization_facts_module.rst:116
+#: ../../rst/modules/scaleway_organization_facts_module.rst:123
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/scaleway_organization_facts_module.rst:119
+#: ../../rst/modules/scaleway_organization_facts_module.rst:126
 msgid "Also see the API documentation on https://developer.scaleway.com/"
 msgstr ""
 
-#: ../../rst/modules/scaleway_organization_facts_module.rst:120
+#: ../../rst/modules/scaleway_organization_facts_module.rst:127
 msgid ""
 "If ``api_token`` is not set within the module, the following environment "
 "variables can be used in decreasing order of precedence ``SCW_TOKEN``, "
 "``SCW_API_KEY``, ``SCW_OAUTH_TOKEN`` or ``SCW_API_TOKEN``."
 msgstr ""
 
-#: ../../rst/modules/scaleway_organization_facts_module.rst:121
+#: ../../rst/modules/scaleway_organization_facts_module.rst:128
 msgid ""
 "If one wants to use a different ``api_url`` one can also set the "
 "``SCW_API_URL`` environment variable."
 msgstr ""
 
-#: ../../rst/modules/scaleway_organization_facts_module.rst:126
+#: ../../rst/modules/scaleway_organization_facts_module.rst:133
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/scaleway_organization_facts_module.rst:138
+#: ../../rst/modules/scaleway_organization_facts_module.rst:145
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/scaleway_organization_facts_module.rst:139
+#: ../../rst/modules/scaleway_organization_facts_module.rst:146
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/scaleway_organization_facts_module.rst:177
+#: ../../rst/modules/scaleway_organization_facts_module.rst:184
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/scaleway_organization_facts_module.rst:182
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
+#: ../../rst/modules/scaleway_organization_facts_module.rst:187
+msgid "This module will be removed in version 2.13. *[deprecated]*"
 msgstr ""
 
-#: ../../rst/modules/scaleway_organization_facts_module.rst:185
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
+#: ../../rst/modules/scaleway_organization_facts_module.rst:188
+msgid "For more information see `DEPRECATED`_."
 msgstr ""
 
 #: ../../rst/modules/scaleway_organization_facts_module.rst:192
@@ -102,9 +128,29 @@ msgstr ""
 #: ../../rst/modules/scaleway_organization_facts_module.rst:199
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/scaleway/scaleway_organization_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/scaleway/_scaleway_organization_facts.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/scaleway/scaleway_organization_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

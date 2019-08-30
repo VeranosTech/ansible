@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,95 +28,118 @@ msgstr ""
 
 #: ../../rst/modules/cloudscale_volume_module.rst:20
 msgid ""
-"Create, attach/detach and delete volumes on the cloudscale.ch IaaS "
-"service."
+"Create, attach/detach, update and delete volumes on the cloudscale.ch "
+"IaaS service."
 msgstr ""
 
-#: ../../rst/modules/cloudscale_volume_module.rst:21
+#: ../../rst/modules/cloudscale_volume_module.rst:26
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/cloudscale_volume_module.rst:169
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/cloudscale_volume_module.rst:172
+msgid ""
+"To create a new volume at least the *name* and *size_gb* options are "
+"required."
+msgstr ""
+
+#: ../../rst/modules/cloudscale_volume_module.rst:173
+msgid "A volume can be created and attached to a server in the same task."
+msgstr ""
+
+#: ../../rst/modules/cloudscale_volume_module.rst:174
+msgid ""
+"Instead of the api_token parameter the ``CLOUDSCALE_API_TOKEN`` "
+"environment variable can be used."
+msgstr ""
+
+#: ../../rst/modules/cloudscale_volume_module.rst:175
 msgid "All operations are performed using the cloudscale.ch public API v1."
 msgstr ""
 
-#: ../../rst/modules/cloudscale_volume_module.rst:22
+#: ../../rst/modules/cloudscale_volume_module.rst:176
 msgid ""
 "For details consult the full API documentation: "
 "https://www.cloudscale.ch/en/api/v1."
 msgstr ""
 
-#: ../../rst/modules/cloudscale_volume_module.rst:23
+#: ../../rst/modules/cloudscale_volume_module.rst:177
 msgid ""
 "A valid API token is required for all operations. You can create as many "
 "tokens as you like using the cloudscale.ch control panel at "
 "https://control.cloudscale.ch."
 msgstr ""
 
-#: ../../rst/modules/cloudscale_volume_module.rst:29
-msgid "Parameters"
-msgstr ""
-
-#: ../../rst/modules/cloudscale_volume_module.rst:159
-msgid "Notes"
-msgstr ""
-
-#: ../../rst/modules/cloudscale_volume_module.rst:162
-msgid ""
-"Instead of the *api_token* parameter the ``CLOUDSCALE_API_TOKEN`` "
-"environment variable can be used."
-msgstr ""
-
-#: ../../rst/modules/cloudscale_volume_module.rst:163
-msgid ""
-"To create a new volume at least the *name* and *size_gb* options are "
-"required."
-msgstr ""
-
-#: ../../rst/modules/cloudscale_volume_module.rst:164
-msgid "A volume can be created and attached to a server in the same task."
-msgstr ""
-
-#: ../../rst/modules/cloudscale_volume_module.rst:169
+#: ../../rst/modules/cloudscale_volume_module.rst:182
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/cloudscale_volume_module.rst:217
+#: ../../rst/modules/cloudscale_volume_module.rst:230
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/cloudscale_volume_module.rst:218
+#: ../../rst/modules/cloudscale_volume_module.rst:231
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/cloudscale_volume_module.rst:324
+#: ../../rst/modules/cloudscale_volume_module.rst:350
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/cloudscale_volume_module.rst:329
+#: ../../rst/modules/cloudscale_volume_module.rst:355
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/cloudscale_volume_module.rst:332
+#: ../../rst/modules/cloudscale_volume_module.rst:358
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/cloudscale_volume_module.rst:339
+#: ../../rst/modules/cloudscale_volume_module.rst:365
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/cloudscale_volume_module.rst:341
+#: ../../rst/modules/cloudscale_volume_module.rst:367
 msgid "Gaudenz Steinlin (@gaudenz)"
 msgstr ""
 
-#: ../../rst/modules/cloudscale_volume_module.rst:345
+#: ../../rst/modules/cloudscale_volume_module.rst:368
+msgid "René Moser (@resmo)"
+msgstr ""
+
+#: ../../rst/modules/cloudscale_volume_module.rst:372
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/cloudscale/cloudscale_volume.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/cloudscale/cloudscale_volume.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "Create, attach/detach and delete volumes "
+#~ "on the cloudscale.ch IaaS service."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Instead of the *api_token* parameter the"
+#~ " ``CLOUDSCALE_API_TOKEN`` environment variable "
+#~ "can be used."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/cloudscale/cloudscale_volume.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

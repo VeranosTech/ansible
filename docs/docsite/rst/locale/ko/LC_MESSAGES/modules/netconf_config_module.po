@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,125 +22,139 @@ msgstr ""
 msgid "netconf_config -- netconf device configuration"
 msgstr ""
 
-#: ../../rst/modules/netconf_config_module.rst:19
+#: ../../rst/modules/netconf_config_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/netconf_config_module.rst:20
+#: ../../rst/modules/netconf_config_module.rst:19
 msgid ""
 "Netconf is a network management protocol developed and standardized by "
 "the IETF. It is documented in RFC 6241."
 msgstr ""
 
-#: ../../rst/modules/netconf_config_module.rst:21
+#: ../../rst/modules/netconf_config_module.rst:20
 msgid ""
 "This module allows the user to send a configuration XML file to a netconf"
 " device, and detects if there was a configuration change."
 msgstr ""
 
-#: ../../rst/modules/netconf_config_module.rst:26
+#: ../../rst/modules/netconf_config_module.rst:25
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/netconf_config_module.rst:27
+#: ../../rst/modules/netconf_config_module.rst:26
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/netconf_config_module.rst:29
+#: ../../rst/modules/netconf_config_module.rst:28
 msgid "ncclient"
 msgstr ""
 
-#: ../../rst/modules/netconf_config_module.rst:33
+#: ../../rst/modules/netconf_config_module.rst:32
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/netconf_config_module.rst:405
+#: ../../rst/modules/netconf_config_module.rst:446
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/netconf_config_module.rst:408
+#: ../../rst/modules/netconf_config_module.rst:449
 msgid ""
 "This module requires the netconf system service be enabled on the remote "
 "device being managed."
 msgstr ""
 
-#: ../../rst/modules/netconf_config_module.rst:409
+#: ../../rst/modules/netconf_config_module.rst:450
 msgid ""
 "This module supports devices with and without the candidate and "
 "confirmed-commit capabilities. It will always use the safer feature."
 msgstr ""
 
-#: ../../rst/modules/netconf_config_module.rst:410
+#: ../../rst/modules/netconf_config_module.rst:451
 msgid "This module supports the use of connection=netconf"
 msgstr ""
 
-#: ../../rst/modules/netconf_config_module.rst:411
+#: ../../rst/modules/netconf_config_module.rst:452
 msgid ""
 "For information on using netconf see the :ref:`Platform Options guide "
 "using Netconf<netconf_enabled_platform_options>`"
 msgstr ""
 
-#: ../../rst/modules/netconf_config_module.rst:412
+#: ../../rst/modules/netconf_config_module.rst:453
 msgid ""
 "For more information on using Ansible to manage network devices see the "
 ":ref:`Ansible Network Guide <network_guide>`"
 msgstr ""
 
-#: ../../rst/modules/netconf_config_module.rst:417
+#: ../../rst/modules/netconf_config_module.rst:454
+msgid ""
+"This module is supported on ``ansible_network_os`` network platforms. See"
+" the :ref:`Network Platform Options <platform_options>` for details."
+msgstr ""
+
+#: ../../rst/modules/netconf_config_module.rst:459
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/netconf_config_module.rst:466
+#: ../../rst/modules/netconf_config_module.rst:515
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/netconf_config_module.rst:467
+#: ../../rst/modules/netconf_config_module.rst:516
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/netconf_config_module.rst:521
+#: ../../rst/modules/netconf_config_module.rst:570
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/netconf_config_module.rst:526
+#: ../../rst/modules/netconf_config_module.rst:575
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/netconf_config_module.rst:529
+#: ../../rst/modules/netconf_config_module.rst:578
 msgid ""
 "This module is :ref:`maintained by the Ansible Network Team "
 "<modules_support>`. *[network]*"
 msgstr ""
 
-#: ../../rst/modules/netconf_config_module.rst:532
+#: ../../rst/modules/netconf_config_module.rst:581
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/netconf_config_module.rst:534
+#: ../../rst/modules/netconf_config_module.rst:583
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/netconf_config_module.rst:540
+#: ../../rst/modules/netconf_config_module.rst:589
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/netconf_config_module.rst:542
+#: ../../rst/modules/netconf_config_module.rst:591
 msgid "Leandro Lisboa Penz (@lpenz)"
 msgstr ""
 
-#: ../../rst/modules/netconf_config_module.rst:546
+#: ../../rst/modules/netconf_config_module.rst:595
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/netconf/netconf_config.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/netconf/netconf_config.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/netconf/netconf_config.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

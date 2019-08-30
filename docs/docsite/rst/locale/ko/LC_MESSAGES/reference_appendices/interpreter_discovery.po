@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/reference_appendices/interpreter_discovery.rst:4
+msgid "Interpreter Discovery"
+msgstr ""
+
+#: ../../rst/reference_appendices/interpreter_discovery.rst:6
+msgid ""
+"Most Ansible modules that execute under a POSIX environment require a "
+"Python interpreter on the target host. Unless configured otherwise, "
+"Ansible will attempt to discover a suitable Python interpreter on each "
+"target host the first time a Python module is executed for that host."
+msgstr ""
+
+#: ../../rst/reference_appendices/interpreter_discovery.rst:11
+msgid "To control the discovery behavior:"
+msgstr ""
+
+#: ../../rst/reference_appendices/interpreter_discovery.rst:13
+msgid ""
+"for individual hosts and groups, use the ``ansible_python_interpreter`` "
+"inventory variable"
+msgstr ""
+
+#: ../../rst/reference_appendices/interpreter_discovery.rst:14
+msgid ""
+"globally, use the ``interpreter_python`` key in the ``[defaults]`` "
+"section of ``ansible.cfg``"
+msgstr ""
+
+#: ../../rst/reference_appendices/interpreter_discovery.rst:16
+msgid "Use one of the following values:"
+msgstr ""
+
+#: ../../rst/reference_appendices/interpreter_discovery.rst:31
+msgid "auto_legacy"
+msgstr ""
+
+#: ../../rst/reference_appendices/interpreter_discovery.rst:30
+msgid "(default in 2.8)"
+msgstr ""
+
+#: ../../rst/reference_appendices/interpreter_discovery.rst:19
+msgid ""
+"Detects the target OS platform, distribution, and version, then consults "
+"a table listing the correct Python interpreter and path for each "
+"platform/distribution/version. If an entry is found, and "
+"``/usr/bin/python`` is absent, uses the discovered interpreter (and "
+"path). If an entry is found, and ``/usr/bin/python`` is present, uses "
+"``/usr/bin/python`` and issues a warning. This exception provides "
+"temporary compatibility with previous versions of Ansible that always "
+"defaulted to ``/usr/bin/python``, so if you have installed Python and "
+"other dependencies at ``usr/bin/python`` on some hosts, Ansible will find"
+" and use them with this setting. If no entry is found, or the listed "
+"Python is not present on the target host, searches a list of common "
+"Python interpreter paths and uses the first one found; also issues a "
+"warning that future installation of another Python interpreter could "
+"alter the one chosen."
+msgstr ""
+
+#: ../../rst/reference_appendices/interpreter_discovery.rst:41
+msgid "auto"
+msgstr ""
+
+#: ../../rst/reference_appendices/interpreter_discovery.rst:40
+msgid "(future default in 2.12)"
+msgstr ""
+
+#: ../../rst/reference_appendices/interpreter_discovery.rst:34
+msgid ""
+"Detects the target OS platform, distribution, and version, then consults "
+"a table listing the correct Python interpreter and path for each "
+"platform/distribution/version. If an entry is found, uses the discovered "
+"interpreter. If no entry is found, or the listed Python is not present on"
+" the target host, searches a list of common Python interpreter paths and "
+"uses the first one found; also issues a warning that future installation "
+"of another Python interpreter could alter the one chosen."
+msgstr ""
+
+#: ../../rst/reference_appendices/interpreter_discovery.rst:44
+msgid "auto_legacy_silent"
+msgstr ""
+
+#: ../../rst/reference_appendices/interpreter_discovery.rst:44
+msgid "Same as ``auto_legacy``, but does not issue warnings."
+msgstr ""
+
+#: ../../rst/reference_appendices/interpreter_discovery.rst:47
+msgid "auto_silent"
+msgstr ""
+
+#: ../../rst/reference_appendices/interpreter_discovery.rst:47
+msgid "Same as ``auto``, but does not issue warnings."
+msgstr ""
+
+#: ../../rst/reference_appendices/interpreter_discovery.rst:49
+msgid ""
+"You can still set ``ansible_python_interpreter`` to a specific path at "
+"any variable level (for example, in host_vars, in vars files, in "
+"playbooks, etc.). Setting a specific path completely disables automatic "
+"interpreter discovery; Ansible always uses the path specified."
+msgstr ""
+

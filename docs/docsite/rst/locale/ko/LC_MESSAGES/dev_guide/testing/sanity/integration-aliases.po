@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:2
-msgid "Sanity Tests » integration-aliases"
+msgid "integration-aliases"
 msgstr ""
 
 #: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:4
@@ -209,240 +209,257 @@ msgstr ""
 
 #: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:75
 msgid ""
+"Windows verssions, as specified using the ``--windows`` option can also "
+"be skipped:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:77
+msgid "``skip/windows/2008`` - Skip tests on Windows Server 2008."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:78
+msgid "``skip/windows/2012-R2`` - Skip tests on Windows Server 2012 R2."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:80
+msgid ""
 "Aliases can be used to skip Python major versions using one of the "
 "following:"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:77
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:82
 msgid "``skip/python2`` - Skip tests on Python 2.x."
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:78
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:83
 msgid "``skip/python3`` - Skip tests on Python 3.x."
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:80
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:85
 msgid ""
 "For more fine grained skipping, use conditionals in integration test "
 "playbooks, such as:"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:88
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:93
 msgid "Miscellaneous"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:90
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:95
 msgid "There are several other aliases available as well:"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:92
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:97
 msgid ""
 "``destructive`` - Requires ``--allow-destructive`` to run without "
 "``--docker`` or ``--remote``."
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:93
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:98
 msgid ""
 "``hidden`` - Target is ignored. Usable as a dependency. Automatic for "
 "``setup_`` and ``prepare_`` prefixed targets."
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:96
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:101
 msgid "Unstable"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:98
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:103
 msgid ""
 "Tests which fail sometimes should be marked with the ``unstable`` alias "
 "until the instability has been fixed. These tests will continue to run "
 "for pull requests which modify the test or the module under test."
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:101
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:106
 msgid ""
 "This avoids unnecessary test failures for other pull requests, as well as"
 " tests on merge runs and nightly CI jobs."
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:103
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:108
 msgid "There are two ways to run unstable tests manually:"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:105
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:110
 msgid "Use the ``--allow-unstable`` option for ``ansible-test``"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:106
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:111
 msgid ""
 "Prefix the test name with ``unstable/`` when passing it to ``ansible-"
 "test``."
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:108
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:113
 msgid ""
 "Tests will be marked as unstable by a member of the Ansible Core Team. "
 "GitHub issues_ will be created to track each unstable test."
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:112
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:117
 msgid "Disabled"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:114
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:119
 msgid ""
 "Tests which always fail should be marked with the ``disabled`` alias "
 "until they can be fixed."
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:116
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:121
 msgid "Disabled tests are automatically skipped."
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:118
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:123
 msgid "There are two ways to run disabled tests manually:"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:120
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:125
 msgid "Use the ``--allow-disabled`` option for ``ansible-test``"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:121
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:126
 msgid ""
 "Prefix the test name with ``disabled/`` when passing it to ``ansible-"
 "test``."
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:123
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:128
 msgid ""
 "Tests will be marked as disabled by a member of the Ansible Core Team. "
 "GitHub issues_ will be created to track each disabled test."
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:127
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:132
 msgid "Unsupported"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:129
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:134
 msgid ""
 "Tests which cannot be run in CI should be marked with the ``unsupported``"
 " alias. Most tests can be supported through the use of simulators and/or "
 "cloud plugins."
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:132
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:137
 msgid ""
 "However, if that is not possible then marking a test as unsupported will "
 "prevent it from running in CI."
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:134
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:139
 msgid "There are two ways to run unsupported tests manually:"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:136
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:141
 msgid "Use the ``--allow-unsupported`` option for ``ansible-test``"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:137
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:142
 msgid ""
 "Prefix the test name with ``unsupported/`` when passing it to ``ansible-"
 "test``."
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:139
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:144
 msgid "Tests will be marked as unsupported by the contributor of the test."
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:142
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:147
 msgid "Cloud"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:144
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:149
 msgid ""
 "Tests for cloud services and other modules that require access to "
 "external APIs usually require special support for testing in CI."
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:146
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:151
 msgid "These require an additional alias to indicate the required test plugin."
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:148
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:153
 msgid "Some of the available aliases are:"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:150
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:155
 msgid "``cloud/aws``"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:151
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:156
 msgid "``cloud/azure``"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:152
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:157
 msgid "``cloud/cs``"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:153
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:158
 msgid "``cloud/foreman``"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:154
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:159
 msgid "``cloud/openshift``"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:155
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:160
 msgid "``cloud/tower``"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:156
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:161
 msgid "``cloud/vcenter``"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:159
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:164
 msgid "Untested"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:161
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:166
 msgid ""
 "Every module and plugin should have integration tests, even if the tests "
 "cannot be run in CI."
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:164
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:169
 msgid "Issues"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:166
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:171
 msgid ""
 "Tests that are marked as unstable_ or disabled_ will have an issue "
 "created to track the status of the test. Each issue will be assigned to "
 "one of the following projects:"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:169
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:174
 msgid "`AWS <https://github.com/ansible/ansible/projects/21>`_"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:170
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:175
 msgid "`Azure <https://github.com/ansible/ansible/projects/22>`_"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:171
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:176
 msgid "`Windows <https://github.com/ansible/ansible/projects/23>`_"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:172
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:177
 msgid "`General <https://github.com/ansible/ansible/projects/25>`_"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:175
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:180
 msgid "Questions"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:177
+#: ../../rst/dev_guide/testing/sanity/integration-aliases.rst:182
 msgid ""
 "For questions about integration tests reach out to @mattclay or @gundalow"
 " on GitHub or ``#ansible-devel`` on IRC."
 msgstr ""
+
+#~ msgid "Sanity Tests » integration-aliases"
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,24 +22,30 @@ msgstr ""
 msgid "win_dotnet_ngen -- Runs ngen to recompile DLLs after .NET  updates"
 msgstr ""
 
-#: ../../rst/modules/win_dotnet_ngen_module.rst:19
+#: ../../rst/modules/win_dotnet_ngen_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/win_dotnet_ngen_module.rst:20
+#: ../../rst/modules/win_dotnet_ngen_module.rst:19
 msgid ""
 "After .NET framework is installed/updated, Windows will probably want to "
 "recompile things to optimise for the host."
 msgstr ""
 
-#: ../../rst/modules/win_dotnet_ngen_module.rst:21
+#: ../../rst/modules/win_dotnet_ngen_module.rst:20
 msgid "This happens via scheduled task, usually at some inopportune time."
+msgstr ""
+
+#: ../../rst/modules/win_dotnet_ngen_module.rst:21
+msgid ""
+"This module allows you to run this task on your own schedule, so you "
+"incur the CPU hit at some more convenient and controlled time."
 msgstr ""
 
 #: ../../rst/modules/win_dotnet_ngen_module.rst:22
 msgid ""
-"This module allows you to run this task on your own schedule, so you "
-"incur the CPU hit at some more convenient and controlled time."
+"https://docs.microsoft.com/en-us/dotnet/framework/tools/ngen-exe-native-"
+"image-generator#native-image-service"
 msgstr ""
 
 #: ../../rst/modules/win_dotnet_ngen_module.rst:23
@@ -107,9 +113,17 @@ msgstr ""
 #: ../../rst/modules/win_dotnet_ngen_module.rst:185
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_dotnet_ngen.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_dotnet_ngen.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_dotnet_ngen.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

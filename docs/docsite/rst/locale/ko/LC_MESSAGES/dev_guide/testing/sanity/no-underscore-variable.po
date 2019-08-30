@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,18 +18,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-#: ../../rst/dev_guide/testing/sanity/no-underscore-variable.rst:2
-msgid "Sanity Tests » no-underscore-variable"
+#: ../../rst/dev_guide/testing/sanity/no-underscore-variable.rst:4
+msgid "no-underscore-variable"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/no-underscore-variable.rst:4
+#: ../../rst/dev_guide/testing/sanity/no-underscore-variable.rst:6
 msgid ""
 "In the future, Ansible may use the identifier ``_`` to internationalize "
 "its message strings.  To be ready for that, we need to make sure that "
 "there are no conflicting identifiers defined in the code base."
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/no-underscore-variable.rst:8
+#: ../../rst/dev_guide/testing/sanity/no-underscore-variable.rst:10
 msgid ""
 "In common practice, ``_`` is frequently used as a dummy variable (a "
 "variable to receive a value from a function where the value is useless "
@@ -37,11 +37,14 @@ msgid ""
 "this purpose instead."
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/no-underscore-variable.rst:12
+#: ../../rst/dev_guide/testing/sanity/no-underscore-variable.rst:14
 msgid "Example of unfixed code:"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/no-underscore-variable.rst:21
+#: ../../rst/dev_guide/testing/sanity/no-underscore-variable.rst:23
 msgid "Example of fixed code:"
 msgstr ""
+
+#~ msgid "Sanity Tests » no-underscore-variable"
+#~ msgstr ""
 

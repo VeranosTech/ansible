@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,60 +54,68 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/avi_gslbservice_patch_member_module.rst:216
+#: ../../rst/modules/avi_gslbservice_patch_member_module.rst:391
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/avi_gslbservice_patch_member_module.rst:219
+#: ../../rst/modules/avi_gslbservice_patch_member_module.rst:394
 msgid ""
 "For more information on using Ansible to manage Avi Network devices see "
 "https://www.ansible.com/ansible-avi-networks."
 msgstr ""
 
-#: ../../rst/modules/avi_gslbservice_patch_member_module.rst:224
+#: ../../rst/modules/avi_gslbservice_patch_member_module.rst:399
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/avi_gslbservice_patch_member_module.rst:280
+#: ../../rst/modules/avi_gslbservice_patch_member_module.rst:455
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/avi_gslbservice_patch_member_module.rst:281
+#: ../../rst/modules/avi_gslbservice_patch_member_module.rst:456
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/avi_gslbservice_patch_member_module.rst:307
+#: ../../rst/modules/avi_gslbservice_patch_member_module.rst:482
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/avi_gslbservice_patch_member_module.rst:312
+#: ../../rst/modules/avi_gslbservice_patch_member_module.rst:487
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/avi_gslbservice_patch_member_module.rst:315
+#: ../../rst/modules/avi_gslbservice_patch_member_module.rst:490
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/avi_gslbservice_patch_member_module.rst:322
+#: ../../rst/modules/avi_gslbservice_patch_member_module.rst:497
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/avi_gslbservice_patch_member_module.rst:324
+#: ../../rst/modules/avi_gslbservice_patch_member_module.rst:499
 msgid "Gaurav Rastogi (@grastogi23) <grastogi@avinetworks.com>"
 msgstr ""
 
-#: ../../rst/modules/avi_gslbservice_patch_member_module.rst:328
+#: ../../rst/modules/avi_gslbservice_patch_member_module.rst:503
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/avi/avi_gslbservice_patch_member.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/avi/avi_gslbservice_patch_member.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/avi/avi_gslbservice_patch_member.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

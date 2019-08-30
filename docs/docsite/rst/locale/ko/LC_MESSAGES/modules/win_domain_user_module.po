@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,124 +34,140 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/win_domain_user_module.rst:453
+#: ../../rst/modules/win_domain_user_module.rst:454
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/win_domain_user_module.rst:456
+#: ../../rst/modules/win_domain_user_module.rst:457
 msgid "Works with Windows 2012R2 and newer."
 msgstr ""
 
-#: ../../rst/modules/win_domain_user_module.rst:457
+#: ../../rst/modules/win_domain_user_module.rst:458
 msgid ""
 "If running on a server that is not a Domain Controller, credential "
 "delegation through CredSSP or Kerberos with delegation must be used or "
 "the *domain_username*, *domain_password* must be set."
 msgstr ""
 
-#: ../../rst/modules/win_domain_user_module.rst:458
+#: ../../rst/modules/win_domain_user_module.rst:459
 msgid ""
 "Note that some individuals have confirmed successful operation on Windows"
 " 2008R2 servers with AD and AD Web Services enabled, but this has not "
 "received the same degree of testing as Windows 2012R2."
 msgstr ""
 
-#: ../../rst/modules/win_domain_user_module.rst:462
+#: ../../rst/modules/win_domain_user_module.rst:463
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/win_domain_user_module.rst:466
+#: ../../rst/modules/win_domain_user_module.rst:467
 msgid ":ref:`win_domain_module`"
 msgstr ""
 
-#: ../../rst/modules/win_domain_user_module.rst:467
+#: ../../rst/modules/win_domain_user_module.rst:468
 msgid "The official documentation on the **win_domain** module."
 msgstr ""
 
-#: ../../rst/modules/win_domain_user_module.rst:468
+#: ../../rst/modules/win_domain_user_module.rst:469
 msgid ":ref:`win_domain_controller_module`"
 msgstr ""
 
-#: ../../rst/modules/win_domain_user_module.rst:469
+#: ../../rst/modules/win_domain_user_module.rst:470
 msgid "The official documentation on the **win_domain_controller** module."
 msgstr ""
 
-#: ../../rst/modules/win_domain_user_module.rst:470
+#: ../../rst/modules/win_domain_user_module.rst:471
 msgid ":ref:`win_domain_computer_module`"
 msgstr ""
 
-#: ../../rst/modules/win_domain_user_module.rst:471
+#: ../../rst/modules/win_domain_user_module.rst:472
 msgid "The official documentation on the **win_domain_computer** module."
 msgstr ""
 
-#: ../../rst/modules/win_domain_user_module.rst:472
+#: ../../rst/modules/win_domain_user_module.rst:473
 msgid ":ref:`win_domain_group_module`"
 msgstr ""
 
-#: ../../rst/modules/win_domain_user_module.rst:473
+#: ../../rst/modules/win_domain_user_module.rst:474
 msgid "The official documentation on the **win_domain_group** module."
 msgstr ""
 
-#: ../../rst/modules/win_domain_user_module.rst:474
+#: ../../rst/modules/win_domain_user_module.rst:475
 msgid ":ref:`win_domain_membership_module`"
 msgstr ""
 
-#: ../../rst/modules/win_domain_user_module.rst:475
+#: ../../rst/modules/win_domain_user_module.rst:476
 msgid "The official documentation on the **win_domain_membership** module."
 msgstr ""
 
-#: ../../rst/modules/win_domain_user_module.rst:476
+#: ../../rst/modules/win_domain_user_module.rst:477
 msgid ":ref:`win_user_module`"
 msgstr ""
 
-#: ../../rst/modules/win_domain_user_module.rst:477
+#: ../../rst/modules/win_domain_user_module.rst:478
 msgid "The official documentation on the **win_user** module."
 msgstr ""
 
-#: ../../rst/modules/win_domain_user_module.rst:481
+#: ../../rst/modules/win_domain_user_module.rst:479
+msgid ":ref:`win_user_profile_module`"
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:480
+msgid "The official documentation on the **win_user_profile** module."
+msgstr ""
+
+#: ../../rst/modules/win_domain_user_module.rst:484
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/win_domain_user_module.rst:533
+#: ../../rst/modules/win_domain_user_module.rst:536
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/win_domain_user_module.rst:534
+#: ../../rst/modules/win_domain_user_module.rst:537
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/win_domain_user_module.rst:840
+#: ../../rst/modules/win_domain_user_module.rst:856
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/win_domain_user_module.rst:845
+#: ../../rst/modules/win_domain_user_module.rst:861
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/win_domain_user_module.rst:848
+#: ../../rst/modules/win_domain_user_module.rst:864
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/win_domain_user_module.rst:855
+#: ../../rst/modules/win_domain_user_module.rst:871
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/win_domain_user_module.rst:857
+#: ../../rst/modules/win_domain_user_module.rst:873
 msgid "Nick Chandler (@nwchandler)"
 msgstr ""
 
-#: ../../rst/modules/win_domain_user_module.rst:861
+#: ../../rst/modules/win_domain_user_module.rst:877
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_domain_user.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_domain_user.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_domain_user.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

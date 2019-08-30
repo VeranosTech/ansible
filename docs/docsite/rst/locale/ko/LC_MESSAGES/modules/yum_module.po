@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,17 +54,17 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/yum_module.rst:448
+#: ../../rst/modules/yum_module.rst:463
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/yum_module.rst:451
+#: ../../rst/modules/yum_module.rst:466
 msgid ""
 "When used with a `loop:` each package will be processed individually, it "
 "is much more efficient to pass the list directly to the `name` option."
 msgstr ""
 
-#: ../../rst/modules/yum_module.rst:452
+#: ../../rst/modules/yum_module.rst:467
 msgid ""
 "In versions prior to 1.9.2 this module installed and removed each package"
 " given to the yum module separately. This caused problems when packages "
@@ -76,7 +76,7 @@ msgid ""
 "command line behaviour."
 msgstr ""
 
-#: ../../rst/modules/yum_module.rst:453
+#: ../../rst/modules/yum_module.rst:468
 msgid ""
 "Yum itself has two types of groups.  \"Package groups\" are specified in "
 "the rpm itself while \"environment groups\" are specified in a separate "
@@ -85,11 +85,11 @@ msgid ""
 "of packages in a single transaction and yum requires groups to be "
 "specified in different ways when used in that way.  Package groups are "
 "specified as \"@development-tools\" and environment groups are \"@^gnome-"
-"desktop-environment\". Use the \"yum group list\" command to see which "
-"category of group the group you want to install falls into."
+"desktop-environment\". Use the \"yum group list hidden ids\" command to "
+"see which category of group the group you want to install falls into."
 msgstr ""
 
-#: ../../rst/modules/yum_module.rst:454
+#: ../../rst/modules/yum_module.rst:469
 msgid ""
 "The yum module does not support clearing yum cache in an idempotent way, "
 "so it was decided not to implement it, the only method is to use shell "
@@ -97,71 +97,100 @@ msgid ""
 "https://github.com/ansible/ansible/pull/31450#issuecomment-352889579"
 msgstr ""
 
-#: ../../rst/modules/yum_module.rst:459
+#: ../../rst/modules/yum_module.rst:474
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/yum_module.rst:559
+#: ../../rst/modules/yum_module.rst:574
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/yum_module.rst:564
+#: ../../rst/modules/yum_module.rst:579
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/yum_module.rst:567
+#: ../../rst/modules/yum_module.rst:582
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/yum_module.rst:570
+#: ../../rst/modules/yum_module.rst:585
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/yum_module.rst:572
+#: ../../rst/modules/yum_module.rst:587
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/yum_module.rst:578
+#: ../../rst/modules/yum_module.rst:593
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/yum_module.rst:580
+#: ../../rst/modules/yum_module.rst:595
 msgid "Ansible Core Team"
 msgstr ""
 
-#: ../../rst/modules/yum_module.rst:581
+#: ../../rst/modules/yum_module.rst:596
 msgid "Seth Vidal (@skvidal)"
 msgstr ""
 
-#: ../../rst/modules/yum_module.rst:582
+#: ../../rst/modules/yum_module.rst:597
 msgid "Eduard Snesarev (@verm666)"
 msgstr ""
 
-#: ../../rst/modules/yum_module.rst:583
+#: ../../rst/modules/yum_module.rst:598
 msgid "Berend De Schouwer (@berenddeschouwer)"
 msgstr ""
 
-#: ../../rst/modules/yum_module.rst:584
+#: ../../rst/modules/yum_module.rst:599
 msgid "Abhijeet Kasurde (@Akasurde)"
 msgstr ""
 
-#: ../../rst/modules/yum_module.rst:585
+#: ../../rst/modules/yum_module.rst:600
 msgid "Adam Miller (@maxamillion)"
 msgstr ""
 
-#: ../../rst/modules/yum_module.rst:589
+#: ../../rst/modules/yum_module.rst:604
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/packaging/os/yum.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/packaging/os/yum.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "Yum itself has two types of "
+#~ "groups.  \"Package groups\" are specified "
+#~ "in the rpm itself while \"environment"
+#~ " groups\" are specified in a separate"
+#~ " file (usually by the distribution).  "
+#~ "Unfortunately, this division becomes apparent"
+#~ " to ansible users because ansible "
+#~ "needs to operate on the group of"
+#~ " packages in a single transaction and"
+#~ " yum requires groups to be specified"
+#~ " in different ways when used in "
+#~ "that way.  Package groups are specified"
+#~ " as \"@development-tools\" and environment"
+#~ " groups are \"@^gnome-desktop-"
+#~ "environment\". Use the \"yum group "
+#~ "list\" command to see which category "
+#~ "of group the group you want to "
+#~ "install falls into."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/packaging/os/yum.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,42 +105,59 @@ msgstr ""
 
 #: ../../rst/user_guide/playbooks_error_handling.rst:66
 msgid ""
-"Suppose the error code of a command is meaningless and to tell if there "
-"is a failure what really matters is the output of the command, for "
-"instance if the string \"FAILED\" is in the output."
+"Ansible lets you define what \"failure\" means in each task using the "
+"``failed_when`` conditional. As with all conditionals in Ansible, lists "
+"of multiple ``failed_when`` conditions are joined with an implicit "
+"``and``, meaning the task only fails when *all* conditions are met. If "
+"you want to trigger a failure when any of the conditions is met, you must"
+" define the conditions in a string with an explicit ``or`` operator."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_error_handling.rst:70
-msgid "Ansible provides a way to specify this behavior as follows::"
+#: ../../rst/user_guide/playbooks_error_handling.rst:68
+msgid ""
+"You may check for failure by searching for a word or phrase in the output"
+" of a command::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_error_handling.rst:77
+#: ../../rst/user_guide/playbooks_error_handling.rst:75
 msgid "or based on the return code::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_error_handling.rst:84
+#: ../../rst/user_guide/playbooks_error_handling.rst:82
 msgid ""
 "In previous version of Ansible, this can still be accomplished as "
 "follows::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_error_handling.rst:96
+#: ../../rst/user_guide/playbooks_error_handling.rst:94
 msgid ""
-"You can also combine multiple conditions to specify this behavior as "
-"follows::"
+"You can also combine multiple conditions for failure. This task will fail"
+" if both conditions are true::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_error_handling.rst:108
+#: ../../rst/user_guide/playbooks_error_handling.rst:103
+msgid ""
+"If you want the task to fail when only one condition is satisfied, change"
+" the ``failed_when`` definition to::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_error_handling.rst:107
+msgid ""
+"If you have too many conditions to fit neatly into one line, you can "
+"split it into a multi-line yaml value with ``>``::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_error_handling.rst:121
 msgid "Overriding The Changed Result"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_error_handling.rst:110
+#: ../../rst/user_guide/playbooks_error_handling.rst:123
 msgid ""
 "When a shell/command or other module runs it will typically report "
 "\"changed\" status based on whether it thinks it affected machine state."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_error_handling.rst:113
+#: ../../rst/user_guide/playbooks_error_handling.rst:126
 msgid ""
 "Sometimes you will know, based on the return code or output that it did "
 "not make any changes, and wish to override the \"changed\" result such "
@@ -148,77 +165,135 @@ msgid ""
 "fire::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_error_handling.rst:128
+#: ../../rst/user_guide/playbooks_error_handling.rst:141
 msgid "You can also combine multiple conditions to override \"changed\" result::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_error_handling.rst:138
+#: ../../rst/user_guide/playbooks_error_handling.rst:151
 msgid "Aborting the play"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_error_handling.rst:140
+#: ../../rst/user_guide/playbooks_error_handling.rst:153
 msgid ""
 "Sometimes it's desirable to abort the entire play on failure, not just "
 "skip remaining tasks for a host."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_error_handling.rst:142
+#: ../../rst/user_guide/playbooks_error_handling.rst:155
 msgid ""
-"The ``any_errors_fatal`` play option will mark all hosts as failed if any"
-" fails, causing an immediate abort::"
+"The ``any_errors_fatal`` play option will end the play when any tasks "
+"results in an error and stop execution of the play::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_error_handling.rst:149
+#: ../../rst/user_guide/playbooks_error_handling.rst:162
 msgid ""
 "for finer-grained control ``max_fail_percentage`` can be used to abort "
 "the run after a given percentage of hosts has failed."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_error_handling.rst:154
-msgid ":doc:`playbooks`"
+#: ../../rst/user_guide/playbooks_error_handling.rst:165
+msgid "Using blocks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_error_handling.rst:155
+#: ../../rst/user_guide/playbooks_error_handling.rst:167
+msgid ""
+"Most of what you can apply to a single task (with the exception of loops)"
+" can be applied at the :ref:`playbooks_blocks` level, which also makes it"
+" much easier to set data or directives common to the tasks. Blocks also "
+"introduce the ability to handle errors in a way similar to exceptions in "
+"most programming languages. Blocks only deal with 'failed' status of a "
+"task. A bad task definition or an unreachable host are not 'rescuable' "
+"errors::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_error_handling.rst:184
+msgid ""
+"This will 'revert' the failed status of the outer ``block`` task for the "
+"run and the play will continue as if it had succeeded. See "
+":ref:`block_error_handling` for more examples."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_error_handling.rst:189
+msgid ":ref:`playbooks_intro`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_error_handling.rst:190
 msgid "An introduction to playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_error_handling.rst:156
-msgid ":doc:`playbooks_best_practices`"
+#: ../../rst/user_guide/playbooks_error_handling.rst:191
+msgid ":ref:`playbooks_best_practices`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_error_handling.rst:157
+#: ../../rst/user_guide/playbooks_error_handling.rst:192
 msgid "Best practices in playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_error_handling.rst:158
-msgid ":doc:`playbooks_conditionals`"
+#: ../../rst/user_guide/playbooks_error_handling.rst:193
+msgid ":ref:`playbooks_conditionals`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_error_handling.rst:159
+#: ../../rst/user_guide/playbooks_error_handling.rst:194
 msgid "Conditional statements in playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_error_handling.rst:160
-msgid ":doc:`playbooks_variables`"
+#: ../../rst/user_guide/playbooks_error_handling.rst:195
+msgid ":ref:`playbooks_variables`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_error_handling.rst:161
+#: ../../rst/user_guide/playbooks_error_handling.rst:196
 msgid "All about variables"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_error_handling.rst:162
+#: ../../rst/user_guide/playbooks_error_handling.rst:197
 msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_error_handling.rst:163
+#: ../../rst/user_guide/playbooks_error_handling.rst:198
 msgid "Have a question?  Stop by the google group!"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_error_handling.rst:164
+#: ../../rst/user_guide/playbooks_error_handling.rst:199
 msgid "`irc.freenode.net <http://irc.freenode.net>`_"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_error_handling.rst:165
+#: ../../rst/user_guide/playbooks_error_handling.rst:200
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ""
+#~ "Suppose the error code of a "
+#~ "command is meaningless and to tell "
+#~ "if there is a failure what really"
+#~ " matters is the output of the "
+#~ "command, for instance if the string "
+#~ "\"FAILED\" is in the output."
+#~ msgstr ""
+
+#~ msgid "Ansible provides a way to specify this behavior as follows::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can also combine multiple conditions"
+#~ " to specify this behavior as "
+#~ "follows::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The ``any_errors_fatal`` play option will "
+#~ "mark all hosts as failed if any"
+#~ " fails, causing an immediate abort::"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks_best_practices`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks_conditionals`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks_variables`"
+#~ msgstr ""
 

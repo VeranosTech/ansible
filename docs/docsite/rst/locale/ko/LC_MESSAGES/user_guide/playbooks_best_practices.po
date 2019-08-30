@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,7 +59,7 @@ msgid ""
 "One crucial way to organize your playbook content is Ansible's \"roles\" "
 "organization feature, which is documented as part of the main playbooks "
 "page.  You should take the time to read and understand the roles "
-"documentation which is available here: :doc:`playbooks_reuse_roles`."
+"documentation which is available here: :ref:`playbooks_reuse_roles`."
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_best_practices.rst:27
@@ -100,7 +100,7 @@ msgstr ""
 #: ../../rst/user_guide/playbooks_best_practices.rst:123
 msgid ""
 "If you are using a cloud provider, you should not be managing your "
-"inventory in a static file.  See :doc:`intro_dynamic_inventory`."
+"inventory in a static file.  See :ref:`intro_dynamic_inventory`."
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_best_practices.rst:125
@@ -222,7 +222,7 @@ msgid ""
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_best_practices.rst:285
-msgid "See :doc:`playbooks_reuse_roles` for more information."
+msgid "See :ref:`playbooks_reuse_roles` for more information."
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_best_practices.rst:291
@@ -323,7 +323,7 @@ msgid ""
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_best_practices.rst:362
-msgid "See :doc:`playbooks_delegation`."
+msgid "See :ref:`playbooks_delegation`."
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_best_practices.rst:367
@@ -346,7 +346,7 @@ msgstr ""
 msgid ""
 "We're somewhat repeating ourselves with this tip, but it's worth "
 "repeating. A system can be in multiple groups.  See "
-":doc:`intro_inventory` and :doc:`intro_patterns`.   Having groups named "
+":ref:`intro_inventory` and :ref:`intro_patterns`.   Having groups named "
 "after things like *webservers* and *dbservers* is repeated in the "
 "examples because it's a very powerful concept."
 msgstr ""
@@ -358,7 +358,7 @@ msgid ""
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_best_practices.rst:383
-msgid "See :doc:`playbooks_reuse_roles`."
+msgid "See :ref:`playbooks_reuse_roles`."
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_best_practices.rst:388
@@ -556,4 +556,43 @@ msgstr ""
 #: ../../rst/user_guide/playbooks_best_practices.rst:511
 msgid "Questions? Help? Ideas?  Stop by the list on Google Groups"
 msgstr ""
+
+#~ msgid ""
+#~ "One crucial way to organize your "
+#~ "playbook content is Ansible's \"roles\" "
+#~ "organization feature, which is documented "
+#~ "as part of the main playbooks "
+#~ "page.  You should take the time to"
+#~ " read and understand the roles "
+#~ "documentation which is available here: "
+#~ ":doc:`playbooks_reuse_roles`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you are using a cloud provider,"
+#~ " you should not be managing your "
+#~ "inventory in a static file.  See "
+#~ ":doc:`intro_dynamic_inventory`."
+#~ msgstr ""
+
+#~ msgid "See :doc:`playbooks_reuse_roles` for more information."
+#~ msgstr ""
+
+#~ msgid "See :doc:`playbooks_delegation`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We're somewhat repeating ourselves with "
+#~ "this tip, but it's worth repeating. "
+#~ "A system can be in multiple "
+#~ "groups.  See :doc:`intro_inventory` and "
+#~ ":doc:`intro_patterns`.   Having groups named "
+#~ "after things like *webservers* and "
+#~ "*dbservers* is repeated in the examples"
+#~ " because it's a very powerful "
+#~ "concept."
+#~ msgstr ""
+
+#~ msgid "See :doc:`playbooks_reuse_roles`."
+#~ msgstr ""
 

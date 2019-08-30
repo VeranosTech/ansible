@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,94 +22,102 @@ msgstr ""
 msgid "vmware_dvswitch -- Create or remove a Distributed Switch"
 msgstr ""
 
-#: ../../rst/modules/vmware_dvswitch_module.rst:19
+#: ../../rst/modules/vmware_dvswitch_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/vmware_dvswitch_module.rst:20
+#: ../../rst/modules/vmware_dvswitch_module.rst:19
 msgid "This module can be used to create, remove a Distributed Switch."
 msgstr ""
 
-#: ../../rst/modules/vmware_dvswitch_module.rst:25
+#: ../../rst/modules/vmware_dvswitch_module.rst:24
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/vmware_dvswitch_module.rst:26
+#: ../../rst/modules/vmware_dvswitch_module.rst:25
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/vmware_dvswitch_module.rst:28
+#: ../../rst/modules/vmware_dvswitch_module.rst:27
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/vmware_dvswitch_module.rst:29
+#: ../../rst/modules/vmware_dvswitch_module.rst:28
 msgid "PyVmomi"
 msgstr ""
 
-#: ../../rst/modules/vmware_dvswitch_module.rst:33
+#: ../../rst/modules/vmware_dvswitch_module.rst:32
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/vmware_dvswitch_module.rst:366
+#: ../../rst/modules/vmware_dvswitch_module.rst:421
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/vmware_dvswitch_module.rst:369
+#: ../../rst/modules/vmware_dvswitch_module.rst:424
 msgid "Tested on vSphere 6.5 and 6.7"
 msgstr ""
 
-#: ../../rst/modules/vmware_dvswitch_module.rst:374
+#: ../../rst/modules/vmware_dvswitch_module.rst:429
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/vmware_dvswitch_module.rst:430
+#: ../../rst/modules/vmware_dvswitch_module.rst:485
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/vmware_dvswitch_module.rst:431
+#: ../../rst/modules/vmware_dvswitch_module.rst:486
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/vmware_dvswitch_module.rst:459
+#: ../../rst/modules/vmware_dvswitch_module.rst:514
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/vmware_dvswitch_module.rst:464
+#: ../../rst/modules/vmware_dvswitch_module.rst:519
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/vmware_dvswitch_module.rst:467
+#: ../../rst/modules/vmware_dvswitch_module.rst:522
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/vmware_dvswitch_module.rst:474
+#: ../../rst/modules/vmware_dvswitch_module.rst:529
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/vmware_dvswitch_module.rst:476
+#: ../../rst/modules/vmware_dvswitch_module.rst:531
 msgid "Joseph Callen (@jcpowermac)"
 msgstr ""
 
-#: ../../rst/modules/vmware_dvswitch_module.rst:477
+#: ../../rst/modules/vmware_dvswitch_module.rst:532
 msgid "Abhijeet Kasurde (@Akasurde)"
 msgstr ""
 
-#: ../../rst/modules/vmware_dvswitch_module.rst:478
+#: ../../rst/modules/vmware_dvswitch_module.rst:533
 msgid "Christian Kotte (@ckotte)"
 msgstr ""
 
-#: ../../rst/modules/vmware_dvswitch_module.rst:482
+#: ../../rst/modules/vmware_dvswitch_module.rst:537
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_dvswitch.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_dvswitch.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_dvswitch.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

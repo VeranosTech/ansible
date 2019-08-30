@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,11 @@ msgstr ""
 msgid "vyos_command -- Run one or more commands on VyOS devices"
 msgstr ""
 
-#: ../../rst/modules/vyos_command_module.rst:19
+#: ../../rst/modules/vyos_command_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/vyos_command_module.rst:20
+#: ../../rst/modules/vyos_command_module.rst:19
 msgid ""
 "The command module allows running one or more commands on remote devices "
 "running VyOS.  This module can also be introspected to validate key "
@@ -34,7 +34,7 @@ msgid ""
 "are not met in the wait period, the task fails."
 msgstr ""
 
-#: ../../rst/modules/vyos_command_module.rst:21
+#: ../../rst/modules/vyos_command_module.rst:20
 msgid ""
 "Certain ``show`` commands in VyOS produce many lines of output and use a "
 "custom pager that can cause this module to hang.  If the value of the "
@@ -42,30 +42,36 @@ msgid ""
 "default number of 10000 is used."
 msgstr ""
 
-#: ../../rst/modules/vyos_command_module.rst:27
+#: ../../rst/modules/vyos_command_module.rst:26
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/vyos_command_module.rst:218
+#: ../../rst/modules/vyos_command_module.rst:217
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/vyos_command_module.rst:221
-msgid "Tested against VYOS 1.1.7"
+#: ../../rst/modules/vyos_command_module.rst:220
+msgid "Tested against VyOS 1.1.8 (helium)."
 msgstr ""
 
-#: ../../rst/modules/vyos_command_module.rst:222
+#: ../../rst/modules/vyos_command_module.rst:221
 msgid ""
 "Running ``show system boot-messages all`` will cause the module to hang "
 "since VyOS is using a custom pager setting to display the output of that "
 "command."
 msgstr ""
 
-#: ../../rst/modules/vyos_command_module.rst:223
+#: ../../rst/modules/vyos_command_module.rst:222
 msgid ""
 "If a command sent to the device requires answering a prompt, it is "
 "possible to pass a dict containing *command*, *answer* and *prompt*. See "
 "examples."
+msgstr ""
+
+#: ../../rst/modules/vyos_command_module.rst:223
+msgid ""
+"This module works with connection ``network_cli``. See `the VyOS OS "
+"Platform Options <../network/user_guide/platform_vyos.html>`_."
 msgstr ""
 
 #: ../../rst/modules/vyos_command_module.rst:224
@@ -120,15 +126,29 @@ msgid "Authors"
 msgstr ""
 
 #: ../../rst/modules/vyos_command_module.rst:351
-msgid "Nathaniel Case (@qalthos)"
+msgid "Nathaniel Case (@Qalthos)"
 msgstr ""
 
 #: ../../rst/modules/vyos_command_module.rst:355
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/vyos/vyos_command.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/vyos/vyos_command.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "Tested against VYOS 1.1.7"
+#~ msgstr ""
+
+#~ msgid "Nathaniel Case (@qalthos)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/vyos/vyos_command.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

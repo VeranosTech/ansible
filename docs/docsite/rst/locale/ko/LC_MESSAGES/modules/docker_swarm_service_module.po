@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,39 +27,56 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/docker_swarm_service_module.rst:20
-msgid "Manage docker services. Allows live altering of already defined services"
+msgid "Manages docker services via a swarm manager node."
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_service_module.rst:26
+#: ../../rst/modules/docker_swarm_service_module.rst:25
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_service_module.rst:27
+#: ../../rst/modules/docker_swarm_service_module.rst:26
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
+#: ../../rst/modules/docker_swarm_service_module.rst:28
+msgid "Docker API >= 1.24"
+msgstr ""
+
 #: ../../rst/modules/docker_swarm_service_module.rst:29
-msgid "docker-py >= 2.0"
+msgid ""
+"Docker SDK for Python: Please note that the `docker-py "
+"<https://pypi.org/project/docker-py/>`_ Python module has been superseded"
+" by `docker <https://pypi.org/project/docker/>`_ (see `here "
+"<https://github.com/docker/docker-py/issues/1310>`_ for details). This "
+"module does *not* work with docker-py."
 msgstr ""
 
 #: ../../rst/modules/docker_swarm_service_module.rst:30
 msgid ""
-"Please note that the `docker-py <https://pypi.org/project/docker-py/>`_ "
-"Python module has been superseded by `docker "
-"<https://pypi.org/project/docker/>`_ (see `here "
-"<https://github.com/docker/docker-py/issues/1310>`_ for details). Version"
-" 2.1.0 or newer is only available with the ``docker`` module."
+"`Docker SDK for Python <https://docker-py.readthedocs.io/en/stable/>`_ >="
+" 2.0.2"
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_service_module.rst:34
+#: ../../rst/modules/docker_swarm_service_module.rst:31
+msgid "Python >= 2.7"
+msgstr ""
+
+#: ../../rst/modules/docker_swarm_service_module.rst:35
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_service_module.rst:839
+#: ../../rst/modules/docker_swarm_service_module.rst:2012
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_service_module.rst:842
+#: ../../rst/modules/docker_swarm_service_module.rst:2015
+msgid ""
+"Images will only resolve to the latest digest when using Docker API >= "
+"1.30 and Docker SDK for Python >= 3.2.0. When using older versions use "
+"``force_update: true`` to trigger the swarm to resolve a new image."
+msgstr ""
+
+#: ../../rst/modules/docker_swarm_service_module.rst:2016
 msgid ""
 "Connect to the Docker daemon by providing parameters with each task or by"
 " defining environment variables. You can define ``DOCKER_HOST``, "
@@ -71,7 +88,7 @@ msgid ""
 "py.readthedocs.io/en/stable/machine/ for more details."
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_service_module.rst:843
+#: ../../rst/modules/docker_swarm_service_module.rst:2017
 msgid ""
 "When connecting to Docker daemon with TLS, you might need to install "
 "additional Python packages. For the Docker SDK for Python, version 2.4 or"
@@ -79,59 +96,108 @@ msgid ""
 "<pip_module>`."
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_service_module.rst:844
+#: ../../rst/modules/docker_swarm_service_module.rst:2018
 msgid ""
 "Note that the Docker SDK for Python only allows to specify the path to "
 "the Docker configuration for very few functions. In general, it will use "
-"``$HOME/docker/config.json`` if the ``DOCKER_CONFIG`` environment "
+"``$HOME/.docker/config.json`` if the ``DOCKER_CONFIG`` environment "
 "variable is not specified, and use ``$DOCKER_CONFIG/config.json`` "
 "otherwise."
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_service_module.rst:849
+#: ../../rst/modules/docker_swarm_service_module.rst:2023
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_service_module.rst:961
+#: ../../rst/modules/docker_swarm_service_module.rst:2183
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_service_module.rst:962
+#: ../../rst/modules/docker_swarm_service_module.rst:2184
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_service_module.rst:1017
+#: ../../rst/modules/docker_swarm_service_module.rst:2240
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_service_module.rst:1022
+#: ../../rst/modules/docker_swarm_service_module.rst:2245
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_service_module.rst:1025
+#: ../../rst/modules/docker_swarm_service_module.rst:2248
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_service_module.rst:1032
+#: ../../rst/modules/docker_swarm_service_module.rst:2255
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_service_module.rst:1034
-msgid "Dario Zanzico (@dariko), Jason Witkowski (@jwitko)"
+#: ../../rst/modules/docker_swarm_service_module.rst:2257
+msgid "Dario Zanzico (@dariko)"
 msgstr ""
 
-#: ../../rst/modules/docker_swarm_service_module.rst:1038
+#: ../../rst/modules/docker_swarm_service_module.rst:2258
+msgid "Jason Witkowski (@jwitko)"
+msgstr ""
+
+#: ../../rst/modules/docker_swarm_service_module.rst:2259
+msgid "Hannes Ljungberg (@hannseman)"
+msgstr ""
+
+#: ../../rst/modules/docker_swarm_service_module.rst:2263
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/docker/docker_swarm_service.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/docker/docker_swarm_service.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "Manage docker services. Allows live "
+#~ "altering of already defined services"
+#~ msgstr ""
+
+#~ msgid "docker-py >= 2.0"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Please note that the `docker-py "
+#~ "<https://pypi.org/project/docker-py/>`_ Python "
+#~ "module has been superseded by `docker"
+#~ " <https://pypi.org/project/docker/>`_ (see `here "
+#~ "<https://github.com/docker/docker-py/issues/1310>`_ for"
+#~ " details). Version 2.1.0 or newer is"
+#~ " only available with the ``docker`` "
+#~ "module."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Note that the Docker SDK for "
+#~ "Python only allows to specify the "
+#~ "path to the Docker configuration for "
+#~ "very few functions. In general, it "
+#~ "will use ``$HOME/docker/config.json`` if the"
+#~ " ``DOCKER_CONFIG`` environment variable is "
+#~ "not specified, and use "
+#~ "``$DOCKER_CONFIG/config.json`` otherwise."
+#~ msgstr ""
+
+#~ msgid "Dario Zanzico (@dariko), Jason Witkowski (@jwitko)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/docker/docker_swarm_service.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

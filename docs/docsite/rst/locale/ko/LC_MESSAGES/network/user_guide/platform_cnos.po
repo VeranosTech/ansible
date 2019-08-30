@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,102 +36,92 @@ msgstr ""
 msgid "Connections Available"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_cnos.rst:15
+#: ../../rst/network/user_guide/platform_cnos.rst:18
 msgid "CLI"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_cnos.rst:17
-msgid "**Protocol**"
+#: ../../rst/network/user_guide/platform_cnos.rst:20
+msgid "Protocol"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_cnos.rst:17
+#: ../../rst/network/user_guide/platform_cnos.rst:20
 msgid "SSH"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_cnos.rst
-msgid "**Credentials**"
+#: ../../rst/network/user_guide/platform_cnos.rst:22
+msgid "Credentials"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_cnos.rst
+#: ../../rst/network/user_guide/platform_cnos.rst:22
 msgid "uses SSH keys / SSH-agent if present"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_cnos.rst
+#: ../../rst/network/user_guide/platform_cnos.rst:24
 msgid "accepts ``-u myuser -k`` if using password"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_cnos.rst:22
-msgid "**Indirect Access**"
+#: ../../rst/network/user_guide/platform_cnos.rst:26
+msgid "Indirect Access"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_cnos.rst:22
+#: ../../rst/network/user_guide/platform_cnos.rst:26
 msgid "via a bastion (jump host)"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_cnos.rst
-msgid "**Connection Settings**"
+#: ../../rst/network/user_guide/platform_cnos.rst:28
+msgid "Connection Settings"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_cnos.rst
+#: ../../rst/network/user_guide/platform_cnos.rst:28
 msgid "``ansible_connection: network_cli``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_cnos.rst
-msgid "**Enable Mode**"
+#: ../../rst/network/user_guide/platform_cnos.rst:30
+msgid "|enable_mode|"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_cnos.rst
-msgid "(Privilege Escalation)"
+#: ../../rst/network/user_guide/platform_cnos.rst:30
+msgid ""
+"supported: use ``ansible_become: yes`` with ``ansible_become_method: "
+"enable`` and ``ansible_become_password:``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_cnos.rst
-msgid "supported - use ``ansible_become: yes``"
+#: ../../rst/network/user_guide/platform_cnos.rst:34
+msgid "Returned Data Format"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_cnos.rst
-msgid "with ``ansible_become_method: enable``"
-msgstr ""
-
-#: ../../rst/network/user_guide/platform_cnos.rst
-msgid "and ``ansible_become_pass:``"
-msgstr ""
-
-#: ../../rst/network/user_guide/platform_cnos.rst:32
-msgid "**Returned Data Format**"
-msgstr ""
-
-#: ../../rst/network/user_guide/platform_cnos.rst:32
+#: ../../rst/network/user_guide/platform_cnos.rst:34
 msgid "``stdout[0].``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_cnos.rst:35
+#: ../../rst/network/user_guide/platform_cnos.rst:39
 msgid ""
 "For legacy playbooks, CNOS still supports ``ansible_connection: local``. "
 "We recommend modernizing to use ``ansible_connection: network_cli`` as "
 "soon as possible."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_cnos.rst:38
+#: ../../rst/network/user_guide/platform_cnos.rst:42
 msgid "Using CLI in Ansible"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_cnos.rst:41
+#: ../../rst/network/user_guide/platform_cnos.rst:45
 msgid "Example CLI ``group_vars/cnos.yml``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_cnos.rst:55
+#: ../../rst/network/user_guide/platform_cnos.rst:59
 msgid ""
 "If you are using SSH keys (including an ssh-agent) you can remove the "
-"``ansible_ssh_pass`` configuration."
+"``ansible_password`` configuration."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_cnos.rst:56
+#: ../../rst/network/user_guide/platform_cnos.rst:60
 msgid ""
 "If you are accessing your host directly (not through a bastion/jump host)"
 " you can remove the ``ansible_ssh_common_args`` configuration."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_cnos.rst:57
+#: ../../rst/network/user_guide/platform_cnos.rst:61
 msgid ""
 "If you are accessing your host through a bastion/jump host, you cannot "
 "include your SSH password in the ``ProxyCommand`` directive. To prevent "
@@ -139,7 +129,7 @@ msgid ""
 "support providing passwords via environment variables."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_cnos.rst:60
+#: ../../rst/network/user_guide/platform_cnos.rst:64
 msgid "Example CLI Task"
 msgstr ""
 
@@ -150,4 +140,40 @@ msgid ""
 "SSH keys. If you must use passwords to authenticate SSH connections, we "
 "recommend encrypting them with :ref:`Ansible Vault <playbooks_vault>`."
 msgstr ""
+
+#~ msgid "**Protocol**"
+#~ msgstr ""
+
+#~ msgid "**Credentials**"
+#~ msgstr ""
+
+#~ msgid "**Indirect Access**"
+#~ msgstr ""
+
+#~ msgid "**Connection Settings**"
+#~ msgstr ""
+
+#~ msgid "**Enable Mode**"
+#~ msgstr ""
+
+#~ msgid "(Privilege Escalation)"
+#~ msgstr ""
+
+#~ msgid "supported - use ``ansible_become: yes``"
+#~ msgstr ""
+
+#~ msgid "with ``ansible_become_method: enable``"
+#~ msgstr ""
+
+#~ msgid "and ``ansible_become_pass:``"
+#~ msgstr ""
+
+#~ msgid "**Returned Data Format**"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you are using SSH keys "
+#~ "(including an ssh-agent) you can "
+#~ "remove the ``ansible_ssh_pass`` configuration."
+#~ msgstr ""
 

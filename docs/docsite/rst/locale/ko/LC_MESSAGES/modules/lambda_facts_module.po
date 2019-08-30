@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,39 @@ msgstr ""
 msgid "lambda_facts -- Gathers AWS Lambda function details as Ansible facts"
 msgstr ""
 
+#: ../../rst/modules/lambda_facts_module.rst:17
+msgid "DEPRECATED"
+msgstr ""
+
+#: ../../rst/modules/lambda_facts_module.rst
+msgid "Removed in Ansible"
+msgstr ""
+
+#: ../../rst/modules/lambda_facts_module.rst:18
+msgid "version: 2.13"
+msgstr ""
+
+#: ../../rst/modules/lambda_facts_module.rst
+msgid "Why"
+msgstr ""
+
 #: ../../rst/modules/lambda_facts_module.rst:19
-msgid "Synopsis"
+msgid "Deprecated in favour of ``_info`` module."
+msgstr ""
+
+#: ../../rst/modules/lambda_facts_module.rst
+msgid "Alternative"
 msgstr ""
 
 #: ../../rst/modules/lambda_facts_module.rst:20
+msgid "Use :ref:`lambda_info <lambda_info_module>` instead."
+msgstr ""
+
+#: ../../rst/modules/lambda_facts_module.rst:25
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/lambda_facts_module.rst:26
 msgid ""
 "Gathers various details related to Lambda functions, including aliases, "
 "versions and event source mappings. Use module :ref:`lambda "
@@ -35,35 +63,35 @@ msgid ""
 " <lambda_event_module>` to manage lambda event source mappings."
 msgstr ""
 
-#: ../../rst/modules/lambda_facts_module.rst:25
+#: ../../rst/modules/lambda_facts_module.rst:31
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/lambda_facts_module.rst:26
+#: ../../rst/modules/lambda_facts_module.rst:32
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/lambda_facts_module.rst:28
+#: ../../rst/modules/lambda_facts_module.rst:34
 msgid "boto"
 msgstr ""
 
-#: ../../rst/modules/lambda_facts_module.rst:29
+#: ../../rst/modules/lambda_facts_module.rst:35
 msgid "boto3"
 msgstr ""
 
-#: ../../rst/modules/lambda_facts_module.rst:30
+#: ../../rst/modules/lambda_facts_module.rst:36
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/lambda_facts_module.rst:34
+#: ../../rst/modules/lambda_facts_module.rst:40
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/lambda_facts_module.rst:196
+#: ../../rst/modules/lambda_facts_module.rst:219
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/lambda_facts_module.rst:199
+#: ../../rst/modules/lambda_facts_module.rst:222
 msgid ""
 "If parameters are not set within the module, the following environment "
 "variables can be used in decreasing order of precedence ``AWS_URL`` or "
@@ -73,64 +101,80 @@ msgid ""
 "``AWS_REGION`` or ``EC2_REGION``"
 msgstr ""
 
-#: ../../rst/modules/lambda_facts_module.rst:200
+#: ../../rst/modules/lambda_facts_module.rst:223
 msgid ""
 "Ansible uses the boto configuration file (typically ~/.boto) if no "
 "credentials are provided. See "
 "https://boto.readthedocs.io/en/latest/boto_config_tut.html"
 msgstr ""
 
-#: ../../rst/modules/lambda_facts_module.rst:201
+#: ../../rst/modules/lambda_facts_module.rst:224
 msgid ""
 "``AWS_REGION`` or ``EC2_REGION`` can be typically be used to specify the "
 "AWS region, when required, but this can also be configured in the boto "
 "config file"
 msgstr ""
 
-#: ../../rst/modules/lambda_facts_module.rst:206
+#: ../../rst/modules/lambda_facts_module.rst:229
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/lambda_facts_module.rst:237
+#: ../../rst/modules/lambda_facts_module.rst:260
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/lambda_facts_module.rst:238
+#: ../../rst/modules/lambda_facts_module.rst:261
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/lambda_facts_module.rst:286
+#: ../../rst/modules/lambda_facts_module.rst:309
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/lambda_facts_module.rst:291
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
+#: ../../rst/modules/lambda_facts_module.rst:312
+msgid "This module will be removed in version 2.13. *[deprecated]*"
 msgstr ""
 
-#: ../../rst/modules/lambda_facts_module.rst:294
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
+#: ../../rst/modules/lambda_facts_module.rst:313
+msgid "For more information see `DEPRECATED`_."
 msgstr ""
 
-#: ../../rst/modules/lambda_facts_module.rst:301
+#: ../../rst/modules/lambda_facts_module.rst:317
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/lambda_facts_module.rst:303
+#: ../../rst/modules/lambda_facts_module.rst:319
 msgid "Pierre Jodouin (@pjodouin)"
 msgstr ""
 
-#: ../../rst/modules/lambda_facts_module.rst:307
+#: ../../rst/modules/lambda_facts_module.rst:323
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/lambda_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/_lambda_facts.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/lambda_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

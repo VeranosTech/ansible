@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,18 +64,18 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/aws_application_scaling_policy_module.rst:305
+#: ../../rst/modules/aws_application_scaling_policy_module.rst:322
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/aws_application_scaling_policy_module.rst:308
+#: ../../rst/modules/aws_application_scaling_policy_module.rst:325
 msgid ""
 "for details of the parameters and returns see "
 "http://boto3.readthedocs.io/en/latest/reference/services/application-"
 "autoscaling.html#ApplicationAutoScaling.Client.put_scaling_policy"
 msgstr ""
 
-#: ../../rst/modules/aws_application_scaling_policy_module.rst:309
+#: ../../rst/modules/aws_application_scaling_policy_module.rst:326
 msgid ""
 "If parameters are not set within the module, the following environment "
 "variables can be used in decreasing order of precedence ``AWS_URL`` or "
@@ -85,68 +85,76 @@ msgid ""
 "``AWS_REGION`` or ``EC2_REGION``"
 msgstr ""
 
-#: ../../rst/modules/aws_application_scaling_policy_module.rst:310
+#: ../../rst/modules/aws_application_scaling_policy_module.rst:327
 msgid ""
 "Ansible uses the boto configuration file (typically ~/.boto) if no "
 "credentials are provided. See "
 "https://boto.readthedocs.io/en/latest/boto_config_tut.html"
 msgstr ""
 
-#: ../../rst/modules/aws_application_scaling_policy_module.rst:311
+#: ../../rst/modules/aws_application_scaling_policy_module.rst:328
 msgid ""
 "``AWS_REGION`` or ``EC2_REGION`` can be typically be used to specify the "
 "AWS region, when required, but this can also be configured in the boto "
 "config file"
 msgstr ""
 
-#: ../../rst/modules/aws_application_scaling_policy_module.rst:316
+#: ../../rst/modules/aws_application_scaling_policy_module.rst:333
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/aws_application_scaling_policy_module.rst:376
+#: ../../rst/modules/aws_application_scaling_policy_module.rst:393
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/aws_application_scaling_policy_module.rst:377
+#: ../../rst/modules/aws_application_scaling_policy_module.rst:394
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/aws_application_scaling_policy_module.rst:713
+#: ../../rst/modules/aws_application_scaling_policy_module.rst:730
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/aws_application_scaling_policy_module.rst:718
+#: ../../rst/modules/aws_application_scaling_policy_module.rst:735
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/aws_application_scaling_policy_module.rst:721
+#: ../../rst/modules/aws_application_scaling_policy_module.rst:738
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/aws_application_scaling_policy_module.rst:728
+#: ../../rst/modules/aws_application_scaling_policy_module.rst:745
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/aws_application_scaling_policy_module.rst:730
+#: ../../rst/modules/aws_application_scaling_policy_module.rst:747
 msgid "Gustavo Maia (@gurumaia)"
 msgstr ""
 
-#: ../../rst/modules/aws_application_scaling_policy_module.rst:731
+#: ../../rst/modules/aws_application_scaling_policy_module.rst:748
 msgid "Chen Leibovich (@chenl87)"
 msgstr ""
 
-#: ../../rst/modules/aws_application_scaling_policy_module.rst:735
+#: ../../rst/modules/aws_application_scaling_policy_module.rst:752
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/aws_application_scaling_policy.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/aws_application_scaling_policy.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/aws_application_scaling_policy.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

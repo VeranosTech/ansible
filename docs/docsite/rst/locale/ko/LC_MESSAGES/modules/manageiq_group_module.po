@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,57 +41,69 @@ msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
 #: ../../rst/modules/manageiq_group_module.rst:28
+msgid "manageiq-client"
+msgstr ""
+
+#: ../../rst/modules/manageiq_group_module.rst:29
 msgid "manageiq-client https://github.com/ManageIQ/manageiq-api-client-python/"
 msgstr ""
 
-#: ../../rst/modules/manageiq_group_module.rst:32
+#: ../../rst/modules/manageiq_group_module.rst:33
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/manageiq_group_module.rst:302
+#: ../../rst/modules/manageiq_group_module.rst:308
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/manageiq_group_module.rst:376
+#: ../../rst/modules/manageiq_group_module.rst:382
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/manageiq_group_module.rst:377
+#: ../../rst/modules/manageiq_group_module.rst:383
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/manageiq_group_module.rst:512
+#: ../../rst/modules/manageiq_group_module.rst:518
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/manageiq_group_module.rst:517
+#: ../../rst/modules/manageiq_group_module.rst:523
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/manageiq_group_module.rst:520
+#: ../../rst/modules/manageiq_group_module.rst:526
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/manageiq_group_module.rst:527
+#: ../../rst/modules/manageiq_group_module.rst:533
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/manageiq_group_module.rst:529
+#: ../../rst/modules/manageiq_group_module.rst:535
 msgid "Evert Mulder (@evertmulder)"
 msgstr ""
 
-#: ../../rst/modules/manageiq_group_module.rst:533
+#: ../../rst/modules/manageiq_group_module.rst:539
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/remote_management/manageiq/manageiq_group.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/remote_management/manageiq/manageiq_group.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/remote_management/manageiq/manageiq_group.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/win_hosts_module.rst:9
+msgid "win_hosts -- Manages hosts file entries on Windows"
+msgstr ""
+
+#: ../../rst/modules/win_hosts_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/win_hosts_module.rst:20
+msgid "Manages hosts file entries on Windows."
+msgstr ""
+
+#: ../../rst/modules/win_hosts_module.rst:21
+msgid "Maps IPv4 or IPv6 addresses to canonical names."
+msgstr ""
+
+#: ../../rst/modules/win_hosts_module.rst:22
+msgid "Adds, removes, or sets cname records for ip and hostname pairs."
+msgstr ""
+
+#: ../../rst/modules/win_hosts_module.rst:23
+msgid "Modifies %windir%\\\\system32\\\\drivers\\\\etc\\\\hosts."
+msgstr ""
+
+#: ../../rst/modules/win_hosts_module.rst:29
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/win_hosts_module.rst:128
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/win_hosts_module.rst:131
+msgid ""
+"Each canonical name can only be mapped to one IPv4 and one IPv6 address. "
+"If *canonical_name* is provided with ``state=present`` and is found to be"
+" mapped to another IP address that is the same type as, but unique from "
+"*ip_address*, then *canonical_name* and all *aliases* will be removed "
+"from the entry and added to an entry with the provided IP address."
+msgstr ""
+
+#: ../../rst/modules/win_hosts_module.rst:132
+msgid ""
+"Each alias can only be mapped to one canonical name. If *aliases* is "
+"provided with ``state=present`` and an alias is found to be mapped to "
+"another canonical name, then the alias will be removed from the entry and"
+" either added to or removed from (depending on *action*) an entry with "
+"the provided canonical name."
+msgstr ""
+
+#: ../../rst/modules/win_hosts_module.rst:136
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/win_hosts_module.rst:140
+msgid ":ref:`win_template_module`"
+msgstr ""
+
+#: ../../rst/modules/win_hosts_module.rst:141
+msgid "The official documentation on the **win_template** module."
+msgstr ""
+
+#: ../../rst/modules/win_hosts_module.rst:142
+msgid ":ref:`win_file_module`"
+msgstr ""
+
+#: ../../rst/modules/win_hosts_module.rst:143
+msgid "The official documentation on the **win_file** module."
+msgstr ""
+
+#: ../../rst/modules/win_hosts_module.rst:144
+msgid ":ref:`win_copy_module`"
+msgstr ""
+
+#: ../../rst/modules/win_hosts_module.rst:145
+msgid "The official documentation on the **win_copy** module."
+msgstr ""
+
+#: ../../rst/modules/win_hosts_module.rst:149
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/win_hosts_module.rst:195
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/win_hosts_module.rst:200
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/win_hosts_module.rst:203
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/win_hosts_module.rst:210
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/win_hosts_module.rst:212
+msgid "Micah Hunsberger (@mhunsber)"
+msgstr ""
+
+#: ../../rst/modules/win_hosts_module.rst:216
+#, python-format
+msgid ""
+"If you notice any issues in this documentation, you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_hosts.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

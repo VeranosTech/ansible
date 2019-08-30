@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,21 +68,21 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/bigip_asm_policy_module.rst:398
+#: ../../rst/modules/bigip_asm_policy_module.rst:335
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/bigip_asm_policy_module.rst:401
+#: ../../rst/modules/bigip_asm_policy_module.rst:338
 msgid ""
 "For more information on using Ansible to manage F5 Networks devices see "
 "https://www.ansible.com/integrations/networks/f5."
 msgstr ""
 
-#: ../../rst/modules/bigip_asm_policy_module.rst:402
+#: ../../rst/modules/bigip_asm_policy_module.rst:339
 msgid "Requires BIG-IP software version >= 12."
 msgstr ""
 
-#: ../../rst/modules/bigip_asm_policy_module.rst:403
+#: ../../rst/modules/bigip_asm_policy_module.rst:340
 msgid ""
 "The F5 modules only manipulate the running configuration of the F5 "
 "product. To ensure that BIG-IP specific configuration persists to disk, "
@@ -92,50 +92,58 @@ msgid ""
 "your running configuration."
 msgstr ""
 
-#: ../../rst/modules/bigip_asm_policy_module.rst:408
+#: ../../rst/modules/bigip_asm_policy_module.rst:345
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/bigip_asm_policy_module.rst:506
+#: ../../rst/modules/bigip_asm_policy_module.rst:443
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/bigip_asm_policy_module.rst:507
+#: ../../rst/modules/bigip_asm_policy_module.rst:444
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/bigip_asm_policy_module.rst:587
+#: ../../rst/modules/bigip_asm_policy_module.rst:524
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/bigip_asm_policy_module.rst:590
+#: ../../rst/modules/bigip_asm_policy_module.rst:527
 msgid "This module will be removed in version 2.12. *[deprecated]*"
 msgstr ""
 
-#: ../../rst/modules/bigip_asm_policy_module.rst:591
+#: ../../rst/modules/bigip_asm_policy_module.rst:528
 msgid "For more information see `DEPRECATED`_."
 msgstr ""
 
-#: ../../rst/modules/bigip_asm_policy_module.rst:595
+#: ../../rst/modules/bigip_asm_policy_module.rst:532
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/bigip_asm_policy_module.rst:597
+#: ../../rst/modules/bigip_asm_policy_module.rst:534
 msgid "Wojciech Wypior (@wojtek0806)"
 msgstr ""
 
-#: ../../rst/modules/bigip_asm_policy_module.rst:598
+#: ../../rst/modules/bigip_asm_policy_module.rst:535
 msgid "Tim Rupp (@caphrim007)"
 msgstr ""
 
-#: ../../rst/modules/bigip_asm_policy_module.rst:602
+#: ../../rst/modules/bigip_asm_policy_module.rst:539
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/_bigip_asm_policy.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/_bigip_asm_policy.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/_bigip_asm_policy.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

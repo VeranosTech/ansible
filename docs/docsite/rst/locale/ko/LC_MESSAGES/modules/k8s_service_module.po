@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,11 +50,11 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/k8s_service_module.rst:328
+#: ../../rst/modules/k8s_service_module.rst:348
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/k8s_service_module.rst:331
+#: ../../rst/modules/k8s_service_module.rst:351
 msgid ""
 "The OpenShift Python client wraps the K8s Python client, providing full "
 "access to all of the APIS and models available on both platforms. For API"
@@ -62,57 +62,74 @@ msgid ""
 "https://github.com/openshift/openshift-restclient-python"
 msgstr ""
 
-#: ../../rst/modules/k8s_service_module.rst:332
+#: ../../rst/modules/k8s_service_module.rst:352
 msgid ""
-"To avoid SSL certificate validation errors when ``verify_ssl`` is *True*,"
-" the full certificate chain for the API server must be provided via "
-"``ssl_ca_cert`` or in the kubeconfig file."
+"To avoid SSL certificate validation errors when ``validate_certs`` is "
+"*True*, the full certificate chain for the API server must be provided "
+"via ``ca_cert`` or in the kubeconfig file."
 msgstr ""
 
-#: ../../rst/modules/k8s_service_module.rst:337
+#: ../../rst/modules/k8s_service_module.rst:357
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/k8s_service_module.rst:370
+#: ../../rst/modules/k8s_service_module.rst:390
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/k8s_service_module.rst:371
+#: ../../rst/modules/k8s_service_module.rst:391
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/k8s_service_module.rst:458
+#: ../../rst/modules/k8s_service_module.rst:478
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/k8s_service_module.rst:463
+#: ../../rst/modules/k8s_service_module.rst:483
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/k8s_service_module.rst:466
+#: ../../rst/modules/k8s_service_module.rst:486
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/k8s_service_module.rst:473
+#: ../../rst/modules/k8s_service_module.rst:493
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/k8s_service_module.rst:475
+#: ../../rst/modules/k8s_service_module.rst:495
 msgid "KubeVirt Team (@kubevirt)"
 msgstr ""
 
-#: ../../rst/modules/k8s_service_module.rst:479
+#: ../../rst/modules/k8s_service_module.rst:499
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/clustering/k8s/k8s_service.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/clustering/k8s/k8s_service.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "To avoid SSL certificate validation "
+#~ "errors when ``verify_ssl`` is *True*, "
+#~ "the full certificate chain for the "
+#~ "API server must be provided via "
+#~ "``ssl_ca_cert`` or in the kubeconfig "
+#~ "file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/clustering/k8s/k8s_service.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

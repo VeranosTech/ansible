@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,43 +34,56 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/plugins/inventory/netbox.rst:232
+#: ../../rst/plugins/inventory/netbox.rst:252
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/plugins/inventory/netbox.rst:278
+#: ../../rst/plugins/inventory/netbox.rst:299
 msgid "Status"
 msgstr ""
 
-#: ../../rst/plugins/inventory/netbox.rst:283
+#: ../../rst/plugins/inventory/netbox.rst:304
 msgid ""
 "This inventory is not guaranteed to have a backwards compatible "
 "interface. *[preview]*"
 msgstr ""
 
-#: ../../rst/plugins/inventory/netbox.rst:286
+#: ../../rst/plugins/inventory/netbox.rst:307
 msgid ""
 "This inventory is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/plugins/inventory/netbox.rst:293
+#: ../../rst/plugins/inventory/netbox.rst:314
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/plugins/inventory/netbox.rst:295
+#: ../../rst/plugins/inventory/netbox.rst:316
 msgid "Remy Leone (@sieben)"
 msgstr ""
 
-#: ../../rst/plugins/inventory/netbox.rst:296
+#: ../../rst/plugins/inventory/netbox.rst:317
 msgid "Anthony Ruhier (@Anthony25)"
 msgstr ""
 
-#: ../../rst/plugins/inventory/netbox.rst:300
+#: ../../rst/plugins/inventory/netbox.rst:318
+msgid "Nikhil Singh Baliyan (@nikkytub)"
+msgstr ""
+
+#: ../../rst/plugins/inventory/netbox.rst:322
+#, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/inventory/netbox.py>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/inventory/netbox.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/inventory/netbox.py>`_"
+#~ " to improve it."
+#~ msgstr ""
 

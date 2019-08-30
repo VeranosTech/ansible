@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,35 +38,44 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/plugins/connection/network_cli.rst:324
+#: ../../rst/plugins/connection/network_cli.rst:444
 msgid "Status"
 msgstr ""
 
-#: ../../rst/plugins/connection/network_cli.rst:329
+#: ../../rst/plugins/connection/network_cli.rst:449
 msgid ""
 "This connection is not guaranteed to have a backwards compatible "
 "interface. *[preview]*"
 msgstr ""
 
-#: ../../rst/plugins/connection/network_cli.rst:332
+#: ../../rst/plugins/connection/network_cli.rst:452
 msgid ""
 "This connection is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/plugins/connection/network_cli.rst:339
+#: ../../rst/plugins/connection/network_cli.rst:459
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/plugins/connection/network_cli.rst:341
+#: ../../rst/plugins/connection/network_cli.rst:461
 msgid "Ansible Networking Team"
 msgstr ""
 
-#: ../../rst/plugins/connection/network_cli.rst:345
+#: ../../rst/plugins/connection/network_cli.rst:465
+#, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/connection/network_cli.py>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/connection/network_cli.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/connection/network_cli.py>`_"
+#~ " to improve it."
+#~ msgstr ""
 

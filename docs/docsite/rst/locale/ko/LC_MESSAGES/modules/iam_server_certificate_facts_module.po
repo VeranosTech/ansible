@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,122 +18,127 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-#: ../../rst/modules/iam_server_certificate_facts_module.rst:10
-msgid "iam_server_certificate_facts -- Retrieve the facts of a server certificate"
-msgstr ""
-
-#: ../../rst/modules/iam_server_certificate_facts_module.rst:20
-msgid "Synopsis"
-msgstr ""
-
-#: ../../rst/modules/iam_server_certificate_facts_module.rst:21
-msgid "Retrieve the attributes of a server certificate"
-msgstr ""
-
-#: ../../rst/modules/iam_server_certificate_facts_module.rst:24
-msgid "Aliases: iam_cert_facts"
-msgstr ""
-
-#: ../../rst/modules/iam_server_certificate_facts_module.rst:27
-msgid "Requirements"
-msgstr ""
-
-#: ../../rst/modules/iam_server_certificate_facts_module.rst:28
-msgid "The below requirements are needed on the host that executes this module."
-msgstr ""
-
-#: ../../rst/modules/iam_server_certificate_facts_module.rst:30
-msgid "boto"
-msgstr ""
-
-#: ../../rst/modules/iam_server_certificate_facts_module.rst:31
-msgid "boto3"
-msgstr ""
-
-#: ../../rst/modules/iam_server_certificate_facts_module.rst:32
-msgid "botocore"
-msgstr ""
-
-#: ../../rst/modules/iam_server_certificate_facts_module.rst:33
-msgid "python >= 2.6"
-msgstr ""
-
-#: ../../rst/modules/iam_server_certificate_facts_module.rst:37
-msgid "Parameters"
-msgstr ""
-
-#: ../../rst/modules/iam_server_certificate_facts_module.rst:164
-msgid "Notes"
-msgstr ""
-
-#: ../../rst/modules/iam_server_certificate_facts_module.rst:167
+#: ../../rst/modules/iam_server_certificate_facts_module.rst:9
 msgid ""
-"If parameters are not set within the module, the following environment "
-"variables can be used in decreasing order of precedence ``AWS_URL`` or "
-"``EC2_URL``, ``AWS_ACCESS_KEY_ID`` or ``AWS_ACCESS_KEY`` or "
-"``EC2_ACCESS_KEY``, ``AWS_SECRET_ACCESS_KEY`` or ``AWS_SECRET_KEY`` or "
-"``EC2_SECRET_KEY``, ``AWS_SECURITY_TOKEN`` or ``EC2_SECURITY_TOKEN``, "
-"``AWS_REGION`` or ``EC2_REGION``"
+"iam_server_certificate_facts -- Retrieve the information of a server "
+"certificate"
 msgstr ""
 
-#: ../../rst/modules/iam_server_certificate_facts_module.rst:168
+#: ../../rst/modules/iam_server_certificate_facts_module.rst:11
 msgid ""
-"Ansible uses the boto configuration file (typically ~/.boto) if no "
-"credentials are provided. See "
-"https://boto.readthedocs.io/en/latest/boto_config_tut.html"
+"This is an alias for :ref:`iam_server_certificate_info "
+"<iam_server_certificate_info_module>`. This name has been **deprecated**."
+" Please update your tasks to use the new name "
+"``iam_server_certificate_info`` instead."
 msgstr ""
 
-#: ../../rst/modules/iam_server_certificate_facts_module.rst:169
-msgid ""
-"``AWS_REGION`` or ``EC2_REGION`` can be typically be used to specify the "
-"AWS region, when required, but this can also be configured in the boto "
-"config file"
-msgstr ""
+#~ msgid ""
+#~ "iam_server_certificate_facts -- Retrieve the "
+#~ "facts of a server certificate"
+#~ msgstr ""
 
-#: ../../rst/modules/iam_server_certificate_facts_module.rst:174
-msgid "Examples"
-msgstr ""
+#~ msgid "Synopsis"
+#~ msgstr ""
 
-#: ../../rst/modules/iam_server_certificate_facts_module.rst:194
-msgid "Return Values"
-msgstr ""
+#~ msgid "Retrieve the attributes of a server certificate"
+#~ msgstr ""
 
-#: ../../rst/modules/iam_server_certificate_facts_module.rst:195
-msgid ""
-"Common return values are documented :ref:`here <common_return_values>`, "
-"the following are the fields unique to this module:"
-msgstr ""
+#~ msgid "Aliases: iam_cert_facts"
+#~ msgstr ""
 
-#: ../../rst/modules/iam_server_certificate_facts_module.rst:301
-msgid "Status"
-msgstr ""
+#~ msgid "Requirements"
+#~ msgstr ""
 
-#: ../../rst/modules/iam_server_certificate_facts_module.rst:306
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
-msgstr ""
+#~ msgid ""
+#~ "The below requirements are needed on "
+#~ "the host that executes this module."
+#~ msgstr ""
 
-#: ../../rst/modules/iam_server_certificate_facts_module.rst:309
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
-msgstr ""
+#~ msgid "boto"
+#~ msgstr ""
 
-#: ../../rst/modules/iam_server_certificate_facts_module.rst:316
-msgid "Authors"
-msgstr ""
+#~ msgid "boto3"
+#~ msgstr ""
 
-#: ../../rst/modules/iam_server_certificate_facts_module.rst:318
-msgid "Allen Sanabria (@linuxdynasty)"
-msgstr ""
+#~ msgid "botocore"
+#~ msgstr ""
 
-#: ../../rst/modules/iam_server_certificate_facts_module.rst:322
-#, python-format
-msgid ""
-"If you notice any issues in this documentation you can `edit this "
-"document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/iam_server_certificate_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
-" to improve it."
-msgstr ""
+#~ msgid "python >= 2.6"
+#~ msgstr ""
+
+#~ msgid "Parameters"
+#~ msgstr ""
+
+#~ msgid "Notes"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If parameters are not set within "
+#~ "the module, the following environment "
+#~ "variables can be used in decreasing "
+#~ "order of precedence ``AWS_URL`` or "
+#~ "``EC2_URL``, ``AWS_ACCESS_KEY_ID`` or "
+#~ "``AWS_ACCESS_KEY`` or ``EC2_ACCESS_KEY``, "
+#~ "``AWS_SECRET_ACCESS_KEY`` or ``AWS_SECRET_KEY`` or"
+#~ " ``EC2_SECRET_KEY``, ``AWS_SECURITY_TOKEN`` or "
+#~ "``EC2_SECURITY_TOKEN``, ``AWS_REGION`` or "
+#~ "``EC2_REGION``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Ansible uses the boto configuration file"
+#~ " (typically ~/.boto) if no credentials "
+#~ "are provided. See "
+#~ "https://boto.readthedocs.io/en/latest/boto_config_tut.html"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``AWS_REGION`` or ``EC2_REGION`` can be "
+#~ "typically be used to specify the "
+#~ "AWS region, when required, but this "
+#~ "can also be configured in the boto"
+#~ " config file"
+#~ msgstr ""
+
+#~ msgid "Examples"
+#~ msgstr ""
+
+#~ msgid "Return Values"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Common return values are documented "
+#~ ":ref:`here <common_return_values>`, the following"
+#~ " are the fields unique to this "
+#~ "module:"
+#~ msgstr ""
+
+#~ msgid "Status"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid "Authors"
+#~ msgstr ""
+
+#~ msgid "Allen Sanabria (@linuxdynasty)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/iam_server_certificate_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

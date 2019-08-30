@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,76 +22,84 @@ msgstr ""
 msgid "maven_artifact -- Downloads an Artifact from a Maven Repository"
 msgstr ""
 
-#: ../../rst/modules/maven_artifact_module.rst:19
+#: ../../rst/modules/maven_artifact_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/maven_artifact_module.rst:20
+#: ../../rst/modules/maven_artifact_module.rst:19
 msgid ""
 "Downloads an artifact from a maven repository given the maven coordinates"
 " provided to the module."
 msgstr ""
 
-#: ../../rst/modules/maven_artifact_module.rst:21
+#: ../../rst/modules/maven_artifact_module.rst:20
 msgid ""
 "Can retrieve snapshots or release versions of the artifact and will "
 "resolve the latest available version if one is not available."
 msgstr ""
 
-#: ../../rst/modules/maven_artifact_module.rst:26
+#: ../../rst/modules/maven_artifact_module.rst:25
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/maven_artifact_module.rst:27
+#: ../../rst/modules/maven_artifact_module.rst:26
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/maven_artifact_module.rst:29
+#: ../../rst/modules/maven_artifact_module.rst:28
 msgid "lxml"
 msgstr ""
 
-#: ../../rst/modules/maven_artifact_module.rst:30
+#: ../../rst/modules/maven_artifact_module.rst:29
 msgid "boto if using a S3 repository (s3://...)"
 msgstr ""
 
-#: ../../rst/modules/maven_artifact_module.rst:34
+#: ../../rst/modules/maven_artifact_module.rst:33
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/maven_artifact_module.rst:404
+#: ../../rst/modules/maven_artifact_module.rst:416
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/maven_artifact_module.rst:459
+#: ../../rst/modules/maven_artifact_module.rst:471
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/maven_artifact_module.rst:464
+#: ../../rst/modules/maven_artifact_module.rst:476
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/maven_artifact_module.rst:467
+#: ../../rst/modules/maven_artifact_module.rst:479
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/maven_artifact_module.rst:474
+#: ../../rst/modules/maven_artifact_module.rst:486
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/maven_artifact_module.rst:476
+#: ../../rst/modules/maven_artifact_module.rst:488
 msgid "Chris Schmidt (@chrisisbeef)"
 msgstr ""
 
-#: ../../rst/modules/maven_artifact_module.rst:480
+#: ../../rst/modules/maven_artifact_module.rst:492
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/packaging/language/maven_artifact.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/packaging/language/maven_artifact.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/packaging/language/maven_artifact.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

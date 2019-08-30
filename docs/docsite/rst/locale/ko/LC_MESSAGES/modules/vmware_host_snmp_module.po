@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,68 +52,76 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_snmp_module.rst:259
+#: ../../rst/modules/vmware_host_snmp_module.rst:289
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_snmp_module.rst:262
+#: ../../rst/modules/vmware_host_snmp_module.rst:292
 msgid "Tested on vSphere 6.5"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_snmp_module.rst:263
+#: ../../rst/modules/vmware_host_snmp_module.rst:293
 msgid ""
 "You need to reset the agent (to factory defaults) if you want to clear "
 "all community strings, trap targets, or filters"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_snmp_module.rst:264
+#: ../../rst/modules/vmware_host_snmp_module.rst:294
 msgid "SNMP v3 configuration isn't implemented yet"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_snmp_module.rst:269
+#: ../../rst/modules/vmware_host_snmp_module.rst:299
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_snmp_module.rst:317
+#: ../../rst/modules/vmware_host_snmp_module.rst:347
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_snmp_module.rst:318
+#: ../../rst/modules/vmware_host_snmp_module.rst:348
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_snmp_module.rst:346
+#: ../../rst/modules/vmware_host_snmp_module.rst:376
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_snmp_module.rst:351
+#: ../../rst/modules/vmware_host_snmp_module.rst:381
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_snmp_module.rst:354
+#: ../../rst/modules/vmware_host_snmp_module.rst:384
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_snmp_module.rst:361
+#: ../../rst/modules/vmware_host_snmp_module.rst:391
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_snmp_module.rst:363
+#: ../../rst/modules/vmware_host_snmp_module.rst:393
 msgid "Christian Kotte (@ckotte)"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_snmp_module.rst:367
+#: ../../rst/modules/vmware_host_snmp_module.rst:397
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_host_snmp.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_host_snmp.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_host_snmp.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

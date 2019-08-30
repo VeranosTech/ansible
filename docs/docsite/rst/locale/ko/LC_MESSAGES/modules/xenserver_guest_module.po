@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,19 +56,28 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/xenserver_guest_module.rst:427
+#: ../../rst/modules/xenserver_guest_module.rst:429
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/xenserver_guest_module.rst:430
-msgid "Minimal supported version of XenServer is 5.6"
-msgstr ""
-
-#: ../../rst/modules/xenserver_guest_module.rst:431
-msgid "Module was tested with XenServer 6.5, 7.1 and 7.2"
-msgstr ""
-
 #: ../../rst/modules/xenserver_guest_module.rst:432
+msgid "Minimal supported version of XenServer is 5.6."
+msgstr ""
+
+#: ../../rst/modules/xenserver_guest_module.rst:433
+msgid "Module was tested with XenServer 6.5, 7.1 and 7.2."
+msgstr ""
+
+#: ../../rst/modules/xenserver_guest_module.rst:434
+msgid ""
+"XenAPI Python library can be acquired from XenServer SDK (downloadable "
+"from Citrix website) or by running ``pip install XenAPI`` (possibly very "
+"old version, not compatible with Python 3.x). Latest version can also be "
+"acquired from GitHub: https://raw.githubusercontent.com/xapi-project/xen-"
+"api/master/scripts/examples/python/XenAPI.py"
+msgstr ""
+
+#: ../../rst/modules/xenserver_guest_module.rst:435
 msgid ""
 "If no scheme is specified in ``hostname``, module defaults to ``http://``"
 " because ``https://`` is problematic in most setups. Make sure you are "
@@ -76,15 +85,15 @@ msgid ""
 "scheme explicitly."
 msgstr ""
 
-#: ../../rst/modules/xenserver_guest_module.rst:433
+#: ../../rst/modules/xenserver_guest_module.rst:436
 msgid ""
 "To use ``https://`` scheme for ``hostname`` you have to either import "
 "host certificate to your OS certificate store or use ``validate_certs: "
-"no`` which requires XenAPI.py from XenServer 7.2 SDK or newer and Python "
-"2.7.9 or newer."
+"no`` which requires XenAPI library from XenServer 7.2 SDK or newer and "
+"Python 2.7.9 or newer."
 msgstr ""
 
-#: ../../rst/modules/xenserver_guest_module.rst:434
+#: ../../rst/modules/xenserver_guest_module.rst:437
 msgid ""
 "Network configuration inside a guest OS, by using ``networks.type``, "
 "``networks.ip``, ``networks.gateway`` etc. parameters, is supported on "
@@ -99,7 +108,7 @@ msgid ""
 "in-xenserver.html"
 msgstr ""
 
-#: ../../rst/modules/xenserver_guest_module.rst:435
+#: ../../rst/modules/xenserver_guest_module.rst:438
 msgid ""
 "On platforms without official support for network configuration inside a "
 "guest OS, network parameters will be written to xenstore ``vm-"
@@ -117,50 +126,74 @@ msgid ""
 " ones. More info here: https://support.citrix.com/article/CTX226713"
 msgstr ""
 
-#: ../../rst/modules/xenserver_guest_module.rst:440
+#: ../../rst/modules/xenserver_guest_module.rst:443
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/xenserver_guest_module.rst:538
+#: ../../rst/modules/xenserver_guest_module.rst:541
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/xenserver_guest_module.rst:539
+#: ../../rst/modules/xenserver_guest_module.rst:542
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/xenserver_guest_module.rst:580
+#: ../../rst/modules/xenserver_guest_module.rst:583
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/xenserver_guest_module.rst:585
+#: ../../rst/modules/xenserver_guest_module.rst:588
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/xenserver_guest_module.rst:588
+#: ../../rst/modules/xenserver_guest_module.rst:591
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/xenserver_guest_module.rst:595
+#: ../../rst/modules/xenserver_guest_module.rst:598
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/xenserver_guest_module.rst:597
+#: ../../rst/modules/xenserver_guest_module.rst:600
 msgid "Bojan Vitnik (@bvitnik) <bvitnik@mainstream.rs>"
 msgstr ""
 
-#: ../../rst/modules/xenserver_guest_module.rst:601
+#: ../../rst/modules/xenserver_guest_module.rst:604
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/xenserver/xenserver_guest.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/xenserver/xenserver_guest.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "Minimal supported version of XenServer is 5.6"
+#~ msgstr ""
+
+#~ msgid "Module was tested with XenServer 6.5, 7.1 and 7.2"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To use ``https://`` scheme for "
+#~ "``hostname`` you have to either import"
+#~ " host certificate to your OS "
+#~ "certificate store or use ``validate_certs: "
+#~ "no`` which requires XenAPI.py from "
+#~ "XenServer 7.2 SDK or newer and "
+#~ "Python 2.7.9 or newer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/xenserver/xenserver_guest.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,61 +22,70 @@ msgstr ""
 msgid "shelvefile -- read keys from Python shelve file"
 msgstr ""
 
-#: ../../rst/plugins/lookup/shelvefile.rst:18
+#: ../../rst/plugins/lookup/shelvefile.rst:17
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/plugins/lookup/shelvefile.rst:19
+#: ../../rst/plugins/lookup/shelvefile.rst:18
 msgid "Read keys from Python shelve file."
 msgstr ""
 
-#: ../../rst/plugins/lookup/shelvefile.rst:25
+#: ../../rst/plugins/lookup/shelvefile.rst:24
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/plugins/lookup/shelvefile.rst:88
+#: ../../rst/plugins/lookup/shelvefile.rst:87
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/plugins/lookup/shelvefile.rst:100
+#: ../../rst/plugins/lookup/shelvefile.rst:99
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/plugins/lookup/shelvefile.rst:101
+#: ../../rst/plugins/lookup/shelvefile.rst:100
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this lookup:"
 msgstr ""
 
-#: ../../rst/plugins/lookup/shelvefile.rst:127
+#: ../../rst/plugins/lookup/shelvefile.rst:126
 msgid "Status"
 msgstr ""
 
-#: ../../rst/plugins/lookup/shelvefile.rst:132
+#: ../../rst/plugins/lookup/shelvefile.rst:131
 msgid ""
 "This lookup is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/plugins/lookup/shelvefile.rst:135
+#: ../../rst/plugins/lookup/shelvefile.rst:134
 msgid ""
 "This lookup is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/plugins/lookup/shelvefile.rst:142
+#: ../../rst/plugins/lookup/shelvefile.rst:141
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/plugins/lookup/shelvefile.rst:144
+#: ../../rst/plugins/lookup/shelvefile.rst:143
 msgid "Alejandro Guirao <lekumberri@gmail.com>"
 msgstr ""
 
-#: ../../rst/plugins/lookup/shelvefile.rst:148
+#: ../../rst/plugins/lookup/shelvefile.rst:147
+#, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/lookup/shelvefile.py>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/lookup/shelvefile.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/lookup/shelvefile.py>`_"
+#~ " to improve it."
+#~ msgstr ""
 

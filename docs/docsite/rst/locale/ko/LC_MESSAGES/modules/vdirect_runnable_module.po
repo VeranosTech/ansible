@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,60 +50,68 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/vdirect_runnable_module.rst:256
+#: ../../rst/modules/vdirect_runnable_module.rst:257
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/vdirect_runnable_module.rst:259
+#: ../../rst/modules/vdirect_runnable_module.rst:260
 msgid ""
 "Requires the Radware vdirect-client Python package on the host. This is "
 "as easy as ``pip install vdirect-client``"
 msgstr ""
 
-#: ../../rst/modules/vdirect_runnable_module.rst:264
+#: ../../rst/modules/vdirect_runnable_module.rst:265
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/vdirect_runnable_module.rst:282
+#: ../../rst/modules/vdirect_runnable_module.rst:283
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/vdirect_runnable_module.rst:283
+#: ../../rst/modules/vdirect_runnable_module.rst:284
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/vdirect_runnable_module.rst:311
+#: ../../rst/modules/vdirect_runnable_module.rst:312
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/vdirect_runnable_module.rst:316
+#: ../../rst/modules/vdirect_runnable_module.rst:317
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/vdirect_runnable_module.rst:319
+#: ../../rst/modules/vdirect_runnable_module.rst:320
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/vdirect_runnable_module.rst:326
+#: ../../rst/modules/vdirect_runnable_module.rst:327
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/vdirect_runnable_module.rst:328
+#: ../../rst/modules/vdirect_runnable_module.rst:329
 msgid "Evgeny Fedoruk @ Radware LTD (@evgenyfedoruk)"
 msgstr ""
 
-#: ../../rst/modules/vdirect_runnable_module.rst:332
+#: ../../rst/modules/vdirect_runnable_module.rst:333
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/radware/vdirect_runnable.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/radware/vdirect_runnable.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/radware/vdirect_runnable.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

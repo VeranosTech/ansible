@@ -1,0 +1,282 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:5
+msgid "Collection Galaxy Metadata Structure"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:8
+msgid ""
+"This feature is available in Ansible 2.8 as a *Technology Preview* and "
+"therefore is not fully supported. It should only be used for testing  and"
+" should not be deployed in a production environment. Future Galaxy or "
+"Ansible releases may introduce breaking changes."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:11
+msgid ""
+"A key component of an Ansible collection is the ``galaxy.yml`` file "
+"placed in the root directory of a collection. This file contains the "
+"metadata of the collection that is used to generate a collection "
+"artifact."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:15
+msgid "Structure"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:17
+msgid "The ``galaxy.yml`` file must contain the following keys in valid YAML:"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:26
+msgid "Key"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:27
+msgid "Comment"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:31
+msgid "namespace |br|"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:35
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:59
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:81
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:103
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:147
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:179
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:233
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:247
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:261
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:275
+msgid "string |_|"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:39
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:63
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:85
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:107
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:129
+msgid "/ |_|"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:43
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:67
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:89
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:111
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:133
+msgid "required"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:45
+msgid "The namespace of the collection."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:47
+msgid ""
+"This can be a company/brand/organization or product namespace under which"
+" all content lives."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:49
+msgid ""
+"May only contain alphanumeric characters and underscores. Additionally "
+"namespaces cannot start with underscores or numbers and cannot contain "
+"consecutive underscores."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:55
+msgid "name |br|"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:69
+msgid "The name of the collection."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:71
+msgid "Has the same character restrictions as ``namespace``."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:77
+msgid "version |br|"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:91
+msgid "The version of the collection."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:93
+msgid "Must be compatible with semantic versioning."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:99
+msgid "readme |br|"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:113
+msgid "The path to the Markdown (.md) readme file."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:115
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:185
+msgid "This path is relative to the root of the collection."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:121
+msgid "authors |br|"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:125
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:161
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:197
+msgid "list |_|"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:135
+msgid "A list of the collection's content authors."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:137
+msgid ""
+"Can be just the name or in the format 'Full Name <email> (url) "
+"@nicks:irc/im.site#channel'."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:143
+msgid "description |br|"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:151
+msgid "A short summary description of the collection."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:157
+msgid "license |br|"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:165
+msgid ""
+"Either a single license or a list of licenses for content inside of a "
+"collection."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:167
+msgid ""
+"Ansible Galaxy currently only accepts `SPDX "
+"<https://spdx.org/licenses/>`_ licenses"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:169
+msgid "This key is mutually exclusive with ``license_file``."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:175
+msgid "license_file |br|"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:183
+msgid "The path to the license file for the collection."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:187
+msgid "This key is mutually exclusive with ``license``."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:193
+msgid "tags |br|"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:201
+msgid ""
+"A list of tags you want to associate with the collection for "
+"indexing/searching."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:203
+msgid ""
+"A tag name has the same character requirements as ``namespace`` and "
+"``name``."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:209
+msgid "dependencies |br|"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:213
+msgid "dictionary |_|"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:217
+msgid ""
+"Collections that this collection requires to be installed for it to be "
+"usable."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:219
+msgid "The key of the dict is the collection label ``namespace.name``."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:221
+msgid ""
+"The value is a version range `specifiers <https://python-"
+"semanticversion.readthedocs.io/en/latest/#requirement-specification>`_."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:223
+msgid "Multiple version range specifiers can be set and are separated by ``,``."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:229
+msgid "repository |br|"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:237
+msgid "The URL of the originating SCM repository."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:243
+msgid "documentation |br|"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:251
+msgid "The URL to any online docs."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:257
+msgid "homepage |br|"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:265
+msgid "The URL to the homepage of the collection/project."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:271
+msgid "issues |br|"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:279
+msgid "The URL to the collection issue tracker."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_galaxy_meta.rst:284
+msgid "Examples"
+msgstr ""
+

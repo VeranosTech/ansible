@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,74 +50,89 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/win_dsc_module.rst:92
+#: ../../rst/modules/win_dsc_module.rst:94
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/win_dsc_module.rst:95
+#: ../../rst/modules/win_dsc_module.rst:97
 msgid ""
 "By default there are a few builtin resources that come with PowerShell "
 "5.0, see https://docs.microsoft.com/en-us/powershell/dsc/builtinresource "
 "for more information on these resources."
 msgstr ""
 
-#: ../../rst/modules/win_dsc_module.rst:96
+#: ../../rst/modules/win_dsc_module.rst:98
 msgid ""
 "Custom DSC resources can be installed with :ref:`win_psmodule "
 "<win_psmodule_module>` using the *name* option."
 msgstr ""
 
-#: ../../rst/modules/win_dsc_module.rst:97
+#: ../../rst/modules/win_dsc_module.rst:99
 msgid ""
 "The DSC engine run's each task as the SYSTEM account, any resources that "
 "need to be accessed with a different account need to have "
 "``PsDscRunAsCredential`` set."
 msgstr ""
 
-#: ../../rst/modules/win_dsc_module.rst:102
+#: ../../rst/modules/win_dsc_module.rst:100
+msgid ""
+"To see the valid options for a DSC resource, run the module with ``-vvv``"
+" to show the possible module invocation. Default values are not shown in "
+"this output but are applied within the DSC engine."
+msgstr ""
+
+#: ../../rst/modules/win_dsc_module.rst:105
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/win_dsc_module.rst:174
+#: ../../rst/modules/win_dsc_module.rst:182
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/win_dsc_module.rst:175
+#: ../../rst/modules/win_dsc_module.rst:183
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/win_dsc_module.rst:229
+#: ../../rst/modules/win_dsc_module.rst:250
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/win_dsc_module.rst:234
+#: ../../rst/modules/win_dsc_module.rst:255
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/win_dsc_module.rst:237
+#: ../../rst/modules/win_dsc_module.rst:258
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/win_dsc_module.rst:244
+#: ../../rst/modules/win_dsc_module.rst:265
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/win_dsc_module.rst:246
+#: ../../rst/modules/win_dsc_module.rst:267
 msgid "Trond Hindenes (@trondhindenes)"
 msgstr ""
 
-#: ../../rst/modules/win_dsc_module.rst:250
+#: ../../rst/modules/win_dsc_module.rst:271
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_dsc.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_dsc.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_dsc.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

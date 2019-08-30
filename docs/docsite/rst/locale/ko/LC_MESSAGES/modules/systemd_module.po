@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,27 +22,27 @@ msgstr ""
 msgid "systemd -- Manage services"
 msgstr ""
 
-#: ../../rst/modules/systemd_module.rst:19
+#: ../../rst/modules/systemd_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/systemd_module.rst:20
+#: ../../rst/modules/systemd_module.rst:19
 msgid "Controls systemd services on remote hosts."
 msgstr ""
 
-#: ../../rst/modules/systemd_module.rst:25
+#: ../../rst/modules/systemd_module.rst:24
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/systemd_module.rst:26
+#: ../../rst/modules/systemd_module.rst:25
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/systemd_module.rst:28
+#: ../../rst/modules/systemd_module.rst:27
 msgid "A system managed by systemd."
 msgstr ""
 
-#: ../../rst/modules/systemd_module.rst:32
+#: ../../rst/modules/systemd_module.rst:31
 msgid "Parameters"
 msgstr ""
 
@@ -53,69 +53,88 @@ msgstr ""
 #: ../../rst/modules/systemd_module.rst:225
 msgid ""
 "Since 2.4, one of the following options is required 'state', 'enabled', "
-"'masked', 'daemon_reload', and all except 'daemon_reload' also require "
-"'name'."
+"'masked', 'daemon_reload', ('daemon_reexec' since 2.8), and all except "
+"'daemon_reload' (and 'daemon_reexec' since 2.8) also require 'name'."
 msgstr ""
 
 #: ../../rst/modules/systemd_module.rst:226
 msgid "Before 2.4 you always required 'name'."
 msgstr ""
 
-#: ../../rst/modules/systemd_module.rst:231
+#: ../../rst/modules/systemd_module.rst:227
+msgid "Globs are not supported in name, i.e ``postgres*.service``."
+msgstr ""
+
+#: ../../rst/modules/systemd_module.rst:232
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/systemd_module.rst:277
+#: ../../rst/modules/systemd_module.rst:282
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/systemd_module.rst:278
+#: ../../rst/modules/systemd_module.rst:283
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/systemd_module.rst:1636
+#: ../../rst/modules/systemd_module.rst:1641
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/systemd_module.rst:1641
+#: ../../rst/modules/systemd_module.rst:1646
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/systemd_module.rst:1644
+#: ../../rst/modules/systemd_module.rst:1649
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/systemd_module.rst:1647
+#: ../../rst/modules/systemd_module.rst:1652
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/systemd_module.rst:1649
+#: ../../rst/modules/systemd_module.rst:1654
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/systemd_module.rst:1655
+#: ../../rst/modules/systemd_module.rst:1660
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/systemd_module.rst:1657
+#: ../../rst/modules/systemd_module.rst:1662
 msgid "Ansible Core Team"
 msgstr ""
 
-#: ../../rst/modules/systemd_module.rst:1661
+#: ../../rst/modules/systemd_module.rst:1666
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/systemd.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/systemd.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "Since 2.4, one of the following "
+#~ "options is required 'state', 'enabled', "
+#~ "'masked', 'daemon_reload', and all except "
+#~ "'daemon_reload' also require 'name'."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/systemd.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,95 +36,103 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:509
+#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:510
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:512
+#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:513
 msgid ""
 "When using the module please select the appropriate link_aggregation_type"
 " (lag_type). ``link`` for Port Channel(PC), ``node`` for Virtual Port "
 "Channel(VPC) and ``leaf`` for Leaf Access Port Policy Group."
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:516
+#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:517
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:520
+#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:521
 msgid ""
 "`APIC Management Information Model reference "
 "<https://developer.cisco.com/docs/apic-mim-ref/>`_"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:521
+#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:522
 msgid ""
 "More information about the internal APIC classes **infra:AccBndlGrp** and"
 " **infra:AccPortGrp**."
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:522
+#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:523
 msgid ":ref:`aci_guide`"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:523
+#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:524
 msgid ""
 "Detailed information on how to manage your ACI infrastructure using "
 "Ansible."
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:524
+#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:525
 msgid ":ref:`aci_dev_guide`"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:525
+#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:526
 msgid "Detailed guide on how to write your own Cisco ACI modules to contribute."
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:529
+#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:530
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:606
+#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:607
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:607
+#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:608
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:765
+#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:766
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:770
+#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:771
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:773
+#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:774
 msgid ""
 "This module is :ref:`maintained by an Ansible Partner <modules_support>`."
 " *[certified]*"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:780
+#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:781
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:782
+#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:783
 msgid "Bruno Calogero (@brunocalogero)"
 msgstr ""
 
-#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:786
+#: ../../rst/modules/aci_interface_policy_leaf_policy_group_module.rst:787
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/aci/aci_interface_policy_leaf_policy_group.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/aci/aci_interface_policy_leaf_policy_group.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/aci/aci_interface_policy_leaf_policy_group.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

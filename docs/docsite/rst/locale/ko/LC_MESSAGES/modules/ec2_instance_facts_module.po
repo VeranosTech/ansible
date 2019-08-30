@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,121 +19,121 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/modules/ec2_instance_facts_module.rst:9
-msgid "ec2_instance_facts -- Gather facts about ec2 instances in AWS"
+msgid "ec2_instance_facts -- Gather information about ec2 instances in AWS"
 msgstr ""
 
-#: ../../rst/modules/ec2_instance_facts_module.rst:19
-msgid "Synopsis"
-msgstr ""
-
-#: ../../rst/modules/ec2_instance_facts_module.rst:20
-msgid "Gather facts about ec2 instances in AWS"
-msgstr ""
-
-#: ../../rst/modules/ec2_instance_facts_module.rst:25
-msgid "Requirements"
-msgstr ""
-
-#: ../../rst/modules/ec2_instance_facts_module.rst:26
-msgid "The below requirements are needed on the host that executes this module."
-msgstr ""
-
-#: ../../rst/modules/ec2_instance_facts_module.rst:28
-msgid "boto"
-msgstr ""
-
-#: ../../rst/modules/ec2_instance_facts_module.rst:29
-msgid "boto3"
-msgstr ""
-
-#: ../../rst/modules/ec2_instance_facts_module.rst:30
-msgid "botocore"
-msgstr ""
-
-#: ../../rst/modules/ec2_instance_facts_module.rst:31
-msgid "python >= 2.6"
-msgstr ""
-
-#: ../../rst/modules/ec2_instance_facts_module.rst:35
-msgid "Parameters"
-msgstr ""
-
-#: ../../rst/modules/ec2_instance_facts_module.rst:176
-msgid "Notes"
-msgstr ""
-
-#: ../../rst/modules/ec2_instance_facts_module.rst:179
+#: ../../rst/modules/ec2_instance_facts_module.rst:11
 msgid ""
-"If parameters are not set within the module, the following environment "
-"variables can be used in decreasing order of precedence ``AWS_URL`` or "
-"``EC2_URL``, ``AWS_ACCESS_KEY_ID`` or ``AWS_ACCESS_KEY`` or "
-"``EC2_ACCESS_KEY``, ``AWS_SECRET_ACCESS_KEY`` or ``AWS_SECRET_KEY`` or "
-"``EC2_SECRET_KEY``, ``AWS_SECURITY_TOKEN`` or ``EC2_SECURITY_TOKEN``, "
-"``AWS_REGION`` or ``EC2_REGION``"
+"This is an alias for :ref:`ec2_instance_info <ec2_instance_info_module>`."
+" This name has been **deprecated**. Please update your tasks to use the "
+"new name ``ec2_instance_info`` instead."
 msgstr ""
 
-#: ../../rst/modules/ec2_instance_facts_module.rst:180
-msgid ""
-"Ansible uses the boto configuration file (typically ~/.boto) if no "
-"credentials are provided. See "
-"https://boto.readthedocs.io/en/latest/boto_config_tut.html"
-msgstr ""
+#~ msgid "ec2_instance_facts -- Gather facts about ec2 instances in AWS"
+#~ msgstr ""
 
-#: ../../rst/modules/ec2_instance_facts_module.rst:181
-msgid ""
-"``AWS_REGION`` or ``EC2_REGION`` can be typically be used to specify the "
-"AWS region, when required, but this can also be configured in the boto "
-"config file"
-msgstr ""
+#~ msgid "Synopsis"
+#~ msgstr ""
 
-#: ../../rst/modules/ec2_instance_facts_module.rst:186
-msgid "Examples"
-msgstr ""
+#~ msgid "Gather facts about ec2 instances in AWS"
+#~ msgstr ""
 
-#: ../../rst/modules/ec2_instance_facts_module.rst:221
-msgid "Return Values"
-msgstr ""
+#~ msgid "Requirements"
+#~ msgstr ""
 
-#: ../../rst/modules/ec2_instance_facts_module.rst:222
-msgid ""
-"Common return values are documented :ref:`here <common_return_values>`, "
-"the following are the fields unique to this module:"
-msgstr ""
+#~ msgid ""
+#~ "The below requirements are needed on "
+#~ "the host that executes this module."
+#~ msgstr ""
 
-#: ../../rst/modules/ec2_instance_facts_module.rst:1423
-msgid "Status"
-msgstr ""
+#~ msgid "boto"
+#~ msgstr ""
 
-#: ../../rst/modules/ec2_instance_facts_module.rst:1428
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
-msgstr ""
+#~ msgid "boto3"
+#~ msgstr ""
 
-#: ../../rst/modules/ec2_instance_facts_module.rst:1431
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
-msgstr ""
+#~ msgid "botocore"
+#~ msgstr ""
 
-#: ../../rst/modules/ec2_instance_facts_module.rst:1438
-msgid "Authors"
-msgstr ""
+#~ msgid "python >= 2.6"
+#~ msgstr ""
 
-#: ../../rst/modules/ec2_instance_facts_module.rst:1440
-msgid "Michael Schuett (@michaeljs1990)"
-msgstr ""
+#~ msgid "Parameters"
+#~ msgstr ""
 
-#: ../../rst/modules/ec2_instance_facts_module.rst:1441
-msgid "Rob White (@wimnat)"
-msgstr ""
+#~ msgid "Notes"
+#~ msgstr ""
 
-#: ../../rst/modules/ec2_instance_facts_module.rst:1445
-#, python-format
-msgid ""
-"If you notice any issues in this documentation you can `edit this "
-"document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/ec2_instance_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
-" to improve it."
-msgstr ""
+#~ msgid ""
+#~ "If parameters are not set within "
+#~ "the module, the following environment "
+#~ "variables can be used in decreasing "
+#~ "order of precedence ``AWS_URL`` or "
+#~ "``EC2_URL``, ``AWS_ACCESS_KEY_ID`` or "
+#~ "``AWS_ACCESS_KEY`` or ``EC2_ACCESS_KEY``, "
+#~ "``AWS_SECRET_ACCESS_KEY`` or ``AWS_SECRET_KEY`` or"
+#~ " ``EC2_SECRET_KEY``, ``AWS_SECURITY_TOKEN`` or "
+#~ "``EC2_SECURITY_TOKEN``, ``AWS_REGION`` or "
+#~ "``EC2_REGION``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Ansible uses the boto configuration file"
+#~ " (typically ~/.boto) if no credentials "
+#~ "are provided. See "
+#~ "https://boto.readthedocs.io/en/latest/boto_config_tut.html"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``AWS_REGION`` or ``EC2_REGION`` can be "
+#~ "typically be used to specify the "
+#~ "AWS region, when required, but this "
+#~ "can also be configured in the boto"
+#~ " config file"
+#~ msgstr ""
+
+#~ msgid "Examples"
+#~ msgstr ""
+
+#~ msgid "Return Values"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Common return values are documented "
+#~ ":ref:`here <common_return_values>`, the following"
+#~ " are the fields unique to this "
+#~ "module:"
+#~ msgstr ""
+
+#~ msgid "Status"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid "Authors"
+#~ msgstr ""
+
+#~ msgid "Michael Schuett (@michaeljs1990)"
+#~ msgstr ""
+
+#~ msgid "Rob White (@wimnat)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/ec2_instance_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

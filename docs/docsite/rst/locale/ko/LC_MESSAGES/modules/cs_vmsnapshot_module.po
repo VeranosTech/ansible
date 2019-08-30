@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,39 +22,39 @@ msgstr ""
 msgid "cs_vmsnapshot -- Manages VM snapshots on Apache CloudStack based clouds"
 msgstr ""
 
-#: ../../rst/modules/cs_vmsnapshot_module.rst:19
+#: ../../rst/modules/cs_vmsnapshot_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/cs_vmsnapshot_module.rst:20
+#: ../../rst/modules/cs_vmsnapshot_module.rst:19
 msgid "Create, remove and revert VM from snapshots."
 msgstr ""
 
-#: ../../rst/modules/cs_vmsnapshot_module.rst:25
+#: ../../rst/modules/cs_vmsnapshot_module.rst:24
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/cs_vmsnapshot_module.rst:26
+#: ../../rst/modules/cs_vmsnapshot_module.rst:25
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/cs_vmsnapshot_module.rst:28
+#: ../../rst/modules/cs_vmsnapshot_module.rst:27
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/cs_vmsnapshot_module.rst:29
+#: ../../rst/modules/cs_vmsnapshot_module.rst:28
 msgid "cs >= 0.6.10"
 msgstr ""
 
-#: ../../rst/modules/cs_vmsnapshot_module.rst:33
+#: ../../rst/modules/cs_vmsnapshot_module.rst:32
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/cs_vmsnapshot_module.rst:303
+#: ../../rst/modules/cs_vmsnapshot_module.rst:302
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/cs_vmsnapshot_module.rst:306
+#: ../../rst/modules/cs_vmsnapshot_module.rst:305
 msgid ""
 "Ansible uses the ``cs`` library's configuration method if credentials are"
 " not provided by the arguments ``api_url``, ``api_key``, ``api_secret``. "
@@ -70,60 +70,68 @@ msgid ""
 "https://github.com/exoscale/cs for more information."
 msgstr ""
 
-#: ../../rst/modules/cs_vmsnapshot_module.rst:307
+#: ../../rst/modules/cs_vmsnapshot_module.rst:306
 msgid ""
 "A detailed guide about cloudstack modules can be found in the `CloudStack"
 " Cloud Guide <../scenario_guides/guide_cloudstack.html>`_."
 msgstr ""
 
-#: ../../rst/modules/cs_vmsnapshot_module.rst:308
+#: ../../rst/modules/cs_vmsnapshot_module.rst:307
 msgid "This module supports check mode."
 msgstr ""
 
-#: ../../rst/modules/cs_vmsnapshot_module.rst:313
+#: ../../rst/modules/cs_vmsnapshot_module.rst:312
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/cs_vmsnapshot_module.rst:343
+#: ../../rst/modules/cs_vmsnapshot_module.rst:342
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/cs_vmsnapshot_module.rst:344
+#: ../../rst/modules/cs_vmsnapshot_module.rst:343
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/cs_vmsnapshot_module.rst:502
+#: ../../rst/modules/cs_vmsnapshot_module.rst:501
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/cs_vmsnapshot_module.rst:507
+#: ../../rst/modules/cs_vmsnapshot_module.rst:506
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/cs_vmsnapshot_module.rst:510
+#: ../../rst/modules/cs_vmsnapshot_module.rst:509
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/cs_vmsnapshot_module.rst:517
+#: ../../rst/modules/cs_vmsnapshot_module.rst:516
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/cs_vmsnapshot_module.rst:519
+#: ../../rst/modules/cs_vmsnapshot_module.rst:518
 msgid "René Moser (@resmo)"
 msgstr ""
 
-#: ../../rst/modules/cs_vmsnapshot_module.rst:523
+#: ../../rst/modules/cs_vmsnapshot_module.rst:522
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/cloudstack/cs_vmsnapshot.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/cloudstack/cs_vmsnapshot.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/cloudstack/cs_vmsnapshot.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

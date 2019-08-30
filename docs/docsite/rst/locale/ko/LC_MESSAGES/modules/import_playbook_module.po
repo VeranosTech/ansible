@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,70 +31,133 @@ msgid "Includes a file with a list of plays to be executed."
 msgstr ""
 
 #: ../../rst/modules/import_playbook_module.rst:21
-msgid ""
-"Files with a list of plays can only be included at the top level. You "
-"cannot use this action inside a play."
+msgid "Files with a list of plays can only be included at the top level."
 msgstr ""
 
-#: ../../rst/modules/import_playbook_module.rst:27
+#: ../../rst/modules/import_playbook_module.rst:22
+msgid "You cannot use this action inside a play."
+msgstr ""
+
+#: ../../rst/modules/import_playbook_module.rst:28
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/import_playbook_module.rst:55
+#: ../../rst/modules/import_playbook_module.rst:56
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/import_playbook_module.rst:58
+#: ../../rst/modules/import_playbook_module.rst:59
 msgid ""
 "This is a core feature of Ansible, rather than a module, and cannot be "
 "overridden like a module."
 msgstr ""
 
 #: ../../rst/modules/import_playbook_module.rst:63
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/import_playbook_module.rst:67
+msgid ":ref:`import_role_module`"
+msgstr ""
+
+#: ../../rst/modules/import_playbook_module.rst:68
+msgid "The official documentation on the **import_role** module."
+msgstr ""
+
+#: ../../rst/modules/import_playbook_module.rst:69
+msgid ":ref:`import_tasks_module`"
+msgstr ""
+
+#: ../../rst/modules/import_playbook_module.rst:70
+msgid "The official documentation on the **import_tasks** module."
+msgstr ""
+
+#: ../../rst/modules/import_playbook_module.rst:71
+msgid ":ref:`include_role_module`"
+msgstr ""
+
+#: ../../rst/modules/import_playbook_module.rst:72
+msgid "The official documentation on the **include_role** module."
+msgstr ""
+
+#: ../../rst/modules/import_playbook_module.rst:73
+msgid ":ref:`include_tasks_module`"
+msgstr ""
+
+#: ../../rst/modules/import_playbook_module.rst:74
+msgid "The official documentation on the **include_tasks** module."
+msgstr ""
+
+#: ../../rst/modules/import_playbook_module.rst:75
+msgid ":ref:`playbooks_reuse_includes`"
+msgstr ""
+
+#: ../../rst/modules/import_playbook_module.rst:76
+msgid ""
+"More information related to including and importing playbooks, roles and "
+"tasks."
+msgstr ""
+
+#: ../../rst/modules/import_playbook_module.rst:80
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/import_playbook_module.rst:91
+#: ../../rst/modules/import_playbook_module.rst:108
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/import_playbook_module.rst:96
+#: ../../rst/modules/import_playbook_module.rst:113
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/import_playbook_module.rst:99
+#: ../../rst/modules/import_playbook_module.rst:116
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/import_playbook_module.rst:102
+#: ../../rst/modules/import_playbook_module.rst:119
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/import_playbook_module.rst:104
+#: ../../rst/modules/import_playbook_module.rst:121
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/import_playbook_module.rst:110
+#: ../../rst/modules/import_playbook_module.rst:127
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/import_playbook_module.rst:112
+#: ../../rst/modules/import_playbook_module.rst:129
 msgid "Ansible Core Team (@ansible)"
 msgstr ""
 
-#: ../../rst/modules/import_playbook_module.rst:116
+#: ../../rst/modules/import_playbook_module.rst:133
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/import_playbook.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/import_playbook.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "Files with a list of plays can "
+#~ "only be included at the top level."
+#~ " You cannot use this action inside"
+#~ " a play."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/import_playbook.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

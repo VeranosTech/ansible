@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,70 +30,111 @@ msgstr ""
 msgid ""
 "This module prints statements during execution and can be useful for "
 "debugging variables or expressions without necessarily halting the "
-"playbook. Useful for debugging together with the 'when:' directive."
+"playbook."
 msgstr ""
 
-#: ../../rst/modules/debug_module.rst:20 ../../rst/modules/debug_module.rst:86
+#: ../../rst/modules/debug_module.rst:20
+msgid "Useful for debugging together with the 'when:' directive."
+msgstr ""
+
+#: ../../rst/modules/debug_module.rst:21 ../../rst/modules/debug_module.rst:88
 msgid "This module is also supported for Windows targets."
 msgstr ""
 
-#: ../../rst/modules/debug_module.rst:26
+#: ../../rst/modules/debug_module.rst:27
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/debug_module.rst:83
+#: ../../rst/modules/debug_module.rst:85
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/debug_module.rst:91
+#: ../../rst/modules/debug_module.rst:92
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/debug_module.rst:96
+msgid ":ref:`assert_module`"
+msgstr ""
+
+#: ../../rst/modules/debug_module.rst:97
+msgid "The official documentation on the **assert** module."
+msgstr ""
+
+#: ../../rst/modules/debug_module.rst:98
+msgid ":ref:`fail_module`"
+msgstr ""
+
+#: ../../rst/modules/debug_module.rst:99
+msgid "The official documentation on the **fail** module."
+msgstr ""
+
+#: ../../rst/modules/debug_module.rst:103
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/debug_module.rst:127
+#: ../../rst/modules/debug_module.rst:140
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/debug_module.rst:132
+#: ../../rst/modules/debug_module.rst:145
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/debug_module.rst:135
+#: ../../rst/modules/debug_module.rst:148
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/debug_module.rst:138
+#: ../../rst/modules/debug_module.rst:151
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/debug_module.rst:140
+#: ../../rst/modules/debug_module.rst:153
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/debug_module.rst:146
+#: ../../rst/modules/debug_module.rst:159
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/debug_module.rst:148
+#: ../../rst/modules/debug_module.rst:161
 msgid "Dag Wieers (@dagwieers)"
 msgstr ""
 
-#: ../../rst/modules/debug_module.rst:149
+#: ../../rst/modules/debug_module.rst:162
 msgid "Michael DeHaan"
 msgstr ""
 
-#: ../../rst/modules/debug_module.rst:153
+#: ../../rst/modules/debug_module.rst:166
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/debug.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/debug.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module prints statements during "
+#~ "execution and can be useful for "
+#~ "debugging variables or expressions without "
+#~ "necessarily halting the playbook. Useful "
+#~ "for debugging together with the 'when:'"
+#~ " directive."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/debug.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

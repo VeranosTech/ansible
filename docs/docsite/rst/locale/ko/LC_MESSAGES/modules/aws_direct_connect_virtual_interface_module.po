@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,11 +62,11 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/aws_direct_connect_virtual_interface_module.rst:329
+#: ../../rst/modules/aws_direct_connect_virtual_interface_module.rst:346
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/aws_direct_connect_virtual_interface_module.rst:332
+#: ../../rst/modules/aws_direct_connect_virtual_interface_module.rst:349
 msgid ""
 "If parameters are not set within the module, the following environment "
 "variables can be used in decreasing order of precedence ``AWS_URL`` or "
@@ -76,64 +76,72 @@ msgid ""
 "``AWS_REGION`` or ``EC2_REGION``"
 msgstr ""
 
-#: ../../rst/modules/aws_direct_connect_virtual_interface_module.rst:333
+#: ../../rst/modules/aws_direct_connect_virtual_interface_module.rst:350
 msgid ""
 "Ansible uses the boto configuration file (typically ~/.boto) if no "
 "credentials are provided. See "
 "https://boto.readthedocs.io/en/latest/boto_config_tut.html"
 msgstr ""
 
-#: ../../rst/modules/aws_direct_connect_virtual_interface_module.rst:334
+#: ../../rst/modules/aws_direct_connect_virtual_interface_module.rst:351
 msgid ""
 "``AWS_REGION`` or ``EC2_REGION`` can be typically be used to specify the "
 "AWS region, when required, but this can also be configured in the boto "
 "config file"
 msgstr ""
 
-#: ../../rst/modules/aws_direct_connect_virtual_interface_module.rst:339
+#: ../../rst/modules/aws_direct_connect_virtual_interface_module.rst:356
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/aws_direct_connect_virtual_interface_module.rst:363
+#: ../../rst/modules/aws_direct_connect_virtual_interface_module.rst:380
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/aws_direct_connect_virtual_interface_module.rst:364
+#: ../../rst/modules/aws_direct_connect_virtual_interface_module.rst:381
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/aws_direct_connect_virtual_interface_module.rst:719
+#: ../../rst/modules/aws_direct_connect_virtual_interface_module.rst:736
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/aws_direct_connect_virtual_interface_module.rst:724
+#: ../../rst/modules/aws_direct_connect_virtual_interface_module.rst:741
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/aws_direct_connect_virtual_interface_module.rst:727
+#: ../../rst/modules/aws_direct_connect_virtual_interface_module.rst:744
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/aws_direct_connect_virtual_interface_module.rst:734
+#: ../../rst/modules/aws_direct_connect_virtual_interface_module.rst:751
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/aws_direct_connect_virtual_interface_module.rst:736
+#: ../../rst/modules/aws_direct_connect_virtual_interface_module.rst:753
 msgid "Sloane Hertel (@s-hertel)"
 msgstr ""
 
-#: ../../rst/modules/aws_direct_connect_virtual_interface_module.rst:740
+#: ../../rst/modules/aws_direct_connect_virtual_interface_module.rst:757
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/aws_direct_connect_virtual_interface.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/aws_direct_connect_virtual_interface.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/aws_direct_connect_virtual_interface.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

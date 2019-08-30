@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,90 +19,141 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/modules/netapp_e_storagepool_module.rst:9
-msgid "netapp_e_storagepool -- NetApp E-Series manage disk groups and disk pools"
+msgid ""
+"netapp_e_storagepool -- NetApp E-Series manage volume groups and disk "
+"pools"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_storagepool_module.rst:19
+#: ../../rst/modules/netapp_e_storagepool_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_storagepool_module.rst:20
+#: ../../rst/modules/netapp_e_storagepool_module.rst:19
 msgid ""
-"Create or remove disk groups and disk pools for NetApp E-series storage "
-"arrays."
+"Create or remove volume groups and disk pools for NetApp E-series storage"
+" arrays."
 msgstr ""
 
-#: ../../rst/modules/netapp_e_storagepool_module.rst:26
+#: ../../rst/modules/netapp_e_storagepool_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_storagepool_module.rst:347
+#: ../../rst/modules/netapp_e_storagepool_module.rst:380
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_storagepool_module.rst:350
+#: ../../rst/modules/netapp_e_storagepool_module.rst:383
+msgid ""
+"The expansion operations are non-blocking due to the time consuming "
+"nature of expanding volume groups"
+msgstr ""
+
+#: ../../rst/modules/netapp_e_storagepool_module.rst:384
+msgid ""
+"Traditional volume groups (raid0, raid1, raid5, raid6) are performed in "
+"steps dictated by the storage array. Each required step will be attempted"
+" until the request fails which is likely because of the required "
+"expansion time."
+msgstr ""
+
+#: ../../rst/modules/netapp_e_storagepool_module.rst:385
+msgid ""
+"raidUnsupported will be treated as raid0, raidAll as raidDiskPool and "
+"raid3 as raid5."
+msgstr ""
+
+#: ../../rst/modules/netapp_e_storagepool_module.rst:386
+msgid ""
+"Tray loss protection and drawer loss protection will be chosen if at all "
+"possible."
+msgstr ""
+
+#: ../../rst/modules/netapp_e_storagepool_module.rst:387
 msgid ""
 "The E-Series Ansible modules require either an instance of the Web "
 "Services Proxy (WSP), to be available to manage the storage-system, or an"
 " E-Series storage-system that supports the Embedded Web Services API."
 msgstr ""
 
-#: ../../rst/modules/netapp_e_storagepool_module.rst:351
+#: ../../rst/modules/netapp_e_storagepool_module.rst:388
 msgid ""
 "Embedded Web Services is currently available on the E2800, E5700, EF570, "
 "and newer hardware models."
 msgstr ""
 
-#: ../../rst/modules/netapp_e_storagepool_module.rst:352
+#: ../../rst/modules/netapp_e_storagepool_module.rst:389
 msgid ""
 ":ref:`netapp_e_storage_system <netapp_e_storage_system_module>` may be "
 "utilized for configuring the systems managed by a WSP instance."
 msgstr ""
 
-#: ../../rst/modules/netapp_e_storagepool_module.rst:357
+#: ../../rst/modules/netapp_e_storagepool_module.rst:394
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_storagepool_module.rst:376
+#: ../../rst/modules/netapp_e_storagepool_module.rst:413
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_storagepool_module.rst:377
+#: ../../rst/modules/netapp_e_storagepool_module.rst:414
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_storagepool_module.rst:405
+#: ../../rst/modules/netapp_e_storagepool_module.rst:442
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_storagepool_module.rst:410
+#: ../../rst/modules/netapp_e_storagepool_module.rst:447
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_storagepool_module.rst:413
+#: ../../rst/modules/netapp_e_storagepool_module.rst:450
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_storagepool_module.rst:420
+#: ../../rst/modules/netapp_e_storagepool_module.rst:457
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_storagepool_module.rst:422
+#: ../../rst/modules/netapp_e_storagepool_module.rst:459
 msgid "Kevin Hulquest (@hulquest)"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_storagepool_module.rst:426
+#: ../../rst/modules/netapp_e_storagepool_module.rst:460
+msgid "Nathan Swartz (@ndswartz)"
+msgstr ""
+
+#: ../../rst/modules/netapp_e_storagepool_module.rst:464
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/netapp_e_storagepool.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/netapp_e_storagepool.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "netapp_e_storagepool -- NetApp E-Series manage"
+#~ " disk groups and disk pools"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Create or remove disk groups and "
+#~ "disk pools for NetApp E-series storage"
+#~ " arrays."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/netapp_e_storagepool.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,109 +72,129 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/gcp_compute_address_module.rst:242
+#: ../../rst/modules/gcp_compute_address_module.rst:264
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/gcp_compute_address_module.rst:245
+#: ../../rst/modules/gcp_compute_address_module.rst:267
 msgid ""
 "API Reference: "
 "https://cloud.google.com/compute/docs/reference/beta/addresses"
 msgstr ""
 
-#: ../../rst/modules/gcp_compute_address_module.rst:246
+#: ../../rst/modules/gcp_compute_address_module.rst:268
 msgid ""
 "Reserving a Static External IP Address: "
 "https://cloud.google.com/compute/docs/instances-and-network"
 msgstr ""
 
-#: ../../rst/modules/gcp_compute_address_module.rst:247
+#: ../../rst/modules/gcp_compute_address_module.rst:269
 msgid ""
 "Reserving a Static Internal IP Address: "
 "https://cloud.google.com/compute/docs/ip-addresses/reserve-static-"
 "internal-ip-address"
 msgstr ""
 
-#: ../../rst/modules/gcp_compute_address_module.rst:248
+#: ../../rst/modules/gcp_compute_address_module.rst:270
 msgid ""
-"For authentication, you can set service_account_file using the "
-"``GCP_SERVICE_ACCOUNT_FILE`` env variable."
+"for authentication, you can set service_account_file using the "
+"c(gcp_service_account_file) env variable."
 msgstr ""
 
-#: ../../rst/modules/gcp_compute_address_module.rst:249
+#: ../../rst/modules/gcp_compute_address_module.rst:271
+msgid ""
+"for authentication, you can set service_account_contents using the "
+"c(GCP_SERVICE_ACCOUNT_CONTENTS) env variable."
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_address_module.rst:272
 msgid ""
 "For authentication, you can set service_account_email using the "
 "``GCP_SERVICE_ACCOUNT_EMAIL`` env variable."
 msgstr ""
 
-#: ../../rst/modules/gcp_compute_address_module.rst:250
+#: ../../rst/modules/gcp_compute_address_module.rst:273
 msgid ""
 "For authentication, you can set auth_kind using the ``GCP_AUTH_KIND`` env"
 " variable."
 msgstr ""
 
-#: ../../rst/modules/gcp_compute_address_module.rst:251
+#: ../../rst/modules/gcp_compute_address_module.rst:274
 msgid ""
 "For authentication, you can set scopes using the ``GCP_SCOPES`` env "
 "variable."
 msgstr ""
 
-#: ../../rst/modules/gcp_compute_address_module.rst:252
+#: ../../rst/modules/gcp_compute_address_module.rst:275
 msgid ""
 "Environment variables values will only be used if the playbook values are"
 " not set."
 msgstr ""
 
-#: ../../rst/modules/gcp_compute_address_module.rst:253
+#: ../../rst/modules/gcp_compute_address_module.rst:276
 msgid ""
 "The *service_account_email* and *service_account_file* options are "
 "mutually exclusive."
 msgstr ""
 
-#: ../../rst/modules/gcp_compute_address_module.rst:258
+#: ../../rst/modules/gcp_compute_address_module.rst:281
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/gcp_compute_address_module.rst:276
+#: ../../rst/modules/gcp_compute_address_module.rst:299
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/gcp_compute_address_module.rst:277
+#: ../../rst/modules/gcp_compute_address_module.rst:300
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/gcp_compute_address_module.rst:405
+#: ../../rst/modules/gcp_compute_address_module.rst:428
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/gcp_compute_address_module.rst:410
+#: ../../rst/modules/gcp_compute_address_module.rst:433
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/gcp_compute_address_module.rst:413
+#: ../../rst/modules/gcp_compute_address_module.rst:436
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/gcp_compute_address_module.rst:420
+#: ../../rst/modules/gcp_compute_address_module.rst:443
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/gcp_compute_address_module.rst:422
+#: ../../rst/modules/gcp_compute_address_module.rst:445
 msgid "Google Inc. (@googlecloudplatform)"
 msgstr ""
 
-#: ../../rst/modules/gcp_compute_address_module.rst:426
+#: ../../rst/modules/gcp_compute_address_module.rst:449
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/gcp_compute_address.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/gcp_compute_address.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "For authentication, you can set "
+#~ "service_account_file using the "
+#~ "``GCP_SERVICE_ACCOUNT_FILE`` env variable."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/gcp_compute_address.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

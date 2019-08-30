@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,283 +30,288 @@ msgstr ":strong:`'playbook'이라는 단일 작업을 정의하고 지정된 호
 msgid "Synopsis"
 msgstr "개요"
 
-#: ../../rst/cli/ansible.rst:27
+#: ../../rst/cli/ansible.rst:41
 msgid "Description"
 msgstr "설명"
 
-#: ../../rst/cli/ansible.rst:30
+#: ../../rst/cli/ansible.rst:44
 msgid ""
 "is an extra-simple tool/framework/API for doing 'remote things'. this "
 "command allows you to define and run a single task 'playbook' against a "
 "set of hosts"
 msgstr ""
-"'원격 작업'을 하기 위한 간단한 도구/프레임워크/API이다. "
-"이 명령을 사용하면 'playbook'이라는 단일 작업을 정의하고 지정된 호스트 그룹에서 "
-"실행 시킬 수 있다."
+"'원격 작업'을 하기 위한 간단한 도구/프레임워크/API이다. 이 명령을 사용하면 'playbook'이라는 단일 작업을 정의하고 "
+"지정된 호스트 그룹에서 실행 시킬 수 있다."
 
-#: ../../rst/cli/ansible.rst:35
+#: ../../rst/cli/ansible.rst:49
 msgid "Common Options"
 msgstr "공통 옵션"
 
-#: ../../rst/cli/ansible.rst:42
-msgid "ask for su password (deprecated, use become)"
-msgstr "su 패스워드를 묻는다. (없어짐. become을 사용할 것.)"
-
-#: ../../rst/cli/ansible.rst:47
-msgid "ask for sudo password (deprecated, use become)"
-msgstr "sudo 패스워드를 묻는다. (없어짐. become을 사용할 것.)"
-
-#: ../../rst/cli/ansible.rst:52
+#: ../../rst/cli/ansible.rst:56
 msgid "ask for vault password"
 msgstr "valut 패스워드를 묻는다."
 
-#: ../../rst/cli/ansible.rst:57
+#: ../../rst/cli/ansible.rst:61
+#, python-format
 msgid ""
-"privilege escalation method to use (default=sudo), valid choices: [ sudo "
-"| su | pbrun | pfexec | doas | dzdo | ksu | runas | pmrun | enable | "
-"machinectl ]"
+"privilege escalation method to use (default=%(default)s), use `ansible-"
+"doc -t become -l` to list valid choices."
 msgstr ""
-"권한 상승 방법의 선택. (디폴트는 sudo) 가능한 옵션은: "
-"[ sudo | su | pbrun | pfexec | doas | dzdo | ksu | runas | pmrun | enable | machinectl ]"
 
-#: ../../rst/cli/ansible.rst:62
+#: ../../rst/cli/ansible.rst:66
 msgid "run operations as this user (default=root)"
 msgstr "이 사용자로 명령 실행 (디폴트는 root)"
 
-#: ../../rst/cli/ansible.rst:67
+#: ../../rst/cli/ansible.rst:71
 msgid "outputs a list of matching hosts; does not execute anything else"
 msgstr "해당되는 호스트 목록 출력. 그외는 아무것도 하지 않는다."
 
-#: ../../rst/cli/ansible.rst:72
+#: ../../rst/cli/ansible.rst:76
+#, fuzzy
 msgid ""
-"Since this tool does not use playbooks, use this as a subsitute playbook "
-"directory.This sets the relative path for many features including roles/ "
-"group_vars/ etc."
+"Since this tool does not use playbooks, use this as a substitute playbook"
+" directory.This sets the relative path for many features including roles/"
+" group_vars/ etc."
 msgstr ""
-"이 명령은 플레이북을 실행시키지 않기 때문에 플레이북 디렉토리의 대용으로 사용한다. "
-"상태 경로를 지정하여 roles/ group_vars/  등 의 다양한 기능을 쓸 수 있다."
+"이 명령은 플레이북을 실행시키지 않기 때문에 플레이북 디렉토리의 대용으로 사용한다. 상태 경로를 지정하여 roles/ "
+"group_vars/  등 의 다양한 기능을 쓸 수 있다."
 
-#: ../../rst/cli/ansible.rst:77
+#: ../../rst/cli/ansible.rst:81
 msgid "use this file to authenticate the connection"
 msgstr "이 파일로 접속 인증"
 
-#: ../../rst/cli/ansible.rst:82
+#: ../../rst/cli/ansible.rst:86
 msgid "specify extra arguments to pass to scp only (e.g. -l)"
 msgstr "scp에만 전달하는 추가 인수 지정"
 
-#: ../../rst/cli/ansible.rst:87
+#: ../../rst/cli/ansible.rst:91
 msgid "specify extra arguments to pass to sftp only (e.g. -f, -l)"
 msgstr "sftp에만 전달하는 추가 인수 지정"
 
-#: ../../rst/cli/ansible.rst:92
+#: ../../rst/cli/ansible.rst:96
 msgid "specify common arguments to pass to sftp/scp/ssh (e.g. ProxyCommand)"
 msgstr "sftp/scp/ssh에 전달하는 공통 인수 지정"
 
-#: ../../rst/cli/ansible.rst:97
+#: ../../rst/cli/ansible.rst:101
 msgid "specify extra arguments to pass to ssh only (e.g. -R)"
 msgstr "ssh에만 전달하는 추가 인수 지정"
 
-#: ../../rst/cli/ansible.rst:102
+#: ../../rst/cli/ansible.rst:106
 msgid "perform a syntax check on the playbook, but do not execute it"
 msgstr "실행하지 않고 문법만 확인한다."
 
-#: ../../rst/cli/ansible.rst:107
+#: ../../rst/cli/ansible.rst:111
 msgid "the vault identity to use"
 msgstr "사용할 valut 아이디 지정"
 
-#: ../../rst/cli/ansible.rst:112
+#: ../../rst/cli/ansible.rst:116
 msgid "vault password file"
 msgstr "vault 패스워드 파일"
 
-#: ../../rst/cli/ansible.rst:117
+#: ../../rst/cli/ansible.rst:121
 msgid ""
 "show program's version number, config file location, configured module "
 "search path, module location, executable location and exit"
-msgstr ""
-"프로그램의 버전, 설정 파일 위치, 모듈 검색 패스, 모듈 위치, 실행 위치 등을 보여준다."
+msgstr "프로그램의 버전, 설정 파일 위치, 모듈 검색 패스, 모듈 위치, 실행 위치 등을 보여준다."
 
-#: ../../rst/cli/ansible.rst:122
+#: ../../rst/cli/ansible.rst:126
 msgid "run asynchronously, failing after X seconds (default=N/A)"
 msgstr "비동기적 실행. X 초후에 실패반환 (디폴트 없음)"
 
-#: ../../rst/cli/ansible.rst:127
+#: ../../rst/cli/ansible.rst:131
 msgid ""
 "don't make any changes; instead, try to predict some of the changes that "
 "may occur"
 msgstr "실제로 실행하지 않고 어떤 것이 바뀌는지만 보인다."
 
-#: ../../rst/cli/ansible.rst:132
+#: ../../rst/cli/ansible.rst:136
 msgid ""
 "when changing (small) files and templates, show the differences in those "
 "files; works great with --check"
 msgstr "파일과 템플릿이 변화되면 변화된 부분을 보여준다. --check와 같이 사용하면 좋다."
 
-#: ../../rst/cli/ansible.rst:137
+#: ../../rst/cli/ansible.rst:141
 msgid "ask for privilege escalation password"
 msgstr "권한상승용 패스워드를 묻는다."
 
-#: ../../rst/cli/ansible.rst:142
+#: ../../rst/cli/ansible.rst:146
+#, fuzzy
 msgid ""
 "prepend colon-separated path(s) to module library "
-"(default=['/Users/joelkim/.ansible/plugins/modules', "
-"'/usr/share/ansible/plugins/modules'])"
+"(default=~/.ansible/plugins/modules:/usr/share/ansible/plugins/modules)"
 msgstr ""
-"모듈라이브러리 앞에 콜론 구분자를 붙인다. "
-"(디폴트는 ['/Users/joelkim/.ansible/plugins/modules', "
-"'/usr/share/ansible/plugins/modules'])"
+"모듈라이브러리 앞에 콜론 구분자를 붙인다. (디폴트는 ['/Users/joelkim/.ansible/plugins/modules',"
+" '/usr/share/ansible/plugins/modules'])"
 
-#: ../../rst/cli/ansible.rst:147
+#: ../../rst/cli/ansible.rst:151
 msgid "set the poll interval if using -B (default=15)"
 msgstr "-B 옵션을 사용할 경우 폴링 간격을 걸정한다. (디폴트 15)"
 
-#: ../../rst/cli/ansible.rst:152
-msgid ""
-"run operations with su as this user (default=None) (deprecated, use "
-"become)"
-msgstr "지정 사용자(디폴트 없음)에 대해 su 명령으로 실행한다. (없어짐. become을 사용할 것.)"
-
-#: ../../rst/cli/ansible.rst:157
-msgid "run operations with su (deprecated, use become)"
-msgstr "su로 명령을 실행 (없어짐. become을 사용할 것.)"
-
-#: ../../rst/cli/ansible.rst:162
+#: ../../rst/cli/ansible.rst:156
 msgid "override the connection timeout in seconds (default=10)"
 msgstr ""
 
-#: ../../rst/cli/ansible.rst:167
-msgid "desired sudo user (default=root) (deprecated, use become)"
-msgstr "sudo user (없어짐. become을 사용할 것.)"
-
-#: ../../rst/cli/ansible.rst:172
+#: ../../rst/cli/ansible.rst:161
 msgid "module arguments"
 msgstr "모듈 인수"
 
-#: ../../rst/cli/ansible.rst:177
+#: ../../rst/cli/ansible.rst:166
 msgid "run operations with become (does not imply password prompting)"
 msgstr "become으로 명령 실행 (패스워드를 묻지 않는다)"
 
-#: ../../rst/cli/ansible.rst:182
+#: ../../rst/cli/ansible.rst:171
 msgid "connection type to use (default=smart)"
 msgstr "사용할 접속 유형 (디폴트는 smart)"
 
-#: ../../rst/cli/ansible.rst:187
+#: ../../rst/cli/ansible.rst:176
 msgid ""
 "set additional variables as key=value or YAML/JSON, if filename prepend "
 "with @"
 msgstr "key=value 형태로 추가 변수 설정. 만약 filename이 @로 시작하면 YAML/JSON 사용"
 
-#: ../../rst/cli/ansible.rst:192
+#: ../../rst/cli/ansible.rst:181
 msgid "specify number of parallel processes to use (default=5)"
 msgstr "동시에 사용할 병렬 프로세스 수 지정 (디폴트 15)"
 
-#: ../../rst/cli/ansible.rst:197
+#: ../../rst/cli/ansible.rst:186
 msgid "show this help message and exit"
 msgstr "이 도움말을 보여준다."
 
-#: ../../rst/cli/ansible.rst:202
+#: ../../rst/cli/ansible.rst:191
 msgid ""
 "specify inventory host path or comma separated host list. --inventory-"
 "file is deprecated"
-msgstr ""
-"인벤토리 호스트 경로 또는 콤마로 분리된 호스트 리스트를 지정. "
-"--inventory-file 옵션은 없어짐."
+msgstr "인벤토리 호스트 경로 또는 콤마로 분리된 호스트 리스트를 지정. --inventory-file 옵션은 없어짐."
 
-#: ../../rst/cli/ansible.rst:207
+#: ../../rst/cli/ansible.rst:196
 msgid "ask for connection password"
 msgstr "접속 패스워드를 묻는다."
 
-#: ../../rst/cli/ansible.rst:212
+#: ../../rst/cli/ansible.rst:201
 msgid "further limit selected hosts to an additional pattern"
 msgstr "추가적인 패턴으로 호스트를 제한한다."
 
-#: ../../rst/cli/ansible.rst:217
+#: ../../rst/cli/ansible.rst:206
 msgid "module name to execute (default=command)"
 msgstr "실행할 모듈 이름 (디폴트는 command)"
 
-#: ../../rst/cli/ansible.rst:222
+#: ../../rst/cli/ansible.rst:211
 msgid "condense output"
 msgstr "압축된 출력"
 
-#: ../../rst/cli/ansible.rst:227
-msgid "run operations with sudo (nopasswd) (deprecated, use become)"
-msgstr "sudo로 명령 실행 (없어짐. become을 사용할 것.)"
-
-#: ../../rst/cli/ansible.rst:232
+#: ../../rst/cli/ansible.rst:216
 msgid "log output to this directory"
 msgstr "이 디렉토리에 출력 로그 생성"
 
-#: ../../rst/cli/ansible.rst:237
+#: ../../rst/cli/ansible.rst:221
 msgid "connect as this user (default=None)"
 msgstr "지정 사용자로 접속 (디폴트 없음)"
 
-#: ../../rst/cli/ansible.rst:242
+#: ../../rst/cli/ansible.rst:226
 msgid "verbose mode (-vvv for more, -vvvv to enable connection debugging)"
 msgstr "verbose 모드 (-vvv는 설명이 더 많다.  -vvvv 는 접속 디버깅이 가능)"
 
-#: ../../rst/cli/ansible.rst:251
+#: ../../rst/cli/ansible.rst:235
 msgid "Environment"
 msgstr "환경"
 
-#: ../../rst/cli/ansible.rst:253
+#: ../../rst/cli/ansible.rst:237
 msgid "The following environment variables may be specified."
 msgstr "다음 환경변수를 설정할 수 있다."
 
-#: ../../rst/cli/ansible.rst:257
+#: ../../rst/cli/ansible.rst:241
 msgid ":envvar:`ANSIBLE_CONFIG` -- Override the default ansible config file"
 msgstr ":envvar:`ANSIBLE_CONFIG` -- Ansible 설정 파일의 값을 덮어쓴다."
 
-#: ../../rst/cli/ansible.rst:259
+#: ../../rst/cli/ansible.rst:243
 msgid "Many more are available for most options in ansible.cfg"
 msgstr "ansible.cfg에는 더 많은 옵션을 사용할 수 있다."
 
-#: ../../rst/cli/ansible.rst:263
+#: ../../rst/cli/ansible.rst:247
 msgid "Files"
 msgstr "파일"
 
-#: ../../rst/cli/ansible.rst:266
+#: ../../rst/cli/ansible.rst:250
 msgid ":file:`/etc/ansible/ansible.cfg` -- Config file, used if present"
 msgstr ":file:`/etc/ansible/ansible.cfg` -- 설정파일. 있으면 사용"
 
-#: ../../rst/cli/ansible.rst:268
+#: ../../rst/cli/ansible.rst:252
 msgid ""
 ":file:`~/.ansible.cfg` -- User config file, overrides the default config "
 "if present"
-msgstr ""
-":file:`~/.ansible.cfg` -- 사용자 설정 파일, 존재하면 기본 설정 파일에 우선"
+msgstr ":file:`~/.ansible.cfg` -- 사용자 설정 파일, 존재하면 기본 설정 파일에 우선"
 
-#: ../../rst/cli/ansible.rst:271
+#: ../../rst/cli/ansible.rst:255
 msgid "Author"
 msgstr "저작"
 
-#: ../../rst/cli/ansible.rst:273
+#: ../../rst/cli/ansible.rst:257
 msgid "Ansible was originally written by Michael DeHaan."
 msgstr ""
 
-#: ../../rst/cli/ansible.rst:275
+#: ../../rst/cli/ansible.rst:259
 msgid "See the `AUTHORS` file for a complete list of contributors."
 msgstr ""
 
-#: ../../rst/cli/ansible.rst:279
-msgid "Copyright"
-msgstr "저작권"
-
-#: ../../rst/cli/ansible.rst:281
-msgid "Copyright © 2017 Red Hat, Inc | Ansible."
+#: ../../rst/cli/ansible.rst:263
+msgid "License"
 msgstr ""
 
-#: ../../rst/cli/ansible.rst:283
-msgid "Ansible is released under the terms of the GPLv3 License."
+#: ../../rst/cli/ansible.rst:265
+msgid "Ansible is released under the terms of the GPLv3+ License."
 msgstr ""
 
-#: ../../rst/cli/ansible.rst:286
+#: ../../rst/cli/ansible.rst:268
 msgid "See also"
 msgstr "참조"
 
-#: ../../rst/cli/ansible.rst:288
+#: ../../rst/cli/ansible.rst:270
 msgid ""
 ":manpage:`ansible(1)`,  :manpage:`ansible-config(1)`,  :manpage:`ansible-"
 "console(1)`,  :manpage:`ansible-doc(1)`,  :manpage:`ansible-galaxy(1)`,  "
 ":manpage:`ansible-inventory(1)`,  :manpage:`ansible-playbook(1)`,  "
 ":manpage:`ansible-pull(1)`,  :manpage:`ansible-vault(1)`,"
 msgstr ""
+
+#~ msgid "ask for su password (deprecated, use become)"
+#~ msgstr "su 패스워드를 묻는다. (없어짐. become을 사용할 것.)"
+
+#~ msgid "ask for sudo password (deprecated, use become)"
+#~ msgstr "sudo 패스워드를 묻는다. (없어짐. become을 사용할 것.)"
+
+#~ msgid ""
+#~ "privilege escalation method to use "
+#~ "(default=sudo), valid choices: [ sudo |"
+#~ " su | pbrun | pfexec | doas "
+#~ "| dzdo | ksu | runas | pmrun"
+#~ " | enable | machinectl ]"
+#~ msgstr ""
+#~ "권한 상승 방법의 선택. (디폴트는 sudo) 가능한 "
+#~ "옵션은: [ sudo | su | pbrun |"
+#~ " pfexec | doas | dzdo | ksu "
+#~ "| runas | pmrun | enable | "
+#~ "machinectl ]"
+
+#~ msgid ""
+#~ "run operations with su as this "
+#~ "user (default=None) (deprecated, use become)"
+#~ msgstr "지정 사용자(디폴트 없음)에 대해 su 명령으로 실행한다. (없어짐. become을 사용할 것.)"
+
+#~ msgid "run operations with su (deprecated, use become)"
+#~ msgstr "su로 명령을 실행 (없어짐. become을 사용할 것.)"
+
+#~ msgid "desired sudo user (default=root) (deprecated, use become)"
+#~ msgstr "sudo user (없어짐. become을 사용할 것.)"
+
+#~ msgid "run operations with sudo (nopasswd) (deprecated, use become)"
+#~ msgstr "sudo로 명령 실행 (없어짐. become을 사용할 것.)"
+
+#~ msgid "Copyright"
+#~ msgstr "저작권"
+
+#~ msgid "Copyright © 2017 Red Hat, Inc | Ansible."
+#~ msgstr ""
+
+#~ msgid "Ansible is released under the terms of the GPLv3 License."
+#~ msgstr ""
 

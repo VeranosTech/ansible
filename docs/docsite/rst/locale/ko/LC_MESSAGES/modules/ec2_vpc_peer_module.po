@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,53 +24,53 @@ msgid ""
 "connections between two VPCs"
 msgstr ""
 
-#: ../../rst/modules/ec2_vpc_peer_module.rst:19
+#: ../../rst/modules/ec2_vpc_peer_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/ec2_vpc_peer_module.rst:20
+#: ../../rst/modules/ec2_vpc_peer_module.rst:19
 msgid ""
 "Read the AWS documentation for VPC Peering Connections "
 "https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-peering.html."
 msgstr ""
 
-#: ../../rst/modules/ec2_vpc_peer_module.rst:25
+#: ../../rst/modules/ec2_vpc_peer_module.rst:24
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/ec2_vpc_peer_module.rst:26
+#: ../../rst/modules/ec2_vpc_peer_module.rst:25
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/ec2_vpc_peer_module.rst:28
+#: ../../rst/modules/ec2_vpc_peer_module.rst:27
 msgid "boto"
 msgstr ""
 
-#: ../../rst/modules/ec2_vpc_peer_module.rst:29
+#: ../../rst/modules/ec2_vpc_peer_module.rst:28
 msgid "boto3"
 msgstr ""
 
-#: ../../rst/modules/ec2_vpc_peer_module.rst:30
+#: ../../rst/modules/ec2_vpc_peer_module.rst:29
 msgid "botocore"
 msgstr ""
 
-#: ../../rst/modules/ec2_vpc_peer_module.rst:31
+#: ../../rst/modules/ec2_vpc_peer_module.rst:30
 msgid "json"
 msgstr ""
 
-#: ../../rst/modules/ec2_vpc_peer_module.rst:32
+#: ../../rst/modules/ec2_vpc_peer_module.rst:31
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/ec2_vpc_peer_module.rst:36
+#: ../../rst/modules/ec2_vpc_peer_module.rst:35
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/ec2_vpc_peer_module.rst:247
+#: ../../rst/modules/ec2_vpc_peer_module.rst:263
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/ec2_vpc_peer_module.rst:250
+#: ../../rst/modules/ec2_vpc_peer_module.rst:266
 msgid ""
 "If parameters are not set within the module, the following environment "
 "variables can be used in decreasing order of precedence ``AWS_URL`` or "
@@ -80,64 +80,72 @@ msgid ""
 "``AWS_REGION`` or ``EC2_REGION``"
 msgstr ""
 
-#: ../../rst/modules/ec2_vpc_peer_module.rst:251
+#: ../../rst/modules/ec2_vpc_peer_module.rst:267
 msgid ""
 "Ansible uses the boto configuration file (typically ~/.boto) if no "
 "credentials are provided. See "
 "https://boto.readthedocs.io/en/latest/boto_config_tut.html"
 msgstr ""
 
-#: ../../rst/modules/ec2_vpc_peer_module.rst:252
+#: ../../rst/modules/ec2_vpc_peer_module.rst:268
 msgid ""
 "``AWS_REGION`` or ``EC2_REGION`` can be typically be used to specify the "
 "AWS region, when required, but this can also be configured in the boto "
 "config file"
 msgstr ""
 
-#: ../../rst/modules/ec2_vpc_peer_module.rst:257
+#: ../../rst/modules/ec2_vpc_peer_module.rst:273
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/ec2_vpc_peer_module.rst:415
+#: ../../rst/modules/ec2_vpc_peer_module.rst:431
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/ec2_vpc_peer_module.rst:416
+#: ../../rst/modules/ec2_vpc_peer_module.rst:432
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/ec2_vpc_peer_module.rst:442
+#: ../../rst/modules/ec2_vpc_peer_module.rst:458
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/ec2_vpc_peer_module.rst:447
+#: ../../rst/modules/ec2_vpc_peer_module.rst:463
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/ec2_vpc_peer_module.rst:450
+#: ../../rst/modules/ec2_vpc_peer_module.rst:466
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/ec2_vpc_peer_module.rst:457
+#: ../../rst/modules/ec2_vpc_peer_module.rst:473
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/ec2_vpc_peer_module.rst:459
+#: ../../rst/modules/ec2_vpc_peer_module.rst:475
 msgid "Mike Mochan (@mmochan)"
 msgstr ""
 
-#: ../../rst/modules/ec2_vpc_peer_module.rst:463
+#: ../../rst/modules/ec2_vpc_peer_module.rst:479
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/ec2_vpc_peer.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/ec2_vpc_peer.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/ec2_vpc_peer.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

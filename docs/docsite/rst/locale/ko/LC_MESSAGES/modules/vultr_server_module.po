@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,58 +50,66 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/vultr_server_module.rst:398
+#: ../../rst/modules/vultr_server_module.rst:426
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/vultr_server_module.rst:401
+#: ../../rst/modules/vultr_server_module.rst:429
 msgid "Also see the API documentation on https://www.vultr.com/api/."
 msgstr ""
 
-#: ../../rst/modules/vultr_server_module.rst:406
+#: ../../rst/modules/vultr_server_module.rst:434
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/vultr_server_module.rst:464
+#: ../../rst/modules/vultr_server_module.rst:493
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/vultr_server_module.rst:465
+#: ../../rst/modules/vultr_server_module.rst:494
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/vultr_server_module.rst:950
+#: ../../rst/modules/vultr_server_module.rst:993
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/vultr_server_module.rst:955
+#: ../../rst/modules/vultr_server_module.rst:998
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/vultr_server_module.rst:958
+#: ../../rst/modules/vultr_server_module.rst:1001
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/vultr_server_module.rst:965
+#: ../../rst/modules/vultr_server_module.rst:1008
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/vultr_server_module.rst:967
+#: ../../rst/modules/vultr_server_module.rst:1010
 msgid "René Moser (@resmo)"
 msgstr ""
 
-#: ../../rst/modules/vultr_server_module.rst:971
+#: ../../rst/modules/vultr_server_module.rst:1014
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vultr/vultr_server.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vultr/vultr_server.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vultr/vultr_server.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

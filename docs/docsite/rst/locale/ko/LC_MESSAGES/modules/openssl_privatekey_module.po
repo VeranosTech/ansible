@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,93 +27,189 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/openssl_privatekey_module.rst:20
-msgid ""
-"This module allows one to (re)generate OpenSSL private keys. One can "
-"generate `RSA <https://en.wikipedia.org/wiki/RSA_(cryptosystem>`_), `DSA "
-"<https://en.wikipedia.org/wiki/Digital_Signature_Algorithm>`_ or `ECC "
-"<https://en.wikipedia.org/wiki/Elliptic-curve_cryptography>`_ private "
-"keys. Keys are generated in PEM format."
+msgid "This module allows one to (re)generate OpenSSL private keys."
 msgstr ""
 
 #: ../../rst/modules/openssl_privatekey_module.rst:21
 msgid ""
+"One can generate `RSA "
+"<https://en.wikipedia.org/wiki/RSA_(cryptosystem>`_), `DSA "
+"<https://en.wikipedia.org/wiki/Digital_Signature_Algorithm>`_, `ECC "
+"<https://en.wikipedia.org/wiki/Elliptic-curve_cryptography>`_ or `EdDSA "
+"<https://en.wikipedia.org/wiki/EdDSA>`_ private keys."
+msgstr ""
+
+#: ../../rst/modules/openssl_privatekey_module.rst:22
+msgid "Keys are generated in PEM format."
+msgstr ""
+
+#: ../../rst/modules/openssl_privatekey_module.rst:23
+msgid ""
+"Please note that the module regenerates private keys if they don't match "
+"the module's options. In particular, if you provide another passphrase "
+"(or specify none), change the keysize, etc., the private key will be "
+"regenerated. If you are concerned that this could **overwrite your "
+"private key**, consider using the *backup* option."
+msgstr ""
+
+#: ../../rst/modules/openssl_privatekey_module.rst:24
+msgid ""
 "The module can use the cryptography Python library, or the pyOpenSSL "
 "Python library. By default, it tries to detect which one is available. "
-"This can be overridden with the *select_crypto_backend* option."
-msgstr ""
-
-#: ../../rst/modules/openssl_privatekey_module.rst:26
-msgid "Requirements"
-msgstr ""
-
-#: ../../rst/modules/openssl_privatekey_module.rst:27
-msgid "The below requirements are needed on the host that executes this module."
+"This can be overridden with the *select_crypto_backend* option. Please "
+"note that the PyOpenSSL backend was deprecated in Ansible 2.9 and will be"
+" removed in Ansible 2.13.\""
 msgstr ""
 
 #: ../../rst/modules/openssl_privatekey_module.rst:29
-msgid "One of the following Python libraries:"
+msgid "Requirements"
 msgstr ""
 
 #: ../../rst/modules/openssl_privatekey_module.rst:30
-msgid "cryptography >= 1.2.3 (older versions might work as well)"
+msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/openssl_privatekey_module.rst:31
-msgid "pyOpenSSL"
+#: ../../rst/modules/openssl_privatekey_module.rst:32
+msgid "Either cryptography >= 1.2.3 (older versions might work as well)"
 msgstr ""
 
-#: ../../rst/modules/openssl_privatekey_module.rst:35
+#: ../../rst/modules/openssl_privatekey_module.rst:33
+msgid "Or pyOpenSSL"
+msgstr ""
+
+#: ../../rst/modules/openssl_privatekey_module.rst:37
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/openssl_privatekey_module.rst:354
-msgid "Examples"
+#: ../../rst/modules/openssl_privatekey_module.rst:379
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/openssl_privatekey_module.rst:383
+msgid ":ref:`openssl_certificate_module`"
+msgstr ""
+
+#: ../../rst/modules/openssl_privatekey_module.rst:384
+msgid "The official documentation on the **openssl_certificate** module."
+msgstr ""
+
+#: ../../rst/modules/openssl_privatekey_module.rst:385
+msgid ":ref:`openssl_csr_module`"
+msgstr ""
+
+#: ../../rst/modules/openssl_privatekey_module.rst:386
+msgid "The official documentation on the **openssl_csr** module."
+msgstr ""
+
+#: ../../rst/modules/openssl_privatekey_module.rst:387
+msgid ":ref:`openssl_dhparam_module`"
+msgstr ""
+
+#: ../../rst/modules/openssl_privatekey_module.rst:388
+msgid "The official documentation on the **openssl_dhparam** module."
 msgstr ""
 
 #: ../../rst/modules/openssl_privatekey_module.rst:389
-msgid "Return Values"
+msgid ":ref:`openssl_pkcs12_module`"
 msgstr ""
 
 #: ../../rst/modules/openssl_privatekey_module.rst:390
+msgid "The official documentation on the **openssl_pkcs12** module."
+msgstr ""
+
+#: ../../rst/modules/openssl_privatekey_module.rst:391
+msgid ":ref:`openssl_publickey_module`"
+msgstr ""
+
+#: ../../rst/modules/openssl_privatekey_module.rst:392
+msgid "The official documentation on the **openssl_publickey** module."
+msgstr ""
+
+#: ../../rst/modules/openssl_privatekey_module.rst:396
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/openssl_privatekey_module.rst:430
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/openssl_privatekey_module.rst:431
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/openssl_privatekey_module.rst:470
+#: ../../rst/modules/openssl_privatekey_module.rst:525
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/openssl_privatekey_module.rst:475
+#: ../../rst/modules/openssl_privatekey_module.rst:530
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/openssl_privatekey_module.rst:478
+#: ../../rst/modules/openssl_privatekey_module.rst:533
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/openssl_privatekey_module.rst:485
+#: ../../rst/modules/openssl_privatekey_module.rst:540
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/openssl_privatekey_module.rst:487
+#: ../../rst/modules/openssl_privatekey_module.rst:542
 msgid "Yanis Guenane (@Spredzy)"
 msgstr ""
 
-#: ../../rst/modules/openssl_privatekey_module.rst:488
+#: ../../rst/modules/openssl_privatekey_module.rst:543
 msgid "Felix Fontein (@felixfontein)"
 msgstr ""
 
-#: ../../rst/modules/openssl_privatekey_module.rst:492
+#: ../../rst/modules/openssl_privatekey_module.rst:547
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/crypto/openssl_privatekey.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/crypto/openssl_privatekey.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module allows one to (re)generate"
+#~ " OpenSSL private keys. One can "
+#~ "generate `RSA "
+#~ "<https://en.wikipedia.org/wiki/RSA_(cryptosystem>`_), `DSA "
+#~ "<https://en.wikipedia.org/wiki/Digital_Signature_Algorithm>`_ or"
+#~ " `ECC <https://en.wikipedia.org/wiki/Elliptic-"
+#~ "curve_cryptography>`_ private keys. Keys are"
+#~ " generated in PEM format."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The module can use the cryptography "
+#~ "Python library, or the pyOpenSSL Python"
+#~ " library. By default, it tries to "
+#~ "detect which one is available. This "
+#~ "can be overridden with the "
+#~ "*select_crypto_backend* option."
+#~ msgstr ""
+
+#~ msgid "One of the following Python libraries:"
+#~ msgstr ""
+
+#~ msgid "cryptography >= 1.2.3 (older versions might work as well)"
+#~ msgstr ""
+
+#~ msgid "pyOpenSSL"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/crypto/openssl_privatekey.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

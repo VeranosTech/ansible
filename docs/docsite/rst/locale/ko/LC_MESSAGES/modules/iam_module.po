@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,46 +22,46 @@ msgstr ""
 msgid "iam -- Manage IAM users, groups, roles and keys"
 msgstr ""
 
-#: ../../rst/modules/iam_module.rst:19
+#: ../../rst/modules/iam_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/iam_module.rst:20
+#: ../../rst/modules/iam_module.rst:19
 msgid "Allows for the management of IAM users, user API keys, groups, roles."
 msgstr ""
 
-#: ../../rst/modules/iam_module.rst:25
+#: ../../rst/modules/iam_module.rst:24
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/iam_module.rst:26
+#: ../../rst/modules/iam_module.rst:25
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/iam_module.rst:28
+#: ../../rst/modules/iam_module.rst:27
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/iam_module.rst:29
+#: ../../rst/modules/iam_module.rst:28
 msgid "boto"
 msgstr ""
 
-#: ../../rst/modules/iam_module.rst:33
+#: ../../rst/modules/iam_module.rst:32
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/iam_module.rst:351
+#: ../../rst/modules/iam_module.rst:367
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/iam_module.rst:354
+#: ../../rst/modules/iam_module.rst:370
 msgid ""
 "Currently boto does not support the removal of Managed Policies, the "
 "module will error out if your user/group/role has managed policies when "
 "you try to do state=absent. They will need to be removed manually."
 msgstr ""
 
-#: ../../rst/modules/iam_module.rst:355
+#: ../../rst/modules/iam_module.rst:371
 msgid ""
 "If parameters are not set within the module, the following environment "
 "variables can be used in decreasing order of precedence ``AWS_URL`` or "
@@ -71,68 +71,76 @@ msgid ""
 "``AWS_REGION`` or ``EC2_REGION``"
 msgstr ""
 
-#: ../../rst/modules/iam_module.rst:356
+#: ../../rst/modules/iam_module.rst:372
 msgid ""
 "Ansible uses the boto configuration file (typically ~/.boto) if no "
 "credentials are provided. See "
 "https://boto.readthedocs.io/en/latest/boto_config_tut.html"
 msgstr ""
 
-#: ../../rst/modules/iam_module.rst:357
+#: ../../rst/modules/iam_module.rst:373
 msgid ""
 "``AWS_REGION`` or ``EC2_REGION`` can be typically be used to specify the "
 "AWS region, when required, but this can also be configured in the boto "
 "config file"
 msgstr ""
 
-#: ../../rst/modules/iam_module.rst:362
+#: ../../rst/modules/iam_module.rst:378
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/iam_module.rst:420
+#: ../../rst/modules/iam_module.rst:436
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/iam_module.rst:421
+#: ../../rst/modules/iam_module.rst:437
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/iam_module.rst:462
+#: ../../rst/modules/iam_module.rst:478
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/iam_module.rst:467
+#: ../../rst/modules/iam_module.rst:483
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/iam_module.rst:470
+#: ../../rst/modules/iam_module.rst:486
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/iam_module.rst:477
+#: ../../rst/modules/iam_module.rst:493
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/iam_module.rst:479
+#: ../../rst/modules/iam_module.rst:495
 msgid "Jonathan I. Davila (@defionscode)"
 msgstr ""
 
-#: ../../rst/modules/iam_module.rst:480
+#: ../../rst/modules/iam_module.rst:496
 msgid "Paul Seiffert (@seiffert)"
 msgstr ""
 
-#: ../../rst/modules/iam_module.rst:484
+#: ../../rst/modules/iam_module.rst:500
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/iam.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/iam.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/iam.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

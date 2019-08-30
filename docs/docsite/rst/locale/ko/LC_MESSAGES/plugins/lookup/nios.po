@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,65 +51,74 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/plugins/lookup/nios.rst:268
+#: ../../rst/plugins/lookup/nios.rst:269
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/plugins/lookup/nios.rst:271
+#: ../../rst/plugins/lookup/nios.rst:272
 msgid ""
 "This module must be run locally, which can be achieved by specifying "
 "``connection: local``."
 msgstr ""
 
-#: ../../rst/plugins/lookup/nios.rst:272
+#: ../../rst/plugins/lookup/nios.rst:273
 msgid ""
 "Please read the :ref:`nios_guide` for more detailed information on how to"
 " use Infoblox with Ansible."
 msgstr ""
 
-#: ../../rst/plugins/lookup/nios.rst:277
+#: ../../rst/plugins/lookup/nios.rst:278
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/plugins/lookup/nios.rst:316
+#: ../../rst/plugins/lookup/nios.rst:317
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/plugins/lookup/nios.rst:317
+#: ../../rst/plugins/lookup/nios.rst:318
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this lookup:"
 msgstr ""
 
-#: ../../rst/plugins/lookup/nios.rst:355
+#: ../../rst/plugins/lookup/nios.rst:356
 msgid "Status"
 msgstr ""
 
-#: ../../rst/plugins/lookup/nios.rst:360
+#: ../../rst/plugins/lookup/nios.rst:361
 msgid ""
 "This lookup is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/plugins/lookup/nios.rst:363
+#: ../../rst/plugins/lookup/nios.rst:364
 msgid ""
 "This lookup is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/plugins/lookup/nios.rst:370
+#: ../../rst/plugins/lookup/nios.rst:371
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/plugins/lookup/nios.rst:372
+#: ../../rst/plugins/lookup/nios.rst:373
 msgid "UNKNOWN"
 msgstr ""
 
-#: ../../rst/plugins/lookup/nios.rst:376
+#: ../../rst/plugins/lookup/nios.rst:377
+#, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/lookup/nios.py>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/lookup/nios.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/lookup/nios.py>`_"
+#~ " to improve it."
+#~ msgstr ""
 

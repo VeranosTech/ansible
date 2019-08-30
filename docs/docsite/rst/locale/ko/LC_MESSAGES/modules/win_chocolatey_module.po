@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,15 +50,15 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:394
+#: ../../rst/modules/win_chocolatey_module.rst:418
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:397
+#: ../../rst/modules/win_chocolatey_module.rst:421
 msgid "This module will install or upgrade Chocolatey when needed."
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:398
+#: ../../rst/modules/win_chocolatey_module.rst:422
 msgid ""
 "When using verbosity 2 or less (``-vv``) the ``stdout`` output will be "
 "restricted. When using verbosity 4 (``-vvvv``) the ``stdout`` output will"
@@ -66,7 +66,7 @@ msgid ""
 "output will include debug output."
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:399
+#: ../../rst/modules/win_chocolatey_module.rst:423
 msgid ""
 "Some packages, like hotfixes or updates need an interactive user logon in"
 " order to install. You can use ``become`` to achieve this, see "
@@ -75,7 +75,7 @@ msgid ""
 "user logon, see examples below."
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:400
+#: ../../rst/modules/win_chocolatey_module.rst:424
 msgid ""
 "If ``become`` is unavailable, use :ref:`win_hotfix <win_hotfix_module>` "
 "to install hotfixes instead of :ref:`win_chocolatey "
@@ -83,164 +83,172 @@ msgid ""
 "using ``wusa.exe`` which cannot be run without ``become``."
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:404
+#: ../../rst/modules/win_chocolatey_module.rst:428
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:408
+#: ../../rst/modules/win_chocolatey_module.rst:432
 msgid ":ref:`win_chocolatey_config_module`"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:409
+#: ../../rst/modules/win_chocolatey_module.rst:433
 msgid "The official documentation on the **win_chocolatey_config** module."
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:410
+#: ../../rst/modules/win_chocolatey_module.rst:434
 msgid ":ref:`win_chocolatey_facts_module`"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:411
+#: ../../rst/modules/win_chocolatey_module.rst:435
 msgid "The official documentation on the **win_chocolatey_facts** module."
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:412
+#: ../../rst/modules/win_chocolatey_module.rst:436
 msgid ":ref:`win_chocolatey_feature_module`"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:413
+#: ../../rst/modules/win_chocolatey_module.rst:437
 msgid "The official documentation on the **win_chocolatey_feature** module."
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:414
+#: ../../rst/modules/win_chocolatey_module.rst:438
 msgid ":ref:`win_chocolatey_source_module`"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:415
+#: ../../rst/modules/win_chocolatey_module.rst:439
 msgid "The official documentation on the **win_chocolatey_source** module."
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:416
+#: ../../rst/modules/win_chocolatey_module.rst:440
 msgid ":ref:`win_feature_module`"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:417
+#: ../../rst/modules/win_chocolatey_module.rst:441
 msgid "The official documentation on the **win_feature** module."
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:418
+#: ../../rst/modules/win_chocolatey_module.rst:442
 msgid ":ref:`win_hotfix_module`"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:419
+#: ../../rst/modules/win_chocolatey_module.rst:443
 msgid "Use when ``become`` is unavailable, to avoid using ``wusa.exe``."
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:420
+#: ../../rst/modules/win_chocolatey_module.rst:444
 msgid ":ref:`win_package_module`"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:421
+#: ../../rst/modules/win_chocolatey_module.rst:445
 msgid "The official documentation on the **win_package** module."
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:422
+#: ../../rst/modules/win_chocolatey_module.rst:446
 msgid ":ref:`win_updates_module`"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:423
+#: ../../rst/modules/win_chocolatey_module.rst:447
 msgid "The official documentation on the **win_updates** module."
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:424
+#: ../../rst/modules/win_chocolatey_module.rst:448
 msgid "`Chocolatey website <http://chocolatey.org/>`_"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:425
+#: ../../rst/modules/win_chocolatey_module.rst:449
 msgid "More information about the Chocolatey tool."
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:426
+#: ../../rst/modules/win_chocolatey_module.rst:450
 msgid "`Chocolatey packages <http://chocolatey.org/packages>`_"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:427
+#: ../../rst/modules/win_chocolatey_module.rst:451
 msgid "An overview of the available Chocolatey packages."
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:428
+#: ../../rst/modules/win_chocolatey_module.rst:452
 msgid ":ref:`become_windows`"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:429
+#: ../../rst/modules/win_chocolatey_module.rst:453
 msgid ""
 "Some packages, like hotfixes or updates need an interactive user logon in"
 " order to install. You can use ``become`` to achieve this."
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:433
+#: ../../rst/modules/win_chocolatey_module.rst:457
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:521
+#: ../../rst/modules/win_chocolatey_module.rst:558
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:522
+#: ../../rst/modules/win_chocolatey_module.rst:559
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:574
+#: ../../rst/modules/win_chocolatey_module.rst:611
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:579
+#: ../../rst/modules/win_chocolatey_module.rst:616
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:582
+#: ../../rst/modules/win_chocolatey_module.rst:619
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:589
+#: ../../rst/modules/win_chocolatey_module.rst:626
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:591
+#: ../../rst/modules/win_chocolatey_module.rst:628
 msgid "Trond Hindenes (@trondhindenes)"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:592
+#: ../../rst/modules/win_chocolatey_module.rst:629
 msgid "Peter Mounce (@petemounce)"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:593
+#: ../../rst/modules/win_chocolatey_module.rst:630
 msgid "Pepe Barbe (@elventear)"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:594
+#: ../../rst/modules/win_chocolatey_module.rst:631
 msgid "Adam Keech (@smadam813)"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:595
+#: ../../rst/modules/win_chocolatey_module.rst:632
 msgid "Pierre Templier (@ptemplier)"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:596
+#: ../../rst/modules/win_chocolatey_module.rst:633
 msgid "Jordan Borean (@jborean93)"
 msgstr ""
 
-#: ../../rst/modules/win_chocolatey_module.rst:600
+#: ../../rst/modules/win_chocolatey_module.rst:637
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_chocolatey.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_chocolatey.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_chocolatey.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

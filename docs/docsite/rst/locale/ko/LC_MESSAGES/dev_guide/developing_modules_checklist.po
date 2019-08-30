@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,80 +25,105 @@ msgstr ""
 #: ../../rst/dev_guide/developing_modules_checklist.rst:8
 msgid ""
 "If you want to contribute a module to Ansible, you must meet our "
-"objective and subjective requirements. Modules accepted into the `main "
-"project repo <https://github.com/ansible/ansible>`_ ship with every "
-"Ansible installation. However, contributing to the main project isn't the"
-" only way to distribute a module - you can embed modules in roles on "
-"Galaxy or simply share copies of your module code for :ref:`local use "
+"objective and subjective requirements. Please read the details below, and"
+" also review our :ref:`tips for module development "
+"<developing_modules_best_practices>`."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_checklist.rst:10
+msgid ""
+"Modules accepted into the `main project repo "
+"<https://github.com/ansible/ansible>`_ ship with every Ansible "
+"installation. However, contributing to the main project isn't the only "
+"way to distribute a module - you can embed modules in roles on Galaxy or "
+"simply share copies of your module code for :ref:`local use "
 "<developing_locally>`."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_checklist.rst:11
+#: ../../rst/dev_guide/developing_modules_checklist.rst:13
 msgid "Contributing to Ansible: objective requirements"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_checklist.rst:13
+#: ../../rst/dev_guide/developing_modules_checklist.rst:15
 msgid "To contribute a module to Ansible, you must:"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_checklist.rst:15
+#: ../../rst/dev_guide/developing_modules_checklist.rst:17
 msgid "write your module in either Python or Powershell for Windows"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_checklist.rst:16
+#: ../../rst/dev_guide/developing_modules_checklist.rst:18
 msgid "use the ``AnsibleModule`` common code"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_checklist.rst:17
+#: ../../rst/dev_guide/developing_modules_checklist.rst:19
 msgid ""
 "support Python 2.7 and Python 3.5 - if your module cannot support Python "
 "2.7, explain the required minimum Python version and rationale in the "
 "requirements section in ``DOCUMENTATION``"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_checklist.rst:18
+#: ../../rst/dev_guide/developing_modules_checklist.rst:20
 msgid "use proper :ref:`Python 3 syntax <developing_python_3>`"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_checklist.rst:19
+#: ../../rst/dev_guide/developing_modules_checklist.rst:21
 msgid ""
 "follow `PEP 8 <https://www.python.org/dev/peps/pep-0008/>`_ Python style "
 "conventions - see :ref:`testing_pep8` for more information"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_checklist.rst:20
+#: ../../rst/dev_guide/developing_modules_checklist.rst:22
 msgid "license your module under the GPL license (GPLv3 or later)"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_checklist.rst:21
+#: ../../rst/dev_guide/developing_modules_checklist.rst:23
 msgid ""
 "understand the :ref:`license agreement <contributor_license_agreement>`, "
 "which applies to all contributions"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_checklist.rst:22
+#: ../../rst/dev_guide/developing_modules_checklist.rst:24
 msgid ""
 "conform to Ansible's :ref:`formatting and documentation "
 "<developing_modules_documenting>` standards"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_checklist.rst:23
+#: ../../rst/dev_guide/developing_modules_checklist.rst:25
 msgid "include comprehensive :ref:`tests <developing_testing>` for your module"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_checklist.rst:24
+#: ../../rst/dev_guide/developing_modules_checklist.rst:26
 msgid "minimize module dependencies"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_checklist.rst:25
+#: ../../rst/dev_guide/developing_modules_checklist.rst:27
 msgid "support :ref:`check_mode <check_mode_dry>` if possible"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_checklist.rst:26
+#: ../../rst/dev_guide/developing_modules_checklist.rst:28
 msgid "ensure your code is readable"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_checklist.rst:28
+#: ../../rst/dev_guide/developing_modules_checklist.rst:29
+msgid ""
+"if a module is named ``<something>_facts``, it should be because its main"
+" purpose is returning ``ansible_facts``. Do not name modules that do not "
+"do this with ``_facts``. Only use ``ansible_facts`` for information that "
+"is specific to the host machine, for example network interfaces and their"
+" configuration, which operating system and which programs are installed."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_checklist.rst:30
+msgid ""
+"Modules that query/return general information (and not ``ansible_facts``)"
+" should be named ``_info``. General information is non-host specific "
+"information, for example information on online/cloud services (you can "
+"access different accounts for the same online service from the same "
+"host), or information on VMs and containers accessible from the machine."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_checklist.rst:32
 msgid ""
 "Please make sure your module meets these requirements before you submit "
 "your PR/proposal. If you have questions, reach out via `Ansible's IRC "
@@ -106,11 +131,11 @@ msgid ""
 "mailing list <https://groups.google.com/group/ansible-devel>`_."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_checklist.rst:31
+#: ../../rst/dev_guide/developing_modules_checklist.rst:35
 msgid "Contributing to Ansible: subjective requirements"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_checklist.rst:33
+#: ../../rst/dev_guide/developing_modules_checklist.rst:37
 msgid ""
 "If your module meets our objective requirements, we'll review your code "
 "to see if we think it's clear, concise, secure, and maintainable. We'll "
@@ -122,17 +147,36 @@ msgid ""
 "<developing_modules_best_practices>`."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_checklist.rst:36
+#: ../../rst/dev_guide/developing_modules_checklist.rst:40
 msgid "Other checklists"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_checklist.rst:38
+#: ../../rst/dev_guide/developing_modules_checklist.rst:42
+msgid ":ref:`Tips for module development <developing_modules_best_practices>`."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_checklist.rst:43
 msgid ""
 "`Amazon development checklist "
 "<https://github.com/ansible/ansible/blob/devel/lib/ansible/modules/cloud/amazon/GUIDELINES.md>`_."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_checklist.rst:39
+#: ../../rst/dev_guide/developing_modules_checklist.rst:44
 msgid ":ref:`Windows development checklist <developing_modules_general_windows>`."
 msgstr ""
+
+#~ msgid ""
+#~ "If you want to contribute a module"
+#~ " to Ansible, you must meet our "
+#~ "objective and subjective requirements. Modules"
+#~ " accepted into the `main project repo"
+#~ " <https://github.com/ansible/ansible>`_ ship with "
+#~ "every Ansible installation. However, "
+#~ "contributing to the main project isn't"
+#~ " the only way to distribute a "
+#~ "module - you can embed modules in"
+#~ " roles on Galaxy or simply share "
+#~ "copies of your module code for "
+#~ ":ref:`local use <developing_locally>`."
+#~ msgstr ""
 

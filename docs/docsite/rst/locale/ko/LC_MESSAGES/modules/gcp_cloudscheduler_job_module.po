@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:9
+msgid "gcp_cloudscheduler_job -- Creates a GCP Job"
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:20
+msgid ""
+"A scheduled job that can publish a pubsub message or a http request every"
+" X interval of time, using crontab format string."
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:21
+msgid ""
+"To use Cloud Scheduler your project must contain an App Engine app that "
+"is located in one of the supported regions. If your project does not have"
+" an App Engine app, you must create one."
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:26
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:27
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:29
+msgid "python >= 2.6"
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:30
+msgid "requests >= 2.18.4"
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:31
+msgid "google-auth >= 1.3.0"
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:35
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:679
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:682
+msgid "API Reference: https://cloud.google.com/scheduler/docs/reference/rest/"
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:683
+msgid "Official Documentation: https://cloud.google.com/scheduler/"
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:684
+msgid ""
+"for authentication, you can set service_account_file using the "
+"c(gcp_service_account_file) env variable."
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:685
+msgid ""
+"for authentication, you can set service_account_contents using the "
+"c(GCP_SERVICE_ACCOUNT_CONTENTS) env variable."
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:686
+msgid ""
+"For authentication, you can set service_account_email using the "
+"``GCP_SERVICE_ACCOUNT_EMAIL`` env variable."
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:687
+msgid ""
+"For authentication, you can set auth_kind using the ``GCP_AUTH_KIND`` env"
+" variable."
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:688
+msgid ""
+"For authentication, you can set scopes using the ``GCP_SCOPES`` env "
+"variable."
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:689
+msgid ""
+"Environment variables values will only be used if the playbook values are"
+" not set."
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:690
+msgid ""
+"The *service_account_email* and *service_account_file* options are "
+"mutually exclusive."
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:695
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:723
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:724
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:1182
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:1187
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:1190
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:1197
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:1199
+msgid "Google Inc. (@googlecloudplatform)"
+msgstr ""
+
+#: ../../rst/modules/gcp_cloudscheduler_job_module.rst:1203
+#, python-format
+msgid ""
+"If you notice any issues in this documentation, you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/gcp_cloudscheduler_job.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

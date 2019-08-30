@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,95 +22,122 @@ msgstr ""
 msgid "lxd_container -- Manage LXD Containers"
 msgstr ""
 
-#: ../../rst/modules/lxd_container_module.rst:19
+#: ../../rst/modules/lxd_container_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/lxd_container_module.rst:20
+#: ../../rst/modules/lxd_container_module.rst:19
 msgid "Management of LXD containers"
 msgstr ""
 
-#: ../../rst/modules/lxd_container_module.rst:26
+#: ../../rst/modules/lxd_container_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/lxd_container_module.rst:254
+#: ../../rst/modules/lxd_container_module.rst:269
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/lxd_container_module.rst:257
+#: ../../rst/modules/lxd_container_module.rst:272
 msgid ""
 "Containers must have a unique name. If you attempt to create a container "
 "with a name that already existed in the users namespace the module will "
 "simply return as \"unchanged\"."
 msgstr ""
 
-#: ../../rst/modules/lxd_container_module.rst:258
+#: ../../rst/modules/lxd_container_module.rst:273
 msgid ""
-"There are two ways to can run commands in containers, using the command "
+"There are two ways to run commands in containers, using the command "
 "module or using the ansible lxd connection plugin bundled in Ansible >= "
 "2.1, the later requires python to be installed in the container which can"
 " be done with the command module."
 msgstr ""
 
-#: ../../rst/modules/lxd_container_module.rst:259
+#: ../../rst/modules/lxd_container_module.rst:274
 msgid ""
 "You can copy a file from the host to the container with the Ansible "
 ":ref:`copy <copy_module>` and :ref:`template <template_module>` module "
 "and the `lxd` connection plugin. See the example below."
 msgstr ""
 
-#: ../../rst/modules/lxd_container_module.rst:260
+#: ../../rst/modules/lxd_container_module.rst:275
 msgid ""
-"You can copy a file in the creatd container to the localhost with "
+"You can copy a file in the created container to the localhost with "
 "`command=lxc file pull container_name/dir/filename filename`. See the "
 "first example below."
 msgstr ""
 
-#: ../../rst/modules/lxd_container_module.rst:265
+#: ../../rst/modules/lxd_container_module.rst:280
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/lxd_container_module.rst:350
+#: ../../rst/modules/lxd_container_module.rst:389
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/lxd_container_module.rst:351
+#: ../../rst/modules/lxd_container_module.rst:390
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/lxd_container_module.rst:418
+#: ../../rst/modules/lxd_container_module.rst:457
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/lxd_container_module.rst:423
+#: ../../rst/modules/lxd_container_module.rst:462
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/lxd_container_module.rst:426
+#: ../../rst/modules/lxd_container_module.rst:465
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/lxd_container_module.rst:433
+#: ../../rst/modules/lxd_container_module.rst:472
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/lxd_container_module.rst:435
+#: ../../rst/modules/lxd_container_module.rst:474
 msgid "Hiroaki Nakamura (@hnakamur)"
 msgstr ""
 
-#: ../../rst/modules/lxd_container_module.rst:439
+#: ../../rst/modules/lxd_container_module.rst:478
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/lxd/lxd_container.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/lxd/lxd_container.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "There are two ways to can run "
+#~ "commands in containers, using the "
+#~ "command module or using the ansible "
+#~ "lxd connection plugin bundled in Ansible"
+#~ " >= 2.1, the later requires python"
+#~ " to be installed in the container "
+#~ "which can be done with the command"
+#~ " module."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can copy a file in the "
+#~ "creatd container to the localhost with"
+#~ " `command=lxc file pull "
+#~ "container_name/dir/filename filename`. See the "
+#~ "first example below."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/lxd/lxd_container.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

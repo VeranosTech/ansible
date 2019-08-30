@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,11 +30,11 @@ msgstr ""
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/cli/ansible-doc.rst:27
+#: ../../rst/cli/ansible-doc.rst:32
 msgid "Description"
 msgstr ""
 
-#: ../../rst/cli/ansible-doc.rst:30
+#: ../../rst/cli/ansible-doc.rst:35
 msgid ""
 "displays information on modules installed in Ansible libraries. It "
 "displays a terse listing of plugins and their short descriptions, "
@@ -42,123 +42,152 @@ msgid ""
 "short \"snippet\" which can be pasted into a playbook."
 msgstr ""
 
-#: ../../rst/cli/ansible-doc.rst:37
+#: ../../rst/cli/ansible-doc.rst:42
 msgid "Common Options"
 msgstr ""
 
-#: ../../rst/cli/ansible-doc.rst:44
+#: ../../rst/cli/ansible-doc.rst:49
+msgid "**For internal testing only** Dump json metadata for all plugins."
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:54
+msgid ""
+"Since this tool does not use playbooks, use this as a substitute playbook"
+" directory.This sets the relative path for many features including roles/"
+" group_vars/ etc."
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:59
 msgid ""
 "show program's version number, config file location, configured module "
 "search path, module location, executable location and exit"
 msgstr ""
 
-#: ../../rst/cli/ansible-doc.rst:49
+#: ../../rst/cli/ansible-doc.rst:64
 msgid ""
 "Show plugin names and their source files without summaries (implies "
 "--list)"
 msgstr ""
 
-#: ../../rst/cli/ansible-doc.rst:54
+#: ../../rst/cli/ansible-doc.rst:69
 msgid ""
 "prepend colon-separated path(s) to module library "
-"(default=['/Users/joelkim/.ansible/plugins/modules', "
-"'/usr/share/ansible/plugins/modules'])"
-msgstr ""
-
-#: ../../rst/cli/ansible-doc.rst:59
-msgid "**For internal testing only** Show documentation for all plugins."
-msgstr ""
-
-#: ../../rst/cli/ansible-doc.rst:64
-msgid "show this help message and exit"
-msgstr ""
-
-#: ../../rst/cli/ansible-doc.rst:69
-msgid "**For internal testing only** Dump json metadata for all plugins."
+"(default=~/.ansible/plugins/modules:/usr/share/ansible/plugins/modules)"
 msgstr ""
 
 #: ../../rst/cli/ansible-doc.rst:74
-msgid "List available plugins"
+msgid "show this help message and exit"
 msgstr ""
 
 #: ../../rst/cli/ansible-doc.rst:79
-msgid "Show playbook snippet for specified plugin(s)"
+msgid "Change output into json format."
 msgstr ""
 
 #: ../../rst/cli/ansible-doc.rst:84
-msgid ""
-"Choose which plugin type (defaults to \"module\"). Available plugin types"
-" are : ('cache', 'callback', 'connection', 'inventory', 'lookup', "
-"'shell', 'cliconf', 'httpapi', 'module', 'strategy', 'vars')"
+msgid "List available plugins"
 msgstr ""
 
 #: ../../rst/cli/ansible-doc.rst:89
+msgid "Show playbook snippet for specified plugin(s)"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:94
+msgid ""
+"Choose which plugin type (defaults to \"module\"). Available plugin types"
+" are : ('become', 'cache', 'callback', 'cliconf', 'connection', "
+"'httpapi', 'inventory', 'lookup', 'shell', 'module', 'strategy', 'vars')"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:99
 msgid "verbose mode (-vvv for more, -vvvv to enable connection debugging)"
 msgstr ""
 
-#: ../../rst/cli/ansible-doc.rst:98
+#: ../../rst/cli/ansible-doc.rst:108
 msgid "Environment"
 msgstr ""
 
-#: ../../rst/cli/ansible-doc.rst:100
+#: ../../rst/cli/ansible-doc.rst:110
 msgid "The following environment variables may be specified."
 msgstr ""
 
-#: ../../rst/cli/ansible-doc.rst:104
+#: ../../rst/cli/ansible-doc.rst:114
 msgid ":envvar:`ANSIBLE_CONFIG` -- Override the default ansible config file"
 msgstr ""
 
-#: ../../rst/cli/ansible-doc.rst:106
+#: ../../rst/cli/ansible-doc.rst:116
 msgid "Many more are available for most options in ansible.cfg"
 msgstr ""
 
-#: ../../rst/cli/ansible-doc.rst:110
+#: ../../rst/cli/ansible-doc.rst:120
 msgid "Files"
 msgstr ""
 
-#: ../../rst/cli/ansible-doc.rst:113
+#: ../../rst/cli/ansible-doc.rst:123
 msgid ":file:`/etc/ansible/ansible.cfg` -- Config file, used if present"
 msgstr ""
 
-#: ../../rst/cli/ansible-doc.rst:115
+#: ../../rst/cli/ansible-doc.rst:125
 msgid ""
 ":file:`~/.ansible.cfg` -- User config file, overrides the default config "
 "if present"
 msgstr ""
 
-#: ../../rst/cli/ansible-doc.rst:118
+#: ../../rst/cli/ansible-doc.rst:128
 msgid "Author"
 msgstr ""
 
-#: ../../rst/cli/ansible-doc.rst:120
+#: ../../rst/cli/ansible-doc.rst:130
 msgid "Ansible was originally written by Michael DeHaan."
 msgstr ""
 
-#: ../../rst/cli/ansible-doc.rst:122
+#: ../../rst/cli/ansible-doc.rst:132
 msgid "See the `AUTHORS` file for a complete list of contributors."
 msgstr ""
 
-#: ../../rst/cli/ansible-doc.rst:126
-msgid "Copyright"
+#: ../../rst/cli/ansible-doc.rst:136
+msgid "License"
 msgstr ""
 
-#: ../../rst/cli/ansible-doc.rst:128
-msgid "Copyright © 2017 Red Hat, Inc | Ansible."
+#: ../../rst/cli/ansible-doc.rst:138
+msgid "Ansible is released under the terms of the GPLv3+ License."
 msgstr ""
 
-#: ../../rst/cli/ansible-doc.rst:130
-msgid "Ansible is released under the terms of the GPLv3 License."
-msgstr ""
-
-#: ../../rst/cli/ansible-doc.rst:133
+#: ../../rst/cli/ansible-doc.rst:141
 msgid "See also"
 msgstr ""
 
-#: ../../rst/cli/ansible-doc.rst:135
+#: ../../rst/cli/ansible-doc.rst:143
 msgid ""
 ":manpage:`ansible(1)`,  :manpage:`ansible-config(1)`,  :manpage:`ansible-"
 "console(1)`,  :manpage:`ansible-doc(1)`,  :manpage:`ansible-galaxy(1)`,  "
 ":manpage:`ansible-inventory(1)`,  :manpage:`ansible-playbook(1)`,  "
 ":manpage:`ansible-pull(1)`,  :manpage:`ansible-vault(1)`,"
 msgstr ""
+
+#~ msgid ""
+#~ "prepend colon-separated path(s) to "
+#~ "module library "
+#~ "(default=['/Users/joelkim/.ansible/plugins/modules', "
+#~ "'/usr/share/ansible/plugins/modules'])"
+#~ msgstr ""
+
+#~ msgid "**For internal testing only** Show documentation for all plugins."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Choose which plugin type (defaults to"
+#~ " \"module\"). Available plugin types are"
+#~ " : ('cache', 'callback', 'connection', "
+#~ "'inventory', 'lookup', 'shell', 'cliconf', "
+#~ "'httpapi', 'module', 'strategy', 'vars')"
+#~ msgstr ""
+
+#~ msgid "Copyright"
+#~ msgstr ""
+
+#~ msgid "Copyright © 2017 Red Hat, Inc | Ansible."
+#~ msgstr ""
+
+#~ msgid "Ansible is released under the terms of the GPLv3 License."
+#~ msgstr ""
 

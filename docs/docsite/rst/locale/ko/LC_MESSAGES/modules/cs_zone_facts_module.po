@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,45 +24,73 @@ msgid ""
 "clouds"
 msgstr ""
 
+#: ../../rst/modules/cs_zone_facts_module.rst:17
+msgid "DEPRECATED"
+msgstr ""
+
+#: ../../rst/modules/cs_zone_facts_module.rst
+msgid "Removed in Ansible"
+msgstr ""
+
+#: ../../rst/modules/cs_zone_facts_module.rst:18
+msgid "version: 2.13"
+msgstr ""
+
+#: ../../rst/modules/cs_zone_facts_module.rst
+msgid "Why"
+msgstr ""
+
 #: ../../rst/modules/cs_zone_facts_module.rst:19
-msgid "Synopsis"
+msgid "Transformed into an info module."
+msgstr ""
+
+#: ../../rst/modules/cs_zone_facts_module.rst
+msgid "Alternative"
 msgstr ""
 
 #: ../../rst/modules/cs_zone_facts_module.rst:20
+msgid "Use :ref:`cs_zone_info <cs_zone_info_module>` instead."
+msgstr ""
+
+#: ../../rst/modules/cs_zone_facts_module.rst:25
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/cs_zone_facts_module.rst:26
 msgid "Gathering facts from the API of a zone."
 msgstr ""
 
-#: ../../rst/modules/cs_zone_facts_module.rst:21
+#: ../../rst/modules/cs_zone_facts_module.rst:27
 msgid ""
 "Sets Ansible facts accessable by the key ``cloudstack_zone`` and since "
 "version 2.6 also returns results."
 msgstr ""
 
-#: ../../rst/modules/cs_zone_facts_module.rst:26
+#: ../../rst/modules/cs_zone_facts_module.rst:32
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/cs_zone_facts_module.rst:27
+#: ../../rst/modules/cs_zone_facts_module.rst:33
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/cs_zone_facts_module.rst:29
+#: ../../rst/modules/cs_zone_facts_module.rst:35
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/cs_zone_facts_module.rst:30
+#: ../../rst/modules/cs_zone_facts_module.rst:36
 msgid "cs >= 0.6.10"
 msgstr ""
 
-#: ../../rst/modules/cs_zone_facts_module.rst:34
+#: ../../rst/modules/cs_zone_facts_module.rst:40
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/cs_zone_facts_module.rst:159
+#: ../../rst/modules/cs_zone_facts_module.rst:165
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/cs_zone_facts_module.rst:162
+#: ../../rst/modules/cs_zone_facts_module.rst:168
 msgid ""
 "Ansible uses the ``cs`` library's configuration method if credentials are"
 " not provided by the arguments ``api_url``, ``api_key``, ``api_secret``. "
@@ -78,60 +106,76 @@ msgid ""
 "https://github.com/exoscale/cs for more information."
 msgstr ""
 
-#: ../../rst/modules/cs_zone_facts_module.rst:163
+#: ../../rst/modules/cs_zone_facts_module.rst:169
 msgid ""
 "A detailed guide about cloudstack modules can be found in the `CloudStack"
 " Cloud Guide <../scenario_guides/guide_cloudstack.html>`_."
 msgstr ""
 
-#: ../../rst/modules/cs_zone_facts_module.rst:164
+#: ../../rst/modules/cs_zone_facts_module.rst:170
 msgid "This module supports check mode."
 msgstr ""
 
-#: ../../rst/modules/cs_zone_facts_module.rst:169
+#: ../../rst/modules/cs_zone_facts_module.rst:175
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/cs_zone_facts_module.rst:192
+#: ../../rst/modules/cs_zone_facts_module.rst:198
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/cs_zone_facts_module.rst:193
+#: ../../rst/modules/cs_zone_facts_module.rst:199
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/cs_zone_facts_module.rst:438
+#: ../../rst/modules/cs_zone_facts_module.rst:444
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/cs_zone_facts_module.rst:443
-msgid ""
-"This module is guaranteed to have no backward incompatible interface "
-"changes going forward. *[stableinterface]*"
+#: ../../rst/modules/cs_zone_facts_module.rst:447
+msgid "This module will be removed in version 2.13. *[deprecated]*"
 msgstr ""
 
-#: ../../rst/modules/cs_zone_facts_module.rst:446
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
+#: ../../rst/modules/cs_zone_facts_module.rst:448
+msgid "For more information see `DEPRECATED`_."
 msgstr ""
 
-#: ../../rst/modules/cs_zone_facts_module.rst:453
+#: ../../rst/modules/cs_zone_facts_module.rst:452
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/cs_zone_facts_module.rst:455
+#: ../../rst/modules/cs_zone_facts_module.rst:454
 msgid "René Moser (@resmo)"
 msgstr ""
 
-#: ../../rst/modules/cs_zone_facts_module.rst:459
+#: ../../rst/modules/cs_zone_facts_module.rst:458
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/cloudstack/cs_zone_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/cloudstack/_cs_zone_facts.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module is guaranteed to have "
+#~ "no backward incompatible interface changes "
+#~ "going forward. *[stableinterface]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/cloudstack/cs_zone_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

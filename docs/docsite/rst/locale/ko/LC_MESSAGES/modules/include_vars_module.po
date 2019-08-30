@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,80 +39,116 @@ msgid ""
 msgstr ""
 
 #: ../../rst/modules/include_vars_module.rst:21
-#: ../../rst/modules/include_vars_module.rst:168
+#: ../../rst/modules/include_vars_module.rst:175
 msgid "This module is also supported for Windows targets."
 msgstr ""
 
 #: ../../rst/modules/include_vars_module.rst:22
 msgid ""
 "To assign included variables to a different host than "
-"``inventory_hostname``, use ``delegate_to`` and set `delegate_facts=True "
-"<../user_guide/playbooks_delegate.html#delegated-facts>`_."
+"``inventory_hostname``, use ``delegate_to`` and set "
+"``delegate_facts=yes``."
 msgstr ""
 
 #: ../../rst/modules/include_vars_module.rst:28
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/include_vars_module.rst:165
+#: ../../rst/modules/include_vars_module.rst:172
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/include_vars_module.rst:173
+#: ../../rst/modules/include_vars_module.rst:179
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/include_vars_module.rst:183
+msgid ":ref:`set_fact_module`"
+msgstr ""
+
+#: ../../rst/modules/include_vars_module.rst:184
+msgid "The official documentation on the **set_fact** module."
+msgstr ""
+
+#: ../../rst/modules/include_vars_module.rst:185
+msgid ":ref:`playbooks_delegation`"
+msgstr ""
+
+#: ../../rst/modules/include_vars_module.rst:186
+msgid "More information related to task delegation."
+msgstr ""
+
+#: ../../rst/modules/include_vars_module.rst:190
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/include_vars_module.rst:232
+#: ../../rst/modules/include_vars_module.rst:255
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/include_vars_module.rst:233
+#: ../../rst/modules/include_vars_module.rst:256
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/include_vars_module.rst:261
+#: ../../rst/modules/include_vars_module.rst:284
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/include_vars_module.rst:266
+#: ../../rst/modules/include_vars_module.rst:289
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/include_vars_module.rst:269
+#: ../../rst/modules/include_vars_module.rst:292
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/include_vars_module.rst:272
+#: ../../rst/modules/include_vars_module.rst:295
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/include_vars_module.rst:274
+#: ../../rst/modules/include_vars_module.rst:297
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/include_vars_module.rst:280
+#: ../../rst/modules/include_vars_module.rst:303
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/include_vars_module.rst:282
+#: ../../rst/modules/include_vars_module.rst:305
 msgid "Allen Sanabria (@linuxdynasty)"
 msgstr ""
 
-#: ../../rst/modules/include_vars_module.rst:286
+#: ../../rst/modules/include_vars_module.rst:309
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/include_vars.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/include_vars.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "To assign included variables to a "
+#~ "different host than ``inventory_hostname``, "
+#~ "use ``delegate_to`` and set "
+#~ "`delegate_facts=True <../user_guide/playbooks_delegate.html"
+#~ "#delegated-facts>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/logic/include_vars.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

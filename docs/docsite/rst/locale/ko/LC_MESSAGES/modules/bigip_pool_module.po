@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,28 +34,28 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_module.rst:484
+#: ../../rst/modules/bigip_pool_module.rst:457
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_module.rst:487
+#: ../../rst/modules/bigip_pool_module.rst:460
 msgid ""
-"To add members do a pool, use the ``bigip_pool_member`` module. "
-"Previously, the ``bigip_pool`` module allowed the management of users, "
+"To add members to a pool, use the ``bigip_pool_member`` module. "
+"Previously, the ``bigip_pool`` module allowed the management of members, "
 "but this has been removed in version 2.5 of Ansible."
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_module.rst:488
+#: ../../rst/modules/bigip_pool_module.rst:461
 msgid ""
 "For more information on using Ansible to manage F5 Networks devices see "
 "https://www.ansible.com/integrations/networks/f5."
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_module.rst:489
+#: ../../rst/modules/bigip_pool_module.rst:462
 msgid "Requires BIG-IP software version >= 12."
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_module.rst:490
+#: ../../rst/modules/bigip_pool_module.rst:463
 msgid ""
 "The F5 modules only manipulate the running configuration of the F5 "
 "product. To ensure that BIG-IP specific configuration persists to disk, "
@@ -65,54 +65,71 @@ msgid ""
 "your running configuration."
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_module.rst:495
+#: ../../rst/modules/bigip_pool_module.rst:468
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_module.rst:638
+#: ../../rst/modules/bigip_pool_module.rst:628
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_module.rst:639
+#: ../../rst/modules/bigip_pool_module.rst:629
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_module.rst:784
+#: ../../rst/modules/bigip_pool_module.rst:787
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_module.rst:789
+#: ../../rst/modules/bigip_pool_module.rst:792
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_module.rst:792
+#: ../../rst/modules/bigip_pool_module.rst:795
 msgid ""
 "This module is :ref:`maintained by an Ansible Partner <modules_support>`."
 " *[certified]*"
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_module.rst:799
+#: ../../rst/modules/bigip_pool_module.rst:802
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_module.rst:801
+#: ../../rst/modules/bigip_pool_module.rst:804
 msgid "Tim Rupp (@caphrim007)"
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_module.rst:802
+#: ../../rst/modules/bigip_pool_module.rst:805
 msgid "Wojciech Wypior (@wojtek0806)"
 msgstr ""
 
-#: ../../rst/modules/bigip_pool_module.rst:806
+#: ../../rst/modules/bigip_pool_module.rst:809
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_pool.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_pool.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "To add members do a pool, use "
+#~ "the ``bigip_pool_member`` module. Previously, "
+#~ "the ``bigip_pool`` module allowed the "
+#~ "management of users, but this has "
+#~ "been removed in version 2.5 of "
+#~ "Ansible."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_pool.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

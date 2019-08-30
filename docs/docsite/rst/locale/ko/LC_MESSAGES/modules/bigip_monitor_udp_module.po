@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,25 +34,25 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/bigip_monitor_udp_module.rst:437
+#: ../../rst/modules/bigip_monitor_udp_module.rst:374
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/bigip_monitor_udp_module.rst:440
+#: ../../rst/modules/bigip_monitor_udp_module.rst:377
 msgid "Requires BIG-IP software version >= 12"
 msgstr ""
 
-#: ../../rst/modules/bigip_monitor_udp_module.rst:441
+#: ../../rst/modules/bigip_monitor_udp_module.rst:378
 msgid ""
 "For more information on using Ansible to manage F5 Networks devices see "
 "https://www.ansible.com/integrations/networks/f5."
 msgstr ""
 
-#: ../../rst/modules/bigip_monitor_udp_module.rst:442
+#: ../../rst/modules/bigip_monitor_udp_module.rst:379
 msgid "Requires BIG-IP software version >= 12."
 msgstr ""
 
-#: ../../rst/modules/bigip_monitor_udp_module.rst:443
+#: ../../rst/modules/bigip_monitor_udp_module.rst:380
 msgid ""
 "The F5 modules only manipulate the running configuration of the F5 "
 "product. To ensure that BIG-IP specific configuration persists to disk, "
@@ -62,54 +62,62 @@ msgid ""
 "your running configuration."
 msgstr ""
 
-#: ../../rst/modules/bigip_monitor_udp_module.rst:448
+#: ../../rst/modules/bigip_monitor_udp_module.rst:385
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/bigip_monitor_udp_module.rst:478
+#: ../../rst/modules/bigip_monitor_udp_module.rst:415
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/bigip_monitor_udp_module.rst:479
+#: ../../rst/modules/bigip_monitor_udp_module.rst:416
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/bigip_monitor_udp_module.rst:572
+#: ../../rst/modules/bigip_monitor_udp_module.rst:509
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/bigip_monitor_udp_module.rst:577
+#: ../../rst/modules/bigip_monitor_udp_module.rst:514
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/bigip_monitor_udp_module.rst:580
+#: ../../rst/modules/bigip_monitor_udp_module.rst:517
 msgid ""
 "This module is :ref:`maintained by an Ansible Partner <modules_support>`."
 " *[certified]*"
 msgstr ""
 
-#: ../../rst/modules/bigip_monitor_udp_module.rst:587
+#: ../../rst/modules/bigip_monitor_udp_module.rst:524
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/bigip_monitor_udp_module.rst:589
+#: ../../rst/modules/bigip_monitor_udp_module.rst:526
 msgid "Tim Rupp (@caphrim007)"
 msgstr ""
 
-#: ../../rst/modules/bigip_monitor_udp_module.rst:590
+#: ../../rst/modules/bigip_monitor_udp_module.rst:527
 msgid "Wojciech Wypior (@wojtek0806)"
 msgstr ""
 
-#: ../../rst/modules/bigip_monitor_udp_module.rst:594
+#: ../../rst/modules/bigip_monitor_udp_module.rst:531
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_monitor_udp.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_monitor_udp.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_monitor_udp.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

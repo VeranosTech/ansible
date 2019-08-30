@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,126 +22,134 @@ msgstr ""
 msgid "nxos_vtp_domain -- Manages VTP domain configuration"
 msgstr ""
 
-#: ../../rst/modules/nxos_vtp_domain_module.rst:19
+#: ../../rst/modules/nxos_vtp_domain_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/nxos_vtp_domain_module.rst:20
+#: ../../rst/modules/nxos_vtp_domain_module.rst:19
 msgid "Manages VTP domain configuration."
 msgstr ""
 
-#: ../../rst/modules/nxos_vtp_domain_module.rst:26
+#: ../../rst/modules/nxos_vtp_domain_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/nxos_vtp_domain_module.rst:260
+#: ../../rst/modules/nxos_vtp_domain_module.rst:262
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/nxos_vtp_domain_module.rst:263
+#: ../../rst/modules/nxos_vtp_domain_module.rst:265
 msgid "Tested against NXOSv 7.3.(0)D1(1) on VIRL"
 msgstr ""
 
-#: ../../rst/modules/nxos_vtp_domain_module.rst:264
+#: ../../rst/modules/nxos_vtp_domain_module.rst:266
 msgid "VTP feature must be active on the device to use this module."
 msgstr ""
 
-#: ../../rst/modules/nxos_vtp_domain_module.rst:265
+#: ../../rst/modules/nxos_vtp_domain_module.rst:267
 msgid "This module is used to manage only VTP domain names."
 msgstr ""
 
-#: ../../rst/modules/nxos_vtp_domain_module.rst:266
+#: ../../rst/modules/nxos_vtp_domain_module.rst:268
 msgid "VTP domain names are case-sensible."
 msgstr ""
 
-#: ../../rst/modules/nxos_vtp_domain_module.rst:267
+#: ../../rst/modules/nxos_vtp_domain_module.rst:269
 msgid ""
 "If it's never been configured before, VTP version is set to 1 by default."
 " Otherwise, it leaves the previous configured version untouched. Use "
 ":ref:`nxos_vtp_version <nxos_vtp_version_module>` to change it."
 msgstr ""
 
-#: ../../rst/modules/nxos_vtp_domain_module.rst:268
+#: ../../rst/modules/nxos_vtp_domain_module.rst:270
 msgid ""
 "Use this in combination with :ref:`nxos_vtp_password "
 "<nxos_vtp_password_module>` and :ref:`nxos_vtp_version "
 "<nxos_vtp_version_module>` to fully manage VTP operations."
 msgstr ""
 
-#: ../../rst/modules/nxos_vtp_domain_module.rst:269
+#: ../../rst/modules/nxos_vtp_domain_module.rst:271
 msgid ""
 "For information on using CLI and NX-API see the :ref:`NXOS Platform "
 "Options guide <nxos_platform_options>`"
 msgstr ""
 
-#: ../../rst/modules/nxos_vtp_domain_module.rst:270
+#: ../../rst/modules/nxos_vtp_domain_module.rst:272
 msgid ""
 "For more information on using Ansible to manage network devices see the "
 ":ref:`Ansible Network Guide <network_guide>`"
 msgstr ""
 
-#: ../../rst/modules/nxos_vtp_domain_module.rst:271
+#: ../../rst/modules/nxos_vtp_domain_module.rst:273
 msgid ""
 "For more information on using Ansible to manage Cisco devices see the "
 "`Cisco integration page "
 "<https://www.ansible.com/integrations/networks/cisco>`_."
 msgstr ""
 
-#: ../../rst/modules/nxos_vtp_domain_module.rst:276
+#: ../../rst/modules/nxos_vtp_domain_module.rst:278
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/nxos_vtp_domain_module.rst:292
+#: ../../rst/modules/nxos_vtp_domain_module.rst:294
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/nxos_vtp_domain_module.rst:293
+#: ../../rst/modules/nxos_vtp_domain_module.rst:295
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/nxos_vtp_domain_module.rst:373
+#: ../../rst/modules/nxos_vtp_domain_module.rst:375
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/nxos_vtp_domain_module.rst:378
+#: ../../rst/modules/nxos_vtp_domain_module.rst:380
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/nxos_vtp_domain_module.rst:381
+#: ../../rst/modules/nxos_vtp_domain_module.rst:383
 msgid ""
 "This module is :ref:`maintained by the Ansible Network Team "
 "<modules_support>`. *[network]*"
 msgstr ""
 
-#: ../../rst/modules/nxos_vtp_domain_module.rst:384
+#: ../../rst/modules/nxos_vtp_domain_module.rst:386
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/nxos_vtp_domain_module.rst:386
+#: ../../rst/modules/nxos_vtp_domain_module.rst:388
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/nxos_vtp_domain_module.rst:392
+#: ../../rst/modules/nxos_vtp_domain_module.rst:394
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/nxos_vtp_domain_module.rst:394
+#: ../../rst/modules/nxos_vtp_domain_module.rst:396
 msgid "Gabriele Gerbino (@GGabriele)"
 msgstr ""
 
-#: ../../rst/modules/nxos_vtp_domain_module.rst:398
+#: ../../rst/modules/nxos_vtp_domain_module.rst:400
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_vtp_domain.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_vtp_domain.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_vtp_domain.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

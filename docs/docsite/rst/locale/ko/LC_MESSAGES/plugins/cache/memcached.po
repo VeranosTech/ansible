@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,35 +48,44 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/plugins/cache/memcached.rst:111
+#: ../../rst/plugins/cache/memcached.rst:112
 msgid "Status"
 msgstr ""
 
-#: ../../rst/plugins/cache/memcached.rst:116
+#: ../../rst/plugins/cache/memcached.rst:117
 msgid ""
 "This cache is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/plugins/cache/memcached.rst:119
+#: ../../rst/plugins/cache/memcached.rst:120
 msgid ""
 "This cache is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/plugins/cache/memcached.rst:126
+#: ../../rst/plugins/cache/memcached.rst:127
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/plugins/cache/memcached.rst:128
+#: ../../rst/plugins/cache/memcached.rst:129
 msgid "UNKNOWN"
 msgstr ""
 
-#: ../../rst/plugins/cache/memcached.rst:132
+#: ../../rst/plugins/cache/memcached.rst:133
+#, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/cache/memcached.py>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/cache/memcached.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/cache/memcached.py>`_"
+#~ " to improve it."
+#~ msgstr ""
 

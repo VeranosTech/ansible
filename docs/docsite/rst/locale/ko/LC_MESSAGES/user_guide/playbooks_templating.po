@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,7 +78,7 @@ msgid ""
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_templating.rst:42
-msgid ":doc:`playbooks`"
+msgid ":ref:`playbooks_intro`"
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_templating.rst:43
@@ -86,7 +86,7 @@ msgid "An introduction to playbooks"
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_templating.rst:44
-msgid ":doc:`playbooks_conditionals`"
+msgid ":ref:`playbooks_conditionals`"
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_templating.rst:45
@@ -94,7 +94,7 @@ msgid "Conditional statements in playbooks"
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_templating.rst:46
-msgid ":doc:`playbooks_loops`"
+msgid ":ref:`playbooks_loops`"
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_templating.rst:47
@@ -102,7 +102,7 @@ msgid "Looping in playbooks"
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_templating.rst:48
-msgid ":doc:`playbooks_reuse_roles`"
+msgid ":ref:`playbooks_reuse_roles`"
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_templating.rst:49
@@ -110,7 +110,7 @@ msgid "Playbook organization by roles"
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_templating.rst:50
-msgid ":doc:`playbooks_best_practices`"
+msgid ":ref:`playbooks_best_practices`"
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_templating.rst:51
@@ -132,4 +132,19 @@ msgstr ""
 #: ../../rst/user_guide/playbooks_templating.rst:55
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ":doc:`playbooks`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks_conditionals`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks_loops`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks_reuse_roles`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks_best_practices`"
+#~ msgstr ""
 

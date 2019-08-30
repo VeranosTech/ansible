@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,17 +22,17 @@ msgstr ""
 msgid "iptables -- Modify iptables rules"
 msgstr ""
 
-#: ../../rst/modules/iptables_module.rst:19
+#: ../../rst/modules/iptables_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/iptables_module.rst:20
+#: ../../rst/modules/iptables_module.rst:19
 msgid ""
 "``iptables`` is used to set up, maintain, and inspect the tables of IP "
 "packet filter rules in the Linux kernel."
 msgstr ""
 
-#: ../../rst/modules/iptables_module.rst:21
+#: ../../rst/modules/iptables_module.rst:20
 msgid ""
 "This module does not handle the saving and/or loading of rules, but "
 "rather only manipulates the current rules that are present in memory. "
@@ -40,70 +40,85 @@ msgid ""
 "command which this module uses internally."
 msgstr ""
 
-#: ../../rst/modules/iptables_module.rst:27
+#: ../../rst/modules/iptables_module.rst:26
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/iptables_module.rst:606
+#: ../../rst/modules/iptables_module.rst:695
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/iptables_module.rst:609
+#: ../../rst/modules/iptables_module.rst:698
 msgid ""
-"This module just deals with individual rules. If you need advanced "
+"This module just deals with individual rules.If you need advanced "
 "chaining of rules the recommended way is to template the iptables restore"
 " file."
 msgstr ""
 
-#: ../../rst/modules/iptables_module.rst:614
+#: ../../rst/modules/iptables_module.rst:703
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/iptables_module.rst:723
+#: ../../rst/modules/iptables_module.rst:830
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/iptables_module.rst:728
+#: ../../rst/modules/iptables_module.rst:835
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/iptables_module.rst:731
+#: ../../rst/modules/iptables_module.rst:838
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/iptables_module.rst:734
+#: ../../rst/modules/iptables_module.rst:841
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/iptables_module.rst:736
+#: ../../rst/modules/iptables_module.rst:843
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/iptables_module.rst:742
+#: ../../rst/modules/iptables_module.rst:849
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/iptables_module.rst:744
+#: ../../rst/modules/iptables_module.rst:851
 msgid "Linus Unnebäck (@LinusU) <linus@folkdatorn.se>"
 msgstr ""
 
-#: ../../rst/modules/iptables_module.rst:745
+#: ../../rst/modules/iptables_module.rst:852
 msgid "Sébastien DA ROCHA (@sebastiendarocha)"
 msgstr ""
 
-#: ../../rst/modules/iptables_module.rst:749
+#: ../../rst/modules/iptables_module.rst:856
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/iptables.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/iptables.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module just deals with individual"
+#~ " rules. If you need advanced chaining"
+#~ " of rules the recommended way is "
+#~ "to template the iptables restore file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/iptables.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

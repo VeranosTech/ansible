@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,7 @@ msgid ""
 "runs the command through a shell (``/bin/sh``) on the remote node."
 msgstr ""
 
-#: ../../rst/modules/shell_module.rst:21 ../../rst/modules/shell_module.rst:164
+#: ../../rst/modules/shell_module.rst:21
 msgid ""
 "For Windows targets, use the :ref:`win_shell <win_shell_module>` module "
 "instead."
@@ -71,8 +71,8 @@ msgstr ""
 
 #: ../../rst/modules/shell_module.rst:162
 msgid ""
-"To sanitize any variables passed to the shell module, you should use \"{{"
-" var | quote }}\" instead of just \"{{ var }}\" to make sure they don't "
+"To sanitize any variables passed to the shell module, you should use ``{{"
+" var | quote }}`` instead of just ``{{ var }}`` to make sure they do not "
 "include evil things like semicolons."
 msgstr ""
 
@@ -81,6 +81,12 @@ msgid ""
 "An alternative to using inline shell scripts with this module is to use "
 "the :ref:`script <script_module>` module possibly together with the "
 ":ref:`template <template_module>` module."
+msgstr ""
+
+#: ../../rst/modules/shell_module.rst:164
+msgid ""
+"For rebooting systems, use the :ref:`reboot <reboot_module>` or "
+":ref:`win_reboot <win_reboot_module>` module."
 msgstr ""
 
 #: ../../rst/modules/shell_module.rst:168
@@ -175,9 +181,26 @@ msgstr ""
 #: ../../rst/modules/shell_module.rst:398
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/commands/shell.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/commands/shell.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "To sanitize any variables passed to "
+#~ "the shell module, you should use "
+#~ "\"{{ var | quote }}\" instead of"
+#~ " just \"{{ var }}\" to make "
+#~ "sure they don't include evil things "
+#~ "like semicolons."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/commands/shell.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

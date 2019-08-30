@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/modules/jboss_module.rst:9
-msgid "jboss -- deploy applications to JBoss"
+msgid "jboss -- Deploy applications to JBoss"
 msgstr ""
 
 #: ../../rst/modules/jboss_module.rst:18
@@ -27,61 +27,94 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/jboss_module.rst:19
-msgid "Deploy applications to JBoss standalone using the filesystem"
+msgid "Deploy applications to JBoss standalone using the filesystem."
 msgstr ""
 
 #: ../../rst/modules/jboss_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/jboss_module.rst:97
+#: ../../rst/modules/jboss_module.rst:99
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/jboss_module.rst:100
+#: ../../rst/modules/jboss_module.rst:102
 msgid ""
 "The JBoss standalone deployment-scanner has to be enabled in "
 "standalone.xml"
 msgstr ""
 
-#: ../../rst/modules/jboss_module.rst:101
+#: ../../rst/modules/jboss_module.rst:103
+msgid ""
+"The module can wait until *deployment* file is deployed/undeployed by "
+"deployment-scanner. Duration of waiting time depends on scan-interval "
+"parameter from standalone.xml."
+msgstr ""
+
+#: ../../rst/modules/jboss_module.rst:104
 msgid "Ensure no identically named application is deployed through the JBoss CLI"
 msgstr ""
 
-#: ../../rst/modules/jboss_module.rst:106
+#: ../../rst/modules/jboss_module.rst:108
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/jboss_module.rst:112
+msgid "`WildFly reference <https://docs.wildfly.org>`_"
+msgstr ""
+
+#: ../../rst/modules/jboss_module.rst:113
+msgid "Complete reference of the WildFly documentation."
+msgstr ""
+
+#: ../../rst/modules/jboss_module.rst:117
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/jboss_module.rst:133
+#: ../../rst/modules/jboss_module.rst:145
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/jboss_module.rst:138
+#: ../../rst/modules/jboss_module.rst:150
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/jboss_module.rst:141
+#: ../../rst/modules/jboss_module.rst:153
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/jboss_module.rst:148
+#: ../../rst/modules/jboss_module.rst:160
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/jboss_module.rst:150
+#: ../../rst/modules/jboss_module.rst:162
 msgid "Jeroen Hoekx (@jhoekx)"
 msgstr ""
 
-#: ../../rst/modules/jboss_module.rst:154
+#: ../../rst/modules/jboss_module.rst:166
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/web_infrastructure/jboss.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/web_infrastructure/jboss.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "jboss -- deploy applications to JBoss"
+#~ msgstr ""
+
+#~ msgid "Deploy applications to JBoss standalone using the filesystem"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/web_infrastructure/jboss.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

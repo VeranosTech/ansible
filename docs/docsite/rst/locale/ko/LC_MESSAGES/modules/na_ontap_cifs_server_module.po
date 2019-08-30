@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/na_ontap_cifs_server_module.rst:20
-msgid "Creating / deleting and modifying the CIFS server."
+msgid "Creating / deleting and modifying the CIFS server ."
 msgstr ""
 
 #: ../../rst/modules/na_ontap_cifs_server_module.rst:25
@@ -70,50 +70,67 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_cifs_server_module.rst:295
+#: ../../rst/modules/na_ontap_cifs_server_module.rst:317
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_cifs_server_module.rst:298
+#: ../../rst/modules/na_ontap_cifs_server_module.rst:320
 msgid ""
-"The modules prefixed with na\\_ontap are built to support the ONTAP "
+"The modules prefixed with na\\\\_ontap are built to support the ONTAP "
 "storage platform."
 msgstr ""
 
-#: ../../rst/modules/na_ontap_cifs_server_module.rst:303
+#: ../../rst/modules/na_ontap_cifs_server_module.rst:325
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_cifs_server_module.rst:331
+#: ../../rst/modules/na_ontap_cifs_server_module.rst:353
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_cifs_server_module.rst:336
+#: ../../rst/modules/na_ontap_cifs_server_module.rst:358
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_cifs_server_module.rst:339
+#: ../../rst/modules/na_ontap_cifs_server_module.rst:361
 msgid ""
 "This module is :ref:`maintained by an Ansible Partner <modules_support>`."
 " *[certified]*"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_cifs_server_module.rst:346
+#: ../../rst/modules/na_ontap_cifs_server_module.rst:368
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_cifs_server_module.rst:348
+#: ../../rst/modules/na_ontap_cifs_server_module.rst:370
 msgid "NetApp Ansible Team (@carchi8py) <ng-ansibleteam@netapp.com>"
 msgstr ""
 
-#: ../../rst/modules/na_ontap_cifs_server_module.rst:352
+#: ../../rst/modules/na_ontap_cifs_server_module.rst:374
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/na_ontap_cifs_server.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/na_ontap_cifs_server.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "Creating / deleting and modifying the CIFS server."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The modules prefixed with na\\_ontap are"
+#~ " built to support the ONTAP storage"
+#~ " platform."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/na_ontap_cifs_server.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

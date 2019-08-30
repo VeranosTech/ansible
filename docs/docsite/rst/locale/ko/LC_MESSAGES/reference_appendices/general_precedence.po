@@ -1,0 +1,289 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/reference_appendices/general_precedence.rst:4
+msgid "Controlling how Ansible behaves: precedence rules"
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:6
+msgid ""
+"To give you maximum flexibility in managing your environments, Ansible "
+"offers many ways to control how Ansible behaves: how it connects to "
+"managed nodes, how it works once it has connected. If you use Ansible to "
+"manage a large number of servers, network devices, and cloud resources, "
+"you may define Ansible behavior in several different places and pass that"
+" information to Ansible in several different ways. This flexibility is "
+"convenient, but it can backfire if you do not understand the precedence "
+"rules."
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:10
+msgid ""
+"These precedence rules apply to any setting that can be defined in "
+"multiple ways (by configuration settings, command-line options, playbook "
+"keywords, variables)."
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:16
+msgid "Precedence categories"
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:18
+msgid ""
+"Ansible offers four sources for controlling its behavior. In order of "
+"precedence from lowest (most easily overridden) to highest (overrides all"
+" others), the categories are:"
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:20
+#: ../../rst/reference_appendices/general_precedence.rst:30
+msgid "Configuration settings"
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:21
+#: ../../rst/reference_appendices/general_precedence.rst:42
+msgid "Command-line options"
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:22
+#: ../../rst/reference_appendices/general_precedence.rst:61
+msgid "Playbook keywords"
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:23
+#: ../../rst/reference_appendices/general_precedence.rst:92
+msgid "Variables"
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:25
+msgid ""
+"Each category overrides any information from all lower-precedence "
+"categories. For example, a playbook keyword will override any "
+"configuration setting."
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:27
+msgid ""
+"Within each precedence category, specific rules apply. However, generally"
+" speaking, 'last defined' wins and overrides any previous definitions."
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:32
+msgid ""
+":ref:`Configuration settings<ansible_configuration_settings>` include "
+"both values from the ``ansible.cfg`` file and environment variables. "
+"Within this category, values set in configuration files have lower "
+"precedence. Ansible uses the first ``ansible.cfg`` file it finds, "
+"ignoring all others. Ansible searches for ``ansible.cfg`` in these "
+"locations in order:"
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:34
+msgid "``ANSIBLE_CONFIG`` (environment variable if set)"
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:35
+msgid "``ansible.cfg`` (in the current directory)"
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:36
+msgid "``~/.ansible.cfg`` (in the home directory)"
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:37
+msgid "``/etc/ansible/ansible.cfg``"
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:39
+msgid ""
+"Environment variables have a higher precedence than entries in "
+"``ansible.cfg``. If you have environment variables set on your control "
+"node, they override the settings in whichever ``ansible.cfg`` file "
+"Ansible loads. The value of any given environment variable follows normal"
+" shell precedence: the last value defined overwrites previous values."
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:44
+msgid "Any command-line option will override any configuration setting."
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:46
+msgid ""
+"When you type something directly at the command line, you may feel that "
+"your hand-crafted values should override all others, but Ansible does not"
+" work that way. Command-line options have low precedence - they override "
+"configuration only. They do not override playbook keywords, variables "
+"from inventory or variables from playbooks."
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:48
+msgid ""
+"You can override all other settings from all other sources in all other "
+"precedence categories at the command line by  "
+":ref:`general_precedence_extra_vars`, but that is not a command-line "
+"option, it is a way of passing a "
+":ref:`variable<general_precedence_variables>`."
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:50
+msgid ""
+"At the command line, if you pass multiple values for a parameter that "
+"accepts only a single value, the last defined value wins. For example, "
+"this :ref:`ad-hoc task<intro_adhoc>` will connect as ``carol``, not as "
+"``mike``::"
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:54
+msgid ""
+"Some parameters allow multiple values. In this case, Ansible will append "
+"all values from the hosts listed in inventory files inventory1 and "
+"inventory2::"
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:58
+msgid ""
+"The help for each :ref:`command-line tool<command_line_tools>` lists "
+"available options for that tool."
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:63
+msgid ""
+"Any :ref:`playbook keyword<playbook_keywords>` will override any command-"
+"line option and any configuration setting."
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:65
+msgid ""
+"Within playbook keywords, precedence flows with the playbook itself; the "
+"more specific wins against the more general:"
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:67
+msgid "play (most general)"
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:68
+msgid ""
+"blocks/includes/imports/roles (optional and can contain tasks and each "
+"other)"
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:69
+msgid "tasks (most specific)"
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:71
+msgid "A simple example::"
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:83
+msgid ""
+"In this example, the ``connection`` keyword is set to ``ssh`` at the play"
+" level. The first task inherits that value, and connects using ``ssh``. "
+"The second task inherits that value, overrides it, and connects using "
+"``paramiko``. The same logic applies to blocks and roles as well. All "
+"tasks, blocks, and roles within a play inherit play-level keywords; any "
+"task, block, or role can override any keyword by defining a different "
+"value for that keyword within the task, block, or role."
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:86
+msgid ""
+"Remember that these are KEYWORDS, not variables. Both playbooks and "
+"variable files are defined in YAML but they have different significance. "
+"Playbooks are the command or 'state description' structure for Ansible, "
+"variables are data we use to help make playbooks more dynamic."
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:94
+msgid ""
+"Any variable will override any playbook keyword, any command-line option,"
+" and any configuration setting."
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:96
+msgid ""
+"Variables that have equivalent playbook keywords, command-line options, "
+"and configuration settings are known as :ref:`connection_variables`. "
+"Originally designed for connection parameters, this category has expanded"
+" to include other core variables like the temporary directory and the "
+"python interpreter."
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:98
+msgid ""
+"Connection variables, like all variables, can be set in multiple ways and"
+" places. You can define variables for hosts and groups in "
+":ref:`inventory<intro_inventory>`. You can define variables for tasks and"
+" plays in ``vars:`` blocks in :ref:`playbooks<about_playbooks>`. However,"
+" they are still variables - they are data, not keywords or configuration "
+"settings. Variables that override playbook keywords, command-line "
+"options, and configuration settings follow the same rules of "
+":ref:`variable precedence <ansible_variable_precedence>` as any other "
+"variables."
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:100
+msgid ""
+"When set in a playbook, variables follow the same inheritance rules as "
+"playbook keywords. You can set a value for the play, then override it in "
+"a task, block, or role::"
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:125
+msgid "Variable scope: how long is a value available?"
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:127
+msgid ""
+"Variable values set in a playbook exist only within the playbook object "
+"that defines them. These 'playbook object scope' variables are not "
+"available to subsequent objects, including other plays."
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:129
+msgid ""
+"Variable values associated directly with a host or group, including "
+"variables defined in inventory, by vars plugins, or using modules like "
+":ref:`set_fact<set_fact_module>` and "
+":ref:`include_vars<include_vars_module>`, are available to all plays. "
+"These 'host scope' variables are also available via the ``hostvars[]`` "
+"dictionary."
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:134
+msgid "Using ``-e`` extra variables at the command line"
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:136
+msgid ""
+"To override all other settings in all other categories, you can use extra"
+" variables: ``--extra-vars`` or ``-e`` at the command line. Values passed"
+" with ``-e`` are variables, not command-line options, and they will "
+"override configuration settings, command-line options, and playbook "
+"keywords as well as variables set elsewhere. For example, this task will "
+"connect as ``brian`` not as ``carol``::"
+msgstr ""
+
+#: ../../rst/reference_appendices/general_precedence.rst:140
+msgid ""
+"You must specify both the variable name and the value with ``--extra-"
+"vars``."
+msgstr ""
+

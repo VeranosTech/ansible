@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,593 +35,838 @@ msgid "Glusterfs"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:28
-msgid ":ref:`gluster_peer_module`"
+msgid ":ref:`gluster_heal_info_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:29
+msgid ":ref:`gluster_peer_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:30
 msgid ":ref:`gluster_volume_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_storage_modules.rst:35
-msgid "Ibm"
-msgstr ""
-
-#: ../../rst/modules/list_of_storage_modules.rst:39
-msgid ":ref:`ibm_sa_domain_module`"
+#: ../../rst/modules/list_of_storage_modules.rst:36
+msgid "Hpe3Par"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:40
-msgid ":ref:`ibm_sa_host_module`"
+msgid ":ref:`ss_3par_cpg_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_storage_modules.rst:41
-msgid ":ref:`ibm_sa_host_ports_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_storage_modules.rst:42
-msgid ":ref:`ibm_sa_pool_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_storage_modules.rst:43
-msgid ":ref:`ibm_sa_vol_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_storage_modules.rst:44
-msgid ":ref:`ibm_sa_vol_map_module`"
+#: ../../rst/modules/list_of_storage_modules.rst:46
+msgid "Ibm"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:50
-msgid "Infinidat"
+msgid ":ref:`ibm_sa_domain_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:51
+msgid ":ref:`ibm_sa_host_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:52
+msgid ":ref:`ibm_sa_host_ports_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:53
+msgid ":ref:`ibm_sa_pool_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:54
-msgid ":ref:`infini_export_module`"
+msgid ":ref:`ibm_sa_vol_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:55
-msgid ":ref:`infini_export_client_module`"
+msgid ":ref:`ibm_sa_vol_map_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_storage_modules.rst:56
-msgid ":ref:`infini_fs_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_storage_modules.rst:57
-msgid ":ref:`infini_host_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_storage_modules.rst:58
-msgid ":ref:`infini_pool_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_storage_modules.rst:59
-msgid ":ref:`infini_vol_module`"
+#: ../../rst/modules/list_of_storage_modules.rst:61
+msgid "Infinidat"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:65
-msgid "Netapp"
+msgid ":ref:`infini_export_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:66
+msgid ":ref:`infini_export_client_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:67
+msgid ":ref:`infini_fs_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:68
+msgid ":ref:`infini_host_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:69
-msgid ":ref:`na_cdot_aggregate_module` **(D)**"
+msgid ":ref:`infini_pool_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:70
-msgid ":ref:`na_cdot_license_module` **(D)**"
-msgstr ""
-
-#: ../../rst/modules/list_of_storage_modules.rst:71
-msgid ":ref:`na_cdot_lun_module` **(D)**"
-msgstr ""
-
-#: ../../rst/modules/list_of_storage_modules.rst:72
-msgid ":ref:`na_cdot_qtree_module` **(D)**"
-msgstr ""
-
-#: ../../rst/modules/list_of_storage_modules.rst:73
-msgid ":ref:`na_cdot_svm_module` **(D)**"
-msgstr ""
-
-#: ../../rst/modules/list_of_storage_modules.rst:74
-msgid ":ref:`na_cdot_user_module` **(D)**"
-msgstr ""
-
-#: ../../rst/modules/list_of_storage_modules.rst:75
-msgid ":ref:`na_cdot_user_role_module` **(D)**"
+msgid ":ref:`infini_vol_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:76
-msgid ":ref:`na_cdot_volume_module` **(D)**"
-msgstr ""
-
-#: ../../rst/modules/list_of_storage_modules.rst:77
-msgid ":ref:`na_elementsw_access_group_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_storage_modules.rst:78
-msgid ":ref:`na_elementsw_account_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_storage_modules.rst:79
-msgid ":ref:`na_elementsw_admin_users_module`"
+msgid "Netapp"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:80
-msgid ":ref:`na_elementsw_backup_module`"
+msgid ":ref:`na_cdot_aggregate_module` **(D)**"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:81
-msgid ":ref:`na_elementsw_check_connections_module`"
+msgid ":ref:`na_cdot_license_module` **(D)**"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:82
-msgid ":ref:`na_elementsw_cluster_module`"
+msgid ":ref:`na_cdot_lun_module` **(D)**"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:83
-msgid ":ref:`na_elementsw_cluster_pair_module`"
+msgid ":ref:`na_cdot_qtree_module` **(D)**"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:84
-msgid ":ref:`na_elementsw_drive_module`"
+msgid ":ref:`na_cdot_svm_module` **(D)**"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:85
-msgid ":ref:`na_elementsw_ldap_module`"
+msgid ":ref:`na_cdot_user_module` **(D)**"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:86
-msgid ":ref:`na_elementsw_network_interfaces_module`"
+msgid ":ref:`na_cdot_user_role_module` **(D)**"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:87
-msgid ":ref:`na_elementsw_node_module`"
+msgid ":ref:`na_cdot_volume_module` **(D)**"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:88
-msgid ":ref:`na_elementsw_snapshot_module`"
+msgid ":ref:`na_elementsw_access_group_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:89
-msgid ":ref:`na_elementsw_snapshot_restore_module`"
+msgid ":ref:`na_elementsw_account_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:90
-msgid ":ref:`na_elementsw_snapshot_schedule_module`"
+msgid ":ref:`na_elementsw_admin_users_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:91
-msgid ":ref:`na_elementsw_vlan_module`"
+msgid ":ref:`na_elementsw_backup_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:92
-msgid ":ref:`na_elementsw_volume_module`"
+msgid ":ref:`na_elementsw_check_connections_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:93
-msgid ":ref:`na_elementsw_volume_clone_module`"
+msgid ":ref:`na_elementsw_cluster_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:94
-msgid ":ref:`na_elementsw_volume_pair_module`"
+msgid ":ref:`na_elementsw_cluster_config_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:95
-msgid ":ref:`na_ontap_aggregate_module`"
+msgid ":ref:`na_elementsw_cluster_pair_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:96
-msgid ":ref:`na_ontap_autosupport_module`"
+msgid ":ref:`na_elementsw_cluster_snmp_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:97
-msgid ":ref:`na_ontap_broadcast_domain_module`"
+msgid ":ref:`na_elementsw_drive_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:98
-msgid ":ref:`na_ontap_broadcast_domain_ports_module`"
+msgid ":ref:`na_elementsw_initiators_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:99
-msgid ":ref:`na_ontap_cg_snapshot_module`"
+msgid ":ref:`na_elementsw_ldap_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:100
-msgid ":ref:`na_ontap_cifs_module`"
+msgid ":ref:`na_elementsw_network_interfaces_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:101
-msgid ":ref:`na_ontap_cifs_acl_module`"
+msgid ":ref:`na_elementsw_node_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:102
-msgid ":ref:`na_ontap_cifs_server_module`"
+msgid ":ref:`na_elementsw_snapshot_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:103
-msgid ":ref:`na_ontap_cluster_module`"
+msgid ":ref:`na_elementsw_snapshot_restore_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:104
-msgid ":ref:`na_ontap_cluster_ha_module`"
+msgid ":ref:`na_elementsw_snapshot_schedule_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:105
-msgid ":ref:`na_ontap_cluster_peer_module`"
+msgid ":ref:`na_elementsw_vlan_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:106
-msgid ":ref:`na_ontap_command_module`"
+msgid ":ref:`na_elementsw_volume_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:107
-msgid ":ref:`na_ontap_disks_module`"
+msgid ":ref:`na_elementsw_volume_clone_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:108
-msgid ":ref:`na_ontap_dns_module`"
+msgid ":ref:`na_elementsw_volume_pair_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:109
-msgid ":ref:`na_ontap_export_policy_module`"
+msgid ":ref:`na_ontap_aggregate_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:110
-msgid ":ref:`na_ontap_export_policy_rule_module`"
+msgid ":ref:`na_ontap_autosupport_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:111
-msgid ":ref:`na_ontap_fcp_module`"
+msgid ":ref:`na_ontap_broadcast_domain_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:112
-msgid ":ref:`na_ontap_firewall_policy_module`"
+msgid ":ref:`na_ontap_broadcast_domain_ports_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:113
-msgid ":ref:`na_ontap_gather_facts_module`"
+msgid ":ref:`na_ontap_cg_snapshot_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:114
-msgid ":ref:`na_ontap_igroup_module`"
+msgid ":ref:`na_ontap_cifs_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:115
-msgid ":ref:`na_ontap_interface_module`"
+msgid ":ref:`na_ontap_cifs_acl_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:116
-msgid ":ref:`na_ontap_iscsi_module`"
+msgid ":ref:`na_ontap_cifs_server_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:117
-msgid ":ref:`na_ontap_job_schedule_module`"
+msgid ":ref:`na_ontap_cluster_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:118
-msgid ":ref:`na_ontap_license_module`"
+msgid ":ref:`na_ontap_cluster_ha_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:119
-msgid ":ref:`na_ontap_lun_module`"
+msgid ":ref:`na_ontap_cluster_peer_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:120
-msgid ":ref:`na_ontap_lun_map_module`"
+msgid ":ref:`na_ontap_command_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:121
-msgid ":ref:`na_ontap_motd_module`"
+msgid ":ref:`na_ontap_disks_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:122
-msgid ":ref:`na_ontap_net_ifgrp_module`"
+msgid ":ref:`na_ontap_dns_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:123
-msgid ":ref:`na_ontap_net_port_module`"
+msgid ":ref:`na_ontap_export_policy_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:124
-msgid ":ref:`na_ontap_net_routes_module`"
+msgid ":ref:`na_ontap_export_policy_rule_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:125
-msgid ":ref:`na_ontap_net_vlan_module`"
+msgid ":ref:`na_ontap_fcp_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:126
-msgid ":ref:`na_ontap_nfs_module`"
+msgid ":ref:`na_ontap_firewall_policy_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:127
-msgid ":ref:`na_ontap_node_module`"
+msgid ":ref:`na_ontap_firmware_upgrade_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:128
-msgid ":ref:`na_ontap_ntp_module`"
+msgid ":ref:`na_ontap_flexcache_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:129
-msgid ":ref:`na_ontap_qtree_module`"
+msgid ":ref:`na_ontap_gather_facts_module` **(D)**"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:130
-msgid ":ref:`na_ontap_service_processor_network_module`"
+msgid ":ref:`na_ontap_igroup_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:131
-msgid ":ref:`na_ontap_snapmirror_module`"
+msgid ":ref:`na_ontap_igroup_initiator_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:132
-msgid ":ref:`na_ontap_snapshot_module`"
+msgid ":ref:`na_ontap_info_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:133
-msgid ":ref:`na_ontap_snmp_module`"
+msgid ":ref:`na_ontap_interface_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:134
-msgid ":ref:`na_ontap_software_update_module`"
+msgid ":ref:`na_ontap_ipspace_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:135
-msgid ":ref:`na_ontap_svm_module`"
+msgid ":ref:`na_ontap_iscsi_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:136
-msgid ":ref:`na_ontap_svm_options_module`"
+msgid ":ref:`na_ontap_job_schedule_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:137
-msgid ":ref:`na_ontap_ucadapter_module`"
+msgid ":ref:`na_ontap_kerberos_realm_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:138
-msgid ":ref:`na_ontap_user_module`"
+msgid ":ref:`na_ontap_ldap_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:139
-msgid ":ref:`na_ontap_user_role_module`"
+msgid ":ref:`na_ontap_ldap_client_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:140
-msgid ":ref:`na_ontap_volume_module`"
+msgid ":ref:`na_ontap_license_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:141
-msgid ":ref:`na_ontap_volume_clone_module`"
+msgid ":ref:`na_ontap_lun_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:142
-msgid ":ref:`na_ontap_vserver_peer_module`"
+msgid ":ref:`na_ontap_lun_copy_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:143
-msgid ":ref:`netapp_e_alerts_module`"
+msgid ":ref:`na_ontap_lun_map_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:144
-msgid ":ref:`netapp_e_amg_module`"
+msgid ":ref:`na_ontap_motd_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:145
-msgid ":ref:`netapp_e_amg_role_module`"
+msgid ":ref:`na_ontap_ndmp_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:146
-msgid ":ref:`netapp_e_amg_sync_module`"
+msgid ":ref:`na_ontap_net_ifgrp_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:147
-msgid ":ref:`netapp_e_asup_module`"
+msgid ":ref:`na_ontap_net_port_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:148
-msgid ":ref:`netapp_e_auditlog_module`"
+msgid ":ref:`na_ontap_net_routes_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:149
-msgid ":ref:`netapp_e_auth_module`"
+msgid ":ref:`na_ontap_net_subnet_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:150
-msgid ":ref:`netapp_e_facts_module`"
+msgid ":ref:`na_ontap_net_vlan_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:151
-msgid ":ref:`netapp_e_flashcache_module`"
+msgid ":ref:`na_ontap_nfs_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:152
-msgid ":ref:`netapp_e_global_module`"
+msgid ":ref:`na_ontap_node_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:153
-msgid ":ref:`netapp_e_host_module`"
+msgid ":ref:`na_ontap_ntp_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:154
-msgid ":ref:`netapp_e_hostgroup_module`"
+msgid ":ref:`na_ontap_nvme_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:155
-msgid ":ref:`netapp_e_iscsi_interface_module`"
+msgid ":ref:`na_ontap_nvme_namespace_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:156
-msgid ":ref:`netapp_e_iscsi_target_module`"
+msgid ":ref:`na_ontap_nvme_subsystem_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:157
-msgid ":ref:`netapp_e_ldap_module`"
+msgid ":ref:`na_ontap_object_store_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:158
-msgid ":ref:`netapp_e_lun_mapping_module`"
+msgid ":ref:`na_ontap_ports_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:159
-msgid ":ref:`netapp_e_mgmt_interface_module`"
+msgid ":ref:`na_ontap_portset_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:160
-msgid ":ref:`netapp_e_snapshot_group_module`"
+msgid ":ref:`na_ontap_qos_adaptive_policy_group_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:161
-msgid ":ref:`netapp_e_snapshot_images_module`"
+msgid ":ref:`na_ontap_qos_policy_group_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:162
-msgid ":ref:`netapp_e_snapshot_volume_module`"
+msgid ":ref:`na_ontap_qtree_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:163
-msgid ":ref:`netapp_e_storage_system_module`"
+msgid ":ref:`na_ontap_quotas_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:164
-msgid ":ref:`netapp_e_storagepool_module`"
+msgid ":ref:`na_ontap_security_key_manager_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:165
-msgid ":ref:`netapp_e_syslog_module`"
+msgid ":ref:`na_ontap_service_processor_network_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:166
-msgid ":ref:`netapp_e_volume_module`"
+msgid ":ref:`na_ontap_snapmirror_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:167
-msgid ":ref:`netapp_e_volume_copy_module`"
+msgid ":ref:`na_ontap_snapshot_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:168
-msgid ":ref:`sf_account_manager_module` **(D)**"
+msgid ":ref:`na_ontap_snapshot_policy_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:169
-msgid ":ref:`sf_check_connections_module` **(D)**"
+msgid ":ref:`na_ontap_snmp_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:170
-msgid ":ref:`sf_snapshot_schedule_manager_module` **(D)**"
+msgid ":ref:`na_ontap_software_update_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:171
-msgid ":ref:`sf_volume_access_group_manager_module` **(D)**"
+msgid ":ref:`na_ontap_svm_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:172
-msgid ":ref:`sf_volume_manager_module` **(D)**"
+msgid ":ref:`na_ontap_svm_options_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:173
+msgid ":ref:`na_ontap_ucadapter_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:174
+msgid ":ref:`na_ontap_unix_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:175
+msgid ":ref:`na_ontap_unix_user_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:176
+msgid ":ref:`na_ontap_user_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:177
+msgid ":ref:`na_ontap_user_role_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:178
-msgid "Purestorage"
+msgid ":ref:`na_ontap_volume_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:179
+msgid ":ref:`na_ontap_volume_autosize_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:180
+msgid ":ref:`na_ontap_volume_clone_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:181
+msgid ":ref:`na_ontap_vscan_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:182
-msgid ":ref:`purefa_dns_module`"
+msgid ":ref:`na_ontap_vscan_on_access_policy_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:183
-msgid ":ref:`purefa_ds_module`"
+msgid ":ref:`na_ontap_vscan_on_demand_task_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:184
-msgid ":ref:`purefa_facts_module`"
+msgid ":ref:`na_ontap_vscan_scanner_pool_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:185
-msgid ":ref:`purefa_hg_module`"
+msgid ":ref:`na_ontap_vserver_cifs_security_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:186
-msgid ":ref:`purefa_host_module`"
+msgid ":ref:`na_ontap_vserver_peer_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:187
-msgid ":ref:`purefa_ntp_module`"
+msgid ":ref:`netapp_e_alerts_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:188
-msgid ":ref:`purefa_pg_module`"
+msgid ":ref:`netapp_e_amg_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:189
-msgid ":ref:`purefa_pgsnap_module`"
+msgid ":ref:`netapp_e_amg_role_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:190
-msgid ":ref:`purefa_ra_module`"
+msgid ":ref:`netapp_e_amg_sync_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:191
-msgid ":ref:`purefa_snap_module`"
+msgid ":ref:`netapp_e_asup_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:192
-msgid ":ref:`purefa_volume_module`"
+msgid ":ref:`netapp_e_auditlog_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:193
-msgid ":ref:`purefb_bucket_module`"
+msgid ":ref:`netapp_e_auth_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:194
-msgid ":ref:`purefb_dsrole_module`"
+msgid ":ref:`netapp_e_drive_firmware_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:195
-msgid ":ref:`purefb_facts_module`"
+msgid ":ref:`netapp_e_facts_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:196
-msgid ":ref:`purefb_fs_module`"
+msgid ":ref:`netapp_e_firmware_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:197
-msgid ":ref:`purefb_network_module`"
+msgid ":ref:`netapp_e_flashcache_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:198
-msgid ":ref:`purefb_s3acc_module`"
+msgid ":ref:`netapp_e_global_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:199
-msgid ":ref:`purefb_s3user_module`"
+msgid ":ref:`netapp_e_host_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:200
-msgid ":ref:`purefb_snap_module`"
+msgid ":ref:`netapp_e_hostgroup_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:201
-msgid ":ref:`purefb_subnet_module`"
+msgid ":ref:`netapp_e_iscsi_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:202
+msgid ":ref:`netapp_e_iscsi_target_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:203
+msgid ":ref:`netapp_e_ldap_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:204
+msgid ":ref:`netapp_e_lun_mapping_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:205
+msgid ":ref:`netapp_e_mgmt_interface_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:206
+msgid ":ref:`netapp_e_snapshot_group_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:207
-msgid "Zfs"
+msgid ":ref:`netapp_e_snapshot_images_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:208
+msgid ":ref:`netapp_e_snapshot_volume_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:209
+msgid ":ref:`netapp_e_storage_system_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:210
+msgid ":ref:`netapp_e_storagepool_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:211
-msgid ":ref:`zfs_module`"
+msgid ":ref:`netapp_e_syslog_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:212
-msgid ":ref:`zfs_facts_module`"
+msgid ":ref:`netapp_e_volume_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:213
-msgid ":ref:`zpool_facts_module`"
+msgid ":ref:`netapp_e_volume_copy_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:214
+msgid ":ref:`sf_account_manager_module` **(D)**"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:215
+msgid ":ref:`sf_check_connections_module` **(D)**"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:216
+msgid ":ref:`sf_snapshot_schedule_manager_module` **(D)**"
 msgstr ""
 
 #: ../../rst/modules/list_of_storage_modules.rst:217
+msgid ":ref:`sf_volume_access_group_manager_module` **(D)**"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:218
+msgid ":ref:`sf_volume_manager_module` **(D)**"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:224
+msgid "Purestorage"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:228
+msgid ":ref:`purefa_alert_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:229
+msgid ":ref:`purefa_arrayname_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:230
+msgid ":ref:`purefa_banner_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:231
+msgid ":ref:`purefa_connect_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:232
+msgid ":ref:`purefa_dns_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:233
+msgid ":ref:`purefa_ds_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:234
+msgid ":ref:`purefa_dsrole_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:235
+msgid ":ref:`purefa_facts_module` **(D)**"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:236
+msgid ":ref:`purefa_hg_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:237
+msgid ":ref:`purefa_host_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:238
+msgid ":ref:`purefa_info_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:239
+msgid ":ref:`purefa_ntp_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:240
+msgid ":ref:`purefa_offload_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:241
+msgid ":ref:`purefa_pg_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:242
+msgid ":ref:`purefa_pgsnap_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:243
+msgid ":ref:`purefa_phonehome_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:244
+msgid ":ref:`purefa_ra_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:245
+msgid ":ref:`purefa_smtp_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:246
+msgid ":ref:`purefa_snap_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:247
+msgid ":ref:`purefa_snmp_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:248
+msgid ":ref:`purefa_syslog_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:249
+msgid ":ref:`purefa_user_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:250
+msgid ":ref:`purefa_vg_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:251
+msgid ":ref:`purefa_volume_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:252
+msgid ":ref:`purefb_bucket_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:253
+msgid ":ref:`purefb_ds_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:254
+msgid ":ref:`purefb_dsrole_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:255
+msgid ":ref:`purefb_facts_module` **(D)**"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:256
+msgid ":ref:`purefb_fs_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:257
+msgid ":ref:`purefb_info_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:258
+msgid ":ref:`purefb_network_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:259
+msgid ":ref:`purefb_ra_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:260
+msgid ":ref:`purefb_s3acc_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:261
+msgid ":ref:`purefb_s3user_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:262
+msgid ":ref:`purefb_smtp_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:263
+msgid ":ref:`purefb_snap_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:264
+msgid ":ref:`purefb_subnet_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:270
+msgid "Vexata"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:274
+msgid ":ref:`vexata_eg_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:275
+msgid ":ref:`vexata_volume_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:281
+msgid "Zfs"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:285
+msgid ":ref:`zfs_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:286
+msgid ":ref:`zfs_delegate_admin_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:287
+msgid ":ref:`zfs_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:288
+msgid ":ref:`zpool_facts_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_storage_modules.rst:292
 msgid ""
 "**(D)**: This marks a module as deprecated, which means a module is kept "
 "for backwards compatibility but usage is discouraged. The module "
 "documentation details page may explain more about this rationale."
 msgstr ""
+
+#~ msgid ":ref:`na_ontap_gather_facts_module`"
+#~ msgstr ""
+
+#~ msgid ":ref:`purefa_facts_module`"
+#~ msgstr ""
+
+#~ msgid ":ref:`purefb_facts_module`"
+#~ msgstr ""
 

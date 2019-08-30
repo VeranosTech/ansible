@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,7 +52,7 @@ msgid ""
 msgstr ""
 
 #: ../../rst/modules/command_module.rst:23
-#: ../../rst/modules/command_module.rst:167
+#: ../../rst/modules/command_module.rst:184
 msgid ""
 "For Windows targets, use the :ref:`win_command <win_command_module>` "
 "module instead."
@@ -62,11 +62,11 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/command_module.rst:160
+#: ../../rst/modules/command_module.rst:177
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/command_module.rst:163
+#: ../../rst/modules/command_module.rst:180
 msgid ""
 "If you want to run a command through the shell (say you are using ``<``, "
 "``>``, ``|``, etc), you actually want the :ref:`shell <shell_module>` "
@@ -75,14 +75,14 @@ msgid ""
 "secure to use the ``command`` module when possible."
 msgstr ""
 
-#: ../../rst/modules/command_module.rst:164
+#: ../../rst/modules/command_module.rst:181
 msgid ""
 "``creates``, ``removes``, and ``chdir`` can be specified after the "
 "command. For instance, if you only want to run a command if a certain "
 "file does not exist, use this."
 msgstr ""
 
-#: ../../rst/modules/command_module.rst:165
+#: ../../rst/modules/command_module.rst:182
 msgid ""
 "Check mode is supported when passing ``creates`` or ``removes``. If "
 "running in check mode and either of these are specified, the module will "
@@ -90,108 +90,122 @@ msgid ""
 "status. If these are not supplied, the task will be skipped."
 msgstr ""
 
-#: ../../rst/modules/command_module.rst:166
+#: ../../rst/modules/command_module.rst:183
 msgid ""
 "The ``executable`` parameter is removed since version 2.4. If you have a "
 "need for this parameter, use the :ref:`shell <shell_module>` module "
 "instead."
 msgstr ""
 
-#: ../../rst/modules/command_module.rst:171
+#: ../../rst/modules/command_module.rst:185
+msgid ""
+"For rebooting systems, use the :ref:`reboot <reboot_module>` or "
+":ref:`win_reboot <win_reboot_module>` module."
+msgstr ""
+
+#: ../../rst/modules/command_module.rst:189
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/command_module.rst:175
+#: ../../rst/modules/command_module.rst:193
 msgid ":ref:`raw_module`"
 msgstr ""
 
-#: ../../rst/modules/command_module.rst:176
+#: ../../rst/modules/command_module.rst:194
 msgid "The official documentation on the **raw** module."
 msgstr ""
 
-#: ../../rst/modules/command_module.rst:177
+#: ../../rst/modules/command_module.rst:195
 msgid ":ref:`script_module`"
 msgstr ""
 
-#: ../../rst/modules/command_module.rst:178
+#: ../../rst/modules/command_module.rst:196
 msgid "The official documentation on the **script** module."
 msgstr ""
 
-#: ../../rst/modules/command_module.rst:179
+#: ../../rst/modules/command_module.rst:197
 msgid ":ref:`shell_module`"
 msgstr ""
 
-#: ../../rst/modules/command_module.rst:180
+#: ../../rst/modules/command_module.rst:198
 msgid "The official documentation on the **shell** module."
 msgstr ""
 
-#: ../../rst/modules/command_module.rst:181
+#: ../../rst/modules/command_module.rst:199
 msgid ":ref:`win_command_module`"
 msgstr ""
 
-#: ../../rst/modules/command_module.rst:182
+#: ../../rst/modules/command_module.rst:200
 msgid "The official documentation on the **win_command** module."
 msgstr ""
 
-#: ../../rst/modules/command_module.rst:186
+#: ../../rst/modules/command_module.rst:204
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/command_module.rst:228
+#: ../../rst/modules/command_module.rst:246
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/command_module.rst:229
+#: ../../rst/modules/command_module.rst:247
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/command_module.rst:296
+#: ../../rst/modules/command_module.rst:314
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/command_module.rst:301
+#: ../../rst/modules/command_module.rst:319
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/command_module.rst:304
+#: ../../rst/modules/command_module.rst:322
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/command_module.rst:307
+#: ../../rst/modules/command_module.rst:325
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/command_module.rst:309
+#: ../../rst/modules/command_module.rst:327
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/command_module.rst:315
+#: ../../rst/modules/command_module.rst:333
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/command_module.rst:317
+#: ../../rst/modules/command_module.rst:335
 msgid "Ansible Core Team"
 msgstr ""
 
-#: ../../rst/modules/command_module.rst:318
+#: ../../rst/modules/command_module.rst:336
 msgid "Michael DeHaan"
 msgstr ""
 
-#: ../../rst/modules/command_module.rst:322
+#: ../../rst/modules/command_module.rst:340
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/commands/command.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/commands/command.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/commands/command.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

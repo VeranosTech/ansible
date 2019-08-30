@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,15 +22,43 @@ msgstr ""
 msgid "pn_cluster -- CLI command to create/delete a cluster"
 msgstr ""
 
+#: ../../rst/modules/pn_cluster_module.rst:17
+msgid "DEPRECATED"
+msgstr ""
+
+#: ../../rst/modules/pn_cluster_module.rst
+msgid "Removed in Ansible"
+msgstr ""
+
+#: ../../rst/modules/pn_cluster_module.rst:18
+msgid "version: 2.12"
+msgstr ""
+
+#: ../../rst/modules/pn_cluster_module.rst
+msgid "Why"
+msgstr ""
+
 #: ../../rst/modules/pn_cluster_module.rst:19
-msgid "Synopsis"
+msgid "Doesn't support latest Pluribus Networks netvisor"
+msgstr ""
+
+#: ../../rst/modules/pn_cluster_module.rst
+msgid "Alternative"
 msgstr ""
 
 #: ../../rst/modules/pn_cluster_module.rst:20
+msgid "Latest modules will be pushed in Ansible future versions."
+msgstr ""
+
+#: ../../rst/modules/pn_cluster_module.rst:25
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/pn_cluster_module.rst:26
 msgid "Execute cluster-create or cluster-delete command."
 msgstr ""
 
-#: ../../rst/modules/pn_cluster_module.rst:21
+#: ../../rst/modules/pn_cluster_module.rst:27
 msgid ""
 "A cluster allows two switches to cooperate in high-availability (HA) "
 "deployments. The nodes that form the cluster must be members of the same "
@@ -40,38 +68,34 @@ msgid ""
 "device can be a switch,server, or any Ethernet device."
 msgstr ""
 
-#: ../../rst/modules/pn_cluster_module.rst:27
+#: ../../rst/modules/pn_cluster_module.rst:33
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/pn_cluster_module.rst:158
+#: ../../rst/modules/pn_cluster_module.rst:165
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/pn_cluster_module.rst:182
+#: ../../rst/modules/pn_cluster_module.rst:189
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/pn_cluster_module.rst:183
+#: ../../rst/modules/pn_cluster_module.rst:190
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/pn_cluster_module.rst:242
+#: ../../rst/modules/pn_cluster_module.rst:249
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/pn_cluster_module.rst:247
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
+#: ../../rst/modules/pn_cluster_module.rst:252
+msgid "This module will be removed in version 2.12. *[deprecated]*"
 msgstr ""
 
-#: ../../rst/modules/pn_cluster_module.rst:250
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
+#: ../../rst/modules/pn_cluster_module.rst:253
+msgid "For more information see `DEPRECATED`_."
 msgstr ""
 
 #: ../../rst/modules/pn_cluster_module.rst:257
@@ -85,9 +109,29 @@ msgstr ""
 #: ../../rst/modules/pn_cluster_module.rst:263
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/netvisor/pn_cluster.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/netvisor/_pn_cluster.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/netvisor/pn_cluster.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

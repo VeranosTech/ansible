@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,11 +40,11 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/user_module.rst:566
+#: ../../rst/modules/user_module.rst:570
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/user_module.rst:569
+#: ../../rst/modules/user_module.rst:573
 msgid ""
 "There are specific requirements per platform on user management "
 "utilities. However they generally come pre-installed with the system and "
@@ -52,14 +52,14 @@ msgid ""
 "descriptive error message will be shown."
 msgstr ""
 
-#: ../../rst/modules/user_module.rst:570
+#: ../../rst/modules/user_module.rst:574
 msgid ""
 "On SunOS platforms, the shadow file is backed up automatically since this"
 " module edits it directly. On other platforms, the shadow file is backed "
 "up by the underlying tools used by this module."
 msgstr ""
 
-#: ../../rst/modules/user_module.rst:571
+#: ../../rst/modules/user_module.rst:575
 msgid ""
 "On macOS, this module uses ``dscl`` to create, modify, and delete "
 "accounts. ``dseditgroup`` is used to modify group membership. Accounts "
@@ -67,102 +67,110 @@ msgid ""
 "``/Library/Preferences/com.apple.loginwindow.plist``."
 msgstr ""
 
-#: ../../rst/modules/user_module.rst:572
+#: ../../rst/modules/user_module.rst:576
 msgid ""
 "On FreeBSD, this module uses ``pw useradd`` and ``chpass`` to create, "
 "``pw usermod`` and ``chpass`` to modify, ``pw userdel`` remove, ``pw "
 "lock`` to lock, and ``pw unlock`` to unlock accounts."
 msgstr ""
 
-#: ../../rst/modules/user_module.rst:573
+#: ../../rst/modules/user_module.rst:577
 msgid ""
 "On all other platforms, this module uses ``useradd`` to create, "
 "``usermod`` to modify, and ``userdel`` to remove accounts."
 msgstr ""
 
-#: ../../rst/modules/user_module.rst:577
+#: ../../rst/modules/user_module.rst:581
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/user_module.rst:581
+#: ../../rst/modules/user_module.rst:585
 msgid ":ref:`authorized_key_module`"
 msgstr ""
 
-#: ../../rst/modules/user_module.rst:582
+#: ../../rst/modules/user_module.rst:586
 msgid "The official documentation on the **authorized_key** module."
 msgstr ""
 
-#: ../../rst/modules/user_module.rst:583
+#: ../../rst/modules/user_module.rst:587
 msgid ":ref:`group_module`"
 msgstr ""
 
-#: ../../rst/modules/user_module.rst:584
+#: ../../rst/modules/user_module.rst:588
 msgid "The official documentation on the **group** module."
 msgstr ""
 
-#: ../../rst/modules/user_module.rst:585
+#: ../../rst/modules/user_module.rst:589
 msgid ":ref:`win_user_module`"
 msgstr ""
 
-#: ../../rst/modules/user_module.rst:586
+#: ../../rst/modules/user_module.rst:590
 msgid "The official documentation on the **win_user** module."
 msgstr ""
 
-#: ../../rst/modules/user_module.rst:590
+#: ../../rst/modules/user_module.rst:594
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/user_module.rst:638
+#: ../../rst/modules/user_module.rst:642
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/user_module.rst:639
+#: ../../rst/modules/user_module.rst:643
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/user_module.rst:895
+#: ../../rst/modules/user_module.rst:899
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/user_module.rst:900
+#: ../../rst/modules/user_module.rst:904
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/user_module.rst:903
+#: ../../rst/modules/user_module.rst:907
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/user_module.rst:906
+#: ../../rst/modules/user_module.rst:910
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/user_module.rst:908
+#: ../../rst/modules/user_module.rst:912
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/user_module.rst:914
+#: ../../rst/modules/user_module.rst:918
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/user_module.rst:916
+#: ../../rst/modules/user_module.rst:920
 msgid "Stephen Fromm (@sfromm)"
 msgstr ""
 
-#: ../../rst/modules/user_module.rst:920
+#: ../../rst/modules/user_module.rst:924
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/user.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/user.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/user.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

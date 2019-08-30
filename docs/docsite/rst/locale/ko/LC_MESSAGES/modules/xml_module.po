@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -114,54 +114,62 @@ msgstr ""
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/xml_module.rst:506
+#: ../../rst/modules/xml_module.rst:505
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/xml_module.rst:507
+#: ../../rst/modules/xml_module.rst:506
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/xml_module.rst:594
+#: ../../rst/modules/xml_module.rst:593
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/xml_module.rst:599
+#: ../../rst/modules/xml_module.rst:598
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/xml_module.rst:602
+#: ../../rst/modules/xml_module.rst:601
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/xml_module.rst:609
+#: ../../rst/modules/xml_module.rst:608
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/xml_module.rst:611
+#: ../../rst/modules/xml_module.rst:610
 msgid "Tim Bielawa (@tbielawa)"
 msgstr ""
 
-#: ../../rst/modules/xml_module.rst:612
+#: ../../rst/modules/xml_module.rst:611
 msgid "Magnus Hedemark (@magnus919)"
 msgstr ""
 
-#: ../../rst/modules/xml_module.rst:613
+#: ../../rst/modules/xml_module.rst:612
 msgid "Dag Wieers (@dagwieers)"
 msgstr ""
 
-#: ../../rst/modules/xml_module.rst:617
+#: ../../rst/modules/xml_module.rst:616
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/files/xml.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/files/xml.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/files/xml.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

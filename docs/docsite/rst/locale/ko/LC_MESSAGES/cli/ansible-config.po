@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,140 +23,149 @@ msgid "ansible-config"
 msgstr ""
 
 #: ../../rst/cli/ansible-config.rst:8
-msgid ":strong:`View, edit, and manage ansible configuration.`"
+msgid ":strong:`View ansible configuration.`"
 msgstr ""
 
 #: ../../rst/cli/ansible-config.rst:19
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/cli/ansible-config.rst:27
+#: ../../rst/cli/ansible-config.rst:28
 msgid "Description"
 msgstr ""
 
-#: ../../rst/cli/ansible-config.rst:30
+#: ../../rst/cli/ansible-config.rst:31
 msgid "Config command line class"
 msgstr ""
 
-#: ../../rst/cli/ansible-config.rst:34
+#: ../../rst/cli/ansible-config.rst:35
 msgid "Common Options"
 msgstr ""
 
-#: ../../rst/cli/ansible-config.rst:41
+#: ../../rst/cli/ansible-config.rst:42
 msgid ""
 "show program's version number, config file location, configured module "
 "search path, module location, executable location and exit"
 msgstr ""
 
-#: ../../rst/cli/ansible-config.rst:46
-msgid "path to configuration file, defaults to first file found in precedence."
-msgstr ""
-
-#: ../../rst/cli/ansible-config.rst:51
+#: ../../rst/cli/ansible-config.rst:47
 msgid "show this help message and exit"
 msgstr ""
 
-#: ../../rst/cli/ansible-config.rst:56
+#: ../../rst/cli/ansible-config.rst:52
 msgid "verbose mode (-vvv for more, -vvvv to enable connection debugging)"
 msgstr ""
 
-#: ../../rst/cli/ansible-config.rst:64
+#: ../../rst/cli/ansible-config.rst:60
 msgid "Actions"
 msgstr ""
 
-#: ../../rst/cli/ansible-config.rst:72
-msgid "dump"
-msgstr ""
-
-#: ../../rst/cli/ansible-config.rst:74
-msgid "Shows the current settings, merges ansible.cfg if specified"
-msgstr ""
-
-#: ../../rst/cli/ansible-config.rst:82
-msgid "Only show configurations that have changed from the default"
-msgstr ""
-
-#: ../../rst/cli/ansible-config.rst:92
-msgid "view"
-msgstr ""
-
-#: ../../rst/cli/ansible-config.rst:94
-msgid "Displays the current config file"
-msgstr ""
-
-#: ../../rst/cli/ansible-config.rst:104
+#: ../../rst/cli/ansible-config.rst:68
 msgid "list"
 msgstr ""
 
-#: ../../rst/cli/ansible-config.rst:106
+#: ../../rst/cli/ansible-config.rst:70
 msgid ""
 "list all current configs reading lib/constants.py and shows env and "
 "config file setting names"
 msgstr ""
 
-#: ../../rst/cli/ansible-config.rst:115
+#: ../../rst/cli/ansible-config.rst:78 ../../rst/cli/ansible-config.rst:104
+#: ../../rst/cli/ansible-config.rst:126
+msgid "path to configuration file, defaults to first file found in precedence."
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:90
+msgid "dump"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:92
+msgid "Shows the current settings, merges ansible.cfg if specified"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:100
+msgid "Only show configurations that have changed from the default"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:116
+msgid "view"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:118
+msgid "Displays the current config file"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:137
 msgid "Environment"
 msgstr ""
 
-#: ../../rst/cli/ansible-config.rst:117
+#: ../../rst/cli/ansible-config.rst:139
 msgid "The following environment variables may be specified."
 msgstr ""
 
-#: ../../rst/cli/ansible-config.rst:121
+#: ../../rst/cli/ansible-config.rst:143
 msgid ":envvar:`ANSIBLE_CONFIG` -- Override the default ansible config file"
 msgstr ""
 
-#: ../../rst/cli/ansible-config.rst:123
+#: ../../rst/cli/ansible-config.rst:145
 msgid "Many more are available for most options in ansible.cfg"
 msgstr ""
 
-#: ../../rst/cli/ansible-config.rst:127
+#: ../../rst/cli/ansible-config.rst:149
 msgid "Files"
 msgstr ""
 
-#: ../../rst/cli/ansible-config.rst:130
+#: ../../rst/cli/ansible-config.rst:152
 msgid ":file:`/etc/ansible/ansible.cfg` -- Config file, used if present"
 msgstr ""
 
-#: ../../rst/cli/ansible-config.rst:132
+#: ../../rst/cli/ansible-config.rst:154
 msgid ""
 ":file:`~/.ansible.cfg` -- User config file, overrides the default config "
 "if present"
 msgstr ""
 
-#: ../../rst/cli/ansible-config.rst:135
+#: ../../rst/cli/ansible-config.rst:157
 msgid "Author"
 msgstr ""
 
-#: ../../rst/cli/ansible-config.rst:137
+#: ../../rst/cli/ansible-config.rst:159
 msgid "Ansible was originally written by Michael DeHaan."
 msgstr ""
 
-#: ../../rst/cli/ansible-config.rst:139
+#: ../../rst/cli/ansible-config.rst:161
 msgid "See the `AUTHORS` file for a complete list of contributors."
 msgstr ""
 
-#: ../../rst/cli/ansible-config.rst:143
-msgid "Copyright"
+#: ../../rst/cli/ansible-config.rst:165
+msgid "License"
 msgstr ""
 
-#: ../../rst/cli/ansible-config.rst:145
-msgid "Copyright © 2017 Red Hat, Inc | Ansible."
+#: ../../rst/cli/ansible-config.rst:167
+msgid "Ansible is released under the terms of the GPLv3+ License."
 msgstr ""
 
-#: ../../rst/cli/ansible-config.rst:147
-msgid "Ansible is released under the terms of the GPLv3 License."
-msgstr ""
-
-#: ../../rst/cli/ansible-config.rst:150
+#: ../../rst/cli/ansible-config.rst:170
 msgid "See also"
 msgstr ""
 
-#: ../../rst/cli/ansible-config.rst:152
+#: ../../rst/cli/ansible-config.rst:172
 msgid ""
 ":manpage:`ansible(1)`,  :manpage:`ansible-config(1)`,  :manpage:`ansible-"
 "console(1)`,  :manpage:`ansible-doc(1)`,  :manpage:`ansible-galaxy(1)`,  "
 ":manpage:`ansible-inventory(1)`,  :manpage:`ansible-playbook(1)`,  "
 ":manpage:`ansible-pull(1)`,  :manpage:`ansible-vault(1)`,"
 msgstr ""
+
+#~ msgid ":strong:`View, edit, and manage ansible configuration.`"
+#~ msgstr ""
+
+#~ msgid "Copyright"
+#~ msgstr ""
+
+#~ msgid "Copyright © 2017 Red Hat, Inc | Ansible."
+#~ msgstr ""
+
+#~ msgid "Ansible is released under the terms of the GPLv3 License."
+#~ msgstr ""
 

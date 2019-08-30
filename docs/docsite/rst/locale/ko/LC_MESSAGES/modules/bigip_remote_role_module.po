@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,21 +38,21 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/bigip_remote_role_module.rst:388
+#: ../../rst/modules/bigip_remote_role_module.rst:325
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/bigip_remote_role_module.rst:391
+#: ../../rst/modules/bigip_remote_role_module.rst:328
 msgid ""
 "For more information on using Ansible to manage F5 Networks devices see "
 "https://www.ansible.com/integrations/networks/f5."
 msgstr ""
 
-#: ../../rst/modules/bigip_remote_role_module.rst:392
+#: ../../rst/modules/bigip_remote_role_module.rst:329
 msgid "Requires BIG-IP software version >= 12."
 msgstr ""
 
-#: ../../rst/modules/bigip_remote_role_module.rst:393
+#: ../../rst/modules/bigip_remote_role_module.rst:330
 msgid ""
 "The F5 modules only manipulate the running configuration of the F5 "
 "product. To ensure that BIG-IP specific configuration persists to disk, "
@@ -62,50 +62,58 @@ msgid ""
 "your running configuration."
 msgstr ""
 
-#: ../../rst/modules/bigip_remote_role_module.rst:398
+#: ../../rst/modules/bigip_remote_role_module.rst:335
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/bigip_remote_role_module.rst:424
+#: ../../rst/modules/bigip_remote_role_module.rst:361
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/bigip_remote_role_module.rst:425
+#: ../../rst/modules/bigip_remote_role_module.rst:362
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/bigip_remote_role_module.rst:516
+#: ../../rst/modules/bigip_remote_role_module.rst:453
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/bigip_remote_role_module.rst:521
+#: ../../rst/modules/bigip_remote_role_module.rst:458
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/bigip_remote_role_module.rst:524
+#: ../../rst/modules/bigip_remote_role_module.rst:461
 msgid ""
 "This module is :ref:`maintained by an Ansible Partner <modules_support>`."
 " *[certified]*"
 msgstr ""
 
-#: ../../rst/modules/bigip_remote_role_module.rst:531
+#: ../../rst/modules/bigip_remote_role_module.rst:468
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/bigip_remote_role_module.rst:533
+#: ../../rst/modules/bigip_remote_role_module.rst:470
 msgid "Tim Rupp (@caphrim007)"
 msgstr ""
 
-#: ../../rst/modules/bigip_remote_role_module.rst:537
+#: ../../rst/modules/bigip_remote_role_module.rst:474
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_remote_role.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_remote_role.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_remote_role.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

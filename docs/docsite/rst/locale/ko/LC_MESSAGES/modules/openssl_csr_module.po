@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,32 +29,58 @@ msgstr ""
 #: ../../rst/modules/openssl_csr_module.rst:20
 msgid ""
 "This module allows one to (re)generate OpenSSL certificate signing "
-"requests. It uses the pyOpenSSL python library to interact with openssl. "
-"This module supports the subjectAltName, keyUsage, extendedKeyUsage, "
+"requests."
+msgstr ""
+
+#: ../../rst/modules/openssl_csr_module.rst:21
+msgid ""
+"It uses the pyOpenSSL python library to interact with openssl. This "
+"module supports the subjectAltName, keyUsage, extendedKeyUsage, "
 "basicConstraints and OCSP Must Staple extensions."
 msgstr ""
 
-#: ../../rst/modules/openssl_csr_module.rst:25
-msgid "Requirements"
+#: ../../rst/modules/openssl_csr_module.rst:22
+msgid ""
+"Please note that the module regenerates existing CSR if it doesn't match "
+"the module's options, or if it seems to be corrupt. If you are concerned "
+"that this could overwrite your existing CSR, consider using the *backup* "
+"option."
 msgstr ""
 
-#: ../../rst/modules/openssl_csr_module.rst:26
-msgid "The below requirements are needed on the host that executes this module."
+#: ../../rst/modules/openssl_csr_module.rst:23
+msgid ""
+"The module can use the cryptography Python library, or the pyOpenSSL "
+"Python library. By default, it tries to detect which one is available. "
+"This can be overridden with the *select_crypto_backend* option. Please "
+"note that the PyOpenSSL backend was deprecated in Ansible 2.9 and will be"
+" removed in Ansible 2.13.\""
 msgstr ""
 
 #: ../../rst/modules/openssl_csr_module.rst:28
-msgid "python-pyOpenSSL >= 0.15"
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/openssl_csr_module.rst:29
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/openssl_csr_module.rst:31
+msgid "Either cryptography >= 1.3"
 msgstr ""
 
 #: ../../rst/modules/openssl_csr_module.rst:32
+msgid "Or pyOpenSSL >= 0.15"
+msgstr ""
+
+#: ../../rst/modules/openssl_csr_module.rst:36
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/openssl_csr_module.rst:546
+#: ../../rst/modules/openssl_csr_module.rst:720
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/openssl_csr_module.rst:549
+#: ../../rst/modules/openssl_csr_module.rst:723
 msgid ""
 "If the certificate signing request already exists it will be checked "
 "whether subjectAltName, keyUsage, extendedKeyUsage and basicConstraints "
@@ -62,50 +88,115 @@ msgid ""
 "requested, and if the request was signed by the given private key."
 msgstr ""
 
-#: ../../rst/modules/openssl_csr_module.rst:554
+#: ../../rst/modules/openssl_csr_module.rst:727
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/openssl_csr_module.rst:731
+msgid ":ref:`openssl_certificate_module`"
+msgstr ""
+
+#: ../../rst/modules/openssl_csr_module.rst:732
+msgid "The official documentation on the **openssl_certificate** module."
+msgstr ""
+
+#: ../../rst/modules/openssl_csr_module.rst:733
+msgid ":ref:`openssl_dhparam_module`"
+msgstr ""
+
+#: ../../rst/modules/openssl_csr_module.rst:734
+msgid "The official documentation on the **openssl_dhparam** module."
+msgstr ""
+
+#: ../../rst/modules/openssl_csr_module.rst:735
+msgid ":ref:`openssl_pkcs12_module`"
+msgstr ""
+
+#: ../../rst/modules/openssl_csr_module.rst:736
+msgid "The official documentation on the **openssl_pkcs12** module."
+msgstr ""
+
+#: ../../rst/modules/openssl_csr_module.rst:737
+msgid ":ref:`openssl_privatekey_module`"
+msgstr ""
+
+#: ../../rst/modules/openssl_csr_module.rst:738
+msgid "The official documentation on the **openssl_privatekey** module."
+msgstr ""
+
+#: ../../rst/modules/openssl_csr_module.rst:739
+msgid ":ref:`openssl_publickey_module`"
+msgstr ""
+
+#: ../../rst/modules/openssl_csr_module.rst:740
+msgid "The official documentation on the **openssl_publickey** module."
+msgstr ""
+
+#: ../../rst/modules/openssl_csr_module.rst:744
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/openssl_csr_module.rst:627
+#: ../../rst/modules/openssl_csr_module.rst:816
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/openssl_csr_module.rst:628
+#: ../../rst/modules/openssl_csr_module.rst:817
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/openssl_csr_module.rst:745
+#: ../../rst/modules/openssl_csr_module.rst:947
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/openssl_csr_module.rst:750
+#: ../../rst/modules/openssl_csr_module.rst:952
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/openssl_csr_module.rst:753
+#: ../../rst/modules/openssl_csr_module.rst:955
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/openssl_csr_module.rst:760
+#: ../../rst/modules/openssl_csr_module.rst:962
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/openssl_csr_module.rst:762
+#: ../../rst/modules/openssl_csr_module.rst:964
 msgid "Yanis Guenane (@Spredzy)"
 msgstr ""
 
-#: ../../rst/modules/openssl_csr_module.rst:766
+#: ../../rst/modules/openssl_csr_module.rst:968
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/crypto/openssl_csr.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/crypto/openssl_csr.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module allows one to (re)generate"
+#~ " OpenSSL certificate signing requests. It"
+#~ " uses the pyOpenSSL python library to"
+#~ " interact with openssl. This module "
+#~ "supports the subjectAltName, keyUsage, "
+#~ "extendedKeyUsage, basicConstraints and OCSP "
+#~ "Must Staple extensions."
+#~ msgstr ""
+
+#~ msgid "python-pyOpenSSL >= 0.15"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/crypto/openssl_csr.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

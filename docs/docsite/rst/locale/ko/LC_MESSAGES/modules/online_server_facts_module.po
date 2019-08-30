@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,71 +22,95 @@ msgstr ""
 msgid "online_server_facts -- Gather facts about Online servers"
 msgstr ""
 
+#: ../../rst/modules/online_server_facts_module.rst:18
+msgid "DEPRECATED"
+msgstr ""
+
+#: ../../rst/modules/online_server_facts_module.rst
+msgid "Removed in Ansible"
+msgstr ""
+
 #: ../../rst/modules/online_server_facts_module.rst:19
-msgid "Synopsis"
+msgid "version: 2.13"
+msgstr ""
+
+#: ../../rst/modules/online_server_facts_module.rst
+msgid "Why"
 msgstr ""
 
 #: ../../rst/modules/online_server_facts_module.rst:20
-msgid "Gather facts about the servers."
+msgid "Deprecated in favour of ``_info`` module."
+msgstr ""
+
+#: ../../rst/modules/online_server_facts_module.rst
+msgid "Alternative"
 msgstr ""
 
 #: ../../rst/modules/online_server_facts_module.rst:21
-msgid "https://www.online.net/en/dedicated-server"
+msgid "Use :ref:`online_server_info <online_server_info_module>` instead."
+msgstr ""
+
+#: ../../rst/modules/online_server_facts_module.rst:26
+msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/online_server_facts_module.rst:27
+msgid "Gather facts about the servers."
+msgstr ""
+
+#: ../../rst/modules/online_server_facts_module.rst:28
+msgid "https://www.online.net/en/dedicated-server"
+msgstr ""
+
+#: ../../rst/modules/online_server_facts_module.rst:34
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/online_server_facts_module.rst:103
+#: ../../rst/modules/online_server_facts_module.rst:110
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/online_server_facts_module.rst:106
+#: ../../rst/modules/online_server_facts_module.rst:113
 msgid "Also see the API documentation on https://console.online.net/en/api/"
 msgstr ""
 
-#: ../../rst/modules/online_server_facts_module.rst:107
+#: ../../rst/modules/online_server_facts_module.rst:114
 msgid ""
 "If ``api_token`` is not set within the module, the following environment "
 "variables can be used in decreasing order of precedence ``ONLINE_TOKEN``,"
 " ``ONLINE_API_KEY``, ``ONLINE_OAUTH_TOKEN``, ``ONLINE_API_TOKEN``"
 msgstr ""
 
-#: ../../rst/modules/online_server_facts_module.rst:108
+#: ../../rst/modules/online_server_facts_module.rst:115
 msgid ""
 "If one wants to use a different ``api_url`` one can also set the "
 "``ONLINE_API_URL`` environment variable."
 msgstr ""
 
-#: ../../rst/modules/online_server_facts_module.rst:113
+#: ../../rst/modules/online_server_facts_module.rst:120
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/online_server_facts_module.rst:126
+#: ../../rst/modules/online_server_facts_module.rst:133
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/online_server_facts_module.rst:127
+#: ../../rst/modules/online_server_facts_module.rst:134
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/online_server_facts_module.rst:165
+#: ../../rst/modules/online_server_facts_module.rst:172
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/online_server_facts_module.rst:170
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
+#: ../../rst/modules/online_server_facts_module.rst:175
+msgid "This module will be removed in version 2.13. *[deprecated]*"
 msgstr ""
 
-#: ../../rst/modules/online_server_facts_module.rst:173
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
+#: ../../rst/modules/online_server_facts_module.rst:176
+msgid "For more information see `DEPRECATED`_."
 msgstr ""
 
 #: ../../rst/modules/online_server_facts_module.rst:180
@@ -100,9 +124,29 @@ msgstr ""
 #: ../../rst/modules/online_server_facts_module.rst:186
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/online/online_server_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/online/_online_server_facts.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/online/online_server_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

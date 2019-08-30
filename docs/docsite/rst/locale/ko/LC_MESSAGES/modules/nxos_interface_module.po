@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,124 +22,167 @@ msgstr ""
 msgid "nxos_interface -- Manages physical attributes of interfaces"
 msgstr ""
 
+#: ../../rst/modules/nxos_interface_module.rst:17
+msgid "DEPRECATED"
+msgstr ""
+
+#: ../../rst/modules/nxos_interface_module.rst
+msgid "Removed in Ansible"
+msgstr ""
+
+#: ../../rst/modules/nxos_interface_module.rst:18
+msgid "version: 2.13"
+msgstr ""
+
+#: ../../rst/modules/nxos_interface_module.rst
+msgid "Why"
+msgstr ""
+
 #: ../../rst/modules/nxos_interface_module.rst:19
-msgid "Synopsis"
+msgid "Updated modules released with more functionality"
+msgstr ""
+
+#: ../../rst/modules/nxos_interface_module.rst
+msgid "Alternative"
 msgstr ""
 
 #: ../../rst/modules/nxos_interface_module.rst:20
-msgid "Manages physical attributes of interfaces of NX-OS switches."
+msgid "nxos_interfaces"
+msgstr ""
+
+#: ../../rst/modules/nxos_interface_module.rst:25
+msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/nxos_interface_module.rst:26
+msgid "Manages physical attributes of interfaces of NX-OS switches."
+msgstr ""
+
+#: ../../rst/modules/nxos_interface_module.rst:32
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/nxos_interface_module.rst:523
+#: ../../rst/modules/nxos_interface_module.rst:532
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/nxos_interface_module.rst:526
+#: ../../rst/modules/nxos_interface_module.rst:535
 msgid "Tested against NXOSv 7.3.(0)D1(1) on VIRL"
 msgstr ""
 
-#: ../../rst/modules/nxos_interface_module.rst:527
+#: ../../rst/modules/nxos_interface_module.rst:536
 msgid ""
 "This module is also used to create logical interfaces such as svis and "
 "loopbacks."
 msgstr ""
 
-#: ../../rst/modules/nxos_interface_module.rst:528
+#: ../../rst/modules/nxos_interface_module.rst:537
 msgid ""
 "Be cautious of platform specific idiosyncrasies. For example, when you "
 "default a loopback interface, the admin state toggles on certain versions"
 " of NX-OS."
 msgstr ""
 
-#: ../../rst/modules/nxos_interface_module.rst:529
+#: ../../rst/modules/nxos_interface_module.rst:538
 msgid ""
 "The :ref:`nxos_overlay_global <nxos_overlay_global_module>` "
 "``anycast_gateway_mac`` attribute must be set before setting the "
 "``fabric_forwarding_anycast_gateway`` property."
 msgstr ""
 
-#: ../../rst/modules/nxos_interface_module.rst:530
+#: ../../rst/modules/nxos_interface_module.rst:539
 msgid ""
 "For information on using CLI and NX-API see the :ref:`NXOS Platform "
 "Options guide <nxos_platform_options>`"
 msgstr ""
 
-#: ../../rst/modules/nxos_interface_module.rst:531
+#: ../../rst/modules/nxos_interface_module.rst:540
 msgid ""
 "For more information on using Ansible to manage network devices see the "
 ":ref:`Ansible Network Guide <network_guide>`"
 msgstr ""
 
-#: ../../rst/modules/nxos_interface_module.rst:532
+#: ../../rst/modules/nxos_interface_module.rst:541
 msgid ""
 "For more information on using Ansible to manage Cisco devices see the "
 "`Cisco integration page "
 "<https://www.ansible.com/integrations/networks/cisco>`_."
 msgstr ""
 
-#: ../../rst/modules/nxos_interface_module.rst:537
+#: ../../rst/modules/nxos_interface_module.rst:546
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/nxos_interface_module.rst:612
+#: ../../rst/modules/nxos_interface_module.rst:621
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/nxos_interface_module.rst:613
+#: ../../rst/modules/nxos_interface_module.rst:622
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/nxos_interface_module.rst:641
+#: ../../rst/modules/nxos_interface_module.rst:650
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/nxos_interface_module.rst:646
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
-msgstr ""
-
-#: ../../rst/modules/nxos_interface_module.rst:649
-msgid ""
-"This module is :ref:`maintained by the Ansible Network Team "
-"<modules_support>`. *[network]*"
-msgstr ""
-
-#: ../../rst/modules/nxos_interface_module.rst:652
-msgid "Red Hat Support"
+#: ../../rst/modules/nxos_interface_module.rst:653
+msgid "This module will be removed in version 2.13. *[deprecated]*"
 msgstr ""
 
 #: ../../rst/modules/nxos_interface_module.rst:654
-msgid ""
-"More information about Red Hat's support of this module is available from"
-" this `Red Hat Knowledge Base article "
-"<https://access.redhat.com/articles/3166901>`_."
+msgid "For more information see `DEPRECATED`_."
 msgstr ""
 
-#: ../../rst/modules/nxos_interface_module.rst:660
+#: ../../rst/modules/nxos_interface_module.rst:658
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/nxos_interface_module.rst:662
+#: ../../rst/modules/nxos_interface_module.rst:660
 msgid "Jason Edelman (@jedelman8)"
 msgstr ""
 
-#: ../../rst/modules/nxos_interface_module.rst:663
+#: ../../rst/modules/nxos_interface_module.rst:661
 msgid "Trishna Guha (@trishnaguha)"
 msgstr ""
 
-#: ../../rst/modules/nxos_interface_module.rst:667
+#: ../../rst/modules/nxos_interface_module.rst:665
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_interface.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/_nxos_interface.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Network Team <modules_support>`. "
+#~ "*[network]*"
+#~ msgstr ""
+
+#~ msgid "Red Hat Support"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "More information about Red Hat's support"
+#~ " of this module is available from "
+#~ "this `Red Hat Knowledge Base article "
+#~ "<https://access.redhat.com/articles/3166901>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_interface.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

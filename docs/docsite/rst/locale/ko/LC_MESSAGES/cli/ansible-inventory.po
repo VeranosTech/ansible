@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,150 +30,176 @@ msgstr ""
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:27
+#: ../../rst/cli/ansible-inventory.rst:35
 msgid "Description"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:30
+#: ../../rst/cli/ansible-inventory.rst:38
 msgid "used to display or dump the configured inventory as Ansible sees it"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:34
+#: ../../rst/cli/ansible-inventory.rst:42
 msgid "Common Options"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:41
+#: ../../rst/cli/ansible-inventory.rst:49
 msgid "ask for vault password"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:46
+#: ../../rst/cli/ansible-inventory.rst:54
 msgid ""
 "When doing an --list, represent in a way that is optimized for export,not"
 " as an accurate representation of how Ansible has processed it"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:51
+#: ../../rst/cli/ansible-inventory.rst:59
 msgid "create inventory graph, if supplying pattern it must be a valid group name"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:56
+#: ../../rst/cli/ansible-inventory.rst:64
 msgid "Output specific host info, works as inventory script"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:61
+#: ../../rst/cli/ansible-inventory.rst:69
+#: ../../rst/cli/ansible-inventory.rst:79
+msgid "None"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:74
 msgid "Output all hosts info, works as inventory script"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:66
-msgid ""
-"Since this tool does not use playbooks, use this as a subsitute playbook "
-"directory.This sets the relative path for many features including roles/ "
-"group_vars/ etc."
+#: ../../rst/cli/ansible-inventory.rst:84
+msgid "When doing --list, send the inventory to a file instead of to the screen"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:71
+#: ../../rst/cli/ansible-inventory.rst:89
+msgid ""
+"Since this tool does not use playbooks, use this as a substitute playbook"
+" directory.This sets the relative path for many features including roles/"
+" group_vars/ etc."
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:94
 msgid "Use TOML format instead of default JSON, ignored for --graph"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:76
+#: ../../rst/cli/ansible-inventory.rst:99
 msgid "Add vars to graph display, ignored unless used with --graph"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:81
+#: ../../rst/cli/ansible-inventory.rst:104
 msgid "the vault identity to use"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:86
+#: ../../rst/cli/ansible-inventory.rst:109
 msgid "vault password file"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:91
+#: ../../rst/cli/ansible-inventory.rst:114
 msgid ""
 "show program's version number, config file location, configured module "
 "search path, module location, executable location and exit"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:96
+#: ../../rst/cli/ansible-inventory.rst:119
 msgid "show this help message and exit"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:101
+#: ../../rst/cli/ansible-inventory.rst:124
 msgid ""
 "specify inventory host path or comma separated host list. --inventory-"
 "file is deprecated"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:106
+#: ../../rst/cli/ansible-inventory.rst:129
+msgid "further limit selected hosts to an additional pattern"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:134
 msgid "verbose mode (-vvv for more, -vvvv to enable connection debugging)"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:111
+#: ../../rst/cli/ansible-inventory.rst:139
 msgid "Use YAML format instead of default JSON, ignored for --graph"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:120
+#: ../../rst/cli/ansible-inventory.rst:148
 msgid "Environment"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:122
+#: ../../rst/cli/ansible-inventory.rst:150
 msgid "The following environment variables may be specified."
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:126
+#: ../../rst/cli/ansible-inventory.rst:154
 msgid ":envvar:`ANSIBLE_CONFIG` -- Override the default ansible config file"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:128
+#: ../../rst/cli/ansible-inventory.rst:156
 msgid "Many more are available for most options in ansible.cfg"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:132
+#: ../../rst/cli/ansible-inventory.rst:160
 msgid "Files"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:135
+#: ../../rst/cli/ansible-inventory.rst:163
 msgid ":file:`/etc/ansible/ansible.cfg` -- Config file, used if present"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:137
+#: ../../rst/cli/ansible-inventory.rst:165
 msgid ""
 ":file:`~/.ansible.cfg` -- User config file, overrides the default config "
 "if present"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:140
+#: ../../rst/cli/ansible-inventory.rst:168
 msgid "Author"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:142
+#: ../../rst/cli/ansible-inventory.rst:170
 msgid "Ansible was originally written by Michael DeHaan."
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:144
+#: ../../rst/cli/ansible-inventory.rst:172
 msgid "See the `AUTHORS` file for a complete list of contributors."
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:148
-msgid "Copyright"
+#: ../../rst/cli/ansible-inventory.rst:176
+msgid "License"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:150
-msgid "Copyright © 2017 Red Hat, Inc | Ansible."
+#: ../../rst/cli/ansible-inventory.rst:178
+msgid "Ansible is released under the terms of the GPLv3+ License."
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:152
-msgid "Ansible is released under the terms of the GPLv3 License."
-msgstr ""
-
-#: ../../rst/cli/ansible-inventory.rst:155
+#: ../../rst/cli/ansible-inventory.rst:181
 msgid "See also"
 msgstr ""
 
-#: ../../rst/cli/ansible-inventory.rst:157
+#: ../../rst/cli/ansible-inventory.rst:183
 msgid ""
 ":manpage:`ansible(1)`,  :manpage:`ansible-config(1)`,  :manpage:`ansible-"
 "console(1)`,  :manpage:`ansible-doc(1)`,  :manpage:`ansible-galaxy(1)`,  "
 ":manpage:`ansible-inventory(1)`,  :manpage:`ansible-playbook(1)`,  "
 ":manpage:`ansible-pull(1)`,  :manpage:`ansible-vault(1)`,"
 msgstr ""
+
+#~ msgid ""
+#~ "Since this tool does not use "
+#~ "playbooks, use this as a subsitute "
+#~ "playbook directory.This sets the relative "
+#~ "path for many features including roles/"
+#~ " group_vars/ etc."
+#~ msgstr ""
+
+#~ msgid "Copyright"
+#~ msgstr ""
+
+#~ msgid "Copyright © 2017 Red Hat, Inc | Ansible."
+#~ msgstr ""
+
+#~ msgid "Ansible is released under the terms of the GPLv3 License."
+#~ msgstr ""
 

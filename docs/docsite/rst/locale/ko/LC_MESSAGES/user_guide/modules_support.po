@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,9 +105,9 @@ msgid ""
 "For development-oriented topics, use the `ansible-devel Google group "
 "<https://groups.google.com/forum/#%21forum/ansible-devel>`_ or Ansible's "
 "#ansible and #ansible-devel channels, located on irc.freenode.net. You "
-"should also read :doc:`Community Information & Contributing "
-"<../community/index>`, :doc:`Testing Ansible <../dev_guide/testing>`, and"
-" :doc:`Developing Modules <../dev_guide/developing_modules>`."
+"should also read the :ref:`Community Guide <ansible_community_guide>`, "
+":ref:`Testing Ansible <developing_testing>`, and the :ref:`Developer "
+"Guide <developer_guide>`."
 msgstr ""
 
 #: ../../rst/user_guide/modules_support.rst:47
@@ -119,9 +119,9 @@ msgstr ""
 
 #: ../../rst/user_guide/modules_support.rst:49
 msgid ""
-"NOTE: If you have a Red Hat Ansible Engine product subscription, please "
-"follow the standard issue reporting process via the Red Hat Customer "
-"Portal."
+"NOTE: If you have a Red Hat Ansible Automation product subscription, "
+"please follow the standard issue reporting process via the `Red Hat "
+"Customer Portal <https:///access.redhat.com/>`_."
 msgstr ""
 
 #: ../../rst/user_guide/modules_support.rst:52
@@ -137,7 +137,7 @@ msgid ""
 msgstr ""
 
 #: ../../rst/user_guide/modules_support.rst:59
-msgid ":ref:`Modules by category<modules_by_category>`"
+msgid ":ref:`Module index<modules_by_category>`"
 msgstr ""
 
 #: ../../rst/user_guide/modules_support.rst:60
@@ -193,4 +193,28 @@ msgstr ""
 #: ../../rst/user_guide/modules_support.rst:72
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ""
+#~ "For development-oriented topics, use the"
+#~ " `ansible-devel Google group "
+#~ "<https://groups.google.com/forum/#%21forum/ansible-devel>`_ "
+#~ "or Ansible's #ansible and #ansible-devel"
+#~ " channels, located on irc.freenode.net. You"
+#~ " should also read :doc:`Community "
+#~ "Information & Contributing <../community/index>`,"
+#~ " :doc:`Testing Ansible <../dev_guide/testing>`, "
+#~ "and :doc:`Developing Modules "
+#~ "<../dev_guide/developing_modules>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "NOTE: If you have a Red Hat "
+#~ "Ansible Engine product subscription, please"
+#~ " follow the standard issue reporting "
+#~ "process via the Red Hat Customer "
+#~ "Portal."
+#~ msgstr ""
+
+#~ msgid ":ref:`Modules by category<modules_by_category>`"
+#~ msgstr ""
 

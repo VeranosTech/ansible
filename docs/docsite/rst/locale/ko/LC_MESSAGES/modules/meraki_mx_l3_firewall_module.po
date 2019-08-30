@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,76 +38,97 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:379
+#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:423
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:382
+#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:426
 msgid ""
 "Module assumes a complete list of firewall rules are passed as a "
 "parameter."
 msgstr ""
 
-#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:383
+#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:427
 msgid ""
 "If there is interest in this module allowing manipulation of a single "
 "firewall rule, please submit an issue against this module."
 msgstr ""
 
-#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:384
+#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:428
 msgid ""
 "More information about the Meraki API can be found at "
 "https://dashboard.meraki.com/api_docs."
 msgstr ""
 
-#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:385
+#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:429
 msgid "Some of the options are likely only used for developers within Meraki."
 msgstr ""
 
-#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:390
+#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:430
+msgid ""
+"As of Ansible 2.9, Meraki modules output keys as snake case. To use camel"
+" case, set the ``ANSIBLE_MERAKI_FORMAT`` environment variable to "
+"``camelcase``."
+msgstr ""
+
+#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:431
+msgid ""
+"Ansible's Meraki modules will stop supporting camel case output in "
+"Ansible 2.13. Please update your playbooks."
+msgstr ""
+
+#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:436
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:447
+#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:493
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:448
+#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:494
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:585
+#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:631
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:590
+#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:636
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:593
+#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:639
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:600
+#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:646
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:602
+#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:648
 msgid "Kevin Breit (@kbreit)"
 msgstr ""
 
-#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:606
+#: ../../rst/modules/meraki_mx_l3_firewall_module.rst:652
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/meraki/meraki_mx_l3_firewall.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/meraki/meraki_mx_l3_firewall.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/meraki/meraki_mx_l3_firewall.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

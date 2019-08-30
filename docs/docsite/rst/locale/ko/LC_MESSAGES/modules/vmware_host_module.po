@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,17 +19,25 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/modules/vmware_host_module.rst:9
-msgid "vmware_host -- Add / Remove ESXi host to / from vCenter"
+msgid ""
+"vmware_host -- Add, remove, or move an ESXi host to, from, or within "
+"vCenter"
+msgstr ""
+
+#: ../../rst/modules/vmware_host_module.rst:18
+msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/vmware_host_module.rst:19
-msgid "Synopsis"
+msgid ""
+"This module can be used to add, reconnect, or remove an ESXi host to or "
+"from vCenter."
 msgstr ""
 
 #: ../../rst/modules/vmware_host_module.rst:20
 msgid ""
-"This module can be used to add / remove / reconnect an ESXi host to / "
-"from vCenter."
+"This module can also be used to move an ESXi host to a cluster or folder,"
+" or vice versa, within the same datacenter."
 msgstr ""
 
 #: ../../rst/modules/vmware_host_module.rst:25
@@ -48,70 +56,106 @@ msgstr ""
 msgid "PyVmomi"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_module.rst:33
+#: ../../rst/modules/vmware_host_module.rst:30
+msgid "ssl"
+msgstr ""
+
+#: ../../rst/modules/vmware_host_module.rst:31
+msgid "socket"
+msgstr ""
+
+#: ../../rst/modules/vmware_host_module.rst:32
+msgid "hashlib"
+msgstr ""
+
+#: ../../rst/modules/vmware_host_module.rst:36
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_module.rst:287
+#: ../../rst/modules/vmware_host_module.rst:381
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_module.rst:290
-msgid "Tested on vSphere 5.5, 6.0 and 6.5"
+#: ../../rst/modules/vmware_host_module.rst:384
+msgid "Tested on vSphere 5.5, 6.0, 6.5 and 6.7"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_module.rst:295
+#: ../../rst/modules/vmware_host_module.rst:389
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_module.rst:369
+#: ../../rst/modules/vmware_host_module.rst:463
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_module.rst:370
+#: ../../rst/modules/vmware_host_module.rst:464
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_module.rst:398
+#: ../../rst/modules/vmware_host_module.rst:492
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_module.rst:403
+#: ../../rst/modules/vmware_host_module.rst:497
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_module.rst:406
+#: ../../rst/modules/vmware_host_module.rst:500
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_module.rst:413
+#: ../../rst/modules/vmware_host_module.rst:507
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_module.rst:415
+#: ../../rst/modules/vmware_host_module.rst:509
 msgid "Joseph Callen (@jcpowermac)"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_module.rst:416
+#: ../../rst/modules/vmware_host_module.rst:510
 msgid "Russell Teague (@mtnbikenc)"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_module.rst:417
+#: ../../rst/modules/vmware_host_module.rst:511
 msgid "Maxime de Roucy (@tchernomax)"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_module.rst:421
+#: ../../rst/modules/vmware_host_module.rst:512
+msgid "Christian Kotte (@ckotte)"
+msgstr ""
+
+#: ../../rst/modules/vmware_host_module.rst:516
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_host.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_host.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "vmware_host -- Add / Remove ESXi host to / from vCenter"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module can be used to add "
+#~ "/ remove / reconnect an ESXi host"
+#~ " to / from vCenter."
+#~ msgstr ""
+
+#~ msgid "Tested on vSphere 5.5, 6.0 and 6.5"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_host.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

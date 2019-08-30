@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,9 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/modules/fortios_firewall_addrgrp_module.rst:9
-msgid "fortios_firewall_addrgrp -- Configure IPv4 address groups"
+msgid ""
+"fortios_firewall_addrgrp -- Configure IPv4 address groups in Fortinet's "
+"FortiOS and FortiGate"
 msgstr ""
 
 #: ../../rst/modules/fortios_firewall_addrgrp_module.rst:19
@@ -28,10 +30,10 @@ msgstr ""
 
 #: ../../rst/modules/fortios_firewall_addrgrp_module.rst:20
 msgid ""
-"This module is able to configure a FortiGate or FortiOS by allowing the "
-"user to configure firewall feature and addrgrp category. Examples "
-"includes all options and need to be adjusted to datasources before usage."
-" Tested with FOS v6.0.2"
+"This module is able to configure a FortiGate or FortiOS (FOS) device by "
+"allowing the user to set and modify firewall feature and addrgrp "
+"category. Examples include all parameters and values need to be adjusted "
+"to datasources before usage. Tested with FOS v6.0.5"
 msgstr ""
 
 #: ../../rst/modules/fortios_firewall_addrgrp_module.rst:25
@@ -50,66 +52,87 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/fortios_firewall_addrgrp_module.rst:350
+#: ../../rst/modules/fortios_firewall_addrgrp_module.rst:387
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/fortios_firewall_addrgrp_module.rst:353
+#: ../../rst/modules/fortios_firewall_addrgrp_module.rst:390
 msgid "Requires fortiosapi library developed by Fortinet"
 msgstr ""
 
-#: ../../rst/modules/fortios_firewall_addrgrp_module.rst:354
+#: ../../rst/modules/fortios_firewall_addrgrp_module.rst:391
 msgid "Run as a local_action in your playbook"
 msgstr ""
 
-#: ../../rst/modules/fortios_firewall_addrgrp_module.rst:359
+#: ../../rst/modules/fortios_firewall_addrgrp_module.rst:396
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/fortios_firewall_addrgrp_module.rst:400
+#: ../../rst/modules/fortios_firewall_addrgrp_module.rst:439
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/fortios_firewall_addrgrp_module.rst:401
+#: ../../rst/modules/fortios_firewall_addrgrp_module.rst:440
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/fortios_firewall_addrgrp_module.rst:559
+#: ../../rst/modules/fortios_firewall_addrgrp_module.rst:598
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/fortios_firewall_addrgrp_module.rst:564
+#: ../../rst/modules/fortios_firewall_addrgrp_module.rst:603
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/fortios_firewall_addrgrp_module.rst:567
+#: ../../rst/modules/fortios_firewall_addrgrp_module.rst:606
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/fortios_firewall_addrgrp_module.rst:574
+#: ../../rst/modules/fortios_firewall_addrgrp_module.rst:613
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/fortios_firewall_addrgrp_module.rst:576
+#: ../../rst/modules/fortios_firewall_addrgrp_module.rst:615
 msgid "Miguel Angel Munoz (@mamunozgonzalez)"
 msgstr ""
 
-#: ../../rst/modules/fortios_firewall_addrgrp_module.rst:577
+#: ../../rst/modules/fortios_firewall_addrgrp_module.rst:616
 msgid "Nicolas Thomas (@thomnico)"
 msgstr ""
 
-#: ../../rst/modules/fortios_firewall_addrgrp_module.rst:581
+#: ../../rst/modules/fortios_firewall_addrgrp_module.rst:620
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/fortios/fortios_firewall_addrgrp.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/fortios/fortios_firewall_addrgrp.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "fortios_firewall_addrgrp -- Configure IPv4 address groups"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is able to configure a"
+#~ " FortiGate or FortiOS by allowing the"
+#~ " user to configure firewall feature "
+#~ "and addrgrp category. Examples includes "
+#~ "all options and need to be "
+#~ "adjusted to datasources before usage. "
+#~ "Tested with FOS v6.0.2"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/fortios/fortios_firewall_addrgrp.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

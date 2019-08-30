@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,124 +22,132 @@ msgstr ""
 msgid "nxos_vrrp -- Manages VRRP configuration on NX-OS switches"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrrp_module.rst:19
+#: ../../rst/modules/nxos_vrrp_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrrp_module.rst:20
+#: ../../rst/modules/nxos_vrrp_module.rst:19
 msgid "Manages VRRP configuration on NX-OS switches."
 msgstr ""
 
-#: ../../rst/modules/nxos_vrrp_module.rst:26
+#: ../../rst/modules/nxos_vrrp_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrrp_module.rst:379
+#: ../../rst/modules/nxos_vrrp_module.rst:381
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrrp_module.rst:382
+#: ../../rst/modules/nxos_vrrp_module.rst:384
 msgid "Tested against NXOSv 7.3.(0)D1(1) on VIRL"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrrp_module.rst:383
+#: ../../rst/modules/nxos_vrrp_module.rst:385
 msgid "VRRP feature needs to be enabled first on the system."
 msgstr ""
 
-#: ../../rst/modules/nxos_vrrp_module.rst:384
+#: ../../rst/modules/nxos_vrrp_module.rst:386
 msgid "SVIs must exist before using this module."
 msgstr ""
 
-#: ../../rst/modules/nxos_vrrp_module.rst:385
+#: ../../rst/modules/nxos_vrrp_module.rst:387
 msgid "Interface must be a L3 port before using this module."
 msgstr ""
 
-#: ../../rst/modules/nxos_vrrp_module.rst:386
+#: ../../rst/modules/nxos_vrrp_module.rst:388
 msgid "``state=absent`` removes the VRRP group if it exists on the device."
 msgstr ""
 
-#: ../../rst/modules/nxos_vrrp_module.rst:387
+#: ../../rst/modules/nxos_vrrp_module.rst:389
 msgid "VRRP cannot be configured on loopback interfaces."
 msgstr ""
 
-#: ../../rst/modules/nxos_vrrp_module.rst:388
+#: ../../rst/modules/nxos_vrrp_module.rst:390
 msgid ""
 "For information on using CLI and NX-API see the :ref:`NXOS Platform "
 "Options guide <nxos_platform_options>`"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrrp_module.rst:389
+#: ../../rst/modules/nxos_vrrp_module.rst:391
 msgid ""
 "For more information on using Ansible to manage network devices see the "
 ":ref:`Ansible Network Guide <network_guide>`"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrrp_module.rst:390
+#: ../../rst/modules/nxos_vrrp_module.rst:392
 msgid ""
 "For more information on using Ansible to manage Cisco devices see the "
 "`Cisco integration page "
 "<https://www.ansible.com/integrations/networks/cisco>`_."
 msgstr ""
 
-#: ../../rst/modules/nxos_vrrp_module.rst:395
+#: ../../rst/modules/nxos_vrrp_module.rst:397
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrrp_module.rst:427
+#: ../../rst/modules/nxos_vrrp_module.rst:429
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrrp_module.rst:428
+#: ../../rst/modules/nxos_vrrp_module.rst:430
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrrp_module.rst:456
+#: ../../rst/modules/nxos_vrrp_module.rst:458
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrrp_module.rst:461
+#: ../../rst/modules/nxos_vrrp_module.rst:463
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrrp_module.rst:464
+#: ../../rst/modules/nxos_vrrp_module.rst:466
 msgid ""
 "This module is :ref:`maintained by the Ansible Network Team "
 "<modules_support>`. *[network]*"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrrp_module.rst:467
+#: ../../rst/modules/nxos_vrrp_module.rst:469
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrrp_module.rst:469
+#: ../../rst/modules/nxos_vrrp_module.rst:471
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/nxos_vrrp_module.rst:475
+#: ../../rst/modules/nxos_vrrp_module.rst:477
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrrp_module.rst:477
+#: ../../rst/modules/nxos_vrrp_module.rst:479
 msgid "Jason Edelman (@jedelman8)"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrrp_module.rst:478
+#: ../../rst/modules/nxos_vrrp_module.rst:480
 msgid "Gabriele Gerbino (@GGabriele)"
 msgstr ""
 
-#: ../../rst/modules/nxos_vrrp_module.rst:482
+#: ../../rst/modules/nxos_vrrp_module.rst:484
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_vrrp.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_vrrp.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_vrrp.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

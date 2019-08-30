@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -460,38 +460,34 @@ msgstr ""
 
 #: ../../rst/porting_guides/porting_guide_2.5.rst:199
 msgid ""
-":ref:`nxos_ip_interface <nxos_ip_interface_module>` use "
-":ref:`nxos_l3_interface <nxos_l3_interface_module>` instead."
+"nxos_ip_interface use :ref:`nxos_l3_interface <nxos_l3_interface_module>`"
+" instead."
 msgstr ""
 
 #: ../../rst/porting_guides/porting_guide_2.5.rst:200
-msgid ""
-":ref:`nxos_portchannel <nxos_portchannel_module>` use :ref:`nxos_linkagg "
-"<nxos_linkagg_module>` instead."
+msgid "nxos_portchannel use :ref:`nxos_linkagg <nxos_linkagg_module>` instead."
 msgstr ""
 
 #: ../../rst/porting_guides/porting_guide_2.5.rst:201
 msgid ""
-":ref:`nxos_switchport <nxos_switchport_module>` use "
-":ref:`nxos_l2_interface <nxos_l2_interface_module>` instead."
+"nxos_switchport use :ref:`nxos_l2_interface <nxos_l2_interface_module>` "
+"instead."
 msgstr ""
 
 #: ../../rst/porting_guides/porting_guide_2.5.rst:202
 msgid ""
-":ref:`panos_security_policy <panos_security_policy_module>` use "
-":ref:`panos_security_rule <panos_security_rule_module>` instead."
+"panos_security_policy use :ref:`panos_security_rule "
+"<panos_security_rule_module>` instead."
 msgstr ""
 
 #: ../../rst/porting_guides/porting_guide_2.5.rst:203
 msgid ""
-":ref:`panos_nat_policy <panos_nat_policy_module>` use "
-":ref:`panos_nat_rule <panos_nat_rule_module>` instead."
+"panos_nat_policy use :ref:`panos_nat_rule <panos_nat_rule_module>` "
+"instead."
 msgstr ""
 
 #: ../../rst/porting_guides/porting_guide_2.5.rst:204
-msgid ""
-":ref:`vsphere_guest <vsphere_guest_module>` use :ref:`vmware_guest "
-"<vmware_guest_module>` instead."
+msgid "vsphere_guest use :ref:`vmware_guest <vmware_guest_module>` instead."
 msgstr ""
 
 #: ../../rst/porting_guides/porting_guide_2.5.rst:207
@@ -665,8 +661,8 @@ msgid ""
 "A new option was added to lookup plugins globally named ``error`` which "
 "allows you to control how errors produced by the lookup are handled, "
 "before this option they were always fatal. Valid values for this option "
-"are ``warn``, ``ignore`` and ``strict``. See the :doc:`lookup "
-"<../plugins/lookup>` page for more details."
+"are ``warn``, ``ignore`` and ``strict``. See the :ref:`lookup "
+"<lookup_plugins>` page for more details."
 msgstr ""
 
 #: ../../rst/porting_guides/porting_guide_2.5.rst:281
@@ -791,6 +787,57 @@ msgstr ""
 #: ../../rst/porting_guides/porting_guide_2.5.rst:392
 msgid ""
 "See the module utilities developer guide see "
-":ref:`appendix_module_utilities` for more information."
+":ref:`developing_module_utilities` for more information."
 msgstr ""
+
+#~ msgid ""
+#~ ":ref:`nxos_ip_interface <nxos_ip_interface_module>` use"
+#~ " :ref:`nxos_l3_interface <nxos_l3_interface_module>` "
+#~ "instead."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":ref:`nxos_portchannel <nxos_portchannel_module>` use "
+#~ ":ref:`nxos_linkagg <nxos_linkagg_module>` instead."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":ref:`nxos_switchport <nxos_switchport_module>` use "
+#~ ":ref:`nxos_l2_interface <nxos_l2_interface_module>` "
+#~ "instead."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":ref:`panos_security_policy <panos_security_policy_module>` "
+#~ "use :ref:`panos_security_rule "
+#~ "<panos_security_rule_module>` instead."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":ref:`panos_nat_policy <panos_nat_policy_module>` use "
+#~ ":ref:`panos_nat_rule <panos_nat_rule_module>` instead."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":ref:`vsphere_guest <vsphere_guest_module>` use "
+#~ ":ref:`vmware_guest <vmware_guest_module>` instead."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A new option was added to lookup"
+#~ " plugins globally named ``error`` which "
+#~ "allows you to control how errors "
+#~ "produced by the lookup are handled, "
+#~ "before this option they were always "
+#~ "fatal. Valid values for this option "
+#~ "are ``warn``, ``ignore`` and ``strict``. "
+#~ "See the :doc:`lookup <../plugins/lookup>` page"
+#~ " for more details."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "See the module utilities developer guide"
+#~ " see :ref:`appendix_module_utilities` for more"
+#~ " information."
+#~ msgstr ""
 

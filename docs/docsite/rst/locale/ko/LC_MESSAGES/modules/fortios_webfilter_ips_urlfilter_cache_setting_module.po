@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 #: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:9
 msgid ""
 "fortios_webfilter_ips_urlfilter_cache_setting -- Configure IPS URL filter"
-" cache settings"
+" cache settings in Fortinet's FortiOS and FortiGate"
 msgstr ""
 
 #: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:19
@@ -30,10 +30,11 @@ msgstr ""
 
 #: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:20
 msgid ""
-"This module is able to configure a FortiGate or FortiOS by allowing the "
-"user to configure webfilter feature and ips_urlfilter_cache_setting "
-"category. Examples includes all options and need to be adjusted to "
-"datasources before usage. Tested with FOS v6.0.2"
+"This module is able to configure a FortiGate or FortiOS (FOS) device by "
+"allowing the user to set and modify webfilter feature and "
+"ips_urlfilter_cache_setting category. Examples include all parameters and"
+" values need to be adjusted to datasources before usage. Tested with FOS "
+"v6.0.5"
 msgstr ""
 
 #: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:25
@@ -52,66 +53,89 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:161
+#: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:178
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:164
+#: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:181
 msgid "Requires fortiosapi library developed by Fortinet"
 msgstr ""
 
-#: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:165
+#: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:182
 msgid "Run as a local_action in your playbook"
 msgstr ""
 
-#: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:170
+#: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:187
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:196
+#: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:215
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:197
+#: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:216
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:355
+#: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:374
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:360
+#: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:379
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:363
+#: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:382
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:370
+#: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:389
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:372
+#: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:391
 msgid "Miguel Angel Munoz (@mamunozgonzalez)"
 msgstr ""
 
-#: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:373
+#: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:392
 msgid "Nicolas Thomas (@thomnico)"
 msgstr ""
 
-#: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:377
+#: ../../rst/modules/fortios_webfilter_ips_urlfilter_cache_setting_module.rst:396
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/fortios/fortios_webfilter_ips_urlfilter_cache_setting.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/fortios/fortios_webfilter_ips_urlfilter_cache_setting.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "fortios_webfilter_ips_urlfilter_cache_setting -- Configure"
+#~ " IPS URL filter cache settings"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is able to configure a"
+#~ " FortiGate or FortiOS by allowing the"
+#~ " user to configure webfilter feature "
+#~ "and ips_urlfilter_cache_setting category. Examples"
+#~ " includes all options and need to "
+#~ "be adjusted to datasources before usage."
+#~ " Tested with FOS v6.0.2"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/fortios/fortios_webfilter_ips_urlfilter_cache_setting.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

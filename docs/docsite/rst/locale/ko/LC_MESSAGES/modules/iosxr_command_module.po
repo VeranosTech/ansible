@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,11 @@ msgstr ""
 msgid "iosxr_command -- Run commands on remote devices running Cisco IOS XR"
 msgstr ""
 
-#: ../../rst/modules/iosxr_command_module.rst:19
+#: ../../rst/modules/iosxr_command_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/iosxr_command_module.rst:20
+#: ../../rst/modules/iosxr_command_module.rst:19
 msgid ""
 "Sends arbitrary commands to an IOS XR node and returns the results read "
 "from the device. This module includes an argument that will cause the "
@@ -34,7 +34,7 @@ msgid ""
 " the condition is not met."
 msgstr ""
 
-#: ../../rst/modules/iosxr_command_module.rst:21
+#: ../../rst/modules/iosxr_command_module.rst:20
 msgid ""
 "This module does not support running commands in configuration mode. "
 "Please use :ref:`iosxr_config <iosxr_config_module>` to configure iosxr "
@@ -42,105 +42,123 @@ msgid ""
 msgstr ""
 
 #: ../../rst/modules/iosxr_command_module.rst:26
-msgid "Requirements"
-msgstr ""
-
-#: ../../rst/modules/iosxr_command_module.rst:27
-msgid "The below requirements are needed on the host that executes this module."
-msgstr ""
-
-#: ../../rst/modules/iosxr_command_module.rst:29
-msgid "ncclient >= 0.5.3 when using netconf"
-msgstr ""
-
-#: ../../rst/modules/iosxr_command_module.rst:30
-msgid "lxml >= 4.1.1 when using netconf"
-msgstr ""
-
-#: ../../rst/modules/iosxr_command_module.rst:34
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/iosxr_command_module.rst:225
+#: ../../rst/modules/iosxr_command_module.rst:217
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/iosxr_command_module.rst:228
-msgid "This module does not support netconf connection"
+#: ../../rst/modules/iosxr_command_module.rst:220
+msgid ""
+"This module works with ``network_cli``. See `the IOS-XR Platform Options "
+"<../network/user_guide/platform_iosxr.html>`_."
 msgstr ""
 
-#: ../../rst/modules/iosxr_command_module.rst:229
-msgid "Tested against IOS XR 6.1.2"
+#: ../../rst/modules/iosxr_command_module.rst:221
+msgid "This module does not support ``netconf`` connection."
 msgstr ""
 
-#: ../../rst/modules/iosxr_command_module.rst:230
+#: ../../rst/modules/iosxr_command_module.rst:222
+msgid "Tested against IOS XR 6.1.3"
+msgstr ""
+
+#: ../../rst/modules/iosxr_command_module.rst:223
 msgid ""
 "For more information on using Ansible to manage network devices see the "
 ":ref:`Ansible Network Guide <network_guide>`"
 msgstr ""
 
-#: ../../rst/modules/iosxr_command_module.rst:231
+#: ../../rst/modules/iosxr_command_module.rst:224
 msgid ""
 "For more information on using Ansible to manage Cisco devices see the "
 "`Cisco integration page "
 "<https://www.ansible.com/integrations/networks/cisco>`_."
 msgstr ""
 
-#: ../../rst/modules/iosxr_command_module.rst:236
+#: ../../rst/modules/iosxr_command_module.rst:229
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/iosxr_command_module.rst:271
+#: ../../rst/modules/iosxr_command_module.rst:264
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/iosxr_command_module.rst:272
+#: ../../rst/modules/iosxr_command_module.rst:265
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/iosxr_command_module.rst:326
+#: ../../rst/modules/iosxr_command_module.rst:319
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/iosxr_command_module.rst:331
+#: ../../rst/modules/iosxr_command_module.rst:324
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/iosxr_command_module.rst:334
+#: ../../rst/modules/iosxr_command_module.rst:327
 msgid ""
 "This module is :ref:`maintained by the Ansible Network Team "
 "<modules_support>`. *[network]*"
 msgstr ""
 
-#: ../../rst/modules/iosxr_command_module.rst:337
+#: ../../rst/modules/iosxr_command_module.rst:330
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/iosxr_command_module.rst:339
+#: ../../rst/modules/iosxr_command_module.rst:332
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/iosxr_command_module.rst:345
+#: ../../rst/modules/iosxr_command_module.rst:338
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/iosxr_command_module.rst:347
+#: ../../rst/modules/iosxr_command_module.rst:340
 msgid "Ricardo Carrillo Cruz (@rcarrillocruz)"
 msgstr ""
 
-#: ../../rst/modules/iosxr_command_module.rst:351
+#: ../../rst/modules/iosxr_command_module.rst:344
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/iosxr/iosxr_command.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/iosxr/iosxr_command.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "Requirements"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The below requirements are needed on "
+#~ "the host that executes this module."
+#~ msgstr ""
+
+#~ msgid "ncclient >= 0.5.3 when using netconf"
+#~ msgstr ""
+
+#~ msgid "lxml >= 4.1.1 when using netconf"
+#~ msgstr ""
+
+#~ msgid "This module does not support netconf connection"
+#~ msgstr ""
+
+#~ msgid "Tested against IOS XR 6.1.2"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/iosxr/iosxr_command.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,68 +24,69 @@ msgid ""
 "versions"
 msgstr ""
 
-#: ../../rst/modules/python_requirements_facts_module.rst:19
-msgid "Synopsis"
-msgstr ""
-
-#: ../../rst/modules/python_requirements_facts_module.rst:20
+#: ../../rst/modules/python_requirements_facts_module.rst:11
 msgid ""
-"Get info about available Python requirements on the target host, "
-"including listing required libraries and gathering versions."
+"This is an alias for :ref:`python_requirements_info "
+"<python_requirements_info_module>`. This name has been **deprecated**. "
+"Please update your tasks to use the new name ``python_requirements_info``"
+" instead."
 msgstr ""
 
-#: ../../rst/modules/python_requirements_facts_module.rst:26
-msgid "Parameters"
-msgstr ""
+#~ msgid "Synopsis"
+#~ msgstr ""
 
-#: ../../rst/modules/python_requirements_facts_module.rst:56
-msgid "Examples"
-msgstr ""
+#~ msgid ""
+#~ "Get info about available Python "
+#~ "requirements on the target host, "
+#~ "including listing required libraries and "
+#~ "gathering versions."
+#~ msgstr ""
 
-#: ../../rst/modules/python_requirements_facts_module.rst:73
-msgid "Return Values"
-msgstr ""
+#~ msgid "Parameters"
+#~ msgstr ""
 
-#: ../../rst/modules/python_requirements_facts_module.rst:74
-msgid ""
-"Common return values are documented :ref:`here <common_return_values>`, "
-"the following are the fields unique to this module:"
-msgstr ""
+#~ msgid "Examples"
+#~ msgstr ""
 
-#: ../../rst/modules/python_requirements_facts_module.rst:167
-msgid "Status"
-msgstr ""
+#~ msgid "Return Values"
+#~ msgstr ""
 
-#: ../../rst/modules/python_requirements_facts_module.rst:172
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
-msgstr ""
+#~ msgid ""
+#~ "Common return values are documented "
+#~ ":ref:`here <common_return_values>`, the following"
+#~ " are the fields unique to this "
+#~ "module:"
+#~ msgstr ""
 
-#: ../../rst/modules/python_requirements_facts_module.rst:175
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
-msgstr ""
+#~ msgid "Status"
+#~ msgstr ""
 
-#: ../../rst/modules/python_requirements_facts_module.rst:182
-msgid "Authors"
-msgstr ""
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
 
-#: ../../rst/modules/python_requirements_facts_module.rst:184
-msgid "Will Thames (@willthames)"
-msgstr ""
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
 
-#: ../../rst/modules/python_requirements_facts_module.rst:185
-msgid "Ryan Scott Brown (@ryan_sb)"
-msgstr ""
+#~ msgid "Authors"
+#~ msgstr ""
 
-#: ../../rst/modules/python_requirements_facts_module.rst:189
-#, python-format
-msgid ""
-"If you notice any issues in this documentation you can `edit this "
-"document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/python_requirements_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
-" to improve it."
-msgstr ""
+#~ msgid "Will Thames (@willthames)"
+#~ msgstr ""
+
+#~ msgid "Ryan Scott Brown (@ryan_sb)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/python_requirements_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

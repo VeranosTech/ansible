@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,24 +45,28 @@ msgid "openstacksdk"
 msgstr ""
 
 #: ../../rst/modules/os_loadbalancer_module.rst:29
+msgid "openstacksdk >= 0.12.0"
+msgstr ""
+
+#: ../../rst/modules/os_loadbalancer_module.rst:30
 msgid "python >= 2.7"
 msgstr ""
 
-#: ../../rst/modules/os_loadbalancer_module.rst:33
+#: ../../rst/modules/os_loadbalancer_module.rst:34
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/os_loadbalancer_module.rst:576
+#: ../../rst/modules/os_loadbalancer_module.rst:581
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/os_loadbalancer_module.rst:579
+#: ../../rst/modules/os_loadbalancer_module.rst:584
 msgid ""
 "The standard OpenStack environment variables, such as ``OS_USERNAME`` may"
 " be used instead of providing explicit values."
 msgstr ""
 
-#: ../../rst/modules/os_loadbalancer_module.rst:580
+#: ../../rst/modules/os_loadbalancer_module.rst:585
 msgid ""
 "Auth information is driven by openstacksdk, which means that values can "
 "come from a yaml config file in /etc/ansible/openstack.yaml, "
@@ -72,50 +76,58 @@ msgid ""
 "https://docs.openstack.org/openstacksdk/"
 msgstr ""
 
-#: ../../rst/modules/os_loadbalancer_module.rst:585
+#: ../../rst/modules/os_loadbalancer_module.rst:590
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/os_loadbalancer_module.rst:678
+#: ../../rst/modules/os_loadbalancer_module.rst:683
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/os_loadbalancer_module.rst:679
+#: ../../rst/modules/os_loadbalancer_module.rst:684
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/os_loadbalancer_module.rst:887
+#: ../../rst/modules/os_loadbalancer_module.rst:892
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/os_loadbalancer_module.rst:892
+#: ../../rst/modules/os_loadbalancer_module.rst:897
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/os_loadbalancer_module.rst:895
+#: ../../rst/modules/os_loadbalancer_module.rst:900
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/os_loadbalancer_module.rst:902
+#: ../../rst/modules/os_loadbalancer_module.rst:907
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/os_loadbalancer_module.rst:904
+#: ../../rst/modules/os_loadbalancer_module.rst:909
 msgid "Lingxian Kong (@lingxiankong)"
 msgstr ""
 
-#: ../../rst/modules/os_loadbalancer_module.rst:908
+#: ../../rst/modules/os_loadbalancer_module.rst:913
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/openstack/os_loadbalancer.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/openstack/os_loadbalancer.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/openstack/os_loadbalancer.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

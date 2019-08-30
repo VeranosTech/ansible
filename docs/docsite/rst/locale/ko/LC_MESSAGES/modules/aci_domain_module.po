@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,84 +38,116 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/aci_domain_module.rst:391
+#: ../../rst/modules/aci_domain_module.rst:392
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/aci_domain_module.rst:395
+#: ../../rst/modules/aci_domain_module.rst:396
+msgid ":ref:`aci_aep_to_domain_module`"
+msgstr ""
+
+#: ../../rst/modules/aci_domain_module.rst:397
+msgid "The official documentation on the **aci_aep_to_domain** module."
+msgstr ""
+
+#: ../../rst/modules/aci_domain_module.rst:398
+msgid ":ref:`aci_domain_to_encap_pool_module`"
+msgstr ""
+
+#: ../../rst/modules/aci_domain_module.rst:399
+msgid "The official documentation on the **aci_domain_to_encap_pool** module."
+msgstr ""
+
+#: ../../rst/modules/aci_domain_module.rst:400
+msgid ":ref:`aci_domain_to_vlan_pool_module`"
+msgstr ""
+
+#: ../../rst/modules/aci_domain_module.rst:401
+msgid "The official documentation on the **aci_domain_to_vlan_pool** module."
+msgstr ""
+
+#: ../../rst/modules/aci_domain_module.rst:402
 msgid ""
 "`APIC Management Information Model reference "
 "<https://developer.cisco.com/docs/apic-mim-ref/>`_"
 msgstr ""
 
-#: ../../rst/modules/aci_domain_module.rst:396
+#: ../../rst/modules/aci_domain_module.rst:403
 msgid ""
 "More information about the internal APIC classes **phys:DomP**, "
 "**vmm:DomP**, **l2ext:DomP**, **l3ext:DomP** and **fc:DomP**"
 msgstr ""
 
-#: ../../rst/modules/aci_domain_module.rst:397
+#: ../../rst/modules/aci_domain_module.rst:404
 msgid ":ref:`aci_guide`"
 msgstr ""
 
-#: ../../rst/modules/aci_domain_module.rst:398
+#: ../../rst/modules/aci_domain_module.rst:405
 msgid ""
 "Detailed information on how to manage your ACI infrastructure using "
 "Ansible."
 msgstr ""
 
-#: ../../rst/modules/aci_domain_module.rst:399
+#: ../../rst/modules/aci_domain_module.rst:406
 msgid ":ref:`aci_dev_guide`"
 msgstr ""
 
-#: ../../rst/modules/aci_domain_module.rst:400
+#: ../../rst/modules/aci_domain_module.rst:407
 msgid "Detailed guide on how to write your own Cisco ACI modules to contribute."
 msgstr ""
 
-#: ../../rst/modules/aci_domain_module.rst:404
+#: ../../rst/modules/aci_domain_module.rst:411
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/aci_domain_module.rst:474
+#: ../../rst/modules/aci_domain_module.rst:481
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/aci_domain_module.rst:475
+#: ../../rst/modules/aci_domain_module.rst:482
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/aci_domain_module.rst:633
+#: ../../rst/modules/aci_domain_module.rst:640
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/aci_domain_module.rst:638
+#: ../../rst/modules/aci_domain_module.rst:645
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/aci_domain_module.rst:641
+#: ../../rst/modules/aci_domain_module.rst:648
 msgid ""
 "This module is :ref:`maintained by an Ansible Partner <modules_support>`."
 " *[certified]*"
 msgstr ""
 
-#: ../../rst/modules/aci_domain_module.rst:648
+#: ../../rst/modules/aci_domain_module.rst:655
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/aci_domain_module.rst:650
+#: ../../rst/modules/aci_domain_module.rst:657
 msgid "Dag Wieers (@dagwieers)"
 msgstr ""
 
-#: ../../rst/modules/aci_domain_module.rst:654
+#: ../../rst/modules/aci_domain_module.rst:661
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/aci/aci_domain.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/aci/aci_domain.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/aci/aci_domain.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

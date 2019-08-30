@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/azure_rm_functionapp_module.rst:20
-msgid "Create, update or delete an Azure Function App"
+msgid "Create, update or delete an Azure Function App."
 msgstr ""
 
 #: ../../rst/modules/azure_rm_functionapp_module.rst:25
@@ -50,27 +50,37 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_functionapp_module.rst:338
+#: ../../rst/modules/azure_rm_functionapp_module.rst:429
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_functionapp_module.rst:341
+#: ../../rst/modules/azure_rm_functionapp_module.rst:432
 msgid ""
 "For authentication with Azure you can pass parameters, set environment "
-"variables or use a profile stored in ~/.azure/credentials. Authentication"
-" is possible using a service principal or Active Directory user. To "
-"authenticate via service principal, pass subscription_id, client_id, "
+"variables, use a profile stored in ~/.azure/credentials, or log in before"
+" you run your tasks or playbook with ``az login``."
+msgstr ""
+
+#: ../../rst/modules/azure_rm_functionapp_module.rst:433
+msgid ""
+"Authentication is also possible using a service principal or Active "
+"Directory user."
+msgstr ""
+
+#: ../../rst/modules/azure_rm_functionapp_module.rst:434
+msgid ""
+"To authenticate via service principal, pass subscription_id, client_id, "
 "secret and tenant or set environment variables AZURE_SUBSCRIPTION_ID, "
 "AZURE_CLIENT_ID, AZURE_SECRET and AZURE_TENANT."
 msgstr ""
 
-#: ../../rst/modules/azure_rm_functionapp_module.rst:342
+#: ../../rst/modules/azure_rm_functionapp_module.rst:435
 msgid ""
 "To authenticate via Active Directory user, pass ad_user and password, or "
 "set AZURE_AD_USER and AZURE_PASSWORD in the environment."
 msgstr ""
 
-#: ../../rst/modules/azure_rm_functionapp_module.rst:343
+#: ../../rst/modules/azure_rm_functionapp_module.rst:436
 msgid ""
 "Alternatively, credentials can be stored in ~/.azure/credentials. This is"
 " an ini file containing a [default] section and the following keys: "
@@ -80,50 +90,91 @@ msgid ""
 "environment."
 msgstr ""
 
-#: ../../rst/modules/azure_rm_functionapp_module.rst:348
+#: ../../rst/modules/azure_rm_functionapp_module.rst:440
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/azure_rm_functionapp_module.rst:444
+msgid ""
+"`Sign in with Azure CLI <https://docs.microsoft.com/en-us/cli/azure"
+"/authenticate-azure-cli?view=azure-cli-latest>`_"
+msgstr ""
+
+#: ../../rst/modules/azure_rm_functionapp_module.rst:445
+msgid "How to authenticate using the ``az login`` command."
+msgstr ""
+
+#: ../../rst/modules/azure_rm_functionapp_module.rst:449
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_functionapp_module.rst:377
+#: ../../rst/modules/azure_rm_functionapp_module.rst:491
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_functionapp_module.rst:378
+#: ../../rst/modules/azure_rm_functionapp_module.rst:492
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_functionapp_module.rst:404
+#: ../../rst/modules/azure_rm_functionapp_module.rst:518
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_functionapp_module.rst:409
+#: ../../rst/modules/azure_rm_functionapp_module.rst:523
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_functionapp_module.rst:412
+#: ../../rst/modules/azure_rm_functionapp_module.rst:526
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_functionapp_module.rst:419
+#: ../../rst/modules/azure_rm_functionapp_module.rst:533
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_functionapp_module.rst:421
-msgid "Thomas Stringer (@tstringer)"
+#: ../../rst/modules/azure_rm_functionapp_module.rst:535
+msgid "Thomas Stringer (@trstringer)"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_functionapp_module.rst:425
+#: ../../rst/modules/azure_rm_functionapp_module.rst:539
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/azure/azure_rm_functionapp.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/azure/azure_rm_functionapp.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "Create, update or delete an Azure Function App"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For authentication with Azure you can"
+#~ " pass parameters, set environment variables"
+#~ " or use a profile stored in "
+#~ "~/.azure/credentials. Authentication is possible "
+#~ "using a service principal or Active "
+#~ "Directory user. To authenticate via "
+#~ "service principal, pass subscription_id, "
+#~ "client_id, secret and tenant or set "
+#~ "environment variables AZURE_SUBSCRIPTION_ID, "
+#~ "AZURE_CLIENT_ID, AZURE_SECRET and AZURE_TENANT."
+#~ msgstr ""
+
+#~ msgid "Thomas Stringer (@tstringer)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/azure/azure_rm_functionapp.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

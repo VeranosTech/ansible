@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/plugins/inventory/aws_ec2.rst:8
-msgid "aws_ec2 -- ec2 inventory source"
+msgid "aws_ec2 -- EC2 inventory source"
 msgstr ""
 
 #: ../../rst/plugins/inventory/aws_ec2.rst:17
@@ -31,7 +31,7 @@ msgid "Get inventory hosts from Amazon Web Services EC2."
 msgstr ""
 
 #: ../../rst/plugins/inventory/aws_ec2.rst:19
-msgid "Uses a YAML configuration file that ends with aws_ec2.(yml|yaml)."
+msgid "Uses a YAML configuration file that ends with ``aws_ec2.(yml|yaml``)."
 msgstr ""
 
 #: ../../rst/plugins/inventory/aws_ec2.rst:24
@@ -56,39 +56,67 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/plugins/inventory/aws_ec2.rst:342
+#: ../../rst/plugins/inventory/aws_ec2.rst:446
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/plugins/inventory/aws_ec2.rst:449
+msgid ""
+"If no credentials are provided and the control node has an associated IAM"
+" instance profile then the role will be used for authentication."
+msgstr ""
+
+#: ../../rst/plugins/inventory/aws_ec2.rst:454
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/plugins/inventory/aws_ec2.rst:415
+#: ../../rst/plugins/inventory/aws_ec2.rst:527
 msgid "Status"
 msgstr ""
 
-#: ../../rst/plugins/inventory/aws_ec2.rst:420
+#: ../../rst/plugins/inventory/aws_ec2.rst:532
 msgid ""
 "This inventory is not guaranteed to have a backwards compatible "
 "interface. *[preview]*"
 msgstr ""
 
-#: ../../rst/plugins/inventory/aws_ec2.rst:423
+#: ../../rst/plugins/inventory/aws_ec2.rst:535
 msgid ""
 "This inventory is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/plugins/inventory/aws_ec2.rst:430
+#: ../../rst/plugins/inventory/aws_ec2.rst:542
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/plugins/inventory/aws_ec2.rst:432
-msgid "UNKNOWN"
+#: ../../rst/plugins/inventory/aws_ec2.rst:544
+msgid "Sloane Hertel (@s-hertel)"
 msgstr ""
 
-#: ../../rst/plugins/inventory/aws_ec2.rst:436
+#: ../../rst/plugins/inventory/aws_ec2.rst:548
+#, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/inventory/aws_ec2.py>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/inventory/aws_ec2.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "aws_ec2 -- ec2 inventory source"
+#~ msgstr ""
+
+#~ msgid "Uses a YAML configuration file that ends with aws_ec2.(yml|yaml)."
+#~ msgstr ""
+
+#~ msgid "UNKNOWN"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/inventory/aws_ec2.py>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -205,8 +205,52 @@ msgstr ""
 
 #: ../../rst/community/documentation_contributions.rst:63
 msgid ""
-"To work with documentation on your local machine, you need the following "
-"packages installed:"
+"To work with documentation on your local machine, you need to have "
+"python-3.5 or greater and the following packages installed:"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:66
+msgid "gcc"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:67
+msgid "jinja2"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:68
+msgid "libyaml"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:69
+msgid "Pygments >= 2.4.0"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:70
+msgid "pyparsing"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:71
+msgid "PyYAML"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:72
+msgid "rstcheck"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:73
+msgid "six"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:74
+msgid "sphinx"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:75
+msgid "sphinx-notfound-page"
+msgstr ""
+
+#: ../../rst/community/documentation_contributions.rst:76
+msgid "straight.plugin"
 msgstr ""
 
 #: ../../rst/community/documentation_contributions.rst:80
@@ -355,4 +399,10 @@ msgid ""
 "<testing_module_documentation>` :ref:`More about documenting modules "
 "<module_documenting>`"
 msgstr ""
+
+#~ msgid ""
+#~ "To work with documentation on your "
+#~ "local machine, you need the following"
+#~ " packages installed:"
+#~ msgstr ""
 

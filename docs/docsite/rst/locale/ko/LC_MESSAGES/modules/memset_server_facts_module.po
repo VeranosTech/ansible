@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,72 +22,71 @@ msgstr ""
 msgid "memset_server_facts -- Retrieve server information"
 msgstr ""
 
-#: ../../rst/modules/memset_server_facts_module.rst:19
-msgid "Synopsis"
-msgstr ""
-
-#: ../../rst/modules/memset_server_facts_module.rst:20
-msgid "Retrieve server information."
-msgstr ""
-
-#: ../../rst/modules/memset_server_facts_module.rst:26
-msgid "Parameters"
-msgstr ""
-
-#: ../../rst/modules/memset_server_facts_module.rst:67
-msgid "Notes"
-msgstr ""
-
-#: ../../rst/modules/memset_server_facts_module.rst:70
+#: ../../rst/modules/memset_server_facts_module.rst:11
 msgid ""
-"An API key generated via the Memset customer control panel is needed with"
-" the following minimum scope - *server.info*."
+"This is an alias for :ref:`memset_server_info "
+"<memset_server_info_module>`. This name has been **deprecated**. Please "
+"update your tasks to use the new name ``memset_server_info`` instead."
 msgstr ""
 
-#: ../../rst/modules/memset_server_facts_module.rst:75
-msgid "Examples"
-msgstr ""
+#~ msgid "Synopsis"
+#~ msgstr ""
 
-#: ../../rst/modules/memset_server_facts_module.rst:90
-msgid "Return Values"
-msgstr ""
+#~ msgid "Retrieve server information."
+#~ msgstr ""
 
-#: ../../rst/modules/memset_server_facts_module.rst:91
-msgid ""
-"Common return values are documented :ref:`here <common_return_values>`, "
-"the following are the fields unique to this module:"
-msgstr ""
+#~ msgid "Parameters"
+#~ msgstr ""
 
-#: ../../rst/modules/memset_server_facts_module.rst:524
-msgid "Status"
-msgstr ""
+#~ msgid "Notes"
+#~ msgstr ""
 
-#: ../../rst/modules/memset_server_facts_module.rst:529
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
-msgstr ""
+#~ msgid ""
+#~ "An API key generated via the "
+#~ "Memset customer control panel is needed"
+#~ " with the following minimum scope -"
+#~ " *server.info*."
+#~ msgstr ""
 
-#: ../../rst/modules/memset_server_facts_module.rst:532
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
-msgstr ""
+#~ msgid "Examples"
+#~ msgstr ""
 
-#: ../../rst/modules/memset_server_facts_module.rst:539
-msgid "Authors"
-msgstr ""
+#~ msgid "Return Values"
+#~ msgstr ""
 
-#: ../../rst/modules/memset_server_facts_module.rst:541
-msgid "Simon Weald (@glitchcrab)"
-msgstr ""
+#~ msgid ""
+#~ "Common return values are documented "
+#~ ":ref:`here <common_return_values>`, the following"
+#~ " are the fields unique to this "
+#~ "module:"
+#~ msgstr ""
 
-#: ../../rst/modules/memset_server_facts_module.rst:545
-#, python-format
-msgid ""
-"If you notice any issues in this documentation you can `edit this "
-"document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/memset/memset_server_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
-" to improve it."
-msgstr ""
+#~ msgid "Status"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid "Authors"
+#~ msgstr ""
+
+#~ msgid "Simon Weald (@glitchcrab)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/memset/memset_server_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

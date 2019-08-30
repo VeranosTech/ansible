@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/dev_guide/testing/sanity/symlinks.rst:2
-msgid "Sanity Tests » symlinks"
+msgid "symlinks"
 msgstr ""
 
 #: ../../rst/dev_guide/testing/sanity/symlinks.rst:4
@@ -33,4 +33,7 @@ msgid ""
 "If other types of symlinks are needed for tests they must be created as "
 "part of the test."
 msgstr ""
+
+#~ msgid "Sanity Tests » symlinks"
+#~ msgstr ""
 

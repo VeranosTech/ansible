@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,7 +43,7 @@ msgid "python >= 2.6"
 msgstr ""
 
 #: ../../rst/modules/zabbix_maintenance_module.rst:28
-msgid "zabbix-api"
+msgid "zabbix-api >= 0.5.3"
 msgstr ""
 
 #: ../../rst/modules/zabbix_maintenance_module.rst:32
@@ -71,40 +71,60 @@ msgstr ""
 msgid "Install required module with 'pip install zabbix-api' command."
 msgstr ""
 
-#: ../../rst/modules/zabbix_maintenance_module.rst:257
+#: ../../rst/modules/zabbix_maintenance_module.rst:253
+msgid ""
+"If you use *login_password=zabbix*, the word \"zabbix\" is replaced by "
+"\"********\" in all module output, because *login_password* uses "
+"``no_log``. See `this FAQ "
+"<https://docs.ansible.com/ansible/latest/network/user_guide/faq.html#why-"
+"is-my-output-sometimes-replaced-with>`_ for more information."
+msgstr ""
+
+#: ../../rst/modules/zabbix_maintenance_module.rst:258
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/zabbix_maintenance_module.rst:309
+#: ../../rst/modules/zabbix_maintenance_module.rst:310
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/zabbix_maintenance_module.rst:314
+#: ../../rst/modules/zabbix_maintenance_module.rst:315
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/zabbix_maintenance_module.rst:317
+#: ../../rst/modules/zabbix_maintenance_module.rst:318
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/zabbix_maintenance_module.rst:324
+#: ../../rst/modules/zabbix_maintenance_module.rst:325
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/zabbix_maintenance_module.rst:326
+#: ../../rst/modules/zabbix_maintenance_module.rst:327
 msgid "Alexander Bulimov (@abulimov)"
 msgstr ""
 
-#: ../../rst/modules/zabbix_maintenance_module.rst:330
+#: ../../rst/modules/zabbix_maintenance_module.rst:331
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/monitoring/zabbix/zabbix_maintenance.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/monitoring/zabbix/zabbix_maintenance.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "zabbix-api"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/monitoring/zabbix/zabbix_maintenance.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,68 +50,76 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/vmware_local_role_manager_module.rst:215
+#: ../../rst/modules/vmware_local_role_manager_module.rst:245
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/vmware_local_role_manager_module.rst:218
+#: ../../rst/modules/vmware_local_role_manager_module.rst:248
 msgid "Tested on ESXi 6.5"
 msgstr ""
 
-#: ../../rst/modules/vmware_local_role_manager_module.rst:219
+#: ../../rst/modules/vmware_local_role_manager_module.rst:249
 msgid ""
 "Be sure that the ESXi user used for login, has the appropriate rights to "
 "create / delete / edit roles"
 msgstr ""
 
-#: ../../rst/modules/vmware_local_role_manager_module.rst:224
+#: ../../rst/modules/vmware_local_role_manager_module.rst:254
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/vmware_local_role_manager_module.rst:291
+#: ../../rst/modules/vmware_local_role_manager_module.rst:321
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/vmware_local_role_manager_module.rst:292
+#: ../../rst/modules/vmware_local_role_manager_module.rst:322
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/vmware_local_role_manager_module.rst:384
+#: ../../rst/modules/vmware_local_role_manager_module.rst:414
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/vmware_local_role_manager_module.rst:389
+#: ../../rst/modules/vmware_local_role_manager_module.rst:419
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/vmware_local_role_manager_module.rst:392
+#: ../../rst/modules/vmware_local_role_manager_module.rst:422
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/vmware_local_role_manager_module.rst:399
+#: ../../rst/modules/vmware_local_role_manager_module.rst:429
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/vmware_local_role_manager_module.rst:401
+#: ../../rst/modules/vmware_local_role_manager_module.rst:431
 msgid "Abhijeet Kasurde (@Akasurde)"
 msgstr ""
 
-#: ../../rst/modules/vmware_local_role_manager_module.rst:402
+#: ../../rst/modules/vmware_local_role_manager_module.rst:432
 msgid "Christian Kotte (@ckotte)"
 msgstr ""
 
-#: ../../rst/modules/vmware_local_role_manager_module.rst:406
+#: ../../rst/modules/vmware_local_role_manager_module.rst:436
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_local_role_manager.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_local_role_manager.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_local_role_manager.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

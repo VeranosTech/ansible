@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/testing/sanity/future-import-boilerplate.rst:2
+msgid "future-import-boilerplate"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/future-import-boilerplate.rst:4
+msgid ""
+"Most Python files should include the following boilerplate at the top of "
+"the file, right after the comment header:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/future-import-boilerplate.rst:11
+msgid ""
+"This uses Python 3 semantics for absolute vs relative imports, division, "
+"and print.  By doing this, we can write code which is portable between "
+"Python 2 and Python 3 by following the Python 3 semantics."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/future-import-boilerplate.rst:16
+msgid "absolute_import"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/future-import-boilerplate.rst:18
+msgid ""
+"When Python 2 encounters an import of a name in a file like ``import "
+"copy`` it attempts to load ``copy.py`` from the same directory as the "
+"file is in.  This can cause problems if there is a python file of that "
+"name in the directory and also a python module in ``sys.path`` with that "
+"same name.  In that case, Python 2 would load the one in the same "
+"directory and there would be no way to load the one on ``sys.path``.  "
+"Python 3 fixes this by making imports absolute by default.  ``import "
+"copy`` will find ``copy.py`` from ``sys.path``.  If you want to import "
+"``copy.py`` from the same directory, the code needs to be changed to "
+"perform a relative import: ``from . import copy``."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/future-import-boilerplate.rst:28
+msgid ""
+"`Absolute and relative imports "
+"<https://www.python.org/dev/peps/pep-0328>`_"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/future-import-boilerplate.rst:31
+msgid "division"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/future-import-boilerplate.rst:33
+msgid ""
+"In Python 2, the division operator (``/``) returns integer values when "
+"used with integers.  If there was a remainder, this part would be left "
+"off (aka, `floor division`).  In Python 3, the division operator (``/``) "
+"always returns a floating point number.  Code that needs to calculate the"
+" integer portion of the quotient needs to switch to using the floor "
+"division operator (`//`) instead."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/future-import-boilerplate.rst:40
+msgid ""
+"`Changing the division operator "
+"<https://www.python.org/dev/peps/pep-0238>`_"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/future-import-boilerplate.rst:43
+msgid "print_function"
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/future-import-boilerplate.rst:45
+msgid ""
+"In Python 2, :func:`python:print` is a keyword.  In Python 3, "
+":func:`python3:print` is a function with different parameters.  Using "
+"this ``__future__`` allows using the Python 3 print semantics everywhere."
+msgstr ""
+
+#: ../../rst/dev_guide/testing/sanity/future-import-boilerplate.rst:50
+msgid "`Make print a function <https://www.python.org/dev/peps/pep-3105>`_"
+msgstr ""
+

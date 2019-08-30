@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,14 +58,16 @@ msgstr ""
 
 #: ../../rst/user_guide/playbooks_delegation.rst:16
 msgid ""
-"You should also consult the :doc:`modules` section, various modules like "
-"'ec2_elb', 'nagios', and 'bigip_pool', and 'netscaler' dovetail neatly "
-"with the concepts mentioned here."
+"You should also consult the :ref:`module "
+"documentation<modules_by_category>` section. Modules like "
+":ref:`ec2_elb<ec2_elb_module>`, :ref:`nagios<nagios_module>`, "
+":ref:`bigip_pool<bigip_pool_module>`, and other :ref:`network_modules` "
+"dovetail neatly with the concepts mentioned here."
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_delegation.rst:18
 msgid ""
-"You'll also want to read up on :doc:`playbooks_reuse_roles`, as the "
+"You'll also want to read up on :ref:`playbooks_reuse_roles`, as the "
 "'pre_task' and 'post_task' concepts are the places where you would "
 "typically call these modules."
 msgstr ""
@@ -282,7 +284,7 @@ msgid ""
 "When used together with \"serial\", tasks marked as \"run_once\" will be "
 "run on one host in *each* serial batch. If it's crucial that the task is "
 "run only once regardless of \"serial\" mode, use :code:`when: "
-"inventory_hostname == ansible_play_hosts[0]` construct."
+"inventory_hostname == ansible_play_hosts_all[0]` construct."
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_delegation.rst:279
@@ -291,11 +293,17 @@ msgid ""
 "to decide if the task runs or not, no other hosts will be tested."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_delegation.rst:284
+#: ../../rst/user_guide/playbooks_delegation.rst:282
+msgid ""
+"If you want to avoid the default behaviour of setting the fact for all "
+"hosts, set `delegate_facts: True` for the specific task or block."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_delegation.rst:287
 msgid "Local Playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_delegation.rst:286
+#: ../../rst/user_guide/playbooks_delegation.rst:289
 msgid ""
 "It may be useful to use a playbook locally, rather than by connecting "
 "over SSH.  This can be useful for assuring the configuration of a system "
@@ -303,20 +311,20 @@ msgid ""
 "playbook inside an OS installer, such as an Anaconda kickstart."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_delegation.rst:290
+#: ../../rst/user_guide/playbooks_delegation.rst:293
 msgid ""
 "To run an entire playbook locally, just set the \"hosts:\" line to "
 "\"hosts: 127.0.0.1\" and then run the playbook like so::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_delegation.rst:294
+#: ../../rst/user_guide/playbooks_delegation.rst:297
 msgid ""
 "Alternatively, a local connection can be used in a single playbook play, "
 "even if other plays in the playbook use the default remote connection "
 "type::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_delegation.rst:301
+#: ../../rst/user_guide/playbooks_delegation.rst:304
 msgid ""
 "If you set the connection to local and there is no "
 "ansible_python_interpreter set, modules will run under /usr/bin/python "
@@ -326,18 +334,18 @@ msgid ""
 "``local_action`` or ``delegate_to: localhost`` instead."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_delegation.rst:310
+#: ../../rst/user_guide/playbooks_delegation.rst:313
 msgid "Interrupt execution on any error"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_delegation.rst:312
+#: ../../rst/user_guide/playbooks_delegation.rst:315
 msgid ""
 "With the ''any_errors_fatal'' option, any failure on any host in a multi-"
 "host play will be treated as fatal and Ansible will exit immediately "
 "without waiting for the other hosts."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_delegation.rst:314
+#: ../../rst/user_guide/playbooks_delegation.rst:317
 #, python-format
 msgid ""
 "Sometimes ''serial'' execution is unsuitable; the number of hosts is "
@@ -346,7 +354,7 @@ msgid ""
 "successful to continue playbook execution."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_delegation.rst:316
+#: ../../rst/user_guide/playbooks_delegation.rst:319
 msgid ""
 "For example, consider a service located in many datacenters with some "
 "load balancers to pass traffic from users to the service. There is a "
@@ -354,72 +362,102 @@ msgid ""
 "stages:"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_delegation.rst:318
+#: ../../rst/user_guide/playbooks_delegation.rst:321
 msgid "disable traffic on load balancers (must be turned off simultaneously)"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_delegation.rst:319
+#: ../../rst/user_guide/playbooks_delegation.rst:322
 msgid "gracefully stop the service"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_delegation.rst:320
+#: ../../rst/user_guide/playbooks_delegation.rst:323
 msgid "upgrade software (this step includes tests and starting the service)"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_delegation.rst:321
+#: ../../rst/user_guide/playbooks_delegation.rst:324
 msgid ""
 "enable traffic on the load balancers (which should be turned on "
 "simultaneously)"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_delegation.rst:323
+#: ../../rst/user_guide/playbooks_delegation.rst:326
 msgid ""
 "The service can't be stopped with \"alive\" load balancers; they must be "
 "disabled first. Because of this, the second stage can't be played if any "
 "server failed in the first stage."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_delegation.rst:325
+#: ../../rst/user_guide/playbooks_delegation.rst:328
 msgid "For datacenter \"A\", the playbook can be written this way::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_delegation.rst:347
+#: ../../rst/user_guide/playbooks_delegation.rst:350
 msgid ""
 "In this example Ansible will start the software upgrade on the front ends"
 " only if all of the load balancers are successfully disabled."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_delegation.rst:351
-msgid ":doc:`playbooks`"
+#: ../../rst/user_guide/playbooks_delegation.rst:354
+msgid ":ref:`playbooks_intro`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_delegation.rst:352
+#: ../../rst/user_guide/playbooks_delegation.rst:355
 msgid "An introduction to playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_delegation.rst:353
+#: ../../rst/user_guide/playbooks_delegation.rst:356
 msgid ""
 "`Ansible Examples on GitHub <https://github.com/ansible/ansible-"
 "examples>`_"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_delegation.rst:354
+#: ../../rst/user_guide/playbooks_delegation.rst:357
 msgid "Many examples of full-stack deployments"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_delegation.rst:355
+#: ../../rst/user_guide/playbooks_delegation.rst:358
 msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_delegation.rst:356
+#: ../../rst/user_guide/playbooks_delegation.rst:359
 msgid "Have a question?  Stop by the google group!"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_delegation.rst:357
+#: ../../rst/user_guide/playbooks_delegation.rst:360
 msgid "`irc.freenode.net <http://irc.freenode.net>`_"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_delegation.rst:358
+#: ../../rst/user_guide/playbooks_delegation.rst:361
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ""
+#~ "You should also consult the "
+#~ ":doc:`modules` section, various modules like"
+#~ " 'ec2_elb', 'nagios', and 'bigip_pool', and"
+#~ " 'netscaler' dovetail neatly with the "
+#~ "concepts mentioned here."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You'll also want to read up on "
+#~ ":doc:`playbooks_reuse_roles`, as the 'pre_task' "
+#~ "and 'post_task' concepts are the places"
+#~ " where you would typically call these"
+#~ " modules."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When used together with \"serial\", "
+#~ "tasks marked as \"run_once\" will be "
+#~ "run on one host in *each* serial"
+#~ " batch. If it's crucial that the "
+#~ "task is run only once regardless "
+#~ "of \"serial\" mode, use :code:`when: "
+#~ "inventory_hostname == ansible_play_hosts[0]` "
+#~ "construct."
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks`"
+#~ msgstr ""
 

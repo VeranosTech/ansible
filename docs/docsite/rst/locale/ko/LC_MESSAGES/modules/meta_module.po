@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,81 +29,144 @@ msgstr ""
 #: ../../rst/modules/meta_module.rst:19
 msgid ""
 "Meta tasks are a special kind of task which can influence Ansible "
-"internal execution or state. Prior to Ansible 2.0, the only meta option "
-"available was `flush_handlers`. As of 2.2, there are five meta tasks "
-"which can be used. Meta tasks can be used anywhere within your playbook."
+"internal execution or state."
 msgstr ""
 
-#: ../../rst/modules/meta_module.rst:20 ../../rst/modules/meta_module.rst:76
+#: ../../rst/modules/meta_module.rst:20
+msgid ""
+"Prior to Ansible 2.0, the only meta option available was "
+"``flush_handlers``."
+msgstr ""
+
+#: ../../rst/modules/meta_module.rst:21
+msgid "As of Ansible 2.2, there are five meta tasks which can be used."
+msgstr ""
+
+#: ../../rst/modules/meta_module.rst:22
+msgid "Meta tasks can be used anywhere within your playbook."
+msgstr ""
+
+#: ../../rst/modules/meta_module.rst:23 ../../rst/modules/meta_module.rst:81
 msgid "This module is also supported for Windows targets."
 msgstr ""
 
-#: ../../rst/modules/meta_module.rst:26
+#: ../../rst/modules/meta_module.rst:29
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/meta_module.rst:72
+#: ../../rst/modules/meta_module.rst:75
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/meta_module.rst:75
+#: ../../rst/modules/meta_module.rst:78
 msgid ""
 "``meta`` is not really a module nor action_plugin as such it cannot be "
 "overwritten."
 msgstr ""
 
-#: ../../rst/modules/meta_module.rst:77
+#: ../../rst/modules/meta_module.rst:79
 msgid ""
-"``clear_facts`` will remove the persistent facts from ``set_fact: "
-"cacheable=True``, but not the current host variable it creates for the "
-"current run."
+"``clear_facts`` will remove the persistent facts from :ref:`set_fact "
+"<set_fact_module>` using ``cacheable=True``, but not the current host "
+"variable it creates for the current run."
 msgstr ""
 
-#: ../../rst/modules/meta_module.rst:82
+#: ../../rst/modules/meta_module.rst:80
+msgid "Looping on meta tasks is not supported."
+msgstr ""
+
+#: ../../rst/modules/meta_module.rst:85
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/meta_module.rst:89
+msgid ":ref:`assert_module`"
+msgstr ""
+
+#: ../../rst/modules/meta_module.rst:90
+msgid "The official documentation on the **assert** module."
+msgstr ""
+
+#: ../../rst/modules/meta_module.rst:91
+msgid ":ref:`fail_module`"
+msgstr ""
+
+#: ../../rst/modules/meta_module.rst:92
+msgid "The official documentation on the **fail** module."
+msgstr ""
+
+#: ../../rst/modules/meta_module.rst:96
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/meta_module.rst:127
+#: ../../rst/modules/meta_module.rst:152
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/meta_module.rst:132
+#: ../../rst/modules/meta_module.rst:157
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/meta_module.rst:135
+#: ../../rst/modules/meta_module.rst:160
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/meta_module.rst:138
+#: ../../rst/modules/meta_module.rst:163
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/meta_module.rst:140
+#: ../../rst/modules/meta_module.rst:165
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/meta_module.rst:146
+#: ../../rst/modules/meta_module.rst:171
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/meta_module.rst:148
+#: ../../rst/modules/meta_module.rst:173
 msgid "Ansible Core Team"
 msgstr ""
 
-#: ../../rst/modules/meta_module.rst:152
+#: ../../rst/modules/meta_module.rst:177
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/helper/meta.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/helper/meta.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "Meta tasks are a special kind of"
+#~ " task which can influence Ansible "
+#~ "internal execution or state. Prior to"
+#~ " Ansible 2.0, the only meta option"
+#~ " available was `flush_handlers`. As of "
+#~ "2.2, there are five meta tasks "
+#~ "which can be used. Meta tasks can"
+#~ " be used anywhere within your "
+#~ "playbook."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``clear_facts`` will remove the persistent "
+#~ "facts from ``set_fact: cacheable=True``, but"
+#~ " not the current host variable it "
+#~ "creates for the current run."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/utilities/helper/meta.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

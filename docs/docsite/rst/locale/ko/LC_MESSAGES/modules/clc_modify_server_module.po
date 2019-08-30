@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,43 +22,43 @@ msgstr ""
 msgid "clc_modify_server -- modify servers in CenturyLink Cloud"
 msgstr ""
 
-#: ../../rst/modules/clc_modify_server_module.rst:19
+#: ../../rst/modules/clc_modify_server_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/clc_modify_server_module.rst:20
+#: ../../rst/modules/clc_modify_server_module.rst:19
 msgid "An Ansible module to modify servers in CenturyLink Cloud."
 msgstr ""
 
-#: ../../rst/modules/clc_modify_server_module.rst:25
+#: ../../rst/modules/clc_modify_server_module.rst:24
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/clc_modify_server_module.rst:26
+#: ../../rst/modules/clc_modify_server_module.rst:25
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/clc_modify_server_module.rst:28
+#: ../../rst/modules/clc_modify_server_module.rst:27
 msgid "python = 2.7"
 msgstr ""
 
-#: ../../rst/modules/clc_modify_server_module.rst:29
+#: ../../rst/modules/clc_modify_server_module.rst:28
 msgid "requests >= 2.5.0"
 msgstr ""
 
-#: ../../rst/modules/clc_modify_server_module.rst:30
+#: ../../rst/modules/clc_modify_server_module.rst:29
 msgid "clc-sdk"
 msgstr ""
 
-#: ../../rst/modules/clc_modify_server_module.rst:34
+#: ../../rst/modules/clc_modify_server_module.rst:33
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/clc_modify_server_module.rst:174
+#: ../../rst/modules/clc_modify_server_module.rst:173
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/clc_modify_server_module.rst:177
+#: ../../rst/modules/clc_modify_server_module.rst:176
 msgid ""
 "To use this module, it is required to set the below environment variables"
 " which enables access to the Centurylink Cloud - CLC_V2_API_USERNAME, the"
@@ -66,7 +66,7 @@ msgid ""
 "account password for the centurylink cloud"
 msgstr ""
 
-#: ../../rst/modules/clc_modify_server_module.rst:178
+#: ../../rst/modules/clc_modify_server_module.rst:177
 msgid ""
 "Alternatively, the module accepts the API token and account alias. The "
 "API token can be generated using the CLC account login and password via "
@@ -76,56 +76,64 @@ msgid ""
 "alias associated with the centurylink cloud"
 msgstr ""
 
-#: ../../rst/modules/clc_modify_server_module.rst:179
+#: ../../rst/modules/clc_modify_server_module.rst:178
 msgid ""
 "Users can set CLC_V2_API_URL to specify an endpoint for pointing to a "
 "different CLC environment."
 msgstr ""
 
-#: ../../rst/modules/clc_modify_server_module.rst:184
+#: ../../rst/modules/clc_modify_server_module.rst:183
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/clc_modify_server_module.rst:252
+#: ../../rst/modules/clc_modify_server_module.rst:251
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/clc_modify_server_module.rst:253
+#: ../../rst/modules/clc_modify_server_module.rst:252
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/clc_modify_server_module.rst:294
+#: ../../rst/modules/clc_modify_server_module.rst:293
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/clc_modify_server_module.rst:299
+#: ../../rst/modules/clc_modify_server_module.rst:298
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/clc_modify_server_module.rst:302
+#: ../../rst/modules/clc_modify_server_module.rst:301
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/clc_modify_server_module.rst:309
+#: ../../rst/modules/clc_modify_server_module.rst:308
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/clc_modify_server_module.rst:311
+#: ../../rst/modules/clc_modify_server_module.rst:310
 msgid "CLC Runner (@clc-runner)"
 msgstr ""
 
-#: ../../rst/modules/clc_modify_server_module.rst:315
+#: ../../rst/modules/clc_modify_server_module.rst:314
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/centurylink/clc_modify_server.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/centurylink/clc_modify_server.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/centurylink/clc_modify_server.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,7 +122,7 @@ msgstr ""
 msgid ""
 "Like most plugin types (except modules) they must be developed in Python,"
 " since they execute on the controller they should match the same "
-"requirements :ref:`control_machine_requirements`."
+"requirements :ref:`control_node_requirements`."
 msgstr ""
 
 #: ../../rst/dev_guide/developing_inventory.rst:55
@@ -253,8 +253,8 @@ msgstr ""
 #: ../../rst/dev_guide/developing_inventory.rst:153
 msgid ""
 "It is up to the plugin now to deal with the inventory source provided and"
-" translate that into the Ansible inventory. To facilitate this there are "
-"a few of helper functions used in the example below:"
+" translate that into the Ansible inventory. To facilitate this, the "
+"example below uses a few helper functions:"
 msgstr ""
 
 #: ../../rst/dev_guide/developing_inventory.rst:190
@@ -267,16 +267,84 @@ msgstr ""
 
 #: ../../rst/dev_guide/developing_inventory.rst:192
 msgid ""
-"For examples on how to implement an inventory plug in, see the source "
-"code here: `lib/ansible/plugins/inventory "
+"For examples on how to implement an inventory plugin, see the source code"
+" here: `lib/ansible/plugins/inventory "
 "<https://github.com/ansible/ansible/tree/devel/lib/ansible/plugins/inventory>`_."
 msgstr ""
 
 #: ../../rst/dev_guide/developing_inventory.rst:198
-msgid "Inventory source common format"
+msgid "inventory cache"
 msgstr ""
 
 #: ../../rst/dev_guide/developing_inventory.rst:200
+msgid ""
+"Extend the inventory plugin documentation with the inventory_cache "
+"documentation fragment and use the Cacheable base class to have the "
+"caching system at your disposal."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_inventory.rst:213
+msgid ""
+"Next, load the cache plugin specified by the user to read from and update"
+" the cache. If your inventory plugin uses YAML based configuration files "
+"and the ``_read_config_data`` method, the cache plugin is loaded within "
+"that method. If your inventory plugin does not use ``_read_config_data``,"
+" you must load the cache explicitly with ``load_cache_plugin``."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_inventory.rst:224
+msgid ""
+"Before using the cache, retrieve a unique cache key using the "
+"``get_cache_key`` method. This needs to be done by all inventory modules "
+"using the cache, so you don't use/overwrite other parts of the cache."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_inventory.rst:234
+msgid ""
+"Now that you've enabled caching, loaded the correct plugin, and retrieved"
+" a unique cache key, you can set up the flow of data between the cache "
+"and your inventory using the ``cache`` parameter of the ``parse`` method."
+" This value comes from the inventory manager and indicates whether the "
+"inventory is being refreshed (such as via ``--flush-cache`` or the meta "
+"task ``refresh_inventory``). Although the cache shouldn't be used to "
+"populate the inventory when being refreshed, the cache should be updated "
+"with the new inventory if the user has enabled caching. You can use "
+"``self._cache`` like a dictionary. The following pattern allows "
+"refreshing the inventory to work in conjunction with caching."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_inventory.rst:269
+msgid ""
+"After the ``parse`` method is complete, the contents of ``self._cache`` "
+"is used to set the cache plugin if the contents of the cache have "
+"changed."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_inventory.rst:274
+msgid "You have three other cache methods available:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_inventory.rst:272
+msgid ""
+"``set_cache_plugin`` forces the cache plugin to be set with the contents "
+"of ``self._cache`` before the ``parse`` method completes"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_inventory.rst:273
+msgid ""
+"``update_cache_if_changed`` sets the cache plugin only if ``self._cache``"
+" has been modified before the ``parse`` method completes"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_inventory.rst:274
+msgid "``clear_cache`` deletes the keys in ``self._cache`` from your cache plugin"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_inventory.rst:279
+msgid "Inventory source common format"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_inventory.rst:281
 msgid ""
 "To simplify development, most plugins use a mostly standard configuration"
 " file as the inventory source, YAML based and with just one required "
@@ -288,11 +356,11 @@ msgid ""
 "be present."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:207
+#: ../../rst/dev_guide/developing_inventory.rst:288
 msgid "The 'auto' plugin"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:209
+#: ../../rst/dev_guide/developing_inventory.rst:290
 msgid ""
 "Since Ansible 2.5, we include the :ref:`auto inventory plugin "
 "<auto_inventory>` enabled by default, which itself just loads other "
@@ -301,29 +369,29 @@ msgid ""
 "easier to use your plugin w/o having to update configurations."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:216
+#: ../../rst/dev_guide/developing_inventory.rst:297
 msgid "Inventory scripts"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:218
+#: ../../rst/dev_guide/developing_inventory.rst:299
 msgid ""
 "Even though we now have inventory plugins, we still support inventory "
 "scripts, not only for backwards compatibility but also to allow users to "
 "leverage other programming languages."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:224
+#: ../../rst/dev_guide/developing_inventory.rst:305
 msgid "Inventory script conventions"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:226
+#: ../../rst/dev_guide/developing_inventory.rst:307
 msgid ""
 "Inventory scripts must accept the ``--list`` and ``--host <hostname>`` "
 "arguments, other arguments are allowed but Ansible will not use them. "
 "They might still be useful for when executing the scripts directly."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:229
+#: ../../rst/dev_guide/developing_inventory.rst:310
 msgid ""
 "When the script is called with the single argument ``--list``, the script"
 " must output to stdout a JSON-encoded hash or dictionary containing all "
@@ -332,13 +400,13 @@ msgid ""
 "potential group variables, or simply a list of hosts::"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:253
+#: ../../rst/dev_guide/developing_inventory.rst:334
 msgid ""
 "If any of the elements of a group are empty they may be omitted from the "
 "output."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:255
+#: ../../rst/dev_guide/developing_inventory.rst:336
 msgid ""
 "When called with the argument ``--host <hostname>`` (where <hostname> is "
 "a host from above), the script must print either an empty JSON "
@@ -346,24 +414,24 @@ msgid ""
 "templates and playbooks. For example::"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:263
+#: ../../rst/dev_guide/developing_inventory.rst:344
 msgid ""
 "Printing variables is optional. If the script does not do this, it should"
 " print an empty hash or dictionary."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:268
+#: ../../rst/dev_guide/developing_inventory.rst:349
 msgid "Tuning the external inventory script"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:272
+#: ../../rst/dev_guide/developing_inventory.rst:353
 msgid ""
 "The stock inventory script system detailed above works for all versions "
 "of Ansible, but calling ``--host`` for every host can be rather "
 "inefficient, especially if it involves API calls to a remote subsystem."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:276
+#: ../../rst/dev_guide/developing_inventory.rst:357
 msgid ""
 "To avoid this inefficiency, if the inventory script returns a top level "
 "element called \"_meta\", it is possible to return all of the host "
@@ -373,81 +441,132 @@ msgid ""
 "increase for large numbers of hosts."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:282
+#: ../../rst/dev_guide/developing_inventory.rst:363
 msgid "The data to be added to the top level JSON dictionary looks like this::"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:301
+#: ../../rst/dev_guide/developing_inventory.rst:382
 msgid ""
 "To satisfy the requirements of using ``_meta``, to prevent ansible from "
 "calling your inventory with ``--host`` you must at least populate "
 "``_meta`` with an empty ``hostvars`` dictionary. For example::"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:317
+#: ../../rst/dev_guide/developing_inventory.rst:398
 msgid ""
 "If you intend to replace an existing static inventory file with an "
 "inventory script, it must return a JSON object which contains an 'all' "
 "group that includes every host in the inventory as a member and every "
 "group in the inventory as a child. It should also include an 'ungrouped' "
 "group which contains all hosts which are not members of any other group. "
-"A skeleton example of this JSON object is::"
+"A skeleton example of this JSON object is:"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:335
+#: ../../rst/dev_guide/developing_inventory.rst:421
 msgid ""
 "An easy way to see how this should look is using :ref:`ansible-"
 "inventory`, which also supports ``--list`` and ``--host`` parameters like"
 " an inventory script would."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:339
-msgid ":doc:`developing_api`"
+#: ../../rst/dev_guide/developing_inventory.rst:425
+msgid ":ref:`developing_api`"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:340
+#: ../../rst/dev_guide/developing_inventory.rst:426
 msgid "Python API to Playbooks and Ad Hoc Task Execution"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:341
-msgid ":doc:`developing_modules`"
+#: ../../rst/dev_guide/developing_inventory.rst:427
+msgid ":ref:`developing_modules_general`"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:342
-msgid "How to develop modules"
+#: ../../rst/dev_guide/developing_inventory.rst:428
+msgid "Get started with developing a module"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:343
-msgid ":doc:`developing_plugins`"
+#: ../../rst/dev_guide/developing_inventory.rst:429
+msgid ":ref:`developing_plugins`"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:344
+#: ../../rst/dev_guide/developing_inventory.rst:430
 msgid "How to develop plugins"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:345
+#: ../../rst/dev_guide/developing_inventory.rst:431
 msgid "`Ansible Tower <https://www.ansible.com/products/tower>`_"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:346
+#: ../../rst/dev_guide/developing_inventory.rst:432
 msgid "REST API endpoint and GUI for Ansible, syncs with dynamic inventory"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:347
+#: ../../rst/dev_guide/developing_inventory.rst:433
 msgid ""
 "`Development Mailing List <https://groups.google.com/group/ansible-"
 "devel>`_"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:348
+#: ../../rst/dev_guide/developing_inventory.rst:434
 msgid "Mailing list for development topics"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:349
+#: ../../rst/dev_guide/developing_inventory.rst:435
 msgid "`irc.freenode.net <http://irc.freenode.net>`_"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_inventory.rst:350
+#: ../../rst/dev_guide/developing_inventory.rst:436
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ""
+#~ "Like most plugin types (except modules)"
+#~ " they must be developed in Python,"
+#~ " since they execute on the controller"
+#~ " they should match the same "
+#~ "requirements :ref:`control_machine_requirements`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "It is up to the plugin now "
+#~ "to deal with the inventory source "
+#~ "provided and translate that into the "
+#~ "Ansible inventory. To facilitate this "
+#~ "there are a few of helper "
+#~ "functions used in the example below:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For examples on how to implement "
+#~ "an inventory plug in, see the "
+#~ "source code here: `lib/ansible/plugins/inventory "
+#~ "<https://github.com/ansible/ansible/tree/devel/lib/ansible/plugins/inventory>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you intend to replace an "
+#~ "existing static inventory file with an"
+#~ " inventory script, it must return a"
+#~ " JSON object which contains an 'all'"
+#~ " group that includes every host in"
+#~ " the inventory as a member and "
+#~ "every group in the inventory as a"
+#~ " child. It should also include an "
+#~ "'ungrouped' group which contains all "
+#~ "hosts which are not members of any"
+#~ " other group. A skeleton example of"
+#~ " this JSON object is::"
+#~ msgstr ""
+
+#~ msgid ":doc:`developing_api`"
+#~ msgstr ""
+
+#~ msgid ":doc:`developing_modules`"
+#~ msgstr ""
+
+#~ msgid "How to develop modules"
+#~ msgstr ""
+
+#~ msgid ":doc:`developing_plugins`"
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,76 +19,170 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/user_guide/playbooks_strategies.rst:4
-msgid "Strategies"
+msgid "Controlling playbook execution: strategies and more"
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_strategies.rst:6
 msgid ""
-"Strategies are a way to control play execution. By default, plays run "
-"with a  ``linear`` strategy, in which all hosts will run each task before"
-" any host starts the next task, using the number of forks (default 5) to "
-"parallelize."
+"By default, Ansible runs each task on all hosts affected by a play before"
+" starting the next task on any host, using 5 forks. If you want to change"
+" this default behavior, you can use a different strategy plugin, change "
+"the number of forks, or apply one of several play-level keywords like "
+"``serial``."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_strategies.rst:8
-msgid ""
-"The ``serial`` directive can 'batch' this behaviour to a subset of the "
-"hosts, which then run to completion of the play before the next 'batch' "
-"starts."
+#: ../../rst/user_guide/playbooks_strategies.rst:12
+msgid "Selecting a strategy"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_strategies.rst:11
+#: ../../rst/user_guide/playbooks_strategies.rst:13
 msgid ""
-"A second ``strategy`` ships with Ansible - ``free`` - which allows each "
-"host to run until the end of the play as fast as it can.::"
+"The default behavior described above is the :ref:`linear "
+"strategy<linear_strategy>`. Ansible offers other strategies, including "
+"the :ref:`debug strategy<debug_strategy>` (see also  "
+":ref:`playbook_debugger`) and the :ref:`free strategy<free_strategy>`, "
+"which allows each host to run until the end of the play as fast as it "
+"can::"
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_strategies.rst:21
-msgid "Strategy Plugins"
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_strategies.rst:23
 msgid ""
-"The strategies are implemented as plugins. In the future, new execution "
-"strategies can be added, either locally by users or to Ansible itself by "
-"a code contribution."
+"You can select a different strategy for each play as shown above, or set "
+"your preferred strategy globally in ``ansible.cfg``, under the "
+"``defaults`` stanza::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_strategies.rst:27
+#: ../../rst/user_guide/playbooks_strategies.rst:26
 msgid ""
-"One example is ``debug`` strategy. See :doc:`playbooks_debugger` for "
-"details."
+"All strategies are implemented as :ref:`strategy "
+"plugins<strategy_plugins>`. Please review the documentation for each "
+"strategy plugin for details on how it works."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_strategies.rst:31
-msgid ":doc:`playbooks`"
+#: ../../rst/user_guide/playbooks_strategies.rst:29
+msgid "Setting the number of forks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_strategies.rst:32
-msgid "An introduction to playbooks"
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_strategies.rst:33
-msgid ":doc:`playbooks_reuse_roles`"
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_strategies.rst:34
-msgid "Playbook organization by roles"
+#: ../../rst/user_guide/playbooks_strategies.rst:30
+msgid ""
+"If you have the processing power available and want to use more forks, "
+"you can set the number in ``ansible.cfg``::"
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_strategies.rst:35
-msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_strategies.rst:36
-msgid "Have a question?  Stop by the google group!"
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_strategies.rst:37
-msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgid "or pass it on the command line: `ansible-playbook -f 30 my_playbook.yml`."
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_strategies.rst:38
+msgid "Using keywords to control execution"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_strategies.rst:39
+msgid ""
+"Several play-level :ref:`keyword<playbook_keywords>` also affect play "
+"execution. The most common one is ``serial``, which sets a number, a "
+"percentage, or a list of numbers of hosts you want to manage at a time. "
+"Setting ``serial`` with any strategy directs Ansible to 'batch' the "
+"hosts, completing the play on the specified number or percentage of hosts"
+" before starting the next 'batch'. This is especially useful for "
+":ref:`rolling updates<rolling_update_batch_size>`."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_strategies.rst:41
+msgid ""
+"The second keyword to affect execution is ``throttle``, which can also be"
+" used at the block and task level. This keyword limits the number of "
+"workers up to the maximum set via the forks setting or ``serial``. This "
+"can be useful in restricting tasks that may be CPU-intensive or interact "
+"with a rate-limiting API::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_strategies.rst:47
+msgid ""
+"Other keywords that affect play execution include ``ignore_errors``, "
+"``ignore_unreachable``, and ``any_errors_fatal``. Please note that these "
+"keywords are not strategies. They are play-level directives or options."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_strategies.rst:51
+msgid ":ref:`about_playbooks`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_strategies.rst:52
+msgid "An introduction to playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_strategies.rst:53
+msgid ":ref:`playbooks_reuse_roles`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_strategies.rst:54
+msgid "Playbook organization by roles"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_strategies.rst:55
+msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_strategies.rst:56
+msgid "Have a question?  Stop by the google group!"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_strategies.rst:57
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_strategies.rst:58
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid "Strategies"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Strategies are a way to control "
+#~ "play execution. By default, plays run"
+#~ " with a  ``linear`` strategy, in "
+#~ "which all hosts will run each task"
+#~ " before any host starts the next "
+#~ "task, using the number of forks "
+#~ "(default 5) to parallelize."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The ``serial`` directive can 'batch' "
+#~ "this behaviour to a subset of the"
+#~ " hosts, which then run to completion"
+#~ " of the play before the next "
+#~ "'batch' starts."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A second ``strategy`` ships with Ansible"
+#~ " - ``free`` - which allows each "
+#~ "host to run until the end of "
+#~ "the play as fast as it can.::"
+#~ msgstr ""
+
+#~ msgid "Strategy Plugins"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The strategies are implemented as "
+#~ "plugins. In the future, new execution"
+#~ " strategies can be added, either "
+#~ "locally by users or to Ansible "
+#~ "itself by a code contribution."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "One example is ``debug`` strategy. See"
+#~ " :doc:`playbooks_debugger` for details."
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks_reuse_roles`"
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/vmware_guest_tools_upgrade_module.rst:20
-msgid "This module upgrades the VMWare Tools on Windows and Linux guests."
+msgid "This module upgrades the VMware Tools on Windows and Linux guests."
 msgstr ""
 
 #: ../../rst/modules/vmware_guest_tools_upgrade_module.rst:25
@@ -50,51 +50,62 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_tools_upgrade_module.rst:215
+#: ../../rst/modules/vmware_guest_tools_upgrade_module.rst:258
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_tools_upgrade_module.rst:218
+#: ../../rst/modules/vmware_guest_tools_upgrade_module.rst:261
 msgid ""
 "In order to upgrade VMTools, please power on virtual machine before hand "
 "- either 'manually' or using module :ref:`vmware_guest_powerstate "
 "<vmware_guest_powerstate_module>`."
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_tools_upgrade_module.rst:223
+#: ../../rst/modules/vmware_guest_tools_upgrade_module.rst:266
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_tools_upgrade_module.rst:242
+#: ../../rst/modules/vmware_guest_tools_upgrade_module.rst:294
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_tools_upgrade_module.rst:247
+#: ../../rst/modules/vmware_guest_tools_upgrade_module.rst:299
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_tools_upgrade_module.rst:250
+#: ../../rst/modules/vmware_guest_tools_upgrade_module.rst:302
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_tools_upgrade_module.rst:257
+#: ../../rst/modules/vmware_guest_tools_upgrade_module.rst:309
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_tools_upgrade_module.rst:259
+#: ../../rst/modules/vmware_guest_tools_upgrade_module.rst:311
 msgid "Mike Klebolt (@MikeKlebolt) <michael.klebolt@centurylink.com>"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_tools_upgrade_module.rst:263
+#: ../../rst/modules/vmware_guest_tools_upgrade_module.rst:315
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_guest_tools_upgrade.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_guest_tools_upgrade.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "This module upgrades the VMWare Tools on Windows and Linux guests."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_guest_tools_upgrade.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

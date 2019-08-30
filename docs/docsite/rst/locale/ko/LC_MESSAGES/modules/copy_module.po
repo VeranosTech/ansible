@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,135 +34,156 @@ msgstr ""
 
 #: ../../rst/modules/copy_module.rst:20
 msgid ""
+"Use the :ref:`fetch <fetch_module>` module to copy files from remote "
+"locations to the local box."
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:21
+msgid ""
+"If you need variable interpolation in copied files, use the "
+":ref:`template <template_module>` module. Using a variable in the "
+"``content`` field will result in unpredictable output."
+msgstr ""
+
+#: ../../rst/modules/copy_module.rst:22
+msgid ""
 "For Windows targets, use the :ref:`win_copy <win_copy_module>` module "
 "instead."
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:26
+#: ../../rst/modules/copy_module.rst:28
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:379
+#: ../../rst/modules/copy_module.rst:384
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:382
+#: ../../rst/modules/copy_module.rst:387
 msgid ""
 "The :ref:`copy <copy_module>` module recursively copy facility does not "
 "scale to lots (>hundreds) of files."
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:386
+#: ../../rst/modules/copy_module.rst:391
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:390
+#: ../../rst/modules/copy_module.rst:395
 msgid ":ref:`assemble_module`"
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:391
+#: ../../rst/modules/copy_module.rst:396
 msgid "The official documentation on the **assemble** module."
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:392
+#: ../../rst/modules/copy_module.rst:397
 msgid ":ref:`fetch_module`"
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:393
+#: ../../rst/modules/copy_module.rst:398
 msgid "The official documentation on the **fetch** module."
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:394
+#: ../../rst/modules/copy_module.rst:399
 msgid ":ref:`file_module`"
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:395
+#: ../../rst/modules/copy_module.rst:400
 msgid "The official documentation on the **file** module."
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:396
+#: ../../rst/modules/copy_module.rst:401
 msgid ":ref:`synchronize_module`"
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:397
+#: ../../rst/modules/copy_module.rst:402
 msgid "The official documentation on the **synchronize** module."
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:398
+#: ../../rst/modules/copy_module.rst:403
 msgid ":ref:`template_module`"
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:399
+#: ../../rst/modules/copy_module.rst:404
 msgid "The official documentation on the **template** module."
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:400
+#: ../../rst/modules/copy_module.rst:405
 msgid ":ref:`win_copy_module`"
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:401
+#: ../../rst/modules/copy_module.rst:406
 msgid "The official documentation on the **win_copy** module."
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:405
+#: ../../rst/modules/copy_module.rst:410
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:477
+#: ../../rst/modules/copy_module.rst:482
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:478
+#: ../../rst/modules/copy_module.rst:483
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:649
+#: ../../rst/modules/copy_module.rst:654
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:654
+#: ../../rst/modules/copy_module.rst:659
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:657
+#: ../../rst/modules/copy_module.rst:662
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:660
+#: ../../rst/modules/copy_module.rst:665
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:662
+#: ../../rst/modules/copy_module.rst:667
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:668
+#: ../../rst/modules/copy_module.rst:673
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:670
+#: ../../rst/modules/copy_module.rst:675
 msgid "Ansible Core Team"
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:671
+#: ../../rst/modules/copy_module.rst:676
 msgid "Michael DeHaan"
 msgstr ""
 
-#: ../../rst/modules/copy_module.rst:675
+#: ../../rst/modules/copy_module.rst:680
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/files/copy.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/files/copy.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/files/copy.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

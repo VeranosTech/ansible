@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,27 +22,31 @@ msgstr ""
 msgid "os_router -- Create or delete routers from OpenStack"
 msgstr ""
 
-#: ../../rst/modules/os_router_module.rst:19
+#: ../../rst/modules/os_router_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/os_router_module.rst:20
+#: ../../rst/modules/os_router_module.rst:19
 msgid ""
 "Create or Delete routers from OpenStack. Although Neutron allows routers "
 "to share the same name, this module enforces name uniqueness to be more "
 "user friendly."
 msgstr ""
 
-#: ../../rst/modules/os_router_module.rst:25
+#: ../../rst/modules/os_router_module.rst:24
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/os_router_module.rst:26
+#: ../../rst/modules/os_router_module.rst:25
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/os_router_module.rst:28
+#: ../../rst/modules/os_router_module.rst:27
 msgid "openstacksdk"
+msgstr ""
+
+#: ../../rst/modules/os_router_module.rst:28
+msgid "openstacksdk >= 0.12.0"
 msgstr ""
 
 #: ../../rst/modules/os_router_module.rst:29
@@ -53,17 +57,17 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/os_router_module.rst:350
+#: ../../rst/modules/os_router_module.rst:354
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/os_router_module.rst:353
+#: ../../rst/modules/os_router_module.rst:357
 msgid ""
 "The standard OpenStack environment variables, such as ``OS_USERNAME`` may"
 " be used instead of providing explicit values."
 msgstr ""
 
-#: ../../rst/modules/os_router_module.rst:354
+#: ../../rst/modules/os_router_module.rst:358
 msgid ""
 "Auth information is driven by openstacksdk, which means that values can "
 "come from a yaml config file in /etc/ansible/openstack.yaml, "
@@ -73,50 +77,58 @@ msgid ""
 "https://docs.openstack.org/openstacksdk/"
 msgstr ""
 
-#: ../../rst/modules/os_router_module.rst:359
+#: ../../rst/modules/os_router_module.rst:363
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/os_router_module.rst:453
+#: ../../rst/modules/os_router_module.rst:457
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/os_router_module.rst:454
+#: ../../rst/modules/os_router_module.rst:458
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/os_router_module.rst:577
+#: ../../rst/modules/os_router_module.rst:581
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/os_router_module.rst:582
+#: ../../rst/modules/os_router_module.rst:586
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/os_router_module.rst:585
+#: ../../rst/modules/os_router_module.rst:589
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/os_router_module.rst:592
+#: ../../rst/modules/os_router_module.rst:596
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/os_router_module.rst:594
+#: ../../rst/modules/os_router_module.rst:598
 msgid "David Shrewsbury (@Shrews)"
 msgstr ""
 
-#: ../../rst/modules/os_router_module.rst:598
+#: ../../rst/modules/os_router_module.rst:602
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/openstack/os_router.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/openstack/os_router.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/openstack/os_router.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

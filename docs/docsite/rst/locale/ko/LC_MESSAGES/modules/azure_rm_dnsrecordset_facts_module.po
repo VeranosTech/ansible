@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,110 +22,116 @@ msgstr ""
 msgid "azure_rm_dnsrecordset_facts -- Get DNS Record Set facts"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_dnsrecordset_facts_module.rst:19
-msgid "Synopsis"
-msgstr ""
-
-#: ../../rst/modules/azure_rm_dnsrecordset_facts_module.rst:20
+#: ../../rst/modules/azure_rm_dnsrecordset_facts_module.rst:11
 msgid ""
-"Get facts for a specific DNS Record Set in a Zone, or a specific type in "
-"all Zones or in one Zone etc."
+"This is an alias for :ref:`azure_rm_dnsrecordset_info "
+"<azure_rm_dnsrecordset_info_module>`. This name has been **deprecated**. "
+"Please update your tasks to use the new name "
+"``azure_rm_dnsrecordset_info`` instead."
 msgstr ""
 
-#: ../../rst/modules/azure_rm_dnsrecordset_facts_module.rst:25
-msgid "Requirements"
-msgstr ""
+#~ msgid "Synopsis"
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_dnsrecordset_facts_module.rst:26
-msgid "The below requirements are needed on the host that executes this module."
-msgstr ""
+#~ msgid ""
+#~ "Get facts for a specific DNS "
+#~ "Record Set in a Zone, or a "
+#~ "specific type in all Zones or in"
+#~ " one Zone etc."
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_dnsrecordset_facts_module.rst:28
-msgid "python >= 2.7"
-msgstr ""
+#~ msgid "Requirements"
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_dnsrecordset_facts_module.rst:29
-msgid "azure >= 2.0.0"
-msgstr ""
+#~ msgid ""
+#~ "The below requirements are needed on "
+#~ "the host that executes this module."
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_dnsrecordset_facts_module.rst:33
-msgid "Parameters"
-msgstr ""
+#~ msgid "python >= 2.7"
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_dnsrecordset_facts_module.rst:319
-msgid "Notes"
-msgstr ""
+#~ msgid "azure >= 2.0.0"
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_dnsrecordset_facts_module.rst:322
-msgid ""
-"For authentication with Azure you can pass parameters, set environment "
-"variables or use a profile stored in ~/.azure/credentials. Authentication"
-" is possible using a service principal or Active Directory user. To "
-"authenticate via service principal, pass subscription_id, client_id, "
-"secret and tenant or set environment variables AZURE_SUBSCRIPTION_ID, "
-"AZURE_CLIENT_ID, AZURE_SECRET and AZURE_TENANT."
-msgstr ""
+#~ msgid "Parameters"
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_dnsrecordset_facts_module.rst:323
-msgid ""
-"To authenticate via Active Directory user, pass ad_user and password, or "
-"set AZURE_AD_USER and AZURE_PASSWORD in the environment."
-msgstr ""
+#~ msgid "Notes"
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_dnsrecordset_facts_module.rst:324
-msgid ""
-"Alternatively, credentials can be stored in ~/.azure/credentials. This is"
-" an ini file containing a [default] section and the following keys: "
-"subscription_id, client_id, secret and tenant or subscription_id, ad_user"
-" and password. It is also possible to add additional profiles. Specify "
-"the profile by passing profile or setting AZURE_PROFILE in the "
-"environment."
-msgstr ""
+#~ msgid ""
+#~ "For authentication with Azure you can"
+#~ " pass parameters, set environment variables"
+#~ " or use a profile stored in "
+#~ "~/.azure/credentials. Authentication is possible "
+#~ "using a service principal or Active "
+#~ "Directory user. To authenticate via "
+#~ "service principal, pass subscription_id, "
+#~ "client_id, secret and tenant or set "
+#~ "environment variables AZURE_SUBSCRIPTION_ID, "
+#~ "AZURE_CLIENT_ID, AZURE_SECRET and AZURE_TENANT."
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_dnsrecordset_facts_module.rst:329
-msgid "Examples"
-msgstr ""
+#~ msgid ""
+#~ "To authenticate via Active Directory "
+#~ "user, pass ad_user and password, or "
+#~ "set AZURE_AD_USER and AZURE_PASSWORD in "
+#~ "the environment."
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_dnsrecordset_facts_module.rst:354
-msgid "Return Values"
-msgstr ""
+#~ msgid ""
+#~ "Alternatively, credentials can be stored "
+#~ "in ~/.azure/credentials. This is an ini"
+#~ " file containing a [default] section "
+#~ "and the following keys: subscription_id, "
+#~ "client_id, secret and tenant or "
+#~ "subscription_id, ad_user and password. It "
+#~ "is also possible to add additional "
+#~ "profiles. Specify the profile by passing"
+#~ " profile or setting AZURE_PROFILE in "
+#~ "the environment."
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_dnsrecordset_facts_module.rst:355
-msgid ""
-"Common return values are documented :ref:`here <common_return_values>`, "
-"the following are the fields unique to this module:"
-msgstr ""
+#~ msgid "Examples"
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_dnsrecordset_facts_module.rst:492
-msgid "Status"
-msgstr ""
+#~ msgid "Return Values"
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_dnsrecordset_facts_module.rst:497
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
-msgstr ""
+#~ msgid ""
+#~ "Common return values are documented "
+#~ ":ref:`here <common_return_values>`, the following"
+#~ " are the fields unique to this "
+#~ "module:"
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_dnsrecordset_facts_module.rst:500
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
-msgstr ""
+#~ msgid "Status"
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_dnsrecordset_facts_module.rst:507
-msgid "Authors"
-msgstr ""
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_dnsrecordset_facts_module.rst:509
-msgid "Ozi Boms (@ozboms)"
-msgstr ""
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_dnsrecordset_facts_module.rst:513
-#, python-format
-msgid ""
-"If you notice any issues in this documentation you can `edit this "
-"document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/azure/azure_rm_dnsrecordset_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
-" to improve it."
-msgstr ""
+#~ msgid "Authors"
+#~ msgstr ""
+
+#~ msgid "Ozi Boms (@ozboms)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/azure/azure_rm_dnsrecordset_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

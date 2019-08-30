@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,39 @@ msgstr ""
 msgid "gce -- create or terminate GCE instances"
 msgstr ""
 
+#: ../../rst/modules/gce_module.rst:17
+msgid "DEPRECATED"
+msgstr ""
+
+#: ../../rst/modules/gce_module.rst
+msgid "Removed in Ansible"
+msgstr ""
+
 #: ../../rst/modules/gce_module.rst:18
-msgid "Synopsis"
+msgid "version: 2.12"
+msgstr ""
+
+#: ../../rst/modules/gce_module.rst
+msgid "Why"
 msgstr ""
 
 #: ../../rst/modules/gce_module.rst:19
+msgid "Updated modules released with increased functionality"
+msgstr ""
+
+#: ../../rst/modules/gce_module.rst
+msgid "Alternative"
+msgstr ""
+
+#: ../../rst/modules/gce_module.rst:20
+msgid "Use :ref:`gcp_compute_instance <gcp_compute_instance_module>` instead."
+msgstr ""
+
+#: ../../rst/modules/gce_module.rst:25
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/gce_module.rst:26
 msgid ""
 "Creates or terminates Google Compute Engine (GCE) instances.  See "
 "https://cloud.google.com/compute for an overview. Full "
@@ -34,58 +62,54 @@ msgid ""
 "the comments of ansible/test/gce_tests.py."
 msgstr ""
 
-#: ../../rst/modules/gce_module.rst:24
+#: ../../rst/modules/gce_module.rst:31
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/gce_module.rst:25
+#: ../../rst/modules/gce_module.rst:32
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/gce_module.rst:27
+#: ../../rst/modules/gce_module.rst:34
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/gce_module.rst:28
+#: ../../rst/modules/gce_module.rst:35
 msgid ""
 "apache-libcloud >= 0.13.3, >= 0.17.0 if using JSON credentials, >= 0.20.0"
 " if using preemptible option"
 msgstr ""
 
-#: ../../rst/modules/gce_module.rst:32
+#: ../../rst/modules/gce_module.rst:39
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/gce_module.rst:421
+#: ../../rst/modules/gce_module.rst:428
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/gce_module.rst:424
+#: ../../rst/modules/gce_module.rst:431
 msgid "Either *instance_names* or *name* is required."
 msgstr ""
 
-#: ../../rst/modules/gce_module.rst:425
+#: ../../rst/modules/gce_module.rst:432
 msgid "JSON credentials strongly preferred."
 msgstr ""
 
-#: ../../rst/modules/gce_module.rst:430
+#: ../../rst/modules/gce_module.rst:437
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/gce_module.rst:564
+#: ../../rst/modules/gce_module.rst:571
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/gce_module.rst:569
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
+#: ../../rst/modules/gce_module.rst:574
+msgid "This module will be removed in version 2.12. *[deprecated]*"
 msgstr ""
 
-#: ../../rst/modules/gce_module.rst:572
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
+#: ../../rst/modules/gce_module.rst:575
+msgid "For more information see `DEPRECATED`_."
 msgstr ""
 
 #: ../../rst/modules/gce_module.rst:579
@@ -103,9 +127,29 @@ msgstr ""
 #: ../../rst/modules/gce_module.rst:586
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/gce.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/_gce.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/gce.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

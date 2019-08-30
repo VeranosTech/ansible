@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,12 +62,12 @@ msgstr ""
 #: ../../rst/user_guide/playbooks_reuse_roles.rst:38
 msgid ""
 "``defaults`` - default variables for the role (see "
-":doc:`playbooks_variables` for more information)."
+":ref:`playbooks_variables` for more information)."
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_reuse_roles.rst:39
 msgid ""
-"``vars`` - other variables for the role (see :doc:`playbooks_variables` "
+"``vars`` - other variables for the role (see :ref:`playbooks_variables` "
 "for more information)."
 msgstr ""
 
@@ -392,7 +392,7 @@ msgstr ""
 #: ../../rst/user_guide/playbooks_reuse_roles.rst:337
 msgid ""
 "Variable inheritance and scope are detailed in the "
-":doc:`playbooks_variables`."
+":ref:`playbooks_variables`."
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_reuse_roles.rst:342
@@ -599,4 +599,21 @@ msgstr ""
 #: ../../rst/user_guide/playbooks_reuse_roles.rst:427
 msgid "Questions? Help? Ideas?  Stop by the list on Google Groups"
 msgstr ""
+
+#~ msgid ""
+#~ "``defaults`` - default variables for the"
+#~ " role (see :doc:`playbooks_variables` for "
+#~ "more information)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``vars`` - other variables for the "
+#~ "role (see :doc:`playbooks_variables` for more"
+#~ " information)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Variable inheritance and scope are "
+#~ "detailed in the :doc:`playbooks_variables`."
+#~ msgstr ""
 

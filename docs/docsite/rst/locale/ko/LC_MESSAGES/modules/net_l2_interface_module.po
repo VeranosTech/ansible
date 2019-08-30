@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,75 +22,128 @@ msgstr ""
 msgid "net_l2_interface -- Manage Layer-2 interface on network devices"
 msgstr ""
 
+#: ../../rst/modules/net_l2_interface_module.rst:18
+msgid "DEPRECATED"
+msgstr ""
+
+#: ../../rst/modules/net_l2_interface_module.rst
+msgid "Removed in Ansible"
+msgstr ""
+
 #: ../../rst/modules/net_l2_interface_module.rst:19
-msgid "Synopsis"
+msgid "version: 2.13"
+msgstr ""
+
+#: ../../rst/modules/net_l2_interface_module.rst
+msgid "Why"
 msgstr ""
 
 #: ../../rst/modules/net_l2_interface_module.rst:20
+msgid "Updated modules released with more functionality"
+msgstr ""
+
+#: ../../rst/modules/net_l2_interface_module.rst
+msgid "Alternative"
+msgstr ""
+
+#: ../../rst/modules/net_l2_interface_module.rst:21
+msgid "Use platform-specific \"[netos]_l2_interfaces\" module"
+msgstr ""
+
+#: ../../rst/modules/net_l2_interface_module.rst:26
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/net_l2_interface_module.rst:27
 msgid ""
 "This module provides declarative management of Layer-2 interface on "
 "network devices."
 msgstr ""
 
-#: ../../rst/modules/net_l2_interface_module.rst:26
+#: ../../rst/modules/net_l2_interface_module.rst:33
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/net_l2_interface_module.rst:155
+#: ../../rst/modules/net_l2_interface_module.rst:160
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/net_l2_interface_module.rst:163
+msgid ""
+"This module is supported on ``ansible_network_os`` network platforms. See"
+" the :ref:`Network Platform Options <platform_options>` for details."
+msgstr ""
+
+#: ../../rst/modules/net_l2_interface_module.rst:168
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/net_l2_interface_module.rst:175
+#: ../../rst/modules/net_l2_interface_module.rst:188
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/net_l2_interface_module.rst:176
+#: ../../rst/modules/net_l2_interface_module.rst:189
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/net_l2_interface_module.rst:204
+#: ../../rst/modules/net_l2_interface_module.rst:217
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/net_l2_interface_module.rst:209
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
+#: ../../rst/modules/net_l2_interface_module.rst:220
+msgid "This module will be removed in version 2.13. *[deprecated]*"
 msgstr ""
 
-#: ../../rst/modules/net_l2_interface_module.rst:212
-msgid ""
-"This module is :ref:`maintained by the Ansible Network Team "
-"<modules_support>`. *[network]*"
-msgstr ""
-
-#: ../../rst/modules/net_l2_interface_module.rst:215
-msgid "Red Hat Support"
-msgstr ""
-
-#: ../../rst/modules/net_l2_interface_module.rst:217
-msgid ""
-"More information about Red Hat's support of this module is available from"
-" this `Red Hat Knowledge Base article "
-"<https://access.redhat.com/articles/3166901>`_."
-msgstr ""
-
-#: ../../rst/modules/net_l2_interface_module.rst:223
-msgid "Authors"
+#: ../../rst/modules/net_l2_interface_module.rst:221
+msgid "For more information see `DEPRECATED`_."
 msgstr ""
 
 #: ../../rst/modules/net_l2_interface_module.rst:225
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/net_l2_interface_module.rst:227
 msgid "Ganesh Nalawade (@ganeshrn)"
 msgstr ""
 
-#: ../../rst/modules/net_l2_interface_module.rst:229
+#: ../../rst/modules/net_l2_interface_module.rst:231
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/layer2/net_l2_interface.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/layer2/_net_l2_interface.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Network Team <modules_support>`. "
+#~ "*[network]*"
+#~ msgstr ""
+
+#~ msgid "Red Hat Support"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "More information about Red Hat's support"
+#~ " of this module is available from "
+#~ "this `Red Hat Knowledge Base article "
+#~ "<https://access.redhat.com/articles/3166901>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/layer2/net_l2_interface.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

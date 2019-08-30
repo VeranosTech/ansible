@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,7 +47,7 @@ msgid "boto3"
 msgstr ""
 
 #: ../../rst/modules/cloudformation_module.rst:29
-msgid "botocore>=1.4.57"
+msgid "botocore>=1.5.45"
 msgstr ""
 
 #: ../../rst/modules/cloudformation_module.rst:30
@@ -58,18 +58,22 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/cloudformation_module.rst:439
+#: ../../rst/modules/cloudformation_module.rst:489
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/cloudformation_module.rst:442
+#: ../../rst/modules/cloudformation_module.rst:492
 msgid ""
-"As of version 2.3, migrated to boto3 to enable new features. To match "
-"existing behavior, YAML parsing is done in the module, not given to AWS "
-"as YAML. This will change (in fact, it may change before 2.3 is out)."
+"Cloudformation features change often, and this module tries to keep up. "
+"That means your botocore version should be fresh. The version listed in "
+"the requirements is the oldest version that works with the module as a "
+"whole. Some features may require recent versions, and we do not pinpoint "
+"a minimum version for each feature. Instead of relying on the minimum "
+"version, keep botocore up to date. AWS is always releasing features and "
+"fixing bugs."
 msgstr ""
 
-#: ../../rst/modules/cloudformation_module.rst:443
+#: ../../rst/modules/cloudformation_module.rst:493
 msgid ""
 "If parameters are not set within the module, the following environment "
 "variables can be used in decreasing order of precedence ``AWS_URL`` or "
@@ -79,75 +83,96 @@ msgid ""
 "``AWS_REGION`` or ``EC2_REGION``"
 msgstr ""
 
-#: ../../rst/modules/cloudformation_module.rst:444
+#: ../../rst/modules/cloudformation_module.rst:494
 msgid ""
 "Ansible uses the boto configuration file (typically ~/.boto) if no "
 "credentials are provided. See "
 "https://boto.readthedocs.io/en/latest/boto_config_tut.html"
 msgstr ""
 
-#: ../../rst/modules/cloudformation_module.rst:445
+#: ../../rst/modules/cloudformation_module.rst:495
 msgid ""
 "``AWS_REGION`` or ``EC2_REGION`` can be typically be used to specify the "
 "AWS region, when required, but this can also be configured in the boto "
 "config file"
 msgstr ""
 
-#: ../../rst/modules/cloudformation_module.rst:450
+#: ../../rst/modules/cloudformation_module.rst:500
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/cloudformation_module.rst:560
+#: ../../rst/modules/cloudformation_module.rst:621
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/cloudformation_module.rst:561
+#: ../../rst/modules/cloudformation_module.rst:622
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/cloudformation_module.rst:628
+#: ../../rst/modules/cloudformation_module.rst:689
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/cloudformation_module.rst:633
+#: ../../rst/modules/cloudformation_module.rst:694
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/cloudformation_module.rst:636
+#: ../../rst/modules/cloudformation_module.rst:697
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/cloudformation_module.rst:639
+#: ../../rst/modules/cloudformation_module.rst:700
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/cloudformation_module.rst:641
+#: ../../rst/modules/cloudformation_module.rst:702
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/cloudformation_module.rst:647
+#: ../../rst/modules/cloudformation_module.rst:708
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/cloudformation_module.rst:649
+#: ../../rst/modules/cloudformation_module.rst:710
 msgid "James S. Martin (@jsmartin)"
 msgstr ""
 
-#: ../../rst/modules/cloudformation_module.rst:653
+#: ../../rst/modules/cloudformation_module.rst:714
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/cloudformation.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/cloudformation.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "botocore>=1.4.57"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "As of version 2.3, migrated to "
+#~ "boto3 to enable new features. To "
+#~ "match existing behavior, YAML parsing is"
+#~ " done in the module, not given "
+#~ "to AWS as YAML. This will change"
+#~ " (in fact, it may change before "
+#~ "2.3 is out)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/cloudformation.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

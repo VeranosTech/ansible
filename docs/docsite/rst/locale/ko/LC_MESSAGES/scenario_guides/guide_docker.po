@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/scenario_guides/guide_docker.rst:2
-msgid "Getting Started with Docker"
+msgid "Docker Guide"
 msgstr ""
 
 #: ../../rst/scenario_guides/guide_docker.rst:4
@@ -27,7 +27,7 @@ msgid "Ansible offers the following modules for orchestrating Docker containers:
 msgstr ""
 
 #: ../../rst/scenario_guides/guide_docker.rst:8
-msgid "docker_service"
+msgid "docker_compose"
 msgstr ""
 
 #: ../../rst/scenario_guides/guide_docker.rst:7
@@ -57,13 +57,13 @@ msgid ""
 msgstr ""
 
 #: ../../rst/scenario_guides/guide_docker.rst:19
-msgid "docker_image_facts"
+msgid "docker_image_info"
 msgstr ""
 
 #: ../../rst/scenario_guides/guide_docker.rst:18
 msgid ""
 "Inspects one or more images in the Docker host's image cache, providing "
-"the information as facts for making decision or assertions in a playbook."
+"the information for making decision or assertions in a playbook."
 msgstr ""
 
 #: ../../rst/scenario_guides/guide_docker.rst:23
@@ -97,17 +97,17 @@ msgstr ""
 
 #: ../../rst/scenario_guides/guide_docker.rst:33
 msgid ""
-"Still using Dockerfile to build images? Check out `ansible-container "
-"<https://github.com/ansible/ansible-container>`_, and start building "
-"images from your Ansible playbooks."
+"Still using Dockerfile to build images? Check out `ansible-bender "
+"<https://github.com/ansible-community/ansible-bender>`_, and start "
+"building images from your Ansible playbooks."
 msgstr ""
 
 #: ../../rst/scenario_guides/guide_docker.rst:36
 msgid ""
-"Use the *shipit* command in `ansible-container "
-"<https://github.com/ansible/ansible-container>`_ to launch your docker-"
-"compose file on `OpenShift <https://www.okd.io/>`_. Go from an app on "
-"your laptop to a fully scalable app in the cloud in just a few moments."
+"Use `Ansible Operator <https://learn.openshift.com/ansibleop/ansible-"
+"operator-overview/>`_ to launch your docker-compose file on `OpenShift "
+"<https://www.okd.io/>`_. Go from an app on your laptop to a fully "
+"scalable app in the cloud with Kubernetes in just a few moments."
 msgstr ""
 
 #: ../../rst/scenario_guides/guide_docker.rst:40
@@ -144,7 +144,7 @@ msgstr ""
 
 #: ../../rst/scenario_guides/guide_docker.rst:69
 msgid ""
-"The docker_service module also requires `docker-compose "
+"The docker_compose module also requires `docker-compose "
 "<https://github.com/docker/compose>`_"
 msgstr ""
 
@@ -555,4 +555,43 @@ msgid ""
 "For the default host and each host in the hosts list define the following"
 " attributes:"
 msgstr ""
+
+#~ msgid "Getting Started with Docker"
+#~ msgstr ""
+
+#~ msgid "docker_service"
+#~ msgstr ""
+
+#~ msgid "docker_image_facts"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Inspects one or more images in the"
+#~ " Docker host's image cache, providing "
+#~ "the information as facts for making "
+#~ "decision or assertions in a playbook."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Still using Dockerfile to build images?"
+#~ " Check out `ansible-container "
+#~ "<https://github.com/ansible/ansible-container>`_, and "
+#~ "start building images from your Ansible"
+#~ " playbooks."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Use the *shipit* command in `ansible-"
+#~ "container <https://github.com/ansible/ansible-container>`_"
+#~ " to launch your docker-compose file"
+#~ " on `OpenShift <https://www.okd.io/>`_. Go "
+#~ "from an app on your laptop to "
+#~ "a fully scalable app in the cloud"
+#~ " in just a few moments."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The docker_service module also requires "
+#~ "`docker-compose <https://github.com/docker/compose>`_"
+#~ msgstr ""
 

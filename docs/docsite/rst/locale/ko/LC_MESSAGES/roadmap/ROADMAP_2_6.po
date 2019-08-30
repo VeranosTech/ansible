@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,118 +83,125 @@ msgid "Release Manager"
 msgstr ""
 
 #: ../../rst/roadmap/ROADMAP_2_6.rst:28
-msgid "Matt Clay (IRC/GitHub: @mattclay)"
+msgid "2.6.0-2.6.12 Matt Clay (IRC/GitHub: @mattclay)"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_6.rst:32
+#: ../../rst/roadmap/ROADMAP_2_6.rst:29
+msgid "2.6.13+ Toshio Kuratomi (IRC: abadger1999; GitHub: @abadger)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_6.rst:33
 msgid "Engine improvements"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_6.rst:34
+#: ../../rst/roadmap/ROADMAP_2_6.rst:35
 msgid "Version 2.6 is largely going to be a stabilization release for Core code."
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_6.rst:35
+#: ../../rst/roadmap/ROADMAP_2_6.rst:36
 msgid ""
 "Some of the items covered in this release, but are not limited to are the"
 " following:"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_6.rst:37
+#: ../../rst/roadmap/ROADMAP_2_6.rst:38
 msgid "``ansible-inventory``"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_6.rst:38
+#: ../../rst/roadmap/ROADMAP_2_6.rst:39
 msgid "``import_*``"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_6.rst:39
+#: ../../rst/roadmap/ROADMAP_2_6.rst:40
 msgid "``include_*``"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_6.rst:40
+#: ../../rst/roadmap/ROADMAP_2_6.rst:41
 msgid "Test coverage"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_6.rst:41
+#: ../../rst/roadmap/ROADMAP_2_6.rst:42
 msgid "Performance Testing"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_6.rst:44
+#: ../../rst/roadmap/ROADMAP_2_6.rst:45
 msgid "Core Modules"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_6.rst:45
+#: ../../rst/roadmap/ROADMAP_2_6.rst:46
 msgid "Adopt-a-module Campaign"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_6.rst:47
+#: ../../rst/roadmap/ROADMAP_2_6.rst:48
 msgid "Review current status of all Core Modules"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_6.rst:48
+#: ../../rst/roadmap/ROADMAP_2_6.rst:49
 msgid "Reduce backlog of open issues against these modules"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_6.rst:51
+#: ../../rst/roadmap/ROADMAP_2_6.rst:52
 msgid "Cloud Modules"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_6.rst:54
+#: ../../rst/roadmap/ROADMAP_2_6.rst:55
 msgid "Network"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_6.rst:57
+#: ../../rst/roadmap/ROADMAP_2_6.rst:58
 msgid "Connection work"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_6.rst:59
+#: ../../rst/roadmap/ROADMAP_2_6.rst:60
 msgid ""
 "New connection plugin: eAPI `proposal#102 "
 "<https://github.com/ansible/proposals/issues/102>`_"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_6.rst:60
+#: ../../rst/roadmap/ROADMAP_2_6.rst:61
 msgid "New connection plugin: NX-API"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_6.rst:61
+#: ../../rst/roadmap/ROADMAP_2_6.rst:62
 msgid "Support for configurable options for network_cli & netconf"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_6.rst:64
+#: ../../rst/roadmap/ROADMAP_2_6.rst:65
 msgid "Modules"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_6.rst:66
+#: ../../rst/roadmap/ROADMAP_2_6.rst:67
 msgid ""
 "New ``net_get`` - platform agnostic module for pulling configuration via "
 "SCP/SFTP over network_cli"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_6.rst:67
+#: ../../rst/roadmap/ROADMAP_2_6.rst:68
 msgid ""
 "New ``net_put`` - platform agnostic module for pushing configuration via "
 "SCP/SFTP over network_cli"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_6.rst:68
+#: ../../rst/roadmap/ROADMAP_2_6.rst:69
 msgid ""
 "New ``netconf_get`` - Netconf module to fetch configuration and state "
 "data `proposal#104 <https://github.com/ansible/proposals/issues/104>`_"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_6.rst:71
+#: ../../rst/roadmap/ROADMAP_2_6.rst:72
 msgid "Other Features"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_6.rst:73
+#: ../../rst/roadmap/ROADMAP_2_6.rst:74
 msgid ""
 "Stretch & tech preview: Configuration caching for network_cli. Opt-in "
 "feature to avoid ``show running`` performance hit"
 msgstr ""
 
-#: ../../rst/roadmap/ROADMAP_2_6.rst:77
+#: ../../rst/roadmap/ROADMAP_2_6.rst:78
 msgid "Windows"
 msgstr ""
+
+#~ msgid "Matt Clay (IRC/GitHub: @mattclay)"
+#~ msgstr ""
 

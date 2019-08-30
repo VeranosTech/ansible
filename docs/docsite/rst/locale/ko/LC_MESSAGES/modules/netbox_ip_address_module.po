@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,62 +46,74 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/netbox_ip_address_module.rst:295
+#: ../../rst/modules/netbox_ip_address_module.rst:322
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/netbox_ip_address_module.rst:298
+#: ../../rst/modules/netbox_ip_address_module.rst:325
 msgid "Tags should be defined as a YAML list"
 msgstr ""
 
-#: ../../rst/modules/netbox_ip_address_module.rst:299
+#: ../../rst/modules/netbox_ip_address_module.rst:326
 msgid "This should be ran with connection ``local`` and hosts ``localhost``"
 msgstr ""
 
-#: ../../rst/modules/netbox_ip_address_module.rst:304
+#: ../../rst/modules/netbox_ip_address_module.rst:331
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/netbox_ip_address_module.rst:366
+#: ../../rst/modules/netbox_ip_address_module.rst:426
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/netbox_ip_address_module.rst:367
+#: ../../rst/modules/netbox_ip_address_module.rst:427
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/netbox_ip_address_module.rst:393
+#: ../../rst/modules/netbox_ip_address_module.rst:464
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/netbox_ip_address_module.rst:398
+#: ../../rst/modules/netbox_ip_address_module.rst:469
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/netbox_ip_address_module.rst:401
+#: ../../rst/modules/netbox_ip_address_module.rst:472
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/netbox_ip_address_module.rst:408
+#: ../../rst/modules/netbox_ip_address_module.rst:479
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/netbox_ip_address_module.rst:410
+#: ../../rst/modules/netbox_ip_address_module.rst:481
 msgid "Mikhail Yohman (@FragmentedPacket)"
 msgstr ""
 
-#: ../../rst/modules/netbox_ip_address_module.rst:414
+#: ../../rst/modules/netbox_ip_address_module.rst:482
+msgid "Anthony Ruhier (@Anthony25)"
+msgstr ""
+
+#: ../../rst/modules/netbox_ip_address_module.rst:486
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/netbox/netbox_ip_address.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/netbox/netbox_ip_address.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/netbox/netbox_ip_address.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

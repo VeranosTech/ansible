@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,85 +24,93 @@ msgid ""
 "server"
 msgstr ""
 
-#: ../../rst/modules/mongodb_parameter_module.rst:19
+#: ../../rst/modules/mongodb_parameter_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/mongodb_parameter_module.rst:20
+#: ../../rst/modules/mongodb_parameter_module.rst:19
 msgid "Change an administrative parameter on a MongoDB server."
 msgstr ""
 
-#: ../../rst/modules/mongodb_parameter_module.rst:25
+#: ../../rst/modules/mongodb_parameter_module.rst:24
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/mongodb_parameter_module.rst:26
+#: ../../rst/modules/mongodb_parameter_module.rst:25
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/mongodb_parameter_module.rst:28
+#: ../../rst/modules/mongodb_parameter_module.rst:27
 msgid "pymongo"
 msgstr ""
 
-#: ../../rst/modules/mongodb_parameter_module.rst:32
+#: ../../rst/modules/mongodb_parameter_module.rst:31
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/mongodb_parameter_module.rst:197
+#: ../../rst/modules/mongodb_parameter_module.rst:196
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/mongodb_parameter_module.rst:200
+#: ../../rst/modules/mongodb_parameter_module.rst:199
 msgid ""
 "Requires the pymongo Python package on the remote host, version 2.4.2+. "
 "This can be installed using pip or the OS package manager. @see "
 "http://api.mongodb.org/python/current/installation.html"
 msgstr ""
 
-#: ../../rst/modules/mongodb_parameter_module.rst:205
+#: ../../rst/modules/mongodb_parameter_module.rst:204
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/mongodb_parameter_module.rst:220
+#: ../../rst/modules/mongodb_parameter_module.rst:219
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/mongodb_parameter_module.rst:221
+#: ../../rst/modules/mongodb_parameter_module.rst:220
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/mongodb_parameter_module.rst:258
+#: ../../rst/modules/mongodb_parameter_module.rst:257
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/mongodb_parameter_module.rst:263
+#: ../../rst/modules/mongodb_parameter_module.rst:262
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/mongodb_parameter_module.rst:266
+#: ../../rst/modules/mongodb_parameter_module.rst:265
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/mongodb_parameter_module.rst:273
+#: ../../rst/modules/mongodb_parameter_module.rst:272
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/mongodb_parameter_module.rst:275
+#: ../../rst/modules/mongodb_parameter_module.rst:274
 msgid "Loic Blot (@nerzhul)"
 msgstr ""
 
-#: ../../rst/modules/mongodb_parameter_module.rst:279
+#: ../../rst/modules/mongodb_parameter_module.rst:278
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/mongodb/mongodb_parameter.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/mongodb/mongodb_parameter.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/mongodb/mongodb_parameter.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgid ""
 "Ansible modules. The document doesn't apply to other parts of Ansible for"
 " which the recommendations are normally closer to the Python standard.  "
 "There is basic documentation for Ansible unit tests in the developer "
-"guide :doc:`testing_units`.  This document should be readable for a new "
+"guide :ref:`testing_units`.  This document should be readable for a new "
 "Ansible module author. If you find it incomplete or confusing, please "
 "open a bug or ask for help on Ansible IRC."
 msgstr ""
@@ -47,10 +47,10 @@ msgstr ""
 
 #: ../../rst/dev_guide/testing_units_modules.rst:26
 msgid ""
-"Ansible includes a set of unit tests in the :file:`test/unit` directory. "
-"These tests primarily cover the internals but can also can cover Ansible "
-"modules.  The structure of the unit tests matches the structure of the "
-"code base, so the tests that reside in the :file:`test/unit/modules/` "
+"Ansible includes a set of unit tests in the :file:`test/units` directory."
+" These tests primarily cover the internals but can also can cover Ansible"
+" modules.  The structure of the unit tests matches the structure of the "
+"code base, so the tests that reside in the :file:`test/units/modules/` "
 "directory are organized by module groups."
 msgstr ""
 
@@ -323,29 +323,29 @@ msgid ""
 "called. For example::"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:202
+#: ../../rst/dev_guide/testing_units_modules.rst:203
 msgid "API definition with unit test cases"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:204
+#: ../../rst/dev_guide/testing_units_modules.rst:205
 msgid ""
 "API interaction is usually best tested with the function tests defined in"
 " Ansible's integration testing section, which run against the actual API."
 "  There are several cases where the unit tests are likely to work better."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:209
+#: ../../rst/dev_guide/testing_units_modules.rst:210
 msgid "Defining a module against an API specification"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:211
+#: ../../rst/dev_guide/testing_units_modules.rst:212
 msgid ""
 "This case is especially important for modules interacting with web "
 "services, which provide an API that Ansible uses but which are beyond the"
 " control of the user."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:214
+#: ../../rst/dev_guide/testing_units_modules.rst:215
 msgid ""
 "By writing a custom emulation of the calls that return data from the API,"
 " we can ensure that only the features which are clearly defined in the "
@@ -353,24 +353,24 @@ msgid ""
 "can check that we use the correct parameters and nothing else."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:220
+#: ../../rst/dev_guide/testing_units_modules.rst:221
 msgid ""
 "*Example:  in rds_instance unit tests a simple instance state is "
 "defined*::"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:228
+#: ../../rst/dev_guide/testing_units_modules.rst:229
 msgid "This is then used to create a list of states::"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:243
+#: ../../rst/dev_guide/testing_units_modules.rst:244
 msgid ""
 "These states are then used as returns from a mock object to ensure that "
 "the ``await`` function waits through all of the states that would mean "
 "the RDS instance has not yet completed configuration::"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:251
+#: ../../rst/dev_guide/testing_units_modules.rst:252
 msgid ""
 "By doing this we check that the ``await`` function will keep waiting "
 "through potentially unusual that it would be impossible to reliably "
@@ -378,11 +378,11 @@ msgid ""
 "reality."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:256
+#: ../../rst/dev_guide/testing_units_modules.rst:257
 msgid "Defining a module to work against multiple API versions"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:258
+#: ../../rst/dev_guide/testing_units_modules.rst:259
 msgid ""
 "This case is especially important for modules interacting with many "
 "different versions of software; for example, package installation modules"
@@ -390,7 +390,7 @@ msgid ""
 "versions."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:262
+#: ../../rst/dev_guide/testing_units_modules.rst:263
 msgid ""
 "By using previously stored data from various versions of an API we can "
 "ensure that the code is tested against the actual data which will be sent"
@@ -398,11 +398,11 @@ msgid ""
 "and unlikely to be available during testing."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:267
+#: ../../rst/dev_guide/testing_units_modules.rst:268
 msgid "Ansible special cases for unit testing"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:269
+#: ../../rst/dev_guide/testing_units_modules.rst:270
 msgid ""
 "There are a number of special cases for unit testing the environment of "
 "an Ansible module. The most common are documented below, and suggestions "
@@ -410,47 +410,48 @@ msgid ""
 "unit tests or asking on the Ansible IRC channel or mailing lists."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:275
+#: ../../rst/dev_guide/testing_units_modules.rst:276
 msgid "Module argument processing"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:277
+#: ../../rst/dev_guide/testing_units_modules.rst:278
 msgid "There are two problems with running the main function of a module:"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:279
+#: ../../rst/dev_guide/testing_units_modules.rst:280
 msgid ""
 "Since the module is supposed to accept arguments on ``STDIN`` it is a bit"
 " difficult to set up the arguments correctly so that the module will get "
 "them as parameters."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:281
+#: ../../rst/dev_guide/testing_units_modules.rst:282
 msgid ""
 "All modules should finish by calling either the :meth:`module.fail_json` "
 "or :meth:`module.exit_json`, but these won't work correctly in a testing "
 "environment."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:285
+#: ../../rst/dev_guide/testing_units_modules.rst:286
 msgid "Passing Arguments"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:290
+#: ../../rst/dev_guide/testing_units_modules.rst:291
 msgid ""
-"To pass arguments to a module correctly, use a function that stores the "
-"parameters in a special string variable.  Module creation and argument "
-"processing is handled through the :class:`AnsibleModule` object in the "
-"basic section of the utilities. Normally this accepts input on ``STDIN``,"
-" which is not convenient for unit testing. When the special variable is "
-"set it will be treated as if the input came on ``STDIN`` to the module.::"
+"To pass arguments to a module correctly, use the ``set_module_args`` "
+"method which accepts a dictionary as its parameter. Module creation and "
+"argument processing is handled through the :class:`AnsibleModule` object "
+"in the basic section of the utilities. Normally this accepts input on "
+"``STDIN``, which is not convenient for unit testing. When the special "
+"variable is set it will be treated as if the input came on ``STDIN`` to "
+"the module. Simply call that function before setting up your module::"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:313
+#: ../../rst/dev_guide/testing_units_modules.rst:309
 msgid "Handling exit correctly"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:318
+#: ../../rst/dev_guide/testing_units_modules.rst:314
 msgid ""
 "The :meth:`module.exit_json` function won't work properly in a testing "
 "environment since it writes error information to ``STDOUT`` upon exit, "
@@ -458,61 +459,61 @@ msgid ""
 "(and :meth:`module.fail_json`) with a function that raises an exception::"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:328
+#: ../../rst/dev_guide/testing_units_modules.rst:324
 msgid ""
 "Now you can ensure that the first function called is the one you expected"
 " simply by testing for the correct exception::"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:340
+#: ../../rst/dev_guide/testing_units_modules.rst:337
 msgid ""
 "The same technique can be used to replace :meth:`module.fail_json` (which"
 " is used for failure returns from modules) and for the "
 "``aws_module.fail_json_aws()`` (used in modules for Amazon Web Services)."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:345
+#: ../../rst/dev_guide/testing_units_modules.rst:342
 msgid "Running the main function"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:347
+#: ../../rst/dev_guide/testing_units_modules.rst:344
 msgid ""
 "If you do want to run the actual main function of a module you must "
 "import the module, set the arguments as above, set up the appropriate "
 "exit exception and then run the module::"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:365
+#: ../../rst/dev_guide/testing_units_modules.rst:362
 msgid "Handling calls to external executables"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:367
+#: ../../rst/dev_guide/testing_units_modules.rst:364
 msgid ""
 "Module must use :meth:`AnsibleModule.run_command` in order to execute an "
 "external command. This method needs to be mocked:"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:370
+#: ../../rst/dev_guide/testing_units_modules.rst:367
 msgid ""
 "Here is a simple mock of :meth:`AnsibleModule.run_command` (taken from "
 ":file:`test/units/modules/packaging/os/test_rhn_register.py`)::"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:384
+#: ../../rst/dev_guide/testing_units_modules.rst:381
 msgid "A Complete Example"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:386
+#: ../../rst/dev_guide/testing_units_modules.rst:383
 msgid ""
 "The following example is a complete skeleton that reuses the mocks "
 "explained above and adds a new mock for :meth:`Ansible.get_bin_path`::"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:472
+#: ../../rst/dev_guide/testing_units_modules.rst:469
 msgid "Restructuring modules to enable testing module set up and other processes"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:474
+#: ../../rst/dev_guide/testing_units_modules.rst:471
 msgid ""
 "Often modules have a ``main()`` function which sets up the module and "
 "then performs other actions. This can make it difficult to check argument"
@@ -520,17 +521,17 @@ msgid ""
 "initialization into a separate function. For example::"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:504
+#: ../../rst/dev_guide/testing_units_modules.rst:501
 msgid ""
 "This now makes it possible to run tests against the module initiation "
 "function::"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:516
+#: ../../rst/dev_guide/testing_units_modules.rst:513
 msgid "See also ``test/units/module_utils/aws/test_rds.py``"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:518
+#: ../../rst/dev_guide/testing_units_modules.rst:515
 msgid ""
 "Note that the ``argument_spec`` dictionary is visible in a module "
 "variable. This has advantages, both in allowing explicit testing of the "
@@ -538,18 +539,18 @@ msgid ""
 "testing."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:522
+#: ../../rst/dev_guide/testing_units_modules.rst:519
 msgid ""
 "The same restructuring technique can be valuable for testing other "
 "functionality, such as the part of the module which queries the object "
 "that the module configures."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:525
+#: ../../rst/dev_guide/testing_units_modules.rst:522
 msgid "Traps for maintaining Python 2 compatibility"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:527
+#: ../../rst/dev_guide/testing_units_modules.rst:524
 msgid ""
 "If you use the ``mock`` library from the Python 2.6 standard library, a "
 "number of the assert functions are missing but will return as if "
@@ -559,7 +560,7 @@ msgid ""
 "versions of Python."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:532
+#: ../../rst/dev_guide/testing_units_modules.rst:529
 msgid ""
 "A helpful development approach to this should be to ensure that all of "
 "the tests have been run under Python 2.6 and that each assertion in the "
@@ -567,127 +568,206 @@ msgid ""
 "trigger that failure."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:536
+#: ../../rst/dev_guide/testing_units_modules.rst:533
 msgid "Maintain Python 2.6 compatibility"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:538
+#: ../../rst/dev_guide/testing_units_modules.rst:535
 msgid ""
 "Please remember that modules need to maintain compatibility with Python "
 "2.6 so the unittests for modules should also be compatible with Python "
 "2.6."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:544
-msgid ":doc:`testing_units`"
+#: ../../rst/dev_guide/testing_units_modules.rst:541
+msgid ":ref:`testing_units`"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:545
+#: ../../rst/dev_guide/testing_units_modules.rst:542
 msgid "Ansible unit tests documentation"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:546
-msgid ":doc:`testing_running_locally`"
+#: ../../rst/dev_guide/testing_units_modules.rst:543
+msgid ":ref:`testing_running_locally`"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:547
+#: ../../rst/dev_guide/testing_units_modules.rst:544
 msgid "Running tests locally including gathering and reporting coverage data"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:548
-msgid ":doc:`developing_modules`"
+#: ../../rst/dev_guide/testing_units_modules.rst:545
+msgid ":ref:`developing_modules_general`"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:549
-msgid "How to develop modules"
+#: ../../rst/dev_guide/testing_units_modules.rst:546
+msgid "Get started developing a module"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:550
+#: ../../rst/dev_guide/testing_units_modules.rst:547
 msgid ""
 "`Python 3 documentation - 26.4. unittest — Unit testing framework "
 "<https://docs.python.org/3/library/unittest.html>`_"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:551
+#: ../../rst/dev_guide/testing_units_modules.rst:548
 msgid "The documentation of the unittest framework in python 3"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:552
+#: ../../rst/dev_guide/testing_units_modules.rst:549
 msgid ""
 "`Python 2 documentation - 25.3. unittest — Unit testing framework "
 "<https://docs.python.org/3/library/unittest.html>`_"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:553
+#: ../../rst/dev_guide/testing_units_modules.rst:550
 msgid ""
 "The documentation of the earliest supported unittest framework - from "
 "Python 2.6"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:554
+#: ../../rst/dev_guide/testing_units_modules.rst:551
 msgid ""
 "`pytest: helps you write better programs "
 "<https://docs.pytest.org/en/latest/>`_"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:555
+#: ../../rst/dev_guide/testing_units_modules.rst:552
 msgid ""
 "The documentation of pytest - the framework actually used to run Ansible "
 "unit tests"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:556
+#: ../../rst/dev_guide/testing_units_modules.rst:553
 msgid ""
 "`Development Mailing List <https://groups.google.com/group/ansible-"
 "devel>`_"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:557
+#: ../../rst/dev_guide/testing_units_modules.rst:554
 msgid "Mailing list for development topics"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:558
+#: ../../rst/dev_guide/testing_units_modules.rst:555
 msgid ""
 "`Testing Your Code (from The Hitchhiker's Guide to Python!) <https://docs"
 ".python-guide.org/writing/tests/>`_"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:559
+#: ../../rst/dev_guide/testing_units_modules.rst:556
 msgid "General advice on testing Python code"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:561
+#: ../../rst/dev_guide/testing_units_modules.rst:558
 msgid ""
 "`Uncle Bob's many videos on YouTube "
 "<https://www.youtube.com/watch?v=QedpQjxBPMA&list=PLlu0CT-"
 "JnSasQzGrGzddSczJQQU7295D2>`_"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:561
+#: ../../rst/dev_guide/testing_units_modules.rst:558
 msgid ""
 "Unit testing is a part of the of various philosophies of software "
 "development, including Extreme Programming (XP), Clean Coding.  Uncle Bob"
-" talks through how to benfit from this"
+" talks through how to benefit from this"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:563
+#: ../../rst/dev_guide/testing_units_modules.rst:560
 msgid ""
-"`\"Why Most Unit Testing is Waste\" https://rbcs-us.com/documents/Why-"
-"Most-Unit-Testing-is-Waste.pdf`"
+"`\"Why Most Unit Testing is Waste\" <https://rbcs-us.com/documents/Why-"
+"Most-Unit-Testing-is-Waste.pdf>`_"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:564
+#: ../../rst/dev_guide/testing_units_modules.rst:561
 msgid "An article warning against the costs of unit testing"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:565
+#: ../../rst/dev_guide/testing_units_modules.rst:562
 msgid ""
 "`'A Response to \"Why Most Unit Testing is Waste\"' "
-"https://henrikwarne.com/2014/09/04/a-response-to-why-most-unit-testing-"
-"is-waste/`"
+"<https://henrikwarne.com/2014/09/04/a-response-to-why-most-unit-testing-"
+"is-waste/>`_"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units_modules.rst:566
+#: ../../rst/dev_guide/testing_units_modules.rst:563
 msgid "An response pointing to how to maintain the value of unit tests"
 msgstr ""
+
+#~ msgid ""
+#~ "This document explains why, how and "
+#~ "when you should use unit tests for"
+#~ " Ansible modules. The document doesn't "
+#~ "apply to other parts of Ansible "
+#~ "for which the recommendations are "
+#~ "normally closer to the Python standard."
+#~ "  There is basic documentation for "
+#~ "Ansible unit tests in the developer "
+#~ "guide :doc:`testing_units`.  This document "
+#~ "should be readable for a new "
+#~ "Ansible module author. If you find "
+#~ "it incomplete or confusing, please open"
+#~ " a bug or ask for help on "
+#~ "Ansible IRC."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Ansible includes a set of unit "
+#~ "tests in the :file:`test/unit` directory. "
+#~ "These tests primarily cover the "
+#~ "internals but can also can cover "
+#~ "Ansible modules.  The structure of the"
+#~ " unit tests matches the structure of"
+#~ " the code base, so the tests "
+#~ "that reside in the :file:`test/unit/modules/`"
+#~ " directory are organized by module "
+#~ "groups."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To pass arguments to a module "
+#~ "correctly, use a function that stores"
+#~ " the parameters in a special string"
+#~ " variable.  Module creation and argument"
+#~ " processing is handled through the "
+#~ ":class:`AnsibleModule` object in the basic "
+#~ "section of the utilities. Normally this"
+#~ " accepts input on ``STDIN``, which is"
+#~ " not convenient for unit testing. "
+#~ "When the special variable is set "
+#~ "it will be treated as if the "
+#~ "input came on ``STDIN`` to the "
+#~ "module.::"
+#~ msgstr ""
+
+#~ msgid ":doc:`testing_units`"
+#~ msgstr ""
+
+#~ msgid ":doc:`testing_running_locally`"
+#~ msgstr ""
+
+#~ msgid ":doc:`developing_modules`"
+#~ msgstr ""
+
+#~ msgid "How to develop modules"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Unit testing is a part of the "
+#~ "of various philosophies of software "
+#~ "development, including Extreme Programming "
+#~ "(XP), Clean Coding.  Uncle Bob talks "
+#~ "through how to benfit from this"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`\"Why Most Unit Testing is Waste\" "
+#~ "https://rbcs-us.com/documents/Why-Most-Unit-"
+#~ "Testing-is-Waste.pdf`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`'A Response to \"Why Most Unit "
+#~ "Testing is Waste\"' "
+#~ "https://henrikwarne.com/2014/09/04/a-response-to-why-"
+#~ "most-unit-testing-is-waste/`"
+#~ msgstr ""
 

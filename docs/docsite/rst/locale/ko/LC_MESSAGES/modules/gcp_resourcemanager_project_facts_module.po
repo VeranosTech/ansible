@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,125 +19,123 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/modules/gcp_resourcemanager_project_facts_module.rst:9
-msgid "gcp_resourcemanager_project_facts -- Gather facts for GCP Project"
+msgid "gcp_resourcemanager_project_facts -- Gather info for GCP Project"
 msgstr ""
 
-#: ../../rst/modules/gcp_resourcemanager_project_facts_module.rst:19
-msgid "Synopsis"
-msgstr ""
-
-#: ../../rst/modules/gcp_resourcemanager_project_facts_module.rst:20
-msgid "Gather facts for GCP Project"
-msgstr ""
-
-#: ../../rst/modules/gcp_resourcemanager_project_facts_module.rst:25
-msgid "Requirements"
-msgstr ""
-
-#: ../../rst/modules/gcp_resourcemanager_project_facts_module.rst:26
-msgid "The below requirements are needed on the host that executes this module."
-msgstr ""
-
-#: ../../rst/modules/gcp_resourcemanager_project_facts_module.rst:28
-msgid "python >= 2.6"
-msgstr ""
-
-#: ../../rst/modules/gcp_resourcemanager_project_facts_module.rst:29
-msgid "requests >= 2.18.4"
-msgstr ""
-
-#: ../../rst/modules/gcp_resourcemanager_project_facts_module.rst:30
-msgid "google-auth >= 1.3.0"
-msgstr ""
-
-#: ../../rst/modules/gcp_resourcemanager_project_facts_module.rst:34
-msgid "Parameters"
-msgstr ""
-
-#: ../../rst/modules/gcp_resourcemanager_project_facts_module.rst:120
-msgid "Notes"
-msgstr ""
-
-#: ../../rst/modules/gcp_resourcemanager_project_facts_module.rst:123
+#: ../../rst/modules/gcp_resourcemanager_project_facts_module.rst:11
 msgid ""
-"For authentication, you can set service_account_file using the "
-"``GCP_SERVICE_ACCOUNT_FILE`` env variable."
+"This is an alias for :ref:`gcp_resourcemanager_project_info "
+"<gcp_resourcemanager_project_info_module>`. This name has been "
+"**deprecated**. Please update your tasks to use the new name "
+"``gcp_resourcemanager_project_info`` instead."
 msgstr ""
 
-#: ../../rst/modules/gcp_resourcemanager_project_facts_module.rst:124
-msgid ""
-"For authentication, you can set service_account_email using the "
-"``GCP_SERVICE_ACCOUNT_EMAIL`` env variable."
-msgstr ""
+#~ msgid "gcp_resourcemanager_project_facts -- Gather facts for GCP Project"
+#~ msgstr ""
 
-#: ../../rst/modules/gcp_resourcemanager_project_facts_module.rst:125
-msgid ""
-"For authentication, you can set auth_kind using the ``GCP_AUTH_KIND`` env"
-" variable."
-msgstr ""
+#~ msgid "Synopsis"
+#~ msgstr ""
 
-#: ../../rst/modules/gcp_resourcemanager_project_facts_module.rst:126
-msgid ""
-"For authentication, you can set scopes using the ``GCP_SCOPES`` env "
-"variable."
-msgstr ""
+#~ msgid "Gather facts for GCP Project"
+#~ msgstr ""
 
-#: ../../rst/modules/gcp_resourcemanager_project_facts_module.rst:127
-msgid ""
-"Environment variables values will only be used if the playbook values are"
-" not set."
-msgstr ""
+#~ msgid "Requirements"
+#~ msgstr ""
 
-#: ../../rst/modules/gcp_resourcemanager_project_facts_module.rst:128
-msgid ""
-"The *service_account_email* and *service_account_file* options are "
-"mutually exclusive."
-msgstr ""
+#~ msgid ""
+#~ "The below requirements are needed on "
+#~ "the host that executes this module."
+#~ msgstr ""
 
-#: ../../rst/modules/gcp_resourcemanager_project_facts_module.rst:133
-msgid "Examples"
-msgstr ""
+#~ msgid "python >= 2.6"
+#~ msgstr ""
 
-#: ../../rst/modules/gcp_resourcemanager_project_facts_module.rst:148
-msgid "Return Values"
-msgstr ""
+#~ msgid "requests >= 2.18.4"
+#~ msgstr ""
 
-#: ../../rst/modules/gcp_resourcemanager_project_facts_module.rst:149
-msgid ""
-"Common return values are documented :ref:`here <common_return_values>`, "
-"the following are the fields unique to this module:"
-msgstr ""
+#~ msgid "google-auth >= 1.3.0"
+#~ msgstr ""
 
-#: ../../rst/modules/gcp_resourcemanager_project_facts_module.rst:292
-msgid "Status"
-msgstr ""
+#~ msgid "Parameters"
+#~ msgstr ""
 
-#: ../../rst/modules/gcp_resourcemanager_project_facts_module.rst:297
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
-msgstr ""
+#~ msgid "Notes"
+#~ msgstr ""
 
-#: ../../rst/modules/gcp_resourcemanager_project_facts_module.rst:300
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
-msgstr ""
+#~ msgid ""
+#~ "For authentication, you can set "
+#~ "service_account_file using the "
+#~ "``GCP_SERVICE_ACCOUNT_FILE`` env variable."
+#~ msgstr ""
 
-#: ../../rst/modules/gcp_resourcemanager_project_facts_module.rst:307
-msgid "Authors"
-msgstr ""
+#~ msgid ""
+#~ "For authentication, you can set "
+#~ "service_account_email using the "
+#~ "``GCP_SERVICE_ACCOUNT_EMAIL`` env variable."
+#~ msgstr ""
 
-#: ../../rst/modules/gcp_resourcemanager_project_facts_module.rst:309
-msgid "Google Inc. (@googlecloudplatform)"
-msgstr ""
+#~ msgid ""
+#~ "For authentication, you can set "
+#~ "auth_kind using the ``GCP_AUTH_KIND`` env "
+#~ "variable."
+#~ msgstr ""
 
-#: ../../rst/modules/gcp_resourcemanager_project_facts_module.rst:313
-#, python-format
-msgid ""
-"If you notice any issues in this documentation you can `edit this "
-"document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/gcp_resourcemanager_project_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
-" to improve it."
-msgstr ""
+#~ msgid ""
+#~ "For authentication, you can set scopes"
+#~ " using the ``GCP_SCOPES`` env variable."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Environment variables values will only "
+#~ "be used if the playbook values are"
+#~ " not set."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The *service_account_email* and "
+#~ "*service_account_file* options are mutually "
+#~ "exclusive."
+#~ msgstr ""
+
+#~ msgid "Examples"
+#~ msgstr ""
+
+#~ msgid "Return Values"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Common return values are documented "
+#~ ":ref:`here <common_return_values>`, the following"
+#~ " are the fields unique to this "
+#~ "module:"
+#~ msgstr ""
+
+#~ msgid "Status"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid "Authors"
+#~ msgstr ""
+
+#~ msgid "Google Inc. (@googlecloudplatform)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/gcp_resourcemanager_project_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

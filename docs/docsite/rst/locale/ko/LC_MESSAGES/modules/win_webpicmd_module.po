@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,88 +24,96 @@ msgid ""
 "line"
 msgstr ""
 
-#: ../../rst/modules/win_webpicmd_module.rst:19
+#: ../../rst/modules/win_webpicmd_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/win_webpicmd_module.rst:20
+#: ../../rst/modules/win_webpicmd_module.rst:19
 msgid ""
 "Installs packages using Web Platform Installer command-line "
 "(http://www.iis.net/learn/install/web-platform-installer/web-platform-"
 "installer-v4-command-line-webpicmdexe-rtw-release)."
 msgstr ""
 
-#: ../../rst/modules/win_webpicmd_module.rst:21
+#: ../../rst/modules/win_webpicmd_module.rst:20
 msgid ""
 "Must be installed and present in PATH (see :ref:`win_chocolatey "
 "<win_chocolatey_module>` module; 'webpicmd' is the package name, and you "
 "must install 'lessmsi' first too)?"
 msgstr ""
 
-#: ../../rst/modules/win_webpicmd_module.rst:22
+#: ../../rst/modules/win_webpicmd_module.rst:21
 msgid "Install IIS first (see :ref:`win_feature <win_feature_module>` module)."
 msgstr ""
 
-#: ../../rst/modules/win_webpicmd_module.rst:28
+#: ../../rst/modules/win_webpicmd_module.rst:27
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/win_webpicmd_module.rst:56
+#: ../../rst/modules/win_webpicmd_module.rst:55
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/win_webpicmd_module.rst:59
+#: ../../rst/modules/win_webpicmd_module.rst:58
 msgid ""
 "Accepts EULAs and suppresses reboot - you will need to check manage "
 "reboots yourself (see :ref:`win_reboot <win_reboot_module>` module)"
 msgstr ""
 
-#: ../../rst/modules/win_webpicmd_module.rst:63
+#: ../../rst/modules/win_webpicmd_module.rst:62
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/win_webpicmd_module.rst:67
+#: ../../rst/modules/win_webpicmd_module.rst:66
 msgid ":ref:`win_package_module`"
 msgstr ""
 
-#: ../../rst/modules/win_webpicmd_module.rst:68
+#: ../../rst/modules/win_webpicmd_module.rst:67
 msgid "The official documentation on the **win_package** module."
 msgstr ""
 
-#: ../../rst/modules/win_webpicmd_module.rst:72
+#: ../../rst/modules/win_webpicmd_module.rst:71
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/win_webpicmd_module.rst:86
+#: ../../rst/modules/win_webpicmd_module.rst:85
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/win_webpicmd_module.rst:91
+#: ../../rst/modules/win_webpicmd_module.rst:90
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/win_webpicmd_module.rst:94
+#: ../../rst/modules/win_webpicmd_module.rst:93
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/win_webpicmd_module.rst:101
+#: ../../rst/modules/win_webpicmd_module.rst:100
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/win_webpicmd_module.rst:103
+#: ../../rst/modules/win_webpicmd_module.rst:102
 msgid "Peter Mounce (@petemounce)"
 msgstr ""
 
-#: ../../rst/modules/win_webpicmd_module.rst:107
+#: ../../rst/modules/win_webpicmd_module.rst:106
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_webpicmd.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_webpicmd.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_webpicmd.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

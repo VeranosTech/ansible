@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,114 +22,122 @@ msgstr ""
 msgid "nxos_gir -- Trigger a graceful removal or insertion (GIR) of the switch"
 msgstr ""
 
-#: ../../rst/modules/nxos_gir_module.rst:19
+#: ../../rst/modules/nxos_gir_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/nxos_gir_module.rst:20
+#: ../../rst/modules/nxos_gir_module.rst:19
 msgid "Trigger a graceful removal or insertion (GIR) of the switch."
 msgstr ""
 
-#: ../../rst/modules/nxos_gir_module.rst:26
+#: ../../rst/modules/nxos_gir_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/nxos_gir_module.rst:353
+#: ../../rst/modules/nxos_gir_module.rst:355
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/nxos_gir_module.rst:356
+#: ../../rst/modules/nxos_gir_module.rst:358
 msgid "Tested against NXOSv 7.3.(0)D1(1) on VIRL"
 msgstr ""
 
-#: ../../rst/modules/nxos_gir_module.rst:357
+#: ../../rst/modules/nxos_gir_module.rst:359
 msgid ""
 "``state`` has effect only in combination with "
 "``system_mode_maintenance_timeout`` or "
 "``system_mode_maintenance_on_reload_reset_reason``."
 msgstr ""
 
-#: ../../rst/modules/nxos_gir_module.rst:358
+#: ../../rst/modules/nxos_gir_module.rst:360
 msgid ""
 "Using ``system_mode_maintenance`` and "
 "``system_mode_maintenance_dont_generate_profile`` would make the module "
 "fail, but the system mode will be triggered anyway."
 msgstr ""
 
-#: ../../rst/modules/nxos_gir_module.rst:359
+#: ../../rst/modules/nxos_gir_module.rst:361
 msgid ""
 "For information on using CLI and NX-API see the :ref:`NXOS Platform "
 "Options guide <nxos_platform_options>`"
 msgstr ""
 
-#: ../../rst/modules/nxos_gir_module.rst:360
+#: ../../rst/modules/nxos_gir_module.rst:362
 msgid ""
 "For more information on using Ansible to manage network devices see the "
 ":ref:`Ansible Network Guide <network_guide>`"
 msgstr ""
 
-#: ../../rst/modules/nxos_gir_module.rst:361
+#: ../../rst/modules/nxos_gir_module.rst:363
 msgid ""
 "For more information on using Ansible to manage Cisco devices see the "
 "`Cisco integration page "
 "<https://www.ansible.com/integrations/networks/cisco>`_."
 msgstr ""
 
-#: ../../rst/modules/nxos_gir_module.rst:366
+#: ../../rst/modules/nxos_gir_module.rst:368
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/nxos_gir_module.rst:423
+#: ../../rst/modules/nxos_gir_module.rst:425
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/nxos_gir_module.rst:424
+#: ../../rst/modules/nxos_gir_module.rst:426
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/nxos_gir_module.rst:478
+#: ../../rst/modules/nxos_gir_module.rst:480
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/nxos_gir_module.rst:483
+#: ../../rst/modules/nxos_gir_module.rst:485
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/nxos_gir_module.rst:486
+#: ../../rst/modules/nxos_gir_module.rst:488
 msgid ""
 "This module is :ref:`maintained by the Ansible Network Team "
 "<modules_support>`. *[network]*"
 msgstr ""
 
-#: ../../rst/modules/nxos_gir_module.rst:489
+#: ../../rst/modules/nxos_gir_module.rst:491
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/nxos_gir_module.rst:491
+#: ../../rst/modules/nxos_gir_module.rst:493
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/nxos_gir_module.rst:497
+#: ../../rst/modules/nxos_gir_module.rst:499
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/nxos_gir_module.rst:499
+#: ../../rst/modules/nxos_gir_module.rst:501
 msgid "Gabriele Gerbino (@GGabriele)"
 msgstr ""
 
-#: ../../rst/modules/nxos_gir_module.rst:503
+#: ../../rst/modules/nxos_gir_module.rst:505
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_gir.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_gir.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_gir.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,62 +22,61 @@ msgstr ""
 msgid "gitlab_hooks -- Manages GitLab project hooks"
 msgstr ""
 
-#: ../../rst/modules/gitlab_hooks_module.rst:19
-msgid "Synopsis"
-msgstr ""
-
-#: ../../rst/modules/gitlab_hooks_module.rst:20
-msgid "Adds, updates and removes project hooks"
-msgstr ""
-
-#: ../../rst/modules/gitlab_hooks_module.rst:26
-msgid "Parameters"
-msgstr ""
-
-#: ../../rst/modules/gitlab_hooks_module.rst:293
-msgid "Examples"
-msgstr ""
-
-#: ../../rst/modules/gitlab_hooks_module.rst:341
-msgid "Return Values"
-msgstr ""
-
-#: ../../rst/modules/gitlab_hooks_module.rst:342
+#: ../../rst/modules/gitlab_hooks_module.rst:11
 msgid ""
-"Common return values are documented :ref:`here <common_return_values>`, "
-"the following are the fields unique to this module:"
+"This is an alias for :ref:`gitlab_hook <gitlab_hook_module>`. This name "
+"has been **deprecated**. Please update your tasks to use the new name "
+"``gitlab_hook`` instead."
 msgstr ""
 
-#: ../../rst/modules/gitlab_hooks_module.rst:405
-msgid "Status"
-msgstr ""
+#~ msgid "Synopsis"
+#~ msgstr ""
 
-#: ../../rst/modules/gitlab_hooks_module.rst:410
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
-msgstr ""
+#~ msgid "Adds, updates and removes project hooks"
+#~ msgstr ""
 
-#: ../../rst/modules/gitlab_hooks_module.rst:413
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
-msgstr ""
+#~ msgid "Parameters"
+#~ msgstr ""
 
-#: ../../rst/modules/gitlab_hooks_module.rst:420
-msgid "Authors"
-msgstr ""
+#~ msgid "Examples"
+#~ msgstr ""
 
-#: ../../rst/modules/gitlab_hooks_module.rst:422
-msgid "Marcus Watkins (@marwatk)"
-msgstr ""
+#~ msgid "Return Values"
+#~ msgstr ""
 
-#: ../../rst/modules/gitlab_hooks_module.rst:426
-#, python-format
-msgid ""
-"If you notice any issues in this documentation you can `edit this "
-"document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/source_control/gitlab_hooks.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
-" to improve it."
-msgstr ""
+#~ msgid ""
+#~ "Common return values are documented "
+#~ ":ref:`here <common_return_values>`, the following"
+#~ " are the fields unique to this "
+#~ "module:"
+#~ msgstr ""
+
+#~ msgid "Status"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid "Authors"
+#~ msgstr ""
+
+#~ msgid "Marcus Watkins (@marwatk)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/source_control/gitlab_hooks.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

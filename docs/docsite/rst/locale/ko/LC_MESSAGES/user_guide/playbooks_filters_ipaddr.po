@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:4
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:6
 msgid "ipaddr filter"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:8
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:10
 msgid ""
 "``ipaddr()`` is a Jinja2 filter designed to provide an interface to the "
 "`netaddr`_ Python package from within Ansible. It can operate on strings "
@@ -33,7 +33,7 @@ msgid ""
 "manipulate IP subnets and MAC addresses."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:15
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:17
 msgid ""
 "To use this filter in Ansible, you need to install the `netaddr`_ Python "
 "library on a computer on which you use Ansible (it is not required on "
@@ -41,67 +41,67 @@ msgid ""
 "package manager or using ``pip``::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:27
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:29
 msgid "Topics"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:30
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:32
 msgid "Basic tests"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:32
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:34
 msgid ""
 "``ipaddr()`` is designed to return the input value if a query is True, "
 "and ``False`` if a query is False. This way it can be easily used in "
 "chained filters. To use the filter, pass a string to it:"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:40
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:42
 msgid "You can also pass the values as variables::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:44
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:46
 msgid "Here are some example test results of various input strings::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:62
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:64
 msgid ""
 "Sometimes you need either IPv4 or IPv6 addresses. To filter only for a "
 "particular type, ``ipaddr()`` filter has two \"aliases\", ``ipv4()`` and "
 "``ipv6()``."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:65
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:67
 msgid "Example use of an IPv4 filter::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:69
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:71
 msgid "A similar example of an IPv6 filter::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:73
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:75
 msgid "Here's some example test results to look for IPv4 addresses::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:81
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:83
 msgid "And the same data filtered for IPv6 addresses::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:91
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:93
 msgid "Filtering lists"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:93
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:95
 msgid ""
 "You can filter entire lists - ``ipaddr()`` will return a list with values"
 " valid for a particular query::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:110
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:112
 msgid "Wrapping IPv6 addresses in [ ] brackets"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:112
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:114
 msgid ""
 "Some configuration files require IPv6 addresses to be \"wrapped\" in "
 "square brackets (``[ ]``). To accomplish that, you can use the "
@@ -109,7 +109,7 @@ msgid ""
 "strings intact::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:119
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:121
 msgid ""
 "As you can see, ``ipwrap()`` did not filter out non-IP address values, "
 "which is usually what you want when for example you are mixing IP "
@@ -117,55 +117,55 @@ msgid ""
 "address values, you can chain both filters together::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:129
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:131
 msgid "Basic queries"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:131
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:133
 msgid ""
 "You can provide a single argument to each ``ipaddr()`` filter. The filter"
 " will then treat it as a query and return values modified by that query. "
 "Lists will contain only values that you are querying for."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:135
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:137
 msgid "Types of queries include:"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:137
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:139
 msgid "query by name: ``ipaddr('address')``, ``ipv4('network')``;"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:138
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:140
 msgid ""
 "query by CIDR range: ``ipaddr('192.168.0.0/24')``, "
 "``ipv6('2001:db8::/32')``;"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:139
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:141
 msgid "query by index number: ``ipaddr('1')``, ``ipaddr('-1')``;"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:141
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:143
 msgid "If a query type is not recognized, Ansible will raise an error."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:145
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:147
 msgid "Getting information about hosts and networks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:147
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:346
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:149
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:348
 msgid "Here's our test list again::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:152
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:154
 msgid ""
 "Let's take the list above and get only those elements that are host IP "
 "addresses and not network ranges::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:158
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:160
 msgid ""
 "As you can see, even though some values had a host address with a CIDR "
 "prefix, they were dropped by the filter. If you want host IP addresses "
@@ -173,67 +173,67 @@ msgid ""
 " can use the ``ipaddr('host')`` filter::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:166
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:168
 msgid "Filtering by IP address type also works::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:174
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:176
 msgid ""
 "You can check if IP addresses or network ranges are accessible on a "
 "public Internet, or if they are in private networks::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:183
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:185
 msgid "You can check which values are specifically network ranges::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:188
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:190
 msgid "You can also check how many IP addresses can be in a certain range::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:193
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:195
 msgid ""
 "By specifying a network range as a query, you can check if a given value "
 "is in that range::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:199
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:201
 msgid ""
 "If you specify a positive or negative integer as a query, ``ipaddr()`` "
 "will treat this as an index and will return the specific IP address from "
 "a network range, in the 'host/prefix' format::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:215
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:217
 msgid ""
 "You can also select IP addresses from a range by their index, from the "
 "start or end of the range::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:231
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:233
 msgid "Getting information from host/prefix values"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:233
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:235
 msgid ""
 "You frequently use a combination of IP addresses and subnet prefixes "
 "(\"CIDR\"), this is even more common with IPv6. The ``ipaddr()`` filter "
 "can extract useful data from these prefixes."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:237
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:239
 msgid ""
 "Here's an example set of two host prefixes (with some \"control\" "
 "values)::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:241
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:243
 msgid ""
 "First, let's make sure that we only work with correct host/prefix values,"
 " not just subnets or single IP addresses::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:247
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:249
 msgid ""
 "In Debian-based systems, the network configuration stored in the "
 "``/etc/network/interfaces`` file uses a combination of IP address, "
@@ -242,7 +242,7 @@ msgid ""
 "combination:"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:266
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:268
 msgid ""
 "In the above example, we needed to handle the fact that values were "
 "stored in a list, which is unusual in IPv4 networks, where only a single "
@@ -250,17 +250,17 @@ msgid ""
 "multiple IP addresses set on an interface::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:288
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:290
 msgid ""
 "If needed, you can extract subnet and prefix information from the "
 "'host/prefix' value::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:297
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:299
 msgid "Converting subnet masks to CIDR notation"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:299
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:301
 msgid ""
 "Given a subnet in the form of network address and subnet mask, the "
 "``ipaddr()`` filter can convert it into CIDR notation.  This can be "
@@ -268,66 +268,72 @@ msgid ""
 "from subnet masks into CIDR format::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:314
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:316
 msgid "First concatenate the network and netmask::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:319
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:321
 msgid ""
 "This result can be converted to canonical form with ``ipaddr()`` to "
 "produce a subnet in CIDR format::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:328
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:330
 msgid "Getting information about the network in CIDR notation"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:330
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:332
 msgid ""
 "Given an IP address, the ``ipaddr()`` filter can produce the network "
 "address in CIDR notation. This can be useful when you want to obtain the "
 "network address from the IP address in CIDR format."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:333
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:335
 msgid "Here's an example of IP address::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:338
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:340
 msgid "This can be used to obtain the network address in CIDR notation format::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:344
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:346
 msgid "IP address conversion"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:351
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:353
 msgid "You can convert IPv4 addresses into IPv6 addresses::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:356
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:358
 msgid "Converting from IPv6 to IPv4 works very rarely::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:361
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:363
 msgid "But we can make a double conversion if needed::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:366
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:368
 msgid ""
 "You can convert IP addresses to integers, the same way that you can "
 "convert integers into IP addresses::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:372
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:374
+msgid ""
+"You can convert IPv4 address to `Hexadecimal notation "
+"<https://en.wikipedia.org/wiki/Hexadecimal>`_ with optional delimiter::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:381
 msgid "You can convert IP addresses to PTR records::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:385
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:394
 msgid "Converting IPv4 address to a 6to4 address"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:387
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:396
 msgid ""
 "A `6to4`_ tunnel is a way to access the IPv6 Internet from an IPv4-only "
 "network. If you have a public IPv4 address, you can automatically "
@@ -336,47 +342,83 @@ msgid ""
 " could be split into 65535 ``/64`` subnets if needed."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:393
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:402
 msgid ""
 "To convert your IPv4 address, just send it through the ``'6to4'`` filter."
 " It will be automatically converted to a router address (with a "
 "``::1/48`` host address)::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:402
-msgid "IP Math"
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:411
+msgid "Finding IP addresses within a range"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:406
-msgid "The ``ipmath()`` filter can be used to do simple IP math/arithmetic."
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:413
+msgid ""
+"To find usable IP addresses within an IP range, try these ``ipaddr`` "
+"filters:"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:408
-msgid "Here are a few simple examples::"
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:415
+msgid "To find the next usable IP address in a range, use ``next_usable`` ::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:420
+msgid "To find the last usable IP address from a range, use ``last_usable``::"
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_filters_ipaddr.rst:425
+msgid ""
+"To find the available range of IP addresses from the given network "
+"address, use ``range_usable``::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:430
+msgid ""
+"To find the next nth usable IP address within a range, use "
+"``next_nth_usable``::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:435
+msgid ""
+"In this example, ``next_nth_usable`` returns the second usable IP address"
+" for the given IP range."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:439
+msgid "IP Math"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:443
+msgid "The ``ipmath()`` filter can be used to do simple IP math/arithmetic."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:445
+msgid "Here are a few simple examples::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:471
 msgid "Subnet manipulation"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:427
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:473
 msgid ""
 "The ``ipsubnet()`` filter can be used to manipulate network subnets in "
 "several ways."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:429
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:475
 msgid "Here is an example IP address and subnet::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:434
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:480
 msgid ""
 "To check if a given string is a subnet, pass it through the filter "
 "without any arguments. If the given string is an IP address, it will be "
 "converted into a subnet::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:444
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:490
 msgid ""
 "If you specify a subnet size as the first parameter of the  "
 "``ipsubnet()`` filter, and the subnet size is **smaller than the current "
@@ -384,147 +426,174 @@ msgid ""
 "into::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:451
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:497
 msgid ""
 "The second argument of the ``ipsubnet()`` filter is an index number; by "
 "specifying it you can get a new subnet with the specified size::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:470
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:516
 msgid ""
 "If you specify an IP address instead of a subnet, and give a subnet size "
 "as the first argument, the ``ipsubnet()`` filter will instead return the "
 "biggest subnet that contains that given IP address::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:477
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:523
 msgid ""
 "By specifying an index number as a second argument, you can select "
 "smaller and smaller subnets::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:496
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:542
 msgid ""
 "By specifying another subnet as a second argument, if the second subnet "
 "includes the first, you can determine the rank of the first subnet in the"
 " second ::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:515
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:561
 msgid ""
 "If the second subnet doesn't include the first subnet, the ``ipsubnet()``"
 " filter raises an error."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:518
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:564
 msgid ""
 "You can use the ``ipsubnet()`` filter with the ``ipaddr()`` filter to, "
 "for example, split a given ``/48`` prefix into smaller ``/64`` subnets::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:524
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:570
 msgid ""
 "Because of the size of IPv6 subnets, iteration over all of them to find "
 "the correct one may take some time on slower computers, depending on the "
 "size difference between the subnets."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:529
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:575
 msgid "Subnet Merging"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:533
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:579
 msgid ""
 "The ``cidr_merge()`` filter can be used to merge subnets or individual "
 "addresses into their minimal representation, collapsing overlapping "
 "subnets and merging adjacent ones wherever possible::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:543
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:589
 msgid ""
 "Changing the action from 'merge' to 'span' will instead return the "
 "smallest subnet which contains all of the inputs::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:553
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:599
 msgid "MAC address filter"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:555
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:601
 msgid ""
 "You can use the ``hwaddr()`` filter to check if a given string is a MAC "
 "address or convert it between various formats. Examples::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:575
-msgid ":doc:`playbooks`"
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:619
+msgid ""
+"The supported formats result in the following conversions for the "
+"``1a:2b:3c:4d:5e:6f`` MAC address::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:576
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:631
+msgid ":ref:`about_playbooks`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:632
 msgid "An introduction to playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:577
-msgid ":doc:`playbooks_filters`"
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:633
+msgid ":ref:`playbooks_filters`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:578
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:634
 msgid "Introduction to Jinja2 filters and their uses"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:579
-msgid ":doc:`playbooks_conditionals`"
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:635
+msgid ":ref:`playbooks_conditionals`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:580
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:636
 msgid "Conditional statements in playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:581
-msgid ":doc:`playbooks_variables`"
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:637
+msgid ":ref:`playbooks_variables`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:582
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:638
 msgid "All about variables"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:583
-msgid ":doc:`playbooks_loops`"
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:639
+msgid ":ref:`playbooks_loops`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:584
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:640
 msgid "Looping in playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:585
-msgid ":doc:`playbooks_reuse_roles`"
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:641
+msgid ":ref:`playbooks_reuse_roles`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:586
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:642
 msgid "Playbook organization by roles"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:587
-msgid ":doc:`playbooks_best_practices`"
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:643
+msgid ":ref:`playbooks_best_practices`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:588
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:644
 msgid "Best practices in playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:589
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:645
 msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:590
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:646
 msgid "Have a question?  Stop by the google group!"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:591
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:647
 msgid "`irc.freenode.net <http://irc.freenode.net>`_"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:592
+#: ../../rst/user_guide/playbooks_filters_ipaddr.rst:648
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ":doc:`playbooks`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks_filters`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks_conditionals`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks_variables`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks_loops`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks_reuse_roles`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks_best_practices`"
+#~ msgstr ""
 

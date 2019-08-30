@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,11 +61,11 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/ec2_tag_module.rst:211
+#: ../../rst/modules/ec2_tag_module.rst:228
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/ec2_tag_module.rst:214
+#: ../../rst/modules/ec2_tag_module.rst:231
 msgid ""
 "If parameters are not set within the module, the following environment "
 "variables can be used in decreasing order of precedence ``AWS_URL`` or "
@@ -75,68 +75,76 @@ msgid ""
 "``AWS_REGION`` or ``EC2_REGION``"
 msgstr ""
 
-#: ../../rst/modules/ec2_tag_module.rst:215
+#: ../../rst/modules/ec2_tag_module.rst:232
 msgid ""
 "Ansible uses the boto configuration file (typically ~/.boto) if no "
 "credentials are provided. See "
 "https://boto.readthedocs.io/en/latest/boto_config_tut.html"
 msgstr ""
 
-#: ../../rst/modules/ec2_tag_module.rst:216
+#: ../../rst/modules/ec2_tag_module.rst:233
 msgid ""
 "``AWS_REGION`` or ``EC2_REGION`` can be typically be used to specify the "
 "AWS region, when required, but this can also be configured in the boto "
 "config file"
 msgstr ""
 
-#: ../../rst/modules/ec2_tag_module.rst:221
+#: ../../rst/modules/ec2_tag_module.rst:238
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/ec2_tag_module.rst:281
+#: ../../rst/modules/ec2_tag_module.rst:298
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/ec2_tag_module.rst:282
+#: ../../rst/modules/ec2_tag_module.rst:299
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/ec2_tag_module.rst:330
+#: ../../rst/modules/ec2_tag_module.rst:347
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/ec2_tag_module.rst:335
+#: ../../rst/modules/ec2_tag_module.rst:352
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/ec2_tag_module.rst:338
+#: ../../rst/modules/ec2_tag_module.rst:355
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/ec2_tag_module.rst:345
+#: ../../rst/modules/ec2_tag_module.rst:362
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/ec2_tag_module.rst:347
+#: ../../rst/modules/ec2_tag_module.rst:364
 msgid "Lester Wade (@lwade)"
 msgstr ""
 
-#: ../../rst/modules/ec2_tag_module.rst:348
+#: ../../rst/modules/ec2_tag_module.rst:365
 msgid "Paul Arthur (@flowerysong)"
 msgstr ""
 
-#: ../../rst/modules/ec2_tag_module.rst:352
+#: ../../rst/modules/ec2_tag_module.rst:369
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/ec2_tag.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/ec2_tag.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/ec2_tag.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

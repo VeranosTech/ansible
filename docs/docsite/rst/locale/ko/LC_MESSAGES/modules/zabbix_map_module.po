@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,8 +51,8 @@ msgid ""
 "the image used to display map element in maintenance. "
 "``zbx_image_problem`` contains name of the image used to display map "
 "element with problems. ``zbx_url`` contains map element URL in "
-"``name:url`` format. More than one url could be specified by adding some "
-"prefix (e.g., ``zbx_url1``, ``zbx_url2``)."
+"``name:url`` format. More than one URL could be specified by adding a "
+"postfix (e.g., ``zbx_url1``, ``zbx_url2``)."
 msgstr ""
 
 #: ../../rst/modules/zabbix_map_module.rst:22
@@ -61,8 +61,8 @@ msgid ""
 "contains link line draw style. Possible values: ``line``, ``bold``, "
 "``dotted``, ``dashed``. ``zbx_trigger`` contains name of the trigger used"
 " as a link indicator in ``host_name:trigger_name`` format. More than one "
-"trigger could be specified by adding some prefix (e.g., ``zbx_trigger1``,"
-" ``zbx_trigger2``). ``zbx_trigger_color`` contains indicator color "
+"trigger could be specified by adding a postfix (e.g., ``zbx_trigger1``, "
+"``zbx_trigger2``). ``zbx_trigger_color`` contains indicator color "
 "specified either as CSS3 name or as a hexadecimal code starting with "
 "``#``. ``zbx_trigger_draw_style`` contains indicator draw style. Possible"
 " values are the same as for ``zbx_draw_style``."
@@ -81,7 +81,7 @@ msgid "python >= 2.6"
 msgstr ""
 
 #: ../../rst/modules/zabbix_map_module.rst:31
-msgid "zabbix-api"
+msgid "zabbix-api >= 0.5.3"
 msgstr ""
 
 #: ../../rst/modules/zabbix_map_module.rst:32
@@ -104,40 +104,112 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/zabbix_map_module.rst:311
+#: ../../rst/modules/zabbix_map_module.rst:309
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/zabbix_map_module.rst:312
+msgid ""
+"If you use *login_password=zabbix*, the word \"zabbix\" is replaced by "
+"\"********\" in all module output, because *login_password* uses "
+"``no_log``. See `this FAQ "
+"<https://docs.ansible.com/ansible/latest/network/user_guide/faq.html#why-"
+"is-my-output-sometimes-replaced-with>`_ for more information."
+msgstr ""
+
+#: ../../rst/modules/zabbix_map_module.rst:317
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/zabbix_map_module.rst:377
+#: ../../rst/modules/zabbix_map_module.rst:383
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/zabbix_map_module.rst:382
+#: ../../rst/modules/zabbix_map_module.rst:388
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/zabbix_map_module.rst:385
+#: ../../rst/modules/zabbix_map_module.rst:391
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/zabbix_map_module.rst:392
+#: ../../rst/modules/zabbix_map_module.rst:398
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/zabbix_map_module.rst:394
+#: ../../rst/modules/zabbix_map_module.rst:400
 msgid "Antony Alekseyev (@Akint)"
 msgstr ""
 
-#: ../../rst/modules/zabbix_map_module.rst:398
+#: ../../rst/modules/zabbix_map_module.rst:404
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/monitoring/zabbix/zabbix_map.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/monitoring/zabbix/zabbix_map.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "The following extra node attributes are"
+#~ " supported: ``zbx_host`` contains name of"
+#~ " the host in Zabbix. Use this "
+#~ "if desired type of map element is"
+#~ " ``host``. ``zbx_group`` contains name of"
+#~ " the host group in Zabbix. Use "
+#~ "this if desired type of map "
+#~ "element is ``host group``. ``zbx_map`` "
+#~ "contains name of the map in "
+#~ "Zabbix. Use this if desired type "
+#~ "of map element is ``map``. ``zbx_label``"
+#~ " contains label of map element. "
+#~ "``zbx_image`` contains name of the image"
+#~ " used to display the element in "
+#~ "default state. ``zbx_image_disabled`` contains "
+#~ "name of the image used to display"
+#~ " disabled map element. ``zbx_image_maintenance``"
+#~ " contains name of the image used "
+#~ "to display map element in maintenance."
+#~ " ``zbx_image_problem`` contains name of the"
+#~ " image used to display map element"
+#~ " with problems. ``zbx_url`` contains map"
+#~ " element URL in ``name:url`` format. "
+#~ "More than one url could be "
+#~ "specified by adding some prefix (e.g.,"
+#~ " ``zbx_url1``, ``zbx_url2``)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The following extra link attributes are"
+#~ " supported: ``zbx_draw_style`` contains link "
+#~ "line draw style. Possible values: "
+#~ "``line``, ``bold``, ``dotted``, ``dashed``. "
+#~ "``zbx_trigger`` contains name of the "
+#~ "trigger used as a link indicator "
+#~ "in ``host_name:trigger_name`` format. More "
+#~ "than one trigger could be specified "
+#~ "by adding some prefix (e.g., "
+#~ "``zbx_trigger1``, ``zbx_trigger2``). ``zbx_trigger_color``"
+#~ " contains indicator color specified either"
+#~ " as CSS3 name or as a "
+#~ "hexadecimal code starting with ``#``. "
+#~ "``zbx_trigger_draw_style`` contains indicator draw"
+#~ " style. Possible values are the same"
+#~ " as for ``zbx_draw_style``."
+#~ msgstr ""
+
+#~ msgid "zabbix-api"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/monitoring/zabbix/zabbix_map.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

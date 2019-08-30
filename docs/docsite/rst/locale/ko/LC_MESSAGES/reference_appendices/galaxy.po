@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -99,78 +99,82 @@ msgstr ""
 
 #: ../../rst/reference_appendices/galaxy.rst:46
 msgid ""
-"Be aware that by default Ansible downloads roles to the path specified by"
-" the environment variable :envvar:`ANSIBLE_ROLES_PATH`. This can be set "
-"to a series of directories (i.e. */etc/ansible/roles:~/.ansible/roles*), "
-"in which case the first writable path will be used. When Ansible is first"
-" installed it defaults to */etc/ansible/roles*, which requires *root* "
-"privileges."
+"By default Ansible downloads roles to the first writable directory in the"
+" default list of paths "
+"``~/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles``. This "
+"will install roles in the home directory of the user running ``ansible-"
+"galaxy``."
+msgstr ""
+
+#: ../../rst/reference_appendices/galaxy.rst:48
+msgid ""
+"You can override this by setting the environment variable "
+":envvar:`ANSIBLE_ROLES_PATH` in your session, defining ``roles_path`` in "
+"an ``ansible.cfg`` file, or by using the ``--roles-path`` option."
 msgstr ""
 
 #: ../../rst/reference_appendices/galaxy.rst:50
 msgid ""
-"You can override this by setting the environment variable in your "
-"session, defining *roles_path* in an *ansible.cfg* file, or by using the "
-"*--roles-path* option. The following provides an example of using "
-"*--roles-path* to install the role into the current working directory:"
+"The following provides an example of using ``--roles-path`` to install "
+"the role into the current working directory:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:59
+#: ../../rst/reference_appendices/galaxy.rst:58
 msgid ":ref:`intro_configuration`"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:60
+#: ../../rst/reference_appendices/galaxy.rst:59
 msgid "All about configuration files"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:63
+#: ../../rst/reference_appendices/galaxy.rst:62
 msgid "version"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:65
+#: ../../rst/reference_appendices/galaxy.rst:64
 msgid ""
 "You can install a specific version of a role from Galaxy by appending a "
 "comma and the value of a GitHub release tag. For example:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:71
+#: ../../rst/reference_appendices/galaxy.rst:70
 msgid ""
 "It's also possible to point directly to the git repository and specify a "
 "branch name or commit hash as the version. For example, the following "
 "will install a specific commit:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:80
+#: ../../rst/reference_appendices/galaxy.rst:79
 msgid "Installing multiple roles from a file"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:82
+#: ../../rst/reference_appendices/galaxy.rst:81
 msgid ""
 "Beginning with Ansible 1.8 it is possible to install multiple roles by "
 "including the roles in a *requirements.yml* file. The format of the file "
 "is YAML, and the file extension must be either *.yml* or *.yaml*."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:85
+#: ../../rst/reference_appendices/galaxy.rst:84
 msgid "Use the following command to install roles included in *requirements.yml*:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:91
+#: ../../rst/reference_appendices/galaxy.rst:90
 msgid ""
 "Again, the extension is important. If the *.yml* extension is left off, "
 "the ``ansible-galaxy`` CLI assumes the file is in an older, now "
 "deprecated, \"basic\" format."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:94
+#: ../../rst/reference_appendices/galaxy.rst:93
 msgid "Each role in the file will have one or more of the following attributes:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:97
+#: ../../rst/reference_appendices/galaxy.rst:96
 msgid "src"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:97
+#: ../../rst/reference_appendices/galaxy.rst:96
 msgid ""
 "The source of the role. Use the format *username.role_name*, if "
 "downloading from Galaxy; otherwise, provide a URL pointing to a "
@@ -178,111 +182,112 @@ msgid ""
 "required attribute."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:99
+#: ../../rst/reference_appendices/galaxy.rst:98
 msgid "scm"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:100
+#: ../../rst/reference_appendices/galaxy.rst:99
 msgid ""
-"Specify the SCM. As of this writing only *git* or *hg* are supported. See"
-" the examples below. Defaults to *git*."
+"Specify the SCM. As of this writing only *git* or *hg* are allowed. See "
+"the examples below. Defaults to *git*."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:101
+#: ../../rst/reference_appendices/galaxy.rst:100
 msgid "version:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:102
+#: ../../rst/reference_appendices/galaxy.rst:101
 msgid ""
 "The version of the role to download. Provide a release tag value, commit "
-"hash, or branch name. Defaults to *master*."
-msgstr ""
-
-#: ../../rst/reference_appendices/galaxy.rst:105
-msgid "name:"
+"hash, or branch name. Defaults to the branch set as a default in the "
+"repository, otherwise defaults to the *master*."
 msgstr ""
 
 #: ../../rst/reference_appendices/galaxy.rst:104
+msgid "name:"
+msgstr ""
+
+#: ../../rst/reference_appendices/galaxy.rst:103
 msgid ""
 "Download the role to a specific name. Defaults to the Galaxy name when "
 "downloading from Galaxy, otherwise it defaults to the name of the "
 "repository."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:107
+#: ../../rst/reference_appendices/galaxy.rst:106
 msgid ""
 "Use the following example as a guide for specifying roles in "
 "*requirements.yml*:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:140
+#: ../../rst/reference_appendices/galaxy.rst:147
 msgid "Installing multiple roles from multiple files"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:142
+#: ../../rst/reference_appendices/galaxy.rst:149
 msgid ""
 "At a basic level, including requirements files allows you to break up "
 "bits of roles into smaller files. Role includes pull in roles from other "
 "files."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:144
+#: ../../rst/reference_appendices/galaxy.rst:151
 msgid ""
 "Use the following command to install roles includes in *requirements.yml*"
 "  + *webserver.yml*"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:150
+#: ../../rst/reference_appendices/galaxy.rst:157
 msgid "Content of the *requirements.yml* file:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:160
+#: ../../rst/reference_appendices/galaxy.rst:167
 msgid "Content of the *webserver.yml* file:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:174
+#: ../../rst/reference_appendices/galaxy.rst:181
 msgid "Dependencies"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:176
+#: ../../rst/reference_appendices/galaxy.rst:183
 msgid ""
 "Roles can also be dependent on other roles, and when you install a role "
 "that has dependencies, those dependencies will automatically be "
 "installed."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:178
+#: ../../rst/reference_appendices/galaxy.rst:185
 msgid ""
 "You specify role dependencies in the ``meta/main.yml`` file by providing "
 "a list of roles. If the source of a role is Galaxy, you can simply "
-"specify the role in the format ``username.role_name``. The more complex "
-"format used in ``requirements.yml`` is also supported, allowing you to "
-"provide ``src``, ``scm``, ``version``, and ``name``."
+"specify the role in the format ``username.role_name``. You can also use "
+"the more complex format in ``requirements.yml``, allowing you to provide "
+"``src``, ``scm``, ``version``, and ``name``."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:181
+#: ../../rst/reference_appendices/galaxy.rst:188
 msgid ""
 "Tags are inherited *down* the dependency chain. In order for tags to be "
 "applied to a role and all its dependencies, the tag should be applied to "
 "the role, not to all the tasks within a role."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:183
+#: ../../rst/reference_appendices/galaxy.rst:190
 msgid ""
 "Roles listed as dependencies are subject to conditionals and tag "
 "filtering, and may not execute fully depending on what tags and "
 "conditionals are applied."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:186
+#: ../../rst/reference_appendices/galaxy.rst:193
 msgid "Dependencies found in Galaxy can be specified as follows:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:195
+#: ../../rst/reference_appendices/galaxy.rst:202
 msgid "The complex form can also be used as follows:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:205
+#: ../../rst/reference_appendices/galaxy.rst:212
 msgid ""
 "When dependencies are encountered by ``ansible-galaxy``, it will "
 "automatically install each dependency to the ``roles_path``. To "
@@ -290,7 +295,7 @@ msgid ""
 ":ref:`playbooks_reuse_roles`."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:209
+#: ../../rst/reference_appendices/galaxy.rst:216
 msgid ""
 "At the time of this writing, the Galaxy website expects all role "
 "dependencies to exist in Galaxy, and therefore dependencies to be "
@@ -299,28 +304,34 @@ msgid ""
 "fail."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:213
+#: ../../rst/reference_appendices/galaxy.rst:220
 msgid "Create roles"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:215
+#: ../../rst/reference_appendices/galaxy.rst:222
 msgid ""
 "Use the ``init`` command to initialize the base structure of a new role, "
 "saving time on creating the various directories and main.yml files a role"
 " requires"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:221
+#: ../../rst/reference_appendices/galaxy.rst:228
 msgid ""
 "The above will create the following directory structure in the current "
 "working directory:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:242
+#: ../../rst/reference_appendices/galaxy.rst:249
+msgid ""
+"If you want to create a repository for the role the repository root "
+"should be `role_name`."
+msgstr ""
+
+#: ../../rst/reference_appendices/galaxy.rst:252
 msgid "Force"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:244
+#: ../../rst/reference_appendices/galaxy.rst:254
 msgid ""
 "If a directory matching the name of the role already exists in the "
 "current working directory, the init command will result in an error. To "
@@ -328,11 +339,11 @@ msgid ""
 "subdirectories and files, replacing anything that matches."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:248
+#: ../../rst/reference_appendices/galaxy.rst:258
 msgid "Container Enabled"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:250
+#: ../../rst/reference_appendices/galaxy.rst:260
 msgid ""
 "If you are creating a Container Enabled role, pass ``--type container`` "
 "to ``ansible-galaxy init``. This will create the same directory structure"
@@ -343,89 +354,89 @@ msgid ""
 " includes a *container.yml* file."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:255
+#: ../../rst/reference_appendices/galaxy.rst:265
 msgid "Using a Custom Role Skeleton"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:257
+#: ../../rst/reference_appendices/galaxy.rst:267
 msgid "A custom role skeleton directory can be supplied as follows:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:263
+#: ../../rst/reference_appendices/galaxy.rst:273
 msgid "When a skeleton is provided, init will:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:265
+#: ../../rst/reference_appendices/galaxy.rst:275
 msgid "copy all files and directories from the skeleton to the new role"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:266
+#: ../../rst/reference_appendices/galaxy.rst:276
 msgid ""
 "any .j2 files found outside of a templates folder will be rendered as "
 "templates. The only useful variable at the moment is role_name"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:267
+#: ../../rst/reference_appendices/galaxy.rst:277
 msgid "The .git folder and any .git_keep files will not be copied"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:269
+#: ../../rst/reference_appendices/galaxy.rst:279
 msgid ""
 "Alternatively, the role_skeleton and ignoring of files can be configured "
 "via ansible.cfg"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:279
+#: ../../rst/reference_appendices/galaxy.rst:289
 msgid "Search for Roles"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:281
+#: ../../rst/reference_appendices/galaxy.rst:291
 msgid ""
 "Search the Galaxy database by tags, platforms, author and multiple "
 "keywords. For example:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:287
+#: ../../rst/reference_appendices/galaxy.rst:297
 msgid ""
 "The search command will return a list of the first 1000 results matching "
 "your search:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:300
+#: ../../rst/reference_appendices/galaxy.rst:310
 msgid "Get more information about a role"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:302
+#: ../../rst/reference_appendices/galaxy.rst:312
 msgid "Use the ``info`` command to view more detail about a specific role:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:308
+#: ../../rst/reference_appendices/galaxy.rst:318
 msgid "This returns everything found in Galaxy for the role:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:343
+#: ../../rst/reference_appendices/galaxy.rst:353
 msgid "List installed roles"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:345
+#: ../../rst/reference_appendices/galaxy.rst:355
 msgid ""
 "Use ``list`` to show the name and version of each role installed in the "
 "*roles_path*."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:357
+#: ../../rst/reference_appendices/galaxy.rst:367
 msgid "Remove an installed role"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:359
+#: ../../rst/reference_appendices/galaxy.rst:369
 msgid "Use ``remove`` to delete a role from *roles_path*:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:366
+#: ../../rst/reference_appendices/galaxy.rst:376
 msgid "Authenticate with Galaxy"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:368
+#: ../../rst/reference_appendices/galaxy.rst:378
 msgid ""
 "Using the ``import``, ``delete`` and ``setup`` commands to manage your "
 "roles on the Galaxy website requires authentication, and the ``login`` "
@@ -433,7 +444,7 @@ msgid ""
 "command, you must create an account on the Galaxy website."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:371
+#: ../../rst/reference_appendices/galaxy.rst:381
 msgid ""
 "The ``login`` command requires using your GitHub credentials. You can use"
 " your username and password, or you can create a `personal access token "
@@ -442,13 +453,13 @@ msgid ""
 "the token, as it is used just to verify identify."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:373
+#: ../../rst/reference_appendices/galaxy.rst:383
 msgid ""
 "The following shows authenticating with the Galaxy website using a GitHub"
 " username and password:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:389
+#: ../../rst/reference_appendices/galaxy.rst:399
 msgid ""
 "When you choose to use your username and password, your password is not "
 "sent to Galaxy. It is used to authenticates with GitHub and create a "
@@ -457,71 +468,71 @@ msgid ""
 "authentication completes the GitHub token is destroyed."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:393
+#: ../../rst/reference_appendices/galaxy.rst:403
 msgid ""
 "If you do not wish to use your GitHub password, or if you have two-factor"
 " authentication enabled with GitHub, use the *--github-token* option to "
 "pass a personal access token that you create."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:398
+#: ../../rst/reference_appendices/galaxy.rst:408
 msgid "Import a role"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:400
+#: ../../rst/reference_appendices/galaxy.rst:410
 msgid ""
 "The ``import`` command requires that you first authenticate using the "
 "``login`` command. Once authenticated you can import any GitHub "
 "repository that you own or have been granted access."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:403
+#: ../../rst/reference_appendices/galaxy.rst:413
 msgid "Use the following to import to role:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:409
+#: ../../rst/reference_appendices/galaxy.rst:419
 msgid ""
 "By default the command will wait for Galaxy to complete the import "
 "process, displaying the results as the import progresses:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:427
+#: ../../rst/reference_appendices/galaxy.rst:437
 msgid "Branch"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:429
+#: ../../rst/reference_appendices/galaxy.rst:439
 msgid ""
 "Use the *--branch* option to import a specific branch. If not specified, "
 "the default branch for the repo will be used."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:432
+#: ../../rst/reference_appendices/galaxy.rst:442
 msgid "Role name"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:434
+#: ../../rst/reference_appendices/galaxy.rst:444
 msgid ""
 "By default the name given to the role will be derived from the GitHub "
 "repository name. However, you can use the *--role-name* option to "
 "override this and set the name."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:437
+#: ../../rst/reference_appendices/galaxy.rst:447
 msgid "No wait"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:439
+#: ../../rst/reference_appendices/galaxy.rst:449
 msgid ""
 "If the *--no-wait* option is present, the command will not wait for "
 "results. Results of the most recent import for any of your roles is "
 "available on the Galaxy web site by visiting *My Imports*."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:443
+#: ../../rst/reference_appendices/galaxy.rst:453
 msgid "Delete a role"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:445
+#: ../../rst/reference_appendices/galaxy.rst:455
 msgid ""
 "The ``delete`` command requires that you first authenticate using the "
 "``login`` command. Once authenticated you can remove a role from the "
@@ -529,21 +540,21 @@ msgid ""
 "access to the repository in GitHub."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:448
+#: ../../rst/reference_appendices/galaxy.rst:458
 msgid "Use the following to delete a role:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:454
+#: ../../rst/reference_appendices/galaxy.rst:464
 msgid ""
 "This only removes the role from Galaxy. It does not remove or alter the "
 "actual GitHub repository."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:458
+#: ../../rst/reference_appendices/galaxy.rst:468
 msgid "Travis integrations"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:460
+#: ../../rst/reference_appendices/galaxy.rst:470
 msgid ""
 "You can create an integration or connection between a role in Galaxy and "
 "`Travis <https://travis-ci.org>`_. Once the connection is established, a "
@@ -551,7 +562,7 @@ msgid ""
 "the search index with the latest information about the role."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:463
+#: ../../rst/reference_appendices/galaxy.rst:473
 msgid ""
 "You create the integration using the ``setup`` command, but before an "
 "integration can be created, you must first authenticate using the "
@@ -560,7 +571,7 @@ msgid ""
 "integration:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:470
+#: ../../rst/reference_appendices/galaxy.rst:480
 msgid ""
 "The setup command requires your Travis token, however the token is not "
 "stored in Galaxy. It is used along with the GitHub username and repo to "
@@ -569,7 +580,7 @@ msgid ""
 "used to verify notifications received from Travis."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:473
+#: ../../rst/reference_appendices/galaxy.rst:483
 msgid ""
 "The setup command enables Galaxy to respond to notifications. To "
 "configure Travis to run a build on your repository and send a "
@@ -577,55 +588,106 @@ msgid ""
 ".travis-ci.com/user/getting-started/>`_."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:476
+#: ../../rst/reference_appendices/galaxy.rst:486
 msgid ""
 "To instruct Travis to notify Galaxy when a build completes, add the "
 "following to your .travis.yml file:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:485
+#: ../../rst/reference_appendices/galaxy.rst:495
 msgid "List Travis integrations"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:487
+#: ../../rst/reference_appendices/galaxy.rst:497
 msgid "Use the *--list* option to display your Travis integrations:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:501
+#: ../../rst/reference_appendices/galaxy.rst:511
 msgid "Remove Travis integrations"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:503
+#: ../../rst/reference_appendices/galaxy.rst:513
 msgid "Use the *--remove* option to disable and remove a Travis integration:"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:509
+#: ../../rst/reference_appendices/galaxy.rst:519
 msgid ""
 "Provide the ID of the integration to be disabled. You can find the ID by "
 "using the *--list* option."
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:514
+#: ../../rst/reference_appendices/galaxy.rst:524
 msgid ":ref:`playbooks_reuse_roles`"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:515
+#: ../../rst/reference_appendices/galaxy.rst:525
 msgid "All about ansible roles"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:516
+#: ../../rst/reference_appendices/galaxy.rst:526
 msgid "`Mailing List <https://groups.google.com/group/ansible-project>`_"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:517
+#: ../../rst/reference_appendices/galaxy.rst:527
 msgid "Questions? Help? Ideas?  Stop by the list on Google Groups"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:518
+#: ../../rst/reference_appendices/galaxy.rst:528
 msgid "`irc.freenode.net <http://irc.freenode.net>`_"
 msgstr ""
 
-#: ../../rst/reference_appendices/galaxy.rst:519
+#: ../../rst/reference_appendices/galaxy.rst:529
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ""
+#~ "Be aware that by default Ansible "
+#~ "downloads roles to the path specified"
+#~ " by the environment variable "
+#~ ":envvar:`ANSIBLE_ROLES_PATH`. This can be set"
+#~ " to a series of directories (i.e. "
+#~ "*/etc/ansible/roles:~/.ansible/roles*), in which "
+#~ "case the first writable path will "
+#~ "be used. When Ansible is first "
+#~ "installed it defaults to */etc/ansible/roles*,"
+#~ " which requires *root* privileges."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can override this by setting "
+#~ "the environment variable in your "
+#~ "session, defining *roles_path* in an "
+#~ "*ansible.cfg* file, or by using the "
+#~ "*--roles-path* option. The following "
+#~ "provides an example of using "
+#~ "*--roles-path* to install the role "
+#~ "into the current working directory:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Specify the SCM. As of this "
+#~ "writing only *git* or *hg* are "
+#~ "supported. See the examples below. "
+#~ "Defaults to *git*."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The version of the role to "
+#~ "download. Provide a release tag value,"
+#~ " commit hash, or branch name. "
+#~ "Defaults to *master*."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You specify role dependencies in the "
+#~ "``meta/main.yml`` file by providing a "
+#~ "list of roles. If the source of"
+#~ " a role is Galaxy, you can "
+#~ "simply specify the role in the "
+#~ "format ``username.role_name``. The more "
+#~ "complex format used in ``requirements.yml``"
+#~ " is also supported, allowing you to"
+#~ " provide ``src``, ``scm``, ``version``, and"
+#~ " ``name``."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,61 +34,69 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/scaleway_compute_module.rst:335
+#: ../../rst/modules/scaleway_compute_module.rst:314
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/scaleway_compute_module.rst:338
+#: ../../rst/modules/scaleway_compute_module.rst:317
 msgid "Also see the API documentation on https://developer.scaleway.com/"
 msgstr ""
 
-#: ../../rst/modules/scaleway_compute_module.rst:339
+#: ../../rst/modules/scaleway_compute_module.rst:318
 msgid ""
 "If ``api_token`` is not set within the module, the following environment "
 "variables can be used in decreasing order of precedence ``SCW_TOKEN``, "
 "``SCW_API_KEY``, ``SCW_OAUTH_TOKEN`` or ``SCW_API_TOKEN``."
 msgstr ""
 
-#: ../../rst/modules/scaleway_compute_module.rst:340
+#: ../../rst/modules/scaleway_compute_module.rst:319
 msgid ""
 "If one wants to use a different ``api_url`` one can also set the "
 "``SCW_API_URL`` environment variable."
 msgstr ""
 
-#: ../../rst/modules/scaleway_compute_module.rst:345
+#: ../../rst/modules/scaleway_compute_module.rst:324
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/scaleway_compute_module.rst:389
+#: ../../rst/modules/scaleway_compute_module.rst:368
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/scaleway_compute_module.rst:394
+#: ../../rst/modules/scaleway_compute_module.rst:373
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/scaleway_compute_module.rst:397
+#: ../../rst/modules/scaleway_compute_module.rst:376
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/scaleway_compute_module.rst:404
+#: ../../rst/modules/scaleway_compute_module.rst:383
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/scaleway_compute_module.rst:406
+#: ../../rst/modules/scaleway_compute_module.rst:385
 msgid "Remy Leone (@sieben)"
 msgstr ""
 
-#: ../../rst/modules/scaleway_compute_module.rst:410
+#: ../../rst/modules/scaleway_compute_module.rst:389
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/scaleway/scaleway_compute.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/scaleway/scaleway_compute.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/scaleway/scaleway_compute.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

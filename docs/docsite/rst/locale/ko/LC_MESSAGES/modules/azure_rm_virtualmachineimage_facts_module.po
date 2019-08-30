@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,112 +22,115 @@ msgstr ""
 msgid "azure_rm_virtualmachineimage_facts -- Get virtual machine image facts"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_virtualmachineimage_facts_module.rst:19
-msgid "Synopsis"
-msgstr ""
-
-#: ../../rst/modules/azure_rm_virtualmachineimage_facts_module.rst:20
-msgid "Get facts for virtual machine images."
-msgstr ""
-
-#: ../../rst/modules/azure_rm_virtualmachineimage_facts_module.rst:25
-msgid "Requirements"
-msgstr ""
-
-#: ../../rst/modules/azure_rm_virtualmachineimage_facts_module.rst:26
-msgid "The below requirements are needed on the host that executes this module."
-msgstr ""
-
-#: ../../rst/modules/azure_rm_virtualmachineimage_facts_module.rst:28
-msgid "python >= 2.7"
-msgstr ""
-
-#: ../../rst/modules/azure_rm_virtualmachineimage_facts_module.rst:29
-msgid "azure >= 2.0.0"
-msgstr ""
-
-#: ../../rst/modules/azure_rm_virtualmachineimage_facts_module.rst:33
-msgid "Parameters"
-msgstr ""
-
-#: ../../rst/modules/azure_rm_virtualmachineimage_facts_module.rst:289
-msgid "Notes"
-msgstr ""
-
-#: ../../rst/modules/azure_rm_virtualmachineimage_facts_module.rst:292
+#: ../../rst/modules/azure_rm_virtualmachineimage_facts_module.rst:11
 msgid ""
-"For authentication with Azure you can pass parameters, set environment "
-"variables or use a profile stored in ~/.azure/credentials. Authentication"
-" is possible using a service principal or Active Directory user. To "
-"authenticate via service principal, pass subscription_id, client_id, "
-"secret and tenant or set environment variables AZURE_SUBSCRIPTION_ID, "
-"AZURE_CLIENT_ID, AZURE_SECRET and AZURE_TENANT."
+"This is an alias for :ref:`azure_rm_virtualmachineimage_info "
+"<azure_rm_virtualmachineimage_info_module>`. This name has been "
+"**deprecated**. Please update your tasks to use the new name "
+"``azure_rm_virtualmachineimage_info`` instead."
 msgstr ""
 
-#: ../../rst/modules/azure_rm_virtualmachineimage_facts_module.rst:293
-msgid ""
-"To authenticate via Active Directory user, pass ad_user and password, or "
-"set AZURE_AD_USER and AZURE_PASSWORD in the environment."
-msgstr ""
+#~ msgid "Synopsis"
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_virtualmachineimage_facts_module.rst:294
-msgid ""
-"Alternatively, credentials can be stored in ~/.azure/credentials. This is"
-" an ini file containing a [default] section and the following keys: "
-"subscription_id, client_id, secret and tenant or subscription_id, ad_user"
-" and password. It is also possible to add additional profiles. Specify "
-"the profile by passing profile or setting AZURE_PROFILE in the "
-"environment."
-msgstr ""
+#~ msgid "Get facts for virtual machine images."
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_virtualmachineimage_facts_module.rst:299
-msgid "Examples"
-msgstr ""
+#~ msgid "Requirements"
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_virtualmachineimage_facts_module.rst:333
-msgid "Return Values"
-msgstr ""
+#~ msgid ""
+#~ "The below requirements are needed on "
+#~ "the host that executes this module."
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_virtualmachineimage_facts_module.rst:334
-msgid ""
-"Common return values are documented :ref:`here <common_return_values>`, "
-"the following are the fields unique to this module:"
-msgstr ""
+#~ msgid "python >= 2.7"
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_virtualmachineimage_facts_module.rst:360
-msgid "Status"
-msgstr ""
+#~ msgid "azure >= 2.0.0"
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_virtualmachineimage_facts_module.rst:365
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
-msgstr ""
+#~ msgid "Parameters"
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_virtualmachineimage_facts_module.rst:368
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
-msgstr ""
+#~ msgid "Notes"
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_virtualmachineimage_facts_module.rst:375
-msgid "Authors"
-msgstr ""
+#~ msgid ""
+#~ "For authentication with Azure you can"
+#~ " pass parameters, set environment variables"
+#~ " or use a profile stored in "
+#~ "~/.azure/credentials. Authentication is possible "
+#~ "using a service principal or Active "
+#~ "Directory user. To authenticate via "
+#~ "service principal, pass subscription_id, "
+#~ "client_id, secret and tenant or set "
+#~ "environment variables AZURE_SUBSCRIPTION_ID, "
+#~ "AZURE_CLIENT_ID, AZURE_SECRET and AZURE_TENANT."
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_virtualmachineimage_facts_module.rst:377
-msgid "Chris Houseknecht (@chouseknecht)"
-msgstr ""
+#~ msgid ""
+#~ "To authenticate via Active Directory "
+#~ "user, pass ad_user and password, or "
+#~ "set AZURE_AD_USER and AZURE_PASSWORD in "
+#~ "the environment."
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_virtualmachineimage_facts_module.rst:378
-msgid "Matt Davis (@nitzmahone)"
-msgstr ""
+#~ msgid ""
+#~ "Alternatively, credentials can be stored "
+#~ "in ~/.azure/credentials. This is an ini"
+#~ " file containing a [default] section "
+#~ "and the following keys: subscription_id, "
+#~ "client_id, secret and tenant or "
+#~ "subscription_id, ad_user and password. It "
+#~ "is also possible to add additional "
+#~ "profiles. Specify the profile by passing"
+#~ " profile or setting AZURE_PROFILE in "
+#~ "the environment."
+#~ msgstr ""
 
-#: ../../rst/modules/azure_rm_virtualmachineimage_facts_module.rst:382
-#, python-format
-msgid ""
-"If you notice any issues in this documentation you can `edit this "
-"document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/azure/azure_rm_virtualmachineimage_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
-" to improve it."
-msgstr ""
+#~ msgid "Examples"
+#~ msgstr ""
+
+#~ msgid "Return Values"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Common return values are documented "
+#~ ":ref:`here <common_return_values>`, the following"
+#~ " are the fields unique to this "
+#~ "module:"
+#~ msgstr ""
+
+#~ msgid "Status"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid "Authors"
+#~ msgstr ""
+
+#~ msgid "Chris Houseknecht (@chouseknecht)"
+#~ msgstr ""
+
+#~ msgid "Matt Davis (@nitzmahone)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/azure/azure_rm_virtualmachineimage_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

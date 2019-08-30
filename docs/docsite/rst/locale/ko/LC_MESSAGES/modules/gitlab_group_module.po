@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,74 +22,101 @@ msgstr ""
 msgid "gitlab_group -- Creates/updates/deletes Gitlab Groups"
 msgstr ""
 
-#: ../../rst/modules/gitlab_group_module.rst:19
+#: ../../rst/modules/gitlab_group_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/gitlab_group_module.rst:20
+#: ../../rst/modules/gitlab_group_module.rst:19
 msgid "When the group does not exist in Gitlab, it will be created."
 msgstr ""
 
-#: ../../rst/modules/gitlab_group_module.rst:21
+#: ../../rst/modules/gitlab_group_module.rst:20
 msgid "When the group does exist and state=absent, the group will be deleted."
 msgstr ""
 
-#: ../../rst/modules/gitlab_group_module.rst:22
-msgid ""
-"As of Ansible version 2.7, this module make use of a different python "
-"module and thus some arguments are deprecated."
-msgstr ""
-
-#: ../../rst/modules/gitlab_group_module.rst:27
+#: ../../rst/modules/gitlab_group_module.rst:25
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/gitlab_group_module.rst:28
+#: ../../rst/modules/gitlab_group_module.rst:26
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/gitlab_group_module.rst:30
+#: ../../rst/modules/gitlab_group_module.rst:28
+msgid "python >= 2.7"
+msgstr ""
+
+#: ../../rst/modules/gitlab_group_module.rst:29
 msgid "python-gitlab python module"
 msgstr ""
 
-#: ../../rst/modules/gitlab_group_module.rst:34
+#: ../../rst/modules/gitlab_group_module.rst:33
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/gitlab_group_module.rst:179
+#: ../../rst/modules/gitlab_group_module.rst:249
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/gitlab_group_module.rst:209
+#: ../../rst/modules/gitlab_group_module.rst:288
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/gitlab_group_module.rst:289
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/gitlab_group_module.rst:352
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/gitlab_group_module.rst:214
+#: ../../rst/modules/gitlab_group_module.rst:357
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/gitlab_group_module.rst:217
+#: ../../rst/modules/gitlab_group_module.rst:360
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/gitlab_group_module.rst:224
+#: ../../rst/modules/gitlab_group_module.rst:367
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/gitlab_group_module.rst:226
+#: ../../rst/modules/gitlab_group_module.rst:369
 msgid "Werner Dijkerman (@dj-wasabi)"
 msgstr ""
 
-#: ../../rst/modules/gitlab_group_module.rst:230
+#: ../../rst/modules/gitlab_group_module.rst:370
+msgid "Guillaume Martinez (@Lunik)"
+msgstr ""
+
+#: ../../rst/modules/gitlab_group_module.rst:374
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/source_control/gitlab_group.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/source_control/gitlab_group.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "As of Ansible version 2.7, this "
+#~ "module make use of a different "
+#~ "python module and thus some arguments"
+#~ " are deprecated."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/source_control/gitlab_group.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

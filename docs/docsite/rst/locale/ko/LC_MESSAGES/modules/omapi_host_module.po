@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/omapi_host_module.rst:20
-msgid "Create, update and remove OMAPI hosts into compatible DHCPd servers."
+msgid "Manage OMAPI hosts into compatible DHCPd servers"
 msgstr ""
 
 #: ../../rst/modules/omapi_host_module.rst:25
@@ -46,50 +46,61 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/omapi_host_module.rst:190
+#: ../../rst/modules/omapi_host_module.rst:191
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/omapi_host_module.rst:221
+#: ../../rst/modules/omapi_host_module.rst:222
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/omapi_host_module.rst:222
+#: ../../rst/modules/omapi_host_module.rst:223
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/omapi_host_module.rst:316
+#: ../../rst/modules/omapi_host_module.rst:306
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/omapi_host_module.rst:321
+#: ../../rst/modules/omapi_host_module.rst:311
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/omapi_host_module.rst:324
+#: ../../rst/modules/omapi_host_module.rst:314
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/omapi_host_module.rst:331
+#: ../../rst/modules/omapi_host_module.rst:321
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/omapi_host_module.rst:333
+#: ../../rst/modules/omapi_host_module.rst:323
 msgid "Loic Blot (@nerzhul)"
 msgstr ""
 
-#: ../../rst/modules/omapi_host_module.rst:337
+#: ../../rst/modules/omapi_host_module.rst:327
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/omapi_host.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/omapi_host.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "Create, update and remove OMAPI hosts into compatible DHCPd servers."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/omapi_host.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

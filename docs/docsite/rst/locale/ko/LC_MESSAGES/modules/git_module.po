@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,11 +46,11 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/git_module.rst:356
+#: ../../rst/modules/git_module.rst:371
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/git_module.rst:359
+#: ../../rst/modules/git_module.rst:374
 msgid ""
 "If the task seems to be hanging, first verify remote host is in "
 "``known_hosts``. SSH will prompt user to authorize the first contact with"
@@ -61,65 +61,73 @@ msgid ""
 "/etc/ssh/ssh_known_hosts."
 msgstr ""
 
-#: ../../rst/modules/git_module.rst:364
+#: ../../rst/modules/git_module.rst:379
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/git_module.rst:416
+#: ../../rst/modules/git_module.rst:431
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/git_module.rst:417
+#: ../../rst/modules/git_module.rst:432
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/git_module.rst:510
+#: ../../rst/modules/git_module.rst:525
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/git_module.rst:515
+#: ../../rst/modules/git_module.rst:530
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/git_module.rst:518
+#: ../../rst/modules/git_module.rst:533
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/git_module.rst:521
+#: ../../rst/modules/git_module.rst:536
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/git_module.rst:523
+#: ../../rst/modules/git_module.rst:538
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/git_module.rst:529
+#: ../../rst/modules/git_module.rst:544
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/git_module.rst:531
+#: ../../rst/modules/git_module.rst:546
 msgid "Ansible Core Team"
 msgstr ""
 
-#: ../../rst/modules/git_module.rst:532
+#: ../../rst/modules/git_module.rst:547
 msgid "Michael DeHaan"
 msgstr ""
 
-#: ../../rst/modules/git_module.rst:536
+#: ../../rst/modules/git_module.rst:551
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/source_control/git.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/source_control/git.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/source_control/git.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

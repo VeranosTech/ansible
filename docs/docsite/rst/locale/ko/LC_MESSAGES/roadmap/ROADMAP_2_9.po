@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/roadmap/ROADMAP_2_9.rst:3
+msgid "Ansible 2.9"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_9.rst:9
+msgid "Release Schedule"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_9.rst:12
+msgid "Expected"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_9.rst:14
+msgid ""
+"PRs must be raised well in advance of the dates below to have a chance of"
+" being included in this Ansible release."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_9.rst:16
+msgid "There is no Alpha phase in 2.9."
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_9.rst:18
+msgid ""
+"2019-08-29 Beta 1 **Feature freeze** No new functionality (including "
+"modules/plugins) to any code"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_9.rst:21
+msgid "2019-09-19 Release Candidate 1"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_9.rst:22
+msgid "2019-09-26 Release Candidate 2 (if needed)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_9.rst:23
+msgid "2019-10-03 Release Candidate 3 (if needed)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_9.rst:24
+msgid "2019-10-16 Release"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_9.rst:29
+msgid "Release Manager"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_9.rst:31
+msgid "Toshio Kuratomi (IRC: abadger1999; GitHub: @abadger)"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_9.rst:34
+msgid "Planned work"
+msgstr ""
+
+#: ../../rst/roadmap/ROADMAP_2_9.rst:36
+msgid ""
+"See the `Ansible 2.9 Project Board "
+"<https://github.com/ansible/ansible/projects/34>`_"
+msgstr ""
+

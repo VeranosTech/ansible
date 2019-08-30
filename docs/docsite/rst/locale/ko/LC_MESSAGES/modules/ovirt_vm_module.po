@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,47 +22,47 @@ msgstr ""
 msgid "ovirt_vm -- Module to manage Virtual Machines in oVirt/RHV"
 msgstr ""
 
-#: ../../rst/modules/ovirt_vm_module.rst:19
+#: ../../rst/modules/ovirt_vm_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/ovirt_vm_module.rst:20
+#: ../../rst/modules/ovirt_vm_module.rst:19
 msgid ""
 "This module manages whole lifecycle of the Virtual Machine(VM) in "
 "oVirt/RHV."
 msgstr ""
 
-#: ../../rst/modules/ovirt_vm_module.rst:21
+#: ../../rst/modules/ovirt_vm_module.rst:20
 msgid ""
 "Since VM can hold many states in oVirt/RHV, this see notes to see how the"
 " states of the VM are handled."
 msgstr ""
 
-#: ../../rst/modules/ovirt_vm_module.rst:26
+#: ../../rst/modules/ovirt_vm_module.rst:25
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/ovirt_vm_module.rst:27
+#: ../../rst/modules/ovirt_vm_module.rst:26
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/ovirt_vm_module.rst:29
+#: ../../rst/modules/ovirt_vm_module.rst:28
 msgid "python >= 2.7"
 msgstr ""
 
-#: ../../rst/modules/ovirt_vm_module.rst:30
-msgid "ovirt-engine-sdk-python >= 4.2.4"
+#: ../../rst/modules/ovirt_vm_module.rst:29
+msgid "ovirt-engine-sdk-python >= 4.3.0"
 msgstr ""
 
-#: ../../rst/modules/ovirt_vm_module.rst:34
+#: ../../rst/modules/ovirt_vm_module.rst:33
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/ovirt_vm_module.rst:1514
+#: ../../rst/modules/ovirt_vm_module.rst:3005
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/ovirt_vm_module.rst:1517
+#: ../../rst/modules/ovirt_vm_module.rst:3008
 msgid ""
 "If VM is in *UNASSIGNED* or *UNKNOWN* state before any operation, the "
 "module will fail. If VM is in *IMAGE_LOCKED* state before any operation, "
@@ -87,57 +87,77 @@ msgid ""
 "forcibly stop the VM in any state and remove it."
 msgstr ""
 
-#: ../../rst/modules/ovirt_vm_module.rst:1518
+#: ../../rst/modules/ovirt_vm_module.rst:3009
 msgid ""
 "In order to use this module you have to install oVirt Python SDK. To "
 "ensure it's installed with correct version you can create the following "
-"task: *pip: name=ovirt-engine-sdk-python version=4.2.4*"
+"task: *pip: name=ovirt-engine-sdk-python version=4.3.0*"
 msgstr ""
 
-#: ../../rst/modules/ovirt_vm_module.rst:1523
+#: ../../rst/modules/ovirt_vm_module.rst:3014
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/ovirt_vm_module.rst:1862
+#: ../../rst/modules/ovirt_vm_module.rst:3376
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/ovirt_vm_module.rst:1863
+#: ../../rst/modules/ovirt_vm_module.rst:3377
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/ovirt_vm_module.rst:1902
+#: ../../rst/modules/ovirt_vm_module.rst:3416
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/ovirt_vm_module.rst:1907
+#: ../../rst/modules/ovirt_vm_module.rst:3421
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/ovirt_vm_module.rst:1910
+#: ../../rst/modules/ovirt_vm_module.rst:3424
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/ovirt_vm_module.rst:1917
+#: ../../rst/modules/ovirt_vm_module.rst:3431
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/ovirt_vm_module.rst:1919
+#: ../../rst/modules/ovirt_vm_module.rst:3433
 msgid "Ondra Machacek (@machacekondra)"
 msgstr ""
 
-#: ../../rst/modules/ovirt_vm_module.rst:1923
+#: ../../rst/modules/ovirt_vm_module.rst:3437
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/ovirt/ovirt_vm.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/ovirt/ovirt_vm.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "ovirt-engine-sdk-python >= 4.2.4"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In order to use this module you"
+#~ " have to install oVirt Python SDK."
+#~ " To ensure it's installed with "
+#~ "correct version you can create the "
+#~ "following task: *pip: name=ovirt-engine-"
+#~ "sdk-python version=4.2.4*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/ovirt/ovirt_vm.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

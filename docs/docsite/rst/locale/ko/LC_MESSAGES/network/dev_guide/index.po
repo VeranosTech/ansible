@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/network/dev_guide/index.rst:5
+msgid "Developer Guide for Network Automation"
+msgstr ""
+
+#: ../../rst/network/dev_guide/index.rst:7
+msgid "Welcome to the Developer Guide for Ansible Network Automation!"
+msgstr ""
+
+#: ../../rst/network/dev_guide/index.rst:9
+msgid "**Who should use this guide?**"
+msgstr ""
+
+#: ../../rst/network/dev_guide/index.rst:11
+msgid ""
+"If you want to extend Ansible for Network Automation by creating a module"
+" or plugin, this guide is for you. This guide is specific to networking. "
+"You should already be familiar with how to create, test, and document "
+"modules and plugins, as well as the prerequisites for getting your module"
+" or plugin accepted into the main Ansible repository.  See the  "
+":ref:`developer_guide` for details. Before you proceed, please read:"
+msgstr ""
+
+#: ../../rst/network/dev_guide/index.rst:13
+msgid "How  to :ref:`add a custom plugin or module locally <developing_locally>`."
+msgstr ""
+
+#: ../../rst/network/dev_guide/index.rst:14
+msgid ""
+"How to figure out if :ref:`developing a module is the right approach "
+"<module_dev_should_you>` for my use case."
+msgstr ""
+
+#: ../../rst/network/dev_guide/index.rst:15
+msgid ""
+"How to :ref:`set up my Python development environment "
+"<environment_setup>`."
+msgstr ""
+
+#: ../../rst/network/dev_guide/index.rst:16
+msgid "How to :ref:`get started writing a module <developing_modules_general>`."
+msgstr ""
+
+#: ../../rst/network/dev_guide/index.rst:19
+msgid "Find the network developer task that best describes what you want to do:"
+msgstr ""
+
+#: ../../rst/network/dev_guide/index.rst:21
+msgid ""
+"I want to :ref:`develop a network connection plugin "
+"<developing_plugins_network>`."
+msgstr ""
+
+#: ../../rst/network/dev_guide/index.rst:22
+msgid ""
+"I want to :ref:`document my set of modules for a network platform "
+"<documenting_modules_network>`."
+msgstr ""
+
+#: ../../rst/network/dev_guide/index.rst:24
+msgid ""
+"If you prefer to read the entire guide, here's a list of the pages in "
+"order."
+msgstr ""
+

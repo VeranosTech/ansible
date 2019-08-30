@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,28 +27,30 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/debconf_module.rst:19
-msgid ""
-"Configure a .deb package using debconf-set-selections. Or just query "
-"existing selections."
+msgid "Configure a .deb package using debconf-set-selections."
 msgstr ""
 
-#: ../../rst/modules/debconf_module.rst:24
-msgid "Requirements"
+#: ../../rst/modules/debconf_module.rst:20
+msgid "Or just query existing selections."
 msgstr ""
 
 #: ../../rst/modules/debconf_module.rst:25
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/debconf_module.rst:26
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/debconf_module.rst:27
+#: ../../rst/modules/debconf_module.rst:28
 msgid "debconf"
 msgstr ""
 
-#: ../../rst/modules/debconf_module.rst:28
+#: ../../rst/modules/debconf_module.rst:29
 msgid "debconf-utils"
 msgstr ""
 
-#: ../../rst/modules/debconf_module.rst:32
+#: ../../rst/modules/debconf_module.rst:33
 msgid "Parameters"
 msgstr ""
 
@@ -115,9 +117,23 @@ msgstr ""
 #: ../../rst/modules/debconf_module.rst:203
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/debconf.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/debconf.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "Configure a .deb package using "
+#~ "debconf-set-selections. Or just query "
+#~ "existing selections."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/debconf.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,23 +57,23 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/elb_application_lb_module.rst:420
+#: ../../rst/modules/elb_application_lb_module.rst:441
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/elb_application_lb_module.rst:423
+#: ../../rst/modules/elb_application_lb_module.rst:444
 msgid ""
 "Listeners are matched based on port. If a listener's port is changed then"
 " a new listener will be created."
 msgstr ""
 
-#: ../../rst/modules/elb_application_lb_module.rst:424
+#: ../../rst/modules/elb_application_lb_module.rst:445
 msgid ""
 "Listener rules are matched based on priority. If a rule's priority is "
 "changed then a new rule will be created."
 msgstr ""
 
-#: ../../rst/modules/elb_application_lb_module.rst:425
+#: ../../rst/modules/elb_application_lb_module.rst:446
 msgid ""
 "If parameters are not set within the module, the following environment "
 "variables can be used in decreasing order of precedence ``AWS_URL`` or "
@@ -83,64 +83,72 @@ msgid ""
 "``AWS_REGION`` or ``EC2_REGION``"
 msgstr ""
 
-#: ../../rst/modules/elb_application_lb_module.rst:426
+#: ../../rst/modules/elb_application_lb_module.rst:447
 msgid ""
 "Ansible uses the boto configuration file (typically ~/.boto) if no "
 "credentials are provided. See "
 "https://boto.readthedocs.io/en/latest/boto_config_tut.html"
 msgstr ""
 
-#: ../../rst/modules/elb_application_lb_module.rst:427
+#: ../../rst/modules/elb_application_lb_module.rst:448
 msgid ""
 "``AWS_REGION`` or ``EC2_REGION`` can be typically be used to specify the "
 "AWS region, when required, but this can also be configured in the boto "
 "config file"
 msgstr ""
 
-#: ../../rst/modules/elb_application_lb_module.rst:432
+#: ../../rst/modules/elb_application_lb_module.rst:453
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/elb_application_lb_module.rst:523
+#: ../../rst/modules/elb_application_lb_module.rst:569
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/elb_application_lb_module.rst:524
+#: ../../rst/modules/elb_application_lb_module.rst:570
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/elb_application_lb_module.rst:927
+#: ../../rst/modules/elb_application_lb_module.rst:973
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/elb_application_lb_module.rst:932
+#: ../../rst/modules/elb_application_lb_module.rst:978
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/elb_application_lb_module.rst:935
+#: ../../rst/modules/elb_application_lb_module.rst:981
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/elb_application_lb_module.rst:942
+#: ../../rst/modules/elb_application_lb_module.rst:988
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/elb_application_lb_module.rst:944
+#: ../../rst/modules/elb_application_lb_module.rst:990
 msgid "Rob White (@wimnat)"
 msgstr ""
 
-#: ../../rst/modules/elb_application_lb_module.rst:948
+#: ../../rst/modules/elb_application_lb_module.rst:994
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/elb_application_lb.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/elb_application_lb.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/elb_application_lb.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

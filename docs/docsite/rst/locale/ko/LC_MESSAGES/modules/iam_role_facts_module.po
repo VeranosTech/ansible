@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,110 +22,109 @@ msgstr ""
 msgid "iam_role_facts -- Gather information on IAM roles"
 msgstr ""
 
-#: ../../rst/modules/iam_role_facts_module.rst:19
-msgid "Synopsis"
-msgstr ""
-
-#: ../../rst/modules/iam_role_facts_module.rst:20
-msgid "Gathers information about IAM roles"
-msgstr ""
-
-#: ../../rst/modules/iam_role_facts_module.rst:25
-msgid "Requirements"
-msgstr ""
-
-#: ../../rst/modules/iam_role_facts_module.rst:26
-msgid "The below requirements are needed on the host that executes this module."
-msgstr ""
-
-#: ../../rst/modules/iam_role_facts_module.rst:28
-msgid "boto"
-msgstr ""
-
-#: ../../rst/modules/iam_role_facts_module.rst:29
-msgid "boto3"
-msgstr ""
-
-#: ../../rst/modules/iam_role_facts_module.rst:30
-msgid "python >= 2.6"
-msgstr ""
-
-#: ../../rst/modules/iam_role_facts_module.rst:34
-msgid "Parameters"
-msgstr ""
-
-#: ../../rst/modules/iam_role_facts_module.rst:177
-msgid "Notes"
-msgstr ""
-
-#: ../../rst/modules/iam_role_facts_module.rst:180
+#: ../../rst/modules/iam_role_facts_module.rst:11
 msgid ""
-"If parameters are not set within the module, the following environment "
-"variables can be used in decreasing order of precedence ``AWS_URL`` or "
-"``EC2_URL``, ``AWS_ACCESS_KEY_ID`` or ``AWS_ACCESS_KEY`` or "
-"``EC2_ACCESS_KEY``, ``AWS_SECRET_ACCESS_KEY`` or ``AWS_SECRET_KEY`` or "
-"``EC2_SECRET_KEY``, ``AWS_SECURITY_TOKEN`` or ``EC2_SECURITY_TOKEN``, "
-"``AWS_REGION`` or ``EC2_REGION``"
+"This is an alias for :ref:`iam_role_info <iam_role_info_module>`. This "
+"name has been **deprecated**. Please update your tasks to use the new "
+"name ``iam_role_info`` instead."
 msgstr ""
 
-#: ../../rst/modules/iam_role_facts_module.rst:181
-msgid ""
-"Ansible uses the boto configuration file (typically ~/.boto) if no "
-"credentials are provided. See "
-"https://boto.readthedocs.io/en/latest/boto_config_tut.html"
-msgstr ""
+#~ msgid "Synopsis"
+#~ msgstr ""
 
-#: ../../rst/modules/iam_role_facts_module.rst:182
-msgid ""
-"``AWS_REGION`` or ``EC2_REGION`` can be typically be used to specify the "
-"AWS region, when required, but this can also be configured in the boto "
-"config file"
-msgstr ""
+#~ msgid "Gathers information about IAM roles"
+#~ msgstr ""
 
-#: ../../rst/modules/iam_role_facts_module.rst:187
-msgid "Examples"
-msgstr ""
+#~ msgid "Requirements"
+#~ msgstr ""
 
-#: ../../rst/modules/iam_role_facts_module.rst:208
-msgid "Return Values"
-msgstr ""
+#~ msgid ""
+#~ "The below requirements are needed on "
+#~ "the host that executes this module."
+#~ msgstr ""
 
-#: ../../rst/modules/iam_role_facts_module.rst:209
-msgid ""
-"Common return values are documented :ref:`here <common_return_values>`, "
-"the following are the fields unique to this module:"
-msgstr ""
+#~ msgid "boto"
+#~ msgstr ""
 
-#: ../../rst/modules/iam_role_facts_module.rst:474
-msgid "Status"
-msgstr ""
+#~ msgid "boto3"
+#~ msgstr ""
 
-#: ../../rst/modules/iam_role_facts_module.rst:479
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
-msgstr ""
+#~ msgid "python >= 2.6"
+#~ msgstr ""
 
-#: ../../rst/modules/iam_role_facts_module.rst:482
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
-msgstr ""
+#~ msgid "Parameters"
+#~ msgstr ""
 
-#: ../../rst/modules/iam_role_facts_module.rst:489
-msgid "Authors"
-msgstr ""
+#~ msgid "Notes"
+#~ msgstr ""
 
-#: ../../rst/modules/iam_role_facts_module.rst:491
-msgid "Will Thames (@willthames)"
-msgstr ""
+#~ msgid ""
+#~ "If parameters are not set within "
+#~ "the module, the following environment "
+#~ "variables can be used in decreasing "
+#~ "order of precedence ``AWS_URL`` or "
+#~ "``EC2_URL``, ``AWS_ACCESS_KEY_ID`` or "
+#~ "``AWS_ACCESS_KEY`` or ``EC2_ACCESS_KEY``, "
+#~ "``AWS_SECRET_ACCESS_KEY`` or ``AWS_SECRET_KEY`` or"
+#~ " ``EC2_SECRET_KEY``, ``AWS_SECURITY_TOKEN`` or "
+#~ "``EC2_SECURITY_TOKEN``, ``AWS_REGION`` or "
+#~ "``EC2_REGION``"
+#~ msgstr ""
 
-#: ../../rst/modules/iam_role_facts_module.rst:495
-#, python-format
-msgid ""
-"If you notice any issues in this documentation you can `edit this "
-"document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/iam_role_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
-" to improve it."
-msgstr ""
+#~ msgid ""
+#~ "Ansible uses the boto configuration file"
+#~ " (typically ~/.boto) if no credentials "
+#~ "are provided. See "
+#~ "https://boto.readthedocs.io/en/latest/boto_config_tut.html"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``AWS_REGION`` or ``EC2_REGION`` can be "
+#~ "typically be used to specify the "
+#~ "AWS region, when required, but this "
+#~ "can also be configured in the boto"
+#~ " config file"
+#~ msgstr ""
+
+#~ msgid "Examples"
+#~ msgstr ""
+
+#~ msgid "Return Values"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Common return values are documented "
+#~ ":ref:`here <common_return_values>`, the following"
+#~ " are the fields unique to this "
+#~ "module:"
+#~ msgstr ""
+
+#~ msgid "Status"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid "Authors"
+#~ msgstr ""
+
+#~ msgid "Will Thames (@willthames)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/iam_role_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

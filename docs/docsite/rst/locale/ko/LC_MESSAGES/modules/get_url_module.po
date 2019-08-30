@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,7 +55,7 @@ msgid ""
 msgstr ""
 
 #: ../../rst/modules/get_url_module.rst:23
-#: ../../rst/modules/get_url_module.rst:441
+#: ../../rst/modules/get_url_module.rst:456
 msgid ""
 "For Windows targets, use the :ref:`win_get_url <win_get_url_module>` "
 "module instead."
@@ -65,85 +65,93 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/get_url_module.rst:438
+#: ../../rst/modules/get_url_module.rst:453
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/get_url_module.rst:445
+#: ../../rst/modules/get_url_module.rst:460
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/get_url_module.rst:449
+#: ../../rst/modules/get_url_module.rst:464
 msgid ":ref:`uri_module`"
 msgstr ""
 
-#: ../../rst/modules/get_url_module.rst:450
+#: ../../rst/modules/get_url_module.rst:465
 msgid "The official documentation on the **uri** module."
 msgstr ""
 
-#: ../../rst/modules/get_url_module.rst:451
+#: ../../rst/modules/get_url_module.rst:466
 msgid ":ref:`win_get_url_module`"
 msgstr ""
 
-#: ../../rst/modules/get_url_module.rst:452
+#: ../../rst/modules/get_url_module.rst:467
 msgid "The official documentation on the **win_get_url** module."
 msgstr ""
 
-#: ../../rst/modules/get_url_module.rst:456
+#: ../../rst/modules/get_url_module.rst:471
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/get_url_module.rst:516
+#: ../../rst/modules/get_url_module.rst:531
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/get_url_module.rst:517
+#: ../../rst/modules/get_url_module.rst:532
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/get_url_module.rst:766
+#: ../../rst/modules/get_url_module.rst:781
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/get_url_module.rst:771
+#: ../../rst/modules/get_url_module.rst:786
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/get_url_module.rst:774
+#: ../../rst/modules/get_url_module.rst:789
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/get_url_module.rst:777
+#: ../../rst/modules/get_url_module.rst:792
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/get_url_module.rst:779
+#: ../../rst/modules/get_url_module.rst:794
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/get_url_module.rst:785
+#: ../../rst/modules/get_url_module.rst:800
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/get_url_module.rst:787
+#: ../../rst/modules/get_url_module.rst:802
 msgid "Jan-Piet Mens (@jpmens)"
 msgstr ""
 
-#: ../../rst/modules/get_url_module.rst:791
+#: ../../rst/modules/get_url_module.rst:806
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/basics/get_url.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/basics/get_url.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/basics/get_url.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,54 +50,65 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/purefb_fs_module.rst:252
+#: ../../rst/modules/purefb_fs_module.rst:313
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/purefb_fs_module.rst:255
+#: ../../rst/modules/purefb_fs_module.rst:316
 msgid "This module requires the ``purity_fb`` Python library"
 msgstr ""
 
-#: ../../rst/modules/purefb_fs_module.rst:256
+#: ../../rst/modules/purefb_fs_module.rst:317
 msgid ""
 "You must set ``PUREFB_URL`` and ``PUREFB_API`` environment variables if "
 "*fb_url* and *api_token* arguments are not passed to the module directly"
 msgstr ""
 
-#: ../../rst/modules/purefb_fs_module.rst:261
+#: ../../rst/modules/purefb_fs_module.rst:322
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/purefb_fs_module.rst:315
+#: ../../rst/modules/purefb_fs_module.rst:378
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/purefb_fs_module.rst:320
+#: ../../rst/modules/purefb_fs_module.rst:383
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/purefb_fs_module.rst:323
+#: ../../rst/modules/purefb_fs_module.rst:386
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/purefb_fs_module.rst:330
+#: ../../rst/modules/purefb_fs_module.rst:393
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/purefb_fs_module.rst:332
-msgid "Simon Dodsley (@sdodsley)"
+#: ../../rst/modules/purefb_fs_module.rst:395
+msgid "Pure Storage Ansible Team (@sdodsley) <pure-ansible-team@purestorage.com>"
 msgstr ""
 
-#: ../../rst/modules/purefb_fs_module.rst:336
+#: ../../rst/modules/purefb_fs_module.rst:399
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/purestorage/purefb_fs.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/purestorage/purefb_fs.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "Simon Dodsley (@sdodsley)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/purestorage/purefb_fs.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

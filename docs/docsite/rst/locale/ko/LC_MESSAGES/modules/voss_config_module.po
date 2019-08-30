@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,65 +37,73 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/voss_config_module.rst:257
+#: ../../rst/modules/voss_config_module.rst:299
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/voss_config_module.rst:260
+#: ../../rst/modules/voss_config_module.rst:302
 msgid "Tested against VOSS 7.0.0"
 msgstr ""
 
-#: ../../rst/modules/voss_config_module.rst:261
+#: ../../rst/modules/voss_config_module.rst:303
 msgid ""
 "Abbreviated commands are NOT idempotent, see `Network FAQ "
 "<../network/user_guide/faq.html#why-do-the-config-modules-always-return-"
 "changed-true-with-abbreviated-commands>`_."
 msgstr ""
 
-#: ../../rst/modules/voss_config_module.rst:266
+#: ../../rst/modules/voss_config_module.rst:308
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/voss_config_module.rst:301
+#: ../../rst/modules/voss_config_module.rst:350
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/voss_config_module.rst:302
+#: ../../rst/modules/voss_config_module.rst:351
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/voss_config_module.rst:356
+#: ../../rst/modules/voss_config_module.rst:405
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/voss_config_module.rst:361
+#: ../../rst/modules/voss_config_module.rst:410
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/voss_config_module.rst:364
+#: ../../rst/modules/voss_config_module.rst:413
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/voss_config_module.rst:371
+#: ../../rst/modules/voss_config_module.rst:420
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/voss_config_module.rst:373
+#: ../../rst/modules/voss_config_module.rst:422
 msgid "Lindsay Hill (@LindsayHill)"
 msgstr ""
 
-#: ../../rst/modules/voss_config_module.rst:377
+#: ../../rst/modules/voss_config_module.rst:426
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/voss/voss_config.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/voss/voss_config.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/voss/voss_config.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

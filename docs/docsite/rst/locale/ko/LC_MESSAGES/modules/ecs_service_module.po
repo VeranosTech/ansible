@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,67 +22,67 @@ msgstr ""
 msgid "ecs_service -- create, terminate, start or stop a service in ecs"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:19
+#: ../../rst/modules/ecs_service_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:20
+#: ../../rst/modules/ecs_service_module.rst:19
 msgid "Creates or terminates ecs services."
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:25
+#: ../../rst/modules/ecs_service_module.rst:24
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:26
+#: ../../rst/modules/ecs_service_module.rst:25
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:28
+#: ../../rst/modules/ecs_service_module.rst:27
 msgid "boto"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:29
+#: ../../rst/modules/ecs_service_module.rst:28
 msgid "boto3"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:30
+#: ../../rst/modules/ecs_service_module.rst:29
 msgid "botocore"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:31
+#: ../../rst/modules/ecs_service_module.rst:30
 msgid "json"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:32
+#: ../../rst/modules/ecs_service_module.rst:31
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:36
+#: ../../rst/modules/ecs_service_module.rst:35
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:434
+#: ../../rst/modules/ecs_service_module.rst:523
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:437
+#: ../../rst/modules/ecs_service_module.rst:526
 msgid ""
 "the service role specified must be assumable (i.e. have a trust "
 "relationship for the ecs service, ecs.amazonaws.com)"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:438
+#: ../../rst/modules/ecs_service_module.rst:527
 msgid ""
 "for details of the parameters and returns see "
 "https://boto3.readthedocs.io/en/latest/reference/services/ecs.html"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:439
+#: ../../rst/modules/ecs_service_module.rst:528
 msgid "An IAM role must have been previously created"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:440
+#: ../../rst/modules/ecs_service_module.rst:529
 msgid ""
 "If parameters are not set within the module, the following environment "
 "variables can be used in decreasing order of precedence ``AWS_URL`` or "
@@ -92,87 +92,95 @@ msgid ""
 "``AWS_REGION`` or ``EC2_REGION``"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:441
+#: ../../rst/modules/ecs_service_module.rst:530
 msgid ""
 "Ansible uses the boto configuration file (typically ~/.boto) if no "
 "credentials are provided. See "
 "https://boto.readthedocs.io/en/latest/boto_config_tut.html"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:442
+#: ../../rst/modules/ecs_service_module.rst:531
 msgid ""
 "``AWS_REGION`` or ``EC2_REGION`` can be typically be used to specify the "
 "AWS region, when required, but this can also be configured in the boto "
 "config file"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:447
+#: ../../rst/modules/ecs_service_module.rst:536
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:506
+#: ../../rst/modules/ecs_service_module.rst:591
 msgid "Returned Facts"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:507
+#: ../../rst/modules/ecs_service_module.rst:592
 msgid ""
 "Facts returned by this module are added/updated in the ``hostvars`` host "
 "facts and can be referenced by name just like any other host fact. They "
 "do not need to be registered in order to use them."
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:534
+#: ../../rst/modules/ecs_service_module.rst:619
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:535
+#: ../../rst/modules/ecs_service_module.rst:620
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:851
+#: ../../rst/modules/ecs_service_module.rst:936
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:856
+#: ../../rst/modules/ecs_service_module.rst:941
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:859
+#: ../../rst/modules/ecs_service_module.rst:944
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:866
+#: ../../rst/modules/ecs_service_module.rst:951
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:868
+#: ../../rst/modules/ecs_service_module.rst:953
 msgid "Mark Chance (@Java1Guy)"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:869
+#: ../../rst/modules/ecs_service_module.rst:954
 msgid "Darek Kaczynski (@kaczynskid)"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:870
+#: ../../rst/modules/ecs_service_module.rst:955
 msgid "Stephane Maarek (@simplesteph)"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:871
+#: ../../rst/modules/ecs_service_module.rst:956
 msgid "Zac Blazic (@zacblazic)"
 msgstr ""
 
-#: ../../rst/modules/ecs_service_module.rst:875
+#: ../../rst/modules/ecs_service_module.rst:960
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/ecs_service.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/ecs_service.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/ecs_service.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

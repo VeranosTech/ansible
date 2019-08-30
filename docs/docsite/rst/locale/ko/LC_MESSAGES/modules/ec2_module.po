@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,11 +50,11 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/ec2_module.rst:652
+#: ../../rst/modules/ec2_module.rst:679
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/ec2_module.rst:655
+#: ../../rst/modules/ec2_module.rst:682
 msgid ""
 "If parameters are not set within the module, the following environment "
 "variables can be used in decreasing order of precedence ``AWS_URL`` or "
@@ -64,73 +64,81 @@ msgid ""
 "``AWS_REGION`` or ``EC2_REGION``"
 msgstr ""
 
-#: ../../rst/modules/ec2_module.rst:656
+#: ../../rst/modules/ec2_module.rst:683
 msgid ""
 "Ansible uses the boto configuration file (typically ~/.boto) if no "
 "credentials are provided. See "
 "https://boto.readthedocs.io/en/latest/boto_config_tut.html"
 msgstr ""
 
-#: ../../rst/modules/ec2_module.rst:657
+#: ../../rst/modules/ec2_module.rst:684
 msgid ""
 "``AWS_REGION`` or ``EC2_REGION`` can be typically be used to specify the "
 "AWS region, when required, but this can also be configured in the boto "
 "config file"
 msgstr ""
 
-#: ../../rst/modules/ec2_module.rst:662
+#: ../../rst/modules/ec2_module.rst:689
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/ec2_module.rst:992
+#: ../../rst/modules/ec2_module.rst:1016
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/ec2_module.rst:997
+#: ../../rst/modules/ec2_module.rst:1021
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/ec2_module.rst:1000
+#: ../../rst/modules/ec2_module.rst:1024
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/ec2_module.rst:1003
+#: ../../rst/modules/ec2_module.rst:1027
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/ec2_module.rst:1005
+#: ../../rst/modules/ec2_module.rst:1029
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/ec2_module.rst:1011
+#: ../../rst/modules/ec2_module.rst:1035
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/ec2_module.rst:1013
+#: ../../rst/modules/ec2_module.rst:1037
 msgid "Tim Gerla (@tgerla)"
 msgstr ""
 
-#: ../../rst/modules/ec2_module.rst:1014
+#: ../../rst/modules/ec2_module.rst:1038
 msgid "Lester Wade (@lwade)"
 msgstr ""
 
-#: ../../rst/modules/ec2_module.rst:1015
+#: ../../rst/modules/ec2_module.rst:1039
 msgid "Seth Vidal (@skvidal)"
 msgstr ""
 
-#: ../../rst/modules/ec2_module.rst:1019
+#: ../../rst/modules/ec2_module.rst:1043
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/ec2.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/ec2.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/ec2.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

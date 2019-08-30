@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,80 +22,88 @@ msgstr ""
 msgid "vmware_migrate_vmk -- Migrate a VMK interface from VSS to VDS"
 msgstr ""
 
-#: ../../rst/modules/vmware_migrate_vmk_module.rst:19
+#: ../../rst/modules/vmware_migrate_vmk_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/vmware_migrate_vmk_module.rst:20
+#: ../../rst/modules/vmware_migrate_vmk_module.rst:19
 msgid "Migrate a VMK interface from VSS to VDS"
 msgstr ""
 
-#: ../../rst/modules/vmware_migrate_vmk_module.rst:25
+#: ../../rst/modules/vmware_migrate_vmk_module.rst:24
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/vmware_migrate_vmk_module.rst:26
+#: ../../rst/modules/vmware_migrate_vmk_module.rst:25
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/vmware_migrate_vmk_module.rst:28
+#: ../../rst/modules/vmware_migrate_vmk_module.rst:27
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/vmware_migrate_vmk_module.rst:29
+#: ../../rst/modules/vmware_migrate_vmk_module.rst:28
 msgid "PyVmomi"
 msgstr ""
 
-#: ../../rst/modules/vmware_migrate_vmk_module.rst:33
+#: ../../rst/modules/vmware_migrate_vmk_module.rst:32
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/vmware_migrate_vmk_module.rst:209
+#: ../../rst/modules/vmware_migrate_vmk_module.rst:238
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/vmware_migrate_vmk_module.rst:212
+#: ../../rst/modules/vmware_migrate_vmk_module.rst:241
 msgid "Tested on vSphere 5.5"
 msgstr ""
 
-#: ../../rst/modules/vmware_migrate_vmk_module.rst:217
+#: ../../rst/modules/vmware_migrate_vmk_module.rst:246
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/vmware_migrate_vmk_module.rst:240
+#: ../../rst/modules/vmware_migrate_vmk_module.rst:269
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/vmware_migrate_vmk_module.rst:245
+#: ../../rst/modules/vmware_migrate_vmk_module.rst:274
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/vmware_migrate_vmk_module.rst:248
+#: ../../rst/modules/vmware_migrate_vmk_module.rst:277
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/vmware_migrate_vmk_module.rst:255
+#: ../../rst/modules/vmware_migrate_vmk_module.rst:284
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/vmware_migrate_vmk_module.rst:257
+#: ../../rst/modules/vmware_migrate_vmk_module.rst:286
 msgid "Joseph Callen (@jcpowermac)"
 msgstr ""
 
-#: ../../rst/modules/vmware_migrate_vmk_module.rst:258
+#: ../../rst/modules/vmware_migrate_vmk_module.rst:287
 msgid "Russell Teague (@mtnbikenc)"
 msgstr ""
 
-#: ../../rst/modules/vmware_migrate_vmk_module.rst:262
+#: ../../rst/modules/vmware_migrate_vmk_module.rst:291
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_migrate_vmk.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_migrate_vmk.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_migrate_vmk.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

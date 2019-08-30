@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,113 +19,121 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/modules/os_flavor_facts_module.rst:9
-msgid "os_flavor_facts -- Retrieve facts about one or more flavors"
+msgid "os_flavor_facts -- Retrieve information about one or more flavors"
 msgstr ""
 
-#: ../../rst/modules/os_flavor_facts_module.rst:19
-msgid "Synopsis"
-msgstr ""
-
-#: ../../rst/modules/os_flavor_facts_module.rst:20
+#: ../../rst/modules/os_flavor_facts_module.rst:11
 msgid ""
-"Retrieve facts about available OpenStack instance flavors. By default, "
-"facts about ALL flavors are retrieved. Filters can be applied to get "
-"facts for only matching flavors. For example, you can filter on the "
-"amount of RAM available to the flavor, or the number of virtual CPUs "
-"available to the flavor, or both. When specifying multiple filters, *ALL*"
-" filters must match on a flavor before that flavor is returned as a fact."
+"This is an alias for :ref:`os_flavor_info <os_flavor_info_module>`. This "
+"name has been **deprecated**. Please update your tasks to use the new "
+"name ``os_flavor_info`` instead."
 msgstr ""
 
-#: ../../rst/modules/os_flavor_facts_module.rst:25
-msgid "Requirements"
-msgstr ""
+#~ msgid "os_flavor_facts -- Retrieve facts about one or more flavors"
+#~ msgstr ""
 
-#: ../../rst/modules/os_flavor_facts_module.rst:26
-msgid "The below requirements are needed on the host that executes this module."
-msgstr ""
+#~ msgid "Synopsis"
+#~ msgstr ""
 
-#: ../../rst/modules/os_flavor_facts_module.rst:28
-msgid "openstacksdk"
-msgstr ""
+#~ msgid ""
+#~ "Retrieve facts about available OpenStack "
+#~ "instance flavors. By default, facts "
+#~ "about ALL flavors are retrieved. Filters"
+#~ " can be applied to get facts "
+#~ "for only matching flavors. For example,"
+#~ " you can filter on the amount "
+#~ "of RAM available to the flavor, or"
+#~ " the number of virtual CPUs available"
+#~ " to the flavor, or both. When "
+#~ "specifying multiple filters, *ALL* filters "
+#~ "must match on a flavor before that"
+#~ " flavor is returned as a fact."
+#~ msgstr ""
 
-#: ../../rst/modules/os_flavor_facts_module.rst:29
-msgid "python >= 2.7"
-msgstr ""
+#~ msgid "Requirements"
+#~ msgstr ""
 
-#: ../../rst/modules/os_flavor_facts_module.rst:33
-msgid "Parameters"
-msgstr ""
+#~ msgid ""
+#~ "The below requirements are needed on "
+#~ "the host that executes this module."
+#~ msgstr ""
 
-#: ../../rst/modules/os_flavor_facts_module.rst:312
-msgid "Notes"
-msgstr ""
+#~ msgid "openstacksdk"
+#~ msgstr ""
 
-#: ../../rst/modules/os_flavor_facts_module.rst:315
-msgid ""
-"This module creates a new top-level ``openstack_flavors`` fact, which "
-"contains a list of unsorted flavors."
-msgstr ""
+#~ msgid "python >= 2.7"
+#~ msgstr ""
 
-#: ../../rst/modules/os_flavor_facts_module.rst:316
-msgid ""
-"The standard OpenStack environment variables, such as ``OS_USERNAME`` may"
-" be used instead of providing explicit values."
-msgstr ""
+#~ msgid "Parameters"
+#~ msgstr ""
 
-#: ../../rst/modules/os_flavor_facts_module.rst:317
-msgid ""
-"Auth information is driven by openstacksdk, which means that values can "
-"come from a yaml config file in /etc/ansible/openstack.yaml, "
-"/etc/openstack/clouds.yaml or ~/.config/openstack/clouds.yaml, then from "
-"standard environment variables, then finally by explicit parameters in "
-"plays. More information can be found at "
-"https://docs.openstack.org/openstacksdk/"
-msgstr ""
+#~ msgid "Notes"
+#~ msgstr ""
 
-#: ../../rst/modules/os_flavor_facts_module.rst:322
-msgid "Examples"
-msgstr ""
+#~ msgid ""
+#~ "This module creates a new top-"
+#~ "level ``openstack_flavors`` fact, which "
+#~ "contains a list of unsorted flavors."
+#~ msgstr ""
 
-#: ../../rst/modules/os_flavor_facts_module.rst:371
-msgid "Return Values"
-msgstr ""
+#~ msgid ""
+#~ "The standard OpenStack environment variables,"
+#~ " such as ``OS_USERNAME`` may be used"
+#~ " instead of providing explicit values."
+#~ msgstr ""
 
-#: ../../rst/modules/os_flavor_facts_module.rst:372
-msgid ""
-"Common return values are documented :ref:`here <common_return_values>`, "
-"the following are the fields unique to this module:"
-msgstr ""
+#~ msgid ""
+#~ "Auth information is driven by "
+#~ "openstacksdk, which means that values "
+#~ "can come from a yaml config file"
+#~ " in /etc/ansible/openstack.yaml, "
+#~ "/etc/openstack/clouds.yaml or "
+#~ "~/.config/openstack/clouds.yaml, then from standard"
+#~ " environment variables, then finally by "
+#~ "explicit parameters in plays. More "
+#~ "information can be found at "
+#~ "https://docs.openstack.org/openstacksdk/"
+#~ msgstr ""
 
-#: ../../rst/modules/os_flavor_facts_module.rst:511
-msgid "Status"
-msgstr ""
+#~ msgid "Examples"
+#~ msgstr ""
 
-#: ../../rst/modules/os_flavor_facts_module.rst:516
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
-msgstr ""
+#~ msgid "Return Values"
+#~ msgstr ""
 
-#: ../../rst/modules/os_flavor_facts_module.rst:519
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
-msgstr ""
+#~ msgid ""
+#~ "Common return values are documented "
+#~ ":ref:`here <common_return_values>`, the following"
+#~ " are the fields unique to this "
+#~ "module:"
+#~ msgstr ""
 
-#: ../../rst/modules/os_flavor_facts_module.rst:526
-msgid "Authors"
-msgstr ""
+#~ msgid "Status"
+#~ msgstr ""
 
-#: ../../rst/modules/os_flavor_facts_module.rst:528
-msgid "David Shrewsbury (@Shrews)"
-msgstr ""
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
 
-#: ../../rst/modules/os_flavor_facts_module.rst:532
-#, python-format
-msgid ""
-"If you notice any issues in this documentation you can `edit this "
-"document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/openstack/os_flavor_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
-" to improve it."
-msgstr ""
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid "Authors"
+#~ msgstr ""
+
+#~ msgid "David Shrewsbury (@Shrews)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/openstack/os_flavor_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

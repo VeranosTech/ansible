@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -91,43 +91,52 @@ msgstr ""
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/plugins/lookup/aws_ssm.rst:168
+#: ../../rst/plugins/lookup/aws_ssm.rst:175
 msgid "Status"
 msgstr ""
 
-#: ../../rst/plugins/lookup/aws_ssm.rst:173
+#: ../../rst/plugins/lookup/aws_ssm.rst:180
 msgid ""
 "This lookup is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/plugins/lookup/aws_ssm.rst:176
+#: ../../rst/plugins/lookup/aws_ssm.rst:183
 msgid ""
 "This lookup is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/plugins/lookup/aws_ssm.rst:183
+#: ../../rst/plugins/lookup/aws_ssm.rst:190
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/plugins/lookup/aws_ssm.rst:185
+#: ../../rst/plugins/lookup/aws_ssm.rst:192
 msgid "Bill Wang <ozbillwang(at)gmail.com>"
 msgstr ""
 
-#: ../../rst/plugins/lookup/aws_ssm.rst:186
+#: ../../rst/plugins/lookup/aws_ssm.rst:193
 msgid "Marat Bakeev <hawara(at)gmail.com>"
 msgstr ""
 
-#: ../../rst/plugins/lookup/aws_ssm.rst:187
+#: ../../rst/plugins/lookup/aws_ssm.rst:194
 msgid "Michael De La Rue <siblemitcom.mddlr@spamgourmet.com>"
 msgstr ""
 
-#: ../../rst/plugins/lookup/aws_ssm.rst:191
+#: ../../rst/plugins/lookup/aws_ssm.rst:198
+#, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/lookup/aws_ssm.py>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/lookup/aws_ssm.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/lookup/aws_ssm.py>`_"
+#~ " to improve it."
+#~ msgstr ""
 

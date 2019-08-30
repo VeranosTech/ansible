@@ -1,0 +1,733 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:7
+msgid "Collections"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:10
+msgid ""
+"Collections are a distribution format for Ansible content. They can be "
+"used to package and distribute playbooks, roles, modules, and plugins. "
+"You can publish and use collections through `Ansible Galaxy "
+"<https://galaxy.ansible.com>`_."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:15
+msgid ""
+"This feature is available in Ansible 2.8 as a *Technology Preview* and "
+"therefore is not fully supported. It should only be used for testing and "
+"should not be deployed in a production environment. Future Galaxy or "
+"Ansible releases may introduce breaking changes."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:24
+msgid "Collection structure"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:26
+msgid ""
+"Collections follow a simple data structure. None of the directories are "
+"required unless you have specific content that belongs in one of them. A "
+"collection does require a ``galaxy.yml`` file at the root level of the "
+"collection. This file contains all of the metadata that Galaxy and other "
+"tools need in order to package, build and publish the collection.::"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:51
+msgid "Ansible only accepts ``.yml`` extensions for galaxy.yml."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:52
+msgid ""
+"See the `draft collection <https://github.com/bcoca/collection>`_ for an "
+"example of a full collection structure."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:53
+msgid ""
+"Not all directories are currently in use. Those are placeholders for "
+"future features."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:57
+msgid "galaxy.yml"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:59
+msgid ""
+"A collection must have a ``galaxy.yml`` file that contains the necessary "
+"information to build a collection artifact. See "
+":ref:`collections_galaxy_meta` for details."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:64
+msgid "docs directory"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:66
+msgid ""
+"Keep general documentation for the collection here. Plugins and modules "
+"still keep their specific documentation embedded as Python docstrings. "
+"Use the ``docs`` folder to describe how to use the roles and plugins the "
+"collection provides, role requirements, and so on. Currently we are "
+"looking at Markdown as the standard format for documentation files, but "
+"this is subject to change."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:68
+msgid "Use ``ansible-doc`` to view documentation for plugins inside a collection:"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:74
+msgid ""
+"The ``ansible-doc`` command requires the fully qualified collection name "
+"(FQCN) to display specific plugin documentation. In this example, "
+"``my_namespace`` is the namespace and ``my_collection`` is the collection"
+" name within that namespace."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:76
+msgid ""
+"The Ansible collection namespace is defined in the ``galaxy.yml`` file "
+"and is not equivalent to the GitHub repository name."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:80
+msgid "plugins directory"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:82
+msgid ""
+"Add a 'per plugin type' specific subdirectory here, including "
+"``module_utils`` which is usable not only by modules, but by any other "
+"plugin by using their FQCN. This is a way to distribute modules, lookups,"
+" filters, and so on, without having to import a role in every play."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:85
+msgid "module_utils"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:87
+msgid ""
+"When coding with ``module_utils`` in a collection, the Python ``import`` "
+"statement needs to take into account the FQCN along with the "
+"``ansible_collections`` convention. The resulting Python import will look"
+" like ``from "
+"ansible_collections.{namespace}.{collection}.plugins.module_utils.{util} "
+"import {something}``"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:89
+msgid ""
+"The following example snippets show a Python and PowerShell module using "
+"both default Ansible ``module_utils`` and those provided by a collection."
+" In this example the namespace is ``ansible_example``, the collection is "
+"``community``. In the Python example the ``module_util`` in question is "
+"called ``qradar`` such that the FQCN is "
+"``ansible_example.community.plugins.module_utils.qradar``:"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:120
+msgid ""
+"In the PowerShell example the ``module_util`` in question is called "
+"``hyperv`` such that the FCQN is "
+"``ansible_example.community.plugins.module_utils.hyperv``:"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:141
+msgid "roles directory"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:143
+msgid ""
+"Collection roles are mostly the same as existing roles, but with a couple"
+" of limitations:"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:145
+msgid ""
+"Role names are now limited to contain only lowercase alphanumeric "
+"characters, plus ``_`` and start with an alpha character."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:146
+msgid ""
+"Roles in a collection cannot contain plugins any more. Plugins must live "
+"in the collection ``plugins`` directory tree. Each plugin is accessible "
+"to all roles in the collection."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:148
+msgid ""
+"The directory name of the role is used as the role name. Therefore, the "
+"directory name must comply with the above role name rules. The collection"
+" import into Galaxy will fail if a role name does not comply with these "
+"rules."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:152
+msgid ""
+"You can migrate 'traditional roles' into a collection but they must "
+"follow the rules above. You man need to rename roles if they don't "
+"conform. You will have to move or link any role-based plugins to the "
+"collection specific directories."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:156
+msgid ""
+"For roles imported into Galaxy directly from a GitHub repository, setting"
+" the ``role_name`` value in the role's metadata overrides the role name "
+"used by Galaxy. For collections, that value is ignored. When importing a "
+"collection, Galaxy uses the role directory as the name of the role and "
+"ignores the ``role_name`` metadata value."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:161
+msgid "playbooks directory"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:163
+msgid "TBD."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:166
+msgid "tests directory"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:168
+msgid "TBD. Expect tests for the collection itself to reside here."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:174
+msgid "Creating collections"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:176
+msgid "To create a collection:"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:178
+msgid ""
+"Initialize a collection with :ref:`ansible-galaxy collection "
+"init<creating_collections_skeleton>` to create the skeleton directory "
+"structure."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:179
+msgid "Add your content to the collection."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:180
+msgid ""
+"Build the collection into a collection artifact with :ref:`ansible-galaxy"
+" collection build<building_collections>`."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:181
+msgid ""
+"Publish the collection artifact to Galaxy with :ref:`ansible-galaxy "
+"collection publish<publishing_collections>`."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:183
+msgid "A user can then install your collection on their systems."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:186
+msgid ""
+"Any references to ``ansible-galaxy`` below will be of a 'working version'"
+" that is in development for the 2.9 release. As such, the command and "
+"this documentation section is subject to frequent changes."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:189
+msgid ""
+"Currently the ``ansible-galaxy collection`` command implements the "
+"following sub commands:"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:191
+msgid ""
+"``init``: Create a basic collection skeleton based on the default "
+"template included with Ansible or your own template."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:192
+msgid ""
+"``build``: Create a collection artifact that can be uploaded to Galaxy or"
+" your own repository."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:193
+msgid "``publish``: Publish a built collection artifact to Galaxy."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:194
+msgid "``install``: Install one or more collections."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:196
+msgid ""
+"To learn more about the ``ansible-galaxy`` cli tool, see the :ref"
+":`ansible-galaxy` man page."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:201
+msgid "Creating a collection skeleton"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:203
+msgid "To start a new collection:"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:209
+msgid ""
+"Then you can populate the directories with the content you want inside "
+"the collection. See https://github.com/bcoca/collection to get a better "
+"idea of what you can place inside a collection."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:216
+msgid "Building collections"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:218
+msgid ""
+"To build a collection, run ``ansible-galaxy collection build`` from "
+"inside the root directory of the collection:"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:224
+msgid ""
+"This creates a tarball of the built collection in the current directory "
+"which can be uploaded to Galaxy.::"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:235
+msgid ""
+"Certain files and folders are excluded when building the collection "
+"artifact. This is not currently configurable and is a work in progress so"
+" the collection artifact may contain files you would not wish to "
+"distribute."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:238
+msgid ""
+"This tarball is mainly intended to upload to Galaxy as a distribution "
+"method, but you can use it directly to install the collection on target "
+"systems."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:244
+msgid "Publishing collections"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:246
+msgid ""
+"You can publish collections to Galaxy using the ``ansible-galaxy "
+"collection publish`` command or the Galaxy UI itself."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:248
+msgid ""
+"Once you upload a version of a collection, you cannot delete or modify "
+"that version. Ensure that everything looks okay before you upload it."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:251
+msgid "Upload using ansible-galaxy"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:253
+msgid "To upload the collection artifact with the ``ansible-galaxy`` command:"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:259
+msgid ""
+"The above command triggers an import process, just as if you uploaded the"
+" collection through the Galaxy website. The command waits until the "
+"import process completes before reporting the status back. If you wish to"
+" continue without waiting for the import result, use the ``--no-wait`` "
+"argument and manually look at the import progress in your `My Imports "
+"<https://galaxy.ansible.com/my-imports/>`_ page."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:264
+msgid ""
+"The API key is a secret token used by Ansible Galaxy to protect your "
+"content. You can find your API key at your `Galaxy profile preferences "
+"<https://galaxy.ansible.com/me/preferences>`_ page."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:268
+msgid "Upload from the Galaxy website"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:270
+msgid "To upload your collection artifact directly on Galaxy:"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:272
+msgid ""
+"Go to the `My Content <https://galaxy.ansible.com/my-"
+"content/namespaces>`_ page, and click the **Add Content** button on one "
+"of your namespaces."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:273
+msgid ""
+"From the **Add Content** dialogue, click **Upload New Collection**, and "
+"select the collection archive file from your local filesystem."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:275
+msgid ""
+"When uploading collections it doesn't matter which namespace you select. "
+"The collection will be uploaded to the namespace specified in the "
+"collection metadata in the ``galaxy.yml`` file. If you're not an owner of"
+" the namespace, the upload request will fail."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:279
+msgid ""
+"Once Galaxy uploads and accepts a collection, you will be redirected to "
+"the **My Imports** page, which displays output from the import process, "
+"including any errors or warnings about the metadata and content contained"
+" in the collection."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:284
+msgid "Collection versions"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:286
+msgid ""
+"Once you upload a version of a collection, you cannot delete or modify "
+"that version. Ensure that everything looks okay before uploading. The "
+"only way to change a collection is to release a new version. The latest "
+"version of a collection (by highest version number) will be the version "
+"displayed everywhere in Galaxy; however, users will still be able to "
+"download older versions."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:290
+msgid ""
+"Collection versions use `Sematic Versioning <https://semver.org/>` for "
+"version numbers. Please read the official documentation for details and "
+"examples. In summary:"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:292
+msgid ""
+"Increment major (for example: x in `x.y.z`) version number for an "
+"incompatible API change."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:293
+msgid ""
+"Increment minor (for example: y in `x.y.z`) version number for new "
+"functionality in a backwards compatible manner."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:294
+msgid ""
+"Increment patch (for example: z in `x.y.z`) version number for backwards "
+"compatible bug fixes."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:297
+msgid "Migrating Ansible content to a collection"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:299
+msgid ""
+"You can experiment with migrating existing modules into a collection "
+"using the `content_collector tool "
+"<https://github.com/ansible/content_collector>`_. The "
+"``content_collector`` is a playbook that helps you migrate content from "
+"an Ansible distribution into a collection."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:303
+msgid ""
+"This tool is in active development and is provided only for "
+"experimentation and feedback at this point."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:305
+msgid ""
+"See the `content_collector README "
+"<https://github.com/ansible/content_collector>`_ for full details and "
+"usage guidelines."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:308
+msgid "Installing collections"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:310
+msgid ""
+"You can use the ``ansible-galaxy collection install`` command to install "
+"a collection on your system. The collection by default is installed at "
+"``/path/ansible_collections/my_namespace/my_collection``. You can "
+"optionally add the ``-p`` option to specify an alternate location."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:312
+msgid "To install a collection hosted in Galaxy:"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:319
+msgid "You can also directly use the tarball from your build:"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:326
+msgid ""
+"The install command automatically appends the path "
+"``ansible_collections`` to the one specified  with the ``-p`` option "
+"unless the parent directory is already in a folder called "
+"``ansible_collections``."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:330
+msgid ""
+"You should use one of the values configured in :ref:`COLLECTIONS_PATHS` "
+"for your path. This is also where Ansible itself will expect to find "
+"collections when attempting to use them."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:332
+msgid ""
+"You can also keep a collection adjacent to the current playbook, under a "
+"``collections/ansible_collections/`` directory structure."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:344
+msgid "Installing an older version of a collection"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:346
+msgid ""
+"By default ``ansible-galaxy`` installs the latest collection that is "
+"available but you can add a version range identifier to install a "
+"specific version."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:349
+msgid "To install the 1.0.0 version of the collection:"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:355
+msgid "To install the 1.0.0-beta.1 version of the collection:"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:361
+msgid ""
+"To install the collections that are greater than or equal to 1.0.0 or "
+"less than 2.0.0:"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:368
+msgid ""
+"You can specify multiple range identifiers which are split by ``,``. You "
+"can use the following range identifiers:"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:370
+msgid ""
+"``*``: Any version, this is the default used when no range specified is "
+"set."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:371
+msgid "``!=``: Version is not equal to the one specified."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:372
+msgid "``==``: Version must be the one specified."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:373
+msgid "``>=``: Version is greater than or equal to the one specified."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:374
+msgid "``>``: Version is greater than the one specified."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:375
+msgid "``<=``: Version is less than or equal to the one specified."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:376
+msgid "``<``: Version is less than the one specified."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:379
+msgid ""
+"The ``ansible-galaxy`` command ignores any pre-release versions unless "
+"the ``==`` range identifier is used to explicitly set to that pre-release"
+" version."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:386
+msgid "Install multiple collections with a requirements file"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:388
+msgid ""
+"You can also setup a ``requirements.yml`` file to install multiple "
+"collections in one command. This file is a YAML file in the format:"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:402
+msgid ""
+"The ``version`` key can take in the same range identifier format "
+"documented above."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:404
+msgid ""
+"Roles can also be specified and placed under the ``roles`` key. The "
+"values follow the same format as a requirements file used in older "
+"Ansible releases."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:408
+msgid ""
+"While both roles and collections can be specified in one requirements "
+"file, they need to be installed separately. The ``ansible-galaxy role "
+"install -r requirements.yml`` will only install roles and ``ansible-"
+"galaxy collection install -r requirements.yml -p ./`` will only install "
+"collections."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:415
+msgid "Galaxy server configuration list"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:417
+msgid ""
+"By default running ``ansible-galaxy`` will use the :ref:`galaxy_server` "
+"config value or the ``--server`` command line argument when it performs "
+"an action against a Galaxy server. The ``ansible-galaxy collection "
+"install`` supports installing collections from multiple servers as "
+"defined in the :ref:`ansible_configuration_settings_locations` file using"
+" the :ref:`galaxy_server_list` configuration option. To define multiple "
+"Galaxy servers you have to create the following entries like so:"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:442
+msgid ""
+"You can use the ``--server`` command line argument to select an explicit "
+"Galaxy server in the ``server_list`` and the value of this arg should "
+"match the name of the server. If the value of ``--server`` is not a pre-"
+"defined server in ``ansible.cfg`` then the value specified will be the "
+"URL used to access that server and all pre-defined servers are ignored. "
+"Also the ``--api-key`` argument is not applied to any of the pre-defined "
+"servers, it is only applied if no server list is defined or a URL was "
+"specified by ``--server``."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:449
+msgid ""
+"The :ref:`galaxy_server_list` option is a list of server identifiers in a"
+" prioritized order. When searching for a collection, the install process "
+"will search in that order, e.g. ``my_org_hub`` first, then "
+"``release_galaxy``, and finally ``test_galaxy`` until the collection is "
+"found. The actual Galaxy instance is then defined under the section "
+"``[galaxy_server.{{ id }}]`` where ``{{ id }}`` is the server identifier "
+"defined in the list. This section can then define the following keys:"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:455
+msgid "``url``: The URL of the galaxy instance to connect to, this is required."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:456
+msgid ""
+"``token``: A token key to use for authentication against the Galaxy "
+"instance, this is mutually exclusive with ``username``"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:457
+msgid ""
+"``username``: The username to use for basic authentication against the "
+"Galaxy instance, this is mutually exclusive with ``token``"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:458
+msgid "``password``: The password to use for basic authentication"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:460
+msgid ""
+"As well as being defined in the ``ansible.cfg`` file, these server "
+"options can be defined as an environment variable. The environment "
+"variable is in the form ``ANSIBLE_GALAXY_SERVER_{{ id }}_{{ key }}`` "
+"where ``{{ id }}`` is the upper case form of the server identifier and "
+"``{{ key }}`` is the key to define. For example I can define ``token`` "
+"for ``release_galaxy`` by setting "
+"``ANSIBLE_GALAXY_SERVER_RELEASE_GALAXY_TOKEN=secret_token``."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:465
+msgid ""
+"For operations where only one Galaxy server is used, i.e. ``publish``, "
+"``info``, ``login`` then the first entry in the ``server_list`` is used "
+"unless an explicit server was passed in as a command line argument."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:469
+msgid ""
+"Once a collection is found, any of its requirements are only searched "
+"within the same Galaxy instance as the parent collection. The install "
+"process will not search for a collection requirement in a different "
+"Galaxy instance."
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:474
+msgid "Using collections"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:476
+msgid "Once installed, you can reference a collection content by its FQCN:"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:485
+msgid ""
+"This works for roles or any type of plugin distributed within the "
+"collection:"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:501
+msgid ""
+"To avoid a lot of typing, you can use the ``collections`` keyword added "
+"in Ansible 2.8:"
+msgstr ""
+
+#: ../../rst/dev_guide/collections_tech_preview.rst:519
+msgid ""
+"This keyword creates a 'search path' for non namespaced plugin "
+"references. It does not import roles or anything else. Notice that you "
+"still need the FQCN for non-action or module plugins."
+msgstr ""
+

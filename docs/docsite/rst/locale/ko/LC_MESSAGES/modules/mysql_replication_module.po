@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,11 +52,11 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/mysql_replication_module.rst:415
+#: ../../rst/modules/mysql_replication_module.rst:422
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/mysql_replication_module.rst:418
+#: ../../rst/modules/mysql_replication_module.rst:425
 msgid ""
 "Requires the PyMySQL (Python 2.7 and Python 3.X) or MySQL-python (Python "
 "2.X) package on the remote host. The Python package may be installed with"
@@ -66,7 +66,7 @@ msgid ""
 "versions of Fedora; see :ref:`dnf <dnf_module>`."
 msgstr ""
 
-#: ../../rst/modules/mysql_replication_module.rst:419
+#: ../../rst/modules/mysql_replication_module.rst:426
 msgid ""
 "Both ``login_password`` and ``login_user`` are required when you are "
 "passing credentials. If none are present, the module will attempt to read"
@@ -74,40 +74,48 @@ msgid ""
 "MySQL default login of 'root' with no password."
 msgstr ""
 
-#: ../../rst/modules/mysql_replication_module.rst:424
+#: ../../rst/modules/mysql_replication_module.rst:431
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/mysql_replication_module.rst:455
+#: ../../rst/modules/mysql_replication_module.rst:462
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/mysql_replication_module.rst:460
+#: ../../rst/modules/mysql_replication_module.rst:467
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/mysql_replication_module.rst:463
+#: ../../rst/modules/mysql_replication_module.rst:470
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/mysql_replication_module.rst:470
+#: ../../rst/modules/mysql_replication_module.rst:477
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/mysql_replication_module.rst:472
+#: ../../rst/modules/mysql_replication_module.rst:479
 msgid "Balazs Pocze (@banyek)"
 msgstr ""
 
-#: ../../rst/modules/mysql_replication_module.rst:476
+#: ../../rst/modules/mysql_replication_module.rst:483
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/mysql/mysql_replication.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/mysql/mysql_replication.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/mysql/mysql_replication.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

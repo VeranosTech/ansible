@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,7 +59,7 @@ msgid ":ref:`jenkins_job_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_web_infrastructure_modules.rst:19
-msgid ":ref:`jenkins_job_facts_module`"
+msgid ":ref:`jenkins_job_info_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_web_infrastructure_modules.rst:20
@@ -75,137 +75,191 @@ msgid ":ref:`jira_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_web_infrastructure_modules.rst:23
-msgid ":ref:`nginx_status_facts_module`"
+msgid ":ref:`nginx_status_facts_module` **(D)**"
 msgstr ""
 
 #: ../../rst/modules/list_of_web_infrastructure_modules.rst:24
-msgid ":ref:`rundeck_acl_policy_module`"
+msgid ":ref:`nginx_status_info_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_web_infrastructure_modules.rst:25
-msgid ":ref:`rundeck_project_module`"
+msgid ":ref:`rundeck_acl_policy_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_web_infrastructure_modules.rst:26
-msgid ":ref:`supervisorctl_module`"
+msgid ":ref:`rundeck_project_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_web_infrastructure_modules.rst:27
+msgid ":ref:`supervisorctl_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:28
 msgid ":ref:`taiga_issue_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_web_infrastructure_modules.rst:33
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:34
 msgid "Ansible_Tower"
 msgstr ""
 
-#: ../../rst/modules/list_of_web_infrastructure_modules.rst:37
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:38
 msgid ":ref:`tower_credential_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_web_infrastructure_modules.rst:38
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:39
 msgid ":ref:`tower_credential_type_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_web_infrastructure_modules.rst:39
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:40
 msgid ":ref:`tower_group_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_web_infrastructure_modules.rst:40
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:41
 msgid ":ref:`tower_host_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_web_infrastructure_modules.rst:41
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:42
 msgid ":ref:`tower_inventory_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_web_infrastructure_modules.rst:42
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:43
 msgid ":ref:`tower_inventory_source_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_web_infrastructure_modules.rst:43
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:44
 msgid ":ref:`tower_job_cancel_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_web_infrastructure_modules.rst:44
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:45
 msgid ":ref:`tower_job_launch_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_web_infrastructure_modules.rst:45
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:46
 msgid ":ref:`tower_job_list_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_web_infrastructure_modules.rst:46
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:47
 msgid ":ref:`tower_job_template_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_web_infrastructure_modules.rst:47
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:48
 msgid ":ref:`tower_job_wait_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_web_infrastructure_modules.rst:48
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:49
 msgid ":ref:`tower_label_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_web_infrastructure_modules.rst:49
-msgid ":ref:`tower_organization_module`"
-msgstr ""
-
 #: ../../rst/modules/list_of_web_infrastructure_modules.rst:50
-msgid ":ref:`tower_project_module`"
+msgid ":ref:`tower_notification_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_web_infrastructure_modules.rst:51
-msgid ":ref:`tower_role_module`"
+msgid ":ref:`tower_organization_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_web_infrastructure_modules.rst:52
-msgid ":ref:`tower_settings_module`"
+msgid ":ref:`tower_project_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_web_infrastructure_modules.rst:53
-msgid ":ref:`tower_team_module`"
+msgid ":ref:`tower_receive_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_web_infrastructure_modules.rst:54
-msgid ":ref:`tower_user_module`"
+msgid ":ref:`tower_role_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_web_infrastructure_modules.rst:55
+msgid ":ref:`tower_send_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:56
+msgid ":ref:`tower_settings_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:57
+msgid ":ref:`tower_team_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:58
+msgid ":ref:`tower_user_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:59
+msgid ":ref:`tower_workflow_launch_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:60
 msgid ":ref:`tower_workflow_template_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_web_infrastructure_modules.rst:61
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:66
 msgid "Sophos_Utm"
 msgstr ""
 
-#: ../../rst/modules/list_of_web_infrastructure_modules.rst:65
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:70
+msgid ":ref:`utm_aaa_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:71
+msgid ":ref:`utm_aaa_group_info_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:72
 msgid ":ref:`utm_ca_host_key_cert_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_web_infrastructure_modules.rst:66
-msgid ":ref:`utm_dns_host_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_web_infrastructure_modules.rst:67
-msgid ":ref:`utm_network_interface_address_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_web_infrastructure_modules.rst:68
-msgid ":ref:`utm_proxy_auth_profile_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_web_infrastructure_modules.rst:69
-msgid ":ref:`utm_proxy_frontend_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_web_infrastructure_modules.rst:70
-msgid ":ref:`utm_proxy_location_module`"
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:73
+msgid ":ref:`utm_ca_host_key_cert_info_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_web_infrastructure_modules.rst:74
+msgid ":ref:`utm_dns_host_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:75
+msgid ":ref:`utm_network_interface_address_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:76
+msgid ":ref:`utm_network_interface_address_info_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:77
+msgid ":ref:`utm_proxy_auth_profile_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:78
+msgid ":ref:`utm_proxy_exception_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:79
+msgid ":ref:`utm_proxy_frontend_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:80
+msgid ":ref:`utm_proxy_frontend_info_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:81
+msgid ":ref:`utm_proxy_location_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:82
+msgid ":ref:`utm_proxy_location_info_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_web_infrastructure_modules.rst:86
 msgid ""
 "**(D)**: This marks a module as deprecated, which means a module is kept "
 "for backwards compatibility but usage is discouraged. The module "
 "documentation details page may explain more about this rationale."
 msgstr ""
+
+#~ msgid ":ref:`jenkins_job_facts_module`"
+#~ msgstr ""
+
+#~ msgid ":ref:`nginx_status_facts_module`"
+#~ msgstr ""
 

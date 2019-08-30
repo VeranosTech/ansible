@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,58 +104,59 @@ msgstr ""
 
 #: ../../rst/user_guide/playbooks_conditionals.rst:87
 msgid ""
-"Variables defined in the playbooks or inventory can also be used.  An "
-"example may be the execution of a task based on a variable's boolean "
-"value::"
+"Variables defined in the playbooks or inventory can also be used, just "
+"make sure to apply the `|bool` filter to non boolean variables (ex: "
+"string variables with content like 'yes', 'on', '1', 'true').  An example"
+" may be the execution of a task based on a variable's boolean value::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:92
+#: ../../rst/user_guide/playbooks_conditionals.rst:93
 msgid "Then a conditional execution might look like::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:98
+#: ../../rst/user_guide/playbooks_conditionals.rst:99
 msgid "or::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:104
+#: ../../rst/user_guide/playbooks_conditionals.rst:105
 msgid ""
 "If a required variable has not been set, you can skip or fail using "
 "Jinja2's `defined` test. For example::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:113
+#: ../../rst/user_guide/playbooks_conditionals.rst:114
 msgid ""
 "This is especially useful in combination with the conditional import of "
 "vars files (see below). As the examples show, you don't need to use `{{ "
 "}}` to use variables inside conditionals, as these are already implied."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:119
+#: ../../rst/user_guide/playbooks_conditionals.rst:120
 msgid "Loops and Conditionals"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:120
+#: ../../rst/user_guide/playbooks_conditionals.rst:121
 msgid ""
-"Combining `when` with loops (see :doc:`playbooks_loops`), be aware that "
+"Combining `when` with loops (see :ref:`playbooks_loops`), be aware that "
 "the `when` statement is processed separately for each item. This is by "
 "design::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:127
+#: ../../rst/user_guide/playbooks_conditionals.rst:128
 msgid ""
 "If you need to skip the whole task depending on the loop variable being "
 "defined, used the `|default` filter to provide an empty iterator::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:134
+#: ../../rst/user_guide/playbooks_conditionals.rst:135
 msgid "If using a dict in a loop::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:143
+#: ../../rst/user_guide/playbooks_conditionals.rst:144
 msgid "Loading in Custom Facts"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:145
+#: ../../rst/user_guide/playbooks_conditionals.rst:146
 msgid ""
 "It's also easy to provide your own facts if you want, which is covered in"
 " :ref:`developing_modules`.  To run them, just make a call to your own "
@@ -163,11 +164,11 @@ msgid ""
 "variables returned there will be accessible to future tasks::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:158
+#: ../../rst/user_guide/playbooks_conditionals.rst:159
 msgid "Applying 'when' to roles, imports, and includes"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:160
+#: ../../rst/user_guide/playbooks_conditionals.rst:161
 msgid ""
 "Note that if you have several tasks that all share the same conditional "
 "statement, you can affix the conditional to a task include statement as "
@@ -175,25 +176,25 @@ msgid ""
 "each and every task::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:166
+#: ../../rst/user_guide/playbooks_conditionals.rst:167
 msgid ""
 "In versions prior to 2.0 this worked with task includes but not playbook "
 "includes.  2.0 allows it to work with both."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:168
+#: ../../rst/user_guide/playbooks_conditionals.rst:169
 msgid "Or with a role::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:175
+#: ../../rst/user_guide/playbooks_conditionals.rst:176
 msgid ""
 "You will note a lot of 'skipped' output by default in Ansible when using "
 "this approach on systems that don't match the criteria. In many cases the"
-" ``group_by`` module (see :doc:`modules`) can be a more streamlined way "
+" :ref:`group_by module <group_by_module>` can be a more streamlined way "
 "to accomplish the same thing; see :ref:`os_variance`."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:179
+#: ../../rst/user_guide/playbooks_conditionals.rst:180
 msgid ""
 "When a conditional is used with ``include_*`` tasks instead of imports, "
 "it is applied `only` to the include task itself and not to any other "
@@ -201,56 +202,56 @@ msgid ""
 "distinction is important is as follows::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:195
+#: ../../rst/user_guide/playbooks_conditionals.rst:196
 msgid "This expands at include time to the equivalent of::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:204
+#: ../../rst/user_guide/playbooks_conditionals.rst:205
 msgid ""
 "Thus if ``x`` is initially undefined, the ``debug`` task will be skipped."
 "  By using ``include_tasks`` instead of ``import_tasks``, both tasks from"
 " ``other_tasks.yml`` will be executed as expected."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:207
+#: ../../rst/user_guide/playbooks_conditionals.rst:208
 msgid ""
 "For more information on the differences between ``include`` v ``import`` "
 "see :ref:`playbooks_reuse`."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:212
+#: ../../rst/user_guide/playbooks_conditionals.rst:213
 msgid "Conditional Imports"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:214
+#: ../../rst/user_guide/playbooks_conditionals.rst:215
 msgid "This is an advanced topic that is infrequently used."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:216
+#: ../../rst/user_guide/playbooks_conditionals.rst:217
 msgid ""
 "Sometimes you will want to do certain things differently in a playbook "
 "based on certain criteria. Having one playbook that works on multiple "
 "platforms and OS versions is a good example."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:219
+#: ../../rst/user_guide/playbooks_conditionals.rst:220
 msgid ""
 "As an example, the name of the Apache package may be different between "
 "CentOS and Debian, but it is easily handled with a minimum of syntax in "
 "an Ansible Playbook::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:233
+#: ../../rst/user_guide/playbooks_conditionals.rst:234
 msgid ""
 "The variable \"ansible_facts['os_family']\" is being interpolated into "
 "the list of filenames being defined for vars_files."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:236
+#: ../../rst/user_guide/playbooks_conditionals.rst:237
 msgid "As a reminder, the various YAML files contain just keys and values::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:243
+#: ../../rst/user_guide/playbooks_conditionals.rst:244
 msgid ""
 "How does this work?  For Red Hat operating systems ('CentOS', for "
 "example), the first file Ansible tries to import is 'vars/RedHat.yml'. If"
@@ -259,13 +260,13 @@ msgid ""
 "raised."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:247
+#: ../../rst/user_guide/playbooks_conditionals.rst:248
 msgid ""
 "On Debian, Ansible first looks for 'vars/Debian.yml' instead of "
 "'vars/RedHat.yml', before falling back on 'vars/os_defaults.yml'."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:250
+#: ../../rst/user_guide/playbooks_conditionals.rst:251
 msgid ""
 "Ansible's approach to configuration -- separating variables from tasks, "
 "keeping your playbooks from turning into arbitrary code with nested "
@@ -273,17 +274,17 @@ msgid ""
 "rules because there are fewer decision points to track."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:254
+#: ../../rst/user_guide/playbooks_conditionals.rst:255
 msgid "Selecting Files And Templates Based On Variables"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:256
+#: ../../rst/user_guide/playbooks_conditionals.rst:257
 msgid ""
 "This is an advanced topic that is infrequently used.  You can probably "
 "skip this section."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:258
+#: ../../rst/user_guide/playbooks_conditionals.rst:259
 msgid ""
 "Sometimes a configuration file you want to copy, or a template you will "
 "use may depend on a variable. The following construct selects the first "
@@ -291,17 +292,17 @@ msgid ""
 "often much cleaner than putting a lot of if conditionals in a template."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:261
+#: ../../rst/user_guide/playbooks_conditionals.rst:262
 msgid ""
 "The following example shows how to template out a configuration file that"
 " was very different between, say, CentOS and Debian::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:275
+#: ../../rst/user_guide/playbooks_conditionals.rst:276
 msgid "Register Variables"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:277
+#: ../../rst/user_guide/playbooks_conditionals.rst:278
 msgid ""
 "Often in a playbook it may be useful to store the result of a given "
 "command in a variable and access it later.  Use of the command module in "
@@ -310,14 +311,21 @@ msgid ""
 "program."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:281
+#: ../../rst/user_guide/playbooks_conditionals.rst:282
+msgid ""
+"Registration happens even when a task is skipped due to the conditional. "
+"This way you can query the variable for `` is skipped`` to know if task "
+"was attempted or not."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_conditionals.rst:284
 msgid ""
 "The 'register' keyword decides what variable to save a result in.  The "
 "resulting variables can be used in templates, action lines, or *when* "
 "statements.  It looks like this (in an obviously trivial example)::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:294
+#: ../../rst/user_guide/playbooks_conditionals.rst:297
 msgid ""
 "As shown previously, the registered variable's string contents are "
 "accessible with the 'stdout' value. The registered result can be used in "
@@ -327,91 +335,117 @@ msgid ""
 "wanted, and could split by other fields::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:317
+#: ../../rst/user_guide/playbooks_conditionals.rst:320
 msgid ""
 "As shown previously, the registered variable's string contents are "
 "accessible with the 'stdout' value. You may check the registered "
 "variable's string contents for emptiness::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:335
+#: ../../rst/user_guide/playbooks_conditionals.rst:338
 msgid "Commonly Used Facts"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:337
+#: ../../rst/user_guide/playbooks_conditionals.rst:340
 msgid ""
 "The following Facts are frequently used in Conditionals - see above for "
 "examples."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:342
+#: ../../rst/user_guide/playbooks_conditionals.rst:345
 msgid "ansible_facts['distribution']"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:344
-#: ../../rst/user_guide/playbooks_conditionals.rst:379
+#: ../../rst/user_guide/playbooks_conditionals.rst:347
+#: ../../rst/user_guide/playbooks_conditionals.rst:382
 msgid "Possible values (sample, not complete list)::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:370
+#: ../../rst/user_guide/playbooks_conditionals.rst:373
 msgid "ansible_facts['distribution_major_version']"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:372
+#: ../../rst/user_guide/playbooks_conditionals.rst:375
 msgid ""
 "This will be the major version of the operating system. For example, the "
 "value will be `16` for Ubuntu 16.04."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:377
+#: ../../rst/user_guide/playbooks_conditionals.rst:380
 msgid "ansible_facts['os_family']"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:401
+#: ../../rst/user_guide/playbooks_conditionals.rst:405
 msgid ":ref:`working_with_playbooks`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:402
+#: ../../rst/user_guide/playbooks_conditionals.rst:406
 msgid "An introduction to playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:403
+#: ../../rst/user_guide/playbooks_conditionals.rst:407
 msgid ":ref:`playbooks_reuse_roles`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:404
+#: ../../rst/user_guide/playbooks_conditionals.rst:408
 msgid "Playbook organization by roles"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:405
+#: ../../rst/user_guide/playbooks_conditionals.rst:409
 msgid ":ref:`playbooks_best_practices`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:406
+#: ../../rst/user_guide/playbooks_conditionals.rst:410
 msgid "Best practices in playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:407
+#: ../../rst/user_guide/playbooks_conditionals.rst:411
 msgid ":ref:`playbooks_variables`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:408
+#: ../../rst/user_guide/playbooks_conditionals.rst:412
 msgid "All about variables"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:409
+#: ../../rst/user_guide/playbooks_conditionals.rst:413
 msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:410
+#: ../../rst/user_guide/playbooks_conditionals.rst:414
 msgid "Have a question?  Stop by the google group!"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:411
+#: ../../rst/user_guide/playbooks_conditionals.rst:415
 msgid "`irc.freenode.net <http://irc.freenode.net>`_"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_conditionals.rst:412
+#: ../../rst/user_guide/playbooks_conditionals.rst:416
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ""
+#~ "Variables defined in the playbooks or"
+#~ " inventory can also be used.  An "
+#~ "example may be the execution of a"
+#~ " task based on a variable's boolean"
+#~ " value::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Combining `when` with loops (see "
+#~ ":doc:`playbooks_loops`), be aware that the "
+#~ "`when` statement is processed separately "
+#~ "for each item. This is by design::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You will note a lot of 'skipped'"
+#~ " output by default in Ansible when"
+#~ " using this approach on systems that"
+#~ " don't match the criteria. In many"
+#~ " cases the ``group_by`` module (see "
+#~ ":doc:`modules`) can be a more "
+#~ "streamlined way to accomplish the same"
+#~ " thing; see :ref:`os_variance`."
+#~ msgstr ""
 

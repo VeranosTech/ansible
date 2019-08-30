@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,89 +19,87 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/modules/vmware_guest_facts_module.rst:9
-msgid "vmware_guest_facts -- Gather facts about a single VM"
+msgid "vmware_guest_facts -- Gather info about a single VM"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_facts_module.rst:19
-msgid "Synopsis"
-msgstr ""
-
-#: ../../rst/modules/vmware_guest_facts_module.rst:20
-msgid "Gather facts about a single VM on a VMware ESX cluster."
-msgstr ""
-
-#: ../../rst/modules/vmware_guest_facts_module.rst:25
-msgid "Requirements"
-msgstr ""
-
-#: ../../rst/modules/vmware_guest_facts_module.rst:26
-msgid "The below requirements are needed on the host that executes this module."
-msgstr ""
-
-#: ../../rst/modules/vmware_guest_facts_module.rst:28
-msgid "python >= 2.6"
-msgstr ""
-
-#: ../../rst/modules/vmware_guest_facts_module.rst:29
-msgid "PyVmomi"
-msgstr ""
-
-#: ../../rst/modules/vmware_guest_facts_module.rst:33
-msgid "Parameters"
-msgstr ""
-
-#: ../../rst/modules/vmware_guest_facts_module.rst:236
-msgid "Notes"
-msgstr ""
-
-#: ../../rst/modules/vmware_guest_facts_module.rst:239
-msgid "Tested on vSphere 5.5"
-msgstr ""
-
-#: ../../rst/modules/vmware_guest_facts_module.rst:244
-msgid "Examples"
-msgstr ""
-
-#: ../../rst/modules/vmware_guest_facts_module.rst:264
-msgid "Return Values"
-msgstr ""
-
-#: ../../rst/modules/vmware_guest_facts_module.rst:265
+#: ../../rst/modules/vmware_guest_facts_module.rst:11
 msgid ""
-"Common return values are documented :ref:`here <common_return_values>`, "
-"the following are the fields unique to this module:"
+"This is an alias for :ref:`vmware_guest_info <vmware_guest_info_module>`."
+" This name has been **deprecated**. Please update your tasks to use the "
+"new name ``vmware_guest_info`` instead."
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_facts_module.rst:293
-msgid "Status"
-msgstr ""
+#~ msgid "vmware_guest_facts -- Gather facts about a single VM"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_guest_facts_module.rst:298
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
-msgstr ""
+#~ msgid "Synopsis"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_guest_facts_module.rst:301
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
-msgstr ""
+#~ msgid "Gather facts about a single VM on a VMware ESX cluster."
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_guest_facts_module.rst:308
-msgid "Authors"
-msgstr ""
+#~ msgid "Requirements"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_guest_facts_module.rst:310
-msgid "Loic Blot (@nerzhul) <loic.blot@unix-experience.fr>"
-msgstr ""
+#~ msgid ""
+#~ "The below requirements are needed on "
+#~ "the host that executes this module."
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_guest_facts_module.rst:314
-#, python-format
-msgid ""
-"If you notice any issues in this documentation you can `edit this "
-"document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_guest_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
-" to improve it."
-msgstr ""
+#~ msgid "python >= 2.6"
+#~ msgstr ""
+
+#~ msgid "PyVmomi"
+#~ msgstr ""
+
+#~ msgid "Parameters"
+#~ msgstr ""
+
+#~ msgid "Notes"
+#~ msgstr ""
+
+#~ msgid "Tested on vSphere 5.5"
+#~ msgstr ""
+
+#~ msgid "Examples"
+#~ msgstr ""
+
+#~ msgid "Return Values"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Common return values are documented "
+#~ ":ref:`here <common_return_values>`, the following"
+#~ " are the fields unique to this "
+#~ "module:"
+#~ msgstr ""
+
+#~ msgid "Status"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid "Authors"
+#~ msgstr ""
+
+#~ msgid "Loic Blot (@nerzhul) <loic.blot@unix-experience.fr>"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_guest_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

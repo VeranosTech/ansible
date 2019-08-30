@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,76 +22,102 @@ msgstr ""
 msgid "gcspanner -- Create and Delete Instances/Databases on Spanner"
 msgstr ""
 
+#: ../../rst/modules/gcspanner_module.rst:18
+msgid "DEPRECATED"
+msgstr ""
+
+#: ../../rst/modules/gcspanner_module.rst
+msgid "Removed in Ansible"
+msgstr ""
+
 #: ../../rst/modules/gcspanner_module.rst:19
-msgid "Synopsis"
+msgid "version: 2.12"
+msgstr ""
+
+#: ../../rst/modules/gcspanner_module.rst
+msgid "Why"
 msgstr ""
 
 #: ../../rst/modules/gcspanner_module.rst:20
+msgid "Updated modules released with increased functionality"
+msgstr ""
+
+#: ../../rst/modules/gcspanner_module.rst
+msgid "Alternative"
+msgstr ""
+
+#: ../../rst/modules/gcspanner_module.rst:21
+msgid ""
+"Use :ref:`gcp_spanner_database <gcp_spanner_database_module>` and/or "
+":ref:`gcp_spanner_instance <gcp_spanner_instance_module>` instead."
+msgstr ""
+
+#: ../../rst/modules/gcspanner_module.rst:26
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/gcspanner_module.rst:27
 msgid ""
 "Create and Delete Instances/Databases on Spanner. See "
 "https://cloud.google.com/spanner/docs for an overview."
 msgstr ""
 
-#: ../../rst/modules/gcspanner_module.rst:25
+#: ../../rst/modules/gcspanner_module.rst:32
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/gcspanner_module.rst:26
+#: ../../rst/modules/gcspanner_module.rst:33
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/gcspanner_module.rst:28
+#: ../../rst/modules/gcspanner_module.rst:35
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/gcspanner_module.rst:29
+#: ../../rst/modules/gcspanner_module.rst:36
 msgid "google-auth >= 0.5.0"
 msgstr ""
 
-#: ../../rst/modules/gcspanner_module.rst:30
+#: ../../rst/modules/gcspanner_module.rst:37
 msgid "google-cloud-spanner >= 0.23.0"
 msgstr ""
 
-#: ../../rst/modules/gcspanner_module.rst:34
+#: ../../rst/modules/gcspanner_module.rst:41
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/gcspanner_module.rst:153
+#: ../../rst/modules/gcspanner_module.rst:160
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/gcspanner_module.rst:156
+#: ../../rst/modules/gcspanner_module.rst:163
 msgid "Changing the configuration on an existing instance is not supported."
 msgstr ""
 
-#: ../../rst/modules/gcspanner_module.rst:161
+#: ../../rst/modules/gcspanner_module.rst:168
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/gcspanner_module.rst:191
+#: ../../rst/modules/gcspanner_module.rst:198
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/gcspanner_module.rst:192
+#: ../../rst/modules/gcspanner_module.rst:199
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/gcspanner_module.rst:272
+#: ../../rst/modules/gcspanner_module.rst:279
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/gcspanner_module.rst:277
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
+#: ../../rst/modules/gcspanner_module.rst:282
+msgid "This module will be removed in version 2.12. *[deprecated]*"
 msgstr ""
 
-#: ../../rst/modules/gcspanner_module.rst:280
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
+#: ../../rst/modules/gcspanner_module.rst:283
+msgid "For more information see `DEPRECATED`_."
 msgstr ""
 
 #: ../../rst/modules/gcspanner_module.rst:287
@@ -105,9 +131,29 @@ msgstr ""
 #: ../../rst/modules/gcspanner_module.rst:293
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/gcspanner.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/_gcspanner.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/gcspanner.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -1,0 +1,333 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:5
+msgid "Guidelines for VMware module development"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:7
+msgid ""
+"The VMware modules and these guidelines are maintained by the VMware "
+"Working Group. For further information see the `team community page "
+"<https://github.com/ansible/community/wiki/VMware>`_."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:14
+msgid "Testing with govcsim"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:16
+msgid ""
+"Most of the existing modules are covered by functional tests. The tests "
+"are located in the :file:`test/integration/targets/`."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:18
+msgid ""
+"By default, the tests run against a vCenter API simulator called `govcsim"
+" <https://github.com/vmware/govmomi/tree/master/vcsim>`_. ``ansible-"
+"test`` will automatically pull a `govcsim container "
+"<https://quay.io/repository/ansible/vcenter-test-container>` and use it "
+"to set-up the test environment."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:20
+msgid ""
+"You can trigger the test of a module manually with the ``ansible-test`` "
+"command. For example, to trigger ``vcenter_folder`` tests:"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:27
+msgid ""
+"``govcsim`` is handy because it's much more fast that than a regular test"
+" environment. However, it does not support all the ESXi or vCenter "
+"features."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:32
+msgid ""
+"Do not confuse ``govcsim`` with ``vcsim``. It's old outdated version of "
+"vCenter simulator whereas govcsim is new and written in go lang"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:35
+msgid "Testing with your own infrastructure"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:37
+msgid ""
+"You can also target a regular VMware environment. This paragraph explains"
+" step by step how you can run the test-suite yourself."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:40
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:42
+msgid "2 ESXi hosts (6.5 or 6.7)"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:43
+msgid "with 2 NIC, the second ones should be available for the test"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:44
+msgid "a VCSA host"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:45
+msgid "a NFS server"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:48
+msgid "Python dependencies:"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:47
+msgid "`pyvmomi <https://github.com/vmware/pyvmomi/tree/master/pyVmomi>`"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:48
+msgid "`requests <https://2.python-requests.org/en/master/>`."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:50
+msgid ""
+"If you want to deploy your test environment in a hypervisor, both VMware "
+"or Libvirt <https://github.com/goneri/vmware-on-libvirt> work well."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:53
+msgid "NFS server configuration"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:55
+msgid "Your NFS server must expose the following directory structure:"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:68
+msgid ""
+"On a Linux system, you can expose the directory over NFS with the "
+"following export file:"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:77
+msgid ""
+"With this configuration all the new files will be owned by the user with "
+"the UID and GID 1000/1000. Adjust the configuration to match your user's "
+"UID/GID."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:80
+msgid "The service can be enabled with:"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:88
+msgid "Configure your installation"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:90
+msgid ""
+"Prepare a configuration file that describes your set-up. The file should "
+"be called :file:`test/integration/cloud-config-vcenter.ini` and based on "
+":file:`test/integration/cloud-config-vcenter.ini.template`. For instance,"
+" if you've deployed your lab with `vmware-on-libvirt "
+"<https://github.com/goneri/vmware-on-libvirt>`:"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:110
+msgid "If you use an HTTP proxy"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:111
+msgid ""
+"Support for hosting test infrastructure behind an HTTP proxy is currently"
+" in development. See the following pull requests for more information:"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:113
+msgid ""
+"ansible-test: vcenter behind an HTTP proxy "
+"<https://github.com/ansible/ansible/pull/58208>"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:114
+msgid "pyvmomi: proxy support <https://github.com/vmware/pyvmomi/pull/799>"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:115
+msgid ""
+"VMware: add support for HTTP proxy in connection API "
+"<https://github.com/ansible/ansible/pull/52936>"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:117
+msgid ""
+"Once you have incorporated the code from those PRs, specify the location "
+"of the proxy server with the two extra keys:"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:124
+msgid ""
+"In addition, you may need to adjust the variables of the following file "
+"to match the configuration of your lab: "
+":file:`test/integration/targets/prepare_vmware_tests/vars/real_lab.yml`. "
+"If you use `vmware-on-libvirt <https://github.com/goneri/vmware-on-"
+"libvirt>` to prepare you lab, you don't have anything to change."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:128
+msgid "Run the test-suite"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:130
+msgid ""
+"Once your configuration is ready, you can trigger a run with the "
+"following command:"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:137
+msgid "``vmware_host_firewall_manager`` is the name of the module to test."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:139
+msgid ""
+"``vmware_guest`` is much larger than any other test role and is rather "
+"slow. You can enable or disable some of its test playbooks in "
+":file:`test/integration/targets/vmware_guest/defaults/main.yml`."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:144
+msgid "Unit-test"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:146
+msgid ""
+"The VMware modules have limited unit-test coverage. You can run the test "
+"suite with the following commands:"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:155
+msgid "Code style and best practice"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:158
+msgid "datacenter argument with ESXi"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:160
+msgid ""
+"The ``datacenter`` parameter should not use ``ha-datacenter`` by default."
+" This is because the user may not realize that Ansible silently targets "
+"the wrong data center."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:164
+msgid "esxi_hostname should not be mandatory"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:166
+msgid ""
+"Depending upon the functionality provided by ESXi or vCenter, some "
+"modules can seamlessly work with both. In this case, ``esxi_hostname`` "
+"parameter should be optional."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:182
+msgid "Functional tests"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:185
+msgid "Writing new tests"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:187
+msgid ""
+"If you are writing a new collection of integration tests, there are a few"
+" VMware-specific things to note beyond the standard Ansible "
+":ref:`integration testing<testing_integration>` process."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:190
+msgid ""
+"The test-suite uses a set of common, pre-defined vars located in the "
+":file:`test/integration/targets/prepare_vmware_tests/` role. The "
+"resources defined there are automatically created by importing that role "
+"at the start of your test:"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:200
+msgid ""
+"This will give you a ready to use cluster, datacenter, datastores, "
+"folder, switch, dvswitch, ESXi hosts, and VMs."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:203
+msgid "No need to create too much resources"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:205
+msgid ""
+"Most of the time, it's not necessary to use ``with_items`` to create "
+"multiple resources. By avoiding it, you speed up the test execution and "
+"you simplify the clean up afterwards."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:209
+msgid "VM names should be predictable"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:211
+msgid ""
+"If you need to create a new VM during your test, you can use "
+"``test_vm1``, ``test_vm2`` or ``test_vm3``. This way it will be "
+"automatically clean up for you."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:216
+msgid "Typographic convention"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:219
+msgid "Nomenclature"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:221
+msgid "We try to enforce the following rules in our documentation:"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:223
+msgid "VMware, not VMWare or vmware"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:224
+msgid "ESXi, not esxi or ESXI"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:225
+msgid "vCenter, not vcenter or VCenter"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/vmware_guidelines.rst:227
+msgid ""
+"We also refer to vcsim's Go implementation with ``govcsim``. This to "
+"avoid any confusion with the outdated implementation."
+msgstr ""
+

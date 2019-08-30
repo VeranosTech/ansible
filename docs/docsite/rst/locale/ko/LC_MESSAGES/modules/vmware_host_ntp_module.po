@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,62 +64,70 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_ntp_module.rst:212
+#: ../../rst/modules/vmware_host_ntp_module.rst:242
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_ntp_module.rst:215
+#: ../../rst/modules/vmware_host_ntp_module.rst:245
 msgid "Tested on vSphere 6.5"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_ntp_module.rst:220
+#: ../../rst/modules/vmware_host_ntp_module.rst:250
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_ntp_module.rst:275
+#: ../../rst/modules/vmware_host_ntp_module.rst:305
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_ntp_module.rst:276
+#: ../../rst/modules/vmware_host_ntp_module.rst:306
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_ntp_module.rst:304
+#: ../../rst/modules/vmware_host_ntp_module.rst:334
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_ntp_module.rst:309
+#: ../../rst/modules/vmware_host_ntp_module.rst:339
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_ntp_module.rst:312
+#: ../../rst/modules/vmware_host_ntp_module.rst:342
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_ntp_module.rst:319
+#: ../../rst/modules/vmware_host_ntp_module.rst:349
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_ntp_module.rst:321
+#: ../../rst/modules/vmware_host_ntp_module.rst:351
 msgid "Abhijeet Kasurde (@Akasurde)"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_ntp_module.rst:322
+#: ../../rst/modules/vmware_host_ntp_module.rst:352
 msgid "Christian Kotte (@ckotte)"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_ntp_module.rst:326
+#: ../../rst/modules/vmware_host_ntp_module.rst:356
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_host_ntp.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_host_ntp.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_host_ntp.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

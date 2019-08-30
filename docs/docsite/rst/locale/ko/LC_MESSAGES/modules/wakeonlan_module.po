@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,84 +22,92 @@ msgstr ""
 msgid "wakeonlan -- Send a magic Wake-on-LAN (WoL) broadcast packet"
 msgstr ""
 
-#: ../../rst/modules/wakeonlan_module.rst:19
+#: ../../rst/modules/wakeonlan_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/wakeonlan_module.rst:20
+#: ../../rst/modules/wakeonlan_module.rst:19
 msgid "The ``wakeonlan`` module sends magic Wake-on-LAN (WoL) broadcast packets."
 msgstr ""
 
-#: ../../rst/modules/wakeonlan_module.rst:26
+#: ../../rst/modules/wakeonlan_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/wakeonlan_module.rst:82
+#: ../../rst/modules/wakeonlan_module.rst:81
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/wakeonlan_module.rst:85
+#: ../../rst/modules/wakeonlan_module.rst:84
 msgid "This module sends a magic packet, without knowing whether it worked"
 msgstr ""
 
-#: ../../rst/modules/wakeonlan_module.rst:86
+#: ../../rst/modules/wakeonlan_module.rst:85
 msgid ""
 "Only works if the target system was properly configured for Wake-on-LAN "
 "(in the BIOS and/or the OS)"
 msgstr ""
 
-#: ../../rst/modules/wakeonlan_module.rst:87
+#: ../../rst/modules/wakeonlan_module.rst:86
 msgid ""
 "Some BIOSes have a different (configurable) Wake-on-LAN boot order (i.e. "
 "PXE first)."
 msgstr ""
 
-#: ../../rst/modules/wakeonlan_module.rst:91
+#: ../../rst/modules/wakeonlan_module.rst:90
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/wakeonlan_module.rst:95
+#: ../../rst/modules/wakeonlan_module.rst:94
 msgid ":ref:`win_wakeonlan_module`"
 msgstr ""
 
-#: ../../rst/modules/wakeonlan_module.rst:96
+#: ../../rst/modules/wakeonlan_module.rst:95
 msgid "The official documentation on the **win_wakeonlan** module."
 msgstr ""
 
-#: ../../rst/modules/wakeonlan_module.rst:100
+#: ../../rst/modules/wakeonlan_module.rst:99
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/wakeonlan_module.rst:121
+#: ../../rst/modules/wakeonlan_module.rst:120
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/wakeonlan_module.rst:126
+#: ../../rst/modules/wakeonlan_module.rst:125
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/wakeonlan_module.rst:129
+#: ../../rst/modules/wakeonlan_module.rst:128
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/wakeonlan_module.rst:136
+#: ../../rst/modules/wakeonlan_module.rst:135
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/wakeonlan_module.rst:138
+#: ../../rst/modules/wakeonlan_module.rst:137
 msgid "Dag Wieers (@dagwieers)"
 msgstr ""
 
-#: ../../rst/modules/wakeonlan_module.rst:142
+#: ../../rst/modules/wakeonlan_module.rst:141
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/remote_management/wakeonlan.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/remote_management/wakeonlan.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/remote_management/wakeonlan.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

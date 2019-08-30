@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,58 +34,74 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/fmgr_secprof_waf_module.rst:2398
+#: ../../rst/modules/fmgr_secprof_waf_module.rst:2357
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/fmgr_secprof_waf_module.rst:2360
+msgid "Full Documentation at https://ftnt-ansible-docs.readthedocs.io/en/latest/."
+msgstr ""
+
+#: ../../rst/modules/fmgr_secprof_waf_module.rst:2365
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/fmgr_secprof_waf_module.rst:2425
+#: ../../rst/modules/fmgr_secprof_waf_module.rst:2386
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/fmgr_secprof_waf_module.rst:2426
+#: ../../rst/modules/fmgr_secprof_waf_module.rst:2387
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/fmgr_secprof_waf_module.rst:2452
+#: ../../rst/modules/fmgr_secprof_waf_module.rst:2413
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/fmgr_secprof_waf_module.rst:2457
+#: ../../rst/modules/fmgr_secprof_waf_module.rst:2418
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/fmgr_secprof_waf_module.rst:2460
+#: ../../rst/modules/fmgr_secprof_waf_module.rst:2421
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/fmgr_secprof_waf_module.rst:2467
+#: ../../rst/modules/fmgr_secprof_waf_module.rst:2428
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/fmgr_secprof_waf_module.rst:2469
+#: ../../rst/modules/fmgr_secprof_waf_module.rst:2430
 msgid "Luke Weighall (@lweighall)"
 msgstr ""
 
-#: ../../rst/modules/fmgr_secprof_waf_module.rst:2470
+#: ../../rst/modules/fmgr_secprof_waf_module.rst:2431
 msgid "Andrew Welsh (@Ghilli3)"
 msgstr ""
 
-#: ../../rst/modules/fmgr_secprof_waf_module.rst:2471
+#: ../../rst/modules/fmgr_secprof_waf_module.rst:2432
 msgid "Jim Huber (@p4r4n0y1ng)"
 msgstr ""
 
-#: ../../rst/modules/fmgr_secprof_waf_module.rst:2475
+#: ../../rst/modules/fmgr_secprof_waf_module.rst:2436
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/fortimanager/fmgr_secprof_waf.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/fortimanager/fmgr_secprof_waf.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/fortimanager/fmgr_secprof_waf.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

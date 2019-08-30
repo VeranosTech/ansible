@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,102 +22,145 @@ msgstr ""
 msgid "eos_l2_interface -- Manage L2 interfaces on Arista EOS network devices"
 msgstr ""
 
+#: ../../rst/modules/eos_l2_interface_module.rst:18
+msgid "DEPRECATED"
+msgstr ""
+
+#: ../../rst/modules/eos_l2_interface_module.rst
+msgid "Removed in Ansible"
+msgstr ""
+
 #: ../../rst/modules/eos_l2_interface_module.rst:19
-msgid "Synopsis"
+msgid "version: 2.13"
+msgstr ""
+
+#: ../../rst/modules/eos_l2_interface_module.rst
+msgid "Why"
 msgstr ""
 
 #: ../../rst/modules/eos_l2_interface_module.rst:20
+msgid "Updated modules released with more functionality"
+msgstr ""
+
+#: ../../rst/modules/eos_l2_interface_module.rst
+msgid "Alternative"
+msgstr ""
+
+#: ../../rst/modules/eos_l2_interface_module.rst:21
+msgid "eos_l2_interfaces"
+msgstr ""
+
+#: ../../rst/modules/eos_l2_interface_module.rst:26
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/eos_l2_interface_module.rst:27
 msgid ""
 "This module provides declarative management of L2 interfaces on Arista "
 "EOS network devices."
 msgstr ""
 
-#: ../../rst/modules/eos_l2_interface_module.rst:26
+#: ../../rst/modules/eos_l2_interface_module.rst:33
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/eos_l2_interface_module.rst:392
+#: ../../rst/modules/eos_l2_interface_module.rst:399
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/eos_l2_interface_module.rst:395
+#: ../../rst/modules/eos_l2_interface_module.rst:402
 msgid "Tested against EOS 4.15"
 msgstr ""
 
-#: ../../rst/modules/eos_l2_interface_module.rst:396
+#: ../../rst/modules/eos_l2_interface_module.rst:403
 msgid ""
 "For information on using CLI, eAPI and privileged mode see the :ref:`EOS "
 "Platform Options guide <eos_platform_options>`"
 msgstr ""
 
-#: ../../rst/modules/eos_l2_interface_module.rst:397
+#: ../../rst/modules/eos_l2_interface_module.rst:404
 msgid ""
 "For more information on using Ansible to manage network devices see the "
 ":ref:`Ansible Network Guide <network_guide>`"
 msgstr ""
 
-#: ../../rst/modules/eos_l2_interface_module.rst:398
+#: ../../rst/modules/eos_l2_interface_module.rst:405
 msgid ""
 "For more information on using Ansible to manage Arista EOS devices see "
 "the `Arista integration page <https://www.ansible.com/ansible-arista-"
 "networks>`_."
 msgstr ""
 
-#: ../../rst/modules/eos_l2_interface_module.rst:403
+#: ../../rst/modules/eos_l2_interface_module.rst:410
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/eos_l2_interface_module.rst:436
+#: ../../rst/modules/eos_l2_interface_module.rst:443
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/eos_l2_interface_module.rst:437
+#: ../../rst/modules/eos_l2_interface_module.rst:444
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/eos_l2_interface_module.rst:465
+#: ../../rst/modules/eos_l2_interface_module.rst:472
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/eos_l2_interface_module.rst:470
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
-msgstr ""
-
-#: ../../rst/modules/eos_l2_interface_module.rst:473
-msgid ""
-"This module is :ref:`maintained by the Ansible Network Team "
-"<modules_support>`. *[network]*"
+#: ../../rst/modules/eos_l2_interface_module.rst:475
+msgid "This module will be removed in version 2.13. *[deprecated]*"
 msgstr ""
 
 #: ../../rst/modules/eos_l2_interface_module.rst:476
-msgid "Red Hat Support"
+msgid "For more information see `DEPRECATED`_."
 msgstr ""
 
-#: ../../rst/modules/eos_l2_interface_module.rst:478
-msgid ""
-"More information about Red Hat's support of this module is available from"
-" this `Red Hat Knowledge Base article "
-"<https://access.redhat.com/articles/3166901>`_."
-msgstr ""
-
-#: ../../rst/modules/eos_l2_interface_module.rst:484
+#: ../../rst/modules/eos_l2_interface_module.rst:480
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/eos_l2_interface_module.rst:486
+#: ../../rst/modules/eos_l2_interface_module.rst:482
 msgid "Ricardo Carrillo Cruz (@rcarrillocruz)"
 msgstr ""
 
-#: ../../rst/modules/eos_l2_interface_module.rst:490
+#: ../../rst/modules/eos_l2_interface_module.rst:486
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/eos/eos_l2_interface.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/eos/_eos_l2_interface.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Network Team <modules_support>`. "
+#~ "*[network]*"
+#~ msgstr ""
+
+#~ msgid "Red Hat Support"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "More information about Red Hat's support"
+#~ " of this module is available from "
+#~ "this `Red Hat Knowledge Base article "
+#~ "<https://access.redhat.com/articles/3166901>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/eos/eos_l2_interface.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

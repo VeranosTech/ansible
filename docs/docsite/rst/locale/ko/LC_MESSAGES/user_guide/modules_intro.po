@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,9 +82,8 @@ msgstr ""
 
 #: ../../rst/user_guide/modules_intro.rst:47
 msgid ""
-"For a list of all available modules, see "
-":doc:`../modules/modules_by_category`, or run the following at a command "
-"prompt::"
+"For a list of all available modules, see the :ref:`Module Docs "
+"<modules_by_category>`, or run the following at a command prompt::"
 msgstr ""
 
 #: ../../rst/user_guide/modules_intro.rst:54
@@ -134,4 +133,11 @@ msgstr ""
 #: ../../rst/user_guide/modules_intro.rst:65
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ""
+#~ "For a list of all available "
+#~ "modules, see :doc:`../modules/modules_by_category`, "
+#~ "or run the following at a command"
+#~ " prompt::"
+#~ msgstr ""
 

@@ -1,0 +1,145 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/ecs_certificate_module.rst:9
+msgid ""
+"ecs_certificate -- Request SSL/TLS certificates with the Entrust "
+"Certificate Services (ECS) API"
+msgstr ""
+
+#: ../../rst/modules/ecs_certificate_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/ecs_certificate_module.rst:20
+msgid ""
+"Create, reissue, and renew certificates with the Entrust Certificate "
+"Services (ECS) API."
+msgstr ""
+
+#: ../../rst/modules/ecs_certificate_module.rst:21
+msgid ""
+"Requires credentials for the `Entrust Certificate Services "
+"<https://www.entrustdatacard.com/products/categories/ssl-certificates>`_ "
+"(ECS) API."
+msgstr ""
+
+#: ../../rst/modules/ecs_certificate_module.rst:22
+msgid ""
+"In order to request a certificate, the domain and organization used in "
+"the certificate signing request must be already validated in the ECS "
+"system. It is *not* the responsibility of this module to perform those "
+"steps."
+msgstr ""
+
+#: ../../rst/modules/ecs_certificate_module.rst:27
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/ecs_certificate_module.rst:28
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/ecs_certificate_module.rst:30
+msgid "PyYAML >= 3.11"
+msgstr ""
+
+#: ../../rst/modules/ecs_certificate_module.rst:31
+msgid "cryptography >= 1.6"
+msgstr ""
+
+#: ../../rst/modules/ecs_certificate_module.rst:35
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/ecs_certificate_module.rst:1956
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/ecs_certificate_module.rst:1959
+msgid "``path`` must be specified as the output location of the certificate."
+msgstr ""
+
+#: ../../rst/modules/ecs_certificate_module.rst:1963
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/ecs_certificate_module.rst:1967
+msgid ":ref:`openssl_privatekey_module`"
+msgstr ""
+
+#: ../../rst/modules/ecs_certificate_module.rst:1968
+msgid "Can be used to create private keys (both for certificates and accounts)."
+msgstr ""
+
+#: ../../rst/modules/ecs_certificate_module.rst:1969
+msgid ":ref:`openssl_csr_module`"
+msgstr ""
+
+#: ../../rst/modules/ecs_certificate_module.rst:1970
+msgid "Can be used to create a Certificate Signing Request (CSR)."
+msgstr ""
+
+#: ../../rst/modules/ecs_certificate_module.rst:1974
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/ecs_certificate_module.rst:2097
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/ecs_certificate_module.rst:2098
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/ecs_certificate_module.rst:2217
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/ecs_certificate_module.rst:2222
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/ecs_certificate_module.rst:2225
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/ecs_certificate_module.rst:2232
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/ecs_certificate_module.rst:2234
+msgid "Chris Trufan (@ctrufan)"
+msgstr ""
+
+#: ../../rst/modules/ecs_certificate_module.rst:2238
+#, python-format
+msgid ""
+"If you notice any issues in this documentation, you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/crypto/entrust/ecs_certificate.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

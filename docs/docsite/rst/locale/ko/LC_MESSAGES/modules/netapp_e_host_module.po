@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,42 +22,42 @@ msgstr ""
 msgid "netapp_e_host -- NetApp E-Series manage eseries hosts"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_host_module.rst:19
+#: ../../rst/modules/netapp_e_host_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_host_module.rst:20
+#: ../../rst/modules/netapp_e_host_module.rst:19
 msgid "Create, update, remove hosts on NetApp E-series storage arrays"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_host_module.rst:26
+#: ../../rst/modules/netapp_e_host_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_host_module.rst:268
+#: ../../rst/modules/netapp_e_host_module.rst:269
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_host_module.rst:271
+#: ../../rst/modules/netapp_e_host_module.rst:272
 msgid ""
 "The E-Series Ansible modules require either an instance of the Web "
 "Services Proxy (WSP), to be available to manage the storage-system, or an"
 " E-Series storage-system that supports the Embedded Web Services API."
 msgstr ""
 
-#: ../../rst/modules/netapp_e_host_module.rst:272
+#: ../../rst/modules/netapp_e_host_module.rst:273
 msgid ""
 "Embedded Web Services is currently available on the E2800, E5700, EF570, "
 "and newer hardware models."
 msgstr ""
 
-#: ../../rst/modules/netapp_e_host_module.rst:273
+#: ../../rst/modules/netapp_e_host_module.rst:274
 msgid ""
 ":ref:`netapp_e_storage_system <netapp_e_storage_system_module>` may be "
 "utilized for configuring the systems managed by a WSP instance."
 msgstr ""
 
-#: ../../rst/modules/netapp_e_host_module.rst:278
+#: ../../rst/modules/netapp_e_host_module.rst:279
 msgid "Examples"
 msgstr ""
 
@@ -95,12 +95,24 @@ msgstr ""
 msgid "Kevin Hulquest (@hulquest)"
 msgstr ""
 
-#: ../../rst/modules/netapp_e_host_module.rst:406
+#: ../../rst/modules/netapp_e_host_module.rst:403
+msgid "Nathan Swartz (@ndswartz)"
+msgstr ""
+
+#: ../../rst/modules/netapp_e_host_module.rst:407
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/netapp_e_host.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/netapp_e_host.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/storage/netapp/netapp_e_host.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

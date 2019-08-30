@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,81 +40,89 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/stat_module.rst:171
+#: ../../rst/modules/stat_module.rst:151
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/stat_module.rst:175
+#: ../../rst/modules/stat_module.rst:155
 msgid ":ref:`file_module`"
 msgstr ""
 
-#: ../../rst/modules/stat_module.rst:176
+#: ../../rst/modules/stat_module.rst:156
 msgid "The official documentation on the **file** module."
 msgstr ""
 
-#: ../../rst/modules/stat_module.rst:177
+#: ../../rst/modules/stat_module.rst:157
 msgid ":ref:`win_stat_module`"
 msgstr ""
 
-#: ../../rst/modules/stat_module.rst:178
+#: ../../rst/modules/stat_module.rst:158
 msgid "The official documentation on the **win_stat** module."
 msgstr ""
 
-#: ../../rst/modules/stat_module.rst:182
+#: ../../rst/modules/stat_module.rst:162
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/stat_module.rst:245
+#: ../../rst/modules/stat_module.rst:225
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/stat_module.rst:246
+#: ../../rst/modules/stat_module.rst:226
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/stat_module.rst:835
+#: ../../rst/modules/stat_module.rst:815
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/stat_module.rst:840
+#: ../../rst/modules/stat_module.rst:820
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/stat_module.rst:843
+#: ../../rst/modules/stat_module.rst:823
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/stat_module.rst:846
+#: ../../rst/modules/stat_module.rst:826
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/stat_module.rst:848
+#: ../../rst/modules/stat_module.rst:828
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/stat_module.rst:854
+#: ../../rst/modules/stat_module.rst:834
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/stat_module.rst:856
+#: ../../rst/modules/stat_module.rst:836
 msgid "Bruce Pennypacker (@bpennypacker)"
 msgstr ""
 
-#: ../../rst/modules/stat_module.rst:860
+#: ../../rst/modules/stat_module.rst:840
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/files/stat.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/files/stat.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/files/stat.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

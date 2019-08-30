@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "skippy -- Ansible screen output that ignores skipped status"
 msgstr ""
 
-#: ../../rst/plugins/callback/skippy.rst:17
+#: ../../rst/plugins/callback/skippy.rst:16
 msgid "DEPRECATED"
 msgstr ""
 
@@ -30,7 +30,7 @@ msgstr ""
 msgid "Removed in Ansible"
 msgstr ""
 
-#: ../../rst/plugins/callback/skippy.rst:18
+#: ../../rst/plugins/callback/skippy.rst:17
 msgid "version: 2.11"
 msgstr ""
 
@@ -38,7 +38,7 @@ msgstr ""
 msgid "Why"
 msgstr ""
 
-#: ../../rst/plugins/callback/skippy.rst:19
+#: ../../rst/plugins/callback/skippy.rst:18
 msgid "The 'default' callback plugin now supports this functionality"
 msgstr ""
 
@@ -46,63 +46,72 @@ msgstr ""
 msgid "Alternative"
 msgstr ""
 
-#: ../../rst/plugins/callback/skippy.rst:20
+#: ../../rst/plugins/callback/skippy.rst:19
 msgid "'default' callback plugin with 'display_skipped_hosts = no' option"
 msgstr ""
 
-#: ../../rst/plugins/callback/skippy.rst:25
+#: ../../rst/plugins/callback/skippy.rst:24
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/plugins/callback/skippy.rst:26
+#: ../../rst/plugins/callback/skippy.rst:25
 msgid ""
 "This callback does the same as the default except it does not output "
 "skipped host/task/item status"
 msgstr ""
 
-#: ../../rst/plugins/callback/skippy.rst:31
+#: ../../rst/plugins/callback/skippy.rst:30
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/plugins/callback/skippy.rst:32
+#: ../../rst/plugins/callback/skippy.rst:31
 msgid ""
 "The below requirements are needed on the local master node that executes "
 "this callback."
 msgstr ""
 
-#: ../../rst/plugins/callback/skippy.rst:34
+#: ../../rst/plugins/callback/skippy.rst:33
 msgid "set as main display callback"
 msgstr ""
 
-#: ../../rst/plugins/callback/skippy.rst:38
+#: ../../rst/plugins/callback/skippy.rst:37
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/plugins/callback/skippy.rst:143
+#: ../../rst/plugins/callback/skippy.rst:175
 msgid "Status"
 msgstr ""
 
-#: ../../rst/plugins/callback/skippy.rst:146
+#: ../../rst/plugins/callback/skippy.rst:178
 msgid "This callback will be removed in version 2.11. *[deprecated]*"
 msgstr ""
 
-#: ../../rst/plugins/callback/skippy.rst:147
+#: ../../rst/plugins/callback/skippy.rst:179
 msgid "For more information see `DEPRECATED`_."
 msgstr ""
 
-#: ../../rst/plugins/callback/skippy.rst:151
+#: ../../rst/plugins/callback/skippy.rst:183
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/plugins/callback/skippy.rst:153
+#: ../../rst/plugins/callback/skippy.rst:185
 msgid "UNKNOWN"
 msgstr ""
 
-#: ../../rst/plugins/callback/skippy.rst:157
+#: ../../rst/plugins/callback/skippy.rst:189
+#, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/callback/skippy.py>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/callback/skippy.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/callback/skippy.py>`_"
+#~ " to improve it."
+#~ msgstr ""
 

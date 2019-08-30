@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,92 +22,138 @@ msgstr ""
 msgid "ios_l2_interface -- Manage Layer-2 interface on Cisco IOS devices"
 msgstr ""
 
+#: ../../rst/modules/ios_l2_interface_module.rst:18
+msgid "DEPRECATED"
+msgstr ""
+
+#: ../../rst/modules/ios_l2_interface_module.rst
+msgid "Removed in Ansible"
+msgstr ""
+
 #: ../../rst/modules/ios_l2_interface_module.rst:19
-msgid "Synopsis"
+msgid "version: 2.13"
+msgstr ""
+
+#: ../../rst/modules/ios_l2_interface_module.rst
+msgid "Why"
 msgstr ""
 
 #: ../../rst/modules/ios_l2_interface_module.rst:20
+msgid "Newer and updated modules released with more functionality in Ansible 2.9"
+msgstr ""
+
+#: ../../rst/modules/ios_l2_interface_module.rst
+msgid "Alternative"
+msgstr ""
+
+#: ../../rst/modules/ios_l2_interface_module.rst:21
+msgid "ios_l2_interfaces"
+msgstr ""
+
+#: ../../rst/modules/ios_l2_interface_module.rst:26
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/ios_l2_interface_module.rst:27
 msgid ""
 "This module provides declarative management of Layer-2 interfaces on "
 "Cisco IOS devices."
 msgstr ""
 
-#: ../../rst/modules/ios_l2_interface_module.rst:26
+#: ../../rst/modules/ios_l2_interface_module.rst:33
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/ios_l2_interface_module.rst:329
+#: ../../rst/modules/ios_l2_interface_module.rst:336
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/ios_l2_interface_module.rst:332
+#: ../../rst/modules/ios_l2_interface_module.rst:339
 msgid ""
 "For more information on using Ansible to manage network devices see the "
 ":ref:`Ansible Network Guide <network_guide>`"
 msgstr ""
 
-#: ../../rst/modules/ios_l2_interface_module.rst:333
+#: ../../rst/modules/ios_l2_interface_module.rst:340
 msgid ""
 "For more information on using Ansible to manage Cisco devices see the "
 "`Cisco integration page "
 "<https://www.ansible.com/integrations/networks/cisco>`_."
 msgstr ""
 
-#: ../../rst/modules/ios_l2_interface_module.rst:338
+#: ../../rst/modules/ios_l2_interface_module.rst:345
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/ios_l2_interface_module.rst:379
+#: ../../rst/modules/ios_l2_interface_module.rst:382
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/ios_l2_interface_module.rst:380
+#: ../../rst/modules/ios_l2_interface_module.rst:383
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/ios_l2_interface_module.rst:408
+#: ../../rst/modules/ios_l2_interface_module.rst:411
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/ios_l2_interface_module.rst:413
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
+#: ../../rst/modules/ios_l2_interface_module.rst:414
+msgid "This module will be removed in version 2.13. *[deprecated]*"
 msgstr ""
 
-#: ../../rst/modules/ios_l2_interface_module.rst:416
-msgid ""
-"This module is :ref:`maintained by the Ansible Network Team "
-"<modules_support>`. *[network]*"
+#: ../../rst/modules/ios_l2_interface_module.rst:415
+msgid "For more information see `DEPRECATED`_."
 msgstr ""
 
 #: ../../rst/modules/ios_l2_interface_module.rst:419
-msgid "Red Hat Support"
-msgstr ""
-
-#: ../../rst/modules/ios_l2_interface_module.rst:421
-msgid ""
-"More information about Red Hat's support of this module is available from"
-" this `Red Hat Knowledge Base article "
-"<https://access.redhat.com/articles/3166901>`_."
-msgstr ""
-
-#: ../../rst/modules/ios_l2_interface_module.rst:427
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/ios_l2_interface_module.rst:429
-msgid "Nathaniel Case (@qalthos)"
+#: ../../rst/modules/ios_l2_interface_module.rst:421
+msgid "Nathaniel Case (@Qalthos)"
 msgstr ""
 
-#: ../../rst/modules/ios_l2_interface_module.rst:433
+#: ../../rst/modules/ios_l2_interface_module.rst:425
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/ios/ios_l2_interface.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/ios/_ios_l2_interface.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Network Team <modules_support>`. "
+#~ "*[network]*"
+#~ msgstr ""
+
+#~ msgid "Red Hat Support"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "More information about Red Hat's support"
+#~ " of this module is available from "
+#~ "this `Red Hat Knowledge Base article "
+#~ "<https://access.redhat.com/articles/3166901>`_."
+#~ msgstr ""
+
+#~ msgid "Nathaniel Case (@qalthos)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/ios/ios_l2_interface.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

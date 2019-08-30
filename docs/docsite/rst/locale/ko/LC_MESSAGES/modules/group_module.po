@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,71 +60,79 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/group_module.rst:129
+#: ../../rst/modules/group_module.rst:147
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/group_module.rst:133
+#: ../../rst/modules/group_module.rst:151
 msgid ":ref:`user_module`"
 msgstr ""
 
-#: ../../rst/modules/group_module.rst:134
+#: ../../rst/modules/group_module.rst:152
 msgid "The official documentation on the **user** module."
 msgstr ""
 
-#: ../../rst/modules/group_module.rst:135
+#: ../../rst/modules/group_module.rst:153
 msgid ":ref:`win_group_module`"
 msgstr ""
 
-#: ../../rst/modules/group_module.rst:136
+#: ../../rst/modules/group_module.rst:154
 msgid "The official documentation on the **win_group** module."
 msgstr ""
 
-#: ../../rst/modules/group_module.rst:140
+#: ../../rst/modules/group_module.rst:158
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/group_module.rst:155
+#: ../../rst/modules/group_module.rst:173
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/group_module.rst:160
+#: ../../rst/modules/group_module.rst:178
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/group_module.rst:163
+#: ../../rst/modules/group_module.rst:181
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/group_module.rst:166
+#: ../../rst/modules/group_module.rst:184
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/group_module.rst:168
+#: ../../rst/modules/group_module.rst:186
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/group_module.rst:174
+#: ../../rst/modules/group_module.rst:192
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/group_module.rst:176
+#: ../../rst/modules/group_module.rst:194
 msgid "Stephen Fromm (@sfromm)"
 msgstr ""
 
-#: ../../rst/modules/group_module.rst:180
+#: ../../rst/modules/group_module.rst:198
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/group.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/group.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/system/group.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

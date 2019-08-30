@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,7 +104,7 @@ msgstr ""
 #: ../../rst/user_guide/windows_dsc.rst:43
 msgid ""
 "Custom resources require further installation steps to be run on the host"
-" beforehand, while Ansible modules are in built-in to Ansible"
+" beforehand, while Ansible modules are built-in to Ansible"
 msgstr ""
 
 #: ../../rst/user_guide/windows_dsc.rst:45
@@ -173,11 +173,34 @@ msgid ""
 "would look like:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:103
+#: ../../rst/user_guide/windows_dsc.rst:102
+msgid ""
+"Starting in Ansible 2.8, the ``win_dsc`` module automatically validates "
+"the input options from Ansible with the DSC definition. This means "
+"Ansible will fail if the option name is incorrect, a mandatory option is "
+"not set, or the value is not a valid choice. When running Ansible with a "
+"verbosity level of 3 or more (``-vvv``), the return value will contain "
+"the possible invocation options based on the ``resource_name`` specified."
+" Here is an example of the invocation output for the above ``Registry`` "
+"task:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:157
+msgid ""
+"The ``invocation.module_args`` key shows the actual values that were set "
+"as well as other possible values that were not set. Unfortunately this "
+"will not show the default value for a DSC property, only what was set "
+"from the Ansible task. Any ``*_password`` option will be masked in the "
+"output for security reasons, if there are any other sensitive module "
+"options, set ``no_log: True`` on the task to stop all task output from "
+"being logged."
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:166
 msgid "Property Types"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:104
+#: ../../rst/user_guide/windows_dsc.rst:167
 msgid ""
 "Each DSC resource property has a type that is associated with it. Ansible"
 " will try to convert the defined options to the correct type during "
@@ -186,11 +209,11 @@ msgid ""
 "(like ``[string[]]``) this require certain rules."
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:111
+#: ../../rst/user_guide/windows_dsc.rst:174
 msgid "PSCredential"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:112
+#: ../../rst/user_guide/windows_dsc.rst:175
 msgid ""
 "A ``[PSCredential]`` object is used to store credentials in a secure way,"
 " but Ansible has no way to serialize this over JSON. To set a DSC "
@@ -199,18 +222,25 @@ msgid ""
 "username and password respectively. For example:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:126
+#: ../../rst/user_guide/windows_dsc.rst:189
 msgid ""
-"You should set ``no_log: yes`` on the task definition in Ansible to "
-"ensure any credentials used are not stored in any log file or console "
-"output."
+"On versions of Ansible older than 2.8, you should set ``no_log: yes`` on "
+"the task definition in Ansible to ensure any credentials used are not "
+"stored in any log file or console output."
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:131
+#: ../../rst/user_guide/windows_dsc.rst:193
+msgid ""
+"A ``[PSCredential]`` is defined with "
+"``EmbeddedInstance(\"MSFT_Credential\")`` in a DSC resource MOF "
+"definition."
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:197
 msgid "CimInstance Type"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:132
+#: ../../rst/user_guide/windows_dsc.rst:198
 msgid ""
 "A ``[CimInstance]`` object is used by DSC to store a dictionary object "
 "based on a custom class defined by that resource. Defining a value that "
@@ -218,11 +248,11 @@ msgid ""
 " in YAML. For example, to define a ``[CimInstance]`` value in Ansible:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:146
+#: ../../rst/user_guide/windows_dsc.rst:212
 msgid ""
 "In the above example, the CIM instance is a representation of the class "
-"``MSFT_xWebAuthenticationInformation "
-"<https://github.com/PowerShell/xWebAdministration/blob/dev/DSCResources/MSFT_xWebsite/MSFT_xWebsite.schema.mof>``_."
+"`MSFT_xWebAuthenticationInformation "
+"<https://github.com/PowerShell/xWebAdministration/blob/dev/DSCResources/MSFT_xWebsite/MSFT_xWebsite.schema.mof>`_."
 " This class accepts four boolean variables, ``Anonymous``, ``Basic``, "
 "``Digest``, and ``Windows``. The keys to use in a ``[CimInstance]`` "
 "depend on the class it represents. Please read through the documentation "
@@ -231,11 +261,24 @@ msgid ""
 "``<resource name>.schema.mof``."
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:155
+#: ../../rst/user_guide/windows_dsc.rst:221
+msgid "HashTable Type"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:222
+msgid ""
+"A ``[HashTable]`` object is also a dictionary but does not have a strict "
+"set of keys that can/need to be defined. Like a ``[CimInstance]``, define"
+" it like a normal dictionary value in YAML. A ``[HashTable]]`` is defined"
+" with ``EmbeddedInstance(\"MSFT_KeyValuePair\")`` in a DSC resource MOF "
+"definition."
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:228
 msgid "Arrays"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:156
+#: ../../rst/user_guide/windows_dsc.rst:229
 msgid ""
 "Simple type arrays like ``[string[]]`` or ``[UInt32[]]`` are defined as a"
 " list or as a comma separated string which are then cast to their type. "
@@ -244,119 +287,139 @@ msgid ""
 "example, to define a simple type array in Ansible:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:177
+#: ../../rst/user_guide/windows_dsc.rst:250
 msgid ""
 "Complex type arrays like ``[CimInstance[]]`` (array of dicts), can be "
 "defined like this example:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:195
+#: ../../rst/user_guide/windows_dsc.rst:268
 msgid ""
 "The above example, is an array with two values of the class "
-"``MSFT_xWebBindingInformation "
-"<https://github.com/PowerShell/xWebAdministration/blob/dev/DSCResources/MSFT_xWebsite/MSFT_xWebsite.schema.mof>``_."
+"`MSFT_xWebBindingInformation "
+"<https://github.com/PowerShell/xWebAdministration/blob/dev/DSCResources/MSFT_xWebsite/MSFT_xWebsite.schema.mof>`_."
 " When defining a ``[CimInstance[]]``, be sure to read the resource "
 "documentation to find out what keys to use in the definition."
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:200
+#: ../../rst/user_guide/windows_dsc.rst:273
+msgid "DateTime"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:274
+msgid ""
+"A ``[DateTime]`` object is a DateTime string representing the date and "
+"time in the `ISO 8601 <https://www.w3.org/TR/NOTE-datetime>`_ date time "
+"format. The value for a ``[DateTime]`` field should be quoted in YAML to "
+"ensure the string is properly serialized to the Windows host. Here is an "
+"example of how to define a ``[DateTime]`` value in Ansible:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:291
+msgid ""
+"All the values above are equal to a UTC date time of February 22nd 2019 "
+"at 1:57pm with 31 seconds and 2311892 milliseconds."
+msgstr ""
+
+#: ../../rst/user_guide/windows_dsc.rst:295
 msgid "Run As Another User"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:201
+#: ../../rst/user_guide/windows_dsc.rst:296
 msgid ""
 "By default, DSC runs each resource as the SYSTEM account and not the "
 "account that Ansible use to run the module. This means that resources "
 "that are dynamically loaded based on a user profile, like the "
 "``HKEY_CURRENT_USER`` registry hive, will be loaded under the ``SYSTEM`` "
-"profile. The parameter `PsDscRunAsCredential`` is a parameter that can be"
-" set for every DSC resource force the DSC engine to run under a different"
-" account. As ``PsDscRunAsCredential`` has a type of ``PSCredential``, it "
-"is defined with the ``_username`` and ``_password`` suffix."
+"profile. The parameter ``PsDscRunAsCredential`` is a parameter that can "
+"be set for every DSC resource force the DSC engine to run under a "
+"different account. As ``PsDscRunAsCredential`` has a type of "
+"``PSCredential``, it is defined with the ``_username`` and ``_password`` "
+"suffix."
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:210
+#: ../../rst/user_guide/windows_dsc.rst:305
 msgid ""
 "Using the Registry resource type as an example, this is how to define a "
 "task to access the ``HKEY_CURRENT_USER`` hive of the Ansible user:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:227
+#: ../../rst/user_guide/windows_dsc.rst:322
 msgid "Custom DSC Resources"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:228
+#: ../../rst/user_guide/windows_dsc.rst:323
 msgid ""
 "DSC resources are not limited to the built-in options from Microsoft. "
 "Custom modules can be installed to manage other resources that are not "
 "usually available."
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:232
+#: ../../rst/user_guide/windows_dsc.rst:327
 msgid "Finding Custom DSC Resources"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:233
+#: ../../rst/user_guide/windows_dsc.rst:328
 msgid ""
 "You can use the `PSGallery <https://www.powershellgallery.com/>`_ to find"
 " custom resources, along with documentation on how to install them  on a "
 "Windows host."
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:236
+#: ../../rst/user_guide/windows_dsc.rst:331
 msgid ""
 "The ``Find-DscResource`` cmdlet can also be used to find custom "
 "resources. For example:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:246
+#: ../../rst/user_guide/windows_dsc.rst:341
 msgid ""
 "DSC resources developed by Microsoft that start with ``x``, means the "
 "resource is experimental and comes with no support."
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:250
+#: ../../rst/user_guide/windows_dsc.rst:345
 msgid "Installing a Custom Resource"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:251
+#: ../../rst/user_guide/windows_dsc.rst:346
 msgid "There are three ways that a DSC resource can be installed on a host:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:253
+#: ../../rst/user_guide/windows_dsc.rst:348
 msgid "Manually with the ``Install-Module`` cmdlet"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:254
+#: ../../rst/user_guide/windows_dsc.rst:349
 msgid "Using the ``win_psmodule`` Ansible module"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:255
+#: ../../rst/user_guide/windows_dsc.rst:350
 msgid "Saving the module manually and copying it another host"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:257
+#: ../../rst/user_guide/windows_dsc.rst:352
 msgid ""
 "This is an example of installing the ``xWebAdministration`` resources "
 "using ``win_psmodule``:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:267
+#: ../../rst/user_guide/windows_dsc.rst:362
 msgid ""
 "Once installed, the win_dsc module will be able to use the resource by "
 "referencing it with the ``resource_name`` option."
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:270
+#: ../../rst/user_guide/windows_dsc.rst:365
 msgid ""
 "The first two methods above only work when the host has access to the "
 "internet. When a host does not have internet access, the module must "
 "first be installed using the methods above on another host with internet "
 "access and then copied across. To save a module to a local filepath, the "
-"following PowerShell cmdlet can be run:"
+"following PowerShell cmdlet can be run::"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:281
+#: ../../rst/user_guide/windows_dsc.rst:373
 msgid ""
 "This will create a folder called ``xWebAdministration`` in ``C:\\temp`` "
 "which can be copied to any host. For PowerShell to see this offline "
@@ -366,71 +429,151 @@ msgid ""
 "``win_path`` module can be used to add different paths."
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:289
+#: ../../rst/user_guide/windows_dsc.rst:381
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:291
+#: ../../rst/user_guide/windows_dsc.rst:383
 msgid "Extract a zip file"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:303
+#: ../../rst/user_guide/windows_dsc.rst:395
 msgid "Create a directory"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:326
+#: ../../rst/user_guide/windows_dsc.rst:418
 msgid "Interact with Azure"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:349
+#: ../../rst/user_guide/windows_dsc.rst:441
 msgid "Setup IIS Website"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:404
-msgid ":doc:`index`"
+#: ../../rst/user_guide/windows_dsc.rst:496
+msgid ":ref:`playbooks_intro`"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:405
-msgid "The documentation index"
-msgstr ""
-
-#: ../../rst/user_guide/windows_dsc.rst:406
-msgid ":doc:`playbooks`"
-msgstr ""
-
-#: ../../rst/user_guide/windows_dsc.rst:407
+#: ../../rst/user_guide/windows_dsc.rst:497
 msgid "An introduction to playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:408
-msgid ":doc:`playbooks_best_practices`"
+#: ../../rst/user_guide/windows_dsc.rst:498
+msgid ":ref:`playbooks_best_practices`"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:409
+#: ../../rst/user_guide/windows_dsc.rst:499
 msgid "Best practices advice"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:410
+#: ../../rst/user_guide/windows_dsc.rst:500
 msgid ":ref:`List of Windows Modules <windows_modules>`"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:411
+#: ../../rst/user_guide/windows_dsc.rst:501
 msgid "Windows specific module list, all implemented in PowerShell"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:412
+#: ../../rst/user_guide/windows_dsc.rst:502
 msgid "`User Mailing List <https://groups.google.com/group/ansible-project>`_"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:413
+#: ../../rst/user_guide/windows_dsc.rst:503
 msgid "Have a question?  Stop by the google group!"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:414
+#: ../../rst/user_guide/windows_dsc.rst:504
 msgid "`irc.freenode.net <http://irc.freenode.net>`_"
 msgstr ""
 
-#: ../../rst/user_guide/windows_dsc.rst:415
+#: ../../rst/user_guide/windows_dsc.rst:505
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ""
+#~ "Custom resources require further installation"
+#~ " steps to be run on the host"
+#~ " beforehand, while Ansible modules are "
+#~ "in built-in to Ansible"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You should set ``no_log: yes`` on "
+#~ "the task definition in Ansible to "
+#~ "ensure any credentials used are not "
+#~ "stored in any log file or console"
+#~ " output."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In the above example, the CIM "
+#~ "instance is a representation of the "
+#~ "class ``MSFT_xWebAuthenticationInformation "
+#~ "<https://github.com/PowerShell/xWebAdministration/blob/dev/DSCResources/MSFT_xWebsite/MSFT_xWebsite.schema.mof>``_."
+#~ " This class accepts four boolean "
+#~ "variables, ``Anonymous``, ``Basic``, ``Digest``, "
+#~ "and ``Windows``. The keys to use "
+#~ "in a ``[CimInstance]`` depend on the "
+#~ "class it represents. Please read through"
+#~ " the documentation of the resource to"
+#~ " determine the keys that can be "
+#~ "used and the types of each key "
+#~ "value. The class definition is typically"
+#~ " located in the ``<resource "
+#~ "name>.schema.mof``."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The above example, is an array "
+#~ "with two values of the class "
+#~ "``MSFT_xWebBindingInformation "
+#~ "<https://github.com/PowerShell/xWebAdministration/blob/dev/DSCResources/MSFT_xWebsite/MSFT_xWebsite.schema.mof>``_."
+#~ " When defining a ``[CimInstance[]]``, be"
+#~ " sure to read the resource "
+#~ "documentation to find out what keys "
+#~ "to use in the definition."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "By default, DSC runs each resource "
+#~ "as the SYSTEM account and not the"
+#~ " account that Ansible use to run "
+#~ "the module. This means that resources"
+#~ " that are dynamically loaded based on"
+#~ " a user profile, like the "
+#~ "``HKEY_CURRENT_USER`` registry hive, will be"
+#~ " loaded under the ``SYSTEM`` profile. "
+#~ "The parameter `PsDscRunAsCredential`` is a "
+#~ "parameter that can be set for "
+#~ "every DSC resource force the DSC "
+#~ "engine to run under a different "
+#~ "account. As ``PsDscRunAsCredential`` has a "
+#~ "type of ``PSCredential``, it is defined"
+#~ " with the ``_username`` and ``_password``"
+#~ " suffix."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The first two methods above only "
+#~ "work when the host has access to"
+#~ " the internet. When a host does "
+#~ "not have internet access, the module "
+#~ "must first be installed using the "
+#~ "methods above on another host with "
+#~ "internet access and then copied across."
+#~ " To save a module to a local"
+#~ " filepath, the following PowerShell cmdlet"
+#~ " can be run:"
+#~ msgstr ""
+
+#~ msgid ":doc:`index`"
+#~ msgstr ""
+
+#~ msgid "The documentation index"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks_best_practices`"
+#~ msgstr ""
 

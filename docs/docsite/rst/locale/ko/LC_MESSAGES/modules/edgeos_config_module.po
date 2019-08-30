@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,69 +50,80 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/edgeos_config_module.rst:147
+#: ../../rst/modules/edgeos_config_module.rst:189
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/edgeos_config_module.rst:150
+#: ../../rst/modules/edgeos_config_module.rst:192
 msgid "Tested against EdgeOS 1.9.7"
 msgstr ""
 
-#: ../../rst/modules/edgeos_config_module.rst:151
+#: ../../rst/modules/edgeos_config_module.rst:193
 msgid ""
 "Setting ``ANSIBLE_PERSISTENT_COMMAND_TIMEOUT`` to 30 is recommended since"
 " the save command can take longer than the default of 10 seconds on some "
 "EdgeOS hardware."
 msgstr ""
 
-#: ../../rst/modules/edgeos_config_module.rst:156
+#: ../../rst/modules/edgeos_config_module.rst:198
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/edgeos_config_module.rst:177
+#: ../../rst/modules/edgeos_config_module.rst:227
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/edgeos_config_module.rst:178
+#: ../../rst/modules/edgeos_config_module.rst:228
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/edgeos_config_module.rst:232
+#: ../../rst/modules/edgeos_config_module.rst:282
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/edgeos_config_module.rst:237
+#: ../../rst/modules/edgeos_config_module.rst:287
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/edgeos_config_module.rst:240
+#: ../../rst/modules/edgeos_config_module.rst:290
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/edgeos_config_module.rst:247
+#: ../../rst/modules/edgeos_config_module.rst:297
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/edgeos_config_module.rst:249
-msgid "Nathaniel Case (@qalthos)"
+#: ../../rst/modules/edgeos_config_module.rst:299
+msgid "Nathaniel Case (@Qalthos)"
 msgstr ""
 
-#: ../../rst/modules/edgeos_config_module.rst:250
+#: ../../rst/modules/edgeos_config_module.rst:300
 msgid "Sam Doran (@samdoran)"
 msgstr ""
 
-#: ../../rst/modules/edgeos_config_module.rst:254
+#: ../../rst/modules/edgeos_config_module.rst:304
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/edgeos/edgeos_config.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/edgeos/edgeos_config.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "Nathaniel Case (@qalthos)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/edgeos/edgeos_config.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,107 +19,103 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/modules/vmware_tag_facts_module.rst:9
-msgid "vmware_tag_facts -- Manage VMware tag facts"
+msgid "vmware_tag_facts -- Manage VMware tag info"
 msgstr ""
 
-#: ../../rst/modules/vmware_tag_facts_module.rst:19
-msgid "Synopsis"
-msgstr ""
-
-#: ../../rst/modules/vmware_tag_facts_module.rst:20
-msgid "This module can be used to collect facts about VMware tags."
-msgstr ""
-
-#: ../../rst/modules/vmware_tag_facts_module.rst:21
+#: ../../rst/modules/vmware_tag_facts_module.rst:11
 msgid ""
-"Tag feature is introduced in vSphere 6 version, so this module is not "
-"supported in the earlier versions of vSphere."
+"This is an alias for :ref:`vmware_tag_info <vmware_tag_info_module>`. "
+"This name has been **deprecated**. Please update your tasks to use the "
+"new name ``vmware_tag_info`` instead."
 msgstr ""
 
-#: ../../rst/modules/vmware_tag_facts_module.rst:22
-msgid "All variables and VMware object names are case sensitive."
-msgstr ""
+#~ msgid "vmware_tag_facts -- Manage VMware tag facts"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_tag_facts_module.rst:27
-msgid "Requirements"
-msgstr ""
+#~ msgid "Synopsis"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_tag_facts_module.rst:28
-msgid "The below requirements are needed on the host that executes this module."
-msgstr ""
+#~ msgid "This module can be used to collect facts about VMware tags."
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_tag_facts_module.rst:30
-msgid "python >= 2.6"
-msgstr ""
+#~ msgid ""
+#~ "Tag feature is introduced in vSphere "
+#~ "6 version, so this module is not"
+#~ " supported in the earlier versions of"
+#~ " vSphere."
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_tag_facts_module.rst:31
-msgid "PyVmomi"
-msgstr ""
+#~ msgid "All variables and VMware object names are case sensitive."
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_tag_facts_module.rst:32
-msgid "vSphere Automation SDK"
-msgstr ""
+#~ msgid "Requirements"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_tag_facts_module.rst:33
-msgid "vCloud Suite SDK"
-msgstr ""
+#~ msgid ""
+#~ "The below requirements are needed on "
+#~ "the host that executes this module."
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_tag_facts_module.rst:37
-msgid "Parameters"
-msgstr ""
+#~ msgid "python >= 2.6"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_tag_facts_module.rst:132
-msgid "Notes"
-msgstr ""
+#~ msgid "PyVmomi"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_tag_facts_module.rst:135
-msgid "Tested on vSphere 6.5"
-msgstr ""
+#~ msgid "vSphere Automation SDK"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_tag_facts_module.rst:140
-msgid "Examples"
-msgstr ""
+#~ msgid "vCloud Suite SDK"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_tag_facts_module.rst:168
-msgid "Return Values"
-msgstr ""
+#~ msgid "Parameters"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_tag_facts_module.rst:169
-msgid ""
-"Common return values are documented :ref:`here <common_return_values>`, "
-"the following are the fields unique to this module:"
-msgstr ""
+#~ msgid "Notes"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_tag_facts_module.rst:197
-msgid "Status"
-msgstr ""
+#~ msgid "Tested on vSphere 6.5"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_tag_facts_module.rst:202
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
-msgstr ""
+#~ msgid "Examples"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_tag_facts_module.rst:205
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
-msgstr ""
+#~ msgid "Return Values"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_tag_facts_module.rst:212
-msgid "Authors"
-msgstr ""
+#~ msgid ""
+#~ "Common return values are documented "
+#~ ":ref:`here <common_return_values>`, the following"
+#~ " are the fields unique to this "
+#~ "module:"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_tag_facts_module.rst:214
-msgid "Abhijeet Kasurde (@Akasurde)"
-msgstr ""
+#~ msgid "Status"
+#~ msgstr ""
 
-#: ../../rst/modules/vmware_tag_facts_module.rst:218
-#, python-format
-msgid ""
-"If you notice any issues in this documentation you can `edit this "
-"document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_tag_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
-" to improve it."
-msgstr ""
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid "Authors"
+#~ msgstr ""
+
+#~ msgid "Abhijeet Kasurde (@Akasurde)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_tag_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

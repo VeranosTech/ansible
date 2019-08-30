@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,51 +69,65 @@ msgstr ""
 msgid "Default destination of source file."
 msgstr ""
 
-#: ../../rst/modules/net_put_module.rst:118
+#: ../../rst/modules/net_put_module.rst:114
+msgid ""
+"This module is supported on ``ansible_network_os`` network platforms. See"
+" the :ref:`Network Platform Options <platform_options>` for details."
+msgstr ""
+
+#: ../../rst/modules/net_put_module.rst:119
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/net_put_module.rst:138
+#: ../../rst/modules/net_put_module.rst:139
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/net_put_module.rst:143
+#: ../../rst/modules/net_put_module.rst:144
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/net_put_module.rst:146
+#: ../../rst/modules/net_put_module.rst:147
 msgid ""
 "This module is :ref:`maintained by the Ansible Network Team "
 "<modules_support>`. *[network]*"
 msgstr ""
 
-#: ../../rst/modules/net_put_module.rst:149
+#: ../../rst/modules/net_put_module.rst:150
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/net_put_module.rst:151
+#: ../../rst/modules/net_put_module.rst:152
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/net_put_module.rst:157
+#: ../../rst/modules/net_put_module.rst:158
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/net_put_module.rst:159
+#: ../../rst/modules/net_put_module.rst:160
 msgid "Deepak Agrawal (@dagrawal)"
 msgstr ""
 
-#: ../../rst/modules/net_put_module.rst:163
+#: ../../rst/modules/net_put_module.rst:164
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/files/net_put.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/files/net_put.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/files/net_put.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

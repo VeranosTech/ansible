@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,8 +25,7 @@ msgstr ""
 #: ../../rst/network/user_guide/platform_voss.rst:7
 msgid ""
 "Extreme VOSS Ansible modules only support CLI connections today. This "
-"page offers details on how to use ``network_cli`` on VOSS in Ansible >= "
-"2.7."
+"page offers details on how to use ``network_cli`` on VOSS in Ansible."
 msgstr ""
 
 #: ../../rst/network/user_guide/platform_voss.rst:10
@@ -37,97 +36,91 @@ msgstr ""
 msgid "Connections Available"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_voss.rst:16
+#: ../../rst/network/user_guide/platform_voss.rst:19
 msgid "CLI"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_voss.rst:18
-msgid "**Protocol**"
+#: ../../rst/network/user_guide/platform_voss.rst:21
+msgid "Protocol"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_voss.rst:18
+#: ../../rst/network/user_guide/platform_voss.rst:21
 msgid "SSH"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_voss.rst
-msgid "**Credentials**"
+#: ../../rst/network/user_guide/platform_voss.rst:23
+msgid "Credentials"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_voss.rst
+#: ../../rst/network/user_guide/platform_voss.rst:23
 msgid "uses SSH keys / SSH-agent if present"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_voss.rst
+#: ../../rst/network/user_guide/platform_voss.rst:25
 msgid "accepts ``-u myuser -k`` if using password"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_voss.rst:23
-msgid "**Indirect Access**"
+#: ../../rst/network/user_guide/platform_voss.rst:27
+msgid "Indirect Access"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_voss.rst:23
+#: ../../rst/network/user_guide/platform_voss.rst:27
 msgid "via a bastion (jump host)"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_voss.rst
-msgid "**Connection Settings**"
+#: ../../rst/network/user_guide/platform_voss.rst:29
+msgid "Connection Settings"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_voss.rst
+#: ../../rst/network/user_guide/platform_voss.rst:29
 msgid "``ansible_connection: network_cli``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_voss.rst
-msgid "**Enable Mode**"
+#: ../../rst/network/user_guide/platform_voss.rst:31
+msgid "|enable_mode|"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_voss.rst
-msgid "(Privilege Escalation)"
-msgstr ""
-
-#: ../../rst/network/user_guide/platform_voss.rst
-msgid "supported - use ``ansible_become: yes``"
-msgstr ""
-
-#: ../../rst/network/user_guide/platform_voss.rst
-msgid "with ``ansible_become_method: enable``"
+#: ../../rst/network/user_guide/platform_voss.rst:31
+msgid ""
+"supported: use ``ansible_become: yes`` with ``ansible_become_method: "
+"enable``"
 msgstr ""
 
 #: ../../rst/network/user_guide/platform_voss.rst:34
-msgid "**Returned Data Format**"
+msgid "Returned Data Format"
 msgstr ""
 
 #: ../../rst/network/user_guide/platform_voss.rst:34
 msgid "``stdout[0].``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_voss.rst:37
+#: ../../rst/network/user_guide/platform_voss.rst:40
 msgid ""
 "VOSS does not support ``ansible_connection: local``. You must use "
 "``ansible_connection: network_cli``."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_voss.rst:40
-msgid "Using CLI in Ansible >= 2.7"
+#: ../../rst/network/user_guide/platform_voss.rst:43
+msgid "Using CLI in Ansible"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_voss.rst:43
+#: ../../rst/network/user_guide/platform_voss.rst:46
 msgid "Example CLI ``group_vars/voss.yml``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_voss.rst:56
+#: ../../rst/network/user_guide/platform_voss.rst:59
 msgid ""
 "If you are using SSH keys (including an ssh-agent) you can remove the "
-"``ansible_ssh_pass`` configuration."
+"``ansible_password`` configuration."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_voss.rst:57
+#: ../../rst/network/user_guide/platform_voss.rst:60
 msgid ""
 "If you are accessing your host directly (not through a bastion/jump host)"
 " you can remove the ``ansible_ssh_common_args`` configuration."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_voss.rst:58
+#: ../../rst/network/user_guide/platform_voss.rst:61
 msgid ""
 "If you are accessing your host through a bastion/jump host, you cannot "
 "include your SSH password in the ``ProxyCommand`` directive. To prevent "
@@ -135,7 +128,7 @@ msgid ""
 "support providing passwords via environment variables."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_voss.rst:61
+#: ../../rst/network/user_guide/platform_voss.rst:64
 msgid "Example CLI Task"
 msgstr ""
 
@@ -146,4 +139,48 @@ msgid ""
 "SSH keys. If you must use passwords to authenticate SSH connections, we "
 "recommend encrypting them with :ref:`Ansible Vault <playbooks_vault>`."
 msgstr ""
+
+#~ msgid ""
+#~ "Extreme VOSS Ansible modules only "
+#~ "support CLI connections today. This page"
+#~ " offers details on how to use "
+#~ "``network_cli`` on VOSS in Ansible >="
+#~ " 2.7."
+#~ msgstr ""
+
+#~ msgid "**Protocol**"
+#~ msgstr ""
+
+#~ msgid "**Credentials**"
+#~ msgstr ""
+
+#~ msgid "**Indirect Access**"
+#~ msgstr ""
+
+#~ msgid "**Connection Settings**"
+#~ msgstr ""
+
+#~ msgid "**Enable Mode**"
+#~ msgstr ""
+
+#~ msgid "(Privilege Escalation)"
+#~ msgstr ""
+
+#~ msgid "supported - use ``ansible_become: yes``"
+#~ msgstr ""
+
+#~ msgid "with ``ansible_become_method: enable``"
+#~ msgstr ""
+
+#~ msgid "**Returned Data Format**"
+#~ msgstr ""
+
+#~ msgid "Using CLI in Ansible >= 2.7"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you are using SSH keys "
+#~ "(including an ssh-agent) you can "
+#~ "remove the ``ansible_ssh_pass`` configuration."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,47 +52,55 @@ msgstr ""
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/subversion_module.rst:259
+#: ../../rst/modules/subversion_module.rst:260
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/subversion_module.rst:264
+#: ../../rst/modules/subversion_module.rst:265
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/subversion_module.rst:267
+#: ../../rst/modules/subversion_module.rst:268
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/subversion_module.rst:270
+#: ../../rst/modules/subversion_module.rst:271
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/subversion_module.rst:272
+#: ../../rst/modules/subversion_module.rst:273
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/subversion_module.rst:278
+#: ../../rst/modules/subversion_module.rst:279
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/subversion_module.rst:280
+#: ../../rst/modules/subversion_module.rst:281
 msgid "Dane Summers (@dsummersl) <njharman@gmail.com>"
 msgstr ""
 
-#: ../../rst/modules/subversion_module.rst:284
+#: ../../rst/modules/subversion_module.rst:285
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/source_control/subversion.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/source_control/subversion.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/source_control/subversion.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

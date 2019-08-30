@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,61 +39,69 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/checkpoint_host_module.rst:148
+#: ../../rst/modules/checkpoint_host_module.rst:144
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/checkpoint_host_module.rst:167
+#: ../../rst/modules/checkpoint_host_module.rst:163
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/checkpoint_host_module.rst:168
+#: ../../rst/modules/checkpoint_host_module.rst:164
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/checkpoint_host_module.rst:194
+#: ../../rst/modules/checkpoint_host_module.rst:190
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/checkpoint_host_module.rst:199
+#: ../../rst/modules/checkpoint_host_module.rst:195
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/checkpoint_host_module.rst:202
+#: ../../rst/modules/checkpoint_host_module.rst:198
 msgid ""
 "This module is :ref:`maintained by the Ansible Network Team "
 "<modules_support>`. *[network]*"
 msgstr ""
 
-#: ../../rst/modules/checkpoint_host_module.rst:205
+#: ../../rst/modules/checkpoint_host_module.rst:201
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/checkpoint_host_module.rst:207
+#: ../../rst/modules/checkpoint_host_module.rst:203
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/checkpoint_host_module.rst:213
+#: ../../rst/modules/checkpoint_host_module.rst:209
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/checkpoint_host_module.rst:215
+#: ../../rst/modules/checkpoint_host_module.rst:211
 msgid "Ansible by Red Hat (@rcarrillocruz)"
 msgstr ""
 
-#: ../../rst/modules/checkpoint_host_module.rst:219
+#: ../../rst/modules/checkpoint_host_module.rst:215
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/checkpoint/checkpoint_host.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/checkpoint/checkpoint_host.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/checkpoint/checkpoint_host.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

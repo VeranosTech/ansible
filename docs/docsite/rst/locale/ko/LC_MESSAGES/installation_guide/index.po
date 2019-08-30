@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-#: ../../rst/installation_guide/index.rst:1
+#: ../../rst/installation_guide/index.rst:3
+msgid "Installation Guide"
+msgstr ""
+
+#: ../../rst/installation_guide/index.rst:5
 msgid "Welcome to the Ansible Installation Guide!"
 msgstr "이 문서는 앤서블 설치 안내서입니다."
 
-#: ../../rst/installation_guide/index.rst:3
-msgid "Introductory install guide text here."
-msgstr "설치 안내서 문서는 여기에 있습니다."
+#~ msgid "Introductory install guide text here."
+#~ msgstr "설치 안내서 문서는 여기에 있습니다."
 

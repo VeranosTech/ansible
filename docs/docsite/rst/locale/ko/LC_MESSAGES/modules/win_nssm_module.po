@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,16 +19,20 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/modules/win_nssm_module.rst:9
-msgid "win_nssm -- NSSM - the Non-Sucking Service Manager"
+msgid "win_nssm -- Install a service using NSSM"
+msgstr ""
+
+#: ../../rst/modules/win_nssm_module.rst:18
+msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/win_nssm_module.rst:19
-msgid "Synopsis"
+msgid "Install a Windows service using the NSSM wrapper."
 msgstr ""
 
 #: ../../rst/modules/win_nssm_module.rst:20
 msgid ""
-"nssm is a service helper which doesn't suck. See https://nssm.cc/ for "
+"NSSM is a service helper which doesn't suck. See https://nssm.cc/ for "
 "more information."
 msgstr ""
 
@@ -50,64 +54,101 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/win_nssm_module.rst:214
+#: ../../rst/modules/win_nssm_module.rst:272
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/win_nssm_module.rst:275
+msgid "The service will NOT be started after its creation when ``state=present``."
+msgstr ""
+
+#: ../../rst/modules/win_nssm_module.rst:276
+msgid ""
+"Once the service is created, you can use the :ref:`win_service "
+"<win_service_module>` module to start it or configure some additionals "
+"properties, such as its startup type, dependencies, service account, and "
+"so on."
+msgstr ""
+
+#: ../../rst/modules/win_nssm_module.rst:280
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/win_nssm_module.rst:218
+#: ../../rst/modules/win_nssm_module.rst:284
 msgid ":ref:`win_service_module`"
 msgstr ""
 
-#: ../../rst/modules/win_nssm_module.rst:219
+#: ../../rst/modules/win_nssm_module.rst:285
 msgid "The official documentation on the **win_service** module."
 msgstr ""
 
-#: ../../rst/modules/win_nssm_module.rst:223
+#: ../../rst/modules/win_nssm_module.rst:289
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/win_nssm_module.rst:301
+#: ../../rst/modules/win_nssm_module.rst:343
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/win_nssm_module.rst:306
+#: ../../rst/modules/win_nssm_module.rst:348
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/win_nssm_module.rst:309
+#: ../../rst/modules/win_nssm_module.rst:351
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/win_nssm_module.rst:316
+#: ../../rst/modules/win_nssm_module.rst:358
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/win_nssm_module.rst:318
+#: ../../rst/modules/win_nssm_module.rst:360
 msgid "Adam Keech (@smadam813)"
 msgstr ""
 
-#: ../../rst/modules/win_nssm_module.rst:319
+#: ../../rst/modules/win_nssm_module.rst:361
 msgid "George Frank (@georgefrank)"
 msgstr ""
 
-#: ../../rst/modules/win_nssm_module.rst:320
+#: ../../rst/modules/win_nssm_module.rst:362
 msgid "Hans-Joachim Kliemeck (@h0nIg)"
 msgstr ""
 
-#: ../../rst/modules/win_nssm_module.rst:321
+#: ../../rst/modules/win_nssm_module.rst:363
 msgid "Michael Wild (@themiwi)"
 msgstr ""
 
-#: ../../rst/modules/win_nssm_module.rst:325
+#: ../../rst/modules/win_nssm_module.rst:364
+msgid "Kevin Subileau (@ksubileau)"
+msgstr ""
+
+#: ../../rst/modules/win_nssm_module.rst:368
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_nssm.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_nssm.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "win_nssm -- NSSM - the Non-Sucking Service Manager"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "nssm is a service helper which "
+#~ "doesn't suck. See https://nssm.cc/ for "
+#~ "more information."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_nssm.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

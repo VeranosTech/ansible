@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,89 +24,132 @@ msgid ""
 "network devices"
 msgstr ""
 
+#: ../../rst/modules/vyos_lldp_interface_module.rst:18
+msgid "DEPRECATED"
+msgstr ""
+
+#: ../../rst/modules/vyos_lldp_interface_module.rst
+msgid "Removed in Ansible"
+msgstr ""
+
 #: ../../rst/modules/vyos_lldp_interface_module.rst:19
-msgid "Synopsis"
+msgid "version: 2.13"
+msgstr ""
+
+#: ../../rst/modules/vyos_lldp_interface_module.rst
+msgid "Why"
 msgstr ""
 
 #: ../../rst/modules/vyos_lldp_interface_module.rst:20
+msgid "Updated modules released with more functionality."
+msgstr ""
+
+#: ../../rst/modules/vyos_lldp_interface_module.rst
+msgid "Alternative"
+msgstr ""
+
+#: ../../rst/modules/vyos_lldp_interface_module.rst:21
+msgid "vyos_lldp_interfaces"
+msgstr ""
+
+#: ../../rst/modules/vyos_lldp_interface_module.rst:26
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/vyos_lldp_interface_module.rst:27
 msgid ""
 "This module provides declarative management of LLDP interfaces "
 "configuration on VyOS network devices."
 msgstr ""
 
-#: ../../rst/modules/vyos_lldp_interface_module.rst:26
+#: ../../rst/modules/vyos_lldp_interface_module.rst:33
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/vyos_lldp_interface_module.rst:190
+#: ../../rst/modules/vyos_lldp_interface_module.rst:197
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/vyos_lldp_interface_module.rst:193
+#: ../../rst/modules/vyos_lldp_interface_module.rst:200
 msgid "Tested against VYOS 1.1.7"
 msgstr ""
 
-#: ../../rst/modules/vyos_lldp_interface_module.rst:194
+#: ../../rst/modules/vyos_lldp_interface_module.rst:201
 msgid ""
 "For more information on using Ansible to manage network devices see the "
 ":ref:`Ansible Network Guide <network_guide>`"
 msgstr ""
 
-#: ../../rst/modules/vyos_lldp_interface_module.rst:199
+#: ../../rst/modules/vyos_lldp_interface_module.rst:206
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/vyos_lldp_interface_module.rst:237
+#: ../../rst/modules/vyos_lldp_interface_module.rst:244
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/vyos_lldp_interface_module.rst:238
+#: ../../rst/modules/vyos_lldp_interface_module.rst:245
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/vyos_lldp_interface_module.rst:266
+#: ../../rst/modules/vyos_lldp_interface_module.rst:273
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/vyos_lldp_interface_module.rst:271
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
-msgstr ""
-
-#: ../../rst/modules/vyos_lldp_interface_module.rst:274
-msgid ""
-"This module is :ref:`maintained by the Ansible Network Team "
-"<modules_support>`. *[network]*"
+#: ../../rst/modules/vyos_lldp_interface_module.rst:276
+msgid "This module will be removed in version 2.13. *[deprecated]*"
 msgstr ""
 
 #: ../../rst/modules/vyos_lldp_interface_module.rst:277
-msgid "Red Hat Support"
+msgid "For more information see `DEPRECATED`_."
 msgstr ""
 
-#: ../../rst/modules/vyos_lldp_interface_module.rst:279
-msgid ""
-"More information about Red Hat's support of this module is available from"
-" this `Red Hat Knowledge Base article "
-"<https://access.redhat.com/articles/3166901>`_."
-msgstr ""
-
-#: ../../rst/modules/vyos_lldp_interface_module.rst:285
+#: ../../rst/modules/vyos_lldp_interface_module.rst:281
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/vyos_lldp_interface_module.rst:287
+#: ../../rst/modules/vyos_lldp_interface_module.rst:283
 msgid "Ricardo Carrillo Cruz (@rcarrillocruz)"
 msgstr ""
 
-#: ../../rst/modules/vyos_lldp_interface_module.rst:291
+#: ../../rst/modules/vyos_lldp_interface_module.rst:287
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/vyos/vyos_lldp_interface.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/vyos/_vyos_lldp_interface.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Network Team <modules_support>`. "
+#~ "*[network]*"
+#~ msgstr ""
+
+#~ msgid "Red Hat Support"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "More information about Red Hat's support"
+#~ " of this module is available from "
+#~ "this `Red Hat Knowledge Base article "
+#~ "<https://access.redhat.com/articles/3166901>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/vyos/vyos_lldp_interface.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

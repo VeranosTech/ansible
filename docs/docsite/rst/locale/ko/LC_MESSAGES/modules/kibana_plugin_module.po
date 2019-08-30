@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,62 +22,70 @@ msgstr ""
 msgid "kibana_plugin -- Manage Kibana plugins"
 msgstr ""
 
-#: ../../rst/modules/kibana_plugin_module.rst:19
+#: ../../rst/modules/kibana_plugin_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/kibana_plugin_module.rst:20
+#: ../../rst/modules/kibana_plugin_module.rst:19
 msgid "This module can be used to manage Kibana plugins."
 msgstr ""
 
-#: ../../rst/modules/kibana_plugin_module.rst:26
+#: ../../rst/modules/kibana_plugin_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/kibana_plugin_module.rst:160
+#: ../../rst/modules/kibana_plugin_module.rst:159
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/kibana_plugin_module.rst:185
+#: ../../rst/modules/kibana_plugin_module.rst:184
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/kibana_plugin_module.rst:186
+#: ../../rst/modules/kibana_plugin_module.rst:185
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/kibana_plugin_module.rst:278
+#: ../../rst/modules/kibana_plugin_module.rst:277
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/kibana_plugin_module.rst:283
+#: ../../rst/modules/kibana_plugin_module.rst:282
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/kibana_plugin_module.rst:286
+#: ../../rst/modules/kibana_plugin_module.rst:285
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/kibana_plugin_module.rst:293
+#: ../../rst/modules/kibana_plugin_module.rst:292
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/kibana_plugin_module.rst:295
+#: ../../rst/modules/kibana_plugin_module.rst:294
 msgid "Thierno IB. BARRY (@barryib)"
 msgstr ""
 
-#: ../../rst/modules/kibana_plugin_module.rst:299
+#: ../../rst/modules/kibana_plugin_module.rst:298
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/misc/kibana_plugin.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/misc/kibana_plugin.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/misc/kibana_plugin.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

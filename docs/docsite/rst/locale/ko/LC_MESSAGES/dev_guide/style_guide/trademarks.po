@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,8 +54,8 @@ msgstr ""
 
 #: ../../rst/dev_guide/style_guide/trademarks.rst:15
 msgid ""
-"Use Ansible Tower® or Ansible®, on first reference when referring to "
-"products."
+"Use Red Hat® Ansible Tower® or Ansible®, on first reference when "
+"referring to products."
 msgstr ""
 
 #: ../../rst/dev_guide/style_guide/trademarks.rst:17
@@ -74,19 +74,19 @@ msgstr ""
 #: ../../rst/dev_guide/style_guide/trademarks.rst:22
 msgid ""
 "For Registered Trademarks: - [Name of Trademark] is a registered "
-"trademark of Ansible, Inc. in the United States and other countries."
+"trademark of Red Hat, Inc. in the United States and other countries."
 msgstr ""
 
 #: ../../rst/dev_guide/style_guide/trademarks.rst:25
 msgid ""
 "For Unregistered Trademarks (TMs/SMs): - [Name of Trademark] is a "
-"trademark of Ansible, Inc. in the United States and other countries."
+"trademark of Red Hat, Inc. in the United States and other countries."
 msgstr ""
 
 #: ../../rst/dev_guide/style_guide/trademarks.rst:28
 msgid ""
 "For registered and unregistered trademarks: - [Name of Trademark] is a "
-"registered trademark and [Name of Trademark] is a trademark of Ansible, "
+"registered trademark and [Name of Trademark] is a trademark of Red Hat, "
 "Inc. in the United States and other countries."
 msgstr ""
 
@@ -111,7 +111,7 @@ msgid ""
 msgstr ""
 
 #: ../../rst/dev_guide/style_guide/trademarks.rst:40
-msgid "Correct: Ansible Tower® system performance is incredible."
+msgid "Correct: Red Hat® Ansible Tower® system performance is incredible."
 msgstr ""
 
 #: ../../rst/dev_guide/style_guide/trademarks.rst:43
@@ -125,7 +125,9 @@ msgid ""
 msgstr ""
 
 #: ../../rst/dev_guide/style_guide/trademarks.rst:48
-msgid "Correct: \"Orchestrate your entire network using Ansible Tower®.\""
+msgid ""
+"Correct: \"Orchestrate your entire network using Red Hat® Ansible "
+"Tower®.\""
 msgstr ""
 
 #: ../../rst/dev_guide/style_guide/trademarks.rst:51
@@ -140,8 +142,8 @@ msgstr ""
 
 #: ../../rst/dev_guide/style_guide/trademarks.rst:56
 msgid ""
-"Correct: \"Corporate demand for Ansible Tower® configuration software is "
-"surging.\""
+"Correct: \"Corporate demand for Red Hat® Ansible Tower® configuration "
+"software is surging.\""
 msgstr ""
 
 #: ../../rst/dev_guide/style_guide/trademarks.rst:59
@@ -267,4 +269,44 @@ msgid ""
 "and other countries. "
 "https://www.intel.com/content/www/us/en/legal/trademarks.html"
 msgstr ""
+
+#~ msgid ""
+#~ "Use Ansible Tower® or Ansible®, on "
+#~ "first reference when referring to "
+#~ "products."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For Registered Trademarks: - [Name of"
+#~ " Trademark] is a registered trademark "
+#~ "of Ansible, Inc. in the United "
+#~ "States and other countries."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For Unregistered Trademarks (TMs/SMs): - "
+#~ "[Name of Trademark] is a trademark "
+#~ "of Ansible, Inc. in the United "
+#~ "States and other countries."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For registered and unregistered trademarks:"
+#~ " - [Name of Trademark] is a "
+#~ "registered trademark and [Name of "
+#~ "Trademark] is a trademark of Ansible,"
+#~ " Inc. in the United States and "
+#~ "other countries."
+#~ msgstr ""
+
+#~ msgid "Correct: Ansible Tower® system performance is incredible."
+#~ msgstr ""
+
+#~ msgid "Correct: \"Orchestrate your entire network using Ansible Tower®.\""
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Correct: \"Corporate demand for Ansible "
+#~ "Tower® configuration software is surging.\""
+#~ msgstr ""
 

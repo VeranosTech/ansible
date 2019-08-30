@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,51 +34,59 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/pkg5_module.rst:103
+#: ../../rst/modules/pkg5_module.rst:120
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/pkg5_module.rst:106
+#: ../../rst/modules/pkg5_module.rst:123
 msgid ""
 "The naming of IPS packages is explained at "
 "http://www.oracle.com/technetwork/articles/servers-storage-admin/ips-"
 "package-versioning-2232906.html."
 msgstr ""
 
-#: ../../rst/modules/pkg5_module.rst:111
+#: ../../rst/modules/pkg5_module.rst:128
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/pkg5_module.rst:136
+#: ../../rst/modules/pkg5_module.rst:158
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/pkg5_module.rst:141
+#: ../../rst/modules/pkg5_module.rst:163
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/pkg5_module.rst:144
+#: ../../rst/modules/pkg5_module.rst:166
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/pkg5_module.rst:151
+#: ../../rst/modules/pkg5_module.rst:173
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/pkg5_module.rst:153
+#: ../../rst/modules/pkg5_module.rst:175
 msgid "Peter Oliver (@mavit)"
 msgstr ""
 
-#: ../../rst/modules/pkg5_module.rst:157
+#: ../../rst/modules/pkg5_module.rst:179
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/packaging/os/pkg5.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/packaging/os/pkg5.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/packaging/os/pkg5.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

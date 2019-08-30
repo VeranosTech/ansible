@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,43 +62,49 @@ msgstr ""
 msgid "Or against a specific Python version by doing:"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:47
+#: ../../rst/dev_guide/testing_units.rst:46
+msgid ""
+"If you are running unit tests against things other than modules, such as "
+"module utilities, specify the whole file path:"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_units.rst:52
 msgid "For advanced usage see the online help::"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:51
+#: ../../rst/dev_guide/testing_units.rst:56
 msgid ""
 "You can also run tests in Ansible's continuous integration system by "
 "opening a pull request.  This will automatically determine which tests to"
 " run based on the changes made in your pull request."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:57
+#: ../../rst/dev_guide/testing_units.rst:62
 msgid "Installing dependencies"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:59
+#: ../../rst/dev_guide/testing_units.rst:64
 msgid ""
 "``ansible-test`` has a number of dependencies. For ``units`` tests we "
 "suggest using ``tox``."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:61
+#: ../../rst/dev_guide/testing_units.rst:66
 msgid ""
 "The dependencies can be installed using the ``--requirements`` argument, "
 "which will install all the required dependencies needed for unit tests. "
 "For example:"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:69
+#: ../../rst/dev_guide/testing_units.rst:74
 msgid "tox version requirement"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:71
+#: ../../rst/dev_guide/testing_units.rst:76
 msgid "When using ``ansible-test`` with ``--tox`` requires tox >= 2.5.0"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:74
+#: ../../rst/dev_guide/testing_units.rst:79
 msgid ""
 "The full list of requirements can be found at `test/runner/requirements "
 "<https://github.com/ansible/ansible/tree/devel/test/runner/requirements>`_."
@@ -108,25 +114,25 @@ msgid ""
 " applicable to all commands."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:82
+#: ../../rst/dev_guide/testing_units.rst:87
 msgid "Extending unit tests"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:85
+#: ../../rst/dev_guide/testing_units.rst:90
 msgid "What a unit test isn't"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:87
+#: ../../rst/dev_guide/testing_units.rst:92
 msgid ""
 "If you start writing a test that requires external services then you may "
 "be writing an integration test, rather than a unit test."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:92
+#: ../../rst/dev_guide/testing_units.rst:97
 msgid "Structuring Unit Tests"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:94
+#: ../../rst/dev_guide/testing_units.rst:99
 msgid ""
 "Ansible drives unit tests through `pytest "
 "<https://docs.pytest.org/en/latest/>`_. This means that tests can either "
@@ -134,15 +140,15 @@ msgid ""
 "``test_<something>.py`` or as classes."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:98
+#: ../../rst/dev_guide/testing_units.rst:103
 msgid "Here is an example of a function::"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:108
+#: ../../rst/dev_guide/testing_units.rst:113
 msgid "Here is an example of a class::"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:128
+#: ../../rst/dev_guide/testing_units.rst:133
 msgid ""
 "Both methods work fine in most circumstances; the function-based "
 "interface is simpler and quicker and so that's probably where you should "
@@ -152,7 +158,7 @@ msgid ""
 "to refactor to use that."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:134
+#: ../../rst/dev_guide/testing_units.rst:139
 msgid ""
 "Assertions using the simple ``assert`` function inside the tests will "
 "give full information on the cause of the failure with a trace-back of "
@@ -160,7 +166,7 @@ msgid ""
 " recommended over other external assertion libraries."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:139
+#: ../../rst/dev_guide/testing_units.rst:144
 msgid ""
 "A number of the unit test suites include functions that are shared "
 "between several modules, especially in the networking arena.  In these "
@@ -168,11 +174,11 @@ msgid ""
 "directly."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:145
+#: ../../rst/dev_guide/testing_units.rst:150
 msgid "Module test case common code"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:147
+#: ../../rst/dev_guide/testing_units.rst:152
 msgid ""
 "Keep common code as specific as possible within the `test/units/` "
 "directory structure. For example, if it's specific to testing Amazon "
@@ -181,136 +187,149 @@ msgid ""
 "directories."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:152
+#: ../../rst/dev_guide/testing_units.rst:157
 msgid ""
 "Don't import other unit tests from a unit test. Any common code should be"
 " in dedicated files that aren't themselves tests."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:157
+#: ../../rst/dev_guide/testing_units.rst:162
 msgid "Fixtures files"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:159
+#: ../../rst/dev_guide/testing_units.rst:164
 msgid ""
 "To mock out fetching results from devices, or provide other complex "
 "datastructures that come from external libraries, you can use "
 "``fixtures`` to read in pre-generated data."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:162
+#: ../../rst/dev_guide/testing_units.rst:167
 msgid "Text files live in ``test/units/modules/network/PLATFORM/fixtures/``"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:164
+#: ../../rst/dev_guide/testing_units.rst:169
 msgid "Data is loaded using the ``load_fixture`` method"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:166
+#: ../../rst/dev_guide/testing_units.rst:171
 msgid ""
 "See `eos_banner test "
 "<https://github.com/ansible/ansible/blob/devel/test/units/modules/network/eos/test_eos_banner.py>`_"
 " for a practical example."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:170
+#: ../../rst/dev_guide/testing_units.rst:175
 msgid ""
 "If you are simulating APIs you may find that python placebo is useful.  "
 "See :ref:`testing_units_modules` for more information."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:175
+#: ../../rst/dev_guide/testing_units.rst:180
 msgid "Code Coverage For New or Updated Unit Tests"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:176
+#: ../../rst/dev_guide/testing_units.rst:181
 msgid ""
 "New code will be missing from the codecov.io coverage reports (see "
-":doc:`testing`), so local reporting is needed.  Most ``ansible-test`` "
-"commands allow you to collect code coverage; this is particularly useful "
-"when to indicate where to extend testing."
+":ref:`developing_testing`), so local reporting is needed.  Most "
+"``ansible-test`` commands allow you to collect code coverage; this is "
+"particularly useful when to indicate where to extend testing."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:180
+#: ../../rst/dev_guide/testing_units.rst:185
 msgid ""
 "To collect coverage data add the ``--coverage`` argument to your "
 "``ansible-test`` command line:"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:187
+#: ../../rst/dev_guide/testing_units.rst:192
 msgid "Results will be written to ``test/results/reports/coverage/index.html``"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:189
+#: ../../rst/dev_guide/testing_units.rst:194
 msgid "Reports can be generated in several different formats:"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:191
+#: ../../rst/dev_guide/testing_units.rst:196
 msgid "``ansible-test coverage report`` - Console report."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:192
+#: ../../rst/dev_guide/testing_units.rst:197
 msgid "``ansible-test coverage html`` - HTML report."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:193
+#: ../../rst/dev_guide/testing_units.rst:198
 msgid "``ansible-test coverage xml`` - XML report."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:195
+#: ../../rst/dev_guide/testing_units.rst:200
 msgid ""
 "To clear data between test runs, use the ``ansible-test coverage erase`` "
 "command.  See :ref:`testing_running_locally` for more information about "
 "generating coverage reports."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:202
+#: ../../rst/dev_guide/testing_units.rst:207
 msgid ":ref:`testing_units_modules`"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:203
+#: ../../rst/dev_guide/testing_units.rst:208
 msgid "Special considerations for unit testing modules"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:204
-msgid ":doc:`testing_running_locally`"
+#: ../../rst/dev_guide/testing_units.rst:209
+msgid ":ref:`testing_running_locally`"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:205
+#: ../../rst/dev_guide/testing_units.rst:210
 msgid "Running tests locally including gathering and reporting coverage data"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:206
+#: ../../rst/dev_guide/testing_units.rst:211
 msgid ""
 "`Python 3 documentation - 26.4. unittest — Unit testing framework "
 "<https://docs.python.org/3/library/unittest.html>`_"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:207
+#: ../../rst/dev_guide/testing_units.rst:212
 msgid "The documentation of the unittest framework in python 3"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:208
+#: ../../rst/dev_guide/testing_units.rst:213
 msgid ""
 "`Python 2 documentation - 25.3. unittest — Unit testing framework "
 "<https://docs.python.org/3/library/unittest.html>`_"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:209
+#: ../../rst/dev_guide/testing_units.rst:214
 msgid ""
 "The documentation of the earliest supported unittest framework - from "
 "Python 2.6"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:210
+#: ../../rst/dev_guide/testing_units.rst:215
 msgid ""
 "`pytest: helps you write better programs "
 "<https://docs.pytest.org/en/latest/>`_"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_units.rst:211
+#: ../../rst/dev_guide/testing_units.rst:216
 msgid ""
 "The documentation of pytest - the framework actually used to run Ansible "
 "unit tests"
 msgstr ""
+
+#~ msgid ""
+#~ "New code will be missing from the"
+#~ " codecov.io coverage reports (see "
+#~ ":doc:`testing`), so local reporting is "
+#~ "needed.  Most ``ansible-test`` commands "
+#~ "allow you to collect code coverage; "
+#~ "this is particularly useful when to "
+#~ "indicate where to extend testing."
+#~ msgstr ""
+
+#~ msgid ":doc:`testing_running_locally`"
+#~ msgstr ""
 

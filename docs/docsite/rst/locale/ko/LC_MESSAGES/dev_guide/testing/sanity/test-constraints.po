@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/dev_guide/testing/sanity/test-constraints.rst:2
-msgid "Sanity Tests » test-constraints"
+msgid "test-constraints"
 msgstr ""
 
 #: ../../rst/dev_guide/testing/sanity/test-constraints.rst:4
@@ -27,4 +27,7 @@ msgid ""
 "Constraints for test requirements should be in "
 "``test/runner/requirements/constraints.txt``."
 msgstr ""
+
+#~ msgid "Sanity Tests » test-constraints"
+#~ msgstr ""
 

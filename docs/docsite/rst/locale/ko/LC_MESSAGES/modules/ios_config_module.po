@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,11 @@ msgstr ""
 msgid "ios_config -- Manage Cisco IOS configuration sections"
 msgstr ""
 
-#: ../../rst/modules/ios_config_module.rst:19
+#: ../../rst/modules/ios_config_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/ios_config_module.rst:20
+#: ../../rst/modules/ios_config_module.rst:19
 msgid ""
 "Cisco IOS configurations use a simple block indent file syntax for "
 "segmenting configuration into sections.  This module provides an "
@@ -34,93 +34,101 @@ msgid ""
 "deterministic way."
 msgstr ""
 
-#: ../../rst/modules/ios_config_module.rst:26
+#: ../../rst/modules/ios_config_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/ios_config_module.rst:481
+#: ../../rst/modules/ios_config_module.rst:486
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/ios_config_module.rst:484
+#: ../../rst/modules/ios_config_module.rst:489
 msgid "Tested against IOS 15.6"
 msgstr ""
 
-#: ../../rst/modules/ios_config_module.rst:485
+#: ../../rst/modules/ios_config_module.rst:490
 msgid ""
 "Abbreviated commands are NOT idempotent, see `Network FAQ "
 "<../network/user_guide/faq.html#why-do-the-config-modules-always-return-"
 "changed-true-with-abbreviated-commands>`_."
 msgstr ""
 
-#: ../../rst/modules/ios_config_module.rst:486
+#: ../../rst/modules/ios_config_module.rst:491
 msgid ""
 "For more information on using Ansible to manage network devices see the "
 ":ref:`Ansible Network Guide <network_guide>`"
 msgstr ""
 
-#: ../../rst/modules/ios_config_module.rst:487
+#: ../../rst/modules/ios_config_module.rst:492
 msgid ""
 "For more information on using Ansible to manage Cisco devices see the "
 "`Cisco integration page "
 "<https://www.ansible.com/integrations/networks/cisco>`_."
 msgstr ""
 
-#: ../../rst/modules/ios_config_module.rst:492
+#: ../../rst/modules/ios_config_module.rst:497
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/ios_config_module.rst:583
+#: ../../rst/modules/ios_config_module.rst:596
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/ios_config_module.rst:584
+#: ../../rst/modules/ios_config_module.rst:597
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/ios_config_module.rst:638
+#: ../../rst/modules/ios_config_module.rst:703
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/ios_config_module.rst:643
+#: ../../rst/modules/ios_config_module.rst:708
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/ios_config_module.rst:646
+#: ../../rst/modules/ios_config_module.rst:711
 msgid ""
 "This module is :ref:`maintained by the Ansible Network Team "
 "<modules_support>`. *[network]*"
 msgstr ""
 
-#: ../../rst/modules/ios_config_module.rst:649
+#: ../../rst/modules/ios_config_module.rst:714
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/ios_config_module.rst:651
+#: ../../rst/modules/ios_config_module.rst:716
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/ios_config_module.rst:657
+#: ../../rst/modules/ios_config_module.rst:722
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/ios_config_module.rst:659
+#: ../../rst/modules/ios_config_module.rst:724
 msgid "Peter Sprygada (@privateip)"
 msgstr ""
 
-#: ../../rst/modules/ios_config_module.rst:663
+#: ../../rst/modules/ios_config_module.rst:728
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/ios/ios_config.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/ios/ios_config.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/ios/ios_config.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

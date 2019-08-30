@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,201 +67,212 @@ msgid ":ref:`pip_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:28
+msgid ":ref:`pip_package_info_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_packaging_modules.rst:29
 msgid ":ref:`yarn_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_packaging_modules.rst:34
+#: ../../rst/modules/list_of_packaging_modules.rst:35
 msgid "Os"
 msgstr ""
 
-#: ../../rst/modules/list_of_packaging_modules.rst:38
+#: ../../rst/modules/list_of_packaging_modules.rst:39
 msgid ":ref:`apk_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_packaging_modules.rst:39
+#: ../../rst/modules/list_of_packaging_modules.rst:40
 msgid ":ref:`apt_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_packaging_modules.rst:40
+#: ../../rst/modules/list_of_packaging_modules.rst:41
 msgid ":ref:`apt_key_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_packaging_modules.rst:41
+#: ../../rst/modules/list_of_packaging_modules.rst:42
 msgid ":ref:`apt_repo_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_packaging_modules.rst:42
+#: ../../rst/modules/list_of_packaging_modules.rst:43
 msgid ":ref:`apt_repository_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_packaging_modules.rst:43
+#: ../../rst/modules/list_of_packaging_modules.rst:44
 msgid ":ref:`apt_rpm_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_packaging_modules.rst:44
+#: ../../rst/modules/list_of_packaging_modules.rst:45
 msgid ":ref:`dnf_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_packaging_modules.rst:45
+#: ../../rst/modules/list_of_packaging_modules.rst:46
 msgid ":ref:`dpkg_selections_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_packaging_modules.rst:46
+#: ../../rst/modules/list_of_packaging_modules.rst:47
 msgid ":ref:`flatpak_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_packaging_modules.rst:47
+#: ../../rst/modules/list_of_packaging_modules.rst:48
 msgid ":ref:`flatpak_remote_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_packaging_modules.rst:48
+#: ../../rst/modules/list_of_packaging_modules.rst:49
 msgid ":ref:`homebrew_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_packaging_modules.rst:49
+#: ../../rst/modules/list_of_packaging_modules.rst:50
 msgid ":ref:`homebrew_cask_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_packaging_modules.rst:50
+#: ../../rst/modules/list_of_packaging_modules.rst:51
 msgid ":ref:`homebrew_tap_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_packaging_modules.rst:51
-msgid ":ref:`layman_module`"
-msgstr ""
-
 #: ../../rst/modules/list_of_packaging_modules.rst:52
-msgid ":ref:`macports_module`"
+msgid ":ref:`installp_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:53
-msgid ":ref:`openbsd_pkg_module`"
+msgid ":ref:`layman_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:54
-msgid ":ref:`opkg_module`"
+msgid ":ref:`macports_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:55
-msgid ":ref:`package_module`"
+msgid ":ref:`openbsd_pkg_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:56
-msgid ":ref:`package_facts_module`"
+msgid ":ref:`opkg_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:57
-msgid ":ref:`pacman_module`"
+msgid ":ref:`package_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:58
-msgid ":ref:`pkg5_module`"
+msgid ":ref:`package_facts_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:59
-msgid ":ref:`pkg5_publisher_module`"
+msgid ":ref:`pacman_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:60
-msgid ":ref:`pkgin_module`"
+msgid ":ref:`pkg5_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:61
-msgid ":ref:`pkgng_module`"
+msgid ":ref:`pkg5_publisher_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:62
-msgid ":ref:`pkgutil_module`"
+msgid ":ref:`pkgin_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:63
-msgid ":ref:`portage_module`"
+msgid ":ref:`pkgng_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:64
-msgid ":ref:`portinstall_module`"
+msgid ":ref:`pkgutil_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:65
-msgid ":ref:`pulp_repo_module`"
+msgid ":ref:`portage_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:66
-msgid ":ref:`redhat_subscription_module`"
+msgid ":ref:`portinstall_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:67
-msgid ":ref:`rhn_channel_module`"
+msgid ":ref:`pulp_repo_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:68
-msgid ":ref:`rhn_register_module`"
+msgid ":ref:`redhat_subscription_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:69
-msgid ":ref:`rhsm_repository_module`"
+msgid ":ref:`rhn_channel_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:70
-msgid ":ref:`rhsm_repository_release_module`"
+msgid ":ref:`rhn_register_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:71
-msgid ":ref:`rpm_key_module`"
+msgid ":ref:`rhsm_release_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:72
-msgid ":ref:`slackpkg_module`"
+msgid ":ref:`rhsm_repository_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:73
-msgid ":ref:`snap_module`"
+msgid ":ref:`rpm_key_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:74
-msgid ":ref:`sorcery_module`"
+msgid ":ref:`slackpkg_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:75
-msgid ":ref:`svr4pkg_module`"
+msgid ":ref:`snap_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:76
-msgid ":ref:`swdepot_module`"
+msgid ":ref:`sorcery_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:77
-msgid ":ref:`swupd_module`"
+msgid ":ref:`svr4pkg_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:78
-msgid ":ref:`urpmi_module`"
+msgid ":ref:`swdepot_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:79
-msgid ":ref:`xbps_module`"
+msgid ":ref:`swupd_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:80
-msgid ":ref:`yum_module`"
+msgid ":ref:`urpmi_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:81
-msgid ":ref:`yum_repository_module`"
+msgid ":ref:`xbps_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:82
-msgid ":ref:`zypper_module`"
+msgid ":ref:`yum_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_packaging_modules.rst:83
+msgid ":ref:`yum_repository_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_packaging_modules.rst:84
+msgid ":ref:`zypper_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_packaging_modules.rst:85
 msgid ":ref:`zypper_repository_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_packaging_modules.rst:87
+#: ../../rst/modules/list_of_packaging_modules.rst:89
 msgid ""
 "**(D)**: This marks a module as deprecated, which means a module is kept "
 "for backwards compatibility but usage is discouraged. The module "
 "documentation details page may explain more about this rationale."
 msgstr ""
+
+#~ msgid ":ref:`rhsm_repository_release_module`"
+#~ msgstr ""
 

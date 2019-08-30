@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -163,7 +163,7 @@ msgid ":ref:`zabbix_group_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_monitoring_modules.rst:53
-msgid ":ref:`zabbix_group_facts_module`"
+msgid ":ref:`zabbix_group_info_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_monitoring_modules.rst:54
@@ -171,7 +171,7 @@ msgid ":ref:`zabbix_host_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_monitoring_modules.rst:55
-msgid ":ref:`zabbix_host_facts_module`"
+msgid ":ref:`zabbix_host_info_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_monitoring_modules.rst:56
@@ -187,21 +187,31 @@ msgid ":ref:`zabbix_map_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_monitoring_modules.rst:59
-msgid ":ref:`zabbix_proxy_module`"
+msgid ":ref:`zabbix_mediatype_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_monitoring_modules.rst:60
-msgid ":ref:`zabbix_screen_module`"
+msgid ":ref:`zabbix_proxy_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_monitoring_modules.rst:61
+msgid ":ref:`zabbix_screen_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_monitoring_modules.rst:62
 msgid ":ref:`zabbix_template_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_monitoring_modules.rst:65
+#: ../../rst/modules/list_of_monitoring_modules.rst:66
 msgid ""
 "**(D)**: This marks a module as deprecated, which means a module is kept "
 "for backwards compatibility but usage is discouraged. The module "
 "documentation details page may explain more about this rationale."
 msgstr ""
+
+#~ msgid ":ref:`zabbix_group_facts_module`"
+#~ msgstr ""
+
+#~ msgid ":ref:`zabbix_host_facts_module`"
+#~ msgstr ""
 

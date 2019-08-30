@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,360 +18,468 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-#: ../../rst/user_guide/playbooks_loops.rst:4
+#: ../../rst/user_guide/playbooks_loops.rst:5
 msgid "Loops"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:6
+#: ../../rst/user_guide/playbooks_loops.rst:7
 msgid ""
-"Often you'll want to do many things in one task, such as create a lot of "
-"users, install a lot of packages, or repeat a polling step until a "
-"certain result is reached."
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_loops.rst:9
-msgid "This chapter is all about how to use loops in playbooks."
+"Sometimes you want to repeat a task multiple times. In computer "
+"programming, this is called a loop. Common Ansible loops include changing"
+" ownership on several files and/or directories with the :ref:`file module"
+" <file_module>`, creating multiple users with the :ref:`user module "
+"<user_module>`, and repeating a polling step until a certain result is "
+"reached. Ansible offers two keywords for creating loops: ``loop`` and "
+"``with_<lookup>``."
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_loops.rst:11
-msgid "Topics"
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_loops.rst:16
-msgid "Standard Loops"
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_loops.rst:18
-msgid "To save some typing, repeated tasks can be written in short-hand like so::"
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_loops.rst:29
 msgid ""
-"If you have defined a YAML list in a variables file, or the 'vars' "
-"section, you can also do::"
+"We added ``loop`` in Ansible 2.5. It is not yet a full replacement for "
+"``with_<lookup>``, but we recommend it for most use cases."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:33
-msgid "The above would be the equivalent of::"
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_loops.rst:46
+#: ../../rst/user_guide/playbooks_loops.rst:12
 msgid ""
-"Before 2.5 Ansible mainly used the ``with_<lookup>`` keywords to create "
-"loops, the `loop` keyword is basically analogous to ``with_list``."
+"We have not deprecated the use of ``with_<lookup>`` - that syntax will "
+"still be valid for the foreseeable future."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:49
+#: ../../rst/user_guide/playbooks_loops.rst:13
 msgid ""
-"Some plugins like, the yum and apt modules can take lists directly to "
-"their options, this is more optimal than looping over the task. See each "
-"action's documentation for details, for now here is an example::"
+"We are looking to improve ``loop`` syntax - watch this page and the "
+"`changelog <https://github.com/ansible/ansible/tree/devel/changelogs>`_ "
+"for updates."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:63
+#: ../../rst/user_guide/playbooks_loops.rst:19
+msgid "Comparing ``loop`` and ``with_*``"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:21
 msgid ""
-"Note that the types of items you iterate over do not have to be simple "
-"lists of strings. If you have a list of hashes, you can reference subkeys"
-" using things like::"
+"The ``with_<lookup>`` keywords rely on :ref:`lookup_plugins` - even  "
+"``items`` is a lookup."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:75
+#: ../../rst/user_guide/playbooks_loops.rst:22
 msgid ""
-"Also be aware that when combining :doc:`playbooks_conditionals` with a "
-"loop, the ``when:`` statement is processed separately for each item. See "
-":ref:`the_when_statement` for an example."
+"The ``loop`` keyword is equivalent to ``with_list``, and is the best "
+"choice for simple loops."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:78
+#: ../../rst/user_guide/playbooks_loops.rst:23
+msgid ""
+"The ``loop`` keyword will not accept a string as input, see "
+":ref:`query_vs_lookup`."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:24
+msgid ""
+"Generally speaking, any use of ``with_*`` covered in "
+":ref:`migrating_to_loop` can be updated to use ``loop``."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:25
+msgid ""
+"Be careful when changing ``with_items`` to ``loop``, as ``with_items`` "
+"performed implicit single-level flattening. You may need to use "
+"``flatten(1)`` with ``loop`` to match the exact outcome. For example, to "
+"get the same output as:"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:34
+msgid "you would need::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:38
+msgid ""
+"Any ``with_*`` statement that requires using ``lookup`` within a loop "
+"should not be converted to use the ``loop`` keyword. For example, instead"
+" of doing:"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:44
+msgid "it's cleaner to keep::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:51
+msgid "Standard loops"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:54
+msgid "Iterating over a simple list"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:56
+msgid ""
+"Repeated tasks can be written as standard loops over a simple list of "
+"strings. You can define the list directly in the task::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:67
+msgid ""
+"You can define the list in a variables file, or in the 'vars' section of "
+"your play, then refer to the name of the list in the task::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:71
+msgid "Either of these examples would be the equivalent of::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:85
+msgid ""
+"You can pass a list directly to a parameter for some plugins. Most of the"
+" packaging modules, like :ref:`yum_module` and :ref:`apt_module`, have "
+"this capability. When available, passing the list to a parameter is "
+"better than looping over the task. For example::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:98
+msgid ""
+"Check the :ref:`module documentation <modules_by_category>` to see if you"
+" can pass a list to any particular module's parameter(s)."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:101
+msgid "Iterating over a list of hashes"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:103
+msgid ""
+"If you have a list of hashes, you can reference subkeys in a loop. For "
+"example::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:114
+msgid ""
+"When combining :ref:`playbooks_conditionals` with a loop, the ``when:`` "
+"statement is processed separately for each item. See "
+":ref:`the_when_statement` for examples."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:118
+msgid "Iterating over a dictionary"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:120
 msgid "To loop over a dict, use the ``dict2items`` :ref:`dict_filter`::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:91
+#: ../../rst/user_guide/playbooks_loops.rst:133
 msgid ""
 "Here, we don't want to set empty tags, so we create a dictionary "
 "containing only non-empty tags."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:97
-msgid "Complex loops"
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_loops.rst:99
-msgid ""
-"Sometimes you need more than what a simple list provides, you can use "
-"Jinja2 expressions to create complex lists: For example, using the "
-"'nested' lookup, you can combine lists::"
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_loops.rst:110
-msgid ""
-"``with_`` loops are actually a combination of things ``with_`` + "
-"``lookup()``, even ``items`` is a lookup. ``loop`` can be used in the "
-"same way as shown above."
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_loops.rst:114
-msgid "Using lookup vs query with loop"
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_loops.rst:116
-msgid ""
-"In Ansible 2.5 a new jinja2 function was introduced named :ref:`query`, "
-"that offers several benefits over ``lookup`` when using the new ``loop`` "
-"keyword."
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_loops.rst:118
-msgid ""
-"This is better described in the lookup documentation. However, ``query`` "
-"provides a simpler interface and a more predictable output from lookup "
-"plugins, ensuring better compatibility with ``loop``."
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_loops.rst:120
-msgid ""
-"In certain situations the ``lookup`` function may not return a list which"
-" ``loop`` requires."
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_loops.rst:122
-msgid ""
-"The following invocations are equivalent, using ``wantlist=True`` with "
-"``lookup`` to ensure a return type of a list::"
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_loops.rst:132
-msgid "Do-Until Loops"
-msgstr ""
-
 #: ../../rst/user_guide/playbooks_loops.rst:136
-msgid ""
-"Sometimes you would want to retry a task until a certain condition is "
-"met.  Here's an example::"
+msgid "Registering variables with a loop"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:144
-msgid ""
-"The above example run the shell module recursively till the module's "
-"result has \"all systems go\" in its stdout or the task has been retried "
-"for 5 times with a delay of 10 seconds. The default value for \"retries\""
-" is 3 and \"delay\" is 5."
+#: ../../rst/user_guide/playbooks_loops.rst:138
+msgid "You can register the output of a loop as a variable. For example::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:147
+#: ../../rst/user_guide/playbooks_loops.rst:146
 msgid ""
-"The task returns the results returned by the last task run. The results "
-"of individual retries can be viewed by -vv option. The registered "
-"variable will also have a new key \"attempts\" which will have the number"
-" of the retries for the task."
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_loops.rst:150
-msgid ""
-"If the ``until`` parameter isn't defined, the value for the ``retries`` "
-"parameter is forced to 1."
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_loops.rst:153
-msgid "Using register with a loop"
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_loops.rst:155
-msgid ""
-"After using ``register`` with a loop, the data structure placed in the "
+"When you use ``register`` with a loop, the data structure placed in the "
 "variable will contain a ``results`` attribute that is a list of all "
-"responses from the module."
+"responses from the module. This differs from the data structure returned "
+"when using ``register`` without a loop::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:157
-msgid "Here is an example of using ``register`` with ``loop``::"
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_loops.rst:165
-msgid ""
-"This differs from the data structure returned when using ``register`` "
-"without a loop::"
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_loops.rst:204
+#: ../../rst/user_guide/playbooks_loops.rst:185
 msgid ""
 "Subsequent loops over the registered variable to inspect the results may "
 "look like::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:212
+#: ../../rst/user_guide/playbooks_loops.rst:193
 msgid ""
 "During iteration, the result of the current item will be placed in the "
 "variable::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:224
-msgid "Looping over the inventory"
+#: ../../rst/user_guide/playbooks_loops.rst:205
+msgid "Complex loops"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:226
+#: ../../rst/user_guide/playbooks_loops.rst:208
+msgid "Iterating over nested lists"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:210
 msgid ""
-"If you wish to loop over the inventory, or just a subset of it, there are"
-" multiple ways. One can use a regular ``loop`` with the "
-"``ansible_play_batch`` or ``groups`` variables, like this::"
+"You can use Jinja2 expressions to iterate over complex lists. For "
+"example, a loop can combine nested lists::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:239
+#: ../../rst/user_guide/playbooks_loops.rst:224
+msgid "Retrying a task until a condition is met"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:228
+msgid ""
+"You can use the ``until`` keyword to retry a task until a certain "
+"condition is met.  Here's an example::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:236
+msgid ""
+"This task runs up to 5 times with a delay of 10 seconds between each "
+"attempt. If the result of any attempt has \"all systems go\" in its "
+"stdout, the task succeeds. The default value for \"retries\" is 3 and "
+"\"delay\" is 5."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:238
+msgid "To see the results of individual retries, run the play with ``-vv``."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:240
+msgid ""
+"When you run a task with ``until`` and register the result as a variable,"
+" the registered variable will include a key called \"attempts\", which "
+"records the number of the retries for the task."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:242
+msgid ""
+"You must set the ``until`` parameter if you want a task to retry. If "
+"``until`` is not defined, the value for the ``retries`` parameter is "
+"forced to 1."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:245
+msgid "Looping over inventory"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:247
+msgid ""
+"To loop over your inventory, or just a subset of it, you can use a "
+"regular ``loop`` with the ``ansible_play_batch`` or ``groups`` "
+"variables::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:259
 msgid ""
 "There is also a specific lookup plugin ``inventory_hostnames`` that can "
 "be used like this::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:251
-msgid "More information on the patterns can be found on :doc:`intro_patterns`"
+#: ../../rst/user_guide/playbooks_loops.rst:271
+msgid "More information on the patterns can be found on :ref:`intro_patterns`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:256
-msgid "Loop Control"
+#: ../../rst/user_guide/playbooks_loops.rst:276
+msgid "Ensuring list input for ``loop``: ``query`` vs. ``lookup``"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:260
+#: ../../rst/user_guide/playbooks_loops.rst:278
 msgid ""
-"In 2.0 you are again able to use loops and task includes (but not "
-"playbook includes). This adds the ability to loop over the set of tasks "
-"in one shot. Ansible by default sets the loop variable ``item`` for each "
-"loop, which causes these nested loops to overwrite the value of ``item`` "
-"from the \"outer\" loops. As of Ansible 2.1, the ``loop_control`` option "
-"can be used to specify the name of the variable to be used for the loop::"
+"The ``loop`` keyword requires a list as input, but the ``lookup`` keyword"
+" returns a string of comma-separated values by default. Ansible 2.5 "
+"introduced a new Jinja2 function named :ref:`query` that always returns a"
+" list, offering a simpler interface and more predictable output from "
+"lookup plugins when using the ``loop`` keyword."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:281
+#: ../../rst/user_guide/playbooks_loops.rst:280
+msgid ""
+"You can force ``lookup`` to return a list to ``loop`` by using "
+"``wantlist=True``, or you can use ``query`` instead."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:282
+msgid "These examples do the same thing::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:292
+msgid "Adding controls to loops"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:295
+msgid "The ``loop_control`` keyword lets you manage your loops in useful ways."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:298
+msgid "Limiting loop output with ``label``"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:301
+msgid ""
+"When looping over complex data structures, the console output of your "
+"task can be enormous. To limit the displayed output, use the ``label`` "
+"directive with ``loop_control``::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:318
+msgid ""
+"The output of this task will display just the ``name`` field for each "
+"``item`` instead of the entire contents of the multi-line ``{{ item }}`` "
+"variable."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:321
+msgid "Pausing within a loop"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:324
+msgid ""
+"To control the time (in seconds) between the execution of each item in a "
+"task loop, use the ``pause`` directive with ``loop_control``::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:338
+msgid "Tracking progress through a loop with ``index_var``"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:341
+msgid ""
+"To keep track of where you are in a loop, use the ``index_var`` directive"
+" with ``loop_control``. This directive specifies a variable name to "
+"contain the current loop index::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:354
+msgid "Defining inner and outer variable names with ``loop_var``"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:357
+msgid ""
+"You can nest two looping tasks using ``include_tasks``. However, by "
+"default Ansible sets the loop variable ``item`` for each loop. This means"
+" the inner, nested loop will overwrite the value of ``item`` from the "
+"outer loop. You can specify the name of the variable for each loop using "
+"``loop_var`` with ``loop_control``::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:377
 msgid ""
 "If Ansible detects that the current loop is using a variable which has "
 "already been defined, it will raise an error to fail the task."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:285
-msgid ""
-"When using complex data structures for looping the display might get a "
-"bit too \"busy\", this is where the ``label`` directive comes to help::"
+#: ../../rst/user_guide/playbooks_loops.rst:380
+msgid "Extended loop variables"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:302
-msgid ""
-"This will now display just the ``label`` field instead of the whole "
-"structure per ``item``, it defaults to ``{{ item }}`` to display things "
-"as usual."
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_loops.rst:306
-msgid ""
-"Another option to loop control is ``pause``, which allows you to control "
-"the time (in seconds) between execution of items in a task loop.::"
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_loops.rst:321
-msgid ""
-"If you need to keep track of where you are in a loop, you can use the "
-"``index_var`` option to loop control to specify a variable name to "
-"contain the current loop index.::"
-msgstr ""
-
-#: ../../rst/user_guide/playbooks_loops.rst:335
+#: ../../rst/user_guide/playbooks_loops.rst:383
 msgid ""
 "As of Ansible 2.8 you can get extended loop information using the "
 "``extended`` option to loop control. This option will expose the "
 "following information."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:338
+#: ../../rst/user_guide/playbooks_loops.rst:386
 msgid "Variable"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:338
+#: ../../rst/user_guide/playbooks_loops.rst:386
 msgid "Description"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:340
+#: ../../rst/user_guide/playbooks_loops.rst:388
 msgid "``ansible_loop.allitems``"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:340
+#: ../../rst/user_guide/playbooks_loops.rst:388
 msgid "The list of all items in the loop"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:341
+#: ../../rst/user_guide/playbooks_loops.rst:389
 msgid "``ansible_loop.index``"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:341
+#: ../../rst/user_guide/playbooks_loops.rst:389
 msgid "The current iteration of the loop. (1 indexed)"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:342
+#: ../../rst/user_guide/playbooks_loops.rst:390
 msgid "``ansible_loop.index0``"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:342
+#: ../../rst/user_guide/playbooks_loops.rst:390
 msgid "The current iteration of the loop. (0 indexed)"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:343
+#: ../../rst/user_guide/playbooks_loops.rst:391
 msgid "``ansible_loop.revindex``"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:343
+#: ../../rst/user_guide/playbooks_loops.rst:391
 msgid "The number of iterations from the end of the loop (1 indexed)"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:344
+#: ../../rst/user_guide/playbooks_loops.rst:392
 msgid "``ansible_loop.revindex0``"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:344
+#: ../../rst/user_guide/playbooks_loops.rst:392
 msgid "The number of iterations from the end of the loop (0 indexed)"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:345
+#: ../../rst/user_guide/playbooks_loops.rst:393
 msgid "``ansible_loop.first``"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:345
+#: ../../rst/user_guide/playbooks_loops.rst:393
 msgid "``True`` if first iteration"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:346
+#: ../../rst/user_guide/playbooks_loops.rst:394
 msgid "``ansible_loop.last``"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:346
+#: ../../rst/user_guide/playbooks_loops.rst:394
 msgid "``True`` if last iteration"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:347
+#: ../../rst/user_guide/playbooks_loops.rst:395
 msgid "``ansible_loop.length``"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:347
+#: ../../rst/user_guide/playbooks_loops.rst:395
 msgid "The number of items in the loop"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:348
+#: ../../rst/user_guide/playbooks_loops.rst:396
 msgid "``ansible_loop.previtem``"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:348
+#: ../../rst/user_guide/playbooks_loops.rst:396
 msgid ""
 "The item from the previous iteration of the loop. Undefined during the "
 "first iteration."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:349
+#: ../../rst/user_guide/playbooks_loops.rst:397
 msgid "``ansible_loop.nextitem``"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:349
+#: ../../rst/user_guide/playbooks_loops.rst:397
 msgid ""
 "The item from the following iteration of the loop. Undefined during the "
 "last iteration."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:358
+#: ../../rst/user_guide/playbooks_loops.rst:406
+msgid "Accessing the name of your loop_var"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:409
+msgid ""
+"As of Ansible 2.8 you can get the name of the value provided to "
+"``loop_control.loop_var`` using the ``ansible_loop_var`` variable"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:411
+msgid ""
+"For role authors, writing roles that allow loops, instead of dictating "
+"the required ``loop_var`` value, you can gather the value via::"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:418
 msgid "Migrating from with_X to loop"
 msgstr ""
 
@@ -485,59 +593,310 @@ msgid ""
 "without need of ``loop``."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:365
-msgid ":doc:`playbooks`"
+#: ../../rst/user_guide/playbooks_loops.rst:424
+msgid ":ref:`about_playbooks`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:366
+#: ../../rst/user_guide/playbooks_loops.rst:425
 msgid "An introduction to playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:367
-msgid ":doc:`playbooks_reuse_roles`"
+#: ../../rst/user_guide/playbooks_loops.rst:426
+msgid ":ref:`playbooks_reuse_roles`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:368
+#: ../../rst/user_guide/playbooks_loops.rst:427
 msgid "Playbook organization by roles"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:369
-msgid ":doc:`playbooks_best_practices`"
+#: ../../rst/user_guide/playbooks_loops.rst:428
+msgid ":ref:`playbooks_best_practices`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:370
+#: ../../rst/user_guide/playbooks_loops.rst:429
 msgid "Best practices in playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:371
-msgid ":doc:`playbooks_conditionals`"
+#: ../../rst/user_guide/playbooks_loops.rst:430
+msgid ":ref:`playbooks_conditionals`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:372
+#: ../../rst/user_guide/playbooks_loops.rst:431
 msgid "Conditional statements in playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:373
-msgid ":doc:`playbooks_variables`"
+#: ../../rst/user_guide/playbooks_loops.rst:432
+msgid ":ref:`playbooks_variables`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:374
+#: ../../rst/user_guide/playbooks_loops.rst:433
 msgid "All about variables"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:375
+#: ../../rst/user_guide/playbooks_loops.rst:434
 msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:376
+#: ../../rst/user_guide/playbooks_loops.rst:435
 msgid "Have a question?  Stop by the google group!"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:377
+#: ../../rst/user_guide/playbooks_loops.rst:436
 msgid "`irc.freenode.net <http://irc.freenode.net>`_"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:378
+#: ../../rst/user_guide/playbooks_loops.rst:437
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ""
+#~ "Often you'll want to do many "
+#~ "things in one task, such as create"
+#~ " a lot of users, install a lot"
+#~ " of packages, or repeat a polling "
+#~ "step until a certain result is "
+#~ "reached."
+#~ msgstr ""
+
+#~ msgid "This chapter is all about how to use loops in playbooks."
+#~ msgstr ""
+
+#~ msgid "Topics"
+#~ msgstr ""
+
+#~ msgid "Standard Loops"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To save some typing, repeated tasks "
+#~ "can be written in short-hand like"
+#~ " so::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you have defined a YAML list"
+#~ " in a variables file, or the "
+#~ "'vars' section, you can also do::"
+#~ msgstr ""
+
+#~ msgid "The above would be the equivalent of::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Before 2.5 Ansible mainly used the "
+#~ "``with_<lookup>`` keywords to create loops,"
+#~ " the `loop` keyword is basically "
+#~ "analogous to ``with_list``."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Some plugins like, the yum and apt"
+#~ " modules can take lists directly to"
+#~ " their options, this is more optimal"
+#~ " than looping over the task. See "
+#~ "each action's documentation for details, "
+#~ "for now here is an example::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Note that the types of items you"
+#~ " iterate over do not have to be"
+#~ " simple lists of strings. If you "
+#~ "have a list of hashes, you can "
+#~ "reference subkeys using things like::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Also be aware that when combining "
+#~ ":doc:`playbooks_conditionals` with a loop, the"
+#~ " ``when:`` statement is processed "
+#~ "separately for each item. See "
+#~ ":ref:`the_when_statement` for an example."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Sometimes you need more than what "
+#~ "a simple list provides, you can "
+#~ "use Jinja2 expressions to create complex"
+#~ " lists: For example, using the "
+#~ "'nested' lookup, you can combine lists::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``with_`` loops are actually a "
+#~ "combination of things ``with_`` + "
+#~ "``lookup()``, even ``items`` is a "
+#~ "lookup. ``loop`` can be used in "
+#~ "the same way as shown above."
+#~ msgstr ""
+
+#~ msgid "Using lookup vs query with loop"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In Ansible 2.5 a new jinja2 "
+#~ "function was introduced named :ref:`query`,"
+#~ " that offers several benefits over "
+#~ "``lookup`` when using the new ``loop``"
+#~ " keyword."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This is better described in the "
+#~ "lookup documentation. However, ``query`` "
+#~ "provides a simpler interface and a "
+#~ "more predictable output from lookup "
+#~ "plugins, ensuring better compatibility with"
+#~ " ``loop``."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In certain situations the ``lookup`` "
+#~ "function may not return a list "
+#~ "which ``loop`` requires."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The following invocations are equivalent, "
+#~ "using ``wantlist=True`` with ``lookup`` to "
+#~ "ensure a return type of a list::"
+#~ msgstr ""
+
+#~ msgid "Do-Until Loops"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Sometimes you would want to retry "
+#~ "a task until a certain condition "
+#~ "is met.  Here's an example::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The above example run the shell "
+#~ "module recursively till the module's "
+#~ "result has \"all systems go\" in "
+#~ "its stdout or the task has been"
+#~ " retried for 5 times with a "
+#~ "delay of 10 seconds. The default "
+#~ "value for \"retries\" is 3 and "
+#~ "\"delay\" is 5."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The task returns the results returned"
+#~ " by the last task run. The "
+#~ "results of individual retries can be "
+#~ "viewed by -vv option. The registered "
+#~ "variable will also have a new key"
+#~ " \"attempts\" which will have the "
+#~ "number of the retries for the "
+#~ "task."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the ``until`` parameter isn't "
+#~ "defined, the value for the ``retries``"
+#~ " parameter is forced to 1."
+#~ msgstr ""
+
+#~ msgid "Using register with a loop"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "After using ``register`` with a loop,"
+#~ " the data structure placed in the "
+#~ "variable will contain a ``results`` "
+#~ "attribute that is a list of all"
+#~ " responses from the module."
+#~ msgstr ""
+
+#~ msgid "Here is an example of using ``register`` with ``loop``::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This differs from the data structure "
+#~ "returned when using ``register`` without "
+#~ "a loop::"
+#~ msgstr ""
+
+#~ msgid "Looping over the inventory"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you wish to loop over the "
+#~ "inventory, or just a subset of it,"
+#~ " there are multiple ways. One can "
+#~ "use a regular ``loop`` with the "
+#~ "``ansible_play_batch`` or ``groups`` variables, "
+#~ "like this::"
+#~ msgstr ""
+
+#~ msgid "More information on the patterns can be found on :doc:`intro_patterns`"
+#~ msgstr ""
+
+#~ msgid "Loop Control"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In 2.0 you are again able to "
+#~ "use loops and task includes (but "
+#~ "not playbook includes). This adds the"
+#~ " ability to loop over the set "
+#~ "of tasks in one shot. Ansible by"
+#~ " default sets the loop variable "
+#~ "``item`` for each loop, which causes "
+#~ "these nested loops to overwrite the "
+#~ "value of ``item`` from the \"outer\" "
+#~ "loops. As of Ansible 2.1, the "
+#~ "``loop_control`` option can be used to"
+#~ " specify the name of the variable "
+#~ "to be used for the loop::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When using complex data structures for"
+#~ " looping the display might get a "
+#~ "bit too \"busy\", this is where "
+#~ "the ``label`` directive comes to help::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This will now display just the "
+#~ "``label`` field instead of the whole "
+#~ "structure per ``item``, it defaults to"
+#~ " ``{{ item }}`` to display things "
+#~ "as usual."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Another option to loop control is "
+#~ "``pause``, which allows you to control"
+#~ " the time (in seconds) between "
+#~ "execution of items in a task "
+#~ "loop.::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you need to keep track of "
+#~ "where you are in a loop, you "
+#~ "can use the ``index_var`` option to "
+#~ "loop control to specify a variable "
+#~ "name to contain the current loop "
+#~ "index.::"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks_reuse_roles`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks_best_practices`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks_conditionals`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks_variables`"
+#~ msgstr ""
 

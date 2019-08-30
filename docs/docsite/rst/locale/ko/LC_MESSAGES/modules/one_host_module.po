@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,40 +46,48 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/one_host_module.rst:241
+#: ../../rst/modules/one_host_module.rst:245
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/one_host_module.rst:267
+#: ../../rst/modules/one_host_module.rst:271
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/one_host_module.rst:272
+#: ../../rst/modules/one_host_module.rst:276
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/one_host_module.rst:275
+#: ../../rst/modules/one_host_module.rst:279
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/one_host_module.rst:282
+#: ../../rst/modules/one_host_module.rst:286
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/one_host_module.rst:284
+#: ../../rst/modules/one_host_module.rst:288
 msgid "Rafael del Valle (@rvalle)"
 msgstr ""
 
-#: ../../rst/modules/one_host_module.rst:288
+#: ../../rst/modules/one_host_module.rst:292
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/opennebula/one_host.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/opennebula/one_host.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/opennebula/one_host.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

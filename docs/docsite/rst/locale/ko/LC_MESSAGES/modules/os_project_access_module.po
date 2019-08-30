@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/modules/os_project_access_module.rst:9
-msgid "os_project_access -- Manage OpenStack compute flavors acceess"
+msgid "os_project_access -- Manage OpenStack compute flavors access"
 msgstr ""
 
 #: ../../rst/modules/os_project_access_module.rst:19
@@ -45,24 +45,28 @@ msgid "openstacksdk"
 msgstr ""
 
 #: ../../rst/modules/os_project_access_module.rst:29
+msgid "openstacksdk >= 0.12.0"
+msgstr ""
+
+#: ../../rst/modules/os_project_access_module.rst:30
 msgid "python >= 2.7"
 msgstr ""
 
-#: ../../rst/modules/os_project_access_module.rst:33
+#: ../../rst/modules/os_project_access_module.rst:34
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/os_project_access_module.rst:289
+#: ../../rst/modules/os_project_access_module.rst:294
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/os_project_access_module.rst:292
+#: ../../rst/modules/os_project_access_module.rst:297
 msgid ""
 "The standard OpenStack environment variables, such as ``OS_USERNAME`` may"
 " be used instead of providing explicit values."
 msgstr ""
 
-#: ../../rst/modules/os_project_access_module.rst:293
+#: ../../rst/modules/os_project_access_module.rst:298
 msgid ""
 "Auth information is driven by openstacksdk, which means that values can "
 "come from a yaml config file in /etc/ansible/openstack.yaml, "
@@ -72,50 +76,61 @@ msgid ""
 "https://docs.openstack.org/openstacksdk/"
 msgstr ""
 
-#: ../../rst/modules/os_project_access_module.rst:298
+#: ../../rst/modules/os_project_access_module.rst:303
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/os_project_access_module.rst:324
+#: ../../rst/modules/os_project_access_module.rst:329
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/os_project_access_module.rst:325
+#: ../../rst/modules/os_project_access_module.rst:330
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/os_project_access_module.rst:380
+#: ../../rst/modules/os_project_access_module.rst:385
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/os_project_access_module.rst:385
+#: ../../rst/modules/os_project_access_module.rst:390
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/os_project_access_module.rst:388
+#: ../../rst/modules/os_project_access_module.rst:393
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/os_project_access_module.rst:395
+#: ../../rst/modules/os_project_access_module.rst:400
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/os_project_access_module.rst:397
+#: ../../rst/modules/os_project_access_module.rst:402
 msgid "Roberto Polli (@ioggstream)"
 msgstr ""
 
-#: ../../rst/modules/os_project_access_module.rst:401
+#: ../../rst/modules/os_project_access_module.rst:406
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/openstack/os_project_access.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/openstack/os_project_access.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "os_project_access -- Manage OpenStack compute flavors acceess"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/openstack/os_project_access.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -285,7 +285,7 @@ msgid ""
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_debugger.rst:288
-msgid ":doc:`playbooks`"
+msgid ":ref:`playbooks_intro`"
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_debugger.rst:289
@@ -307,4 +307,7 @@ msgstr ""
 #: ../../rst/user_guide/playbooks_debugger.rst:293
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ":doc:`playbooks`"
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -441,7 +441,7 @@ msgid "`PEP 3105: Print function <https://www.python.org/dev/peps/pep-3105>`_"
 msgstr ""
 
 #: ../../rst/dev_guide/developing_python_3.rst:292
-msgid "Prefix byte strings with ``b\\_``"
+msgid "Prefix byte strings with ``b_``"
 msgstr ""
 
 #: ../../rst/dev_guide/developing_python_3.rst:294
@@ -579,4 +579,7 @@ msgid ""
 "the Python 3 support. Review our :ref:`testing <developing_testing>` "
 "pages for more information."
 msgstr ""
+
+#~ msgid "Prefix byte strings with ``b\\_``"
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,7 +30,7 @@ msgstr ""
 msgid ""
 "Ansible + Google have been working together on a set of auto-generated "
 "Ansible modules designed to consistently and comprehensively cover the "
-"entirety of the Google Cloud Platform."
+"entirety of the Google Cloud Platform (GCP)."
 msgstr ""
 
 #: ../../rst/scenario_guides/guide_gce.rst:13
@@ -50,12 +50,12 @@ msgstr ""
 
 #: ../../rst/scenario_guides/guide_gce.rst:21
 msgid ""
-"Additionally, the gcp_compute inventory plugin can discover all GCE "
-"instances and make them automatically available in your Ansible "
-"inventory."
+"Additionally, the gcp_compute inventory plugin can discover all Google "
+"Compute Engine (GCE) instances and make them automatically available in "
+"your Ansible inventory."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:24
+#: ../../rst/scenario_guides/guide_gce.rst:25
 msgid ""
 "You may see a collection of other GCP modules that do not conform to this"
 " naming convention. These are the original modules primarily developed by"
@@ -65,7 +65,7 @@ msgid ""
 "together."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:30
+#: ../../rst/scenario_guides/guide_gce.rst:31
 msgid ""
 "While the community GCP modules are not going away, Google is investing "
 "effort into the new \"gcp_*\" modules. Google is committed to ensuring "
@@ -73,115 +73,115 @@ msgid ""
 "recommends adopting these new modules if possible."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:37
+#: ../../rst/scenario_guides/guide_gce.rst:38
 msgid "Requisites"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:38
+#: ../../rst/scenario_guides/guide_gce.rst:39
 msgid ""
-"The Google Cloud Platform (GCP) modules require both the ``requests`` and"
-" the ``google-auth`` libraries to be installed."
+"The GCP modules require both the ``requests`` and the ``google-auth`` "
+"libraries to be installed."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:45
+#: ../../rst/scenario_guides/guide_gce.rst:46
 msgid ""
 "Alternatively for RHEL / CentOS, the ``python-requests`` package is also "
 "available to satisfy ``requests`` libraries."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:53
+#: ../../rst/scenario_guides/guide_gce.rst:54
 msgid "Credentials"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:54
+#: ../../rst/scenario_guides/guide_gce.rst:55
 msgid ""
 "It's easy to create a GCP account with credentials for Ansible. You have "
 "multiple options to get your credentials - here are two of the most "
 "common options:"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:57
+#: ../../rst/scenario_guides/guide_gce.rst:58
 msgid ""
 "Service Accounts (Recommended): Use JSON service accounts with specific "
 "permissions."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:58
+#: ../../rst/scenario_guides/guide_gce.rst:59
 msgid ""
 "Machine Accounts: Use the permissions associated with the GCP Instance "
 "you're using Ansible on."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:60
+#: ../../rst/scenario_guides/guide_gce.rst:61
 msgid "For the following examples, we'll be using service account credentials."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:62
+#: ../../rst/scenario_guides/guide_gce.rst:63
 msgid ""
 "To work with the GCP modules, you'll first need to get some credentials "
 "in the JSON format:"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:65
+#: ../../rst/scenario_guides/guide_gce.rst:66
 msgid ""
 "`Create a Service Account "
 "<https://developers.google.com/identity/protocols/OAuth2ServiceAccount#creatinganaccount>`_"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:66
+#: ../../rst/scenario_guides/guide_gce.rst:67
 msgid ""
 "`Download JSON credentials "
 "<https://support.google.com/cloud/answer/6158849?hl=en&ref_topic=6262490#serviceaccounts>`_"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:68
+#: ../../rst/scenario_guides/guide_gce.rst:69
 msgid ""
 "Once you have your credentials, there are two different ways to provide "
 "them to Ansible:"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:70
+#: ../../rst/scenario_guides/guide_gce.rst:71
 msgid "by specifying them directly as module parameters"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:71
+#: ../../rst/scenario_guides/guide_gce.rst:72
 msgid "by setting environment variables"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:74
+#: ../../rst/scenario_guides/guide_gce.rst:75
 msgid "Providing Credentials as Module Parameters"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:76
+#: ../../rst/scenario_guides/guide_gce.rst:77
 msgid "For the GCE modules you can specify the credentials as arguments:"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:78
+#: ../../rst/scenario_guides/guide_gce.rst:79
 msgid ""
 "``auth_kind``: type of authentication being used (choices: "
 "machineaccount, serviceaccount, application)"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:79
+#: ../../rst/scenario_guides/guide_gce.rst:80
 msgid "``service_account_email``: email associated with the project"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:80
+#: ../../rst/scenario_guides/guide_gce.rst:81
 msgid "``service_account_file``: path to the JSON credentials file"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:81
+#: ../../rst/scenario_guides/guide_gce.rst:82
 msgid "``project``: id of the project"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:82
+#: ../../rst/scenario_guides/guide_gce.rst:83
 msgid "``scopes``: The specific scopes that you want the actions to use."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:84
+#: ../../rst/scenario_guides/guide_gce.rst:85
 msgid ""
-"For example, to create a new IP address using the `gcp_compute_address` "
-"module, you can use the following configuration:"
+"For example, to create a new IP address using the ``gcp_compute_address``"
+" module, you can use the following configuration:"
 msgstr ""
 
 #: ../../rst/scenario_guides/guide_gce.rst:114
@@ -225,23 +225,23 @@ msgstr ""
 msgid "Here's an example of a valid inventory file:"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:153
+#: ../../rst/scenario_guides/guide_gce.rst:152
 msgid ""
 "Executing ``ansible-inventory --list -i <filename>.gcp.yml`` will create "
 "a list of GCP instances that are ready to be configured using Ansible."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:156
+#: ../../rst/scenario_guides/guide_gce.rst:155
 msgid "Create an instance"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:158
+#: ../../rst/scenario_guides/guide_gce.rst:157
 msgid ""
 "The full range of GCP modules provide the ability to create a wide "
 "variety of GCP resources with the full support of the entire GCP API."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:161
+#: ../../rst/scenario_guides/guide_gce.rst:160
 msgid ""
 "The following playbook creates a GCE Instance. This instance relies on a "
 "GCP network and a Disk. By creating the Disk and Network separately, we "
@@ -251,7 +251,7 @@ msgid ""
 "gcp_compute_instance module will figure out the rest."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:254
+#: ../../rst/scenario_guides/guide_gce.rst:252
 msgid ""
 "Note that use of the \"add_host\" module above creates a temporary, in-"
 "memory group.  This means that a play in the same playbook can then "
@@ -259,9 +259,301 @@ msgid ""
 " arbitrary configuration is possible at this point."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_gce.rst:257
+#: ../../rst/scenario_guides/guide_gce.rst:255
 msgid ""
 "For more information about Google Cloud, please visit the `Google Cloud "
 "website <https://cloud.google.com>`_."
 msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:258
+msgid "Migration Guides"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:261
+msgid "gce.py -> gcp_compute_instance.py"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:262
+msgid ""
+"As of Ansible 2.8, we're encouraging everyone to move from the ``gce`` "
+"module to the ``gcp_compute_instance`` module. The "
+"``gcp_compute_instance`` module has better support for all of GCP's "
+"features, fewer dependencies, more flexibility, and better supports GCP's"
+" authentication systems."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:267
+msgid ""
+"The ``gcp_compute_instance`` module supports all of the features of the "
+"``gce`` module (and more!). Below is a mapping of ``gce`` fields over to "
+"``gcp_compute_instance`` fields."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:272
+msgid "gce.py"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:272
+msgid "gcp_compute_instance.py"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:272
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:274
+msgid "state"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:274
+msgid "state/status"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:274
+msgid ""
+"State on gce has multiple values: \"present\", \"absent\", \"stopped\", "
+"\"started\", \"terminated\". State on gcp_compute_instance is used to "
+"describe if the instance exists (present) or does not (absent). Status is"
+" used to describe if the instance is \"started\", \"stopped\" or "
+"\"terminated\"."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:275
+msgid "image"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:275
+#: ../../rst/scenario_guides/guide_gce.rst:276
+#: ../../rst/scenario_guides/guide_gce.rst:277
+msgid "disks[].initialize_params.source_image"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:275
+msgid ""
+"You'll need to create a single disk using the disks[] parameter and set "
+"it to be the boot disk (disks[].boot = true)"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:276
+msgid "image_family"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:276
+msgid "See above."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:277
+msgid "external_projects"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:277
+msgid "The name of the source_image will include the name of the project."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:278
+msgid "instance_names"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:278
+msgid "Use a loop or multiple tasks."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:278
+msgid ""
+"Using loops is a more Ansible-centric way of creating multiple instances "
+"and gives you the most flexibility."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:279
+msgid "service_account_email"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:279
+msgid "service_accounts[].email"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:279
+msgid ""
+"This is the service_account email address that you want the instance to "
+"be associated with. It is not the service_account email address that is "
+"used for the credentials necessary to create the instance."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:280
+msgid "service_account_permissions"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:280
+msgid "service_accounts[].scopes"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:280
+msgid "These are the permissions you want to grant to the instance."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:281
+msgid "pem_file"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:281
+msgid "Not supported."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:281
+msgid "We recommend using JSON service account credentials instead of PEM files."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:282
+msgid "credentials_file"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:282
+msgid "service_account_file"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:283
+msgid "project_id"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:283
+msgid "project"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:284
+msgid "name"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:284
+msgid ""
+"This field does not accept an array of names. Use a loop to create "
+"multiple instances."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:285
+msgid "num_instances"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:285
+msgid "Use a loop"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:285
+msgid ""
+"For maximum flexibility, we're encouraging users to use Ansible features "
+"to create multiple instances, rather than letting the module do it for "
+"you."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:286
+msgid "network"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:286
+msgid "network_interfaces[].network"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:287
+msgid "subnetwork"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:287
+msgid "network_interfaces[].subnetwork"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:288
+msgid "persistent_boot_disk"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:288
+msgid "disks[].type = 'PERSISTENT'"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:289
+msgid "disks"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:289
+msgid "disks[]"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:290
+msgid "ip_forward"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:290
+msgid "can_ip_forward"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:291
+msgid "external_ip"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:291
+msgid "network_interfaces[].access_configs.nat_ip"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:291
+msgid ""
+"This field takes multiple types of values. You can create an IP address "
+"with ``gcp_compute_address`` and place the name/output of the address "
+"here. You can also place the string value of the IP address's GCP name or"
+" the actual IP address."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:292
+msgid "disks_auto_delete"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:292
+msgid "disks[].auto_delete"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:293
+msgid "preemptible"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:293
+msgid "scheduling.preemptible"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:294
+msgid "disk_size"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:294
+msgid "disks[].initialize_params.disk_size_gb"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_gce.rst:297
+msgid "An example playbook is below:"
+msgstr ""
+
+#~ msgid ""
+#~ "Ansible + Google have been working "
+#~ "together on a set of auto-"
+#~ "generated Ansible modules designed to "
+#~ "consistently and comprehensively cover the "
+#~ "entirety of the Google Cloud Platform."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Additionally, the gcp_compute inventory plugin"
+#~ " can discover all GCE instances and"
+#~ " make them automatically available in "
+#~ "your Ansible inventory."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The Google Cloud Platform (GCP) modules"
+#~ " require both the ``requests`` and "
+#~ "the ``google-auth`` libraries to be "
+#~ "installed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For example, to create a new IP"
+#~ " address using the `gcp_compute_address` "
+#~ "module, you can use the following "
+#~ "configuration:"
+#~ msgstr ""
 

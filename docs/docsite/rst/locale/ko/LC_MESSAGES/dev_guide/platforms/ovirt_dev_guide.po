@@ -1,0 +1,174 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:4
+msgid "oVirt Ansible Modules"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:6
+msgid ""
+"This is a set of modules for interacting with oVirt/RHV. This document "
+"serves as developer coding guidelines for creating oVirt/RHV modules."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:13
+msgid "Naming"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:15
+msgid "All modules should start with an ``ovirt_`` prefix."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:16
+msgid ""
+"All modules should be named after the resource it manages in singular "
+"form."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:18
+msgid "All modules that gather information should have a ``_info`` suffix."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:22
+msgid "Interface"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:24
+msgid "Every module should return the ID of the resource it manages."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:25
+msgid "Every module should return the dictionary of the resource it manages."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:26
+msgid ""
+"Never change the name of the parameter, as we guarantee backward "
+"compatibility. Use aliases instead."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:28
+msgid ""
+"If a parameter can't achieve idempotency for any reason, please document "
+"it."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:32
+msgid "Interoperability"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:34
+msgid ""
+"All modules should work against all minor versions of version 4 of the "
+"API. Version 3 of the API is not supported."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:38
+msgid "Libraries"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:40
+msgid ""
+"All modules should use ``ovirt_full_argument_spec`` or "
+"``ovirt_info_full_argument_spec`` to pick up the standard input (such as "
+"auth and ``fetch_nested``)."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:43
+msgid ""
+"All modules should use ``extends_documentation_fragment``: ovirt to go "
+"along with ``ovirt_full_argument_spec``."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:45
+msgid ""
+"All info modules should use ``extends_documentation_fragment``: "
+"``ovirt_info`` to go along with ``ovirt_info_full_argument_spec``."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:47
+msgid ""
+"Functions that are common to all modules should be implemeneted in the "
+"``module_utils/ovirt.py`` file, so they can be reused."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:49
+msgid "Python SDK version 4 must be used."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:52
+msgid "New module development"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:54
+msgid ""
+"Please read :ref:`developing_modules`, first to know what common "
+"properties, functions and features every module must have."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:58
+msgid ""
+"In order to achieve idempotency of oVirt entity attributes, a helper "
+"class was created. The first thing you need to do is to extend this class"
+" and override a few methods:"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:100
+msgid ""
+"The code above handle the check if the entity should be updated, so we "
+"don't update the entity if not needed and also it construct the needed "
+"entity of the SDK."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:177
+msgid ""
+"If your module must support action handling (for example, virtual machine"
+" start) you must ensure that you handle the states of the virtual machine"
+" correctly, and document the behavior of the module:"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:205
+msgid ""
+"As you can see from the preceding example, the ``action`` method accepts "
+"the ``action_condition`` and ``wait_condition``, which are methods which "
+"accept the virtual machine object as a parameter, so you can check "
+"whether the virtual machine is in a proper state before the action. The "
+"rest of the parameters are for the ``start`` action. You may also handle "
+"pre- or post- action tasks by defining ``pre_action`` and ``post_action``"
+" parameters."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:214
+msgid "Testing"
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:216
+msgid ""
+"Integration testing is currently done in oVirt's CI system `on Jenkins "
+"<http://jenkins.ovirt.org/view/All/job/ovirt-system-tests_ansible-suite-"
+"master/>`__ and `on GitHub <https://github.com/oVirt/ovirt-system-"
+"tests/tree/master/ansible-suite-master/>`__."
+msgstr ""
+
+#: ../../rst/dev_guide/platforms/ovirt_dev_guide.rst:220
+msgid ""
+"Please consider using these integration tests if you create a new module "
+"or add a new feature to an existing module."
+msgstr ""
+

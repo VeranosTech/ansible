@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,17 +46,17 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/ldap_attr_module.rst:181
+#: ../../rst/modules/ldap_attr_module.rst:198
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/ldap_attr_module.rst:184
+#: ../../rst/modules/ldap_attr_module.rst:201
 msgid ""
 "This only deals with attributes on existing entries. To add or remove "
 "whole entries, see :ref:`ldap_entry <ldap_entry_module>`."
 msgstr ""
 
-#: ../../rst/modules/ldap_attr_module.rst:185
+#: ../../rst/modules/ldap_attr_module.rst:202
 msgid ""
 "The default authentication settings will attempt to use a SASL EXTERNAL "
 "bind over a UNIX domain socket. This works well with the default Ubuntu "
@@ -66,7 +66,7 @@ msgid ""
 "*bind_dn* and *bind_pw*."
 msgstr ""
 
-#: ../../rst/modules/ldap_attr_module.rst:186
+#: ../../rst/modules/ldap_attr_module.rst:203
 msgid ""
 "For *state=present* and *state=absent*, all value comparisons are "
 "performed on the server for maximum accuracy. For *state=exact*, values "
@@ -76,50 +76,58 @@ msgid ""
 "semantically identical but lexically distinct."
 msgstr ""
 
-#: ../../rst/modules/ldap_attr_module.rst:191
+#: ../../rst/modules/ldap_attr_module.rst:208
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/ldap_attr_module.rst:270
+#: ../../rst/modules/ldap_attr_module.rst:287
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/ldap_attr_module.rst:271
+#: ../../rst/modules/ldap_attr_module.rst:288
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/ldap_attr_module.rst:299
+#: ../../rst/modules/ldap_attr_module.rst:316
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/ldap_attr_module.rst:304
+#: ../../rst/modules/ldap_attr_module.rst:321
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/ldap_attr_module.rst:307
+#: ../../rst/modules/ldap_attr_module.rst:324
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/ldap_attr_module.rst:314
+#: ../../rst/modules/ldap_attr_module.rst:331
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/ldap_attr_module.rst:316
+#: ../../rst/modules/ldap_attr_module.rst:333
 msgid "Jiri Tyr (@jtyr)"
 msgstr ""
 
-#: ../../rst/modules/ldap_attr_module.rst:320
+#: ../../rst/modules/ldap_attr_module.rst:337
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/ldap/ldap_attr.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/ldap/ldap_attr.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/net_tools/ldap/ldap_attr.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,26 +18,48 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-#: ../../rst/user_guide/quickstart.rst:2
-msgid "Ansible Quickstart"
+#: ../../rst/user_guide/quickstart.rst:4
+#, fuzzy
+msgid "Ansible Quickstart Guide"
 msgstr "빠른 사용법"
 
-#: ../../rst/user_guide/quickstart.rst:4
+#: ../../rst/user_guide/quickstart.rst:6
 msgid "We've recorded a short video that introduces Ansible."
 msgstr "Ansible을 소개하는 짧은 비디오를 녹화했다."
 
-#: ../../rst/user_guide/quickstart.rst:6
+#: ../../rst/user_guide/quickstart.rst:8
 msgid ""
 "The `quickstart video <https://www.ansible.com/resources/videos/quick-"
 "start-video>`_ is about 13 minutes long and gives you a high level "
 "introduction to Ansible -- what it does and how to use it. We'll also "
 "tell you about other products in the Ansible ecosystem."
 msgstr ""
-"`Ansible 소개 비디오 <https://www.ansible.com/resources/videos/quick-start-video>`_\ 는 "
-"13분 정도로 Ansible이 무엇이고 어떻게 사용하는가에 에 대해 개괄적인 소개를 한다. "
-"Ansible 환경체제의 다른 제품들에 대해서도 이야기한다."
+"`Ansible 소개 비디오 <https://www.ansible.com/resources/videos/quick-start-"
+"video>`_\\ 는 13분 정도로 Ansible이 무엇이고 어떻게 사용하는가에 에 대해 개괄적인 소개를 한다. Ansible "
+"환경체제의 다른 제품들에 대해서도 이야기한다."
 
-#: ../../rst/user_guide/quickstart.rst:9
+#: ../../rst/user_guide/quickstart.rst:11
 msgid "Enjoy, and be sure to visit the rest of the documentation to learn more."
+msgstr "이 비디오 청취후 더 많은 내용을 배우고 싶다면 문서의 다른 부분을 읽기 바란다."
+
+#: ../../rst/user_guide/quickstart.rst:15
+msgid ""
+"`A system administrators guide to getting started with Ansible "
+"<https://www.redhat.com/en/blog/system-administrators-guide-getting-"
+"started-ansible-fast>`_"
 msgstr ""
-"이 비디오 청취후 더 많은 내용을 배우고 싶다면 문서의 다른 부분을 읽기 바란다."
+
+#: ../../rst/user_guide/quickstart.rst:16
+msgid "A step by step introduction to Ansible"
+msgstr ""
+
+#: ../../rst/user_guide/quickstart.rst:17
+msgid ""
+"`Ansible Automation for SysAdmins <https://opensource.com/downloads"
+"/ansible-quickstart>`_"
+msgstr ""
+
+#: ../../rst/user_guide/quickstart.rst:18
+msgid "A downloadable guide for getting started with Ansible"
+msgstr ""
+

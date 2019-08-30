@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,135 +39,138 @@ msgid ""
 "unless the ``--test`` option is used."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_sanity.rst:18
+#: ../../rst/dev_guide/testing_sanity.rst:19
+msgid "How to run"
+msgstr ""
+
+#: ../../rst/dev_guide/testing_sanity.rst:38
 msgid "Available Tests"
 msgstr ""
 
-#: ../../rst/dev_guide/testing_sanity.rst:20
+#: ../../rst/dev_guide/testing_sanity.rst:40
 msgid "Tests can be listed with ``ansible-test sanity --list-tests``."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_sanity.rst:22
+#: ../../rst/dev_guide/testing_sanity.rst:42
 msgid ""
-"This list is a combination of two different categories of tests, \"Code "
-"Smell\" and \"Built-in\"."
+"See the full list of :ref:`sanity tests <all_sanity_tests>`, which "
+"details the various tests and details how to fix identified issues."
 msgstr ""
 
-#: ../../rst/dev_guide/testing_sanity.rst:25
-msgid "Code Smell Tests"
-msgstr ""
+#~ msgid ""
+#~ "This list is a combination of two"
+#~ " different categories of tests, \"Code "
+#~ "Smell\" and \"Built-in\"."
+#~ msgstr ""
 
-#: ../../rst/dev_guide/testing_sanity.rst:27
-msgid ""
-"Miscellaneous `scripts "
-"<https://github.com/ansible/ansible/tree/devel/test/sanity/code-smell/>`_"
-" used for enforcing coding standards and requirements, identifying trip "
-"hazards, etc."
-msgstr ""
+#~ msgid "Code Smell Tests"
+#~ msgstr ""
 
-#: ../../rst/dev_guide/testing_sanity.rst:29
-msgid ""
-"These tests are listed and accessed by script name. There is no actual "
-"test named ``code-smell``."
-msgstr ""
+#~ msgid ""
+#~ "Miscellaneous `scripts "
+#~ "<https://github.com/ansible/ansible/tree/devel/test/sanity/code-"
+#~ "smell/>`_ used for enforcing coding "
+#~ "standards and requirements, identifying trip"
+#~ " hazards, etc."
+#~ msgstr ""
 
-#: ../../rst/dev_guide/testing_sanity.rst:31
-msgid ""
-"All executable scripts added to the ``code-smell`` directory are "
-"automatically detected and executed by ``ansible-test``."
-msgstr ""
+#~ msgid ""
+#~ "These tests are listed and accessed "
+#~ "by script name. There is no actual"
+#~ " test named ``code-smell``."
+#~ msgstr ""
 
-#: ../../rst/dev_guide/testing_sanity.rst:33
-msgid ""
-"Scripts in the directory which fail can be skipped by adding them to "
-"`skip.txt <https://github.com/ansible/ansible/blob/devel/test/sanity"
-"/code-smell/skip.txt>`_. This is useful for scripts which identify issues"
-" that have not yet been resolved in the code base."
-msgstr ""
+#~ msgid ""
+#~ "All executable scripts added to the "
+#~ "``code-smell`` directory are automatically "
+#~ "detected and executed by ``ansible-"
+#~ "test``."
+#~ msgstr ""
 
-#: ../../rst/dev_guide/testing_sanity.rst:36
-msgid ""
-"Files tested are specific to the individual test scripts and are not "
-"affected by command line arguments."
-msgstr ""
+#~ msgid ""
+#~ "Scripts in the directory which fail "
+#~ "can be skipped by adding them to"
+#~ " `skip.txt "
+#~ "<https://github.com/ansible/ansible/blob/devel/test/sanity/code-"
+#~ "smell/skip.txt>`_. This is useful for "
+#~ "scripts which identify issues that have"
+#~ " not yet been resolved in the "
+#~ "code base."
+#~ msgstr ""
 
-#: ../../rst/dev_guide/testing_sanity.rst:39
-msgid "Built-in Tests"
-msgstr ""
+#~ msgid ""
+#~ "Files tested are specific to the "
+#~ "individual test scripts and are not "
+#~ "affected by command line arguments."
+#~ msgstr ""
 
-#: ../../rst/dev_guide/testing_sanity.rst:41
-msgid ""
-"These tests are integrated directly into ``ansible-test``. All files "
-"relevant to each test are tested unless specific files are specified."
-msgstr ""
+#~ msgid "Built-in Tests"
+#~ msgstr ""
 
-#: ../../rst/dev_guide/testing_sanity.rst:44
-msgid ""
-"A full list of tests can be obtained by doing ``ansible-test sanity "
-"--list-tests``."
-msgstr ""
+#~ msgid ""
+#~ "These tests are integrated directly into"
+#~ " ``ansible-test``. All files relevant "
+#~ "to each test are tested unless "
+#~ "specific files are specified."
+#~ msgstr ""
 
-#: ../../rst/dev_guide/testing_sanity.rst:47
-msgid "ansible-doc"
-msgstr ""
+#~ msgid ""
+#~ "A full list of tests can be "
+#~ "obtained by doing ``ansible-test sanity"
+#~ " --list-tests``."
+#~ msgstr ""
 
-#: ../../rst/dev_guide/testing_sanity.rst:49
-msgid ""
-"Verifies that ``ansible-doc`` can parse module documentation on all "
-"supported python versions."
-msgstr ""
+#~ msgid "ansible-doc"
+#~ msgstr ""
 
-#: ../../rst/dev_guide/testing_sanity.rst:52
-msgid "pep8"
-msgstr ""
+#~ msgid ""
+#~ "Verifies that ``ansible-doc`` can parse"
+#~ " module documentation on all supported "
+#~ "python versions."
+#~ msgstr ""
 
-#: ../../rst/dev_guide/testing_sanity.rst:54
-msgid ""
-"Python static analysis for PEP 8 style guideline compliance. See "
-":doc:`testing_pep8` for more information."
-msgstr ""
+#~ msgid "pep8"
+#~ msgstr ""
 
-#: ../../rst/dev_guide/testing_sanity.rst:57
-msgid "pylint"
-msgstr ""
+#~ msgid ""
+#~ "Python static analysis for PEP 8 "
+#~ "style guideline compliance. See "
+#~ ":doc:`testing_pep8` for more information."
+#~ msgstr ""
 
-#: ../../rst/dev_guide/testing_sanity.rst:59
-msgid "Python static analysis for common programming errors."
-msgstr ""
+#~ msgid "pylint"
+#~ msgstr ""
 
-#: ../../rst/dev_guide/testing_sanity.rst:62
-msgid "rstcheck"
-msgstr ""
+#~ msgid "Python static analysis for common programming errors."
+#~ msgstr ""
 
-#: ../../rst/dev_guide/testing_sanity.rst:64
-msgid "Check reStructuredText files for syntax and formatting issues."
-msgstr ""
+#~ msgid "rstcheck"
+#~ msgstr ""
 
-#: ../../rst/dev_guide/testing_sanity.rst:67
-msgid "shellcheck"
-msgstr ""
+#~ msgid "Check reStructuredText files for syntax and formatting issues."
+#~ msgstr ""
 
-#: ../../rst/dev_guide/testing_sanity.rst:69
-msgid ""
-"Static code analysis for shell scripts using the excellent `shellcheck "
-"<https://www.shellcheck.net/>`_ tool."
-msgstr ""
+#~ msgid "shellcheck"
+#~ msgstr ""
 
-#: ../../rst/dev_guide/testing_sanity.rst:72
-msgid "validate-modules"
-msgstr ""
+#~ msgid ""
+#~ "Static code analysis for shell scripts"
+#~ " using the excellent `shellcheck "
+#~ "<https://www.shellcheck.net/>`_ tool."
+#~ msgstr ""
 
-#: ../../rst/dev_guide/testing_sanity.rst:74
-msgid ""
-"Analyze modules for common issues in code and documentation. See :doc"
-":`testing_validate-modules` for more information."
-msgstr ""
+#~ msgid "validate-modules"
+#~ msgstr ""
 
-#: ../../rst/dev_guide/testing_sanity.rst:77
-msgid "yamllint"
-msgstr ""
+#~ msgid ""
+#~ "Analyze modules for common issues in "
+#~ "code and documentation. See :doc"
+#~ ":`testing_validate-modules` for more information."
+#~ msgstr ""
 
-#: ../../rst/dev_guide/testing_sanity.rst:79
-msgid "Check YAML files for syntax and formatting issues."
-msgstr ""
+#~ msgid "yamllint"
+#~ msgstr ""
+
+#~ msgid "Check YAML files for syntax and formatting issues."
+#~ msgstr ""
 

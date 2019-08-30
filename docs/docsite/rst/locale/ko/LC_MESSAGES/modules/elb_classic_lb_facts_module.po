@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,122 +20,124 @@ msgstr ""
 
 #: ../../rst/modules/elb_classic_lb_facts_module.rst:9
 msgid ""
-"elb_classic_lb_facts -- Gather facts about EC2 Elastic Load Balancers in "
-"AWS"
+"elb_classic_lb_facts -- Gather information about EC2 Elastic Load "
+"Balancers in AWS"
 msgstr ""
 
-#: ../../rst/modules/elb_classic_lb_facts_module.rst:19
-msgid "Synopsis"
-msgstr ""
-
-#: ../../rst/modules/elb_classic_lb_facts_module.rst:20
-msgid "Gather facts about EC2 Elastic Load Balancers in AWS"
-msgstr ""
-
-#: ../../rst/modules/elb_classic_lb_facts_module.rst:25
-msgid "Requirements"
-msgstr ""
-
-#: ../../rst/modules/elb_classic_lb_facts_module.rst:26
-msgid "The below requirements are needed on the host that executes this module."
-msgstr ""
-
-#: ../../rst/modules/elb_classic_lb_facts_module.rst:28
-msgid "boto"
-msgstr ""
-
-#: ../../rst/modules/elb_classic_lb_facts_module.rst:29
-msgid "boto3"
-msgstr ""
-
-#: ../../rst/modules/elb_classic_lb_facts_module.rst:30
-msgid "botocore"
-msgstr ""
-
-#: ../../rst/modules/elb_classic_lb_facts_module.rst:31
-msgid "python >= 2.6"
-msgstr ""
-
-#: ../../rst/modules/elb_classic_lb_facts_module.rst:35
-msgid "Parameters"
-msgstr ""
-
-#: ../../rst/modules/elb_classic_lb_facts_module.rst:163
-msgid "Notes"
-msgstr ""
-
-#: ../../rst/modules/elb_classic_lb_facts_module.rst:166
+#: ../../rst/modules/elb_classic_lb_facts_module.rst:11
 msgid ""
-"If parameters are not set within the module, the following environment "
-"variables can be used in decreasing order of precedence ``AWS_URL`` or "
-"``EC2_URL``, ``AWS_ACCESS_KEY_ID`` or ``AWS_ACCESS_KEY`` or "
-"``EC2_ACCESS_KEY``, ``AWS_SECRET_ACCESS_KEY`` or ``AWS_SECRET_KEY`` or "
-"``EC2_SECRET_KEY``, ``AWS_SECURITY_TOKEN`` or ``EC2_SECURITY_TOKEN``, "
-"``AWS_REGION`` or ``EC2_REGION``"
+"This is an alias for :ref:`elb_classic_lb_info "
+"<elb_classic_lb_info_module>`. This name has been **deprecated**. Please "
+"update your tasks to use the new name ``elb_classic_lb_info`` instead."
 msgstr ""
 
-#: ../../rst/modules/elb_classic_lb_facts_module.rst:167
-msgid ""
-"Ansible uses the boto configuration file (typically ~/.boto) if no "
-"credentials are provided. See "
-"https://boto.readthedocs.io/en/latest/boto_config_tut.html"
-msgstr ""
+#~ msgid ""
+#~ "elb_classic_lb_facts -- Gather facts about "
+#~ "EC2 Elastic Load Balancers in AWS"
+#~ msgstr ""
 
-#: ../../rst/modules/elb_classic_lb_facts_module.rst:168
-msgid ""
-"``AWS_REGION`` or ``EC2_REGION`` can be typically be used to specify the "
-"AWS region, when required, but this can also be configured in the boto "
-"config file"
-msgstr ""
+#~ msgid "Synopsis"
+#~ msgstr ""
 
-#: ../../rst/modules/elb_classic_lb_facts_module.rst:173
-msgid "Examples"
-msgstr ""
+#~ msgid "Gather facts about EC2 Elastic Load Balancers in AWS"
+#~ msgstr ""
 
-#: ../../rst/modules/elb_classic_lb_facts_module.rst:213
-msgid "Return Values"
-msgstr ""
+#~ msgid "Requirements"
+#~ msgstr ""
 
-#: ../../rst/modules/elb_classic_lb_facts_module.rst:214
-msgid ""
-"Common return values are documented :ref:`here <common_return_values>`, "
-"the following are the fields unique to this module:"
-msgstr ""
+#~ msgid ""
+#~ "The below requirements are needed on "
+#~ "the host that executes this module."
+#~ msgstr ""
 
-#: ../../rst/modules/elb_classic_lb_facts_module.rst:242
-msgid "Status"
-msgstr ""
+#~ msgid "boto"
+#~ msgstr ""
 
-#: ../../rst/modules/elb_classic_lb_facts_module.rst:247
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
-msgstr ""
+#~ msgid "boto3"
+#~ msgstr ""
 
-#: ../../rst/modules/elb_classic_lb_facts_module.rst:250
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
-msgstr ""
+#~ msgid "botocore"
+#~ msgstr ""
 
-#: ../../rst/modules/elb_classic_lb_facts_module.rst:257
-msgid "Authors"
-msgstr ""
+#~ msgid "python >= 2.6"
+#~ msgstr ""
 
-#: ../../rst/modules/elb_classic_lb_facts_module.rst:259
-msgid "Michael Schultz (@mjschultz)"
-msgstr ""
+#~ msgid "Parameters"
+#~ msgstr ""
 
-#: ../../rst/modules/elb_classic_lb_facts_module.rst:260
-msgid "Fernando Jose Pando (@nand0p)"
-msgstr ""
+#~ msgid "Notes"
+#~ msgstr ""
 
-#: ../../rst/modules/elb_classic_lb_facts_module.rst:264
-#, python-format
-msgid ""
-"If you notice any issues in this documentation you can `edit this "
-"document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/elb_classic_lb_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
-" to improve it."
-msgstr ""
+#~ msgid ""
+#~ "If parameters are not set within "
+#~ "the module, the following environment "
+#~ "variables can be used in decreasing "
+#~ "order of precedence ``AWS_URL`` or "
+#~ "``EC2_URL``, ``AWS_ACCESS_KEY_ID`` or "
+#~ "``AWS_ACCESS_KEY`` or ``EC2_ACCESS_KEY``, "
+#~ "``AWS_SECRET_ACCESS_KEY`` or ``AWS_SECRET_KEY`` or"
+#~ " ``EC2_SECRET_KEY``, ``AWS_SECURITY_TOKEN`` or "
+#~ "``EC2_SECURITY_TOKEN``, ``AWS_REGION`` or "
+#~ "``EC2_REGION``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Ansible uses the boto configuration file"
+#~ " (typically ~/.boto) if no credentials "
+#~ "are provided. See "
+#~ "https://boto.readthedocs.io/en/latest/boto_config_tut.html"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``AWS_REGION`` or ``EC2_REGION`` can be "
+#~ "typically be used to specify the "
+#~ "AWS region, when required, but this "
+#~ "can also be configured in the boto"
+#~ " config file"
+#~ msgstr ""
+
+#~ msgid "Examples"
+#~ msgstr ""
+
+#~ msgid "Return Values"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Common return values are documented "
+#~ ":ref:`here <common_return_values>`, the following"
+#~ " are the fields unique to this "
+#~ "module:"
+#~ msgstr ""
+
+#~ msgid "Status"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid "Authors"
+#~ msgstr ""
+
+#~ msgid "Michael Schultz (@mjschultz)"
+#~ msgstr ""
+
+#~ msgid "Fernando Jose Pando (@nand0p)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/elb_classic_lb_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

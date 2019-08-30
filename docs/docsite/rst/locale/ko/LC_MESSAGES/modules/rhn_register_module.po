@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,56 +52,70 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/rhn_register_module.rst:204
+#: ../../rst/modules/rhn_register_module.rst:205
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/rhn_register_module.rst:207
+#: ../../rst/modules/rhn_register_module.rst:208
 msgid ""
 "This is for older Red Hat products. You probably want the "
 ":ref:`redhat_subscription <redhat_subscription_module>` module instead."
 msgstr ""
 
-#: ../../rst/modules/rhn_register_module.rst:208
+#: ../../rst/modules/rhn_register_module.rst:209
 msgid ""
-"In order to register a system, rhnreg_ks requires either a username and "
-"password, or an activationkey."
+"In order to register a system, ``rhnreg_ks`` requires either a username "
+"and password, or an activationkey."
 msgstr ""
 
-#: ../../rst/modules/rhn_register_module.rst:213
+#: ../../rst/modules/rhn_register_module.rst:214
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/rhn_register_module.rst:263
+#: ../../rst/modules/rhn_register_module.rst:262
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/rhn_register_module.rst:268
+#: ../../rst/modules/rhn_register_module.rst:267
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/rhn_register_module.rst:271
+#: ../../rst/modules/rhn_register_module.rst:270
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/rhn_register_module.rst:278
+#: ../../rst/modules/rhn_register_module.rst:277
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/rhn_register_module.rst:280
+#: ../../rst/modules/rhn_register_module.rst:279
 msgid "James Laska (@jlaska)"
 msgstr ""
 
-#: ../../rst/modules/rhn_register_module.rst:284
+#: ../../rst/modules/rhn_register_module.rst:283
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/packaging/os/rhn_register.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/packaging/os/rhn_register.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "In order to register a system, "
+#~ "rhnreg_ks requires either a username and"
+#~ " password, or an activationkey."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/packaging/os/rhn_register.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

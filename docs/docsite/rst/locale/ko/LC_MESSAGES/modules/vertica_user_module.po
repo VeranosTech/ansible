@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,62 +22,62 @@ msgstr ""
 msgid "vertica_user -- Adds or removes Vertica database users and assigns roles"
 msgstr ""
 
-#: ../../rst/modules/vertica_user_module.rst:19
+#: ../../rst/modules/vertica_user_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/vertica_user_module.rst:20
+#: ../../rst/modules/vertica_user_module.rst:19
 msgid "Adds or removes Vertica database user and, optionally, assigns roles."
 msgstr ""
 
-#: ../../rst/modules/vertica_user_module.rst:21
+#: ../../rst/modules/vertica_user_module.rst:20
 msgid "A user will not be removed until all the dependencies have been dropped."
 msgstr ""
 
-#: ../../rst/modules/vertica_user_module.rst:22
+#: ../../rst/modules/vertica_user_module.rst:21
 msgid ""
 "In such a situation, if the module tries to remove the user it will fail "
 "and only remove roles granted to the user."
 msgstr ""
 
-#: ../../rst/modules/vertica_user_module.rst:27
+#: ../../rst/modules/vertica_user_module.rst:26
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/vertica_user_module.rst:28
+#: ../../rst/modules/vertica_user_module.rst:27
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/vertica_user_module.rst:30
+#: ../../rst/modules/vertica_user_module.rst:29
 msgid "unixODBC"
 msgstr ""
 
-#: ../../rst/modules/vertica_user_module.rst:31
+#: ../../rst/modules/vertica_user_module.rst:30
 msgid "pyodbc"
 msgstr ""
 
-#: ../../rst/modules/vertica_user_module.rst:35
+#: ../../rst/modules/vertica_user_module.rst:34
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/vertica_user_module.rst:238
+#: ../../rst/modules/vertica_user_module.rst:237
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/vertica_user_module.rst:241
+#: ../../rst/modules/vertica_user_module.rst:240
 msgid ""
 "The default authentication assumes that you are either logging in as or "
 "sudo'ing to the ``dbadmin`` account on the host."
 msgstr ""
 
-#: ../../rst/modules/vertica_user_module.rst:242
+#: ../../rst/modules/vertica_user_module.rst:241
 msgid ""
 "This module uses ``pyodbc``, a Python ODBC database adapter. You must "
 "ensure that ``unixODBC`` and ``pyodbc`` is installed on the host and "
 "properly configured."
 msgstr ""
 
-#: ../../rst/modules/vertica_user_module.rst:243
+#: ../../rst/modules/vertica_user_module.rst:242
 msgid ""
 "Configuring ``unixODBC`` for Vertica requires ``Driver = "
 "/opt/vertica/lib64/libverticaodbc.so`` to be added to the ``Vertica`` "
@@ -87,40 +87,48 @@ msgid ""
 "of either ``/etc/vertica.ini`` or ``$HOME/.vertica.ini``."
 msgstr ""
 
-#: ../../rst/modules/vertica_user_module.rst:248
+#: ../../rst/modules/vertica_user_module.rst:247
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/vertica_user_module.rst:269
+#: ../../rst/modules/vertica_user_module.rst:268
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/vertica_user_module.rst:274
+#: ../../rst/modules/vertica_user_module.rst:273
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/vertica_user_module.rst:277
+#: ../../rst/modules/vertica_user_module.rst:276
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/vertica_user_module.rst:284
+#: ../../rst/modules/vertica_user_module.rst:283
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/vertica_user_module.rst:286
+#: ../../rst/modules/vertica_user_module.rst:285
 msgid "Dariusz Owczarek (@dareko)"
 msgstr ""
 
-#: ../../rst/modules/vertica_user_module.rst:290
+#: ../../rst/modules/vertica_user_module.rst:289
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/vertica/vertica_user.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/vertica/vertica_user.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/vertica/vertica_user.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

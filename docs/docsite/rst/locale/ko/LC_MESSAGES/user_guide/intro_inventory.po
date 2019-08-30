@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,10 +30,9 @@ msgid ""
 "``/etc/ansible/hosts``. You can specify a different inventory file using "
 "the ``-i <path>`` option on the command line."
 msgstr ""
-"Ansible은 인프라스트럭처 내의 여러 시스템을 동시에 다룰 수 있다. "
-"이 때 Ansible의 인벤토리에 나열된 시스템 중에서 선택할 수 있는데 인벤토리는 "
-"``/etc/ansible/hosts`` 파일에 저장된다. 명령줄에서 ``-i <path>`` 옵션을 쓰면 "
-"다른 인벤토리 파일을 지정할 수도 있다."
+"Ansible은 인프라스트럭처 내의 여러 시스템을 동시에 다룰 수 있다. 이 때 Ansible의 인벤토리에 나열된 시스템 중에서 "
+"선택할 수 있는데 인벤토리는 ``/etc/ansible/hosts`` 파일에 저장된다. 명령줄에서 ``-i <path>`` 옵션을 "
+"쓰면 다른 인벤토리 파일을 지정할 수도 있다."
 
 #: ../../rst/user_guide/intro_inventory.rst:16
 msgid ""
@@ -43,11 +42,9 @@ msgid ""
 ":ref:`intro_dynamic_inventory`. Introduced in version 2.4, Ansible has "
 ":ref:`inventory_plugins` to make this flexible and customizable."
 msgstr ""
-"여러개의 인벤토리 파일을 동시에 이용할 수도 있고 "
-":ref:`intro_dynamic_inventory`\ 에 설명된 것처럼 클라우드 소스에서 인벤토리를 "
-"가져오거나 (YAML, ini 등) 다른 포맷을 사용할 수도 있다. "
-"버전 2.4부터는 :ref:`inventory_plugins` 기능으로 인벤토리를 더 유연하게 "
-"맞춤 설정 할 수 있다."
+"여러개의 인벤토리 파일을 동시에 이용할 수도 있고 :ref:`intro_dynamic_inventory`\\ 에 설명된 것처럼 "
+"클라우드 소스에서 인벤토리를 가져오거나 (YAML, ini 등) 다른 포맷을 사용할 수도 있다. 버전 2.4부터는 "
+":ref:`inventory_plugins` 기능으로 인벤토리를 더 유연하게 맞춤 설정 할 수 있다."
 
 #: ../../rst/user_guide/intro_inventory.rst:23
 msgid "Inventory basics: hosts and groups"
@@ -60,72 +57,116 @@ msgid ""
 "``/etc/ansible/hosts`` is an INI-like (one of Ansible's defaults) and "
 "looks like this:"
 msgstr ""
-"인벤토리 파일은 사용자가 가진 인벤토리 플러그인에 따라 여러가지 포맷이 가능하다. "
-"예를 들어 ``/etc/ansible/hosts``\ 는 (Ansible의 디폴트 포맷의 하나인) INI 포맷으로 "
-"다음처럼 생겼다:"
+"인벤토리 파일은 사용자가 가진 인벤토리 플러그인에 따라 여러가지 포맷이 가능하다. 예를 들어 "
+"``/etc/ansible/hosts``\\ 는 (Ansible의 디폴트 포맷의 하나인) INI 포맷으로 다음처럼 생겼다:"
 
 #: ../../rst/user_guide/intro_inventory.rst:41
 msgid ""
 "The headings in brackets are group names, which are used in classifying "
 "systems and deciding what systems you are controlling at what times and "
 "for what purpose."
-msgstr ""
-"대괄호안의 제목은 그룹 이름으로 목적에 따라 시스템을 분류하고 제어할 때 사용한다."
+msgstr "대괄호안의 제목은 그룹 이름으로 목적에 따라 시스템을 분류하고 제어할 때 사용한다."
 
 #: ../../rst/user_guide/intro_inventory.rst:44
 msgid "A YAML version would look like:"
 msgstr "YAML 버전은 다음처럼 생겼다.:"
 
-#: ../../rst/user_guide/intro_inventory.rst:63
-msgid ""
-"It is ok to put systems in more than one group, for instance a server "
-"could be both a webserver and a dbserver. If you do, note that variables "
-"will come from all of the groups they are a member of. Variable "
-"precedence is detailed in a later chapter."
-msgstr ""
-"하나의 시스템을 여러개의 그룹에 넣어도 된다. 예를 들어 하나의 서버가 "
-"웹서버이면서 동시에 디비서버일 수도 있다. 이렇게 하면 변수는 그 시스템이 "
-"포함된 모든 그룹에서 가져오게 된다. 변수 우선순위에 대해서는 나중에 자세히 다룬다."
+#: ../../rst/user_guide/intro_inventory.rst:65
+#, fuzzy
+msgid "Hosts in multiple groups"
+msgstr "복수의 인벤토리 소스를 사용하는 경우"
 
-#: ../../rst/user_guide/intro_inventory.rst:66
+#: ../../rst/user_guide/intro_inventory.rst:67
+msgid ""
+"You can put systems in more than one group, for instance a server could "
+"be both a webserver and in a specific datacenter.  For example, you could"
+" create groups that track:"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:69
+msgid ""
+"What - An application, stack or microservice. (For example, database "
+"servers, web servers, etc)."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:70
+msgid ""
+"Where - A datacenter or region, to talk to local DNS, storage, etc. (For "
+"example, east, west)."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:71
+msgid ""
+"When - The development stage, to avoid testing on production resources. "
+"(For example, prod, test)."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:73
+msgid ""
+"Extending the previous YAML inventory to include what, when, and where "
+"would look like:"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:109
+msgid ""
+"You can see that ``one.example.com`` exists in the ``dbservers``, "
+"``east``, and ``prod`` groups."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:111
+msgid ""
+"You could also use nested groups to simplify ``prod`` and ``test`` in "
+"this inventory, for the same result:"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:145
+#, fuzzy
+msgid ""
+"If you do have systems in multiple groups, note that variables will come "
+"from all of the groups they are a member of. Variable precedence is "
+"detailed in :ref:`ansible_variable_precedence`."
+msgstr ""
+"하나의 시스템을 여러개의 그룹에 넣어도 된다. 예를 들어 하나의 서버가 웹서버이면서 동시에 디비서버일 수도 있다. 이렇게 하면 "
+"변수는 그 시스템이 포함된 모든 그룹에서 가져오게 된다. 변수 우선순위에 대해서는 나중에 자세히 다룬다."
+
+#: ../../rst/user_guide/intro_inventory.rst:149
+msgid "Hosts and non-standard ports"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:150
 msgid ""
 "If you have hosts that run on non-standard SSH ports you can put the port"
 " number after the hostname with a colon. Ports listed in your SSH config "
 "file won't be used with the `paramiko` connection but will be used with "
 "the `openssh` connection."
 msgstr ""
-"만약 비표준 SSH 포트로 호스트를 접속하면 호스트이름 뒤에 콜론(:)을 "
-"붙이고 그 위에 포트번호를 쓴다. SSH 설정 파일에 있는 포트번호는 "
-"`paramiko`  접속에서는 사용되지 않지만 `openssh` 접속에는 쓰인다."
+"만약 비표준 SSH 포트로 호스트를 접속하면 호스트이름 뒤에 콜론(:)을 붙이고 그 위에 포트번호를 쓴다. SSH 설정 파일에 있는"
+" 포트번호는 `paramiko`  접속에서는 사용되지 않지만 `openssh` 접속에는 쓰인다."
 
-#: ../../rst/user_guide/intro_inventory.rst:69
+#: ../../rst/user_guide/intro_inventory.rst:153
 msgid ""
 "To make things explicit, it is suggested that you set them if things are "
 "not running on the default port:"
-msgstr ""
-"디폴트 포트에서 실행하되는지 아닌지 설정을 명시하는게 좋다."
+msgstr "디폴트 포트에서 실행하되는지 아닌지 설정을 명시하는게 좋다."
 
-#: ../../rst/user_guide/intro_inventory.rst:75
+#: ../../rst/user_guide/intro_inventory.rst:159
 msgid ""
 "Suppose you have just static IPs and want to set up some aliases that "
 "live in your host file, or you are connecting through tunnels. You can "
 "also describe hosts via variables:"
-msgstr ""
-"정적 IP 주소를 가지고 호스트 파일에 있는 alias를 사용하거나 터널링으로 "
-"접속할 때도 변수를 사용하여 호스트를 설정할 수 있다."
+msgstr "정적 IP 주소를 가지고 호스트 파일에 있는 alias를 사용하거나 터널링으로 접속할 때도 변수를 사용하여 호스트를 설정할 수 있다."
 
-
-#: ../../rst/user_guide/intro_inventory.rst:78
-#: ../../rst/user_guide/intro_inventory.rst:107
+#: ../../rst/user_guide/intro_inventory.rst:162
+#: ../../rst/user_guide/intro_inventory.rst:191
 msgid "In INI:"
 msgstr "INI 포맷:"
 
-#: ../../rst/user_guide/intro_inventory.rst:84
-#: ../../rst/user_guide/intro_inventory.rst:114
+#: ../../rst/user_guide/intro_inventory.rst:168
+#: ../../rst/user_guide/intro_inventory.rst:198
 msgid "In YAML:"
 msgstr "YAML 포맷:"
 
-#: ../../rst/user_guide/intro_inventory.rst:94
+#: ../../rst/user_guide/intro_inventory.rst:178
 msgid ""
 "In the above example, trying to ansible against the host alias \"jumper\""
 " (which may not even be a real hostname) will contact 192.0.2.50 on port "
@@ -134,12 +175,11 @@ msgid ""
 "define variables that describe your system policy, but we'll share "
 "suggestions on doing this later."
 msgstr ""
-"위 예에서 호스트 alias  \"jumper\"(실제 호스트이름이 아닐 수 있다.)에 "
-"작업을 할때는 포트 5555로 192.0.2.50에 접속한다. 이는 인벤토리 파일에서 "
-"특수 변수를 정의하는 기능을 사용한 것이다. 일반적으로 이 방법은 시스템 정책을 "
-"서술하는 좋은 방법이 아니다. 나중에 이에 대해 다시 이야기할 것이다."
+"위 예에서 호스트 alias  \"jumper\"(실제 호스트이름이 아닐 수 있다.)에 작업을 할때는 포트 5555로 "
+"192.0.2.50에 접속한다. 이는 인벤토리 파일에서 특수 변수를 정의하는 기능을 사용한 것이다. 일반적으로 이 방법은 시스템 "
+"정책을 서술하는 좋은 방법이 아니다. 나중에 이에 대해 다시 이야기할 것이다."
 
-#: ../../rst/user_guide/intro_inventory.rst:98
+#: ../../rst/user_guide/intro_inventory.rst:182
 msgid ""
 "Values passed in the INI format using the ``key=value`` syntax are "
 "interpreted differently depending on where they are declared. * When "
@@ -157,195 +197,179 @@ msgid ""
 "confusion on the actual type of a variable. The YAML inventory plugin "
 "processes variable values consistently and correctly."
 msgstr ""
-"INI 포맷에서 ``key=value`` 문법으로 지정된 값은 선언 방법에 따라 다르게 해석된다. "
-" * When 인라인으로 선언되면 파이썬 리터럴자료형(strings, numbers, tuples, lists, "
-"dicts, booleans, None)으로 해석한다. 한 줄에 여러개의 ``key=value`` 인수를 넣어도 된다. "
-"만약 공백글자 자체가 인수라면 구분자(separator)와 구분할 방법이 필요하다."
-" * ``:vars`` 섹션에서 선언되면 INI 값은 문자열로 해석한다. 예를 들어 ``var=FALSE``\ 는 "
-"'FALSE'\ 라는 문자열을 생성한다. ``:vars`` 섹션에서는 한 줄에 하나의 인수만 사용한다. "
-" * 선언 중에는 자료형을 가정하면 안된다. 변수를 소비할 때 필터로 자료형을 지정하도록 "
-"해야 한다. "
-" * 변수의 자료형에 대한 혼돈을 피하고 싶다면 YAML 포맷을 사용하라. "
-"YAML 인벤토리 플러그인 프로세스는 변수값을 정확하고 일관성있게 처리한다."
+"INI 포맷에서 ``key=value`` 문법으로 지정된 값은 선언 방법에 따라 다르게 해석된다.  * When 인라인으로 선언되면"
+" 파이썬 리터럴자료형(strings, numbers, tuples, lists, dicts, booleans, None)으로 "
+"해석한다. 한 줄에 여러개의 ``key=value`` 인수를 넣어도 된다. 만약 공백글자 자체가 인수라면 "
+"구분자(separator)와 구분할 방법이 필요하다. * ``:vars`` 섹션에서 선언되면 INI 값은 문자열로 해석한다. 예를 "
+"들어 ``var=FALSE``\\ 는 'FALSE'\\ 라는 문자열을 생성한다. ``:vars`` 섹션에서는 한 줄에 하나의 인수만"
+" 사용한다.  * 선언 중에는 자료형을 가정하면 안된다. 변수를 소비할 때 필터로 자료형을 지정하도록 해야 한다.  * 변수의 "
+"자료형에 대한 혼돈을 피하고 싶다면 YAML 포맷을 사용하라. YAML 인벤토리 플러그인 프로세스는 변수값을 정확하고 일관성있게 "
+"처리한다."
 
-#: ../../rst/user_guide/intro_inventory.rst:105
+#: ../../rst/user_guide/intro_inventory.rst:189
 msgid ""
 "If you are adding a lot of hosts following similar patterns, you can do "
 "this rather than listing each hostname:"
-msgstr ""
-"비슷한 패턴으로 많은 호스트를 추가하려면 각각의 호스트 이름을 입력하는 것보다 이 방식이 좋다."
+msgstr "비슷한 패턴으로 많은 호스트를 추가하려면 각각의 호스트 이름을 입력하는 것보다 이 방식이 좋다."
 
-#: ../../rst/user_guide/intro_inventory.rst:123
+#: ../../rst/user_guide/intro_inventory.rst:207
 msgid ""
 "For numeric patterns, leading zeros can be included or removed, as "
 "desired. Ranges are inclusive.  You can also define alphabetic ranges:"
-msgstr ""
-"숫자를 사용하는 패턴에서는 자릿수를 위해 앞에 0을 붙일 수도 있다. "
-"숫자 범위 지정뿐 아니라 알파벳 범위 지정도 된다."
+msgstr "숫자를 사용하는 패턴에서는 자릿수를 위해 앞에 0을 붙일 수도 있다. 숫자 범위 지정뿐 아니라 알파벳 범위 지정도 된다."
 
-#: ../../rst/user_guide/intro_inventory.rst:130
+#: ../../rst/user_guide/intro_inventory.rst:214
 msgid "You can also select the connection type and user on a per host basis:"
 msgstr "접속 유형과 사용자를 호스트별로 지정할 수도 있다.:"
 
-#: ../../rst/user_guide/intro_inventory.rst:140
+#: ../../rst/user_guide/intro_inventory.rst:224
 msgid ""
 "As mentioned above, setting these in the inventory file is only a "
 "shorthand, and we'll discuss how to store them in individual files in the"
 " 'host_vars' directory a bit later on."
 msgstr ""
-"위에서 이야기한대로 인벤토리 파일에 설정을 하는 방법은 단지 빠른 설정 방법일 뿐이다. "
-"나중에는 'host_vars' 디렉토리에 개별 파일을 저장하는 방법에 대해 설명한다."
+"위에서 이야기한대로 인벤토리 파일에 설정을 하는 방법은 단지 빠른 설정 방법일 뿐이다. 나중에는 'host_vars' 디렉토리에 "
+"개별 파일을 저장하는 방법에 대해 설명한다."
 
-#: ../../rst/user_guide/intro_inventory.rst:145
+#: ../../rst/user_guide/intro_inventory.rst:229
 msgid "Assigning a variable to one machine: host variables"
 msgstr "단일 머신에 대해 변수를 할당하는 방법: 호스트 변수"
 
-#: ../../rst/user_guide/intro_inventory.rst:147
+#: ../../rst/user_guide/intro_inventory.rst:231
 msgid ""
 "As described above, it is easy to assign variables to hosts that will be "
 "used later in playbooks:"
-msgstr ""
-"위에서 이야기한 바와 같이 나중에 플레이북에서 쓸 수 있도록 호스트에 변수를 "
-"할당할 수 있다. "
+msgstr "위에서 이야기한 바와 같이 나중에 플레이북에서 쓸 수 있도록 호스트에 변수를 할당할 수 있다. "
 
-#: ../../rst/user_guide/intro_inventory.rst:155
-#: ../../rst/user_guide/intro_inventory.rst:186
+#: ../../rst/user_guide/intro_inventory.rst:239
+#: ../../rst/user_guide/intro_inventory.rst:270
 msgid "The YAML version:"
 msgstr "YAML 버전"
 
-#: ../../rst/user_guide/intro_inventory.rst:170
+#: ../../rst/user_guide/intro_inventory.rst:254
 msgid "Assigning a variable to many machines: group variables"
 msgstr "다수의 머신에 변수를 할당하기: 그룹 변수"
 
-#: ../../rst/user_guide/intro_inventory.rst:172
+#: ../../rst/user_guide/intro_inventory.rst:256
 msgid "Variables can also be applied to an entire group at once:"
 msgstr "전체 그룹에 한번에 변수를 적용할 수도 있다."
 
-#: ../../rst/user_guide/intro_inventory.rst:174
+#: ../../rst/user_guide/intro_inventory.rst:258
 msgid "The INI way:"
 msgstr "INI 버전:"
 
-#: ../../rst/user_guide/intro_inventory.rst:198
+#: ../../rst/user_guide/intro_inventory.rst:282
 msgid ""
 "Be aware that this is only a convenient way to apply variables to "
 "multiple hosts at once; even though you can target hosts by group, "
 "**variables are always flattened to the host level** before a play is "
 "executed."
 msgstr ""
-"이 방법은 복수의 호스트에 여러개의 변수를 동시 적용하는 편의적 방법일 뿐이다. "
-"호스트를 그룹단위로 적용하더라고 실제로는 플레이북이 실행되기 전에 "
-"번수가 호스트 레벨로 내려온다."
+"이 방법은 복수의 호스트에 여러개의 변수를 동시 적용하는 편의적 방법일 뿐이다. 호스트를 그룹단위로 적용하더라고 실제로는 플레이북이"
+" 실행되기 전에 번수가 호스트 레벨로 내려온다."
 
-#: ../../rst/user_guide/intro_inventory.rst:203
+#: ../../rst/user_guide/intro_inventory.rst:287
 msgid "Inheriting variable values: group variables for groups of groups"
 msgstr "변수 값 상속: 그룹의 그룹에 대한 그룹 변수"
 
-#: ../../rst/user_guide/intro_inventory.rst:205
+#: ../../rst/user_guide/intro_inventory.rst:289
 msgid ""
 "You can make groups of groups using the ``:children`` suffix in INI or "
 "the ``children:`` entry in YAML. You can apply variables to these groups "
 "of groups using ``:vars`` or ``vars:``:"
 msgstr ""
-"INI 파일에서는 ``:children`` 접미사, YAML 파일에서는 ``children:`` 엔트리를 "
-"사용라면 그룹의 그룹을 만들 수 있다. ``:vars`` 또는 ``vars:``를 이용하면 "
-"그룹의 그룹에 변수를 적용할 수 있다.:"
+"INI 파일에서는 ``:children`` 접미사, YAML 파일에서는 ``children:`` 엔트리를 사용라면 그룹의 그룹을 "
+"만들 수 있다. ``:vars`` 또는 ``vars:``를 이용하면 그룹의 그룹에 변수를 적용할 수 있다.:"
 
-#: ../../rst/user_guide/intro_inventory.rst:260
+#: ../../rst/user_guide/intro_inventory.rst:344
 msgid ""
 "If you need to store lists or hash data, or prefer to keep host and group"
 " specific variables separate from the inventory file, see the next "
 "section. Child groups have a couple of properties to note:"
 msgstr ""
-"리스트나 해시 데이터를 저장해야 하거나 인벤토리 파일에서 호스트나 그룹용 변수를 "
-"인벤토리 파일에서 떼어서 관리하는 것을 선호하면 다음 절을 참조하라. "
-"자식 그룹은 몇가지 특징이 있다.:"
+"리스트나 해시 데이터를 저장해야 하거나 인벤토리 파일에서 호스트나 그룹용 변수를 인벤토리 파일에서 떼어서 관리하는 것을 선호하면 "
+"다음 절을 참조하라. 자식 그룹은 몇가지 특징이 있다.:"
 
-#: ../../rst/user_guide/intro_inventory.rst:263
+#: ../../rst/user_guide/intro_inventory.rst:347
 msgid ""
 "Any host that is member of a child group is automatically a member of the"
 " parent group."
-msgstr ""
-"자식 그룹의 멤버인 호스트는 자동으로 부모 그룹의 멤버가 된다."
+msgstr "자식 그룹의 멤버인 호스트는 자동으로 부모 그룹의 멤버가 된다."
 
-#: ../../rst/user_guide/intro_inventory.rst:264
+#: ../../rst/user_guide/intro_inventory.rst:348
 msgid ""
 "A child group's variables will have higher precedence (override) a parent"
 " group's variables."
-msgstr ""
-"자식 그룹의 변수는 그룹 그룹의 변수보다 우선순위가 높다."
+msgstr "자식 그룹의 변수는 그룹 그룹의 변수보다 우선순위가 높다."
 
-#: ../../rst/user_guide/intro_inventory.rst:265
+#: ../../rst/user_guide/intro_inventory.rst:349
 msgid ""
 "Groups can have multiple parents and children, but not circular "
 "relationships."
-msgstr ""
-"그룹은 복수의 부모와 자식을 가질 수 있다. 하지만 환형 관계(circular relationships)는 안된다."
+msgstr "그룹은 복수의 부모와 자식을 가질 수 있다. 하지만 환형 관계(circular relationships)는 안된다."
 
-#: ../../rst/user_guide/intro_inventory.rst:266
+#: ../../rst/user_guide/intro_inventory.rst:350
 msgid ""
 "Hosts can also be in multiple groups, but there will only be **one** "
 "instance of a host, merging the data from the multiple groups."
-msgstr ""
-"호스트는 여러 그룹에 있어도 되지만 실제로 그 호스트의 인스턴스는 하나만 존재하게 된다."
+msgstr "호스트는 여러 그룹에 있어도 되지만 실제로 그 호스트의 인스턴스는 하나만 존재하게 된다."
 
-#: ../../rst/user_guide/intro_inventory.rst:271
+#: ../../rst/user_guide/intro_inventory.rst:355
 msgid "Default groups"
 msgstr "디폴트 그룹"
 
-#: ../../rst/user_guide/intro_inventory.rst:273
+#: ../../rst/user_guide/intro_inventory.rst:357
+#, fuzzy
 msgid ""
 "There are two default groups: ``all`` and ``ungrouped``. ``all`` contains"
 " every host. ``ungrouped`` contains all hosts that don't have another "
 "group aside from ``all``. Every host will always belong to at least 2 "
-"groups. Though ``all`` and ``ungrouped`` are always present, they can be "
-"implicit and not appear in group listings like ``group_names``."
+"groups (``all`` and ``ungrouped`` or ``all`` and some other group). "
+"Though ``all`` and ``ungrouped`` are always present, they can be implicit"
+" and not appear in group listings like ``group_names``."
 msgstr ""
-"Ansible에는 ``all``\ 과 ``ungrouped``\ 이라는 두 개의 디폴트 그룹이 있다. "
-"``all``\ 은 모든 호스트를 포함한다. ``ungrouped``\ 는 ``all`` 이외의 다른 그룹에 "
-"포함되지 않는 모든 호스트를 포함한다. ``all`` 및 ``ungrouped`` 그룹은 항상 "
-"존재하고 ``group_names`` 같은 그룹 리스팅에 넣지 않아도 된다."
+"Ansible에는 ``all``\\ 과 ``ungrouped``\\ 이라는 두 개의 디폴트 그룹이 있다. ``all``\\ 은 모든"
+" 호스트를 포함한다. ``ungrouped``\\ 는 ``all`` 이외의 다른 그룹에 포함되지 않는 모든 호스트를 포함한다. "
+"``all`` 및 ``ungrouped`` 그룹은 항상 존재하고 ``group_names`` 같은 그룹 리스팅에 넣지 않아도 된다."
 
-#: ../../rst/user_guide/intro_inventory.rst:281
+#: ../../rst/user_guide/intro_inventory.rst:365
 msgid "Organizing host and group variables"
 msgstr "호스트와 그룹 변수의 조직화"
 
-#: ../../rst/user_guide/intro_inventory.rst:283
+#: ../../rst/user_guide/intro_inventory.rst:367
 msgid ""
 "Although you can store variables in the main inventory file, storing "
 "separate host and group variables files may help you track your variable "
 "values more easily."
-msgstr ""
-"변수를 메인 인벤토리 파일에 저장할 수도 있지만 호스트나 그룹별로 별도로 "
-"저장하면 변수값을 관리하는데 도움이 된다."
+msgstr "변수를 메인 인벤토리 파일에 저장할 수도 있지만 호스트나 그룹별로 별도로 저장하면 변수값을 관리하는데 도움이 된다."
 
-#: ../../rst/user_guide/intro_inventory.rst:285
+#: ../../rst/user_guide/intro_inventory.rst:369
 msgid ""
 "Host and group variables can be stored in individual files relative to "
 "the inventory file (not directory, it is always the file)."
-msgstr ""
-"호스트와 그룹 변수는 인벤토리 파일을 기준으로 각각 다른 파일에 저장할 수 있다."
+msgstr "호스트와 그룹 변수는 인벤토리 파일을 기준으로 각각 다른 파일에 저장할 수 있다."
 
-#: ../../rst/user_guide/intro_inventory.rst:287
+#: ../../rst/user_guide/intro_inventory.rst:371
 msgid ""
 "These variable files are in YAML format. Valid file extensions include "
 "'.yml', '.yaml', '.json', or no file extension. See :ref:`yaml_syntax` if"
 " you are new to YAML."
 msgstr ""
-"이 변수 파일은 YAML 포맷이다. 올바른 파일 확장자는 '.yml', '.yaml', '.json', "
-"또는 확장자가 없는 것이다. YAML 포맷이 낯설다면 :ref:`yaml_syntax`\ 를 참조한다."
+"이 변수 파일은 YAML 포맷이다. 올바른 파일 확장자는 '.yml', '.yaml', '.json', 또는 확장자가 없는 것이다."
+" YAML 포맷이 낯설다면 :ref:`yaml_syntax`\\ 를 참조한다."
 
-#: ../../rst/user_guide/intro_inventory.rst:290
+#: ../../rst/user_guide/intro_inventory.rst:374
 msgid ""
 "Let's say, for example, that you keep your inventory file at "
 "``/etc/ansible/hosts``. You have a host named 'foosball' that's a member "
 "of two groups: 'raleigh' and 'webservers'. That host will use variables "
 "in YAML files at the following locations::"
 msgstr ""
-"예를 들어 인벤토리 파일이 ``/etc/ansible/hosts``\ 이고  두 개의 그룹 "
-"'raleigh' 및 'webservers'\ 의 멤버인 'foosball'\ 이라는 호스트가 있다고 하면, "
-"이 호스트의 변수는 다음 위치에 YAML 파일로 저장된다.::"
+"예를 들어 인벤토리 파일이 ``/etc/ansible/hosts``\\ 이고  두 개의 그룹 'raleigh' 및 "
+"'webservers'\\ 의 멤버인 'foosball'\\ 이라는 호스트가 있다고 하면, 이 호스트의 변수는 다음 위치에 YAML"
+" 파일로 저장된다.::"
 
-#: ../../rst/user_guide/intro_inventory.rst:297
+#: ../../rst/user_guide/intro_inventory.rst:381
 msgid ""
 "For instance, suppose you have hosts grouped by datacenter, and each "
 "datacenter uses some different servers.  The data in the groupfile "
@@ -355,21 +379,20 @@ msgstr ""
 "예를 들어 데이터센터 그룹이 여러개고 각 데이터센터가 다른 서버를 가지고 있다면 "
 "'/etc/ansible/group_vars/raleigh' 그룹 파일의 'raleigh' 그룹은 다음과 같다::"
 
-#: ../../rst/user_guide/intro_inventory.rst:305
+#: ../../rst/user_guide/intro_inventory.rst:389
 msgid "It is okay if these files do not exist, as this is an optional feature."
-msgstr ""
-"부가적인 기능이기 때문에 이 파일들이 없어도 상관없다."
+msgstr "부가적인 기능이기 때문에 이 파일들이 없어도 상관없다."
 
-#: ../../rst/user_guide/intro_inventory.rst:307
+#: ../../rst/user_guide/intro_inventory.rst:391
 msgid ""
 "As an advanced use case, you can create *directories* named after your "
 "groups or hosts, and Ansible will read all the files in these directories"
 " in lexicographical order. An example with the 'raleigh' group::"
 msgstr ""
-"좀 더 고급 사례로 호스트나 그룹별 디렉토리를 생성할 수 있다. Ansible은 이 "
-"디렉토리의 파일을 사전식 순서로 읽어들인다. 'raleigh' 그룹의 예를 들면 다음과 같다::"
+"좀 더 고급 사례로 호스트나 그룹별 디렉토리를 생성할 수 있다. Ansible은 이 디렉토리의 파일을 사전식 순서로 읽어들인다. "
+"'raleigh' 그룹의 예를 들면 다음과 같다::"
 
-#: ../../rst/user_guide/intro_inventory.rst:313
+#: ../../rst/user_guide/intro_inventory.rst:397
 msgid ""
 "All hosts that are in the 'raleigh' group will have the variables defined"
 " in these files available to them. This can be very useful to keep your "
@@ -377,22 +400,20 @@ msgid ""
 "want to use :ref:`Ansible Vault<playbooks_vault>` on a part of a group's "
 "variables."
 msgstr ""
-"'raleigh' 그룹의 모든 호스트는 이 파일에서 제공되는 변수를 가지게 된다. "
-"이 방법은 단일 파일을 사용하기에는 너무 크거나 일부 변수만 "
-":ref:`Ansible Vault<playbooks_vault>`\ 에서 쓸 때 유용한다."
+"'raleigh' 그룹의 모든 호스트는 이 파일에서 제공되는 변수를 가지게 된다. 이 방법은 단일 파일을 사용하기에는 너무 크거나 "
+"일부 변수만 :ref:`Ansible Vault<playbooks_vault>`\\ 에서 쓸 때 유용한다."
 
-#: ../../rst/user_guide/intro_inventory.rst:318
+#: ../../rst/user_guide/intro_inventory.rst:402
 msgid ""
 "Tip: The ``group_vars/`` and ``host_vars/`` directories can exist in the "
 "playbook directory OR the inventory directory. If both paths exist, "
 "variables in the playbook directory will override variables set in the "
 "inventory directory."
 msgstr ""
-"팁: ``group_vars/``, ``host_vars/`` 디렉토리는 플레이북 디렉토리에 엤어도 되고 "
-"인벤토리 디렉토리에 있어도 된다. 만약 둘 다 존재하면 플레이북 디렉토리가 "
-"인벤토리 디렉토리보다 우선한다."
+"팁: ``group_vars/``, ``host_vars/`` 디렉토리는 플레이북 디렉토리에 엤어도 되고 인벤토리 디렉토리에 있어도"
+" 된다. 만약 둘 다 존재하면 플레이북 디렉토리가 인벤토리 디렉토리보다 우선한다."
 
-#: ../../rst/user_guide/intro_inventory.rst:322
+#: ../../rst/user_guide/intro_inventory.rst:406
 msgid ""
 "Tip: The ``ansible-playbook`` command looks for playbooks in the current "
 "working directory by default. Other Ansible commands (for example, "
@@ -400,25 +421,22 @@ msgid ""
 "``group_vars/`` and ``host_vars/`` in the inventory directory unless you "
 "provide the ``--playbook-dir`` option on the command line."
 msgstr ""
-"팁: ``ansible-playbook`` 명령은 디폴트로 현재 워킹 디렉토리에서 플레이북을 찾는다. "
-"다른 Ansible 명령(예를 들어 ``ansible``, ``ansible-console``, 등)은 "
-"``--playbook-dir`` 옵션을 지정하지 않는 한 인벤토리 디렉토리 안의 "
-"``group_vars/``, ``host_vars/`` 디렉토리를 찾는다."
+"팁: ``ansible-playbook`` 명령은 디폴트로 현재 워킹 디렉토리에서 플레이북을 찾는다. 다른 Ansible 명령(예를"
+" 들어 ``ansible``, ``ansible-console``, 등)은 ``--playbook-dir`` 옵션을 지정하지 않는 "
+"한 인벤토리 디렉토리 안의 ``group_vars/``, ``host_vars/`` 디렉토리를 찾는다."
 
-#: ../../rst/user_guide/intro_inventory.rst:326
+#: ../../rst/user_guide/intro_inventory.rst:410
 msgid ""
 "Tip: Keeping your inventory file and variables in a git repo (or other "
 "version control) is an excellent way to track changes to your inventory "
 "and host variables."
-msgstr ""
-"팁: 인벤토리 파일과 변수를 git 레포(또는 다른 버전 관리 시스템)에 보관하면 "
-"인벤토리와 호스트 변수의 변화를 추적하기 좋다."
+msgstr "팁: 인벤토리 파일과 변수를 git 레포(또는 다른 버전 관리 시스템)에 보관하면 인벤토리와 호스트 변수의 변화를 추적하기 좋다."
 
-#: ../../rst/user_guide/intro_inventory.rst:332
+#: ../../rst/user_guide/intro_inventory.rst:416
 msgid "How variables are merged"
 msgstr "변수가 어떻게 합쳐지는가"
 
-#: ../../rst/user_guide/intro_inventory.rst:334
+#: ../../rst/user_guide/intro_inventory.rst:418
 msgid ""
 "By default variables are merged/flattened to the specific host before a "
 "play is run. This keeps Ansible focused on the Host and Task, so groups "
@@ -427,41 +445,38 @@ msgid ""
 "and/or host (see :ref:`DEFAULT_HASH_BEHAVIOUR<DEFAULT_HASH_BEHAVIOUR>`). "
 "The order/precedence is (from lowest to highest):"
 msgstr ""
-"특정 호스트에서 플레이가 실행되기전에 변수값이 합쳐진다(merge). "
-"따라서 그룹은 사실 인벤토리와 호스트 매칭된 다음에는 존재하지 않는다. "
-"이렇게 하면 Ansible이 호스트와 태스크에 집중할 수 있다. "
-"Ansible은 그룹이나 호스트에서 정의된 변수를 덮어쓰는데 "
-"(:ref:`DEFAULT_HASH_BEHAVIOUR<DEFAULT_HASH_BEHAVIOUR>` 참조) "
-"우선순위는 다음과 같다.(가장 낮은 우선 순위에서 높은 순위로):"
+"특정 호스트에서 플레이가 실행되기전에 변수값이 합쳐진다(merge). 따라서 그룹은 사실 인벤토리와 호스트 매칭된 다음에는 존재하지"
+" 않는다. 이렇게 하면 Ansible이 호스트와 태스크에 집중할 수 있다. Ansible은 그룹이나 호스트에서 정의된 변수를 "
+"덮어쓰는데 (:ref:`DEFAULT_HASH_BEHAVIOUR<DEFAULT_HASH_BEHAVIOUR>` 참조) 우선순위는 "
+"다음과 같다.(가장 낮은 우선 순위에서 높은 순위로):"
 
-#: ../../rst/user_guide/intro_inventory.rst:336
+#: ../../rst/user_guide/intro_inventory.rst:420
 msgid "all group (because it is the 'parent' of all other groups)"
 msgstr "all 그룹(모든 다른 그룹의 부모 그룹이므로)"
 
-#: ../../rst/user_guide/intro_inventory.rst:337
+#: ../../rst/user_guide/intro_inventory.rst:421
 msgid "parent group"
 msgstr "부모 그룹"
 
-#: ../../rst/user_guide/intro_inventory.rst:338
+#: ../../rst/user_guide/intro_inventory.rst:422
 msgid "child group"
 msgstr "자식 그룹"
 
-#: ../../rst/user_guide/intro_inventory.rst:339
+#: ../../rst/user_guide/intro_inventory.rst:423
 msgid "host"
 msgstr "호스트"
 
-#: ../../rst/user_guide/intro_inventory.rst:341
+#: ../../rst/user_guide/intro_inventory.rst:425
 msgid ""
 "When groups of the same parent/child level are merged, it is done "
 "alphabetically, and the last group loaded overwrites the previous groups."
 " For example, an a_group will be merged with b_group and b_group vars "
 "that match will overwrite the ones in a_group."
 msgstr ""
-"같은 부모/자식 레벨의 그룹은 알파벳 순서로 합쳐지고 나중에 로드된 그룹이 "
-"앞에 있는 그룹을 덮어쓴다. 예를 들어 a_group은 b_group과 합쳐지고 "
-"b_group 변수와 같은 이름의 a_group 그룹 변수는 덮어씌워진다."
+"같은 부모/자식 레벨의 그룹은 알파벳 순서로 합쳐지고 나중에 로드된 그룹이 앞에 있는 그룹을 덮어쓴다. 예를 들어 a_group은 "
+"b_group과 합쳐지고 b_group 변수와 같은 이름의 a_group 그룹 변수는 덮어씌워진다."
 
-#: ../../rst/user_guide/intro_inventory.rst:345
+#: ../../rst/user_guide/intro_inventory.rst:429
 msgid ""
 "Starting in Ansible version 2.4, users can use the group variable "
 "``ansible_group_priority`` to change the merge order for groups of the "
@@ -469,25 +484,30 @@ msgid ""
 "number, the later it will be merged, giving it higher priority. This "
 "variable defaults to ``1`` if not set. For example:"
 msgstr ""
-"Ansible 2.4부터는 사용자가 ``ansible_group_priority`` 그룹 변수로 "
-"(부모/자식 순서가 해결된 이후에) 같은 레벨에 있는 그룹의 머지 순서를 바꿀 수 있다. "
-"숫자가 클수로 나중에 머지되므로 우선순위가 높아진다. "
-"이 변수는 지정하지 않으면 디폴트가 ``1``\ 이다.::"
+"Ansible 2.4부터는 사용자가 ``ansible_group_priority`` 그룹 변수로 (부모/자식 순서가 해결된 이후에)"
+" 같은 레벨에 있는 그룹의 머지 순서를 바꿀 수 있다. 숫자가 클수로 나중에 머지되므로 우선순위가 높아진다. 이 변수는 지정하지 "
+"않으면 디폴트가 ``1``\\ 이다.::"
 
-#: ../../rst/user_guide/intro_inventory.rst:355
+#: ../../rst/user_guide/intro_inventory.rst:439
 msgid ""
 "In this example, if both groups have the same priority, the result would "
 "normally have been ``testvar == b``, but since we are giving the "
 "``a_group`` a higher priority the result will be ``testvar == a``."
 msgstr ""
-"이 예에서는 두 그룹의 우선순위가 같으므로 보통의 결과는 ``testvar == b``\ 가 되지만 "
-"``a_group`` 우선순위가 높기 때문에 ``testvar == a``\ 가 된다."
+"이 예에서는 두 그룹의 우선순위가 같으므로 보통의 결과는 ``testvar == b``\\ 가 되지만 ``a_group`` "
+"우선순위가 높기 때문에 ``testvar == a``\\ 가 된다."
 
-#: ../../rst/user_guide/intro_inventory.rst:361
+#: ../../rst/user_guide/intro_inventory.rst:441
+msgid ""
+"``ansible_group_priority`` can only be set in the inventory source and "
+"not in group_vars/ as the variable is used in the loading of group_vars."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:446
 msgid "Using multiple inventory sources"
 msgstr "복수의 인벤토리 소스를 사용하는 경우"
 
-#: ../../rst/user_guide/intro_inventory.rst:363
+#: ../../rst/user_guide/intro_inventory.rst:448
 msgid ""
 "As an advanced use case you can target multiple inventory sources "
 "(directories, dynamic inventory scripts or files supported by inventory "
@@ -496,17 +516,15 @@ msgid ""
 "be useful when you want to target normally separate environments, like "
 "staging and production, at the same time for a specific action."
 msgstr ""
-"고급 사용법으로 (디렉토리, 다이나믹 인벤토리 스크립트, 또는 인벤토리 "
-"플러그인 파일 등을 사용하여) 복수의 인벤토리 소스를 목표로 하여 동시에 "
-"여러개의 인벤토리 파라미터를 명령줄에서 주거나 :envvar:`ANSIBLE_INVENTORY` "
-"환경 변수로 설정할 수 있다. 같은 명령을 주어도 개발 환경과 운영 환경을 "
-"구분하여 다르게 실행하고 싶을 때 유용하다."
+"고급 사용법으로 (디렉토리, 다이나믹 인벤토리 스크립트, 또는 인벤토리 플러그인 파일 등을 사용하여) 복수의 인벤토리 소스를 목표로"
+" 하여 동시에 여러개의 인벤토리 파라미터를 명령줄에서 주거나 :envvar:`ANSIBLE_INVENTORY` 환경 변수로 설정할 "
+"수 있다. 같은 명령을 주어도 개발 환경과 운영 환경을 구분하여 다르게 실행하고 싶을 때 유용하다."
 
-#: ../../rst/user_guide/intro_inventory.rst:368
+#: ../../rst/user_guide/intro_inventory.rst:453
 msgid "Target two sources from the command line like this::"
 msgstr "명령줄로 두 개의 소스를 지정할 때는 다음과 같이 한다.::"
 
-#: ../../rst/user_guide/intro_inventory.rst:372
+#: ../../rst/user_guide/intro_inventory.rst:457
 msgid ""
 "Keep in mind that if there are variable conflicts in the inventories, "
 "they are resolved according to the rules described in :ref:`how_we_merge`"
@@ -517,20 +535,17 @@ msgid ""
 "would be reversed if the playbook was run with ``-i production -i "
 "staging``."
 msgstr ""
-"만약 인벤토리에 있는 변수가 충돌하면 :ref:`how_we_merge`\ 과 "
-":ref:`ansible_variable_precedence`\ 에 나온 규칙에 따라 "
-"충돌을 해결한다. 머지 순서는 인벤토리 소스 파라미터 순서로 조정한다. "
-"만약 개발 환경의 ``[all:vars]`` 섹션에서 ``myvar = 1``\ 라고 정의했는데 "
-"운영 환경의 인벤토리에서 ``myvar = 2``\ 라고 정의하면 플레이북은 "
-"``myvar = 2``\ 로 실행한다. 만약 플레이북을 실행할 때 "
-"``-i production -i staging``\ 이라고 옵션을 주었다면 반대가 될 수 있다."
+"만약 인벤토리에 있는 변수가 충돌하면 :ref:`how_we_merge`\\ 과 "
+":ref:`ansible_variable_precedence`\\ 에 나온 규칙에 따라 충돌을 해결한다. 머지 순서는 인벤토리 소스"
+" 파라미터 순서로 조정한다. 만약 개발 환경의 ``[all:vars]`` 섹션에서 ``myvar = 1``\\ 라고 정의했는데 운영"
+" 환경의 인벤토리에서 ``myvar = 2``\\ 라고 정의하면 플레이북은 ``myvar = 2``\\ 로 실행한다. 만약 "
+"플레이북을 실행할 때 ``-i production -i staging``\\ 이라고 옵션을 주었다면 반대가 될 수 있다."
 
-
-#: ../../rst/user_guide/intro_inventory.rst:379
+#: ../../rst/user_guide/intro_inventory.rst:464
 msgid "**Aggregating inventory sources with a directory**"
 msgstr "**디렉토리내의 인벤토리 소스를 합치기**"
 
-#: ../../rst/user_guide/intro_inventory.rst:381
+#: ../../rst/user_guide/intro_inventory.rst:466
 msgid ""
 "You can also create an inventory by combining multiple inventory sources "
 "and source types under a directory. This can be useful for combining "
@@ -538,16 +553,15 @@ msgid ""
 "following inventory combines an inventory plugin source, a dynamic "
 "inventory script, and a file with static hosts::"
 msgstr ""
-"디렉토리 안에 있는 여러개의 인벤토리 소스를 합쳐서 하나의 인벤토리를 만들 수도 있다. "
-"정적 호스트와 다이나믹 호스트를 합쳐서 하나의 인벤토리로 만들 때 유용한다. "
-"다음 인벤토리는 인벤토리 플러그인 소스와 다이나믹 인벤토리 스크립트, "
-"그리고 정적 호스트 파일을 합친다.::"
+"디렉토리 안에 있는 여러개의 인벤토리 소스를 합쳐서 하나의 인벤토리를 만들 수도 있다. 정적 호스트와 다이나믹 호스트를 합쳐서 "
+"하나의 인벤토리로 만들 때 유용한다. 다음 인벤토리는 인벤토리 플러그인 소스와 다이나믹 인벤토리 스크립트, 그리고 정적 호스트 "
+"파일을 합친다.::"
 
-#: ../../rst/user_guide/intro_inventory.rst:393
+#: ../../rst/user_guide/intro_inventory.rst:478
 msgid "You can target this inventory directory simply like this::"
 msgstr "이 인벤토리 디렉토리를 타겟으로 지정하려면::"
 
-#: ../../rst/user_guide/intro_inventory.rst:397
+#: ../../rst/user_guide/intro_inventory.rst:482
 msgid ""
 "It can be useful to control the merging order of the inventory sources if"
 " there's variable conflicts or group of groups dependencies to the other "
@@ -556,7 +570,7 @@ msgid ""
 "prefixes to the files::"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:409
+#: ../../rst/user_guide/intro_inventory.rst:494
 msgid ""
 "If ``01-openstack.yml`` defines ``myvar = 1`` for the group ``all``, ``02"
 "-dynamic-inventory.py`` defines ``myvar = 2``, and ``03-static-"
@@ -564,23 +578,23 @@ msgid ""
 "= 3``."
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:412
+#: ../../rst/user_guide/intro_inventory.rst:497
 msgid ""
 "For more details on inventory plugins and dynamic inventory scripts see "
 ":ref:`inventory_plugins` and :ref:`intro_dynamic_inventory`."
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:417
+#: ../../rst/user_guide/intro_inventory.rst:502
 msgid "Connecting to hosts: behavioral inventory parameters"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:419
+#: ../../rst/user_guide/intro_inventory.rst:504
 msgid ""
 "As described above, setting the following variables control how Ansible "
 "interacts with remote hosts."
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:421
+#: ../../rst/user_guide/intro_inventory.rst:506
 msgid "Host connection:"
 msgstr ""
 
@@ -592,11 +606,11 @@ msgid ""
 "``ssh-agent`` is highly recommended."
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:426
+#: ../../rst/user_guide/intro_inventory.rst:511
 msgid "ansible_connection"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:426
+#: ../../rst/user_guide/intro_inventory.rst:511
 msgid ""
 "Connection type to the host. This can be the name of any of ansible's "
 "connection plugins. SSH protocol types are ``smart``, ``ssh`` or "
@@ -604,201 +618,202 @@ msgid ""
 " the next section."
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:428
+#: ../../rst/user_guide/intro_inventory.rst:513
 msgid "General for all connections:"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:430
-#: ../../rst/user_guide/intro_inventory.rst:531
+#: ../../rst/user_guide/intro_inventory.rst:515
+#: ../../rst/user_guide/intro_inventory.rst:616
 msgid "ansible_host"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:431
+#: ../../rst/user_guide/intro_inventory.rst:516
 msgid ""
 "The name of the host to connect to, if different from the alias you wish "
 "to give to it."
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:432
+#: ../../rst/user_guide/intro_inventory.rst:517
 msgid "ansible_port"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:433
-msgid "The ssh port number, if not 22"
+#: ../../rst/user_guide/intro_inventory.rst:518
+msgid "The connection port number, if not the default (22 for ssh)"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:436
-#: ../../rst/user_guide/intro_inventory.rst:533
+#: ../../rst/user_guide/intro_inventory.rst:519
+#: ../../rst/user_guide/intro_inventory.rst:618
 msgid "ansible_user"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:435
-msgid "The default ssh user name to use."
+#: ../../rst/user_guide/intro_inventory.rst:520
+msgid "The user name to use when connecting to the host"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:438
+#: ../../rst/user_guide/intro_inventory.rst:523
+msgid "ansible_password"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:522
+msgid ""
+"The password to use to authenticate to the host (never store this "
+"variable in plain text; always use a vault. See "
+":ref:`best_practices_for_variables_and_vaults`)"
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:525
 msgid "Specific to the SSH connection:"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:440
-msgid "ansible_ssh_pass"
-msgstr ""
-
-#: ../../rst/user_guide/intro_inventory.rst:441
-msgid ""
-"The ssh password to use (never store this variable in plain text; always "
-"use a vault. See :ref:`best_practices_for_variables_and_vaults`)"
-msgstr ""
-
-#: ../../rst/user_guide/intro_inventory.rst:442
+#: ../../rst/user_guide/intro_inventory.rst:527
 msgid "ansible_ssh_private_key_file"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:443
+#: ../../rst/user_guide/intro_inventory.rst:528
 msgid ""
 "Private key file used by ssh.  Useful if using multiple keys and you "
 "don't want to use SSH agent."
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:446
+#: ../../rst/user_guide/intro_inventory.rst:531
 msgid "ansible_ssh_common_args"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:445
+#: ../../rst/user_guide/intro_inventory.rst:530
 msgid ""
 "This setting is always appended to the default command line for "
 ":command:`sftp`, :command:`scp`, and :command:`ssh`. Useful to configure "
 "a ``ProxyCommand`` for a certain host (or group)."
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:448
+#: ../../rst/user_guide/intro_inventory.rst:533
 msgid "ansible_sftp_extra_args"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:449
+#: ../../rst/user_guide/intro_inventory.rst:534
 msgid ""
 "This setting is always appended to the default :command:`sftp` command "
 "line."
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:450
+#: ../../rst/user_guide/intro_inventory.rst:535
 msgid "ansible_scp_extra_args"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:451
+#: ../../rst/user_guide/intro_inventory.rst:536
 msgid ""
 "This setting is always appended to the default :command:`scp` command "
 "line."
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:452
+#: ../../rst/user_guide/intro_inventory.rst:537
 msgid "ansible_ssh_extra_args"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:453
+#: ../../rst/user_guide/intro_inventory.rst:538
 msgid ""
 "This setting is always appended to the default :command:`ssh` command "
 "line."
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:454
+#: ../../rst/user_guide/intro_inventory.rst:539
 msgid "ansible_ssh_pipelining"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:455
+#: ../../rst/user_guide/intro_inventory.rst:540
 msgid ""
 "Determines whether or not to use SSH pipelining. This can override the "
 "``pipelining`` setting in :file:`ansible.cfg`."
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:458
+#: ../../rst/user_guide/intro_inventory.rst:543
 msgid "ansible_ssh_executable (added in version 2.2)"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:457
+#: ../../rst/user_guide/intro_inventory.rst:542
 msgid ""
 "This setting overrides the default behavior to use the system "
 ":command:`ssh`. This can override the ``ssh_executable`` setting in "
 ":file:`ansible.cfg`."
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:460
+#: ../../rst/user_guide/intro_inventory.rst:545
 msgid ""
 "Privilege escalation (see :ref:`Ansible Privilege Escalation<become>` for"
 " further details):"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:462
-#: ../../rst/user_guide/intro_inventory.rst:535
+#: ../../rst/user_guide/intro_inventory.rst:547
+#: ../../rst/user_guide/intro_inventory.rst:620
 msgid "ansible_become"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:463
+#: ../../rst/user_guide/intro_inventory.rst:548
 msgid ""
 "Equivalent to ``ansible_sudo`` or ``ansible_su``, allows to force "
 "privilege escalation"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:464
+#: ../../rst/user_guide/intro_inventory.rst:549
 msgid "ansible_become_method"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:465
+#: ../../rst/user_guide/intro_inventory.rst:550
 msgid "Allows to set privilege escalation method"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:466
+#: ../../rst/user_guide/intro_inventory.rst:551
 msgid "ansible_become_user"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:467
+#: ../../rst/user_guide/intro_inventory.rst:552
 msgid ""
 "Equivalent to ``ansible_sudo_user`` or ``ansible_su_user``, allows to set"
 " the user you become through privilege escalation"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:468
-msgid "ansible_become_pass"
+#: ../../rst/user_guide/intro_inventory.rst:553
+msgid "ansible_become_password"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:469
+#: ../../rst/user_guide/intro_inventory.rst:554
 msgid ""
-"Equivalent to ``ansible_sudo_pass`` or ``ansible_su_pass``, allows you to"
-" set the privilege escalation password (never store this variable in "
-"plain text; always use a vault. See "
+"Equivalent to ``ansible_sudo_password`` or ``ansible_su_password``, "
+"allows you to set the privilege escalation password (never store this "
+"variable in plain text; always use a vault. See "
 ":ref:`best_practices_for_variables_and_vaults`)"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:470
+#: ../../rst/user_guide/intro_inventory.rst:555
 msgid "ansible_become_exe"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:471
+#: ../../rst/user_guide/intro_inventory.rst:556
 msgid ""
 "Equivalent to ``ansible_sudo_exe`` or ``ansible_su_exe``, allows you to "
 "set the executable for the escalation method selected"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:473
+#: ../../rst/user_guide/intro_inventory.rst:558
 msgid "ansible_become_flags"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:473
+#: ../../rst/user_guide/intro_inventory.rst:558
 msgid ""
 "Equivalent to ``ansible_sudo_flags`` or ``ansible_su_flags``, allows you "
 "to set the flags passed to the selected escalation method. This can be "
 "also set globally in :file:`ansible.cfg` in the ``sudo_flags`` option"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:475
+#: ../../rst/user_guide/intro_inventory.rst:560
 msgid "Remote host environment parameters:"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:483
+#: ../../rst/user_guide/intro_inventory.rst:568
 msgid "ansible_shell_type"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:480
+#: ../../rst/user_guide/intro_inventory.rst:565
 msgid ""
 "The shell type of the target system. You should not use this setting "
 "unless you have set the "
@@ -809,11 +824,11 @@ msgid ""
 "instead."
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:492
+#: ../../rst/user_guide/intro_inventory.rst:577
 msgid "ansible_python_interpreter"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:488
+#: ../../rst/user_guide/intro_inventory.rst:573
 msgid ""
 "The target host python path. This is useful for systems with more than "
 "one Python or not located at :command:`/usr/bin/python` such as \\*BSD, "
@@ -824,22 +839,22 @@ msgid ""
 " like :program:`python2.6`."
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:496
+#: ../../rst/user_guide/intro_inventory.rst:581
 msgid "ansible_*_interpreter"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:495
+#: ../../rst/user_guide/intro_inventory.rst:580
 msgid ""
 "Works for anything such as ruby or perl and works just like "
 ":ref:`ansible_python_interpreter<ansible_python_interpreter>`. This "
 "replaces shebang of modules which will run on that host."
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:507
+#: ../../rst/user_guide/intro_inventory.rst:592
 msgid "ansible_shell_executable"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:503
+#: ../../rst/user_guide/intro_inventory.rst:588
 msgid ""
 "This sets the shell the ansible controller will use on the target "
 "machine, overrides ``executable`` in :file:`ansible.cfg` which defaults "
@@ -848,15 +863,15 @@ msgid ""
 "installed on the target machine or cannot be run from sudo.)."
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:509
+#: ../../rst/user_guide/intro_inventory.rst:594
 msgid "Examples from an Ansible-INI host file::"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:517
+#: ../../rst/user_guide/intro_inventory.rst:602
 msgid "Non-SSH connection types"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:519
+#: ../../rst/user_guide/intro_inventory.rst:604
 msgid ""
 "As stated in the previous section, Ansible executes playbooks over SSH "
 "but it is not limited to this connection type. With the host specific "
@@ -864,110 +879,144 @@ msgid ""
 "changed. The following non-SSH based connectors are available:"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:523
+#: ../../rst/user_guide/intro_inventory.rst:608
 msgid "**local**"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:525
+#: ../../rst/user_guide/intro_inventory.rst:610
 msgid ""
 "This connector can be used to deploy the playbook to the control machine "
 "itself."
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:527
+#: ../../rst/user_guide/intro_inventory.rst:612
 msgid "**docker**"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:529
+#: ../../rst/user_guide/intro_inventory.rst:614
 msgid ""
 "This connector deploys the playbook directly into Docker containers using"
 " the local Docker client. The following parameters are processed by this "
 "connector:"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:532
+#: ../../rst/user_guide/intro_inventory.rst:617
 msgid "The name of the Docker container to connect to."
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:534
+#: ../../rst/user_guide/intro_inventory.rst:619
 msgid ""
 "The user name to operate within the container. The user must exist inside"
 " the container."
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:536
+#: ../../rst/user_guide/intro_inventory.rst:621
 msgid ""
 "If set to ``true`` the ``become_user`` will be used to operate within the"
 " container."
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:538
+#: ../../rst/user_guide/intro_inventory.rst:623
 msgid "ansible_docker_extra_args"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:538
+#: ../../rst/user_guide/intro_inventory.rst:623
 msgid ""
 "Could be a string with any additional arguments understood by Docker, "
 "which are not command specific. This parameter is mainly used to "
 "configure a remote Docker daemon to use."
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:540
+#: ../../rst/user_guide/intro_inventory.rst:625
 msgid "Here is an example of how to instantly deploy to created containers::"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:562
+#: ../../rst/user_guide/intro_inventory.rst:647
+msgid ""
+"For a full list with available plugins and examples, see "
+":ref:`connection_plugin_list`."
+msgstr ""
+
+#: ../../rst/user_guide/intro_inventory.rst:649
 msgid ""
 "If you're reading the docs from the beginning, this may be the first "
 "example you've seen of an Ansible playbook. This is not an inventory "
 "file. Playbooks will be covered in great detail later in the docs."
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:567
+#: ../../rst/user_guide/intro_inventory.rst:654
 msgid ":ref:`inventory_plugins`"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:568
+#: ../../rst/user_guide/intro_inventory.rst:655
 msgid "Pulling inventory from dynamic or static sources"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:569
+#: ../../rst/user_guide/intro_inventory.rst:656
 msgid ":ref:`intro_dynamic_inventory`"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:570
+#: ../../rst/user_guide/intro_inventory.rst:657
 msgid "Pulling inventory from dynamic sources, such as cloud providers"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:571
+#: ../../rst/user_guide/intro_inventory.rst:658
 msgid ":ref:`intro_adhoc`"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:572
+#: ../../rst/user_guide/intro_inventory.rst:659
 msgid "Examples of basic commands"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:573
+#: ../../rst/user_guide/intro_inventory.rst:660
 msgid ":ref:`working_with_playbooks`"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:574
+#: ../../rst/user_guide/intro_inventory.rst:661
 msgid "Learning Ansible's configuration, deployment, and orchestration language."
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:575
+#: ../../rst/user_guide/intro_inventory.rst:662
 msgid "`Mailing List <https://groups.google.com/group/ansible-project>`_"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:576
+#: ../../rst/user_guide/intro_inventory.rst:663
 msgid "Questions? Help? Ideas?  Stop by the list on Google Groups"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:577
+#: ../../rst/user_guide/intro_inventory.rst:664
 msgid "`irc.freenode.net <http://irc.freenode.net>`_"
 msgstr ""
 
-#: ../../rst/user_guide/intro_inventory.rst:578
+#: ../../rst/user_guide/intro_inventory.rst:665
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid "The ssh port number, if not 22"
+#~ msgstr ""
+
+#~ msgid "The default ssh user name to use."
+#~ msgstr ""
+
+#~ msgid "ansible_ssh_pass"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The ssh password to use (never "
+#~ "store this variable in plain text; "
+#~ "always use a vault. See "
+#~ ":ref:`best_practices_for_variables_and_vaults`)"
+#~ msgstr ""
+
+#~ msgid "ansible_become_pass"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Equivalent to ``ansible_sudo_pass`` or "
+#~ "``ansible_su_pass``, allows you to set "
+#~ "the privilege escalation password (never "
+#~ "store this variable in plain text; "
+#~ "always use a vault. See "
+#~ ":ref:`best_practices_for_variables_and_vaults`)"
+#~ msgstr ""
 

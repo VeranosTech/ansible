@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,61 +22,81 @@ msgstr ""
 msgid "azure_rm_securitygroup -- Manage Azure network security groups"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_securitygroup_module.rst:19
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:18
 msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:19
+msgid "Create, update or delete a network security group."
 msgstr ""
 
 #: ../../rst/modules/azure_rm_securitygroup_module.rst:20
 msgid ""
-"Create, update or delete a network security group. A security group "
-"contains Access Control List (ACL) rules that allow or deny network "
-"traffic to subnets or individual network interfaces. A security group is "
-"created with a set of default security rules and an empty set of security"
-" rules. Shape traffic flow by adding rules to the empty set of security "
-"rules."
+"A security group contains Access Control List (ACL) rules that allow or "
+"deny network traffic to subnets or individual network interfaces."
 msgstr ""
 
-#: ../../rst/modules/azure_rm_securitygroup_module.rst:25
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:21
+msgid ""
+"A security group is created with a set of default security rules and an "
+"empty set of security rules."
+msgstr ""
+
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:22
+msgid "Shape traffic flow by adding rules to the empty set of security rules."
+msgstr ""
+
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:27
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_securitygroup_module.rst:26
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:28
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/azure_rm_securitygroup_module.rst:28
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:30
 msgid "python >= 2.7"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_securitygroup_module.rst:29
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:31
 msgid "azure >= 2.0.0"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_securitygroup_module.rst:33
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:35
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_securitygroup_module.rst:538
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:580
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_securitygroup_module.rst:541
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:583
 msgid ""
 "For authentication with Azure you can pass parameters, set environment "
-"variables or use a profile stored in ~/.azure/credentials. Authentication"
-" is possible using a service principal or Active Directory user. To "
-"authenticate via service principal, pass subscription_id, client_id, "
+"variables, use a profile stored in ~/.azure/credentials, or log in before"
+" you run your tasks or playbook with ``az login``."
+msgstr ""
+
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:584
+msgid ""
+"Authentication is also possible using a service principal or Active "
+"Directory user."
+msgstr ""
+
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:585
+msgid ""
+"To authenticate via service principal, pass subscription_id, client_id, "
 "secret and tenant or set environment variables AZURE_SUBSCRIPTION_ID, "
 "AZURE_CLIENT_ID, AZURE_SECRET and AZURE_TENANT."
 msgstr ""
 
-#: ../../rst/modules/azure_rm_securitygroup_module.rst:542
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:586
 msgid ""
 "To authenticate via Active Directory user, pass ad_user and password, or "
 "set AZURE_AD_USER and AZURE_PASSWORD in the environment."
 msgstr ""
 
-#: ../../rst/modules/azure_rm_securitygroup_module.rst:543
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:587
 msgid ""
 "Alternatively, credentials can be stored in ~/.azure/credentials. This is"
 " an ini file containing a [default] section and the following keys: "
@@ -86,54 +106,103 @@ msgid ""
 "environment."
 msgstr ""
 
-#: ../../rst/modules/azure_rm_securitygroup_module.rst:548
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:591
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:595
+msgid ""
+"`Sign in with Azure CLI <https://docs.microsoft.com/en-us/cli/azure"
+"/authenticate-azure-cli?view=azure-cli-latest>`_"
+msgstr ""
+
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:596
+msgid "How to authenticate using the ``az login`` command."
+msgstr ""
+
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:600
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_securitygroup_module.rst:618
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:670
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_securitygroup_module.rst:619
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:671
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_securitygroup_module.rst:647
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:820
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_securitygroup_module.rst:652
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:825
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_securitygroup_module.rst:655
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:828
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_securitygroup_module.rst:662
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:835
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_securitygroup_module.rst:664
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:837
 msgid "Chris Houseknecht (@chouseknecht)"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_securitygroup_module.rst:665
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:838
 msgid "Matt Davis (@nitzmahone)"
 msgstr ""
 
-#: ../../rst/modules/azure_rm_securitygroup_module.rst:669
+#: ../../rst/modules/azure_rm_securitygroup_module.rst:842
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/azure/azure_rm_securitygroup.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/azure/azure_rm_securitygroup.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "Create, update or delete a network "
+#~ "security group. A security group "
+#~ "contains Access Control List (ACL) rules"
+#~ " that allow or deny network traffic"
+#~ " to subnets or individual network "
+#~ "interfaces. A security group is created"
+#~ " with a set of default security "
+#~ "rules and an empty set of security"
+#~ " rules. Shape traffic flow by adding"
+#~ " rules to the empty set of "
+#~ "security rules."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For authentication with Azure you can"
+#~ " pass parameters, set environment variables"
+#~ " or use a profile stored in "
+#~ "~/.azure/credentials. Authentication is possible "
+#~ "using a service principal or Active "
+#~ "Directory user. To authenticate via "
+#~ "service principal, pass subscription_id, "
+#~ "client_id, secret and tenant or set "
+#~ "environment variables AZURE_SUBSCRIPTION_ID, "
+#~ "AZURE_CLIENT_ID, AZURE_SECRET and AZURE_TENANT."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/azure/azure_rm_securitygroup.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

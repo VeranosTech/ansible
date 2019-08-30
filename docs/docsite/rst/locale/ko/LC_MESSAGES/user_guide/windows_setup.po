@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,58 +18,48 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-#: ../../rst/user_guide/windows_setup.rst:2
+#: ../../rst/user_guide/windows_setup.rst:4
 msgid "Setting up a Windows Host"
 msgstr "윈도우 호스트 설정"
 
-#: ../../rst/user_guide/windows_setup.rst:3
+#: ../../rst/user_guide/windows_setup.rst:5
 msgid ""
 "This document discusses the setup that is required before Ansible can "
 "communicate with a Microsoft Windows host."
-msgstr ""
-"이 문서는 앤서블이 마이크로소프트 윈도우 호스트와 통신하기 위한 설정에 대해 설명한다."
+msgstr "이 문서는 앤서블이 마이크로소프트 윈도우 호스트와 통신하기 위한 설정에 대해 설명한다."
 
-#: ../../rst/user_guide/windows_setup.rst:6
-msgid "Topics"
-msgstr "주제"
-
-#: ../../rst/user_guide/windows_setup.rst:9
+#: ../../rst/user_guide/windows_setup.rst:11
 msgid "Host Requirements"
 msgstr "호스트 요구사항"
 
-#: ../../rst/user_guide/windows_setup.rst:10
+#: ../../rst/user_guide/windows_setup.rst:12
+#, fuzzy
 msgid ""
 "For Ansible to communicate to a Windows host and use Windows modules, the"
-" Windows host must meet the following requirements:"
-msgstr ""
-"앤서블이 윈도우 호스트와 통신하고 윈도우 모듈을 사용하려면 윈도우 호스트가 "
-"다음의 요구사항을 만족하고 있어야 한다. "
+" Windows host must meet these requirements:"
+msgstr "앤서블이 윈도우 호스트와 통신하고 윈도우 모듈을 사용하려면 윈도우 호스트가 다음의 요구사항을 만족하고 있어야 한다. "
 
-#: ../../rst/user_guide/windows_setup.rst:13
+#: ../../rst/user_guide/windows_setup.rst:15
 msgid ""
-"Ansible's supported Windows versions generally match those under current "
-"and extended support from Microsoft. Supported desktop OSs include "
-"Windows 7, 8.1, and 10, and supported server OSs are Windows Server 2008,"
-" 2008 R2, 2012, 2012 R2, and 2016."
+"Ansible can generally manage Windows versions under current and extended "
+"support from Microsoft. Ansible can manage desktop OSs including Windows "
+"7, 8.1, and 10, and server OSs including Windows Server 2008, 2008 R2, "
+"2012, 2012 R2, 2016, and 2019."
 msgstr ""
-"앤서블이 지원하는 윈도우 버전은 마이크로소프트가 현재 지원하는 버전과 거의 "
-"일치한다. 지원하는 데스크톱 버전은 윈도우 7, 9, 10이고 서버 버전은 2008, 2008 R2, 2012, 2012 R2, 2016이다. "
 
-#: ../../rst/user_guide/windows_setup.rst:18
+#: ../../rst/user_guide/windows_setup.rst:20
 msgid ""
 "Ansible requires PowerShell 3.0 or newer and at least .NET 4.0 to be "
 "installed on the Windows host."
-msgstr ""
-"파워셸 3.0 이상, .NET 4.0이 윈도우 호스트에 설치되어 있어야 한다."
+msgstr "파워셸 3.0 이상, .NET 4.0이 윈도우 호스트에 설치되어 있어야 한다."
 
-#: ../../rst/user_guide/windows_setup.rst:21
+#: ../../rst/user_guide/windows_setup.rst:23
 msgid ""
 "A WinRM listener should be created and activated. More details for this "
 "can be found below."
-msgstr ""
-"WinRM 리스너가 생성되어 활성화되어 있어야 한다. 자세한 내용은 아래를 참조한다. "
+msgstr "WinRM 리스너가 생성되어 활성화되어 있어야 한다. 자세한 내용은 아래를 참조한다. "
 
-#: ../../rst/user_guide/windows_setup.rst:24
+#: ../../rst/user_guide/windows_setup.rst:26
 msgid ""
 "While these are the base requirements for Ansible connectivity, some "
 "Ansible modules have additional requirements, such as a newer OS or "
@@ -77,12 +67,11 @@ msgid ""
 "determine whether a host meets those requirements."
 msgstr ""
 
-
-#: ../../rst/user_guide/windows_setup.rst:30
+#: ../../rst/user_guide/windows_setup.rst:32
 msgid "Upgrading PowerShell and .NET Framework"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:31
+#: ../../rst/user_guide/windows_setup.rst:33
 msgid ""
 "Ansible requires PowerShell version 3.0 and .NET Framework 4.0 or newer "
 "to function on older operating systems like Server 2008 and Windows 7. "
@@ -92,18 +81,18 @@ msgid ""
 "these."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:34
+#: ../../rst/user_guide/windows_setup.rst:36
 msgid "This is an example of how to run this script from PowerShell:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:49
+#: ../../rst/user_guide/windows_setup.rst:51
 msgid ""
 "Once completed, you will need to remove auto logon and set the execution "
 "policy back to the default of ``Restricted``. You can do this with the "
 "following PowerShell commands:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:63
+#: ../../rst/user_guide/windows_setup.rst:65
 msgid ""
 "The script works by checking to see what programs need to be installed "
 "(such as .NET Framework 4.5.2) and what PowerShell version is required. "
@@ -117,30 +106,30 @@ msgid ""
 "the process continues until no more actions are required."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:74
+#: ../../rst/user_guide/windows_setup.rst:76
 msgid ""
 "If running on Server 2008, then SP2 must be installed. If running on "
 "Server 2008 R2 or Windows 7, then SP1 must be installed."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:77
+#: ../../rst/user_guide/windows_setup.rst:79
 msgid ""
 "Windows Server 2008 can only install PowerShell 3.0; specifying a newer "
 "version will result in the script failing."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:80
+#: ../../rst/user_guide/windows_setup.rst:82
 msgid ""
 "The ``username`` and ``password`` parameters are stored in plain text in "
 "the registry. Make sure the cleanup commands are run after the script "
 "finishes to ensure no credentials are still stored on the host."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:85
+#: ../../rst/user_guide/windows_setup.rst:87
 msgid "WinRM Memory Hotfix"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:86
+#: ../../rst/user_guide/windows_setup.rst:88
 msgid ""
 "When running on PowerShell v3.0, there is a bug with the WinRM service "
 "that limits the amount of memory available to WinRM. Without this hotfix "
@@ -152,15 +141,22 @@ msgid ""
 "hosts."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:92
+#: ../../rst/user_guide/windows_setup.rst:94
 msgid "The following PowerShell command will install the hotfix:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:103
+#: ../../rst/user_guide/windows_setup.rst:104
+msgid ""
+"For more details, please refer to the `Hotfix document "
+"<https://support.microsoft.com/en-us/help/2842230/out-of-memory-error-"
+"on-a-computer-that-has-a-customized-maxmemorypersh>`_ from Microsoft."
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:107
 msgid "WinRM Setup"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:104
+#: ../../rst/user_guide/windows_setup.rst:108
 msgid ""
 "Once Powershell has been upgraded to at least version 3.0, the final step"
 " is for the WinRM service to be configured so that Ansible can connect to"
@@ -169,7 +165,7 @@ msgid ""
 "``service`` configuration settings."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:109
+#: ../../rst/user_guide/windows_setup.rst:113
 msgid ""
 "Details about each component can be read below, but the script "
 "`ConfigureRemotingForAnsible.ps1 "
@@ -179,11 +175,11 @@ msgid ""
 "authentication option on the service."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:115
+#: ../../rst/user_guide/windows_setup.rst:119
 msgid "To use this script, run the following in PowerShell:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:126
+#: ../../rst/user_guide/windows_setup.rst:130
 msgid ""
 "There are different switches and parameters (like ``-EnableCredSSP`` and "
 "``-ForceNewSSLCert``) that can be set alongside this script. The "
@@ -191,7 +187,7 @@ msgid ""
 "itself."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:130
+#: ../../rst/user_guide/windows_setup.rst:134
 msgid ""
 "The ConfigureRemotingForAnsible.ps1 script is intended for training and "
 "development purposes only and should not be used in a production "
@@ -199,72 +195,72 @@ msgid ""
 "that can be inherently insecure."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:136
+#: ../../rst/user_guide/windows_setup.rst:140
 msgid "WinRM Listener"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:137
+#: ../../rst/user_guide/windows_setup.rst:141
 msgid ""
 "The WinRM services listens for requests on one or more ports. Each of "
 "these ports must have a listener created and configured."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:140
+#: ../../rst/user_guide/windows_setup.rst:144
 msgid ""
 "To view the current listeners that are running on the WinRM service, run "
 "the following command:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:147
-#: ../../rst/user_guide/windows_setup.rst:267
-msgid "This will output something like the following:"
+#: ../../rst/user_guide/windows_setup.rst:151
+#: ../../rst/user_guide/windows_setup.rst:263
+msgid "This will output something like::"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:173
+#: ../../rst/user_guide/windows_setup.rst:175
 msgid ""
 "In the example above there are two listeners activated; one is listening "
 "on port 5985 over HTTP and the other is listening on port 5986 over "
 "HTTPS. Some of the key options that are useful to understand are:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:177
+#: ../../rst/user_guide/windows_setup.rst:179
 msgid ""
 "``Transport``: Whether the listener is run over HTTP or HTTPS, it is "
 "recommended to use a listener over HTTPS as the data is encrypted without"
 " any further changes required."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:181
+#: ../../rst/user_guide/windows_setup.rst:183
 msgid ""
 "``Port``: The port the listener runs on, by default it is ``5985`` for "
 "HTTP and ``5986`` for HTTPS. This port can be changed to whatever is "
 "required and corresponds to the host var ``ansible_port``."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:185
+#: ../../rst/user_guide/windows_setup.rst:187
 msgid ""
 "``URLPrefix``: The URL prefix to listen on, by default it is ``wsman``. "
 "If this is changed, the host var ``ansible_winrm_path`` must be set to "
 "the same value."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:189
+#: ../../rst/user_guide/windows_setup.rst:191
 msgid ""
 "``CertificateThumbprint``: If running over an HTTPS listener, this is the"
 " thumbprint of the certificate in the Windows Certificate Store that is "
 "used in the connection. To get the details of the certificate itself, run"
-" this command with the relevant certificate thumbprint in PowerShell:"
+" this command with the relevant certificate thumbprint in PowerShell::"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:201
+#: ../../rst/user_guide/windows_setup.rst:200
 msgid "Setup WinRM Listener"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:202
+#: ../../rst/user_guide/windows_setup.rst:201
 msgid "There are three ways to set up a WinRM listener:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:204
+#: ../../rst/user_guide/windows_setup.rst:203
 msgid ""
 "Using ``winrm quickconfig`` for HTTP or ``winrm quickconfig "
 "-transport:https`` for HTTPS. This is the easiest option to use when "
@@ -274,7 +270,7 @@ msgid ""
 "WinRM service."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:210
+#: ../../rst/user_guide/windows_setup.rst:209
 msgid ""
 "Using Group Policy Objects. This is the best way to create a listener "
 "when the host is a member of a domain because the configuration is done "
@@ -283,13 +279,13 @@ msgid ""
 "<https://msdn.microsoft.com/en-us/library/aa374162(v=vs.85).aspx>`_."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:215
+#: ../../rst/user_guide/windows_setup.rst:214
 msgid ""
 "Using PowerShell to create the listener with a specific configuration. "
 "This can be done by running the following PowerShell commands:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:230
+#: ../../rst/user_guide/windows_setup.rst:229
 msgid ""
 "To see the other options with this PowerShell cmdlet, see `New-"
 "WSManInstance <https://docs.microsoft.com/en-"
@@ -297,22 +293,22 @@ msgid ""
 "wsmaninstance?view=powershell-5.1>`_."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:233
+#: ../../rst/user_guide/windows_setup.rst:232
 msgid ""
 "When creating an HTTPS listener, an existing certificate needs to be "
 "created and stored in the ``LocalMachine\\My`` certificate store. Without"
 " a certificate being present in this store, most commands will fail."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:238
+#: ../../rst/user_guide/windows_setup.rst:237
 msgid "Delete WinRM Listener"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:239
-msgid "To remove a WinRM listener:"
+#: ../../rst/user_guide/windows_setup.rst:238
+msgid "To remove a WinRM listener::"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:250
+#: ../../rst/user_guide/windows_setup.rst:246
 msgid ""
 "The ``Keys`` object is an array of strings, so it can contain different "
 "values. By default it contains a key for ``Transport=`` and ``Address=`` "
@@ -320,58 +316,55 @@ msgid ""
 "winrm/config/Listeners."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:255
+#: ../../rst/user_guide/windows_setup.rst:251
 msgid "WinRM Service Options"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:256
+#: ../../rst/user_guide/windows_setup.rst:252
 msgid ""
 "There are a number of options that can be set to control the behavior of "
 "the WinRM service component, including authentication options and memory "
 "settings."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:259
+#: ../../rst/user_guide/windows_setup.rst:255
 msgid ""
 "To get an output of the current service configuration options, run the "
 "following command:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:305
+#: ../../rst/user_guide/windows_setup.rst:299
 msgid ""
 "While many of these options should rarely be changed, a few can easily "
 "impact the operations over WinRM and are useful to understand. Some of "
 "the important options are:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:309
+#: ../../rst/user_guide/windows_setup.rst:303
 msgid ""
 "``Service\\AllowUnencrypted``: This option defines whether WinRM will "
 "allow traffic that is run over HTTP without message encryption. Message "
-"level encryption is only supported when ``ansible_winrm_transport`` is "
+"level encryption is only possible when ``ansible_winrm_transport`` is "
 "``ntlm``, ``kerberos`` or ``credssp``. By default this is ``false`` and "
 "should only be set to ``true`` when debugging WinRM messages."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:315
+#: ../../rst/user_guide/windows_setup.rst:309
 msgid ""
 "``Service\\Auth\\*``: These flags define what authentication options are "
 "allowed with the WinRM service. By default, ``Negotiate (NTLM)`` and "
 "``Kerberos`` are enabled."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:319
+#: ../../rst/user_guide/windows_setup.rst:313
 msgid ""
 "``Service\\Auth\\CbtHardeningLevel``: Specifies whether channel binding "
 "tokens are not verified (None), verified but not required (Relaxed), or "
 "verified and required (Strict). CBT is only used when connecting with "
-"NTLM or Kerberos over HTTPS. The downstream libraries that Ansible "
-"currently uses only support passing the CBT with NTLM authentication. "
-"Using Kerberos with ``CbtHardeningLevel = Strict`` will result in a "
-"``404`` error."
+"NTLM or Kerberos over HTTPS."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:326
+#: ../../rst/user_guide/windows_setup.rst:318
 msgid ""
 "``Service\\CertificateThumbprint``: This is the thumbprint of the "
 "certificate used to encrypt the TLS channel used with CredSSP "
@@ -379,42 +372,38 @@ msgid ""
 "generated when the WinRM service starts and is used in the TLS process."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:331
+#: ../../rst/user_guide/windows_setup.rst:323
 msgid ""
 "``Winrs\\MaxShellRunTime``: This is the maximum time, in milliseconds, "
 "that a remote command is allowed to execute."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:334
+#: ../../rst/user_guide/windows_setup.rst:326
 msgid ""
 "``Winrs\\MaxMemoryPerShellMB``: This is the maximum amount of memory "
 "allocated per shell, including the shell's child processes."
 msgstr ""
 
+#: ../../rst/user_guide/windows_setup.rst:329
+msgid "To modify a setting under the ``Service`` key in PowerShell::"
+msgstr ""
+
 #: ../../rst/user_guide/windows_setup.rst:337
-msgid ""
-"To modify a setting under the ``Service`` key in PowerShell, the "
-"following command can be used:"
+msgid "To modify a setting under the ``Winrs`` key in PowerShell::"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:349
-msgid ""
-"To modify a setting under the ``Winrs`` key in PowerShell, the following "
-"command can be used:"
-msgstr ""
-
-#: ../../rst/user_guide/windows_setup.rst:361
+#: ../../rst/user_guide/windows_setup.rst:345
 msgid ""
 "If running in a domain environment, some of these options are set by GPO "
 "and cannot be changed on the host itself. When a key has been configured "
 "with GPO, it contains the text ``[Source=\"GPO\"]`` next to the value."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:366
+#: ../../rst/user_guide/windows_setup.rst:350
 msgid "Common WinRM Issues"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:367
+#: ../../rst/user_guide/windows_setup.rst:351
 msgid ""
 "Because WinRM has a wide range of configuration options, it can be "
 "difficult to setup and configure. Because of this complexity, issues that"
@@ -422,50 +411,50 @@ msgid ""
 "instead."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:371
+#: ../../rst/user_guide/windows_setup.rst:355
 msgid ""
 "One easy way to determine whether a problem is a host issue is to run the"
 " following command from another Windows host to connect to the target "
-"Windows host:"
+"Windows host::"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:392
+#: ../../rst/user_guide/windows_setup.rst:373
 msgid ""
 "If this fails, the issue is probably related to the WinRM setup. If it "
 "works, the issue may not be related to the WinRM setup; please continue "
 "reading for more troubleshooting suggestions."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:395
+#: ../../rst/user_guide/windows_setup.rst:376
 msgid "HTTP 401/Credentials Rejected"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:396
+#: ../../rst/user_guide/windows_setup.rst:377
 msgid ""
 "A HTTP 401 error indicates the authentication process failed during the "
 "initial connection. Some things to check for this are:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:399
+#: ../../rst/user_guide/windows_setup.rst:380
 msgid ""
 "Verify that the credentials are correct and set properly in your "
 "inventory with ``ansible_user`` and ``ansible_password``"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:402
+#: ../../rst/user_guide/windows_setup.rst:383
 msgid ""
 "Ensure that the user is a member of the local Administrators group or has"
 " been explicitly granted access (a connection test with the ``winrs`` "
 "command can be used to rule this out)."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:406
+#: ../../rst/user_guide/windows_setup.rst:387
 msgid ""
 "Make sure that the authentication option set by "
 "``ansible_winrm_transport`` is enabled under ``Service\\Auth\\*``"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:409
+#: ../../rst/user_guide/windows_setup.rst:390
 msgid ""
 "If running over HTTP and not HTTPS, use ``ntlm``, ``kerberos`` or "
 "``credssp`` with ``ansible_winrm_message_encryption: auto`` to enable "
@@ -475,145 +464,381 @@ msgid ""
 "recommended for troubleshooting"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:415
+#: ../../rst/user_guide/windows_setup.rst:396
 msgid ""
 "Ensure the downstream packages ``pywinrm``, ``requests-ntlm``, "
 "``requests-kerberos``, and/or ``requests-credssp`` are up to date using "
 "``pip``."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:418
+#: ../../rst/user_guide/windows_setup.rst:399
 msgid ""
 "If using Kerberos authentication, ensure that "
 "``Service\\Auth\\CbtHardeningLevel`` is not set to ``Strict``."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:421
+#: ../../rst/user_guide/windows_setup.rst:402
 msgid ""
 "When using Basic or Certificate authentication, make sure that the user "
 "is a local account and not a domain account. Domain accounts do not work "
 "with Basic and Certificate authentication."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:426
+#: ../../rst/user_guide/windows_setup.rst:407
 msgid "HTTP 500 Error"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:427
+#: ../../rst/user_guide/windows_setup.rst:408
 msgid ""
 "These indicate an error has occurred with the WinRM service. Some things "
 "to check for include:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:430
+#: ../../rst/user_guide/windows_setup.rst:411
 msgid ""
 "Verify that the number of current open shells has not exceeded either "
 "``WinRsMaxShellsPerUser`` or any of the other Winrs quotas haven't been "
 "exceeded."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:435
+#: ../../rst/user_guide/windows_setup.rst:416
 msgid "Timeout Errors"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:436
+#: ../../rst/user_guide/windows_setup.rst:417
 msgid ""
 "These usually indicate an error with the network connection where Ansible"
 " is unable to reach the host. Some things to check for include:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:439
+#: ../../rst/user_guide/windows_setup.rst:420
 msgid ""
 "Make sure the firewall is not set to block the configured WinRM listener "
 "ports"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:440
+#: ../../rst/user_guide/windows_setup.rst:421
 msgid ""
 "Ensure that a WinRM listener is enabled on the port and path set by the "
 "host vars"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:441
+#: ../../rst/user_guide/windows_setup.rst:422
 msgid ""
 "Ensure that the ``winrm`` service is running on the Windows host and "
 "configured for automatic start"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:445
+#: ../../rst/user_guide/windows_setup.rst:426
 msgid "Connection Refused Errors"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:446
+#: ../../rst/user_guide/windows_setup.rst:427
 msgid ""
 "These usually indicate an error when trying to communicate with the WinRM"
 " service on the host. Some things to check for:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:449
+#: ../../rst/user_guide/windows_setup.rst:430
 msgid ""
 "Ensure that the WinRM service is up and running on the host. Use ``(Get-"
 "Service -Name winrm).Status`` to get the status of the service."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:451
+#: ../../rst/user_guide/windows_setup.rst:432
 msgid ""
 "Check that the host firewall is allowing traffic over the WinRM port. By "
 "default this is ``5985`` for HTTP and ``5986`` for HTTPS."
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:454
+#: ../../rst/user_guide/windows_setup.rst:435
 msgid ""
 "Sometimes an installer may restart the WinRM or HTTP service and cause "
 "this error. The best way to deal with this is to use ``win_psexec`` from "
 "another Windows host."
 msgstr ""
 
+#: ../../rst/user_guide/windows_setup.rst:440
+msgid "Windows SSH Setup"
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:441
+msgid ""
+"Ansible 2.8 has added an experimental SSH connection for Windows managed "
+"nodes."
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:444
+msgid ""
+"Use this feature at your own risk! Using SSH with Windows is "
+"experimental, the implementation may make backwards incompatible changes "
+"in feature releases. The server side components can be unreliable "
+"depending on the version that is installed."
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:450
+msgid "Installing Win32-OpenSSH"
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:451
+msgid ""
+"The first step to using SSH with Windows is to install the `Win32-OpenSSH"
+" <https://github.com/PowerShell/Win32-OpenSSH>`_ service on the Windows "
+"host. Microsoft offers a way to install ``Win32-OpenSSH`` through a "
+"Windows capability but currently the version that is installed through "
+"this process is too old to work with Ansible. To install "
+"``Win32-OpenSSH`` for use with Ansible, select one of these three "
+"installation options:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:457
+msgid ""
+"Manually install the service, following the `install instructions "
+"<https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-"
+"Win32-OpenSSH>`_ from Microsoft."
+msgstr ""
+
 #: ../../rst/user_guide/windows_setup.rst:460
-msgid ":doc:`index`"
-msgstr ""
-
-#: ../../rst/user_guide/windows_setup.rst:461
-msgid "The documentation index"
-msgstr ""
-
-#: ../../rst/user_guide/windows_setup.rst:462
-msgid ":doc:`playbooks`"
-msgstr ""
-
-#: ../../rst/user_guide/windows_setup.rst:463
-msgid "An introduction to playbooks"
-msgstr ""
-
-#: ../../rst/user_guide/windows_setup.rst:464
-msgid ":doc:`playbooks_best_practices`"
-msgstr ""
-
-#: ../../rst/user_guide/windows_setup.rst:465
-msgid "Best practices advice"
-msgstr ""
-
-#: ../../rst/user_guide/windows_setup.rst:466
-msgid ":ref:`List of Windows Modules <windows_modules>`"
-msgstr ""
-
-#: ../../rst/user_guide/windows_setup.rst:467
-msgid "Windows specific module list, all implemented in PowerShell"
+msgid "Use ``win_chocolatey`` to install the service::"
 msgstr ""
 
 #: ../../rst/user_guide/windows_setup.rst:468
+msgid ""
+"Use an existing Ansible Galaxy role like `jborean93.win_openssh "
+"<https://galaxy.ansible.com/jborean93/win_openssh>`_::"
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:481
+msgid ""
+"``Win32-OpenSSH`` is still a beta product and is constantly being updated"
+" to include new features and bugfixes. If you are using SSH as a "
+"connection option for Windows, it is highly recommend you install the "
+"latest release from one of the 3 methods above."
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:487
+msgid "Configuring the Win32-OpenSSH shell"
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:489
+msgid ""
+"By default ``Win32-OpenSSH`` will use ``cmd.exe`` as a shell. To "
+"configure a different shell, use an Ansible task to define the registry "
+"setting::"
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:508
+msgid "Win32-OpenSSH Authentication"
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:509
+msgid ""
+"Win32-OpenSSH authentication with Windows is similar to SSH "
+"authentication on Unix/Linux hosts. You can use a plaintext password or "
+"SSH public key authentication, add public keys to an ``authorized_key`` "
+"file in the ``.ssh`` folder of the user's profile directory, and "
+"configure the service using the ``sshd_config`` file used by the SSH "
+"service as you would on a Unix/Linux host."
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:516
+msgid ""
+"When using SSH key authentication with Ansible, the remote session won't "
+"have access to the user's credentials and will fail when attempting to "
+"access a network resource. This is also known as the double-hop or "
+"credential delegation issue. There are two ways to work around this "
+"issue:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:521
+msgid "Use plaintext password auth by setting ``ansible_password``"
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:522
+msgid ""
+"Use ``become`` on the task with the credentials of the user that needs "
+"access to the remote resource"
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:525
+msgid "Configuring Ansible for SSH on Windows"
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:526
+msgid ""
+"To configure Ansible to use SSH for Windows hosts, you must set two "
+"connection variables:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:528
+msgid "set ``ansible_connection`` to ``ssh``"
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:529
+msgid "set ``ansible_shell_type`` to ``cmd`` or ``powershell``"
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:531
+msgid ""
+"The ``ansible_shell_type`` variable should reflect the ``DefaultShell`` "
+"configured on the Windows host. Set to ``cmd`` for the default shell or "
+"set to ``powershell`` if the ``DefaultShell`` has been changed to "
+"PowerShell."
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:536
+msgid "Known issues with SSH on Windows"
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:537
+msgid ""
+"Using SSH with Windows is experimental, and we expect to uncover more "
+"issues. Here are the known ones:"
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:540
+msgid ""
+"Win32-OpenSSH versions older than ``v7.9.0.0p1-Beta`` do not work when "
+"``powershell`` is the shell type"
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:541
+msgid ""
+"While SCP should work, SFTP is the recommended SSH file transfer "
+"mechanism to use when copying or fetching a file"
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:546
+msgid ":ref:`about_playbooks`"
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:547
+msgid "An introduction to playbooks"
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:548
+msgid ":ref:`playbooks_best_practices`"
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:549
+msgid "Best practices advice"
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:550
+msgid ":ref:`List of Windows Modules <windows_modules>`"
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:551
+msgid "Windows specific module list, all implemented in PowerShell"
+msgstr ""
+
+#: ../../rst/user_guide/windows_setup.rst:552
 msgid "`User Mailing List <https://groups.google.com/group/ansible-project>`_"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:469
+#: ../../rst/user_guide/windows_setup.rst:553
 msgid "Have a question?  Stop by the google group!"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:470
+#: ../../rst/user_guide/windows_setup.rst:554
 msgid "`irc.freenode.net <http://irc.freenode.net>`_"
 msgstr ""
 
-#: ../../rst/user_guide/windows_setup.rst:471
+#: ../../rst/user_guide/windows_setup.rst:555
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid "Topics"
+#~ msgstr "주제"
+
+#~ msgid ""
+#~ "Ansible's supported Windows versions generally"
+#~ " match those under current and "
+#~ "extended support from Microsoft. Supported "
+#~ "desktop OSs include Windows 7, 8.1, "
+#~ "and 10, and supported server OSs "
+#~ "are Windows Server 2008, 2008 R2, "
+#~ "2012, 2012 R2, and 2016."
+#~ msgstr ""
+#~ "앤서블이 지원하는 윈도우 버전은 마이크로소프트가 현재 지원하는"
+#~ " 버전과 거의 일치한다. 지원하는 데스크톱 버전은 윈도우"
+#~ " 7, 9, 10이고 서버 버전은 2008, 2008"
+#~ " R2, 2012, 2012 R2, 2016이다. "
+
+#~ msgid "This will output something like the following:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``CertificateThumbprint``: If running over an"
+#~ " HTTPS listener, this is the "
+#~ "thumbprint of the certificate in the "
+#~ "Windows Certificate Store that is used"
+#~ " in the connection. To get the "
+#~ "details of the certificate itself, run"
+#~ " this command with the relevant "
+#~ "certificate thumbprint in PowerShell:"
+#~ msgstr ""
+
+#~ msgid "To remove a WinRM listener:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``Service\\AllowUnencrypted``: This option defines"
+#~ " whether WinRM will allow traffic "
+#~ "that is run over HTTP without "
+#~ "message encryption. Message level encryption"
+#~ " is only supported when "
+#~ "``ansible_winrm_transport`` is ``ntlm``, "
+#~ "``kerberos`` or ``credssp``. By default "
+#~ "this is ``false`` and should only "
+#~ "be set to ``true`` when debugging "
+#~ "WinRM messages."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``Service\\Auth\\CbtHardeningLevel``: Specifies whether"
+#~ " channel binding tokens are not "
+#~ "verified (None), verified but not "
+#~ "required (Relaxed), or verified and "
+#~ "required (Strict). CBT is only used "
+#~ "when connecting with NTLM or Kerberos"
+#~ " over HTTPS. The downstream libraries "
+#~ "that Ansible currently uses only support"
+#~ " passing the CBT with NTLM "
+#~ "authentication. Using Kerberos with "
+#~ "``CbtHardeningLevel = Strict`` will result "
+#~ "in a ``404`` error."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To modify a setting under the "
+#~ "``Service`` key in PowerShell, the "
+#~ "following command can be used:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To modify a setting under the "
+#~ "``Winrs`` key in PowerShell, the "
+#~ "following command can be used:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "One easy way to determine whether "
+#~ "a problem is a host issue is "
+#~ "to run the following command from "
+#~ "another Windows host to connect to "
+#~ "the target Windows host:"
+#~ msgstr ""
+
+#~ msgid ":doc:`index`"
+#~ msgstr ""
+
+#~ msgid "The documentation index"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks_best_practices`"
+#~ msgstr ""
 

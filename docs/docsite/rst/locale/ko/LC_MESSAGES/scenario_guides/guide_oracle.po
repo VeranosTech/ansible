@@ -1,0 +1,213 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/scenario_guides/guide_oracle.rst:3
+msgid "Oracle Cloud Infrastructure Guide"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:7
+msgid "Introduction"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:9
+msgid ""
+"Oracle provides a number of Ansible modules to interact with Oracle Cloud"
+" Infrastructure (OCI). In this guide, we will explain how you can use "
+"these modules to orchestrate, provision and configure your infrastructure"
+" on OCI."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:13
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:14
+msgid ""
+"To use the OCI Ansible modules, you must have the following prerequisites"
+" on your control node, the computer from which Ansible playbooks are "
+"executed."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:16
+msgid ""
+"`An Oracle Cloud Infrastructure account. "
+"<https://cloud.oracle.com/en_US/tryit>`_"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:18
+msgid ""
+"A user created in that account, in a security group with a policy that "
+"grants the necessary permissions for working with resources in those "
+"compartments. For guidance, see `How Policies Work "
+"<https://docs.cloud.oracle.com/iaas/Content/Identity/Concepts/policies.htm>`_."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:20
+msgid "The necessary credentials and OCID information."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:24
+msgid "Installation"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:25
+msgid ""
+"Install the Oracle Cloud Infrastructure Python SDK (`detailed "
+"installation instructions <https://oracle-cloud-infrastructure-python-"
+"sdk.readthedocs.io/en/latest/installation.html>`_):"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:31
+msgid "Install the Ansible OCI Modules in one of two ways:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:33
+msgid "From Galaxy:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:39
+msgid "From GitHub:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:50
+msgid "Run one of the following commands:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:52
+msgid "If Ansible is installed only for your user:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:58
+msgid "If Ansible is installed as root:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:66
+msgid "Configuration"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:68
+msgid ""
+"When creating and configuring Oracle Cloud Infrastructure resources, "
+"Ansible modules use the authentication information outlined `here "
+"<https://docs.cloud.oracle.com/iaas/Content/API/Concepts/sdkconfig.htm>`_."
+" ."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:73
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:75
+msgid "Launch a compute instance"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:76
+msgid ""
+"This `sample launch playbook <https://github.com/oracle/oci-ansible-"
+"modules/tree/master/samples/compute/launch_compute_instance>`_ launches a"
+" public Compute instance and then accesses the instance from an Ansible "
+"module over an SSH connection. The sample illustrates how to:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:79
+msgid "Generate a temporary, host-specific SSH key pair."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:80
+msgid ""
+"Specify the public key from the key pair for connecting to the instance, "
+"and then launch the instance."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:81
+msgid "Connect to the newly launched instance using SSH."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:84
+msgid "Create and manage Autonomous Data Warehouses"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:85
+msgid ""
+"This `sample warehouse playbook <https://github.com/oracle/oci-ansible-"
+"modules/tree/master/samples/database/autonomous_data_warehouse>`_ creates"
+" an Autonomous Data Warehouse and manage its lifecycle. The sample shows "
+"how to:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:87
+msgid "Set up an Autonomous Data Warehouse."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:88
+msgid ""
+"List all of the Autonomous Data Warehouse instances available in a "
+"compartment, filtered by the display name."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:89
+msgid "Get the \"facts\" for a specified Autonomous Data Warehouse."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:90
+msgid "Stop and start an Autonomous Data Warehouse instance."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:91
+msgid "Delete an Autonomous Data Warehouse instance."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:94
+msgid "Create and manage Autonomous Transaction Processing"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:95
+msgid ""
+"This `sample playbook <https://github.com/oracle/oci-ansible-"
+"modules/tree/master/samples/database/autonomous_database>`_ creates an "
+"Autonomous Transaction Processing database and manage its lifecycle. The "
+"sample shows how to:"
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:98
+msgid "Set up an Autonomous Transaction Processing database instance."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:99
+msgid ""
+"List all of the Autonomous Transaction Processing instances in a "
+"compartment, filtered by the display name."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:100
+msgid ""
+"Get the \"facts\" for a specified Autonomous Transaction Processing "
+"instance."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:101
+msgid "Delete an Autonomous Transaction Processing database instance."
+msgstr ""
+
+#: ../../rst/scenario_guides/guide_oracle.rst:103
+msgid ""
+"You can find more examples here: `Sample Ansible Playbooks "
+"<https://docs.cloud.oracle.com/iaas/Content/API/SDKDocs/ansiblesamples.htm>`_."
+msgstr ""
+

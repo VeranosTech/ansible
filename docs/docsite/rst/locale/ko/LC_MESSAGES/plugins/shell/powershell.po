@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/plugins/shell/powershell.rst:8
-msgid "powershell -- Windows Powershell"
+msgid "powershell -- Windows PowerShell"
 msgstr ""
 
 #: ../../rst/plugins/shell/powershell.rst:17
@@ -27,42 +27,63 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/plugins/shell/powershell.rst:18
-msgid "The only option when using 'winrm' as a connection plugin"
+msgid "The only option when using 'winrm' or 'psrp' as a connection plugin."
 msgstr ""
 
-#: ../../rst/plugins/shell/powershell.rst:24
+#: ../../rst/plugins/shell/powershell.rst:19
+msgid ""
+"Can also be used when using 'ssh' as a connection plugin and the "
+"``DefaultShell`` has been configured to PowerShell."
+msgstr ""
+
+#: ../../rst/plugins/shell/powershell.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/plugins/shell/powershell.rst:123
+#: ../../rst/plugins/shell/powershell.rst:124
 msgid "Status"
 msgstr ""
 
-#: ../../rst/plugins/shell/powershell.rst:128
+#: ../../rst/plugins/shell/powershell.rst:129
 msgid ""
 "This shell is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/plugins/shell/powershell.rst:131
+#: ../../rst/plugins/shell/powershell.rst:132
 msgid ""
 "This shell is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/plugins/shell/powershell.rst:138
+#: ../../rst/plugins/shell/powershell.rst:139
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/plugins/shell/powershell.rst:140
+#: ../../rst/plugins/shell/powershell.rst:141
 msgid "UNKNOWN"
 msgstr ""
 
-#: ../../rst/plugins/shell/powershell.rst:144
+#: ../../rst/plugins/shell/powershell.rst:145
+#, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/shell/powershell.py>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/shell/powershell.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "powershell -- Windows Powershell"
+#~ msgstr ""
+
+#~ msgid "The only option when using 'winrm' as a connection plugin"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/shell/powershell.py>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,37 +22,37 @@ msgstr ""
 msgid "bigip_vlan -- Manage VLANs on a BIG-IP system"
 msgstr ""
 
-#: ../../rst/modules/bigip_vlan_module.rst:19
+#: ../../rst/modules/bigip_vlan_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/bigip_vlan_module.rst:20
+#: ../../rst/modules/bigip_vlan_module.rst:19
 msgid "Manage VLANs on a BIG-IP system"
 msgstr ""
 
-#: ../../rst/modules/bigip_vlan_module.rst:26
+#: ../../rst/modules/bigip_vlan_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/bigip_vlan_module.rst:577
+#: ../../rst/modules/bigip_vlan_module.rst:513
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/bigip_vlan_module.rst:580
+#: ../../rst/modules/bigip_vlan_module.rst:516
 msgid "Requires BIG-IP versions >= 12.0.0"
 msgstr ""
 
-#: ../../rst/modules/bigip_vlan_module.rst:581
+#: ../../rst/modules/bigip_vlan_module.rst:517
 msgid ""
 "For more information on using Ansible to manage F5 Networks devices see "
 "https://www.ansible.com/integrations/networks/f5."
 msgstr ""
 
-#: ../../rst/modules/bigip_vlan_module.rst:582
+#: ../../rst/modules/bigip_vlan_module.rst:518
 msgid "Requires BIG-IP software version >= 12."
 msgstr ""
 
-#: ../../rst/modules/bigip_vlan_module.rst:583
+#: ../../rst/modules/bigip_vlan_module.rst:519
 msgid ""
 "The F5 modules only manipulate the running configuration of the F5 "
 "product. To ensure that BIG-IP specific configuration persists to disk, "
@@ -62,54 +62,62 @@ msgid ""
 "your running configuration."
 msgstr ""
 
-#: ../../rst/modules/bigip_vlan_module.rst:588
+#: ../../rst/modules/bigip_vlan_module.rst:524
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/bigip_vlan_module.rst:640
+#: ../../rst/modules/bigip_vlan_module.rst:576
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/bigip_vlan_module.rst:641
+#: ../../rst/modules/bigip_vlan_module.rst:577
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/bigip_vlan_module.rst:810
+#: ../../rst/modules/bigip_vlan_module.rst:746
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/bigip_vlan_module.rst:815
+#: ../../rst/modules/bigip_vlan_module.rst:751
 msgid ""
 "This module is guaranteed to have no backward incompatible interface "
 "changes going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/bigip_vlan_module.rst:818
+#: ../../rst/modules/bigip_vlan_module.rst:754
 msgid ""
 "This module is :ref:`maintained by an Ansible Partner <modules_support>`."
 " *[certified]*"
 msgstr ""
 
-#: ../../rst/modules/bigip_vlan_module.rst:825
+#: ../../rst/modules/bigip_vlan_module.rst:761
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/bigip_vlan_module.rst:827
+#: ../../rst/modules/bigip_vlan_module.rst:763
 msgid "Tim Rupp (@caphrim007)"
 msgstr ""
 
-#: ../../rst/modules/bigip_vlan_module.rst:828
+#: ../../rst/modules/bigip_vlan_module.rst:764
 msgid "Wojciech Wypior (@wojtek0806)"
 msgstr ""
 
-#: ../../rst/modules/bigip_vlan_module.rst:832
+#: ../../rst/modules/bigip_vlan_module.rst:768
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_vlan.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_vlan.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_vlan.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

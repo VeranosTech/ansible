@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,108 +22,116 @@ msgstr ""
 msgid "nxos_aaa_server_host -- Manages AAA server host-specific configuration"
 msgstr ""
 
-#: ../../rst/modules/nxos_aaa_server_host_module.rst:19
+#: ../../rst/modules/nxos_aaa_server_host_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/nxos_aaa_server_host_module.rst:20
+#: ../../rst/modules/nxos_aaa_server_host_module.rst:19
 msgid "Manages AAA server host-specific configuration."
 msgstr ""
 
-#: ../../rst/modules/nxos_aaa_server_host_module.rst:26
+#: ../../rst/modules/nxos_aaa_server_host_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/nxos_aaa_server_host_module.rst:376
+#: ../../rst/modules/nxos_aaa_server_host_module.rst:378
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/nxos_aaa_server_host_module.rst:379
+#: ../../rst/modules/nxos_aaa_server_host_module.rst:381
 msgid "Tested against NXOSv 7.3.(0)D1(1) on VIRL"
 msgstr ""
 
-#: ../../rst/modules/nxos_aaa_server_host_module.rst:380
+#: ../../rst/modules/nxos_aaa_server_host_module.rst:382
 msgid "Changes to the host key (shared secret) are not idempotent for type 0."
 msgstr ""
 
-#: ../../rst/modules/nxos_aaa_server_host_module.rst:381
+#: ../../rst/modules/nxos_aaa_server_host_module.rst:383
 msgid "If ``state=absent`` removes the whole host configuration."
 msgstr ""
 
-#: ../../rst/modules/nxos_aaa_server_host_module.rst:382
+#: ../../rst/modules/nxos_aaa_server_host_module.rst:384
 msgid ""
 "For information on using CLI and NX-API see the :ref:`NXOS Platform "
 "Options guide <nxos_platform_options>`"
 msgstr ""
 
-#: ../../rst/modules/nxos_aaa_server_host_module.rst:383
+#: ../../rst/modules/nxos_aaa_server_host_module.rst:385
 msgid ""
 "For more information on using Ansible to manage network devices see the "
 ":ref:`Ansible Network Guide <network_guide>`"
 msgstr ""
 
-#: ../../rst/modules/nxos_aaa_server_host_module.rst:384
+#: ../../rst/modules/nxos_aaa_server_host_module.rst:386
 msgid ""
 "For more information on using Ansible to manage Cisco devices see the "
 "`Cisco integration page "
 "<https://www.ansible.com/integrations/networks/cisco>`_."
 msgstr ""
 
-#: ../../rst/modules/nxos_aaa_server_host_module.rst:389
+#: ../../rst/modules/nxos_aaa_server_host_module.rst:391
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/nxos_aaa_server_host_module.rst:434
+#: ../../rst/modules/nxos_aaa_server_host_module.rst:428
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/nxos_aaa_server_host_module.rst:435
+#: ../../rst/modules/nxos_aaa_server_host_module.rst:429
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/nxos_aaa_server_host_module.rst:513
+#: ../../rst/modules/nxos_aaa_server_host_module.rst:507
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/nxos_aaa_server_host_module.rst:518
+#: ../../rst/modules/nxos_aaa_server_host_module.rst:512
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/nxos_aaa_server_host_module.rst:521
+#: ../../rst/modules/nxos_aaa_server_host_module.rst:515
 msgid ""
 "This module is :ref:`maintained by the Ansible Network Team "
 "<modules_support>`. *[network]*"
 msgstr ""
 
-#: ../../rst/modules/nxos_aaa_server_host_module.rst:524
+#: ../../rst/modules/nxos_aaa_server_host_module.rst:518
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/nxos_aaa_server_host_module.rst:526
+#: ../../rst/modules/nxos_aaa_server_host_module.rst:520
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/nxos_aaa_server_host_module.rst:532
+#: ../../rst/modules/nxos_aaa_server_host_module.rst:526
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/nxos_aaa_server_host_module.rst:534
+#: ../../rst/modules/nxos_aaa_server_host_module.rst:528
 msgid "Jason Edelman (@jedelman8)"
 msgstr ""
 
-#: ../../rst/modules/nxos_aaa_server_host_module.rst:538
+#: ../../rst/modules/nxos_aaa_server_host_module.rst:532
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_aaa_server_host.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_aaa_server_host.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/nxos/nxos_aaa_server_host.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,24 +47,28 @@ msgid "openstacksdk"
 msgstr ""
 
 #: ../../rst/modules/os_coe_cluster_template_module.rst:29
+msgid "openstacksdk >= 0.12.0"
+msgstr ""
+
+#: ../../rst/modules/os_coe_cluster_template_module.rst:30
 msgid "python >= 2.7"
 msgstr ""
 
-#: ../../rst/modules/os_coe_cluster_template_module.rst:33
+#: ../../rst/modules/os_coe_cluster_template_module.rst:34
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/os_coe_cluster_template_module.rst:605
+#: ../../rst/modules/os_coe_cluster_template_module.rst:610
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/os_coe_cluster_template_module.rst:608
+#: ../../rst/modules/os_coe_cluster_template_module.rst:613
 msgid ""
 "The standard OpenStack environment variables, such as ``OS_USERNAME`` may"
 " be used instead of providing explicit values."
 msgstr ""
 
-#: ../../rst/modules/os_coe_cluster_template_module.rst:609
+#: ../../rst/modules/os_coe_cluster_template_module.rst:614
 msgid ""
 "Auth information is driven by openstacksdk, which means that values can "
 "come from a yaml config file in /etc/ansible/openstack.yaml, "
@@ -74,50 +78,58 @@ msgid ""
 "https://docs.openstack.org/openstacksdk/"
 msgstr ""
 
-#: ../../rst/modules/os_coe_cluster_template_module.rst:614
+#: ../../rst/modules/os_coe_cluster_template_module.rst:619
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/os_coe_cluster_template_module.rst:631
+#: ../../rst/modules/os_coe_cluster_template_module.rst:636
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/os_coe_cluster_template_module.rst:632
+#: ../../rst/modules/os_coe_cluster_template_module.rst:637
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/os_coe_cluster_template_module.rst:1000
+#: ../../rst/modules/os_coe_cluster_template_module.rst:1005
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/os_coe_cluster_template_module.rst:1005
+#: ../../rst/modules/os_coe_cluster_template_module.rst:1010
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/os_coe_cluster_template_module.rst:1008
+#: ../../rst/modules/os_coe_cluster_template_module.rst:1013
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/os_coe_cluster_template_module.rst:1015
+#: ../../rst/modules/os_coe_cluster_template_module.rst:1020
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/os_coe_cluster_template_module.rst:1017
+#: ../../rst/modules/os_coe_cluster_template_module.rst:1022
 msgid "Feilong Wang (@flwang)"
 msgstr ""
 
-#: ../../rst/modules/os_coe_cluster_template_module.rst:1021
+#: ../../rst/modules/os_coe_cluster_template_module.rst:1026
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/openstack/os_coe_cluster_template.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/openstack/os_coe_cluster_template.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/openstack/os_coe_cluster_template.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

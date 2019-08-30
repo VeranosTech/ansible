@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,7 +60,7 @@ msgid ""
 "You must write your plugin in Python so it can be loaded by the "
 "``PluginLoader`` and returned as a Python object that any module can use."
 " Since your plugin will execute on the controller, you must write it in a"
-" :ref:`compatible version of Python <control_machine_requirements>`."
+" :ref:`compatible version of Python <control_node_requirements>`."
 msgstr ""
 
 #: ../../rst/dev_guide/developing_plugins.rst:26
@@ -72,7 +72,7 @@ msgid ""
 "You should return errors encountered during plugin execution by raising "
 "``AnsibleError()`` or a similar class with a message describing the "
 "error. When wrapping other exceptions into error messages, you should "
-"always use the ``to_text`` Ansible function to ensure proper string "
+"always use the ``to_native`` Ansible function to ensure proper string "
 "compatibility across Python versions:"
 msgstr ""
 
@@ -117,7 +117,7 @@ msgid ""
 " use a ``self.set_options()`` call."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:73
+#: ../../rst/dev_guide/developing_plugins.rst:74
 msgid ""
 "Plugins that support embedded documentation (see :ref:`ansible-doc` for "
 "the list) must include well-formed doc strings to be considered for merge"
@@ -128,34 +128,34 @@ msgid ""
 "developing a plugin for local use."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:76
+#: ../../rst/dev_guide/developing_plugins.rst:77
 msgid "Developing particular plugin types"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:81
+#: ../../rst/dev_guide/developing_plugins.rst:82
 msgid "Action plugins"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:83
+#: ../../rst/dev_guide/developing_plugins.rst:84
 msgid ""
 "Action plugins let you integrate local processing and local data with "
 "module functionality."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:85
+#: ../../rst/dev_guide/developing_plugins.rst:86
 msgid ""
 "To create an action plugin, create a new class with the Base(ActionBase) "
 "class as the parent:"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:94
+#: ../../rst/dev_guide/developing_plugins.rst:95
 msgid ""
 "From there, execute the module using the ``_execute_module`` method to "
 "call the original module. After successful execution of the module, you "
 "can modify the module return data."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:104
+#: ../../rst/dev_guide/developing_plugins.rst:105
 msgid ""
 "For example, if you wanted to check the time difference between your "
 "Ansible controller and your target machine(s), you could write an action "
@@ -163,7 +163,7 @@ msgid ""
 "Ansible's ``setup`` module:"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:141
+#: ../../rst/dev_guide/developing_plugins.rst:142
 msgid ""
 "This code checks the time on the controller, captures the date and time "
 "for the remote machine using the ``setup`` module, and calculates the "
@@ -171,31 +171,105 @@ msgid ""
 "time delta in days, seconds and microseconds."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:144
+#: ../../rst/dev_guide/developing_plugins.rst:145
 msgid ""
 "For practical examples of action plugins, see the source code for the "
 "`action plugins included with Ansible Core "
 "<https://github.com/ansible/ansible/tree/devel/lib/ansible/plugins/action>`_"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:150
+#: ../../rst/dev_guide/developing_plugins.rst:151
+msgid "Cache plugins"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_plugins.rst:153
+msgid ""
+"Cache plugins store gathered facts and data retrieved by inventory "
+"plugins."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_plugins.rst:155
+msgid ""
+"Import cache plugins using the cache_loader so you can use "
+"``self.set_options()`` and ``self.get_option(<option_name>)``. If you "
+"import a cache plugin directly in the code base, you can only access "
+"options via ``ansible.constants``, and you break the cache plugin's "
+"ability to be used by an inventory plugin."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_plugins.rst:163
+msgid ""
+"There are two base classes for cache plugins, ``BaseCacheModule`` for "
+"database-backed caches, and ``BaseCacheFileModule`` for file-backed "
+"caches."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_plugins.rst:165
+msgid ""
+"To create a cache plugin, start by creating a new ``CacheModule`` class "
+"with the appropriate base class. If you're creating a plugin using an "
+"``__init__`` method you should initialize the base class with any "
+"provided args and kwargs to be compatible with inventory plugin cache "
+"options. The base class calls ``self.set_options(direct=kwargs)``. After "
+"the base class ``__init__`` method is called "
+"``self.get_option(<option_name>)`` should be used to access cache "
+"options."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_plugins.rst:167
+msgid ""
+"New cache plugins should take the options ``_uri``, ``_prefix``, and "
+"``_timeout`` to be consistent with existing cache plugins."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_plugins.rst:180
+msgid ""
+"If you use the ``BaseCacheModule``, you must implement the methods "
+"``get``, ``contains``, ``keys``, ``set``, ``delete``, ``flush``, and "
+"``copy``. The ``contains`` method should return a boolean that indicates "
+"if the key exists and has not expired. Unlike file-based caches, the "
+"``get`` method does not raise a KeyError if the cache has expired."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_plugins.rst:182
+msgid ""
+"If you use the ``BaseFileCacheModule``, you must implement ``_load`` and "
+"``_dump`` methods that will be called from the base class methods ``get``"
+" and ``set``."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_plugins.rst:184
+msgid ""
+"If your cache plugin stores JSON, use ``AnsibleJSONEncoder`` in the "
+"``_dump`` or ``set`` method  and ``AnsibleJSONDecoder`` in the ``_load`` "
+"or ``get`` method."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_plugins.rst:186
+msgid ""
+"For example cache plugins, see the source code for the `cache plugins "
+"included with Ansible Core "
+"<https://github.com/ansible/ansible/tree/devel/lib/ansible/plugins/cache>`_."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_plugins.rst:191
 msgid "Callback plugins"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:152
+#: ../../rst/dev_guide/developing_plugins.rst:193
 msgid ""
 "Callback plugins add new behaviors to Ansible when responding to events. "
 "By default, callback plugins control most of the output you see when "
 "running the command line programs."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:154
+#: ../../rst/dev_guide/developing_plugins.rst:195
 msgid ""
 "To create a callback plugin, create a new class with the Base(Callbacks) "
 "class as the parent:"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:163
+#: ../../rst/dev_guide/developing_plugins.rst:204
 msgid ""
 "From there, override the specific methods from the CallbackBase that you "
 "want to provide a callback for. For plugins intended for use with Ansible"
@@ -206,14 +280,14 @@ msgid ""
 " directory."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:168
+#: ../../rst/dev_guide/developing_plugins.rst:209
 msgid ""
 "The following is a modified example of how Ansible's timer plugin is "
 "implemented, but with an extra option so you can see how configuration "
 "works in Ansible version 2.4 and later:"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:236
+#: ../../rst/dev_guide/developing_plugins.rst:277
 msgid ""
 "Note that the ``CALLBACK_VERSION`` and ``CALLBACK_NAME`` definitions are "
 "required for properly functioning plugins for Ansible version 2.0 and "
@@ -221,18 +295,18 @@ msgid ""
 " from the rest, since you can only load one plugin that writes to stdout."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:238
+#: ../../rst/dev_guide/developing_plugins.rst:279
 msgid ""
 "For example callback plugins, see the source code for the `callback "
 "plugins included with Ansible Core "
 "<https://github.com/ansible/ansible/tree/devel/lib/ansible/plugins/callback>`_"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:243
+#: ../../rst/dev_guide/developing_plugins.rst:284
 msgid "Connection plugins"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:245
+#: ../../rst/dev_guide/developing_plugins.rst:286
 msgid ""
 "Connection plugins allow Ansible to connect to the target hosts so it can"
 " execute tasks on them. Ansible ships with many connection plugins, but "
@@ -242,7 +316,7 @@ msgid ""
 "playbooks and with ``/usr/bin/ansible`` to connect to remote machines."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:247
+#: ../../rst/dev_guide/developing_plugins.rst:288
 msgid ""
 "Ansible version 2.1 introduced the ``smart`` connection plugin. The "
 "``smart`` connection type allows Ansible to automatically select either "
@@ -251,25 +325,26 @@ msgid ""
 "ControlPersist."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:249
+#: ../../rst/dev_guide/developing_plugins.rst:290
 msgid ""
 "To create a new connection plugin (for example, to support SNMP, Message "
 "bus, or other transports), copy the format of one of the existing "
-"connection plugins and drop it into the ``connection_plugins`` directory."
+"connection plugins and drop it into ``connection`` directory on your "
+":ref:`local plugin path <local_plugins>`."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:251
+#: ../../rst/dev_guide/developing_plugins.rst:292
 msgid ""
 "For example connection plugins, see the source code for the `connection "
 "plugins included with Ansible Core "
 "<https://github.com/ansible/ansible/tree/devel/lib/ansible/plugins/connection>`_."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:256
+#: ../../rst/dev_guide/developing_plugins.rst:297
 msgid "Filter plugins"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:258
+#: ../../rst/dev_guide/developing_plugins.rst:299
 msgid ""
 "Filter plugins manipulate data. They are a feature of Jinja2 and are also"
 " available in Jinja2 templates used by the ``template`` module. As with "
@@ -278,41 +353,41 @@ msgid ""
 "shipped with Ansible reside in a ``core.py``."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:260
+#: ../../rst/dev_guide/developing_plugins.rst:301
 msgid ""
 "Filter plugins do not use the standard configuration and documentation "
 "system described above."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:262
+#: ../../rst/dev_guide/developing_plugins.rst:303
 msgid ""
 "For example filter plugins, see the source code for the `filter plugins "
 "included with Ansible Core "
 "<https://github.com/ansible/ansible/tree/devel/lib/ansible/plugins/filter>`_."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:267
+#: ../../rst/dev_guide/developing_plugins.rst:308
 msgid "Inventory plugins"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:269
+#: ../../rst/dev_guide/developing_plugins.rst:310
 msgid ""
 "Inventory plugins parse inventory sources and form an in-memory "
 "representation of the inventory. Inventory plugins were added in Ansible "
 "version 2.4."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:271
+#: ../../rst/dev_guide/developing_plugins.rst:312
 msgid ""
 "You can see the details for inventory plugins in the "
 ":ref:`developing_inventory` page."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:276
+#: ../../rst/dev_guide/developing_plugins.rst:317
 msgid "Lookup plugins"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:278
+#: ../../rst/dev_guide/developing_plugins.rst:319
 msgid ""
 "Lookup plugins pull in data from external data stores. Lookup plugins can"
 " be used within playbooks both for looping --- playbook language "
@@ -320,7 +395,7 @@ msgid ""
 "lookup plugins --- and to return values into a variable or parameter."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:280
+#: ../../rst/dev_guide/developing_plugins.rst:321
 msgid ""
 "Lookup plugins are very flexible, allowing you to retrieve and return any"
 " type of data. When writing lookup plugins, always return data of a "
@@ -330,7 +405,7 @@ msgid ""
 "write two different lookup plugins."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:282
+#: ../../rst/dev_guide/developing_plugins.rst:323
 msgid ""
 "Ansible includes many :ref:`filters <playbooks_filters>` which can be "
 "used to manipulate the data returned by a lookup plugin. Sometimes it "
@@ -340,34 +415,34 @@ msgid ""
 "level of filtering to be done inside the lookup plugin."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:284
+#: ../../rst/dev_guide/developing_plugins.rst:325
 msgid ""
 "Here's a simple lookup plugin implementation --- this lookup returns the "
 "contents of a text file as a variable:"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:346
+#: ../../rst/dev_guide/developing_plugins.rst:387
 msgid "The following is an example of how this lookup is called::"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:358
+#: ../../rst/dev_guide/developing_plugins.rst:399
 msgid ""
 "For example lookup plugins, see the source code for the `lookup plugins "
 "included with Ansible Core "
 "<https://github.com/ansible/ansible/tree/devel/lib/ansible/plugins/lookup>`_."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:360
+#: ../../rst/dev_guide/developing_plugins.rst:401
 msgid ""
 "For more usage examples of lookup plugins, see :ref:`Using "
 "Lookups<playbooks_lookups>`."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:365
+#: ../../rst/dev_guide/developing_plugins.rst:406
 msgid "Test plugins"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:367
+#: ../../rst/dev_guide/developing_plugins.rst:408
 msgid ""
 "Test plugins verify data. They are a feature of Jinja2 and are also "
 "available in Jinja2 templates used by the ``template`` module. As with "
@@ -378,78 +453,78 @@ msgid ""
 " are also available for conditional directives like ``when:``."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:369
+#: ../../rst/dev_guide/developing_plugins.rst:410
 msgid ""
 "Test plugins do not use the standard configuration and documentation "
 "system described above."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:371
+#: ../../rst/dev_guide/developing_plugins.rst:412
 msgid ""
 "For example test plugins, see the source code for the `test plugins "
 "included with Ansible Core "
 "<https://github.com/ansible/ansible/tree/devel/lib/ansible/plugins/test>`_."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:376
+#: ../../rst/dev_guide/developing_plugins.rst:417
 msgid "Vars plugins"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:378
+#: ../../rst/dev_guide/developing_plugins.rst:419
 msgid ""
 "Vars plugins inject additional variable data into Ansible runs that did "
 "not come from an inventory source, playbook, or command line. Playbook "
 "constructs like 'host_vars' and 'group_vars' work using vars plugins."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:380
+#: ../../rst/dev_guide/developing_plugins.rst:421
 msgid ""
 "Vars plugins were partially implemented in Ansible 2.0 and rewritten to "
 "be fully implemented starting with Ansible 2.4."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:382
+#: ../../rst/dev_guide/developing_plugins.rst:423
 msgid "Older plugins used a ``run`` method as their main body/work:"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:390
+#: ../../rst/dev_guide/developing_plugins.rst:431
 msgid ""
 "Ansible 2.0 did not pass passwords to older plugins, so vaults were "
 "unavailable. Most of the work now  happens in the ``get_vars`` method "
 "which is called from the VariableManager when needed."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:398
+#: ../../rst/dev_guide/developing_plugins.rst:439
 msgid "The parameters are:"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:400
+#: ../../rst/dev_guide/developing_plugins.rst:441
 msgid ""
 "loader: Ansible's DataLoader. The DataLoader can read files, auto-load "
 "JSON/YAML and decrypt vaulted data, and cache read files."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:401
+#: ../../rst/dev_guide/developing_plugins.rst:442
 msgid ""
 "path: this is 'directory data' for every inventory source and the current"
 " play's playbook directory, so they can search for data in reference to "
 "them. ``get_vars`` will be called at least once per available path."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:402
+#: ../../rst/dev_guide/developing_plugins.rst:443
 msgid ""
 "entities: these are host or group names that are pertinent to the "
 "variables needed. The plugin will get called once for hosts and again for"
 " groups."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:404
+#: ../../rst/dev_guide/developing_plugins.rst:445
 msgid ""
 "This ``get vars`` method just needs to return a dictionary structure with"
 " the variables."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:406
+#: ../../rst/dev_guide/developing_plugins.rst:447
 msgid ""
 "Since Ansible version 2.4, vars plugins only execute as needed when "
 "preparing to execute a task. This avoids the costly 'always execute' "
@@ -457,58 +532,99 @@ msgid ""
 " Ansible."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:408
+#: ../../rst/dev_guide/developing_plugins.rst:449
 msgid ""
 "For example vars plugins, see the source code for the `vars plugins "
 "included with Ansible Core "
 "<https://github.com/ansible/ansible/tree/devel/lib/ansible/plugins/vars>`_."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:413
+#: ../../rst/dev_guide/developing_plugins.rst:454
 msgid ":ref:`all_modules`"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:414
+#: ../../rst/dev_guide/developing_plugins.rst:455
 msgid "List of all modules"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:415
-msgid ":doc:`developing_api`"
+#: ../../rst/dev_guide/developing_plugins.rst:456
+msgid ":ref:`developing_api`"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:416
+#: ../../rst/dev_guide/developing_plugins.rst:457
 msgid "Learn about the Python API for task execution"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:417
-msgid ":doc:`developing_inventory`"
+#: ../../rst/dev_guide/developing_plugins.rst:458
+msgid ":ref:`developing_inventory`"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:418
+#: ../../rst/dev_guide/developing_plugins.rst:459
 msgid "Learn about how to develop dynamic inventory sources"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:419
-msgid ":doc:`developing_modules`"
+#: ../../rst/dev_guide/developing_plugins.rst:460
+msgid ":ref:`developing_modules_general`"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:420
+#: ../../rst/dev_guide/developing_plugins.rst:461
 msgid "Learn about how to write Ansible modules"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:421
+#: ../../rst/dev_guide/developing_plugins.rst:462
 msgid "`Mailing List <https://groups.google.com/group/ansible-devel>`_"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:422
+#: ../../rst/dev_guide/developing_plugins.rst:463
 msgid "The development mailing list"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:423
+#: ../../rst/dev_guide/developing_plugins.rst:464
 msgid "`irc.freenode.net <http://irc.freenode.net>`_"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_plugins.rst:424
+#: ../../rst/dev_guide/developing_plugins.rst:465
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ""
+#~ "You must write your plugin in "
+#~ "Python so it can be loaded by "
+#~ "the ``PluginLoader`` and returned as a"
+#~ " Python object that any module can"
+#~ " use. Since your plugin will execute"
+#~ " on the controller, you must write"
+#~ " it in a :ref:`compatible version of"
+#~ " Python <control_machine_requirements>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You should return errors encountered "
+#~ "during plugin execution by raising "
+#~ "``AnsibleError()`` or a similar class "
+#~ "with a message describing the error. "
+#~ "When wrapping other exceptions into "
+#~ "error messages, you should always use"
+#~ " the ``to_text`` Ansible function to "
+#~ "ensure proper string compatibility across "
+#~ "Python versions:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To create a new connection plugin "
+#~ "(for example, to support SNMP, Message"
+#~ " bus, or other transports), copy the"
+#~ " format of one of the existing "
+#~ "connection plugins and drop it into "
+#~ "the ``connection_plugins`` directory."
+#~ msgstr ""
+
+#~ msgid ":doc:`developing_api`"
+#~ msgstr ""
+
+#~ msgid ":doc:`developing_inventory`"
+#~ msgstr ""
+
+#~ msgid ":doc:`developing_modules`"
+#~ msgstr ""
 

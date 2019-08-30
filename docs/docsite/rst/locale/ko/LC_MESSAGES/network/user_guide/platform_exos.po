@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,105 +24,125 @@ msgstr ""
 
 #: ../../rst/network/user_guide/platform_exos.rst:7
 msgid ""
-"Extreme EXOS Ansible modules only support CLI connections today. This "
-"page offers details on how to use ``network_cli`` on EXOS in Ansible 2.6."
+"Extreme EXOS Ansible modules support multiple connections. This page "
+"offers details on how each connection works in Ansible and how to use it."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_exos.rst:10
+#: ../../rst/network/user_guide/platform_exos.rst:9
 msgid "Topics"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_exos.rst:13
+#: ../../rst/network/user_guide/platform_exos.rst:12
 msgid "Connections Available"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_exos.rst:16
+#: ../../rst/network/user_guide/platform_exos.rst:19
 msgid "CLI"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_exos.rst:18
-msgid "**Protocol**"
+#: ../../rst/network/user_guide/platform_exos.rst:19
+msgid "EXOS-API"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_exos.rst:18
+#: ../../rst/network/user_guide/platform_exos.rst:21
+msgid "Protocol"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_exos.rst:21
 msgid "SSH"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_exos.rst
-msgid "**Credentials**"
+#: ../../rst/network/user_guide/platform_exos.rst:21
+msgid "HTTP(S)"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_exos.rst
+#: ../../rst/network/user_guide/platform_exos.rst:23
+msgid "Credentials"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_exos.rst:23
 msgid "uses SSH keys / SSH-agent if present"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_exos.rst
+#: ../../rst/network/user_guide/platform_exos.rst:25
 msgid "accepts ``-u myuser -k`` if using password"
 msgstr ""
 
 #: ../../rst/network/user_guide/platform_exos.rst:23
-msgid "**Indirect Access**"
+msgid "uses HTTPS certificates if present"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_exos.rst:23
+#: ../../rst/network/user_guide/platform_exos.rst:27
+msgid "Indirect Access"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_exos.rst:27
 msgid "via a bastion (jump host)"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_exos.rst
-msgid "**Connection Settings**"
+#: ../../rst/network/user_guide/platform_exos.rst:27
+msgid "via a web proxy"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_exos.rst
+#: ../../rst/network/user_guide/platform_exos.rst:29
+msgid "Connection Settings"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_exos.rst:29
 msgid "``ansible_connection: network_cli``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_exos.rst
-msgid "**Enable Mode**"
+#: ../../rst/network/user_guide/platform_exos.rst:29
+msgid "``ansible_connection: httpapi``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_exos.rst
-msgid "(Privilege Escalation)"
+#: ../../rst/network/user_guide/platform_exos.rst:31
+msgid "|enable_mode|"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_exos.rst
+#: ../../rst/network/user_guide/platform_exos.rst:31
 msgid "not supported by EXOS"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_exos.rst:34
-msgid "**Returned Data Format**"
+#: ../../rst/network/user_guide/platform_exos.rst:33
+msgid "Returned Data Format"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_exos.rst:34
+#: ../../rst/network/user_guide/platform_exos.rst:33
 msgid "``stdout[0].``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_exos.rst:37
+#: ../../rst/network/user_guide/platform_exos.rst:33
+msgid "``stdout[0].messages[0].``"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_exos.rst:38
 msgid ""
 "EXOS does not support ``ansible_connection: local``. You must use "
-"``ansible_connection: network_cli``."
+"``ansible_connection: network_cli`` or ``ansible_connection: httpapi``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_exos.rst:40
-msgid "Using CLI in Ansible 2.6"
+#: ../../rst/network/user_guide/platform_exos.rst:41
+msgid "Using CLI in Ansible"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_exos.rst:43
+#: ../../rst/network/user_guide/platform_exos.rst:44
 msgid "Example CLI ``group_vars/exos.yml``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_exos.rst:54
+#: ../../rst/network/user_guide/platform_exos.rst:55
 msgid ""
 "If you are using SSH keys (including an ssh-agent) you can remove the "
-"``ansible_ssh_pass`` configuration."
+"``ansible_password`` configuration."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_exos.rst:55
+#: ../../rst/network/user_guide/platform_exos.rst:56
 msgid ""
 "If you are accessing your host directly (not through a bastion/jump host)"
 " you can remove the ``ansible_ssh_common_args`` configuration."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_exos.rst:56
+#: ../../rst/network/user_guide/platform_exos.rst:57
 msgid ""
 "If you are accessing your host through a bastion/jump host, you cannot "
 "include your SSH password in the ``ProxyCommand`` directive. To prevent "
@@ -130,8 +150,38 @@ msgid ""
 "support providing passwords via environment variables."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_exos.rst:59
+#: ../../rst/network/user_guide/platform_exos.rst:60
 msgid "Example CLI Task"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_exos.rst:72
+msgid "Using EXOS-API in Ansible"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_exos.rst:75
+msgid "Example EXOS-API ``group_vars/exos.yml``"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_exos.rst:86
+msgid ""
+"If you are accessing your host directly (not through a web proxy) you can"
+" remove the ``proxy_env`` configuration."
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_exos.rst:87
+msgid ""
+"If you are accessing your host through a web proxy using ``https``, "
+"change ``http_proxy`` to ``https_proxy``."
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_exos.rst:91
+msgid "Example EXOS-API Task"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_exos.rst:100
+msgid ""
+"In this example the ``proxy_env`` variable defined in ``group_vars`` gets"
+" passed to the ``environment`` option of the module used in the task."
 msgstr ""
 
 #: ../../rst/network/user_guide/shared_snippets/SSH_warning.txt:2
@@ -141,4 +191,47 @@ msgid ""
 "SSH keys. If you must use passwords to authenticate SSH connections, we "
 "recommend encrypting them with :ref:`Ansible Vault <playbooks_vault>`."
 msgstr ""
+
+#~ msgid ""
+#~ "Extreme EXOS Ansible modules only "
+#~ "support CLI connections today. This page"
+#~ " offers details on how to use "
+#~ "``network_cli`` on EXOS in Ansible 2.6."
+#~ msgstr ""
+
+#~ msgid "**Protocol**"
+#~ msgstr ""
+
+#~ msgid "**Credentials**"
+#~ msgstr ""
+
+#~ msgid "**Indirect Access**"
+#~ msgstr ""
+
+#~ msgid "**Connection Settings**"
+#~ msgstr ""
+
+#~ msgid "**Enable Mode**"
+#~ msgstr ""
+
+#~ msgid "(Privilege Escalation)"
+#~ msgstr ""
+
+#~ msgid "**Returned Data Format**"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "EXOS does not support ``ansible_connection:"
+#~ " local``. You must use "
+#~ "``ansible_connection: network_cli``."
+#~ msgstr ""
+
+#~ msgid "Using CLI in Ansible 2.6"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you are using SSH keys "
+#~ "(including an ssh-agent) you can "
+#~ "remove the ``ansible_ssh_pass`` configuration."
+#~ msgstr ""
 

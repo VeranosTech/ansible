@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,14 +29,14 @@ msgstr ""
 #: ../../rst/user_guide/intro_patterns.rst:8
 msgid ""
 "Patterns in Ansible are how we decide which hosts to manage.  This can "
-"mean what hosts to communicate with, but in terms of :doc:`playbooks` it "
-"actually means what hosts to apply a particular configuration or IT "
-"process to."
+"mean what hosts to communicate with, but in terms of "
+":ref:`playbooks<playbooks_intro>` it actually means what hosts to apply a"
+" particular configuration or IT process to."
 msgstr ""
 
 #: ../../rst/user_guide/intro_patterns.rst:11
 msgid ""
-"We'll go over how to use the command line in :doc:`intro_adhoc` section, "
+"We'll go over how to use the command line in :ref:`intro_adhoc` section, "
 "however, basically it looks like this::"
 msgstr ""
 
@@ -94,21 +94,21 @@ msgstr ""
 #: ../../rst/user_guide/intro_patterns.rst:55
 msgid ""
 "The above configuration means \"all machines in the groups 'webservers' "
-"and 'dbservers' are to be managed if they are in the group 'staging' "
-"also, but the machines are not to be managed if they are in the group "
-"'phoenix' ... whew!"
+"and 'dbservers' are to be managed if they are also in the group "
+"'staging', but the machines are not to be managed if they are in the "
+"group 'phoenix'.\" Whew!"
 msgstr ""
 
 #: ../../rst/user_guide/intro_patterns.rst:58
 msgid ""
 "You can also use variables if you want to pass some group specifiers via "
-"the \"-e\" argument to ansible-playbook, but this is uncommonly used::"
+"the ``-e`` argument to ansible-playbook, but this is uncommonly used::"
 msgstr ""
 
 #: ../../rst/user_guide/intro_patterns.rst:63
 msgid ""
 "You also don't have to manage by strictly defined groups.  Individual "
-"host names, IPs and groups, can also be referenced using wildcards"
+"host names, IPs, and groups can also be referenced using wildcards:"
 msgstr ""
 
 #: ../../rst/user_guide/intro_patterns.rst:71
@@ -130,7 +130,7 @@ msgstr ""
 #: ../../rst/user_guide/intro_patterns.rst:91
 msgid ""
 "Most people don't specify patterns as regular expressions, but you can.  "
-"Just start the pattern with a '~'::"
+"Just start the pattern with a ``~``::"
 msgstr ""
 
 #: ../../rst/user_guide/intro_patterns.rst:95
@@ -143,23 +143,24 @@ msgstr ""
 #: ../../rst/user_guide/intro_patterns.rst:99
 msgid ""
 "And if you want to read the list of hosts from a file, prefix the file "
-"name with '@'.::"
+"name with ``@``::"
 msgstr ""
 
 #: ../../rst/user_guide/intro_patterns.rst:103
 msgid ""
-"Easy enough.  See :doc:`intro_adhoc` and then :doc:`playbooks` for how to"
-" apply this knowledge."
+"Easy enough.  See :ref:`intro_adhoc` and then :ref:`playbooks_intro` for "
+"how to apply this knowledge."
 msgstr ""
 
 #: ../../rst/user_guide/intro_patterns.rst:105
 msgid ""
-"You can use ',' instead of ':' as a host list separator. The ',' is "
-"preferred specially when dealing with ranges and ipv6."
+"You can use a comma (``,``) as a host list separator instead of a colon "
+"(``:``). The comma is preferred when dealing with ranges and IPv6 "
+"addresses."
 msgstr ""
 
 #: ../../rst/user_guide/intro_patterns.rst:109
-msgid ":doc:`intro_adhoc`"
+msgid ":ref:`intro_adhoc`"
 msgstr ""
 
 #: ../../rst/user_guide/intro_patterns.rst:110
@@ -167,7 +168,7 @@ msgid "Examples of basic commands"
 msgstr ""
 
 #: ../../rst/user_guide/intro_patterns.rst:111
-msgid ":doc:`playbooks`"
+msgid ":ref:`working_with_playbooks`"
 msgstr ""
 
 #: ../../rst/user_guide/intro_patterns.rst:112
@@ -189,4 +190,78 @@ msgstr ""
 #: ../../rst/user_guide/intro_patterns.rst:116
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ""
+#~ "Patterns in Ansible are how we "
+#~ "decide which hosts to manage.  This "
+#~ "can mean what hosts to communicate "
+#~ "with, but in terms of :doc:`playbooks`"
+#~ " it actually means what hosts to "
+#~ "apply a particular configuration or IT"
+#~ " process to."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "We'll go over how to use the "
+#~ "command line in :doc:`intro_adhoc` section,"
+#~ " however, basically it looks like "
+#~ "this::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The above configuration means \"all "
+#~ "machines in the groups 'webservers' and"
+#~ " 'dbservers' are to be managed if "
+#~ "they are in the group 'staging' "
+#~ "also, but the machines are not to"
+#~ " be managed if they are in the"
+#~ " group 'phoenix' ... whew!"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can also use variables if you"
+#~ " want to pass some group specifiers"
+#~ " via the \"-e\" argument to "
+#~ "ansible-playbook, but this is uncommonly"
+#~ " used::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You also don't have to manage by"
+#~ " strictly defined groups.  Individual host"
+#~ " names, IPs and groups, can also "
+#~ "be referenced using wildcards"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Most people don't specify patterns as"
+#~ " regular expressions, but you can.  "
+#~ "Just start the pattern with a "
+#~ "'~'::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "And if you want to read the "
+#~ "list of hosts from a file, prefix"
+#~ " the file name with '@'.::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Easy enough.  See :doc:`intro_adhoc` and "
+#~ "then :doc:`playbooks` for how to apply"
+#~ " this knowledge."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can use ',' instead of ':' "
+#~ "as a host list separator. The ','"
+#~ " is preferred specially when dealing "
+#~ "with ranges and ipv6."
+#~ msgstr ""
+
+#~ msgid ":doc:`intro_adhoc`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks`"
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,11 @@ msgstr ""
 msgid "win_shell -- Execute shell commands on target hosts"
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:19
+#: ../../rst/modules/win_shell_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:20
+#: ../../rst/modules/win_shell_module.rst:19
 msgid ""
 "The ``win_shell`` module takes the command name followed by a list of "
 "space-delimited arguments. It is similar to the :ref:`win_command "
@@ -34,21 +34,21 @@ msgid ""
 "to PowerShell) on the target host."
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:21
+#: ../../rst/modules/win_shell_module.rst:20
 msgid ""
 "For non-Windows targets, use the :ref:`shell <shell_module>` module "
 "instead."
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:27
+#: ../../rst/modules/win_shell_module.rst:26
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:122
+#: ../../rst/modules/win_shell_module.rst:138
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:125
+#: ../../rst/modules/win_shell_module.rst:141
 msgid ""
 "If you want to run an executable securely and predictably, it may be "
 "better to use the :ref:`win_command <win_command_module>` module instead."
@@ -58,7 +58,7 @@ msgid ""
 "judgement."
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:126
+#: ../../rst/modules/win_shell_module.rst:142
 msgid ""
 "WinRM will not return from a command execution until all child processes "
 "created have exited. Thus, it is not possible to use ``win_shell`` to "
@@ -66,113 +66,121 @@ msgid ""
 "Windows service for managing background processes."
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:130
+#: ../../rst/modules/win_shell_module.rst:146
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:134
+#: ../../rst/modules/win_shell_module.rst:150
 msgid ":ref:`psexec_module`"
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:135
+#: ../../rst/modules/win_shell_module.rst:151
 msgid "The official documentation on the **psexec** module."
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:136
+#: ../../rst/modules/win_shell_module.rst:152
 msgid ":ref:`raw_module`"
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:137
+#: ../../rst/modules/win_shell_module.rst:153
 msgid "The official documentation on the **raw** module."
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:138
+#: ../../rst/modules/win_shell_module.rst:154
 msgid ":ref:`script_module`"
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:139
+#: ../../rst/modules/win_shell_module.rst:155
 msgid "The official documentation on the **script** module."
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:140
+#: ../../rst/modules/win_shell_module.rst:156
 msgid ":ref:`shell_module`"
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:141
+#: ../../rst/modules/win_shell_module.rst:157
 msgid "The official documentation on the **shell** module."
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:142
+#: ../../rst/modules/win_shell_module.rst:158
 msgid ":ref:`win_command_module`"
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:143
+#: ../../rst/modules/win_shell_module.rst:159
 msgid "The official documentation on the **win_command** module."
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:144
+#: ../../rst/modules/win_shell_module.rst:160
 msgid ":ref:`win_psexec_module`"
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:145
+#: ../../rst/modules/win_shell_module.rst:161
 msgid "The official documentation on the **win_psexec** module."
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:149
+#: ../../rst/modules/win_shell_module.rst:165
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:192
+#: ../../rst/modules/win_shell_module.rst:208
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:193
+#: ../../rst/modules/win_shell_module.rst:209
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:323
+#: ../../rst/modules/win_shell_module.rst:339
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:328
+#: ../../rst/modules/win_shell_module.rst:344
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:331
+#: ../../rst/modules/win_shell_module.rst:347
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:334
+#: ../../rst/modules/win_shell_module.rst:350
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:336
+#: ../../rst/modules/win_shell_module.rst:352
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:342
+#: ../../rst/modules/win_shell_module.rst:358
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:344
+#: ../../rst/modules/win_shell_module.rst:360
 msgid "Matt Davis (@nitzmahone)"
 msgstr ""
 
-#: ../../rst/modules/win_shell_module.rst:348
+#: ../../rst/modules/win_shell_module.rst:364
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_shell.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_shell.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_shell.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

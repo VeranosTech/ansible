@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/postgresql_pg_hba_module.rst:9
+msgid "postgresql_pg_hba -- Add, remove or modify a rule in a pg_hba file"
+msgstr ""
+
+#: ../../rst/modules/postgresql_pg_hba_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/postgresql_pg_hba_module.rst:20
+msgid ""
+"The fundamental function of the module is to create, or delete lines in "
+"pg_hba files."
+msgstr ""
+
+#: ../../rst/modules/postgresql_pg_hba_module.rst:21
+msgid ""
+"The lines in the file should be in a typical pg_hba form and lines should"
+" be unique per key (type, databases, users, source). If they are not "
+"unique and the SID is 'the one to change', only one for ``state=present``"
+" or none for ``state=absent`` of the SID's will remain."
+msgstr ""
+
+#: ../../rst/modules/postgresql_pg_hba_module.rst:26
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/postgresql_pg_hba_module.rst:27
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/postgresql_pg_hba_module.rst:29
+msgid "ipaddress"
+msgstr ""
+
+#: ../../rst/modules/postgresql_pg_hba_module.rst:33
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/postgresql_pg_hba_module.rst:406
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/postgresql_pg_hba_module.rst:409
+msgid ""
+"The default authentication assumes that on the host, you are either "
+"logging in as or sudo'ing to an account with appropriate permissions to "
+"read and modify the file."
+msgstr ""
+
+#: ../../rst/modules/postgresql_pg_hba_module.rst:410
+msgid ""
+"This module also returns the pg_hba info. You can use this module to only"
+" retrieve it by only specifying *dest*. The info can be found in the "
+"returned data under key pg_hba, being a list, containing a dict per rule."
+msgstr ""
+
+#: ../../rst/modules/postgresql_pg_hba_module.rst:411
+msgid ""
+"This module will sort resulting ``pg_hba`` files if a rule change is "
+"required. This could give unexpected results with manual created hba "
+"files, if it was improperly sorted. For example a rule was created for a "
+"net first and for a ip in that net range next. In that situation, the 'ip"
+" specific rule' will never hit, it is in the ``pg_hba`` file obsolete. "
+"After the ``pg_hba`` file is rewritten by the :ref:`postgresql_pg_hba "
+"<postgresql_pg_hba_module>` module, the ip specific rule will be sorted "
+"above the range rule. And then it will hit, which will give unexpected "
+"results."
+msgstr ""
+
+#: ../../rst/modules/postgresql_pg_hba_module.rst:412
+msgid ""
+"With the 'order' parameter you can control which field is used to sort "
+"first, next and last."
+msgstr ""
+
+#: ../../rst/modules/postgresql_pg_hba_module.rst:413
+msgid "The module supports a check mode and a diff mode."
+msgstr ""
+
+#: ../../rst/modules/postgresql_pg_hba_module.rst:417
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/postgresql_pg_hba_module.rst:421
+msgid ""
+"`PostgreSQL pg_hba.conf file reference "
+"<https://www.postgresql.org/docs/current/auth-pg-hba-conf.html>`_"
+msgstr ""
+
+#: ../../rst/modules/postgresql_pg_hba_module.rst:422
+msgid "Complete reference of the PostgreSQL pg_hba.conf file documentation."
+msgstr ""
+
+#: ../../rst/modules/postgresql_pg_hba_module.rst:426
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/postgresql_pg_hba_module.rst:462
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/postgresql_pg_hba_module.rst:463
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/postgresql_pg_hba_module.rst:517
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/postgresql_pg_hba_module.rst:522
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/postgresql_pg_hba_module.rst:525
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/postgresql_pg_hba_module.rst:532
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/postgresql_pg_hba_module.rst:534
+msgid "Sebastiaan Mannem (@sebasmannem)"
+msgstr ""
+
+#: ../../rst/modules/postgresql_pg_hba_module.rst:538
+#, python-format
+msgid ""
+"If you notice any issues in this documentation, you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/postgresql/postgresql_pg_hba.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,21 +39,21 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/bigip_profile_dns_module.rst:512
+#: ../../rst/modules/bigip_profile_dns_module.rst:449
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/bigip_profile_dns_module.rst:515
+#: ../../rst/modules/bigip_profile_dns_module.rst:452
 msgid ""
 "For more information on using Ansible to manage F5 Networks devices see "
 "https://www.ansible.com/integrations/networks/f5."
 msgstr ""
 
-#: ../../rst/modules/bigip_profile_dns_module.rst:516
+#: ../../rst/modules/bigip_profile_dns_module.rst:453
 msgid "Requires BIG-IP software version >= 12."
 msgstr ""
 
-#: ../../rst/modules/bigip_profile_dns_module.rst:517
+#: ../../rst/modules/bigip_profile_dns_module.rst:454
 msgid ""
 "The F5 modules only manipulate the running configuration of the F5 "
 "product. To ensure that BIG-IP specific configuration persists to disk, "
@@ -63,50 +63,58 @@ msgid ""
 "your running configuration."
 msgstr ""
 
-#: ../../rst/modules/bigip_profile_dns_module.rst:522
+#: ../../rst/modules/bigip_profile_dns_module.rst:459
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/bigip_profile_dns_module.rst:546
+#: ../../rst/modules/bigip_profile_dns_module.rst:483
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/bigip_profile_dns_module.rst:547
+#: ../../rst/modules/bigip_profile_dns_module.rst:484
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/bigip_profile_dns_module.rst:682
+#: ../../rst/modules/bigip_profile_dns_module.rst:619
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/bigip_profile_dns_module.rst:687
+#: ../../rst/modules/bigip_profile_dns_module.rst:624
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/bigip_profile_dns_module.rst:690
+#: ../../rst/modules/bigip_profile_dns_module.rst:627
 msgid ""
 "This module is :ref:`maintained by an Ansible Partner <modules_support>`."
 " *[certified]*"
 msgstr ""
 
-#: ../../rst/modules/bigip_profile_dns_module.rst:697
+#: ../../rst/modules/bigip_profile_dns_module.rst:634
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/bigip_profile_dns_module.rst:699
+#: ../../rst/modules/bigip_profile_dns_module.rst:636
 msgid "Tim Rupp (@caphrim007)"
 msgstr ""
 
-#: ../../rst/modules/bigip_profile_dns_module.rst:703
+#: ../../rst/modules/bigip_profile_dns_module.rst:640
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_profile_dns.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_profile_dns.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_profile_dns.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

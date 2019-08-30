@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,56 +48,64 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/tower_host_module.rst:202
+#: ../../rst/modules/tower_host_module.rst:205
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/tower_host_module.rst:205
+#: ../../rst/modules/tower_host_module.rst:208
 msgid ""
 "If no *config_file* is provided we will attempt to use the tower-cli "
 "library defaults to find your Tower host information."
 msgstr ""
 
-#: ../../rst/modules/tower_host_module.rst:206
+#: ../../rst/modules/tower_host_module.rst:209
 msgid ""
 "*config_file* should contain Tower configuration in the following format "
 "host=hostname username=username password=password"
 msgstr ""
 
-#: ../../rst/modules/tower_host_module.rst:211
+#: ../../rst/modules/tower_host_module.rst:214
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/tower_host_module.rst:231
+#: ../../rst/modules/tower_host_module.rst:234
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/tower_host_module.rst:236
+#: ../../rst/modules/tower_host_module.rst:239
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/tower_host_module.rst:239
+#: ../../rst/modules/tower_host_module.rst:242
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/tower_host_module.rst:246
+#: ../../rst/modules/tower_host_module.rst:249
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/tower_host_module.rst:248
+#: ../../rst/modules/tower_host_module.rst:251
 msgid "Wayne Witzel III (@wwitzel3)"
 msgstr ""
 
-#: ../../rst/modules/tower_host_module.rst:252
+#: ../../rst/modules/tower_host_module.rst:255
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/web_infrastructure/ansible_tower/tower_host.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/web_infrastructure/ansible_tower/tower_host.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/web_infrastructure/ansible_tower/tower_host.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

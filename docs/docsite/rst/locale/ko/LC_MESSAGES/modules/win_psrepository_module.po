@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,66 +44,85 @@ msgstr ""
 
 #: ../../rst/modules/win_psrepository_module.rst:107
 msgid ""
-"The PowerShellGet module (version 1.6.0 or newer) and the NuGet package "
-"provider (version 2.8.5.201 or newer) are required."
+"PowerShell modules needed - PowerShellGet >= 1.6.0 - PackageManagement >="
+" 1.1.7"
 msgstr ""
 
 #: ../../rst/modules/win_psrepository_module.rst:108
-msgid "See the examples on how to update the NuGet package provider."
+msgid "PowerShell package provider needed - NuGet >= 2.8.5.201"
 msgstr ""
 
 #: ../../rst/modules/win_psrepository_module.rst:109
+msgid "See the examples on how to update the NuGet package provider."
+msgstr ""
+
+#: ../../rst/modules/win_psrepository_module.rst:110
 msgid ""
 "You can not use ``win_psrepository`` to re-register (add) removed "
 "PSGallery, use the command ``Register-PSRepository -Default`` instead."
 msgstr ""
 
-#: ../../rst/modules/win_psrepository_module.rst:113
+#: ../../rst/modules/win_psrepository_module.rst:114
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/win_psrepository_module.rst:117
+#: ../../rst/modules/win_psrepository_module.rst:118
 msgid ":ref:`win_psmodule_module`"
 msgstr ""
 
-#: ../../rst/modules/win_psrepository_module.rst:118
+#: ../../rst/modules/win_psrepository_module.rst:119
 msgid "The official documentation on the **win_psmodule** module."
 msgstr ""
 
-#: ../../rst/modules/win_psrepository_module.rst:122
+#: ../../rst/modules/win_psrepository_module.rst:123
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/win_psrepository_module.rst:147
+#: ../../rst/modules/win_psrepository_module.rst:148
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/win_psrepository_module.rst:152
+#: ../../rst/modules/win_psrepository_module.rst:153
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/win_psrepository_module.rst:155
+#: ../../rst/modules/win_psrepository_module.rst:156
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/win_psrepository_module.rst:162
+#: ../../rst/modules/win_psrepository_module.rst:163
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/win_psrepository_module.rst:164
+#: ../../rst/modules/win_psrepository_module.rst:165
 msgid "Wojciech Sciesinski (@it-praktyk)"
 msgstr ""
 
-#: ../../rst/modules/win_psrepository_module.rst:168
+#: ../../rst/modules/win_psrepository_module.rst:169
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_psrepository.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_psrepository.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "The PowerShellGet module (version 1.6.0 "
+#~ "or newer) and the NuGet package "
+#~ "provider (version 2.8.5.201 or newer) "
+#~ "are required."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_psrepository.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

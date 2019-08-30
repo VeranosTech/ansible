@@ -1,0 +1,145 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/plugins/become.rst:4
+msgid "Become Plugins"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:12
+msgid ""
+"Become plugins work to ensure that Ansible can use certain privilege "
+"escalation systems when running the basic commands to work with the "
+"target machine as well as the modules required to execute the tasks "
+"specified in the play."
+msgstr ""
+
+#: ../../rst/plugins/become.rst:16
+msgid ""
+"These utilities (``sudo``, ``su``, ``doas``, etc) generally let you "
+"'become' another user to execute a command with the permissions of that "
+"user."
+msgstr ""
+
+#: ../../rst/plugins/become.rst:23
+msgid "Enabling Become Plugins"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:25
+msgid ""
+"The become plugins shipped with Ansible are already enabled. Custom "
+"plugins can be added by placing them into a ``become_plugins`` directory "
+"adjacent to your play, inside a role, or by placing them in one of the "
+"become plugin directory sources configured in :ref:`ansible.cfg "
+"<ansible_configuration_settings>`."
+msgstr ""
+
+#: ../../rst/plugins/become.rst:33
+msgid "Using Become Plugins"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:35
+msgid ""
+"In addition to the default configuration settings in "
+":ref:`ansible_configuration_settings` or the ``--become-method`` command "
+"line option, you can use the ``become_method`` keyword in a play or, if "
+"you need to be 'host specific', the connection variable "
+"``ansible_become_method`` to select the plugin to use."
+msgstr ""
+
+#: ../../rst/plugins/become.rst:39
+msgid ""
+"You can further control the settings for each plugin via other "
+"configuration options detailed in the plugin themselves (linked below)."
+msgstr ""
+
+#: ../../rst/plugins/become.rst:45
+msgid "Plugin List"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:47
+msgid ""
+"You can use ``ansible-doc -t become -l`` to see the list of available "
+"plugins. Use ``ansible-doc -t become <plugin name>`` to see specific "
+"documentation and examples."
+msgstr ""
+
+#: ../../rst/plugins/become.rst:57
+msgid ":ref:`about_playbooks`"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:58
+msgid "An introduction to playbooks"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:59
+msgid ":ref:`inventory_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:60
+msgid "Ansible inventory plugins"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:61
+msgid ":ref:`callback_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:62
+msgid "Ansible callback plugins"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:63
+msgid ":ref:`playbooks_filters`"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:64
+msgid "Jinja2 filter plugins"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:65
+msgid ":ref:`playbooks_tests`"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:66
+msgid "Jinja2 test plugins"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:67
+msgid ":ref:`playbooks_lookups`"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:68
+msgid "Jinja2 lookup plugins"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:69
+msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:70
+msgid "Have a question?  Stop by the google group!"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:71
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:72
+msgid "#ansible IRC chat channel"
+msgstr ""
+

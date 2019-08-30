@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,7 +63,7 @@ msgstr ""
 #: ../../rst/modules/win_partition_module.rst:233
 msgid ""
 "For more information, see https://msdn.microsoft.com/en-"
-"us/library/windows/desktop/hh830524(v=vs.85.aspx)."
+"us/library/windows/desktop/hh830524.aspx."
 msgstr ""
 
 #: ../../rst/modules/win_partition_module.rst:238
@@ -91,15 +91,32 @@ msgid "Authors"
 msgstr ""
 
 #: ../../rst/modules/win_partition_module.rst:284
-msgid "Varun Chopra (@chopraaa)"
+msgid "Varun Chopra (@chopraaa) <v@chopraaa.com>"
 msgstr ""
 
 #: ../../rst/modules/win_partition_module.rst:288
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_partition.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_partition.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "For more information, see "
+#~ "https://msdn.microsoft.com/en-"
+#~ "us/library/windows/desktop/hh830524(v=vs.85.aspx)."
+#~ msgstr ""
+
+#~ msgid "Varun Chopra (@chopraaa)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_partition.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

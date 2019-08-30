@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/network/user_guide/platform_icx.rst:5
+msgid "ICX Platform Options"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_icx.rst:7
+msgid ""
+"ICX supports Enable Mode (Privilege Escalation). This page offers details"
+" on how to use Enable Mode on ICX in Ansible."
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_icx.rst:9
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_icx.rst:12
+msgid "Connections Available"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_icx.rst:18
+msgid "CLI"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_icx.rst:20
+msgid "Protocol"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_icx.rst:20
+msgid "SSH"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_icx.rst:22
+msgid "Credentials"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_icx.rst:22
+msgid "uses SSH keys / SSH-agent if present"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_icx.rst:24
+msgid "accepts ``-u myuser -k`` if using password"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_icx.rst:26
+msgid "Indirect Access"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_icx.rst:26
+msgid "via a bastion (jump host)"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_icx.rst:28
+msgid "Connection Settings"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_icx.rst:28
+msgid "``ansible_connection: network_cli``"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_icx.rst:30
+msgid "|enable_mode|"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_icx.rst:30
+msgid ""
+"supported: use ``ansible_become: yes`` with ``ansible_become_method: "
+"enable`` and ``ansible_become_password:``"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_icx.rst:33
+msgid "Returned Data Format"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_icx.rst:33
+msgid "``stdout[0].``"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_icx.rst:40
+msgid "Using CLI in Ansible"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_icx.rst:43
+msgid "Example CLI ``group_vars/icx.yml``"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_icx.rst:57
+msgid ""
+"If you are using SSH keys (including an ssh-agent) you can remove the "
+"``ansible_password`` configuration."
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_icx.rst:58
+msgid ""
+"If you are accessing your host directly (not through a bastion/jump host)"
+" you can remove the ``ansible_ssh_common_args`` configuration."
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_icx.rst:59
+msgid ""
+"If you are accessing your host through a bastion/jump host, you cannot "
+"include your SSH password in the ``ProxyCommand`` directive. To prevent "
+"secrets from leaking out (for example in ``ps`` output), SSH does not "
+"support providing passwords via environment variables."
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_icx.rst:62
+msgid "Example CLI Task"
+msgstr ""
+
+#: ../../rst/network/user_guide/shared_snippets/SSH_warning.txt:2
+msgid ""
+"Never store passwords in plain text. We recommend using SSH keys to "
+"authenticate SSH connections. Ansible supports ssh-agent to manage your "
+"SSH keys. If you must use passwords to authenticate SSH connections, we "
+"recommend encrypting them with :ref:`Ansible Vault <playbooks_vault>`."
+msgstr ""
+

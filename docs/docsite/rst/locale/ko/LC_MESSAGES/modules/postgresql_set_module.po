@@ -1,0 +1,238 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/postgresql_set_module.rst:9
+msgid "postgresql_set -- Change a PostgreSQL server configuration parameter"
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:20
+msgid "Allows to change a PostgreSQL server configuration parameter."
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:21
+msgid ""
+"The module uses ALTER SYSTEM command and applies changes by reload server"
+" configuration."
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:22
+msgid ""
+"ALTER SYSTEM is used for changing server configuration parameters across "
+"the entire database cluster."
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:23
+msgid ""
+"It can be more convenient and safe than the traditional method of "
+"manually editing the postgresql.conf file."
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:24
+msgid ""
+"ALTER SYSTEM writes the given parameter setting to the "
+"$PGDATA/postgresql.auto.conf file, which is read in addition to "
+"postgresql.conf."
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:25
+msgid ""
+"The module allows to reset parameter to boot_val (cluster initial value) "
+"by *reset=yes* or remove parameter string from postgresql.auto.conf and "
+"reload *value=default* (for settings with postmaster context restart is "
+"required)."
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:26
+msgid ""
+"After change you can see in the ansible output the previous and the new "
+"parameter value and other information using returned values and "
+":ref:`debug <debug_module>` module."
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:31
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:32
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:34
+msgid "psycopg2"
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:38
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:231
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:234
+msgid "Supported version of PostgreSQL is 9.4 and later."
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:235
+msgid ""
+"Pay attention, change setting with 'postmaster' context can return "
+"changed is true when actually nothing changes because the same value may "
+"be presented in several different form, for example, 1024MB, 1GB, etc. "
+"However in pg_settings system view it can be defined like 131072 number "
+"of 8kB pages. The final check of the parameter value cannot compare it "
+"because the server was not restarted and the value in pg_settings is not "
+"updated yet."
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:236
+msgid ""
+"For some parameters restart of PostgreSQL server is required. See "
+"official documentation https://www.postgresql.org/docs/current/view-pg-"
+"settings.html."
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:237
+msgid ""
+"The default authentication assumes that you are either logging in as or "
+"sudo'ing to the ``postgres`` account on the host."
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:238
+msgid ""
+"To avoid \"Peer authentication failed for user postgres\" error, use "
+"postgres user as a *become_user*."
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:239
+msgid ""
+"This module uses psycopg2, a Python PostgreSQL database adapter. You must"
+" ensure that psycopg2 is installed on the host before using this module."
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:240
+msgid ""
+"If the remote host is the PostgreSQL server (which is the default case), "
+"then PostgreSQL must also be installed on the remote host."
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:241
+msgid ""
+"For Ubuntu-based systems, install the postgresql, libpq-dev, and python-"
+"psycopg2 packages on the remote host before using this module."
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:242
+msgid ""
+"The ca_cert parameter requires at least Postgres version 8.4 and "
+"*psycopg2* version 2.4.3."
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:246
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:250
+msgid ":ref:`postgresql_info_module`"
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:251
+msgid "The official documentation on the **postgresql_info** module."
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:252
+msgid ""
+"`PostgreSQL server configuration <https://www.postgresql.org/docs/current"
+"/runtime-config.html>`_"
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:253
+msgid "General information about PostgreSQL server configuration."
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:254
+msgid ""
+"`PostgreSQL view pg_settings reference "
+"<https://www.postgresql.org/docs/current/view-pg-settings.html>`_"
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:255
+msgid "Complete reference of the pg_settings view documentation."
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:256
+msgid ""
+"`PostgreSQL ALTER SYSTEM command reference "
+"<https://www.postgresql.org/docs/current/sql-altersystem.html>`_"
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:257
+msgid "Complete reference of the ALTER SYSTEM command documentation."
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:261
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:300
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:301
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:396
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:401
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:404
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:411
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:413
+msgid "Andrew Klychkov (@Andersson007)"
+msgstr ""
+
+#: ../../rst/modules/postgresql_set_module.rst:417
+#, python-format
+msgid ""
+"If you notice any issues in this documentation, you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/database/postgresql/postgresql_set.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

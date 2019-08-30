@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,94 +19,62 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../rst/network/user_guide/network_best_practices_2.5.rst:5
-msgid "Network Best Practices for Ansible 2.5"
+msgid "Ansible Network Examples"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:9
-msgid "Overview"
-msgstr ""
-
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:11
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:7
 msgid ""
-"This document explains the best practices for using Ansible 2.5 to manage"
-" your network infrastructure."
+"This document describes some examples of using Ansible to manage your "
+"network infrastructure."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:13
+msgid "Prerequisites"
 msgstr ""
 
 #: ../../rst/network/user_guide/network_best_practices_2.5.rst:15
-msgid "Audience"
+msgid "This example requires the following:"
 msgstr ""
 
 #: ../../rst/network/user_guide/network_best_practices_2.5.rst:17
 msgid ""
-"This example is intended for network or system administrators who want to"
-" understand how to use Ansible to manage network devices."
-msgstr ""
-
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:21
-msgid "Prerequisites"
-msgstr ""
-
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:23
-msgid "This example requires the following:"
-msgstr ""
-
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:25
-msgid ""
 "**Ansible 2.5** (or higher) installed. See "
-":doc:`../../installation_guide/intro_installation` for more information."
+":ref:`intro_installation_guide` for more information."
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:26
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:18
 msgid "One or more network devices that are compatible with Ansible."
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:27
-msgid "Basic understanding of YAML :doc:`../../reference_appendices/YAMLSyntax`."
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:19
+msgid "Basic understanding of YAML :ref:`yaml_syntax`."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:20
+msgid ""
+"Basic understanding of Jinja2 templates. See :ref:`playbooks_templating` "
+"for more information."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:21
+msgid "Basic Linux command line use."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:22
+msgid "Basic knowledge of network switch & router configurations."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:26
+msgid "Groups and variables in an inventory file"
 msgstr ""
 
 #: ../../rst/network/user_guide/network_best_practices_2.5.rst:28
 msgid ""
-"Basic understanding of Jinja2 Templates. See "
-":doc:`../../user_guide/playbooks_templating` for more information."
-msgstr ""
-
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:29
-msgid "Basic Linux command line use."
+"An ``inventory`` file is a YAML or INI-like configuration file that "
+"defines the mapping of hosts into groups."
 msgstr ""
 
 #: ../../rst/network/user_guide/network_best_practices_2.5.rst:30
-msgid "Basic knowledge of network switch & router configurations."
-msgstr ""
-
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:35
-msgid "Concepts"
-msgstr ""
-
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:37
-msgid ""
-"This section explains some fundamental concepts that you should "
-"understand when working with Ansible Networking."
-msgstr ""
-
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:40
-msgid "Structure"
-msgstr ""
-
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:42
-msgid "The examples on this page use the following structure:"
-msgstr ""
-
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:52
-msgid "Inventory, Connections, Credentials: Grouping Devices and Variables"
-msgstr ""
-
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:54
-msgid ""
-"An ``inventory`` file is an INI-like configuration file that defines the "
-"mapping of hosts into groups."
-msgstr ""
-
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:56
 msgid ""
 "In our example, the inventory file defines the groups ``eos``, ``ios``, "
 "``vyos`` and a \"group of groups\" called ``switches``. Further details "
@@ -114,43 +82,56 @@ msgid ""
 "inventory Group documentation <subgroups>`."
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:58
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:32
 msgid ""
 "Because Ansible is a flexible tool, there are a number of ways to specify"
 " connection information and credentials. We recommend using the "
 "``[my_group:vars]`` capability in your inventory file. Here's what it "
-"would look like if you specified your ssh passwords (encrypted with "
+"would look like if you specified your SSH passwords (encrypted with "
 "Ansible Vault) among your variables:"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:125
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:99
 msgid ""
-"If you use ssh-agent, you do not need the ``ansible_ssh_pass`` lines. If "
+"If you use ssh-agent, you do not need the ``ansible_password`` lines. If "
 "you use ssh keys, but not ssh-agent, and you have multiple keys, specify "
 "the key to use for each connection in the ``[group:vars]`` section with "
 "``ansible_ssh_private_key_file=/path/to/correct/key``. For more "
-"information on ``ansible_ssh_`` options see the "
-":ref:`behavioral_parameters`."
+"information on ``ansible_ssh_`` options see :ref:`behavioral_parameters`."
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:129
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:103
 msgid "Never store passwords in plain text."
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:131
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:106
+msgid "Ansible vault for password encryption"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:108
 msgid ""
 "The \"Vault\" feature of Ansible allows you to keep sensitive data such "
 "as passwords or keys in encrypted files, rather than as plain text in "
 "your playbooks or roles. These vault files can then be distributed or "
-"placed in source control. See :doc:`../../user_guide/playbooks_vault` for"
-" more information."
+"placed in source control. See :ref:`playbooks_vault` for more "
+"information."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:111
+msgid "Common inventory variables"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:113
+msgid ""
+"The following variables are common for all platforms in the inventory, "
+"though they can be overwritten for a particular inventory group or host."
 msgstr ""
 
 #: ../../rst/network/user_guide/network_best_practices_2.5.rst
 msgid "ansible_connection"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:135
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:117
 msgid ""
 "Ansible uses the ansible-connection setting to determine how to connect "
 "to a remote device. When working with Ansible Networking, set this to "
@@ -165,7 +146,7 @@ msgstr ""
 msgid "ansible_network_os"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:137
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:119
 msgid ""
 "Informs Ansible which Network platform this hosts corresponds to. This is"
 " required when using ``network_cli`` or ``netconf``."
@@ -175,7 +156,7 @@ msgstr ""
 msgid "ansible_user"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:138
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:120
 msgid ""
 "The user to connect to the remote device (switch) as. Without this the "
 "user that is running ``ansible-playbook`` would be used. Specifies which "
@@ -183,10 +164,10 @@ msgid ""
 msgstr ""
 
 #: ../../rst/network/user_guide/network_best_practices_2.5.rst
-msgid "ansible_ssh_pass"
+msgid "ansible_password"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:141
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:123
 msgid ""
 "The corresponding password for ``ansible_user`` to log in as. If not "
 "specified SSH key will be used."
@@ -196,7 +177,7 @@ msgstr ""
 msgid "ansible_become"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:143
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:125
 msgid "If enable mode (privilege mode) should be used, see the next section."
 msgstr ""
 
@@ -204,39 +185,39 @@ msgstr ""
 msgid "ansible_become_method"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:145
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:127
 msgid ""
 "Which type of `become` should be used, for ``network_cli`` the only valid"
 " choice is ``enable``."
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:148
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:130
 msgid "Privilege escalation"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:150
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:132
 msgid ""
-"Certain network platforms, such as eos and ios, have the concept of "
-"different privilege modes. Certain network modules, such as those that "
-"modify system state including users, will only work in high privilege "
-"states. Ansible version 2.5 added support for ``become`` when using "
-"``connection: network_cli``. This allows privileges to be raised for the "
-"specific tasks that need them. Adding ``become: yes`` and "
-"``become_method: enable`` informs Ansible to go into privilege mode "
-"before executing the task, as shown here:"
+"Certain network platforms, such as Arista EOS and Cisco IOS, have the "
+"concept of different privilege modes. Certain network modules, such as "
+"those that modify system state including users, will only work in high "
+"privilege states. Ansible supports ``become`` when using ``connection: "
+"network_cli``. This allows privileges to be raised for the specific tasks"
+" that need them. Adding ``become: yes`` and ``become_method: enable`` "
+"informs Ansible to go into privilege mode before executing the task, as "
+"shown here:"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:160
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:142
 msgid ""
 "For more information, see the :ref:`using become with network "
 "modules<become_network>` guide."
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:164
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:146
 msgid "Jump hosts"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:166
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:148
 msgid ""
 "If the Ansible Controller doesn't have a direct route to the remote "
 "device and you need to use a Jump Host, please see the :ref:`Ansible "
@@ -244,21 +225,17 @@ msgid ""
 "details on how to achieve this."
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:169
-msgid "Playbook"
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:151
+msgid "Example 1: collecting facts and creating backup files with a playbook"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:172
-msgid "Collect data"
-msgstr ""
-
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:174
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:153
 msgid ""
 "Ansible facts modules gather system information 'facts' that are "
 "available to the rest of your playbook."
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:176
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:155
 msgid ""
 "Ansible Networking ships with a number of network-specific facts modules."
 " In this example, we use the ``_facts`` modules :ref:`eos_facts "
@@ -269,7 +246,7 @@ msgid ""
 "file."
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:178
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:157
 msgid ""
 "Ansible's \"Network Fact modules\" gather information from the system and"
 " store the results in facts prefixed with ``ansible_net_``. The data "
@@ -279,7 +256,7 @@ msgid ""
 "``ansible_net_version`` late on in the \"Display some facts\" task."
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:180
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:159
 msgid ""
 "To ensure we call the correct mode (``*_facts``) the task is "
 "conditionally run based on the group defined in the inventory file, for "
@@ -287,94 +264,170 @@ msgid ""
 ":ref:`the_when_statement`."
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:184
-msgid "Example"
-msgstr ""
-
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:186
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:161
 msgid ""
 "In this example, we will create an inventory file containing some network"
 " switches, then run a playbook to connect to the network devices and "
 "return some information about them."
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:188
-msgid "**Create an inventory file**"
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:164
+msgid "Step 1: Creating the inventory"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:190
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:166
 msgid "First, create a file called ``inventory``, containing:"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:209
-msgid "**Create a playbook**"
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:186
+msgid "Step 2: Creating the playbook"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:211
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:188
 msgid ""
 "Next, create a playbook file called ``facts-demo.yml`` containing the "
 "following:"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:311
-msgid "Running the playbook"
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:288
+msgid "Step 3: Running the playbook"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:313
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:290
 msgid "To run the playbook, run the following from a console prompt:"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:319
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:296
 msgid "This should return output similar to the following:"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:328
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:306
+msgid "Step 4: Examining the playbook results"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:308
 msgid ""
 "Next, look at the contents of the file we created containing the switch "
 "facts:"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:334
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:314
 msgid "You can also look at the backup files:"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:341
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:321
 msgid ""
 "If `ansible-playbook` fails, please follow the debug steps in "
-":doc:`network_debug_troubleshooting`."
+":ref:`network_debug_troubleshooting`."
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:345
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:327
+msgid "Example 2: simplifying playbooks with network agnostic modules"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:329
+msgid ""
+"(This example originally appeared in the `Deep Dive on cli_command for "
+"Network Automation <https://www.ansible.com/blog/deep-dive-on-cli-"
+"command-for-network-automation>`_ blog post by Sean Cavanaugh -`@IPvSean "
+"<https://github.com/IPvSean>`_)."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:331
+msgid ""
+"If you have two or more network platforms in your environment, you can "
+"use the network agnostic modules to simplify your playbooks. You can use "
+"network agnostic modules such as ``cli_command`` or ``cli_config`` in "
+"place of the platform-specific modules such as ``eos_config``, "
+"``ios_config``, and ``junos_config``. This reduces the number of tasks "
+"and conditionals you need in your playbooks."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:334
+msgid ""
+"Network agnostic modules require the :ref:`network_cli "
+"<network_cli_connection>` connection plugin."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:338
+msgid "Sample playbook with platform-specific modules"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:340
+msgid ""
+"This example assumes three platforms, Arista EOS, Cisco NXOS, and Juniper"
+" JunOS.  Without the network agnostic modules, a sample playbook might "
+"contain the following three tasks with platform-specific commands:"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:361
+msgid "Simplified playbook with ``cli_command`` network agnostic module"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:363
+msgid ""
+"You can replace these platform-specific modules with the network agnostic"
+" ``cli_command`` module as follows:"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:410
+msgid ""
+"If you use groups and group_vars by platform type, this playbook can be "
+"further simplified to :"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:426
+msgid ""
+"You can see a full example of this using group_vars and also a "
+"configuration backup example at `Network agnostic examples "
+"<https://github.com/network-automation/agnostic_example>`_."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:429
+msgid "Using multiple prompts with the  ``cli_command``"
+msgstr ""
+
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:431
+msgid "The ``cli_command`` also supports multiple prompts."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:452
+msgid ""
+"See the :ref:`cli_command <cli_command_module>` for full documentation on"
+" this command."
+msgstr ""
+
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:456
 msgid "Implementation Notes"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:349
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:460
 msgid "Demo variables"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:351
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:462
 msgid ""
 "Although these tasks are not needed to write data to disk, they are used "
 "in this example to demonstrate some methods of accessing facts about the "
 "given devices or a named host."
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:353
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:464
 msgid ""
 "Ansible ``hostvars`` allows you to access variables from a named host. "
 "Without this we would return the details for the current host, rather "
 "than the named host."
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:355
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:466
 msgid "For more information, see :ref:`magic_variables_and_hostvars`."
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:358
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:469
 msgid "Get running configuration"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:360
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:471
 msgid ""
 "The :ref:`eos_config <eos_config_module>` and :ref:`vyos_config "
 "<vyos_config_module>` modules have a ``backup:`` option that when set "
@@ -384,40 +437,197 @@ msgid ""
 "If the directory does not exist, it is created."
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:362
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:473
 msgid ""
 "To demonstrate how we can move the backup file to a different location, "
 "we register the result and move the file to the path stored in "
 "``backup_path``."
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:364
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:475
 msgid ""
 "Note that when using variables from tasks in this way we use double "
 "quotes (``\"``) and double curly-brackets (``{{...}}`` to tell Ansible "
 "that this is a variable."
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:367
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:478
 msgid "Troubleshooting"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:369
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:480
 msgid ""
 "If you receive an connection error please double check the inventory and "
-"Playbook for typos or missing lines. If the issue still occurs follow the"
-" debug steps in :doc:`network_debug_troubleshooting`."
+"playbook for typos or missing lines. If the issue still occurs follow the"
+" debug steps in :ref:`network_debug_troubleshooting`."
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:373
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:484
 msgid ":ref:`network_guide`"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:374
-msgid ":doc:`../../user_guide/intro_inventory`"
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:485
+msgid ":ref:`intro_inventory`"
 msgstr ""
 
-#: ../../rst/network/user_guide/network_best_practices_2.5.rst:375
+#: ../../rst/network/user_guide/network_best_practices_2.5.rst:486
 msgid ":ref:`Vault best practices <best_practices_for_variables_and_vaults>`"
 msgstr ""
+
+#~ msgid "Network Best Practices for Ansible 2.5"
+#~ msgstr ""
+
+#~ msgid "Overview"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This document explains the best "
+#~ "practices for using Ansible 2.5 to "
+#~ "manage your network infrastructure."
+#~ msgstr ""
+
+#~ msgid "Audience"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This example is intended for network "
+#~ "or system administrators who want to "
+#~ "understand how to use Ansible to "
+#~ "manage network devices."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Ansible 2.5** (or higher) installed. "
+#~ "See :doc:`../../installation_guide/intro_installation` for"
+#~ " more information."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Basic understanding of YAML "
+#~ ":doc:`../../reference_appendices/YAMLSyntax`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Basic understanding of Jinja2 Templates. "
+#~ "See :doc:`../../user_guide/playbooks_templating` for "
+#~ "more information."
+#~ msgstr ""
+
+#~ msgid "Concepts"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This section explains some fundamental "
+#~ "concepts that you should understand when"
+#~ " working with Ansible Networking."
+#~ msgstr ""
+
+#~ msgid "Structure"
+#~ msgstr ""
+
+#~ msgid "The examples on this page use the following structure:"
+#~ msgstr ""
+
+#~ msgid "Inventory, Connections, Credentials: Grouping Devices and Variables"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An ``inventory`` file is an INI-"
+#~ "like configuration file that defines the"
+#~ " mapping of hosts into groups."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Because Ansible is a flexible tool, "
+#~ "there are a number of ways to "
+#~ "specify connection information and "
+#~ "credentials. We recommend using the "
+#~ "``[my_group:vars]`` capability in your "
+#~ "inventory file. Here's what it would "
+#~ "look like if you specified your "
+#~ "ssh passwords (encrypted with Ansible "
+#~ "Vault) among your variables:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you use ssh-agent, you do "
+#~ "not need the ``ansible_ssh_pass`` lines. "
+#~ "If you use ssh keys, but not "
+#~ "ssh-agent, and you have multiple "
+#~ "keys, specify the key to use for"
+#~ " each connection in the ``[group:vars]``"
+#~ " section with "
+#~ "``ansible_ssh_private_key_file=/path/to/correct/key``. For "
+#~ "more information on ``ansible_ssh_`` options"
+#~ " see the :ref:`behavioral_parameters`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The \"Vault\" feature of Ansible allows"
+#~ " you to keep sensitive data such "
+#~ "as passwords or keys in encrypted "
+#~ "files, rather than as plain text "
+#~ "in your playbooks or roles. These "
+#~ "vault files can then be distributed "
+#~ "or placed in source control. See "
+#~ ":doc:`../../user_guide/playbooks_vault` for more "
+#~ "information."
+#~ msgstr ""
+
+#~ msgid "ansible_ssh_pass"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Certain network platforms, such as eos"
+#~ " and ios, have the concept of "
+#~ "different privilege modes. Certain network "
+#~ "modules, such as those that modify "
+#~ "system state including users, will only"
+#~ " work in high privilege states. "
+#~ "Ansible version 2.5 added support for"
+#~ " ``become`` when using ``connection: "
+#~ "network_cli``. This allows privileges to "
+#~ "be raised for the specific tasks "
+#~ "that need them. Adding ``become: yes``"
+#~ " and ``become_method: enable`` informs "
+#~ "Ansible to go into privilege mode "
+#~ "before executing the task, as shown "
+#~ "here:"
+#~ msgstr ""
+
+#~ msgid "Playbook"
+#~ msgstr ""
+
+#~ msgid "Collect data"
+#~ msgstr ""
+
+#~ msgid "Example"
+#~ msgstr ""
+
+#~ msgid "**Create an inventory file**"
+#~ msgstr ""
+
+#~ msgid "**Create a playbook**"
+#~ msgstr ""
+
+#~ msgid "Running the playbook"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If `ansible-playbook` fails, please "
+#~ "follow the debug steps in "
+#~ ":doc:`network_debug_troubleshooting`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you receive an connection error "
+#~ "please double check the inventory and"
+#~ " Playbook for typos or missing lines."
+#~ " If the issue still occurs follow "
+#~ "the debug steps in "
+#~ ":doc:`network_debug_troubleshooting`."
+#~ msgstr ""
+
+#~ msgid ":doc:`../../user_guide/intro_inventory`"
+#~ msgstr ""
 

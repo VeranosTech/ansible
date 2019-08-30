@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,9 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/unarchive_module.rst:19
-msgid "The ``unarchive`` module unpacks an archive."
+msgid ""
+"The ``unarchive`` module unpacks an archive. It will not unpack a "
+"compressed file that does not contain an archive."
 msgstr ""
 
 #: ../../rst/modules/unarchive_module.rst:20
@@ -66,7 +68,7 @@ msgid "Notes"
 msgstr ""
 
 #: ../../rst/modules/unarchive_module.rst:361
-msgid "Requires ``gtar``/``unzip`` command on target host."
+msgid "Requires ``zipinfo`` and ``gtar``/``unzip`` command on target host."
 msgstr ""
 
 #: ../../rst/modules/unarchive_module.rst:362
@@ -77,97 +79,117 @@ msgstr ""
 
 #: ../../rst/modules/unarchive_module.rst:363
 msgid ""
+"Does not handle *.gz* files, *.bz2* files or *.xz* files that do not "
+"contain a *.tar* archive."
+msgstr ""
+
+#: ../../rst/modules/unarchive_module.rst:364
+msgid ""
 "Uses gtar's ``--diff`` arg to calculate if changed or not. If this "
 "``arg`` is not supported, it will always unpack the archive."
 msgstr ""
 
-#: ../../rst/modules/unarchive_module.rst:364
+#: ../../rst/modules/unarchive_module.rst:365
 msgid ""
 "Existing files/directories in the destination which are not in the "
 "archive are not touched. This is the same behavior as a normal archive "
 "extraction."
 msgstr ""
 
-#: ../../rst/modules/unarchive_module.rst:365
+#: ../../rst/modules/unarchive_module.rst:366
 msgid ""
 "Existing files/directories in the destination which are not in the "
 "archive are ignored for purposes of deciding if the archive should be "
 "unpacked or not."
 msgstr ""
 
-#: ../../rst/modules/unarchive_module.rst:369
+#: ../../rst/modules/unarchive_module.rst:370
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/unarchive_module.rst:373
+#: ../../rst/modules/unarchive_module.rst:374
 msgid ":ref:`archive_module`"
 msgstr ""
 
-#: ../../rst/modules/unarchive_module.rst:374
+#: ../../rst/modules/unarchive_module.rst:375
 msgid "The official documentation on the **archive** module."
 msgstr ""
 
-#: ../../rst/modules/unarchive_module.rst:375
+#: ../../rst/modules/unarchive_module.rst:376
 msgid ":ref:`iso_extract_module`"
 msgstr ""
 
-#: ../../rst/modules/unarchive_module.rst:376
+#: ../../rst/modules/unarchive_module.rst:377
 msgid "The official documentation on the **iso_extract** module."
 msgstr ""
 
-#: ../../rst/modules/unarchive_module.rst:377
+#: ../../rst/modules/unarchive_module.rst:378
 msgid ":ref:`win_unzip_module`"
 msgstr ""
 
-#: ../../rst/modules/unarchive_module.rst:378
+#: ../../rst/modules/unarchive_module.rst:379
 msgid "The official documentation on the **win_unzip** module."
 msgstr ""
 
-#: ../../rst/modules/unarchive_module.rst:382
+#: ../../rst/modules/unarchive_module.rst:383
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/unarchive_module.rst:417
+#: ../../rst/modules/unarchive_module.rst:418
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/unarchive_module.rst:422
+#: ../../rst/modules/unarchive_module.rst:423
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/unarchive_module.rst:425
+#: ../../rst/modules/unarchive_module.rst:426
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/unarchive_module.rst:428
+#: ../../rst/modules/unarchive_module.rst:429
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/unarchive_module.rst:430
+#: ../../rst/modules/unarchive_module.rst:431
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/unarchive_module.rst:436
+#: ../../rst/modules/unarchive_module.rst:437
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/unarchive_module.rst:438
+#: ../../rst/modules/unarchive_module.rst:439
 msgid "Michael DeHaan"
 msgstr ""
 
-#: ../../rst/modules/unarchive_module.rst:442
+#: ../../rst/modules/unarchive_module.rst:443
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/files/unarchive.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/files/unarchive.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "The ``unarchive`` module unpacks an archive."
+#~ msgstr ""
+
+#~ msgid "Requires ``gtar``/``unzip`` command on target host."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/files/unarchive.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

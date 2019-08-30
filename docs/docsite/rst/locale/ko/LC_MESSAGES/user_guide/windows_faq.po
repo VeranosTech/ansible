@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,141 +18,151 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-#: ../../rst/user_guide/windows_faq.rst:2
+#: ../../rst/user_guide/windows_faq.rst:4
 msgid "Windows Frequently Asked Questions"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:4
+#: ../../rst/user_guide/windows_faq.rst:6
 msgid ""
 "Here are some commonly asked questions in regards to Ansible and Windows "
 "and their answers."
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:7
+#: ../../rst/user_guide/windows_faq.rst:9
 msgid ""
 "This document covers questions about managing Microsoft Windows servers "
-"with Ansible. For questions about Ansible Core, please see the :ref:`FAQ "
-"page <ansible_faq>`."
+"with Ansible. For questions about Ansible Core, please see the "
+":ref:`general FAQ page <ansible_faq>`."
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:12
+#: ../../rst/user_guide/windows_faq.rst:14
 msgid "Does Ansible work with Windows XP or Server 2003?"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:13
+#: ../../rst/user_guide/windows_faq.rst:15
 msgid ""
-"Ansible does not support managing Windows XP or Server 2003 hosts. The "
-"supported operating system versions are:"
-msgstr ""
-
-#: ../../rst/user_guide/windows_faq.rst:16
-msgid "Windows Server 2008"
+"Ansible does not work with Windows XP or Server 2003 hosts. Ansible does "
+"work with these Windows operating system versions:"
 msgstr ""
 
 #: ../../rst/user_guide/windows_faq.rst:17
-msgid "Windows Server 2008 R2"
+msgid "Windows Server 2008"
 msgstr ""
 
 #: ../../rst/user_guide/windows_faq.rst:18
-msgid "Windows Server 2012"
+msgid "Windows Server 2008 R2"
 msgstr ""
 
 #: ../../rst/user_guide/windows_faq.rst:19
-msgid "Windows Server 2012 R2"
+msgid "Windows Server 2012"
 msgstr ""
 
 #: ../../rst/user_guide/windows_faq.rst:20
-msgid "Windows Server 2016"
+msgid "Windows Server 2012 R2"
 msgstr ""
 
 #: ../../rst/user_guide/windows_faq.rst:21
-msgid "Windows 7"
+msgid "Windows Server 2016"
 msgstr ""
 
 #: ../../rst/user_guide/windows_faq.rst:22
-msgid "Windows 8.1"
+msgid "Windows Server 2019"
 msgstr ""
 
 #: ../../rst/user_guide/windows_faq.rst:23
-msgid "Windows 10"
+msgid "Windows 7"
+msgstr ""
+
+#: ../../rst/user_guide/windows_faq.rst:24
+msgid "Windows 8.1"
 msgstr ""
 
 #: ../../rst/user_guide/windows_faq.rst:25
+msgid "Windows 10"
+msgstr ""
+
+#: ../../rst/user_guide/windows_faq.rst:27
 msgid ""
 "Ansible also has minimum PowerShell version requirements - please see "
-":doc:`windows_setup` for the latest information."
+":ref:`windows_setup` for the latest information."
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:29
-msgid "Can I Manage Windows Nano Server?"
+#: ../../rst/user_guide/windows_faq.rst:31
+msgid "Can I manage Windows Nano Server with Ansible?"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:30
+#: ../../rst/user_guide/windows_faq.rst:32
 msgid ""
-"Windows Nano Server is not currently supported by Ansible, since it does "
+"Ansible does not currently work with Windows Nano Server, since it does "
 "not have access to the full .NET Framework that is used by the majority "
 "of the modules and internal components."
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:35
+#: ../../rst/user_guide/windows_faq.rst:37
 msgid "Can Ansible run on Windows?"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:36
+#: ../../rst/user_guide/windows_faq.rst:38
 msgid ""
-"No, Ansible cannot run on a Windows host natively and can only manage "
-"Windows hosts, but Ansible can be run under the Windows Subsystem for "
+"No, Ansible can only manage Windows hosts. Ansible cannot run on a "
+"Windows host natively, though it can run under the Windows Subsystem for "
 "Linux (WSL)."
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:39
+#: ../../rst/user_guide/windows_faq.rst:41
 msgid ""
 "The Windows Subsystem for Linux is not supported by Ansible and should "
 "not be used for production systems."
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:42
+#: ../../rst/user_guide/windows_faq.rst:44
 msgid ""
 "To install Ansible on WSL, the following commands can be run in the bash "
 "terminal:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:51
+#: ../../rst/user_guide/windows_faq.rst:53
 msgid ""
 "To run Ansible from source instead of a release on the WSL, simply "
 "uninstall the pip installed version and then clone the git repo."
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:64
-msgid "Can I use SSH keys to authenticate?"
+#: ../../rst/user_guide/windows_faq.rst:66
+msgid "Can I use SSH keys to authenticate to Windows hosts?"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:65
+#: ../../rst/user_guide/windows_faq.rst:67
 msgid ""
-"Windows uses WinRM as the transport protocol. WinRM supports a wide range"
-" of authentication options. The closet option to SSH keys is to use the "
-"certificate authentication option which maps an X509 certificate to a "
-"local user."
+"You cannot use SSH keys with the WinRM or PSRP connection plugins. These "
+"connection plugins use X509 certificates for authentication instead of "
+"the SSH key pairs that SSH uses."
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:69
+#: ../../rst/user_guide/windows_faq.rst:71
 msgid ""
-"The way that these certificates are generated and mapped to a user is "
-"different from the SSH implementation; consult the :doc:`windows_winrm` "
+"The way X509 certificates are generated and mapped to a user is different"
+" from the SSH implementation; consult the :ref:`windows_winrm` "
 "documentation for more information."
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:76
+#: ../../rst/user_guide/windows_faq.rst:75
+msgid ""
+"Ansible 2.8 has added an experimental option to use the SSH connection "
+"plugin, which uses SSH keys for authentication, for Windows servers. See "
+":ref:`this question <windows_faq_ssh>` for more information."
+msgstr ""
+
+#: ../../rst/user_guide/windows_faq.rst:82
 msgid "Why can I run a command locally that does not work under Ansible?"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:77
+#: ../../rst/user_guide/windows_faq.rst:83
 msgid ""
 "Ansible executes commands through WinRM. These processes are different "
 "from running a command locally in these ways:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:80
+#: ../../rst/user_guide/windows_faq.rst:86
 msgid ""
 "Unless using an authentication option like CredSSP or Kerberos with "
 "credential delegation, the WinRM process does not have the ability to "
@@ -160,177 +170,175 @@ msgid ""
 "is Denied`` errors."
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:85
+#: ../../rst/user_guide/windows_faq.rst:91
 msgid ""
 "All processes run under WinRM are in a non-interactive session. "
 "Applications that require an interactive session will not work."
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:88
+#: ../../rst/user_guide/windows_faq.rst:94
 msgid ""
 "When running through WinRM, Windows restricts access to internal Windows "
 "APIs like the Windows Update API and DPAPI, which some installers and "
 "programs rely on."
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:92
+#: ../../rst/user_guide/windows_faq.rst:98
 msgid "Some ways to bypass these restrictions are to:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:94
+#: ../../rst/user_guide/windows_faq.rst:100
 msgid ""
 "Use ``become``, which runs a command as it would when run locally. This "
 "will bypass most WinRM restrictions, as Windows is unaware the process is"
-" running under WinRM when ``become`` is used. See the :doc:`become` "
+" running under WinRM when ``become`` is used. See the :ref:`become` "
 "documentation for more information."
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:99
+#: ../../rst/user_guide/windows_faq.rst:105
 msgid ""
 "Use a scheduled task, which can be created with ``win_scheduled_task``. "
 "Like ``become``, it will bypass all WinRM restrictions, but it can only "
 "be used to run commands, not modules."
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:103
+#: ../../rst/user_guide/windows_faq.rst:109
 msgid ""
 "Use ``win_psexec`` to run a command on the host. PSExec does not use "
 "WinRM and so will bypass any of the restrictions."
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:106
+#: ../../rst/user_guide/windows_faq.rst:112
 msgid ""
-"To access network resources without any of these workarounds, an "
-"authentication option that supports credential delegation can be used. "
-"Both CredSSP and Kerberos with credential delegation enabled can support "
-"this."
-msgstr ""
-
-#: ../../rst/user_guide/windows_faq.rst:110
-msgid ""
-"See :doc:`become` more info on how to use become. The limitations section"
-" at :doc:`windows_winrm` has more details around WinRM limitations."
-msgstr ""
-
-#: ../../rst/user_guide/windows_faq.rst:114
-msgid "This program won't install with Ansible"
+"To access network resources without any of these workarounds, you can use"
+" CredSSP or Kerberos with credential delegation enabled."
 msgstr ""
 
 #: ../../rst/user_guide/windows_faq.rst:115
+msgid ""
+"See :ref:`become` more info on how to use become. The limitations section"
+" at :ref:`windows_winrm` has more details around WinRM limitations."
+msgstr ""
+
+#: ../../rst/user_guide/windows_faq.rst:119
+msgid "This program won't install on Windows with Ansible"
+msgstr ""
+
+#: ../../rst/user_guide/windows_faq.rst:120
 msgid ""
 "See :ref:`this question <windows_faq_winrm>` for more information about "
 "WinRM limitations."
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:118
-msgid "What modules are available?"
+#: ../../rst/user_guide/windows_faq.rst:123
+msgid "What Windows modules are available?"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:119
+#: ../../rst/user_guide/windows_faq.rst:124
 msgid ""
 "Most of the Ansible modules in Ansible Core are written for a combination"
 " of Linux/Unix machines and arbitrary web services. These modules are "
 "written in Python and most of them do not work on Windows."
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:123
+#: ../../rst/user_guide/windows_faq.rst:128
 msgid ""
 "Because of this, there are dedicated Windows modules that are written in "
 "PowerShell and are meant to be run on Windows hosts. A list of these "
 "modules can be found :ref:`here <windows_modules>`."
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:127
+#: ../../rst/user_guide/windows_faq.rst:132
 msgid ""
 "In addition, the following Ansible Core modules/action-plugins work with "
 "Windows:"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:129
+#: ../../rst/user_guide/windows_faq.rst:134
 msgid "add_host"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:130
+#: ../../rst/user_guide/windows_faq.rst:135
 msgid "assert"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:131
+#: ../../rst/user_guide/windows_faq.rst:136
 msgid "async_status"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:132
+#: ../../rst/user_guide/windows_faq.rst:137
 msgid "debug"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:133
+#: ../../rst/user_guide/windows_faq.rst:138
 msgid "fail"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:134
+#: ../../rst/user_guide/windows_faq.rst:139
 msgid "fetch"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:135
+#: ../../rst/user_guide/windows_faq.rst:140
 msgid "group_by"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:136
+#: ../../rst/user_guide/windows_faq.rst:141
 msgid "include"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:137
+#: ../../rst/user_guide/windows_faq.rst:142
 msgid "include_role"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:138
+#: ../../rst/user_guide/windows_faq.rst:143
 msgid "include_vars"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:139
+#: ../../rst/user_guide/windows_faq.rst:144
 msgid "meta"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:140
+#: ../../rst/user_guide/windows_faq.rst:145
 msgid "pause"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:141
+#: ../../rst/user_guide/windows_faq.rst:146
 msgid "raw"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:142
+#: ../../rst/user_guide/windows_faq.rst:147
 msgid "script"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:143
+#: ../../rst/user_guide/windows_faq.rst:148
 msgid "set_fact"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:144
+#: ../../rst/user_guide/windows_faq.rst:149
 msgid "set_stats"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:145
+#: ../../rst/user_guide/windows_faq.rst:150
 msgid "setup"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:146
+#: ../../rst/user_guide/windows_faq.rst:151
 msgid "slurp"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:147
+#: ../../rst/user_guide/windows_faq.rst:152
 msgid "template (also: win_template)"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:148
+#: ../../rst/user_guide/windows_faq.rst:153
 msgid "wait_for_connection"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:151
-msgid "Can I run Python modules?"
+#: ../../rst/user_guide/windows_faq.rst:156
+msgid "Can I run Python modules on Windows hosts?"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:152
+#: ../../rst/user_guide/windows_faq.rst:157
 msgid ""
 "No, the WinRM connection protocol is set to use PowerShell modules, so "
 "Python modules will not work. A way to bypass this issue to use "
@@ -340,61 +348,74 @@ msgid ""
 "available."
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:159
-msgid "Can I connect over SSH?"
-msgstr ""
-
-#: ../../rst/user_guide/windows_faq.rst:160
-msgid ""
-"Microsoft has announced and is developing a fork of OpenSSH for Windows "
-"that allows remote manage of Windows servers through the SSH protocol "
-"instead of WinRM. While this can be installed and used right now for "
-"normal SSH clients, it is still in beta from Microsoft and the required "
-"functionality has not been developed within Ansible yet."
-msgstr ""
-
 #: ../../rst/user_guide/windows_faq.rst:166
+msgid "Can I connect to Windows hosts over SSH?"
+msgstr ""
+
+#: ../../rst/user_guide/windows_faq.rst:167
 msgid ""
-"There are future plans on adding this feature and this page will be "
-"updated once more information can be shared."
+"Ansible 2.8 has added an experimental option to use the SSH connection "
+"plugin to manage Windows hosts. To connect to Windows hosts over SSH, you"
+" must install and configure the `Win32-OpenSSH "
+"<https://github.com/PowerShell/Win32-OpenSSH>`_ fork that is in "
+"development with Microsoft on the Windows host(s). While most of the "
+"basics should work with SSH, ``Win32-OpenSSH`` is rapidly changing, with "
+"new features added and bugs fixed in every release. It is highly "
+"recommend you install the latest release of ``Win32-OpenSSH`` from the "
+"GitHub Releases page when using it with Ansible on Windows hosts."
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:170
-msgid "Why is connecting to the host via ssh failing?"
-msgstr ""
-
-#: ../../rst/user_guide/windows_faq.rst:171
+#: ../../rst/user_guide/windows_faq.rst:176
 msgid ""
-"When trying to connect to a Windows host and the output error indicates "
-"that SSH was used, then this is an indication that the connection vars "
-"are not set properly or the host is not inheriting them correctly."
+"To use SSH as the connection to a Windows host, set the following "
+"variables in the inventory::"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:175
+#: ../../rst/user_guide/windows_faq.rst:185
+msgid ""
+"The value for ``ansible_shell_type`` should either be ``cmd`` or "
+"``powershell``. Use ``cmd`` if the ``DefaultShell`` has not been "
+"configured on the SSH service and ``powershell`` if that has been set as "
+"the ``DefaultShell``."
+msgstr ""
+
+#: ../../rst/user_guide/windows_faq.rst:190
+msgid "Why is connecting to a Windows host via SSH failing?"
+msgstr ""
+
+#: ../../rst/user_guide/windows_faq.rst:191
+msgid ""
+"Unless you are using ``Win32-OpenSSH`` as described above, you must "
+"connect to Windows hosts using :ref:`windows_winrm`. If your Ansible "
+"output indicates that SSH was used, either you did not set the connection"
+" vars properly or the host is not inheriting them correctly."
+msgstr ""
+
+#: ../../rst/user_guide/windows_faq.rst:195
 msgid ""
 "Make sure ``ansible_connection: winrm`` is set in the inventory for the "
-"Windows host."
+"Windows host(s)."
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:179
+#: ../../rst/user_guide/windows_faq.rst:199
 msgid "Why are my credentials being rejected?"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:180
+#: ../../rst/user_guide/windows_faq.rst:200
 msgid "This can be due to a myriad of reasons unrelated to incorrect credentials."
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:182
+#: ../../rst/user_guide/windows_faq.rst:202
 msgid ""
-"See HTTP 401/Credentials Rejected at :doc:`windows_setup` for a more "
+"See HTTP 401/Credentials Rejected at :ref:`windows_setup` for a more "
 "detailed guide of this could mean."
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:186
+#: ../../rst/user_guide/windows_faq.rst:206
 msgid "Why am I getting an error SSL CERTIFICATE_VERIFY_FAILED?"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:187
+#: ../../rst/user_guide/windows_faq.rst:207
 msgid ""
 "When the Ansible controller is running on Python 2.7.9+ or an older "
 "version of Python that has backported SSLContext (like Python 2.7.5 on "
@@ -404,58 +425,211 @@ msgid ""
 "verification process."
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:193
+#: ../../rst/user_guide/windows_faq.rst:213
 msgid ""
 "To ignore certificate validation, add "
 "``ansible_winrm_server_cert_validation: ignore`` to inventory for the "
 "Windows host."
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:199
-msgid ":doc:`index`"
+#: ../../rst/user_guide/windows_faq.rst:219
+msgid ":ref:`windows`"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:200
-msgid "The documentation index"
-msgstr ""
-
-#: ../../rst/user_guide/windows_faq.rst:201
-msgid ":doc:`windows`"
-msgstr ""
-
-#: ../../rst/user_guide/windows_faq.rst:202
+#: ../../rst/user_guide/windows_faq.rst:220
 msgid "The Windows documentation index"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:203
-msgid ":doc:`playbooks`"
+#: ../../rst/user_guide/windows_faq.rst:221
+msgid ":ref:`about_playbooks`"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:204
+#: ../../rst/user_guide/windows_faq.rst:222
 msgid "An introduction to playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:205
-msgid ":doc:`playbooks_best_practices`"
+#: ../../rst/user_guide/windows_faq.rst:223
+msgid ":ref:`playbooks_best_practices`"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:206
+#: ../../rst/user_guide/windows_faq.rst:224
 msgid "Best practices advice"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:207
+#: ../../rst/user_guide/windows_faq.rst:225
 msgid "`User Mailing List <https://groups.google.com/group/ansible-project>`_"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:208
+#: ../../rst/user_guide/windows_faq.rst:226
 msgid "Have a question?  Stop by the google group!"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:209
+#: ../../rst/user_guide/windows_faq.rst:227
 msgid "`irc.freenode.net <http://irc.freenode.net>`_"
 msgstr ""
 
-#: ../../rst/user_guide/windows_faq.rst:210
+#: ../../rst/user_guide/windows_faq.rst:228
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ""
+#~ "This document covers questions about "
+#~ "managing Microsoft Windows servers with "
+#~ "Ansible. For questions about Ansible "
+#~ "Core, please see the :ref:`FAQ page "
+#~ "<ansible_faq>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Ansible does not support managing "
+#~ "Windows XP or Server 2003 hosts. "
+#~ "The supported operating system versions "
+#~ "are:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Ansible also has minimum PowerShell "
+#~ "version requirements - please see "
+#~ ":doc:`windows_setup` for the latest "
+#~ "information."
+#~ msgstr ""
+
+#~ msgid "Can I Manage Windows Nano Server?"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Windows Nano Server is not currently "
+#~ "supported by Ansible, since it does "
+#~ "not have access to the full .NET"
+#~ " Framework that is used by the "
+#~ "majority of the modules and internal "
+#~ "components."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "No, Ansible cannot run on a "
+#~ "Windows host natively and can only "
+#~ "manage Windows hosts, but Ansible can"
+#~ " be run under the Windows Subsystem"
+#~ " for Linux (WSL)."
+#~ msgstr ""
+
+#~ msgid "Can I use SSH keys to authenticate?"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Windows uses WinRM as the transport "
+#~ "protocol. WinRM supports a wide range"
+#~ " of authentication options. The closet "
+#~ "option to SSH keys is to use "
+#~ "the certificate authentication option which"
+#~ " maps an X509 certificate to a "
+#~ "local user."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The way that these certificates are "
+#~ "generated and mapped to a user is"
+#~ " different from the SSH implementation; "
+#~ "consult the :doc:`windows_winrm` documentation "
+#~ "for more information."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Use ``become``, which runs a command "
+#~ "as it would when run locally. This"
+#~ " will bypass most WinRM restrictions, "
+#~ "as Windows is unaware the process "
+#~ "is running under WinRM when ``become``"
+#~ " is used. See the :doc:`become` "
+#~ "documentation for more information."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To access network resources without any"
+#~ " of these workarounds, an authentication"
+#~ " option that supports credential delegation"
+#~ " can be used. Both CredSSP and "
+#~ "Kerberos with credential delegation enabled"
+#~ " can support this."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "See :doc:`become` more info on how "
+#~ "to use become. The limitations section"
+#~ " at :doc:`windows_winrm` has more details"
+#~ " around WinRM limitations."
+#~ msgstr ""
+
+#~ msgid "This program won't install with Ansible"
+#~ msgstr ""
+
+#~ msgid "What modules are available?"
+#~ msgstr ""
+
+#~ msgid "Can I run Python modules?"
+#~ msgstr ""
+
+#~ msgid "Can I connect over SSH?"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Microsoft has announced and is "
+#~ "developing a fork of OpenSSH for "
+#~ "Windows that allows remote manage of "
+#~ "Windows servers through the SSH protocol"
+#~ " instead of WinRM. While this can "
+#~ "be installed and used right now "
+#~ "for normal SSH clients, it is "
+#~ "still in beta from Microsoft and "
+#~ "the required functionality has not been"
+#~ " developed within Ansible yet."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "There are future plans on adding "
+#~ "this feature and this page will be"
+#~ " updated once more information can be"
+#~ " shared."
+#~ msgstr ""
+
+#~ msgid "Why is connecting to the host via ssh failing?"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When trying to connect to a "
+#~ "Windows host and the output error "
+#~ "indicates that SSH was used, then "
+#~ "this is an indication that the "
+#~ "connection vars are not set properly "
+#~ "or the host is not inheriting them"
+#~ " correctly."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Make sure ``ansible_connection: winrm`` is "
+#~ "set in the inventory for the "
+#~ "Windows host."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "See HTTP 401/Credentials Rejected at "
+#~ ":doc:`windows_setup` for a more detailed "
+#~ "guide of this could mean."
+#~ msgstr ""
+
+#~ msgid ":doc:`index`"
+#~ msgstr ""
+
+#~ msgid "The documentation index"
+#~ msgstr ""
+
+#~ msgid ":doc:`windows`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks_best_practices`"
+#~ msgstr ""
 

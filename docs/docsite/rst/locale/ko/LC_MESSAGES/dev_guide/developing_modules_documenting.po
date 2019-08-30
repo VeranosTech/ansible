@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,28 +80,30 @@ msgid ""
 msgstr ""
 
 #: ../../rst/dev_guide/developing_modules_documenting.rst:27
-msgid "Python shebang"
+msgid "Python shebang & UTF-8 coding"
 msgstr ""
 
 #: ../../rst/dev_guide/developing_modules_documenting.rst:29
 msgid ""
 "Every Ansible module must begin with ``#!/usr/bin/python`` - this "
-"\"shebang\" allows ``ansible_python_interpreter`` to work."
+"\"shebang\" allows ``ansible_python_interpreter`` to work. This is "
+"immediately followed by ``# -*- coding: utf-8 -*-`` to clarify that the "
+"file is UTF-8 encoded."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:34
+#: ../../rst/dev_guide/developing_modules_documenting.rst:35
 msgid "Copyright and license"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:36
+#: ../../rst/dev_guide/developing_modules_documenting.rst:37
 msgid ""
-"After the shebang, there should be a `copyright line "
+"After the shebang and UTF-8 coding, there should be a `copyright line "
 "<https://www.gnu.org/licenses/gpl-howto.en.html>`_ with the original "
 "copyright holder and a license declaration. The license declaration "
 "should be ONLY one line, not the full GPL prefix.:"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:45
+#: ../../rst/dev_guide/developing_modules_documenting.rst:47
 msgid ""
 "Major additions to the module (for instance, rewrites) may add additional"
 " copyright lines. Any legal review will include the source control "
@@ -110,31 +112,31 @@ msgid ""
 "newer line above the older one:"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:58
+#: ../../rst/dev_guide/developing_modules_documenting.rst:61
 msgid "ANSIBLE_METADATA block"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:60
+#: ../../rst/dev_guide/developing_modules_documenting.rst:63
 msgid ""
-"After the shebang, the copyright, and the license, your module file "
-"should contain an ``ANSIBLE_METADATA`` section. This section provides "
-"information about the module for use by other tools. For new modules, the"
-" following block can be simply added into your module:"
+"After the shebang, the UTF-8 coding, the copyright, and the license, your"
+" module file should contain an ``ANSIBLE_METADATA`` section. This section"
+" provides information about the module for use by other tools. For new "
+"modules, the following block can be simply added into your module:"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:70
+#: ../../rst/dev_guide/developing_modules_documenting.rst:73
 msgid ""
 "``metadata_version`` is the version of the ``ANSIBLE_METADATA`` schema, "
 "*not* the version of the module."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:71
+#: ../../rst/dev_guide/developing_modules_documenting.rst:74
 msgid ""
 "Promoting a module's ``status`` or ``supported_by`` status should only be"
 " done by members of the Ansible Core Team."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:74
+#: ../../rst/dev_guide/developing_modules_documenting.rst:77
 msgid "Ansible metadata fields"
 msgstr ""
 
@@ -142,7 +144,7 @@ msgstr ""
 msgid "metadata_version"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:76
+#: ../../rst/dev_guide/developing_modules_documenting.rst:79
 msgid ""
 "An \"X.Y\" formatted string. X and Y are integers which define the "
 "metadata format version. Modules shipped with Ansible are tied to an "
@@ -156,30 +158,30 @@ msgstr ""
 msgid "supported_by"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:84
+#: ../../rst/dev_guide/developing_modules_documenting.rst:87
 msgid ""
 "Who supports the module. Default value is ``community``. For information "
 "on what the support level values entail, please see :ref:`Modules Support"
 " <modules_support>`. Values are:"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:88
+#: ../../rst/dev_guide/developing_modules_documenting.rst:91
 msgid "core"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:89
+#: ../../rst/dev_guide/developing_modules_documenting.rst:92
 msgid "network"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:90
+#: ../../rst/dev_guide/developing_modules_documenting.rst:93
 msgid "certified"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:91
+#: ../../rst/dev_guide/developing_modules_documenting.rst:94
 msgid "community"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:92
+#: ../../rst/dev_guide/developing_modules_documenting.rst:95
 msgid ""
 "curated (*deprecated value - modules in this category should be core or "
 "certified instead*)"
@@ -189,7 +191,7 @@ msgstr ""
 msgid "status"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:95
+#: ../../rst/dev_guide/developing_modules_documenting.rst:98
 msgid ""
 "List of strings describing how stable the module is likely to be. See "
 "also :ref:`module_lifecycle`. The default value is a single element list "
@@ -201,20 +203,20 @@ msgstr ""
 msgid "stableinterface"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:99
+#: ../../rst/dev_guide/developing_modules_documenting.rst:102
 msgid ""
-"The module's parameters are stable. Every effort will be made not to "
-"remove parameters or change their meaning. **Not** a rating of the "
-"module's code quality."
+"The module's options (the parameters or arguments it accepts) are stable."
+" Every effort will be made not to remove options or change their meaning."
+" **Not** a rating of the module's code quality."
 msgstr ""
 
 #: ../../rst/dev_guide/developing_modules_documenting.rst
 msgid "preview"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:101
+#: ../../rst/dev_guide/developing_modules_documenting.rst:104
 msgid ""
-"The module is in tech preview. It may be unstable, the parameters may "
+"The module is in tech preview. It may be unstable, the options may "
 "change, or it may require libraries or web services that are themselves "
 "subject to incompatible changes."
 msgstr ""
@@ -223,7 +225,7 @@ msgstr ""
 msgid "deprecated"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:104
+#: ../../rst/dev_guide/developing_modules_documenting.rst:107
 msgid "The module is deprecated and will be removed in a future release."
 msgstr ""
 
@@ -231,34 +233,35 @@ msgstr ""
 msgid "removed"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:105
+#: ../../rst/dev_guide/developing_modules_documenting.rst:108
 msgid ""
 "The module is not present in the release. A stub is kept so that "
 "documentation can be built. The documentation helps users port from the "
 "removed module to new modules."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:112
+#: ../../rst/dev_guide/developing_modules_documenting.rst:115
 msgid "DOCUMENTATION block"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:114
+#: ../../rst/dev_guide/developing_modules_documenting.rst:117
 msgid ""
-"After the shebang, the copyright line, the license, and the "
-"``ANSIBLE_METADATA`` section comes the ``DOCUMENTATION`` block. Ansible's"
-" online module documentation is generated from the ``DOCUMENTATION`` "
-"blocks in each module's source code. The ``DOCUMENTATION`` block must be "
-"valid YAML. You may find it easier to start writing your "
-"``DOCUMENTATION`` string in an :ref:`editor with YAML syntax highlighting"
-" <other_tools_and_programs>` before you include it in your Python file. "
-"You can start by copying our `example documentation string "
+"After the shebang, the UTF-8 coding, the copyright line, the license, and"
+" the ``ANSIBLE_METADATA`` section comes the ``DOCUMENTATION`` block. "
+"Ansible's online module documentation is generated from the "
+"``DOCUMENTATION`` blocks in each module's source code. The "
+"``DOCUMENTATION`` block must be valid YAML. You may find it easier to "
+"start writing your ``DOCUMENTATION`` string in an :ref:`editor with YAML "
+"syntax highlighting <other_tools_and_programs>` before you include it in "
+"your Python file. You can start by copying our `example documentation "
+"string "
 "<https://github.com/ansible/ansible/blob/devel/examples/DOCUMENTATION.yml>`_"
 " into your module file and modifying it. If you run into syntax issues in"
 " your YAML, you can validate it on the `YAML Lint "
 "<http://www.yamllint.com/>`_ website."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:121
+#: ../../rst/dev_guide/developing_modules_documenting.rst:124
 msgid ""
 "Module documentation should briefly and accurately define what each "
 "module and option does, and how it works with others in the underlying "
@@ -266,39 +269,40 @@ msgid ""
 " by experts and non-experts."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:117
+#: ../../rst/dev_guide/developing_modules_documenting.rst:120
 msgid ""
 "Descriptions should always start with a capital letter and end with a "
 "full stop. Consistency always helps."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:118
+#: ../../rst/dev_guide/developing_modules_documenting.rst:121
 msgid "Verify that arguments in doc and module spec dict are identical."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:119
+#: ../../rst/dev_guide/developing_modules_documenting.rst:122
 msgid "For password / secret arguments no_log=True should be set."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:120
+#: ../../rst/dev_guide/developing_modules_documenting.rst:123
+#: ../../rst/dev_guide/developing_modules_documenting.rst:188
 msgid ""
-"If an optional parameter is sometimes required, reflect this fact in the "
-"documentation, e.g. \"Required when C(state=present).\""
+"If an option is only sometimes required, describe the conditions. For "
+"example, \"Required when I(state=present).\""
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:121
+#: ../../rst/dev_guide/developing_modules_documenting.rst:124
 msgid ""
 "If your module allows ``check_mode``, reflect this fact in the "
 "documentation."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:123
+#: ../../rst/dev_guide/developing_modules_documenting.rst:126
 msgid ""
 "Each documentation field is described below. Before committing your "
 "module documentation, please test it at the command line and as HTML:"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:125
+#: ../../rst/dev_guide/developing_modules_documenting.rst:128
 msgid ""
 "As long as your module file is :ref:`available locally <local_modules>`, "
 "you can use ``ansible-doc -t module my_module_name`` to view your module "
@@ -306,17 +310,17 @@ msgid ""
 "you can view details by adding ``-vvv`` to the command."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:126
+#: ../../rst/dev_guide/developing_modules_documenting.rst:129
 msgid ""
 "You should also :ref:`test the HTML output "
 "<testing_module_documentation>` of your module documentation."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:129
+#: ../../rst/dev_guide/developing_modules_documenting.rst:132
 msgid "Documentation fields"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:131
+#: ../../rst/dev_guide/developing_modules_documenting.rst:134
 msgid ""
 "All fields in the ``DOCUMENTATION`` block are lower-case. All fields are "
 "required unless specified otherwise:"
@@ -326,11 +330,11 @@ msgstr ""
 msgid "module"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:135
+#: ../../rst/dev_guide/developing_modules_documenting.rst:138
 msgid "The name of the module."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:136
+#: ../../rst/dev_guide/developing_modules_documenting.rst:139
 msgid "Must be the same as the filename, without the ``.py`` extension."
 msgstr ""
 
@@ -338,20 +342,20 @@ msgstr ""
 msgid "short_description"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:140
+#: ../../rst/dev_guide/developing_modules_documenting.rst:143
 msgid ""
 "A short description which is displayed on the :ref:`all_modules` page and"
 " ``ansible-doc -l``."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:141
+#: ../../rst/dev_guide/developing_modules_documenting.rst:144
 msgid ""
 "The ``short_description`` is displayed by ``ansible-doc -l`` without any "
 "category grouping, so it needs enough detail to explain the module's "
 "purpose without the context of the directory structure in which it lives."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:143
+#: ../../rst/dev_guide/developing_modules_documenting.rst:146
 msgid ""
 "Unlike ``description:``, ``short_description`` should not have a trailing"
 " period/full stop."
@@ -361,45 +365,57 @@ msgstr ""
 msgid "description"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:147
+#: ../../rst/dev_guide/developing_modules_documenting.rst:150
 msgid "A detailed description (generally two or more sentences)."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:148
+#: ../../rst/dev_guide/developing_modules_documenting.rst:151
 msgid ""
 "Must be written in full sentences, i.e. with capital letters and "
 "periods/full stops."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:149
+#: ../../rst/dev_guide/developing_modules_documenting.rst:152
 msgid "Shouldn't mention the module name."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_documenting.rst:153
+msgid "Make use of multiple entries rather than using one long paragraph."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_documenting.rst:154
+msgid "Don't quote complete values unless it is required by YAML."
 msgstr ""
 
 #: ../../rst/dev_guide/developing_modules_documenting.rst
 msgid "version_added"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:153
+#: ../../rst/dev_guide/developing_modules_documenting.rst:158
 msgid "The version of Ansible when the module was added."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:154
-msgid "This is a string, and not a float, i.e. ``version_added: \"2.1\"``"
+#: ../../rst/dev_guide/developing_modules_documenting.rst:159
+msgid "This is a string, and not a float, i.e. ``version_added: '2.1'``"
 msgstr ""
 
 #: ../../rst/dev_guide/developing_modules_documenting.rst
 msgid "author"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:158
+#: ../../rst/dev_guide/developing_modules_documenting.rst:163
 msgid "Name of the module author in the form ``First Last (@GitHubID)``."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:159
+#: ../../rst/dev_guide/developing_modules_documenting.rst:164
 msgid "Use a multi-line list if there is more than one author."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:163
+#: ../../rst/dev_guide/developing_modules_documenting.rst:165
+msgid "Don't use quotes as it should not be required by YAML."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_documenting.rst:169
 msgid ""
 "Marks modules that will be removed in future releases. See also "
 ":ref:`module_lifecycle`."
@@ -409,54 +425,65 @@ msgstr ""
 msgid "options"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:167
+#: ../../rst/dev_guide/developing_modules_documenting.rst:173
+msgid ""
+"Options are often called `parameters` or `arguments`. Because the "
+"documentation field is called `options`, we will use that term."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_documenting.rst:174
 msgid ""
 "If the module has no options (for example, it's a ``_facts`` module), all"
 " you need is one line: ``options: {}``."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:168
+#: ../../rst/dev_guide/developing_modules_documenting.rst:175
 msgid ""
 "If your module has options (in other words, accepts arguments), each "
-"option should be documented thoroughly. For each module argument/option, "
-"include:"
+"option should be documented thoroughly. For each module option, include:"
 msgstr ""
 
 #: ../../rst/dev_guide/developing_modules_documenting.rst
 msgid "option-name"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:172
+#: ../../rst/dev_guide/developing_modules_documenting.rst:179
 msgid ""
 "Declarative operation (not CRUD), to focus on the final state, for "
 "example `online:`, rather than `is_online:`."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:173
+#: ../../rst/dev_guide/developing_modules_documenting.rst:180
 msgid ""
 "The name of the option should be consistent with the rest of the module, "
 "as well as other modules in the same category."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:177
+#: ../../rst/dev_guide/developing_modules_documenting.rst:181
+msgid ""
+"When in doubt, look for other modules to find option names that are used "
+"for the same purpose, we like to offer consistency to our users."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_documenting.rst:185
 msgid ""
 "Detailed explanation of what this option does. It should be written in "
 "full sentences."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:178
+#: ../../rst/dev_guide/developing_modules_documenting.rst:186
+msgid ""
+"The first entry is a description of the option itself; subsequent entries"
+" detail its use, dependencies, or format of possible values."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_documenting.rst:187
 msgid ""
 "Should not list the possible values (that's what ``choices:`` is for, "
-"though it should explain `what` the values do if they aren't obvious)."
+"though it should explain what the values do if they aren't obvious)."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:179
-msgid ""
-"If an optional parameter is sometimes required this need to be reflected "
-"in the documentation, e.g. \"Required when I(state=present).\""
-msgstr ""
-
-#: ../../rst/dev_guide/developing_modules_documenting.rst:180
+#: ../../rst/dev_guide/developing_modules_documenting.rst:189
 msgid ""
 "Mutually exclusive options must be documented as the final sentence on "
 "each of the options."
@@ -466,11 +493,11 @@ msgstr ""
 msgid "required"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:184
+#: ../../rst/dev_guide/developing_modules_documenting.rst:193
 msgid "Only needed if ``true``."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:185
+#: ../../rst/dev_guide/developing_modules_documenting.rst:194
 msgid "If missing, we assume the option is not required."
 msgstr ""
 
@@ -478,23 +505,25 @@ msgstr ""
 msgid "default"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:189
+#: ../../rst/dev_guide/developing_modules_documenting.rst:198
 msgid ""
 "If ``required`` is false/missing, ``default`` may be specified (assumed "
 "'null' if missing)."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:190
+#: ../../rst/dev_guide/developing_modules_documenting.rst:199
 msgid ""
-"Ensure that the default parameter in the docs matches the default "
-"parameter in the code."
+"Ensure that the default value in the docs matches the default value in "
+"the code."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:191
-msgid "The default option must not be listed as part of the description."
+#: ../../rst/dev_guide/developing_modules_documenting.rst:200
+msgid ""
+"The default field must not be listed as part of the description, unless "
+"it requires additional information or conditions."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:192
+#: ../../rst/dev_guide/developing_modules_documenting.rst:201
 msgid ""
 "If the option is a boolean value, you can use any of the boolean values "
 "recognized by Ansible: (such as true/false or yes/no).  Choose the one "
@@ -505,11 +534,11 @@ msgstr ""
 msgid "choices"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:197
+#: ../../rst/dev_guide/developing_modules_documenting.rst:206
 msgid "List of option values."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:198
+#: ../../rst/dev_guide/developing_modules_documenting.rst:207
 msgid "Should be absent if empty."
 msgstr ""
 
@@ -517,11 +546,11 @@ msgstr ""
 msgid "type"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:202
+#: ../../rst/dev_guide/developing_modules_documenting.rst:211
 msgid "Specifies the data type that option accepts, must match the ``argspec``."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:203
+#: ../../rst/dev_guide/developing_modules_documenting.rst:212
 msgid ""
 "If an argument is ``type='bool'``, this field should be set to ``type: "
 "bool`` and no ``choices`` should be specified."
@@ -531,33 +560,33 @@ msgstr ""
 msgid "aliases"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:206
+#: ../../rst/dev_guide/developing_modules_documenting.rst:215
 msgid "List of optional name aliases."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:207
+#: ../../rst/dev_guide/developing_modules_documenting.rst:216
 msgid "Generally not needed."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:211
+#: ../../rst/dev_guide/developing_modules_documenting.rst:220
 msgid ""
 "Only needed if this option was extended after initial Ansible release, "
 "i.e. this is greater than the top level `version_added` field."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:212
-msgid "This is a string, and not a float, i.e. ``version_added: \"2.3\"``."
+#: ../../rst/dev_guide/developing_modules_documenting.rst:221
+msgid "This is a string, and not a float, i.e. ``version_added: '2.3'``."
 msgstr ""
 
 #: ../../rst/dev_guide/developing_modules_documenting.rst
 msgid "suboptions"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:216
-msgid "If this option takes a dict, you can define it here."
+#: ../../rst/dev_guide/developing_modules_documenting.rst:225
+msgid "If this option takes a dict, you can define its structure here."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:217
+#: ../../rst/dev_guide/developing_modules_documenting.rst:226
 msgid ""
 "See :ref:`azure_rm_securitygroup_module`, :ref:`os_ironic_node_module` "
 "for examples."
@@ -567,173 +596,180 @@ msgstr ""
 msgid "requirements"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:221
+#: ../../rst/dev_guide/developing_modules_documenting.rst:230
 msgid "List of requirements (if applicable)."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:222
+#: ../../rst/dev_guide/developing_modules_documenting.rst:231
 msgid "Include minimum versions."
-msgstr ""
-
-#: ../../rst/dev_guide/developing_modules_documenting.rst
-msgid "notes"
-msgstr ""
-
-#: ../../rst/dev_guide/developing_modules_documenting.rst:226
-msgid ""
-"Details of any important information that doesn't fit in one of the above"
-" sections."
-msgstr ""
-
-#: ../../rst/dev_guide/developing_modules_documenting.rst:227
-msgid "For example, whether ``check_mode`` is or is not supported."
 msgstr ""
 
 #: ../../rst/dev_guide/developing_modules_documenting.rst
 msgid "seealso"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:231
+#: ../../rst/dev_guide/developing_modules_documenting.rst:235
 msgid "A list of references to other modules, documentation or Internet resources"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:232
+#: ../../rst/dev_guide/developing_modules_documenting.rst:236
 msgid "A reference can be one of the following formats:"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:257
+#: ../../rst/dev_guide/developing_modules_documenting.rst
+msgid "notes"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_documenting.rst:261
+msgid ""
+"Details of any important information that doesn't fit in one of the above"
+" sections."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_documenting.rst:262
+msgid "For example, whether ``check_mode`` is or is not supported."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_documenting.rst:266
 msgid "Linking within module documentation"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:259
+#: ../../rst/dev_guide/developing_modules_documenting.rst:268
 msgid ""
 "You can link from your module documentation to other module docs, other "
 "resources on docs.ansible.com, and resources elsewhere on the internet. "
 "The correct formats for these links are:"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:261
+#: ../../rst/dev_guide/developing_modules_documenting.rst:270
 msgid ""
 "``L()`` for Links with a heading. For example: ``See L(IOS Platform "
 "Options guide,../network/user_guide/platform_ios.html).``"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:262
+#: ../../rst/dev_guide/developing_modules_documenting.rst:271
 msgid ""
 "``U()`` for URLs. For example: ``See "
 "U(https://www.ansible.com/products/tower) for an overview.``"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:263
+#: ../../rst/dev_guide/developing_modules_documenting.rst:272
 msgid "``I()`` for option names. For example: ``Required if I(state=present).``"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:264
+#: ../../rst/dev_guide/developing_modules_documenting.rst:273
 msgid ""
 "``C()`` for files and option values. For example: ``If not set the "
 "environment variable C(ACME_PASSWORD) will be used.``"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:265
+#: ../../rst/dev_guide/developing_modules_documenting.rst:274
 msgid ""
 "``M()`` for module names. For example: ``See also M(win_copy) or "
 "M(win_template).``"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:269
+#: ../../rst/dev_guide/developing_modules_documenting.rst:278
 msgid ""
 "To refer a collection of modules, use ``C(..)``, e.g. ``Refer to the "
 "C(win_*) modules.``"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:270
+#: ../../rst/dev_guide/developing_modules_documenting.rst:279
 msgid ""
 "Because it stands out better, using ``seealso`` is preferred for general "
 "references over the use of notes or adding links to the description."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:273
+#: ../../rst/dev_guide/developing_modules_documenting.rst:284
 msgid "Documentation fragments"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:275
+#: ../../rst/dev_guide/developing_modules_documenting.rst:286
 msgid ""
 "If you're writing multiple related modules, they may share common "
-"documentation, such as authentication details or file mode settings. "
-"Rather than duplicate that information in each module's ``DOCUMENTATION``"
-" block, you can save it once as a fragment and use it in each module's "
-"documentation. Shared documentation fragments are contained in a "
-"``ModuleDocFragment`` class in `lib/ansible/utils/module_docs_fragments/ "
-"<https://github.com/ansible/ansible/tree/devel/lib/ansible/utils/module_docs_fragments>`_."
+"documentation, such as authentication details, file mode settings, "
+"``notes:`` or ``seealso:`` entries. Rather than duplicate that "
+"information in each module's ``DOCUMENTATION`` block, you can save it "
+"once as a doc_fragment plugin and use it in each module's documentation. "
+"In Ansible, shared documentation fragments are contained in a "
+"``ModuleDocFragment`` class in `lib/ansible/plugins/doc_fragments/ "
+"<https://github.com/ansible/ansible/tree/devel/lib/ansible/plugins/doc_fragments>`_."
 " To include a documentation fragment, add "
 "``extends_documentation_fragment: FRAGMENT_NAME`` in your module's "
 "documentation."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:277
-msgid "For example, all AWS modules should include::"
+#: ../../rst/dev_guide/developing_modules_documenting.rst:293
+msgid ""
+"Since Ansible 2.8, you can have user-supplied doc_fragments by using a "
+"``doc_fragments`` directory adjacent to play or role, just like any other"
+" plugin."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:284
-msgid "extends_documentation_fragment:"
+#: ../../rst/dev_guide/developing_modules_documenting.rst:295
+msgid "For example, all AWS modules should include:"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:282
-msgid "aws"
-msgstr ""
-
-#: ../../rst/dev_guide/developing_modules_documenting.rst:283
-msgid "ec2"
-msgstr ""
-
-#: ../../rst/dev_guide/developing_modules_documenting.rst:286
+#: ../../rst/dev_guide/developing_modules_documenting.rst:304
 msgid ""
 "You can find more examples by searching for "
 "``extends_documentation_fragment`` under the Ansible source tree."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:291
+#: ../../rst/dev_guide/developing_modules_documenting.rst:309
 msgid "EXAMPLES block"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:293
+#: ../../rst/dev_guide/developing_modules_documenting.rst:311
 msgid ""
-"After the shebang, the copyright line, the license, the "
-"``ANSIBLE_METADATA`` section, and the ``DOCUMENTATION`` block comes the "
+"After the shebang, the UTF-8 coding, the copyright line, the license, the"
+" ``ANSIBLE_METADATA`` section, and the ``DOCUMENTATION`` block comes the "
 "``EXAMPLES`` block. Here you show users how your module works with real-"
 "world examples in multi-line plain-text YAML format. The best examples "
 "are ready for the user to copy and paste into a playbook. Review and "
 "update your examples with every change to your module."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:295
+#: ../../rst/dev_guide/developing_modules_documenting.rst:313
 msgid ""
 "Per playbook best practices, each example should include a ``name:`` "
 "line::"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:304
+#: ../../rst/dev_guide/developing_modules_documenting.rst:322
+msgid "The ``name:`` line should be capitalized and not include a trailing dot."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_documenting.rst:324
+msgid ""
+"If your examples use boolean options, use yes/no values. Since the "
+"documentation generates boolean values as yes/no, having the examples use"
+" these values as well makes the module documentation more consistent."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_documenting.rst:326
 msgid ""
 "If your module returns facts that are often needed, an example of how to "
 "use them can be helpful."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:309
+#: ../../rst/dev_guide/developing_modules_documenting.rst:331
 msgid "RETURN block"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:311
+#: ../../rst/dev_guide/developing_modules_documenting.rst:333
 msgid ""
-"After the shebang, the copyright line, the license, the "
-"``ANSIBLE_METADATA`` section, ``DOCUMENTATION`` and ``EXAMPLES`` blocks "
+"After the shebang, the UTF-8 coding, the copyright line, the license, the"
+" ``ANSIBLE_METADATA`` section, ``DOCUMENTATION`` and ``EXAMPLES`` blocks "
 "comes the ``RETURN`` block. This section documents the information the "
 "module returns for use by other modules."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:313
+#: ../../rst/dev_guide/developing_modules_documenting.rst:335
 msgid ""
 "If your module doesn't return anything (apart from the standard returns),"
-" this section of your module should read: ``RETURN = ''' # '''`` "
+" this section of your module should read: ``RETURN = r''' # '''`` "
 "Otherwise, for each value returned, provide the following fields. All "
 "fields are required unless specified otherwise."
 msgstr ""
@@ -742,23 +778,25 @@ msgstr ""
 msgid "return name"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:317
+#: ../../rst/dev_guide/developing_modules_documenting.rst:339
 msgid "Name of the returned field."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:320
-msgid "Detailed description of what this value represents."
+#: ../../rst/dev_guide/developing_modules_documenting.rst:342
+msgid ""
+"Detailed description of what this value represents. Capitalized and with "
+"trailing dot."
 msgstr ""
 
 #: ../../rst/dev_guide/developing_modules_documenting.rst
 msgid "returned"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:322
+#: ../../rst/dev_guide/developing_modules_documenting.rst:344
 msgid "When this value is returned, such as ``always``, or ``on success``."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:324
+#: ../../rst/dev_guide/developing_modules_documenting.rst:346
 msgid "Data type."
 msgstr ""
 
@@ -766,48 +804,249 @@ msgstr ""
 msgid "sample"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:326
+#: ../../rst/dev_guide/developing_modules_documenting.rst:348
 msgid "One or more examples."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:328
+#: ../../rst/dev_guide/developing_modules_documenting.rst:350
 msgid ""
 "Only needed if this return was extended after initial Ansible release, "
 "i.e. this is greater than the top level `version_added` field. This is a "
-"string, and not a float, i.e. ``version_added: \"2.3\"``."
+"string, and not a float, i.e. ``version_added: '2.3'``."
 msgstr ""
 
 #: ../../rst/dev_guide/developing_modules_documenting.rst
 msgid "contains"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:331
+#: ../../rst/dev_guide/developing_modules_documenting.rst:353
 msgid ""
 "Optional. To describe nested return values, set ``type: complex`` and "
 "repeat the elements above for each sub-field."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:333
+#: ../../rst/dev_guide/developing_modules_documenting.rst:355
 msgid ""
 "Here are two example ``RETURN`` sections, one with three simple fields "
 "and one with a complex nested field::"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:379
+#: ../../rst/dev_guide/developing_modules_documenting.rst:401
 msgid "Python imports"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:381
+#: ../../rst/dev_guide/developing_modules_documenting.rst:403
 msgid ""
-"After the shebang, the copyright line, the license, and the sections for "
-"``ANSIBLE_METADATA``, ``DOCUMENTATION``, ``EXAMPLES``, and ``RETURN``, "
-"you can finally add the python imports. All modules must use Python "
-"imports in the form:"
+"After the shebang, the UTF-8 coding, the copyright line, the license, and"
+" the sections for ``ANSIBLE_METADATA``, ``DOCUMENTATION``, ``EXAMPLES``, "
+"and ``RETURN``, you can finally add the python imports. All modules must "
+"use Python imports in the form:"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:387
+#: ../../rst/dev_guide/developing_modules_documenting.rst:409
 msgid ""
 "The use of \"wildcard\" imports such as ``from module_utils.basic import "
 "*`` is no longer allowed."
 msgstr ""
+
+#~ msgid "Python shebang"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Every Ansible module must begin with "
+#~ "``#!/usr/bin/python`` - this \"shebang\" "
+#~ "allows ``ansible_python_interpreter`` to work."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "After the shebang, there should be "
+#~ "a `copyright line <https://www.gnu.org/licenses"
+#~ "/gpl-howto.en.html>`_ with the original "
+#~ "copyright holder and a license "
+#~ "declaration. The license declaration should"
+#~ " be ONLY one line, not the full"
+#~ " GPL prefix.:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "After the shebang, the copyright, and"
+#~ " the license, your module file should"
+#~ " contain an ``ANSIBLE_METADATA`` section. "
+#~ "This section provides information about "
+#~ "the module for use by other tools."
+#~ " For new modules, the following block"
+#~ " can be simply added into your "
+#~ "module:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The module's parameters are stable. "
+#~ "Every effort will be made not to"
+#~ " remove parameters or change their "
+#~ "meaning. **Not** a rating of the "
+#~ "module's code quality."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The module is in tech preview. It"
+#~ " may be unstable, the parameters may"
+#~ " change, or it may require libraries"
+#~ " or web services that are themselves"
+#~ " subject to incompatible changes."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "After the shebang, the copyright line,"
+#~ " the license, and the ``ANSIBLE_METADATA``"
+#~ " section comes the ``DOCUMENTATION`` block."
+#~ " Ansible's online module documentation is"
+#~ " generated from the ``DOCUMENTATION`` "
+#~ "blocks in each module's source code. "
+#~ "The ``DOCUMENTATION`` block must be "
+#~ "valid YAML. You may find it easier"
+#~ " to start writing your ``DOCUMENTATION``"
+#~ " string in an :ref:`editor with YAML"
+#~ " syntax highlighting <other_tools_and_programs>` "
+#~ "before you include it in your "
+#~ "Python file. You can start by "
+#~ "copying our `example documentation string "
+#~ "<https://github.com/ansible/ansible/blob/devel/examples/DOCUMENTATION.yml>`_"
+#~ " into your module file and modifying"
+#~ " it. If you run into syntax "
+#~ "issues in your YAML, you can "
+#~ "validate it on the `YAML Lint "
+#~ "<http://www.yamllint.com/>`_ website."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If an optional parameter is sometimes"
+#~ " required, reflect this fact in the"
+#~ " documentation, e.g. \"Required when "
+#~ "C(state=present).\""
+#~ msgstr ""
+
+#~ msgid "This is a string, and not a float, i.e. ``version_added: \"2.1\"``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If your module has options (in "
+#~ "other words, accepts arguments), each "
+#~ "option should be documented thoroughly. "
+#~ "For each module argument/option, include:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Should not list the possible values "
+#~ "(that's what ``choices:`` is for, though"
+#~ " it should explain `what` the values"
+#~ " do if they aren't obvious)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If an optional parameter is sometimes"
+#~ " required this need to be reflected"
+#~ " in the documentation, e.g. \"Required "
+#~ "when I(state=present).\""
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Ensure that the default parameter in "
+#~ "the docs matches the default parameter"
+#~ " in the code."
+#~ msgstr ""
+
+#~ msgid "The default option must not be listed as part of the description."
+#~ msgstr ""
+
+#~ msgid "This is a string, and not a float, i.e. ``version_added: \"2.3\"``."
+#~ msgstr ""
+
+#~ msgid "If this option takes a dict, you can define it here."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you're writing multiple related "
+#~ "modules, they may share common "
+#~ "documentation, such as authentication details"
+#~ " or file mode settings. Rather than"
+#~ " duplicate that information in each "
+#~ "module's ``DOCUMENTATION`` block, you can "
+#~ "save it once as a fragment and "
+#~ "use it in each module's documentation."
+#~ " Shared documentation fragments are "
+#~ "contained in a ``ModuleDocFragment`` class "
+#~ "in `lib/ansible/utils/module_docs_fragments/ "
+#~ "<https://github.com/ansible/ansible/tree/devel/lib/ansible/utils/module_docs_fragments>`_."
+#~ " To include a documentation fragment, "
+#~ "add ``extends_documentation_fragment: FRAGMENT_NAME`` "
+#~ "in your module's documentation."
+#~ msgstr ""
+
+#~ msgid "For example, all AWS modules should include::"
+#~ msgstr ""
+
+#~ msgid "extends_documentation_fragment:"
+#~ msgstr ""
+
+#~ msgid "aws"
+#~ msgstr ""
+
+#~ msgid "ec2"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "After the shebang, the copyright line,"
+#~ " the license, the ``ANSIBLE_METADATA`` "
+#~ "section, and the ``DOCUMENTATION`` block "
+#~ "comes the ``EXAMPLES`` block. Here you"
+#~ " show users how your module works "
+#~ "with real-world examples in multi-"
+#~ "line plain-text YAML format. The "
+#~ "best examples are ready for the "
+#~ "user to copy and paste into a "
+#~ "playbook. Review and update your "
+#~ "examples with every change to your "
+#~ "module."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "After the shebang, the copyright line,"
+#~ " the license, the ``ANSIBLE_METADATA`` "
+#~ "section, ``DOCUMENTATION`` and ``EXAMPLES`` "
+#~ "blocks comes the ``RETURN`` block. This"
+#~ " section documents the information the "
+#~ "module returns for use by other "
+#~ "modules."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If your module doesn't return anything"
+#~ " (apart from the standard returns), "
+#~ "this section of your module should "
+#~ "read: ``RETURN = ''' # '''`` "
+#~ "Otherwise, for each value returned, "
+#~ "provide the following fields. All fields"
+#~ " are required unless specified otherwise."
+#~ msgstr ""
+
+#~ msgid "Detailed description of what this value represents."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Only needed if this return was "
+#~ "extended after initial Ansible release, "
+#~ "i.e. this is greater than the top"
+#~ " level `version_added` field. This is "
+#~ "a string, and not a float, i.e."
+#~ " ``version_added: \"2.3\"``."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "After the shebang, the copyright line,"
+#~ " the license, and the sections for"
+#~ " ``ANSIBLE_METADATA``, ``DOCUMENTATION``, ``EXAMPLES``,"
+#~ " and ``RETURN``, you can finally add"
+#~ " the python imports. All modules must"
+#~ " use Python imports in the form:"
+#~ msgstr ""
 

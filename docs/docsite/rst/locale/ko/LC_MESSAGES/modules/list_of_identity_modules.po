@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgid "Identity modules"
 msgstr ""
 
 #: ../../rst/modules/list_of_identity_modules.rst:10
-msgid ":ref:`onepassword_facts_module`"
+msgid ":ref:`onepassword_info_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_identity_modules.rst:16
@@ -114,18 +114,25 @@ msgstr ""
 msgid ":ref:`keycloak_clienttemplate_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_identity_modules.rst:62
+#: ../../rst/modules/list_of_identity_modules.rst:57
+msgid ":ref:`keycloak_group_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_identity_modules.rst:63
 msgid "Opendj"
 msgstr ""
 
-#: ../../rst/modules/list_of_identity_modules.rst:66
+#: ../../rst/modules/list_of_identity_modules.rst:67
 msgid ":ref:`opendj_backendprop_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_identity_modules.rst:70
+#: ../../rst/modules/list_of_identity_modules.rst:71
 msgid ""
 "**(D)**: This marks a module as deprecated, which means a module is kept "
 "for backwards compatibility but usage is discouraged. The module "
 "documentation details page may explain more about this rationale."
 msgstr ""
+
+#~ msgid ":ref:`onepassword_facts_module`"
+#~ msgstr ""
 

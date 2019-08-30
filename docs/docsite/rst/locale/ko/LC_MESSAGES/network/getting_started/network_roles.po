@@ -1,0 +1,383 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/network/getting_started/network_roles.rst:6
+msgid "Use Ansible network roles"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:8
+msgid ""
+"Roles are sets of Ansible defaults, files, tasks, templates, variables, "
+"and other Ansible components that work together. As you saw on "
+":ref:`first_network_playbook`, moving from a command to a playbook makes "
+"it easy to run multiple tasks and repeat the same tasks in the same "
+"order. Moving from a playbook to a role makes it even easier to reuse and"
+" share your ordered tasks. You can look at :ref:`Ansible Galaxy "
+"<ansible_galaxy>`, which lets you share your roles and use others' roles,"
+" either directly or as inspiration."
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:14
+msgid "Understanding roles"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:16
+msgid ""
+"So what exactly is a role, and why should you care? Ansible roles are "
+"basically playbooks broken up into a known file structure. Moving to "
+"roles from a playbook makes sharing, reading, and updating your Ansible "
+"workflow easier. Users can write their own roles. So for example, you "
+"don't have to write your own DNS playbook. Instead, you specify a DNS "
+"server and a role to configure it for you."
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:18
+msgid ""
+"To simplify your workflow even further, the Ansible Network team has "
+"written a series of roles for common network use cases. Using these roles"
+" means you don't have to reinvent the wheel. Instead of writing and "
+"maintaining your own ``create_vlan`` playbooks or roles, you can "
+"concentrate on designing, codifying and maintaining the parser templates "
+"that describe your network topologies and inventory, and let Ansible's "
+"network roles do the work. See the `network-related roles "
+"<https://galaxy.ansible.com/ansible-network>`_ on Ansible Galaxy."
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:21
+msgid "A sample DNS playbook"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:23
+msgid ""
+"To demonstrate the concept of what a role is, the example "
+"``playbook.yml`` below is a single YAML file containing a two-task "
+"playbook.  This Ansible Playbook configures the hostname on a Cisco IOS "
+"XE device, then it configures the DNS (domain name system) servers."
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:44
+msgid ""
+"If you run this playbook using the ``ansible-playbook`` command, you'll "
+"see the output below.  This example used ``-l`` option to limit the "
+"playbook to only executing on the **rtr1** node."
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:62
+msgid ""
+"This playbook configured the hostname and DNS servers.  You can verify "
+"that configuration on the Cisco IOS XE **rtr1** router:"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:71
+msgid "Convert the playbook into a role"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:73
+msgid ""
+"The next step is to convert this playbook into a reusable role. You can "
+"create the directory structure manually, or you can use ``ansible-galaxy "
+"init`` to create the standard framework for a role."
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:98
+msgid ""
+"This first demonstration uses only the **tasks** and **vars** "
+"directories.  The directory structure would look as follows:"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:109
+msgid ""
+"Next, move the content of the ``vars`` and ``tasks`` sections from the "
+"original Ansible Playbook into the role. First, move the two tasks into "
+"the ``tasks/main.yml`` file:"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:123
+msgid "Next, move the variables into the ``vars/main.yml`` file:"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:131
+msgid ""
+"Finally, modify the original Ansible Playbook to remove the ``tasks`` and"
+" ``vars`` sections and add the keyword ``roles``  with the name of the "
+"role, in this case ``system-demo``.  You'll have this playbook:"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:144
+msgid ""
+"To summarize, this demonstration now has a total of three directories and"
+" three YAML files.  There is the ``system-demo`` folder, which represents"
+" the role.  This ``system-demo`` contains two folders, ``tasks`` and "
+"``vars``.  There is a ``main.yml`` is each respective folder.  The "
+"``vars/main.yml`` contains the variables from ``playbook.yml``.  The "
+"``tasks/main.yml`` contains the tasks from ``playbook.yml``.  The "
+"``playbook.yml`` file has been modified to call the role rather than "
+"specifying vars and tasks directly.  Here is a tree of the current "
+"working directory:"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:157
+msgid ""
+"Running the playbook results in identical behavior with slightly "
+"different output:"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:174
+msgid ""
+"As seen above each task is now prepended with the role name, in this case"
+" ``system-demo``.  When running a playbook that contains several roles, "
+"this will help pinpoint where a task is being called from.  This playbook"
+" returned ``ok`` instead of ``changed`` because it has identical behavior"
+" for the single file playbook we started from."
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:176
+msgid ""
+"As before, the playbook will generate the following configuration on a "
+"Cisco IOS-XE router:"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:185
+msgid ""
+"This is why Ansible roles can be simply thought of as deconstructed "
+"playbooks. They are simple, effective and reusable.  Now another user can"
+" simply include the ``system-demo`` role instead of having to create a "
+"custom \"hard coded\" playbook."
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:188
+msgid "Variable precedence"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:190
+msgid ""
+"What if you want to change the DNS servers?  You aren't expected to "
+"change the ``vars/main.yml`` within the role structure. Ansible has many "
+"places where you can specify variables for a given play. See "
+":ref:`playbooks_variables` for details on variables and precedence. There"
+" are actually 21 places to put variables.  While this list can seem "
+"overwhelming at first glance, the vast majority of use cases only involve"
+" knowing the spot for variables of least precedence and how to pass "
+"variables with most precedence. See :ref:`ansible_variable_precedence` "
+"for more guidance on where you should put variables."
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:193
+msgid "Lowest precedence"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:195
+msgid ""
+"The lowest precedence is the ``defaults`` directory within a role.  This "
+"means all the other 20 locations you could potentially specify the "
+"variable will all take higher precedence than ``defaults``, no matter "
+"what.  To immediately give the vars from the ``system-demo`` role the "
+"least precedence, rename the ``vars`` directory to ``defaults``."
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:207
+msgid ""
+"Add a new ``vars`` section to the playbook to override the default "
+"behavior (where the variable ``dns`` is set to 8.8.8.8 and 8.8.4.4).  For"
+" this demonstration, set ``dns`` to 1.1.1.1, so ``playbook.yml`` becomes:"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:221
+msgid "Run this updated playbook on **rtr2**:"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:227
+msgid "The configuration on the **rtr2** Cisco router will look as follows:"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:234
+msgid ""
+"The variable configured in the playbook now has precedence over the "
+"``defaults`` directory.  In fact, any other spot you configure variables "
+"would win over the values in the ``defaults`` directory."
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:237
+msgid "Highest precedence"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:239
+msgid ""
+"Specifying variables in the ``defaults`` directory within a role will "
+"always take the lowest precedence, while specifying ``vars`` as extra "
+"vars with the ``-e`` or ``--extra-vars=`` will always take the highest "
+"precedence, no matter what.  Re-running the playbook with the ``-e`` "
+"option overrides both the ``defaults`` directory (8.8.4.4 and 8.8.8.8) as"
+" well as the newly created ``vars`` within the playbook that contains the"
+" 1.1.1.1 dns server."
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:245
+msgid ""
+"The result on the Cisco IOS XE router will only contain the highest "
+"precedence setting of 192.168.1.1:"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:252
+msgid ""
+"How is this useful?  Why should you care?  Extra vars are commonly used "
+"by network operators to override defaults.  A powerful example of this is"
+" with Red Hat Ansible Tower and the Survey feature.  It is possible "
+"through the web UI to prompt a network operator to fill out parameters "
+"with a Web form.  This can be really simple for non-technical playbook "
+"writers to execute a playbook using their Web browser. See `Ansible Tower"
+" Job Template Surveys <https://docs.ansible.com/ansible-"
+"tower/latest/html/userguide/workflow_templates.html#surveys>`_ for more "
+"details."
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:256
+msgid "Ansible supported network roles"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:258
+msgid ""
+"The Ansible Network team develops and supports a set of `network-related "
+"roles <https://galaxy.ansible.com/ansible-network>`_ on Ansible Galaxy. "
+"You can use these roles to jump start your network automation efforts. "
+"These roles are updated approximately every two weeks to give you access "
+"to the latest Ansible networking content."
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:260
+msgid "These roles come in the following categories:"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:262
+msgid ""
+"**User roles** - User roles focus on tasks, such as managing your "
+"configuration. Use these roles, such as `config_manager "
+"<https://galaxy.ansible.com/ansible-network/config_manager>`_ and "
+"`cloud_vpn <https://galaxy.ansible.com/ansible-network/cloud_vpn>`_, "
+"directly in your playbooks. These roles are platform/provider agnostic, "
+"allowing you to use the same roles and playbooks across different network"
+" platforms or cloud providers."
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:263
+msgid ""
+"**Platform provider roles** - Provider roles translate between the user "
+"roles and the various network OSs, each of which has a different API. "
+"Each provider role accepts input from a supported user role and "
+"translates it for a specific network OS. Network user roles depend on "
+"these provider roles to implement their functions. For example, the "
+"`config_manager <https://galaxy.ansible.com/ansible-"
+"network/config_manager>`_ user role  uses the  `cisco_ios "
+"<https://galaxy.ansible.com/ansible-network/cisco_ios>`_ provider role to"
+" implement tasks on Cisco IOS network devices."
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:264
+msgid ""
+"**Cloud provider and provisioner roles** - Similarly, cloud user roles "
+"depend on cloud provider and provisioner roles to implement cloud "
+"functions for specific cloud providers. For example, the `cloud_vpn "
+"<https://galaxy.ansible.com/ansible-network/cloud_vpn>`_ role depends on "
+"the `aws <https://galaxy.ansible.com/ansible-network/aws>`_ provider role"
+" to communicate with AWS."
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:267
+msgid ""
+"You need to install at least one platform provider role for your network "
+"user roles, and set ``ansible_network_provider`` to that provider (for "
+"example, ``ansible_network_provider: ansible-network.cisco_ios``). "
+"Ansible Galaxy automatically installs any other dependencies listed in "
+"the role details on Ansible Galaxy."
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:269
+msgid ""
+"For example, to use the ``config_manager`` role with Cisco IOS devices, "
+"you would use the following commands:"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:276
+msgid ""
+"Roles are fully documented with examples in Ansible Galaxy on the **Read "
+"Me** tab for each role."
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:279
+msgid "Network roles release cycle"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:281
+msgid ""
+"The Ansible network team releases updates and new roles every two weeks. "
+"The role details on Ansible Galaxy lists the role versions available, and"
+" you can look in the GitHub repository to find the changelog file (for "
+"example,  the ``cisco_ios`` `CHANGELOG.rst <https://github.com/ansible-"
+"network/cisco_ios/blob/devel/CHANGELOG.rst>`_ ) that lists what has "
+"changed in each version of the role."
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:283
+msgid "The Ansible Galaxy role version has two components:"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:285
+msgid ""
+"Major release number - (for example, 2.6) which shows the Ansible engine "
+"version this role supports."
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:286
+msgid ""
+"Minor release number (for example .1) which denotes the role release "
+"cycle and does not reflect the Ansible engine minor release version."
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:289
+msgid "Update an installed role"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:291
+msgid ""
+"The Ansible Galaxy page for a role lists all available versions. To "
+"update a locally installed role to a new or different version, use the "
+"``ansible-galaxy install`` command with the version and ``--force`` "
+"option. You may also need to manually update any dependent roles to "
+"support this version. See the role **Read Me** tab in Galaxy for "
+"dependent role minimum version requirements."
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:300
+msgid "`Ansible Galaxy documentation <https://galaxy.ansible.com/docs/>`_"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:301
+msgid "Ansible Galaxy user guide"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:302
+msgid ""
+"`Ansible supported network roles <https://galaxy.ansible.com/ansible-"
+"network>`_"
+msgstr ""
+
+#: ../../rst/network/getting_started/network_roles.rst:303
+msgid "List of Ansible-supported network and cloud roles on Ansible Galaxy"
+msgstr ""
+

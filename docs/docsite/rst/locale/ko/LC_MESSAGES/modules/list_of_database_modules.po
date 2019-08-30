@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,133 +83,196 @@ msgid ":ref:`mongodb_parameter_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_database_modules.rst:56
-msgid ":ref:`mongodb_shard_module`"
+msgid ":ref:`mongodb_replicaset_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_database_modules.rst:57
+msgid ":ref:`mongodb_shard_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_database_modules.rst:58
 msgid ":ref:`mongodb_user_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_database_modules.rst:63
+#: ../../rst/modules/list_of_database_modules.rst:64
 msgid "Mssql"
 msgstr ""
 
-#: ../../rst/modules/list_of_database_modules.rst:67
+#: ../../rst/modules/list_of_database_modules.rst:68
 msgid ":ref:`mssql_db_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_database_modules.rst:73
+#: ../../rst/modules/list_of_database_modules.rst:74
 msgid "Mysql"
 msgstr ""
 
-#: ../../rst/modules/list_of_database_modules.rst:77
+#: ../../rst/modules/list_of_database_modules.rst:78
 msgid ":ref:`mysql_db_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_database_modules.rst:78
-msgid ":ref:`mysql_replication_module`"
-msgstr ""
-
 #: ../../rst/modules/list_of_database_modules.rst:79
-msgid ":ref:`mysql_user_module`"
+msgid ":ref:`mysql_info_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_database_modules.rst:80
+msgid ":ref:`mysql_replication_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_database_modules.rst:81
+msgid ":ref:`mysql_user_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_database_modules.rst:82
 msgid ":ref:`mysql_variables_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_database_modules.rst:86
+#: ../../rst/modules/list_of_database_modules.rst:88
 msgid "Postgresql"
 msgstr ""
 
-#: ../../rst/modules/list_of_database_modules.rst:90
-msgid ":ref:`postgresql_db_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_database_modules.rst:91
-msgid ":ref:`postgresql_ext_module`"
-msgstr ""
-
 #: ../../rst/modules/list_of_database_modules.rst:92
-msgid ":ref:`postgresql_idx_module`"
+msgid ":ref:`postgresql_copy_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_database_modules.rst:93
-msgid ":ref:`postgresql_lang_module`"
+msgid ":ref:`postgresql_db_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_database_modules.rst:94
-msgid ":ref:`postgresql_privs_module`"
+msgid ":ref:`postgresql_ext_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_database_modules.rst:95
-msgid ":ref:`postgresql_schema_module`"
+msgid ":ref:`postgresql_idx_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_database_modules.rst:96
-msgid ":ref:`postgresql_user_module`"
+msgid ":ref:`postgresql_info_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_database_modules.rst:97
+msgid ":ref:`postgresql_lang_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_database_modules.rst:98
+msgid ":ref:`postgresql_membership_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_database_modules.rst:99
+msgid ":ref:`postgresql_owner_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_database_modules.rst:100
+msgid ":ref:`postgresql_pg_hba_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_database_modules.rst:101
+msgid ":ref:`postgresql_ping_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_database_modules.rst:102
-msgid "Proxysql"
+msgid ":ref:`postgresql_privs_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_database_modules.rst:103
+msgid ":ref:`postgresql_publication_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_database_modules.rst:104
+msgid ":ref:`postgresql_query_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_database_modules.rst:105
+msgid ":ref:`postgresql_schema_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_database_modules.rst:106
-msgid ":ref:`proxysql_backend_servers_module`"
+msgid ":ref:`postgresql_sequence_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_database_modules.rst:107
-msgid ":ref:`proxysql_global_variables_module`"
+msgid ":ref:`postgresql_set_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_database_modules.rst:108
-msgid ":ref:`proxysql_manage_config_module`"
+msgid ":ref:`postgresql_slot_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_database_modules.rst:109
-msgid ":ref:`proxysql_mysql_users_module`"
+msgid ":ref:`postgresql_table_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_database_modules.rst:110
-msgid ":ref:`proxysql_query_rules_module`"
+msgid ":ref:`postgresql_tablespace_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_database_modules.rst:111
-msgid ":ref:`proxysql_replication_hostgroups_module`"
+msgid ":ref:`postgresql_user_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_database_modules.rst:112
-msgid ":ref:`proxysql_scheduler_module`"
+#: ../../rst/modules/list_of_database_modules.rst:117
+msgid "Proxysql"
 msgstr ""
 
-#: ../../rst/modules/list_of_database_modules.rst:118
-msgid "Vertica"
+#: ../../rst/modules/list_of_database_modules.rst:121
+msgid ":ref:`proxysql_backend_servers_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_database_modules.rst:122
-msgid ":ref:`vertica_configuration_module`"
+msgid ":ref:`proxysql_global_variables_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_database_modules.rst:123
-msgid ":ref:`vertica_facts_module`"
+msgid ":ref:`proxysql_manage_config_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_database_modules.rst:124
-msgid ":ref:`vertica_role_module`"
+msgid ":ref:`proxysql_mysql_users_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_database_modules.rst:125
-msgid ":ref:`vertica_schema_module`"
+msgid ":ref:`proxysql_query_rules_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_database_modules.rst:126
+msgid ":ref:`proxysql_replication_hostgroups_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_database_modules.rst:127
+msgid ":ref:`proxysql_scheduler_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_database_modules.rst:133
+msgid "Vertica"
+msgstr ""
+
+#: ../../rst/modules/list_of_database_modules.rst:137
+msgid ":ref:`vertica_configuration_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_database_modules.rst:138
+msgid ":ref:`vertica_info_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_database_modules.rst:139
+msgid ":ref:`vertica_role_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_database_modules.rst:140
+msgid ":ref:`vertica_schema_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_database_modules.rst:141
 msgid ":ref:`vertica_user_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_database_modules.rst:130
+#: ../../rst/modules/list_of_database_modules.rst:145
 msgid ""
 "**(D)**: This marks a module as deprecated, which means a module is kept "
 "for backwards compatibility but usage is discouraged. The module "
 "documentation details page may explain more about this rationale."
 msgstr ""
+
+#~ msgid ":ref:`vertica_facts_module`"
+#~ msgstr ""
 

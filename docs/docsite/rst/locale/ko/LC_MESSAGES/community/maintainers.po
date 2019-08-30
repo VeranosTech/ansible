@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -165,7 +165,7 @@ msgstr ""
 #: ../../rst/community/maintainers.rst:54
 msgid ""
 "A detailed explanation of the PR workflow can be seen in the "
-":doc:`development_process`"
+":ref:`community_development_process`."
 msgstr ""
 
 #: ../../rst/community/maintainers.rst:57
@@ -206,15 +206,32 @@ msgstr ""
 
 #: ../../rst/community/maintainers.rst:71
 msgid ""
-"`PRs in flight, organised by directory "
-"<https://ansible.sivel.net/pr/byfile.html>`_."
+"`PRs in flight, organized by directory "
+"<https://ansible.sivel.net/pr/byfile.html>`_"
 msgstr ""
 
 #: ../../rst/community/maintainers.rst:72
-msgid "Ansibullbot: https://github.com/ansible/ansibullbot"
+msgid "`Ansibullbot <https://github.com/ansible/ansibullbot>`_"
 msgstr ""
 
 #: ../../rst/community/maintainers.rst:73
-msgid ":doc:`development_process`"
+msgid ":ref:`community_development_process`"
 msgstr ""
+
+#~ msgid ""
+#~ "A detailed explanation of the PR "
+#~ "workflow can be seen in the "
+#~ ":doc:`development_process`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`PRs in flight, organised by directory"
+#~ " <https://ansible.sivel.net/pr/byfile.html>`_."
+#~ msgstr ""
+
+#~ msgid "Ansibullbot: https://github.com/ansible/ansibullbot"
+#~ msgstr ""
+
+#~ msgid ":doc:`development_process`"
+#~ msgstr ""
 

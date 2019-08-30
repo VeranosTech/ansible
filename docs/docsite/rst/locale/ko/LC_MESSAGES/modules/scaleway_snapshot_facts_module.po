@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,67 +24,91 @@ msgid ""
 "available"
 msgstr ""
 
+#: ../../rst/modules/scaleway_snapshot_facts_module.rst:18
+msgid "DEPRECATED"
+msgstr ""
+
+#: ../../rst/modules/scaleway_snapshot_facts_module.rst
+msgid "Removed in Ansible"
+msgstr ""
+
 #: ../../rst/modules/scaleway_snapshot_facts_module.rst:19
-msgid "Synopsis"
+msgid "version: 2.13"
+msgstr ""
+
+#: ../../rst/modules/scaleway_snapshot_facts_module.rst
+msgid "Why"
 msgstr ""
 
 #: ../../rst/modules/scaleway_snapshot_facts_module.rst:20
-msgid "Gather facts about the Scaleway snapshot available."
+msgid "Deprecated in favour of ``_info`` module."
+msgstr ""
+
+#: ../../rst/modules/scaleway_snapshot_facts_module.rst
+msgid "Alternative"
+msgstr ""
+
+#: ../../rst/modules/scaleway_snapshot_facts_module.rst:21
+msgid "Use :ref:`scaleway_snapshot_info <scaleway_snapshot_info_module>` instead."
 msgstr ""
 
 #: ../../rst/modules/scaleway_snapshot_facts_module.rst:26
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/scaleway_snapshot_facts_module.rst:27
+msgid "Gather facts about the Scaleway snapshot available."
+msgstr ""
+
+#: ../../rst/modules/scaleway_snapshot_facts_module.rst:33
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/scaleway_snapshot_facts_module.rst:135
+#: ../../rst/modules/scaleway_snapshot_facts_module.rst:142
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/scaleway_snapshot_facts_module.rst:138
+#: ../../rst/modules/scaleway_snapshot_facts_module.rst:145
 msgid "Also see the API documentation on https://developer.scaleway.com/"
 msgstr ""
 
-#: ../../rst/modules/scaleway_snapshot_facts_module.rst:139
+#: ../../rst/modules/scaleway_snapshot_facts_module.rst:146
 msgid ""
 "If ``api_token`` is not set within the module, the following environment "
 "variables can be used in decreasing order of precedence ``SCW_TOKEN``, "
 "``SCW_API_KEY``, ``SCW_OAUTH_TOKEN`` or ``SCW_API_TOKEN``."
 msgstr ""
 
-#: ../../rst/modules/scaleway_snapshot_facts_module.rst:140
+#: ../../rst/modules/scaleway_snapshot_facts_module.rst:147
 msgid ""
 "If one wants to use a different ``api_url`` one can also set the "
 "``SCW_API_URL`` environment variable."
 msgstr ""
 
-#: ../../rst/modules/scaleway_snapshot_facts_module.rst:145
+#: ../../rst/modules/scaleway_snapshot_facts_module.rst:152
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/scaleway_snapshot_facts_module.rst:158
+#: ../../rst/modules/scaleway_snapshot_facts_module.rst:165
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/scaleway_snapshot_facts_module.rst:159
+#: ../../rst/modules/scaleway_snapshot_facts_module.rst:166
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/scaleway_snapshot_facts_module.rst:197
+#: ../../rst/modules/scaleway_snapshot_facts_module.rst:204
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/scaleway_snapshot_facts_module.rst:202
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
+#: ../../rst/modules/scaleway_snapshot_facts_module.rst:207
+msgid "This module will be removed in version 2.13. *[deprecated]*"
 msgstr ""
 
-#: ../../rst/modules/scaleway_snapshot_facts_module.rst:205
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
+#: ../../rst/modules/scaleway_snapshot_facts_module.rst:208
+msgid "For more information see `DEPRECATED`_."
 msgstr ""
 
 #: ../../rst/modules/scaleway_snapshot_facts_module.rst:212
@@ -102,9 +126,29 @@ msgstr ""
 #: ../../rst/modules/scaleway_snapshot_facts_module.rst:219
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/scaleway/scaleway_snapshot_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/scaleway/_scaleway_snapshot_facts.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/scaleway/scaleway_snapshot_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

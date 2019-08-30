@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/scenario_guides/scenario_template.rst:7
+msgid "Sample scenario for Ansible platforms"
+msgstr ""
+
+#: ../../rst/scenario_guides/scenario_template.rst:9
+msgid ""
+"*Use this ``rst`` file as a starting point to create a scenario guide for"
+" your platform. The sections below are suggestions on what should be in a"
+" scenario guide.*"
+msgstr ""
+
+#: ../../rst/scenario_guides/scenario_template.rst:11
+msgid "Introductory paragraph."
+msgstr ""
+
+#: ../../rst/scenario_guides/scenario_template.rst:17
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../rst/scenario_guides/scenario_template.rst:19
+msgid ""
+"Describe the requirements and assumptions for this scenario. This should "
+"include applicable subsections for hardware, software, and any other "
+"caveats to using the scenarios in this guide."
+msgstr ""
+
+#: ../../rst/scenario_guides/scenario_template.rst:22
+msgid "Credentials and authenticating"
+msgstr ""
+
+#: ../../rst/scenario_guides/scenario_template.rst:24
+msgid "Describe credential requirements and how to authenticate to this platform."
+msgstr ""
+
+#: ../../rst/scenario_guides/scenario_template.rst:27
+msgid "Using dynamic inventory"
+msgstr ""
+
+#: ../../rst/scenario_guides/scenario_template.rst:29
+msgid ""
+"If applicable, describe how to use a dynamic inventory plugin for this "
+"platform."
+msgstr ""
+
+#: ../../rst/scenario_guides/scenario_template.rst:33
+msgid "Example description"
+msgstr ""
+
+#: ../../rst/scenario_guides/scenario_template.rst:35
+msgid ""
+"Description and code here.  Change the section header to something "
+"descriptive about this example, such as \"Renaming a virtual machine\".  "
+"The goal is that this is the text someone would search for to find your "
+"example."
+msgstr ""
+
+#: ../../rst/scenario_guides/scenario_template.rst:39
+msgid "Example output"
+msgstr ""
+
+#: ../../rst/scenario_guides/scenario_template.rst:41
+msgid "What the user should expect to see."
+msgstr ""
+
+#: ../../rst/scenario_guides/scenario_template.rst:45
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../rst/scenario_guides/scenario_template.rst:47
+msgid "What to look for if it breaks."
+msgstr ""
+
+#: ../../rst/scenario_guides/scenario_template.rst:51
+msgid "Conclusion and where to go next"
+msgstr ""
+
+#: ../../rst/scenario_guides/scenario_template.rst:53
+msgid "Recap of important points. For more information please see: links."
+msgstr ""
+

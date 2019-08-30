@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,92 +24,136 @@ msgid ""
 "configuration information"
 msgstr ""
 
+#: ../../rst/modules/vmware_host_dns_facts_module.rst:18
+msgid "DEPRECATED"
+msgstr ""
+
+#: ../../rst/modules/vmware_host_dns_facts_module.rst
+msgid "Removed in Ansible"
+msgstr ""
+
 #: ../../rst/modules/vmware_host_dns_facts_module.rst:19
-msgid "Synopsis"
+msgid "version: 2.13"
+msgstr ""
+
+#: ../../rst/modules/vmware_host_dns_facts_module.rst
+msgid "Why"
 msgstr ""
 
 #: ../../rst/modules/vmware_host_dns_facts_module.rst:20
+msgid "Deprecated in favour of ``_info`` module."
+msgstr ""
+
+#: ../../rst/modules/vmware_host_dns_facts_module.rst
+msgid "Alternative"
+msgstr ""
+
+#: ../../rst/modules/vmware_host_dns_facts_module.rst:21
+msgid "Use :ref:`vmware_host_dns_info <vmware_host_dns_info_module>` instead."
+msgstr ""
+
+#: ../../rst/modules/vmware_host_dns_facts_module.rst:26
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/vmware_host_dns_facts_module.rst:27
 msgid ""
 "This module can be used to gather facts about an ESXi host's DNS "
 "configuration information when ESXi hostname or Cluster name is given."
 msgstr ""
 
-#: ../../rst/modules/vmware_host_dns_facts_module.rst:21
+#: ../../rst/modules/vmware_host_dns_facts_module.rst:28
 msgid "All parameters and VMware object names are case sensitive."
 msgstr ""
 
-#: ../../rst/modules/vmware_host_dns_facts_module.rst:26
+#: ../../rst/modules/vmware_host_dns_facts_module.rst:33
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_dns_facts_module.rst:27
+#: ../../rst/modules/vmware_host_dns_facts_module.rst:34
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/vmware_host_dns_facts_module.rst:29
+#: ../../rst/modules/vmware_host_dns_facts_module.rst:36
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_dns_facts_module.rst:30
+#: ../../rst/modules/vmware_host_dns_facts_module.rst:37
 msgid "PyVmomi"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_dns_facts_module.rst:34
+#: ../../rst/modules/vmware_host_dns_facts_module.rst:41
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_dns_facts_module.rst:160
+#: ../../rst/modules/vmware_host_dns_facts_module.rst:197
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_dns_facts_module.rst:163
+#: ../../rst/modules/vmware_host_dns_facts_module.rst:200
 msgid "Tested on vSphere 6.5"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_dns_facts_module.rst:168
+#: ../../rst/modules/vmware_host_dns_facts_module.rst:205
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_dns_facts_module.rst:193
+#: ../../rst/modules/vmware_host_dns_facts_module.rst:230
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_dns_facts_module.rst:194
+#: ../../rst/modules/vmware_host_dns_facts_module.rst:231
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_dns_facts_module.rst:222
+#: ../../rst/modules/vmware_host_dns_facts_module.rst:259
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_dns_facts_module.rst:227
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
+#: ../../rst/modules/vmware_host_dns_facts_module.rst:262
+msgid "This module will be removed in version 2.13. *[deprecated]*"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_dns_facts_module.rst:230
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
+#: ../../rst/modules/vmware_host_dns_facts_module.rst:263
+msgid "For more information see `DEPRECATED`_."
 msgstr ""
 
-#: ../../rst/modules/vmware_host_dns_facts_module.rst:237
+#: ../../rst/modules/vmware_host_dns_facts_module.rst:267
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_dns_facts_module.rst:239
+#: ../../rst/modules/vmware_host_dns_facts_module.rst:269
 msgid "Abhijeet Kasurde (@Akasurde)"
 msgstr ""
 
-#: ../../rst/modules/vmware_host_dns_facts_module.rst:243
+#: ../../rst/modules/vmware_host_dns_facts_module.rst:273
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_host_dns_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/_vmware_host_dns_facts.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_host_dns_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

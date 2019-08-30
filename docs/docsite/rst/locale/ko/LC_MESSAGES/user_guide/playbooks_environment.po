@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,30 +32,30 @@ msgstr ""
 
 #: ../../rst/user_guide/playbooks_environment.rst:12
 msgid ""
-"Ansible makes it easy for you to configure your environment by using the "
-"'environment' keyword.  Here is an example::"
+"Ansible makes it easy for you to configure the remote execution "
+"environment by using the 'environment' keyword.  Here is an example::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_environment.rst:23
+#: ../../rst/user_guide/playbooks_environment.rst:26
 msgid "The environment can also be stored in a variable, and accessed like so::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_environment.rst:38
+#: ../../rst/user_guide/playbooks_environment.rst:44
 msgid "You can also use it at a play level::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_environment.rst:49
+#: ../../rst/user_guide/playbooks_environment.rst:55
 msgid ""
 "While just proxy settings were shown above, any number of settings can be"
 " supplied.  The most logical place to define an environment hash might be"
 " a group_vars file, like so::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_environment.rst:63
+#: ../../rst/user_guide/playbooks_environment.rst:69
 msgid "Working With Language-Specific Version Managers"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_environment.rst:65
+#: ../../rst/user_guide/playbooks_environment.rst:71
 msgid ""
 "Some language-specific version managers (such as rbenv and nvm) require "
 "environment variables be set while these tools are in use. When using "
@@ -64,35 +64,51 @@ msgid ""
 "In Ansible, you can instead use the environment directive::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_environment.rst:101
+#: ../../rst/user_guide/playbooks_environment.rst:107
 msgid "You might also want to simply specify the environment for a single task::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_environment.rst:117
-msgid "``environment:`` is not currently supported for Windows targets"
+#: ../../rst/user_guide/playbooks_environment.rst:123
+msgid ""
+"``environment:`` does not affect Ansible itself, ONLY the context of the "
+"specific task action and this does not include Ansible's own "
+"configuration settings."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_environment.rst:121
-msgid ":doc:`playbooks`"
+#: ../../rst/user_guide/playbooks_environment.rst:127
+msgid ":ref:`playbooks_intro`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_environment.rst:122
+#: ../../rst/user_guide/playbooks_environment.rst:128
 msgid "An introduction to playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_environment.rst:123
+#: ../../rst/user_guide/playbooks_environment.rst:129
 msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_environment.rst:124
+#: ../../rst/user_guide/playbooks_environment.rst:130
 msgid "Have a question?  Stop by the google group!"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_environment.rst:125
+#: ../../rst/user_guide/playbooks_environment.rst:131
 msgid "`irc.freenode.net <http://irc.freenode.net>`_"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_environment.rst:126
+#: ../../rst/user_guide/playbooks_environment.rst:132
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ""
+#~ "Ansible makes it easy for you to"
+#~ " configure your environment by using "
+#~ "the 'environment' keyword.  Here is an"
+#~ " example::"
+#~ msgstr ""
+
+#~ msgid "``environment:`` is not currently supported for Windows targets"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks`"
+#~ msgstr ""
 

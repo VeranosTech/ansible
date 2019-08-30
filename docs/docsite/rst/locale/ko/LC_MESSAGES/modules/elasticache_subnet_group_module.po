@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,41 +22,41 @@ msgstr ""
 msgid "elasticache_subnet_group -- manage Elasticache subnet groups"
 msgstr ""
 
-#: ../../rst/modules/elasticache_subnet_group_module.rst:19
+#: ../../rst/modules/elasticache_subnet_group_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/elasticache_subnet_group_module.rst:20
+#: ../../rst/modules/elasticache_subnet_group_module.rst:19
 msgid ""
 "Creates, modifies, and deletes Elasticache subnet groups. This module has"
 " a dependency on python-boto >= 2.5."
 msgstr ""
 
-#: ../../rst/modules/elasticache_subnet_group_module.rst:25
+#: ../../rst/modules/elasticache_subnet_group_module.rst:24
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/elasticache_subnet_group_module.rst:26
+#: ../../rst/modules/elasticache_subnet_group_module.rst:25
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/elasticache_subnet_group_module.rst:28
+#: ../../rst/modules/elasticache_subnet_group_module.rst:27
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/elasticache_subnet_group_module.rst:29
+#: ../../rst/modules/elasticache_subnet_group_module.rst:28
 msgid "boto"
 msgstr ""
 
-#: ../../rst/modules/elasticache_subnet_group_module.rst:33
+#: ../../rst/modules/elasticache_subnet_group_module.rst:32
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/elasticache_subnet_group_module.rst:203
+#: ../../rst/modules/elasticache_subnet_group_module.rst:219
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/elasticache_subnet_group_module.rst:206
+#: ../../rst/modules/elasticache_subnet_group_module.rst:222
 msgid ""
 "If parameters are not set within the module, the following environment "
 "variables can be used in decreasing order of precedence ``AWS_URL`` or "
@@ -66,54 +66,62 @@ msgid ""
 "``AWS_REGION`` or ``EC2_REGION``"
 msgstr ""
 
-#: ../../rst/modules/elasticache_subnet_group_module.rst:207
+#: ../../rst/modules/elasticache_subnet_group_module.rst:223
 msgid ""
 "Ansible uses the boto configuration file (typically ~/.boto) if no "
 "credentials are provided. See "
 "https://boto.readthedocs.io/en/latest/boto_config_tut.html"
 msgstr ""
 
-#: ../../rst/modules/elasticache_subnet_group_module.rst:208
+#: ../../rst/modules/elasticache_subnet_group_module.rst:224
 msgid ""
 "``AWS_REGION`` or ``EC2_REGION`` can be typically be used to specify the "
 "AWS region, when required, but this can also be configured in the boto "
 "config file"
 msgstr ""
 
-#: ../../rst/modules/elasticache_subnet_group_module.rst:213
+#: ../../rst/modules/elasticache_subnet_group_module.rst:229
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/elasticache_subnet_group_module.rst:237
+#: ../../rst/modules/elasticache_subnet_group_module.rst:253
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/elasticache_subnet_group_module.rst:242
+#: ../../rst/modules/elasticache_subnet_group_module.rst:258
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/elasticache_subnet_group_module.rst:245
+#: ../../rst/modules/elasticache_subnet_group_module.rst:261
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/elasticache_subnet_group_module.rst:252
+#: ../../rst/modules/elasticache_subnet_group_module.rst:268
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/elasticache_subnet_group_module.rst:254
+#: ../../rst/modules/elasticache_subnet_group_module.rst:270
 msgid "Tim Mahoney (@timmahoney)"
 msgstr ""
 
-#: ../../rst/modules/elasticache_subnet_group_module.rst:258
+#: ../../rst/modules/elasticache_subnet_group_module.rst:274
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/elasticache_subnet_group.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/elasticache_subnet_group.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/elasticache_subnet_group.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

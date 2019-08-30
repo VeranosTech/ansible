@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-#: ../../rst/network/getting_started/first_playbook.rst:3
+#: ../../rst/network/getting_started/first_playbook.rst:6
 msgid "Run Your First Command and Playbook"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:5
+#: ../../rst/network/getting_started/first_playbook.rst:8
 msgid ""
 "Put the concepts you learned to work with this quick tutorial. Install "
 "Ansible, execute a network configuration command manually, execute the "
@@ -30,61 +30,60 @@ msgid ""
 "command any time on multiple network devices."
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:7
+#: ../../rst/network/getting_started/first_playbook.rst:10
 msgid "Topics"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:10
+#: ../../rst/network/getting_started/first_playbook.rst:13
 msgid "Prerequisites"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:12
+#: ../../rst/network/getting_started/first_playbook.rst:15
 msgid "Before you work through this tutorial you need:"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:14
+#: ../../rst/network/getting_started/first_playbook.rst:17
 msgid "Ansible 2.5 (or higher) installed"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:15
+#: ../../rst/network/getting_started/first_playbook.rst:18
 msgid "One or more network devices that are compatible with Ansible"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:16
+#: ../../rst/network/getting_started/first_playbook.rst:19
 msgid "Basic Linux command line knowledge"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:17
+#: ../../rst/network/getting_started/first_playbook.rst:20
 msgid "Basic knowledge of network switch & router configuration"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:20
+#: ../../rst/network/getting_started/first_playbook.rst:23
 msgid "Install Ansible"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:22
+#: ../../rst/network/getting_started/first_playbook.rst:25
 msgid ""
 "Install Ansible using your preferred method. See "
-":doc:`../../installation_guide/intro_installation`. Then return to this "
-"tutorial."
+":ref:`installation_guide`. Then return to this tutorial."
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:24
+#: ../../rst/network/getting_started/first_playbook.rst:27
 msgid "Confirm the version of Ansible (must be >= 2.5):"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:32
+#: ../../rst/network/getting_started/first_playbook.rst:35
 msgid "Establish a Manual Connection to a Managed Node"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:34
+#: ../../rst/network/getting_started/first_playbook.rst:37
 msgid ""
 "To confirm your credentials, connect to a network device manually and "
 "retrieve its configuration. Replace the sample user and device name with "
 "your real credentials. For example, for a VyOS router:"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:42
+#: ../../rst/network/getting_started/first_playbook.rst:45
 msgid ""
 "This manual connection also establishes the authenticity of the network "
 "device, adding its RSA key fingerprint to your list of known hosts. (If "
@@ -92,64 +91,64 @@ msgid ""
 " authenticity.)"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:46
+#: ../../rst/network/getting_started/first_playbook.rst:49
 msgid "Run Your First Network Ansible Command"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:48
+#: ../../rst/network/getting_started/first_playbook.rst:51
 msgid ""
 "Instead of manually connecting and running a command on the network "
 "device, you can retrieve its configuration with a single, stripped-down "
 "Ansible command:"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:61
+#: ../../rst/network/getting_started/first_playbook.rst:64
 msgid "The flags in this command set seven values:"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:55
+#: ../../rst/network/getting_started/first_playbook.rst:58
 msgid "the host group(s) to which the command should apply (in this case, all)"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:56
+#: ../../rst/network/getting_started/first_playbook.rst:59
 msgid ""
 "the inventory (-i, the device or devices to target - without the trailing"
 " comma -i points to an inventory file)"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:57
+#: ../../rst/network/getting_started/first_playbook.rst:60
 msgid ""
 "the connection method (-c, the method for connecting and executing "
 "ansible)"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:58
+#: ../../rst/network/getting_started/first_playbook.rst:61
 msgid "the user (-u, the username for the SSH connection)"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:59
+#: ../../rst/network/getting_started/first_playbook.rst:62
 msgid "the SSH connection method (-k, please prompt for the password)"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:60
+#: ../../rst/network/getting_started/first_playbook.rst:63
 msgid "the module (-m, the ansible module to run)"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:61
+#: ../../rst/network/getting_started/first_playbook.rst:64
 msgid "an extra variable ( -e, in this case, setting the network OS value)"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:63
+#: ../../rst/network/getting_started/first_playbook.rst:66
 msgid ""
 "NOTE: If you use ``ssh-agent`` with ssh keys, Ansible loads them "
 "automatically. You can omit ``-k`` flag."
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:67
+#: ../../rst/network/getting_started/first_playbook.rst:70
 msgid "Create and Run Your First Network Ansible Playbook"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:69
+#: ../../rst/network/getting_started/first_playbook.rst:72
 msgid ""
 "If you want to run this command every day, you can save it in a playbook "
 "and run it with ansible-playbook instead of ansible. The playbook can "
@@ -158,13 +157,13 @@ msgid ""
 "this - a playbook and an inventory file."
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:71
+#: ../../rst/network/getting_started/first_playbook.rst:74
 msgid ""
 "Download :download:`first_playbook.yml "
 "<sample_files/first_playbook.yml>`, which looks like this:"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:76
+#: ../../rst/network/getting_started/first_playbook.rst:79
 msgid ""
 "The playbook sets three of the seven values from the command line above: "
 "the group (``hosts: all``), the connection method (``connection: "
@@ -176,17 +175,17 @@ msgid ""
 "your shell."
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:78
+#: ../../rst/network/getting_started/first_playbook.rst:81
 msgid "Run the playbook with the command:"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:84
+#: ../../rst/network/getting_started/first_playbook.rst:87
 msgid ""
 "The playbook contains one play with two tasks, and should generate output"
 " like this:"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:103
+#: ../../rst/network/getting_started/first_playbook.rst:106
 msgid ""
 "Now that you can retrieve the device config, try updating it with "
 "Ansible. Download :download:`first_playbook_ext.yml "
@@ -194,14 +193,14 @@ msgid ""
 "the first playbook:"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:108
+#: ../../rst/network/getting_started/first_playbook.rst:111
 msgid ""
 "The extended first playbook has four tasks in a single play. Run it with "
 "the same command you used above. The output shows you the change Ansible "
 "made to the config:"
 msgstr ""
 
-#: ../../rst/network/getting_started/first_playbook.rst:146
+#: ../../rst/network/getting_started/first_playbook.rst:149
 msgid ""
 "This playbook is useful. However, running it still requires several "
 "command-line flags. Also, running a playbook against a single device is "
@@ -210,4 +209,11 @@ msgid ""
 " to organize your managed nodes into groups with information like the "
 "``ansible_network_os`` and the SSH user."
 msgstr ""
+
+#~ msgid ""
+#~ "Install Ansible using your preferred "
+#~ "method. See "
+#~ ":doc:`../../installation_guide/intro_installation`. Then "
+#~ "return to this tutorial."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,105 +22,128 @@ msgstr ""
 msgid "eos_facts -- Collect facts from remote devices running Arista EOS"
 msgstr ""
 
-#: ../../rst/modules/eos_facts_module.rst:19
+#: ../../rst/modules/eos_facts_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/eos_facts_module.rst:20
+#: ../../rst/modules/eos_facts_module.rst:19
 msgid ""
-"Collects a base set of device facts from a remote device that is running "
-"eos.  This module prepends all of the base network fact keys with "
-"``ansible_net_<fact>``.  The facts module will always collect a base set "
-"of facts from the device and can enable or disable collection of "
+"Collects facts from Arista devices running the EOS operating system. This"
+" module places the facts gathered in the fact tree keyed by the "
+"respective resource name.  The facts module will always collect a base "
+"set of facts from the device and can enable or disable collection of "
 "additional facts."
 msgstr ""
 
-#: ../../rst/modules/eos_facts_module.rst:26
+#: ../../rst/modules/eos_facts_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/eos_facts_module.rst:304
+#: ../../rst/modules/eos_facts_module.rst:338
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/eos_facts_module.rst:307
-msgid "Tested against EOS 4.15"
-msgstr ""
-
-#: ../../rst/modules/eos_facts_module.rst:308
+#: ../../rst/modules/eos_facts_module.rst:341
 msgid ""
 "For information on using CLI, eAPI and privileged mode see the :ref:`EOS "
 "Platform Options guide <eos_platform_options>`"
 msgstr ""
 
-#: ../../rst/modules/eos_facts_module.rst:309
+#: ../../rst/modules/eos_facts_module.rst:342
 msgid ""
 "For more information on using Ansible to manage network devices see the "
 ":ref:`Ansible Network Guide <network_guide>`"
 msgstr ""
 
-#: ../../rst/modules/eos_facts_module.rst:310
+#: ../../rst/modules/eos_facts_module.rst:343
 msgid ""
 "For more information on using Ansible to manage Arista EOS devices see "
 "the `Arista integration page <https://www.ansible.com/ansible-arista-"
 "networks>`_."
 msgstr ""
 
-#: ../../rst/modules/eos_facts_module.rst:315
+#: ../../rst/modules/eos_facts_module.rst:348
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/eos_facts_module.rst:338
+#: ../../rst/modules/eos_facts_module.rst:389
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/eos_facts_module.rst:339
+#: ../../rst/modules/eos_facts_module.rst:390
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/eos_facts_module.rst:519
+#: ../../rst/modules/eos_facts_module.rst:603
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/eos_facts_module.rst:524
+#: ../../rst/modules/eos_facts_module.rst:608
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/eos_facts_module.rst:527
+#: ../../rst/modules/eos_facts_module.rst:611
 msgid ""
 "This module is :ref:`maintained by the Ansible Network Team "
 "<modules_support>`. *[network]*"
 msgstr ""
 
-#: ../../rst/modules/eos_facts_module.rst:530
+#: ../../rst/modules/eos_facts_module.rst:614
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/eos_facts_module.rst:532
+#: ../../rst/modules/eos_facts_module.rst:616
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/eos_facts_module.rst:538
+#: ../../rst/modules/eos_facts_module.rst:622
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/eos_facts_module.rst:540
+#: ../../rst/modules/eos_facts_module.rst:624
 msgid "Peter Sprygada (@privateip)"
 msgstr ""
 
-#: ../../rst/modules/eos_facts_module.rst:544
+#: ../../rst/modules/eos_facts_module.rst:625
+msgid "Nathaniel Case (@Qalthos)"
+msgstr ""
+
+#: ../../rst/modules/eos_facts_module.rst:629
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/eos/eos_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/eos/eos_facts.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "Collects a base set of device "
+#~ "facts from a remote device that is"
+#~ " running eos.  This module prepends "
+#~ "all of the base network fact keys"
+#~ " with ``ansible_net_<fact>``.  The facts "
+#~ "module will always collect a base "
+#~ "set of facts from the device and"
+#~ " can enable or disable collection of"
+#~ " additional facts."
+#~ msgstr ""
+
+#~ msgid "Tested against EOS 4.15"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/eos/eos_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

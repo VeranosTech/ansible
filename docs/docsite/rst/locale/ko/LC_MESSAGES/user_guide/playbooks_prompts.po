@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -167,42 +167,57 @@ msgid ""
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_prompts.rst:94
-msgid ":doc:`playbooks`"
+msgid ""
+"If you need to put in special characters (i.e `{%`) that might create "
+"templating errors, use the ``unsafe`` option::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_prompts.rst:95
+#: ../../rst/user_guide/playbooks_prompts.rst:104
+msgid ":ref:`playbooks_intro`"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_prompts.rst:105
 msgid "An introduction to playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_prompts.rst:96
-msgid ":doc:`playbooks_conditionals`"
+#: ../../rst/user_guide/playbooks_prompts.rst:106
+msgid ":ref:`playbooks_conditionals`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_prompts.rst:97
+#: ../../rst/user_guide/playbooks_prompts.rst:107
 msgid "Conditional statements in playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_prompts.rst:98
-msgid ":doc:`playbooks_variables`"
+#: ../../rst/user_guide/playbooks_prompts.rst:108
+msgid ":ref:`playbooks_variables`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_prompts.rst:99
+#: ../../rst/user_guide/playbooks_prompts.rst:109
 msgid "All about variables"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_prompts.rst:100
+#: ../../rst/user_guide/playbooks_prompts.rst:110
 msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_prompts.rst:101
+#: ../../rst/user_guide/playbooks_prompts.rst:111
 msgid "Have a question?  Stop by the google group!"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_prompts.rst:102
+#: ../../rst/user_guide/playbooks_prompts.rst:112
 msgid "`irc.freenode.net <http://irc.freenode.net>`_"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_prompts.rst:103
+#: ../../rst/user_guide/playbooks_prompts.rst:113
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ":doc:`playbooks`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks_conditionals`"
+#~ msgstr ""
+
+#~ msgid ":doc:`playbooks_variables`"
+#~ msgstr ""
 

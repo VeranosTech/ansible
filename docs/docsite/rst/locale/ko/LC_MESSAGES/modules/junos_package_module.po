@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,11 @@ msgstr ""
 msgid "junos_package -- Installs packages on remote devices running Junos"
 msgstr ""
 
-#: ../../rst/modules/junos_package_module.rst:19
+#: ../../rst/modules/junos_package_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/junos_package_module.rst:20
+#: ../../rst/modules/junos_package_module.rst:19
 msgid ""
 "This module can install new and updated packages on remote devices "
 "running Junos.  The module will compare the specified package with the "
@@ -34,109 +34,117 @@ msgid ""
 "there is a mismatch"
 msgstr ""
 
-#: ../../rst/modules/junos_package_module.rst:25
+#: ../../rst/modules/junos_package_module.rst:24
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/junos_package_module.rst:26
+#: ../../rst/modules/junos_package_module.rst:25
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/junos_package_module.rst:28
+#: ../../rst/modules/junos_package_module.rst:27
 msgid "junos-eznc"
 msgstr ""
 
-#: ../../rst/modules/junos_package_module.rst:29
+#: ../../rst/modules/junos_package_module.rst:28
 msgid "ncclient (>=v0.5.2)"
 msgstr ""
 
-#: ../../rst/modules/junos_package_module.rst:33
+#: ../../rst/modules/junos_package_module.rst:32
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/junos_package_module.rst:281
+#: ../../rst/modules/junos_package_module.rst:280
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/junos_package_module.rst:284
+#: ../../rst/modules/junos_package_module.rst:283
 msgid ""
 "This module requires the netconf system service be enabled on the remote "
 "device being managed."
 msgstr ""
 
-#: ../../rst/modules/junos_package_module.rst:285
+#: ../../rst/modules/junos_package_module.rst:284
 msgid ""
 "Tested against vSRX JUNOS version 15.1X49-D15.4, vqfx-10000 JUNOS Version"
 " 15.1X53-D60.4."
 msgstr ""
 
-#: ../../rst/modules/junos_package_module.rst:286
+#: ../../rst/modules/junos_package_module.rst:285
 msgid "Works with ``local`` connections only."
 msgstr ""
 
-#: ../../rst/modules/junos_package_module.rst:287
+#: ../../rst/modules/junos_package_module.rst:286
 msgid ""
 "For information on using CLI and netconf see the :ref:`Junos OS Platform "
 "Options guide <junos_platform_options>`"
 msgstr ""
 
-#: ../../rst/modules/junos_package_module.rst:288
+#: ../../rst/modules/junos_package_module.rst:287
 msgid ""
 "For more information on using Ansible to manage network devices see the "
 ":ref:`Ansible Network Guide <network_guide>`"
 msgstr ""
 
-#: ../../rst/modules/junos_package_module.rst:289
+#: ../../rst/modules/junos_package_module.rst:288
 msgid ""
 "For more information on using Ansible to manage Juniper network devices "
 "see https://www.ansible.com/ansible-juniper."
 msgstr ""
 
-#: ../../rst/modules/junos_package_module.rst:294
+#: ../../rst/modules/junos_package_module.rst:293
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/junos_package_module.rst:316
+#: ../../rst/modules/junos_package_module.rst:315
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/junos_package_module.rst:321
+#: ../../rst/modules/junos_package_module.rst:320
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/junos_package_module.rst:324
+#: ../../rst/modules/junos_package_module.rst:323
 msgid ""
 "This module is :ref:`maintained by the Ansible Network Team "
 "<modules_support>`. *[network]*"
 msgstr ""
 
-#: ../../rst/modules/junos_package_module.rst:327
+#: ../../rst/modules/junos_package_module.rst:326
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/junos_package_module.rst:329
+#: ../../rst/modules/junos_package_module.rst:328
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/junos_package_module.rst:335
+#: ../../rst/modules/junos_package_module.rst:334
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/junos_package_module.rst:337
+#: ../../rst/modules/junos_package_module.rst:336
 msgid "Peter Sprygada (@privateip)"
 msgstr ""
 
-#: ../../rst/modules/junos_package_module.rst:341
+#: ../../rst/modules/junos_package_module.rst:340
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/junos/junos_package.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/junos/junos_package.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/junos/junos_package.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

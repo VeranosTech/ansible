@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,58 +38,74 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/fmgr_ha_module.rst:225
+#: ../../rst/modules/fmgr_ha_module.rst:184
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/fmgr_ha_module.rst:187
+msgid "Full Documentation at https://ftnt-ansible-docs.readthedocs.io/en/latest/."
+msgstr ""
+
+#: ../../rst/modules/fmgr_ha_module.rst:192
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/fmgr_ha_module.rst:276
+#: ../../rst/modules/fmgr_ha_module.rst:232
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/fmgr_ha_module.rst:277
+#: ../../rst/modules/fmgr_ha_module.rst:233
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/fmgr_ha_module.rst:303
+#: ../../rst/modules/fmgr_ha_module.rst:259
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/fmgr_ha_module.rst:308
+#: ../../rst/modules/fmgr_ha_module.rst:264
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/fmgr_ha_module.rst:311
+#: ../../rst/modules/fmgr_ha_module.rst:267
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/fmgr_ha_module.rst:318
+#: ../../rst/modules/fmgr_ha_module.rst:274
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/fmgr_ha_module.rst:320
+#: ../../rst/modules/fmgr_ha_module.rst:276
 msgid "Luke Weighall (@lweighall)"
 msgstr ""
 
-#: ../../rst/modules/fmgr_ha_module.rst:321
+#: ../../rst/modules/fmgr_ha_module.rst:277
 msgid "Andrew Welsh (@Ghilli3)"
 msgstr ""
 
-#: ../../rst/modules/fmgr_ha_module.rst:322
+#: ../../rst/modules/fmgr_ha_module.rst:278
 msgid "Jim Huber (@p4r4n0y1ng)"
 msgstr ""
 
-#: ../../rst/modules/fmgr_ha_module.rst:326
+#: ../../rst/modules/fmgr_ha_module.rst:282
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/fortimanager/fmgr_ha.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/fortimanager/fmgr_ha.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/fortimanager/fmgr_ha.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

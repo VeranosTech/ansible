@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,49 +22,49 @@ msgstr ""
 msgid "cloudtrail -- manage CloudTrail create, delete, update"
 msgstr ""
 
-#: ../../rst/modules/cloudtrail_module.rst:19
+#: ../../rst/modules/cloudtrail_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/cloudtrail_module.rst:20
+#: ../../rst/modules/cloudtrail_module.rst:19
 msgid ""
 "Creates, deletes, or updates CloudTrail configuration. Ensures logging is"
 " also enabled."
 msgstr ""
 
-#: ../../rst/modules/cloudtrail_module.rst:25
+#: ../../rst/modules/cloudtrail_module.rst:24
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/cloudtrail_module.rst:26
+#: ../../rst/modules/cloudtrail_module.rst:25
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/cloudtrail_module.rst:28
+#: ../../rst/modules/cloudtrail_module.rst:27
 msgid "boto"
 msgstr ""
 
-#: ../../rst/modules/cloudtrail_module.rst:29
+#: ../../rst/modules/cloudtrail_module.rst:28
 msgid "boto3"
 msgstr ""
 
-#: ../../rst/modules/cloudtrail_module.rst:30
+#: ../../rst/modules/cloudtrail_module.rst:29
 msgid "botocore"
 msgstr ""
 
-#: ../../rst/modules/cloudtrail_module.rst:31
+#: ../../rst/modules/cloudtrail_module.rst:30
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/cloudtrail_module.rst:35
+#: ../../rst/modules/cloudtrail_module.rst:34
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/cloudtrail_module.rst:357
+#: ../../rst/modules/cloudtrail_module.rst:373
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/cloudtrail_module.rst:360
+#: ../../rst/modules/cloudtrail_module.rst:376
 msgid ""
 "If parameters are not set within the module, the following environment "
 "variables can be used in decreasing order of precedence ``AWS_URL`` or "
@@ -74,72 +74,80 @@ msgid ""
 "``AWS_REGION`` or ``EC2_REGION``"
 msgstr ""
 
-#: ../../rst/modules/cloudtrail_module.rst:361
+#: ../../rst/modules/cloudtrail_module.rst:377
 msgid ""
 "Ansible uses the boto configuration file (typically ~/.boto) if no "
 "credentials are provided. See "
 "https://boto.readthedocs.io/en/latest/boto_config_tut.html"
 msgstr ""
 
-#: ../../rst/modules/cloudtrail_module.rst:362
+#: ../../rst/modules/cloudtrail_module.rst:378
 msgid ""
 "``AWS_REGION`` or ``EC2_REGION`` can be typically be used to specify the "
 "AWS region, when required, but this can also be configured in the boto "
 "config file"
 msgstr ""
 
-#: ../../rst/modules/cloudtrail_module.rst:367
+#: ../../rst/modules/cloudtrail_module.rst:383
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/cloudtrail_module.rst:425
+#: ../../rst/modules/cloudtrail_module.rst:441
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/cloudtrail_module.rst:426
+#: ../../rst/modules/cloudtrail_module.rst:442
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/cloudtrail_module.rst:690
+#: ../../rst/modules/cloudtrail_module.rst:706
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/cloudtrail_module.rst:695
+#: ../../rst/modules/cloudtrail_module.rst:711
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/cloudtrail_module.rst:698
+#: ../../rst/modules/cloudtrail_module.rst:714
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/cloudtrail_module.rst:705
+#: ../../rst/modules/cloudtrail_module.rst:721
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/cloudtrail_module.rst:707
+#: ../../rst/modules/cloudtrail_module.rst:723
 msgid "Ansible Core Team"
 msgstr ""
 
-#: ../../rst/modules/cloudtrail_module.rst:708
+#: ../../rst/modules/cloudtrail_module.rst:724
 msgid "Ted Timmons (@tedder)"
 msgstr ""
 
-#: ../../rst/modules/cloudtrail_module.rst:709
+#: ../../rst/modules/cloudtrail_module.rst:725
 msgid "Daniel Shepherd (@shepdelacreme)"
 msgstr ""
 
-#: ../../rst/modules/cloudtrail_module.rst:713
+#: ../../rst/modules/cloudtrail_module.rst:729
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/cloudtrail.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/cloudtrail.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/cloudtrail.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1007,8 +1007,9 @@ msgstr ""
 msgid ""
 "Another important thing to consider (for all versions) is that connection"
 " variables override config, command line and play/role/task specific "
-"options and keywords.  For example, if your inventory specifies "
-"``ansible_ssh_user: ramon`` and you run::"
+"options and keywords. See :ref:`general_precedence_rules` for more "
+"details. For example, if your inventory specifies ``ansible_user: ramon``"
+" and you run::"
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_variables.rst:1054
@@ -1026,8 +1027,8 @@ msgstr ""
 
 #: ../../rst/user_guide/playbooks_variables.rst:1063
 msgid ""
-"will have the value of ``remote_user`` overwritten by "
-"``ansible_ssh_user`` in the inventory."
+"will have the value of ``remote_user`` overwritten by ``ansible_user`` in"
+" the inventory."
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_variables.rst:1065
@@ -1047,54 +1048,62 @@ msgstr ""
 msgid ""
 "the ``lola`` value is still ignored, but ``ansible_user=maria`` takes "
 "precedence over all other places where ``ansible_user`` (or "
-"``ansible_ssh_user``, or ``remote_user``) might be set."
+"``remote_user``) might be set."
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_variables.rst:1074
+msgid ""
+"A connection-specific version of a variable takes precedence over more "
+"generic versions.  For example, ``ansible_ssh_user`` specified as a "
+"group_var would have a higher precedence than ``ansible_user`` specified "
+"as a host_var."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_variables.rst:1078
 msgid "You can also override as a normal variable in a play::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1085
+#: ../../rst/user_guide/playbooks_variables.rst:1089
 msgid "Scoping variables"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1087
+#: ../../rst/user_guide/playbooks_variables.rst:1091
 msgid ""
 "You can decide where to set a variable based on the scope you want that "
 "value to have. Ansible has three main scopes:"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1089
+#: ../../rst/user_guide/playbooks_variables.rst:1093
 msgid "Global: this is set by config, environment variables and the command line"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1090
+#: ../../rst/user_guide/playbooks_variables.rst:1094
 msgid ""
 "Play: each play and contained structures, vars entries (vars; vars_files;"
 " vars_prompt), role defaults and vars."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1091
+#: ../../rst/user_guide/playbooks_variables.rst:1095
 msgid ""
 "Host: variables directly associated to a host, like inventory, "
 "include_vars, facts or registered task outputs"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1096
+#: ../../rst/user_guide/playbooks_variables.rst:1100
 msgid "Examples of where to set a variable"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1098
+#: ../../rst/user_guide/playbooks_variables.rst:1102
 msgid ""
 "Let's show some examples and where you would choose to put what based on "
 "the kind of control you might want over values."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1100
+#: ../../rst/user_guide/playbooks_variables.rst:1104
 msgid "First off, group variables are powerful."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1102
+#: ../../rst/user_guide/playbooks_variables.rst:1106
 msgid ""
 "Site-wide defaults should be defined as a ``group_vars/all`` setting.  "
 "Group variables are generally placed alongside your inventory file.  They"
@@ -1103,7 +1112,7 @@ msgid ""
 ":ref:`ansible_tower` from the UI or API::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1111
+#: ../../rst/user_guide/playbooks_variables.rst:1115
 msgid ""
 "Regional information might be defined in a ``group_vars/region`` "
 "variable.  If this group is a child of the ``all`` group (which it is, "
@@ -1111,13 +1120,13 @@ msgid ""
 " more general::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1117
+#: ../../rst/user_guide/playbooks_variables.rst:1121
 msgid ""
 "If for some crazy reason we wanted to tell just a specific host to use a "
 "specific NTP server, it would then override the group variable!::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1123
+#: ../../rst/user_guide/playbooks_variables.rst:1127
 msgid ""
 "So that covers inventory and what you would normally set there.  It's a "
 "great place for things that deal with geography or behavior.  Since "
@@ -1126,24 +1135,24 @@ msgid ""
 "them on a role.  You could go either way."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1125
+#: ../../rst/user_guide/playbooks_variables.rst:1129
 msgid ""
 "Remember:  Child groups override parent groups, and hosts always override"
 " their groups."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1127
+#: ../../rst/user_guide/playbooks_variables.rst:1131
 msgid "Next up: learning about role variable precedence."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1129
+#: ../../rst/user_guide/playbooks_variables.rst:1133
 msgid ""
 "We'll pretty much assume you are using roles at this point.  You should "
 "be using roles for sure.  Roles are great.  You are using roles aren't "
 "you?  Hint hint."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1132
+#: ../../rst/user_guide/playbooks_variables.rst:1136
 msgid ""
 "If you are writing a redistributable role with reasonable defaults, put "
 "those in the ``roles/x/defaults/main.yml`` file.  This means the role "
@@ -1151,7 +1160,7 @@ msgid ""
 "it. See :ref:`playbooks_reuse_roles` for more info about this::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1141
+#: ../../rst/user_guide/playbooks_variables.rst:1145
 msgid ""
 "If you are writing a role and want to ensure the value in the role is "
 "absolutely used in that role, and is not going to be overridden by "
@@ -1159,7 +1168,7 @@ msgid ""
 "inventory values cannot override it.  ``-e`` however, still will::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1149
+#: ../../rst/user_guide/playbooks_variables.rst:1153
 msgid ""
 "This is one way to plug in constants about the role that are always true."
 "  If you are not sharing your role with others, app specific behaviors "
@@ -1169,17 +1178,17 @@ msgid ""
 "to the role."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1153
+#: ../../rst/user_guide/playbooks_variables.rst:1157
 msgid "Parameterized roles are useful."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1155
+#: ../../rst/user_guide/playbooks_variables.rst:1159
 msgid ""
 "If you are using a role and want to override a default, pass it as a "
 "parameter to the role like so::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1162
+#: ../../rst/user_guide/playbooks_variables.rst:1166
 msgid ""
 "This makes it clear to the playbook reader that you've made a conscious "
 "choice to override some default in the role, or pass in some "
@@ -1188,13 +1197,13 @@ msgid ""
 "are sharing with others."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1166
+#: ../../rst/user_guide/playbooks_variables.rst:1170
 msgid ""
 "This can often be used for things that might apply to some hosts multiple"
 " times. For example::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1182
+#: ../../rst/user_guide/playbooks_variables.rst:1186
 msgid ""
 "In this example, the same role was invoked multiple times.  It's quite "
 "likely there was no default for ``name`` supplied at all.  Ansible can "
@@ -1202,11 +1211,11 @@ msgid ""
 "fact."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1185
+#: ../../rst/user_guide/playbooks_variables.rst:1189
 msgid "There are a few other things that go on with roles."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1187
+#: ../../rst/user_guide/playbooks_variables.rst:1191
 msgid ""
 "Generally speaking, variables set in one role are available to others.  "
 "This means if you have a ``roles/common/vars/main.yml`` you can set "
@@ -1214,7 +1223,7 @@ msgid ""
 "your playbook::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1197
+#: ../../rst/user_guide/playbooks_variables.rst:1201
 msgid ""
 "There are some protections in place to avoid the need to namespace "
 "variables. In the above, variables defined in common_settings are most "
@@ -1223,7 +1232,7 @@ msgid ""
 "in common settings it set foo to 20."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1201
+#: ../../rst/user_guide/playbooks_variables.rst:1205
 msgid ""
 "So, that's precedence, explained in a more direct way.  Don't worry about"
 " precedence, just think about if your role is defining a variable that is"
@@ -1232,93 +1241,117 @@ msgid ""
 "override something, use ``-e``."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1205
+#: ../../rst/user_guide/playbooks_variables.rst:1209
 msgid ""
 "If you found that a little hard to understand, take a look at the "
 "`ansible-examples <https://github.com/ansible/ansible-examples>`_ repo on"
 " GitHub for a bit more about how all of these things can work together."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1208
+#: ../../rst/user_guide/playbooks_variables.rst:1212
 msgid "Using advanced variable syntax"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1210
+#: ../../rst/user_guide/playbooks_variables.rst:1214
 msgid ""
 "For information about advanced YAML syntax used to declare variables and "
 "have more control over the data placed in YAML files used by Ansible, see"
 " :ref:`playbooks_advanced_syntax`."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1214
+#: ../../rst/user_guide/playbooks_variables.rst:1218
 msgid ":ref:`about_playbooks`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1215
+#: ../../rst/user_guide/playbooks_variables.rst:1219
 msgid "An introduction to playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1216
+#: ../../rst/user_guide/playbooks_variables.rst:1220
 msgid ":ref:`playbooks_conditionals`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1217
+#: ../../rst/user_guide/playbooks_variables.rst:1221
 msgid "Conditional statements in playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1218
+#: ../../rst/user_guide/playbooks_variables.rst:1222
 msgid ":ref:`playbooks_filters`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1219
+#: ../../rst/user_guide/playbooks_variables.rst:1223
 msgid "Jinja2 filters and their uses"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1220
+#: ../../rst/user_guide/playbooks_variables.rst:1224
 msgid ":ref:`playbooks_loops`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1221
+#: ../../rst/user_guide/playbooks_variables.rst:1225
 msgid "Looping in playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1222
+#: ../../rst/user_guide/playbooks_variables.rst:1226
 msgid ":ref:`playbooks_reuse_roles`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1223
+#: ../../rst/user_guide/playbooks_variables.rst:1227
 msgid "Playbook organization by roles"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1224
+#: ../../rst/user_guide/playbooks_variables.rst:1228
 msgid ":ref:`playbooks_best_practices`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1225
+#: ../../rst/user_guide/playbooks_variables.rst:1229
 msgid "Best practices in playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1226
+#: ../../rst/user_guide/playbooks_variables.rst:1230
 msgid ":ref:`special_variables`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1227
+#: ../../rst/user_guide/playbooks_variables.rst:1231
 msgid "List of special variables"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1228
+#: ../../rst/user_guide/playbooks_variables.rst:1232
 msgid "`User Mailing List <http://groups.google.com/group/ansible-devel>`_"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1229
+#: ../../rst/user_guide/playbooks_variables.rst:1233
 msgid "Have a question?  Stop by the google group!"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1230
+#: ../../rst/user_guide/playbooks_variables.rst:1234
 msgid "`irc.freenode.net <http://irc.freenode.net>`_"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_variables.rst:1231
+#: ../../rst/user_guide/playbooks_variables.rst:1235
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ""
+#~ "Another important thing to consider (for"
+#~ " all versions) is that connection "
+#~ "variables override config, command line "
+#~ "and play/role/task specific options and "
+#~ "keywords.  For example, if your "
+#~ "inventory specifies ``ansible_ssh_user: ramon`` "
+#~ "and you run::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "will have the value of ``remote_user``"
+#~ " overwritten by ``ansible_ssh_user`` in the"
+#~ " inventory."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "the ``lola`` value is still ignored, "
+#~ "but ``ansible_user=maria`` takes precedence "
+#~ "over all other places where "
+#~ "``ansible_user`` (or ``ansible_ssh_user``, or "
+#~ "``remote_user``) might be set."
+#~ msgstr ""
 

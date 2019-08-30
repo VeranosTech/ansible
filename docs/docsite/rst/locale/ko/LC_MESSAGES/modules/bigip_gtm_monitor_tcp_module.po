@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,21 +34,21 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:475
+#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:412
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:478
+#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:415
 msgid ""
 "For more information on using Ansible to manage F5 Networks devices see "
 "https://www.ansible.com/integrations/networks/f5."
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:479
+#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:416
 msgid "Requires BIG-IP software version >= 12."
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:480
+#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:417
 msgid ""
 "The F5 modules only manipulate the running configuration of the F5 "
 "product. To ensure that BIG-IP specific configuration persists to disk, "
@@ -58,54 +58,62 @@ msgid ""
 "your running configuration."
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:485
+#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:422
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:528
+#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:465
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:529
+#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:466
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:683
+#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:620
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:688
+#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:625
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:691
+#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:628
 msgid ""
 "This module is :ref:`maintained by an Ansible Partner <modules_support>`."
 " *[certified]*"
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:698
+#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:635
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:700
+#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:637
 msgid "Tim Rupp (@caphrim007)"
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:701
+#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:638
 msgid "Wojciech Wypior (@wojtek0806)"
 msgstr ""
 
-#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:705
+#: ../../rst/modules/bigip_gtm_monitor_tcp_module.rst:642
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_gtm_monitor_tcp.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_gtm_monitor_tcp.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_gtm_monitor_tcp.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

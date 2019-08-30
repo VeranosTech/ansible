@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,24 +43,28 @@ msgid "openstacksdk"
 msgstr ""
 
 #: ../../rst/modules/os_volume_snapshot_module.rst:29
+msgid "openstacksdk >= 0.12.0"
+msgstr ""
+
+#: ../../rst/modules/os_volume_snapshot_module.rst:30
 msgid "python >= 2.7"
 msgstr ""
 
-#: ../../rst/modules/os_volume_snapshot_module.rst:33
+#: ../../rst/modules/os_volume_snapshot_module.rst:34
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/os_volume_snapshot_module.rst:308
+#: ../../rst/modules/os_volume_snapshot_module.rst:313
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/os_volume_snapshot_module.rst:311
+#: ../../rst/modules/os_volume_snapshot_module.rst:316
 msgid ""
 "The standard OpenStack environment variables, such as ``OS_USERNAME`` may"
 " be used instead of providing explicit values."
 msgstr ""
 
-#: ../../rst/modules/os_volume_snapshot_module.rst:312
+#: ../../rst/modules/os_volume_snapshot_module.rst:317
 msgid ""
 "Auth information is driven by openstacksdk, which means that values can "
 "come from a yaml config file in /etc/ansible/openstack.yaml, "
@@ -70,50 +74,58 @@ msgid ""
 "https://docs.openstack.org/openstacksdk/"
 msgstr ""
 
-#: ../../rst/modules/os_volume_snapshot_module.rst:317
+#: ../../rst/modules/os_volume_snapshot_module.rst:322
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/os_volume_snapshot_module.rst:345
+#: ../../rst/modules/os_volume_snapshot_module.rst:350
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/os_volume_snapshot_module.rst:346
+#: ../../rst/modules/os_volume_snapshot_module.rst:351
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/os_volume_snapshot_module.rst:374
+#: ../../rst/modules/os_volume_snapshot_module.rst:379
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/os_volume_snapshot_module.rst:379
+#: ../../rst/modules/os_volume_snapshot_module.rst:384
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/os_volume_snapshot_module.rst:382
+#: ../../rst/modules/os_volume_snapshot_module.rst:387
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/os_volume_snapshot_module.rst:389
+#: ../../rst/modules/os_volume_snapshot_module.rst:394
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/os_volume_snapshot_module.rst:391
+#: ../../rst/modules/os_volume_snapshot_module.rst:396
 msgid "Mario Santos (@ruizink)"
 msgstr ""
 
-#: ../../rst/modules/os_volume_snapshot_module.rst:395
+#: ../../rst/modules/os_volume_snapshot_module.rst:400
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/openstack/os_volume_snapshot.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/openstack/os_volume_snapshot.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/openstack/os_volume_snapshot.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

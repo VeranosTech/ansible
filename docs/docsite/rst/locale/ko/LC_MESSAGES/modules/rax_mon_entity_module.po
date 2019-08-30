@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,11 @@ msgstr ""
 msgid "rax_mon_entity -- Create or delete a Rackspace Cloud Monitoring entity"
 msgstr ""
 
-#: ../../rst/modules/rax_mon_entity_module.rst:19
+#: ../../rst/modules/rax_mon_entity_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/rax_mon_entity_module.rst:20
+#: ../../rst/modules/rax_mon_entity_module.rst:19
 msgid ""
 "Create or delete a Rackspace Cloud Monitoring entity, which represents a "
 "device to monitor. Entities associate checks and alarms with a target "
@@ -35,23 +35,23 @@ msgid ""
 "rax_mon_notification -> rax_mon_notification_plan -> rax_mon_alarm"
 msgstr ""
 
-#: ../../rst/modules/rax_mon_entity_module.rst:25
+#: ../../rst/modules/rax_mon_entity_module.rst:24
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/rax_mon_entity_module.rst:26
+#: ../../rst/modules/rax_mon_entity_module.rst:25
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/rax_mon_entity_module.rst:28
+#: ../../rst/modules/rax_mon_entity_module.rst:27
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/rax_mon_entity_module.rst:29
+#: ../../rst/modules/rax_mon_entity_module.rst:28
 msgid "pyrax"
 msgstr ""
 
-#: ../../rst/modules/rax_mon_entity_module.rst:33
+#: ../../rst/modules/rax_mon_entity_module.rst:32
 msgid "Parameters"
 msgstr ""
 
@@ -113,9 +113,17 @@ msgstr ""
 #: ../../rst/modules/rax_mon_entity_module.rst:315
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/rackspace/rax_mon_entity.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/rackspace/rax_mon_entity.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/rackspace/rax_mon_entity.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

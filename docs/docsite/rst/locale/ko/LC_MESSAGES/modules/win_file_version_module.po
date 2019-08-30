@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,82 +22,90 @@ msgstr ""
 msgid "win_file_version -- Get DLL or EXE file build version"
 msgstr ""
 
-#: ../../rst/modules/win_file_version_module.rst:19
+#: ../../rst/modules/win_file_version_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/win_file_version_module.rst:20
+#: ../../rst/modules/win_file_version_module.rst:19
 msgid "Get DLL or EXE file build version."
 msgstr ""
 
-#: ../../rst/modules/win_file_version_module.rst:26
+#: ../../rst/modules/win_file_version_module.rst:25
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/win_file_version_module.rst:55
+#: ../../rst/modules/win_file_version_module.rst:54
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/win_file_version_module.rst:58
+#: ../../rst/modules/win_file_version_module.rst:57
 msgid "This module will always return no change."
 msgstr ""
 
-#: ../../rst/modules/win_file_version_module.rst:62
+#: ../../rst/modules/win_file_version_module.rst:61
 msgid "See Also"
 msgstr ""
 
-#: ../../rst/modules/win_file_version_module.rst:66
+#: ../../rst/modules/win_file_version_module.rst:65
 msgid ":ref:`win_file_module`"
 msgstr ""
 
-#: ../../rst/modules/win_file_version_module.rst:67
+#: ../../rst/modules/win_file_version_module.rst:66
 msgid "The official documentation on the **win_file** module."
 msgstr ""
 
-#: ../../rst/modules/win_file_version_module.rst:71
+#: ../../rst/modules/win_file_version_module.rst:70
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/win_file_version_module.rst:88
+#: ../../rst/modules/win_file_version_module.rst:87
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/win_file_version_module.rst:89
+#: ../../rst/modules/win_file_version_module.rst:88
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/win_file_version_module.rst:181
+#: ../../rst/modules/win_file_version_module.rst:180
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/win_file_version_module.rst:186
+#: ../../rst/modules/win_file_version_module.rst:185
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/win_file_version_module.rst:189
+#: ../../rst/modules/win_file_version_module.rst:188
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/win_file_version_module.rst:196
+#: ../../rst/modules/win_file_version_module.rst:195
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/win_file_version_module.rst:198
+#: ../../rst/modules/win_file_version_module.rst:197
 msgid "Sam Liu (@SamLiu79)"
 msgstr ""
 
-#: ../../rst/modules/win_file_version_module.rst:202
+#: ../../rst/modules/win_file_version_module.rst:201
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_file_version.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_file_version.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_file_version.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

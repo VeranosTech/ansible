@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "actionable -- shows only items that need attention"
 msgstr ""
 
-#: ../../rst/plugins/callback/actionable.rst:17
+#: ../../rst/plugins/callback/actionable.rst:16
 msgid "DEPRECATED"
 msgstr ""
 
@@ -30,7 +30,7 @@ msgstr ""
 msgid "Removed in Ansible"
 msgstr ""
 
-#: ../../rst/plugins/callback/actionable.rst:18
+#: ../../rst/plugins/callback/actionable.rst:17
 msgid "version: 2.11"
 msgstr ""
 
@@ -38,7 +38,7 @@ msgstr ""
 msgid "Why"
 msgstr ""
 
-#: ../../rst/plugins/callback/actionable.rst:19
+#: ../../rst/plugins/callback/actionable.rst:18
 msgid "The 'default' callback plugin now supports this functionality"
 msgstr ""
 
@@ -46,67 +46,76 @@ msgstr ""
 msgid "Alternative"
 msgstr ""
 
-#: ../../rst/plugins/callback/actionable.rst:20
+#: ../../rst/plugins/callback/actionable.rst:19
 msgid ""
 "'default' callback plugin with 'display_skipped_hosts = no' and "
 "'display_ok_hosts = no' options"
 msgstr ""
 
-#: ../../rst/plugins/callback/actionable.rst:25
+#: ../../rst/plugins/callback/actionable.rst:24
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/plugins/callback/actionable.rst:26
+#: ../../rst/plugins/callback/actionable.rst:25
 msgid "Use this callback when you dont care about OK nor Skipped."
 msgstr ""
 
-#: ../../rst/plugins/callback/actionable.rst:27
+#: ../../rst/plugins/callback/actionable.rst:26
 msgid "This callback suppresses any non Failed or Changed status."
 msgstr ""
 
-#: ../../rst/plugins/callback/actionable.rst:32
+#: ../../rst/plugins/callback/actionable.rst:31
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/plugins/callback/actionable.rst:33
+#: ../../rst/plugins/callback/actionable.rst:32
 msgid ""
 "The below requirements are needed on the local master node that executes "
 "this callback."
 msgstr ""
 
-#: ../../rst/plugins/callback/actionable.rst:35
+#: ../../rst/plugins/callback/actionable.rst:34
 msgid "set as stdout callback in configuration"
 msgstr ""
 
-#: ../../rst/plugins/callback/actionable.rst:39
+#: ../../rst/plugins/callback/actionable.rst:38
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/plugins/callback/actionable.rst:144
+#: ../../rst/plugins/callback/actionable.rst:176
 msgid "Status"
 msgstr ""
 
-#: ../../rst/plugins/callback/actionable.rst:147
+#: ../../rst/plugins/callback/actionable.rst:179
 msgid "This callback will be removed in version 2.11. *[deprecated]*"
 msgstr ""
 
-#: ../../rst/plugins/callback/actionable.rst:148
+#: ../../rst/plugins/callback/actionable.rst:180
 msgid "For more information see `DEPRECATED`_."
 msgstr ""
 
-#: ../../rst/plugins/callback/actionable.rst:152
+#: ../../rst/plugins/callback/actionable.rst:184
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/plugins/callback/actionable.rst:154
+#: ../../rst/plugins/callback/actionable.rst:186
 msgid "UNKNOWN"
 msgstr ""
 
-#: ../../rst/plugins/callback/actionable.rst:158
+#: ../../rst/plugins/callback/actionable.rst:190
+#, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/callback/actionable.py>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/callback/actionable.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/callback/actionable.py>`_"
+#~ " to improve it."
+#~ msgstr ""
 

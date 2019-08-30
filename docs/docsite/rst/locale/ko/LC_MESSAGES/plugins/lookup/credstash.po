@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,77 +22,86 @@ msgstr ""
 msgid "credstash -- retrieve secrets from Credstash on AWS"
 msgstr ""
 
-#: ../../rst/plugins/lookup/credstash.rst:18
+#: ../../rst/plugins/lookup/credstash.rst:17
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/plugins/lookup/credstash.rst:19
+#: ../../rst/plugins/lookup/credstash.rst:18
 msgid ""
 "Credstash is a small utility for managing secrets using AWS's KMS and "
 "DynamoDB: https://github.com/fugue/credstash"
 msgstr ""
 
-#: ../../rst/plugins/lookup/credstash.rst:24
+#: ../../rst/plugins/lookup/credstash.rst:23
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/plugins/lookup/credstash.rst:25
+#: ../../rst/plugins/lookup/credstash.rst:24
 msgid ""
 "The below requirements are needed on the local master node that executes "
 "this lookup."
 msgstr ""
 
-#: ../../rst/plugins/lookup/credstash.rst:27
+#: ../../rst/plugins/lookup/credstash.rst:26
 msgid "credstash (python library)"
 msgstr ""
 
-#: ../../rst/plugins/lookup/credstash.rst:31
+#: ../../rst/plugins/lookup/credstash.rst:30
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/plugins/lookup/credstash.rst:174
+#: ../../rst/plugins/lookup/credstash.rst:173
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/plugins/lookup/credstash.rst:209
+#: ../../rst/plugins/lookup/credstash.rst:208
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/plugins/lookup/credstash.rst:210
+#: ../../rst/plugins/lookup/credstash.rst:209
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this lookup:"
 msgstr ""
 
-#: ../../rst/plugins/lookup/credstash.rst:236
+#: ../../rst/plugins/lookup/credstash.rst:235
 msgid "Status"
 msgstr ""
 
-#: ../../rst/plugins/lookup/credstash.rst:241
+#: ../../rst/plugins/lookup/credstash.rst:240
 msgid ""
 "This lookup is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/plugins/lookup/credstash.rst:244
+#: ../../rst/plugins/lookup/credstash.rst:243
 msgid ""
 "This lookup is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/plugins/lookup/credstash.rst:251
+#: ../../rst/plugins/lookup/credstash.rst:250
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/plugins/lookup/credstash.rst:253
+#: ../../rst/plugins/lookup/credstash.rst:252
 msgid "UNKNOWN"
 msgstr ""
 
-#: ../../rst/plugins/lookup/credstash.rst:257
+#: ../../rst/plugins/lookup/credstash.rst:256
+#, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/lookup/credstash.py>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/lookup/credstash.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/lookup/credstash.py>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,87 +22,96 @@ msgstr ""
 msgid "logentries -- Sends events to Logentries"
 msgstr ""
 
-#: ../../rst/plugins/callback/logentries.rst:18
+#: ../../rst/plugins/callback/logentries.rst:17
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/plugins/callback/logentries.rst:19
+#: ../../rst/plugins/callback/logentries.rst:18
 msgid ""
 "This callback plugin will generate JSON objects and send them to "
 "Logentries via TCP for auditing/debugging purposes."
 msgstr ""
 
-#: ../../rst/plugins/callback/logentries.rst:20
+#: ../../rst/plugins/callback/logentries.rst:19
 msgid ""
 "Before 2.4, if you wanted to use an ini configuration, the file must be "
 "placed in the same directory as this plugin and named logentries.ini"
 msgstr ""
 
-#: ../../rst/plugins/callback/logentries.rst:21
+#: ../../rst/plugins/callback/logentries.rst:20
 msgid ""
 "In 2.4 and above you can just put it in the main Ansible configuration "
 "file."
 msgstr ""
 
-#: ../../rst/plugins/callback/logentries.rst:26
+#: ../../rst/plugins/callback/logentries.rst:25
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/plugins/callback/logentries.rst:27
+#: ../../rst/plugins/callback/logentries.rst:26
 msgid ""
 "The below requirements are needed on the local master node that executes "
 "this callback."
 msgstr ""
 
-#: ../../rst/plugins/callback/logentries.rst:29
+#: ../../rst/plugins/callback/logentries.rst:28
 msgid "whitelisting in configuration"
 msgstr ""
 
-#: ../../rst/plugins/callback/logentries.rst:30
+#: ../../rst/plugins/callback/logentries.rst:29
 msgid "certifi (python library)"
 msgstr ""
 
-#: ../../rst/plugins/callback/logentries.rst:31
+#: ../../rst/plugins/callback/logentries.rst:30
 msgid "flatdict (python library), if you want to use the 'flatten' option"
 msgstr ""
 
-#: ../../rst/plugins/callback/logentries.rst:35
+#: ../../rst/plugins/callback/logentries.rst:34
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/plugins/callback/logentries.rst:172
+#: ../../rst/plugins/callback/logentries.rst:171
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/plugins/callback/logentries.rst:202
+#: ../../rst/plugins/callback/logentries.rst:201
 msgid "Status"
 msgstr ""
 
-#: ../../rst/plugins/callback/logentries.rst:207
+#: ../../rst/plugins/callback/logentries.rst:206
 msgid ""
 "This callback is not guaranteed to have a backwards compatible interface."
 " *[preview]*"
 msgstr ""
 
-#: ../../rst/plugins/callback/logentries.rst:210
+#: ../../rst/plugins/callback/logentries.rst:209
 msgid ""
 "This callback is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/plugins/callback/logentries.rst:217
+#: ../../rst/plugins/callback/logentries.rst:216
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/plugins/callback/logentries.rst:219
+#: ../../rst/plugins/callback/logentries.rst:218
 msgid "UNKNOWN"
 msgstr ""
 
-#: ../../rst/plugins/callback/logentries.rst:223
+#: ../../rst/plugins/callback/logentries.rst:222
+#, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/callback/logentries.py>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/callback/logentries.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/callback/logentries.py>`_"
+#~ " to improve it."
+#~ msgstr ""
 

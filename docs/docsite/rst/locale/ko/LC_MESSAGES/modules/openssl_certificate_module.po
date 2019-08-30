@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,54 +27,103 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/openssl_certificate_module.rst:20
+msgid "This module allows one to (re)generate OpenSSL certificates."
+msgstr ""
+
+#: ../../rst/modules/openssl_certificate_module.rst:21
 msgid ""
-"This module allows one to (re)generate OpenSSL certificates. It "
-"implements a notion of provider (ie. ``selfsigned``, ``ownca``, ``acme``,"
-" ``assertonly``) for your certificate. The 'assertonly' provider is "
-"intended for use cases where one is only interested in checking "
-"properties of a supplied certificate. The 'ownca' provider is intended "
-"for generate OpenSSL certificate signed with your own CA (Certificate "
-"Authority) certificate (self-signed certificate). Many properties that "
-"can be specified in this module are for validation of an existing or "
-"newly generated certificate. The proper place to specify them, if you "
-"want to receive a certificate with these properties is a CSR (Certificate"
-" Signing Request). It uses the pyOpenSSL python library to interact with "
-"OpenSSL."
+"It implements a notion of provider (ie. ``selfsigned``, ``ownca``, "
+"``acme``, ``assertonly``, ``entrust``) for your certificate."
+msgstr ""
+
+#: ../../rst/modules/openssl_certificate_module.rst:22
+msgid ""
+"The ``assertonly`` provider is intended for use cases where one is only "
+"interested in checking properties of a supplied certificate. Please note "
+"that this provider has been deprecated in Ansible 2.9 and will be removed"
+" in Ansible 2.13. See the examples on how to emulate ``assertonly`` usage"
+" with :ref:`openssl_certificate_info <openssl_certificate_info_module>`, "
+":ref:`openssl_csr_info <openssl_csr_info_module>`, "
+":ref:`openssl_privatekey_info <openssl_privatekey_info_module>` and "
+":ref:`assert <assert_module>`. This also allows more flexible checks than"
+" the ones offered by the ``assertonly`` provider."
+msgstr ""
+
+#: ../../rst/modules/openssl_certificate_module.rst:23
+msgid ""
+"The ``ownca`` provider is intended for generate OpenSSL certificate "
+"signed with your own CA (Certificate Authority) certificate (self-signed "
+"certificate)."
+msgstr ""
+
+#: ../../rst/modules/openssl_certificate_module.rst:24
+msgid ""
+"Many properties that can be specified in this module are for validation "
+"of an existing or newly generated certificate. The proper place to "
+"specify them, if you want to receive a certificate with these properties "
+"is a CSR (Certificate Signing Request)."
 msgstr ""
 
 #: ../../rst/modules/openssl_certificate_module.rst:25
-msgid "Requirements"
+msgid ""
+"Please note that the module regenerates existing certificate if it "
+"doesn't match the module's options, or if it seems to be corrupt. If you "
+"are concerned that this could overwrite your existing certificate, "
+"consider using the *backup* option."
 msgstr ""
 
 #: ../../rst/modules/openssl_certificate_module.rst:26
-msgid "The below requirements are needed on the host that executes this module."
-msgstr ""
-
-#: ../../rst/modules/openssl_certificate_module.rst:28
 msgid ""
-"python-pyOpenSSL >= 0.15 (if using ``selfsigned`` or ``assertonly`` "
-"provider)"
+"It uses the pyOpenSSL or cryptography python library to interact with "
+"OpenSSL."
 msgstr ""
 
-#: ../../rst/modules/openssl_certificate_module.rst:29
-msgid "acme-tiny (if using the ``acme`` provider)"
+#: ../../rst/modules/openssl_certificate_module.rst:27
+msgid ""
+"If both the cryptography and PyOpenSSL libraries are available (and meet "
+"the minimum version requirements) cryptography will be preferred as a "
+"backend over PyOpenSSL (unless the backend is forced with "
+"``select_crypto_backend``). Please note that the PyOpenSSL backend was "
+"deprecated in Ansible 2.9 and will be removed in Ansible 2.13."
+msgstr ""
+
+#: ../../rst/modules/openssl_certificate_module.rst:32
+msgid "Requirements"
 msgstr ""
 
 #: ../../rst/modules/openssl_certificate_module.rst:33
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/openssl_certificate_module.rst:35
+msgid ""
+"PyOpenSSL >= 0.15 or cryptography >= 1.6 (if using ``selfsigned`` or "
+"``assertonly`` provider)"
+msgstr ""
+
+#: ../../rst/modules/openssl_certificate_module.rst:36
+msgid "acme-tiny (if using the ``acme`` provider)"
+msgstr ""
+
+#: ../../rst/modules/openssl_certificate_module.rst:40
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/openssl_certificate_module.rst:748
+#: ../../rst/modules/openssl_certificate_module.rst:1126
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/openssl_certificate_module.rst:751
+#: ../../rst/modules/openssl_certificate_module.rst:1129
 msgid ""
 "All ASN.1 TIME values should be specified following the YYYYMMDDHHMMSSZ "
-"pattern. Date specified should be UTC. Minutes and seconds are mandatory."
+"pattern."
 msgstr ""
 
-#: ../../rst/modules/openssl_certificate_module.rst:752
+#: ../../rst/modules/openssl_certificate_module.rst:1130
+msgid "Date specified should be UTC. Minutes and seconds are mandatory."
+msgstr ""
+
+#: ../../rst/modules/openssl_certificate_module.rst:1131
 msgid ""
 "For security reason, when you use ``ownca`` provider, you should NOT run "
 ":ref:`openssl_certificate <openssl_certificate_module>` on a target "
@@ -83,54 +132,142 @@ msgid ""
 "can be moved to the target machine."
 msgstr ""
 
-#: ../../rst/modules/openssl_certificate_module.rst:757
+#: ../../rst/modules/openssl_certificate_module.rst:1135
+msgid "See Also"
+msgstr ""
+
+#: ../../rst/modules/openssl_certificate_module.rst:1139
+msgid ":ref:`openssl_csr_module`"
+msgstr ""
+
+#: ../../rst/modules/openssl_certificate_module.rst:1140
+msgid "The official documentation on the **openssl_csr** module."
+msgstr ""
+
+#: ../../rst/modules/openssl_certificate_module.rst:1141
+msgid ":ref:`openssl_dhparam_module`"
+msgstr ""
+
+#: ../../rst/modules/openssl_certificate_module.rst:1142
+msgid "The official documentation on the **openssl_dhparam** module."
+msgstr ""
+
+#: ../../rst/modules/openssl_certificate_module.rst:1143
+msgid ":ref:`openssl_pkcs12_module`"
+msgstr ""
+
+#: ../../rst/modules/openssl_certificate_module.rst:1144
+msgid "The official documentation on the **openssl_pkcs12** module."
+msgstr ""
+
+#: ../../rst/modules/openssl_certificate_module.rst:1145
+msgid ":ref:`openssl_privatekey_module`"
+msgstr ""
+
+#: ../../rst/modules/openssl_certificate_module.rst:1146
+msgid "The official documentation on the **openssl_privatekey** module."
+msgstr ""
+
+#: ../../rst/modules/openssl_certificate_module.rst:1147
+msgid ":ref:`openssl_publickey_module`"
+msgstr ""
+
+#: ../../rst/modules/openssl_certificate_module.rst:1148
+msgid "The official documentation on the **openssl_publickey** module."
+msgstr ""
+
+#: ../../rst/modules/openssl_certificate_module.rst:1152
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/openssl_certificate_module.rst:894
+#: ../../rst/modules/openssl_certificate_module.rst:1395
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/openssl_certificate_module.rst:895
+#: ../../rst/modules/openssl_certificate_module.rst:1396
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/openssl_certificate_module.rst:923
+#: ../../rst/modules/openssl_certificate_module.rst:1437
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/openssl_certificate_module.rst:928
+#: ../../rst/modules/openssl_certificate_module.rst:1442
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/openssl_certificate_module.rst:931
+#: ../../rst/modules/openssl_certificate_module.rst:1445
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/openssl_certificate_module.rst:938
+#: ../../rst/modules/openssl_certificate_module.rst:1452
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/openssl_certificate_module.rst:940
+#: ../../rst/modules/openssl_certificate_module.rst:1454
 msgid "Yanis Guenane (@Spredzy)"
 msgstr ""
 
-#: ../../rst/modules/openssl_certificate_module.rst:941
+#: ../../rst/modules/openssl_certificate_module.rst:1455
 msgid "Markus Teufelberger (@MarkusTeufelberger)"
 msgstr ""
 
-#: ../../rst/modules/openssl_certificate_module.rst:945
+#: ../../rst/modules/openssl_certificate_module.rst:1459
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/crypto/openssl_certificate.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/crypto/openssl_certificate.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "This module allows one to (re)generate"
+#~ " OpenSSL certificates. It implements a "
+#~ "notion of provider (ie. ``selfsigned``, "
+#~ "``ownca``, ``acme``, ``assertonly``) for your"
+#~ " certificate. The 'assertonly' provider is"
+#~ " intended for use cases where one "
+#~ "is only interested in checking "
+#~ "properties of a supplied certificate. "
+#~ "The 'ownca' provider is intended for "
+#~ "generate OpenSSL certificate signed with "
+#~ "your own CA (Certificate Authority) "
+#~ "certificate (self-signed certificate). Many"
+#~ " properties that can be specified in"
+#~ " this module are for validation of"
+#~ " an existing or newly generated "
+#~ "certificate. The proper place to specify"
+#~ " them, if you want to receive a"
+#~ " certificate with these properties is "
+#~ "a CSR (Certificate Signing Request). It"
+#~ " uses the pyOpenSSL python library to"
+#~ " interact with OpenSSL."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "python-pyOpenSSL >= 0.15 (if using "
+#~ "``selfsigned`` or ``assertonly`` provider)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "All ASN.1 TIME values should be "
+#~ "specified following the YYYYMMDDHHMMSSZ "
+#~ "pattern. Date specified should be UTC."
+#~ " Minutes and seconds are mandatory."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/crypto/openssl_certificate.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

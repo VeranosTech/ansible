@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,11 @@ msgstr ""
 msgid "vmware_guest -- Manages virtual machines in vCenter"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:19
+#: ../../rst/modules/vmware_guest_module.rst:18
 msgid "Synopsis"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:20
+#: ../../rst/modules/vmware_guest_module.rst:19
 msgid ""
 "This module can be used to create new virtual machines from templates or "
 "other virtual machines, manage power state of virtual machine such as "
@@ -36,140 +36,154 @@ msgid ""
 "associated components."
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:26
+#: ../../rst/modules/vmware_guest_module.rst:25
 msgid "Requirements"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:27
+#: ../../rst/modules/vmware_guest_module.rst:26
 msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:29
+#: ../../rst/modules/vmware_guest_module.rst:28
 msgid "python >= 2.6"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:30
+#: ../../rst/modules/vmware_guest_module.rst:29
 msgid "PyVmomi"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:34
+#: ../../rst/modules/vmware_guest_module.rst:33
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:707
+#: ../../rst/modules/vmware_guest_module.rst:764
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:710
+#: ../../rst/modules/vmware_guest_module.rst:767
 msgid ""
 "Please make sure that the user used for vmware_guest has the correct "
 "level of privileges."
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:711
+#: ../../rst/modules/vmware_guest_module.rst:768
 msgid ""
 "For example, following is the list of minimum privileges required by "
 "users to create virtual machines."
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:712
+#: ../../rst/modules/vmware_guest_module.rst:769
 msgid "DataStore > Allocate Space"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:713
+#: ../../rst/modules/vmware_guest_module.rst:770
 msgid "Virtual Machine > Configuration > Add New Disk"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:714
+#: ../../rst/modules/vmware_guest_module.rst:771
 msgid "Virtual Machine > Configuration > Add or Remove Device"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:715
+#: ../../rst/modules/vmware_guest_module.rst:772
 msgid "Virtual Machine > Inventory > Create New"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:716
+#: ../../rst/modules/vmware_guest_module.rst:773
 msgid "Network > Assign Network"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:717
+#: ../../rst/modules/vmware_guest_module.rst:774
 msgid "Resource > Assign Virtual Machine to Resource Pool"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:718
+#: ../../rst/modules/vmware_guest_module.rst:775
 msgid ""
 "Module may require additional privileges as well, which may be required "
 "for gathering facts - e.g. ESXi configurations."
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:719
+#: ../../rst/modules/vmware_guest_module.rst:776
 msgid "Tested on vSphere 5.5, 6.0, 6.5 and 6.7"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:720
+#: ../../rst/modules/vmware_guest_module.rst:777
 msgid ""
-"Use SCSI disks instead of IDE when you want to resize online disks by "
+"Use SCSI disks instead of IDE when you want to expand online disks by "
 "specifing a SCSI controller"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:721
+#: ../../rst/modules/vmware_guest_module.rst:778
 msgid ""
 "For additional information please visit Ansible VMware community wiki - "
 "https://github.com/ansible/community/wiki/VMware."
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:726
+#: ../../rst/modules/vmware_guest_module.rst:783
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:931
+#: ../../rst/modules/vmware_guest_module.rst:987
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:932
+#: ../../rst/modules/vmware_guest_module.rst:988
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:960
+#: ../../rst/modules/vmware_guest_module.rst:1016
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:965
+#: ../../rst/modules/vmware_guest_module.rst:1021
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:968
+#: ../../rst/modules/vmware_guest_module.rst:1024
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:975
+#: ../../rst/modules/vmware_guest_module.rst:1031
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:977
+#: ../../rst/modules/vmware_guest_module.rst:1033
 msgid "Loic Blot (@nerzhul) <loic.blot@unix-experience.fr>"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:978
+#: ../../rst/modules/vmware_guest_module.rst:1034
 msgid "Philippe Dellaert (@pdellaert) <philippe@dellaert.org>"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:979
+#: ../../rst/modules/vmware_guest_module.rst:1035
 msgid "Abhijeet Kasurde (@Akasurde) <akasurde@redhat.com>"
 msgstr ""
 
-#: ../../rst/modules/vmware_guest_module.rst:983
+#: ../../rst/modules/vmware_guest_module.rst:1039
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_guest.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_guest.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "Use SCSI disks instead of IDE when"
+#~ " you want to resize online disks "
+#~ "by specifing a SCSI controller"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/vmware/vmware_guest.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

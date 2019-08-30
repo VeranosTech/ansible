@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,46 +40,54 @@ msgstr ""
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/ce_bgp_af_module.rst:985
+#: ../../rst/modules/ce_bgp_af_module.rst:977
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/ce_bgp_af_module.rst:986
+#: ../../rst/modules/ce_bgp_af_module.rst:978
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/ce_bgp_af_module.rst:1064
+#: ../../rst/modules/ce_bgp_af_module.rst:1056
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/ce_bgp_af_module.rst:1069
+#: ../../rst/modules/ce_bgp_af_module.rst:1061
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/ce_bgp_af_module.rst:1072
+#: ../../rst/modules/ce_bgp_af_module.rst:1064
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/ce_bgp_af_module.rst:1079
+#: ../../rst/modules/ce_bgp_af_module.rst:1071
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/ce_bgp_af_module.rst:1081
+#: ../../rst/modules/ce_bgp_af_module.rst:1073
 msgid "wangdezhuang (@QijunPan)"
 msgstr ""
 
-#: ../../rst/modules/ce_bgp_af_module.rst:1085
+#: ../../rst/modules/ce_bgp_af_module.rst:1077
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/cloudengine/ce_bgp_af.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/cloudengine/ce_bgp_af.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/cloudengine/ce_bgp_af.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

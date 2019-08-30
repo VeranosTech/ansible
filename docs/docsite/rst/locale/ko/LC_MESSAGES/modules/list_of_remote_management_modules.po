@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,273 +51,351 @@ msgid ":ref:`cpm_plugcontrol_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:33
+msgid ":ref:`cpm_serial_port_config_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:34
+msgid ":ref:`cpm_serial_port_info_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:35
 msgid ":ref:`cpm_user_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_remote_management_modules.rst:39
+#: ../../rst/modules/list_of_remote_management_modules.rst:41
 msgid "Dellemc"
 msgstr ""
 
-#: ../../rst/modules/list_of_remote_management_modules.rst:48
-msgid "Foreman"
+#: ../../rst/modules/list_of_remote_management_modules.rst:45
+msgid ":ref:`idrac_firmware_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_remote_management_modules.rst:52
-msgid ":ref:`foreman_module` **(D)**"
+#: ../../rst/modules/list_of_remote_management_modules.rst:46
+msgid ":ref:`idrac_server_config_profile_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:47
+msgid ":ref:`ome_device_info_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:53
+msgid "Foreman"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:57
+msgid ":ref:`foreman_module` **(D)**"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:58
 msgid ":ref:`katello_module` **(D)**"
 msgstr ""
 
-#: ../../rst/modules/list_of_remote_management_modules.rst:59
+#: ../../rst/modules/list_of_remote_management_modules.rst:64
 msgid "Hpilo"
 msgstr ""
 
-#: ../../rst/modules/list_of_remote_management_modules.rst:63
+#: ../../rst/modules/list_of_remote_management_modules.rst:68
 msgid ":ref:`hpilo_boot_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_remote_management_modules.rst:64
-msgid ":ref:`hpilo_facts_module`"
+#: ../../rst/modules/list_of_remote_management_modules.rst:69
+msgid ":ref:`hpilo_info_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_remote_management_modules.rst:65
+#: ../../rst/modules/list_of_remote_management_modules.rst:70
 msgid ":ref:`hponcfg_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_remote_management_modules.rst:71
+#: ../../rst/modules/list_of_remote_management_modules.rst:76
 msgid "Imc"
 msgstr ""
 
-#: ../../rst/modules/list_of_remote_management_modules.rst:75
+#: ../../rst/modules/list_of_remote_management_modules.rst:80
 msgid ":ref:`imc_rest_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_remote_management_modules.rst:81
+#: ../../rst/modules/list_of_remote_management_modules.rst:86
+msgid "Intersight"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:90
+msgid ":ref:`intersight_info_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:91
+msgid ":ref:`intersight_rest_api_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:97
 msgid "Ipmi"
 msgstr ""
 
-#: ../../rst/modules/list_of_remote_management_modules.rst:85
+#: ../../rst/modules/list_of_remote_management_modules.rst:101
 msgid ":ref:`ipmi_boot_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_remote_management_modules.rst:86
+#: ../../rst/modules/list_of_remote_management_modules.rst:102
 msgid ":ref:`ipmi_power_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_remote_management_modules.rst:92
+#: ../../rst/modules/list_of_remote_management_modules.rst:108
 msgid "Lxca"
 msgstr ""
 
-#: ../../rst/modules/list_of_remote_management_modules.rst:96
-msgid ":ref:`lxca_nodes_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_remote_management_modules.rst:102
-msgid "Manageiq"
-msgstr ""
-
-#: ../../rst/modules/list_of_remote_management_modules.rst:106
-msgid ":ref:`manageiq_alert_profiles_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_remote_management_modules.rst:107
-msgid ":ref:`manageiq_alerts_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_remote_management_modules.rst:108
-msgid ":ref:`manageiq_group_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_remote_management_modules.rst:109
-msgid ":ref:`manageiq_policies_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_remote_management_modules.rst:110
-msgid ":ref:`manageiq_provider_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_remote_management_modules.rst:111
-msgid ":ref:`manageiq_tags_module`"
-msgstr ""
-
 #: ../../rst/modules/list_of_remote_management_modules.rst:112
-msgid ":ref:`manageiq_tenant_module`"
+msgid ":ref:`lxca_cmms_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:113
-msgid ":ref:`manageiq_user_module`"
+msgid ":ref:`lxca_nodes_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:119
-msgid "Oneview"
+msgid "Manageiq"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:123
-msgid ":ref:`oneview_datacenter_facts_module`"
+msgid ":ref:`manageiq_alert_profiles_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:124
-msgid ":ref:`oneview_enclosure_facts_module`"
+msgid ":ref:`manageiq_alerts_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:125
-msgid ":ref:`oneview_ethernet_network_module`"
+msgid ":ref:`manageiq_group_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:126
-msgid ":ref:`oneview_ethernet_network_facts_module`"
+msgid ":ref:`manageiq_policies_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:127
-msgid ":ref:`oneview_fc_network_module`"
+msgid ":ref:`manageiq_provider_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:128
-msgid ":ref:`oneview_fc_network_facts_module`"
+msgid ":ref:`manageiq_tags_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:129
-msgid ":ref:`oneview_fcoe_network_module`"
+msgid ":ref:`manageiq_tenant_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:130
-msgid ":ref:`oneview_fcoe_network_facts_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_remote_management_modules.rst:131
-msgid ":ref:`oneview_logical_interconnect_group_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_remote_management_modules.rst:132
-msgid ":ref:`oneview_logical_interconnect_group_facts_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_remote_management_modules.rst:133
-msgid ":ref:`oneview_network_set_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_remote_management_modules.rst:134
-msgid ":ref:`oneview_network_set_facts_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_remote_management_modules.rst:135
-msgid ":ref:`oneview_san_manager_module`"
+msgid ":ref:`manageiq_user_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:136
-msgid ":ref:`oneview_san_manager_facts_module`"
+msgid "Oneview"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:140
+msgid ":ref:`oneview_datacenter_info_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:141
+msgid ":ref:`oneview_enclosure_info_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:142
-msgid "Redfish"
+msgid ":ref:`oneview_ethernet_network_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:143
+msgid ":ref:`oneview_ethernet_network_info_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:144
+msgid ":ref:`oneview_fc_network_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:145
+msgid ":ref:`oneview_fc_network_info_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:146
-msgid ":ref:`idrac_redfish_command_module`"
+msgid ":ref:`oneview_fcoe_network_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:147
-msgid ":ref:`redfish_command_module`"
+msgid ":ref:`oneview_fcoe_network_info_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:148
-msgid ":ref:`redfish_config_module`"
+msgid ":ref:`oneview_logical_interconnect_group_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:149
-msgid ":ref:`redfish_facts_module`"
+msgid ":ref:`oneview_logical_interconnect_group_info_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_remote_management_modules.rst:155
-msgid "Stacki"
+#: ../../rst/modules/list_of_remote_management_modules.rst:150
+msgid ":ref:`oneview_network_set_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:151
+msgid ":ref:`oneview_network_set_info_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:152
+msgid ":ref:`oneview_san_manager_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:153
+msgid ":ref:`oneview_san_manager_info_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:159
-msgid ":ref:`stacki_host_module`"
+msgid "Redfish"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:163
+msgid ":ref:`idrac_redfish_command_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:164
+msgid ":ref:`idrac_redfish_config_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:165
-msgid "Ucs"
+msgid ":ref:`idrac_redfish_info_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_remote_management_modules.rst:169
-msgid ":ref:`ucs_disk_group_policy_module`"
+#: ../../rst/modules/list_of_remote_management_modules.rst:166
+msgid ":ref:`redfish_command_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_remote_management_modules.rst:170
-msgid ":ref:`ucs_dns_server_module`"
+#: ../../rst/modules/list_of_remote_management_modules.rst:167
+msgid ":ref:`redfish_config_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_remote_management_modules.rst:171
-msgid ":ref:`ucs_ip_pool_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_remote_management_modules.rst:172
-msgid ":ref:`ucs_lan_connectivity_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_remote_management_modules.rst:173
-msgid ":ref:`ucs_mac_pool_module`"
+#: ../../rst/modules/list_of_remote_management_modules.rst:168
+msgid ":ref:`redfish_info_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:174
-msgid ":ref:`ucs_managed_objects_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_remote_management_modules.rst:175
-msgid ":ref:`ucs_ntp_server_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_remote_management_modules.rst:176
-msgid ":ref:`ucs_org_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_remote_management_modules.rst:177
-msgid ":ref:`ucs_san_connectivity_module`"
+msgid "Stacki"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:178
-msgid ":ref:`ucs_service_profile_template_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_remote_management_modules.rst:179
-msgid ":ref:`ucs_storage_profile_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_remote_management_modules.rst:180
-msgid ":ref:`ucs_timezone_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_remote_management_modules.rst:181
-msgid ":ref:`ucs_uuid_pool_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_remote_management_modules.rst:182
-msgid ":ref:`ucs_vhba_template_module`"
-msgstr ""
-
-#: ../../rst/modules/list_of_remote_management_modules.rst:183
-msgid ":ref:`ucs_vlans_module`"
+msgid ":ref:`stacki_host_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:184
-msgid ":ref:`ucs_vnic_template_module`"
+msgid "Ucs"
 msgstr ""
 
-#: ../../rst/modules/list_of_remote_management_modules.rst:185
-msgid ":ref:`ucs_vsans_module`"
+#: ../../rst/modules/list_of_remote_management_modules.rst:188
+msgid ":ref:`ucs_disk_group_policy_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_remote_management_modules.rst:186
-msgid ":ref:`ucs_wwn_pool_module`"
+#: ../../rst/modules/list_of_remote_management_modules.rst:189
+msgid ":ref:`ucs_dns_server_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:190
+msgid ":ref:`ucs_ip_pool_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:191
+msgid ":ref:`ucs_lan_connectivity_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:192
+msgid ":ref:`ucs_mac_pool_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:193
+msgid ":ref:`ucs_managed_objects_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:194
+msgid ":ref:`ucs_ntp_server_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:195
+msgid ":ref:`ucs_org_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:196
+msgid ":ref:`ucs_san_connectivity_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:197
+msgid ":ref:`ucs_service_profile_template_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:198
+msgid ":ref:`ucs_storage_profile_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:199
+msgid ":ref:`ucs_timezone_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:200
+msgid ":ref:`ucs_uuid_pool_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:201
+msgid ":ref:`ucs_vhba_template_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:202
+msgid ":ref:`ucs_vlan_find_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:203
+msgid ":ref:`ucs_vlans_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:204
+msgid ":ref:`ucs_vnic_template_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:205
+msgid ":ref:`ucs_vsans_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:206
+msgid ":ref:`ucs_wwn_pool_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:210
 msgid ""
 "**(D)**: This marks a module as deprecated, which means a module is kept "
 "for backwards compatibility but usage is discouraged. The module "
 "documentation details page may explain more about this rationale."
 msgstr ""
+
+#~ msgid ":ref:`hpilo_facts_module`"
+#~ msgstr ""
+
+#~ msgid ":ref:`oneview_datacenter_facts_module`"
+#~ msgstr ""
+
+#~ msgid ":ref:`oneview_enclosure_facts_module`"
+#~ msgstr ""
+
+#~ msgid ":ref:`oneview_ethernet_network_facts_module`"
+#~ msgstr ""
+
+#~ msgid ":ref:`oneview_fc_network_facts_module`"
+#~ msgstr ""
+
+#~ msgid ":ref:`oneview_fcoe_network_facts_module`"
+#~ msgstr ""
+
+#~ msgid ":ref:`oneview_logical_interconnect_group_facts_module`"
+#~ msgstr ""
+
+#~ msgid ":ref:`oneview_network_set_facts_module`"
+#~ msgstr ""
+
+#~ msgid ":ref:`oneview_san_manager_facts_module`"
+#~ msgstr ""
+
+#~ msgid ":ref:`redfish_facts_module`"
+#~ msgstr ""
 

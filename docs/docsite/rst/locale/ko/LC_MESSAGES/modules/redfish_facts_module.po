@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,68 +22,67 @@ msgstr ""
 msgid "redfish_facts -- Manages Out-Of-Band controllers using Redfish APIs"
 msgstr ""
 
-#: ../../rst/modules/redfish_facts_module.rst:19
-msgid "Synopsis"
-msgstr ""
-
-#: ../../rst/modules/redfish_facts_module.rst:20
+#: ../../rst/modules/redfish_facts_module.rst:11
 msgid ""
-"Builds Redfish URIs locally and sends them to remote OOB controllers to "
-"get information back."
+"This is an alias for :ref:`redfish_info <redfish_info_module>`. This name"
+" has been **deprecated**. Please update your tasks to use the new name "
+"``redfish_info`` instead."
 msgstr ""
 
-#: ../../rst/modules/redfish_facts_module.rst:21
-msgid "Information retrieved is placed in a location specified by the user."
-msgstr ""
+#~ msgid "Synopsis"
+#~ msgstr ""
 
-#: ../../rst/modules/redfish_facts_module.rst:27
-msgid "Parameters"
-msgstr ""
+#~ msgid ""
+#~ "Builds Redfish URIs locally and sends"
+#~ " them to remote OOB controllers to"
+#~ " get information back."
+#~ msgstr ""
 
-#: ../../rst/modules/redfish_facts_module.rst:110
-msgid "Examples"
-msgstr ""
+#~ msgid "Information retrieved is placed in a location specified by the user."
+#~ msgstr ""
 
-#: ../../rst/modules/redfish_facts_module.rst:187
-msgid "Return Values"
-msgstr ""
+#~ msgid "Parameters"
+#~ msgstr ""
 
-#: ../../rst/modules/redfish_facts_module.rst:188
-msgid ""
-"Common return values are documented :ref:`here <common_return_values>`, "
-"the following are the fields unique to this module:"
-msgstr ""
+#~ msgid "Examples"
+#~ msgstr ""
 
-#: ../../rst/modules/redfish_facts_module.rst:216
-msgid "Status"
-msgstr ""
+#~ msgid "Return Values"
+#~ msgstr ""
 
-#: ../../rst/modules/redfish_facts_module.rst:221
-msgid ""
-"This module is not guaranteed to have a backwards compatible interface. "
-"*[preview]*"
-msgstr ""
+#~ msgid ""
+#~ "Common return values are documented "
+#~ ":ref:`here <common_return_values>`, the following"
+#~ " are the fields unique to this "
+#~ "module:"
+#~ msgstr ""
 
-#: ../../rst/modules/redfish_facts_module.rst:224
-msgid ""
-"This module is :ref:`maintained by the Ansible Community "
-"<modules_support>`. *[community]*"
-msgstr ""
+#~ msgid "Status"
+#~ msgstr ""
 
-#: ../../rst/modules/redfish_facts_module.rst:231
-msgid "Authors"
-msgstr ""
+#~ msgid ""
+#~ "This module is not guaranteed to "
+#~ "have a backwards compatible interface. "
+#~ "*[preview]*"
+#~ msgstr ""
 
-#: ../../rst/modules/redfish_facts_module.rst:233
-msgid "Jose Delarosa (@jose-delarosa)"
-msgstr ""
+#~ msgid ""
+#~ "This module is :ref:`maintained by the"
+#~ " Ansible Community <modules_support>`. "
+#~ "*[community]*"
+#~ msgstr ""
 
-#: ../../rst/modules/redfish_facts_module.rst:237
-#, python-format
-msgid ""
-"If you notice any issues in this documentation you can `edit this "
-"document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/remote_management/redfish/redfish_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
-" to improve it."
-msgstr ""
+#~ msgid "Authors"
+#~ msgstr ""
+
+#~ msgid "Jose Delarosa (@jose-delarosa)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/remote_management/redfish/redfish_facts.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

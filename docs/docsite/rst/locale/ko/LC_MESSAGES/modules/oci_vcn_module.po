@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../rst/modules/oci_vcn_module.rst:9
+msgid "oci_vcn -- Manage Virtual Cloud Networks(VCN) in OCI"
+msgstr ""
+
+#: ../../rst/modules/oci_vcn_module.rst:19
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/oci_vcn_module.rst:20
+msgid ""
+"This module allows the user to create, delete and update virtual cloud "
+"networks(VCNs) in OCI. The complete Oracle Cloud Infrastructure Ansible "
+"Modules can be downloaded from https://github.com/oracle/oci-ansible-"
+"modules/releases."
+msgstr ""
+
+#: ../../rst/modules/oci_vcn_module.rst:25
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/oci_vcn_module.rst:26
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/oci_vcn_module.rst:28
+msgid "python >= 2.7"
+msgstr ""
+
+#: ../../rst/modules/oci_vcn_module.rst:29
+msgid ""
+"Python SDK for Oracle Cloud Infrastructure https://oracle-cloud-"
+"infrastructure-python-sdk.readthedocs.io"
+msgstr ""
+
+#: ../../rst/modules/oci_vcn_module.rst:33
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/oci_vcn_module.rst:354
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/oci_vcn_module.rst:357
+msgid ""
+"For OCI python sdk configuration, please refer to https://oracle-cloud-"
+"infrastructure-python-sdk.readthedocs.io/en/latest/configuration.html"
+msgstr ""
+
+#: ../../rst/modules/oci_vcn_module.rst:362
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/oci_vcn_module.rst:388
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/oci_vcn_module.rst:389
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/oci_vcn_module.rst:417
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/oci_vcn_module.rst:422
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/oci_vcn_module.rst:425
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/oci_vcn_module.rst:432
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/oci_vcn_module.rst:434
+msgid "Rohit Chaware (@rohitChaware)"
+msgstr ""
+
+#: ../../rst/modules/oci_vcn_module.rst:438
+#, python-format
+msgid ""
+"If you notice any issues in this documentation, you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/oracle/oci_vcn.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

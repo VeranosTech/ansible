@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-#: ../../rst/dev_guide/testing/sanity/boilerplate.rst:2
-msgid "Sanity Tests » boilerplate"
+#: ../../rst/dev_guide/testing/sanity/boilerplate.rst:4
+msgid "boilerplate"
 msgstr ""
 
-#: ../../rst/dev_guide/testing/sanity/boilerplate.rst:4
+#: ../../rst/dev_guide/testing/sanity/boilerplate.rst:6
 msgid "Most Python files should include the following boilerplate:"
 msgstr ""
+
+#~ msgid "Sanity Tests » boilerplate"
+#~ msgstr ""
 

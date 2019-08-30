@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,60 +32,60 @@ msgstr ""
 msgid "Create, assign and delete floating IPs on the cloudscale.ch IaaS service."
 msgstr ""
 
-#: ../../rst/modules/cloudscale_floating_ip_module.rst:21
-msgid "All operations are performed using the cloudscale.ch public API v1."
-msgstr ""
-
-#: ../../rst/modules/cloudscale_floating_ip_module.rst:22
-msgid ""
-"For details consult the full API documentation: "
-"https://www.cloudscale.ch/en/api/v1."
-msgstr ""
-
-#: ../../rst/modules/cloudscale_floating_ip_module.rst:23
-msgid ""
-"A valid API token is required for all operations. You can create as many "
-"tokens as you like using the cloudscale.ch control panel at "
-"https://control.cloudscale.ch."
-msgstr ""
-
-#: ../../rst/modules/cloudscale_floating_ip_module.rst:29
+#: ../../rst/modules/cloudscale_floating_ip_module.rst:26
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/cloudscale_floating_ip_module.rst:166
+#: ../../rst/modules/cloudscale_floating_ip_module.rst:163
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/cloudscale_floating_ip_module.rst:169
-msgid ""
-"Instead of the api_token parameter the CLOUDSCALE_API_TOKEN environment "
-"variable can be used."
-msgstr ""
-
-#: ../../rst/modules/cloudscale_floating_ip_module.rst:170
+#: ../../rst/modules/cloudscale_floating_ip_module.rst:166
 msgid ""
 "To create a new floating IP at least the ``ip_version`` and ``server`` "
 "options are required."
 msgstr ""
 
-#: ../../rst/modules/cloudscale_floating_ip_module.rst:171
+#: ../../rst/modules/cloudscale_floating_ip_module.rst:167
 msgid ""
 "Once a floating_ip is created all parameters except ``server`` are read-"
 "only."
 msgstr ""
 
-#: ../../rst/modules/cloudscale_floating_ip_module.rst:172
+#: ../../rst/modules/cloudscale_floating_ip_module.rst:168
 msgid ""
 "It's not possible to request a floating IP without associating it with a "
 "server at the same time."
 msgstr ""
 
-#: ../../rst/modules/cloudscale_floating_ip_module.rst:173
+#: ../../rst/modules/cloudscale_floating_ip_module.rst:169
 msgid ""
 "This module requires the ipaddress python library. This library is "
 "included in Python since version 3.3. It is available as a module on PyPI"
 " for earlier versions."
+msgstr ""
+
+#: ../../rst/modules/cloudscale_floating_ip_module.rst:170
+msgid ""
+"Instead of the api_token parameter the ``CLOUDSCALE_API_TOKEN`` "
+"environment variable can be used."
+msgstr ""
+
+#: ../../rst/modules/cloudscale_floating_ip_module.rst:171
+msgid "All operations are performed using the cloudscale.ch public API v1."
+msgstr ""
+
+#: ../../rst/modules/cloudscale_floating_ip_module.rst:172
+msgid ""
+"For details consult the full API documentation: "
+"https://www.cloudscale.ch/en/api/v1."
+msgstr ""
+
+#: ../../rst/modules/cloudscale_floating_ip_module.rst:173
+msgid ""
+"A valid API token is required for all operations. You can create as many "
+"tokens as you like using the cloudscale.ch control panel at "
+"https://control.cloudscale.ch."
 msgstr ""
 
 #: ../../rst/modules/cloudscale_floating_ip_module.rst:178
@@ -123,15 +123,32 @@ msgid "Authors"
 msgstr ""
 
 #: ../../rst/modules/cloudscale_floating_ip_module.rst:350
-msgid "Gaudenz Steinlin (@gaudenz) <gaudenz.steinlin@cloudscale.ch>"
+msgid "Gaudenz Steinlin (@gaudenz)"
 msgstr ""
 
 #: ../../rst/modules/cloudscale_floating_ip_module.rst:354
 #, python-format
 msgid ""
-"If you notice any issues in this documentation you can `edit this "
+"If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/cloudscale/cloudscale_floating_ip.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/cloudscale/cloudscale_floating_ip.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "Instead of the api_token parameter the"
+#~ " CLOUDSCALE_API_TOKEN environment variable can"
+#~ " be used."
+#~ msgstr ""
+
+#~ msgid "Gaudenz Steinlin (@gaudenz) <gaudenz.steinlin@cloudscale.ch>"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/cloudscale/cloudscale_floating_ip.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

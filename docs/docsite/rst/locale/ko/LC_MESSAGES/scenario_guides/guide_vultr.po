@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-08-30 11:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,91 +109,94 @@ msgstr ""
 msgid "To check that everything is working properly run the following command:"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vultr.rst:84
+#: ../../rst/scenario_guides/guide_vultr.rst:76
 msgid ""
 "If a similar output displays then everything is setup properly, else "
 "please ensure the proper ``VULTR_API_KEY`` has been specified and that "
 "Access Control on Vultr > Account > API page are accurate."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vultr.rst:88
+#: ../../rst/scenario_guides/guide_vultr.rst:80
 msgid "Usage"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vultr.rst:90
+#: ../../rst/scenario_guides/guide_vultr.rst:82
 msgid ""
 "Since `Vultr <https://www.vultr.com>`_ offers a public API, the execution"
 " of the module to manage the infrastructure on their platform will happen"
 " on localhost. This translates to:"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vultr.rst:104
+#: ../../rst/scenario_guides/guide_vultr.rst:96
 msgid ""
 "From that point on, only you creativity is the limit. Make sure to read "
 "the documentation of the `available modules "
 "<https://docs.ansible.com/ansible/latest/modules/list_of_cloud_modules.html#vultr>`_."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vultr.rst:108
+#: ../../rst/scenario_guides/guide_vultr.rst:100
 msgid "Dynamic Inventory"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vultr.rst:110
+#: ../../rst/scenario_guides/guide_vultr.rst:102
 msgid ""
 "Ansible provides a dynamic inventory plugin for `Vultr "
 "<https://www.vultr.com>`_. The configuration process is exactly the same "
 "as the one for the modules."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vultr.rst:113
+#: ../../rst/scenario_guides/guide_vultr.rst:105
 msgid ""
 "To be able to use it you need to enable it first by specifying the "
 "following in the ``ansible.cfg`` file:"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vultr.rst:120
+#: ../../rst/scenario_guides/guide_vultr.rst:112
 msgid ""
 "And provide a configuration file to be used with the plugin, the minimal "
 "configuration file looks like this:"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vultr.rst:127
+#: ../../rst/scenario_guides/guide_vultr.rst:119
 msgid "To list the available hosts one can simply run:"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vultr.rst:134
+#: ../../rst/scenario_guides/guide_vultr.rst:126
 msgid ""
 "For example, this allows you to take action on nodes grouped by location "
 "or OS name:"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vultr.rst:147
+#: ../../rst/scenario_guides/guide_vultr.rst:139
 msgid "Integration tests"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vultr.rst:149
+#: ../../rst/scenario_guides/guide_vultr.rst:141
 msgid "Ansible includes integration tests for all Vultr modules."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vultr.rst:151
+#: ../../rst/scenario_guides/guide_vultr.rst:143
 msgid ""
 "These tests are meant to run against the public Vultr API and that is why"
 " they require a valid key to access the API."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vultr.rst:153
+#: ../../rst/scenario_guides/guide_vultr.rst:145
 msgid "Prepare the test setup:"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vultr.rst:160
+#: ../../rst/scenario_guides/guide_vultr.rst:152
 msgid "Set the Vultr API key:"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vultr.rst:168
+#: ../../rst/scenario_guides/guide_vultr.rst:160
 msgid "Run all Vultr tests:"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vultr.rst:175
-msgid "To run a specific test, e.g. vultr_account_facts:"
+#: ../../rst/scenario_guides/guide_vultr.rst:167
+msgid "To run a specific test, e.g. vultr_account_info:"
 msgstr ""
+
+#~ msgid "To run a specific test, e.g. vultr_account_facts:"
+#~ msgstr ""
 
