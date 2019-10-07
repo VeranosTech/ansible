@@ -23,6 +23,7 @@ Some Ansible Network platforms support multiple connection types, privilege esca
    platform_iosxr
    platform_ironware
    platform_junos
+   platform_meraki
    platform_netvisor
    platform_nos
    platform_nxos
@@ -40,7 +41,7 @@ Settings by Platform
 .. raw:: html
 
     <style>
-    /* Style for this single table.  Add delimiters between header colums */
+    /* Style for this single table.  Add delimiters between header columns */
     table#network-platform-table thead tr th.head {
       border-left-width: 1px;
       border-left-color: rgb(225, 228, 229);
@@ -75,6 +76,7 @@ Settings by Platform
     Junos OS `[†]`_                  ``junos``                ✓            ✓                 ✓
     Lenovo CNOS                      ``cnos``                 ✓                              ✓
     Lenovo ENOS                      ``enos``                 ✓                              ✓
+    Meraki                           ``meraki``                                              ✓
     MikroTik RouterOS                ``routeros``             ✓
     Nokia SR OS                      ``sros``                 ✓                              ✓
     Pluribus Netvisor                ``netvisor``             ✓

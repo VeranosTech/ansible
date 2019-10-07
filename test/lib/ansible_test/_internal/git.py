@@ -8,7 +8,9 @@ from . import types as t
 
 from .util import (
     SubprocessError,
+    display,
     raw_command,
+    to_text,
 )
 
 
@@ -39,7 +41,7 @@ class Git:
 
     def get_submodule_paths(self):  # type: () -> t.List[str]
         """Return a list of submodule paths recursively."""
-        cmd = ['submodule', 'status', '--recursive']
+        cmd = ['submodule', 'status', '--recursive', '.']
         output = self.run_git_split(cmd, '\n')
         submodule_paths = [re.search(r'^.[0-9a-f]+ (?P<path>[^ ]+)', line).group('path') for line in output]
         return submodule_paths
@@ -124,4 +126,8 @@ class Git:
         :type str_errors: str
         :rtype: str
         """
-        return raw_command([self.git] + cmd, cwd=self.root, capture=True, str_errors=str_errors)[0]
+        try:
+            return raw_command([self.git] + cmd, cwd=self.root, capture=True, str_errors=str_errors)[0]
+        except SubprocessError as spe:
+            display.warning(to_text(spe.message))
+            return spe.stdout

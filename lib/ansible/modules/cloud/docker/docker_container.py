@@ -20,9 +20,20 @@ short_description: manage docker containers
 
 description:
   - Manage the life cycle of docker containers.
-  - Supports check mode. Run with --check and --diff to view config difference and list of actions to be taken.
+  - Supports check mode. Run with C(--check) and C(--diff) to view config difference and list of actions to be taken.
 
 version_added: "2.1"
+
+notes:
+  - For most config changes, the container needs to be recreated, i.e. the existing container has to be destroyed and
+    a new one created. This can cause unexpected data loss and downtime. You can use the I(comparisons) option to
+    prevent this.
+  - If the module needs to recreate the container, it will only use the options provided to the module to create the
+    new container (except I(image)). Therefore, always specify *all* options relevant to the container.
+  - When I(restart) is set to C(true), the module will only restart the container if no config changes are detected.
+    Please note that several options have default values; if the container to be restarted uses different values for
+    these options, it will be recreated instead. The options with default values which can cause this are I(auto_remove),
+    I(detach), I(init), I(interactive), I(memory), I(paused), I(privileged), I(read_only) and I(tty).
 
 options:
   auto_remove:
@@ -39,10 +50,12 @@ options:
     description:
       - List of capabilities to add to the container.
     type: list
+    elements: str
   cap_drop:
     description:
       - List of capabilities to drop from the container.
     type: list
+    elements: str
     version_added: "2.7"
   cleanup:
     description:
@@ -108,10 +121,12 @@ options:
       - "List of host device bindings to add to the container. Each binding is a mapping expressed
         in the format: <path_on_host>:<path_in_container>:<cgroup_permissions>"
     type: list
+    elements: str
   device_read_bps:
     description:
       - "List of device path and read rate (bytes per second) from device."
     type: list
+    elements: dict
     suboptions:
       path:
         description:
@@ -131,6 +146,7 @@ options:
     description:
       - "List of device and write rate (bytes per second) to device."
     type: list
+    elements: dict
     suboptions:
       path:
         description:
@@ -150,6 +166,7 @@ options:
     description:
       - "List of device and read rate (IO per second) from device."
     type: list
+    elements: dict
     suboptions:
       path:
         description:
@@ -167,6 +184,7 @@ options:
     description:
       - "List of device and write rate (IO per second) to device."
     type: list
+    elements: dict
     suboptions:
       path:
         description:
@@ -184,14 +202,17 @@ options:
     description:
       - list of DNS options
     type: list
+    elements: str
   dns_servers:
     description:
       - List of custom DNS servers.
     type: list
+    elements: str
   dns_search_domains:
     description:
       - List of custom DNS search domains.
     type: list
+    elements: str
   domainname:
     description:
       - Container domainname.
@@ -212,6 +233,7 @@ options:
     description:
       - Command that overwrites the default ENTRYPOINT of the image.
     type: list
+    elements: str
   etc_hosts:
     description:
       - Dict of host-to-IP mappings, where each host name is a key in the dictionary.
@@ -224,6 +246,7 @@ options:
         If the port is already exposed using EXPOSE in a Dockerfile, it does not
         need to be exposed again.
     type: list
+    elements: str
     aliases:
       - exposed
       - expose
@@ -238,6 +261,7 @@ options:
     description:
       - List of additional group names and/or IDs that the container process will run as.
     type: list
+    elements: str
   healthcheck:
     description:
       - 'Configure a check that is run to determine whether or not containers for this service are "healthy".
@@ -332,6 +356,7 @@ options:
       - List of name aliases for linked containers in the format C(container_name:alias).
       - Setting this will force container to be restarted.
     type: list
+    elements: str
   log_driver:
     description:
       - Specify the logging driver. Docker uses I(json-file) by default.
@@ -378,6 +403,7 @@ options:
   mounts:
     version_added: "2.9"
     type: list
+    elements: dict
     description:
       - 'Specification for mounts to be added to the container. More powerful alternative to I(volumes).'
     suboptions:
@@ -476,9 +502,10 @@ options:
       - For examples of the data structure and usage see EXAMPLES below.
       - To remove a container from one or more networks, use the C(purge_networks) option.
       - Note that as opposed to C(docker run ...), M(docker_container) does not remove the default
-        network if C(networks) is specified. You need to explicity use C(purge_networks) to enforce
+        network if C(networks) is specified. You need to explicitly use C(purge_networks) to enforce
         the removal of the default network (and all other networks not explicitly mentioned in C(networks)).
     type: list
+    elements: dict
     suboptions:
       name:
         description:
@@ -497,11 +524,13 @@ options:
         description:
           - A list of containers to link to.
         type: list
+        elements: str
       aliases:
         description:
           - List of aliases for this container in this network. These names
             can be used in the network to reach this container.
         type: list
+        elements: str
     version_added: "2.2"
   networks_cli_compatible:
     description:
@@ -579,6 +608,7 @@ options:
         Note that the first bridge network with a com.docker.network.bridge.host_binding_ipv4
         value encountered in the list of C(networks) is the one that will be used.
     type: list
+    elements: str
     aliases:
       - ports
   pull:
@@ -640,6 +670,7 @@ options:
     description:
       - List of security options in the form of C("label:user:User")
     type: list
+    elements: str
   state:
     description:
       - 'I(absent) - A container matching the specified name will be stopped and removed. Use force_kill to kill the container
@@ -692,6 +723,7 @@ options:
     description:
       - Mount a tmpfs directory
     type: list
+    elements: str
     version_added: 2.4
   tty:
     description:
@@ -702,6 +734,7 @@ options:
     description:
       - "List of ulimit options. A ulimit is specified as C(nofile:262144:262144)"
     type: list
+    elements: str
   sysctls:
     description:
       - Dictionary of key,value pairs.
@@ -728,6 +761,7 @@ options:
       - "Note that Ansible 2.7 and earlier only supported one mode, which had to be one of C(ro), C(rw),
         C(z), and C(Z)."
     type: list
+    elements: str
   volume_driver:
     description:
       - The container volume driver.
@@ -736,6 +770,7 @@ options:
     description:
       - List of container names or Ids to get volumes from.
     type: list
+    elements: str
   working_dir:
     description:
       - Path to the working directory.
@@ -1078,12 +1113,18 @@ def parse_port_range(range_or_port, client):
     Returns a list of integers for each port in the list.
     '''
     if '-' in range_or_port:
-        start, end = [int(port) for port in range_or_port.split('-')]
+        try:
+            start, end = [int(port) for port in range_or_port.split('-')]
+        except Exception:
+            client.fail('Invalid port range: "{0}"'.format(range_or_port))
         if end < start:
-            client.fail('Invalid port range: {0}'.format(range_or_port))
+            client.fail('Invalid port range: "{0}"'.format(range_or_port))
         return list(range(start, end + 1))
     else:
-        return [int(range_or_port)]
+        try:
+            return [int(range_or_port)]
+        except Exception:
+            client.fail('Invalid port: "{0}"'.format(range_or_port))
 
 
 def split_colon_ipv6(text, client):
@@ -2180,7 +2221,8 @@ class Container(DockerBaseClass):
 
         connected_networks = self.container['NetworkSettings']['Networks']
         for network in self.parameters.networks:
-            if connected_networks.get(network['name'], None) is None:
+            network_info = connected_networks.get(network['name'])
+            if network_info is None:
                 different = True
                 differences.append(dict(
                     parameter=network,
@@ -2188,18 +2230,19 @@ class Container(DockerBaseClass):
                 ))
             else:
                 diff = False
-                if network.get('ipv4_address') and network['ipv4_address'] != connected_networks[network['name']].get('IPAddress'):
+                network_info_ipam = network_info.get('IPAMConfig', {})
+                if network.get('ipv4_address') and network['ipv4_address'] != network_info_ipam.get('IPv4Address'):
                     diff = True
-                if network.get('ipv6_address') and network['ipv6_address'] != connected_networks[network['name']].get('GlobalIPv6Address'):
+                if network.get('ipv6_address') and network['ipv6_address'] != network_info_ipam.get('IPv6Address'):
                     diff = True
                 if network.get('aliases'):
-                    if not compare_generic(network['aliases'], connected_networks[network['name']].get('Aliases'), 'allow_more_present', 'set'):
+                    if not compare_generic(network['aliases'], network_info.get('Aliases'), 'allow_more_present', 'set'):
                         diff = True
                 if network.get('links'):
                     expected_links = []
                     for link, alias in network['links']:
                         expected_links.append("%s:%s" % (link, alias))
-                    if not compare_generic(expected_links, connected_networks[network['name']].get('Links'), 'allow_more_present', 'set'):
+                    if not compare_generic(expected_links, network_info.get('Links'), 'allow_more_present', 'set'):
                         diff = True
                 if diff:
                     different = True
@@ -2207,10 +2250,10 @@ class Container(DockerBaseClass):
                         parameter=network,
                         container=dict(
                             name=network['name'],
-                            ipv4_address=connected_networks[network['name']].get('IPAddress'),
-                            ipv6_address=connected_networks[network['name']].get('GlobalIPv6Address'),
-                            aliases=connected_networks[network['name']].get('Aliases'),
-                            links=connected_networks[network['name']].get('Links')
+                            ipv4_address=network_info_ipam.get('IPv4Address'),
+                            ipv6_address=network_info_ipam.get('IPv6Address'),
+                            aliases=network_info.get('Aliases'),
+                            links=network_info.get('Links')
                         )
                     ))
         return different, differences
@@ -2621,8 +2664,8 @@ class ContainerManager(DockerBaseClass):
             if not tag:
                 tag = "latest"
             image = self.client.find_image(repository, tag)
-            if not self.check_mode:
-                if not image or self.parameters.pull:
+            if not image or self.parameters.pull:
+                if not self.check_mode:
                     self.log("Pull the image.")
                     image, alreadyToLatest = self.client.pull_image(repository, tag)
                     if alreadyToLatest:
@@ -2630,6 +2673,12 @@ class ContainerManager(DockerBaseClass):
                     else:
                         self.results['changed'] = True
                         self.results['actions'].append(dict(pulled_image="%s:%s" % (repository, tag)))
+                elif not image:
+                    # If the image isn't there, claim we'll pull.
+                    # (Implicitly: if the image is there, claim it already was latest.)
+                    self.results['changed'] = True
+                    self.results['actions'].append(dict(pulled_image="%s:%s" % (repository, tag)))
+
         self.log("image")
         self.log(image, pretty_print=True)
         return image
@@ -3075,7 +3124,8 @@ class AnsibleDockerClientContainer(AnsibleDockerClient):
             pids_limit=dict(docker_py_version='1.10.0', docker_api_version='1.23'),
             mounts=dict(docker_py_version='2.6.0', docker_api_version='1.25'),
             # specials
-            ipvX_address_supported=dict(docker_py_version='1.9.0', detect_usage=detect_ipvX_address_usage,
+            ipvX_address_supported=dict(docker_py_version='1.9.0', docker_api_version='1.22',
+                                        detect_usage=detect_ipvX_address_usage,
                                         usage_msg='ipv4_address or ipv6_address in networks'),
             stop_timeout=dict(),  # see _get_additional_minimal_versions()
         )
