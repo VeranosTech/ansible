@@ -29,3 +29,5 @@ git push -f origin gh-pages
 git reset --hard HEAD
 git clean -f
 git checkout korean
+
+source deactivate

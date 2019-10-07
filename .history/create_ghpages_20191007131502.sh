@@ -16,11 +16,7 @@ echo '!env/' >> .gitignore
 
 cd docs/docsite
 # make generate_rst
-# sphinx-build -b gettext rst _build/gettext
-# cd rst
-# sphinx-intl update -l ko -p ../_build/gettext
-# cd ..
-sphinx-build -D language='ko' rst _build/html
+sphinx-build -j auto -D language='ko' rst _build/html
 cd ../..
 
 git add . -A
@@ -29,3 +25,5 @@ git push -f origin gh-pages
 git reset --hard HEAD
 git clean -f
 git checkout korean
+
+source deactivate
