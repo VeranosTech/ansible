@@ -1,0 +1,789 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Spelling - Word Usage - Common Words and Phrases to Use and Avoid &mdash; Ansible Documentation</title>
+  
+
+  
+  
+  
+  
+    <link rel="canonical" href="https://veranostech.github.io/docs-korean-ansible/docs/docsite/_build/htmldev_guide/style_guide/spelling_word_choice.html"/>
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Ansible Documentation에서 찾기"
+          href="../../_static/opensearch.xml"/>
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/ansible.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/ansible.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="Resources" href="resources.html" />
+    <link rel="prev" title="Grammar and Punctuation" href="grammar_punctuation.html" /> <!---- extra head elements for Ansible beyond RTD Sphinx Theme --->
+<script type="text/javascript" src="//www.redhat.com/dtm.js"></script>
+<meta class="swiftype" name="published_at" data-type="date" content="2017-12-13" />
+<meta class="swiftype" name="version" data-type="string" content="3.2.2">
+
+<!-- Google Tag Manager Data Layer -->
+<script>
+ dataLayer = [];
+</script>
+<!-- End Google Tag Manager Data Layer -->
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script> 
+</head>
+
+<body class="wy-body-for-nav">
+   <!---- extra body elements for Ansible beyond RTD Sphinx Theme --->
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PSB293" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-PSB293');</script>
+<!-- End Google Tag Manager -->
+
+  <div class="DocSite-globalNav ansibleNav">
+      <ul>
+          <li><a href="https://www.ansible.com/ansiblefest" target="_blank">AnsibleFest</a></li>
+          <li><a href="https://www.ansible.com/tower" target="_blank">Products</a></li>
+          <li><a href="https://www.ansible.com/community" target="_blank">Community</a></li>
+          <li><a href="https://www.ansible.com/webinars-training" target="_blank">Webinars & Training</a></li>
+          <li><a href="https://www.ansible.com/blog" target="_blank">Blog</a></li>
+      </ul>
+  </div>
+
+<a class="DocSite-nav" href="/" style="padding-bottom: 30px;">
+
+  <img class="DocSiteNav-logo"
+    src="../../_static/images/logo_invert.png"
+    alt="Ansible Logo">
+  <div class="DocSiteNav-title">
+    Documentation
+  </div>
+</a> 
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Ansible
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                devel
+              </div>
+            
+          
+
+          <!--- Based on https://github.com/rtfd/sphinx_rtd_theme/pull/438/files -->
+
+<div class="version">
+  
+    <div class="version-dropdown">
+      <select class="version-list" id="version-list" onchange="javascript:location.href = this.value;">
+        <script> x = document.getElementById("version-list"); </script>
+        
+          <script>
+            current_url = window.location.href;
+            option = document.createElement("option");
+            option.text = "latest";
+            if ( "latest" == "devel" ) {
+              option.selected = true;
+            }
+            if (current_url.search("devel") > -1) {
+              option.value = current_url.replace("devel","latest");
+            } else {
+              option.value = current_url.replace("latest","latest");
+            }
+            x.add(option);
+          </script>
+        
+          <script>
+            current_url = window.location.href;
+            option = document.createElement("option");
+            option.text = "2.7";
+            if ( "2.7" == "devel" ) {
+              option.selected = true;
+            }
+            if (current_url.search("devel") > -1) {
+              option.value = current_url.replace("devel","2.7");
+            } else {
+              option.value = current_url.replace("latest","2.7");
+            }
+            x.add(option);
+          </script>
+        
+          <script>
+            current_url = window.location.href;
+            option = document.createElement("option");
+            option.text = "2.6";
+            if ( "2.6" == "devel" ) {
+              option.selected = true;
+            }
+            if (current_url.search("devel") > -1) {
+              option.value = current_url.replace("devel","2.6");
+            } else {
+              option.value = current_url.replace("latest","2.6");
+            }
+            x.add(option);
+          </script>
+        
+          <script>
+            current_url = window.location.href;
+            option = document.createElement("option");
+            option.text = "devel";
+            if ( "devel" == "devel" ) {
+              option.selected = true;
+            }
+            if (current_url.search("devel") > -1) {
+              option.value = current_url.replace("devel","devel");
+            } else {
+              option.value = current_url.replace("latest","devel");
+            }
+            x.add(option);
+          </script>
+        
+      </select>
+    </div>
+  
+</div>
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">설치, 업그레이드, 설정</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../installation_guide/index.html">Installation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../porting_guides/porting_guides.html">Ansible Porting Guides</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Ansible 사용법</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../user_guide/index.html">사용자 안내서</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Ansible에 기여하기</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../community/index.html">Ansible Community Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../community/index.html#getting-started">Getting started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../community/index.html#going-deeper">Going deeper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../community/index.html#working-with-the-ansible-repo">Working with the Ansible repo</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../community/index.html#traditional-table-of-contents">Traditional Table of Contents</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../community/code_of_conduct.html">Community Code of Conduct</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community/how_can_I_help.html">How can I help?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community/reporting_bugs_and_features.html">Reporting Bugs And Requesting Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community/documentation_contributions.html">Contributing to the Ansible Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community/communication.html">Communicating</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community/development_process.html">The Ansible Development Cycle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community/contributor_license_agreement.html">Contributors License Agreement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community/triage_process.html">Triage Process</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community/other_tools_and_programs.html">Other Tools And Programs</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Ansible style guide</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="index.html#linguistic-guidelines">Linguistic guidelines</a></li>
+<li class="toctree-l4"><a class="reference internal" href="index.html#restructuredtext-guidelines">reStructuredText guidelines</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="index.html#more-resources">More resources</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../community/committer_guidelines.html">Committers Guidelines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community/maintainers.html">Module Maintainer Guidelines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community/release_managers.html">Release Manager Guidelines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../community/github_admins.html">GitHub Admins</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Ansible 확장하기</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Developer Guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Common Ansible Scenarios</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../scenario_guides/cloud_guides.html">Public Cloud Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scenario_guides/network_guides.html">Network Technology Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scenario_guides/virt_guides.html">Virtualization and Containerization Guides</a></li>
+</ul>
+<p class="caption"><span class="caption-text">네트워크 자동화용 Ansible</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../network/index.html">Ansible for Network Automation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">참조서와 부록</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/modules_by_category.html">Module Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference_appendices/playbooks_keywords.html">Playbook Keywords</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference_appendices/galaxy.html">Ansible Galaxy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference_appendices/common_return_values.html">Return Values</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference_appendices/config.html">Ansible 설정</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference_appendices/general_precedence.html">Controlling how Ansible behaves: precedence rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference_appendices/YAMLSyntax.html">YAML 문법</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference_appendices/python_3_support.html">Python 3 Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference_appendices/interpreter_discovery.html">Interpreter Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference_appendices/release_and_maintenance.html">Release and maintenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference_appendices/test_strategies.html">Testing Strategies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../testing/sanity/index.html">Sanity Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference_appendices/faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference_appendices/glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference_appendices/module_utils.html">Ansible Reference: Module Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference_appendices/special_variables.html">Special Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference_appendices/tower.html">Red Hat Ansible Tower</a></li>
+</ul>
+<p class="caption"><span class="caption-text">장기계획</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../roadmap/index.html">Ansible Roadmap</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+         <!-- extra nav elements for Ansible beyond RTD Sphinx Theme --->
+<!-- changeable widget links to tower - do not change as image controlled by Ansible-->
+<div id="sideBanner">
+  <br/>
+  <a href="https://www.ansible.com/docs-left?utm_source=docs">
+    <img style="border-width:0px;" src="https://cdn2.hubspot.net/hubfs/330046/docs-graphics/ASB-docs-left-rail.png" />
+  </a>
+  <br/><br/><br/>
+</div>
+      </div>
+    </nav>
+  </div>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Ansible</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../community/index.html">Ansible Community Guide</a> &raquo;</li>
+        
+          <li><a href="index.html">Ansible style guide</a> &raquo;</li>
+        
+      <li>Spelling - Word Usage - Common Words and Phrases to Use and Avoid</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <!-- Ansible-specific additions for modules etc -->
+                
+                  <a href="https://github.com/ansible/ansible/edit/devel/docs/docsite/rst/dev_guide/style_guide/spelling_word_choice.rst?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr" class="fa fa-github"> Edit on GitHub</a>
+                
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <!--- Based on sphinx versionwarning extension. Extension currently only works on READTHEDOCS -->
+
+  <script>
+    current_url = window.location.href;
+    if ((current_url.search("latest") > -1) || (current_url.search("/2.8/") > -1)) {
+     // no banner for latest release
+    } else if (current_url.search("devel") > -1) {
+      document.write('<div id="banner_id" class="admonition caution">');
+      para = document.createElement('p');
+      banner_text=document.createTextNode("You are reading the *devel* version of the Ansible documentation - this version is not guaranteed stable. Use the version selection to the left if you want the latest stable released version.");
+      para.appendChild(banner_text);
+      element = document.getElementById('banner_id');
+      element.appendChild(para);
+      document.write('</div>');
+    } else {
+      document.write('<div id="banner_id" class="admonition caution">');
+      para = document.createElement('p');
+      banner_text=document.createTextNode("You are reading an older version of the Ansible documentation. Use the version selection to the left if you want the latest stable released version.");
+      para.appendChild(banner_text);
+      element = document.getElementById('banner_id');
+      element.appendChild(para);
+      document.write('</div>');
+    }
+  </script>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="spelling-word-usage-common-words-and-phrases-to-use-and-avoid">
+<h1>Spelling - Word Usage - Common Words and Phrases to Use and Avoid<a class="headerlink" href="#spelling-word-usage-common-words-and-phrases-to-use-and-avoid" title="제목 주소">¶</a></h1>
+<div class="section" id="acronyms">
+<h2>Acronyms<a class="headerlink" href="#acronyms" title="제목 주소">¶</a></h2>
+<p>Always uppercase. An acronym is a word formed from the initial letters of a name, such as ROM for Read-only memory,
+SaaS for Software as a Service, or by combining initial letters or part of a series of words, such as LILO for LInux
+LOader.</p>
+<p>Spell out the acronym before using it in alone text, such as &quot;The Embedded DevKit (EDK)...&quot;</p>
+</div>
+<div class="section" id="applications">
+<h2>Applications<a class="headerlink" href="#applications" title="제목 주소">¶</a></h2>
+<p>When used as a proper name, use the capitalization of the product, such as GNUPro, Source-Navigator, and Ansible Tower. When used as a command, use lowercase as appropriate, such as &quot;To start GCC, type <code class="docutils literal notranslate"><span class="pre">gcc</span></code>.&quot;</p>
+<div class="admonition note">
+<p class="admonition-title">참고</p>
+<p>&quot;vi&quot; is always lowercase.</p>
+</div>
+</div>
+<div class="section" id="as">
+<h2>As<a class="headerlink" href="#as" title="제목 주소">¶</a></h2>
+<p>This is often used to mean &quot;because&quot;, but has other connotations, for example, parallel or simultaneous actions. If you mean &quot;because&quot;, say &quot;because&quot;.</p>
+</div>
+<div class="section" id="asks-for">
+<h2>Asks for<a class="headerlink" href="#asks-for" title="제목 주소">¶</a></h2>
+<p>Use &quot;requests&quot; instead.</p>
+</div>
+<div class="section" id="assure-ensure-insure">
+<h2>Assure/Ensure/Insure<a class="headerlink" href="#assure-ensure-insure" title="제목 주소">¶</a></h2>
+<p>Assure implies a sort of mental comfort. As in &quot;I assured my husband that I would eventually bring home beer.&quot;</p>
+<p>Ensure means &quot;to make sure.&quot;</p>
+<p>Insure relates to monetary insurance.</p>
+</div>
+<div class="section" id="back-up">
+<h2>Back up<a class="headerlink" href="#back-up" title="제목 주소">¶</a></h2>
+<p>This is a verb. You &quot;back up&quot; files; you do not &quot;backup&quot; files.</p>
+</div>
+<div class="section" id="backup">
+<h2>Backup<a class="headerlink" href="#backup" title="제목 주소">¶</a></h2>
+<p>This is a noun. You create &quot;backup&quot; files; you do not create &quot;back up&quot; files.</p>
+</div>
+<div class="section" id="backward">
+<h2>Backward<a class="headerlink" href="#backward" title="제목 주소">¶</a></h2>
+<p>Correct. Avoid using backwards unless you are stating that something has &quot;backwards compatibility.&quot;</p>
+</div>
+<div class="section" id="backwards-compatibility">
+<h2>Backwards compatibility<a class="headerlink" href="#backwards-compatibility" title="제목 주소">¶</a></h2>
+<p>Correct as is.</p>
+</div>
+<div class="section" id="by-way-of">
+<h2>By way of<a class="headerlink" href="#by-way-of" title="제목 주소">¶</a></h2>
+<p>Use &quot;using&quot; instead.</p>
+</div>
+<div class="section" id="can-may">
+<h2>Can/May<a class="headerlink" href="#can-may" title="제목 주소">¶</a></h2>
+<p>Use &quot;can&quot; to describe actions or conditions that are possible. Use &quot;may&quot; only to describe situations where permission is being given. If either &quot;can,&quot; &quot;could,&quot; or &quot;may&quot; apply, use &quot;can&quot; because it's less tentative.</p>
+</div>
+<div class="section" id="cd-or-cd">
+<h2>CD or cd<a class="headerlink" href="#cd-or-cd" title="제목 주소">¶</a></h2>
+<p>When referring to a compact disk, use CD, such as &quot;Insert the CD into the CD-ROM drive.&quot; When referring to the change directory command, use cd.</p>
+</div>
+<div class="section" id="cd-rom">
+<h2>CD-ROM<a class="headerlink" href="#cd-rom" title="제목 주소">¶</a></h2>
+<p>Correct. Do not use &quot;cdrom,&quot; &quot;CD-Rom,&quot; &quot;CDROM,&quot; &quot;cd-rom&quot; or any other variation. When referring to the drive, use CD-ROM drive, such as &quot;Insert the CD into the CD-ROM drive.&quot; The plural is &quot;CD-ROMs.&quot;</p>
+</div>
+<div class="section" id="command-line">
+<h2>Command line<a class="headerlink" href="#command-line" title="제목 주소">¶</a></h2>
+<p>Correct. Do not use &quot;command-line&quot; or &quot;commandline.&quot;</p>
+<p>Use to describes where to place options for a command, but not where to type the command. Use &quot;shell prompt&quot; instead to describe where to type commands. The line on the display screen where a command is expected. Generally, the command line is the line that contains the most recently displayed command prompt.</p>
+</div>
+<div class="section" id="daylight-saving-time-dst">
+<h2>Daylight saving time (DST)<a class="headerlink" href="#daylight-saving-time-dst" title="제목 주소">¶</a></h2>
+<p>Correct. Do not use daylight savings time. Daylight Saving Time (DST) is often misspelled &quot;Daylight Savings&quot;, with an &quot;s&quot; at the end. Other common variations are &quot;Summer Time&quot;and &quot;Daylight-Saving Time&quot;. (<a class="reference external" href="https://www.timeanddate.com/time/dst/daylight-savings-time.html">https://www.timeanddate.com/time/dst/daylight-savings-time.html</a>)</p>
+</div>
+<div class="section" id="download">
+<h2>Download<a class="headerlink" href="#download" title="제목 주소">¶</a></h2>
+<p>Correct. Do not use &quot;down load&quot; or &quot;down-load.&quot;</p>
+</div>
+<div class="section" id="e-g">
+<h2>e.g.<a class="headerlink" href="#e-g" title="제목 주소">¶</a></h2>
+<p>Spell it out: &quot;For example.&quot;</p>
+</div>
+<div class="section" id="failover">
+<h2>Failover<a class="headerlink" href="#failover" title="제목 주소">¶</a></h2>
+<p>When used as a noun, a failover is a backup operation that automatically switches to a standby database, server or network if the primary system fails or is temporarily shut down for servicing. Failover is an important fault tolerance function of mission-critical systems that rely on constant accessibility. Failover automatically and transparently to the user redirects requests from the failed or down system to the backup system that mimics the operations of the primary system.</p>
+</div>
+<div class="section" id="fail-over">
+<h2>Fail over<a class="headerlink" href="#fail-over" title="제목 주소">¶</a></h2>
+<p>When used as a verb, fail over is two words since there can be different tenses such as failed over.</p>
+</div>
+<div class="section" id="fewer">
+<h2>Fewer<a class="headerlink" href="#fewer" title="제목 주소">¶</a></h2>
+<p>Fewer is used with plural nouns. Think things you could count.  Time, money, distance, and weight are often listed as exceptions to the traditional &quot;can you count it&quot; rule, often thought of a singular amounts (the work will take less than 5 hours, for example).</p>
+</div>
+<div class="section" id="file-name">
+<h2>File name<a class="headerlink" href="#file-name" title="제목 주소">¶</a></h2>
+<p>Correct. Do not use &quot;filename.&quot;</p>
+</div>
+<div class="section" id="file-system">
+<h2>File system<a class="headerlink" href="#file-system" title="제목 주소">¶</a></h2>
+<p>Correct. Do not use &quot;filesystem.&quot; The system that an operating system or program uses to organize and keep track of files. For example, a hierarchical file system is one that uses directories to organize files into a tree structure. Although the operating system provides its own file management system, you can buy separate file management systems. These systems interact smoothly with the operating system but provide more features, such as improved backup procedures and stricter file protection.</p>
+</div>
+<div class="section" id="for-instance">
+<h2>For instance<a class="headerlink" href="#for-instance" title="제목 주소">¶</a></h2>
+<p>For example,&quot; instead.</p>
+</div>
+<div class="section" id="for-further-additional-whatever-information">
+<h2>For further/additional/whatever information<a class="headerlink" href="#for-further-additional-whatever-information" title="제목 주소">¶</a></h2>
+<p>Use &quot;For more information&quot;</p>
+</div>
+<div class="section" id="for-this-reason">
+<h2>For this reason<a class="headerlink" href="#for-this-reason" title="제목 주소">¶</a></h2>
+<p>Use &quot;therefore&quot;.</p>
+</div>
+<div class="section" id="forward">
+<h2>Forward<a class="headerlink" href="#forward" title="제목 주소">¶</a></h2>
+<p>Correct. Avoid using &quot;forwards.&quot;</p>
+</div>
+<div class="section" id="gigabyte-gb">
+<h2>Gigabyte (GB)<a class="headerlink" href="#gigabyte-gb" title="제목 주소">¶</a></h2>
+<p>2 to the 30th power (1,073,741,824) bytes. One gigabyte is equal to 1,024 megabytes. Gigabyte is often abbreviated as G or GB.</p>
+</div>
+<div class="section" id="got">
+<h2>Got<a class="headerlink" href="#got" title="제목 주소">¶</a></h2>
+<p>Avoid. Use &quot;must&quot; instead.</p>
+</div>
+<div class="section" id="high-availability">
+<h2>High-availability<a class="headerlink" href="#high-availability" title="제목 주소">¶</a></h2>
+<p>Correct. Do not use &quot;high availability.&quot;</p>
+</div>
+<div class="section" id="highly-available">
+<h2>Highly available<a class="headerlink" href="#highly-available" title="제목 주소">¶</a></h2>
+<p>Correct. Do not use highly-available.&quot;</p>
+</div>
+<div class="section" id="hostname">
+<h2>Hostname<a class="headerlink" href="#hostname" title="제목 주소">¶</a></h2>
+<p>Correct. Do not use host name.</p>
+</div>
+<div class="section" id="i-e">
+<h2>i.e.<a class="headerlink" href="#i-e" title="제목 주소">¶</a></h2>
+<p>Spell it out: &quot;That is.&quot;</p>
+</div>
+<div class="section" id="installer">
+<h2>Installer<a class="headerlink" href="#installer" title="제목 주소">¶</a></h2>
+<p>Avoid. Use &quot;installation program&quot; instead.</p>
+</div>
+<div class="section" id="it-s-and-its">
+<h2>It's and its<a class="headerlink" href="#it-s-and-its" title="제목 주소">¶</a></h2>
+<p>&quot;It's&quot; is a contraction for &quot;it is;&quot; use &quot;it is&quot; instead of &quot;it's.&quot; Use &quot;its&quot; as a possessive pronoun (for example, &quot;the store is known for its low prices&quot;).</p>
+</div>
+<div class="section" id="less">
+<h2>Less<a class="headerlink" href="#less" title="제목 주소">¶</a></h2>
+<p>Less is used with singular nouns. For example &quot;View less details&quot; wouldn't be correct but &quot;View less detail&quot; works. Use fewer when you have plural nouns (things you can count).</p>
+</div>
+<div class="section" id="linux">
+<h2>Linux<a class="headerlink" href="#linux" title="제목 주소">¶</a></h2>
+<p>Correct. Do not use &quot;LINUX&quot; or &quot;linux&quot; unless referring to a command, such as &quot;To start Linux, type linux.&quot; Linux is a registered trademark of Linus Torvalds.</p>
+</div>
+<div class="section" id="login">
+<h2>Login<a class="headerlink" href="#login" title="제목 주소">¶</a></h2>
+<p>A noun used to refer to the login prompt, such as &quot;At the login prompt, enter your username.&quot;</p>
+</div>
+<div class="section" id="log-in">
+<h2>Log in<a class="headerlink" href="#log-in" title="제목 주소">¶</a></h2>
+<p>A verb used to refer to the act of logging in. Do not use &quot;login,&quot; &quot;loggin,&quot; &quot;logon,&quot; and other variants. For example, &quot;When starting your computer, you are requested to log in...&quot;</p>
+</div>
+<div class="section" id="log-on">
+<h2>Log on<a class="headerlink" href="#log-on" title="제목 주소">¶</a></h2>
+<p>To make a computer system or network recognize you so that you can begin a computer session. Most personal computers have no log-on procedure -- you just turn the machine on and begin working. For larger systems and networks, however, you usually need to enter a username and password before the computer system will allow you to execute programs.</p>
+</div>
+<div class="section" id="lots-of">
+<h2>Lots of<a class="headerlink" href="#lots-of" title="제목 주소">¶</a></h2>
+<p>Use &quot;Several&quot; or something equivalent instead.</p>
+</div>
+<div class="section" id="make-sure">
+<h2>Make sure<a class="headerlink" href="#make-sure" title="제목 주소">¶</a></h2>
+<p>This means &quot;be careful to remember, attend to, or find out something.&quot; For example, &quot;...make sure that the rhedk group is listed in the output.&quot;
+Try to use verify or ensure instead.</p>
+</div>
+<div class="section" id="manual-man-page">
+<h2>Manual/man page<a class="headerlink" href="#manual-man-page" title="제목 주소">¶</a></h2>
+<p>Correct. Two words. Do not use &quot;manpage&quot;</p>
+</div>
+<div class="section" id="mb">
+<h2>MB<a class="headerlink" href="#mb" title="제목 주소">¶</a></h2>
+<ol class="arabic simple">
+<li><p>When spelled MB, short for megabyte (1,000,000 or 1,048,576 bytes, depending on the context).</p></li>
+<li><p>When spelled Mb, short for megabit.</p></li>
+</ol>
+</div>
+<div class="section" id="mbps">
+<h2>MBps<a class="headerlink" href="#mbps" title="제목 주소">¶</a></h2>
+<p>Short for megabytes per second, a measure of data transfer speed. Mass storage devices are generally measured in MBps.</p>
+</div>
+<div class="section" id="mysql">
+<h2>MySQL<a class="headerlink" href="#mysql" title="제목 주소">¶</a></h2>
+<p>Common open source database server and client package. Do not use &quot;MYSQL&quot; or &quot;mySQL.&quot;</p>
+</div>
+<div class="section" id="need-to">
+<h2>Need to<a class="headerlink" href="#need-to" title="제목 주소">¶</a></h2>
+<p>Avoid. Use &quot;must&quot; instead.</p>
+</div>
+<div class="section" id="read-only">
+<h2>Read-only<a class="headerlink" href="#read-only" title="제목 주소">¶</a></h2>
+<p>Correct. Use when referring to the access permissions of files or directories.</p>
+</div>
+<div class="section" id="real-time-real-time">
+<h2>Real time/real-time<a class="headerlink" href="#real-time-real-time" title="제목 주소">¶</a></h2>
+<p>Depends. If used as a noun, it is the actual time during which something takes place. For example, &quot;The computer may partly analyze the data in real time (as it comes in) -- R. H. March.&quot; If used as an adjective, &quot;real-time&quot; is appropriate. For example, &quot;XEmacs is a self-documenting, customizable, extensible, real-time display editor.&quot;</p>
+</div>
+<div class="section" id="refer-to">
+<h2>Refer to<a class="headerlink" href="#refer-to" title="제목 주소">¶</a></h2>
+<p>Use to indicate a reference (within a manual or website) or a cross-reference (to another manual or documentation source).</p>
+</div>
+<div class="section" id="see">
+<h2>See<a class="headerlink" href="#see" title="제목 주소">¶</a></h2>
+<p>Don't use. Use &quot;Refer to&quot; instead.</p>
+</div>
+<div class="section" id="since">
+<h2>Since<a class="headerlink" href="#since" title="제목 주소">¶</a></h2>
+<p>This is often used to mean &quot;because&quot;, but &quot;since&quot; has connotations of time, so be careful. If you mean &quot;because&quot;, say &quot;because&quot;.</p>
+</div>
+<div class="section" id="tells">
+<h2>Tells<a class="headerlink" href="#tells" title="제목 주소">¶</a></h2>
+<p>Use &quot;Instructs&quot; instead.</p>
+</div>
+<div class="section" id="that-which">
+<h2>That/which<a class="headerlink" href="#that-which" title="제목 주소">¶</a></h2>
+<p>&quot;That&quot; introduces a restrictive clause-a clause that must be there for the sentence to make sense. A restrictive clause often defines the noun or phrase preceding it. &quot;Which&quot; introduces a non-restrictive, parenthetical clause-a clause that could be omitted without affecting the meaning of the sentence. For example: The car was travelling at a speed that would endanger lives. The car, which was traveling at a speed that would endanger lives, swerved onto the sidewalk. Use &quot;who&quot; or &quot;whom,&quot; rather than &quot;that&quot; or &quot;which,&quot; when referring to a person.</p>
+</div>
+<div class="section" id="then-than">
+<h2>Then/than<a class="headerlink" href="#then-than" title="제목 주소">¶</a></h2>
+<blockquote>
+<div><p>&quot;Then&quot; refers to a time in the past or the next step in a sequence. &quot;Than&quot; is used for comparisons.</p>
+</div></blockquote>
+<img alt="../../_images/thenvsthan.jpg" src="../../_images/thenvsthan.jpg" />
+</div>
+<div class="section" id="third-party">
+<h2>Third-party<a class="headerlink" href="#third-party" title="제목 주소">¶</a></h2>
+<p>Correct. Do not use &quot;third party&quot;.</p>
+</div>
+<div class="section" id="troubleshoot">
+<h2>Troubleshoot<a class="headerlink" href="#troubleshoot" title="제목 주소">¶</a></h2>
+<p>Correct. Do not use &quot;trouble shoot&quot; or &quot;trouble-shoot.&quot; To isolate the source of a problem and fix it. In the case of computer systems, the term troubleshoot is usually used when the problem is suspected to be hardware -related. If the problem is known to be in software, the term debug is more commonly used.</p>
+</div>
+<div class="section" id="uk">
+<h2>UK<a class="headerlink" href="#uk" title="제목 주소">¶</a></h2>
+<p>Correct as is, no periods.</p>
+</div>
+<div class="section" id="unix">
+<h2>UNIX®<a class="headerlink" href="#unix" title="제목 주소">¶</a></h2>
+<p>Correct. Do not use &quot;Unix&quot; or &quot;unix.&quot; UNIX® is a registered trademark of The Open Group.</p>
+</div>
+<div class="section" id="unset">
+<h2>Unset<a class="headerlink" href="#unset" title="제목 주소">¶</a></h2>
+<p>Don't use. Use Clear.</p>
+</div>
+<div class="section" id="us">
+<h2>US<a class="headerlink" href="#us" title="제목 주소">¶</a></h2>
+<p>Correct as is, no periods.</p>
+</div>
+<div class="section" id="user">
+<h2>User<a class="headerlink" href="#user" title="제목 주소">¶</a></h2>
+<p>When referring to the reader, use &quot;you&quot; instead of &quot;user.&quot; For example, &quot;The user must...&quot; is incorrect. Use &quot;You must...&quot; instead. If referring to more than one user, calling the collection &quot;users&quot; is acceptable, such as &quot;Other users may wish to access your database.&quot;</p>
+</div>
+<div class="section" id="username">
+<h2>Username<a class="headerlink" href="#username" title="제목 주소">¶</a></h2>
+<p>Correct. Do not use &quot;user name.&quot;</p>
+</div>
+<div class="section" id="view">
+<h2>View<a class="headerlink" href="#view" title="제목 주소">¶</a></h2>
+<p>When using as a reference (&quot;View the documentation available online.&quot;), do not use View. Use &quot;Refer to&quot; instead.</p>
+</div>
+<div class="section" id="within">
+<h2>Within<a class="headerlink" href="#within" title="제목 주소">¶</a></h2>
+<p>Don't use to refer to a file that exists in a directory. Use &quot;In&quot;.</p>
+</div>
+<div class="section" id="world-wide-web">
+<h2>World Wide Web<a class="headerlink" href="#world-wide-web" title="제목 주소">¶</a></h2>
+<p>Correct. Capitalize each word. Abbreviate as &quot;WWW&quot; or &quot;Web.&quot;</p>
+</div>
+<div class="section" id="webpage">
+<h2>Webpage<a class="headerlink" href="#webpage" title="제목 주소">¶</a></h2>
+<p>Correct. Do not use &quot;web page&quot; or &quot;Web page.&quot;</p>
+</div>
+<div class="section" id="web-server">
+<h2>Web server<a class="headerlink" href="#web-server" title="제목 주소">¶</a></h2>
+<p>Correct. Do not use &quot;webserver&quot;. For example, &quot;The Apache HTTP Server is the default Web server...&quot;</p>
+</div>
+<div class="section" id="website">
+<h2>Website<a class="headerlink" href="#website" title="제목 주소">¶</a></h2>
+<p>Correct. Do not use &quot;web site&quot; or &quot;Web site.&quot; For example, &quot;The Ansible website contains ...&quot;</p>
+</div>
+<div class="section" id="who-whom">
+<h2>Who/whom<a class="headerlink" href="#who-whom" title="제목 주소">¶</a></h2>
+<p>Use the pronoun &quot;who&quot; as a subject. Use the pronoun &quot;whom&quot; as a direct object, an indirect object, or the object of a preposition. For example: Who owns this? To whom does this belong?</p>
+</div>
+<div class="section" id="will">
+<h2>Will<a class="headerlink" href="#will" title="제목 주소">¶</a></h2>
+<p>Do not use future tense unless it is absolutely necessary. For instance, do not use the sentence, &quot;The next section will describe the process in more detail.&quot; Instead, use the sentence, &quot;The next section describes the process in more detail.&quot;</p>
+</div>
+<div class="section" id="wish">
+<h2>Wish<a class="headerlink" href="#wish" title="제목 주소">¶</a></h2>
+<p>Use &quot;need&quot; instead of &quot;desire&quot; and &quot;wish.&quot; Use &quot;want&quot; when the reader's actions are optional (that is, they may not &quot;need&quot; something but may still &quot;want&quot; something).</p>
+</div>
+<div class="section" id="x86">
+<h2>x86<a class="headerlink" href="#x86" title="제목 주소">¶</a></h2>
+<p>Correct. Do not capitalize the &quot;x.&quot;</p>
+</div>
+<div class="section" id="x86-64">
+<h2>x86_64<a class="headerlink" href="#x86-64" title="제목 주소">¶</a></h2>
+<p>Do not use. Do not use &quot;Hammer&quot;. Always use &quot;AMD64 and Intel® EM64T&quot; when referring to this architecture.</p>
+</div>
+<div class="section" id="you">
+<h2>You<a class="headerlink" href="#you" title="제목 주소">¶</a></h2>
+<p>Correct. Do not use &quot;I,&quot; &quot;he,&quot; or &quot;she.&quot;</p>
+</div>
+<div class="section" id="you-may">
+<h2>You may<a class="headerlink" href="#you-may" title="제목 주소">¶</a></h2>
+<p>Try to avoid using this. For example, &quot;you may&quot; can be eliminated from this sentence &quot;You may double-click on the desktop...&quot;</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="resources.html" class="btn btn-neutral float-right" title="Resources"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="grammar_punctuation.html" class="btn btn-neutral" title="Grammar and Punctuation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','yABGvz2N8PwcwBxyfzUc','2.0.0');
+</script>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019 Red Hat, Inc.
+      <span class="lastupdated">
+        최종 업데이트: 10월 07, 2019
+      </span>
+
+    </p>
+  </div> 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script>
+
+  
+  
+    
+   <!-- extra footer elements for Ansible beyond RTD Sphinx Theme --->
+<!-- begin analytics -->
+<script type="text/javascript">
+var _hsq = _hsq || [];
+_hsq.push(["setContentType", "standard-page"]);
+      (function(d,s,i,r) {
+      if (d.getElementById(i)){return;}
+      var n = d.createElement(s),e = document.getElementsByTagName(s)[0];
+      n.id=i;n.src = '//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/330046.js';
+      e.parentNode.insertBefore(n, e);
+      })(document, "script", "hs-analytics",300000);
+</script>
+<!-- end analytics -->
+<script type="text/javascript">
+if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
+  _satellite.pageBottom();
+}
+</script> 
+
+</body>
+</html>

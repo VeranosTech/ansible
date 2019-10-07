@@ -1,0 +1,1082 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>인벤토리 작업 &mdash; Ansible Documentation</title>
+  
+
+  
+  
+  
+  
+    <link rel="canonical" href="https://veranostech.github.io/docs-korean-ansible/docs/docsite/_build/htmluser_guide/intro_inventory.html"/>
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Ansible Documentation에서 찾기"
+          href="../_static/opensearch.xml"/>
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/ansible.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/ansible.css" type="text/css" />
+    <link rel="index" title="색인" href="../genindex.html" />
+    <link rel="search" title="검색" href="../search.html" />
+    <link rel="next" title="Working With Dynamic Inventory" href="intro_dynamic_inventory.html" />
+    <link rel="prev" title="임시변통 명령의 소개" href="intro_adhoc.html" /> <!---- extra head elements for Ansible beyond RTD Sphinx Theme --->
+<script type="text/javascript" src="//www.redhat.com/dtm.js"></script>
+<meta class="swiftype" name="published_at" data-type="date" content="2017-12-13" />
+<meta class="swiftype" name="version" data-type="string" content="3.2.2">
+
+<!-- Google Tag Manager Data Layer -->
+<script>
+ dataLayer = [];
+</script>
+<!-- End Google Tag Manager Data Layer -->
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script> 
+</head>
+
+<body class="wy-body-for-nav">
+   <!---- extra body elements for Ansible beyond RTD Sphinx Theme --->
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PSB293" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-PSB293');</script>
+<!-- End Google Tag Manager -->
+
+  <div class="DocSite-globalNav ansibleNav">
+      <ul>
+          <li><a href="https://www.ansible.com/ansiblefest" target="_blank">AnsibleFest</a></li>
+          <li><a href="https://www.ansible.com/tower" target="_blank">Products</a></li>
+          <li><a href="https://www.ansible.com/community" target="_blank">Community</a></li>
+          <li><a href="https://www.ansible.com/webinars-training" target="_blank">Webinars & Training</a></li>
+          <li><a href="https://www.ansible.com/blog" target="_blank">Blog</a></li>
+      </ul>
+  </div>
+
+<a class="DocSite-nav" href="/" style="padding-bottom: 30px;">
+
+  <img class="DocSiteNav-logo"
+    src="../_static/images/logo_invert.png"
+    alt="Ansible Logo">
+  <div class="DocSiteNav-title">
+    Documentation
+  </div>
+</a> 
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Ansible
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                devel
+              </div>
+            
+          
+
+          <!--- Based on https://github.com/rtfd/sphinx_rtd_theme/pull/438/files -->
+
+<div class="version">
+  
+    <div class="version-dropdown">
+      <select class="version-list" id="version-list" onchange="javascript:location.href = this.value;">
+        <script> x = document.getElementById("version-list"); </script>
+        
+          <script>
+            current_url = window.location.href;
+            option = document.createElement("option");
+            option.text = "latest";
+            if ( "latest" == "devel" ) {
+              option.selected = true;
+            }
+            if (current_url.search("devel") > -1) {
+              option.value = current_url.replace("devel","latest");
+            } else {
+              option.value = current_url.replace("latest","latest");
+            }
+            x.add(option);
+          </script>
+        
+          <script>
+            current_url = window.location.href;
+            option = document.createElement("option");
+            option.text = "2.7";
+            if ( "2.7" == "devel" ) {
+              option.selected = true;
+            }
+            if (current_url.search("devel") > -1) {
+              option.value = current_url.replace("devel","2.7");
+            } else {
+              option.value = current_url.replace("latest","2.7");
+            }
+            x.add(option);
+          </script>
+        
+          <script>
+            current_url = window.location.href;
+            option = document.createElement("option");
+            option.text = "2.6";
+            if ( "2.6" == "devel" ) {
+              option.selected = true;
+            }
+            if (current_url.search("devel") > -1) {
+              option.value = current_url.replace("devel","2.6");
+            } else {
+              option.value = current_url.replace("latest","2.6");
+            }
+            x.add(option);
+          </script>
+        
+          <script>
+            current_url = window.location.href;
+            option = document.createElement("option");
+            option.text = "devel";
+            if ( "devel" == "devel" ) {
+              option.selected = true;
+            }
+            if (current_url.search("devel") > -1) {
+              option.value = current_url.replace("devel","devel");
+            } else {
+              option.value = current_url.replace("latest","devel");
+            }
+            x.add(option);
+          </script>
+        
+      </select>
+    </div>
+  
+</div>
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">설치, 업그레이드, 설정</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation_guide/index.html">Installation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../porting_guides/porting_guides.html">Ansible Porting Guides</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Ansible 사용법</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">사용자 안내서</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Ansible에 기여하기</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../community/index.html">Ansible Community Guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Ansible 확장하기</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dev_guide/index.html">Developer Guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Common Ansible Scenarios</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../scenario_guides/cloud_guides.html">Public Cloud Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scenario_guides/network_guides.html">Network Technology Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scenario_guides/virt_guides.html">Virtualization and Containerization Guides</a></li>
+</ul>
+<p class="caption"><span class="caption-text">네트워크 자동화용 Ansible</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../network/index.html">Ansible for Network Automation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">참조서와 부록</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modules/modules_by_category.html">Module Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference_appendices/playbooks_keywords.html">Playbook Keywords</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference_appendices/galaxy.html">Ansible Galaxy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference_appendices/common_return_values.html">Return Values</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference_appendices/config.html">Ansible 설정</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference_appendices/general_precedence.html">Controlling how Ansible behaves: precedence rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference_appendices/YAMLSyntax.html">YAML 문법</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference_appendices/python_3_support.html">Python 3 Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference_appendices/interpreter_discovery.html">Interpreter Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference_appendices/release_and_maintenance.html">Release and maintenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference_appendices/test_strategies.html">Testing Strategies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev_guide/testing/sanity/index.html">Sanity Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference_appendices/faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference_appendices/glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference_appendices/module_utils.html">Ansible Reference: Module Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference_appendices/special_variables.html">Special Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference_appendices/tower.html">Red Hat Ansible Tower</a></li>
+</ul>
+<p class="caption"><span class="caption-text">장기계획</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../roadmap/index.html">Ansible Roadmap</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+         <!-- extra nav elements for Ansible beyond RTD Sphinx Theme --->
+<!-- changeable widget links to tower - do not change as image controlled by Ansible-->
+<div id="sideBanner">
+  <br/>
+  <a href="https://www.ansible.com/docs-left?utm_source=docs">
+    <img style="border-width:0px;" src="https://cdn2.hubspot.net/hubfs/330046/docs-graphics/ASB-docs-left-rail.png" />
+  </a>
+  <br/><br/><br/>
+</div>
+      </div>
+    </nav>
+  </div>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Ansible</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">사용자 안내서</a> &raquo;</li>
+        
+      <li>인벤토리 작업</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <!-- Ansible-specific additions for modules etc -->
+                
+                  <a href="https://github.com/ansible/ansible/edit/devel/docs/docsite/rst/user_guide/intro_inventory.rst?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr" class="fa fa-github"> Edit on GitHub</a>
+                
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <!--- Based on sphinx versionwarning extension. Extension currently only works on READTHEDOCS -->
+
+  <script>
+    current_url = window.location.href;
+    if ((current_url.search("latest") > -1) || (current_url.search("/2.8/") > -1)) {
+     // no banner for latest release
+    } else if (current_url.search("devel") > -1) {
+      document.write('<div id="banner_id" class="admonition caution">');
+      para = document.createElement('p');
+      banner_text=document.createTextNode("You are reading the *devel* version of the Ansible documentation - this version is not guaranteed stable. Use the version selection to the left if you want the latest stable released version.");
+      para.appendChild(banner_text);
+      element = document.getElementById('banner_id');
+      element.appendChild(para);
+      document.write('</div>');
+    } else {
+      document.write('<div id="banner_id" class="admonition caution">');
+      para = document.createElement('p');
+      banner_text=document.createTextNode("You are reading an older version of the Ansible documentation. Use the version selection to the left if you want the latest stable released version.");
+      para.appendChild(banner_text);
+      element = document.getElementById('banner_id');
+      element.appendChild(para);
+      document.write('</div>');
+    }
+  </script>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="working-with-inventory">
+<span id="inventory"></span><span id="intro-inventory"></span><h1>인벤토리 작업<a class="headerlink" href="#working-with-inventory" title="제목 주소">¶</a></h1>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#inventory-basics-hosts-and-groups" id="id4">인벤토리 기초: 호스트와 그룹</a></p>
+<ul>
+<li><p><a class="reference internal" href="#hosts-in-multiple-groups" id="id5">Hosts in multiple groups</a></p></li>
+<li><p><a class="reference internal" href="#hosts-and-non-standard-ports" id="id6">호스트와 비표준 포트</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#assigning-a-variable-to-one-machine-host-variables" id="id7">단일 머신에 대해 변수를 할당하는 방법: 호스트 변수</a></p></li>
+<li><p><a class="reference internal" href="#assigning-a-variable-to-many-machines-group-variables" id="id8">다수의 머신에 변수를 할당하기: 그룹 변수</a></p>
+<ul>
+<li><p><a class="reference internal" href="#inheriting-variable-values-group-variables-for-groups-of-groups" id="id9">변수 값 상속: 그룹의 그룹에 대한 그룹 변수</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#default-groups" id="id10">디폴트 그룹</a></p></li>
+<li><p><a class="reference internal" href="#organizing-host-and-group-variables" id="id11">호스트와 그룹 변수의 조직화</a></p></li>
+<li><p><a class="reference internal" href="#how-variables-are-merged" id="id12">변수가 어떻게 합쳐지는가</a></p></li>
+<li><p><a class="reference internal" href="#using-multiple-inventory-sources" id="id13">복수의 인벤토리 소스를 사용하는 경우</a></p></li>
+<li><p><a class="reference internal" href="#connecting-to-hosts-behavioral-inventory-parameters" id="id14">Connecting to hosts: behavioral inventory parameters</a></p>
+<ul>
+<li><p><a class="reference internal" href="#non-ssh-connection-types" id="id15">Non-SSH connection types</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#inventory-setup-examples" id="id16">Inventory setup examples</a></p>
+<ul>
+<li><p><a class="reference internal" href="#example-one-inventory-per-environment" id="id17">Example: One inventory per environment</a></p></li>
+<li><p><a class="reference internal" href="#example-group-by-function" id="id18">Example: Group by function</a></p></li>
+<li><p><a class="reference internal" href="#example-group-by-location" id="id19">Example: Group by location</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Ansible은 인프라스트럭처 내의 여러 시스템을 동시에 다룰 수 있다. 이 때 Ansible의 인벤토리에 나열된 시스템 중에서 선택할 수 있는데 인벤토리는 <code class="docutils literal notranslate"><span class="pre">/etc/ansible/hosts</span></code> 파일에 저장된다. 명령줄에서 <code class="docutils literal notranslate"><span class="pre">-i</span> <span class="pre">&lt;path&gt;</span></code> 옵션을 쓰면 다른 인벤토리 파일을 지정할 수도 있다.</p>
+<p>여러개의 인벤토리 파일을 동시에 이용할 수도 있고 <a class="reference internal" href="intro_dynamic_inventory.html#intro-dynamic-inventory"><span class="std std-ref">Working With Dynamic Inventory</span></a>에 설명된 것처럼 클라우드 소스에서 인벤토리를 가져오거나 (YAML, ini 등) 다른 포맷을 사용할 수도 있다. 버전 2.4부터는 <a class="reference internal" href="../plugins/inventory.html#inventory-plugins"><span class="std std-ref">Inventory Plugins</span></a> 기능으로 인벤토리를 더 유연하게 맞춤 설정 할 수 있다.</p>
+<div class="section" id="inventory-basics-hosts-and-groups">
+<span id="inventoryformat"></span><h2><a class="toc-backref" href="#id4">인벤토리 기초: 호스트와 그룹</a><a class="headerlink" href="#inventory-basics-hosts-and-groups" title="제목 주소">¶</a></h2>
+<p>인벤토리 파일은 사용자가 가진 인벤토리 플러그인에 따라 여러가지 포맷이 가능하다. 예를 들어 <code class="docutils literal notranslate"><span class="pre">/etc/ansible/hosts</span></code>는 (Ansible의 디폴트 포맷의 하나인) INI 포맷으로 다음처럼 생겼다:</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="n">mail</span><span class="p">.</span><span class="n">example</span><span class="p">.</span><span class="n">com</span>
+
+<span class="p">[</span><span class="n">webservers</span><span class="p">]</span>
+<span class="n">foo</span><span class="p">.</span><span class="n">example</span><span class="p">.</span><span class="n">com</span>
+<span class="n">bar</span><span class="p">.</span><span class="n">example</span><span class="p">.</span><span class="n">com</span>
+
+<span class="p">[</span><span class="n">dbservers</span><span class="p">]</span>
+<span class="n">one</span><span class="p">.</span><span class="n">example</span><span class="p">.</span><span class="n">com</span>
+<span class="n">two</span><span class="p">.</span><span class="n">example</span><span class="p">.</span><span class="n">com</span>
+<span class="n">three</span><span class="p">.</span><span class="n">example</span><span class="p">.</span><span class="n">com</span>
+</pre></div>
+</div>
+<p>대괄호안의 제목은 그룹 이름으로 목적에 따라 시스템을 분류하고 제어할 때 사용한다.</p>
+<p>YAML 버전은 다음처럼 생겼다.:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">all</span><span class="p">:</span>
+  <span class="nt">hosts</span><span class="p">:</span>
+    <span class="nt">mail.example.com</span><span class="p">:</span>
+  <span class="nt">children</span><span class="p">:</span>
+    <span class="nt">webservers</span><span class="p">:</span>
+      <span class="nt">hosts</span><span class="p">:</span>
+        <span class="nt">foo.example.com</span><span class="p">:</span>
+        <span class="nt">bar.example.com</span><span class="p">:</span>
+    <span class="nt">dbservers</span><span class="p">:</span>
+      <span class="nt">hosts</span><span class="p">:</span>
+        <span class="nt">one.example.com</span><span class="p">:</span>
+        <span class="nt">two.example.com</span><span class="p">:</span>
+        <span class="nt">three.example.com</span><span class="p">:</span>
+</pre></div>
+</div>
+<div class="section" id="hosts-in-multiple-groups">
+<span id="host-multiple-groups"></span><h3><a class="toc-backref" href="#id5">Hosts in multiple groups</a><a class="headerlink" href="#hosts-in-multiple-groups" title="제목 주소">¶</a></h3>
+<p>한 서버가 여러 그룹에 있을 수도 있다. 예를 들어 한 서버가 웹서버이면서 동시에 어떤 데이터센터에 있다고 하자. 예를 들어 다음과 같은 조건에 따라 그룹을 만들자.</p>
+<ul class="simple">
+<li><p>무엇을 - 애플리케이션, 스택, 마이크로서비스 (예: 데이터베이스 서버, 웹 서버)</p></li>
+<li><p>어디에 - 특정 데이터센터나 리전</p></li>
+<li><p>언제 - 개발 스테이지, 테스트나 생산 리소스를 피하기 위해</p></li>
+</ul>
+<p>Extending the previous YAML inventory to include what, when, and where would look like:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">all</span><span class="p">:</span>
+  <span class="nt">hosts</span><span class="p">:</span>
+    <span class="nt">mail.example.com</span><span class="p">:</span>
+  <span class="nt">children</span><span class="p">:</span>
+    <span class="nt">webservers</span><span class="p">:</span>
+      <span class="nt">hosts</span><span class="p">:</span>
+        <span class="nt">foo.example.com</span><span class="p">:</span>
+        <span class="nt">bar.example.com</span><span class="p">:</span>
+    <span class="nt">dbservers</span><span class="p">:</span>
+      <span class="nt">hosts</span><span class="p">:</span>
+        <span class="nt">one.example.com</span><span class="p">:</span>
+        <span class="nt">two.example.com</span><span class="p">:</span>
+        <span class="nt">three.example.com</span><span class="p">:</span>
+    <span class="nt">east</span><span class="p">:</span>
+      <span class="nt">hosts</span><span class="p">:</span>
+        <span class="nt">foo.example.com</span><span class="p">:</span>
+        <span class="nt">one.example.com</span><span class="p">:</span>
+        <span class="nt">two.example.com</span><span class="p">:</span>
+    <span class="nt">west</span><span class="p">:</span>
+      <span class="nt">hosts</span><span class="p">:</span>
+        <span class="nt">bar.example.com</span><span class="p">:</span>
+        <span class="nt">three.example.com</span><span class="p">:</span>
+    <span class="nt">prod</span><span class="p">:</span>
+      <span class="nt">hosts</span><span class="p">:</span>
+        <span class="nt">foo.example.com</span><span class="p">:</span>
+        <span class="nt">one.example.com</span><span class="p">:</span>
+        <span class="nt">two.example.com</span><span class="p">:</span>
+    <span class="nt">test</span><span class="p">:</span>
+      <span class="nt">hosts</span><span class="p">:</span>
+        <span class="nt">bar.example.com</span><span class="p">:</span>
+        <span class="nt">three.example.com</span><span class="p">:</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">dbservers</span></code>, <code class="docutils literal notranslate"><span class="pre">east</span></code>, <code class="docutils literal notranslate"><span class="pre">prod</span></code> 그룹에 <code class="docutils literal notranslate"><span class="pre">one.example.com</span></code>가 있는 것을 볼 수 있다.</p>
+<p>이 인벤토리에 <code class="docutils literal notranslate"><span class="pre">prod</span></code>, <cite>test`</cite> 중첩 그룹을 사용할 수도 있다.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">all</span><span class="p">:</span>
+  <span class="nt">hosts</span><span class="p">:</span>
+    <span class="nt">mail.example.com</span><span class="p">:</span>
+  <span class="nt">children</span><span class="p">:</span>
+    <span class="nt">webservers</span><span class="p">:</span>
+      <span class="nt">hosts</span><span class="p">:</span>
+        <span class="nt">foo.example.com</span><span class="p">:</span>
+        <span class="nt">bar.example.com</span><span class="p">:</span>
+    <span class="nt">dbservers</span><span class="p">:</span>
+      <span class="nt">hosts</span><span class="p">:</span>
+        <span class="nt">one.example.com</span><span class="p">:</span>
+        <span class="nt">two.example.com</span><span class="p">:</span>
+        <span class="nt">three.example.com</span><span class="p">:</span>
+    <span class="nt">east</span><span class="p">:</span>
+      <span class="nt">hosts</span><span class="p">:</span>
+        <span class="nt">foo.example.com</span><span class="p">:</span>
+        <span class="nt">one.example.com</span><span class="p">:</span>
+        <span class="nt">two.example.com</span><span class="p">:</span>
+    <span class="nt">west</span><span class="p">:</span>
+      <span class="nt">hosts</span><span class="p">:</span>
+        <span class="nt">bar.example.com</span><span class="p">:</span>
+        <span class="nt">three.example.com</span><span class="p">:</span>
+    <span class="nt">prod</span><span class="p">:</span>
+      <span class="nt">children</span><span class="p">:</span>
+        <span class="nt">east</span><span class="p">:</span>
+    <span class="nt">test</span><span class="p">:</span>
+      <span class="nt">children</span><span class="p">:</span>
+        <span class="nt">west</span><span class="p">:</span>
+</pre></div>
+</div>
+<p>You can find more examples on how to organize your inventories and group your hosts in <a class="reference internal" href="#inventory-setup-examples"><span class="std std-ref">Inventory setup examples</span></a>.</p>
+<p>If you do have systems in multiple groups, note that variables will come from all of the groups they are a member of. Variable precedence is detailed in <a class="reference internal" href="playbooks_variables.html#ansible-variable-precedence"><span class="std std-ref">Variable precedence: Where should I put a variable?</span></a>.</p>
+</div>
+<div class="section" id="hosts-and-non-standard-ports">
+<h3><a class="toc-backref" href="#id6">호스트와 비표준 포트</a><a class="headerlink" href="#hosts-and-non-standard-ports" title="제목 주소">¶</a></h3>
+<p>만약 비표준 SSH 포트로 호스트를 접속하면 호스트이름 뒤에 콜론(:)을 붙이고 그 위에 포트번호를 쓴다. SSH 설정 파일에 있는 포트번호는 <cite>paramiko</cite>  접속에서는 사용되지 않지만 <cite>openssh</cite> 접속에는 쓰인다.</p>
+<p>디폴트 포트에서 실행하되는지 아닌지 설정을 명시하는게 좋다.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="n">badwolf</span><span class="p">.</span><span class="n">example</span><span class="p">.</span><span class="n">com</span><span class="p">:</span><span class="mi">5309</span>
+</pre></div>
+</div>
+<p>정적 IP 주소를 가지고 호스트 파일에 있는 alias를 사용하거나 터널링으로 접속할 때도 변수를 사용하여 호스트를 설정할 수 있다.</p>
+<p>INI 포맷:</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="n">jumper</span> <span class="n">ansible_port</span><span class="o">=</span><span class="mi">5555</span> <span class="n">ansible_host</span><span class="o">=</span><span class="mi">192</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">2</span><span class="p">.</span><span class="mi">50</span>
+</pre></div>
+</div>
+<p>YAML 포맷:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nn">...</span>
+  <span class="nt">hosts</span><span class="p">:</span>
+    <span class="nt">jumper</span><span class="p">:</span>
+      <span class="nt">ansible_port</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">5555</span>
+      <span class="nt">ansible_host</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">192.0.2.50</span>
+</pre></div>
+</div>
+<p>위 예에서 호스트 alias  &quot;jumper&quot;(실제 호스트이름이 아닐 수 있다.)에 작업을 할때는 포트 5555로 192.0.2.50에 접속한다. 이는 인벤토리 파일에서 특수 변수를 정의하는 기능을 사용한 것이다. 일반적으로 이 방법은 시스템 정책을 서술하는 좋은 방법이 아니다. 나중에 이에 대해 다시 이야기할 것이다.</p>
+<div class="admonition note">
+<p class="admonition-title">참고</p>
+<p>INI 포맷에서 <code class="docutils literal notranslate"><span class="pre">key=value</span></code> 문법으로 지정된 값은 선언 방법에 따라 다르게 해석된다.  * When 인라인으로 선언되면 파이썬 리터럴자료형(strings, numbers, tuples, lists, dicts, booleans, None)으로 해석한다. 한 줄에 여러개의 <code class="docutils literal notranslate"><span class="pre">key=value</span></code> 인수를 넣어도 된다. 만약 공백글자 자체가 인수라면 구분자(separator)와 구분할 방법이 필요하다. * <code class="docutils literal notranslate"><span class="pre">:vars</span></code> 섹션에서 선언되면 INI 값은 문자열로 해석한다. 예를 들어 <code class="docutils literal notranslate"><span class="pre">var=FALSE</span></code>는 'FALSE'라는 문자열을 생성한다. <code class="docutils literal notranslate"><span class="pre">:vars</span></code> 섹션에서는 한 줄에 하나의 인수만 사용한다.  * 선언 중에는 자료형을 가정하면 안된다. 변수를 소비할 때 필터로 자료형을 지정하도록 해야 한다.  * 변수의 자료형에 대한 혼돈을 피하고 싶다면 YAML 포맷을 사용하라. YAML 인벤토리 플러그인 프로세스는 변수값을 정확하고 일관성있게 처리한다.</p>
+</div>
+<p>비슷한 패턴으로 많은 호스트를 추가하려면 각각의 호스트 이름을 입력하는 것보다 이 방식이 좋다.</p>
+<p>INI 포맷:</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">webservers</span><span class="p">]</span>
+<span class="n">www</span><span class="p">[</span><span class="mi">01</span><span class="p">:</span><span class="mi">50</span><span class="p">].</span><span class="n">example</span><span class="p">.</span><span class="n">com</span>
+</pre></div>
+</div>
+<p>YAML 포맷:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nn">...</span>
+  <span class="nt">webservers</span><span class="p">:</span>
+    <span class="nt">hosts</span><span class="p">:</span>
+      <span class="l l-Scalar l-Scalar-Plain">www[01:50].example.com</span><span class="p p-Indicator">:</span>
+</pre></div>
+</div>
+<p>숫자를 사용하는 패턴에서는 자릿수를 위해 앞에 0을 붙일 수도 있다. 숫자 범위 지정뿐 아니라 알파벳 범위 지정도 된다.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">databases</span><span class="p">]</span>
+<span class="n">db</span><span class="o">-</span><span class="p">[</span><span class="n">a</span><span class="p">:</span><span class="n">f</span><span class="p">].</span><span class="n">example</span><span class="p">.</span><span class="n">com</span>
+</pre></div>
+</div>
+<p>접속 유형과 사용자를 호스트별로 지정할 수도 있다.:</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">targets</span><span class="p">]</span>
+
+<span class="n">localhost</span>              <span class="n">ansible_connection</span><span class="o">=</span><span class="k">local</span>
+<span class="n">other1</span><span class="p">.</span><span class="n">example</span><span class="p">.</span><span class="n">com</span>     <span class="n">ansible_connection</span><span class="o">=</span><span class="n">ssh</span>        <span class="n">ansible_user</span><span class="o">=</span><span class="n">mpdehaan</span>
+<span class="n">other2</span><span class="p">.</span><span class="n">example</span><span class="p">.</span><span class="n">com</span>     <span class="n">ansible_connection</span><span class="o">=</span><span class="n">ssh</span>        <span class="n">ansible_user</span><span class="o">=</span><span class="n">mdehaan</span>
+</pre></div>
+</div>
+<p>위에서 이야기한대로 인벤토리 파일에 설정을 하는 방법은 단지 빠른 설정 방법일 뿐이다. 나중에는 'host_vars' 디렉토리에 개별 파일을 저장하는 방법에 대해 설명한다.</p>
+</div>
+</div>
+<div class="section" id="assigning-a-variable-to-one-machine-host-variables">
+<span id="host-variables"></span><h2><a class="toc-backref" href="#id7">단일 머신에 대해 변수를 할당하는 방법: 호스트 변수</a><a class="headerlink" href="#assigning-a-variable-to-one-machine-host-variables" title="제목 주소">¶</a></h2>
+<p>위에서 이야기한 바와 같이 나중에 플레이북에서 쓸 수 있도록 호스트에 변수를 할당할 수 있다.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">atlanta</span><span class="p">]</span>
+<span class="n">host1</span> <span class="n">http_port</span><span class="o">=</span><span class="mi">80</span> <span class="n">maxRequestsPerChild</span><span class="o">=</span><span class="mi">808</span>
+<span class="n">host2</span> <span class="n">http_port</span><span class="o">=</span><span class="mi">303</span> <span class="n">maxRequestsPerChild</span><span class="o">=</span><span class="mi">909</span>
+</pre></div>
+</div>
+<p>YAML 버전</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">atlanta</span><span class="p">:</span>
+  <span class="nt">host1</span><span class="p">:</span>
+    <span class="nt">http_port</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">80</span>
+    <span class="nt">maxRequestsPerChild</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">808</span>
+  <span class="nt">host2</span><span class="p">:</span>
+    <span class="nt">http_port</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">303</span>
+    <span class="nt">maxRequestsPerChild</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">909</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="assigning-a-variable-to-many-machines-group-variables">
+<span id="group-variables"></span><h2><a class="toc-backref" href="#id8">다수의 머신에 변수를 할당하기: 그룹 변수</a><a class="headerlink" href="#assigning-a-variable-to-many-machines-group-variables" title="제목 주소">¶</a></h2>
+<p>전체 그룹에 한번에 변수를 적용할 수도 있다.</p>
+<p>INI 버전:</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">atlanta</span><span class="p">]</span>
+<span class="n">host1</span>
+<span class="n">host2</span>
+
+<span class="p">[</span><span class="n">atlanta</span><span class="p">:</span><span class="n">vars</span><span class="p">]</span>
+<span class="n">ntp_server</span><span class="o">=</span><span class="n">ntp</span><span class="p">.</span><span class="n">atlanta</span><span class="p">.</span><span class="n">example</span><span class="p">.</span><span class="n">com</span>
+<span class="n">proxy</span><span class="o">=</span><span class="n">proxy</span><span class="p">.</span><span class="n">atlanta</span><span class="p">.</span><span class="n">example</span><span class="p">.</span><span class="n">com</span>
+</pre></div>
+</div>
+<p>YAML 버전</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">atlanta</span><span class="p">:</span>
+  <span class="nt">hosts</span><span class="p">:</span>
+    <span class="nt">host1</span><span class="p">:</span>
+    <span class="nt">host2</span><span class="p">:</span>
+  <span class="nt">vars</span><span class="p">:</span>
+    <span class="nt">ntp_server</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ntp.atlanta.example.com</span>
+    <span class="nt">proxy</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">proxy.atlanta.example.com</span>
+</pre></div>
+</div>
+<p>이 방법은 복수의 호스트에 여러개의 변수를 동시 적용하는 편의적 방법일 뿐이다. 호스트를 그룹단위로 적용하더라고 실제로는 플레이북이 실행되기 전에 번수가 호스트 레벨로 내려온다.</p>
+<div class="section" id="inheriting-variable-values-group-variables-for-groups-of-groups">
+<span id="subgroups"></span><h3><a class="toc-backref" href="#id9">변수 값 상속: 그룹의 그룹에 대한 그룹 변수</a><a class="headerlink" href="#inheriting-variable-values-group-variables-for-groups-of-groups" title="제목 주소">¶</a></h3>
+<p>INI 파일에서는 <code class="docutils literal notranslate"><span class="pre">:children</span></code> 접미사, YAML 파일에서는 <code class="docutils literal notranslate"><span class="pre">children:</span></code> 엔트리를 사용라면 그룹의 그룹을 만들 수 있다. <code class="docutils literal notranslate"><span class="pre">:vars</span></code> 또는 <a href="#id1"><span class="problematic" id="id2">``</span></a>vars:<a href="#id3"><span class="problematic" id="id4">``</span></a>를 이용하면 그룹의 그룹에 변수를 적용할 수 있다.:</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">atlanta</span><span class="p">]</span>
+<span class="n">host1</span>
+<span class="n">host2</span>
+
+<span class="p">[</span><span class="n">raleigh</span><span class="p">]</span>
+<span class="n">host2</span>
+<span class="n">host3</span>
+
+<span class="p">[</span><span class="n">southeast</span><span class="p">:</span><span class="n">children</span><span class="p">]</span>
+<span class="n">atlanta</span>
+<span class="n">raleigh</span>
+
+<span class="p">[</span><span class="n">southeast</span><span class="p">:</span><span class="n">vars</span><span class="p">]</span>
+<span class="n">some_server</span><span class="o">=</span><span class="n">foo</span><span class="p">.</span><span class="n">southeast</span><span class="p">.</span><span class="n">example</span><span class="p">.</span><span class="n">com</span>
+<span class="n">halon_system_timeout</span><span class="o">=</span><span class="mi">30</span>
+<span class="n">self_destruct_countdown</span><span class="o">=</span><span class="mi">60</span>
+<span class="n">escape_pods</span><span class="o">=</span><span class="mi">2</span>
+
+<span class="p">[</span><span class="n">usa</span><span class="p">:</span><span class="n">children</span><span class="p">]</span>
+<span class="n">southeast</span>
+<span class="n">northeast</span>
+<span class="n">southwest</span>
+<span class="n">northwest</span>
+</pre></div>
+</div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">all</span><span class="p">:</span>
+  <span class="nt">children</span><span class="p">:</span>
+    <span class="nt">usa</span><span class="p">:</span>
+      <span class="nt">children</span><span class="p">:</span>
+        <span class="nt">southeast</span><span class="p">:</span>
+          <span class="nt">children</span><span class="p">:</span>
+            <span class="nt">atlanta</span><span class="p">:</span>
+              <span class="nt">hosts</span><span class="p">:</span>
+                <span class="nt">host1</span><span class="p">:</span>
+                <span class="nt">host2</span><span class="p">:</span>
+            <span class="nt">raleigh</span><span class="p">:</span>
+              <span class="nt">hosts</span><span class="p">:</span>
+                <span class="nt">host2</span><span class="p">:</span>
+                <span class="nt">host3</span><span class="p">:</span>
+          <span class="nt">vars</span><span class="p">:</span>
+            <span class="nt">some_server</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">foo.southeast.example.com</span>
+            <span class="nt">halon_system_timeout</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">30</span>
+            <span class="nt">self_destruct_countdown</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">60</span>
+            <span class="nt">escape_pods</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
+        <span class="nt">northeast</span><span class="p">:</span>
+        <span class="nt">northwest</span><span class="p">:</span>
+        <span class="nt">southwest</span><span class="p">:</span>
+</pre></div>
+</div>
+<p>리스트나 해시 데이터를 저장해야 하거나 인벤토리 파일에서 호스트나 그룹용 변수를 인벤토리 파일에서 떼어서 관리하는 것을 선호하면 다음 절을 참조하라. 자식 그룹은 몇가지 특징이 있다.:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>자식 그룹의 멤버인 호스트는 자동으로 부모 그룹의 멤버가 된다.</p></li>
+<li><p>자식 그룹의 변수는 그룹 그룹의 변수보다 우선순위가 높다.</p></li>
+<li><p>그룹은 복수의 부모와 자식을 가질 수 있다. 하지만 환형 관계(circular relationships)는 안된다.</p></li>
+<li><p>호스트는 여러 그룹에 있어도 되지만 실제로 그 호스트의 인스턴스는 하나만 존재하게 된다.</p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="default-groups">
+<span id="id1"></span><h2><a class="toc-backref" href="#id10">디폴트 그룹</a><a class="headerlink" href="#default-groups" title="제목 주소">¶</a></h2>
+<p>There are two default groups: <code class="docutils literal notranslate"><span class="pre">all</span></code> and <code class="docutils literal notranslate"><span class="pre">ungrouped</span></code>. <code class="docutils literal notranslate"><span class="pre">all</span></code> contains every host.
+<code class="docutils literal notranslate"><span class="pre">ungrouped</span></code> contains all hosts that don't have another group aside from <code class="docutils literal notranslate"><span class="pre">all</span></code>.
+Every host will always belong to at least 2 groups (<code class="docutils literal notranslate"><span class="pre">all</span></code> and <code class="docutils literal notranslate"><span class="pre">ungrouped</span></code> or <code class="docutils literal notranslate"><span class="pre">all</span></code> and some other group).
+Though <code class="docutils literal notranslate"><span class="pre">all</span></code> and <code class="docutils literal notranslate"><span class="pre">ungrouped</span></code> are always present, they can be implicit and not appear in group listings like <code class="docutils literal notranslate"><span class="pre">group_names</span></code>.</p>
+</div>
+<div class="section" id="organizing-host-and-group-variables">
+<span id="splitting-out-vars"></span><h2><a class="toc-backref" href="#id11">호스트와 그룹 변수의 조직화</a><a class="headerlink" href="#organizing-host-and-group-variables" title="제목 주소">¶</a></h2>
+<p>변수를 메인 인벤토리 파일에 저장할 수도 있지만 호스트나 그룹별로 별도로 저장하면 변수값을 관리하는데 도움이 된다.</p>
+<p>호스트와 그룹 변수는 인벤토리 파일을 기준으로 각각 다른 파일에 저장할 수 있다.</p>
+<p>이 변수 파일은 YAML 포맷이다. 올바른 파일 확장자는 '.yml', '.yaml', '.json', 또는 확장자가 없는 것이다. YAML 포맷이 낯설다면 <a class="reference internal" href="../reference_appendices/YAMLSyntax.html#yaml-syntax"><span class="std std-ref">YAML 문법</span></a>를 참조한다.</p>
+<p>예를 들어 인벤토리 파일이 <code class="docutils literal notranslate"><span class="pre">/etc/ansible/hosts</span></code>이고  두 개의 그룹 'raleigh' 및 'webservers'의 멤버인 'foosball'이라는 호스트가 있다고 하면, 이 호스트의 변수는 다음 위치에 YAML 파일로 저장된다.:</p>
+<div class="highlight-YAML+Jinja notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">/etc/ansible/group_vars/raleigh</span> <span class="c1"># can optionally end in &#39;.yml&#39;, &#39;.yaml&#39;, or &#39;.json&#39;</span>
+<span class="l l-Scalar l-Scalar-Plain">/etc/ansible/group_vars/webservers</span>
+<span class="l l-Scalar l-Scalar-Plain">/etc/ansible/host_vars/foosball</span>
+</pre></div>
+</div>
+<p>예를 들어 데이터센터 그룹이 여러개고 각 데이터센터가 다른 서버를 가지고 있다면 '/etc/ansible/group_vars/raleigh' 그룹 파일의 'raleigh' 그룹은 다음과 같다:</p>
+<div class="highlight-YAML+Jinja notranslate"><div class="highlight"><pre><span></span><span class="nn">---</span>
+<span class="nt">ntp_server</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">acme.example.org</span>
+<span class="nt">database_server</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">storage.example.org</span>
+</pre></div>
+</div>
+<p>부가적인 기능이기 때문에 이 파일들이 없어도 상관없다.</p>
+<p>좀 더 고급 사례로 호스트나 그룹별 디렉토리를 생성할 수 있다. Ansible은 이 디렉토리의 파일을 사전식 순서로 읽어들인다. 'raleigh' 그룹의 예를 들면 다음과 같다:</p>
+<div class="highlight-YAML+Jinja notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">/etc/ansible/group_vars/raleigh/db_settings</span>
+<span class="l l-Scalar l-Scalar-Plain">/etc/ansible/group_vars/raleigh/cluster_settings</span>
+</pre></div>
+</div>
+<p>'raleigh' 그룹의 모든 호스트는 이 파일에서 제공되는 변수를 가지게 된다. 이 방법은 단일 파일을 사용하기에는 너무 크거나 일부 변수만 <a class="reference internal" href="playbooks_vault.html#playbooks-vault"><span class="std std-ref">Ansible Vault</span></a>에서 쓸 때 유용한다.</p>
+<p>팁: <code class="docutils literal notranslate"><span class="pre">group_vars/</span></code>, <code class="docutils literal notranslate"><span class="pre">host_vars/</span></code> 디렉토리는 플레이북 디렉토리에 엤어도 되고 인벤토리 디렉토리에 있어도 된다. 만약 둘 다 존재하면 플레이북 디렉토리가 인벤토리 디렉토리보다 우선한다.</p>
+<p>팁: <code class="docutils literal notranslate"><span class="pre">ansible-playbook</span></code> 명령은 디폴트로 현재 워킹 디렉토리에서 플레이북을 찾는다. 다른 Ansible 명령(예를 들어 <code class="docutils literal notranslate"><span class="pre">ansible</span></code>, <code class="docutils literal notranslate"><span class="pre">ansible-console</span></code>, 등)은 <code class="docutils literal notranslate"><span class="pre">--playbook-dir</span></code> 옵션을 지정하지 않는 한 인벤토리 디렉토리 안의 <code class="docutils literal notranslate"><span class="pre">group_vars/</span></code>, <code class="docutils literal notranslate"><span class="pre">host_vars/</span></code> 디렉토리를 찾는다.</p>
+<p>팁: 인벤토리 파일과 변수를 git 레포(또는 다른 버전 관리 시스템)에 보관하면 인벤토리와 호스트 변수의 변화를 추적하기 좋다.</p>
+</div>
+<div class="section" id="how-variables-are-merged">
+<span id="how-we-merge"></span><h2><a class="toc-backref" href="#id12">변수가 어떻게 합쳐지는가</a><a class="headerlink" href="#how-variables-are-merged" title="제목 주소">¶</a></h2>
+<p>특정 호스트에서 플레이가 실행되기전에 변수값이 합쳐진다(merge). 따라서 그룹은 사실 인벤토리와 호스트 매칭된 다음에는 존재하지 않는다. 이렇게 하면 Ansible이 호스트와 태스크에 집중할 수 있다. Ansible은 그룹이나 호스트에서 정의된 변수를 덮어쓰는데 (<a class="reference internal" href="../reference_appendices/config.html#default-hash-behaviour"><span class="std std-ref">DEFAULT_HASH_BEHAVIOUR</span></a> 참조) 우선순위는 다음과 같다.(가장 낮은 우선 순위에서 높은 순위로):</p>
+<ul class="simple">
+<li><p>all 그룹(모든 다른 그룹의 부모 그룹이므로)</p></li>
+<li><p>부모 그룹</p></li>
+<li><p>자식 그룹</p></li>
+<li><p>호스트</p></li>
+</ul>
+<p>같은 부모/자식 레벨의 그룹은 알파벳 순서로 합쳐지고 나중에 로드된 그룹이 앞에 있는 그룹을 덮어쓴다. 예를 들어 a_group은 b_group과 합쳐지고 b_group 변수와 같은 이름의 a_group 그룹 변수는 덮어씌워진다.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">버전 2.4에 추가.</span></p>
+</div>
+<p>Ansible 2.4부터는 사용자가 <code class="docutils literal notranslate"><span class="pre">ansible_group_priority</span></code> 그룹 변수로 (부모/자식 순서가 해결된 이후에) 같은 레벨에 있는 그룹의 머지 순서를 바꿀 수 있다. 숫자가 클수로 나중에 머지되므로 우선순위가 높아진다. 이 변수는 지정하지 않으면 디폴트가 <code class="docutils literal notranslate"><span class="pre">1</span></code>이다.:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">a_group</span><span class="p">:</span>
+    <span class="nt">testvar</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">a</span>
+    <span class="nt">ansible_group_priority</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">10</span>
+<span class="nt">b_group</span><span class="p">:</span>
+    <span class="nt">testvar</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">b</span>
+</pre></div>
+</div>
+<p>이 예에서는 두 그룹의 우선순위가 같으므로 보통의 결과는 <code class="docutils literal notranslate"><span class="pre">testvar</span> <span class="pre">==</span> <span class="pre">b</span></code>가 되지만 <code class="docutils literal notranslate"><span class="pre">a_group</span></code> 우선순위가 높기 때문에 <code class="docutils literal notranslate"><span class="pre">testvar</span> <span class="pre">==</span> <span class="pre">a</span></code>가 된다.</p>
+<div class="admonition note">
+<p class="admonition-title">참고</p>
+<p><code class="docutils literal notranslate"><span class="pre">ansible_group_priority</span></code> can only be set in the inventory source and not in group_vars/ as the variable is used in the loading of group_vars.</p>
+</div>
+</div>
+<div class="section" id="using-multiple-inventory-sources">
+<span id="id2"></span><h2><a class="toc-backref" href="#id13">복수의 인벤토리 소스를 사용하는 경우</a><a class="headerlink" href="#using-multiple-inventory-sources" title="제목 주소">¶</a></h2>
+<p>고급 사용법으로 (디렉토리, 다이나믹 인벤토리 스크립트, 또는 인벤토리 플러그인 파일 등을 사용하여) 복수의 인벤토리 소스를 목표로 하여 동시에 여러개의 인벤토리 파라미터를 명령줄에서 주거나 <span class="target" id="index-2"></span><a class="reference internal" href="../reference_appendices/config.html#envvar-ANSIBLE_INVENTORY"><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ANSIBLE_INVENTORY</span></code></a> 환경 변수로 설정할 수 있다. 같은 명령을 주어도 개발 환경과 운영 환경을 구분하여 다르게 실행하고 싶을 때 유용하다.</p>
+<p>명령줄로 두 개의 소스를 지정할 때는 다음과 같이 한다.:</p>
+<div class="highlight-YAML+Jinja notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">ansible-playbook get_logs.yml -i staging -i production</span>
+</pre></div>
+</div>
+<p>만약 인벤토리에 있는 변수가 충돌하면 <a class="reference internal" href="#how-we-merge"><span class="std std-ref">변수가 어떻게 합쳐지는가</span></a>과 <a class="reference internal" href="playbooks_variables.html#ansible-variable-precedence"><span class="std std-ref">Variable precedence: Where should I put a variable?</span></a>에 나온 규칙에 따라 충돌을 해결한다. 머지 순서는 인벤토리 소스 파라미터 순서로 조정한다. 만약 개발 환경의 <code class="docutils literal notranslate"><span class="pre">[all:vars]</span></code> 섹션에서 <code class="docutils literal notranslate"><span class="pre">myvar</span> <span class="pre">=</span> <span class="pre">1</span></code>라고 정의했는데 운영 환경의 인벤토리에서 <code class="docutils literal notranslate"><span class="pre">myvar</span> <span class="pre">=</span> <span class="pre">2</span></code>라고 정의하면 플레이북은 <code class="docutils literal notranslate"><span class="pre">myvar</span> <span class="pre">=</span> <span class="pre">2</span></code>로 실행한다. 만약 플레이북을 실행할 때 <code class="docutils literal notranslate"><span class="pre">-i</span> <span class="pre">production</span> <span class="pre">-i</span> <span class="pre">staging</span></code>이라고 옵션을 주었다면 반대가 될 수 있다.</p>
+<p><strong>디렉토리내의 인벤토리 소스를 합치기</strong></p>
+<p>디렉토리 안에 있는 여러개의 인벤토리 소스를 합쳐서 하나의 인벤토리를 만들 수도 있다. 정적 호스트와 다이나믹 호스트를 합쳐서 하나의 인벤토리로 만들 때 유용한다. 다음 인벤토리는 인벤토리 플러그인 소스와 다이나믹 인벤토리 스크립트, 그리고 정적 호스트 파일을 합친다.:</p>
+<div class="highlight-YAML+Jinja notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">inventory/</span>
+  <span class="l l-Scalar l-Scalar-Plain">openstack.yml</span>          <span class="c1"># configure inventory plugin to get hosts from Openstack cloud</span>
+  <span class="l l-Scalar l-Scalar-Plain">dynamic-inventory.py</span>   <span class="c1"># add additional hosts with dynamic inventory script</span>
+  <span class="l l-Scalar l-Scalar-Plain">static-inventory</span>       <span class="c1"># add static hosts and groups</span>
+  <span class="l l-Scalar l-Scalar-Plain">group_vars/</span>
+    <span class="l l-Scalar l-Scalar-Plain">all.yml</span>              <span class="c1"># assign variables to all hosts</span>
+</pre></div>
+</div>
+<p>이 인벤토리 디렉토리를 타겟으로 지정하려면:</p>
+<div class="highlight-YAML+Jinja notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">ansible-playbook example.yml -i inventory</span>
+</pre></div>
+</div>
+<p>It can be useful to control the merging order of the inventory sources if there's variable
+conflicts or group of groups dependencies to the other inventory sources. The inventories
+are merged in alphabetical order according to the filenames so the result can
+be controlled by adding prefixes to the files:</p>
+<div class="highlight-YAML+Jinja notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">inventory/</span>
+  <span class="l l-Scalar l-Scalar-Plain">01-openstack.yml</span>          <span class="c1"># configure inventory plugin to get hosts from Openstack cloud</span>
+  <span class="l l-Scalar l-Scalar-Plain">02-dynamic-inventory.py</span>   <span class="c1"># add additional hosts with dynamic inventory script</span>
+  <span class="l l-Scalar l-Scalar-Plain">03-static-inventory</span>       <span class="c1"># add static hosts</span>
+  <span class="l l-Scalar l-Scalar-Plain">group_vars/</span>
+    <span class="l l-Scalar l-Scalar-Plain">all.yml</span>                 <span class="c1"># assign variables to all hosts</span>
+</pre></div>
+</div>
+<p>If <code class="docutils literal notranslate"><span class="pre">01-openstack.yml</span></code> defines <code class="docutils literal notranslate"><span class="pre">myvar</span> <span class="pre">=</span> <span class="pre">1</span></code> for the group <code class="docutils literal notranslate"><span class="pre">all</span></code>, <code class="docutils literal notranslate"><span class="pre">02-dynamic-inventory.py</span></code> defines <code class="docutils literal notranslate"><span class="pre">myvar</span> <span class="pre">=</span> <span class="pre">2</span></code>,
+and <code class="docutils literal notranslate"><span class="pre">03-static-inventory</span></code> defines <code class="docutils literal notranslate"><span class="pre">myvar</span> <span class="pre">=</span> <span class="pre">3</span></code>, the playbook will be run with <code class="docutils literal notranslate"><span class="pre">myvar</span> <span class="pre">=</span> <span class="pre">3</span></code>.</p>
+<p>For more details on inventory plugins and dynamic inventory scripts see <a class="reference internal" href="../plugins/inventory.html#inventory-plugins"><span class="std std-ref">Inventory Plugins</span></a> and <a class="reference internal" href="intro_dynamic_inventory.html#intro-dynamic-inventory"><span class="std std-ref">Working With Dynamic Inventory</span></a>.</p>
+</div>
+<div class="section" id="connecting-to-hosts-behavioral-inventory-parameters">
+<span id="behavioral-parameters"></span><h2><a class="toc-backref" href="#id14">Connecting to hosts: behavioral inventory parameters</a><a class="headerlink" href="#connecting-to-hosts-behavioral-inventory-parameters" title="제목 주소">¶</a></h2>
+<p>As described above, setting the following variables control how Ansible interacts with remote hosts.</p>
+<p>Host connection:</p>
+<div class="admonition note">
+<p class="admonition-title">참고</p>
+<p>Ansible does not expose a channel to allow communication between the user and the ssh process to accept a password manually to decrypt an ssh key when using the ssh connection plugin (which is the default). The use of <code class="docutils literal notranslate"><span class="pre">ssh-agent</span></code> is highly recommended.</p>
+</div>
+<dl class="simple">
+<dt>ansible_connection</dt><dd><p>Connection type to the host. This can be the name of any of ansible's connection plugins. SSH protocol types are <code class="docutils literal notranslate"><span class="pre">smart</span></code>, <code class="docutils literal notranslate"><span class="pre">ssh</span></code> or <code class="docutils literal notranslate"><span class="pre">paramiko</span></code>.  The default is smart. Non-SSH based types are described in the next section.</p>
+</dd>
+</dl>
+<p>General for all connections:</p>
+<dl class="simple">
+<dt>ansible_host</dt><dd><p>The name of the host to connect to, if different from the alias you wish to give to it.</p>
+</dd>
+<dt>ansible_port</dt><dd><p>The connection port number, if not the default (22 for ssh)</p>
+</dd>
+<dt>ansible_user</dt><dd><p>The user name to use when connecting to the host</p>
+</dd>
+<dt>ansible_password</dt><dd><p>The password to use to authenticate to the host (never store this variable in plain text; always use a vault. See <a class="reference internal" href="playbooks_best_practices.html#best-practices-for-variables-and-vaults"><span class="std std-ref">Variables and Vaults</span></a>)</p>
+</dd>
+</dl>
+<p>Specific to the SSH connection:</p>
+<dl class="simple">
+<dt>ansible_ssh_private_key_file</dt><dd><p>Private key file used by ssh.  Useful if using multiple keys and you don't want to use SSH agent.</p>
+</dd>
+<dt>ansible_ssh_common_args</dt><dd><p>This setting is always appended to the default command line for <strong class="command">sftp</strong>, <strong class="command">scp</strong>,
+and <strong class="command">ssh</strong>. Useful to configure a <code class="docutils literal notranslate"><span class="pre">ProxyCommand</span></code> for a certain host (or
+group).</p>
+</dd>
+<dt>ansible_sftp_extra_args</dt><dd><p>This setting is always appended to the default <strong class="command">sftp</strong> command line.</p>
+</dd>
+<dt>ansible_scp_extra_args</dt><dd><p>This setting is always appended to the default <strong class="command">scp</strong> command line.</p>
+</dd>
+<dt>ansible_ssh_extra_args</dt><dd><p>This setting is always appended to the default <strong class="command">ssh</strong> command line.</p>
+</dd>
+<dt>ansible_ssh_pipelining</dt><dd><p>Determines whether or not to use SSH pipelining. This can override the <code class="docutils literal notranslate"><span class="pre">pipelining</span></code> setting in <code class="file docutils literal notranslate"><span class="pre">ansible.cfg</span></code>.</p>
+</dd>
+<dt>ansible_ssh_executable (added in version 2.2)</dt><dd><p>This setting overrides the default behavior to use the system <strong class="command">ssh</strong>. This can override the <code class="docutils literal notranslate"><span class="pre">ssh_executable</span></code> setting in <code class="file docutils literal notranslate"><span class="pre">ansible.cfg</span></code>.</p>
+</dd>
+</dl>
+<p>Privilege escalation (see <a class="reference internal" href="become.html#become"><span class="std std-ref">Ansible Privilege Escalation</span></a> for further details):</p>
+<dl class="simple">
+<dt>ansible_become</dt><dd><p>Equivalent to <code class="docutils literal notranslate"><span class="pre">ansible_sudo</span></code> or <code class="docutils literal notranslate"><span class="pre">ansible_su</span></code>, allows to force privilege escalation</p>
+</dd>
+<dt>ansible_become_method</dt><dd><p>Allows to set privilege escalation method</p>
+</dd>
+<dt>ansible_become_user</dt><dd><p>Equivalent to <code class="docutils literal notranslate"><span class="pre">ansible_sudo_user</span></code> or <code class="docutils literal notranslate"><span class="pre">ansible_su_user</span></code>, allows to set the user you become through privilege escalation</p>
+</dd>
+<dt>ansible_become_password</dt><dd><p>Equivalent to <code class="docutils literal notranslate"><span class="pre">ansible_sudo_password</span></code> or <code class="docutils literal notranslate"><span class="pre">ansible_su_password</span></code>, allows you to set the privilege escalation password (never store this variable in plain text; always use a vault. See <a class="reference internal" href="playbooks_best_practices.html#best-practices-for-variables-and-vaults"><span class="std std-ref">Variables and Vaults</span></a>)</p>
+</dd>
+<dt>ansible_become_exe</dt><dd><p>Equivalent to <code class="docutils literal notranslate"><span class="pre">ansible_sudo_exe</span></code> or <code class="docutils literal notranslate"><span class="pre">ansible_su_exe</span></code>, allows you to set the executable for the escalation method selected</p>
+</dd>
+<dt>ansible_become_flags</dt><dd><p>Equivalent to <code class="docutils literal notranslate"><span class="pre">ansible_sudo_flags</span></code> or <code class="docutils literal notranslate"><span class="pre">ansible_su_flags</span></code>, allows you to set the flags passed to the selected escalation method. This can be also set globally in <code class="file docutils literal notranslate"><span class="pre">ansible.cfg</span></code> in the <code class="docutils literal notranslate"><span class="pre">sudo_flags</span></code> option</p>
+</dd>
+</dl>
+<p>Remote host environment parameters:</p>
+<dl class="simple" id="ansible-shell-type">
+<dt>ansible_shell_type</dt><dd><p>The shell type of the target system. You should not use this setting unless you have set the
+<a class="reference internal" href="#ansible-shell-executable"><span class="std std-ref">ansible_shell_executable</span></a> to a non-Bourne (sh) compatible shell.  By default commands are
+formatted using <code class="docutils literal notranslate"><span class="pre">sh</span></code>-style syntax.  Setting this to <code class="docutils literal notranslate"><span class="pre">csh</span></code> or <code class="docutils literal notranslate"><span class="pre">fish</span></code> will cause commands
+executed on target systems to follow those shell's syntax instead.</p>
+</dd>
+</dl>
+<dl class="simple" id="ansible-python-interpreter">
+<dt>ansible_python_interpreter</dt><dd><p>The target host python path. This is useful for systems with more
+than one Python or not located at <strong class="command">/usr/bin/python</strong> such as *BSD, or where <strong class="command">/usr/bin/python</strong>
+is not a 2.X series Python.  We do not use the <strong class="command">/usr/bin/env</strong> mechanism as that requires the remote user's
+path to be set right and also assumes the <strong class="program">python</strong> executable is named python, where the executable might
+be named something like <strong class="program">python2.6</strong>.</p>
+</dd>
+<dt>ansible_*_interpreter</dt><dd><p>Works for anything such as ruby or perl and works just like <a class="reference internal" href="#ansible-python-interpreter"><span class="std std-ref">ansible_python_interpreter</span></a>.
+This replaces shebang of modules which will run on that host.</p>
+</dd>
+</dl>
+<div class="versionadded">
+<p><span class="versionmodified added">버전 2.1에 추가.</span></p>
+</div>
+<dl class="simple" id="ansible-shell-executable">
+<dt>ansible_shell_executable</dt><dd><p>This sets the shell the ansible controller will use on the target machine,
+overrides <code class="docutils literal notranslate"><span class="pre">executable</span></code> in <code class="file docutils literal notranslate"><span class="pre">ansible.cfg</span></code> which defaults to
+<strong class="command">/bin/sh</strong>.  You should really only change it if is not possible
+to use <strong class="command">/bin/sh</strong> (i.e. <strong class="command">/bin/sh</strong> is not installed on the target
+machine or cannot be run from sudo.).</p>
+</dd>
+</dl>
+<p>Examples from an Ansible-INI host file:</p>
+<div class="highlight-YAML+Jinja notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">some_host         ansible_port=2222     ansible_user=manager</span>
+<span class="l l-Scalar l-Scalar-Plain">aws_host          ansible_ssh_private_key_file=/home/example/.ssh/aws.pem</span>
+<span class="l l-Scalar l-Scalar-Plain">freebsd_host      ansible_python_interpreter=/usr/local/bin/python</span>
+<span class="l l-Scalar l-Scalar-Plain">ruby_module_host  ansible_ruby_interpreter=/usr/bin/ruby.1.9.3</span>
+</pre></div>
+</div>
+<div class="section" id="non-ssh-connection-types">
+<h3><a class="toc-backref" href="#id15">Non-SSH connection types</a><a class="headerlink" href="#non-ssh-connection-types" title="제목 주소">¶</a></h3>
+<p>As stated in the previous section, Ansible executes playbooks over SSH but it is not limited to this connection type.
+With the host specific parameter <code class="docutils literal notranslate"><span class="pre">ansible_connection=&lt;connector&gt;</span></code>, the connection type can be changed.
+The following non-SSH based connectors are available:</p>
+<p><strong>local</strong></p>
+<p>This connector can be used to deploy the playbook to the control machine itself.</p>
+<p><strong>docker</strong></p>
+<p>This connector deploys the playbook directly into Docker containers using the local Docker client. The following parameters are processed by this connector:</p>
+<dl class="simple">
+<dt>ansible_host</dt><dd><p>The name of the Docker container to connect to.</p>
+</dd>
+<dt>ansible_user</dt><dd><p>The user name to operate within the container. The user must exist inside the container.</p>
+</dd>
+<dt>ansible_become</dt><dd><p>If set to <code class="docutils literal notranslate"><span class="pre">true</span></code> the <code class="docutils literal notranslate"><span class="pre">become_user</span></code> will be used to operate within the container.</p>
+</dd>
+<dt>ansible_docker_extra_args</dt><dd><p>Could be a string with any additional arguments understood by Docker, which are not command specific. This parameter is mainly used to configure a remote Docker daemon to use.</p>
+</dd>
+</dl>
+<p>Here is an example of how to instantly deploy to created containers:</p>
+<div class="highlight-YAML+Jinja notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">create jenkins container</span>
+  <span class="nt">docker_container</span><span class="p">:</span>
+    <span class="nt">docker_host</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">myserver.net:4243</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my_jenkins</span>
+    <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">jenkins</span>
+
+<span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">add container to inventory</span>
+  <span class="nt">add_host</span><span class="p">:</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my_jenkins</span>
+    <span class="nt">ansible_connection</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">docker</span>
+    <span class="nt">ansible_docker_extra_args</span><span class="p">:</span> <span class="s">&quot;--tlsverify</span><span class="nv"> </span><span class="s">--tlscacert=/path/to/ca.pem</span><span class="nv"> </span><span class="s">--tlscert=/path/to/client-cert.pem</span><span class="nv"> </span><span class="s">--tlskey=/path/to/client-key.pem</span><span class="nv"> </span><span class="s">-H=tcp://myserver.net:4243&quot;</span>
+    <span class="nt">ansible_user</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">jenkins</span>
+  <span class="nt">changed_when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+
+<span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">create directory for ssh keys</span>
+  <span class="nt">delegate_to</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my_jenkins</span>
+  <span class="nt">file</span><span class="p">:</span>
+    <span class="nt">path</span><span class="p">:</span> <span class="s">&quot;/var/jenkins_home/.ssh/jupiter&quot;</span>
+    <span class="nt">state</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">directory</span>
+</pre></div>
+</div>
+<p>For a full list with available plugins and examples, see <a class="reference internal" href="../plugins/connection.html#connection-plugin-list"><span class="std std-ref">Plugin List</span></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">참고</p>
+<p>If you're reading the docs from the beginning, this may be the first example you've seen of an Ansible playbook. This is not an inventory file.
+Playbooks will be covered in great detail later in the docs.</p>
+</div>
+</div>
+</div>
+<div class="section" id="inventory-setup-examples">
+<span id="id3"></span><h2><a class="toc-backref" href="#id16">Inventory setup examples</a><a class="headerlink" href="#inventory-setup-examples" title="제목 주소">¶</a></h2>
+<div class="section" id="example-one-inventory-per-environment">
+<span id="inventory-setup-per-environment"></span><h3><a class="toc-backref" href="#id17">Example: One inventory per environment</a><a class="headerlink" href="#example-one-inventory-per-environment" title="제목 주소">¶</a></h3>
+<p>If you need to manage multiple environments it's sometimes prudent to
+have only hosts of a single environment defined per inventory. This
+way, it is harder to, for instance, accidentally change the state of
+nodes inside the &quot;test&quot; environment when you actually wanted to update
+some &quot;staging&quot; servers.</p>
+<p>For the example mentioned above you could have an
+<code class="file docutils literal notranslate"><span class="pre">inventory_test</span></code> file:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[dbservers]</span>
+<span class="na">db01.test.example.com</span>
+<span class="na">db02.test.example.com</span>
+
+<span class="k">[appservers]</span>
+<span class="na">app01.test.example.com</span>
+<span class="na">app02.test.example.com</span>
+<span class="na">app03.test.example.com</span>
+</pre></div>
+</div>
+<p>That file only includes hosts that are part of the &quot;test&quot;
+environment. Define the &quot;staging&quot; machines in another file
+called <code class="file docutils literal notranslate"><span class="pre">inventory_staging</span></code>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[dbservers]</span>
+<span class="na">db01.staging.example.com</span>
+<span class="na">db02.staging.example.com</span>
+
+<span class="k">[appservers]</span>
+<span class="na">app01.staging.example.com</span>
+<span class="na">app02.staging.example.com</span>
+<span class="na">app03.staging.example.com</span>
+</pre></div>
+</div>
+<p>To apply a playbook called <code class="file docutils literal notranslate"><span class="pre">site.yml</span></code>
+to all the app servers in the test environment, use the
+following command:</p>
+<div class="highlight-YAML+Jinja notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">ansible-playbook -i inventory_test site.yml -l appservers</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-group-by-function">
+<span id="inventory-setup-per-function"></span><h3><a class="toc-backref" href="#id18">Example: Group by function</a><a class="headerlink" href="#example-group-by-function" title="제목 주소">¶</a></h3>
+<p>In the previous section you already saw an example for using groups in
+order to cluster hosts that have the same function. This allows you,
+for instance, to define firewall rules inside a playbook or role
+without affecting database servers:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span> <span class="nt">hosts</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">dbservers</span>
+  <span class="nt">tasks</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">allow access from 10.0.0.1</span>
+    <span class="nt">iptables</span><span class="p">:</span>
+      <span class="nt">chain</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">INPUT</span>
+      <span class="nt">jump</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ACCEPT</span>
+      <span class="nt">source</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">10.0.0.1</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-group-by-location">
+<span id="inventory-setup-per-location"></span><h3><a class="toc-backref" href="#id19">Example: Group by location</a><a class="headerlink" href="#example-group-by-location" title="제목 주소">¶</a></h3>
+<p>Other tasks might be focused on where a certain host is located. Let's
+say that <code class="docutils literal notranslate"><span class="pre">db01.test.example.com</span></code> and <code class="docutils literal notranslate"><span class="pre">app01.test.example.com</span></code> are
+located in DC1 while <code class="docutils literal notranslate"><span class="pre">db02.test.example.com</span></code> is in DC2:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[dc1]</span>
+<span class="na">db01.test.example.com</span>
+<span class="na">app01.test.example.com</span>
+
+<span class="k">[dc2]</span>
+<span class="na">db02.test.example.com</span>
+</pre></div>
+</div>
+<p>In practice, you might even end up mixing all these setups as you
+might need to, on one day, update all nodes in a specific data center
+while, on another day, update all the application servers no matter
+their location.</p>
+<div class="admonition seealso">
+<p class="admonition-title">더 보기</p>
+<dl class="simple">
+<dt><a class="reference internal" href="../plugins/inventory.html#inventory-plugins"><span class="std std-ref">Inventory Plugins</span></a></dt><dd><p>Pulling inventory from dynamic or static sources</p>
+</dd>
+<dt><a class="reference internal" href="intro_dynamic_inventory.html#intro-dynamic-inventory"><span class="std std-ref">Working With Dynamic Inventory</span></a></dt><dd><p>Pulling inventory from dynamic sources, such as cloud providers</p>
+</dd>
+<dt><a class="reference internal" href="intro_adhoc.html#intro-adhoc"><span class="std std-ref">임시변통 명령의 소개</span></a></dt><dd><p>Examples of basic commands</p>
+</dd>
+<dt><a class="reference internal" href="playbooks.html#working-with-playbooks"><span class="std std-ref">플레이북 작업</span></a></dt><dd><p>Learning Ansible's configuration, deployment, and orchestration language.</p>
+</dd>
+<dt><a class="reference external" href="https://groups.google.com/group/ansible-project">Mailing List</a></dt><dd><p>Questions? Help? Ideas?  Stop by the list on Google Groups</p>
+</dd>
+<dt><a class="reference external" href="http://irc.freenode.net">irc.freenode.net</a></dt><dd><p>#ansible IRC chat channel</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="intro_dynamic_inventory.html" class="btn btn-neutral float-right" title="Working With Dynamic Inventory"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="intro_adhoc.html" class="btn btn-neutral" title="임시변통 명령의 소개"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','yABGvz2N8PwcwBxyfzUc','2.0.0');
+</script>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019 Red Hat, Inc.
+      <span class="lastupdated">
+        최종 업데이트: 10월 07, 2019
+      </span>
+
+    </p>
+  </div> 
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script>
+
+  
+  
+    
+   <!-- extra footer elements for Ansible beyond RTD Sphinx Theme --->
+<!-- begin analytics -->
+<script type="text/javascript">
+var _hsq = _hsq || [];
+_hsq.push(["setContentType", "standard-page"]);
+      (function(d,s,i,r) {
+      if (d.getElementById(i)){return;}
+      var n = d.createElement(s),e = document.getElementsByTagName(s)[0];
+      n.id=i;n.src = '//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/330046.js';
+      e.parentNode.insertBefore(n, e);
+      })(document, "script", "hs-analytics",300000);
+</script>
+<!-- end analytics -->
+<script type="text/javascript">
+if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
+  _satellite.pageBottom();
+}
+</script> 
+
+</body>
+</html>

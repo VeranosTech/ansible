@@ -102,3 +102,5 @@ changelogs/.plugin-cache.yaml
 # ansible-test temporary metadata file for use with delgation
 /metadata-*.json
 *.mo
+!_build/
+!env/
