@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-rm -rf docs/docsite/_build
-
 git add . -A
 git commit -m "automatic commit"
 git push origin korean
