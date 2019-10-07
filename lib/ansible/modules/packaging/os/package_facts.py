@@ -28,7 +28,7 @@ options:
     type: list
   strategy:
     description:
-      - This option controls how the module queres the package managers on the system.
+      - This option controls how the module queries the package managers on the system.
         C(first) means it will return only information for the first supported package manager available.
         C(all) will return information for all supported and available package managers on the system.
     choices: ['first', 'all']
@@ -53,6 +53,11 @@ EXAMPLES = '''
   debug:
     var: ansible_facts.packages
 
+- name: Check whether a package called foobar is installed
+  debug:
+    msg: "{{ ansible_facts.packages['foobar'] | length }} versions of foobar are installed!"
+  when: "'foobar' in ansible_facts.packages"
+
 '''
 
 RETURN = '''
@@ -62,9 +67,55 @@ ansible_facts:
   type: complex
   contains:
     packages:
-      description: list of dicts with package information
+      description:
+        - Maps the package name to a non-empty list of dicts with package information.
+        - Every dict in the list corresponds to one installed version of the package.
+        - The fields described below are present for all package managers. Depending on the
+          package manager, there might be more fields for a package.
       returned: when operating system level package manager is specified or auto detected manager
       type: dict
+      contains:
+        name:
+          description: The package's name.
+          returned: always
+          type: str
+        version:
+          description: The package's version.
+          returned: always
+          type: str
+        source:
+          description: Where information on the package came from.
+          returned: always
+          type: str
+      sample: |-
+        {
+          "packages": {
+            "kernel": [
+              {
+                "name": "kernel",
+                "source": "rpm",
+                "version": "3.10.0",
+                ...
+              },
+              {
+                "name": "kernel",
+                "source": "rpm",
+                "version": "3.10.0",
+                ...
+              },
+              ...
+            ],
+            "kernel-tools": [
+              {
+                "name": "kernel-tools",
+                "source": "rpm",
+                "version": "3.10.0",
+                ...
+              }
+            ],
+            ...
+          }
+        }
       sample_rpm:
         {
           "packages": {
@@ -241,7 +292,7 @@ class PKG(CLIMgr):
                 pass
 
         if 'automatic' in pkg:
-            pkg['automatic'] = bool(pkg['automatic'])
+            pkg['automatic'] = bool(int(pkg['automatic']))
 
         if 'category' in pkg:
             pkg['category'] = pkg['category'].split('/', 1)[0]
@@ -258,7 +309,7 @@ class PKG(CLIMgr):
                 pkg['revision'] = '0'
 
         if 'vital' in pkg:
-            pkg['vital'] = bool(pkg['vital'])
+            pkg['vital'] = bool(int(pkg['vital']))
 
         return pkg
 

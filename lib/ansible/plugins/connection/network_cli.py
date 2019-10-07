@@ -306,7 +306,6 @@ class Connection(NetworkConnectionBase):
 
     def __init__(self, play_context, new_stdin, *args, **kwargs):
         super(Connection, self).__init__(play_context, new_stdin, *args, **kwargs)
-
         self._ssh_shell = None
 
         self._matched_prompt = None
@@ -318,7 +317,7 @@ class Connection(NetworkConnectionBase):
 
         self._terminal = None
         self.cliconf = None
-        self.paramiko_conn = None
+        self._paramiko_conn = None
 
         if self._play_context.verbosity > 3:
             logging.getLogger('paramiko').setLevel(logging.DEBUG)
@@ -341,11 +340,19 @@ class Connection(NetworkConnectionBase):
             )
         self.queue_message('log', 'network_os is set to %s' % self._network_os)
 
+    @property
+    def paramiko_conn(self):
+        if self._paramiko_conn is None:
+            self._paramiko_conn = connection_loader.get('paramiko', self._play_context, '/dev/null')
+            self._paramiko_conn.set_options(direct={'look_for_keys': not bool(self._play_context.password and not self._play_context.private_key_file)})
+        return self._paramiko_conn
+
     def _get_log_channel(self):
         name = "p=%s u=%s | " % (os.getpid(), getpass.getuser())
         name += "paramiko [%s]" % self._play_context.remote_addr
         return name
 
+    @ensure_connect
     def get_prompt(self):
         """Returns the current prompt from the device"""
         return self._matched_prompt
@@ -404,9 +411,7 @@ class Connection(NetworkConnectionBase):
         Connects to the remote device and starts the terminal
         '''
         if not self.connected:
-            self.paramiko_conn = connection_loader.get('paramiko', self._play_context, '/dev/null')
             self.paramiko_conn._set_log_channel(self._get_log_channel())
-            self.paramiko_conn.set_options(direct={'look_for_keys': not bool(self._play_context.password and not self._play_context.private_key_file)})
             self.paramiko_conn.force_persistence = self.force_persistence
 
             command_timeout = self.get_option('persistent_command_timeout')
@@ -473,7 +478,7 @@ class Connection(NetworkConnectionBase):
                 self.queue_message('debug', "cli session is now closed")
 
                 self.paramiko_conn.close()
-                self.paramiko_conn = None
+                self._paramiko_conn = None
                 self.queue_message('debug', "ssh connection has been closed successfully")
         super(Connection, self).close()
 
@@ -576,7 +581,7 @@ class Connection(NetworkConnectionBase):
             if sendonly:
                 return
             response = self.receive(command, prompt, answer, newline, prompt_retry_check, check_all)
-            return to_text(response, errors='surrogate_or_strict')
+            return to_text(response, errors='surrogate_then_replace')
         except (socket.timeout, AttributeError):
             self.queue_message('error', traceback.format_exc())
             raise AnsibleConnectionFailure("timeout value %s seconds reached while trying to send command: %s"

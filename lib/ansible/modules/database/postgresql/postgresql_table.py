@@ -106,7 +106,8 @@ notes:
 - Unlogged tables are available from PostgreSQL server version 9.1.
 seealso:
 - module: postgresql_sequence
-- module: postgresql_index
+- module: postgresql_idx
+- module: postgresql_info
 - module: postgresql_tablespace
 - module: postgresql_owner
 - module: postgresql_privs
@@ -464,15 +465,15 @@ def main():
         db=dict(type='str', default='', aliases=['login_db']),
         tablespace=dict(type='str'),
         owner=dict(type='str'),
-        unlogged=dict(type='bool'),
+        unlogged=dict(type='bool', default=False),
         like=dict(type='str'),
         including=dict(type='str'),
         rename=dict(type='str'),
-        truncate=dict(type='bool'),
+        truncate=dict(type='bool', default=False),
         columns=dict(type='list'),
         storage_params=dict(type='list'),
         session_role=dict(type='str'),
-        cascade=dict(type='bool'),
+        cascade=dict(type='bool', default=False),
     )
     module = AnsibleModule(
         argument_spec=argument_spec,

@@ -48,12 +48,16 @@ from .util import (
     display,
     ANSIBLE_BIN_PATH,
     ANSIBLE_TEST_DATA_ROOT,
+    ANSIBLE_LIB_ROOT,
+    ANSIBLE_TEST_ROOT,
     tempdir,
+    make_dirs,
 )
 
 from .util_common import (
     run_command,
     ResultType,
+    create_interpreter_wrapper,
 )
 
 from .docker_util import (
@@ -244,7 +248,7 @@ def delegate_venv(args,  # type: EnvironmentConfig
 
     with tempdir() as inject_path:
         for version, path in venvs.items():
-            os.symlink(os.path.join(path, 'bin', 'python'), os.path.join(inject_path, 'python%s' % version))
+            create_interpreter_wrapper(os.path.join(path, 'bin', 'python'), os.path.join(inject_path, 'python%s' % version))
 
         python_interpreter = os.path.join(inject_path, 'python%s' % args.python_version)
 
@@ -255,11 +259,18 @@ def delegate_venv(args,  # type: EnvironmentConfig
                 cmd += ['--coverage-label', 'venv']
 
         env = common_environment()
-        env.update(
-            PATH=inject_path + os.pathsep + env['PATH'],
-        )
 
-        run_command(args, cmd, env=env)
+        with tempdir() as library_path:
+            # expose ansible and ansible_test to the virtual environment (only required when running from an install)
+            os.symlink(ANSIBLE_LIB_ROOT, os.path.join(library_path, 'ansible'))
+            os.symlink(ANSIBLE_TEST_ROOT, os.path.join(library_path, 'ansible_test'))
+
+            env.update(
+                PATH=inject_path + os.pathsep + env['PATH'],
+                PYTHONPATH=library_path,
+            )
+
+            run_command(args, cmd, env=env)
 
 
 def delegate_docker(args, exclude, require, integration_targets):
@@ -414,7 +425,7 @@ def delegate_docker(args, exclude, require, integration_targets):
                 remote_temp_file = os.path.join('/root', remote_results_name + '.tgz')
 
                 with tempfile.NamedTemporaryFile(prefix='ansible-result-', suffix='.tgz') as local_result_fd:
-                    docker_exec(args, test_id, ['tar', 'czf', remote_temp_file, '-C', remote_test_root, remote_results_name])
+                    docker_exec(args, test_id, ['tar', 'czf', remote_temp_file, '--exclude', ResultType.TMP.name, '-C', remote_test_root, remote_results_name])
                     docker_get(args, test_id, remote_temp_file, local_result_fd.name)
                     run_command(args, ['tar', 'oxzf', local_result_fd.name, '-C', local_test_root])
         finally:
@@ -536,7 +547,7 @@ def delegate_remote(args, exclude, require, integration_targets):
                 remote_results_name = os.path.basename(remote_results_root)
                 remote_temp_path = os.path.join('/tmp', remote_results_name)
 
-                manage.ssh('rm -rf {0} && cp -a {1} {0} && chmod -R a+r {0}'.format(remote_temp_path, remote_results_root))
+                manage.ssh('rm -rf {0} && mkdir {0} && cp -a {1}/* {0}/ && chmod -R a+r {0}'.format(remote_temp_path, remote_results_root))
                 manage.download(remote_temp_path, local_test_root)
     finally:
         if args.remote_terminate == 'always' or (args.remote_terminate == 'success' and success):
@@ -606,6 +617,7 @@ def filter_options(args, argv, options, exclude, require):
     options['--requirements'] = 0
     options['--truncate'] = 1
     options['--redact'] = 0
+    options['--no-redact'] = 0
 
     if isinstance(args, TestConfig):
         options.update({
@@ -670,3 +682,5 @@ def filter_options(args, argv, options, exclude, require):
 
     if args.redact:
         yield '--redact'
+    else:
+        yield '--no-redact'

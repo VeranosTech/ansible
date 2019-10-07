@@ -9,7 +9,7 @@ This section discusses the behavioral changes between Ansible 2.8 and Ansible 2.
 
 It is intended to assist in updating your playbooks, plugins and other parts of your Ansible infrastructure so they will work with this version of Ansible.
 
-We suggest you read this page along with `Ansible Changelog for 2.9 <https://github.com/ansible/ansible/blob/devel/changelogs/CHANGELOG-v2.9.rst>`_ to understand what updates you may need to make.
+We suggest you read this page along with `Ansible Changelog for 2.9 <https://github.com/ansible/ansible/blob/stable-2.9/changelogs/CHANGELOG-v2.9.rst>`_ to understand what updates you may need to make.
 
 This document is part of a collection on porting. The complete list of porting guides can be found at :ref:`porting guides <porting_guides>`.
 
@@ -61,7 +61,7 @@ Modules
 =======
 
 * The ``win_get_url`` and ``win_uri`` module now sends requests with a default ``User-Agent`` of ``ansible-httpget``. This can be changed by using the ``http_agent`` key.
-
+* The ``apt`` module now honors ``update_cache=false`` while installing its own dependency and skips the cache update. Explicitly setting ``update_cache=true`` or omitting the param ``update_cache`` will result in a cache update while installing its own dependency.
 
 Writing modules
 ---------------
@@ -122,6 +122,28 @@ The following modules will be removed in Ansible 2.13. Please update update your
 * cs_zone_facts use :ref:`cs_zone_info <cs_zone_info_module>` instead.
 
 * digital_ocean_sshkey_facts use :ref:`digital_ocean_sshkey_info <digital_ocean_sshkey_info_module>` instead.
+
+* eos_interface use :ref:`eos_interfaces <eos_interfaces_module>` instead.
+
+* eos_l2_interface use :ref:`eos_l2_interfaces <eos_l2_interfaces_module>` instead.
+
+* eos_l3_interface use :ref:`eos_l3_interfaces <eos_l3_interfaces_module>` instead.
+
+* eos_linkagg use :ref:`eos_lag_interfaces <eos_lag_interfaces_module>` instead.
+
+* eos_lldp_interface use :ref:`eos_lldp_interfaces <eos_lldp_interfaces_module>` instead.
+
+* eos_vlan use :ref:`eos_vlans <eos_vlans_module>` instead.
+
+* ios_interface use :ref:`ios_interfaces <ios_interfaces_module>` instead.
+
+* ios_l2_interface use :ref:`ios_l2_interfaces <ios_l2_interfaces_module>` instead.
+
+* ios_l3_interface use :ref:`ios_l3_interfaces <ios_l3_interfaces_module>` instead.
+
+* ios_vlan use :ref:`ios_vlans <ios_vlans_module>` instead.
+
+* iosxr_interface use :ref:`iosxr_interfaces <iosxr_interfaces_module>` instead.
 
 * junos_interface use :ref:`junos_interfaces <junos_interfaces_module>` instead.
 
@@ -661,6 +683,7 @@ Noteworthy module changes
 * The deprecated ``force`` option in ``win_firewall_rule`` has been removed.
 * :ref:`openssl_certificate <openssl_certificate_module>`'s ``ownca`` provider creates authority key identifiers if not explicitly disabled with ``ownca_create_authority_key_identifier: no``. This is only the case for the ``cryptography`` backend, which is selected by default if the ``cryptography`` library is available.
 * :ref:`openssl_certificate <openssl_certificate_module>`'s ``ownca`` and ``selfsigned`` providers create subject key identifiers if not explicitly disabled with ``ownca_create_subject_key_identifier: never_create`` resp. ``selfsigned_create_subject_key_identifier: never_create``. If a subject key identifier is provided by the CSR, it is taken; if not, it is created from the public key. This is only the case for the ``cryptography`` backend, which is selected by default if the ``cryptography`` library is available.
+* :ref:`openssh_keypair <openssh_keypair_module>` now applies the same file permissions and ownership to both public and private keys (both get the same ``mode``, ``owner``, ``group``, etc.). If you need to change permissions / ownership on one key, use the :ref:`file <file_module>` to modify it after it is created.
 
 
 Plugins
@@ -681,4 +704,28 @@ No notable changes
 Networking
 ==========
 
-No notable changes
+Network resource modules
+------------------------
+
+Ansible 2.9 introduced the first batch of network resource modules. These modules improve the usability of Ansible network modules. The older modules are deprecated in Ansible 2.9 and will be removed in Ansible 2.13. You should scan the list of deprecated modules above and replace them with the new network resource modules in your playbooks.
+
+Top-level connection arguments removed in 2.9
+---------------------------------------------
+
+Top-level connection arguments like ``username``, ``host``, and ``password`` are  removed in version 2.9.
+
+**OLD** In Ansible < 2.4
+
+.. code-block:: yaml
+
+    - name: example of using top-level options for connection properties
+      ios_command:
+        commands: show version
+        host: "{{ inventory_hostname }}"
+        username: cisco
+        password: cisco
+        authorize: yes
+        auth_pass: cisco
+
+
+Change your playbooks to the connection types ``network_cli`` and ``netconf`` using standard Ansible connection properties, and setting those properties in inventory by group. As you update your playbooks and inventory files, you can easily make the change to ``become`` for privilege escalation (on platforms that support it). For more information, see the :ref:`using become with network modules<become_network>` guide and the :ref:`platform documentation<platform_options>`.
