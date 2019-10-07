@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/network/user_guide/platform_index.rst:5
 #: ../../rst/network/user_guide/platform_index.rst:9
@@ -32,47 +32,46 @@ msgid ""
 "maintained platforms to this section."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:38
+#: ../../rst/network/user_guide/platform_index.rst:39
 msgid "Settings by Platform"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:55
+#: ../../rst/network/user_guide/platform_index.rst:56
 msgid "``ansible_connection:`` settings available"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:57
+#: ../../rst/network/user_guide/platform_index.rst:58
 msgid "Network OS"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:57
+#: ../../rst/network/user_guide/platform_index.rst:58
 msgid "``ansible_network_os:``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:57
+#: ../../rst/network/user_guide/platform_index.rst:58
 msgid "network_cli"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:57
+#: ../../rst/network/user_guide/platform_index.rst:58
 msgid "netconf"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:57
+#: ../../rst/network/user_guide/platform_index.rst:58
 msgid "httpapi"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:57
+#: ../../rst/network/user_guide/platform_index.rst:58
 msgid "local"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:59
+#: ../../rst/network/user_guide/platform_index.rst:60
 msgid "Arista EOS `[†]`_"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:59
+#: ../../rst/network/user_guide/platform_index.rst:60
 msgid "``eos``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:59
 #: ../../rst/network/user_guide/platform_index.rst:60
 #: ../../rst/network/user_guide/platform_index.rst:61
 #: ../../rst/network/user_guide/platform_index.rst:62
@@ -97,194 +96,204 @@ msgstr ""
 #: ../../rst/network/user_guide/platform_index.rst:81
 #: ../../rst/network/user_guide/platform_index.rst:82
 #: ../../rst/network/user_guide/platform_index.rst:83
+#: ../../rst/network/user_guide/platform_index.rst:84
+#: ../../rst/network/user_guide/platform_index.rst:85
 msgid "✓"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:60
+#: ../../rst/network/user_guide/platform_index.rst:61
 msgid "Cisco ASA"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:60
+#: ../../rst/network/user_guide/platform_index.rst:61
 msgid "``asa``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:61
+#: ../../rst/network/user_guide/platform_index.rst:62
 msgid "Cisco IOS `[†]`_"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:61
+#: ../../rst/network/user_guide/platform_index.rst:62
 msgid "``ios``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:62
+#: ../../rst/network/user_guide/platform_index.rst:63
 msgid "Cisco IOS XR `[†]`_"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:62
+#: ../../rst/network/user_guide/platform_index.rst:63
 msgid "``iosxr``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:63
+#: ../../rst/network/user_guide/platform_index.rst:64
 msgid "Cisco NX-OS `[†]`_"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:63
+#: ../../rst/network/user_guide/platform_index.rst:64
 msgid "``nxos``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:64
+#: ../../rst/network/user_guide/platform_index.rst:65
 msgid "Dell OS6"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:64
+#: ../../rst/network/user_guide/platform_index.rst:65
 msgid "``dellos6``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:65
+#: ../../rst/network/user_guide/platform_index.rst:66
 msgid "Dell OS9"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:65
+#: ../../rst/network/user_guide/platform_index.rst:66
 msgid "``dellos9``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:66
+#: ../../rst/network/user_guide/platform_index.rst:67
 msgid "Dell OS10"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:66
+#: ../../rst/network/user_guide/platform_index.rst:67
 msgid "``dellos10``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:67
+#: ../../rst/network/user_guide/platform_index.rst:68
 msgid "Ericsson ECCLI"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:67
+#: ../../rst/network/user_guide/platform_index.rst:68
 msgid "``eric_eccli``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:68
+#: ../../rst/network/user_guide/platform_index.rst:69
 msgid "Extreme EXOS"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:68
+#: ../../rst/network/user_guide/platform_index.rst:69
 msgid "``exos``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:69
+#: ../../rst/network/user_guide/platform_index.rst:70
 msgid "Extreme IronWare"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:69
+#: ../../rst/network/user_guide/platform_index.rst:70
 msgid "``ironware``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:70
+#: ../../rst/network/user_guide/platform_index.rst:71
 msgid "Extreme NOS"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:70
+#: ../../rst/network/user_guide/platform_index.rst:71
 msgid "``nos``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:71
+#: ../../rst/network/user_guide/platform_index.rst:72
 msgid "Extreme SLX-OS"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:71
+#: ../../rst/network/user_guide/platform_index.rst:72
 msgid "``slxos``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:72
+#: ../../rst/network/user_guide/platform_index.rst:73
 msgid "Extreme VOSS"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:72
+#: ../../rst/network/user_guide/platform_index.rst:73
 msgid "``voss``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:73
+#: ../../rst/network/user_guide/platform_index.rst:74
 msgid "F5 BIG-IP"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:74
+#: ../../rst/network/user_guide/platform_index.rst:75
 msgid "F5 BIG-IQ"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:75
+#: ../../rst/network/user_guide/platform_index.rst:76
 msgid "Junos OS `[†]`_"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:75
+#: ../../rst/network/user_guide/platform_index.rst:76
 msgid "``junos``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:76
+#: ../../rst/network/user_guide/platform_index.rst:77
 msgid "Lenovo CNOS"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:76
+#: ../../rst/network/user_guide/platform_index.rst:77
 msgid "``cnos``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:77
+#: ../../rst/network/user_guide/platform_index.rst:78
 msgid "Lenovo ENOS"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:77
+#: ../../rst/network/user_guide/platform_index.rst:78
 msgid "``enos``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:78
+#: ../../rst/network/user_guide/platform_index.rst:79
+msgid "Meraki"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_index.rst:79
+msgid "``meraki``"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_index.rst:80
 msgid "MikroTik RouterOS"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:78
+#: ../../rst/network/user_guide/platform_index.rst:80
 msgid "``routeros``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:79
+#: ../../rst/network/user_guide/platform_index.rst:81
 msgid "Nokia SR OS"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:79
+#: ../../rst/network/user_guide/platform_index.rst:81
 msgid "``sros``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:80
+#: ../../rst/network/user_guide/platform_index.rst:82
 msgid "Pluribus Netvisor"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:80
+#: ../../rst/network/user_guide/platform_index.rst:82
 msgid "``netvisor``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:81
+#: ../../rst/network/user_guide/platform_index.rst:83
 msgid "Ruckus ICX `[†]`_"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:81
+#: ../../rst/network/user_guide/platform_index.rst:83
 msgid "``icx``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:82
+#: ../../rst/network/user_guide/platform_index.rst:84
 msgid "VyOS `[†]`_"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:82
+#: ../../rst/network/user_guide/platform_index.rst:84
 msgid "``vyos``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:83
+#: ../../rst/network/user_guide/platform_index.rst:85
 msgid "OS that supports Netconf `[†]`_"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:83
+#: ../../rst/network/user_guide/platform_index.rst:85
 msgid "``<network-os>``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_index.rst:88
+#: ../../rst/network/user_guide/platform_index.rst:90
 msgid "**[†]** Maintained by Ansible Network Team"
 msgstr ""
 

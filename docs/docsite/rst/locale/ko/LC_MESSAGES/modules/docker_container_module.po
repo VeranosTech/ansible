@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/modules/docker_container_module.rst:9
 msgid "docker_container -- manage docker containers"
@@ -32,7 +32,7 @@ msgstr ""
 
 #: ../../rst/modules/docker_container_module.rst:20
 msgid ""
-"Supports check mode. Run with --check and --diff to view config "
+"Supports check mode. Run with ``--check`` and ``--diff`` to view config "
 "difference and list of actions to be taken."
 msgstr ""
 
@@ -78,6 +78,33 @@ msgstr ""
 
 #: ../../rst/modules/docker_container_module.rst:1954
 msgid ""
+"For most config changes, the container needs to be recreated, i.e. the "
+"existing container has to be destroyed and a new one created. This can "
+"cause unexpected data loss and downtime. You can use the *comparisons* "
+"option to prevent this."
+msgstr ""
+
+#: ../../rst/modules/docker_container_module.rst:1955
+msgid ""
+"If the module needs to recreate the container, it will only use the "
+"options provided to the module to create the new container (except "
+"*image*). Therefore, always specify *all* options relevant to the "
+"container."
+msgstr ""
+
+#: ../../rst/modules/docker_container_module.rst:1956
+msgid ""
+"When *restart* is set to ``true``, the module will only restart the "
+"container if no config changes are detected. Please note that several "
+"options have default values; if the container to be restarted uses "
+"different values for these options, it will be recreated instead. The "
+"options with default values which can cause this are *auto_remove*, "
+"*detach*, *init*, *interactive*, *memory*, *paused*, *privileged*, "
+"*read_only* and *tty*."
+msgstr ""
+
+#: ../../rst/modules/docker_container_module.rst:1957
+msgid ""
 "Connect to the Docker daemon by providing parameters with each task or by"
 " defining environment variables. You can define ``DOCKER_HOST``, "
 "``DOCKER_TLS_HOSTNAME``, ``DOCKER_API_VERSION``, ``DOCKER_CERT_PATH``, "
@@ -88,7 +115,7 @@ msgid ""
 "py.readthedocs.io/en/stable/machine/ for more details."
 msgstr ""
 
-#: ../../rst/modules/docker_container_module.rst:1955
+#: ../../rst/modules/docker_container_module.rst:1958
 msgid ""
 "When connecting to Docker daemon with TLS, you might need to install "
 "additional Python packages. For the Docker SDK for Python, version 2.4 or"
@@ -96,7 +123,7 @@ msgid ""
 "<pip_module>`."
 msgstr ""
 
-#: ../../rst/modules/docker_container_module.rst:1956
+#: ../../rst/modules/docker_container_module.rst:1959
 msgid ""
 "Note that the Docker SDK for Python only allows to specify the path to "
 "the Docker configuration for very few functions. In general, it will use "
@@ -105,77 +132,77 @@ msgid ""
 "otherwise."
 msgstr ""
 
-#: ../../rst/modules/docker_container_module.rst:1961
+#: ../../rst/modules/docker_container_module.rst:1964
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/docker_container_module.rst:2180
+#: ../../rst/modules/docker_container_module.rst:2183
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/docker_container_module.rst:2181
+#: ../../rst/modules/docker_container_module.rst:2184
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/docker_container_module.rst:2213
+#: ../../rst/modules/docker_container_module.rst:2216
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/docker_container_module.rst:2218
+#: ../../rst/modules/docker_container_module.rst:2221
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/docker_container_module.rst:2221
+#: ../../rst/modules/docker_container_module.rst:2224
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/docker_container_module.rst:2228
+#: ../../rst/modules/docker_container_module.rst:2231
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/docker_container_module.rst:2230
+#: ../../rst/modules/docker_container_module.rst:2233
 msgid "Cove Schneider (@cove)"
 msgstr ""
 
-#: ../../rst/modules/docker_container_module.rst:2231
+#: ../../rst/modules/docker_container_module.rst:2234
 msgid "Joshua Conner (@joshuaconner)"
 msgstr ""
 
-#: ../../rst/modules/docker_container_module.rst:2232
+#: ../../rst/modules/docker_container_module.rst:2235
 msgid "Pavel Antonov (@softzilla)"
 msgstr ""
 
-#: ../../rst/modules/docker_container_module.rst:2233
+#: ../../rst/modules/docker_container_module.rst:2236
 msgid "Thomas Steinbach (@ThomasSteinbach)"
 msgstr ""
 
-#: ../../rst/modules/docker_container_module.rst:2234
+#: ../../rst/modules/docker_container_module.rst:2237
 msgid "Philippe Jandot (@zfil)"
 msgstr ""
 
-#: ../../rst/modules/docker_container_module.rst:2235
+#: ../../rst/modules/docker_container_module.rst:2238
 msgid "Daan Oosterveld (@dusdanig)"
 msgstr ""
 
-#: ../../rst/modules/docker_container_module.rst:2236
+#: ../../rst/modules/docker_container_module.rst:2239
 msgid "Chris Houseknecht (@chouseknecht)"
 msgstr ""
 
-#: ../../rst/modules/docker_container_module.rst:2237
+#: ../../rst/modules/docker_container_module.rst:2240
 msgid "Kassian Sun (@kassiansun)"
 msgstr ""
 
-#: ../../rst/modules/docker_container_module.rst:2238
+#: ../../rst/modules/docker_container_module.rst:2241
 msgid "Felix Fontein (@felixfontein)"
 msgstr ""
 
-#: ../../rst/modules/docker_container_module.rst:2242
+#: ../../rst/modules/docker_container_module.rst:2245
 #, python-format
 msgid ""
 "If you notice any issues in this documentation, you can `edit this "
@@ -225,5 +252,12 @@ msgstr ""
 #~ "document "
 #~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/docker/docker_container.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
 #~ " to improve it."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Supports check mode. Run with --check"
+#~ " and --diff to view config difference"
+#~ " and list of actions to be "
+#~ "taken."
 #~ msgstr ""
 

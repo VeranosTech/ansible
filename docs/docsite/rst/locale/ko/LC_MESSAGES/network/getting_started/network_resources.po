@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible devel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/network/getting_started/network_resources.rst:6
 msgid "Resources and next steps"
@@ -114,6 +114,9 @@ msgid "Freenode IRC - ``#ansible-network`` Freenode channel"
 msgstr ""
 
 #: ../../rst/network/getting_started/network_resources.rst:47
-msgid "Slack - `<http://ansiblenetwork.slack.com>`_"
+msgid "Slack - `<https://ansiblenetwork.slack.com>`_"
 msgstr ""
+
+#~ msgid "Slack - `<http://ansiblenetwork.slack.com>`_"
+#~ msgstr ""
 

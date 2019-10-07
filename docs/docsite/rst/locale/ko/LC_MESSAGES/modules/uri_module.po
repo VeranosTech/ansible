@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/modules/uri_module.rst:9
 msgid "uri -- Interacts with webservices"
@@ -95,9 +95,10 @@ msgid "Status"
 msgstr "상태"
 
 #: ../../rst/modules/uri_module.rst:785
+#, fuzzy
 msgid ""
-"This module is guaranteed to have no backward incompatible interface "
-"changes going forward. *[stableinterface]*"
+"This module is guaranteed to have backward compatible interface changes "
+"going forward. *[stableinterface]*"
 msgstr "이 모듈의 인터페이스는 하위 호환을 보장하지 않는다. 상위 호환만 보장한다. *[stableinterface]*"
 
 #: ../../rst/modules/uri_module.rst:788

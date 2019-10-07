@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../rst/porting_guides/porting_guide_2.10.rst:6
+msgid "Ansible 2.10 Porting Guide"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.10.rst:8
+msgid ""
+"This section discusses the behavioral changes between Ansible 2.9 and "
+"Ansible 2.10."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.10.rst:10
+msgid ""
+"It is intended to assist in updating your playbooks, plugins and other "
+"parts of your Ansible infrastructure so they will work with this version "
+"of Ansible."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.10.rst:12
+msgid ""
+"We suggest you read this page along with `Ansible Changelog for 2.10 "
+"<https://github.com/ansible/ansible/blob/devel/changelogs/CHANGELOG-v2.10.rst>`_"
+" to understand what updates you may need to make."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.10.rst:14
+msgid ""
+"This document is part of a collection on porting. The complete list of "
+"porting guides can be found at :ref:`porting guides <porting_guides>`."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.10.rst:17
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.10.rst:20
+msgid "Playbook"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.10.rst:22
+#: ../../rst/porting_guides/porting_guide_2.10.rst:28
+#: ../../rst/porting_guides/porting_guide_2.10.rst:34
+#: ../../rst/porting_guides/porting_guide_2.10.rst:40
+#: ../../rst/porting_guides/porting_guide_2.10.rst:54
+#: ../../rst/porting_guides/porting_guide_2.10.rst:71
+#: ../../rst/porting_guides/porting_guide_2.10.rst:77
+#: ../../rst/porting_guides/porting_guide_2.10.rst:83
+msgid "No notable changes"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.10.rst:26
+msgid "Command Line"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.10.rst:32
+msgid "Deprecated"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.10.rst:38
+msgid "Modules"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.10.rst:44
+msgid "Modules removed"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.10.rst:46
+msgid "The following modules no longer exist:"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.10.rst:48
+msgid "letsencrypt use :ref:`acme_certificate <acme_certificate_module>` instead."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.10.rst:52
+msgid "Deprecation notices"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.10.rst:58
+msgid "Noteworthy module changes"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.10.rst:60
+msgid ""
+":ref:`vmware_datastore_maintenancemode "
+"<vmware_datastore_maintenancemode_module>` now returns "
+"``datastore_status`` instead of Ansible internal key ``results``."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.10.rst:61
+msgid ""
+":ref:`vmware_host_kernel_manager <vmware_host_kernel_manager_module>` now"
+" returns ``host_kernel_status`` instead of Ansible internal key "
+"``results``."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.10.rst:62
+msgid ""
+":ref:`vmware_host_ntp <vmware_host_ntp_module>` now returns "
+"``host_ntp_status`` instead of Ansible internal key ``results``."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.10.rst:63
+msgid ""
+":ref:`vmware_host_service_manager <vmware_host_service_manager_module>` "
+"now returns ``host_service_status`` instead of Ansible internal key "
+"``results``."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.10.rst:64
+msgid ""
+":ref:`vmware_tag <vmware_tag_module>` now returns ``tag_status`` instead "
+"of Ansible internal key ``results``."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.10.rst:65
+msgid ""
+"The deprecated ``recurse`` option in :ref:`pacman <pacman_module>` module"
+" has been removed, you should use ``extra_args=--recursive`` instead."
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.10.rst:69
+msgid "Plugins"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.10.rst:75
+msgid "Porting custom scripts"
+msgstr ""
+
+#: ../../rst/porting_guides/porting_guide_2.10.rst:81
+msgid "Networking"
+msgstr ""
+

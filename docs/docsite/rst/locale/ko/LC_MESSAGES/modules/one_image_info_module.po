@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible devel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/modules/one_image_info_module.rst:10
 msgid "one_image_info -- Gather information on OpenNebula images"
@@ -48,7 +48,7 @@ msgid "The below requirements are needed on the host that executes this module."
 msgstr ""
 
 #: ../../rst/modules/one_image_info_module.rst:31
-msgid "python-oca"
+msgid "pyone"
 msgstr ""
 
 #: ../../rst/modules/one_image_info_module.rst:35
@@ -93,7 +93,11 @@ msgstr ""
 msgid "Milan Ilic (@ilicmilan)"
 msgstr ""
 
-#: ../../rst/modules/one_image_info_module.rst:339
+#: ../../rst/modules/one_image_info_module.rst:336
+msgid "Jan Meerkamp (@meerkampdvv)"
+msgstr ""
+
+#: ../../rst/modules/one_image_info_module.rst:340
 #, python-format
 msgid ""
 "If you notice any issues in this documentation, you can `edit this "
@@ -101,4 +105,7 @@ msgid ""
 "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/opennebula/one_image_info.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid "python-oca"
+#~ msgstr ""
 

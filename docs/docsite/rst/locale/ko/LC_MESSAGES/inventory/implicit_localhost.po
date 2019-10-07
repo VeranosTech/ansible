@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/inventory/implicit_localhost.rst:6
 msgid "Implicit 'localhost'"
@@ -57,24 +57,30 @@ msgstr ""
 
 #: ../../rst/inventory/implicit_localhost.rst:31
 msgid ""
+"Implicit localhost does not appear in the ``hostvars`` magic variable "
+"unless demanded, such as by ``\"{{ hostvars['localhost'] }}\"``."
+msgstr ""
+
+#: ../../rst/inventory/implicit_localhost.rst:32
+msgid ""
 "The ``inventory_file`` and ``inventory_dir`` magic variables are not "
 "available for the implicit localhost as they are dependent on **each "
 "inventory host**."
 msgstr ""
 
-#: ../../rst/inventory/implicit_localhost.rst:32
+#: ../../rst/inventory/implicit_localhost.rst:33
 msgid ""
 "This implicit host also gets triggered by using ``127.0.0.1`` or ``::1`` "
 "as they are the IPv4 and IPv6 representations of 'localhost'."
 msgstr ""
 
-#: ../../rst/inventory/implicit_localhost.rst:33
+#: ../../rst/inventory/implicit_localhost.rst:34
 msgid ""
 "Even though there are many ways to create it, there will only ever be ONE"
 " implicit localhost, using the name first used to create it."
 msgstr ""
 
-#: ../../rst/inventory/implicit_localhost.rst:34
+#: ../../rst/inventory/implicit_localhost.rst:35
 msgid ""
 "Having ``connection: local`` does NOT trigger an implicit localhost, you "
 "are just changing the connection for the ``inventory_hostname``."

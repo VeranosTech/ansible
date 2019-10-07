@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/modules/apt_module.rst:9
 msgid "apt -- Manages apt-packages"
@@ -54,18 +54,18 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/apt_module.rst:340
+#: ../../rst/modules/apt_module.rst:368
 msgid "Notes"
 msgstr ""
 
-#: ../../rst/modules/apt_module.rst:343
+#: ../../rst/modules/apt_module.rst:371
 msgid ""
 "Three of the upgrade modes (``full``, ``safe`` and its alias ``yes``) "
 "required ``aptitude`` up to 2.3, since 2.4 ``apt-get`` is used as a fall-"
 "back."
 msgstr ""
 
-#: ../../rst/modules/apt_module.rst:344
+#: ../../rst/modules/apt_module.rst:372
 msgid ""
 "In most cases, packages installed with apt will start newly installed "
 "services by default. Most distributions have mechanisms to avoid this. "
@@ -75,7 +75,7 @@ msgid ""
 "file or remove its execute permission afterwards."
 msgstr ""
 
-#: ../../rst/modules/apt_module.rst:345
+#: ../../rst/modules/apt_module.rst:373
 msgid ""
 "The apt-get commandline supports implicit regex matches here but we do "
 "not because it can let typos through easier (If you typo ``foo`` as "
@@ -85,62 +85,62 @@ msgid ""
 "pattern if you want wildcarding)"
 msgstr ""
 
-#: ../../rst/modules/apt_module.rst:346
+#: ../../rst/modules/apt_module.rst:374
 msgid ""
 "When used with a `loop:` each package will be processed individually, it "
 "is much more efficient to pass the list directly to the `name` option."
 msgstr ""
 
-#: ../../rst/modules/apt_module.rst:351
+#: ../../rst/modules/apt_module.rst:379
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/apt_module.rst:448
+#: ../../rst/modules/apt_module.rst:476
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/apt_module.rst:449
+#: ../../rst/modules/apt_module.rst:477
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/apt_module.rst:516
+#: ../../rst/modules/apt_module.rst:544
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/apt_module.rst:521
+#: ../../rst/modules/apt_module.rst:549
 msgid ""
-"This module is guaranteed to have no backward incompatible interface "
-"changes going forward. *[stableinterface]*"
+"This module is guaranteed to have backward compatible interface changes "
+"going forward. *[stableinterface]*"
 msgstr ""
 
-#: ../../rst/modules/apt_module.rst:524
+#: ../../rst/modules/apt_module.rst:552
 msgid ""
 "This module is :ref:`maintained by the Ansible Core Team "
 "<modules_support>`. *[core]*"
 msgstr ""
 
-#: ../../rst/modules/apt_module.rst:527
+#: ../../rst/modules/apt_module.rst:555
 msgid "Red Hat Support"
 msgstr ""
 
-#: ../../rst/modules/apt_module.rst:529
+#: ../../rst/modules/apt_module.rst:557
 msgid ""
 "More information about Red Hat's support of this module is available from"
 " this `Red Hat Knowledge Base article "
 "<https://access.redhat.com/articles/3166901>`_."
 msgstr ""
 
-#: ../../rst/modules/apt_module.rst:535
+#: ../../rst/modules/apt_module.rst:563
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/apt_module.rst:537
+#: ../../rst/modules/apt_module.rst:565
 msgid "Matthew Williams (@mgwilliams)"
 msgstr ""
 
-#: ../../rst/modules/apt_module.rst:541
+#: ../../rst/modules/apt_module.rst:569
 #, python-format
 msgid ""
 "If you notice any issues in this documentation, you can `edit this "
@@ -163,5 +163,11 @@ msgstr ""
 #~ "document "
 #~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/packaging/os/apt.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
 #~ " to improve it."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is guaranteed to have "
+#~ "no backward incompatible interface changes "
+#~ "going forward. *[stableinterface]*"
 #~ msgstr ""
 

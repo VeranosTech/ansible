@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible devel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/modules/bigip_device_certificate_module.rst:9
 msgid "bigip_device_certificate -- Manage self-signed device certificates"
@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../rst/modules/bigip_device_certificate_module.rst:20
 msgid ""
-"Module used to create and/or renew self-signed defice certificates for "
+"Module used to create and/or renew self-signed device certificates for "
 "BIG-IP."
 msgstr ""
 
@@ -105,4 +105,10 @@ msgid ""
 "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/f5/bigip_device_certificate.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "Module used to create and/or renew "
+#~ "self-signed defice certificates for "
+#~ "BIG-IP."
+#~ msgstr ""
 

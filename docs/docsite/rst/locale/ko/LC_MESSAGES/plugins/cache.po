@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-18 15:38+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/plugins/cache.rst:4
 msgid "Cache Plugins"
@@ -58,18 +58,22 @@ msgid ""
 "environment variable:"
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:30 ../../rst/plugins/cache.rst:55
+#: ../../rst/plugins/cache.rst:30 ../../rst/plugins/cache.rst:62
 msgid "or in the ``ansible.cfg`` file:"
 msgstr ""
 
 #: ../../rst/plugins/cache.rst:37
+msgid "If the cache plugin is in a collection use the fully qualified name:"
+msgstr ""
+
+#: ../../rst/plugins/cache.rst:44
 msgid ""
 "You will also need to configure other settings specific to each plugin. "
 "Consult the individual plugin documentation or the Ansible "
 ":ref:`configuration <ansible_configuration_settings>` for more details."
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:40
+#: ../../rst/plugins/cache.rst:47
 msgid ""
 "A custom cache plugin is enabled by dropping it into a ``cache_plugins`` "
 "directory adjacent to your play, inside a role, or by putting it in one "
@@ -77,136 +81,148 @@ msgid ""
 "<ansible_configuration_settings>`."
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:44
+#: ../../rst/plugins/cache.rst:51
 msgid "Enabling Inventory Cache Plugins"
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:46
+#: ../../rst/plugins/cache.rst:53
 msgid ""
 "Inventory may be cached using a file-based cache plugin (like jsonfile). "
-"Check the specific inventory plugin to see if it supports caching. If an "
-"inventory-specific cache plugin is not specified Ansible will fall back "
-"to caching inventory with the fact cache plugin options."
+"Check the specific inventory plugin to see if it supports caching. Cache "
+"plugins inside a collection are not supported for caching inventory. If "
+"an inventory-specific cache plugin is not specified Ansible will fall "
+"back to caching inventory with the fact cache plugin options."
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:49
+#: ../../rst/plugins/cache.rst:56
 msgid ""
 "The inventory cache is disabled by default. You may enable it via "
 "environment variable:"
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:62 ../../rst/plugins/cache.rst:83
+#: ../../rst/plugins/cache.rst:69 ../../rst/plugins/cache.rst:90
 msgid ""
 "or if the inventory plugin accepts a YAML configuration source, in the "
 "configuration file:"
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:70
+#: ../../rst/plugins/cache.rst:77
 msgid ""
 "Similarly with fact cache plugins, only one inventory cache plugin can be"
 " active at a time and may be set via environment variable:"
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:76
+#: ../../rst/plugins/cache.rst:83
 msgid "or in the ansible.cfg file:"
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:91
+#: ../../rst/plugins/cache.rst:98
 msgid ""
 "Consult the individual inventory plugin documentation or the Ansible "
 ":ref:`configuration <ansible_configuration_settings>` for more details."
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:96
+#: ../../rst/plugins/cache.rst:103
 msgid "Using Cache Plugins"
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:98
+#: ../../rst/plugins/cache.rst:105
 msgid "Cache plugins are used automatically once they are enabled."
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:104
+#: ../../rst/plugins/cache.rst:111
 msgid "Plugin List"
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:106
+#: ../../rst/plugins/cache.rst:113
 msgid ""
 "You can use ``ansible-doc -t cache -l`` to see the list of available "
 "plugins. Use ``ansible-doc -t cache <plugin name>`` to see specific "
 "documentation and examples."
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:116
+#: ../../rst/plugins/cache.rst:123
 msgid ":ref:`action_plugins`"
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:117
+#: ../../rst/plugins/cache.rst:124
 msgid "Ansible Action plugins"
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:118
+#: ../../rst/plugins/cache.rst:125
 msgid ":ref:`callback_plugins`"
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:119
+#: ../../rst/plugins/cache.rst:126
 msgid "Ansible callback plugins"
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:120
+#: ../../rst/plugins/cache.rst:127
 msgid ":ref:`connection_plugins`"
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:121
+#: ../../rst/plugins/cache.rst:128
 msgid "Ansible connection plugins"
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:122
+#: ../../rst/plugins/cache.rst:129
 msgid ":ref:`inventory_plugins`"
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:123
+#: ../../rst/plugins/cache.rst:130
 msgid "Ansible inventory plugins"
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:124
+#: ../../rst/plugins/cache.rst:131
 msgid ":ref:`shell_plugins`"
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:125
+#: ../../rst/plugins/cache.rst:132
 msgid "Ansible Shell plugins"
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:126
+#: ../../rst/plugins/cache.rst:133
 msgid ":ref:`strategy_plugins`"
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:127
+#: ../../rst/plugins/cache.rst:134
 msgid "Ansible Strategy plugins"
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:128
+#: ../../rst/plugins/cache.rst:135
 msgid ":ref:`vars_plugins`"
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:129
+#: ../../rst/plugins/cache.rst:136
 msgid "Ansible Vars plugins"
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:130
+#: ../../rst/plugins/cache.rst:137
 msgid ""
 "`User Mailing List <https://groups.google.com/forum/#!forum/ansible-"
 "devel>`_"
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:131
+#: ../../rst/plugins/cache.rst:138
 msgid "Have a question?  Stop by the google group!"
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:132
+#: ../../rst/plugins/cache.rst:139
 msgid "`webchat.freenode.net <https://webchat.freenode.net>`_"
 msgstr ""
 
-#: ../../rst/plugins/cache.rst:133
+#: ../../rst/plugins/cache.rst:140
 msgid "#ansible IRC chat channel"
 msgstr ""
+
+#~ msgid ""
+#~ "Inventory may be cached using a "
+#~ "file-based cache plugin (like jsonfile)."
+#~ " Check the specific inventory plugin "
+#~ "to see if it supports caching. If"
+#~ " an inventory-specific cache plugin "
+#~ "is not specified Ansible will fall "
+#~ "back to caching inventory with the "
+#~ "fact cache plugin options."
+#~ msgstr ""
 

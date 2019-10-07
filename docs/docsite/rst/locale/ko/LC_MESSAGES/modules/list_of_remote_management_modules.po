@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:6
 msgid "Remote Management modules"
@@ -319,50 +319,54 @@ msgid ":ref:`ucs_org_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:196
-msgid ":ref:`ucs_san_connectivity_module`"
+msgid ":ref:`ucs_query_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:197
-msgid ":ref:`ucs_service_profile_template_module`"
+msgid ":ref:`ucs_san_connectivity_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:198
-msgid ":ref:`ucs_storage_profile_module`"
+msgid ":ref:`ucs_service_profile_template_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:199
-msgid ":ref:`ucs_timezone_module`"
+msgid ":ref:`ucs_storage_profile_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:200
-msgid ":ref:`ucs_uuid_pool_module`"
+msgid ":ref:`ucs_timezone_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:201
-msgid ":ref:`ucs_vhba_template_module`"
+msgid ":ref:`ucs_uuid_pool_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:202
-msgid ":ref:`ucs_vlan_find_module`"
+msgid ":ref:`ucs_vhba_template_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:203
-msgid ":ref:`ucs_vlans_module`"
+msgid ":ref:`ucs_vlan_find_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:204
-msgid ":ref:`ucs_vnic_template_module`"
+msgid ":ref:`ucs_vlans_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:205
-msgid ":ref:`ucs_vsans_module`"
+msgid ":ref:`ucs_vnic_template_module`"
 msgstr ""
 
 #: ../../rst/modules/list_of_remote_management_modules.rst:206
+msgid ":ref:`ucs_vsans_module`"
+msgstr ""
+
+#: ../../rst/modules/list_of_remote_management_modules.rst:207
 msgid ":ref:`ucs_wwn_pool_module`"
 msgstr ""
 
-#: ../../rst/modules/list_of_remote_management_modules.rst:210
+#: ../../rst/modules/list_of_remote_management_modules.rst:211
 msgid ""
 "**(D)**: This marks a module as deprecated, which means a module is kept "
 "for backwards compatibility but usage is discouraged. The module "

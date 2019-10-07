@@ -9,14 +9,50 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../rst/index.rst:23
+msgid "Installation, Upgrade & Configuration"
+msgstr "설치, 업그레이드, 설정"
+
+#: ../../rst/index.rst:30
+msgid "Using Ansible"
+msgstr "Ansible 사용법"
+
+#: ../../rst/index.rst:36
+msgid "Contributing to Ansible"
+msgstr "Ansible에 기여하기"
+
+#: ../../rst/index.rst:42
+msgid "Extending Ansible"
+msgstr "Ansible 확장하기"
+
+#: ../../rst/index.rst:48
+msgid "Common Ansible Scenarios"
+msgstr ""
+
+#: ../../rst/index.rst:57
+msgid "Ansible for Network Automation"
+msgstr "네트워크 자동화용 Ansible"
+
+#: ../../rst/index.rst:63
+msgid "Reference & Appendices"
+msgstr "참조서와 부록"
+
+#: ../../rst/index.rst:86
+msgid "Release Notes"
+msgstr ""
+
+#: ../../rst/index.rst:90
+msgid "Roadmaps"
+msgstr "장기계획"
 
 #: ../../rst/index.rst:4
 msgid "Ansible Documentation"
@@ -97,38 +133,6 @@ msgid ""
 msgstr ""
 "Ansible은 1년에 3~4번 메이저 릴리스를 한다. 핵심 애플리케이션은 언어 설계 및 셋업의 단순함에 중점을 두고 보수적으로 "
 "관리하지만 새로운 모듈과 플러그인은 빠르게 추가된다. 매 릴리스마다 많은 새 모듈이 추가된다."
-
-#: ../../rst/index.rst:23
-msgid "Installation, Upgrade & Configuration"
-msgstr "설치, 업그레이드, 설정"
-
-#: ../../rst/index.rst:30
-msgid "Using Ansible"
-msgstr "Ansible 사용법"
-
-#: ../../rst/index.rst:36
-msgid "Contributing to Ansible"
-msgstr "Ansible에 기여하기"
-
-#: ../../rst/index.rst:42
-msgid "Extending Ansible"
-msgstr "Ansible 확장하기"
-
-#: ../../rst/index.rst:48
-msgid "Common Ansible Scenarios"
-msgstr ""
-
-#: ../../rst/index.rst:57
-msgid "Ansible for Network Automation"
-msgstr "네트워크 자동화용 Ansible"
-
-#: ../../rst/index.rst:63
-msgid "Reference & Appendices"
-msgstr "참조서와 부록"
-
-#: ../../rst/index.rst:90
-msgid "Roadmaps"
-msgstr "장기계획"
 
 #~ msgid "Scenario Guides"
 #~ msgstr "시나리오별 안내서"

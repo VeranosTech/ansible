@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/modules/win_get_url_module.rst:9
 msgid "win_get_url -- Downloads file from HTTP, HTTPS, or FTP to node"
@@ -121,8 +121,8 @@ msgstr ""
 
 #: ../../rst/modules/win_get_url_module.rst:617
 msgid ""
-"This module is guaranteed to have no backward incompatible interface "
-"changes going forward. *[stableinterface]*"
+"This module is guaranteed to have backward compatible interface changes "
+"going forward. *[stableinterface]*"
 msgstr ""
 
 #: ../../rst/modules/win_get_url_module.rst:620
@@ -169,5 +169,11 @@ msgstr ""
 #~ "document "
 #~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/windows/win_get_url.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
 #~ " to improve it."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This module is guaranteed to have "
+#~ "no backward incompatible interface changes "
+#~ "going forward. *[stableinterface]*"
 #~ msgstr ""
 

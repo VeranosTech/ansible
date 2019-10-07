@@ -9,17 +9,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/modules/gcp_url_map_module.rst:9
-msgid "gcp_url_map -- Create, Update or Destory a Url_Map"
+msgid "gcp_url_map -- Create, Update or Destroy a Url_Map"
 msgstr ""
 
 #: ../../rst/modules/gcp_url_map_module.rst:18
@@ -56,7 +56,7 @@ msgstr ""
 
 #: ../../rst/modules/gcp_url_map_module.rst:27
 msgid ""
-"Create, Update or Destory a Url_Map. See "
+"Create, Update or Destroy a Url_Map. See "
 "https://cloud.google.com/compute/docs/load-balancing/http/url-map for an "
 "overview. More details on the Url_Map API can be found at "
 "https://cloud.google.com/compute/docs/reference/latest/urlMaps#resource."
@@ -163,5 +163,17 @@ msgstr ""
 #~ "document "
 #~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/gcp_url_map.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
 #~ " to improve it."
+#~ msgstr ""
+
+#~ msgid "gcp_url_map -- Create, Update or Destory a Url_Map"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Create, Update or Destory a Url_Map. "
+#~ "See https://cloud.google.com/compute/docs/load-"
+#~ "balancing/http/url-map for an overview. "
+#~ "More details on the Url_Map API "
+#~ "can be found at "
+#~ "https://cloud.google.com/compute/docs/reference/latest/urlMaps#resource."
 #~ msgstr ""
 

@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/dev_guide/developing_modules_documenting.rst:6
 msgid "Module format and documentation"
@@ -583,13 +583,16 @@ msgid "suboptions"
 msgstr ""
 
 #: ../../rst/dev_guide/developing_modules_documenting.rst:225
-msgid "If this option takes a dict, you can define its structure here."
+msgid ""
+"If this option takes a dict or list of dicts, you can define the "
+"structure here."
 msgstr ""
 
 #: ../../rst/dev_guide/developing_modules_documenting.rst:226
 msgid ""
-"See :ref:`azure_rm_securitygroup_module`, :ref:`os_ironic_node_module` "
-"for examples."
+"See :ref:`azure_rm_securitygroup_module`, "
+":ref:`azure_rm_azurefirewall_module` and :ref:`os_ironic_node_module` for"
+" examples."
 msgstr ""
 
 #: ../../rst/dev_guide/developing_modules_documenting.rst
@@ -700,28 +703,53 @@ msgid ""
 "documentation."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:293
+#: ../../rst/dev_guide/developing_modules_documenting.rst:288
+msgid ""
+"Modules should only use items from a doc fragment if the module will "
+"implement all of the interface documented there in a manner that behaves "
+"the same as the existing modules which import that fragment. The goal is "
+"that items imported from the doc fragment will behave identically when "
+"used in another module that imports the doc fragment."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_documenting.rst:290
+msgid ""
+"By default, only the ``DOCUMENTATION`` property from a doc fragment is "
+"inserted into the module documentation. It is possible to define "
+"additional properties in the doc fragment in order to import only certain"
+" parts of a doc fragment or mix and match as appropriate. If a property "
+"is defined in both the doc fragment and the module, the module value "
+"overrides the doc fragment."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_documenting.rst:292
+msgid "Here is an example doc fragment named ``example_fragment.py``:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_documenting.rst:310
+msgid "To insert the contents of ``OTHER`` in a module:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_documenting.rst:316
+msgid "Or use both :"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_modules_documenting.rst:329
 msgid ""
 "Since Ansible 2.8, you can have user-supplied doc_fragments by using a "
 "``doc_fragments`` directory adjacent to play or role, just like any other"
 " plugin."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:295
+#: ../../rst/dev_guide/developing_modules_documenting.rst:331
 msgid "For example, all AWS modules should include:"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:304
-msgid ""
-"You can find more examples by searching for "
-"``extends_documentation_fragment`` under the Ansible source tree."
-msgstr ""
-
-#: ../../rst/dev_guide/developing_modules_documenting.rst:309
+#: ../../rst/dev_guide/developing_modules_documenting.rst:343
 msgid "EXAMPLES block"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:311
+#: ../../rst/dev_guide/developing_modules_documenting.rst:345
 msgid ""
 "After the shebang, the UTF-8 coding, the copyright line, the license, the"
 " ``ANSIBLE_METADATA`` section, and the ``DOCUMENTATION`` block comes the "
@@ -731,34 +759,34 @@ msgid ""
 "update your examples with every change to your module."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:313
+#: ../../rst/dev_guide/developing_modules_documenting.rst:347
 msgid ""
 "Per playbook best practices, each example should include a ``name:`` "
 "line::"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:322
+#: ../../rst/dev_guide/developing_modules_documenting.rst:356
 msgid "The ``name:`` line should be capitalized and not include a trailing dot."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:324
+#: ../../rst/dev_guide/developing_modules_documenting.rst:358
 msgid ""
 "If your examples use boolean options, use yes/no values. Since the "
 "documentation generates boolean values as yes/no, having the examples use"
 " these values as well makes the module documentation more consistent."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:326
+#: ../../rst/dev_guide/developing_modules_documenting.rst:360
 msgid ""
 "If your module returns facts that are often needed, an example of how to "
 "use them can be helpful."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:331
+#: ../../rst/dev_guide/developing_modules_documenting.rst:365
 msgid "RETURN block"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:333
+#: ../../rst/dev_guide/developing_modules_documenting.rst:367
 msgid ""
 "After the shebang, the UTF-8 coding, the copyright line, the license, the"
 " ``ANSIBLE_METADATA`` section, ``DOCUMENTATION`` and ``EXAMPLES`` blocks "
@@ -766,7 +794,7 @@ msgid ""
 "module returns for use by other modules."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:335
+#: ../../rst/dev_guide/developing_modules_documenting.rst:369
 msgid ""
 "If your module doesn't return anything (apart from the standard returns),"
 " this section of your module should read: ``RETURN = r''' # '''`` "
@@ -778,11 +806,11 @@ msgstr ""
 msgid "return name"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:339
+#: ../../rst/dev_guide/developing_modules_documenting.rst:373
 msgid "Name of the returned field."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:342
+#: ../../rst/dev_guide/developing_modules_documenting.rst:376
 msgid ""
 "Detailed description of what this value represents. Capitalized and with "
 "trailing dot."
@@ -792,11 +820,11 @@ msgstr ""
 msgid "returned"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:344
+#: ../../rst/dev_guide/developing_modules_documenting.rst:378
 msgid "When this value is returned, such as ``always``, or ``on success``."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:346
+#: ../../rst/dev_guide/developing_modules_documenting.rst:380
 msgid "Data type."
 msgstr ""
 
@@ -804,11 +832,11 @@ msgstr ""
 msgid "sample"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:348
+#: ../../rst/dev_guide/developing_modules_documenting.rst:382
 msgid "One or more examples."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:350
+#: ../../rst/dev_guide/developing_modules_documenting.rst:384
 msgid ""
 "Only needed if this return was extended after initial Ansible release, "
 "i.e. this is greater than the top level `version_added` field. This is a "
@@ -819,23 +847,23 @@ msgstr ""
 msgid "contains"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:353
+#: ../../rst/dev_guide/developing_modules_documenting.rst:387
 msgid ""
 "Optional. To describe nested return values, set ``type: complex`` and "
 "repeat the elements above for each sub-field."
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:355
+#: ../../rst/dev_guide/developing_modules_documenting.rst:389
 msgid ""
 "Here are two example ``RETURN`` sections, one with three simple fields "
 "and one with a complex nested field::"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:401
+#: ../../rst/dev_guide/developing_modules_documenting.rst:435
 msgid "Python imports"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:403
+#: ../../rst/dev_guide/developing_modules_documenting.rst:437
 msgid ""
 "After the shebang, the UTF-8 coding, the copyright line, the license, and"
 " the sections for ``ANSIBLE_METADATA``, ``DOCUMENTATION``, ``EXAMPLES``, "
@@ -843,7 +871,7 @@ msgid ""
 "use Python imports in the form:"
 msgstr ""
 
-#: ../../rst/dev_guide/developing_modules_documenting.rst:409
+#: ../../rst/dev_guide/developing_modules_documenting.rst:443
 msgid ""
 "The use of \"wildcard\" imports such as ``from module_utils.basic import "
 "*`` is no longer allowed."
@@ -1048,5 +1076,19 @@ msgstr ""
 #~ " and ``RETURN``, you can finally add"
 #~ " the python imports. All modules must"
 #~ " use Python imports in the form:"
+#~ msgstr ""
+
+#~ msgid "If this option takes a dict, you can define its structure here."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "See :ref:`azure_rm_securitygroup_module`, "
+#~ ":ref:`os_ironic_node_module` for examples."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can find more examples by "
+#~ "searching for ``extends_documentation_fragment`` "
+#~ "under the Ansible source tree."
 #~ msgstr ""
 

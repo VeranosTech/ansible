@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:9
+msgid "gcp_compute_network_endpoint_group -- Creates a GCP NetworkEndpointGroup"
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:18
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:19
+msgid ""
+"Network endpoint groups (NEGs) are zonal resources that represent "
+"collections of IP address and port combinations for GCP resources within "
+"a single subnet. Each IP address and port combination is called a network"
+" endpoint."
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:20
+msgid ""
+"Network endpoint groups can be used as backends in backend services for "
+"HTTP(S), TCP proxy, and SSL proxy load balancers. You cannot use NEGs as "
+"a backend with internal load balancers. Because NEG backends allow you to"
+" specify IP addresses and ports, you can distribute traffic in a granular"
+" fashion among applications or containers running within VM instances."
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:25
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:26
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:28
+msgid "python >= 2.6"
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:29
+msgid "requests >= 2.18.4"
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:30
+msgid "google-auth >= 1.3.0"
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:34
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:260
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:263
+msgid ""
+"API Reference: "
+"https://cloud.google.com/compute/docs/reference/rest/beta/networkEndpointGroups"
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:264
+msgid "Official Documentation: https://cloud.google.com/load-balancing/docs/negs/"
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:265
+msgid ""
+"for authentication, you can set service_account_file using the "
+"c(gcp_service_account_file) env variable."
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:266
+msgid ""
+"for authentication, you can set service_account_contents using the "
+"c(GCP_SERVICE_ACCOUNT_CONTENTS) env variable."
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:267
+msgid ""
+"For authentication, you can set service_account_email using the "
+"``GCP_SERVICE_ACCOUNT_EMAIL`` env variable."
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:268
+msgid ""
+"For authentication, you can set auth_kind using the ``GCP_AUTH_KIND`` env"
+" variable."
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:269
+msgid ""
+"For authentication, you can set scopes using the ``GCP_SCOPES`` env "
+"variable."
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:270
+msgid ""
+"Environment variables values will only be used if the playbook values are"
+" not set."
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:271
+msgid ""
+"The *service_account_email* and *service_account_file* options are "
+"mutually exclusive."
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:276
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:319
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:320
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:435
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:440
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:443
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:450
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:452
+msgid "Google Inc. (@googlecloudplatform)"
+msgstr ""
+
+#: ../../rst/modules/gcp_compute_network_endpoint_group_module.rst:456
+#, python-format
+msgid ""
+"If you notice any issues in this documentation, you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/gcp_compute_network_endpoint_group.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

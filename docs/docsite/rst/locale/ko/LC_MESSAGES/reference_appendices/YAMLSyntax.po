@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:5
 msgid "YAML Syntax"
@@ -295,7 +295,7 @@ msgid "#ansible IRC chat channel and #yaml for YAML specific questions"
 msgstr ""
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:237
-msgid "`YAML 1.1 Specification <http://yaml.org/spec/1.1/>`_"
+msgid "`YAML 1.1 Specification <https://yaml.org/spec/1.1/>`_"
 msgstr ""
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:237
@@ -305,10 +305,16 @@ msgid ""
 msgstr ""
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:239
-msgid "`YAML 1.2 Specification <http://yaml.org/spec/1.2/spec.html>`_"
+msgid "`YAML 1.2 Specification <https://yaml.org/spec/1.2/spec.html>`_"
 msgstr ""
 
 #: ../../rst/reference_appendices/YAMLSyntax.rst:240
 msgid "For completeness, YAML 1.2 is the successor of 1.1"
 msgstr ""
+
+#~ msgid "`YAML 1.1 Specification <http://yaml.org/spec/1.1/>`_"
+#~ msgstr ""
+
+#~ msgid "`YAML 1.2 Specification <http://yaml.org/spec/1.2/spec.html>`_"
+#~ msgstr ""
 

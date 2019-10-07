@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/user_guide/playbooks_loops.rst:5
 msgid "Loops"
@@ -320,32 +320,39 @@ msgid ""
 "variable."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:321
+#: ../../rst/user_guide/playbooks_loops.rst:320
+msgid ""
+"This is for making console output more readable, not protecting sensitive"
+" data. If there is sensitive data in ``loop``, set ``no_log: yes`` on the"
+" task to prevent disclosure."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_loops.rst:323
 msgid "Pausing within a loop"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:324
+#: ../../rst/user_guide/playbooks_loops.rst:326
 msgid ""
 "To control the time (in seconds) between the execution of each item in a "
 "task loop, use the ``pause`` directive with ``loop_control``::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:338
+#: ../../rst/user_guide/playbooks_loops.rst:340
 msgid "Tracking progress through a loop with ``index_var``"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:341
+#: ../../rst/user_guide/playbooks_loops.rst:343
 msgid ""
 "To keep track of where you are in a loop, use the ``index_var`` directive"
 " with ``loop_control``. This directive specifies a variable name to "
 "contain the current loop index::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:354
+#: ../../rst/user_guide/playbooks_loops.rst:356
 msgid "Defining inner and outer variable names with ``loop_var``"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:357
+#: ../../rst/user_guide/playbooks_loops.rst:359
 msgid ""
 "You can nest two looping tasks using ``include_tasks``. However, by "
 "default Ansible sets the loop variable ``item`` for each loop. This means"
@@ -354,132 +361,132 @@ msgid ""
 "``loop_var`` with ``loop_control``::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:377
+#: ../../rst/user_guide/playbooks_loops.rst:379
 msgid ""
 "If Ansible detects that the current loop is using a variable which has "
 "already been defined, it will raise an error to fail the task."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:380
+#: ../../rst/user_guide/playbooks_loops.rst:382
 msgid "Extended loop variables"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:383
+#: ../../rst/user_guide/playbooks_loops.rst:385
 msgid ""
 "As of Ansible 2.8 you can get extended loop information using the "
 "``extended`` option to loop control. This option will expose the "
 "following information."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:386
+#: ../../rst/user_guide/playbooks_loops.rst:388
 msgid "Variable"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:386
+#: ../../rst/user_guide/playbooks_loops.rst:388
 msgid "Description"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:388
+#: ../../rst/user_guide/playbooks_loops.rst:390
 msgid "``ansible_loop.allitems``"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:388
+#: ../../rst/user_guide/playbooks_loops.rst:390
 msgid "The list of all items in the loop"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:389
+#: ../../rst/user_guide/playbooks_loops.rst:391
 msgid "``ansible_loop.index``"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:389
+#: ../../rst/user_guide/playbooks_loops.rst:391
 msgid "The current iteration of the loop. (1 indexed)"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:390
+#: ../../rst/user_guide/playbooks_loops.rst:392
 msgid "``ansible_loop.index0``"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:390
+#: ../../rst/user_guide/playbooks_loops.rst:392
 msgid "The current iteration of the loop. (0 indexed)"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:391
+#: ../../rst/user_guide/playbooks_loops.rst:393
 msgid "``ansible_loop.revindex``"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:391
+#: ../../rst/user_guide/playbooks_loops.rst:393
 msgid "The number of iterations from the end of the loop (1 indexed)"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:392
+#: ../../rst/user_guide/playbooks_loops.rst:394
 msgid "``ansible_loop.revindex0``"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:392
+#: ../../rst/user_guide/playbooks_loops.rst:394
 msgid "The number of iterations from the end of the loop (0 indexed)"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:393
+#: ../../rst/user_guide/playbooks_loops.rst:395
 msgid "``ansible_loop.first``"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:393
+#: ../../rst/user_guide/playbooks_loops.rst:395
 msgid "``True`` if first iteration"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:394
+#: ../../rst/user_guide/playbooks_loops.rst:396
 msgid "``ansible_loop.last``"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:394
+#: ../../rst/user_guide/playbooks_loops.rst:396
 msgid "``True`` if last iteration"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:395
+#: ../../rst/user_guide/playbooks_loops.rst:397
 msgid "``ansible_loop.length``"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:395
+#: ../../rst/user_guide/playbooks_loops.rst:397
 msgid "The number of items in the loop"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:396
+#: ../../rst/user_guide/playbooks_loops.rst:398
 msgid "``ansible_loop.previtem``"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:396
+#: ../../rst/user_guide/playbooks_loops.rst:398
 msgid ""
 "The item from the previous iteration of the loop. Undefined during the "
 "first iteration."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:397
+#: ../../rst/user_guide/playbooks_loops.rst:399
 msgid "``ansible_loop.nextitem``"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:397
+#: ../../rst/user_guide/playbooks_loops.rst:399
 msgid ""
 "The item from the following iteration of the loop. Undefined during the "
 "last iteration."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:406
+#: ../../rst/user_guide/playbooks_loops.rst:408
 msgid "Accessing the name of your loop_var"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:409
+#: ../../rst/user_guide/playbooks_loops.rst:411
 msgid ""
 "As of Ansible 2.8 you can get the name of the value provided to "
 "``loop_control.loop_var`` using the ``ansible_loop_var`` variable"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:411
+#: ../../rst/user_guide/playbooks_loops.rst:413
 msgid ""
 "For role authors, writing roles that allow loops, instead of dictating "
 "the required ``loop_var`` value, you can gather the value via::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:418
+#: ../../rst/user_guide/playbooks_loops.rst:420
 msgid "Migrating from with_X to loop"
 msgstr ""
 
@@ -593,59 +600,59 @@ msgid ""
 "without need of ``loop``."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:424
+#: ../../rst/user_guide/playbooks_loops.rst:426
 msgid ":ref:`about_playbooks`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:425
+#: ../../rst/user_guide/playbooks_loops.rst:427
 msgid "An introduction to playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:426
+#: ../../rst/user_guide/playbooks_loops.rst:428
 msgid ":ref:`playbooks_reuse_roles`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:427
+#: ../../rst/user_guide/playbooks_loops.rst:429
 msgid "Playbook organization by roles"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:428
+#: ../../rst/user_guide/playbooks_loops.rst:430
 msgid ":ref:`playbooks_best_practices`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:429
+#: ../../rst/user_guide/playbooks_loops.rst:431
 msgid "Best practices in playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:430
+#: ../../rst/user_guide/playbooks_loops.rst:432
 msgid ":ref:`playbooks_conditionals`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:431
+#: ../../rst/user_guide/playbooks_loops.rst:433
 msgid "Conditional statements in playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:432
+#: ../../rst/user_guide/playbooks_loops.rst:434
 msgid ":ref:`playbooks_variables`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:433
+#: ../../rst/user_guide/playbooks_loops.rst:435
 msgid "All about variables"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:434
+#: ../../rst/user_guide/playbooks_loops.rst:436
 msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:435
+#: ../../rst/user_guide/playbooks_loops.rst:437
 msgid "Have a question?  Stop by the google group!"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:436
+#: ../../rst/user_guide/playbooks_loops.rst:438
 msgid "`irc.freenode.net <http://irc.freenode.net>`_"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_loops.rst:437
+#: ../../rst/user_guide/playbooks_loops.rst:439
 msgid "#ansible IRC chat channel"
 msgstr ""
 

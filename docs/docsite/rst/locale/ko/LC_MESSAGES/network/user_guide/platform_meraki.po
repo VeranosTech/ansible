@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../rst/network/user_guide/platform_meraki.rst:5
+msgid "Meraki Platform Options"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_meraki.rst:7
+msgid "Meraki only support supports the ``local`` connection type at this time."
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_meraki.rst:9
+msgid "Topics"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_meraki.rst:12
+msgid "Connections Available"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_meraki.rst:18
+msgid "Dashboard API"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_meraki.rst:20
+msgid "Protocol"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_meraki.rst:20
+msgid "HTTP(S)"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_meraki.rst:22
+msgid "Credentials"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_meraki.rst:22
+msgid "uses API key from Dashboard"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_meraki.rst:24
+msgid "Connection Settings"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_meraki.rst:24
+msgid "``ansible_connection: localhost``"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_meraki.rst:26
+msgid "Returned Data Format"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_meraki.rst:26
+msgid "``data.``"
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_meraki.rst:31
+msgid "Example Meraki Task"
+msgstr ""
+

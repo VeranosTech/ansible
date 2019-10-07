@@ -1,0 +1,545 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../rst/dev_guide/developing_collections.rst:6
+msgid "Developing collections"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:9
+msgid ""
+"Collections are a distribution format for Ansible content. You can use "
+"collections to package and distribute playbooks, roles, modules, and "
+"plugins. You can publish and use collections through `Ansible Galaxy "
+"<https://galaxy.ansible.com>`_."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:19
+msgid "Collection structure"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:21
+msgid ""
+"Collections follow a simple data structure. None of the directories are "
+"required unless you have specific content that belongs in one of them. A "
+"collection does require a ``galaxy.yml`` file at the root level of the "
+"collection. This file contains all of the metadata that Galaxy and other "
+"tools need in order to package, build and publish the collection::"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:46
+msgid "Ansible only accepts ``.yml`` extensions for galaxy.yml."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:47
+msgid ""
+"See the `draft collection <https://github.com/bcoca/collection>`_ for an "
+"example of a full collection structure."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:48
+msgid ""
+"Not all directories are currently in use. Those are placeholders for "
+"future features."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:53
+msgid "galaxy.yml"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:55
+msgid ""
+"A collection must have a ``galaxy.yml`` file that contains the necessary "
+"information to build a collection artifact. See "
+":ref:`collections_galaxy_meta` for details."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:61
+msgid "docs directory"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:63
+msgid ""
+"Keep general documentation for the collection here. Plugins and modules "
+"still keep their specific documentation embedded as Python docstrings. "
+"Use the ``docs`` folder to describe how to use the roles and plugins the "
+"collection provides, role requirements, and so on. Currently we are "
+"looking at Markdown as the standard format for documentation files, but "
+"this is subject to change."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:65
+msgid "Use ``ansible-doc`` to view documentation for plugins inside a collection:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:71
+msgid ""
+"The ``ansible-doc`` command requires the fully qualified collection name "
+"(FQCN) to display specific plugin documentation. In this example, "
+"``my_namespace`` is the namespace and ``my_collection`` is the collection"
+" name within that namespace."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:73
+msgid ""
+"The Ansible collection namespace is defined in the ``galaxy.yml`` file "
+"and is not equivalent to the GitHub repository name."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:78
+msgid "plugins directory"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:80
+msgid ""
+"Add a 'per plugin type' specific subdirectory here, including "
+"``module_utils`` which is usable not only by modules, but by most plugins"
+" by using their FQCN. This is a way to distribute modules, lookups, "
+"filters, and so on, without having to import a role in every play."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:82
+msgid ""
+"Vars plugins are unsupported in collections. Cache plugins may be used in"
+" collections for fact caching, but are not supported for inventory "
+"plugins."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:85
+msgid "module_utils"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:87
+msgid ""
+"When coding with ``module_utils`` in a collection, the Python ``import`` "
+"statement needs to take into account the FQCN along with the "
+"``ansible_collections`` convention. The resulting Python import will look"
+" like ``from "
+"ansible_collections.{namespace}.{collection}.plugins.module_utils.{util} "
+"import {something}``"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:89
+msgid ""
+"The following example snippets show a Python and PowerShell module using "
+"both default Ansible ``module_utils`` and those provided by a collection."
+" In this example the namespace is ``ansible_example``, the collection is "
+"``community``. In the Python example the ``module_util`` in question is "
+"called ``qradar`` such that the FQCN is "
+"``ansible_example.community.plugins.module_utils.qradar``:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:119
+msgid ""
+"Note that importing something from an ``__init__.py`` file requires using"
+" the file name:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:125
+msgid ""
+"In the PowerShell example the ``module_util`` in question is called "
+"``hyperv`` such that the FCQN is "
+"``ansible_example.community.plugins.module_utils.hyperv``:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:147
+msgid "roles directory"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:149
+msgid ""
+"Collection roles are mostly the same as existing roles, but with a couple"
+" of limitations:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:151
+msgid ""
+"Role names are now limited to contain only lowercase alphanumeric "
+"characters, plus ``_`` and start with an alpha character."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:152
+msgid ""
+"Roles in a collection cannot contain plugins any more. Plugins must live "
+"in the collection ``plugins`` directory tree. Each plugin is accessible "
+"to all roles in the collection."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:154
+msgid ""
+"The directory name of the role is used as the role name. Therefore, the "
+"directory name must comply with the above role name rules. The collection"
+" import into Galaxy will fail if a role name does not comply with these "
+"rules."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:158
+msgid ""
+"You can migrate 'traditional roles' into a collection but they must "
+"follow the rules above. You may need to rename roles if they don't "
+"conform. You will have to move or link any role-based plugins to the "
+"collection specific directories."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:162
+msgid ""
+"For roles imported into Galaxy directly from a GitHub repository, setting"
+" the ``role_name`` value in the role's metadata overrides the role name "
+"used by Galaxy. For collections, that value is ignored. When importing a "
+"collection, Galaxy uses the role directory as the name of the role and "
+"ignores the ``role_name`` metadata value."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:167
+msgid "playbooks directory"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:169
+msgid "TBD."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:172
+msgid "tests directory"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:174
+msgid "TBD. Expect tests for the collection itself to reside here."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:180
+msgid "Creating collections"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:182
+msgid "To create a collection:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:184
+msgid ""
+"Initialize a collection with :ref:`ansible-galaxy collection "
+"init<creating_collections_skeleton>` to create the skeleton directory "
+"structure."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:185
+msgid "Add your content to the collection."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:186
+msgid ""
+"Build the collection into a collection artifact with :ref:`ansible-galaxy"
+" collection build<building_collections>`."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:187
+msgid ""
+"Publish the collection artifact to Galaxy with :ref:`ansible-galaxy "
+"collection publish<publishing_collections>`."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:189
+msgid "A user can then install your collection on their systems."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:191
+msgid ""
+"Currently the ``ansible-galaxy collection`` command implements the "
+"following sub commands:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:193
+msgid ""
+"``init``: Create a basic collection skeleton based on the default "
+"template included with Ansible or your own template."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:194
+msgid ""
+"``build``: Create a collection artifact that can be uploaded to Galaxy or"
+" your own repository."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:195
+msgid "``publish``: Publish a built collection artifact to Galaxy."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:196
+msgid "``install``: Install one or more collections."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:198
+msgid ""
+"To learn more about the ``ansible-galaxy`` cli tool, see the :ref"
+":`ansible-galaxy` man page."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:203
+msgid "Creating a collection skeleton"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:205
+msgid "To start a new collection:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:211
+msgid ""
+"Then you can populate the directories with the content you want inside "
+"the collection. See https://github.com/bcoca/collection to get a better "
+"idea of what you can place inside a collection."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:218
+msgid "Building collections"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:220
+msgid ""
+"To build a collection, run ``ansible-galaxy collection build`` from "
+"inside the root directory of the collection:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:226
+msgid ""
+"This creates a tarball of the built collection in the current directory "
+"which can be uploaded to Galaxy.::"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:237
+msgid ""
+"Certain files and folders are excluded when building the collection "
+"artifact. This is not currently configurable and is a work in progress so"
+" the collection artifact may contain files you would not wish to "
+"distribute."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:240
+msgid ""
+"This tarball is mainly intended to upload to Galaxy as a distribution "
+"method, but you can use it directly to install the collection on target "
+"systems."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:246
+msgid "Trying collection locally"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:248
+msgid ""
+"You can try your collection locally by installing it from the tarball. "
+"The following will enable an adjacent playbook to access the collection:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:256
+msgid ""
+"You should use one of the values configured in :ref:`COLLECTIONS_PATHS` "
+"for your path. This is also where Ansible itself will expect to find "
+"collections when attempting to use them. If you don't specify a path "
+"value, ``ansible-galaxy collection install`` installs the collection in "
+"the first path defined in :ref:`COLLECTIONS_PATHS`, which by default is "
+"``~/.ansible/collections``."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:260
+msgid ""
+"Next, try using the local collection inside a playbook. For examples and "
+"more details see :ref:`Using collections <using_collections>`"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:265
+msgid "Publishing collections"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:267
+msgid ""
+"You can publish collections to Galaxy using the ``ansible-galaxy "
+"collection publish`` command or the Galaxy UI itself."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:269
+msgid ""
+"Once you upload a version of a collection, you cannot delete or modify "
+"that version. Ensure that everything looks okay before you upload it."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:274
+msgid "Upload using ansible-galaxy"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:276
+msgid "To upload the collection artifact with the ``ansible-galaxy`` command:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:282
+msgid ""
+"The above command triggers an import process, just as if you uploaded the"
+" collection through the Galaxy website. The command waits until the "
+"import process completes before reporting the status back. If you wish to"
+" continue without waiting for the import result, use the ``--no-wait`` "
+"argument and manually look at the import progress in your `My Imports "
+"<https://galaxy.ansible.com/my-imports/>`_ page."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:287
+msgid ""
+"The API key is a secret token used by Ansible Galaxy to protect your "
+"content. You can find your API key at your `Galaxy profile preferences "
+"<https://galaxy.ansible.com/me/preferences>`_ page."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:293
+msgid "Upload a collection from the Galaxy website"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:295
+msgid "To upload your collection artifact directly on Galaxy:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:297
+msgid ""
+"Go to the `My Content <https://galaxy.ansible.com/my-"
+"content/namespaces>`_ page, and click the **Add Content** button on one "
+"of your namespaces."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:298
+msgid ""
+"From the **Add Content** dialogue, click **Upload New Collection**, and "
+"select the collection archive file from your local filesystem."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:300
+msgid ""
+"When uploading collections it doesn't matter which namespace you select. "
+"The collection will be uploaded to the namespace specified in the "
+"collection metadata in the ``galaxy.yml`` file. If you're not an owner of"
+" the namespace, the upload request will fail."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:304
+msgid ""
+"Once Galaxy uploads and accepts a collection, you will be redirected to "
+"the **My Imports** page, which displays output from the import process, "
+"including any errors or warnings about the metadata and content contained"
+" in the collection."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:310
+msgid "Collection versions"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:312
+msgid ""
+"Once you upload a version of a collection, you cannot delete or modify "
+"that version. Ensure that everything looks okay before uploading. The "
+"only way to change a collection is to release a new version. The latest "
+"version of a collection (by highest version number) will be the version "
+"displayed everywhere in Galaxy; however, users will still be able to "
+"download older versions."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:316
+msgid ""
+"Collection versions use `Sematic Versioning <https://semver.org/>`_ for "
+"version numbers. Please read the official documentation for details and "
+"examples. In summary:"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:318
+msgid ""
+"Increment major (for example: x in `x.y.z`) version number for an "
+"incompatible API change."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:319
+msgid ""
+"Increment minor (for example: y in `x.y.z`) version number for new "
+"functionality in a backwards compatible manner."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:320
+msgid ""
+"Increment patch (for example: z in `x.y.z`) version number for backwards "
+"compatible bug fixes."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:325
+msgid "Migrating Ansible content to a collection"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:327
+msgid ""
+"You can experiment with migrating existing modules into a collection "
+"using the `content_collector tool "
+"<https://github.com/ansible/content_collector>`_. The "
+"``content_collector`` is a playbook that helps you migrate content from "
+"an Ansible distribution into a collection."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:331
+msgid ""
+"This tool is in active development and is provided only for "
+"experimentation and feedback at this point."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:333
+msgid ""
+"See the `content_collector README "
+"<https://github.com/ansible/content_collector>`_ for full details and "
+"usage guidelines."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:337
+msgid ":ref:`collections`"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:338
+msgid "Learn how to install and use collections."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:339
+msgid ":ref:`collections_galaxy_meta`"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:340
+msgid "Understand the collections metadata structure."
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:341
+msgid ":ref:`developing_modules_general`"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:342
+msgid "Learn about how to write Ansible modules"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:343
+msgid "`Mailing List <https://groups.google.com/group/ansible-devel>`_"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:344
+msgid "The development mailing list"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:345
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/dev_guide/developing_collections.rst:346
+msgid "#ansible IRC chat channel"
+msgstr ""
+

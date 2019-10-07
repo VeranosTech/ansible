@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/plugins/inventory/aws_ec2.rst:8
 msgid "aws_ec2 -- EC2 inventory source"
@@ -70,37 +70,44 @@ msgstr ""
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/plugins/inventory/aws_ec2.rst:527
+#: ../../rst/plugins/inventory/aws_ec2.rst:531
 msgid "Status"
 msgstr ""
 
-#: ../../rst/plugins/inventory/aws_ec2.rst:532
+#: ../../rst/plugins/inventory/aws_ec2.rst:536
 msgid ""
 "This inventory is not guaranteed to have a backwards compatible "
 "interface. *[preview]*"
 msgstr ""
 
-#: ../../rst/plugins/inventory/aws_ec2.rst:535
+#: ../../rst/plugins/inventory/aws_ec2.rst:539
 msgid ""
 "This inventory is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/plugins/inventory/aws_ec2.rst:542
+#: ../../rst/plugins/inventory/aws_ec2.rst:546
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/plugins/inventory/aws_ec2.rst:544
+#: ../../rst/plugins/inventory/aws_ec2.rst:548
 msgid "Sloane Hertel (@s-hertel)"
 msgstr ""
 
-#: ../../rst/plugins/inventory/aws_ec2.rst:548
+#: ../../rst/plugins/inventory/aws_ec2.rst:552
 #, python-format
 msgid ""
 "If you notice any issues in this documentation, you can `edit this "
 "document "
 "<https://github.com/ansible/ansible/edit/devel/lib/ansible/plugins/inventory/aws_ec2.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
+msgstr ""
+
+#: ../../rst/plugins/inventory/aws_ec2.rst:556
+msgid ""
+"Configuration entries for each entry type have a low to high priority "
+"order. For example, a variable that is lower in the list will override a "
+"variable that is higher up."
 msgstr ""
 
 #~ msgid "aws_ec2 -- ec2 inventory source"

@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/modules/network_maintained.rst:7
 msgid "Modules Maintained by the Ansible Network Team"
@@ -27,7 +27,7 @@ msgid "Network"
 msgstr ""
 
 #: ../../rst/modules/network_maintained.rst:36
-msgid "Checkpoint"
+msgid "Check_Point"
 msgstr ""
 
 #: ../../rst/modules/network_maintained.rst:38
@@ -775,290 +775,286 @@ msgid ":ref:`nxos_pim_rp_address_module`"
 msgstr ""
 
 #: ../../rst/modules/network_maintained.rst:296
-msgid ":ref:`nxos_ping_module`"
-msgstr ""
-
-#: ../../rst/modules/network_maintained.rst:297
 msgid ":ref:`nxos_reboot_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:298
+#: ../../rst/modules/network_maintained.rst:297
 msgid ":ref:`nxos_rollback_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:299
+#: ../../rst/modules/network_maintained.rst:298
 msgid ":ref:`nxos_rpm_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:300
+#: ../../rst/modules/network_maintained.rst:299
 msgid ":ref:`nxos_smu_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:301
+#: ../../rst/modules/network_maintained.rst:300
 msgid ":ref:`nxos_snapshot_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:302
+#: ../../rst/modules/network_maintained.rst:301
 msgid ":ref:`nxos_snmp_community_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:303
+#: ../../rst/modules/network_maintained.rst:302
 msgid ":ref:`nxos_snmp_contact_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:304
+#: ../../rst/modules/network_maintained.rst:303
 msgid ":ref:`nxos_snmp_host_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:305
+#: ../../rst/modules/network_maintained.rst:304
 msgid ":ref:`nxos_snmp_location_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:306
+#: ../../rst/modules/network_maintained.rst:305
 msgid ":ref:`nxos_snmp_traps_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:307
+#: ../../rst/modules/network_maintained.rst:306
 msgid ":ref:`nxos_snmp_user_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:308
+#: ../../rst/modules/network_maintained.rst:307
 msgid ":ref:`nxos_static_route_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:309
+#: ../../rst/modules/network_maintained.rst:308
 msgid ":ref:`nxos_system_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:310
+#: ../../rst/modules/network_maintained.rst:309
 msgid ":ref:`nxos_telemetry_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:311
+#: ../../rst/modules/network_maintained.rst:310
 msgid ":ref:`nxos_udld_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:312
+#: ../../rst/modules/network_maintained.rst:311
 msgid ":ref:`nxos_udld_interface_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:313
+#: ../../rst/modules/network_maintained.rst:312
 msgid ":ref:`nxos_user_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:314
+#: ../../rst/modules/network_maintained.rst:313
 msgid ":ref:`nxos_vlan_module` **(D)**"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:315
+#: ../../rst/modules/network_maintained.rst:314
 msgid ":ref:`nxos_vlans_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:316
+#: ../../rst/modules/network_maintained.rst:315
 msgid ":ref:`nxos_vpc_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:317
+#: ../../rst/modules/network_maintained.rst:316
 msgid ":ref:`nxos_vpc_interface_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:318
+#: ../../rst/modules/network_maintained.rst:317
 msgid ":ref:`nxos_vrf_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:319
+#: ../../rst/modules/network_maintained.rst:318
 msgid ":ref:`nxos_vrf_af_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:320
+#: ../../rst/modules/network_maintained.rst:319
 msgid ":ref:`nxos_vrf_interface_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:321
+#: ../../rst/modules/network_maintained.rst:320
 msgid ":ref:`nxos_vrrp_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:322
+#: ../../rst/modules/network_maintained.rst:321
 msgid ":ref:`nxos_vtp_domain_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:323
+#: ../../rst/modules/network_maintained.rst:322
 msgid ":ref:`nxos_vtp_password_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:324
+#: ../../rst/modules/network_maintained.rst:323
 msgid ":ref:`nxos_vtp_version_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:325
+#: ../../rst/modules/network_maintained.rst:324
 msgid ":ref:`nxos_vxlan_vtep_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:326
+#: ../../rst/modules/network_maintained.rst:325
 msgid ":ref:`nxos_vxlan_vtep_vni_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:332
+#: ../../rst/modules/network_maintained.rst:331
 msgid "Ovs"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:334
+#: ../../rst/modules/network_maintained.rst:333
 msgid ":ref:`openvswitch_bridge_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:335
+#: ../../rst/modules/network_maintained.rst:334
 msgid ":ref:`openvswitch_db_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:336
+#: ../../rst/modules/network_maintained.rst:335
 msgid ":ref:`openvswitch_port_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:342
+#: ../../rst/modules/network_maintained.rst:341
 msgid "Protocol"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:344
+#: ../../rst/modules/network_maintained.rst:343
 msgid ":ref:`net_lldp_module` **(D)**"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:350
+#: ../../rst/modules/network_maintained.rst:349
 msgid "Restconf"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:352
+#: ../../rst/modules/network_maintained.rst:351
 msgid ":ref:`restconf_config_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:353
+#: ../../rst/modules/network_maintained.rst:352
 msgid ":ref:`restconf_get_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:359
+#: ../../rst/modules/network_maintained.rst:358
 msgid "Routing"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:361
+#: ../../rst/modules/network_maintained.rst:360
 msgid ":ref:`net_static_route_module` **(D)**"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:367
+#: ../../rst/modules/network_maintained.rst:366
 msgid "Skydive"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:369
+#: ../../rst/modules/network_maintained.rst:368
 msgid ":ref:`skydive_capture_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:370
+#: ../../rst/modules/network_maintained.rst:369
 msgid ":ref:`skydive_edge_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:371
+#: ../../rst/modules/network_maintained.rst:370
 msgid ":ref:`skydive_node_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:377
+#: ../../rst/modules/network_maintained.rst:376
 msgid "System"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:379
+#: ../../rst/modules/network_maintained.rst:378
 msgid ":ref:`net_banner_module` **(D)**"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:380
+#: ../../rst/modules/network_maintained.rst:379
 msgid ":ref:`net_logging_module` **(D)**"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:381
+#: ../../rst/modules/network_maintained.rst:380
 msgid ":ref:`net_system_module` **(D)**"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:382
+#: ../../rst/modules/network_maintained.rst:381
 msgid ":ref:`net_user_module` **(D)**"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:388
+#: ../../rst/modules/network_maintained.rst:387
 msgid "Vyos"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:390
+#: ../../rst/modules/network_maintained.rst:389
 msgid ":ref:`vyos_banner_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:391
+#: ../../rst/modules/network_maintained.rst:390
 msgid ":ref:`vyos_command_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:392
+#: ../../rst/modules/network_maintained.rst:391
 msgid ":ref:`vyos_config_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:393
+#: ../../rst/modules/network_maintained.rst:392
 msgid ":ref:`vyos_facts_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:394
+#: ../../rst/modules/network_maintained.rst:393
 msgid ":ref:`vyos_interface_module` **(D)**"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:395
+#: ../../rst/modules/network_maintained.rst:394
 msgid ":ref:`vyos_interfaces_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:396
+#: ../../rst/modules/network_maintained.rst:395
 msgid ":ref:`vyos_l3_interface_module` **(D)**"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:397
+#: ../../rst/modules/network_maintained.rst:396
 msgid ":ref:`vyos_l3_interfaces_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:398
+#: ../../rst/modules/network_maintained.rst:397
 msgid ":ref:`vyos_lag_interfaces_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:399
+#: ../../rst/modules/network_maintained.rst:398
 msgid ":ref:`vyos_linkagg_module` **(D)**"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:400
+#: ../../rst/modules/network_maintained.rst:399
 msgid ":ref:`vyos_lldp_module` **(D)**"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:401
+#: ../../rst/modules/network_maintained.rst:400
 msgid ":ref:`vyos_lldp_global_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:402
+#: ../../rst/modules/network_maintained.rst:401
 msgid ":ref:`vyos_lldp_interface_module` **(D)**"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:403
+#: ../../rst/modules/network_maintained.rst:402
 msgid ":ref:`vyos_lldp_interfaces_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:404
+#: ../../rst/modules/network_maintained.rst:403
 msgid ":ref:`vyos_logging_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:405
+#: ../../rst/modules/network_maintained.rst:404
 msgid ":ref:`vyos_static_route_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:406
+#: ../../rst/modules/network_maintained.rst:405
 msgid ":ref:`vyos_system_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:407
+#: ../../rst/modules/network_maintained.rst:406
 msgid ":ref:`vyos_user_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:408
+#: ../../rst/modules/network_maintained.rst:407
 msgid ":ref:`vyos_vlan_module`"
 msgstr ""
 
-#: ../../rst/modules/network_maintained.rst:413
+#: ../../rst/modules/network_maintained.rst:412
 msgid ""
 "**(D)**: This marks a module as deprecated, which means a module is kept "
 "for backwards compatibility but usage is discouraged. The module "
@@ -1207,5 +1203,11 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ":ref:`vyos_lldp_interface_module`"
+#~ msgstr ""
+
+#~ msgid "Checkpoint"
+#~ msgstr ""
+
+#~ msgid ":ref:`nxos_ping_module`"
 #~ msgstr ""
 

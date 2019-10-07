@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/user_guide/playbooks_variables.rst:5
 msgid "Using Variables"
@@ -1316,7 +1316,7 @@ msgid "List of special variables"
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_variables.rst:1232
-msgid "`User Mailing List <http://groups.google.com/group/ansible-devel>`_"
+msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_variables.rst:1233
@@ -1353,5 +1353,8 @@ msgstr ""
 #~ "over all other places where "
 #~ "``ansible_user`` (or ``ansible_ssh_user``, or "
 #~ "``remote_user``) might be set."
+#~ msgstr ""
+
+#~ msgid "`User Mailing List <http://groups.google.com/group/ansible-devel>`_"
 #~ msgstr ""
 

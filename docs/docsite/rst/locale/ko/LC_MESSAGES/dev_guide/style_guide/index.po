@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/dev_guide/style_guide/index.rst:5
 msgid "Ansible style guide"
@@ -150,61 +150,90 @@ msgid ""
 "title is ``Header case``, not ``Header Case`` or ``HEADER CASE``."
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:52
+#: ../../rst/dev_guide/style_guide/index.rst:53
+msgid "Avoid using Latin phrases"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/index.rst:55
+msgid ""
+"Latin words and phrases like ``e.g.`` or ``etc.`` are easily understood "
+"by English speakers. They may be harder to understand for others and are "
+"also tricky for automated translation."
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/index.rst:59
+msgid ""
+"Use the following English terms in place of Latin terms or abbreviations:"
+" +-------------------------------+------------------------------+ | Latin"
+"                         | English                      | "
+"+===============================+==============================+ | i.e"
+"                           | in other words               | "
+"+-------------------------------+------------------------------+ | e.g."
+"                          | for example                  | "
+"+-------------------------------+------------------------------+ | etc"
+"                           | and so on                    | "
+"+-------------------------------+------------------------------+ | via"
+"                           | by/ through                  | "
+"+-------------------------------+------------------------------+ | "
+"vs./versus                    | rather than/against          | "
+"+-------------------------------+------------------------------+"
+msgstr ""
+
+#: ../../rst/dev_guide/style_guide/index.rst:76
 msgid "reStructuredText guidelines"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:54
+#: ../../rst/dev_guide/style_guide/index.rst:78
 msgid ""
 "The Ansible documentation is written in reStructuredText and processed by"
 " Sphinx. We follow these technical or mechanical guidelines on all rST "
 "pages:"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:58
+#: ../../rst/dev_guide/style_guide/index.rst:82
 msgid "Header notation"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:60
+#: ../../rst/dev_guide/style_guide/index.rst:84
 msgid ""
-"`Section headers in reStructuredText <http://www.sphinx-"
+"`Section headers in reStructuredText <https://www.sphinx-"
 "doc.org/en/master/usage/restructuredtext/basics.html#sections>`_ can use "
 "a variety of notations. Sphinx will 'learn on the fly' when creating a "
 "hierarchy of headers. To make our documents easy to read and to edit, we "
 "follow a standard set of header notations. We use:"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:66
+#: ../../rst/dev_guide/style_guide/index.rst:90
 msgid "``###`` with overline, for parts:"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:74
+#: ../../rst/dev_guide/style_guide/index.rst:98
 msgid "``***`` with overline, for chapters:"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:82
+#: ../../rst/dev_guide/style_guide/index.rst:106
 msgid "``===`` for sections:"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:89
+#: ../../rst/dev_guide/style_guide/index.rst:113
 msgid "``---`` for subsections:"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:96
+#: ../../rst/dev_guide/style_guide/index.rst:120
 msgid "``^^^`` for sub-subsections:"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:103
+#: ../../rst/dev_guide/style_guide/index.rst:127
 msgid "``\"\"\"`` for paragraphs:"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:112
+#: ../../rst/dev_guide/style_guide/index.rst:136
 msgid "Internal navigation"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:114
+#: ../../rst/dev_guide/style_guide/index.rst:138
 msgid ""
-"`Anchors (also called labels) and links <http://www.sphinx-"
+"`Anchors (also called labels) and links <https://www.sphinx-"
 "doc.org/en/master/usage/restructuredtext/roles.html#ref-role>`_ work "
 "together to help users find related content. Local tables of contents "
 "also help users navigate quickly to the information they need. All "
@@ -213,114 +242,114 @@ msgid ""
 "pages with multiple levels of headers, can also include a local TOC."
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:122
+#: ../../rst/dev_guide/style_guide/index.rst:146
 msgid "Adding anchors"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:124
+#: ../../rst/dev_guide/style_guide/index.rst:148
 msgid "Include at least one anchor on every page"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:125
+#: ../../rst/dev_guide/style_guide/index.rst:149
 msgid "Place the main anchor above the main header"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:126
+#: ../../rst/dev_guide/style_guide/index.rst:150
 msgid "If the file has a unique title, use that for the main page anchor::"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:130
+#: ../../rst/dev_guide/style_guide/index.rst:154
 msgid "You may also add anchors elsewhere on the page"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:133
+#: ../../rst/dev_guide/style_guide/index.rst:157
 msgid "Adding internal links"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:135
+#: ../../rst/dev_guide/style_guide/index.rst:159
 msgid ""
 "All internal links must use ``:ref:`` syntax. These links both point to "
 "the anchor defined above:"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:142
+#: ../../rst/dev_guide/style_guide/index.rst:166
 msgid "The second example adds custom text for the link."
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:145
+#: ../../rst/dev_guide/style_guide/index.rst:169
 msgid "Adding links to modules and plugins"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:147
+#: ../../rst/dev_guide/style_guide/index.rst:171
 msgid "Module links use the module name followed by ``_module`` for the anchor."
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:148
+#: ../../rst/dev_guide/style_guide/index.rst:172
 msgid ""
 "Plugin links use the plugin name followed by the plugin type. For "
 "example, :ref:`enable become plugin <enable_become>`)."
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:156
+#: ../../rst/dev_guide/style_guide/index.rst:180
 msgid "Adding local TOCs"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:158
+#: ../../rst/dev_guide/style_guide/index.rst:182
 msgid ""
 "The page you're reading includes a `local TOC "
 "<http://docutils.sourceforge.net/docs/ref/rst/directives.html#table-of-"
 "contents>`_. If you include a local TOC:"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:161
+#: ../../rst/dev_guide/style_guide/index.rst:185
 msgid ""
 "place it below, not above, the main heading and (optionally) introductory"
 " text"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:162
+#: ../../rst/dev_guide/style_guide/index.rst:186
 msgid "use the ``:local:`` directive so the page's main header is not included"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:163
+#: ../../rst/dev_guide/style_guide/index.rst:187
 msgid "do not include a title"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:165
+#: ../../rst/dev_guide/style_guide/index.rst:189
 msgid "The syntax is:"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:173
+#: ../../rst/dev_guide/style_guide/index.rst:197
 msgid "More resources"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:175
+#: ../../rst/dev_guide/style_guide/index.rst:199
 msgid ""
 "These pages offer more help with grammatical, stylistic, and technical "
 "rules for documentation."
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:189
+#: ../../rst/dev_guide/style_guide/index.rst:213
 msgid ":ref:`community_documentation_contributions`"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:190
+#: ../../rst/dev_guide/style_guide/index.rst:214
 msgid "How to contribute to the Ansible documentation"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:191
+#: ../../rst/dev_guide/style_guide/index.rst:215
 msgid ":ref:`testing_documentation_locally`"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:192
+#: ../../rst/dev_guide/style_guide/index.rst:216
 msgid "How to build the Ansible documentation"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:193
+#: ../../rst/dev_guide/style_guide/index.rst:217
 msgid "`irc.freenode.net <http://irc.freenode.net>`_"
 msgstr ""
 
-#: ../../rst/dev_guide/style_guide/index.rst:194
+#: ../../rst/dev_guide/style_guide/index.rst:218
 msgid "#ansible-docs IRC chat channel"
 msgstr ""
 
@@ -349,5 +378,35 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "The syntax is::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Section headers in reStructuredText "
+#~ "<http://www.sphinx-"
+#~ "doc.org/en/master/usage/restructuredtext/basics.html#sections>`_ "
+#~ "can use a variety of notations. "
+#~ "Sphinx will 'learn on the fly' "
+#~ "when creating a hierarchy of headers."
+#~ " To make our documents easy to "
+#~ "read and to edit, we follow a "
+#~ "standard set of header notations. We "
+#~ "use:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`Anchors (also called labels) and links"
+#~ " <http://www.sphinx-"
+#~ "doc.org/en/master/usage/restructuredtext/roles.html#ref-role>`_"
+#~ " work together to help users find "
+#~ "related content. Local tables of "
+#~ "contents also help users navigate "
+#~ "quickly to the information they need."
+#~ " All internal links should use the"
+#~ " ``:ref:`` syntax. Every page should "
+#~ "have at least one anchor to "
+#~ "support internal ``:ref:`` links. Long "
+#~ "pages, or pages with multiple levels "
+#~ "of headers, can also include a "
+#~ "local TOC."
 #~ msgstr ""
 

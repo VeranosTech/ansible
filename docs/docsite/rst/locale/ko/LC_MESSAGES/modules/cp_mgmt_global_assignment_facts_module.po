@@ -8,19 +8,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible devel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/modules/cp_mgmt_global_assignment_facts_module.rst:9
 msgid ""
 "cp_mgmt_global_assignment_facts -- Get global-assignment objects facts on"
-" Checkpoint over Web Services API"
+" Check Point over Web Services API"
 msgstr ""
 
 #: ../../rst/modules/cp_mgmt_global_assignment_facts_module.rst:19
@@ -28,7 +28,7 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/cp_mgmt_global_assignment_facts_module.rst:20
-msgid "Get global-assignment objects facts on Checkpoint devices."
+msgid "Get global-assignment objects facts on Check Point devices."
 msgstr ""
 
 #: ../../rst/modules/cp_mgmt_global_assignment_facts_module.rst:21
@@ -78,7 +78,24 @@ msgstr ""
 msgid ""
 "If you notice any issues in this documentation, you can `edit this "
 "document "
-"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/checkpoint/cp_mgmt_global_assignment_facts.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/check_point/cp_mgmt_global_assignment_facts.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
 " to improve it."
 msgstr ""
+
+#~ msgid ""
+#~ "cp_mgmt_global_assignment_facts -- Get global-"
+#~ "assignment objects facts on Checkpoint "
+#~ "over Web Services API"
+#~ msgstr ""
+
+#~ msgid "Get global-assignment objects facts on Checkpoint devices."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you notice any issues in this"
+#~ " documentation, you can `edit this "
+#~ "document "
+#~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/network/checkpoint/cp_mgmt_global_assignment_facts.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
+#~ " to improve it."
+#~ msgstr ""
 

@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/reference_appendices/config.rst:5
 msgid "Ansible Configuration Settings"
@@ -221,18 +221,18 @@ msgstr ""
 #: ../../rst/reference_appendices/config.rst:1595
 #: ../../rst/reference_appendices/config.rst:1644
 #: ../../rst/reference_appendices/config.rst:1657
-#: ../../rst/reference_appendices/config.rst:1681
-#: ../../rst/reference_appendices/config.rst:1765
-#: ../../rst/reference_appendices/config.rst:1789
-#: ../../rst/reference_appendices/config.rst:1830
-#: ../../rst/reference_appendices/config.rst:1844
-#: ../../rst/reference_appendices/config.rst:1978
-#: ../../rst/reference_appendices/config.rst:2026
-#: ../../rst/reference_appendices/config.rst:2038
-#: ../../rst/reference_appendices/config.rst:2049
-#: ../../rst/reference_appendices/config.rst:2208
-#: ../../rst/reference_appendices/config.rst:2246
-#: ../../rst/reference_appendices/config.rst:2272
+#: ../../rst/reference_appendices/config.rst:1694
+#: ../../rst/reference_appendices/config.rst:1778
+#: ../../rst/reference_appendices/config.rst:1802
+#: ../../rst/reference_appendices/config.rst:1843
+#: ../../rst/reference_appendices/config.rst:1857
+#: ../../rst/reference_appendices/config.rst:1991
+#: ../../rst/reference_appendices/config.rst:2039
+#: ../../rst/reference_appendices/config.rst:2051
+#: ../../rst/reference_appendices/config.rst:2062
+#: ../../rst/reference_appendices/config.rst:2221
+#: ../../rst/reference_appendices/config.rst:2259
+#: ../../rst/reference_appendices/config.rst:2285
 msgid "boolean"
 msgstr ""
 
@@ -249,13 +249,13 @@ msgstr ""
 #: ../../rst/reference_appendices/config.rst:1547
 #: ../../rst/reference_appendices/config.rst:1596
 #: ../../rst/reference_appendices/config.rst:1658
-#: ../../rst/reference_appendices/config.rst:1766
-#: ../../rst/reference_appendices/config.rst:1790
-#: ../../rst/reference_appendices/config.rst:1831
-#: ../../rst/reference_appendices/config.rst:1979
-#: ../../rst/reference_appendices/config.rst:2050
-#: ../../rst/reference_appendices/config.rst:2209
-#: ../../rst/reference_appendices/config.rst:2247
+#: ../../rst/reference_appendices/config.rst:1779
+#: ../../rst/reference_appendices/config.rst:1803
+#: ../../rst/reference_appendices/config.rst:1844
+#: ../../rst/reference_appendices/config.rst:1992
+#: ../../rst/reference_appendices/config.rst:2063
+#: ../../rst/reference_appendices/config.rst:2222
+#: ../../rst/reference_appendices/config.rst:2260
 msgid "True"
 msgstr ""
 
@@ -266,9 +266,9 @@ msgstr ""
 #: ../../rst/reference_appendices/config.rst:101
 #: ../../rst/reference_appendices/config.rst:114
 #: ../../rst/reference_appendices/config.rst:1646
-#: ../../rst/reference_appendices/config.rst:1791
-#: ../../rst/reference_appendices/config.rst:2222
+#: ../../rst/reference_appendices/config.rst:1804
 #: ../../rst/reference_appendices/config.rst:2235
+#: ../../rst/reference_appendices/config.rst:2248
 msgid "2.5"
 msgstr ""
 
@@ -371,30 +371,30 @@ msgstr ""
 #: ../../rst/reference_appendices/config.rst:1647
 #: ../../rst/reference_appendices/config.rst:1659
 #: ../../rst/reference_appendices/config.rst:1671
-#: ../../rst/reference_appendices/config.rst:1767
-#: ../../rst/reference_appendices/config.rst:1792
-#: ../../rst/reference_appendices/config.rst:1804
-#: ../../rst/reference_appendices/config.rst:1833
-#: ../../rst/reference_appendices/config.rst:1939
-#: ../../rst/reference_appendices/config.rst:1953
-#: ../../rst/reference_appendices/config.rst:1981
-#: ../../rst/reference_appendices/config.rst:1993
-#: ../../rst/reference_appendices/config.rst:2015
-#: ../../rst/reference_appendices/config.rst:2029
-#: ../../rst/reference_appendices/config.rst:2111
-#: ../../rst/reference_appendices/config.rst:2126
-#: ../../rst/reference_appendices/config.rst:2137
-#: ../../rst/reference_appendices/config.rst:2149
-#: ../../rst/reference_appendices/config.rst:2161
-#: ../../rst/reference_appendices/config.rst:2173
+#: ../../rst/reference_appendices/config.rst:1780
+#: ../../rst/reference_appendices/config.rst:1805
+#: ../../rst/reference_appendices/config.rst:1817
+#: ../../rst/reference_appendices/config.rst:1846
+#: ../../rst/reference_appendices/config.rst:1952
+#: ../../rst/reference_appendices/config.rst:1966
+#: ../../rst/reference_appendices/config.rst:1994
+#: ../../rst/reference_appendices/config.rst:2006
+#: ../../rst/reference_appendices/config.rst:2028
+#: ../../rst/reference_appendices/config.rst:2042
+#: ../../rst/reference_appendices/config.rst:2124
+#: ../../rst/reference_appendices/config.rst:2139
+#: ../../rst/reference_appendices/config.rst:2150
+#: ../../rst/reference_appendices/config.rst:2162
+#: ../../rst/reference_appendices/config.rst:2174
 #: ../../rst/reference_appendices/config.rst:2186
-#: ../../rst/reference_appendices/config.rst:2210
-#: ../../rst/reference_appendices/config.rst:2249
+#: ../../rst/reference_appendices/config.rst:2199
+#: ../../rst/reference_appendices/config.rst:2223
 #: ../../rst/reference_appendices/config.rst:2262
-#: ../../rst/reference_appendices/config.rst:2274
+#: ../../rst/reference_appendices/config.rst:2275
 #: ../../rst/reference_appendices/config.rst:2287
 #: ../../rst/reference_appendices/config.rst:2300
-#: ../../rst/reference_appendices/config.rst:2312
+#: ../../rst/reference_appendices/config.rst:2313
+#: ../../rst/reference_appendices/config.rst:2325
 msgid "defaults"
 msgstr ""
 
@@ -419,7 +419,7 @@ msgid "AGNOSTIC_BECOME_PROMPT"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:111
-#: ../../rst/reference_appendices/config.rst:2440
+#: ../../rst/reference_appendices/config.rst:2453
 msgid ""
 "Display an agnostic become prompt instead of displaying a prompt "
 "containing the command line supplied become method"
@@ -483,17 +483,17 @@ msgstr ""
 #: ../../rst/reference_appendices/config.rst:1559
 #: ../../rst/reference_appendices/config.rst:1583
 #: ../../rst/reference_appendices/config.rst:1645
-#: ../../rst/reference_appendices/config.rst:1682
-#: ../../rst/reference_appendices/config.rst:1845
+#: ../../rst/reference_appendices/config.rst:1695
 #: ../../rst/reference_appendices/config.rst:1858
-#: ../../rst/reference_appendices/config.rst:1926
-#: ../../rst/reference_appendices/config.rst:1967
-#: ../../rst/reference_appendices/config.rst:2027
-#: ../../rst/reference_appendices/config.rst:2039
-#: ../../rst/reference_appendices/config.rst:2148
-#: ../../rst/reference_appendices/config.rst:2172
-#: ../../rst/reference_appendices/config.rst:2273
-#: ../../rst/reference_appendices/config.rst:2298
+#: ../../rst/reference_appendices/config.rst:1871
+#: ../../rst/reference_appendices/config.rst:1939
+#: ../../rst/reference_appendices/config.rst:1980
+#: ../../rst/reference_appendices/config.rst:2040
+#: ../../rst/reference_appendices/config.rst:2052
+#: ../../rst/reference_appendices/config.rst:2161
+#: ../../rst/reference_appendices/config.rst:2185
+#: ../../rst/reference_appendices/config.rst:2286
+#: ../../rst/reference_appendices/config.rst:2311
 msgid "False"
 msgstr ""
 
@@ -525,11 +525,11 @@ msgstr ""
 #: ../../rst/reference_appendices/config.rst:1062
 #: ../../rst/reference_appendices/config.rst:1211
 #: ../../rst/reference_appendices/config.rst:1522
-#: ../../rst/reference_appendices/config.rst:1693
-#: ../../rst/reference_appendices/config.rst:1752
-#: ../../rst/reference_appendices/config.rst:2097
-#: ../../rst/reference_appendices/config.rst:2121
-#: ../../rst/reference_appendices/config.rst:2159
+#: ../../rst/reference_appendices/config.rst:1706
+#: ../../rst/reference_appendices/config.rst:1765
+#: ../../rst/reference_appendices/config.rst:2110
+#: ../../rst/reference_appendices/config.rst:2134
+#: ../../rst/reference_appendices/config.rst:2172
 msgid "path"
 msgstr ""
 
@@ -547,11 +547,12 @@ msgstr ""
 #: ../../rst/reference_appendices/config.rst:1320
 #: ../../rst/reference_appendices/config.rst:1477
 #: ../../rst/reference_appendices/config.rst:1523
-#: ../../rst/reference_appendices/config.rst:1694
-#: ../../rst/reference_appendices/config.rst:1741
-#: ../../rst/reference_appendices/config.rst:2003
-#: ../../rst/reference_appendices/config.rst:2122
-#: ../../rst/reference_appendices/config.rst:2160
+#: ../../rst/reference_appendices/config.rst:1682
+#: ../../rst/reference_appendices/config.rst:1707
+#: ../../rst/reference_appendices/config.rst:1754
+#: ../../rst/reference_appendices/config.rst:2016
+#: ../../rst/reference_appendices/config.rst:2135
+#: ../../rst/reference_appendices/config.rst:2173
 msgid "None"
 msgstr ""
 
@@ -559,23 +560,23 @@ msgstr ""
 #: ../../rst/reference_appendices/config.rst:320
 #: ../../rst/reference_appendices/config.rst:558
 #: ../../rst/reference_appendices/config.rst:1621
-#: ../../rst/reference_appendices/config.rst:1778
-#: ../../rst/reference_appendices/config.rst:1803
-#: ../../rst/reference_appendices/config.rst:1814
-#: ../../rst/reference_appendices/config.rst:1822
-#: ../../rst/reference_appendices/config.rst:2028
-#: ../../rst/reference_appendices/config.rst:2136
-#: ../../rst/reference_appendices/config.rst:2185
-#: ../../rst/reference_appendices/config.rst:2261
-#: ../../rst/reference_appendices/config.rst:2299
+#: ../../rst/reference_appendices/config.rst:1791
+#: ../../rst/reference_appendices/config.rst:1816
+#: ../../rst/reference_appendices/config.rst:1827
+#: ../../rst/reference_appendices/config.rst:1835
+#: ../../rst/reference_appendices/config.rst:2041
+#: ../../rst/reference_appendices/config.rst:2149
+#: ../../rst/reference_appendices/config.rst:2198
+#: ../../rst/reference_appendices/config.rst:2274
+#: ../../rst/reference_appendices/config.rst:2312
 msgid "2.8"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:140
-#: ../../rst/reference_appendices/config.rst:2063
-#: ../../rst/reference_appendices/config.rst:2075
-#: ../../rst/reference_appendices/config.rst:2087
-#: ../../rst/reference_appendices/config.rst:2099
+#: ../../rst/reference_appendices/config.rst:2076
+#: ../../rst/reference_appendices/config.rst:2088
+#: ../../rst/reference_appendices/config.rst:2100
+#: ../../rst/reference_appendices/config.rst:2112
 msgid "persistent_connection"
 msgstr ""
 
@@ -592,7 +593,7 @@ msgid "ANSIBLE_COW_PATH"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:149
-#: ../../rst/reference_appendices/config.rst:2371
+#: ../../rst/reference_appendices/config.rst:2384
 msgid ""
 "Specify a custom cowsay path or swap in your cowsay implementation of "
 "choice"
@@ -601,8 +602,8 @@ msgstr ""
 #: ../../rst/reference_appendices/config.rst:150
 #: ../../rst/reference_appendices/config.rst:915
 #: ../../rst/reference_appendices/config.rst:1631
-#: ../../rst/reference_appendices/config.rst:2183
-#: ../../rst/reference_appendices/config.rst:2259
+#: ../../rst/reference_appendices/config.rst:2196
+#: ../../rst/reference_appendices/config.rst:2272
 msgid "string"
 msgstr ""
 
@@ -619,7 +620,7 @@ msgid "ANSIBLE_COW_SELECTION"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:161
-#: ../../rst/reference_appendices/config.rst:2336
+#: ../../rst/reference_appendices/config.rst:2349
 msgid ""
 "This allows you to chose a specific cowsay stencil for the banners or use"
 " 'random' to cycle through them."
@@ -628,7 +629,7 @@ msgstr ""
 #: ../../rst/reference_appendices/config.rst:162
 #: ../../rst/reference_appendices/config.rst:1331
 #: ../../rst/reference_appendices/config.rst:1499
-#: ../../rst/reference_appendices/config.rst:2124
+#: ../../rst/reference_appendices/config.rst:2137
 msgid "default"
 msgstr ""
 
@@ -645,7 +646,7 @@ msgid "ANSIBLE_COW_WHITELIST"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:172
-#: ../../rst/reference_appendices/config.rst:2343
+#: ../../rst/reference_appendices/config.rst:2356
 msgid ""
 "White list of cowsay templates that are 'safe' to use, set to empty list "
 "if you want to enable all installed templates."
@@ -660,17 +661,17 @@ msgstr ""
 #: ../../rst/reference_appendices/config.rst:1304
 #: ../../rst/reference_appendices/config.rst:1510
 #: ../../rst/reference_appendices/config.rst:1669
-#: ../../rst/reference_appendices/config.rst:1705
-#: ../../rst/reference_appendices/config.rst:1728
-#: ../../rst/reference_appendices/config.rst:1913
-#: ../../rst/reference_appendices/config.rst:1937
-#: ../../rst/reference_appendices/config.rst:1951
-#: ../../rst/reference_appendices/config.rst:2013
-#: ../../rst/reference_appendices/config.rst:2196
-#: ../../rst/reference_appendices/config.rst:2220
+#: ../../rst/reference_appendices/config.rst:1718
+#: ../../rst/reference_appendices/config.rst:1741
+#: ../../rst/reference_appendices/config.rst:1926
+#: ../../rst/reference_appendices/config.rst:1950
+#: ../../rst/reference_appendices/config.rst:1964
+#: ../../rst/reference_appendices/config.rst:2026
+#: ../../rst/reference_appendices/config.rst:2209
 #: ../../rst/reference_appendices/config.rst:2233
-#: ../../rst/reference_appendices/config.rst:2284
-#: ../../rst/reference_appendices/config.rst:2310
+#: ../../rst/reference_appendices/config.rst:2246
+#: ../../rst/reference_appendices/config.rst:2297
+#: ../../rst/reference_appendices/config.rst:2323
 msgid "list"
 msgstr ""
 
@@ -696,7 +697,7 @@ msgid "ANSIBLE_FORCE_COLOR"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:184
-#: ../../rst/reference_appendices/config.rst:2350
+#: ../../rst/reference_appendices/config.rst:2363
 msgid ""
 "This options forces color mode even when running without a TTY or the "
 "\"nocolor\" setting is True."
@@ -715,7 +716,7 @@ msgid "ANSIBLE_NOCOLOR"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:196
-#: ../../rst/reference_appendices/config.rst:2357
+#: ../../rst/reference_appendices/config.rst:2370
 msgid ""
 "This setting allows suppressing colorizing output, which is used to give "
 "a better indication of failure and status information."
@@ -734,7 +735,7 @@ msgid "ANSIBLE_NOCOWS"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:208
-#: ../../rst/reference_appendices/config.rst:2364
+#: ../../rst/reference_appendices/config.rst:2377
 msgid ""
 "If you have cowsay installed but want to avoid the 'cows' (why????), use "
 "this."
@@ -859,7 +860,7 @@ msgid "~/.ansible/cp"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:260
-#: ../../rst/reference_appendices/config.rst:2100
+#: ../../rst/reference_appendices/config.rst:2113
 msgid "control_path_dir"
 msgstr ""
 
@@ -901,7 +902,7 @@ msgid "ANSIBLE_SSH_RETRIES"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:280
-#: ../../rst/reference_appendices/config.rst:2419
+#: ../../rst/reference_appendices/config.rst:2432
 msgid ""
 "Number of attempts to establish a connection before we give up and report"
 " the host as 'UNREACHABLE'"
@@ -916,14 +917,14 @@ msgstr ""
 #: ../../rst/reference_appendices/config.rst:1429
 #: ../../rst/reference_appendices/config.rst:1534
 #: ../../rst/reference_appendices/config.rst:1570
-#: ../../rst/reference_appendices/config.rst:2073
-#: ../../rst/reference_appendices/config.rst:2085
+#: ../../rst/reference_appendices/config.rst:2086
+#: ../../rst/reference_appendices/config.rst:2098
 msgid "integer"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:282
 #: ../../rst/reference_appendices/config.rst:1535
-#: ../../rst/reference_appendices/config.rst:2135
+#: ../../rst/reference_appendices/config.rst:2148
 msgid "0"
 msgstr ""
 
@@ -940,14 +941,14 @@ msgid "ANY_ERRORS_FATAL"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:292
-#: ../../rst/reference_appendices/config.rst:2426
+#: ../../rst/reference_appendices/config.rst:2439
 msgid ""
 "Sets the default value for the any_errors_fatal keyword, if True, Task "
 "failures will be considered fatal errors."
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:295
-#: ../../rst/reference_appendices/config.rst:2286
+#: ../../rst/reference_appendices/config.rst:2299
 msgid "2.4"
 msgstr ""
 
@@ -964,7 +965,7 @@ msgid "BECOME_ALLOW_SAME_USER"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:305
-#: ../../rst/reference_appendices/config.rst:2433
+#: ../../rst/reference_appendices/config.rst:2446
 msgid ""
 "This setting controls if become is skipped when remote user and become "
 "user are the same. I.E root sudo to root."
@@ -983,7 +984,7 @@ msgid "BECOME_PLUGIN_PATH"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:317
-#: ../../rst/reference_appendices/config.rst:2686
+#: ../../rst/reference_appendices/config.rst:2699
 msgid "Colon separated paths in which Ansible will search for Become Plugins."
 msgstr ""
 
@@ -1027,7 +1028,7 @@ msgid "CACHE_PLUGIN"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:330
-#: ../../rst/reference_appendices/config.rst:2447
+#: ../../rst/reference_appendices/config.rst:2460
 msgid "Chooses which cache plugin to use, the default 'memory' is ephimeral."
 msgstr ""
 
@@ -1048,7 +1049,7 @@ msgid "CACHE_PLUGIN_CONNECTION"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:341
-#: ../../rst/reference_appendices/config.rst:2454
+#: ../../rst/reference_appendices/config.rst:2467
 msgid "Defines connection or path information for the cache plugin"
 msgstr ""
 
@@ -1065,12 +1066,12 @@ msgid "CACHE_PLUGIN_PREFIX"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:352
-#: ../../rst/reference_appendices/config.rst:2461
+#: ../../rst/reference_appendices/config.rst:2474
 msgid "Prefix to use for cache plugin files/tables"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:353
-#: ../../rst/reference_appendices/config.rst:1891
+#: ../../rst/reference_appendices/config.rst:1904
 msgid "ansible_facts"
 msgstr ""
 
@@ -1087,7 +1088,7 @@ msgid "CACHE_PLUGIN_TIMEOUT"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:363
-#: ../../rst/reference_appendices/config.rst:2468
+#: ../../rst/reference_appendices/config.rst:2481
 msgid "Expiration timeout for the cache plugin data"
 msgstr ""
 
@@ -1108,7 +1109,7 @@ msgid "COLLECTIONS_PATHS"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:375
-#: ../../rst/reference_appendices/config.rst:2475
+#: ../../rst/reference_appendices/config.rst:2488
 msgid ""
 "Colon separated paths in which Ansible will search for collections "
 "content."
@@ -1131,7 +1132,7 @@ msgid "COLOR_CHANGED"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:387
-#: ../../rst/reference_appendices/config.rst:2482
+#: ../../rst/reference_appendices/config.rst:2495
 msgid "Defines the color to use on 'Changed' task status"
 msgstr ""
 
@@ -1169,7 +1170,7 @@ msgid "COLOR_CONSOLE_PROMPT"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:398
-#: ../../rst/reference_appendices/config.rst:2489
+#: ../../rst/reference_appendices/config.rst:2502
 msgid "Defines the default color to use for ansible-console"
 msgstr ""
 
@@ -1180,9 +1181,9 @@ msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:400
 #: ../../rst/reference_appendices/config.rst:988
-#: ../../rst/reference_appendices/config.rst:1832
-#: ../../rst/reference_appendices/config.rst:1846
-#: ../../rst/reference_appendices/config.rst:2248
+#: ../../rst/reference_appendices/config.rst:1845
+#: ../../rst/reference_appendices/config.rst:1859
+#: ../../rst/reference_appendices/config.rst:2261
 msgid "2.7"
 msgstr ""
 
@@ -1199,7 +1200,7 @@ msgid "COLOR_DEBUG"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:410
-#: ../../rst/reference_appendices/config.rst:2496
+#: ../../rst/reference_appendices/config.rst:2509
 msgid "Defines the color to use when emitting debug messages"
 msgstr ""
 
@@ -1221,7 +1222,7 @@ msgid "COLOR_DEPRECATE"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:421
-#: ../../rst/reference_appendices/config.rst:2503
+#: ../../rst/reference_appendices/config.rst:2516
 msgid "Defines the color to use when emitting deprecation messages"
 msgstr ""
 
@@ -1242,7 +1243,7 @@ msgid "COLOR_DIFF_ADD"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:432
-#: ../../rst/reference_appendices/config.rst:2510
+#: ../../rst/reference_appendices/config.rst:2523
 msgid "Defines the color to use when showing added lines in diffs"
 msgstr ""
 
@@ -1264,7 +1265,7 @@ msgid "COLOR_DIFF_LINES"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:443
-#: ../../rst/reference_appendices/config.rst:2517
+#: ../../rst/reference_appendices/config.rst:2530
 msgid "Defines the color to use when showing diffs"
 msgstr ""
 
@@ -1286,7 +1287,7 @@ msgid "COLOR_DIFF_REMOVE"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:454
-#: ../../rst/reference_appendices/config.rst:2524
+#: ../../rst/reference_appendices/config.rst:2537
 msgid "Defines the color to use when showing removed lines in diffs"
 msgstr ""
 
@@ -1308,7 +1309,7 @@ msgid "COLOR_ERROR"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:465
-#: ../../rst/reference_appendices/config.rst:2531
+#: ../../rst/reference_appendices/config.rst:2544
 msgid "Defines the color to use when emitting error messages"
 msgstr ""
 
@@ -1325,7 +1326,7 @@ msgid "COLOR_HIGHLIGHT"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:476
-#: ../../rst/reference_appendices/config.rst:2538
+#: ../../rst/reference_appendices/config.rst:2551
 msgid "Defines the color to use for highlighting"
 msgstr ""
 
@@ -1342,7 +1343,7 @@ msgid "COLOR_OK"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:487
-#: ../../rst/reference_appendices/config.rst:2545
+#: ../../rst/reference_appendices/config.rst:2558
 msgid "Defines the color to use when showing 'OK' task status"
 msgstr ""
 
@@ -1359,12 +1360,12 @@ msgid "COLOR_SKIP"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:498
-#: ../../rst/reference_appendices/config.rst:2552
+#: ../../rst/reference_appendices/config.rst:2565
 msgid "Defines the color to use when showing 'Skipped' task status"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:501
-#: ../../rst/reference_appendices/config.rst:2237
+#: ../../rst/reference_appendices/config.rst:2250
 msgid "skip"
 msgstr ""
 
@@ -1377,7 +1378,7 @@ msgid "COLOR_UNREACHABLE"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:509
-#: ../../rst/reference_appendices/config.rst:2559
+#: ../../rst/reference_appendices/config.rst:2572
 msgid "Defines the color to use on 'Unreachable' status"
 msgstr ""
 
@@ -1398,7 +1399,7 @@ msgid "COLOR_VERBOSE"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:520
-#: ../../rst/reference_appendices/config.rst:2566
+#: ../../rst/reference_appendices/config.rst:2579
 msgid ""
 "Defines the color to use when emitting verbose messages. i.e those that "
 "show with '-v's."
@@ -1421,7 +1422,7 @@ msgid "COLOR_WARN"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:531
-#: ../../rst/reference_appendices/config.rst:2573
+#: ../../rst/reference_appendices/config.rst:2586
 msgid "Defines the color to use when emitting warning messages"
 msgstr ""
 
@@ -1431,7 +1432,7 @@ msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:534
 #: ../../rst/reference_appendices/config.rst:1632
-#: ../../rst/reference_appendices/config.rst:2184
+#: ../../rst/reference_appendices/config.rst:2197
 msgid "warn"
 msgstr ""
 
@@ -1495,7 +1496,7 @@ msgid "CONNECTION_FACTS_MODULES"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:568
-#: ../../rst/reference_appendices/config.rst:3234
+#: ../../rst/reference_appendices/config.rst:3247
 msgid ""
 "Which modules to run during a play's fact gathering stage based on "
 "connection"
@@ -1539,8 +1540,8 @@ msgstr ""
 #: ../../rst/reference_appendices/config.rst:583
 #: ../../rst/reference_appendices/config.rst:594
 #: ../../rst/reference_appendices/config.rst:1633
-#: ../../rst/reference_appendices/config.rst:1730
-#: ../../rst/reference_appendices/config.rst:1754
+#: ../../rst/reference_appendices/config.rst:1743
+#: ../../rst/reference_appendices/config.rst:1767
 msgid "2.9"
 msgstr ""
 
@@ -1570,7 +1571,7 @@ msgid "DEFAULT_ACTION_PLUGIN_PATH"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:602
-#: ../../rst/reference_appendices/config.rst:2629
+#: ../../rst/reference_appendices/config.rst:2642
 msgid "Colon separated paths in which Ansible will search for Action Plugins."
 msgstr ""
 
@@ -1616,7 +1617,7 @@ msgid "DEFAULT_ASK_PASS"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:626
-#: ../../rst/reference_appendices/config.rst:2637
+#: ../../rst/reference_appendices/config.rst:2650
 msgid ""
 "This controls whether an Ansible playbook should prompt for a login "
 "password. If using SSH keys for authentication, you probably do not "
@@ -1636,7 +1637,7 @@ msgid "DEFAULT_ASK_VAULT_PASS"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:638
-#: ../../rst/reference_appendices/config.rst:2644
+#: ../../rst/reference_appendices/config.rst:2657
 msgid ""
 "This controls whether an Ansible playbook should prompt for a vault "
 "password."
@@ -1655,7 +1656,7 @@ msgid "DEFAULT_BECOME"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:650
-#: ../../rst/reference_appendices/config.rst:2651
+#: ../../rst/reference_appendices/config.rst:2664
 msgid ""
 "Toggles the use of privilege escalation, allowing you to 'become' another"
 " user after login."
@@ -1674,7 +1675,7 @@ msgid "DEFAULT_BECOME_ASK_PASS"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:662
-#: ../../rst/reference_appendices/config.rst:2658
+#: ../../rst/reference_appendices/config.rst:2671
 msgid "Toggle to prompt for privilege escalation password."
 msgstr ""
 
@@ -1691,7 +1692,7 @@ msgid "DEFAULT_BECOME_EXE"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:674
-#: ../../rst/reference_appendices/config.rst:2672
+#: ../../rst/reference_appendices/config.rst:2685
 msgid ""
 "executable to use for privilege escalation, otherwise Ansible will depend"
 " on PATH"
@@ -1710,7 +1711,7 @@ msgid "DEFAULT_BECOME_FLAGS"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:685
-#: ../../rst/reference_appendices/config.rst:2679
+#: ../../rst/reference_appendices/config.rst:2692
 msgid "Flags to pass to the privilege escalation executable."
 msgstr ""
 
@@ -1727,7 +1728,7 @@ msgid "DEFAULT_BECOME_METHOD"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:696
-#: ../../rst/reference_appendices/config.rst:2665
+#: ../../rst/reference_appendices/config.rst:2678
 msgid "Privilege escalation method to use when `become` is enabled."
 msgstr ""
 
@@ -1748,7 +1749,7 @@ msgid "DEFAULT_BECOME_USER"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:707
-#: ../../rst/reference_appendices/config.rst:2693
+#: ../../rst/reference_appendices/config.rst:2706
 msgid ""
 "The user your login/remote user 'becomes' when using privilege "
 "escalation, most systems will use 'root' when no user is specified."
@@ -1771,7 +1772,7 @@ msgid "DEFAULT_CACHE_PLUGIN_PATH"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:718
-#: ../../rst/reference_appendices/config.rst:2700
+#: ../../rst/reference_appendices/config.rst:2713
 msgid "Colon separated paths in which Ansible will search for Cache Plugins."
 msgstr ""
 
@@ -1792,7 +1793,7 @@ msgid "DEFAULT_CALLABLE_WHITELIST"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:730
-#: ../../rst/reference_appendices/config.rst:2707
+#: ../../rst/reference_appendices/config.rst:2720
 msgid "Whitelist of callable methods to be made available to template evaluation"
 msgstr ""
 
@@ -1801,9 +1802,9 @@ msgstr ""
 #: ../../rst/reference_appendices/config.rst:975
 #: ../../rst/reference_appendices/config.rst:1051
 #: ../../rst/reference_appendices/config.rst:1511
-#: ../../rst/reference_appendices/config.rst:1952
-#: ../../rst/reference_appendices/config.rst:2221
+#: ../../rst/reference_appendices/config.rst:1965
 #: ../../rst/reference_appendices/config.rst:2234
+#: ../../rst/reference_appendices/config.rst:2247
 msgid "[]"
 msgstr ""
 
@@ -1820,7 +1821,7 @@ msgid "DEFAULT_CALLBACK_PLUGIN_PATH"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:742
-#: ../../rst/reference_appendices/config.rst:2714
+#: ../../rst/reference_appendices/config.rst:2727
 msgid "Colon separated paths in which Ansible will search for Callback Plugins."
 msgstr ""
 
@@ -1841,7 +1842,7 @@ msgid "DEFAULT_CALLBACK_WHITELIST"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:754
-#: ../../rst/reference_appendices/config.rst:2721
+#: ../../rst/reference_appendices/config.rst:2734
 msgid ""
 "List of whitelisted callbacks, not all callbacks need whitelisting, but "
 "many of those shipped with Ansible do as we don't want them activated by "
@@ -1861,7 +1862,7 @@ msgid "DEFAULT_CLICONF_PLUGIN_PATH"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:766
-#: ../../rst/reference_appendices/config.rst:2728
+#: ../../rst/reference_appendices/config.rst:2741
 msgid "Colon separated paths in which Ansible will search for Cliconf Plugins."
 msgstr ""
 
@@ -1882,7 +1883,7 @@ msgid "DEFAULT_CONNECTION_PLUGIN_PATH"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:778
-#: ../../rst/reference_appendices/config.rst:2735
+#: ../../rst/reference_appendices/config.rst:2748
 msgid "Colon separated paths in which Ansible will search for Connection Plugins."
 msgstr ""
 
@@ -1903,7 +1904,7 @@ msgid "DEFAULT_DEBUG"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:790
-#: ../../rst/reference_appendices/config.rst:2742
+#: ../../rst/reference_appendices/config.rst:2755
 msgid ""
 "Toggles debug output in Ansible. This is *very* verbose and can hinder "
 "multiprocessing.  Debug output can also include secret information "
@@ -1920,7 +1921,7 @@ msgid "DEFAULT_EXECUTABLE"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:802
-#: ../../rst/reference_appendices/config.rst:2749
+#: ../../rst/reference_appendices/config.rst:2762
 msgid ""
 "This indicates the command to use to spawn a shell under for Ansible's "
 "execution needs on a target. Users may need to change this in rare "
@@ -1966,7 +1967,7 @@ msgid "DEFAULT_FILTER_PLUGIN_PATH"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:825
-#: ../../rst/reference_appendices/config.rst:2763
+#: ../../rst/reference_appendices/config.rst:2776
 msgid ""
 "Colon separated paths in which Ansible will search for Jinja2 Filter "
 "Plugins."
@@ -2013,7 +2014,7 @@ msgid "DEFAULT_FORKS"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:850
-#: ../../rst/reference_appendices/config.rst:2777
+#: ../../rst/reference_appendices/config.rst:2790
 msgid "Maximum number of forks Ansible will use to execute tasks on target hosts."
 msgstr ""
 
@@ -2114,7 +2115,7 @@ msgid "DEFAULT_HANDLER_INCLUDES_STATIC"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:899
-#: ../../rst/reference_appendices/config.rst:2805
+#: ../../rst/reference_appendices/config.rst:2818
 msgid ""
 "Since 2.0 M(include) can be 'dynamic', this setting (if True) forces that"
 " if the include appears in a ``handlers`` section to be 'static'."
@@ -2194,7 +2195,7 @@ msgid "DEFAULT_HOST_LIST"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:926
-#: ../../rst/reference_appendices/config.rst:2819
+#: ../../rst/reference_appendices/config.rst:2832
 msgid "Comma separated list of Ansible inventory sources"
 msgstr ""
 
@@ -2207,18 +2208,18 @@ msgid "/etc/ansible/hosts"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:930
-#: ../../rst/reference_appendices/config.rst:1779
-#: ../../rst/reference_appendices/config.rst:1847
-#: ../../rst/reference_appendices/config.rst:1859
-#: ../../rst/reference_appendices/config.rst:1870
-#: ../../rst/reference_appendices/config.rst:1881
-#: ../../rst/reference_appendices/config.rst:1892
-#: ../../rst/reference_appendices/config.rst:1903
-#: ../../rst/reference_appendices/config.rst:1915
-#: ../../rst/reference_appendices/config.rst:1927
-#: ../../rst/reference_appendices/config.rst:1941
-#: ../../rst/reference_appendices/config.rst:1955
+#: ../../rst/reference_appendices/config.rst:1792
+#: ../../rst/reference_appendices/config.rst:1860
+#: ../../rst/reference_appendices/config.rst:1872
+#: ../../rst/reference_appendices/config.rst:1883
+#: ../../rst/reference_appendices/config.rst:1894
+#: ../../rst/reference_appendices/config.rst:1905
+#: ../../rst/reference_appendices/config.rst:1916
+#: ../../rst/reference_appendices/config.rst:1928
+#: ../../rst/reference_appendices/config.rst:1940
+#: ../../rst/reference_appendices/config.rst:1954
 #: ../../rst/reference_appendices/config.rst:1968
+#: ../../rst/reference_appendices/config.rst:1981
 msgid "inventory"
 msgstr ""
 
@@ -2231,7 +2232,7 @@ msgid "DEFAULT_HTTPAPI_PLUGIN_PATH"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:938
-#: ../../rst/reference_appendices/config.rst:2826
+#: ../../rst/reference_appendices/config.rst:2839
 msgid "Colon separated paths in which Ansible will search for HttpApi Plugins."
 msgstr ""
 
@@ -2278,7 +2279,7 @@ msgid "DEFAULT_INVENTORY_PLUGIN_PATH"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:962
-#: ../../rst/reference_appendices/config.rst:2834
+#: ../../rst/reference_appendices/config.rst:2847
 msgid "Colon separated paths in which Ansible will search for Inventory Plugins."
 msgstr ""
 
@@ -2318,7 +2319,7 @@ msgid "DEFAULT_JINJA2_NATIVE"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:985
-#: ../../rst/reference_appendices/config.rst:2848
+#: ../../rst/reference_appendices/config.rst:2861
 msgid ""
 "This option preserves variable types during template operations. This "
 "requires Jinja2 >= 2.10."
@@ -2356,8 +2357,8 @@ msgid "DEFAULT_LIBVIRT_LXC_NOSECLABEL"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1010
-#: ../../rst/reference_appendices/config.rst:2862
-#: ../../rst/reference_appendices/config.rst:2868
+#: ../../rst/reference_appendices/config.rst:2875
+#: ../../rst/reference_appendices/config.rst:2881
 msgid ""
 "This setting causes libvirt to connect to lxc containers by passing "
 "--noseclabel to virsh. This is necessary when running on systems which do"
@@ -2386,7 +2387,7 @@ msgid "DEFAULT_LOAD_CALLBACK_PLUGINS"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1024
-#: ../../rst/reference_appendices/config.rst:2875
+#: ../../rst/reference_appendices/config.rst:2888
 msgid ""
 "Controls whether callback plugins are loaded when running "
 "/usr/bin/ansible. This may be used to log activity from the command line,"
@@ -2407,7 +2408,7 @@ msgid "DEFAULT_LOCAL_TMP"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1037
-#: ../../rst/reference_appendices/config.rst:2882
+#: ../../rst/reference_appendices/config.rst:2895
 msgid "Temporary directory for Ansible to use on the controller."
 msgstr ""
 
@@ -2432,7 +2433,7 @@ msgid "DEFAULT_LOG_FILTER"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1049
-#: ../../rst/reference_appendices/config.rst:2896
+#: ../../rst/reference_appendices/config.rst:2909
 msgid "List of logger names to filter out of the log file"
 msgstr ""
 
@@ -2449,7 +2450,7 @@ msgid "DEFAULT_LOG_PATH"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1061
-#: ../../rst/reference_appendices/config.rst:2889
+#: ../../rst/reference_appendices/config.rst:2902
 msgid ""
 "File to which Ansible will log on the controller. When empty logging is "
 "disabled."
@@ -2468,7 +2469,7 @@ msgid "DEFAULT_LOOKUP_PLUGIN_PATH"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1073
-#: ../../rst/reference_appendices/config.rst:2903
+#: ../../rst/reference_appendices/config.rst:2916
 msgid "Colon separated paths in which Ansible will search for Lookup Plugins."
 msgstr ""
 
@@ -2508,7 +2509,7 @@ msgid "DEFAULT_MODULE_ARGS"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1095
-#: ../../rst/reference_appendices/config.rst:2911
+#: ../../rst/reference_appendices/config.rst:2924
 msgid ""
 "This sets the default arguments to pass to the ``ansible`` adhoc binary "
 "if no ``-a`` is specified."
@@ -2561,7 +2562,7 @@ msgid "DEFAULT_MODULE_PATH"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1126
-#: ../../rst/reference_appendices/config.rst:2920
+#: ../../rst/reference_appendices/config.rst:2933
 msgid "Colon separated paths in which Ansible will search for Modules."
 msgstr ""
 
@@ -2582,7 +2583,7 @@ msgid "DEFAULT_MODULE_UTILS_PATH"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1138
-#: ../../rst/reference_appendices/config.rst:2927
+#: ../../rst/reference_appendices/config.rst:2940
 msgid ""
 "Colon separated paths in which Ansible will search for Module utils "
 "files, which are shared by modules."
@@ -2605,7 +2606,7 @@ msgid "DEFAULT_NETCONF_PLUGIN_PATH"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1150
-#: ../../rst/reference_appendices/config.rst:2934
+#: ../../rst/reference_appendices/config.rst:2947
 msgid "Colon separated paths in which Ansible will search for Netconf Plugins."
 msgstr ""
 
@@ -2626,7 +2627,7 @@ msgid "DEFAULT_NO_LOG"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1162
-#: ../../rst/reference_appendices/config.rst:2941
+#: ../../rst/reference_appendices/config.rst:2954
 msgid ""
 "Toggle Ansible's display and logging of task details, mainly used to "
 "avoid security disclosures."
@@ -2645,7 +2646,7 @@ msgid "DEFAULT_NO_TARGET_SYSLOG"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1174
-#: ../../rst/reference_appendices/config.rst:2948
+#: ../../rst/reference_appendices/config.rst:2961
 msgid "Toggle Ansible logging to syslog on the target when it executes tasks."
 msgstr ""
 
@@ -2662,7 +2663,7 @@ msgid "DEFAULT_NULL_REPRESENTATION"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1186
-#: ../../rst/reference_appendices/config.rst:2955
+#: ../../rst/reference_appendices/config.rst:2968
 msgid ""
 "What templating should return as a 'null' value. When not set it will let"
 " Jinja2 decide."
@@ -2685,7 +2686,7 @@ msgid "DEFAULT_POLL_INTERVAL"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1198
-#: ../../rst/reference_appendices/config.rst:2962
+#: ../../rst/reference_appendices/config.rst:2975
 msgid ""
 "For asynchronous tasks in Ansible (covered in Asynchronous Actions and "
 "Polling), this is how often to check back on the status of those tasks "
@@ -2696,7 +2697,7 @@ msgid ""
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1200
-#: ../../rst/reference_appendices/config.rst:2074
+#: ../../rst/reference_appendices/config.rst:2087
 msgid "15"
 msgstr ""
 
@@ -2713,7 +2714,7 @@ msgid "DEFAULT_PRIVATE_KEY_FILE"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1210
-#: ../../rst/reference_appendices/config.rst:2969
+#: ../../rst/reference_appendices/config.rst:2982
 msgid ""
 "Option for connections using a certificate or key file to authenticate, "
 "rather than an agent or passwords, you can set the default value here to "
@@ -2752,7 +2753,7 @@ msgid "DEFAULT_REMOTE_PORT"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1234
-#: ../../rst/reference_appendices/config.rst:2983
+#: ../../rst/reference_appendices/config.rst:2996
 msgid ""
 "Port to use in remote connections, when blank it will use the connection "
 "plugin default."
@@ -2790,7 +2791,7 @@ msgid "DEFAULT_ROLES_PATH"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1257
-#: ../../rst/reference_appendices/config.rst:2997
+#: ../../rst/reference_appendices/config.rst:3010
 msgid "Colon separated paths in which Ansible will search for Roles."
 msgstr ""
 
@@ -2914,7 +2915,7 @@ msgid "DEFAULT_SSH_TRANSFER_METHOD"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1319
-#: ../../rst/reference_appendices/config.rst:3031
+#: ../../rst/reference_appendices/config.rst:3044
 msgid "unused?"
 msgstr ""
 
@@ -2950,7 +2951,7 @@ msgid "DEFAULT_STRATEGY"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1341
-#: ../../rst/reference_appendices/config.rst:3059
+#: ../../rst/reference_appendices/config.rst:3072
 msgid "Set the default strategy used for plays."
 msgstr ""
 
@@ -2975,7 +2976,7 @@ msgid "DEFAULT_STRATEGY_PLUGIN_PATH"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1353
-#: ../../rst/reference_appendices/config.rst:3066
+#: ../../rst/reference_appendices/config.rst:3079
 msgid "Colon separated paths in which Ansible will search for Strategy Plugins."
 msgstr ""
 
@@ -2996,7 +2997,7 @@ msgid "DEFAULT_SU"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1365
-#: ../../rst/reference_appendices/config.rst:3073
+#: ../../rst/reference_appendices/config.rst:3086
 msgid "Toggle the use of \"su\" for tasks."
 msgstr ""
 
@@ -3013,7 +3014,7 @@ msgid "DEFAULT_SYSLOG_FACILITY"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1377
-#: ../../rst/reference_appendices/config.rst:3080
+#: ../../rst/reference_appendices/config.rst:3093
 msgid "Syslog facility to use when Ansible logs to the remote target"
 msgstr ""
 
@@ -3034,7 +3035,7 @@ msgid "DEFAULT_TASK_INCLUDES_STATIC"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1388
-#: ../../rst/reference_appendices/config.rst:3087
+#: ../../rst/reference_appendices/config.rst:3100
 msgid ""
 "The `include` tasks can be static or dynamic, this toggles the default "
 "expected behaviour if autodetection fails and it is not explicitly set in"
@@ -3060,7 +3061,7 @@ msgid "DEFAULT_TERMINAL_PLUGIN_PATH"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1404
-#: ../../rst/reference_appendices/config.rst:3094
+#: ../../rst/reference_appendices/config.rst:3107
 msgid "Colon separated paths in which Ansible will search for Terminal Plugins."
 msgstr ""
 
@@ -3081,7 +3082,7 @@ msgid "DEFAULT_TEST_PLUGIN_PATH"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1416
-#: ../../rst/reference_appendices/config.rst:3101
+#: ../../rst/reference_appendices/config.rst:3114
 msgid ""
 "Colon separated paths in which Ansible will search for Jinja2 Test "
 "Plugins."
@@ -3104,7 +3105,7 @@ msgid "DEFAULT_TIMEOUT"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1428
-#: ../../rst/reference_appendices/config.rst:3108
+#: ../../rst/reference_appendices/config.rst:3121
 msgid "This is the default timeout for connection plugins to use."
 msgstr ""
 
@@ -3121,7 +3122,7 @@ msgid "DEFAULT_TRANSPORT"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1440
-#: ../../rst/reference_appendices/config.rst:3115
+#: ../../rst/reference_appendices/config.rst:3128
 msgid ""
 "Default connection plugin to use, the 'smart' option will toggle between "
 "'ssh' and 'paramiko' depending on controller OS and ssh versions"
@@ -3164,7 +3165,7 @@ msgid "DEFAULT_VARS_PLUGIN_PATH"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1464
-#: ../../rst/reference_appendices/config.rst:3129
+#: ../../rst/reference_appendices/config.rst:3142
 msgid "Colon separated paths in which Ansible will search for Vars Plugins."
 msgstr ""
 
@@ -3185,7 +3186,7 @@ msgid "DEFAULT_VAULT_ENCRYPT_IDENTITY"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1476
-#: ../../rst/reference_appendices/config.rst:3150
+#: ../../rst/reference_appendices/config.rst:3163
 msgid ""
 "The vault_id to use for encrypting by default. If multiple vault_ids are "
 "provided, this specifies which to use for encryption. The --encrypt-"
@@ -3205,7 +3206,7 @@ msgid "DEFAULT_VAULT_ID_MATCH"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1487
-#: ../../rst/reference_appendices/config.rst:3136
+#: ../../rst/reference_appendices/config.rst:3149
 msgid ""
 "If true, decrypting vaults with a vault id will only try the password "
 "from the matching vault-id"
@@ -3224,7 +3225,7 @@ msgid "DEFAULT_VAULT_IDENTITY"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1498
-#: ../../rst/reference_appendices/config.rst:3143
+#: ../../rst/reference_appendices/config.rst:3156
 msgid ""
 "The label to use for the default vault id label in cases where a vault id"
 " label is not provided"
@@ -3243,7 +3244,7 @@ msgid "DEFAULT_VAULT_IDENTITY_LIST"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1509
-#: ../../rst/reference_appendices/config.rst:3157
+#: ../../rst/reference_appendices/config.rst:3170
 msgid ""
 "A list of vault-ids to use by default. Equivalent to multiple --vault-id "
 "args. Vault-ids are tried in order."
@@ -3262,7 +3263,7 @@ msgid "DEFAULT_VAULT_PASSWORD_FILE"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1521
-#: ../../rst/reference_appendices/config.rst:3164
+#: ../../rst/reference_appendices/config.rst:3177
 msgid ""
 "The vault password file to use. Equivalent to --vault-password-file or "
 "--vault-id"
@@ -3281,7 +3282,7 @@ msgid "DEFAULT_VERBOSITY"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1533
-#: ../../rst/reference_appendices/config.rst:3171
+#: ../../rst/reference_appendices/config.rst:3184
 msgid ""
 "Sets the default verbosity, equivalent to the number of ``-v`` passed in "
 "the command line."
@@ -3300,7 +3301,7 @@ msgid "DEPRECATION_WARNINGS"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1545
-#: ../../rst/reference_appendices/config.rst:3178
+#: ../../rst/reference_appendices/config.rst:3191
 msgid "Toggle to control the showing of deprecation warnings"
 msgstr ""
 
@@ -3317,19 +3318,20 @@ msgid "DIFF_ALWAYS"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1557
-#: ../../rst/reference_appendices/config.rst:3185
+#: ../../rst/reference_appendices/config.rst:3198
 msgid ""
 "Configuration toggle to tell modules to show differences when in "
 "'changed' status, equivalent to ``--diff``."
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1558
-#: ../../rst/reference_appendices/config.rst:1857
-#: ../../rst/reference_appendices/config.rst:1925
-#: ../../rst/reference_appendices/config.rst:1966
-#: ../../rst/reference_appendices/config.rst:2147
-#: ../../rst/reference_appendices/config.rst:2171
-#: ../../rst/reference_appendices/config.rst:2297
+#: ../../rst/reference_appendices/config.rst:1681
+#: ../../rst/reference_appendices/config.rst:1870
+#: ../../rst/reference_appendices/config.rst:1938
+#: ../../rst/reference_appendices/config.rst:1979
+#: ../../rst/reference_appendices/config.rst:2160
+#: ../../rst/reference_appendices/config.rst:2184
+#: ../../rst/reference_appendices/config.rst:2310
 msgid "bool"
 msgstr ""
 
@@ -3351,7 +3353,7 @@ msgid "DIFF_CONTEXT"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1569
-#: ../../rst/reference_appendices/config.rst:3192
+#: ../../rst/reference_appendices/config.rst:3205
 msgid ""
 "How many lines of context to show when displaying the differences between"
 " files."
@@ -3405,8 +3407,8 @@ msgid "DISPLAY_SKIPPED_HOSTS"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1594
-#: ../../rst/reference_appendices/config.rst:3206
-#: ../../rst/reference_appendices/config.rst:3212
+#: ../../rst/reference_appendices/config.rst:3219
+#: ../../rst/reference_appendices/config.rst:3225
 msgid ""
 "Toggle to control displaying skipped task/host entries in a task in the "
 "default callback"
@@ -3429,7 +3431,7 @@ msgid "DOC_FRAGMENT_PLUGIN_PATH"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1607
-#: ../../rst/reference_appendices/config.rst:2622
+#: ../../rst/reference_appendices/config.rst:2635
 msgid ""
 "Colon separated paths in which Ansible will search for Documentation "
 "Fragments Plugins."
@@ -3509,7 +3511,7 @@ msgid "ERROR_ON_MISSING_HANDLER"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1656
-#: ../../rst/reference_appendices/config.rst:3227
+#: ../../rst/reference_appendices/config.rst:3240
 msgid ""
 "Toggle to allow missing handlers to become a warning instead of an error "
 "when notifying."
@@ -3528,7 +3530,7 @@ msgid "FACTS_MODULES"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1668
-#: ../../rst/reference_appendices/config.rst:3241
+#: ../../rst/reference_appendices/config.rst:3254
 msgid ""
 "Which modules to run during a play's fact gathering stage, using the "
 "default of 'smart' will try to figure it out based on connection type."
@@ -3547,105 +3549,130 @@ msgid ":envvar:`ANSIBLE_FACTS_MODULES`"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1678
-msgid "GALAXY_IGNORE_CERTS"
+msgid "GALAXY_DISPLAY_PROGRESS"
 msgstr ""
 
 #: ../../rst/reference_appendices/config.rst:1680
-#: ../../rst/reference_appendices/config.rst:3248
+msgid ""
+"Some steps in ``ansible-galaxy`` display a progress wheel which can cause"
+" issues on certain displays or when outputing the stdout to a file. This "
+"config option controls whether the display wheel is shown or not. The "
+"default is to show the display wheel if stdout has a tty."
+msgstr ""
+
+#: ../../rst/reference_appendices/config.rst:1683
+msgid "2.10"
+msgstr ""
+
+#: ../../rst/reference_appendices/config.rst:1684
+#: ../../rst/reference_appendices/config.rst:1696
+#: ../../rst/reference_appendices/config.rst:1708
+#: ../../rst/reference_appendices/config.rst:1720
+#: ../../rst/reference_appendices/config.rst:1731
+#: ../../rst/reference_appendices/config.rst:1744
+#: ../../rst/reference_appendices/config.rst:1755
+#: ../../rst/reference_appendices/config.rst:1768
+msgid "galaxy"
+msgstr ""
+
+#: ../../rst/reference_appendices/config.rst:1685
+msgid "display_progress"
+msgstr ""
+
+#: ../../rst/reference_appendices/config.rst:1686
+msgid ":envvar:`ANSIBLE_GALAXY_DISPLAY_PROGRESS`"
+msgstr ""
+
+#: ../../rst/reference_appendices/config.rst:1691
+msgid "GALAXY_IGNORE_CERTS"
+msgstr ""
+
+#: ../../rst/reference_appendices/config.rst:1693
+#: ../../rst/reference_appendices/config.rst:3261
 msgid ""
 "If set to yes, ansible-galaxy will not validate TLS certificates. This "
 "can be useful for testing against a server with a self-signed "
 "certificate."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1683
-#: ../../rst/reference_appendices/config.rst:1695
-#: ../../rst/reference_appendices/config.rst:1707
-#: ../../rst/reference_appendices/config.rst:1718
-#: ../../rst/reference_appendices/config.rst:1731
-#: ../../rst/reference_appendices/config.rst:1742
-#: ../../rst/reference_appendices/config.rst:1755
-msgid "galaxy"
-msgstr ""
-
-#: ../../rst/reference_appendices/config.rst:1684
+#: ../../rst/reference_appendices/config.rst:1697
 msgid "ignore_certs"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1685
+#: ../../rst/reference_appendices/config.rst:1698
 msgid ":envvar:`ANSIBLE_GALAXY_IGNORE`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1690
+#: ../../rst/reference_appendices/config.rst:1703
 msgid "GALAXY_ROLE_SKELETON"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1692
-#: ../../rst/reference_appendices/config.rst:3255
+#: ../../rst/reference_appendices/config.rst:1705
+#: ../../rst/reference_appendices/config.rst:3268
 msgid ""
 "Role or collection skeleton directory to use as a template for the "
 "``init`` action in ``ansible-galaxy``, same as ``--role-skeleton``."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1696
+#: ../../rst/reference_appendices/config.rst:1709
 msgid "role_skeleton"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1697
+#: ../../rst/reference_appendices/config.rst:1710
 msgid ":envvar:`ANSIBLE_GALAXY_ROLE_SKELETON`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1702
+#: ../../rst/reference_appendices/config.rst:1715
 msgid "GALAXY_ROLE_SKELETON_IGNORE"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1704
-#: ../../rst/reference_appendices/config.rst:3262
+#: ../../rst/reference_appendices/config.rst:1717
+#: ../../rst/reference_appendices/config.rst:3275
 msgid ""
 "patterns of files to ignore inside a Galaxy role or collection skeleton "
 "directory"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1706
+#: ../../rst/reference_appendices/config.rst:1719
 msgid "['^.git$', '^.*/.git_keep$']"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1708
+#: ../../rst/reference_appendices/config.rst:1721
 msgid "role_skeleton_ignore"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1709
+#: ../../rst/reference_appendices/config.rst:1722
 msgid ":envvar:`ANSIBLE_GALAXY_ROLE_SKELETON_IGNORE`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1714
+#: ../../rst/reference_appendices/config.rst:1727
 msgid "GALAXY_SERVER"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1716
-#: ../../rst/reference_appendices/config.rst:3269
+#: ../../rst/reference_appendices/config.rst:1729
+#: ../../rst/reference_appendices/config.rst:3282
 msgid ""
 "URL to prepend when roles don't specify the full URI, assume they are "
 "referencing this server as the source."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1717
+#: ../../rst/reference_appendices/config.rst:1730
 msgid "https://galaxy.ansible.com"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1719
+#: ../../rst/reference_appendices/config.rst:1732
 msgid "server"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1720
+#: ../../rst/reference_appendices/config.rst:1733
 msgid ":envvar:`ANSIBLE_GALAXY_SERVER`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1725
+#: ../../rst/reference_appendices/config.rst:1738
 msgid "GALAXY_SERVER_LIST"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1727
+#: ../../rst/reference_appendices/config.rst:1740
 msgid ""
 "A list of Galaxy servers to use when installing a collection. The value "
 "corresponds to the config ini header ``[galaxy_server.{{item}}]`` which "
@@ -3655,119 +3682,119 @@ msgid ""
 "this config option will ignore the :ref:`galaxy_server` config option."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1732
+#: ../../rst/reference_appendices/config.rst:1745
 msgid "server_list"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1733
+#: ../../rst/reference_appendices/config.rst:1746
 msgid ":envvar:`ANSIBLE_GALAXY_SERVER_LIST`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1738
+#: ../../rst/reference_appendices/config.rst:1751
 msgid "GALAXY_TOKEN"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1740
-#: ../../rst/reference_appendices/config.rst:3283
+#: ../../rst/reference_appendices/config.rst:1753
+#: ../../rst/reference_appendices/config.rst:3296
 msgid "GitHub personal access token"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1743
+#: ../../rst/reference_appendices/config.rst:1756
 msgid "token"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1744
+#: ../../rst/reference_appendices/config.rst:1757
 msgid ":envvar:`ANSIBLE_GALAXY_TOKEN`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1749
+#: ../../rst/reference_appendices/config.rst:1762
 msgid "GALAXY_TOKEN_PATH"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1751
-#: ../../rst/reference_appendices/config.rst:3290
+#: ../../rst/reference_appendices/config.rst:1764
+#: ../../rst/reference_appendices/config.rst:3303
 msgid "Local path to galaxy access token file"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1753
+#: ../../rst/reference_appendices/config.rst:1766
 msgid "~/.ansible/galaxy_token"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1756
+#: ../../rst/reference_appendices/config.rst:1769
 msgid "token_path"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1757
+#: ../../rst/reference_appendices/config.rst:1770
 msgid ":envvar:`ANSIBLE_GALAXY_TOKEN_PATH`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1762
+#: ../../rst/reference_appendices/config.rst:1775
 msgid "HOST_KEY_CHECKING"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1764
-#: ../../rst/reference_appendices/config.rst:3297
+#: ../../rst/reference_appendices/config.rst:1777
+#: ../../rst/reference_appendices/config.rst:3317
 msgid ""
 "Set this to \"False\" if you want to avoid host key checking by the "
 "underlying tools Ansible uses to connect to the host"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1768
+#: ../../rst/reference_appendices/config.rst:1781
 msgid "host_key_checking"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1769
+#: ../../rst/reference_appendices/config.rst:1782
 msgid ":envvar:`ANSIBLE_HOST_KEY_CHECKING`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1774
+#: ../../rst/reference_appendices/config.rst:1787
 msgid "HOST_PATTERN_MISMATCH"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1776
-#: ../../rst/reference_appendices/config.rst:3304
+#: ../../rst/reference_appendices/config.rst:1789
+#: ../../rst/reference_appendices/config.rst:3324
 msgid ""
 "This setting changes the behaviour of mismatched host patterns, it allows"
 " you to force a fatal error, a warning or just ignore it"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1777
+#: ../../rst/reference_appendices/config.rst:1790
 msgid "warning"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1780
+#: ../../rst/reference_appendices/config.rst:1793
 msgid "host_pattern_mismatch"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1781
+#: ../../rst/reference_appendices/config.rst:1794
 msgid ":envvar:`ANSIBLE_HOST_PATTERN_MISMATCH`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1786
+#: ../../rst/reference_appendices/config.rst:1799
 msgid "INJECT_FACTS_AS_VARS"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1788
+#: ../../rst/reference_appendices/config.rst:1801
 msgid ""
 "Facts are available inside the `ansible_facts` variable, this setting "
 "also pushes them as their own vars in the main namespace. Unlike inside "
 "the `ansible_facts` dictionary, these will have an `ansible_` prefix."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1793
+#: ../../rst/reference_appendices/config.rst:1806
 msgid "inject_facts_as_vars"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1794
+#: ../../rst/reference_appendices/config.rst:1807
 msgid ":envvar:`ANSIBLE_INJECT_FACT_VARS`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1799
+#: ../../rst/reference_appendices/config.rst:1812
 msgid "INTERPRETER_PYTHON"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1801
-#: ../../rst/reference_appendices/config.rst:3311
+#: ../../rst/reference_appendices/config.rst:1814
+#: ../../rst/reference_appendices/config.rst:3331
 msgid ""
 "Path to the Python interpreter to be used for module execution on remote "
 "targets, or an automatic discovery mode. Supported discovery modes are "
@@ -3785,23 +3812,23 @@ msgid ""
 "behavior will change to that of ``auto`` in a future Ansible release."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1802
+#: ../../rst/reference_appendices/config.rst:1815
 msgid "auto_legacy"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1805
+#: ../../rst/reference_appendices/config.rst:1818
 msgid "interpreter_python"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1806
+#: ../../rst/reference_appendices/config.rst:1819
 msgid ":envvar:`ANSIBLE_PYTHON_INTERPRETER`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1811
+#: ../../rst/reference_appendices/config.rst:1824
 msgid "INTERPRETER_PYTHON_DISTRO_MAP"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1813
+#: ../../rst/reference_appendices/config.rst:1826
 msgid ""
 "{'centos': {'6': '/usr/bin/python', '8': '/usr/libexec/platform-python'},"
 " 'fedora': {'23': '/usr/bin/python3'}, 'redhat': {'6': '/usr/bin/python',"
@@ -3810,316 +3837,316 @@ msgid ""
 " '16': '/usr/bin/python3'}}"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1819
+#: ../../rst/reference_appendices/config.rst:1832
 msgid "INTERPRETER_PYTHON_FALLBACK"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1821
+#: ../../rst/reference_appendices/config.rst:1834
 msgid ""
 "['/usr/bin/python', 'python3.7', 'python3.6', 'python3.5', 'python2.7', "
 "'python2.6', '/usr/libexec/platform-python', '/usr/bin/python3', "
 "'python']"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1827
+#: ../../rst/reference_appendices/config.rst:1840
 msgid "INVALID_TASK_ATTRIBUTE_FAILED"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1829
-#: ../../rst/reference_appendices/config.rst:3327
+#: ../../rst/reference_appendices/config.rst:1842
+#: ../../rst/reference_appendices/config.rst:3347
 msgid ""
 "If 'false', invalid attributes for a task will result in warnings instead"
 " of errors"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1834
+#: ../../rst/reference_appendices/config.rst:1847
 msgid "invalid_task_attribute_failed"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1835
+#: ../../rst/reference_appendices/config.rst:1848
 msgid ":envvar:`ANSIBLE_INVALID_TASK_ATTRIBUTE_FAILED`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1840
+#: ../../rst/reference_appendices/config.rst:1853
 msgid "INVENTORY_ANY_UNPARSED_IS_FAILED"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1842
-#: ../../rst/reference_appendices/config.rst:3334
+#: ../../rst/reference_appendices/config.rst:1855
+#: ../../rst/reference_appendices/config.rst:3354
 msgid ""
 "If 'true', it is a fatal error when any given inventory source cannot be "
 "successfully parsed by any available inventory plugin; otherwise, this "
 "situation only attracts a warning."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1848
+#: ../../rst/reference_appendices/config.rst:1861
 msgid "any_unparsed_is_failed"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1849
+#: ../../rst/reference_appendices/config.rst:1862
 msgid ":envvar:`ANSIBLE_INVENTORY_ANY_UNPARSED_IS_FAILED`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1854
+#: ../../rst/reference_appendices/config.rst:1867
 msgid "INVENTORY_CACHE_ENABLED"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1856
-#: ../../rst/reference_appendices/config.rst:3342
+#: ../../rst/reference_appendices/config.rst:1869
+#: ../../rst/reference_appendices/config.rst:3362
 msgid "Toggle to turn on inventory caching"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1860
+#: ../../rst/reference_appendices/config.rst:1873
 msgid "cache"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1861
+#: ../../rst/reference_appendices/config.rst:1874
 msgid ":envvar:`ANSIBLE_INVENTORY_CACHE`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1866
+#: ../../rst/reference_appendices/config.rst:1879
 msgid "INVENTORY_CACHE_PLUGIN"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1868
-#: ../../rst/reference_appendices/config.rst:3349
+#: ../../rst/reference_appendices/config.rst:1881
+#: ../../rst/reference_appendices/config.rst:3369
 msgid ""
 "The plugin for caching inventory. If INVENTORY_CACHE_PLUGIN is not "
 "provided CACHE_PLUGIN can be used instead."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1871
+#: ../../rst/reference_appendices/config.rst:1884
 msgid "cache_plugin"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1872
+#: ../../rst/reference_appendices/config.rst:1885
 msgid ":envvar:`ANSIBLE_INVENTORY_CACHE_PLUGIN`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1877
+#: ../../rst/reference_appendices/config.rst:1890
 msgid "INVENTORY_CACHE_PLUGIN_CONNECTION"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1879
-#: ../../rst/reference_appendices/config.rst:3356
+#: ../../rst/reference_appendices/config.rst:1892
+#: ../../rst/reference_appendices/config.rst:3376
 msgid ""
 "The inventory cache connection. If INVENTORY_CACHE_PLUGIN_CONNECTION is "
 "not provided CACHE_PLUGIN_CONNECTION can be used instead."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1882
+#: ../../rst/reference_appendices/config.rst:1895
 msgid "cache_connection"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1883
+#: ../../rst/reference_appendices/config.rst:1896
 msgid ":envvar:`ANSIBLE_INVENTORY_CACHE_CONNECTION`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1888
+#: ../../rst/reference_appendices/config.rst:1901
 msgid "INVENTORY_CACHE_PLUGIN_PREFIX"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1890
-#: ../../rst/reference_appendices/config.rst:3363
+#: ../../rst/reference_appendices/config.rst:1903
+#: ../../rst/reference_appendices/config.rst:3383
 msgid ""
 "The table prefix for the cache plugin. If INVENTORY_CACHE_PLUGIN_PREFIX "
 "is not provided CACHE_PLUGIN_PREFIX can be used instead."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1893
+#: ../../rst/reference_appendices/config.rst:1906
 msgid "cache_prefix"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1894
+#: ../../rst/reference_appendices/config.rst:1907
 msgid ":envvar:`ANSIBLE_INVENTORY_CACHE_PLUGIN_PREFIX`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1899
+#: ../../rst/reference_appendices/config.rst:1912
 msgid "INVENTORY_CACHE_TIMEOUT"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1901
-#: ../../rst/reference_appendices/config.rst:3370
+#: ../../rst/reference_appendices/config.rst:1914
+#: ../../rst/reference_appendices/config.rst:3390
 msgid ""
 "Expiration timeout for the inventory cache plugin data. If "
 "INVENTORY_CACHE_TIMEOUT is not provided CACHE_TIMEOUT can be used "
 "instead."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1902
+#: ../../rst/reference_appendices/config.rst:1915
 msgid "3600"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1904
+#: ../../rst/reference_appendices/config.rst:1917
 msgid "cache_timeout"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1905
+#: ../../rst/reference_appendices/config.rst:1918
 msgid ":envvar:`ANSIBLE_INVENTORY_CACHE_TIMEOUT`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1910
+#: ../../rst/reference_appendices/config.rst:1923
 msgid "INVENTORY_ENABLED"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1912
-#: ../../rst/reference_appendices/config.rst:3377
+#: ../../rst/reference_appendices/config.rst:1925
+#: ../../rst/reference_appendices/config.rst:3397
 msgid ""
 "List of enabled inventory plugins, it also determines the order in which "
 "they are used."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1914
+#: ../../rst/reference_appendices/config.rst:1927
 msgid "['host_list', 'script', 'auto', 'yaml', 'ini', 'toml']"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1916
+#: ../../rst/reference_appendices/config.rst:1929
 msgid "enable_plugins"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1917
+#: ../../rst/reference_appendices/config.rst:1930
 msgid ":envvar:`ANSIBLE_INVENTORY_ENABLED`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1922
+#: ../../rst/reference_appendices/config.rst:1935
 msgid "INVENTORY_EXPORT"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1924
-#: ../../rst/reference_appendices/config.rst:3384
+#: ../../rst/reference_appendices/config.rst:1937
+#: ../../rst/reference_appendices/config.rst:3404
 msgid ""
 "Controls if ansible-inventory will accurately reflect Ansible's view into"
 " inventory or its optimized for exporting."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1928
+#: ../../rst/reference_appendices/config.rst:1941
 msgid "export"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1929
+#: ../../rst/reference_appendices/config.rst:1942
 msgid ":envvar:`ANSIBLE_INVENTORY_EXPORT`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1934
+#: ../../rst/reference_appendices/config.rst:1947
 msgid "INVENTORY_IGNORE_EXTS"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1936
-#: ../../rst/reference_appendices/config.rst:3391
+#: ../../rst/reference_appendices/config.rst:1949
+#: ../../rst/reference_appendices/config.rst:3411
 msgid "List of extensions to ignore when using a directory as an inventory source"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1938
+#: ../../rst/reference_appendices/config.rst:1951
 msgid "{{(BLACKLIST_EXTS + ( '.orig', '.ini', '.cfg', '.retry'))}}"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1940
+#: ../../rst/reference_appendices/config.rst:1953
 msgid "inventory_ignore_extensions"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1942
+#: ../../rst/reference_appendices/config.rst:1955
 msgid "ignore_extensions"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1943
+#: ../../rst/reference_appendices/config.rst:1956
 msgid ":envvar:`ANSIBLE_INVENTORY_IGNORE`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1948
+#: ../../rst/reference_appendices/config.rst:1961
 msgid "INVENTORY_IGNORE_PATTERNS"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1950
-#: ../../rst/reference_appendices/config.rst:3398
+#: ../../rst/reference_appendices/config.rst:1963
+#: ../../rst/reference_appendices/config.rst:3418
 msgid "List of patterns to ignore when using a directory as an inventory source"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1954
+#: ../../rst/reference_appendices/config.rst:1967
 msgid "inventory_ignore_patterns"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1956
+#: ../../rst/reference_appendices/config.rst:1969
 msgid "ignore_patterns"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1957
+#: ../../rst/reference_appendices/config.rst:1970
 msgid ":envvar:`ANSIBLE_INVENTORY_IGNORE_REGEX`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1962
+#: ../../rst/reference_appendices/config.rst:1975
 msgid "INVENTORY_UNPARSED_IS_FAILED"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1964
-#: ../../rst/reference_appendices/config.rst:3405
+#: ../../rst/reference_appendices/config.rst:1977
+#: ../../rst/reference_appendices/config.rst:3425
 msgid ""
 "If 'true' it is a fatal error if every single potential inventory source "
 "fails to parse, otherwise this situation will only attract a warning."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1969
+#: ../../rst/reference_appendices/config.rst:1982
 msgid "unparsed_is_failed"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1970
+#: ../../rst/reference_appendices/config.rst:1983
 msgid ":envvar:`ANSIBLE_INVENTORY_UNPARSED_FAILED`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1975
+#: ../../rst/reference_appendices/config.rst:1988
 msgid "LOCALHOST_WARNING"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1977
+#: ../../rst/reference_appendices/config.rst:1990
 msgid ""
 "By default Ansible will issue a warning when there are no hosts in the "
 "inventory. These warnings can be silenced by adjusting this setting to "
 "False."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1980
+#: ../../rst/reference_appendices/config.rst:1993
 msgid "2.6"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1982
+#: ../../rst/reference_appendices/config.rst:1995
 msgid "localhost_warning"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1983
+#: ../../rst/reference_appendices/config.rst:1996
 msgid ":envvar:`ANSIBLE_LOCALHOST_WARNING`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1988
+#: ../../rst/reference_appendices/config.rst:2001
 msgid "MAX_FILE_SIZE_FOR_DIFF"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1990
-#: ../../rst/reference_appendices/config.rst:3413
+#: ../../rst/reference_appendices/config.rst:2003
+#: ../../rst/reference_appendices/config.rst:3433
 msgid "Maximum size of files to be considered for diff display"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1991
-#: ../../rst/reference_appendices/config.rst:2061
+#: ../../rst/reference_appendices/config.rst:2004
+#: ../../rst/reference_appendices/config.rst:2074
 msgid "int"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1992
+#: ../../rst/reference_appendices/config.rst:2005
 msgid "104448"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1994
+#: ../../rst/reference_appendices/config.rst:2007
 msgid "max_diff_size"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:1995
+#: ../../rst/reference_appendices/config.rst:2008
 msgid ":envvar:`ANSIBLE_MAX_DIFF_SIZE`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2000
+#: ../../rst/reference_appendices/config.rst:2013
 msgid "NETCONF_SSH_CONFIG"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2002
-#: ../../rst/reference_appendices/config.rst:3570
+#: ../../rst/reference_appendices/config.rst:2015
+#: ../../rst/reference_appendices/config.rst:3590
 msgid ""
 "This variable is used to enable bastion/jump host with netconf "
 "connection. If set to True the bastion/jump host ssh settings should be "
@@ -4127,47 +4154,47 @@ msgid ""
 "configuration file path to read the bastion/jump host settings."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2004
+#: ../../rst/reference_appendices/config.rst:2017
 msgid "netconf_connection"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2005
+#: ../../rst/reference_appendices/config.rst:2018
 msgid "ssh_config"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2006
+#: ../../rst/reference_appendices/config.rst:2019
 msgid ":envvar:`ANSIBLE_NETCONF_SSH_CONFIG`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2011
+#: ../../rst/reference_appendices/config.rst:2024
 msgid "NETWORK_GROUP_MODULES"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2014
+#: ../../rst/reference_appendices/config.rst:2027
 msgid ""
 "['eos', 'nxos', 'ios', 'iosxr', 'junos', 'enos', 'ce', 'vyos', 'sros', "
 "'dellos9', 'dellos10', 'dellos6', 'asa', 'aruba', 'aireos', 'bigip', "
 "'ironware', 'onyx', 'netconf']"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2016
+#: ../../rst/reference_appendices/config.rst:2029
 msgid "network_group_modules"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2017
+#: ../../rst/reference_appendices/config.rst:2030
 msgid ":envvar:`ANSIBLE_NETWORK_GROUP_MODULES`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2018
+#: ../../rst/reference_appendices/config.rst:2031
 msgid ":envvar:`NETWORK_GROUP_MODULES`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2023
+#: ../../rst/reference_appendices/config.rst:2036
 msgid "OLD_PLUGIN_CACHE_CLEARING"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2025
-#: ../../rst/reference_appendices/config.rst:3438
+#: ../../rst/reference_appendices/config.rst:2038
+#: ../../rst/reference_appendices/config.rst:3458
 msgid ""
 "Previouslly Ansible would only clear some of the plugin loading caches "
 "when loading new roles, this led to some behaviours in which a plugin "
@@ -4175,127 +4202,127 @@ msgid ""
 "allows to return to that behaviour."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2030
+#: ../../rst/reference_appendices/config.rst:2043
 msgid "old_plugin_cache_clear"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2031
+#: ../../rst/reference_appendices/config.rst:2044
 msgid ":envvar:`ANSIBLE_OLD_PLUGIN_CACHE_CLEAR`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2036
+#: ../../rst/reference_appendices/config.rst:2049
 msgid "PARAMIKO_HOST_KEY_AUTO_ADD"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2040
-#: ../../rst/reference_appendices/config.rst:2051
+#: ../../rst/reference_appendices/config.rst:2053
+#: ../../rst/reference_appendices/config.rst:2064
 msgid "paramiko_connection"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2041
+#: ../../rst/reference_appendices/config.rst:2054
 msgid "host_key_auto_add"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2042
+#: ../../rst/reference_appendices/config.rst:2055
 msgid ":envvar:`ANSIBLE_PARAMIKO_HOST_KEY_AUTO_ADD`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2047
+#: ../../rst/reference_appendices/config.rst:2060
 msgid "PARAMIKO_LOOK_FOR_KEYS"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2052
+#: ../../rst/reference_appendices/config.rst:2065
 msgid "look_for_keys"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2053
+#: ../../rst/reference_appendices/config.rst:2066
 msgid ":envvar:`ANSIBLE_PARAMIKO_LOOK_FOR_KEYS`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2058
+#: ../../rst/reference_appendices/config.rst:2071
 msgid "PERSISTENT_COMMAND_TIMEOUT"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2060
-#: ../../rst/reference_appendices/config.rst:3478
+#: ../../rst/reference_appendices/config.rst:2073
+#: ../../rst/reference_appendices/config.rst:3498
 msgid ""
 "This controls the amount of time to wait for response from remote device "
-"before timing out presistent connection."
+"before timing out persistent connection."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2062
-#: ../../rst/reference_appendices/config.rst:2086
+#: ../../rst/reference_appendices/config.rst:2075
+#: ../../rst/reference_appendices/config.rst:2099
 msgid "30"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2064
+#: ../../rst/reference_appendices/config.rst:2077
 msgid "command_timeout"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2065
+#: ../../rst/reference_appendices/config.rst:2078
 msgid ":envvar:`ANSIBLE_PERSISTENT_COMMAND_TIMEOUT`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2070
+#: ../../rst/reference_appendices/config.rst:2083
 msgid "PERSISTENT_CONNECT_RETRY_TIMEOUT"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2072
-#: ../../rst/reference_appendices/config.rst:3471
+#: ../../rst/reference_appendices/config.rst:2085
+#: ../../rst/reference_appendices/config.rst:3491
 msgid ""
-"This controls the retry timeout for presistent connection to connect to "
+"This controls the retry timeout for persistent connection to connect to "
 "the local domain socket."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2076
+#: ../../rst/reference_appendices/config.rst:2089
 msgid "connect_retry_timeout"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2077
+#: ../../rst/reference_appendices/config.rst:2090
 msgid ":envvar:`ANSIBLE_PERSISTENT_CONNECT_RETRY_TIMEOUT`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2082
+#: ../../rst/reference_appendices/config.rst:2095
 msgid "PERSISTENT_CONNECT_TIMEOUT"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2084
-#: ../../rst/reference_appendices/config.rst:3464
+#: ../../rst/reference_appendices/config.rst:2097
+#: ../../rst/reference_appendices/config.rst:3484
 msgid ""
 "This controls how long the persistent connection will remain idle before "
 "it is destroyed."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2088
+#: ../../rst/reference_appendices/config.rst:2101
 msgid "connect_timeout"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2089
+#: ../../rst/reference_appendices/config.rst:2102
 msgid ":envvar:`ANSIBLE_PERSISTENT_CONNECT_TIMEOUT`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2094
+#: ../../rst/reference_appendices/config.rst:2107
 msgid "PERSISTENT_CONTROL_PATH_DIR"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2096
-#: ../../rst/reference_appendices/config.rst:3457
+#: ../../rst/reference_appendices/config.rst:2109
+#: ../../rst/reference_appendices/config.rst:3477
 msgid "Path to socket to be used by the connection persistence system."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2098
+#: ../../rst/reference_appendices/config.rst:2111
 msgid "~/.ansible/pc"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2101
+#: ../../rst/reference_appendices/config.rst:2114
 msgid ":envvar:`ANSIBLE_PERSISTENT_CONTROL_PATH_DIR`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2106
+#: ../../rst/reference_appendices/config.rst:2119
 msgid "PLAYBOOK_VARS_ROOT"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2108
+#: ../../rst/reference_appendices/config.rst:2121
 msgid ""
 "This sets which playbook dirs will be used as a root to process vars "
 "plugins, which includes finding host_vars/group_vars The ``top`` option "
@@ -4305,27 +4332,27 @@ msgid ""
 "``all`` option examines from the first parent to the current playbook."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2109
+#: ../../rst/reference_appendices/config.rst:2122
 msgid "top"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2110
+#: ../../rst/reference_appendices/config.rst:2123
 msgid "2.4.1"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2112
+#: ../../rst/reference_appendices/config.rst:2125
 msgid "playbook_vars_root"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2113
+#: ../../rst/reference_appendices/config.rst:2126
 msgid ":envvar:`ANSIBLE_PLAYBOOK_VARS_ROOT`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2118
+#: ../../rst/reference_appendices/config.rst:2131
 msgid "PLUGIN_FILTERS_CFG"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2120
+#: ../../rst/reference_appendices/config.rst:2133
 msgid ""
 "A path to configuration for filtering which plugins installed on the "
 "system are allowed to be used. See :ref:`plugin_filtering_config` for "
@@ -4333,21 +4360,21 @@ msgid ""
 "/etc/ansible/plugin_filters.yml"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2123
+#: ../../rst/reference_appendices/config.rst:2136
 msgid "2.5.0"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2125
-#: ../../rst/reference_appendices/config.rst:2127
+#: ../../rst/reference_appendices/config.rst:2138
+#: ../../rst/reference_appendices/config.rst:2140
 msgid "plugin_filters_cfg"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2132
+#: ../../rst/reference_appendices/config.rst:2145
 msgid "PYTHON_MODULE_RLIMIT_NOFILE"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2134
-#: ../../rst/reference_appendices/config.rst:3493
+#: ../../rst/reference_appendices/config.rst:2147
+#: ../../rst/reference_appendices/config.rst:3513
 msgid ""
 "Attempts to set RLIMIT_NOFILE soft limit to the specified value when "
 "executing Python modules (can speed up subprocess usage on Python 2.x. "
@@ -4356,76 +4383,76 @@ msgid ""
 "existing system-defined limits."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2138
+#: ../../rst/reference_appendices/config.rst:2151
 msgid "python_module_rlimit_nofile"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2139
+#: ../../rst/reference_appendices/config.rst:2152
 msgid ":envvar:`ANSIBLE_PYTHON_MODULE_RLIMIT_NOFILE`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2144
+#: ../../rst/reference_appendices/config.rst:2157
 msgid "RETRY_FILES_ENABLED"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2146
-#: ../../rst/reference_appendices/config.rst:3500
+#: ../../rst/reference_appendices/config.rst:2159
+#: ../../rst/reference_appendices/config.rst:3520
 msgid ""
 "This controls whether a failed Ansible playbook should create a .retry "
 "file."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2150
+#: ../../rst/reference_appendices/config.rst:2163
 msgid "retry_files_enabled"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2151
+#: ../../rst/reference_appendices/config.rst:2164
 msgid ":envvar:`ANSIBLE_RETRY_FILES_ENABLED`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2156
+#: ../../rst/reference_appendices/config.rst:2169
 msgid "RETRY_FILES_SAVE_PATH"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2158
-#: ../../rst/reference_appendices/config.rst:3507
+#: ../../rst/reference_appendices/config.rst:2171
+#: ../../rst/reference_appendices/config.rst:3527
 msgid ""
 "This sets the path in which Ansible will save .retry files when a "
 "playbook fails and retry files are enabled."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2162
+#: ../../rst/reference_appendices/config.rst:2175
 msgid "retry_files_save_path"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2163
+#: ../../rst/reference_appendices/config.rst:2176
 msgid ":envvar:`ANSIBLE_RETRY_FILES_SAVE_PATH`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2168
+#: ../../rst/reference_appendices/config.rst:2181
 msgid "SHOW_CUSTOM_STATS"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2170
-#: ../../rst/reference_appendices/config.rst:3514
+#: ../../rst/reference_appendices/config.rst:2183
+#: ../../rst/reference_appendices/config.rst:3534
 msgid ""
 "This adds the custom stats set via the set_stats plugin to the default "
 "output"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2174
+#: ../../rst/reference_appendices/config.rst:2187
 msgid "show_custom_stats"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2175
+#: ../../rst/reference_appendices/config.rst:2188
 msgid ":envvar:`ANSIBLE_SHOW_CUSTOM_STATS`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2180
+#: ../../rst/reference_appendices/config.rst:2193
 msgid "STRING_CONVERSION_ACTION"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2182
+#: ../../rst/reference_appendices/config.rst:2195
 msgid ""
 "Action to take when a module parameter value is converted to a string "
 "(this does not affect variables). For string parameters, values such as "
@@ -4435,46 +4462,46 @@ msgid ""
 "'error' in 2.12."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2187
+#: ../../rst/reference_appendices/config.rst:2200
 msgid "string_conversion_action"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2188
+#: ../../rst/reference_appendices/config.rst:2201
 msgid ":envvar:`ANSIBLE_STRING_CONVERSION_ACTION`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2193
+#: ../../rst/reference_appendices/config.rst:2206
 msgid "STRING_TYPE_FILTERS"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2195
+#: ../../rst/reference_appendices/config.rst:2208
 msgid ""
 "This list of filters avoids 'type conversion' when templating variables "
 "Useful when you want to avoid conversion into lists or dictionaries for "
 "JSON strings, for example."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2197
+#: ../../rst/reference_appendices/config.rst:2210
 msgid "['string', 'to_json', 'to_nice_json', 'to_yaml', 'ppretty', 'json']"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2198
+#: ../../rst/reference_appendices/config.rst:2211
 msgid "jinja2"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2199
+#: ../../rst/reference_appendices/config.rst:2212
 msgid "dont_type_filters"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2200
+#: ../../rst/reference_appendices/config.rst:2213
 msgid ":envvar:`ANSIBLE_STRING_TYPE_FILTERS`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2205
+#: ../../rst/reference_appendices/config.rst:2218
 msgid "SYSTEM_WARNINGS"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2207
+#: ../../rst/reference_appendices/config.rst:2220
 msgid ""
 "Allows disabling of warnings related to potential issues on the system "
 "running ansible itself (not on the managed hosts) These may include "
@@ -4482,73 +4509,73 @@ msgid ""
 "resolved if possible."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2211
+#: ../../rst/reference_appendices/config.rst:2224
 msgid "system_warnings"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2212
+#: ../../rst/reference_appendices/config.rst:2225
 msgid ":envvar:`ANSIBLE_SYSTEM_WARNINGS`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2217
+#: ../../rst/reference_appendices/config.rst:2230
 msgid "TAGS_RUN"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2219
-#: ../../rst/reference_appendices/config.rst:3535
+#: ../../rst/reference_appendices/config.rst:2232
+#: ../../rst/reference_appendices/config.rst:3555
 msgid "default list of tags to run in your plays, Skip Tags has precedence."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2223
 #: ../../rst/reference_appendices/config.rst:2236
+#: ../../rst/reference_appendices/config.rst:2249
 msgid "tags"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2224
+#: ../../rst/reference_appendices/config.rst:2237
 msgid "run"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2225
+#: ../../rst/reference_appendices/config.rst:2238
 msgid ":envvar:`ANSIBLE_RUN_TAGS`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2230
+#: ../../rst/reference_appendices/config.rst:2243
 msgid "TAGS_SKIP"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2232
-#: ../../rst/reference_appendices/config.rst:3542
+#: ../../rst/reference_appendices/config.rst:2245
+#: ../../rst/reference_appendices/config.rst:3562
 msgid "default list of tags to skip in your plays, has precedence over Run Tags"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2238
+#: ../../rst/reference_appendices/config.rst:2251
 msgid ":envvar:`ANSIBLE_SKIP_TAGS`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2243
+#: ../../rst/reference_appendices/config.rst:2256
 msgid "TASK_DEBUGGER_IGNORE_ERRORS"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2245
+#: ../../rst/reference_appendices/config.rst:2258
 msgid ""
 "This option defines whether the task debugger will be invoked on a failed"
 " task when ignore_errors=True is specified. True specifies that the "
 "debugger will honor ignore_errors, False will not honor ignore_errors."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2250
+#: ../../rst/reference_appendices/config.rst:2263
 msgid "task_debugger_ignore_errors"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2251
+#: ../../rst/reference_appendices/config.rst:2264
 msgid ":envvar:`ANSIBLE_TASK_DEBUGGER_IGNORE_ERRORS`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2256
+#: ../../rst/reference_appendices/config.rst:2269
 msgid "TRANSFORM_INVALID_GROUP_CHARS"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2258
+#: ../../rst/reference_appendices/config.rst:2271
 msgid ""
 "Make ansible transform invalid characters in group names supplied by "
 "inventory sources. If 'never' it will allow for the group name but warn "
@@ -4558,143 +4585,143 @@ msgid ""
 " as 'always', without issuing a warning."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2260
+#: ../../rst/reference_appendices/config.rst:2273
 msgid "never"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2263
+#: ../../rst/reference_appendices/config.rst:2276
 msgid "force_valid_group_names"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2264
+#: ../../rst/reference_appendices/config.rst:2277
 msgid ":envvar:`ANSIBLE_TRANSFORM_INVALID_GROUP_CHARS`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2269
+#: ../../rst/reference_appendices/config.rst:2282
 msgid "USE_PERSISTENT_CONNECTIONS"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2271
-#: ../../rst/reference_appendices/config.rst:3549
+#: ../../rst/reference_appendices/config.rst:2284
+#: ../../rst/reference_appendices/config.rst:3569
 msgid "Toggles the use of persistence for connections."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2275
+#: ../../rst/reference_appendices/config.rst:2288
 msgid "use_persistent_connections"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2276
+#: ../../rst/reference_appendices/config.rst:2289
 msgid ":envvar:`ANSIBLE_USE_PERSISTENT_CONNECTIONS`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2281
+#: ../../rst/reference_appendices/config.rst:2294
 msgid "VARIABLE_PRECEDENCE"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2283
-#: ../../rst/reference_appendices/config.rst:3556
+#: ../../rst/reference_appendices/config.rst:2296
+#: ../../rst/reference_appendices/config.rst:3576
 msgid "Allows to change the group variable precedence merge order."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2285
+#: ../../rst/reference_appendices/config.rst:2298
 msgid ""
 "['all_inventory', 'groups_inventory', 'all_plugins_inventory', "
 "'all_plugins_play', 'groups_plugins_inventory', 'groups_plugins_play']"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2288
+#: ../../rst/reference_appendices/config.rst:2301
 msgid "precedence"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2289
+#: ../../rst/reference_appendices/config.rst:2302
 msgid ":envvar:`ANSIBLE_PRECEDENCE`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2294
+#: ../../rst/reference_appendices/config.rst:2307
 msgid "VERBOSE_TO_STDERR"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2296
-#: ../../rst/reference_appendices/config.rst:3584
+#: ../../rst/reference_appendices/config.rst:2309
+#: ../../rst/reference_appendices/config.rst:3604
 msgid "Force 'verbose' option to use stderr instead of stdout"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2301
+#: ../../rst/reference_appendices/config.rst:2314
 msgid "verbose_to_stderr"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2302
+#: ../../rst/reference_appendices/config.rst:2315
 msgid ":envvar:`ANSIBLE_VERBOSE_TO_STDERR`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2307
+#: ../../rst/reference_appendices/config.rst:2320
 msgid "YAML_FILENAME_EXTENSIONS"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2309
+#: ../../rst/reference_appendices/config.rst:2322
 msgid ""
 "Check all of these extensions when looking for 'variable' files which "
 "should be YAML or JSON or vaulted versions of these. This affects "
 "vars_files, include_vars, inventory and vars plugins among others."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2311
+#: ../../rst/reference_appendices/config.rst:2324
 msgid "['.yml', '.yaml', '.json']"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2313
+#: ../../rst/reference_appendices/config.rst:2326
 msgid "yaml_valid_extensions"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2314
+#: ../../rst/reference_appendices/config.rst:2327
 msgid ":envvar:`ANSIBLE_YAML_FILENAME_EXT`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2318
+#: ../../rst/reference_appendices/config.rst:2331
 msgid "Environment Variables"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2323
+#: ../../rst/reference_appendices/config.rst:2336
 msgid "Override the default ansible config file"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2329
+#: ../../rst/reference_appendices/config.rst:2342
 msgid ""
 "Specify where to look for the ansible-connection script. This location "
 "will be checked before searching $PATH.If null, ansible will start with "
 "the same directory as the ansible script."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2331
+#: ../../rst/reference_appendices/config.rst:2344
 msgid "See also :ref:`ANSIBLE_CONNECTION_PATH <ANSIBLE_CONNECTION_PATH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2338
+#: ../../rst/reference_appendices/config.rst:2351
 msgid "See also :ref:`ANSIBLE_COW_SELECTION <ANSIBLE_COW_SELECTION>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2345
+#: ../../rst/reference_appendices/config.rst:2358
 msgid "See also :ref:`ANSIBLE_COW_WHITELIST <ANSIBLE_COW_WHITELIST>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2352
+#: ../../rst/reference_appendices/config.rst:2365
 msgid "See also :ref:`ANSIBLE_FORCE_COLOR <ANSIBLE_FORCE_COLOR>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2359
+#: ../../rst/reference_appendices/config.rst:2372
 msgid "See also :ref:`ANSIBLE_NOCOLOR <ANSIBLE_NOCOLOR>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2366
+#: ../../rst/reference_appendices/config.rst:2379
 msgid "See also :ref:`ANSIBLE_NOCOWS <ANSIBLE_NOCOWS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2373
+#: ../../rst/reference_appendices/config.rst:2386
 msgid "See also :ref:`ANSIBLE_COW_PATH <ANSIBLE_COW_PATH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2378
-#: ../../rst/reference_appendices/config.rst:2384
+#: ../../rst/reference_appendices/config.rst:2391
+#: ../../rst/reference_appendices/config.rst:2397
 msgid ""
 "Pipelining, if supported by the connection plugin, reduces the number of "
 "network operations required to execute a module on the remote server, by "
@@ -4707,12 +4734,12 @@ msgid ""
 "enabled."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2380
-#: ../../rst/reference_appendices/config.rst:2386
+#: ../../rst/reference_appendices/config.rst:2393
+#: ../../rst/reference_appendices/config.rst:2399
 msgid "See also :ref:`ANSIBLE_PIPELINING <ANSIBLE_PIPELINING>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2391
+#: ../../rst/reference_appendices/config.rst:2404
 msgid ""
 "If set, this will override the Ansible default ssh arguments.In "
 "particular, users may wish to raise the ControlPersist time to encourage "
@@ -4721,11 +4748,11 @@ msgid ""
 "used."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2393
+#: ../../rst/reference_appendices/config.rst:2406
 msgid "See also :ref:`ANSIBLE_SSH_ARGS <ANSIBLE_SSH_ARGS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2398
+#: ../../rst/reference_appendices/config.rst:2411
 #, python-format
 msgid ""
 "This is the location to save ssh's ControlPath sockets, it uses ssh's "
@@ -4736,11 +4763,11 @@ msgid ""
 "ControlPath` is set in ssh args."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2400
+#: ../../rst/reference_appendices/config.rst:2413
 msgid "See also :ref:`ANSIBLE_SSH_CONTROL_PATH <ANSIBLE_SSH_CONTROL_PATH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2405
+#: ../../rst/reference_appendices/config.rst:2418
 #, python-format
 msgid ""
 "This sets the directory to use for ssh control path if the control path "
@@ -4748,13 +4775,13 @@ msgid ""
 "control path setting."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2407
+#: ../../rst/reference_appendices/config.rst:2420
 msgid ""
 "See also :ref:`ANSIBLE_SSH_CONTROL_PATH_DIR "
 "<ANSIBLE_SSH_CONTROL_PATH_DIR>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2412
+#: ../../rst/reference_appendices/config.rst:2425
 msgid ""
 "This defines the location of the ssh binary. It defaults to `ssh` which "
 "will use the first ssh binary available in $PATH.This option is usually "
@@ -4762,103 +4789,103 @@ msgid ""
 " or when using ssh wrappers to connect to remote hosts."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2414
+#: ../../rst/reference_appendices/config.rst:2427
 msgid "See also :ref:`ANSIBLE_SSH_EXECUTABLE <ANSIBLE_SSH_EXECUTABLE>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2421
+#: ../../rst/reference_appendices/config.rst:2434
 msgid "See also :ref:`ANSIBLE_SSH_RETRIES <ANSIBLE_SSH_RETRIES>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2428
+#: ../../rst/reference_appendices/config.rst:2441
 msgid "See also :ref:`ANY_ERRORS_FATAL <ANY_ERRORS_FATAL>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2435
+#: ../../rst/reference_appendices/config.rst:2448
 msgid "See also :ref:`BECOME_ALLOW_SAME_USER <BECOME_ALLOW_SAME_USER>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2442
+#: ../../rst/reference_appendices/config.rst:2455
 msgid "See also :ref:`AGNOSTIC_BECOME_PROMPT <AGNOSTIC_BECOME_PROMPT>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2449
+#: ../../rst/reference_appendices/config.rst:2462
 msgid "See also :ref:`CACHE_PLUGIN <CACHE_PLUGIN>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2456
+#: ../../rst/reference_appendices/config.rst:2469
 msgid "See also :ref:`CACHE_PLUGIN_CONNECTION <CACHE_PLUGIN_CONNECTION>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2463
+#: ../../rst/reference_appendices/config.rst:2476
 msgid "See also :ref:`CACHE_PLUGIN_PREFIX <CACHE_PLUGIN_PREFIX>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2470
+#: ../../rst/reference_appendices/config.rst:2483
 msgid "See also :ref:`CACHE_PLUGIN_TIMEOUT <CACHE_PLUGIN_TIMEOUT>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2477
+#: ../../rst/reference_appendices/config.rst:2490
 msgid "See also :ref:`COLLECTIONS_PATHS <COLLECTIONS_PATHS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2484
+#: ../../rst/reference_appendices/config.rst:2497
 msgid "See also :ref:`COLOR_CHANGED <COLOR_CHANGED>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2491
+#: ../../rst/reference_appendices/config.rst:2504
 msgid "See also :ref:`COLOR_CONSOLE_PROMPT <COLOR_CONSOLE_PROMPT>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2498
+#: ../../rst/reference_appendices/config.rst:2511
 msgid "See also :ref:`COLOR_DEBUG <COLOR_DEBUG>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2505
+#: ../../rst/reference_appendices/config.rst:2518
 msgid "See also :ref:`COLOR_DEPRECATE <COLOR_DEPRECATE>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2512
+#: ../../rst/reference_appendices/config.rst:2525
 msgid "See also :ref:`COLOR_DIFF_ADD <COLOR_DIFF_ADD>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2519
+#: ../../rst/reference_appendices/config.rst:2532
 msgid "See also :ref:`COLOR_DIFF_LINES <COLOR_DIFF_LINES>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2526
+#: ../../rst/reference_appendices/config.rst:2539
 msgid "See also :ref:`COLOR_DIFF_REMOVE <COLOR_DIFF_REMOVE>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2533
+#: ../../rst/reference_appendices/config.rst:2546
 msgid "See also :ref:`COLOR_ERROR <COLOR_ERROR>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2540
+#: ../../rst/reference_appendices/config.rst:2553
 msgid "See also :ref:`COLOR_HIGHLIGHT <COLOR_HIGHLIGHT>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2547
+#: ../../rst/reference_appendices/config.rst:2560
 msgid "See also :ref:`COLOR_OK <COLOR_OK>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2554
+#: ../../rst/reference_appendices/config.rst:2567
 msgid "See also :ref:`COLOR_SKIP <COLOR_SKIP>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2561
+#: ../../rst/reference_appendices/config.rst:2574
 msgid "See also :ref:`COLOR_UNREACHABLE <COLOR_UNREACHABLE>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2568
+#: ../../rst/reference_appendices/config.rst:2581
 msgid "See also :ref:`COLOR_VERBOSE <COLOR_VERBOSE>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2575
+#: ../../rst/reference_appendices/config.rst:2588
 msgid "See also :ref:`COLOR_WARN <COLOR_WARN>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2580
+#: ../../rst/reference_appendices/config.rst:2593
 msgid ""
 "With this setting on (True), running conditional evaluation 'var' is "
 "treated differently than 'var.subkey' as the first is evaluated directly "
@@ -4871,22 +4898,22 @@ msgid ""
 "setting eventually will be deprecated after 2.12"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2582
+#: ../../rst/reference_appendices/config.rst:2595
 msgid "See also :ref:`CONDITIONAL_BARE_VARS <CONDITIONAL_BARE_VARS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2587
+#: ../../rst/reference_appendices/config.rst:2600
 msgid ""
 "Sets the output directory on the remote host to generate coverage reports"
 " to.Currently only used for remote coverage on PowerShell modules.This is"
 " for internal use only."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2589
+#: ../../rst/reference_appendices/config.rst:2602
 msgid "See also :ref:`COVERAGE_REMOTE_OUTPUT <COVERAGE_REMOTE_OUTPUT>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2594
+#: ../../rst/reference_appendices/config.rst:2607
 msgid ""
 "A list of paths for files on the Ansible controller to run coverage for "
 "when executing on the remote host.Only files that match the path glob "
@@ -4895,22 +4922,22 @@ msgid ""
 "PowerShell modules.This is for internal use only."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2596
+#: ../../rst/reference_appendices/config.rst:2609
 msgid "See also :ref:`COVERAGE_REMOTE_WHITELIST <COVERAGE_REMOTE_WHITELIST>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2601
+#: ../../rst/reference_appendices/config.rst:2614
 msgid ""
 "By default Ansible will issue a warning when received from a task action "
 "(module or action plugin)These warnings can be silenced by adjusting this"
 " setting to False."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2603
+#: ../../rst/reference_appendices/config.rst:2616
 msgid "See also :ref:`ACTION_WARNINGS <ACTION_WARNINGS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2608
+#: ../../rst/reference_appendices/config.rst:2621
 msgid ""
 "By default Ansible will issue a warning when the shell or command module "
 "is used and the command appears to be similar to an existing Ansible "
@@ -4919,102 +4946,102 @@ msgid ""
 "``warn``."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2610
+#: ../../rst/reference_appendices/config.rst:2623
 msgid "See also :ref:`COMMAND_WARNINGS <COMMAND_WARNINGS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2615
+#: ../../rst/reference_appendices/config.rst:2628
 msgid ""
 "By default Ansible will issue a warning when there are no hosts in the "
 "inventory.These warnings can be silenced by adjusting this setting to "
 "False."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2617
+#: ../../rst/reference_appendices/config.rst:2630
 msgid "See also :ref:`LOCALHOST_WARNING <LOCALHOST_WARNING>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2624
+#: ../../rst/reference_appendices/config.rst:2637
 msgid "See also :ref:`DOC_FRAGMENT_PLUGIN_PATH <DOC_FRAGMENT_PLUGIN_PATH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2631
+#: ../../rst/reference_appendices/config.rst:2644
 msgid "See also :ref:`DEFAULT_ACTION_PLUGIN_PATH <DEFAULT_ACTION_PLUGIN_PATH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2639
+#: ../../rst/reference_appendices/config.rst:2652
 msgid "See also :ref:`DEFAULT_ASK_PASS <DEFAULT_ASK_PASS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2646
+#: ../../rst/reference_appendices/config.rst:2659
 msgid "See also :ref:`DEFAULT_ASK_VAULT_PASS <DEFAULT_ASK_VAULT_PASS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2653
+#: ../../rst/reference_appendices/config.rst:2666
 msgid "See also :ref:`DEFAULT_BECOME <DEFAULT_BECOME>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2660
+#: ../../rst/reference_appendices/config.rst:2673
 msgid "See also :ref:`DEFAULT_BECOME_ASK_PASS <DEFAULT_BECOME_ASK_PASS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2667
+#: ../../rst/reference_appendices/config.rst:2680
 msgid "See also :ref:`DEFAULT_BECOME_METHOD <DEFAULT_BECOME_METHOD>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2674
+#: ../../rst/reference_appendices/config.rst:2687
 msgid "See also :ref:`DEFAULT_BECOME_EXE <DEFAULT_BECOME_EXE>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2681
+#: ../../rst/reference_appendices/config.rst:2694
 msgid "See also :ref:`DEFAULT_BECOME_FLAGS <DEFAULT_BECOME_FLAGS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2688
+#: ../../rst/reference_appendices/config.rst:2701
 msgid "See also :ref:`BECOME_PLUGIN_PATH <BECOME_PLUGIN_PATH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2695
+#: ../../rst/reference_appendices/config.rst:2708
 msgid "See also :ref:`DEFAULT_BECOME_USER <DEFAULT_BECOME_USER>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2702
+#: ../../rst/reference_appendices/config.rst:2715
 msgid "See also :ref:`DEFAULT_CACHE_PLUGIN_PATH <DEFAULT_CACHE_PLUGIN_PATH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2709
+#: ../../rst/reference_appendices/config.rst:2722
 msgid "See also :ref:`DEFAULT_CALLABLE_WHITELIST <DEFAULT_CALLABLE_WHITELIST>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2716
+#: ../../rst/reference_appendices/config.rst:2729
 msgid ""
 "See also :ref:`DEFAULT_CALLBACK_PLUGIN_PATH "
 "<DEFAULT_CALLBACK_PLUGIN_PATH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2723
+#: ../../rst/reference_appendices/config.rst:2736
 msgid "See also :ref:`DEFAULT_CALLBACK_WHITELIST <DEFAULT_CALLBACK_WHITELIST>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2730
+#: ../../rst/reference_appendices/config.rst:2743
 msgid "See also :ref:`DEFAULT_CLICONF_PLUGIN_PATH <DEFAULT_CLICONF_PLUGIN_PATH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2737
+#: ../../rst/reference_appendices/config.rst:2750
 msgid ""
 "See also :ref:`DEFAULT_CONNECTION_PLUGIN_PATH "
 "<DEFAULT_CONNECTION_PLUGIN_PATH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2744
+#: ../../rst/reference_appendices/config.rst:2757
 msgid "See also :ref:`DEFAULT_DEBUG <DEFAULT_DEBUG>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2751
+#: ../../rst/reference_appendices/config.rst:2764
 msgid "See also :ref:`DEFAULT_EXECUTABLE <DEFAULT_EXECUTABLE>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2756
+#: ../../rst/reference_appendices/config.rst:2769
 msgid ""
 "This option allows you to globally configure a custom path for "
 "'local_facts' for the implied M(setup) task when using fact gathering.If "
@@ -5023,15 +5050,15 @@ msgid ""
 "that use the M(setup) module."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2758
+#: ../../rst/reference_appendices/config.rst:2771
 msgid "See also :ref:`DEFAULT_FACT_PATH <DEFAULT_FACT_PATH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2765
+#: ../../rst/reference_appendices/config.rst:2778
 msgid "See also :ref:`DEFAULT_FILTER_PLUGIN_PATH <DEFAULT_FILTER_PLUGIN_PATH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2770
+#: ../../rst/reference_appendices/config.rst:2783
 msgid ""
 "This option controls if notified handlers run on a host even if a failure"
 " occurs on that host.When false, the handlers will not run if a failure "
@@ -5039,15 +5066,15 @@ msgid ""
 "line. See Handlers and Failure for more details."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2772
+#: ../../rst/reference_appendices/config.rst:2785
 msgid "See also :ref:`DEFAULT_FORCE_HANDLERS <DEFAULT_FORCE_HANDLERS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2779
+#: ../../rst/reference_appendices/config.rst:2792
 msgid "See also :ref:`DEFAULT_FORKS <DEFAULT_FORKS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2784
+#: ../../rst/reference_appendices/config.rst:2797
 msgid ""
 "This setting controls the default policy of fact gathering (facts "
 "discovered about remote systems).When 'implicit' (the default), the cache"
@@ -5061,38 +5088,38 @@ msgid ""
 " the cache plugin."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2786
+#: ../../rst/reference_appendices/config.rst:2799
 msgid "See also :ref:`DEFAULT_GATHERING <DEFAULT_GATHERING>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2791
+#: ../../rst/reference_appendices/config.rst:2804
 msgid ""
 "Set the `gather_subset` option for the M(setup) task in the implicit fact"
 " gathering. See the module documentation for specifics.It does **not** "
 "apply to user defined M(setup) tasks."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2793
+#: ../../rst/reference_appendices/config.rst:2806
 msgid "See also :ref:`DEFAULT_GATHER_SUBSET <DEFAULT_GATHER_SUBSET>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2798
+#: ../../rst/reference_appendices/config.rst:2811
 msgid ""
 "Set the timeout in seconds for the implicit fact gathering.It does "
 "**not** apply to user defined M(setup) tasks."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2800
+#: ../../rst/reference_appendices/config.rst:2813
 msgid "See also :ref:`DEFAULT_GATHER_TIMEOUT <DEFAULT_GATHER_TIMEOUT>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2807
+#: ../../rst/reference_appendices/config.rst:2820
 msgid ""
 "See also :ref:`DEFAULT_HANDLER_INCLUDES_STATIC "
 "<DEFAULT_HANDLER_INCLUDES_STATIC>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2812
+#: ../../rst/reference_appendices/config.rst:2825
 msgid ""
 "This setting controls how variables merge in Ansible. By default Ansible "
 "will override variables in specific precedence orders, as described in "
@@ -5107,157 +5134,157 @@ msgid ""
 "doing this for a particular variable (described in Filters)."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2814
+#: ../../rst/reference_appendices/config.rst:2827
 msgid "See also :ref:`DEFAULT_HASH_BEHAVIOUR <DEFAULT_HASH_BEHAVIOUR>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2821
+#: ../../rst/reference_appendices/config.rst:2834
 msgid "See also :ref:`DEFAULT_HOST_LIST <DEFAULT_HOST_LIST>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2828
+#: ../../rst/reference_appendices/config.rst:2841
 msgid "See also :ref:`DEFAULT_HTTPAPI_PLUGIN_PATH <DEFAULT_HTTPAPI_PLUGIN_PATH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2836
+#: ../../rst/reference_appendices/config.rst:2849
 msgid ""
 "See also :ref:`DEFAULT_INVENTORY_PLUGIN_PATH "
 "<DEFAULT_INVENTORY_PLUGIN_PATH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2841
+#: ../../rst/reference_appendices/config.rst:2854
 msgid ""
 "This is a developer-specific feature that allows enabling additional "
 "Jinja2 extensions.See the Jinja2 documentation for details. If you do not"
 " know what these do, you probably don't need to change this setting :)"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2843
+#: ../../rst/reference_appendices/config.rst:2856
 msgid "See also :ref:`DEFAULT_JINJA2_EXTENSIONS <DEFAULT_JINJA2_EXTENSIONS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2850
+#: ../../rst/reference_appendices/config.rst:2863
 msgid "See also :ref:`DEFAULT_JINJA2_NATIVE <DEFAULT_JINJA2_NATIVE>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2855
+#: ../../rst/reference_appendices/config.rst:2868
 msgid ""
 "Enables/disables the cleaning up of the temporary files Ansible used to "
 "execute the tasks on the remote.If this option is enabled it will disable"
 " ``ANSIBLE_PIPELINING``."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2857
+#: ../../rst/reference_appendices/config.rst:2870
 msgid "See also :ref:`DEFAULT_KEEP_REMOTE_FILES <DEFAULT_KEEP_REMOTE_FILES>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2864
-#: ../../rst/reference_appendices/config.rst:2870
+#: ../../rst/reference_appendices/config.rst:2877
+#: ../../rst/reference_appendices/config.rst:2883
 msgid ""
 "See also :ref:`DEFAULT_LIBVIRT_LXC_NOSECLABEL "
 "<DEFAULT_LIBVIRT_LXC_NOSECLABEL>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2877
+#: ../../rst/reference_appendices/config.rst:2890
 msgid ""
 "See also :ref:`DEFAULT_LOAD_CALLBACK_PLUGINS "
 "<DEFAULT_LOAD_CALLBACK_PLUGINS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2884
+#: ../../rst/reference_appendices/config.rst:2897
 msgid "See also :ref:`DEFAULT_LOCAL_TMP <DEFAULT_LOCAL_TMP>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2891
+#: ../../rst/reference_appendices/config.rst:2904
 msgid "See also :ref:`DEFAULT_LOG_PATH <DEFAULT_LOG_PATH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2898
+#: ../../rst/reference_appendices/config.rst:2911
 msgid "See also :ref:`DEFAULT_LOG_FILTER <DEFAULT_LOG_FILTER>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2905
+#: ../../rst/reference_appendices/config.rst:2918
 msgid "See also :ref:`DEFAULT_LOOKUP_PLUGIN_PATH <DEFAULT_LOOKUP_PLUGIN_PATH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2913
+#: ../../rst/reference_appendices/config.rst:2926
 msgid "See also :ref:`DEFAULT_MODULE_ARGS <DEFAULT_MODULE_ARGS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2922
+#: ../../rst/reference_appendices/config.rst:2935
 msgid "See also :ref:`DEFAULT_MODULE_PATH <DEFAULT_MODULE_PATH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2929
+#: ../../rst/reference_appendices/config.rst:2942
 msgid "See also :ref:`DEFAULT_MODULE_UTILS_PATH <DEFAULT_MODULE_UTILS_PATH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2936
+#: ../../rst/reference_appendices/config.rst:2949
 msgid "See also :ref:`DEFAULT_NETCONF_PLUGIN_PATH <DEFAULT_NETCONF_PLUGIN_PATH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2943
+#: ../../rst/reference_appendices/config.rst:2956
 msgid "See also :ref:`DEFAULT_NO_LOG <DEFAULT_NO_LOG>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2950
+#: ../../rst/reference_appendices/config.rst:2963
 msgid "See also :ref:`DEFAULT_NO_TARGET_SYSLOG <DEFAULT_NO_TARGET_SYSLOG>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2957
+#: ../../rst/reference_appendices/config.rst:2970
 msgid "See also :ref:`DEFAULT_NULL_REPRESENTATION <DEFAULT_NULL_REPRESENTATION>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2964
+#: ../../rst/reference_appendices/config.rst:2977
 msgid "See also :ref:`DEFAULT_POLL_INTERVAL <DEFAULT_POLL_INTERVAL>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2971
+#: ../../rst/reference_appendices/config.rst:2984
 msgid "See also :ref:`DEFAULT_PRIVATE_KEY_FILE <DEFAULT_PRIVATE_KEY_FILE>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2976
+#: ../../rst/reference_appendices/config.rst:2989
 msgid ""
 "Makes role variables inaccessible from other roles.This was introduced as"
 " a way to reset role variables to default values if a role is used more "
 "than once in a playbook."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2978
+#: ../../rst/reference_appendices/config.rst:2991
 msgid "See also :ref:`DEFAULT_PRIVATE_ROLE_VARS <DEFAULT_PRIVATE_ROLE_VARS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2985
+#: ../../rst/reference_appendices/config.rst:2998
 msgid "See also :ref:`DEFAULT_REMOTE_PORT <DEFAULT_REMOTE_PORT>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2990
+#: ../../rst/reference_appendices/config.rst:3003
 msgid ""
 "Sets the login user for the target machinesWhen blank it uses the "
 "connection plugin's default, normally the user currently executing "
 "Ansible."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2992
+#: ../../rst/reference_appendices/config.rst:3005
 msgid "See also :ref:`DEFAULT_REMOTE_USER <DEFAULT_REMOTE_USER>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:2999
+#: ../../rst/reference_appendices/config.rst:3012
 msgid "See also :ref:`DEFAULT_ROLES_PATH <DEFAULT_ROLES_PATH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3004
+#: ../../rst/reference_appendices/config.rst:3017
 msgid ""
 "Preferred method to use when transferring files over ssh.When set to "
 "smart, Ansible will try them until one succeeds or they all fail.If set "
 "to True, it will force 'scp', if False it will use 'sftp'."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3006
+#: ../../rst/reference_appendices/config.rst:3019
 msgid "See also :ref:`DEFAULT_SCP_IF_SSH <DEFAULT_SCP_IF_SSH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3011
+#: ../../rst/reference_appendices/config.rst:3024
 msgid ""
 "Some filesystems do not support safe operations and/or return "
 "inconsistent errors, this setting makes Ansible 'tolerate' those in the "
@@ -5265,15 +5292,15 @@ msgid ""
 "not always verified when a filesystem is in the list."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3013
+#: ../../rst/reference_appendices/config.rst:3026
 msgid "See also :ref:`DEFAULT_SELINUX_SPECIAL_FS <DEFAULT_SELINUX_SPECIAL_FS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3019
+#: ../../rst/reference_appendices/config.rst:3032
 msgid "See also :ref:`DEFAULT_SFTP_BATCH_MODE <DEFAULT_SFTP_BATCH_MODE>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3024
+#: ../../rst/reference_appendices/config.rst:3037
 msgid ""
 "Ansible can optimise actions that call modules that support list "
 "parameters when using ``with_`` looping. Instead of calling the module "
@@ -5284,26 +5311,26 @@ msgid ""
 "only thing being passed to the parameter."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3026
+#: ../../rst/reference_appendices/config.rst:3039
 msgid "See also :ref:`DEFAULT_SQUASH_ACTIONS <DEFAULT_SQUASH_ACTIONS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3033
+#: ../../rst/reference_appendices/config.rst:3046
 msgid "See also :ref:`DEFAULT_SSH_TRANSFER_METHOD <DEFAULT_SSH_TRANSFER_METHOD>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3038
+#: ../../rst/reference_appendices/config.rst:3051
 msgid ""
 "Set the main callback used to display Ansible output, you can only have "
 "one at a time.You can have many other callbacks, but just one can be in "
 "charge of stdout."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3040
+#: ../../rst/reference_appendices/config.rst:3053
 msgid "See also :ref:`DEFAULT_STDOUT_CALLBACK <DEFAULT_STDOUT_CALLBACK>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3045
+#: ../../rst/reference_appendices/config.rst:3058
 msgid ""
 "Whether or not to enable the task debugger, this previously was done as a"
 " strategy plugin.Now all strategy plugins can inherit this behavior. The "
@@ -5311,64 +5338,64 @@ msgid ""
 "the debugger keyword for more flexibility."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3047
+#: ../../rst/reference_appendices/config.rst:3060
 msgid "See also :ref:`ENABLE_TASK_DEBUGGER <ENABLE_TASK_DEBUGGER>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3052
+#: ../../rst/reference_appendices/config.rst:3065
 msgid ""
 "This option defines whether the task debugger will be invoked on a failed"
 " task when ignore_errors=True is specified.True specifies that the "
 "debugger will honor ignore_errors, False will not honor ignore_errors."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3054
+#: ../../rst/reference_appendices/config.rst:3067
 msgid "See also :ref:`TASK_DEBUGGER_IGNORE_ERRORS <TASK_DEBUGGER_IGNORE_ERRORS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3061
+#: ../../rst/reference_appendices/config.rst:3074
 msgid "See also :ref:`DEFAULT_STRATEGY <DEFAULT_STRATEGY>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3068
+#: ../../rst/reference_appendices/config.rst:3081
 msgid ""
 "See also :ref:`DEFAULT_STRATEGY_PLUGIN_PATH "
 "<DEFAULT_STRATEGY_PLUGIN_PATH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3075
+#: ../../rst/reference_appendices/config.rst:3088
 msgid "See also :ref:`DEFAULT_SU <DEFAULT_SU>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3082
+#: ../../rst/reference_appendices/config.rst:3095
 msgid "See also :ref:`DEFAULT_SYSLOG_FACILITY <DEFAULT_SYSLOG_FACILITY>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3089
+#: ../../rst/reference_appendices/config.rst:3102
 msgid ""
 "See also :ref:`DEFAULT_TASK_INCLUDES_STATIC "
 "<DEFAULT_TASK_INCLUDES_STATIC>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3096
+#: ../../rst/reference_appendices/config.rst:3109
 msgid ""
 "See also :ref:`DEFAULT_TERMINAL_PLUGIN_PATH "
 "<DEFAULT_TERMINAL_PLUGIN_PATH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3103
+#: ../../rst/reference_appendices/config.rst:3116
 msgid "See also :ref:`DEFAULT_TEST_PLUGIN_PATH <DEFAULT_TEST_PLUGIN_PATH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3110
+#: ../../rst/reference_appendices/config.rst:3123
 msgid "See also :ref:`DEFAULT_TIMEOUT <DEFAULT_TIMEOUT>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3117
+#: ../../rst/reference_appendices/config.rst:3130
 msgid "See also :ref:`DEFAULT_TRANSPORT <DEFAULT_TRANSPORT>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3122
+#: ../../rst/reference_appendices/config.rst:3135
 msgid ""
 "When True, this causes ansible templating to fail steps that reference "
 "variable names that are likely typoed.Otherwise, any '{{ "
@@ -5376,55 +5403,55 @@ msgid ""
 "rendered in a template or ansible action line exactly as written."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3124
+#: ../../rst/reference_appendices/config.rst:3137
 msgid ""
 "See also :ref:`DEFAULT_UNDEFINED_VAR_BEHAVIOR "
 "<DEFAULT_UNDEFINED_VAR_BEHAVIOR>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3131
+#: ../../rst/reference_appendices/config.rst:3144
 msgid "See also :ref:`DEFAULT_VARS_PLUGIN_PATH <DEFAULT_VARS_PLUGIN_PATH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3138
+#: ../../rst/reference_appendices/config.rst:3151
 msgid "See also :ref:`DEFAULT_VAULT_ID_MATCH <DEFAULT_VAULT_ID_MATCH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3145
+#: ../../rst/reference_appendices/config.rst:3158
 msgid "See also :ref:`DEFAULT_VAULT_IDENTITY <DEFAULT_VAULT_IDENTITY>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3152
+#: ../../rst/reference_appendices/config.rst:3165
 msgid ""
 "See also :ref:`DEFAULT_VAULT_ENCRYPT_IDENTITY "
 "<DEFAULT_VAULT_ENCRYPT_IDENTITY>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3159
+#: ../../rst/reference_appendices/config.rst:3172
 msgid "See also :ref:`DEFAULT_VAULT_IDENTITY_LIST <DEFAULT_VAULT_IDENTITY_LIST>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3166
+#: ../../rst/reference_appendices/config.rst:3179
 msgid "See also :ref:`DEFAULT_VAULT_PASSWORD_FILE <DEFAULT_VAULT_PASSWORD_FILE>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3173
+#: ../../rst/reference_appendices/config.rst:3186
 msgid "See also :ref:`DEFAULT_VERBOSITY <DEFAULT_VERBOSITY>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3180
+#: ../../rst/reference_appendices/config.rst:3193
 msgid "See also :ref:`DEPRECATION_WARNINGS <DEPRECATION_WARNINGS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3187
+#: ../../rst/reference_appendices/config.rst:3200
 msgid "See also :ref:`DIFF_ALWAYS <DIFF_ALWAYS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3194
+#: ../../rst/reference_appendices/config.rst:3207
 msgid "See also :ref:`DIFF_CONTEXT <DIFF_CONTEXT>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3199
+#: ../../rst/reference_appendices/config.rst:3212
 msgid ""
 "Normally ``ansible-playbook`` will print a header for each task that is "
 "run. These headers will contain the name: field from the task if you "
@@ -5443,55 +5470,55 @@ msgid ""
 "How do I keep secret data in my playbook? for more information."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3201
+#: ../../rst/reference_appendices/config.rst:3214
 msgid "See also :ref:`DISPLAY_ARGS_TO_STDOUT <DISPLAY_ARGS_TO_STDOUT>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3208
-#: ../../rst/reference_appendices/config.rst:3214
+#: ../../rst/reference_appendices/config.rst:3221
+#: ../../rst/reference_appendices/config.rst:3227
 msgid "See also :ref:`DISPLAY_SKIPPED_HOSTS <DISPLAY_SKIPPED_HOSTS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3220
+#: ../../rst/reference_appendices/config.rst:3233
 msgid ""
 "By default Ansible will issue a warning when a duplicate dict key is "
 "encountered in YAML.These warnings can be silenced by adjusting this "
 "setting to False."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3222
+#: ../../rst/reference_appendices/config.rst:3235
 msgid "See also :ref:`DUPLICATE_YAML_DICT_KEY <DUPLICATE_YAML_DICT_KEY>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3229
+#: ../../rst/reference_appendices/config.rst:3242
 msgid "See also :ref:`ERROR_ON_MISSING_HANDLER <ERROR_ON_MISSING_HANDLER>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3236
+#: ../../rst/reference_appendices/config.rst:3249
 msgid "See also :ref:`CONNECTION_FACTS_MODULES <CONNECTION_FACTS_MODULES>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3243
+#: ../../rst/reference_appendices/config.rst:3256
 msgid "See also :ref:`FACTS_MODULES <FACTS_MODULES>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3250
+#: ../../rst/reference_appendices/config.rst:3263
 msgid "See also :ref:`GALAXY_IGNORE_CERTS <GALAXY_IGNORE_CERTS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3257
+#: ../../rst/reference_appendices/config.rst:3270
 msgid "See also :ref:`GALAXY_ROLE_SKELETON <GALAXY_ROLE_SKELETON>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3264
+#: ../../rst/reference_appendices/config.rst:3277
 msgid "See also :ref:`GALAXY_ROLE_SKELETON_IGNORE <GALAXY_ROLE_SKELETON_IGNORE>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3271
+#: ../../rst/reference_appendices/config.rst:3284
 msgid "See also :ref:`GALAXY_SERVER <GALAXY_SERVER>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3276
+#: ../../rst/reference_appendices/config.rst:3289
 msgid ""
 "A list of Galaxy servers to use when installing a collection.The value "
 "corresponds to the config ini header ``[galaxy_server.{{item}}]`` which "
@@ -5501,31 +5528,43 @@ msgid ""
 "this config option will ignore the :ref:`galaxy_server` config option."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3278
+#: ../../rst/reference_appendices/config.rst:3291
 msgid "See also :ref:`GALAXY_SERVER_LIST <GALAXY_SERVER_LIST>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3285
+#: ../../rst/reference_appendices/config.rst:3298
 msgid "See also :ref:`GALAXY_TOKEN <GALAXY_TOKEN>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3292
+#: ../../rst/reference_appendices/config.rst:3305
 msgid "See also :ref:`GALAXY_TOKEN_PATH <GALAXY_TOKEN_PATH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3299
+#: ../../rst/reference_appendices/config.rst:3310
+msgid ""
+"Some steps in ``ansible-galaxy`` display a progress wheel which can cause"
+" issues on certain displays or when outputing the stdout to a file.This "
+"config option controls whether the display wheel is shown or not.The "
+"default is to show the display wheel if stdout has a tty."
+msgstr ""
+
+#: ../../rst/reference_appendices/config.rst:3312
+msgid "See also :ref:`GALAXY_DISPLAY_PROGRESS <GALAXY_DISPLAY_PROGRESS>`"
+msgstr ""
+
+#: ../../rst/reference_appendices/config.rst:3319
 msgid "See also :ref:`HOST_KEY_CHECKING <HOST_KEY_CHECKING>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3306
+#: ../../rst/reference_appendices/config.rst:3326
 msgid "See also :ref:`HOST_PATTERN_MISMATCH <HOST_PATTERN_MISMATCH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3313
+#: ../../rst/reference_appendices/config.rst:3333
 msgid "See also :ref:`INTERPRETER_PYTHON <INTERPRETER_PYTHON>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3320
+#: ../../rst/reference_appendices/config.rst:3340
 msgid ""
 "Make ansible transform invalid characters in group names supplied by "
 "inventory sources.If 'never' it will allow for the group name but warn "
@@ -5535,121 +5574,121 @@ msgid ""
 "as 'always', without issuing a warning."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3322
+#: ../../rst/reference_appendices/config.rst:3342
 msgid ""
 "See also :ref:`TRANSFORM_INVALID_GROUP_CHARS "
 "<TRANSFORM_INVALID_GROUP_CHARS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3329
+#: ../../rst/reference_appendices/config.rst:3349
 msgid ""
 "See also :ref:`INVALID_TASK_ATTRIBUTE_FAILED "
 "<INVALID_TASK_ATTRIBUTE_FAILED>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3337
+#: ../../rst/reference_appendices/config.rst:3357
 msgid ""
 "See also :ref:`INVENTORY_ANY_UNPARSED_IS_FAILED "
 "<INVENTORY_ANY_UNPARSED_IS_FAILED>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3344
+#: ../../rst/reference_appendices/config.rst:3364
 msgid "See also :ref:`INVENTORY_CACHE_ENABLED <INVENTORY_CACHE_ENABLED>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3351
+#: ../../rst/reference_appendices/config.rst:3371
 msgid "See also :ref:`INVENTORY_CACHE_PLUGIN <INVENTORY_CACHE_PLUGIN>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3358
+#: ../../rst/reference_appendices/config.rst:3378
 msgid ""
 "See also :ref:`INVENTORY_CACHE_PLUGIN_CONNECTION "
 "<INVENTORY_CACHE_PLUGIN_CONNECTION>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3365
+#: ../../rst/reference_appendices/config.rst:3385
 msgid ""
 "See also :ref:`INVENTORY_CACHE_PLUGIN_PREFIX "
 "<INVENTORY_CACHE_PLUGIN_PREFIX>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3372
+#: ../../rst/reference_appendices/config.rst:3392
 msgid "See also :ref:`INVENTORY_CACHE_TIMEOUT <INVENTORY_CACHE_TIMEOUT>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3379
+#: ../../rst/reference_appendices/config.rst:3399
 msgid "See also :ref:`INVENTORY_ENABLED <INVENTORY_ENABLED>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3386
+#: ../../rst/reference_appendices/config.rst:3406
 msgid "See also :ref:`INVENTORY_EXPORT <INVENTORY_EXPORT>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3393
+#: ../../rst/reference_appendices/config.rst:3413
 msgid "See also :ref:`INVENTORY_IGNORE_EXTS <INVENTORY_IGNORE_EXTS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3400
+#: ../../rst/reference_appendices/config.rst:3420
 msgid "See also :ref:`INVENTORY_IGNORE_PATTERNS <INVENTORY_IGNORE_PATTERNS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3408
+#: ../../rst/reference_appendices/config.rst:3428
 msgid ""
 "See also :ref:`INVENTORY_UNPARSED_IS_FAILED "
 "<INVENTORY_UNPARSED_IS_FAILED>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3415
+#: ../../rst/reference_appendices/config.rst:3435
 msgid "See also :ref:`MAX_FILE_SIZE_FOR_DIFF <MAX_FILE_SIZE_FOR_DIFF>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3421
-#: ../../rst/reference_appendices/config.rst:3426
+#: ../../rst/reference_appendices/config.rst:3441
+#: ../../rst/reference_appendices/config.rst:3446
 msgid "See also :ref:`NETWORK_GROUP_MODULES <NETWORK_GROUP_MODULES>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3431
+#: ../../rst/reference_appendices/config.rst:3451
 msgid ""
 "Facts are available inside the `ansible_facts` variable, this setting "
 "also pushes them as their own vars in the main namespace.Unlike inside "
 "the `ansible_facts` dictionary, these will have an `ansible_` prefix."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3433
+#: ../../rst/reference_appendices/config.rst:3453
 msgid "See also :ref:`INJECT_FACTS_AS_VARS <INJECT_FACTS_AS_VARS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3440
+#: ../../rst/reference_appendices/config.rst:3460
 msgid "See also :ref:`OLD_PLUGIN_CACHE_CLEARING <OLD_PLUGIN_CACHE_CLEARING>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3446
+#: ../../rst/reference_appendices/config.rst:3466
 msgid "See also :ref:`PARAMIKO_HOST_KEY_AUTO_ADD <PARAMIKO_HOST_KEY_AUTO_ADD>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3452
+#: ../../rst/reference_appendices/config.rst:3472
 msgid "See also :ref:`PARAMIKO_LOOK_FOR_KEYS <PARAMIKO_LOOK_FOR_KEYS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3459
+#: ../../rst/reference_appendices/config.rst:3479
 msgid "See also :ref:`PERSISTENT_CONTROL_PATH_DIR <PERSISTENT_CONTROL_PATH_DIR>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3466
+#: ../../rst/reference_appendices/config.rst:3486
 msgid "See also :ref:`PERSISTENT_CONNECT_TIMEOUT <PERSISTENT_CONNECT_TIMEOUT>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3473
+#: ../../rst/reference_appendices/config.rst:3493
 msgid ""
 "See also :ref:`PERSISTENT_CONNECT_RETRY_TIMEOUT "
 "<PERSISTENT_CONNECT_RETRY_TIMEOUT>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3480
+#: ../../rst/reference_appendices/config.rst:3500
 msgid "See also :ref:`PERSISTENT_COMMAND_TIMEOUT <PERSISTENT_COMMAND_TIMEOUT>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3485
+#: ../../rst/reference_appendices/config.rst:3505
 msgid ""
 "This sets which playbook dirs will be used as a root to process vars "
 "plugins, which includes finding host_vars/group_varsThe ``top`` option "
@@ -5659,38 +5698,38 @@ msgid ""
 "``all`` option examines from the first parent to the current playbook."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3487
+#: ../../rst/reference_appendices/config.rst:3507
 msgid "See also :ref:`PLAYBOOK_VARS_ROOT <PLAYBOOK_VARS_ROOT>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3495
+#: ../../rst/reference_appendices/config.rst:3515
 msgid "See also :ref:`PYTHON_MODULE_RLIMIT_NOFILE <PYTHON_MODULE_RLIMIT_NOFILE>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3502
+#: ../../rst/reference_appendices/config.rst:3522
 msgid "See also :ref:`RETRY_FILES_ENABLED <RETRY_FILES_ENABLED>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3509
+#: ../../rst/reference_appendices/config.rst:3529
 msgid "See also :ref:`RETRY_FILES_SAVE_PATH <RETRY_FILES_SAVE_PATH>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3516
+#: ../../rst/reference_appendices/config.rst:3536
 msgid "See also :ref:`SHOW_CUSTOM_STATS <SHOW_CUSTOM_STATS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3521
+#: ../../rst/reference_appendices/config.rst:3541
 msgid ""
 "This list of filters avoids 'type conversion' when templating "
 "variablesUseful when you want to avoid conversion into lists or "
 "dictionaries for JSON strings, for example."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3523
+#: ../../rst/reference_appendices/config.rst:3543
 msgid "See also :ref:`STRING_TYPE_FILTERS <STRING_TYPE_FILTERS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3528
+#: ../../rst/reference_appendices/config.rst:3548
 msgid ""
 "Allows disabling of warnings related to potential issues on the system "
 "running ansible itself (not on the managed hosts)These may include "
@@ -5698,42 +5737,42 @@ msgid ""
 "resolved if possible."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3530
+#: ../../rst/reference_appendices/config.rst:3550
 msgid "See also :ref:`SYSTEM_WARNINGS <SYSTEM_WARNINGS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3537
+#: ../../rst/reference_appendices/config.rst:3557
 msgid "See also :ref:`TAGS_RUN <TAGS_RUN>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3544
+#: ../../rst/reference_appendices/config.rst:3564
 msgid "See also :ref:`TAGS_SKIP <TAGS_SKIP>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3551
+#: ../../rst/reference_appendices/config.rst:3571
 msgid "See also :ref:`USE_PERSISTENT_CONNECTIONS <USE_PERSISTENT_CONNECTIONS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3558
+#: ../../rst/reference_appendices/config.rst:3578
 msgid "See also :ref:`VARIABLE_PRECEDENCE <VARIABLE_PRECEDENCE>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3563
+#: ../../rst/reference_appendices/config.rst:3583
 msgid ""
 "Check all of these extensions when looking for 'variable' files which "
 "should be YAML or JSON or vaulted versions of these.This affects "
 "vars_files, include_vars, inventory and vars plugins among others."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3565
+#: ../../rst/reference_appendices/config.rst:3585
 msgid "See also :ref:`YAML_FILENAME_EXTENSIONS <YAML_FILENAME_EXTENSIONS>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3572
+#: ../../rst/reference_appendices/config.rst:3592
 msgid "See also :ref:`NETCONF_SSH_CONFIG <NETCONF_SSH_CONFIG>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3577
+#: ../../rst/reference_appendices/config.rst:3597
 msgid ""
 "Action to take when a module parameter value is converted to a string "
 "(this does not affect variables). For string parameters, values such as "
@@ -5743,11 +5782,11 @@ msgid ""
 "'error' in 2.12."
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3579
+#: ../../rst/reference_appendices/config.rst:3599
 msgid "See also :ref:`STRING_CONVERSION_ACTION <STRING_CONVERSION_ACTION>`"
 msgstr ""
 
-#: ../../rst/reference_appendices/config.rst:3586
+#: ../../rst/reference_appendices/config.rst:3606
 msgid "See also :ref:`VERBOSE_TO_STDERR <VERBOSE_TO_STDERR>`"
 msgstr ""
 
@@ -6067,5 +6106,18 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "See also :ref:`DEFAULT_SU_USER <DEFAULT_SU_USER>`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This controls the amount of time "
+#~ "to wait for response from remote "
+#~ "device before timing out presistent "
+#~ "connection."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This controls the retry timeout for "
+#~ "presistent connection to connect to the"
+#~ " local domain socket."
 #~ msgstr ""
 

@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/user_guide/become.rst:5
 msgid "Understanding Privilege Escalation"
@@ -44,7 +44,13 @@ msgid ""
 "`pbrun`, `dzdo`, `ksu`, `runas`, `machinectl` and others."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:17
+#: ../../rst/user_guide/become.rst:16
+msgid ""
+"A full list of all become plugins that are included in Ansible can be "
+"found in the :ref:`become_plugin_list`."
+msgstr ""
+
+#: ../../rst/user_guide/become.rst:19
 msgid ""
 "Prior to version 1.9, Ansible mostly allowed the use of `sudo` and a "
 "limited use of `su` to allow a login/remote user to become a different "
@@ -55,161 +61,170 @@ msgid ""
 "`pbrun` (Powerbroker), `pfexec`, `dzdo` (Centrify), and others."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:19
+#: ../../rst/user_guide/become.rst:21
 msgid ""
 "Become vars and directives are independent. For example, setting "
 "``become_user`` does not set ``become``."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:23
+#: ../../rst/user_guide/become.rst:25
 msgid "Directives"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:25
+#: ../../rst/user_guide/become.rst:27
 msgid ""
 "These can be set from play to task level, but are overridden by "
 "connection variables as they can be host specific."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:28
+#: ../../rst/user_guide/become.rst:30
 msgid "become"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:28
+#: ../../rst/user_guide/become.rst:30
 msgid "set to ``yes`` to activate privilege escalation."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:31
+#: ../../rst/user_guide/become.rst:33
 msgid "become_user"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:31
+#: ../../rst/user_guide/become.rst:33
 msgid ""
 "set to user with desired privileges — the user you `become`, NOT the user"
 " you login as. Does NOT imply ``become: yes``, to allow it to be set at "
 "host level."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:34
+#: ../../rst/user_guide/become.rst:36
 msgid "become_method"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:34
+#: ../../rst/user_guide/become.rst:36
 msgid ""
 "(at play or task level) overrides the default method set in ansible.cfg, "
 "set to use any of the :ref:`become_plugins`."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:37
+#: ../../rst/user_guide/become.rst:39
 msgid "become_flags"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:37
+#: ../../rst/user_guide/become.rst:39
 msgid ""
 "(at play or task level) permit the use of specific flags for the tasks or"
 " role. One common use is to change the user to nobody when the shell is "
 "set to no login. Added in Ansible 2.2."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:39
+#: ../../rst/user_guide/become.rst:41
 msgid ""
 "For example, to manage a system service (which requires ``root`` "
 "privileges) when connected as a non-``root`` user (this takes advantage "
 "of the fact that the default value of ``become_user`` is ``root``)::"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:47
+#: ../../rst/user_guide/become.rst:49
 msgid "To run a command as the ``apache`` user::"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:54
+#: ../../rst/user_guide/become.rst:56
 msgid "To do something as the ``nobody`` user when the shell is nologin::"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:64
+#: ../../rst/user_guide/become.rst:66
 msgid "Connection variables"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:65
+#: ../../rst/user_guide/become.rst:67
 msgid ""
 "Each allows you to set an option per group and/or host, these are "
 "normally defined in inventory but can be used as normal variables."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:68
+#: ../../rst/user_guide/become.rst:70
 msgid "ansible_become"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:68
+#: ../../rst/user_guide/become.rst:70
 msgid ""
 "equivalent of the become directive, decides if privilege escalation is "
 "used or not."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:71
+#: ../../rst/user_guide/become.rst:73
 msgid "ansible_become_method"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:71
+#: ../../rst/user_guide/become.rst:73
 msgid "which privilege escalation method should be used"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:74
+#: ../../rst/user_guide/become.rst:76
 msgid "ansible_become_user"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:74
+#: ../../rst/user_guide/become.rst:76
 msgid ""
 "set the user you become through privilege escalation; does not imply "
 "``ansible_become: yes``"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:77
+#: ../../rst/user_guide/become.rst:79
 msgid "ansible_become_password"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:77
+#: ../../rst/user_guide/become.rst:79
 msgid ""
 "set the privilege escalation password. See :ref:`playbooks_vault` for "
 "details on how to avoid having secrets in plain text"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:79
+#: ../../rst/user_guide/become.rst:81
 msgid ""
 "For example, if you want to run all tasks as ``root`` on a server named "
 "``webserver``, but you can only connect as the ``manager`` user, you "
 "could use an inventory entry like this::"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:84
+#: ../../rst/user_guide/become.rst:86
+msgid ""
+"The variables defined above are generic for all become plugins but plugin"
+" specific ones can also be set instead. Please see the documentation for "
+"each plugin for a list of all options the plugin has and how they can be "
+"defined. A full list of become plugins in Ansible can be found at "
+":ref:`become_plugins`."
+msgstr ""
+
+#: ../../rst/user_guide/become.rst:91
 msgid "Command line options"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:87
+#: ../../rst/user_guide/become.rst:94
 msgid ""
 "ask for privilege escalation password; does not imply become will be "
 "used. Note that this password will be used for all hosts."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:90
+#: ../../rst/user_guide/become.rst:97
 msgid "run operations with become (no password implied)"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:93
+#: ../../rst/user_guide/become.rst:100
 msgid ""
 "privilege escalation method to use (default=sudo), valid choices: [ sudo "
 "| su | pbrun | pfexec | doas | dzdo | ksu | runas | machinectl ]"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:97
+#: ../../rst/user_guide/become.rst:104
 msgid "run operations as this user (default=root), does not imply --become/-b"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:101
+#: ../../rst/user_guide/become.rst:108
 msgid "For those from Pre 1.9 , sudo and su still work!"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:103
+#: ../../rst/user_guide/become.rst:110
 msgid ""
 "For those using old playbooks will not need to be changed, even though "
 "they are deprecated, sudo and su directives, variables and options will "
@@ -218,28 +233,28 @@ msgid ""
 "(become and sudo) though, Ansible will complain if you try to."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:107
+#: ../../rst/user_guide/become.rst:114
 msgid ""
 "Become will default to using the old sudo/su configs and variables if "
 "they exist, but will override them if you specify any of the new ones."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:111 ../../rst/user_guide/become.rst:679
+#: ../../rst/user_guide/become.rst:118 ../../rst/user_guide/become.rst:686
 msgid "Limitations"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:113
+#: ../../rst/user_guide/become.rst:120
 msgid ""
 "Although privilege escalation is mostly intuitive, there are a few "
 "limitations on how it works.  Users should be aware of these to avoid "
 "surprises."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:117
+#: ../../rst/user_guide/become.rst:124
 msgid "Becoming an Unprivileged User"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:119
+#: ../../rst/user_guide/become.rst:126
 msgid ""
 "Ansible 2.0.x and below has a limitation with regards to becoming an "
 "unprivileged user that can be a security risk if users are not aware of "
@@ -248,7 +263,7 @@ msgid ""
 "to the remote machine, and finally executing it there."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:125
+#: ../../rst/user_guide/become.rst:132
 msgid ""
 "Everything is fine if the module file is executed without using "
 "``become``, when the ``become_user`` is root, or when the connection to "
@@ -256,7 +271,7 @@ msgid ""
 "created with permissions that only allow reading by the user and root."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:130
+#: ../../rst/user_guide/become.rst:137
 msgid ""
 "The problem occurs when the ``become_user`` is an unprivileged user.  "
 "Ansible 2.0.x and below make the module file world readable in this case,"
@@ -264,7 +279,7 @@ msgid ""
 "the file needs to be readable by the user Ansible is set to ``become``."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:135
+#: ../../rst/user_guide/become.rst:142
 msgid ""
 "In Ansible 2.1, this window is further narrowed: If the connection is "
 "made as a privileged user (root), then Ansible 2.1 and above will use "
@@ -274,7 +289,7 @@ msgid ""
 "problem."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:141
+#: ../../rst/user_guide/become.rst:148
 msgid ""
 "If any of the parameters passed to the module are sensitive in nature, "
 "then those pieces of data are located in a world readable module file for"
@@ -284,11 +299,11 @@ msgid ""
 "client machines then this is a potential danger."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:148
+#: ../../rst/user_guide/become.rst:155
 msgid "Ways to resolve this include:"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:150
+#: ../../rst/user_guide/become.rst:157
 msgid ""
 "Use `pipelining`.  When pipelining is enabled, Ansible doesn't save the "
 "module to a temporary file on the client.  Instead it pipes the module to"
@@ -298,7 +313,7 @@ msgid ""
 "<template_module>`), or for non-python modules."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:156
+#: ../../rst/user_guide/become.rst:163
 msgid ""
 "(Available in Ansible 2.1) Install POSIX.1e filesystem acl support on the"
 " managed host.  If the temporary directory on the remote host is mounted "
@@ -308,7 +323,7 @@ msgid ""
 "by everyone."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:162
+#: ../../rst/user_guide/become.rst:169
 msgid ""
 "Don't perform an action on the remote machine by becoming an unprivileged"
 " user.  Temporary files are protected by UNIX file permissions when you "
@@ -318,7 +333,7 @@ msgid ""
 "account."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:168
+#: ../../rst/user_guide/become.rst:175
 msgid ""
 "Although the Solaris ZFS filesystem has filesystem ACLs, the ACLs are not"
 " POSIX.1e filesystem acls (they are NFSv4 ACLs instead).  Ansible cannot "
@@ -327,7 +342,7 @@ msgid ""
 "ZFS."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:175
+#: ../../rst/user_guide/become.rst:182
 msgid ""
 "In addition to the additional means of doing this securely, Ansible 2.1 "
 "also makes it harder to unknowingly do this insecurely.  Whereas in "
@@ -343,11 +358,11 @@ msgid ""
 "warning and allow the task to run as it did prior to 2.1."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:188
+#: ../../rst/user_guide/become.rst:195
 msgid "Connection Plugin Support"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:190
+#: ../../rst/user_guide/become.rst:197
 msgid ""
 "Privilege escalation methods must also be supported by the connection "
 "plugin used.   Most connection plugins will warn if they do not support "
@@ -355,11 +370,11 @@ msgid ""
 "chroot, etc)."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:195
+#: ../../rst/user_guide/become.rst:202
 msgid "Only one method may be enabled per host"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:197
+#: ../../rst/user_guide/become.rst:204
 msgid ""
 "Methods cannot be chained.  You cannot use ``sudo /bin/su -`` to become a"
 " user, you need to have privileges to run the command as that user in "
@@ -367,11 +382,11 @@ msgid ""
 " supported methods)."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:202
+#: ../../rst/user_guide/become.rst:209
 msgid "Can't limit escalation to certain commands"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:204
+#: ../../rst/user_guide/become.rst:211
 msgid ""
 "Privilege escalation permissions have to be general.  Ansible does not "
 "always use a specific command to do something but runs modules (code) "
@@ -381,11 +396,11 @@ msgid ""
 "ansible creates to run the module."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:212
+#: ../../rst/user_guide/become.rst:219
 msgid "Environment variables populated by pam_systemd"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:214
+#: ../../rst/user_guide/become.rst:221
 msgid ""
 "For most Linux distributions using ``systemd`` as their init, the default"
 " methods used by ``become`` do not open a new \"session\", in the sense "
@@ -396,29 +411,29 @@ msgid ""
 "instead inherited or just emptied."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:222
+#: ../../rst/user_guide/become.rst:229
 msgid ""
 "This might cause trouble when trying to invoke systemd commands that "
 "depend on ``XDG_RUNTIME_DIR`` to access the bus:"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:232
+#: ../../rst/user_guide/become.rst:239
 msgid ""
 "To force ``become`` to open a new systemd session that goes through "
 "``pam_systemd``, you can use ``become_method: machinectl``."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:235
+#: ../../rst/user_guide/become.rst:242
 msgid ""
 "For more information, see `this systemd issue "
 "<https://github.com/systemd/systemd/issues/825#issuecomment-127917622>`_."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:241
+#: ../../rst/user_guide/become.rst:248
 msgid "Become and Networks"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:243
+#: ../../rst/user_guide/become.rst:250
 msgid ""
 "As of version 2.6, Ansible supports ``become`` for privilege escalation "
 "(entering ``enable`` mode or privileged EXEC mode) on all :ref:`Ansible-"
@@ -427,7 +442,7 @@ msgid ""
 "``authorize`` and ``auth_pass`` options in a ``provider`` dictionary."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:245
+#: ../../rst/user_guide/become.rst:252
 msgid ""
 "You must set the connection type to either ``connection: network_cli`` or"
 " ``connection: httpapi`` to use ``become`` for privilege escalation on "
@@ -435,7 +450,7 @@ msgid ""
 ":ref:`network_modules` documentation for details."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:247
+#: ../../rst/user_guide/become.rst:254
 msgid ""
 "You can use escalated privileges on only the specific tasks that need "
 "them, on an entire play, or on all plays. Adding ``become: yes`` and "
@@ -444,77 +459,77 @@ msgid ""
 "set."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:249
+#: ../../rst/user_guide/become.rst:256
 msgid ""
 "If you see this error message, the task that generated it requires "
 "``enable`` mode to succeed:"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:255
+#: ../../rst/user_guide/become.rst:262
 msgid ""
 "To set ``enable`` mode for a specific task, add ``become`` at the task "
 "level:"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:266
+#: ../../rst/user_guide/become.rst:273
 msgid ""
 "To set enable mode for all tasks in a single play, add ``become`` at the "
 "play level:"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:280
+#: ../../rst/user_guide/become.rst:287
 msgid "Setting enable mode for all tasks"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:282
+#: ../../rst/user_guide/become.rst:289
 msgid ""
 "Often you wish for all tasks in all plays to run using privilege mode, "
 "that is best achieved by using ``group_vars``:"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:284
+#: ../../rst/user_guide/become.rst:291
 msgid "**group_vars/eos.yml**"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:296
+#: ../../rst/user_guide/become.rst:303
 msgid "Passwords for enable mode"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:298
+#: ../../rst/user_guide/become.rst:305
 msgid ""
 "If you need a password to enter ``enable`` mode, you can specify it in "
 "one of two ways:"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:300
+#: ../../rst/user_guide/become.rst:307
 msgid ""
 "providing the :option:`--ask-become-pass <ansible-playbook --ask-become-"
 "pass>` command line option"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:301
+#: ../../rst/user_guide/become.rst:308
 msgid "setting the ``ansible_become_password`` connection variable"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:305
+#: ../../rst/user_guide/become.rst:312
 msgid ""
 "As a reminder passwords should never be stored in plain text. For "
 "information on encrypting your passwords and other secrets with Ansible "
 "Vault, see :ref:`vault`."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:308
+#: ../../rst/user_guide/become.rst:315
 msgid "authorize and auth_pass"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:310
+#: ../../rst/user_guide/become.rst:317
 msgid ""
 "Ansible still supports ``enable`` mode with ``connection: local`` for "
 "legacy playbooks. To enter ``enable`` mode with ``connection: local``, "
 "use the module options ``authorize`` and ``auth_pass``:"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:325
+#: ../../rst/user_guide/become.rst:332
 msgid ""
 "We recommend updating your playbooks to use ``become`` for network-device"
 " ``enable`` mode consistently. The use of ``authorize`` and of "
@@ -523,11 +538,11 @@ msgid ""
 "details."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:330
+#: ../../rst/user_guide/become.rst:337
 msgid "Become and Windows"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:332
+#: ../../rst/user_guide/become.rst:339
 msgid ""
 "Since Ansible 2.3, ``become`` can be used on Windows hosts through the "
 "``runas`` method. Become on Windows uses the same inventory setup and "
@@ -535,7 +550,7 @@ msgid ""
 "and variable names are the same as what is defined in this document."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:337
+#: ../../rst/user_guide/become.rst:344
 msgid ""
 "While ``become`` can be used to assume the identity of another user, "
 "there are other uses for it with Windows hosts. One important use is to "
@@ -546,11 +561,11 @@ msgid ""
 "not normally accessible in a WinRM session."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:345
+#: ../../rst/user_guide/become.rst:352
 msgid "Administrative Rights"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:347
+#: ../../rst/user_guide/become.rst:354
 msgid ""
 "Many tasks in Windows require administrative privileges to complete. When"
 " using the ``runas`` become method, Ansible will attempt to run the "
@@ -559,7 +574,7 @@ msgid ""
 "token during execution."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:352
+#: ../../rst/user_guide/become.rst:359
 msgid ""
 "A user must have the ``SeDebugPrivilege`` to run a become process with "
 "elevated privileges. This privilege is assigned to Administrators by "
@@ -567,24 +582,24 @@ msgid ""
 " run with a limited set of privileges and groups."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:357
+#: ../../rst/user_guide/become.rst:364
 msgid ""
 "To determine the type of token that Ansible was able to get, run the "
 "following task::"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:363
+#: ../../rst/user_guide/become.rst:370
 msgid "The output will look something similar to the below:"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:451
+#: ../../rst/user_guide/become.rst:458
 msgid ""
 "Under the ``label`` key, the ``account_name`` entry determines whether "
 "the user has Administrative rights. Here are the labels that can be "
 "returned and what they represent:"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:455
+#: ../../rst/user_guide/become.rst:462
 msgid ""
 "``Medium``: Ansible failed to get an elevated token and ran under a "
 "limited token. Only a subset of the privileges assigned to user are "
@@ -592,19 +607,19 @@ msgid ""
 "administrative rights."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:459
+#: ../../rst/user_guide/become.rst:466
 msgid ""
 "``High``: An elevated token was used and all the privileges assigned to "
 "the user are available during the module execution."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:462
+#: ../../rst/user_guide/become.rst:469
 msgid ""
 "``System``: The ``NT AUTHORITY\\System`` account is used and has the "
 "highest level of privileges available."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:465
+#: ../../rst/user_guide/become.rst:472
 msgid ""
 "The output will also show the list of privileges that have been granted "
 "to the user. When the privilege value is ``disabled``, the privilege is "
@@ -612,20 +627,20 @@ msgid ""
 "these privileges are automatically enabled when required."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:470
+#: ../../rst/user_guide/become.rst:477
 msgid ""
 "If running on a version of Ansible that is older than 2.5 or the normal "
 "``runas`` escalation process fails, an elevated token can be retrieved "
 "by:"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:473
+#: ../../rst/user_guide/become.rst:480
 msgid ""
 "Set the ``become_user`` to ``System`` which has full control over the "
 "operating system."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:476
+#: ../../rst/user_guide/become.rst:483
 msgid ""
 "Grant ``SeTcbPrivilege`` to the user Ansible connects with on WinRM. "
 "``SeTcbPrivilege`` is a high-level privilege that grants full control "
@@ -638,7 +653,7 @@ msgid ""
 "to set this privilege on a Windows host::"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:490
+#: ../../rst/user_guide/become.rst:497
 msgid ""
 "Turn UAC off on the host and reboot before trying to become the user. UAC"
 " is a security protocol that is designed to run accounts with the ``least"
@@ -646,18 +661,18 @@ msgid ""
 "tasks::"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:508
+#: ../../rst/user_guide/become.rst:515
 msgid ""
 "Granting the ``SeTcbPrivilege`` or turning UAC off can cause Windows "
 "security vulnerabilities and care should be given if these steps are "
 "taken."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:512
+#: ../../rst/user_guide/become.rst:519
 msgid "Local Service Accounts"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:514
+#: ../../rst/user_guide/become.rst:521
 msgid ""
 "Prior to Ansible version 2.5, ``become`` only worked with a local or "
 "domain user account. Local service accounts like ``System`` or "
@@ -667,67 +682,67 @@ msgid ""
 " are:"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:520
+#: ../../rst/user_guide/become.rst:527
 msgid "System"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:521
+#: ../../rst/user_guide/become.rst:528
 msgid "NetworkService"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:522
+#: ../../rst/user_guide/become.rst:529
 msgid "LocalService"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:524
+#: ../../rst/user_guide/become.rst:531
 msgid ""
 "Because local service accounts do not have passwords, the "
 "``ansible_become_password`` parameter is not required and is ignored if "
 "specified."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:529
+#: ../../rst/user_guide/become.rst:536
 msgid "Become without setting a Password"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:531
+#: ../../rst/user_guide/become.rst:538
 msgid ""
 "As of Ansible 2.8, ``become`` can be used to become a local or domain "
 "account without requiring a password for that account. For this method to"
 " work, the following requirements must be met:"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:535
+#: ../../rst/user_guide/become.rst:542
 msgid "The connection user has the ``SeDebugPrivilege`` privilege assigned"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:536
+#: ../../rst/user_guide/become.rst:543
 msgid "The connection user is part of the ``BUILTIN\\Administrators`` group"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:537
+#: ../../rst/user_guide/become.rst:544
 msgid ""
 "The ``become_user`` has either the ``SeBatchLogonRight`` or "
 "``SeNetworkLogonRight`` user right"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:539
+#: ../../rst/user_guide/become.rst:546
 msgid ""
 "Using become without a password is achieved in one of two different "
 "methods:"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:541
+#: ../../rst/user_guide/become.rst:548
 msgid ""
 "Duplicating an existing logon session's token if the account is already "
 "logged on"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:542
+#: ../../rst/user_guide/become.rst:549
 msgid "Using S4U to generate a logon token that is valid on the remote host only"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:544
+#: ../../rst/user_guide/become.rst:551
 msgid ""
 "In the first scenario, the become process is spawned from another logon "
 "of that user account. This could be an existing RDP logon, console logon,"
@@ -735,7 +750,7 @@ msgid ""
 " ``Run only when user is logged on`` option for a Scheduled Task."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:549
+#: ../../rst/user_guide/become.rst:556
 msgid ""
 "In the case where another logon of the become account does not exist, S4U"
 " is used to create a new logon and run the module through that. This is "
@@ -745,7 +760,7 @@ msgid ""
 "normal WinRM process."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:555
+#: ../../rst/user_guide/become.rst:562
 msgid ""
 "To make a distinction between using become with no password and becoming "
 "an account that has no password make sure to keep "
@@ -753,7 +768,7 @@ msgid ""
 "``ansible_become_password:``."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:559
+#: ../../rst/user_guide/become.rst:566
 msgid ""
 "Because there are no guarantees an existing token will exist for a user "
 "when Ansible runs, there's a high change the become process will only "
@@ -761,24 +776,24 @@ msgid ""
 "needs to access network resources"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:565
+#: ../../rst/user_guide/become.rst:572
 msgid "Accounts without a Password"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:567
+#: ../../rst/user_guide/become.rst:574
 msgid ""
 "As a general security best practice, you should avoid allowing accounts "
 "without passwords."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:569
+#: ../../rst/user_guide/become.rst:576
 msgid ""
 "Ansible can be used to become an account that does not have a password "
 "(like the ``Guest`` account). To become an account without a password, "
 "set up the variables like normal but set ``ansible_become_password: ''``."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:573
+#: ../../rst/user_guide/become.rst:580
 msgid ""
 "Before become can work on an account like this, the local policy "
 "`Accounts: Limit local account use of blank passwords to console logon "
@@ -788,18 +803,18 @@ msgid ""
 "Ansible task:"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:588
+#: ../../rst/user_guide/become.rst:595
 msgid ""
 "This is only for accounts that do not have a password. You still need to "
 "set the account's password under ``ansible_become_password`` if the "
 "become_user has a password."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:593
+#: ../../rst/user_guide/become.rst:600
 msgid "Become Flags"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:594
+#: ../../rst/user_guide/become.rst:601
 msgid ""
 "Ansible 2.5 adds the ``become_flags`` parameter to the ``runas`` become "
 "method. This parameter can be set using the ``become_flags`` task "
@@ -808,26 +823,26 @@ msgid ""
 "supported for this parameter are ``logon_type`` and ``logon_flags``."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:601
+#: ../../rst/user_guide/become.rst:608
 msgid ""
 "These flags should only be set when becoming a normal user account, not a"
 " local service account like LocalSystem."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:603
+#: ../../rst/user_guide/become.rst:610
 msgid ""
 "The key ``logon_type`` sets the type of logon operation to perform. The "
 "value can be set to one of the following:"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:606
+#: ../../rst/user_guide/become.rst:613
 msgid ""
 "``interactive``: The default logon type. The process will be run under a "
 "context that is the same as when running a process locally. This bypasses"
 " all WinRM restrictions and is the recommended method to use."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:610
+#: ../../rst/user_guide/become.rst:617
 msgid ""
 "``batch``: Runs the process under a batch context that is similar to a "
 "scheduled task with a password set. This should bypass most WinRM "
@@ -835,7 +850,7 @@ msgid ""
 "on interactively."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:615
+#: ../../rst/user_guide/become.rst:622
 msgid ""
 "``new_credentials``: Runs under the same credentials as the calling user,"
 " but outbound connections are run under the context of the "
@@ -846,7 +861,7 @@ msgid ""
 "credentials."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:622
+#: ../../rst/user_guide/become.rst:629
 msgid ""
 "``network``: Runs the process under a network context without any cached "
 "credentials. This results in the same type of logon session as running a "
@@ -854,7 +869,7 @@ msgid ""
 "the same restrictions."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:627
+#: ../../rst/user_guide/become.rst:634
 msgid ""
 "``network_cleartext``: Like the ``network`` logon type, but instead "
 "caches the credentials so it can access network resources. This is the "
@@ -862,27 +877,27 @@ msgid ""
 "credential delegation."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:631
+#: ../../rst/user_guide/become.rst:638
 msgid ""
 "For more information, see `dwLogonType <https://docs.microsoft.com/en-"
 "gb/windows/desktop/api/winbase/nf-winbase-logonusera>`_."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:634
+#: ../../rst/user_guide/become.rst:641
 msgid ""
 "The ``logon_flags`` key specifies how Windows will log the user on when "
 "creating the new process. The value can be set to none or multiple of the"
 " following:"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:637
+#: ../../rst/user_guide/become.rst:644
 msgid ""
 "``with_profile``: The default logon flag set. The process will load the "
 "user's profile in the ``HKEY_USERS`` registry key to "
 "``HKEY_CURRENT_USER``."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:640
+#: ../../rst/user_guide/become.rst:647
 msgid ""
 "``netcredentials_only``: The process will use the same token as the "
 "caller but will use the ``become_user`` and ``become_password`` when "
@@ -891,7 +906,7 @@ msgid ""
 "``new_credentials`` ``logon_type``."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:645
+#: ../../rst/user_guide/become.rst:652
 msgid ""
 "By default ``logon_flags=with_profile`` is set, if the profile should not"
 " be loaded set ``logon_flags=`` or if the profile should be loaded with "
@@ -899,27 +914,27 @@ msgid ""
 "``logon_flags=with_profile,netcredentials_only``."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:649
+#: ../../rst/user_guide/become.rst:656
 msgid ""
 "For more information, see `dwLogonFlags <https://docs.microsoft.com/en-"
 "gb/windows/desktop/api/winbase/nf-winbase-createprocesswithtokenw>`_."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:651
+#: ../../rst/user_guide/become.rst:658
 msgid "Here are some examples of how to use ``become_flags`` with Windows tasks:"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:681
+#: ../../rst/user_guide/become.rst:688
 msgid "Be aware of the following limitations with ``become`` on Windows:"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:683
+#: ../../rst/user_guide/become.rst:690
 msgid ""
 "Running a task with ``async`` and ``become`` on Windows Server 2008, 2008"
 " R2 and Windows 7 only works when using Ansible 2.7 or newer."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:686
+#: ../../rst/user_guide/become.rst:693
 msgid ""
 "By default, the become user logs on with an interactive session, so it "
 "must have the right to do so on the Windows host. If it does not inherit "
@@ -929,7 +944,7 @@ msgid ""
 " used."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:692
+#: ../../rst/user_guide/become.rst:699
 msgid ""
 "Prior to Ansible version 2.3, become only worked when "
 "``ansible_winrm_transport`` was either ``basic`` or ``credssp``. This "
@@ -937,25 +952,25 @@ msgid ""
 "hosts except Windows Server 2008 (non R2 version)."
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:697
+#: ../../rst/user_guide/become.rst:704
 msgid ""
 "The Secondary Logon service ``seclogon`` must be running to use "
 "``ansible_become_method: runas``"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:701
+#: ../../rst/user_guide/become.rst:708
 msgid "`Mailing List <https://groups.google.com/forum/#!forum/ansible-project>`_"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:702
+#: ../../rst/user_guide/become.rst:709
 msgid "Questions? Help? Ideas?  Stop by the list on Google Groups"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:703
+#: ../../rst/user_guide/become.rst:710
 msgid "`webchat.freenode.net <https://webchat.freenode.net>`_"
 msgstr ""
 
-#: ../../rst/user_guide/become.rst:704
+#: ../../rst/user_guide/become.rst:711
 msgid "#ansible IRC chat channel"
 msgstr ""
 

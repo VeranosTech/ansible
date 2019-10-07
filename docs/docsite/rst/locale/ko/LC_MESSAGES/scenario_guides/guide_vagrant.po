@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/scenario_guides/guide_vagrant.rst:2
 msgid "Vagrant Guide"
@@ -65,7 +65,7 @@ msgid ""
 "machine:"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vagrant.rst:56
+#: ../../rst/scenario_guides/guide_vagrant.rst:50
 msgid ""
 "Notice the ``config.vm.provision`` section that refers to an Ansible "
 "playbook called ``playbook.yml`` in the same directory as the "
@@ -73,7 +73,7 @@ msgid ""
 "has booted and is ready for SSH access."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vagrant.rst:61
+#: ../../rst/scenario_guides/guide_vagrant.rst:55
 msgid ""
 "There are a lot of Ansible options you can configure in your "
 "``Vagrantfile``. Visit the `Ansible Provisioner documentation "
@@ -81,45 +81,45 @@ msgid ""
 "information."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vagrant.rst:70
+#: ../../rst/scenario_guides/guide_vagrant.rst:64
 msgid ""
 "This will start the VM, and run the provisioning playbook (on the first "
 "VM startup)."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vagrant.rst:74
+#: ../../rst/scenario_guides/guide_vagrant.rst:68
 msgid "To re-run a playbook on an existing VM, just run:"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vagrant.rst:80
+#: ../../rst/scenario_guides/guide_vagrant.rst:74
 msgid "This will re-run the playbook against the existing VM."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vagrant.rst:82
+#: ../../rst/scenario_guides/guide_vagrant.rst:76
 msgid ""
 "Note that having the ``ansible.verbose`` option enabled will instruct "
 "Vagrant to show the full ``ansible-playbook`` command used behind the "
 "scene, as illustrated by this example:"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vagrant.rst:90
+#: ../../rst/scenario_guides/guide_vagrant.rst:84
 msgid ""
 "This information can be quite useful to debug integration issues and can "
 "also be used to manually execute Ansible from a shell, as explained in "
 "the next section."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vagrant.rst:97
+#: ../../rst/scenario_guides/guide_vagrant.rst:91
 msgid "Running Ansible Manually"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vagrant.rst:99
+#: ../../rst/scenario_guides/guide_vagrant.rst:93
 msgid ""
 "Sometimes you may want to run Ansible manually against the machines. This"
 " is faster than kicking ``vagrant provision`` and pretty easy to do."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vagrant.rst:102
+#: ../../rst/scenario_guides/guide_vagrant.rst:96
 msgid ""
 "With our ``Vagrantfile`` example, Vagrant automatically creates an "
 "Ansible inventory file in "
@@ -129,91 +129,106 @@ msgid ""
 " a single machine environment may look something like this:"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vagrant.rst:114
+#: ../../rst/scenario_guides/guide_vagrant.rst:108
 msgid ""
 "If you want to run Ansible manually, you will want to make sure to pass "
 "``ansible`` or ``ansible-playbook`` commands the correct arguments, at "
-"least for the *username*, the *SSH private key* and the *inventory*."
+"least for the *inventory*."
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vagrant.rst:118
-msgid ""
-"Here is an example using the Vagrant global insecure key "
-"(``config.ssh.insert_key`` must be set to ``false`` in your "
-"``Vagrantfile``):"
-msgstr ""
-
-#: ../../rst/scenario_guides/guide_vagrant.rst:125
-msgid ""
-"Here is a second example using the random private key that Vagrant 1.7+ "
-"automatically configures for each new VM (each key is stored in a path "
-"like ``.vagrant/machines/[machine name]/[provider]/private_key``):"
-msgstr ""
-
-#: ../../rst/scenario_guides/guide_vagrant.rst:134
+#: ../../rst/scenario_guides/guide_vagrant.rst:117
 msgid "Advanced Usages"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vagrant.rst:136
+#: ../../rst/scenario_guides/guide_vagrant.rst:119
 msgid ""
 "The \"Tips and Tricks\" chapter of the `Ansible Provisioner documentation"
 " <https://www.vagrantup.com/docs/provisioning/ansible.html>`_ provides "
 "detailed information about more advanced Ansible features like:"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vagrant.rst:139
-msgid "how to parallely execute a playbook in a multi-machine environment"
+#: ../../rst/scenario_guides/guide_vagrant.rst:122
+msgid "how to execute a playbook in parallel within a multi-machine environment"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vagrant.rst:140
+#: ../../rst/scenario_guides/guide_vagrant.rst:123
 msgid "how to integrate a local ``ansible.cfg`` configuration file"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vagrant.rst:144
+#: ../../rst/scenario_guides/guide_vagrant.rst:127
 msgid "`Vagrant Home <https://www.vagrantup.com/>`_"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vagrant.rst:145
+#: ../../rst/scenario_guides/guide_vagrant.rst:128
 msgid "The Vagrant homepage with downloads"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vagrant.rst:146
+#: ../../rst/scenario_guides/guide_vagrant.rst:129
 msgid "`Vagrant Documentation <https://www.vagrantup.com/docs/>`_"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vagrant.rst:147
+#: ../../rst/scenario_guides/guide_vagrant.rst:130
 msgid "Vagrant Documentation"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vagrant.rst:148
+#: ../../rst/scenario_guides/guide_vagrant.rst:131
 msgid ""
 "`Ansible Provisioner "
 "<https://www.vagrantup.com/docs/provisioning/ansible.html>`_"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vagrant.rst:149
+#: ../../rst/scenario_guides/guide_vagrant.rst:132
 msgid "The Vagrant documentation for the Ansible provisioner"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vagrant.rst:150
+#: ../../rst/scenario_guides/guide_vagrant.rst:133
 #, python-format
 msgid ""
 "`Vagrant Issue Tracker "
 "<https://github.com/hashicorp/vagrant/issues?q=is%3Aopen+is%3Aissue+label%3Aprovisioners%2Fansible>`_"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vagrant.rst:151
+#: ../../rst/scenario_guides/guide_vagrant.rst:134
 msgid "The open issues for the Ansible provisioner in the Vagrant project"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vagrant.rst:152
+#: ../../rst/scenario_guides/guide_vagrant.rst:135
 msgid ":ref:`working_with_playbooks`"
 msgstr ""
 
-#: ../../rst/scenario_guides/guide_vagrant.rst:153
+#: ../../rst/scenario_guides/guide_vagrant.rst:136
 msgid "An introduction to playbooks"
 msgstr ""
 
 #~ msgid "Using Vagrant and Ansible"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you want to run Ansible "
+#~ "manually, you will want to make "
+#~ "sure to pass ``ansible`` or "
+#~ "``ansible-playbook`` commands the correct "
+#~ "arguments, at least for the *username*,"
+#~ " the *SSH private key* and the "
+#~ "*inventory*."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Here is an example using the "
+#~ "Vagrant global insecure key "
+#~ "(``config.ssh.insert_key`` must be set to "
+#~ "``false`` in your ``Vagrantfile``):"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Here is a second example using the"
+#~ " random private key that Vagrant 1.7+"
+#~ " automatically configures for each new "
+#~ "VM (each key is stored in a "
+#~ "path like ``.vagrant/machines/[machine "
+#~ "name]/[provider]/private_key``):"
+#~ msgstr ""
+
+#~ msgid "how to parallely execute a playbook in a multi-machine environment"
 #~ msgstr ""
 

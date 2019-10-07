@@ -1,0 +1,330 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../rst/user_guide/collections_using.rst:6
+msgid "Using collections"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:8
+msgid ""
+"Collections are a distribution format for Ansible content that can "
+"include playbooks, roles, modules, and plugins. You can install and use "
+"collections through `Ansible Galaxy <https://galaxy.ansible.com>`_."
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:18
+msgid "Installing collections"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:20
+msgid ""
+"You can use the ``ansible-galaxy collection install`` command to install "
+"a collection on your system."
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:22
+msgid "To install a collection hosted in Galaxy:"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:28
+msgid "You can also directly use the tarball from your build:"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:35
+msgid ""
+"The install command automatically appends the path "
+"``ansible_collections`` to the one specified  with the ``-p`` option "
+"unless the parent directory is already in a folder called "
+"``ansible_collections``."
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:39
+msgid ""
+"When using the ``-p`` option to specify the install path, use one of the "
+"values configured in :ref:`COLLECTIONS_PATHS`, as this is where Ansible "
+"itself will expect to find collections. If you don't specify a path, "
+"``ansible-galaxy collection install`` installs the collection to the "
+"first path defined in :ref:`COLLECTIONS_PATHS`, which by default is "
+"``~/.ansible/collections``"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:43
+msgid ""
+"You can also keep a collection adjacent to the current playbook, under a "
+"``collections/ansible_collections/`` directory structure."
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:54
+msgid ""
+"See :ref:`collection_structure` for details on the collection directory "
+"structure."
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:59
+msgid "Installing an older version of a collection"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:61
+msgid ""
+"By default ``ansible-galaxy`` installs the latest collection that is "
+"available but you can add a version range identifier to install a "
+"specific version."
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:64
+msgid "To install the 1.0.0 version of the collection:"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:70
+msgid "To install the 1.0.0-beta.1 version of the collection:"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:76
+msgid ""
+"To install the collections that are greater than or equal to 1.0.0 or "
+"less than 2.0.0:"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:83
+msgid ""
+"You can specify multiple range identifiers which are split by ``,``. You "
+"can use the following range identifiers:"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:85
+msgid ""
+"``*``: Any version, this is the default used when no range specified is "
+"set."
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:86
+msgid "``!=``: Version is not equal to the one specified."
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:87
+msgid "``==``: Version must be the one specified."
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:88
+msgid "``>=``: Version is greater than or equal to the one specified."
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:89
+msgid "``>``: Version is greater than the one specified."
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:90
+msgid "``<=``: Version is less than or equal to the one specified."
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:91
+msgid "``<``: Version is less than the one specified."
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:94
+msgid ""
+"The ``ansible-galaxy`` command ignores any pre-release versions unless "
+"the ``==`` range identifier is used to explicitly set to that pre-release"
+" version."
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:101
+msgid "Install multiple collections with a requirements file"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:103
+msgid ""
+"You can also setup a ``requirements.yml`` file to install multiple "
+"collections in one command. This file is a YAML file in the format:"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:117
+msgid ""
+"The ``version`` key can take in the same range identifier format "
+"documented above."
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:119
+msgid ""
+"Roles can also be specified and placed under the ``roles`` key. The "
+"values follow the same format as a requirements file used in older "
+"Ansible releases."
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:123
+msgid ""
+"While both roles and collections can be specified in one requirements "
+"file, they need to be installed separately. The ``ansible-galaxy role "
+"install -r requirements.yml`` will only install roles and ``ansible-"
+"galaxy collection install -r requirements.yml -p ./`` will only install "
+"collections."
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:130
+msgid "Galaxy server configuration list"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:132
+msgid ""
+"By default running ``ansible-galaxy`` will use the :ref:`galaxy_server` "
+"config value or the ``--server`` command line argument when it performs "
+"an action against a Galaxy server. The ``ansible-galaxy collection "
+"install`` supports installing collections from multiple servers as "
+"defined in the :ref:`ansible_configuration_settings_locations` file using"
+" the :ref:`galaxy_server_list` configuration option. To define multiple "
+"Galaxy servers you have to create the following entries like so:"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:162
+msgid ""
+"You can use the ``--server`` command line argument to select an explicit "
+"Galaxy server in the ``server_list`` and the value of this arg should "
+"match the name of the server. If the value of ``--server`` is not a pre-"
+"defined server in ``ansible.cfg`` then the value specified will be the "
+"URL used to access that server and all pre-defined servers are ignored. "
+"Also the ``--api-key`` argument is not applied to any of the pre-defined "
+"servers, it is only applied if no server list is defined or a URL was "
+"specified by ``--server``."
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:169
+msgid ""
+"The :ref:`galaxy_server_list` option is a list of server identifiers in a"
+" prioritized order. When searching for a collection, the install process "
+"will search in that order, e.g. ``my_org_hub`` first, then "
+"``release_galaxy``, and finally ``test_galaxy`` until the collection is "
+"found. The actual Galaxy instance is then defined under the section "
+"``[galaxy_server.{{ id }}]`` where ``{{ id }}`` is the server identifier "
+"defined in the list. This section can then define the following keys:"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:175
+msgid "``url``: The URL of the galaxy instance to connect to, this is required."
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:176
+msgid ""
+"``token``: A token key to use for authentication against the Galaxy "
+"instance, this is mutually exclusive with ``username``"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:177
+msgid ""
+"``username``: The username to use for basic authentication against the "
+"Galaxy instance, this is mutually exclusive with ``token``"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:178
+msgid "``password``: The password to use for basic authentication"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:179
+msgid ""
+"``auth_url``: The URL of a Keycloak server 'token_endpoint' if using SSO "
+"auth (Automation Hub for ex). This is mutually exclusive with "
+"``username``. ``auth_url`` requires ``token``."
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:181
+msgid ""
+"As well as being defined in the ``ansible.cfg`` file, these server "
+"options can be defined as an environment variable. The environment "
+"variable is in the form ``ANSIBLE_GALAXY_SERVER_{{ id }}_{{ key }}`` "
+"where ``{{ id }}`` is the upper case form of the server identifier and "
+"``{{ key }}`` is the key to define. For example I can define ``token`` "
+"for ``release_galaxy`` by setting "
+"``ANSIBLE_GALAXY_SERVER_RELEASE_GALAXY_TOKEN=secret_token``."
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:186
+msgid ""
+"For operations where only one Galaxy server is used, i.e. ``publish``, "
+"``info``, ``login`` then the first entry in the ``server_list`` is used "
+"unless an explicit server was passed in as a command line argument."
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:190
+msgid ""
+"Once a collection is found, any of its requirements are only searched "
+"within the same Galaxy instance as the parent collection. The install "
+"process will not search for a collection requirement in a different "
+"Galaxy instance."
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:197
+msgid "Using collections in a Playbook"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:199
+msgid ""
+"Once installed, you can reference a collection content by its fully "
+"qualified collection name (FQCN):"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:208
+msgid ""
+"This works for roles or any type of plugin distributed within the "
+"collection:"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:224
+msgid ""
+"To avoid a lot of typing, you can use the ``collections`` keyword added "
+"in Ansible 2.8:"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:242
+msgid ""
+"This keyword creates a 'search path' for non namespaced plugin "
+"references. It does not import roles or anything else. Notice that you "
+"still need the FQCN for non-action or module plugins."
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:247
+msgid ":ref:`developing_collections`"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:248
+msgid "Develop or modify a collection."
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:249
+msgid ":ref:`collections_galaxy_meta`"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:250
+msgid "Understand the collections metadata structure."
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:251
+msgid "`Mailing List <https://groups.google.com/group/ansible-devel>`_"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:252
+msgid "The development mailing list"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:253
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/user_guide/collections_using.rst:254
+msgid "#ansible IRC chat channel"
+msgstr ""
+

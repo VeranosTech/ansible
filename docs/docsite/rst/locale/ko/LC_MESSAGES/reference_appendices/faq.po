@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/reference_appendices/faq.rst:4
 msgid "Frequently Asked Questions"
@@ -394,7 +394,7 @@ msgid ""
 "SyntaxError: Non-UTF-8 code starting with \\'\\\\x83\\' in file "
 "/a/user1/.ansible/tmp/ansible-"
 "tmp-1548232945.35-274513842609025/AnsiballZ_stat.py on line 1, but no "
-"encoding declared; see http://python.org/dev/peps/pep-0263/ for details"
+"encoding declared; see https://python.org/dev/peps/pep-0263/ for details"
 msgstr ""
 
 #: ../../rst/reference_appendices/faq.rst:251
@@ -903,8 +903,8 @@ msgstr ""
 
 #: ../../rst/reference_appendices/faq.rst:654
 msgid ""
-"This works for all overriden connection variables, like ``ansible_user``,"
-" ``ansible_port``, etc."
+"This works for all overridden connection variables, like "
+"``ansible_user``, ``ansible_port``, etc."
 msgstr ""
 
 #: ../../rst/reference_appendices/faq.rst:660
@@ -1111,5 +1111,20 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ":doc:`../user_guide/playbooks_best_practices`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "SyntaxError: Non-UTF-8 code starting "
+#~ "with \\'\\\\x83\\' in file "
+#~ "/a/user1/.ansible/tmp/ansible-"
+#~ "tmp-1548232945.35-274513842609025/AnsiballZ_stat.py on "
+#~ "line 1, but no encoding declared; "
+#~ "see http://python.org/dev/peps/pep-0263/ for details"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This works for all overriden connection"
+#~ " variables, like ``ansible_user``, "
+#~ "``ansible_port``, etc."
 #~ msgstr ""
 

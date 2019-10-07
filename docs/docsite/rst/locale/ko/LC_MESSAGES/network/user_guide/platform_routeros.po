@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/network/user_guide/platform_routeros.rst:5
 msgid "RouterOS Platform Options"
@@ -86,27 +86,33 @@ msgstr ""
 msgid "``stdout[0].``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_routeros.rst:37
+#: ../../rst/network/user_guide/platform_routeros.rst:36
+msgid ""
+"RouterOS does not support ``ansible_connection: local``. You must use "
+"``ansible_connection: network_cli``."
+msgstr ""
+
+#: ../../rst/network/user_guide/platform_routeros.rst:39
 msgid "Using CLI in Ansible"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_routeros.rst:40
+#: ../../rst/network/user_guide/platform_routeros.rst:42
 msgid "Example CLI ``group_vars/routeros.yml``"
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_routeros.rst:54
+#: ../../rst/network/user_guide/platform_routeros.rst:56
 msgid ""
 "If you are using SSH keys (including an ssh-agent) you can remove the "
 "``ansible_password`` configuration."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_routeros.rst:55
+#: ../../rst/network/user_guide/platform_routeros.rst:57
 msgid ""
 "If you are accessing your host directly (not through a bastion/jump host)"
 " you can remove the ``ansible_ssh_common_args`` configuration."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_routeros.rst:56
+#: ../../rst/network/user_guide/platform_routeros.rst:58
 msgid ""
 "If you are accessing your host through a bastion/jump host, you cannot "
 "include your SSH password in the ``ProxyCommand`` directive. To prevent "
@@ -114,7 +120,7 @@ msgid ""
 "support providing passwords via environment variables."
 msgstr ""
 
-#: ../../rst/network/user_guide/platform_routeros.rst:59
+#: ../../rst/network/user_guide/platform_routeros.rst:61
 msgid "Example CLI Task"
 msgstr ""
 

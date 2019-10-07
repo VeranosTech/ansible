@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/modules/gcp_sql_database_module.rst:9
 msgid "gcp_sql_database -- Creates a GCP Database"
@@ -56,91 +56,45 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../rst/modules/gcp_sql_database_module.rst:217
-msgid "Notes"
-msgstr ""
-
-#: ../../rst/modules/gcp_sql_database_module.rst:220
-msgid ""
-"for authentication, you can set service_account_file using the "
-"c(gcp_service_account_file) env variable."
-msgstr ""
-
-#: ../../rst/modules/gcp_sql_database_module.rst:221
-msgid ""
-"for authentication, you can set service_account_contents using the "
-"c(GCP_SERVICE_ACCOUNT_CONTENTS) env variable."
-msgstr ""
-
-#: ../../rst/modules/gcp_sql_database_module.rst:222
-msgid ""
-"For authentication, you can set service_account_email using the "
-"``GCP_SERVICE_ACCOUNT_EMAIL`` env variable."
-msgstr ""
-
-#: ../../rst/modules/gcp_sql_database_module.rst:223
-msgid ""
-"For authentication, you can set auth_kind using the ``GCP_AUTH_KIND`` env"
-" variable."
-msgstr ""
-
-#: ../../rst/modules/gcp_sql_database_module.rst:224
-msgid ""
-"For authentication, you can set scopes using the ``GCP_SCOPES`` env "
-"variable."
-msgstr ""
-
-#: ../../rst/modules/gcp_sql_database_module.rst:225
-msgid ""
-"Environment variables values will only be used if the playbook values are"
-" not set."
-msgstr ""
-
-#: ../../rst/modules/gcp_sql_database_module.rst:226
-msgid ""
-"The *service_account_email* and *service_account_file* options are "
-"mutually exclusive."
-msgstr ""
-
-#: ../../rst/modules/gcp_sql_database_module.rst:231
+#: ../../rst/modules/gcp_sql_database_module.rst:219
 msgid "Examples"
 msgstr ""
 
-#: ../../rst/modules/gcp_sql_database_module.rst:266
+#: ../../rst/modules/gcp_sql_database_module.rst:254
 msgid "Return Values"
 msgstr ""
 
-#: ../../rst/modules/gcp_sql_database_module.rst:267
+#: ../../rst/modules/gcp_sql_database_module.rst:255
 msgid ""
 "Common return values are documented :ref:`here <common_return_values>`, "
 "the following are the fields unique to this module:"
 msgstr ""
 
-#: ../../rst/modules/gcp_sql_database_module.rst:327
+#: ../../rst/modules/gcp_sql_database_module.rst:315
 msgid "Status"
 msgstr ""
 
-#: ../../rst/modules/gcp_sql_database_module.rst:332
+#: ../../rst/modules/gcp_sql_database_module.rst:320
 msgid ""
 "This module is not guaranteed to have a backwards compatible interface. "
 "*[preview]*"
 msgstr ""
 
-#: ../../rst/modules/gcp_sql_database_module.rst:335
+#: ../../rst/modules/gcp_sql_database_module.rst:323
 msgid ""
 "This module is :ref:`maintained by the Ansible Community "
 "<modules_support>`. *[community]*"
 msgstr ""
 
-#: ../../rst/modules/gcp_sql_database_module.rst:342
+#: ../../rst/modules/gcp_sql_database_module.rst:330
 msgid "Authors"
 msgstr ""
 
-#: ../../rst/modules/gcp_sql_database_module.rst:344
+#: ../../rst/modules/gcp_sql_database_module.rst:332
 msgid "Google Inc. (@googlecloudplatform)"
 msgstr ""
 
-#: ../../rst/modules/gcp_sql_database_module.rst:348
+#: ../../rst/modules/gcp_sql_database_module.rst:336
 #, python-format
 msgid ""
 "If you notice any issues in this documentation, you can `edit this "
@@ -161,5 +115,49 @@ msgstr ""
 #~ "document "
 #~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/google/gcp_sql_database.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
 #~ " to improve it."
+#~ msgstr ""
+
+#~ msgid "Notes"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "for authentication, you can set "
+#~ "service_account_file using the "
+#~ "c(gcp_service_account_file) env variable."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "for authentication, you can set "
+#~ "service_account_contents using the "
+#~ "c(GCP_SERVICE_ACCOUNT_CONTENTS) env variable."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For authentication, you can set "
+#~ "service_account_email using the "
+#~ "``GCP_SERVICE_ACCOUNT_EMAIL`` env variable."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For authentication, you can set "
+#~ "auth_kind using the ``GCP_AUTH_KIND`` env "
+#~ "variable."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For authentication, you can set scopes"
+#~ " using the ``GCP_SCOPES`` env variable."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Environment variables values will only "
+#~ "be used if the playbook values are"
+#~ " not set."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The *service_account_email* and "
+#~ "*service_account_file* options are mutually "
+#~ "exclusive."
 #~ msgstr ""
 

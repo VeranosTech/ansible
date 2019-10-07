@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible devel\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/network/dev_guide/index.rst:5
 msgid "Developer Guide for Network Automation"
@@ -65,17 +65,23 @@ msgstr ""
 
 #: ../../rst/network/dev_guide/index.rst:21
 msgid ""
+"I want to :ref:`develop a network resource module "
+"<developing_resource_modules>`."
+msgstr ""
+
+#: ../../rst/network/dev_guide/index.rst:22
+msgid ""
 "I want to :ref:`develop a network connection plugin "
 "<developing_plugins_network>`."
 msgstr ""
 
-#: ../../rst/network/dev_guide/index.rst:22
+#: ../../rst/network/dev_guide/index.rst:23
 msgid ""
 "I want to :ref:`document my set of modules for a network platform "
 "<documenting_modules_network>`."
 msgstr ""
 
-#: ../../rst/network/dev_guide/index.rst:24
+#: ../../rst/network/dev_guide/index.rst:25
 msgid ""
 "If you prefer to read the entire guide, here's a list of the pages in "
 "order."

@@ -9,17 +9,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/modules/gitlab_user_module.rst:9
-msgid "gitlab_user -- Creates/updates/deletes Gitlab Users"
+msgid "gitlab_user -- Creates/updates/deletes GitLab Users"
 msgstr ""
 
 #: ../../rst/modules/gitlab_user_module.rst:18
@@ -27,7 +27,7 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../rst/modules/gitlab_user_module.rst:19
-msgid "When the user does not exist in Gitlab, it will be created."
+msgid "When the user does not exist in GitLab, it will be created."
 msgstr ""
 
 #: ../../rst/modules/gitlab_user_module.rst:20
@@ -55,7 +55,7 @@ msgid "python-gitlab python module"
 msgstr ""
 
 #: ../../rst/modules/gitlab_user_module.rst:31
-msgid "administrator rights on the Gitlab server"
+msgid "administrator rights on the GitLab server"
 msgstr ""
 
 #: ../../rst/modules/gitlab_user_module.rst:35
@@ -122,5 +122,14 @@ msgstr ""
 #~ "document "
 #~ "<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/source_control/gitlab_user.py?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr>`_"
 #~ " to improve it."
+#~ msgstr ""
+
+#~ msgid "gitlab_user -- Creates/updates/deletes Gitlab Users"
+#~ msgstr ""
+
+#~ msgid "When the user does not exist in Gitlab, it will be created."
+#~ msgstr ""
+
+#~ msgid "administrator rights on the Gitlab server"
 #~ msgstr ""
 

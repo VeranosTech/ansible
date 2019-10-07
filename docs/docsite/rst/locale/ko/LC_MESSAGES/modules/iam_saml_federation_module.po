@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../rst/modules/iam_saml_federation_module.rst:9
+msgid "iam_saml_federation -- Maintain IAM SAML federation configuration"
+msgstr ""
+
+#: ../../rst/modules/iam_saml_federation_module.rst:18
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/modules/iam_saml_federation_module.rst:19
+msgid ""
+"Provides a mechanism to manage AWS IAM SAML Identity Federation providers"
+" (create/update/delete metadata)."
+msgstr ""
+
+#: ../../rst/modules/iam_saml_federation_module.rst:24
+msgid "Requirements"
+msgstr ""
+
+#: ../../rst/modules/iam_saml_federation_module.rst:25
+msgid "The below requirements are needed on the host that executes this module."
+msgstr ""
+
+#: ../../rst/modules/iam_saml_federation_module.rst:27
+msgid "boto"
+msgstr ""
+
+#: ../../rst/modules/iam_saml_federation_module.rst:28
+msgid "boto3"
+msgstr ""
+
+#: ../../rst/modules/iam_saml_federation_module.rst:29
+msgid "python >= 2.6"
+msgstr ""
+
+#: ../../rst/modules/iam_saml_federation_module.rst:33
+msgid "Parameters"
+msgstr ""
+
+#: ../../rst/modules/iam_saml_federation_module.rst:207
+msgid "Notes"
+msgstr ""
+
+#: ../../rst/modules/iam_saml_federation_module.rst:210
+msgid ""
+"If parameters are not set within the module, the following environment "
+"variables can be used in decreasing order of precedence ``AWS_URL`` or "
+"``EC2_URL``, ``AWS_ACCESS_KEY_ID`` or ``AWS_ACCESS_KEY`` or "
+"``EC2_ACCESS_KEY``, ``AWS_SECRET_ACCESS_KEY`` or ``AWS_SECRET_KEY`` or "
+"``EC2_SECRET_KEY``, ``AWS_SECURITY_TOKEN`` or ``EC2_SECURITY_TOKEN``, "
+"``AWS_REGION`` or ``EC2_REGION``"
+msgstr ""
+
+#: ../../rst/modules/iam_saml_federation_module.rst:211
+msgid ""
+"Ansible uses the boto configuration file (typically ~/.boto) if no "
+"credentials are provided. See "
+"https://boto.readthedocs.io/en/latest/boto_config_tut.html"
+msgstr ""
+
+#: ../../rst/modules/iam_saml_federation_module.rst:212
+msgid ""
+"``AWS_REGION`` or ``EC2_REGION`` can be typically be used to specify the "
+"AWS region, when required, but this can also be configured in the boto "
+"config file"
+msgstr ""
+
+#: ../../rst/modules/iam_saml_federation_module.rst:217
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/modules/iam_saml_federation_module.rst:248
+msgid "Return Values"
+msgstr ""
+
+#: ../../rst/modules/iam_saml_federation_module.rst:249
+msgid ""
+"Common return values are documented :ref:`here <common_return_values>`, "
+"the following are the fields unique to this module:"
+msgstr ""
+
+#: ../../rst/modules/iam_saml_federation_module.rst:330
+msgid "Status"
+msgstr ""
+
+#: ../../rst/modules/iam_saml_federation_module.rst:335
+msgid ""
+"This module is not guaranteed to have a backwards compatible interface. "
+"*[preview]*"
+msgstr ""
+
+#: ../../rst/modules/iam_saml_federation_module.rst:338
+msgid ""
+"This module is :ref:`maintained by the Ansible Community "
+"<modules_support>`. *[community]*"
+msgstr ""
+
+#: ../../rst/modules/iam_saml_federation_module.rst:345
+msgid "Authors"
+msgstr ""
+
+#: ../../rst/modules/iam_saml_federation_module.rst:347
+msgid "Tony (@axc450)"
+msgstr ""
+
+#: ../../rst/modules/iam_saml_federation_module.rst:348
+msgid "Aidan Rowe (@aidan-)"
+msgstr ""
+
+#: ../../rst/modules/iam_saml_federation_module.rst:352
+#, python-format
+msgid ""
+"If you notice any issues in this documentation, you can `edit this "
+"document "
+"<https://github.com/ansible/ansible/edit/devel/lib/ansible/modules/cloud/amazon/iam_saml_federation.py?description=%23%23%23%23%23%20SUMMARY%0A%3C!---%20Your%20description%20here%20--%3E%0A%0A%0A%23%23%23%23%23%20ISSUE%20TYPE%0A-%20Docs%20Pull%20Request%0A%0A%2Blabel:%20docsite_pr>`_"
+" to improve it."
+msgstr ""
+

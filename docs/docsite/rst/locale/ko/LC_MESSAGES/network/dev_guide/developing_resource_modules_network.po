@@ -1,0 +1,345 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:6
+msgid "Developing network resource modules"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:11
+msgid ""
+"The resource module builder is an Ansible Playbook that helps developers "
+"scaffold and maintain an Ansible network resource module."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:13
+msgid "The resource module builder has the following capabilities:"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:15
+msgid ""
+"Uses a defined model to scaffold a resource module directory layout and "
+"initial class files."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:16
+msgid "Scaffolds either an Ansible role or a collection."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:17
+msgid ""
+"Subsequent uses of the resource module builder will only replace the "
+"module arspec and file containing the module docstring."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:18
+msgid ""
+"Allows you to store complex examples along side the model in the same "
+"directory."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:19
+msgid ""
+"Maintains the model as the source of truth for the module and use "
+"resource module builder to update the source files as needed."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:20
+msgid ""
+"Generates working sample modules for both ``<network_os>_<resource>`` and"
+" ``<network_os>_facts``."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:23
+msgid "Accessing the resource module builder"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:25
+msgid "To access the resource module builder:"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:27
+msgid "clone the github repository:"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:33
+msgid "Install the requirements:"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:40
+msgid "Creating a model"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:42
+msgid ""
+"You must create a model for your new resource. The resource module "
+"builder uses this model to create:"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:44
+msgid "The scaffold for a new module"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:45
+msgid "The argspec for the new module"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:46
+msgid "The docstring for the new module"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:48
+msgid ""
+"The model is then the single source of truth for both the argspec and "
+"docstring, keeping them in sync. Use the resource module builder to "
+"generate this scaffolding. For any subsequent updates to the module, "
+"update the model first and use the resource module builder to update the "
+"module argspec and docstring."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:50
+msgid ""
+"For example, the resource model builder includes the "
+"``myos_interfaces.yml`` sample in the :file:`models` directory, as seen "
+"below:"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:127
+msgid ""
+"Notice that you should include examples for each of the states that the "
+"resource supports. The resource module builder also includes these in the"
+" sample model."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:129
+msgid ""
+"See `Ansible network resource models  <https://github.com/ansible-"
+"network/resource_module_models>`_ for more examples."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:132
+msgid "Using the resource module builder"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:134
+msgid ""
+"To use the resource module builder to create a collection scaffold from "
+"your resource model:"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:145
+msgid "Where the parameters are as follows:"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:147
+msgid ""
+"``rm_dest``: The directory where the resource module builder places the "
+"files and directories for the resource module and facts modules."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:148
+msgid "``structure``: The directory layout type (role or collection)"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:150
+msgid "``role``: Generate a role directory layout."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:151
+msgid "``collection``: Generate a collection directory layout."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:153
+msgid ""
+"``collection_org``: The organization of the collection, required when "
+"`structure=collection`."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:154
+msgid ""
+"``collection_name``: The name of the collection, required when "
+"`structure=collection`."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:155
+msgid "``model``: The path to the model file."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:157
+msgid "To use the resource module builder to create a role scaffold:"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:167
+msgid "Examples"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:170
+msgid "Collection directory layout"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:172
+msgid "This example shows the directory layout for the following:"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:174
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:236
+msgid "``network_os``: myos"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:175
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:237
+msgid "``resource``: interfaces"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:232
+msgid "Role directory layout"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:234
+msgid "This example displays the role directory layout for the following:"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:288
+msgid "Using the collection"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:290
+msgid "This example shows how to use the generated collection in a playbook:"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:308
+msgid "Using the role"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:310
+msgid "This example shows how to use the generated role in a playbook:"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:332
+msgid "Resource module structure and workflow"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:334
+msgid "The resource module structure includes the following components:"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:343
+msgid "Module"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:337
+msgid "``library/<ansible_network_os>_<resource>.py``."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:338
+msgid ""
+"Imports the ``module_utils`` resource package and calls "
+"``execute_module`` API"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:347
+msgid "Module argspec"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:346
+msgid "``module_utils/<ansible_network_os>/argspec/<resource>/``."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:347
+msgid "Argspec for the resource."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:353
+msgid "Facts"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:350
+msgid "``module_utils/<ansible_network_os>/facts/<resource>/``."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:351
+msgid "Populate facts for the resource."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:352
+msgid ""
+"Entry in ``module_utils/<ansible_network_os>/facts/facts.py`` for "
+"``get_facts`` API to keep ``<ansible_network_os>_facts`` module and facts"
+" gathered for the resource module in sync for every subset."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:353
+msgid ""
+"Entry of Resource subset in FACTS_RESOURCE_SUBSETS list in "
+"``module_utils/<ansible_network_os>/facts/facts.py`` to make facts "
+"collection work."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:360
+msgid "Module package in module_utils"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:356
+msgid "``module_utils/<ansible_network_os>/<config>/<resource>/``."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:357
+msgid ""
+"Implement ``execute_module`` API that loads the configuration to device "
+"and generates the result with ``changed``, ``commands``, ``before`` and "
+"``after`` keys."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:358
+msgid ""
+"Call ``get_facts`` API that returns the ``<resource>`` configuration "
+"facts or return the difference if the device has onbox diff support."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:359
+msgid "Compare facts gathered and given key-values if diff is not supported."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:360
+msgid "Generate final configuration."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:364
+msgid "Utils"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:363
+msgid "``module_utils/<ansible_network_os>/utils``."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:364
+msgid "Utilities for the ``<ansible_network_os>`` platform."
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:367
+msgid "Developer notes"
+msgstr ""
+
+#: ../../rst/network/dev_guide/developing_resource_modules_network.rst:369
+msgid ""
+"The tests rely on a role generated by the resource module builder. After "
+"changes to the resource module builder, the role should be regenerated "
+"and the tests modified and run as needed. To generate the role after "
+"changes:"
+msgstr ""
+

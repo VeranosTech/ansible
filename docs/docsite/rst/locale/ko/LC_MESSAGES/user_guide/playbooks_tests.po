@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ansible Documentation 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-30 11:08+0900\n"
+"POT-Creation-Date: 2019-10-07 12:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../rst/user_guide/playbooks_tests.rst:4
 msgid "Tests"
@@ -100,37 +100,54 @@ msgid ""
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_tests.rst:67
-msgid "Version Comparison"
+msgid "Testing Truthiness"
 msgstr ""
 
 #: ../../rst/user_guide/playbooks_tests.rst:71
+msgid ""
+"As of Ansible 2.10, you can now perform Python like truthy and falsy "
+"checks."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:87
+msgid ""
+"Additionally, the ``truthy`` and ``falsy`` tests accept an optional "
+"parameter called ``convert_bool`` that will attempt to convert boolean "
+"indicators to actual booleans."
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:107
+msgid "Version Comparison"
+msgstr ""
+
+#: ../../rst/user_guide/playbooks_tests.rst:111
 msgid "In 2.5 ``version_compare`` was renamed to ``version``"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:73
+#: ../../rst/user_guide/playbooks_tests.rst:113
 msgid ""
 "To compare a version number, such as checking if the "
 "``ansible_facts['distribution_version']`` version is greater than or "
 "equal to '12.04', you can use the ``version`` test."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:76
+#: ../../rst/user_guide/playbooks_tests.rst:116
 msgid ""
 "The ``version`` test can also be used to evaluate the "
 "``ansible_facts['distribution_version']``::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:80
+#: ../../rst/user_guide/playbooks_tests.rst:120
 msgid ""
 "If ``ansible_facts['distribution_version']`` is greater than or equal to "
 "12.04, this test returns True, otherwise False."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:82
+#: ../../rst/user_guide/playbooks_tests.rst:122
 msgid "The ``version`` test accepts the following operators::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:86
+#: ../../rst/user_guide/playbooks_tests.rst:126
 msgid ""
 "This test also accepts a 3rd parameter, ``strict`` which defines if "
 "strict version parsing as defined by ``distutils.version.StrictVersion`` "
@@ -139,27 +156,27 @@ msgid ""
 "parsing::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:94
+#: ../../rst/user_guide/playbooks_tests.rst:134
 msgid "Set theory tests"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:98
+#: ../../rst/user_guide/playbooks_tests.rst:138
 msgid ""
 "In 2.5 ``issubset`` and ``issuperset`` were renamed to ``subset`` and "
 "``superset``"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:100
+#: ../../rst/user_guide/playbooks_tests.rst:140
 msgid ""
 "To see if a list includes or is included by another list, you can use "
 "'subset' and 'superset'::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:117
+#: ../../rst/user_guide/playbooks_tests.rst:157
 msgid "Test if a list contains a value"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:121
+#: ../../rst/user_guide/playbooks_tests.rst:161
 msgid ""
 "Ansible includes a ``contains`` test which operates similarly, but in "
 "reverse of the Jinja2 provided ``in`` test. The ``contains`` test is "
@@ -167,103 +184,103 @@ msgid ""
 "``rejectattr`` filters::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:154
+#: ../../rst/user_guide/playbooks_tests.rst:194
 msgid ""
 "You can use `any` and `all` to check if any or all elements in a list are"
 " true or not::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:176
+#: ../../rst/user_guide/playbooks_tests.rst:216
 msgid "Testing paths"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:178
+#: ../../rst/user_guide/playbooks_tests.rst:218
 msgid "In 2.5 the following tests were renamed to remove the ``is_`` prefix"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:180
+#: ../../rst/user_guide/playbooks_tests.rst:220
 msgid ""
 "The following tests can provide information about a path on the "
 "controller::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:213
+#: ../../rst/user_guide/playbooks_tests.rst:253
 msgid "Task results"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:215
+#: ../../rst/user_guide/playbooks_tests.rst:255
 msgid ""
 "The following tasks are illustrative of the tests meant to check the "
 "status of tasks::"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:244
+#: ../../rst/user_guide/playbooks_tests.rst:284
 msgid ""
 "From 2.1, you can also use success, failure, change, and skip so that the"
 " grammar matches, for those who need to be strict about it."
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:252
+#: ../../rst/user_guide/playbooks_tests.rst:292
 msgid ":ref:`playbooks_intro`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:253
+#: ../../rst/user_guide/playbooks_tests.rst:293
 msgid "An introduction to playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:254
+#: ../../rst/user_guide/playbooks_tests.rst:294
 msgid ":ref:`playbooks_conditionals`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:255
+#: ../../rst/user_guide/playbooks_tests.rst:295
 msgid "Conditional statements in playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:256
+#: ../../rst/user_guide/playbooks_tests.rst:296
 msgid ":ref:`playbooks_variables`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:257
+#: ../../rst/user_guide/playbooks_tests.rst:297
 msgid "All about variables"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:258
+#: ../../rst/user_guide/playbooks_tests.rst:298
 msgid ":ref:`playbooks_loops`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:259
+#: ../../rst/user_guide/playbooks_tests.rst:299
 msgid "Looping in playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:260
+#: ../../rst/user_guide/playbooks_tests.rst:300
 msgid ":ref:`playbooks_reuse_roles`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:261
+#: ../../rst/user_guide/playbooks_tests.rst:301
 msgid "Playbook organization by roles"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:262
+#: ../../rst/user_guide/playbooks_tests.rst:302
 msgid ":ref:`playbooks_best_practices`"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:263
+#: ../../rst/user_guide/playbooks_tests.rst:303
 msgid "Best practices in playbooks"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:264
+#: ../../rst/user_guide/playbooks_tests.rst:304
 msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:265
+#: ../../rst/user_guide/playbooks_tests.rst:305
 msgid "Have a question?  Stop by the google group!"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:266
+#: ../../rst/user_guide/playbooks_tests.rst:306
 msgid "`irc.freenode.net <http://irc.freenode.net>`_"
 msgstr ""
 
-#: ../../rst/user_guide/playbooks_tests.rst:267
+#: ../../rst/user_guide/playbooks_tests.rst:307
 msgid "#ansible IRC chat channel"
 msgstr ""
 
